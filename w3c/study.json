@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define WebIDL content (W3C perspective)",
   "description": "This crawl includes specifications that define WebIDL content, preferring W3C specifications to WHATWG specifications when both exist.",
-  "date": "2019-09-13T00:38:04.179Z",
+  "date": "2019-09-13T06:38:58.100Z",
   "stats": {
     "crawled": 246,
-    "errors": 0,
+    "errors": 2,
     "studied": 246
   },
   "results": [
@@ -411,7 +411,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://w3c.github.io/media-capabilities/",
@@ -504,77 +504,22 @@
       }
     },
     {
-      "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
-      "shortname": "CSS22",
-      "date": "27 April 2018",
-      "url": "https://www.w3.org/TR/CSS22/",
-      "latest": "http://www.w3.org/TR/CSS22/",
-      "datedUrl": "http://www.w3.org/TR/2016/WD-CSS22-20160412/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://drafts.csswg.org/css2/",
-      "crawled": "https://drafts.csswg.org/css2/",
-      "repository": "https://github.com/w3c/csswg-drafts",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
-        "hasUnexpectedIdl": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "noCssDefinitions": false,
-        "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/css3-color/",
-            "ref": {
-              "name": "CSS3COLOR",
-              "url": "http://www.w3.org/TR/2010/PR-css3-color-20101028/"
-            }
-          }
-        ],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/html52/",
-              "title": "HTML Standard",
-              "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
-            },
-            {
-              "url": "https://www.w3.org/TR/webvtt1/",
-              "title": "WebVTT: The Web Video Text Tracks Format",
-              "crawled": "https://w3c.github.io/webvtt/",
-              "date": "30 March 2018"
-            }
-          ],
-          "informative": []
-        },
-        "noEdDraft": false,
-        "ok": false
-      }
-    },
-    {
-      "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
+      "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
       "shortname": "CSS2",
-      "date": "27 April 2018",
       "url": "https://www.w3.org/TR/CSS2/",
       "latest": "http://www.w3.org/TR/CSS2/",
       "datedUrl": "http://www.w3.org/TR/2011/REC-CSS2-20110607/",
       "datedStatus": "Recommendation",
       "edDraft": "http://dev.w3.org/csswg/css2/",
-      "crawled": "http://dev.w3.org/csswg/css2/",
+      "crawled": "http://www.w3.org/TR/CSS2/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
+        "error": "Error: Crawl took too long Error: Crawl took too long\n    at Timeout._ [as _onTimeout] (/home/runner/work/reffy-reports/reffy/src/cli/crawl-specs.js:365:29)\n    at ontimeout (timers.js:436:11)\n    at tryOnTimeout (timers.js:300:5)\n    at listOnTimeout (timers.js:263:5)\n    at Timer.processTimers (timers.js:223:10)",
         "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -690,7 +635,7 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-contain/",
-              "date": "4 September 2019"
+              "date": "12 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-counter-styles-3/",
@@ -987,12 +932,6 @@
               "date": "11 September 2019"
             },
             {
-              "url": "https://www.w3.org/TR/css3-mediaqueries/",
-              "title": "Media Queries Level 3",
-              "crawled": "http://dev.w3.org/csswg/css3-mediaqueries/",
-              "date": "13 April 2012"
-            },
-            {
               "url": "https://www.w3.org/TR/mediaqueries-4/",
               "title": "Media Queries Level 4",
               "crawled": "https://drafts.csswg.org/mediaqueries-4/",
@@ -1085,6 +1024,60 @@
               "date": "14 October 2018"
             }
           ]
+        },
+        "noEdDraft": false,
+        "ok": false
+      }
+    },
+    {
+      "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
+      "shortname": "CSS22",
+      "date": "27 April 2018",
+      "url": "https://www.w3.org/TR/CSS22/",
+      "latest": "http://www.w3.org/TR/CSS22/",
+      "datedUrl": "http://www.w3.org/TR/2016/WD-CSS22-20160412/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://drafts.csswg.org/css2/",
+      "crawled": "https://drafts.csswg.org/css2/",
+      "repository": "https://github.com/w3c/csswg-drafts",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css3-color/",
+            "ref": {
+              "name": "CSS3COLOR",
+              "url": "http://www.w3.org/TR/2010/PR-css3-color-20101028/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/html52/",
+              "title": "HTML Standard",
+              "crawled": "https://w3c.github.io/html/",
+              "date": "13 September 2019"
+            },
+            {
+              "url": "https://www.w3.org/TR/webvtt1/",
+              "title": "WebVTT: The Web Video Text Tracks Format",
+              "crawled": "https://w3c.github.io/webvtt/",
+              "date": "30 March 2018"
+            }
+          ],
+          "informative": []
         },
         "noEdDraft": false,
         "ok": false
@@ -1380,7 +1373,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               },
               {
                 "url": "https://www.w3.org/TR/service-workers-1/",
@@ -1392,7 +1385,7 @@
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -1541,7 +1534,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
@@ -1732,7 +1725,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             }
           ],
           "informative": []
@@ -2003,7 +1996,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://wicg.github.io/scroll-animations/",
@@ -2238,7 +2231,7 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-contain/",
-              "date": "4 September 2019"
+              "date": "12 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-display-3/",
@@ -2436,7 +2429,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/motion-1/",
@@ -2666,7 +2659,7 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-contain/",
-              "date": "4 September 2019"
+              "date": "12 September 2019"
             }
           ]
         },
@@ -2732,7 +2725,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/SVG2/",
@@ -2752,7 +2745,7 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-contain/",
-              "date": "4 September 2019"
+              "date": "12 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -2914,7 +2907,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -3180,7 +3173,7 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-contain/",
-              "date": "4 September 2019"
+              "date": "12 September 2019"
             }
           ]
         },
@@ -3711,7 +3704,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediaqueries-4/",
@@ -4150,7 +4143,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -4370,7 +4363,7 @@
     {
       "title": "CSS Containment Module Level 1",
       "shortname": "css-contain-1",
-      "date": "4 September 2019",
+      "date": "12 September 2019",
       "url": "https://www.w3.org/TR/css-contain-1/",
       "latest": "https://www.w3.org/TR/css-contain-1/",
       "datedUrl": "https://www.w3.org/TR/2019/CR-css-contain-1-20190430/",
@@ -4814,7 +4807,7 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-contain/",
-              "date": "4 September 2019"
+              "date": "12 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-variables-1/",
@@ -5066,7 +5059,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
@@ -5566,7 +5559,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             }
           ],
           "informative": [
@@ -5778,7 +5771,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/SVG2/",
@@ -6050,7 +6043,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/SVG2/",
@@ -6190,7 +6183,7 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-contain/",
-              "date": "4 September 2019"
+              "date": "12 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-display-3/",
@@ -6548,7 +6541,7 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-contain/",
-              "date": "4 September 2019"
+              "date": "12 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-counter-styles-3/",
@@ -6683,7 +6676,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             }
           ],
           "informative": [
@@ -6697,7 +6690,7 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-contain/",
-              "date": "4 September 2019"
+              "date": "12 September 2019"
             },
             {
               "url": "https://drafts.csswg.org/css-exclusions-1/",
@@ -7417,7 +7410,7 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-contain/",
-              "date": "4 September 2019"
+              "date": "12 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-counter-styles-3/",
@@ -7860,7 +7853,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             }
           ],
           "informative": [
@@ -7868,7 +7861,7 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-contain/",
-              "date": "4 September 2019"
+              "date": "12 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-grid-1/",
@@ -8218,7 +8211,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -8367,7 +8360,7 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-contain/",
-              "date": "4 September 2019"
+              "date": "12 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-display-3/",
@@ -8541,7 +8534,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
@@ -8647,7 +8640,7 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-contain/",
-              "date": "4 September 2019"
+              "date": "12 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-values-4/",
@@ -8905,7 +8898,7 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-contain/",
-              "date": "4 September 2019"
+              "date": "12 September 2019"
             },
             {
               "url": "https://drafts.csswg.org/css-gcpm-4/",
@@ -9225,7 +9218,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/motion-1/",
@@ -9595,7 +9588,7 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-contain/",
-              "date": "4 September 2019"
+              "date": "12 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-overflow-3/",
@@ -10229,7 +10222,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -10461,7 +10454,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -11559,7 +11552,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/SVG2/",
@@ -12393,7 +12386,7 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-contain/",
-              "date": "4 September 2019"
+              "date": "12 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-counter-styles-3/",
@@ -13494,7 +13487,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -13722,7 +13715,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/webdriver1/",
@@ -13848,7 +13841,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               },
               {
                 "url": "https://www.w3.org/TR/service-workers-1/",
@@ -13860,7 +13853,7 @@
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           }
@@ -13921,7 +13914,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://url.spec.whatwg.org/",
@@ -14327,7 +14320,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://wicg.github.io/largest-contentful-paint/",
@@ -14602,7 +14595,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
@@ -14871,7 +14864,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://wicg.github.io/keyboard-lock/",
@@ -15125,7 +15118,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           }
@@ -15271,7 +15264,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -15465,7 +15458,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc-stats/",
@@ -16559,7 +16552,7 @@
     {
       "title": "HTML Standard",
       "shortname": "html52",
-      "date": "9 September 2019",
+      "date": "13 September 2019",
       "url": "https://www.w3.org/TR/html52/",
       "latest": "https://www.w3.org/TR/html52/",
       "datedUrl": "https://www.w3.org/TR/2017/REC-html52-20171214/",
@@ -16675,7 +16668,7 @@
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -16686,7 +16679,7 @@
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -16703,7 +16696,7 @@
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -16714,7 +16707,7 @@
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -16725,7 +16718,7 @@
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -16736,7 +16729,7 @@
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -16747,7 +16740,7 @@
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -16758,7 +16751,7 @@
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -16769,7 +16762,7 @@
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -16780,7 +16773,7 @@
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -16791,7 +16784,7 @@
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -16802,7 +16795,7 @@
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           }
@@ -17925,7 +17918,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -17936,7 +17929,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -17947,7 +17940,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -17958,7 +17951,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           }
@@ -19004,7 +18997,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -19194,7 +19187,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             }
           ],
           "informative": []
@@ -19451,7 +19444,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             }
           ],
           "informative": []
@@ -19629,7 +19622,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc-stats/",
@@ -19862,35 +19855,28 @@
       }
     },
     {
-      "title": "Media Queries Level 3",
+      "title": "Media Queries",
       "shortname": "css3-mediaqueries",
-      "date": "13 April 2012",
       "url": "https://www.w3.org/TR/css3-mediaqueries/",
       "latest": "http://www.w3.org/TR/css3-mediaqueries/",
       "datedUrl": "http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/",
       "datedStatus": "Recommendation",
       "edDraft": "http://dev.w3.org/csswg/css3-mediaqueries/",
-      "crawled": "http://dev.w3.org/csswg/css3-mediaqueries/",
+      "crawled": "http://www.w3.org/TR/css3-mediaqueries/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Crawl took too long Error: Crawl took too long\n    at Timeout._ [as _onTimeout] (/home/runner/work/reffy-reports/reffy/src/cli/crawl-specs.js:365:29)\n    at ontimeout (timers.js:436:11)\n    at tryOnTimeout (timers.js:300:5)\n    at listOnTimeout (timers.js:263:5)\n    at Timer.processTimers (timers.js:223:10)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/1999/REC-html401-19991224/",
-          "https://www.w3.org/TR/1999/REC-html401-19991224/present/",
-          "https://infra.spec.whatwg.org/",
-          "https://www.w3.org/TR/1999/REC-html401-19991224",
-          "https://www.w3.org/TR/2011/WD-html5-20110525/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
@@ -20203,7 +20189,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://w3c.github.io/media-capabilities/",
@@ -20530,7 +20516,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -20976,7 +20962,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             }
           ]
         },
@@ -21029,7 +21015,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://wicg.github.io/layout-instability/",
@@ -21549,7 +21535,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -21624,7 +21610,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
@@ -21722,7 +21708,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             }
           ],
           "informative": []
@@ -21764,7 +21750,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           }
@@ -21793,7 +21779,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/remote-playback/",
@@ -22013,7 +21999,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/SVG2/",
@@ -22517,7 +22503,7 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-contain/",
-              "date": "4 September 2019"
+              "date": "12 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/css-display-3/",
@@ -22619,7 +22605,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/motion-1/",
@@ -22921,7 +22907,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://wicg.github.io/keyboard-map/",
@@ -23090,7 +23076,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             }
           ],
           "informative": []
@@ -23453,7 +23439,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/selectors-nonelement-1/",
@@ -23547,7 +23533,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               },
               {
                 "url": "https://www.w3.org/TR/service-workers-1/",
@@ -23559,7 +23545,7 @@
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -23626,7 +23612,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -23637,7 +23623,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           }
@@ -23693,13 +23679,13 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               },
               {
                 "url": "https://www.w3.org/TR/workers/",
                 "title": "Web Workers",
                 "crawled": "https://html.spec.whatwg.org/multipage/workers.html",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           }
@@ -23770,7 +23756,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -24036,7 +24022,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -24219,7 +24205,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -24325,7 +24311,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
@@ -24410,7 +24396,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
@@ -24735,7 +24721,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://w3c.github.io/mediasession/",
@@ -25355,7 +25341,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/webmessaging/",
@@ -26284,7 +26270,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -26702,7 +26688,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/webrtc-stats/",
@@ -27296,7 +27282,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           }
@@ -27409,7 +27395,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           }
@@ -27512,7 +27498,7 @@
     {
       "title": "Web Workers",
       "shortname": "workers",
-      "date": "9 September 2019",
+      "date": "13 September 2019",
       "url": "https://www.w3.org/TR/workers/",
       "latest": "http://www.w3.org/TR/workers/",
       "datedUrl": "http://www.w3.org/TR/2015/WD-workers-20150924/",
@@ -27540,7 +27526,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -27551,7 +27537,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -27562,7 +27548,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               },
               {
                 "url": "https://www.w3.org/TR/service-workers-1/",
@@ -27579,7 +27565,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -27590,7 +27576,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -27601,7 +27587,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -27612,7 +27598,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -27623,7 +27609,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -27634,7 +27620,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -27645,7 +27631,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -27656,7 +27642,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -27667,7 +27653,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           }
@@ -27680,7 +27666,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -27691,7 +27677,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -27702,7 +27688,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               }
             ]
           },
@@ -27724,7 +27710,7 @@
                 "url": "https://www.w3.org/TR/html52/",
                 "title": "HTML Standard",
                 "crawled": "https://w3c.github.io/html/",
-                "date": "9 September 2019"
+                "date": "13 September 2019"
               },
               {
                 "url": "https://www.w3.org/TR/webmessaging/",
@@ -28767,7 +28753,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             }
           ]
         },
@@ -28985,7 +28971,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
@@ -29222,7 +29208,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             }
           ],
           "informative": []
@@ -29546,7 +29532,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -29642,7 +29628,7 @@
               "url": "https://www.w3.org/TR/html52/",
               "title": "HTML Standard",
               "crawled": "https://w3c.github.io/html/",
-              "date": "9 September 2019"
+              "date": "13 September 2019"
             },
             {
               "url": "https://www.w3.org/TR/mixed-content/",
