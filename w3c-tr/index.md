@@ -4732,7 +4732,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (9 August 2019)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (13 September 2019)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -9141,7 +9141,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/) (4 September 2019)
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/) (13 September 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
