@@ -4901,7 +4901,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.fxtf.org/filter-effects-2/) (21 June 2019)
+- Crawled version: [Initial URL](https://drafts.fxtf.org/filter-effects-2/) (12 September 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
