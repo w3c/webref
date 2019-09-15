@@ -1,4 +1,4 @@
-This code copies `*.idl` files from [whatwg/idl/](/whatwg/idl/) in this repo
+This code copies `*.idl` files from [ed/idl/](/ed/idl/) in this repo
 into [interfaces/](https://github.com/web-platform-tests/wpt/tree/master/interfaces) in wpt.
 
 Branches are maintained on a fork of [wpt](https://github.com/web-platform-tests/wpt),

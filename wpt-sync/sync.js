@@ -274,7 +274,7 @@ async function main() {
     flags.defineBoolean('dry-run', false, 'Run without pushing branches or creating PRs');
     flags.parse();
 
-    const srcDir = `${__dirname}/../whatwg/idl`;
+    const srcDir = `${__dirname}/../ed/idl`;
     assert(isDir(srcDir));
 
     const wptDir = flags.get('wpt-dir');
@@ -294,7 +294,7 @@ async function main() {
         if (extras && extras.length) {
             message += extras.join('\n') + '\n\n';
         }
-        message += `Source: https://github.com/tidoust/reffy-reports/blob/${buildSha}/whatwg/idl/${file}\n`;
+        message += `Source: https://github.com/tidoust/reffy-reports/blob/${buildSha}/ed/idl/${file}\n`;
         if (buildUrl) {
             message += `Build: ${buildUrl}\n`;
         }
