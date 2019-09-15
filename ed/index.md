@@ -4198,7 +4198,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-3/) (10 September 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-3/) (15 September 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-writing-modes-3/](https://drafts.csswg.org/css-writing-modes-3/)
 - Latest published version: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-css-writing-modes-3-20190903/)
@@ -4253,7 +4253,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-4/) (8 September 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-4/) (15 September 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-writing-modes-4/](https://drafts.csswg.org/css-writing-modes-4/)
 - Latest published version: [https://www.w3.org/TR/css-writing-modes-4/](https://www.w3.org/TR/css-writing-modes-4/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/)
