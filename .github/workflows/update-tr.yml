@@ -1,0 +1,44 @@
+on:
+  schedule:
+    - cron: '11 11 * * 1'
+name: Update TR report
+jobs:
+  update:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Checkout reffy-reports
+      uses: actions/checkout@master
+    - name: Checkout reffy
+      uses: actions/checkout@master
+      with:
+        repository: tidoust/reffy
+        ref: master
+        fetch-depth: 1
+        path: reffy
+    - name: Setup node.js
+      uses: actions/setup-node@master
+      with:
+        node-version: 10.x
+    - name: Install pandoc
+      run: sudo apt-get install pandoc
+    - name: Setup Reffy
+      run: |
+        echo "${{ secrets.CONFIG_JSON }}" | base64 --decode > config.json
+        npm ci
+      working-directory: ../reffy
+    - name: Run Reffy's crawler
+      run: npm run tr
+      working-directory: ../reffy
+    - name: Copy reports
+      run: rsync -av --exclude=README.md ../reffy/reports/ ./
+    - name: Push updates to git
+      run: |
+        git config user.name "reffy-bot"
+        git config user.email "<>"
+        git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+        git add -A
+        REFFY_SHA=$(git --git-dir=../reffy/.git rev-parse HEAD)
+        git commit -m "Update of TR report from new reffy run" -m "Using reffy commit $REFFY_SHA."
+        #npm version patch
+        git push origin HEAD:master
+        #git push origin --tags
