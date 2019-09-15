@@ -4,44 +4,44 @@ on:
   push:
     branches:
     - master
-name: update
+name: Update ED report
 jobs:
   update:
     runs-on: ubuntu-18.04
     steps:
-    - name: checkout
+    - name: Checkout reffy-reports
       uses: actions/checkout@master
-    - name: checkout reffy
+    - name: Checkout reffy
       uses: actions/checkout@master
       with:
         repository: tidoust/reffy
         ref: master
         fetch-depth: 1
         path: reffy
-    - name: setup node
+    - name: Setup node.js
       uses: actions/setup-node@master
       with:
         node-version: 10.x
-    - name: install pandoc
+    - name: Install pandoc
       run: sudo apt-get install pandoc
-    - name: setup reffy
+    - name: Setup Reffy
       run: |
         echo "${{ secrets.CONFIG_JSON }}" | base64 --decode > config.json
         npm ci
       working-directory: ../reffy
-    - name: reffy crawl
-      run: npm run all
+    - name: Run Reffy's crawler
+      run: npm run ed
       working-directory: ../reffy
-    - name: copy reports
+    - name: Copy reports
       run: rsync -av --exclude=README.md ../reffy/reports/ ./
-    - name: git push
+    - name: Push updates to git
       run: |
         git config user.name "reffy-bot"
         git config user.email "<>"
         git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
         git add -A
         REFFY_SHA=$(git --git-dir=../reffy/.git rev-parse HEAD)
-        git commit -m "Update from new reffy run" -m "Using reffy commit $REFFY_SHA."
+        git commit -m "Update of ED report from new reffy run" -m "Using reffy commit $REFFY_SHA."
         #npm version patch
         git push origin HEAD:master
         #git push origin --tags
