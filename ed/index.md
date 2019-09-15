@@ -1,4 +1,4 @@
-% Specifications that define WebIDL content (WHATWG perspective)
+% Specifications that define CSS and WebIDL content
 % Reffy
 % September 15, 2019
 
@@ -251,11 +251,11 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification {data-spec=true data-error=true}
+## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noCssDefinitions=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](http://dev.w3.org/csswg/css2/)
+- Crawled version: [Editor's Draft](http://dev.w3.org/csswg/css2/) (27 April 2018)
 - Editor's Draft: [http://dev.w3.org/csswg/css2/](http://dev.w3.org/csswg/css2/)
 - Latest published version: [http://www.w3.org/TR/CSS2/](http://www.w3.org/TR/CSS2/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2011/REC-CSS2-20110607/)
@@ -264,14 +264,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: FetchError: request to http://dev.w3.org/csswg/css2/ failed, reason: connect ECONNREFUSED 128.30.52.30:80 Error: FetchError: request to http://dev.w3.org/csswg/css2/ failed, reason: connect ECONNREFUSED 128.30.52.30:80
-    at process.on.msg (/home/runner/work/reffy-reports/reffy/src/lib/fetch.js:52:28)
-    at process.emit (events.js:198:13)
-    at emit (internal/child_process.js:832:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No normative references found
+- No CSS definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -344,6 +338,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Media Queries Level 3](http://dev.w3.org/csswg/css3-mediaqueries/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
@@ -5859,11 +5854,11 @@ Informative references to this spec from:
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 
 
-## Media Queries {data-spec=true data-error=true}
+## Media Queries Level 3 {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](http://dev.w3.org/csswg/css3-mediaqueries/)
+- Crawled version: [Editor's Draft](http://dev.w3.org/csswg/css3-mediaqueries/) (13 April 2012)
 - Editor's Draft: [http://dev.w3.org/csswg/css3-mediaqueries/](http://dev.w3.org/csswg/css3-mediaqueries/)
 - Latest published version: [http://www.w3.org/TR/css3-mediaqueries/](http://www.w3.org/TR/css3-mediaqueries/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
@@ -5872,14 +5867,13 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: FetchError: request to http://dev.w3.org/csswg/css3-mediaqueries/ failed, reason: connect ECONNREFUSED 128.30.52.30:80 Error: FetchError: request to http://dev.w3.org/csswg/css3-mediaqueries/ failed, reason: connect ECONNREFUSED 128.30.52.30:80
-    at process.on.msg (/home/runner/work/reffy-reports/reffy/src/lib/fetch.js:52:28)
-    at process.emit (events.js:198:13)
-    at emit (internal/child_process.js:832:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No CSS definitions found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/)
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/present/`](https://www.w3.org/TR/1999/REC-html401-19991224/present/)
+     * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224`](https://www.w3.org/TR/1999/REC-html401-19991224)
+     * [`https://www.w3.org/TR/2011/WD-html5-20110525/`](https://www.w3.org/TR/2011/WD-html5-20110525/)
 
 ### Known dependencies on this specification {.dependencies}
 
