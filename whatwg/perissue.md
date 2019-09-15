@@ -9,18 +9,16 @@
 
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
-- [Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification](http://www.w3.org/TR/CSS2/): `Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/runner/work/reffy-reports/reffy/src/cli/crawl-specs.js:365:29)
-    at ontimeout (timers.js:436:11)
-    at tryOnTimeout (timers.js:300:5)
-    at listOnTimeout (timers.js:263:5)
-    at Timer.processTimers (timers.js:223:10)`
-- [Media Queries](http://www.w3.org/TR/css3-mediaqueries/): `Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/runner/work/reffy-reports/reffy/src/cli/crawl-specs.js:365:29)
-    at ontimeout (timers.js:436:11)
-    at tryOnTimeout (timers.js:300:5)
-    at listOnTimeout (timers.js:263:5)
-    at Timer.processTimers (timers.js:223:10)`
+- [Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification](http://dev.w3.org/csswg/css2/): `Error: FetchError: request to http://dev.w3.org/csswg/css2/ failed, reason: connect ECONNREFUSED 128.30.52.30:80 Error: FetchError: request to http://dev.w3.org/csswg/css2/ failed, reason: connect ECONNREFUSED 128.30.52.30:80
+    at process.on.msg (/home/runner/work/reffy-reports/reffy/src/lib/fetch.js:52:28)
+    at process.emit (events.js:198:13)
+    at emit (internal/child_process.js:832:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
+- [Media Queries](http://dev.w3.org/csswg/css3-mediaqueries/): `Error: FetchError: request to http://dev.w3.org/csswg/css3-mediaqueries/ failed, reason: connect ECONNREFUSED 128.30.52.30:80 Error: FetchError: request to http://dev.w3.org/csswg/css3-mediaqueries/ failed, reason: connect ECONNREFUSED 128.30.52.30:80
+    at process.on.msg (/home/runner/work/reffy-reports/reffy/src/lib/fetch.js:52:28)
+    at process.emit (events.js:198:13)
+    at emit (internal/child_process.js:832:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 => 2 specifications found
 

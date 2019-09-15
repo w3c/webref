@@ -255,7 +255,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/CSS2/)
+- Crawled version: [Editor's Draft](http://dev.w3.org/csswg/css2/)
 - Editor's Draft: [http://dev.w3.org/csswg/css2/](http://dev.w3.org/csswg/css2/)
 - Latest published version: [http://www.w3.org/TR/CSS2/](http://www.w3.org/TR/CSS2/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2011/REC-CSS2-20110607/)
@@ -265,12 +265,11 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/runner/work/reffy-reports/reffy/src/cli/crawl-specs.js:365:29)
-    at ontimeout (timers.js:436:11)
-    at tryOnTimeout (timers.js:300:5)
-    at listOnTimeout (timers.js:263:5)
-    at Timer.processTimers (timers.js:223:10)`
+`Error: FetchError: request to http://dev.w3.org/csswg/css2/ failed, reason: connect ECONNREFUSED 128.30.52.30:80 Error: FetchError: request to http://dev.w3.org/csswg/css2/ failed, reason: connect ECONNREFUSED 128.30.52.30:80
+    at process.on.msg (/home/runner/work/reffy-reports/reffy/src/lib/fetch.js:52:28)
+    at process.emit (events.js:198:13)
+    at emit (internal/child_process.js:832:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -5864,7 +5863,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](http://www.w3.org/TR/css3-mediaqueries/)
+- Crawled version: [Editor's Draft](http://dev.w3.org/csswg/css3-mediaqueries/)
 - Editor's Draft: [http://dev.w3.org/csswg/css3-mediaqueries/](http://dev.w3.org/csswg/css3-mediaqueries/)
 - Latest published version: [http://www.w3.org/TR/css3-mediaqueries/](http://www.w3.org/TR/css3-mediaqueries/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
@@ -5874,12 +5873,11 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 The following network or parsing error occurred:
-`Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/runner/work/reffy-reports/reffy/src/cli/crawl-specs.js:365:29)
-    at ontimeout (timers.js:436:11)
-    at tryOnTimeout (timers.js:300:5)
-    at listOnTimeout (timers.js:263:5)
-    at Timer.processTimers (timers.js:223:10)`
+`Error: FetchError: request to http://dev.w3.org/csswg/css3-mediaqueries/ failed, reason: connect ECONNREFUSED 128.30.52.30:80 Error: FetchError: request to http://dev.w3.org/csswg/css3-mediaqueries/ failed, reason: connect ECONNREFUSED 128.30.52.30:80
+    at process.on.msg (/home/runner/work/reffy-reports/reffy/src/lib/fetch.js:52:28)
+    at process.emit (events.js:198:13)
+    at emit (internal/child_process.js:832:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 

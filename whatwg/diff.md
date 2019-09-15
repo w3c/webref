@@ -5,16 +5,14 @@
 ## Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification
 
 - URL: [https://www.w3.org/TR/CSS2/](https://www.w3.org/TR/CSS2/)
-- Crawled version: [Latest published version](http://www.w3.org/TR/CSS2/)
-- Editor's Draft: [http://dev.w3.org/csswg/css2/](http://dev.w3.org/csswg/css2/)
+- Crawled version: [Editor's Draft](http://dev.w3.org/csswg/css2/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec title: *INS* Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification / *DEL* Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
-- Spec could not be rendered: *INS* Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/runner/work/reffy-reports/reffy/src/cli/crawl-specs.js:365:29)
-    at ontimeout (timers.js:436:11)
-    at tryOnTimeout (timers.js:300:5)
-    at listOnTimeout (timers.js:263:5)
-    at Timer.processTimers (timers.js:223:10)
+- Spec could not be rendered: *INS* Error: FetchError: request to http://dev.w3.org/csswg/css2/ failed, reason: connect ECONNREFUSED 128.30.52.30:80 Error: FetchError: request to http://dev.w3.org/csswg/css2/ failed, reason: connect ECONNREFUSED 128.30.52.30:80
+    at process.on.msg (/home/runner/work/reffy-reports/reffy/src/lib/fetch.js:52:28)
+    at process.emit (events.js:198:13)
+    at emit (internal/child_process.js:832:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
 
 
 ## Gamepad
@@ -29,16 +27,14 @@
 ## Media Queries
 
 - URL: [https://www.w3.org/TR/css3-mediaqueries/](https://www.w3.org/TR/css3-mediaqueries/)
-- Crawled version: [Latest published version](http://www.w3.org/TR/css3-mediaqueries/)
-- Editor's Draft: [http://dev.w3.org/csswg/css3-mediaqueries/](http://dev.w3.org/csswg/css3-mediaqueries/)
+- Crawled version: [Editor's Draft](http://dev.w3.org/csswg/css3-mediaqueries/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec title: *INS* Media Queries / *DEL* Media Queries Level 3
-- Spec could not be rendered: *INS* Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/runner/work/reffy-reports/reffy/src/cli/crawl-specs.js:365:29)
-    at ontimeout (timers.js:436:11)
-    at tryOnTimeout (timers.js:300:5)
-    at listOnTimeout (timers.js:263:5)
-    at Timer.processTimers (timers.js:223:10)
+- Spec could not be rendered: *INS* Error: FetchError: request to http://dev.w3.org/csswg/css3-mediaqueries/ failed, reason: connect ECONNREFUSED 128.30.52.30:80 Error: FetchError: request to http://dev.w3.org/csswg/css3-mediaqueries/ failed, reason: connect ECONNREFUSED 128.30.52.30:80
+    at process.on.msg (/home/runner/work/reffy-reports/reffy/src/lib/fetch.js:52:28)
+    at process.emit (events.js:198:13)
+    at emit (internal/child_process.js:832:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
 
 
 ## WebXR Augmented Reality Module - Level 1
