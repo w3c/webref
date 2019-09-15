@@ -7268,7 +7268,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/ServiceWorker/) (10 September 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/ServiceWorker/) (15 September 2019)
 - Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
 - Shortname: no shortname
 
