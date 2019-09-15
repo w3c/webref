@@ -4726,7 +4726,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (13 September 2019)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (15 September 2019)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
