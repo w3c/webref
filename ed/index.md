@@ -6391,7 +6391,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/) (Tue Sep 17 2019)
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
 - Latest published version: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190730/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190917/)
 - Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
 - Shortname: payment-method-basic-card
 
@@ -6443,7 +6443,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/) (Tue Sep 17 2019)
 - Editor's Draft: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
 - Latest published version: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190917/)
 - Repository: [GitHub w3c/performance-timeline](https://github.com/w3c/performance-timeline)
 - Shortname: performance-timeline-2
 
