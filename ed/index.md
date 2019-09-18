@@ -2237,7 +2237,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-images-3/) (15 August 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-images-3/) (17 September 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-images-3/](https://drafts.csswg.org/css-images-3/)
 - Latest published version: [http://www.w3.org/TR/css3-images/](http://www.w3.org/TR/css3-images/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2012/CR-css3-images-20120417/)
@@ -2293,7 +2293,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-images-4/) (13 August 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-images-4/) (17 September 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-images-4/](https://drafts.csswg.org/css-images-4/)
 - Latest published version: [https://www.w3.org/TR/css-images-4/](https://www.w3.org/TR/css-images-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
