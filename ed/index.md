@@ -8535,7 +8535,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-gamepads-module/) (12 September 2019)
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-gamepads-module/) (19 September 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
