@@ -2160,7 +2160,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-grid/) (17 September 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-grid/) (18 September 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-grid/](https://drafts.csswg.org/css-grid/)
 - Latest published version: [https://www.w3.org/TR/css-grid-1/](https://www.w3.org/TR/css-grid-1/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
@@ -4964,7 +4964,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/) (Fri Sep 20 2019)
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-gamepad-20190903/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-gamepad-20190920/)
 - Repository: [GitHub w3c/gamepad](https://github.com/w3c/gamepad)
 - Shortname: gamepad
 
@@ -5223,7 +5223,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (13 September 2019)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (20 September 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5955,7 +5955,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/mediasession/) (20 August 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/mediasession/) (19 September 2019)
 - Repository: [GitHub w3c/mediasession](https://github.com/w3c/mediasession)
 - Shortname: no shortname
 
@@ -7855,7 +7855,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (11 September 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/) (20 September 2019)
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn-1/](https://www.w3.org/TR/webauthn-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
