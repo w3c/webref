@@ -4958,7 +4958,7 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## Gamepad {data-spec=true data-anomaly=true data-redefinedIdlNames=true}
+## Gamepad {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -4973,6 +4973,9 @@ Informative references to this spec from:
 
 - WebIDL names also defined elsewhere: 
     * `GamepadMappingType` also defined in [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
+- Missing references for WebIDL names: 
+     * `DOMHighResTimeStamp` defined in [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
+     * `Navigator` defined in [HTML Standard](https://html.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5166,7 +5169,6 @@ Normative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
-- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
@@ -5187,6 +5189,7 @@ Normative references to this spec from:
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Media Playback Quality](https://w3c.github.io/media-playback-quality/)
 - [Server Timing](https://w3c.github.io/server-timing/)
@@ -5308,7 +5311,6 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
@@ -5395,6 +5397,7 @@ Although they do not, the following specs should also normatively reference this
 
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
