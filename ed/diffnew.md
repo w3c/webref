@@ -18,3 +18,11 @@
 - Missing references for links: *INS* https://www.w3.org/TR/css-contain-1/
 
 
+## Gamepad
+
+- URL: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/)
+- Repository: [GitHub w3c/gamepad](https://github.com/w3c/gamepad)
+- Missing references for WebIDL names: *INS* DOMHighResTimeStamp, Navigator
+
+
