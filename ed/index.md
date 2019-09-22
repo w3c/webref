@@ -4044,7 +4044,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values-4/) (8 August 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values-4/) (21 September 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-values-4/](https://drafts.csswg.org/css-values-4/)
 - Latest published version: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
@@ -4965,7 +4965,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/) (Sun Sep 22 2019)
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-gamepad-20190920/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-gamepad-20190922/)
 - Repository: [GitHub w3c/gamepad](https://github.com/w3c/gamepad)
 - Shortname: gamepad
 
