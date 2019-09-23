@@ -18,6 +18,14 @@
 - Missing references for links: *INS* https://www.w3.org/TR/css-contain-1/
 
 
+## DOM Standard
+
+- URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/)
+- Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
+- Missing references for links: *INS* https://w3c.github.io/deviceorientation/spec-source-orientation.html
+
+
 ## Gamepad
 
 - URL: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
