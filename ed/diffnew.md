@@ -34,3 +34,10 @@
 - Missing references for WebIDL names: *INS* DOMHighResTimeStamp, Navigator
 
 
+## Web IDL
+
+- URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
+- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/)
+- Missing references for links: *INS* https://w3c.github.io/deviceorientation/spec-source-orientation.html
+
+
