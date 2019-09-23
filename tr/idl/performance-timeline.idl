@@ -1,7 +1,7 @@
 // GENERATED CONTENT - DO NOT EDIT
 // Content was automatically extracted by Reffy into reffy-reports
 // (https://github.com/tidoust/reffy-reports)
-// Source: Performance Timeline Level 2 (https://www.w3.org/TR/2019/WD-performance-timeline-2-20190626/)
+// Source: Performance Timeline Level 2 (https://www.w3.org/TR/2019/WD-performance-timeline-2-20190917/)
 
 partial interface Performance {
   PerformanceEntryList getEntries ();
@@ -23,7 +23,7 @@ callback PerformanceObserverCallback = void (PerformanceObserverEntryList entrie
                                              PerformanceObserver observer);
 [Constructor(PerformanceObserverCallback callback), Exposed=(Window,Worker)]
 interface PerformanceObserver {
-  void observe (optional PerformanceObserverInit options);
+  void observe (PerformanceObserverInit options);
   void disconnect ();
   PerformanceEntryList takeRecords();
   [SameObject] static readonly attribute FrozenArray<DOMString> supportedEntryTypes;
@@ -32,7 +32,6 @@ interface PerformanceObserver {
 dictionary PerformanceObserverInit {
   sequence<DOMString> entryTypes;
   DOMString type;
-  boolean buffered;
 };
 
 [Exposed=(Window,Worker)]
