@@ -377,6 +377,7 @@ interface Element : Node {
 
 dictionary ShadowRootInit {
   required ShadowRootMode mode;
+  boolean delegatesFocus = false;
 };
 
 [Exposed=Window,
