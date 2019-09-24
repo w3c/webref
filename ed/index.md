@@ -608,7 +608,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/cookie-store/) (16 September 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/cookie-store/) (24 September 2019)
 - Repository: [GitHub wicg/cookie-store](https://github.com/wicg/cookie-store)
 - Shortname: no shortname
 
@@ -4432,7 +4432,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (23 September 2019)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (24 September 2019)
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
@@ -4597,7 +4597,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://encoding.spec.whatwg.org/) (9 August 2019)
+- Crawled version: [Editor's Draft](https://encoding.spec.whatwg.org/) (24 September 2019)
 - Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
 - Latest published version: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-encoding-20180327/)
@@ -4697,7 +4697,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/webappsec-feature-policy/) (3 September 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/webappsec-feature-policy/) (24 September 2019)
 - Repository: [GitHub w3c/webappsec-feature-policy](https://github.com/w3c/webappsec-feature-policy)
 - Shortname: no shortname
 
@@ -4726,7 +4726,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (15 September 2019)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (24 September 2019)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -6244,7 +6244,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://notifications.spec.whatwg.org/) (9 August 2019)
+- Crawled version: [Living Standard](https://notifications.spec.whatwg.org/) (24 September 2019)
 - Repository: [GitHub whatwg/notifications](https://github.com/whatwg/notifications)
 - Shortname: no shortname
 
@@ -7616,7 +7616,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (19 August 2019)
+- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (24 September 2019)
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -7818,7 +7818,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (19 September 2019)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (24 September 2019)
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
@@ -8505,7 +8505,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/) (23 September 2019)
+- Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/) (24 September 2019)
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-20190521/)
@@ -8606,7 +8606,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (9 August 2019)
+- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/) (24 September 2019)
 - Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
 - Shortname: no shortname
 
