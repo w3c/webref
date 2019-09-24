@@ -18,6 +18,14 @@
 - Missing references for links: *INS* https://www.w3.org/TR/css-contain-1/
 
 
+## CSS Masking Module Level 1
+
+- URL: [https://www.w3.org/TR/css-masking-1/](https://www.w3.org/TR/css-masking-1/)
+- Crawled version: [Editor's Draft](https://drafts.fxtf.org/css-masking-1/)
+- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
+- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+
+
 ## DOM Standard
 
 - URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)

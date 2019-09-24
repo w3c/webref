@@ -18,6 +18,14 @@
 - Missing references for links: *INS* https://www.w3.org/TR/css-contain-1/
 
 
+## CSS Masking Module Level 1
+
+- URL: [https://www.w3.org/TR/css-masking-1/](https://www.w3.org/TR/css-masking-1/)
+- Crawled version: [Editor's Draft](https://drafts.fxtf.org/css-masking-1/)
+- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
+- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+
+
 ## DOM Standard
 
 - URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
@@ -32,6 +40,14 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/)
 - Repository: [GitHub w3c/gamepad](https://github.com/w3c/gamepad)
 - Missing references for WebIDL names: *INS* DOMHighResTimeStamp, Navigator
+
+
+## Generic Sensor API
+
+- URL: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/sensors/)
+- Repository: [GitHub w3c/sensors](https://github.com/w3c/sensors)
+- Missing references for links: *DEL* https://w3c.github.io/webappsec-feature-policy/
 
 
 ## Web IDL
