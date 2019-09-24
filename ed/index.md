@@ -5229,7 +5229,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (20 September 2019)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (24 September 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6369,7 +6369,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (Tue Sep 24 2019)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-payment-handler-20180108/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-payment-handler-20190924/)
 - Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
 - Shortname: payment-handler
 
@@ -7793,7 +7793,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/manifest/) (Tue Sep 24 2019)
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-appmanifest-20190911/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-appmanifest-20190924/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
 - Shortname: appmanifest
 
@@ -8506,7 +8506,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/) (20 September 2019)
+- Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/) (23 September 2019)
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-20190521/)
