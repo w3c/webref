@@ -7791,7 +7791,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/manifest/) (Wed Sep 25 2019)
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-appmanifest-20190924/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-appmanifest-20190925/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
 - Shortname: appmanifest
 
