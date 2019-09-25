@@ -8738,7 +8738,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/) (13 September 2019)
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/) (25 September 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8764,7 +8764,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/) (24 September 2019)
+- Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/) (25 September 2019)
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-20190521/)
@@ -8801,7 +8801,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-gamepads-module/) (19 September 2019)
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-gamepads-module/) (25 September 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
