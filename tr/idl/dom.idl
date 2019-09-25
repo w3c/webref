@@ -324,6 +324,7 @@ interface DocumentFragment : Node {
 interface ShadowRoot : DocumentFragment {
   readonly attribute ShadowRootMode mode;
   readonly attribute Element host;
+  attribute EventHandler onslotchange;
 };
 
 enum ShadowRootMode { "open", "closed" };
