@@ -1,15 +1,20 @@
 {
   "spec": {
-    "title": "CSS Conditional Rules Module Level 3",
-    "url": "https://drafts.csswg.org/css-conditional-3/"
+    "title": "CSS Conditional Rules Module Level 4",
+    "url": "https://drafts.csswg.org/css-conditional-4/"
   },
   "properties": {},
   "descriptors": {},
   "valuespaces": {
-    "<supports-condition>": {
-      "value": "not <supports-in-parens> | <supports-in-parens> [ and <supports-in-parens> ]* | <supports-in-parens> [ or <supports-in-parens> ]*"
+    "<supports-feature>": {
+      "value": "<supports-selector-fn> | <supports-decl>"
     },
-    "<supports-in-parens>": {
+    "<supports-selector-fn>": {
+      "value": "selector( <complex-selector> )"
+    }
+  }
+}
+   "<supports-in-parens>": {
       "value": "( <supports-condition> ) | <supports-feature> | <general-enclosed>"
     },
     "<supports-feature>": {
