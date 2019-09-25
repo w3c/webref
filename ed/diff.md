@@ -1,59 +1,142 @@
-% Diff between report from "September 25, 2019" and reference report from "September 15, 2019"
+% Diff between report from "September 25, 2019" and reference report from "September 25, 2019"
 % Reffy
 % September 25, 2019
 
-## CSS Containment Module Level 2
+## CSS Animation Worklet API
 
-- URL: [https://www.w3.org/TR/css-contain-1/](https://www.w3.org/TR/css-contain-1/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-contain/)
+- URL: [https://wicg.github.io/animation-worklet/](https://wicg.github.io/animation-worklet/)
+- Crawled version: [Initial URL](https://wicg.github.io/animation-worklet/)
+- Repository: [GitHub wicg/animation-worklet](https://github.com/wicg/animation-worklet)
+- This specification is not in the new crawl report.
+
+
+## CSS Animation Worklet API
+
+- URL: [https://www.w3.org/TR/css-animation-worklet-1/](https://www.w3.org/TR/css-animation-worklet-1/)
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-animationworklet-1/)
+- This specification was not in the reference crawl report.
+
+
+## CSS Color Adjustment Module Level 1
+
+- URL: [https://www.w3.org/TR/css-color-adjust-1/](https://www.w3.org/TR/css-color-adjust-1/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-color-adjust-1/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec title: *INS* CSS Containment Module Level 2 / *DEL* CSS Containment Module Level 1
+- This specification was not in the reference crawl report.
 
 
-## CSS Display Module Level 3
+## CSS Color Module Level 5
 
-- URL: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-display/)
+- URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-color-5/)
+- This specification was not in the reference crawl report.
+
+
+## CSS Conditional Rules Module Level 4
+
+- URL: [https://drafts.csswg.org/css-conditional-4/](https://drafts.csswg.org/css-conditional-4/)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-conditional-4/)
+- This specification was not in the reference crawl report.
+
+
+## CSS Fragmentation Module Level 4
+
+- URL: [https://www.w3.org/TR/css-break-4/](https://www.w3.org/TR/css-break-4/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-break-4/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *INS* https://www.w3.org/TR/css-contain-1/
+- This specification was not in the reference crawl report.
 
 
-## CSS Masking Module Level 1
+## CSS Nesting Module
 
-- URL: [https://www.w3.org/TR/css-masking-1/](https://www.w3.org/TR/css-masking-1/)
-- Crawled version: [Editor's Draft](https://drafts.fxtf.org/css-masking-1/)
-- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
-
-
-## DOM Standard
-
-- URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://dom.spec.whatwg.org/)
-- Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
-- Missing references for links: *INS* https://w3c.github.io/deviceorientation/spec-source-orientation.html
+- URL: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-nesting-1/)
+- This specification was not in the reference crawl report.
 
 
-## Gamepad
+## CSS Overscroll Behavior Module Level 1
 
-- URL: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/)
-- Repository: [GitHub w3c/gamepad](https://github.com/w3c/gamepad)
-- Missing references for WebIDL names: *INS* DOMHighResTimeStamp, Navigator
-
-
-## Generic Sensor API
-
-- URL: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/sensors/)
-- Repository: [GitHub w3c/sensors](https://github.com/w3c/sensors)
-- Missing references for links: *DEL* https://w3c.github.io/webappsec-feature-policy/
+- URL: [https://www.w3.org/TR/css-overscroll-1/](https://www.w3.org/TR/css-overscroll-1/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-overscroll-1/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- This specification was not in the reference crawl report.
 
 
-## Web IDL
+## CSS Overscroll Behavior Module Level 1
 
-- URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
-- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/)
-- Missing references for links: *INS* https://w3c.github.io/deviceorientation/spec-source-orientation.html
+- URL: [https://wicg.github.io/overscroll-behavior/](https://wicg.github.io/overscroll-behavior/)
+- Crawled version: [Initial URL](https://wicg.github.io/overscroll-behavior/)
+- Repository: [GitHub wicg/overscroll-behavior](https://github.com/wicg/overscroll-behavior)
+- This specification is not in the new crawl report.
+
+
+## CSS Scrollbars Module Level 1
+
+- URL: [https://drafts.csswg.org/css-scrollbars-1/](https://drafts.csswg.org/css-scrollbars-1/)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-scrollbars-1/)
+- This specification is not in the new crawl report.
+
+
+## CSS Scrollbars Module Level 1
+
+- URL: [https://www.w3.org/TR/css-scrollbars-1/](https://www.w3.org/TR/css-scrollbars-1/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-scrollbars/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- This specification was not in the reference crawl report.
+
+
+## CSS Shadow Parts
+
+- URL: [https://drafts.csswg.org/css-shadow-parts-1/](https://drafts.csswg.org/css-shadow-parts-1/)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-shadow-parts-1/)
+- This specification is not in the new crawl report.
+
+
+## CSS Shadow Parts
+
+- URL: [https://www.w3.org/TR/css-shadow-parts-1/](https://www.w3.org/TR/css-shadow-parts-1/)
+- Crawled version: [Editor's Draft](http://drafts.csswg.org/css-shadow-parts/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- This specification was not in the reference crawl report.
+
+
+## CSS Spatial Navigation Level 1
+
+- URL: [https://www.w3.org/TR/css-nav-1/](https://www.w3.org/TR/css-nav-1/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-nav-1/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- This specification was not in the reference crawl report.
+
+
+## Identifiers for WebRTC's Statistics API
+
+- URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/)
+- Repository: [GitHub w3c/webrtc-stats](https://github.com/w3c/webrtc-stats)
+- Missing references for links: *INS* https://w3c.github.io/webrtc-pc/
+- Inconsistent references for links: *DEL* https://w3c.github.io/webrtc-pc/
+
+
+## Identity for WebRTC 1.0
+
+- URL: [https://www.w3.org/TR/webrtc-identity/](https://www.w3.org/TR/webrtc-identity/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-identity/identity.html)
+- Repository: [GitHub w3c/webrtc-identity](https://github.com/w3c/webrtc-identity)
+- This specification was not in the reference crawl report.
+
+
+## Scroll-linked Animations
+
+- URL: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
+- Crawled version: [Initial URL](https://drafts.csswg.org/scroll-animations-1/)
+- This specification was not in the reference crawl report.
+
+
+## Scroll-linked Animations
+
+- URL: [https://wicg.github.io/scroll-animations/](https://wicg.github.io/scroll-animations/)
+- Crawled version: [Initial URL](https://wicg.github.io/scroll-animations/)
+- Repository: [GitHub wicg/scroll-animations](https://github.com/wicg/scroll-animations)
+- This specification is not in the new crawl report.
 
 
