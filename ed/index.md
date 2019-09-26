@@ -2027,7 +2027,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (25 September 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (20 September 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/)
@@ -3841,7 +3841,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-3/) (17 September 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-3/) (25 September 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
@@ -5150,7 +5150,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fullscreen.spec.whatwg.org/) (12 September 2019)
+- Crawled version: [Living Standard](https://fullscreen.spec.whatwg.org/) (26 September 2019)
 - Repository: [GitHub whatwg/fullscreen](https://github.com/whatwg/fullscreen)
 - Shortname: no shortname
 
@@ -5448,7 +5448,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (24 September 2019)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (26 September 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8047,7 +8047,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/manifest/) (Thu Sep 26 2019)
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-appmanifest-20190925/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-appmanifest-20190926/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
 - Shortname: appmanifest
 
@@ -8422,7 +8422,7 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Web NFC API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingWebIdlRef=true}
+## Web NFC API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -8435,6 +8435,8 @@ Informative references to this spec from:
 - Spec uses WebIDL but does not reference it normatively
 - Missing references for WebIDL names: 
      * `EventHandler` defined in [HTML Standard](https://html.spec.whatwg.org/)
+- Missing references for links: 
+     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/)
 
 ### Known dependencies on this specification {.dependencies}
 
