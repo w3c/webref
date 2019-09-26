@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define CSS and WebIDL content",
   "description": "The crawl includes specifications published by W3C Working Groups, W3C Community Groups and WHATWG, that define CSS and/or WebIDL content. The specifications are at various stages of maturity.",
-  "date": "2019-09-26T12:38:14.877Z",
+  "date": "2019-09-26T18:37:38.377Z",
   "stats": {
     "crawled": 242,
     "errors": 0,
@@ -13620,7 +13620,7 @@
     {
       "title": "Encrypted Media Extensions",
       "shortname": "encrypted-media",
-      "date": "22 February 2018",
+      "date": "September 2019 ",
       "url": "https://www.w3.org/TR/encrypted-media/",
       "latest": "https://www.w3.org/TR/encrypted-media/",
       "datedUrl": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/",
@@ -13643,6 +13643,13 @@
         "missingLinkRef": [],
         "inconsistentRef": [
           {
+            "link": "https://www.w3.org/TR/html51/",
+            "ref": {
+              "name": "HTML",
+              "url": "https://html.spec.whatwg.org/multipage/"
+            }
+          },
+          {
             "link": "https://www.w3.org/TR/dom/",
             "ref": {
               "name": "DOM",
@@ -13659,6 +13666,11 @@
         ],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://www.w3.org/TR/encrypted-media/",
+              "title": "Encrypted Media Extensions",
+              "crawled": "https://w3c.github.io/encrypted-media/"
+            },
             {
               "url": "https://w3c.github.io/media-capabilities/",
               "title": "Media Capabilities",
@@ -16011,11 +16023,6 @@
               "crawled": "https://encoding.spec.whatwg.org/"
             },
             {
-              "url": "https://www.w3.org/TR/encrypted-media/",
-              "title": "Encrypted Media Extensions",
-              "crawled": "https://w3c.github.io/encrypted-media/"
-            },
-            {
               "url": "https://w3c.github.io/webappsec-feature-policy/",
               "title": "Feature Policy",
               "crawled": "https://w3c.github.io/webappsec-feature-policy/"
@@ -16091,7 +16098,14 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "RTCDataChannelState",
+          "RTCDtlsTransportState",
+          "RTCIceCandidateType",
+          "RTCIceRole",
+          "RTCPriorityType",
+          "RTCStats"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -16145,7 +16159,9 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "RTCPeerConnection"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -17437,7 +17453,7 @@
     {
       "title": "MediaStream Recording",
       "shortname": "mediastream-recording",
-      "date": "2 August 2019",
+      "date": "26 September 2019",
       "url": "https://www.w3.org/TR/mediastream-recording/",
       "latest": "https://www.w3.org/TR/mediastream-recording/",
       "datedUrl": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/",
@@ -22134,7 +22150,7 @@
     {
       "title": "Web IDL",
       "shortname": "WebIDL-1",
-      "date": "24 September 2019",
+      "date": "26 September 2019",
       "url": "https://www.w3.org/TR/WebIDL-1/",
       "latest": "https://www.w3.org/TR/WebIDL-1/",
       "datedUrl": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/",
@@ -23410,10 +23426,9 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownIdlNames": [],
@@ -23473,7 +23488,7 @@
           ]
         },
         "noEdDraft": false,
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -23496,7 +23511,10 @@
         "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "RTCPriorityType",
+          "RTCRtpEncodingParameters"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [

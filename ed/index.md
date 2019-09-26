@@ -4857,7 +4857,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/encrypted-media/) (22 February 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/encrypted-media/) (September 2019 )
 - Editor's Draft: [https://w3c.github.io/encrypted-media/](https://w3c.github.io/encrypted-media/)
 - Latest published version: [https://www.w3.org/TR/encrypted-media/](https://www.w3.org/TR/encrypted-media/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
@@ -4867,6 +4867,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
      * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
      * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/), related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
 
@@ -4874,6 +4875,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 
 Informative references to this spec from:
@@ -5648,7 +5650,6 @@ Informative references to this spec from:
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
@@ -5661,7 +5662,7 @@ Informative references to this spec from:
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
-## Identifiers for WebRTC's Statistics API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Identifiers for WebRTC's Statistics API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -5674,6 +5675,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `RTCDataChannelState`, `RTCDtlsTransportState`, `RTCIceCandidateType`, `RTCIceRole`, `RTCPriorityType`, `RTCStats`
 - Missing references for links: 
      * [`https://w3c.github.io/webrtc-pc/`](https://w3c.github.io/webrtc-pc/)
 - Inconsistent references for links: 
@@ -5689,7 +5691,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Identity for WebRTC 1.0 {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Identity for WebRTC 1.0 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -5702,6 +5704,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `RTCPeerConnection`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
@@ -6297,7 +6300,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-record/) (2 August 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-record/) (26 September 2019)
 - Editor's Draft: [https://w3c.github.io/mediacapture-record/](https://w3c.github.io/mediacapture-record/)
 - Latest published version: [https://www.w3.org/TR/mediastream-recording/](https://www.w3.org/TR/mediastream-recording/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
@@ -8228,7 +8231,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/) (24 September 2019)
+- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/) (26 September 2019)
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
@@ -8634,7 +8637,7 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-ok=true}
+## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-noIdlContent=true}
 
 ### Spec info {.info}
 
@@ -8647,7 +8650,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- No WebIDL definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8667,7 +8670,7 @@ Informative references to this spec from:
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 
 
-## WebRTC DSCP Control API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true}
+## WebRTC DSCP Control API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -8681,6 +8684,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `RTCPriorityType`, `RTCRtpEncodingParameters`
 - Missing references for links: 
      * [`https://w3c.github.io/webrtc-pc/`](https://w3c.github.io/webrtc-pc/)
 
