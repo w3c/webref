@@ -108,11 +108,20 @@
 - This specification was not in the reference crawl report.
 
 
+## Encrypted Media Extensions
+
+- URL: [https://www.w3.org/TR/encrypted-media/](https://www.w3.org/TR/encrypted-media/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/encrypted-media/)
+- Repository: [GitHub w3c/encrypted-media](https://github.com/w3c/encrypted-media)
+- Inconsistent references for links: *INS* https://www.w3.org/TR/html51/
+
+
 ## Identifiers for WebRTC's Statistics API
 
 - URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/)
 - Repository: [GitHub w3c/webrtc-stats](https://github.com/w3c/webrtc-stats)
+- Unknown WebIDL names used: *INS* RTCDataChannelState, RTCDtlsTransportState, RTCIceCandidateType, RTCIceRole, RTCPriorityType, RTCStats
 - Missing references for links: *INS* https://w3c.github.io/webrtc-pc/
 - Inconsistent references for links: *DEL* https://w3c.github.io/webrtc-pc/
 
@@ -146,5 +155,23 @@
 - Crawled version: [Initial URL](https://w3c.github.io/web-nfc/)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Missing references for links: *INS* https://w3c.github.io/page-visibility/
+
+
+## WebRTC 1.0: Real-time Communication Between Browsers
+
+- URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/)
+- Repository: [GitHub w3c/webrtc-pc](https://github.com/w3c/webrtc-pc)
+- Spec is OK: *INS* false / *DEL* true
+- No WebIDL definitions found: *INS* true / *DEL* false
+- Obsolete WebIDL constructs found: *DEL* false
+
+
+## WebRTC DSCP Control API
+
+- URL: [https://www.w3.org/TR/webrtc-dscp/](https://www.w3.org/TR/webrtc-dscp/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-dscp-exp/)
+- Repository: [GitHub w3c/webrtc-dscp-exp](https://github.com/w3c/webrtc-dscp-exp)
+- Unknown WebIDL names used: *INS* RTCPriorityType, RTCRtpEncodingParameters
 
 

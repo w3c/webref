@@ -23,8 +23,11 @@ Basically all specifications have normative dependencies on some other specifica
 
 ## Specifications without WebIDL definitions
 
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
-=> 0 specification found
+=> 1 specification found
+
+Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 
 
 ## Specifications without CSS definitions
@@ -112,12 +115,20 @@ Reffy was not expecting to find CSS definitions in the specifications listed her
 - `Date` used in [Reporting API 1](https://w3c.github.io/reporting/)
 - `KeyframeEffectReadOnly` used in [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - `PermissionName` used in [Permissions](https://w3c.github.io/permissions/)
+- `RTCDataChannelState` used in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
+- `RTCDtlsTransportState` used in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
+- `RTCIceCandidateType` used in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
+- `RTCIceRole` used in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
+- `RTCPeerConnection` used in [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
+- `RTCPriorityType` used in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/), [WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)
+- `RTCRtpEncodingParameters` used in [WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)
+- `RTCStats` used in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - `ReadableStream` used in [CSS Parser API](https://wicg.github.io/CSS-Parser-API/), [Encoding Standard](https://encoding.spec.whatwg.org/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://w3c.github.io/FileAPI/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/)
 - `WritableStream` used in [Encoding Standard](https://encoding.spec.whatwg.org/)
 - `bool` used in [Media Session Standard](https://w3c.github.io/mediasession/)
 
-=> 9 WebIDL names found
+=> 17 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -812,6 +823,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/) but related reference "RESOURCE-TIMING-1" uses URL [`https://www.w3.org/TR/resource-timing-1/`](https://www.w3.org/TR/resource-timing-1/)
     * [`https://w3c.github.io/IntersectionObserver/`](https://w3c.github.io/IntersectionObserver/) but related reference "INTERSECTION-OBSERVER" uses URL [`https://www.w3.org/TR/intersection-observer/`](https://www.w3.org/TR/intersection-observer/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/) links to:
+    * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING" uses URL [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
 - [Event Timing API](https://wicg.github.io/event-timing/) links to:
@@ -953,6 +965,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebUSB API](https://wicg.github.io/webusb/) links to [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 198 inconsistent references for links found in 100 specifications
+=> 199 inconsistent references for links found in 100 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
