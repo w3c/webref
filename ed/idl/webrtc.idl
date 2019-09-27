@@ -144,11 +144,6 @@ interface RTCPeerConnection : EventTarget  {
                                 RTCPeerConnectionErrorCallback failureCallback);
 };
 
-          tests: 1
-
-      idlharness
-     🔒
-
 callback RTCPeerConnectionErrorCallback = void (DOMException error);
 
 callback RTCSessionDescriptionCallback = void (RTCSessionDescriptionInit description);
@@ -172,11 +167,6 @@ interface RTCSessionDescription {
   readonly attribute DOMString sdp;
   [Default] object toJSON();
 };
-
-          tests: 1
-
-      idlharness
-     🔒
 
 dictionary RTCSessionDescriptionInit {
   RTCSdpType type;
@@ -202,11 +192,6 @@ interface RTCIceCandidate {
   readonly attribute DOMString? usernameFragment;
   RTCIceCandidateInit toJSON();
 };
-
-          tests: 1
-
-      idlharness
-     🔒
 
 dictionary RTCIceCandidateInit {
   DOMString candidate = "";
@@ -240,11 +225,6 @@ interface RTCPeerConnectionIceEvent : Event {
   readonly attribute DOMString? url;
 };
 
-          tests: 1
-
-      idlharness
-     🔒
-
 dictionary RTCPeerConnectionIceEventInit : EventInit {
   RTCIceCandidate? candidate;
   DOMString? url;
@@ -258,11 +238,6 @@ interface RTCPeerConnectionIceErrorEvent : Event {
   readonly attribute unsigned short errorCode;
   readonly attribute USVString errorText;
 };
-
-          tests: 1
-
-      idlharness
-     🔒
 
 dictionary RTCPeerConnectionIceErrorEventInit : EventInit {
   DOMString hostCandidate;
@@ -283,11 +258,6 @@ partial interface RTCPeerConnection {
       generateCertificate(AlgorithmIdentifier keygenAlgorithm);
 };
 
-          tests: 1
-
-      idlharness
-     🔒
-
 dictionary RTCCertificateExpiration {
   [EnforceRange] DOMTimeStamp expires;
 };
@@ -299,11 +269,6 @@ interface RTCCertificate {
   sequence<RTCDtlsFingerprint> getFingerprints();
 };
 
-          tests: 1
-
-      idlharness
-     🔒
-
 partial interface RTCPeerConnection {
   sequence<RTCRtpSender> getSenders();
   sequence<RTCRtpReceiver> getReceivers();
@@ -314,11 +279,6 @@ partial interface RTCPeerConnection {
                                    optional RTCRtpTransceiverInit init = {});
   attribute EventHandler ontrack;
 };
-
-          tests: 1
-
-      idlharness
-     🔒
 
 dictionary RTCRtpTransceiverInit {
   RTCRtpTransceiverDirection direction = "sendrecv";
@@ -346,11 +306,6 @@ interface RTCRtpSender {
   void setStreams(MediaStream... streams);
   Promise<RTCStatsReport> getStats();
 };
-
-          tests: 1
-
-      idlharness
-     🔒
 
 dictionary RTCRtpParameters {
   required sequence<RTCRtpHeaderExtensionParameters> headerExtensions;
@@ -443,11 +398,6 @@ interface RTCRtpReceiver {
   Promise<RTCStatsReport> getStats();
 };
 
-          tests: 1
-
-      idlharness
-     🔒
-
 dictionary RTCRtpContributingSource {
   required DOMHighResTimeStamp timestamp;
   required unsigned long source;
@@ -470,11 +420,6 @@ interface RTCRtpTransceiver {
   void setCodecPreferences(sequence<RTCRtpCodecCapability> codecs);
 };
 
-          tests: 1
-
-      idlharness
-     🔒
-
 [Exposed=Window]
 interface RTCDtlsTransport : EventTarget {
   [SameObject] readonly attribute RTCIceTransport iceTransport;
@@ -483,11 +428,6 @@ interface RTCDtlsTransport : EventTarget {
   attribute EventHandler onstatechange;
   attribute EventHandler onerror;
 };
-
-          tests: 1
-
-      idlharness
-     🔒
 
 enum RTCDtlsTransportState {
   "new",
@@ -517,11 +457,6 @@ interface RTCIceTransport : EventTarget {
   attribute EventHandler ongatheringstatechange;
   attribute EventHandler onselectedcandidatepairchange;
 };
-
-          tests: 1
-
-      idlharness
-     🔒
 
 dictionary RTCIceParameters {
   DOMString usernameFragment;
@@ -569,11 +504,6 @@ interface RTCTrackEvent : Event {
   readonly attribute RTCRtpTransceiver transceiver;
 };
 
-          tests: 1
-
-      idlharness
-     🔒
-
 dictionary RTCTrackEventInit : EventInit {
   required RTCRtpReceiver receiver;
   required MediaStreamTrack track;
@@ -588,11 +518,6 @@ partial interface RTCPeerConnection {
   attribute EventHandler ondatachannel;
 };
 
-          tests: 1
-
-      idlharness
-     🔒
-
 [Exposed=Window]
 interface RTCSctpTransport : EventTarget {
   readonly attribute RTCDtlsTransport transport;
@@ -601,11 +526,6 @@ interface RTCSctpTransport : EventTarget {
   readonly attribute unsigned short? maxChannels;
   attribute EventHandler onstatechange;
 };
-
-          tests: 1
-
-      idlharness
-     🔒
 
 enum RTCSctpTransportState {
   "connecting",
@@ -640,11 +560,6 @@ interface RTCDataChannel : EventTarget {
   void send(ArrayBufferView data);
 };
 
-          tests: 1
-
-      idlharness
-     🔒
-
 dictionary RTCDataChannelInit {
   boolean ordered = true;
   [EnforceRange] unsigned short maxPacketLifeTime;
@@ -668,11 +583,6 @@ interface RTCDataChannelEvent : Event {
   readonly attribute RTCDataChannel channel;
 };
 
-          tests: 1
-
-      idlharness
-     🔒
-
 dictionary RTCDataChannelEventInit : EventInit {
   required RTCDataChannel channel;
 };
@@ -680,11 +590,6 @@ dictionary RTCDataChannelEventInit : EventInit {
 partial interface RTCRtpSender {
   readonly attribute RTCDTMFSender? dtmf;
 };
-
-          tests: 1
-
-      idlharness
-     🔒
 
 [Exposed=Window]
 interface RTCDTMFSender : EventTarget {
@@ -708,11 +613,6 @@ partial interface RTCPeerConnection {
   Promise<RTCStatsReport> getStats(optional MediaStreamTrack? selector = null);
   attribute EventHandler onstatsended;
 };
-
-          tests: 1
-
-      idlharness
-     🔒
 
 [Exposed=Window]
 interface RTCStatsReport {
@@ -778,11 +678,6 @@ interface RTCErrorEvent : Event {
   constructor(DOMString type, RTCErrorEventInit eventInitDict);
   [SameObject] readonly attribute RTCError error;
 };
-
-          tests: 1
-
-      idlharness
-     🔒
 
 dictionary RTCErrorEventInit : EventInit {
   required RTCError error;
