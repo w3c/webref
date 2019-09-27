@@ -24,15 +24,15 @@ dictionary FocusableAreasOption {
 };
 
 dictionary SpatialNavigationSearchOptions {
-    required SpatialNavigationDirection dir;
     sequence<Node>? candidates;
     Node? container;
+    boolean inside = false;
 };
 
 partial interface Element {
     Node getSpatialNavigationContainer();
     sequence<Node> focusableAreas(optional FocusableAreasOption option);
-    Node? spatialNavigationSearch(SpatialNavigationSearchOptions options);
+    Node? spatialNavigationSearch(SpatialNavigationDirection dir, optional SpatialNavigationSearchOptions options);
 };
 
 [Exposed=Window,
