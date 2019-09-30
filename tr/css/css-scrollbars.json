@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "CSS Scrollbars Module Level 1",
-    "url": "https://drafts.csswg.org/css-scrollbars-1/"
+    "url": "https://www.w3.org/TR/2018/WD-css-scrollbars-1-20180925/"
   },
   "properties": {
     "scrollbar-color": {
@@ -11,20 +11,22 @@
       "appliesTo": "boxes to which overflow applies",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "specified keyword or two computed colors",
+      "media": "visual",
+      "computedValue": "two computed colors or the keyword auto",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value"
+      "animationType": "color"
     },
     "scrollbar-width": {
       "name": "scrollbar-width",
-      "value": "auto | thin | none",
+      "value": "auto | thin | none | <length>",
       "initial": "auto",
       "appliesTo": "boxes to which overflow applies",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "specified keyword or absolute length",
+      "media": "visual",
+      "computedValue": "absolute length or the keyword auto.",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value"
+      "animationType": "length"
     }
   },
   "descriptors": {},
