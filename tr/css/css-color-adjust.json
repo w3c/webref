@@ -1,0 +1,43 @@
+{
+  "spec": {
+    "title": "CSS Color Adjustment Module Level 1",
+    "url": "https://www.w3.org/TR/2019/WD-css-color-adjust-1-20190523/"
+  },
+  "properties": {
+    "color-scheme": {
+      "name": "color-scheme",
+      "value": "auto | [ light | dark | <custom-ident> ]+ | only && light",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "the keyword auto, or optional only keyword and ordered list of specified color scheme keywords, with any <custom-ident>s or repeated keywords dropped",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "forced-color-adjust": {
+      "name": "forced-color-adjust",
+      "value": "auto | none",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "color-adjust": {
+      "name": "color-adjust",
+      "value": "economy | exact",
+      "initial": "economy",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {}
+}
