@@ -1,17 +1,6 @@
-% Diff between report from "September 30, 2019" and reference report from "September 30, 2019"
+% Diff between report from "October 01, 2019" and reference report from "September 30, 2019"
 % Reffy
-% September 30, 2019
-
-## [No title found for https://immersive-web.github.io/webxr-ar-module/]
-
-- URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/)
-- Spec title: *INS* [No title found for https://immersive-web.github.io/webxr-ar-module/] / *DEL* WebXR Augmented Reality Module - Level 1
-- No WebIDL definitions found: *INS* true / *DEL* false
-- WebIDL names also defined elsewhere: *DEL* _dependencies, XRSessionMode
-- Missing references for WebIDL names: *DEL* XRSession
-- Missing references for links: *DEL* https://www.w3.org/TR/webxr/, https://www.w3.org/TR/compositing-1/
-
+% October 01, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -1091,6 +1080,7 @@
 - URL: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
 - Crawled version: [Initial URL](https://wicg.github.io/entries-api/)
 - Repository: [GitHub wicg/entries-api](https://github.com/wicg/entries-api)
+- Unknown WebIDL names used: *INS* Window
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 
 
@@ -1980,12 +1970,19 @@
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 
 
+## WebXR Augmented Reality Module - Level 1
+
+- URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/)
+- WebIDL names also defined elsewhere: *DEL* _dependencies
+
+
 ## WebXR Device API
 
 - URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/)
 - Repository: [GitHub immersive-web/webxr](https://github.com/immersive-web/webxr)
-- WebIDL names also defined elsewhere: *DEL* _dependencies, XRSessionMode
+- WebIDL names also defined elsewhere: *DEL* _dependencies
 
 
 ## WebXR Gamepads Module - Level 1
