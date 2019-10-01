@@ -8481,7 +8481,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://webassembly.github.io/spec/js-api/) (30 September 2019)
 - Editor's Draft: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-wasm-js-api-1-20190718/)
+- Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2019/PR-wasm-js-api-1-20191001/)
 - Repository: [GitHub webassembly/spec](https://github.com/webassembly/spec)
 - Shortname: wasm-js-api-1
 
@@ -8512,7 +8512,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://webassembly.github.io/spec/web-api/) (30 September 2019)
 - Editor's Draft: [https://webassembly.github.io/spec/web-api/](https://webassembly.github.io/spec/web-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-wasm-web-api-1-20190718/)
+- Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2019/PR-wasm-web-api-1-20191001/)
 - Repository: [GitHub webassembly/spec](https://github.com/webassembly/spec)
 - Shortname: wasm-web-api-1
 
@@ -8818,7 +8818,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/worklets/) (20 August 2019)
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/worklets/) (1 October 2019)
 - Editor's Draft: [https://drafts.css-houdini.org/worklets/](https://drafts.css-houdini.org/worklets/)
 - Latest published version: [http://www.w3.org/TR/worklets-1/](http://www.w3.org/TR/worklets-1/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
