@@ -1,14 +1,6 @@
-% Diff between report from "September 30, 2019" and reference report from "September 30, 2019"
+% Diff between report from "October 01, 2019" and reference report from "September 30, 2019"
 % Reffy
-% September 30, 2019
-
-## [No title found for https://immersive-web.github.io/webxr-ar-module/]
-
-- URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/)
-- Spec title: *INS* [No title found for https://immersive-web.github.io/webxr-ar-module/] / *DEL* WebXR Augmented Reality Module - Level 1
-- No WebIDL definitions found: *INS* true / *DEL* false
-
+% October 01, 2019
 
 ## Box Tree API Level 1
 
@@ -19,16 +11,16 @@
 
 ## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
 
-- URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css2/)
+- URL: [https://www.w3.org/TR/CSS2/](https://www.w3.org/TR/CSS2/)
+- Crawled version: [Editor's Draft](http://dev.w3.org/csswg/css2/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
 ## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
 
-- URL: [https://www.w3.org/TR/CSS2/](https://www.w3.org/TR/CSS2/)
-- Crawled version: [Editor's Draft](http://dev.w3.org/csswg/css2/)
+- URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css2/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
@@ -73,16 +65,16 @@
 
 ## CSS Basic User Interface Module Level 4
 
-- URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui-4/)
+- URL: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
 ## CSS Basic User Interface Module Level 4
 
-- URL: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui/)
+- URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui-4/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
@@ -619,6 +611,14 @@
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-4/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
+
+
+## File and Directory Entries API
+
+- URL: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
+- Crawled version: [Initial URL](https://wicg.github.io/entries-api/)
+- Repository: [GitHub wicg/entries-api](https://github.com/wicg/entries-api)
+- Unknown WebIDL names used: *INS* Window
 
 
 ## Filter Effects Module Level 2
