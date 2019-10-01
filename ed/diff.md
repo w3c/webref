@@ -2055,6 +2055,7 @@
 - Unknown WebIDL names used: *DEL* EventHandler, Window
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 - Missing references for WebIDL names: *INS* EventHandler
+- Missing references for links: *DEL* https://w3c.github.io/page-visibility/
 
 
 ## Web Share API - Level 1
