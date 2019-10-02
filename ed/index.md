@@ -5446,7 +5446,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (28 September 2019)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (2 October 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5972,7 +5972,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/media-capabilities/) (26 August 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/media-capabilities/) (2 October 2019)
 - Repository: [GitHub w3c/media-capabilities](https://github.com/w3c/media-capabilities)
 - Shortname: no shortname
 
@@ -8685,7 +8685,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (30 September 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (2 October 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
