@@ -4913,7 +4913,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/webappsec-feature-policy/) (30 September 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/webappsec-feature-policy/) (3 October 2019)
 - Repository: [GitHub w3c/webappsec-feature-policy](https://github.com/w3c/webappsec-feature-policy)
 - Shortname: no shortname
 
@@ -8734,7 +8734,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/) (30 September 2019)
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/) (3 October 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8760,7 +8760,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/) (1 October 2019)
+- Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/) (7 October 2019)
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-20190521/)
