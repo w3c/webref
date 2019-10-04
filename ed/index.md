@@ -3992,7 +3992,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-transforms-2/) (13 August 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-transforms-2/) (3 October 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4247,7 +4247,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values-4/) (1 October 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values-4/) (3 October 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-values-4/](https://drafts.csswg.org/css-values-4/)
 - Latest published version: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
@@ -7520,7 +7520,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/ServiceWorker/) (3 October 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/ServiceWorker/) (4 October 2019)
 - Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
 - Shortname: no shortname
 
@@ -8689,7 +8689,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (2 October 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (4 October 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
