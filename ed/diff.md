@@ -534,6 +534,7 @@
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 - WebIDL names also defined elsewhere: *DEL* _dependencies
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-values/
 
 
 ## CSS Images Module Level 4
