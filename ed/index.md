@@ -6731,7 +6731,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/permissions/) (31 October 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/permissions/) (8 October 2019)
 - Editor's Draft: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
 - Latest published version: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-permissions-20170925/)
