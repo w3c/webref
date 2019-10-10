@@ -1,6 +1,6 @@
-% Diff between report from "October 09, 2019" and reference report from "September 30, 2019"
+% Diff between report from "October 10, 2019" and reference report from "September 30, 2019"
 % Reffy
-% October 09, 2019
+% October 10, 2019
 
 ## Accelerated Shape Detection in Images
 
