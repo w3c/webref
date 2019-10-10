@@ -2371,9 +2371,8 @@ No informative reference to this spec from other specs.
 
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-images-3/) (7 October 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-images-3/](https://drafts.csswg.org/css-images-3/)
-- Latest published version: [http://www.w3.org/TR/css3-images/](http://www.w3.org/TR/css3-images/)
-- Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2012/CR-css3-images-20120417/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Latest published version: [https://www.w3.org/TR/css-images-3/](https://www.w3.org/TR/css-images-3/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
 - Shortname: css3-images
 
 ### Potential issue(s) {.anomalies}
@@ -5445,7 +5444,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (6 October 2019)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (10 October 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8687,7 +8686,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (8 October 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (10 October 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
