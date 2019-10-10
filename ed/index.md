@@ -5712,7 +5712,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/IndexedDB/) (30 September 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/IndexedDB/) (10 October 2019)
 - Editor's Draft: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
 - Latest published version: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
@@ -5863,7 +5863,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/largest-contentful-paint/) (23 August 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/largest-contentful-paint/) (10 October 2019)
 - Repository: [GitHub wicg/largest-contentful-paint](https://github.com/wicg/largest-contentful-paint)
 - Shortname: no shortname
 
@@ -8760,7 +8760,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/) (7 October 2019)
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-20190521/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-20191010/)
 - Repository: [GitHub immersive-web/webxr](https://github.com/immersive-web/webxr)
 - Shortname: webxr
 
