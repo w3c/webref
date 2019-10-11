@@ -727,6 +727,14 @@
     at Timer.processTimers (timers.js:223:10)
 
 
+## Identity for WebRTC 1.0
+
+- URL: [https://www.w3.org/TR/webrtc-identity/](https://www.w3.org/TR/webrtc-identity/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-identity/identity.html)
+- Repository: [GitHub w3c/webrtc-identity](https://github.com/w3c/webrtc-identity)
+- Spec is OK: *INS* true / *DEL* false
+
+
 ## Media Capture and Streams
 
 - URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
