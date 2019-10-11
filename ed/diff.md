@@ -1286,8 +1286,10 @@
 - URL: [https://www.w3.org/TR/webrtc-identity/](https://www.w3.org/TR/webrtc-identity/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-identity/identity.html)
 - Repository: [GitHub w3c/webrtc-identity](https://github.com/w3c/webrtc-identity)
+- Spec is OK: *INS* true / *DEL* false
 - Unknown WebIDL names used: *DEL* EventHandler, Window, WorkerGlobalScope
 - WebIDL names also defined elsewhere: *DEL* _dependencies
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/html52/
 
 
 ## Indexed Database API 3.0
