@@ -1,6 +1,6 @@
-% Diff between report from "October 13, 2019" and reference report from "September 30, 2019"
+% Diff between report from "October 14, 2019" and reference report from "September 30, 2019"
 % Reffy
-% October 13, 2019
+% October 14, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -89,8 +89,8 @@
 
 ## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
 
-- URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css2/)
+- URL: [https://www.w3.org/TR/CSS2/](https://www.w3.org/TR/CSS2/)
+- Crawled version: [Editor's Draft](http://dev.w3.org/csswg/css2/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 - WebIDL names also defined elsewhere: *DEL* _dependencies
@@ -98,8 +98,8 @@
 
 ## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
 
-- URL: [https://www.w3.org/TR/CSS2/](https://www.w3.org/TR/CSS2/)
-- Crawled version: [Editor's Draft](http://dev.w3.org/csswg/css2/)
+- URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css2/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 - WebIDL names also defined elsewhere: *DEL* _dependencies
@@ -862,14 +862,6 @@
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 
 
-## CSS Shapes Module Level 2
-
-- URL: [https://drafts.csswg.org/css-shapes-2/](https://drafts.csswg.org/css-shapes-2/)
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-shapes-2/)
-- Unexpected WebIDL definitions found: *INS* false / *DEL* true
-- WebIDL names also defined elsewhere: *DEL* _dependencies
-
-
 ## CSS Spatial Navigation Level 1
 
 - URL: [https://www.w3.org/TR/css-nav-1/](https://www.w3.org/TR/css-nav-1/)
@@ -1271,6 +1263,18 @@
     at tryOnTimeout (timers.js:300:5)
     at listOnTimeout (timers.js:263:5)
     at Timer.processTimers (timers.js:223:10)
+
+
+## https://drafts.csswg.org/css-shapes-2/
+
+- URL: [https://drafts.csswg.org/css-shapes-2/](https://drafts.csswg.org/css-shapes-2/)
+- Crawled version: [Latest published version](undefined)
+- Spec title: *INS* https://drafts.csswg.org/css-shapes-2/ / *DEL* CSS Shapes Module Level 2
+- Spec could not be rendered: *INS* Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/runner/work/reffy-reports/reffy/src/cli/crawl-specs.js:359:33)
+    at Object.onceWrapper (events.js:286:20)
+    at ChildProcess.emit (events.js:198:13)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)
 
 
 ## Identifiers for WebRTC's Statistics API
