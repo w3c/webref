@@ -823,6 +823,16 @@
 - Spec is OK: *INS* true / *DEL* false
 
 
+## Page not found · GitHub Pages
+
+- URL: [https://w3c.github.io/speech-api/](https://w3c.github.io/speech-api/)
+- Crawled version: [Initial URL](https://w3c.github.io/speech-api/)
+- Spec title: *INS* Page not found · GitHub Pages / *DEL* Web Speech API
+- No normative references found: *INS* true / *DEL* false
+- No WebIDL definitions found: *INS* true / *DEL* false
+- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
+
+
 ## Payment Method: Basic Card
 
 - URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
@@ -976,13 +986,6 @@
 - URL: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
 - Crawled version: [Initial URL](https://w3c.github.io/web-share/)
 - Missing references for WebIDL names: *INS* Navigator
-
-
-## Web Speech API
-
-- URL: [https://w3c.github.io/speech-api/](https://w3c.github.io/speech-api/)
-- Crawled version: [Initial URL](https://w3c.github.io/speech-api/)
-- Spec is OK: *INS* true / *DEL* false
 
 
 ## WebGL 2.0 Specification
