@@ -14,17 +14,21 @@
 ## Specifications without normative dependencies
 
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
+- [Page not found · GitHub Pages](https://w3c.github.io/speech-api/)
 - [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
 
-=> 2 specifications found
+=> 3 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
 
 ## Specifications without WebIDL definitions
 
+- [Page not found · GitHub Pages](https://w3c.github.io/speech-api/)
 
-=> 0 specification found
+=> 1 specification found
+
+Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 
 
 ## Specifications without CSS definitions

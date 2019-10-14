@@ -1568,6 +1568,18 @@
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 
 
+## Page not found · GitHub Pages
+
+- URL: [https://w3c.github.io/speech-api/](https://w3c.github.io/speech-api/)
+- Crawled version: [Initial URL](https://w3c.github.io/speech-api/)
+- Spec title: *INS* Page not found · GitHub Pages / *DEL* Web Speech API
+- No normative references found: *INS* true / *DEL* false
+- No WebIDL definitions found: *INS* true / *DEL* false
+- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* EventHandler, Window
+- WebIDL names also defined elsewhere: *DEL* _dependencies
+
+
 ## Page Visibility Level 2
 
 - URL: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
@@ -2070,15 +2082,6 @@
 - Unknown WebIDL names used: *DEL* Navigator
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 - Missing references for WebIDL names: *INS* Navigator
-
-
-## Web Speech API
-
-- URL: [https://w3c.github.io/speech-api/](https://w3c.github.io/speech-api/)
-- Crawled version: [Initial URL](https://w3c.github.io/speech-api/)
-- Spec is OK: *INS* true / *DEL* false
-- Unknown WebIDL names used: *DEL* EventHandler, Window
-- WebIDL names also defined elsewhere: *DEL* _dependencies
 
 
 ## WebAssembly JavaScript Interface

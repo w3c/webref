@@ -4754,7 +4754,6 @@ Normative references to this spec from:
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web NFC API](https://w3c.github.io/web-nfc/)
-- [Web Speech API](https://w3c.github.io/speech-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
@@ -5602,7 +5601,6 @@ Normative references to this spec from:
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
-- [Web Speech API](https://w3c.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
@@ -6209,7 +6207,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/mediasession/) (27 September 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/mediasession/) (14 October 2019)
 - Repository: [GitHub w3c/mediasession](https://github.com/w3c/mediasession)
 - Shortname: no shortname
 
@@ -6541,6 +6539,25 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+
+No informative reference to this spec from other specs.
+
+
+## Page not found · GitHub Pages {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://w3c.github.io/speech-api/) (Mon Oct 14 2019)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- No WebIDL definitions found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -8222,7 +8239,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/) (27 September 2019)
+- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/) (14 October 2019)
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
@@ -8370,7 +8387,6 @@ Normative references to this spec from:
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [Web Share API - Level 1](https://w3c.github.io/web-share/)
-- [Web Speech API](https://w3c.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
@@ -8451,24 +8467,6 @@ No informative reference to this spec from other specs.
      * `Navigator` defined in [HTML Standard](https://html.spec.whatwg.org/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/web-intents/`](https://www.w3.org/TR/web-intents/)
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## Web Speech API {data-spec=true data-ok=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://w3c.github.io/speech-api/) (30 September 2019)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
