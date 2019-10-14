@@ -1,6 +1,6 @@
-% Diff between report from "October 07, 2019" and reference report from "September 30, 2019"
+% Diff between report from "October 14, 2019" and reference report from "September 30, 2019"
 % Reffy
-% October 07, 2019
+% October 14, 2019
 
 ## 404 not found
 
@@ -9,6 +9,24 @@
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
 - No WebIDL definitions found: *INS* true / *DEL* false
+
+
+## Ambient Light Sensor
+
+- URL: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-ambient-light-20190307/)
+- Editor's Draft: [https://w3c.github.io/ambient-light/](https://w3c.github.io/ambient-light/)
+- Repository: [GitHub w3c/ambient-light](https://github.com/w3c/ambient-light)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Audio Output Devices API
+
+- URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
+- Editor's Draft: [https://w3c.github.io/mediacapture-output/](https://w3c.github.io/mediacapture-output/)
+- Repository: [GitHub w3c/mediacapture-output](https://github.com/w3c/mediacapture-output)
+- Spec is OK: *INS* true / *DEL* false
 
 
 ## Box Tree API Level 1
@@ -34,6 +52,14 @@
 - Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
+
+
+## Compatibility Standard
+
+- URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://compat.spec.whatwg.org/)
+- Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
+- Spec is OK: *INS* true / *DEL* false
 
 
 ## Compositing and Blending Level 1
@@ -308,13 +334,14 @@
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
-## CSS Image Values and Replaced Content Module Level 3
+## CSS Images Module Level 3
 
 - URL: [https://www.w3.org/TR/css3-images/](https://www.w3.org/TR/css3-images/)
-- Crawled version: [Latest published version](http://www.w3.org/TR/2012/CR-css3-images-20120417/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
 - Editor's Draft: [https://drafts.csswg.org/css-images-3/](https://drafts.csswg.org/css-images-3/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Spec title: *INS* CSS Images Module Level 3 / *DEL* CSS Image Values and Replaced Content Module Level 3
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
+- Missing references for links: *INS* https://www.w3.org/TR/css3-ui/, https://www.w3.org/TR/css3-color/, https://www.w3.org/TR/selectors4/, https://www.w3.org/TR/css4-images/, https://www.w3.org/TR/css-animations/, https://www.w3.org/TR/css-transitions/ / *DEL* https://www.w3.org/TR/2008/REC-CSS1-20080411, https://www.w3.org/TR/2011/WD-css3-2d-transforms-20111215/, https://www.w3.org/TR/2012/WD-css3-background-20120214/, https://www.w3.org/TR/2011/REC-css3-color-20110607, https://www.w3.org/TR/2006/WD-css3-page-20061010, https://www.w3.org/TR/2010/CR-css3-mediaqueries-20100727/, https://www.w3.org/TR/1998/REC-smil-19980615, https://www.w3.org/TR/2011/REC-SVG11-20110816/
 
 
 ## CSS Inline Layout Module Level 3
@@ -665,14 +692,6 @@
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
-## File and Directory Entries API
-
-- URL: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
-- Crawled version: [Initial URL](https://wicg.github.io/entries-api/)
-- Repository: [GitHub wicg/entries-api](https://github.com/wicg/entries-api)
-- Unknown WebIDL names used: *INS* Window
-
-
 ## Filter Effects Module Level 2
 
 - URL: [https://drafts.fxtf.org/filter-effects-2/](https://drafts.fxtf.org/filter-effects-2/)
@@ -687,6 +706,37 @@
 - Spec is OK: *INS* true / *DEL* false
 
 
+## Geolocation API Specification 2nd Edition
+
+- URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
+- Editor's Draft: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
+- Repository: [GitHub w3c/geolocation-api](https://github.com/w3c/geolocation-api)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## HTML Media Capture
+
+- URL: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
+- Editor's Draft: [https://w3c.github.io/html-media-capture/](https://w3c.github.io/html-media-capture/)
+- Repository: [GitHub w3c/html-media-capture](https://github.com/w3c/html-media-capture)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## HTML Standard
+
+- URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/)
+- Spec title: *INS* HTML Standard / *DEL* https://html.spec.whatwg.org/
+- Spec could not be rendered: *DEL* Error: Crawl took too long Error: Crawl took too long
+    at Timeout._ [as _onTimeout] (/home/runner/work/reffy-reports/reffy/src/cli/crawl-specs.js:365:29)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+
+
 ## Input Events Level 2
 
 - URL: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
@@ -694,6 +744,15 @@
 - Editor's Draft: [https://w3c.github.io/input-events/](https://w3c.github.io/input-events/)
 - Repository: [GitHub w3c/input-events](https://github.com/w3c/input-events)
 - No WebIDL definitions found: *INS* true / *DEL* false
+
+
+## Media Capture and Streams
+
+- URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
+- Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
+- Repository: [GitHub w3c/mediacapture-main](https://github.com/w3c/mediacapture-main)
+- Spec is OK: *INS* true / *DEL* false
 
 
 ## Media Queries
@@ -722,13 +781,12 @@
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
-## Media Source Extensions™
+## Media Session Standard
 
-- URL: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2016/REC-media-source-20161117/)
-- Editor's Draft: [https://w3c.github.io/media-source/](https://w3c.github.io/media-source/)
-- Repository: [GitHub w3c/media-source](https://github.com/w3c/media-source)
-- Unknown WebIDL names used: *INS* Window
+- URL: [https://w3c.github.io/mediasession/](https://w3c.github.io/mediasession/)
+- Crawled version: [Initial URL](https://w3c.github.io/mediasession/)
+- Repository: [GitHub w3c/mediasession](https://github.com/w3c/mediasession)
+- Spec is OK: *INS* true / *DEL* false
 
 
 ## Mixed Content
@@ -758,12 +816,38 @@
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
+## Notifications API Standard
+
+- URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://notifications.spec.whatwg.org/)
+- Repository: [GitHub whatwg/notifications](https://github.com/whatwg/notifications)
+- Spec is OK: *INS* true / *DEL* false
+
+
 ## Payment Method: Basic Card
 
 - URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20190917/)
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
 - Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Payment Request API
+
+- URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/CR-payment-request-20190416/)
+- Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
+- Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Pointer Lock 2.0
+
+- URL: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-pointerlock-2-20190828/)
+- Editor's Draft: [https://w3c.github.io/pointerlock/](https://w3c.github.io/pointerlock/)
+- Repository: [GitHub w3c/pointerlock](https://github.com/w3c/pointerlock)
 - Spec is OK: *INS* true / *DEL* false
 
 
@@ -774,6 +858,24 @@
 - Editor's Draft: [https://w3c.github.io/preload/](https://w3c.github.io/preload/)
 - Repository: [GitHub w3c/preload](https://github.com/w3c/preload)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
+
+
+## Presentation API
+
+- URL: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
+- Editor's Draft: [https://w3c.github.io/presentation-api/](https://w3c.github.io/presentation-api/)
+- Repository: [GitHub w3c/presentation-api](https://github.com/w3c/presentation-api)
+- WebIDL names also defined elsewhere: *INS* BinaryType / *DEL* _dependencies
+
+
+## Proximity Sensor
+
+- URL: [https://www.w3.org/TR/proximity/](https://www.w3.org/TR/proximity/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-proximity-20190305/)
+- Editor's Draft: [https://w3c.github.io/proximity/](https://w3c.github.io/proximity/)
+- Repository: [GitHub w3c/proximity](https://github.com/w3c/proximity)
+- Spec is OK: *INS* true / *DEL* false
 
 
 ## Selectors Level 3
@@ -803,6 +905,14 @@
 - No WebIDL definitions found: *INS* true / *DEL* false
 
 
+## Storage Standard
+
+- URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://storage.spec.whatwg.org/)
+- Repository: [GitHub whatwg/storage](https://github.com/whatwg/storage)
+- Spec is OK: *INS* true / *DEL* false
+
+
 ## Streams Standard
 
 - URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
@@ -810,6 +920,15 @@
 - Repository: [GitHub whatwg/streams](https://github.com/whatwg/streams)
 - Spec is OK: *INS* true / *DEL* false
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
+
+
+## Subresource Integrity
+
+- URL: [https://www.w3.org/TR/SRI/](https://www.w3.org/TR/SRI/)
+- Crawled version: [Latest published version](http://www.w3.org/TR/2016/REC-SRI-20160623/)
+- Editor's Draft: [https://w3c.github.io/webappsec-subresource-integrity/](https://w3c.github.io/webappsec-subresource-integrity/)
+- Repository: [GitHub w3c/webappsec-subresource-integrity](https://github.com/w3c/webappsec-subresource-integrity)
+- Missing references for WebIDL names: *INS* HTMLLinkElement, HTMLScriptElement
 
 
 ## SVG Strokes
@@ -841,11 +960,67 @@
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
-## XMLHttpRequest Standard
+## URL Standard
 
-- URL: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/)
-- Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
-- Unknown WebIDL names used: *INS* HTMLFormElement
+- URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://url.spec.whatwg.org/)
+- Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Wake Lock API
+
+- URL: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
+- Editor's Draft: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
+- Repository: [GitHub w3c/wake-lock](https://github.com/w3c/wake-lock)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Web NFC API
+
+- URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/)
+- Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
+- Missing references for WebIDL names: *INS* EventHandler
+
+
+## Web Share API - Level 1
+
+- URL: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
+- Crawled version: [Initial URL](https://w3c.github.io/web-share/)
+- Missing references for WebIDL names: *INS* Navigator
+
+
+## Web Speech API
+
+- URL: [https://w3c.github.io/speech-api/](https://w3c.github.io/speech-api/)
+- Crawled version: [Initial URL](https://w3c.github.io/speech-api/)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## WebGL 2.0 Specification
+
+- URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## WebGL Specification
+
+- URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## WebXR Device API
+
+- URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-webxr-20191010/)
+- Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
+- Repository: [GitHub immersive-web/webxr](https://github.com/immersive-web/webxr)
+- Missing references for links: *INS* https://w3c.github.io/orientation-sensor/
 
 
