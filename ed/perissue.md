@@ -1,8 +1,21 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% October 13, 2019
+% October 14, 2019
 
 242 specifications were crawled in this report.
+
+
+## Specifications that could not be rendered
+
+Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
+
+- [https://drafts.csswg.org/css-shapes-2/](undefined): `Error: Crawl exited without sending result Error: Crawl exited without sending result
+    at ChildProcess.child.once.code (/home/runner/work/reffy-reports/reffy/src/cli/crawl-specs.js:359:33)
+    at Object.onceWrapper (events.js:286:20)
+    at ChildProcess.emit (events.js:198:13)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+
+=> 1 specification found
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -476,7 +489,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/) links to:
     * [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/) links to [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/) but does not list it in its references
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/) links to [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/) but does not list it in its references
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/) links to:
     * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but does not list it in its references
@@ -694,7 +706,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 382 missing references for links found in 134 specifications
+=> 381 missing references for links found in 133 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
