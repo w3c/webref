@@ -1546,7 +1546,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-contain/) (16 September 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-contain/](https://drafts.csswg.org/css-contain/)
 - Latest published version: [https://www.w3.org/TR/css-contain-1/](https://www.w3.org/TR/css-contain-1/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-css-contain-1-20190430/)
+- Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2019/PR-css-contain-1-20191015/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-contain-1
 
@@ -5446,7 +5446,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (13 October 2019)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (15 October 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
