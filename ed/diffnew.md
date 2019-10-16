@@ -1,6 +1,6 @@
-% Diff between report from "October 15, 2019" and reference report from "September 30, 2019"
+% Diff between report from "October 16, 2019" and reference report from "September 30, 2019"
 % Reffy
-% October 15, 2019
+% October 16, 2019
 
 ## Ambient Light Sensor
 
@@ -1010,5 +1010,12 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/)
 - Repository: [GitHub w3c/webrtc-pc](https://github.com/w3c/webrtc-pc)
 - Spec is OK: *INS* true / *DEL* false
+
+
+## WebXR Augmented Reality Module - Level 1
+
+- URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/)
+- No normative references found: *INS* false / *DEL* true
 
 
