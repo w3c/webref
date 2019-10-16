@@ -1,6 +1,6 @@
-% Diff between report from "October 15, 2019" and reference report from "September 30, 2019"
+% Diff between report from "October 16, 2019" and reference report from "September 30, 2019"
 % Reffy
-% October 15, 2019
+% October 16, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -2172,7 +2172,10 @@
 
 - URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
 - Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/)
+- No normative references found: *INS* false / *DEL* true
 - WebIDL names also defined elsewhere: *DEL* _dependencies
+- Missing references for WebIDL names: *DEL* XRSession
+- Missing references for links: *DEL* https://www.w3.org/TR/webxr/, https://www.w3.org/TR/compositing-1/
 
 
 ## WebXR Device API
