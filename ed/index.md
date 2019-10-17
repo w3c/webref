@@ -6644,7 +6644,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/) (Thu Oct 17 2019)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-payment-handler-20190924/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-payment-handler-20191017/)
 - Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
 - Shortname: payment-handler
 
@@ -8139,7 +8139,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (30 September 2019)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (17 October 2019)
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
@@ -8463,9 +8463,7 @@ Normative references to this spec from:
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-Informative references to this spec from:
-
-- [Web NFC API](https://w3c.github.io/web-nfc/)
+No informative reference to this spec from other specs.
 
 
 ## Web MIDI API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
