@@ -20,6 +20,7 @@ interface NDEFRecord {
   readonly attribute NDEFRecordType recordType;
   readonly attribute USVString mediaType;
   readonly attribute USVString id;
+  readonly attribute DataView? data;
 
   USVString? text();
   [NewObject] ArrayBuffer? arrayBuffer();
