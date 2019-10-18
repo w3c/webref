@@ -1290,6 +1290,7 @@
 - URL: [https://w3c.github.io/media-capabilities/](https://w3c.github.io/media-capabilities/)
 - Crawled version: [Initial URL](https://w3c.github.io/media-capabilities/)
 - Repository: [GitHub w3c/media-capabilities](https://github.com/w3c/media-capabilities)
+- Unknown WebIDL names used: *DEL* EventHandler
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 
 
