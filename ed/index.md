@@ -6605,7 +6605,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/paint-timing/) (13 June 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/paint-timing/) (18 October 2019)
 - Editor's Draft: [https://w3c.github.io/paint-timing/](https://w3c.github.io/paint-timing/)
 - Latest published version: [https://www.w3.org/TR/paint-timing/](https://www.w3.org/TR/paint-timing/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
@@ -7883,7 +7883,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (24 September 2019)
+- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (18 October 2019)
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
