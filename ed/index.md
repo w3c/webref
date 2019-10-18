@@ -4761,7 +4761,6 @@ Normative references to this spec from:
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
-- [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
@@ -5972,13 +5971,13 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/media-capabilities/) (2 October 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/media-capabilities/) (17 October 2019)
 - Repository: [GitHub w3c/media-capabilities](https://github.com/w3c/media-capabilities)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `EventHandler`, `Navigator`, `Window`, `WorkerNavigator`
+- Unknown WebIDL names used: `Navigator`, `Window`, `WorkerNavigator`
 - Missing references for WebIDL names: 
      * `Worker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - Missing references for links: 
@@ -6174,7 +6173,6 @@ Normative references to this spec from:
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
