@@ -4,7 +4,7 @@
 // Source: Wake Lock API (https://w3c.github.io/wake-lock/)
 
 dictionary WakeLockPermissionDescriptor : PermissionDescriptor {
-  WakeLockType type;
+  required WakeLockType type;
 };
 
 enum WakeLockType { "screen", "system" };
@@ -29,14 +29,4 @@ interface WakeLockSentinel : EventTarget {
   readonly attribute WakeLockType type;
   Promise<void> release();
   attribute EventHandler onrelease;
-};
-
-[SecureContext, Exposed=(DedicatedWorker, Window)]
-interface WakeLockEvent : Event {
-  constructor(DOMString type, WakeLockEventInit init);
-  readonly attribute WakeLockSentinel lock;
-};
-
-dictionary WakeLockEventInit : EventInit {
-  required WakeLockSentinel lock;
 };
