@@ -1,6 +1,6 @@
-% Diff between report from "October 18, 2019" and reference report from "September 30, 2019"
+% Diff between report from "October 19, 2019" and reference report from "September 30, 2019"
 % Reffy
-% October 18, 2019
+% October 19, 2019
 
 ## Ambient Light Sensor
 
@@ -963,15 +963,6 @@
 - Repository: [GitHub w3c/wake-lock](https://github.com/w3c/wake-lock)
 - Spec does not reference WebIDL normatively: *INS* false / *DEL* true
 - Missing references for WebIDL names: *INS* EventTarget / *DEL* AbortSignal
-
-
-## Web Authentication: An API for accessing Public Key Credentials - Level 2
-
-- URL: [https://www.w3.org/TR/webauthn-1/](https://www.w3.org/TR/webauthn-1/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/)
-- Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
-- Missing references for links: *INS* https://w3c.github.io/webdriver/webdriver-spec.html
-- Inconsistent references for links: *INS* https://w3c.github.io/FileAPI/
 
 
 ## Web NFC API
