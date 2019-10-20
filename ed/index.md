@@ -4462,7 +4462,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-4/) (15 September 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-4/) (20 October 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-writing-modes-4/](https://drafts.csswg.org/css-writing-modes-4/)
 - Latest published version: [https://www.w3.org/TR/css-writing-modes-4/](https://www.w3.org/TR/css-writing-modes-4/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/)
@@ -5641,7 +5641,6 @@ Informative references to this spec from:
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
-- [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [File API](https://w3c.github.io/FileAPI/)
@@ -8680,7 +8679,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (19 October 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (20 October 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
