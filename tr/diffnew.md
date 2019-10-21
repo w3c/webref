@@ -1,6 +1,6 @@
-% Diff between report from "October 14, 2019" and reference report from "September 30, 2019"
+% Diff between report from "October 21, 2019" and reference report from "September 30, 2019"
 % Reffy
-% October 14, 2019
+% October 21, 2019
 
 ## 404 not found
 
@@ -207,7 +207,7 @@
 ## CSS Containment Module Level 1
 
 - URL: [https://www.w3.org/TR/css-contain-1/](https://www.w3.org/TR/css-contain-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/CR-css-contain-1-20190430/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/PR-css-contain-1-20191015/)
 - Editor's Draft: [https://drafts.csswg.org/css-contain/](https://drafts.csswg.org/css-contain/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
@@ -400,10 +400,11 @@
 ## CSS Multi-column Layout Module Level 1
 
 - URL: [https://www.w3.org/TR/css-multicol-1/](https://www.w3.org/TR/css-multicol-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-css-multicol-1-20180528/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/)
 - Editor's Draft: [https://drafts.csswg.org/css-multicol/](https://drafts.csswg.org/css-multicol/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
+- Missing references for links: *INS* https://www.w3.org/TR/css3-align/
 
 
 ## CSS Multi-column Layout Module Level 2
@@ -807,6 +808,16 @@
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
+## Moved…
+
+- URL: [https://w3c.github.io/speech-api/](https://w3c.github.io/speech-api/)
+- Crawled version: [Initial URL](https://w3c.github.io/speech-api/)
+- Spec title: *INS* Moved… / *DEL* Web Speech API
+- No normative references found: *INS* true / *DEL* false
+- No WebIDL definitions found: *INS* true / *DEL* false
+- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
+
+
 ## Non-element Selectors Module Level 1
 
 - URL: [https://www.w3.org/TR/selectors-nonelement-1/](https://www.w3.org/TR/selectors-nonelement-1/)
@@ -992,13 +1003,6 @@
 - Missing references for WebIDL names: *INS* Navigator
 
 
-## Web Speech API
-
-- URL: [https://w3c.github.io/speech-api/](https://w3c.github.io/speech-api/)
-- Crawled version: [Initial URL](https://w3c.github.io/speech-api/)
-- Spec is OK: *INS* true / *DEL* false
-
-
 ## WebGL 2.0 Specification
 
 - URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
@@ -1013,6 +1017,13 @@
 - Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Spec is OK: *INS* true / *DEL* false
+
+
+## WebXR Augmented Reality Module - Level 1
+
+- URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/)
+- No normative references found: *INS* false / *DEL* true
 
 
 ## WebXR Device API
