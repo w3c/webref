@@ -1,6 +1,6 @@
-% Diff between report from "October 14, 2019" and reference report from "September 30, 2019"
+% Diff between report from "October 21, 2019" and reference report from "September 30, 2019"
 % Reffy
-% October 14, 2019
+% October 21, 2019
 
 ## "MediaStream Image Capture"
 
@@ -408,7 +408,7 @@
 ## CSS Containment Module Level 1
 
 - URL: [https://www.w3.org/TR/css-contain-1/](https://www.w3.org/TR/css-contain-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/CR-css-contain-1-20190430/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/PR-css-contain-1-20191015/)
 - Editor's Draft: [https://drafts.csswg.org/css-contain/](https://drafts.csswg.org/css-contain/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
@@ -670,11 +670,12 @@
 ## CSS Multi-column Layout Module Level 1
 
 - URL: [https://www.w3.org/TR/css-multicol-1/](https://www.w3.org/TR/css-multicol-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-css-multicol-1-20180528/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/)
 - Editor's Draft: [https://drafts.csswg.org/css-multicol/](https://drafts.csswg.org/css-multicol/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 - WebIDL names also defined elsewhere: *DEL* _dependencies
+- Missing references for links: *INS* https://www.w3.org/TR/css3-align/
 
 
 ## CSS Multi-column Layout Module Level 2
@@ -1417,7 +1418,7 @@
 - URL: [https://w3c.github.io/media-capabilities/](https://w3c.github.io/media-capabilities/)
 - Crawled version: [Initial URL](https://w3c.github.io/media-capabilities/)
 - Repository: [GitHub w3c/media-capabilities](https://github.com/w3c/media-capabilities)
-- Unknown WebIDL names used: *DEL* EventHandler, Navigator, Window, WorkerNavigator
+- Unknown WebIDL names used: *DEL* EventHandler, Navigator, Screen, Window, WorkerNavigator
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 - Missing references for WebIDL names: *DEL* Worker
 
@@ -1549,6 +1550,18 @@
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 
 
+## Moved…
+
+- URL: [https://w3c.github.io/speech-api/](https://w3c.github.io/speech-api/)
+- Crawled version: [Initial URL](https://w3c.github.io/speech-api/)
+- Spec title: *INS* Moved… / *DEL* Web Speech API
+- No normative references found: *INS* true / *DEL* false
+- No WebIDL definitions found: *INS* true / *DEL* false
+- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* EventHandler, Window
+- WebIDL names also defined elsewhere: *DEL* _dependencies
+
+
 ## Navigation Timing Level 2
 
 - URL: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
@@ -1621,7 +1634,7 @@
 ## Payment Handler API
 
 - URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-payment-handler-20190924/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-payment-handler-20191017/)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
 - Unknown WebIDL names used: *DEL* EventHandler, Window
@@ -2024,7 +2037,7 @@
 ## Web App Manifest
 
 - URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-appmanifest-20191014/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-appmanifest-20191016/)
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
 - Unknown WebIDL names used: *DEL* EventHandler, Window, WorkerType
@@ -2098,15 +2111,6 @@
 - Unknown WebIDL names used: *DEL* Navigator
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 - Missing references for WebIDL names: *INS* Navigator
-
-
-## Web Speech API
-
-- URL: [https://w3c.github.io/speech-api/](https://w3c.github.io/speech-api/)
-- Crawled version: [Initial URL](https://w3c.github.io/speech-api/)
-- Spec is OK: *INS* true / *DEL* false
-- Unknown WebIDL names used: *DEL* EventHandler, Window
-- WebIDL names also defined elsewhere: *DEL* _dependencies
 
 
 ## WebAssembly JavaScript Interface
@@ -2202,7 +2206,10 @@
 
 - URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
 - Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/)
+- No normative references found: *INS* false / *DEL* true
 - WebIDL names also defined elsewhere: *DEL* _dependencies, XREnvironmentBlendMode
+- Missing references for WebIDL names: *DEL* XRSession
+- Missing references for links: *DEL* https://www.w3.org/TR/webxr/, https://www.w3.org/TR/compositing-1/
 
 
 ## WebXR Device API
