@@ -2065,11 +2065,12 @@
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 
 
-## Web NFC API
+## Web NFC
 
 - URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
 - Crawled version: [Initial URL](https://w3c.github.io/web-nfc/)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
+- Spec title: *INS* Web NFC / *DEL* Web NFC API
 - Unknown WebIDL names used: *DEL* EventHandler, Window
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 - Missing references for WebIDL names: *INS* EventHandler
