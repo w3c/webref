@@ -714,7 +714,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-animationworklet-1/) (22 October 2019)
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-animationworklet-1/) (23 October 2019)
 - Editor's Draft: [https://drafts.css-houdini.org/css-animationworklet-1/](https://drafts.css-houdini.org/css-animationworklet-1/)
 - Latest published version: [https://www.w3.org/TR/css-animation-worklet-1/](https://www.w3.org/TR/css-animation-worklet-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/)
