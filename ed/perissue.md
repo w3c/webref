@@ -99,7 +99,7 @@ Reffy was not expecting to find CSS definitions in the specifications listed her
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
-- [Web NFC API](https://w3c.github.io/web-nfc/)
+- [Web NFC](https://w3c.github.io/web-nfc/)
 - [WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)
 - [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
 
@@ -217,7 +217,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `DOMHighResTimeStamp` but does not reference [High Resolution Time Level 2](https://w3c.github.io/hr-time/)
     * `Event` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
     * `EventInit` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
-- [Web NFC API](https://w3c.github.io/web-nfc/) uses `EventHandler` but does not reference [HTML Standard](https://html.spec.whatwg.org/)
+- [Web NFC](https://w3c.github.io/web-nfc/) uses `EventHandler` but does not reference [HTML Standard](https://html.spec.whatwg.org/)
 - [Web Share API - Level 1](https://w3c.github.io/web-share/) uses `Navigator` but does not reference [HTML Standard](https://html.spec.whatwg.org/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/) uses `Worklet` but does not reference [Worklets Level 1](https://drafts.css-houdini.org/worklets/) or [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/) or [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) or [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/) uses:

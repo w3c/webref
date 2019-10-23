@@ -965,11 +965,12 @@
 - Missing references for WebIDL names: *INS* EventTarget / *DEL* AbortSignal
 
 
-## Web NFC API
+## Web NFC
 
 - URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
 - Crawled version: [Initial URL](https://w3c.github.io/web-nfc/)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
+- Spec title: *INS* Web NFC / *DEL* Web NFC API
 - Missing references for WebIDL names: *INS* EventHandler
 
 
