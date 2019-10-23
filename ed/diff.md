@@ -1,6 +1,6 @@
-% Diff between report from "October 22, 2019" and reference report from "September 30, 2019"
+% Diff between report from "October 23, 2019" and reference report from "September 30, 2019"
 % Reffy
-% October 22, 2019
+% October 23, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -2174,7 +2174,7 @@
 - URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
 - Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/)
 - No normative references found: *INS* false / *DEL* true
-- WebIDL names also defined elsewhere: *DEL* _dependencies
+- WebIDL names also defined elsewhere: *DEL* _dependencies, XRSessionMode
 - Missing references for WebIDL names: *DEL* XRSession
 - Missing references for links: *DEL* https://www.w3.org/TR/webxr/, https://www.w3.org/TR/compositing-1/
 
@@ -2185,7 +2185,7 @@
 - Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/)
 - Repository: [GitHub immersive-web/webxr](https://github.com/immersive-web/webxr)
 - Unknown WebIDL names used: *DEL* EventHandler, Navigator, Window
-- WebIDL names also defined elsewhere: *DEL* _dependencies
+- WebIDL names also defined elsewhere: *DEL* _dependencies, XRSessionMode
 
 
 ## WebXR Gamepads Module - Level 1
