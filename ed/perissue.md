@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% October 22, 2019
+% October 23, 2019
 
 242 specifications were crawled in this report.
 
@@ -133,9 +133,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `SVGMarkerElement` defined in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) and [SVG Markers](https://svgwg.org/specs/markers/)
 - `Worker` defined in [HTML Standard](https://html.spec.whatwg.org/)
 - `Worklet` defined in [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
-- `XRSessionMode` defined in [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/) and [WebXR Device API](https://immersive-web.github.io/webxr/)
 
-=> 8 WebIDL names found
+=> 7 WebIDL names found
 
 "There can be only one"...
 
