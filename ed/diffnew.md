@@ -96,6 +96,14 @@
 - Spec is OK: *INS* true / *DEL* false
 
 
+## Credential Management Level 1
+
+- URL: [https://www.w3.org/TR/credential-management-1/](https://www.w3.org/TR/credential-management-1/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-credential-management/)
+- Repository: [GitHub w3c/webappsec-credential-management](https://github.com/w3c/webappsec-credential-management)
+- Inconsistent references for links: *INS* https://w3c.github.io/webauthn/ / *DEL* https://w3c.github.io/webappsec-csp/
+
+
 ## CSS Backgrounds and Borders Module Level 3
 
 - URL: [https://www.w3.org/TR/css-backgrounds-3/](https://www.w3.org/TR/css-backgrounds-3/)
@@ -848,6 +856,14 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
 - Spec is OK: *INS* true / *DEL* false
+
+
+## Pointer Events
+
+- URL: [https://www.w3.org/TR/pointerevents2/](https://www.w3.org/TR/pointerevents2/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/pointerevents/)
+- Repository: [GitHub w3c/pointerevents](https://github.com/w3c/pointerevents)
+- Inconsistent references for links: *INS* https://w3c.github.io/pointerevents/
 
 
 ## Pointer Lock 2.0

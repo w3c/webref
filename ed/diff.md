@@ -215,6 +215,8 @@
 - Repository: [GitHub w3c/webappsec-credential-management](https://github.com/w3c/webappsec-credential-management)
 - Unknown WebIDL names used: *DEL* HTMLFormElement, Navigator, Window
 - WebIDL names also defined elsewhere: *DEL* _dependencies
+- Missing references for links: *DEL* https://w3c.github.io/webauthn/
+- Inconsistent references for links: *INS* https://w3c.github.io/webauthn/ / *DEL* https://w3c.github.io/webappsec-csp/
 
 
 ## CSS Animation Worklet API
@@ -1665,6 +1667,7 @@
 - Repository: [GitHub w3c/pointerevents](https://github.com/w3c/pointerevents)
 - Unknown WebIDL names used: *DEL* EventHandler, GlobalEventHandlers, Navigator, Window
 - WebIDL names also defined elsewhere: *DEL* _dependencies
+- Inconsistent references for links: *INS* https://w3c.github.io/pointerevents/
 
 
 ## Pointer Lock 2.0
