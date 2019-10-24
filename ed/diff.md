@@ -567,6 +567,7 @@
 
 - URL: [https://www.w3.org/TR/css3-images/](https://www.w3.org/TR/css3-images/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-images-3/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 - Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-values/
@@ -2174,6 +2175,7 @@
 
 - URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
 - Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/)
+- Repository: [GitHub immersive-web/webxr-ar-module](https://github.com/immersive-web/webxr-ar-module)
 - No normative references found: *INS* false / *DEL* true
 - WebIDL names also defined elsewhere: *DEL* _dependencies, XRSessionMode
 - Missing references for WebIDL names: *DEL* XRSession
@@ -2193,6 +2195,7 @@
 
 - URL: [https://immersive-web.github.io/webxr-gamepads-module/](https://immersive-web.github.io/webxr-gamepads-module/)
 - Crawled version: [Initial URL](https://immersive-web.github.io/webxr-gamepads-module/)
+- Repository: [GitHub immersive-web/webxr-gamepads-module](https://github.com/immersive-web/webxr-gamepads-module)
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 
 
