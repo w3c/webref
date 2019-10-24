@@ -2373,6 +2373,7 @@ No informative reference to this spec from other specs.
 - Editor's Draft: [https://drafts.csswg.org/css-images-3/](https://drafts.csswg.org/css-images-3/)
 - Latest published version: [https://www.w3.org/TR/css-images-3/](https://www.w3.org/TR/css-images-3/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css3-images
 
 ### Potential issue(s) {.anomalies}
@@ -4406,7 +4407,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-3/) (22 October 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-writing-modes-3/](https://drafts.csswg.org/css-writing-modes-3/)
 - Latest published version: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-css-writing-modes-3-20190903/)
+- Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2019/PR-css-writing-modes-3-20191024/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-writing-modes-3
 
@@ -7719,7 +7720,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/) (Thu Oct 24 2019)
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-screen-orientation-20190903/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-screen-orientation-20191024/)
 - Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
 - Shortname: screen-orientation
 
@@ -8677,7 +8678,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (23 October 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (24 October 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
@@ -8723,6 +8724,7 @@ No informative reference to this spec from other specs.
 ### Spec info {.info}
 
 - Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/) (22 October 2019)
+- Repository: [GitHub immersive-web/webxr-ar-module](https://github.com/immersive-web/webxr-ar-module)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8777,6 +8779,7 @@ No informative reference to this spec from other specs.
 ### Spec info {.info}
 
 - Crawled version: [Initial URL](https://immersive-web.github.io/webxr-gamepads-module/) (14 October 2019)
+- Repository: [GitHub immersive-web/webxr-gamepads-module](https://github.com/immersive-web/webxr-gamepads-module)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}

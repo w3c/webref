@@ -337,6 +337,7 @@
 
 - URL: [https://www.w3.org/TR/css3-images/](https://www.w3.org/TR/css3-images/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-images-3/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
@@ -1009,6 +1010,7 @@
 
 - URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
 - Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/)
+- Repository: [GitHub immersive-web/webxr-ar-module](https://github.com/immersive-web/webxr-ar-module)
 - No normative references found: *INS* false / *DEL* true
 
 
