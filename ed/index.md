@@ -3460,7 +3460,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-scroll-snap-1/) (29 June 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-scroll-snap-1/) (16 October 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-scroll-snap-1/](https://drafts.csswg.org/css-scroll-snap-1/)
 - Latest published version: [https://www.w3.org/TR/css-scroll-snap-1/](https://www.w3.org/TR/css-scroll-snap-1/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
@@ -3836,7 +3836,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-3/) (17 October 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-3/) (23 October 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
@@ -8052,7 +8052,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/manifest/) (Thu Oct 24 2019)
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-appmanifest-20191016/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-appmanifest-20191024/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
 - Shortname: appmanifest
 
