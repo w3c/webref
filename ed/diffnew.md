@@ -110,6 +110,7 @@
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-backgrounds/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-images/
 
 
 ## CSS Backgrounds and Borders Module Level 4
@@ -164,6 +165,7 @@
 - URL: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
 - Crawled version: [Initial URL](https://drafts.csswg.org/css-sizing-4/)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-images/
 
 
 ## CSS Cascading and Inheritance Level 3
@@ -273,6 +275,7 @@
 - Crawled version: [Editor's Draft](https://drafts.fxtf.org/fill-stroke/)
 - Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-images/
 
 
 ## CSS Flexible Box Layout Module Level 1
@@ -466,7 +469,7 @@
 
 - URL: [https://www.w3.org/TR/css-paint-api-1/](https://www.w3.org/TR/css-paint-api-1/)
 - Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
-- Spec is OK: *INS* true / *DEL* false
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-images/
 
 
 ## CSS Positioned Layout Module Level 3
@@ -642,6 +645,7 @@
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values-4/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-images/
 
 
 ## CSS Will Change Module Level 1
@@ -806,6 +810,7 @@
 - Crawled version: [Editor's Draft](https://drafts.fxtf.org/motion-1/)
 - Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-images/
 
 
 ## Moved…
