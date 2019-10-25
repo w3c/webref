@@ -5443,7 +5443,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (24 October 2019)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (25 October 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8680,7 +8680,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (24 October 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (25 October 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
