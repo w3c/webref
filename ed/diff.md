@@ -1,6 +1,6 @@
-% Diff between report from "October 25, 2019" and reference report from "September 30, 2019"
+% Diff between report from "October 26, 2019" and reference report from "September 30, 2019"
 % Reffy
-% October 25, 2019
+% October 26, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -1000,6 +1000,7 @@
 - Unknown WebIDL names used: *DEL* Window
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 - Missing references for WebIDL names: *DEL* Worker
+- Missing references for links: *INS* https://www.w3.org/TR/css-properties-values-api-1/
 
 
 ## CSS Values and Units Module Level 3
