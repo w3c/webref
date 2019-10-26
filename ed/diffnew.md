@@ -1,6 +1,6 @@
-% Diff between report from "October 25, 2019" and reference report from "September 30, 2019"
+% Diff between report from "October 26, 2019" and reference report from "September 30, 2019"
 % Reffy
-% October 25, 2019
+% October 26, 2019
 
 ## Ambient Light Sensor
 
@@ -629,6 +629,13 @@
 - URL: [https://drafts.csswg.org/css-tv/](https://drafts.csswg.org/css-tv/)
 - Crawled version: [Initial URL](https://drafts.csswg.org/css-tv/)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
+
+
+## CSS Typed OM Level 1
+
+- URL: [https://www.w3.org/TR/css-typed-om-1/](https://www.w3.org/TR/css-typed-om-1/)
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
+- Missing references for links: *INS* https://www.w3.org/TR/css-properties-values-api-1/
 
 
 ## CSS Values and Units Module Level 3
