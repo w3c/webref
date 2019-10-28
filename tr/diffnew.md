@@ -1,6 +1,6 @@
-% Diff between report from "October 21, 2019" and reference report from "September 30, 2019"
+% Diff between report from "October 28, 2019" and reference report from "September 30, 2019"
 % Reffy
-% October 21, 2019
+% October 28, 2019
 
 ## 404 not found
 
@@ -142,6 +142,7 @@
 - URL: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
 - Crawled version: [Initial URL](https://drafts.csswg.org/css-sizing-4/)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-images/
 
 
 ## CSS Cascading and Inheritance Level 3
@@ -339,6 +340,7 @@
 - URL: [https://www.w3.org/TR/css3-images/](https://www.w3.org/TR/css3-images/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
 - Editor's Draft: [https://drafts.csswg.org/css-images-3/](https://drafts.csswg.org/css-images-3/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec title: *INS* CSS Images Module Level 3 / *DEL* CSS Image Values and Replaced Content Module Level 3
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 - Missing references for links: *INS* https://www.w3.org/TR/css3-ui/, https://www.w3.org/TR/css3-color/, https://www.w3.org/TR/selectors4/, https://www.w3.org/TR/css4-images/, https://www.w3.org/TR/css-animations/, https://www.w3.org/TR/css-transitions/ / *DEL* https://www.w3.org/TR/2008/REC-CSS1-20080411, https://www.w3.org/TR/2011/WD-css3-2d-transforms-20111215/, https://www.w3.org/TR/2012/WD-css3-background-20120214/, https://www.w3.org/TR/2011/REC-css3-color-20110607, https://www.w3.org/TR/2006/WD-css3-page-20061010, https://www.w3.org/TR/2010/CR-css3-mediaqueries-20100727/, https://www.w3.org/TR/1998/REC-smil-19980615, https://www.w3.org/TR/2011/REC-SVG11-20110816/
@@ -482,6 +484,16 @@
 - Editor's Draft: [https://drafts.csswg.org/css-position/](https://drafts.csswg.org/css-position/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
+
+
+## CSS Properties and Values API Level 1
+
+- URL: [https://www.w3.org/TR/css-properties-values-api-1/](https://www.w3.org/TR/css-properties-values-api-1/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-css-properties-values-api-1-20191025/)
+- Editor's Draft: [https://drafts.css-houdini.org/css-properties-values-api-1/](https://drafts.css-houdini.org/css-properties-values-api-1/)
+- Unexpected CSS definitions found: *INS* true / *DEL* false
+- Unknown WebIDL names used: *INS* CSSOMString, CSSRule
+- Missing references for links: *INS* https://www.w3.org/TR/css3-color/
 
 
 ## CSS Rhythmic Sizing
@@ -678,7 +690,7 @@
 ## CSS Writing Modes Level 3
 
 - URL: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/CR-css-writing-modes-3-20190903/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/PR-css-writing-modes-3-20191024/)
 - Editor's Draft: [https://drafts.csswg.org/css-writing-modes-3/](https://drafts.csswg.org/css-writing-modes-3/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
@@ -988,11 +1000,12 @@
 - Spec is OK: *INS* true / *DEL* false
 
 
-## Web NFC API
+## Web NFC
 
 - URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
 - Crawled version: [Initial URL](https://w3c.github.io/web-nfc/)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
+- Spec title: *INS* Web NFC / *DEL* Web NFC API
 - Missing references for WebIDL names: *INS* EventHandler
 
 
@@ -1023,6 +1036,7 @@
 
 - URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
 - Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/)
+- Repository: [GitHub immersive-web/webxr-ar-module](https://github.com/immersive-web/webxr-ar-module)
 - No normative references found: *INS* false / *DEL* true
 
 
