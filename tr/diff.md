@@ -1,6 +1,6 @@
-% Diff between report from "October 21, 2019" and reference report from "September 30, 2019"
+% Diff between report from "October 28, 2019" and reference report from "September 30, 2019"
 % Reffy
-% October 21, 2019
+% October 28, 2019
 
 ## "MediaStream Image Capture"
 
@@ -336,6 +336,7 @@
 - Crawled version: [Initial URL](https://drafts.csswg.org/css-sizing-4/)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 - WebIDL names also defined elsewhere: *DEL* _dependencies
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-images/
 
 
 ## CSS Cascading and Inheritance Level 3
@@ -601,6 +602,7 @@
 - URL: [https://www.w3.org/TR/css3-images/](https://www.w3.org/TR/css3-images/)
 - Crawled version: [Latest published version](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
 - Editor's Draft: [https://drafts.csswg.org/css-images-3/](https://drafts.csswg.org/css-images-3/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Spec title: *INS* CSS Images Module Level 3 / *DEL* CSS Image Values and Replaced Content Module Level 3
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 - WebIDL names also defined elsewhere: *DEL* _dependencies
@@ -783,9 +785,12 @@
 ## CSS Properties and Values API Level 1
 
 - URL: [https://www.w3.org/TR/css-properties-values-api-1/](https://www.w3.org/TR/css-properties-values-api-1/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-css-properties-values-api-1-20171109/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-css-properties-values-api-1-20191025/)
 - Editor's Draft: [https://drafts.css-houdini.org/css-properties-values-api-1/](https://drafts.css-houdini.org/css-properties-values-api-1/)
+- Unexpected CSS definitions found: *INS* true / *DEL* false
+- Unknown WebIDL names used: *INS* CSSOMString, CSSRule
 - WebIDL names also defined elsewhere: *DEL* _dependencies
+- Missing references for links: *INS* https://www.w3.org/TR/css3-color/
 
 
 ## CSS Pseudo-Elements Module Level 4
@@ -1060,7 +1065,7 @@
 ## CSS Writing Modes Level 3
 
 - URL: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/CR-css-writing-modes-3-20190903/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/PR-css-writing-modes-3-20191024/)
 - Editor's Draft: [https://drafts.csswg.org/css-writing-modes-3/](https://drafts.csswg.org/css-writing-modes-3/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
@@ -1634,7 +1639,7 @@
 ## Payment Handler API
 
 - URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-payment-handler-20191017/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-payment-handler-20191021/)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
 - Unknown WebIDL names used: *DEL* EventHandler, Window
@@ -1666,7 +1671,7 @@
 ## Performance Timeline Level 2
 
 - URL: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-performance-timeline-2-20190917/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/)
 - Editor's Draft: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
 - Repository: [GitHub w3c/performance-timeline](https://github.com/w3c/performance-timeline)
 - Unknown WebIDL names used: *DEL* Window
@@ -1933,7 +1938,7 @@
 ## The Screen Orientation API
 
 - URL: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-screen-orientation-20190903/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-screen-orientation-20191024/)
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
 - Unknown WebIDL names used: *DEL* EventHandler, Window
@@ -2037,7 +2042,7 @@
 ## Web App Manifest
 
 - URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-appmanifest-20191016/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-appmanifest-20191024/)
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
 - Unknown WebIDL names used: *DEL* EventHandler, Window, WorkerType
@@ -2093,11 +2098,12 @@
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 
 
-## Web NFC API
+## Web NFC
 
 - URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
 - Crawled version: [Initial URL](https://w3c.github.io/web-nfc/)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
+- Spec title: *INS* Web NFC / *DEL* Web NFC API
 - Unknown WebIDL names used: *DEL* EventHandler, Window
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 - Missing references for WebIDL names: *INS* EventHandler
@@ -2206,8 +2212,9 @@
 
 - URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
 - Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/)
+- Repository: [GitHub immersive-web/webxr-ar-module](https://github.com/immersive-web/webxr-ar-module)
 - No normative references found: *INS* false / *DEL* true
-- WebIDL names also defined elsewhere: *DEL* _dependencies, XREnvironmentBlendMode
+- WebIDL names also defined elsewhere: *DEL* _dependencies, XRSessionMode, XREnvironmentBlendMode
 - Missing references for WebIDL names: *DEL* XRSession
 - Missing references for links: *DEL* https://www.w3.org/TR/webxr/, https://www.w3.org/TR/compositing-1/
 
@@ -2219,7 +2226,7 @@
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Repository: [GitHub immersive-web/webxr](https://github.com/immersive-web/webxr)
 - Unknown WebIDL names used: *DEL* EventHandler, HTMLCanvasElement, Navigator, Window
-- WebIDL names also defined elsewhere: *DEL* _dependencies, XREnvironmentBlendMode, GamepadMappingType
+- WebIDL names also defined elsewhere: *DEL* _dependencies, XRSessionMode, XREnvironmentBlendMode, GamepadMappingType
 - Missing references for WebIDL names: *DEL* WebGL2RenderingContext
 - Missing references for links: *INS* https://w3c.github.io/orientation-sensor/
 - Inconsistent references for links: *DEL* https://w3c.github.io/orientation-sensor/, https://w3c.github.io/gamepad/
@@ -2229,6 +2236,7 @@
 
 - URL: [https://immersive-web.github.io/webxr-gamepads-module/](https://immersive-web.github.io/webxr-gamepads-module/)
 - Crawled version: [Initial URL](https://immersive-web.github.io/webxr-gamepads-module/)
+- Repository: [GitHub immersive-web/webxr-gamepads-module](https://github.com/immersive-web/webxr-gamepads-module)
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 
 
