@@ -1,6 +1,6 @@
-% Diff between report from "October 28, 2019" and reference report from "September 30, 2019"
+% Diff between report from "October 29, 2019" and reference report from "September 30, 2019"
 % Reffy
-% October 28, 2019
+% October 29, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -1997,8 +1997,9 @@
 - URL: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/web-animations-1/)
 - Repository: [GitHub w3c/web-animations](https://github.com/w3c/web-animations)
-- Unknown WebIDL names used: *DEL* EventHandler, Window
+- Unknown WebIDL names used: *INS* CSSOMString / *DEL* EventHandler, Window
 - WebIDL names also defined elsewhere: *DEL* _dependencies
+- Missing references for links: *INS* https://www.w3.org/TR/selectors4/
 
 
 ## Web App Manifest
@@ -2206,6 +2207,8 @@
 - Crawled version: [Initial URL](https://immersive-web.github.io/webxr-gamepads-module/)
 - Repository: [GitHub immersive-web/webxr-gamepads-module](https://github.com/immersive-web/webxr-gamepads-module)
 - WebIDL names also defined elsewhere: *DEL* _dependencies
+- Missing references for WebIDL names: *DEL* XRInputSource
+- Missing references for links: *DEL* https://www.w3.org/TR/webxr/
 
 
 ## Worklets Level 1
