@@ -2030,7 +2030,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (25 October 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (29 October 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/)
@@ -6757,7 +6757,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/permissions/) (8 October 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/permissions/) (30 October 2019)
 - Editor's Draft: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
 - Latest published version: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -8462,7 +8462,9 @@ Informative references to this spec from:
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Permissions](https://w3c.github.io/permissions/)
 
 
 ## Web Share API - Level 1 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
@@ -8697,7 +8699,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (29 October 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (30 October 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
