@@ -1,6 +1,6 @@
-% Diff between report from "October 30, 2019" and reference report from "September 30, 2019"
+% Diff between report from "October 31, 2019" and reference report from "September 30, 2019"
 % Reffy
-% October 30, 2019
+% October 31, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -2027,6 +2027,7 @@
 - Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
 - Unknown WebIDL names used: *DEL* Window
 - WebIDL names also defined elsewhere: *DEL* _dependencies
+- Inconsistent references for links: *DEL* https://w3c.github.io/webappsec-mixed-content/
 
 
 ## Web Background Synchronization
