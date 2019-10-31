@@ -2,51 +2,11 @@
 % Reffy
 % October 31, 2019
 
-## Ambient Light Sensor
-
-- URL: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/ambient-light/)
-- Repository: [GitHub w3c/ambient-light](https://github.com/w3c/ambient-light)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## Audio Output Devices API
-
-- URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-output/)
-- Repository: [GitHub w3c/mediacapture-output](https://github.com/w3c/mediacapture-output)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## Battery Status API
-
-- URL: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/battery/)
-- Repository: [GitHub w3c/battery](https://github.com/w3c/battery)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## Beacon
-
-- URL: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/)
-- Repository: [GitHub w3c/beacon](https://github.com/w3c/beacon)
-- Spec is OK: *INS* true / *DEL* false
-
-
 ## Box Tree API Level 1
 
 - URL: [https://drafts.css-houdini.org/box-tree-api/](https://drafts.css-houdini.org/box-tree-api/)
 - Crawled version: [Initial URL](https://drafts.css-houdini.org/box-tree-api/)
 - Spec is OK: *INS* true / *DEL* false
-
-
-## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
-
-- URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css2/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
 ## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
@@ -57,12 +17,12 @@
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
-## Compatibility Standard
+## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
 
-- URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://compat.spec.whatwg.org/)
-- Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
-- Spec is OK: *INS* true / *DEL* false
+- URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css2/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
 ## Compositing and Blending Level 1
@@ -86,14 +46,6 @@
 - Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html)
 - Spec is OK: *INS* true / *DEL* false
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
-
-
-## Cooperative Scheduling of Background Tasks
-
-- URL: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/)
-- Repository: [GitHub w3c/requestidlecallback](https://github.com/w3c/requestidlecallback)
-- Spec is OK: *INS* true / *DEL* false
 
 
 ## Credential Management Level 1
@@ -122,16 +74,16 @@
 
 ## CSS Basic User Interface Module Level 4
 
-- URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui-4/)
+- URL: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
 ## CSS Basic User Interface Module Level 4
 
-- URL: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui/)
+- URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui-4/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
@@ -207,6 +159,8 @@
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-color/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
+- Missing references for links: *INS* https://www.w3.org/TR/css3-positioning/
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-values/
 
 
 ## CSS Color Module Level 5
@@ -680,6 +634,14 @@
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
+## File and Directory Entries API
+
+- URL: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
+- Crawled version: [Initial URL](https://wicg.github.io/entries-api/)
+- Repository: [GitHub wicg/entries-api](https://github.com/wicg/entries-api)
+- Unknown WebIDL names used: *INS* Window
+
+
 ## Filter Effects Module Level 2
 
 - URL: [https://drafts.fxtf.org/filter-effects-2/](https://drafts.fxtf.org/filter-effects-2/)
@@ -691,75 +653,6 @@
 
 - URL: [https://drafts.css-houdini.org/font-metrics-api/](https://drafts.css-houdini.org/font-metrics-api/)
 - Crawled version: [Initial URL](https://drafts.css-houdini.org/font-metrics-api/)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## Gamepad
-
-- URL: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/)
-- Repository: [GitHub w3c/gamepad](https://github.com/w3c/gamepad)
-- Missing references for WebIDL names: *INS* Navigator
-
-
-## Geolocation API Specification
-
-- URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/geolocation-api/)
-- Repository: [GitHub w3c/geolocation-api](https://github.com/w3c/geolocation-api)
-- Missing references for WebIDL names: *INS* Navigator
-
-
-## Geolocation Sensor
-
-- URL: [https://wicg.github.io/geolocation-sensor/](https://wicg.github.io/geolocation-sensor/)
-- Crawled version: [Initial URL](https://wicg.github.io/geolocation-sensor/)
-- Repository: [GitHub wicg/geolocation-sensor](https://github.com/wicg/geolocation-sensor)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## Geometry Interfaces Module Level 1
-
-- URL: [https://www.w3.org/TR/geometry-1/](https://www.w3.org/TR/geometry-1/)
-- Crawled version: [Editor's Draft](https://drafts.fxtf.org/geometry/)
-- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## HTML Media Capture
-
-- URL: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/html-media-capture/)
-- Repository: [GitHub w3c/html-media-capture](https://github.com/w3c/html-media-capture)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## HTML Standard
-
-- URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/)
-- Spec title: *INS* HTML Standard / *DEL* https://html.spec.whatwg.org/
-- Spec could not be rendered: *DEL* Error: Crawl took too long Error: Crawl took too long
-    at Timeout._ [as _onTimeout] (/home/runner/work/reffy-reports/reffy/src/cli/crawl-specs.js:365:29)
-    at ontimeout (timers.js:436:11)
-    at tryOnTimeout (timers.js:300:5)
-    at listOnTimeout (timers.js:263:5)
-    at Timer.processTimers (timers.js:223:10)
-
-
-## Identity for WebRTC 1.0
-
-- URL: [https://www.w3.org/TR/webrtc-identity/](https://www.w3.org/TR/webrtc-identity/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-identity/identity.html)
-- Repository: [GitHub w3c/webrtc-identity](https://github.com/w3c/webrtc-identity)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## Media Capture and Streams
-
-- URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-main/)
-- Repository: [GitHub w3c/mediacapture-main](https://github.com/w3c/mediacapture-main)
 - Spec is OK: *INS* true / *DEL* false
 
 
@@ -787,12 +680,12 @@
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
-## Media Session Standard
+## Media Source Extensions™
 
-- URL: [https://w3c.github.io/mediasession/](https://w3c.github.io/mediasession/)
-- Crawled version: [Initial URL](https://w3c.github.io/mediasession/)
-- Repository: [GitHub w3c/mediasession](https://github.com/w3c/mediasession)
-- Spec is OK: *INS* true / *DEL* false
+- URL: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/media-source/)
+- Repository: [GitHub w3c/media-source](https://github.com/w3c/media-source)
+- Unknown WebIDL names used: *INS* Window
 
 
 ## MediaStreamTrack Content Hints
@@ -830,14 +723,6 @@
 - Spec does not reference WebIDL normatively: *INS* true / *DEL* false
 
 
-## Navigation Timing Level 2
-
-- URL: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/)
-- Repository: [GitHub w3c/navigation-timing](https://github.com/w3c/navigation-timing)
-- Spec is OK: *INS* true / *DEL* false
-
-
 ## Non-element Selectors Module Level 1
 
 - URL: [https://www.w3.org/TR/selectors-nonelement-1/](https://www.w3.org/TR/selectors-nonelement-1/)
@@ -846,12 +731,12 @@
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
-## Notifications API Standard
+## Paint Timing 1
 
-- URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://notifications.spec.whatwg.org/)
-- Repository: [GitHub whatwg/notifications](https://github.com/whatwg/notifications)
-- Spec is OK: *INS* true / *DEL* false
+- URL: [https://www.w3.org/TR/paint-timing/](https://www.w3.org/TR/paint-timing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/paint-timing/)
+- Repository: [GitHub w3c/paint-timing](https://github.com/w3c/paint-timing)
+- Unknown WebIDL names used: *INS* Window
 
 
 ## Payment Method: Basic Card
@@ -859,14 +744,6 @@
 - URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/)
 - Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## Payment Request API
-
-- URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/)
-- Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
 - Spec is OK: *INS* true / *DEL* false
 
 
@@ -878,14 +755,6 @@
 - Inconsistent references for links: *INS* https://w3c.github.io/pointerevents/
 
 
-## Pointer Lock 2.0
-
-- URL: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/pointerlock/)
-- Repository: [GitHub w3c/pointerlock](https://github.com/w3c/pointerlock)
-- Spec is OK: *INS* true / *DEL* false
-
-
 ## Preload
 
 - URL: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
@@ -894,20 +763,12 @@
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
-## Proximity Sensor
+## Presentation API
 
-- URL: [https://www.w3.org/TR/proximity/](https://www.w3.org/TR/proximity/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/proximity/)
-- Repository: [GitHub w3c/proximity](https://github.com/w3c/proximity)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## Resource Timing Level 2
-
-- URL: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/)
-- Repository: [GitHub w3c/resource-timing](https://github.com/w3c/resource-timing)
-- Spec is OK: *INS* true / *DEL* false
+- URL: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/)
+- Repository: [GitHub w3c/presentation-api](https://github.com/w3c/presentation-api)
+- Unknown WebIDL names used: *INS* BinaryType
 
 
 ## Selectors Level 3
@@ -924,14 +785,6 @@
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/selectors/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
-
-
-## Storage Standard
-
-- URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://storage.spec.whatwg.org/)
-- Repository: [GitHub whatwg/storage](https://github.com/whatwg/storage)
-- Spec is OK: *INS* true / *DEL* false
 
 
 ## Streams Standard
@@ -969,28 +822,13 @@
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
 
 
-## URL Standard
-
-- URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://url.spec.whatwg.org/)
-- Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## User Timing Level 3
-
-- URL: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/)
-- Repository: [GitHub w3c/user-timing](https://github.com/w3c/user-timing)
-- Spec is OK: *INS* true / *DEL* false
-
-
 ## Wake Lock API
 
 - URL: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/)
 - Repository: [GitHub w3c/wake-lock](https://github.com/w3c/wake-lock)
 - Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+- Unknown WebIDL names used: *INS* EventHandler, Navigator, WorkerNavigator
 - Missing references for WebIDL names: *INS* EventTarget / *DEL* AbortSignal
 
 
@@ -999,7 +837,7 @@
 - URL: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/web-animations-1/)
 - Repository: [GitHub w3c/web-animations](https://github.com/w3c/web-animations)
-- Unknown WebIDL names used: *INS* CSSOMString / *DEL* EventHandler, Window
+- Unknown WebIDL names used: *INS* CSSOMString
 - Missing references for links: *INS* https://www.w3.org/TR/selectors4/
 
 
@@ -1009,38 +847,6 @@
 - Crawled version: [Initial URL](https://w3c.github.io/web-nfc/)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Spec title: *INS* Web NFC / *DEL* Web NFC API
-- Missing references for WebIDL names: *INS* EventHandler
-
-
-## Web Share API - Level 1
-
-- URL: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
-- Crawled version: [Initial URL](https://w3c.github.io/web-share/)
-- Missing references for WebIDL names: *INS* Navigator
-
-
-## WebGL 2.0 Specification
-
-- URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## WebGL Specification
-
-- URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## WebRTC 1.0: Real-time Communication Between Browsers
-
-- URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/)
-- Repository: [GitHub w3c/webrtc-pc](https://github.com/w3c/webrtc-pc)
-- Spec is OK: *INS* true / *DEL* false
 
 
 ## WebXR Augmented Reality Module - Level 1
@@ -1049,5 +855,13 @@
 - Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/)
 - Repository: [GitHub immersive-web/webxr-ar-module](https://github.com/immersive-web/webxr-ar-module)
 - No normative references found: *INS* false / *DEL* true
+
+
+## XMLHttpRequest Standard
+
+- URL: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://xhr.spec.whatwg.org/)
+- Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
+- Unknown WebIDL names used: *INS* HTMLFormElement
 
 
