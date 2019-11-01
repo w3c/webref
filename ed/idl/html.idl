@@ -846,7 +846,7 @@ interface HTMLFormElement : HTMLElement {
   getter (RadioNodeList or Element) (DOMString name);
 
   void submit();
-  void requestSubmit(optional HTMLElement submitter);
+  void requestSubmit(optional HTMLElement? submitter = null);
   [CEReactions] void reset();
   boolean checkValidity();
   boolean reportValidity();
@@ -1153,6 +1153,17 @@ interface ValidityState {
   readonly attribute boolean badInput;
   readonly attribute boolean customError;
   readonly attribute boolean valid;
+};
+
+[Exposed=Window]
+interface SubmitEvent : Event {
+  constructor(DOMString type, optional SubmitEventInit eventInitDict = {});
+
+  readonly attribute HTMLElement? submitter;
+};
+
+dictionary SubmitEventInit : EventInit {
+  HTMLElement? submitter = null;
 };
 
 [Exposed=Window,
