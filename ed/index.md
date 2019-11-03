@@ -1402,7 +1402,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-color/) (31 October 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-color/) (3 November 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-color-4-20190305/)
