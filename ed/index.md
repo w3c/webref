@@ -4952,7 +4952,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (5 October 2019)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (4 November 2019)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -8071,7 +8071,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/manifest/) (Mon Nov 04 2019)
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-appmanifest-20191024/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-appmanifest-20191104/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
 - Shortname: appmanifest
 
