@@ -516,7 +516,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [DOM Standard](https://dom.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
@@ -4653,7 +4655,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (24 September 2019)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (4 November 2019)
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
@@ -8697,7 +8699,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (3 November 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (4 November 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
