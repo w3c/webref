@@ -5631,7 +5631,7 @@ Although they do not, the following specs should also normatively reference this
 - [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
-- [Web Share API - Level 1](https://w3c.github.io/web-share/)
+- [Web Share API](https://w3c.github.io/web-share/)
 
 Informative references to this spec from:
 
@@ -8399,7 +8399,7 @@ Normative references to this spec from:
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
-- [Web Share API - Level 1](https://w3c.github.io/web-share/)
+- [Web Share API](https://w3c.github.io/web-share/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
@@ -8467,7 +8467,7 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Web Share API - Level 1 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## Web Share API {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -8699,7 +8699,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (4 November 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (6 November 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 

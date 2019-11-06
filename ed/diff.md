@@ -2092,10 +2092,11 @@
 - Missing references for links: *DEL* https://w3c.github.io/page-visibility/
 
 
-## Web Share API - Level 1
+## Web Share API
 
 - URL: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
 - Crawled version: [Initial URL](https://w3c.github.io/web-share/)
+- Spec title: *INS* Web Share API / *DEL* Web Share API - Level 1
 - Unknown WebIDL names used: *DEL* Navigator
 - WebIDL names also defined elsewhere: *DEL* _dependencies
 - Missing references for WebIDL names: *INS* Navigator
