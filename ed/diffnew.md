@@ -1014,10 +1014,11 @@
 - Missing references for WebIDL names: *INS* EventHandler
 
 
-## Web Share API - Level 1
+## Web Share API
 
 - URL: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
 - Crawled version: [Initial URL](https://w3c.github.io/web-share/)
+- Spec title: *INS* Web Share API / *DEL* Web Share API - Level 1
 - Missing references for WebIDL names: *INS* Navigator
 
 
