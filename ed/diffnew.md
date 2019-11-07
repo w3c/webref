@@ -207,8 +207,6 @@
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-color/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unexpected WebIDL definitions found: *INS* false / *DEL* true
-- Missing references for links: *INS* https://www.w3.org/TR/css3-positioning/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-values/
 
 
 ## CSS Color Module Level 5
