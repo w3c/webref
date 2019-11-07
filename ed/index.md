@@ -908,7 +908,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-backgrounds-4/) (3 September 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-backgrounds-4/) (5 November 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1404,7 +1404,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-color/) (3 November 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-color/) (6 November 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-color-4-20191105/)
@@ -1415,10 +1415,8 @@ Informative references to this spec from:
 
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-color-3/`](https://www.w3.org/TR/css-color-3/)
-     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/2008/REC-WCAG20-20081211/`](https://www.w3.org/TR/2008/REC-WCAG20-20081211/), related reference "WCAG20" uses URL [`https://www.w3.org/TR/WCAG20/`](https://www.w3.org/TR/WCAG20/)
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2034,7 +2032,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (3 November 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/) (6 November 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/)
@@ -3605,6 +3603,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -3619,7 +3618,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-nav-1/) (5 November 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-nav-1/) (6 November 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-nav-1/](https://drafts.csswg.org/css-nav-1/)
 - Latest published version: [https://www.w3.org/TR/css-nav-1/](https://www.w3.org/TR/css-nav-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
@@ -3847,7 +3846,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-3/) (23 October 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-3/) (17 October 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
@@ -3908,7 +3907,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-4/) (2 October 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-4/) (5 November 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-text-4/](https://drafts.csswg.org/css-text-4/)
 - Latest published version: [https://www.w3.org/TR/css-text-4/](https://www.w3.org/TR/css-text-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-text-4-20180920/)
@@ -6411,7 +6410,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
