@@ -1,6 +1,6 @@
-% Diff between report from "November 06, 2019" and reference report from "September 30, 2019"
+% Diff between report from "November 07, 2019" and reference report from "September 30, 2019"
 % Reffy
-% November 06, 2019
+% November 07, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -2030,7 +2030,8 @@
 - Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
 - Unknown WebIDL names used: *DEL* Window
 - WebIDL names also defined elsewhere: *DEL* _dependencies
-- Inconsistent references for links: *DEL* https://w3c.github.io/webappsec-mixed-content/
+- Missing references for links: *INS* https://w3c.github.io/webdriver/webdriver-spec.html
+- Inconsistent references for links: *INS* https://w3c.github.io/FileAPI/ / *DEL* https://w3c.github.io/webappsec-mixed-content/
 
 
 ## Web Background Synchronization
