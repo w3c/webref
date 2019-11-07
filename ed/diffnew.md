@@ -1,6 +1,6 @@
-% Diff between report from "November 06, 2019" and reference report from "September 30, 2019"
+% Diff between report from "November 07, 2019" and reference report from "September 30, 2019"
 % Reffy
-% November 06, 2019
+% November 07, 2019
 
 ## Ambient Light Sensor
 
@@ -1003,6 +1003,15 @@
 - Repository: [GitHub w3c/web-animations](https://github.com/w3c/web-animations)
 - Unknown WebIDL names used: *INS* CSSOMString / *DEL* EventHandler, Window
 - Missing references for links: *INS* https://www.w3.org/TR/selectors4/
+
+
+## Web Authentication: An API for accessing Public Key Credentials - Level 2
+
+- URL: [https://www.w3.org/TR/webauthn-1/](https://www.w3.org/TR/webauthn-1/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/)
+- Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
+- Missing references for links: *INS* https://w3c.github.io/webdriver/webdriver-spec.html
+- Inconsistent references for links: *INS* https://w3c.github.io/FileAPI/ / *DEL* https://w3c.github.io/webappsec-mixed-content/
 
 
 ## Web NFC
