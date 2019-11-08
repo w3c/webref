@@ -3618,7 +3618,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-nav-1/) (6 November 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-nav-1/) (7 November 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-nav-1/](https://drafts.csswg.org/css-nav-1/)
 - Latest published version: [https://www.w3.org/TR/css-nav-1/](https://www.w3.org/TR/css-nav-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
