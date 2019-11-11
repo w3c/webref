@@ -5456,7 +5456,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (7 November 2019)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (11 November 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}

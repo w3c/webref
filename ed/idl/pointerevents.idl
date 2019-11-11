@@ -15,6 +15,7 @@ dictionary PointerEventInit : MouseEventInit {
     DOMString   pointerType = "";
     boolean     isPrimary = false;
     sequence<PointerEvent> coalescedEvents = [];
+    sequence<PointerEvent> predictedEvents = [];
 };
 
 [Exposed=Window]
@@ -31,6 +32,7 @@ interface PointerEvent : MouseEvent {
     readonly        attribute DOMString   pointerType;
     readonly        attribute boolean     isPrimary;
     sequence<PointerEvent> getCoalescedEvents();
+    sequence<PointerEvent> getPredictedEvents();
 };
 
 partial interface Element {
