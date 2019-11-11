@@ -1547,7 +1547,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-contain/) (16 September 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-contain/) (11 November 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-contain/](https://drafts.csswg.org/css-contain/)
 - Latest published version: [https://www.w3.org/TR/css-contain-1/](https://www.w3.org/TR/css-contain-1/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2019/PR-css-contain-1-20191015/)
@@ -4654,7 +4654,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (4 November 2019)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (11 November 2019)
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
@@ -4951,7 +4951,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (4 November 2019)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (11 November 2019)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -8702,7 +8702,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (10 November 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (11 November 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
