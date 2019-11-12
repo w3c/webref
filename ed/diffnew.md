@@ -1,6 +1,6 @@
-% Diff between report from "November 11, 2019" and reference report from "September 30, 2019"
+% Diff between report from "November 12, 2019" and reference report from "September 30, 2019"
 % Reffy
-% November 11, 2019
+% November 12, 2019
 
 ## Ambient Light Sensor
 
@@ -852,6 +852,16 @@
 - Crawled version: [Living Standard](https://notifications.spec.whatwg.org/)
 - Repository: [GitHub whatwg/notifications](https://github.com/whatwg/notifications)
 - Spec is OK: *INS* true / *DEL* false
+
+
+## Page not found · GitHub Pages
+
+- URL: [https://w3c.github.io/pointerevents/extension.html](https://w3c.github.io/pointerevents/extension.html)
+- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html)
+- Spec title: *INS* Page not found · GitHub Pages / *DEL* PointerEvents - Level 2 - Extensions
+- No normative references found: *INS* true / *DEL* false
+- No WebIDL definitions found: *INS* true / *DEL* false
+- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
 
 
 ## Payment Method: Basic Card
