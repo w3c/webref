@@ -2470,7 +2470,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-inline-3/) (10 August 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-inline-3/) (8 October 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-inline-3/](https://drafts.csswg.org/css-inline-3/)
 - Latest published version: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
@@ -3849,7 +3849,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-3/) (17 October 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-text-3-20181212/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-text-3
 
@@ -7610,7 +7610,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (3 November 2019)
+- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (12 November 2019)
 - Repository: [GitHub whatwg/streams](https://github.com/whatwg/streams)
 - Shortname: no shortname
 
@@ -8488,7 +8488,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/js-api/) (29 October 2019)
+- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/js-api/) (13 November 2019)
 - Editor's Draft: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2019/PR-wasm-js-api-1-20191001/)
@@ -8519,7 +8519,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/web-api/) (29 October 2019)
+- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/web-api/) (13 November 2019)
 - Editor's Draft: [https://webassembly.github.io/spec/web-api/](https://webassembly.github.io/spec/web-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2019/PR-wasm-web-api-1-20191001/)
