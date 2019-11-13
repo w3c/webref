@@ -3910,7 +3910,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-4/) (5 November 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-text-4/](https://drafts.csswg.org/css-text-4/)
 - Latest published version: [https://www.w3.org/TR/css-text-4/](https://www.w3.org/TR/css-text-4/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-text-4-20180920/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-text-4
 
