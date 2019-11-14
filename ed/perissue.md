@@ -114,11 +114,12 @@ Reffy was not expecting to find CSS definitions in the specifications listed her
 - `Date` used in [Reporting API 1](https://w3c.github.io/reporting/)
 - `KeyframeEffectReadOnly` used in [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - `PermissionName` used in [Permissions](https://w3c.github.io/permissions/)
+- `RTCPriorityType` used in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/), [WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)
 - `ReadableStream` used in [CSS Parser API](https://wicg.github.io/CSS-Parser-API/), [Encoding Standard](https://encoding.spec.whatwg.org/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://w3c.github.io/FileAPI/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/)
 - `WritableStream` used in [Encoding Standard](https://encoding.spec.whatwg.org/)
 
-=> 8 WebIDL names found
+=> 9 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
