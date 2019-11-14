@@ -2,7 +2,7 @@
 % Reffy
 % November 14, 2019
 
-242 specifications were crawled in this report.
+241 specifications were crawled in this report.
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -15,9 +15,8 @@
 
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
 - [Moved…](https://w3c.github.io/speech-api/)
-- [Page not found · GitHub Pages](https://w3c.github.io/pointerevents/extension.html)
 
-=> 3 specifications found
+=> 2 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -25,9 +24,8 @@ Basically all specifications have normative dependencies on some other specifica
 ## Specifications without WebIDL definitions
 
 - [Moved…](https://w3c.github.io/speech-api/)
-- [Page not found · GitHub Pages](https://w3c.github.io/pointerevents/extension.html)
 
-=> 2 specifications found
+=> 1 specification found
 
 Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 
