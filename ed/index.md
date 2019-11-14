@@ -4949,7 +4949,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (11 November 2019)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (14 November 2019)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -6564,25 +6564,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-
-No informative reference to this spec from other specs.
-
-
-## Page not found · GitHub Pages {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html) (Thu Nov 14 2019)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- No normative references found
-- No WebIDL definitions found
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
