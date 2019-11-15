@@ -1,6 +1,6 @@
-% Diff between report from "November 14, 2019" and reference report from "November 14, 2019"
+% Diff between report from "November 15, 2019" and reference report from "November 14, 2019"
 % Reffy
-% November 14, 2019
+% November 15, 2019
 
 ## Identifiers for WebRTC's Statistics API
 
