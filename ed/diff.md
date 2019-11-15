@@ -10,11 +10,34 @@
 - Unknown WebIDL names used: *INS* RTCPriorityType
 
 
+## Moved…
+
+- URL: [https://w3c.github.io/speech-api/](https://w3c.github.io/speech-api/)
+- Crawled version: [Initial URL](https://w3c.github.io/speech-api/)
+- This specification is not in the new crawl report.
+
+
 ## Page not found · GitHub Pages
 
 - URL: [https://w3c.github.io/pointerevents/extension.html](https://w3c.github.io/pointerevents/extension.html)
 - Crawled version: [Initial URL](https://w3c.github.io/pointerevents/extension.html)
 - This specification is not in the new crawl report.
+
+
+## Web App Manifest
+
+- URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/manifest/)
+- Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
+- Spec is OK: *INS* true / *DEL* false
+- Missing references for WebIDL names: *DEL* ServiceWorkerUpdateViaCache
+
+
+## Web Speech API
+
+- URL: [https://wicg.github.io/speech-api/](https://wicg.github.io/speech-api/)
+- Crawled version: [Initial URL](https://wicg.github.io/speech-api/)
+- This specification was not in the reference crawl report.
 
 
 ## WebRTC DSCP Control API

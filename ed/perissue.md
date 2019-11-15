@@ -14,20 +14,16 @@
 ## Specifications without normative dependencies
 
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
-- [Moved…](https://w3c.github.io/speech-api/)
 
-=> 2 specifications found
+=> 1 specification found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
 
 ## Specifications without WebIDL definitions
 
-- [Moved…](https://w3c.github.io/speech-api/)
 
-=> 1 specification found
-
-Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
+=> 0 specification found
 
 
 ## Specifications without CSS definitions
@@ -206,7 +202,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `DOMPointReadOnly` but does not reference [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/) uses `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/) uses `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
-- [Web App Manifest](https://w3c.github.io/manifest/) uses `ServiceWorkerUpdateViaCache` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/) uses:
     * `ServiceWorkerRegistration` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ServiceWorkerGlobalScope` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
@@ -228,7 +223,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLContextAttributes` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 70 missing references for IDL definitions found in 33 specifications
+=> 69 missing references for IDL definitions found in 32 specifications
 
 
 ## Missing references based on document links
