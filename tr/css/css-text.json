@@ -1,9 +1,31 @@
 {
   "spec": {
     "title": "CSS Text Module Level 4",
-    "url": "https://www.w3.org/TR/2018/WD-css-text-4-20180920/"
+    "url": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/"
   },
   "properties": {
+    "word-boundary-detection": {
+      "name": "word-boundary-detection",
+      "value": "normal | manual | auto(<lang>)",
+      "initial": "normal",
+      "appliesTo": "inline boxes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "as specified (However, see special provision for unsupported <lang>)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "word-boundary-expansion": {
+      "name": "word-boundary-expansion",
+      "value": "none | space | ideographic-space",
+      "initial": "none",
+      "appliesTo": "inline boxes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
     "text-space-collapse": {
       "name": "text-space-collapse",
       "value": "collapse | discard | preserve | preserve-breaks | preserve-spaces",
@@ -11,7 +33,7 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -22,18 +44,18 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
     "text-wrap": {
       "name": "text-wrap",
-      "value": "wrap | nowrap | balance",
+      "value": "wrap | nowrap | balance | stable | pretty",
       "initial": "wrap",
       "appliesTo": "inline boxes and block containers",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -44,7 +66,7 @@
       "appliesTo": "inline-level boxes and flex items",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -55,7 +77,7 @@
       "appliesTo": "inline-level boxes and flex items",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -66,7 +88,7 @@
       "appliesTo": "inline boxes",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -77,9 +99,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "computedValue": "see individual properties",
+      "animationType": "discrete",
+      "canonicalOrder": "per grammar"
     },
     "hyphenate-character": {
       "name": "hyphenate-character",
@@ -88,20 +110,20 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
     "hyphenate-limit-zone": {
       "name": "hyphenate-limit-zone",
-      "value": "<percentage> | <length>",
+      "value": "<length-percentage>",
       "initial": "0",
       "appliesTo": "block containers",
       "inherited": "yes",
-      "percentages": "refers to width of the line box",
-      "computedValue": "as specified",
+      "percentages": "refers to length of the line box",
+      "computedValue": "computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "by computed value type"
     },
     "hyphenate-limit-chars": {
       "name": "hyphenate-limit-chars",
@@ -110,9 +132,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "three values, each either the auto keyword or an integer",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "by computed value type"
     },
     "hyphenate-limit-lines": {
       "name": "hyphenate-limit-lines",
@@ -121,9 +143,9 @@
       "appliesTo": "block containers",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword or integer",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "by computed value type"
     },
     "hyphenate-limit-last": {
       "name": "hyphenate-limit-last",
@@ -132,7 +154,7 @@
       "appliesTo": "block containers",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -143,7 +165,7 @@
       "appliesTo": "block containers",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -156,7 +178,7 @@
       "percentages": "N/A",
       "computedValue": "absolute length",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "by computed value type"
     },
     "text-spacing": {
       "name": "text-spacing",
@@ -165,13 +187,15 @@
       "appliesTo": "block containers",
       "inherited": "yes",
       "percentages": "N/A",
-      "computed value": "specified value"
+      "computedValue": "specified keyword(s)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
     }
   },
   "descriptors": {},
   "valuespaces": {
-    "<string>": {
-      "prose": "The string must be a single character; otherwise the declaration must be ignored. When applied to a table cell, specifies the alignment character around which the cell’s contents will align. See below for further details and how this value combines with keywords."
+    "<auto()>": {
+      "value": "auto(<lang>)"
     }
   }
 }
