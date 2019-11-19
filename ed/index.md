@@ -1468,7 +1468,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-color-5/) (24 June 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-color-5/) (19 November 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5455,7 +5455,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (18 November 2019)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (19 November 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
