@@ -32,7 +32,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/accelerometer/) (29 September 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/accelerometer/) (20 November 2019)
 - Editor's Draft: [https://w3c.github.io/accelerometer/](https://w3c.github.io/accelerometer/)
 - Latest published version: [https://www.w3.org/TR/accelerometer/](https://www.w3.org/TR/accelerometer/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-accelerometer-20190307/)
@@ -5218,7 +5218,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/sensors/) (19 November 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/sensors/) (20 November 2019)
 - Editor's Draft: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
 - Latest published version: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/)
@@ -5347,7 +5347,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/gyroscope/) (29 September 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/gyroscope/) (20 November 2019)
 - Editor's Draft: [https://w3c.github.io/gyroscope/](https://w3c.github.io/gyroscope/)
 - Latest published version: [https://www.w3.org/TR/gyroscope/](https://www.w3.org/TR/gyroscope/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-gyroscope-20190307/)
@@ -5454,7 +5454,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (19 November 2019)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (20 November 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6524,7 +6524,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/orientation-sensor/) (29 September 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/orientation-sensor/) (20 November 2019)
 - Editor's Draft: [https://w3c.github.io/orientation-sensor/](https://w3c.github.io/orientation-sensor/)
 - Latest published version: [https://www.w3.org/TR/orientation-sensor/](https://www.w3.org/TR/orientation-sensor/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
@@ -8677,7 +8677,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (19 November 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (20 November 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
