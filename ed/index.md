@@ -4949,7 +4949,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (14 November 2019)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (20 November 2019)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -7849,7 +7849,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (21 October 2019)
+- Crawled version: [Living Standard](https://url.spec.whatwg.org/) (20 November 2019)
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -8741,7 +8741,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/) (19 November 2019)
+- Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/) (20 November 2019)
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-20191010/)
