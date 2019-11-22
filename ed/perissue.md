@@ -109,6 +109,15 @@ Reffy was not expecting to find CSS definitions in the specifications listed her
 
 
 
+## List of [Exposed] names not defined in the specifications crawled
+
+- `RTCIdentityProviderGlobalScope` used in [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
+
+=> 1 [Exposed] name found
+
+Please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
+
+
 ## List of WebIDL names not defined in the specifications crawled
 
 - `CSSOMString` used in [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/), [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -134,10 +143,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `Keyboard` defined in [Keyboard Lock](https://wicg.github.io/keyboard-lock/) and [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - `PermissionState` defined in [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/) and [Permissions](https://w3c.github.io/permissions/)
 - `SVGMarkerElement` defined in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) and [SVG Markers](https://svgwg.org/specs/markers/)
-- `Worker` defined in [HTML Standard](https://html.spec.whatwg.org/)
-- `Worklet` defined in [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
-=> 7 WebIDL names found
+=> 5 WebIDL names found
 
 "There can be only one"...
 
@@ -150,14 +157,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `ServiceWorkerRegistration` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `CacheQueryOptions` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEvent` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-    * `ServiceWorker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEventInit` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-- [Console Standard](https://console.spec.whatwg.org/) uses:
-    * `Worker` but does not reference [HTML Standard](https://html.spec.whatwg.org/) or [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-    * `Worklet` but does not reference [Worklets Level 1](https://drafts.css-houdini.org/worklets/) or [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/) or [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) or [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/) uses `ReportBody` but does not reference [Reporting API 1](https://w3c.github.io/reporting/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/) uses:
-    * `ServiceWorker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEvent` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEventInit` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ServiceWorkerGlobalScope` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
@@ -165,15 +167,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [CSS Fonts Module Level 3](https://drafts.csswg.org/css-fonts/) uses:
     * `CSSRule` but does not reference [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
     * `CSSStyleDeclaration` but does not reference [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/) uses:
-    * `PaintWorklet` but does not reference [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
-    * `LayoutWorklet` but does not reference [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
-- [DOM Standard](https://dom.spec.whatwg.org/) uses `AudioWorklet` but does not reference [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Encoding Standard](https://encoding.spec.whatwg.org/) uses `Worker` but does not reference [HTML Standard](https://html.spec.whatwg.org/) or [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/) uses `ReportBody` but does not reference [Reporting API 1](https://w3c.github.io/reporting/)
-- [HTML Standard](https://html.spec.whatwg.org/) uses:
-    * `WebGL2RenderingContext` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-    * `AudioWorklet` but does not reference [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [HTML Standard](https://html.spec.whatwg.org/) uses `WebGL2RenderingContext` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://w3c.github.io/hr-time/)
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/) uses:
     * `MediaStream` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
@@ -185,12 +180,10 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `ServiceWorkerRegistration` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ServiceWorkerGlobalScope` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEvent` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-    * `ServiceWorker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEventInit` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `WindowClient` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Push API](https://w3c.github.io/push-api/) uses:
     * `ServiceWorkerRegistration` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-    * `ServiceWorker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ServiceWorkerGlobalScope` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEvent` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEventInit` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
@@ -202,14 +195,12 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `ServiceWorkerRegistration` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ServiceWorkerGlobalScope` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEvent` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-    * `ServiceWorker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEventInit` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/) uses:
     * `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
     * `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://w3c.github.io/hr-time/)
     * `Event` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
     * `EventInit` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/) uses `Worklet` but does not reference [Worklets Level 1](https://drafts.css-houdini.org/worklets/) or [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/) or [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) or [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/) uses:
     * `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://w3c.github.io/hr-time/)
     * `WebGLRenderingContext` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -217,7 +208,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLContextAttributes` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 58 missing references for IDL definitions found in 23 specifications
+=> 45 missing references for IDL definitions found in 18 specifications
 
 
 ## Missing references based on document links
