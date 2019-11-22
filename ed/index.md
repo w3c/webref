@@ -5882,7 +5882,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/longtasks/) (10 October 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/longtasks/) (22 November 2019)
 - Editor's Draft: [https://w3c.github.io/longtasks/](https://w3c.github.io/longtasks/)
 - Latest published version: [https://www.w3.org/TR/longtasks-1/](https://www.w3.org/TR/longtasks-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
