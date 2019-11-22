@@ -160,7 +160,6 @@ Informative references to this spec from:
      * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `CacheQueryOptions` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ServiceWorker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - Missing references for links: 
      * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
@@ -500,7 +499,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Console Standard {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
+## Console Standard {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -510,9 +509,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for WebIDL names: 
-     * `Worker` defined in [HTML Standard](https://html.spec.whatwg.org/) or [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `Worklet` defined in [Worklets Level 1](https://drafts.css-houdini.org/worklets/) or [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/) or [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) or [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -619,7 +616,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for WebIDL names: 
-     * `ServiceWorker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
@@ -730,11 +726,6 @@ Informative references to this spec from:
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Console Standard](https://console.spec.whatwg.org/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 
 No informative reference to this spec from other specs.
 
@@ -2532,12 +2523,6 @@ Informative references to this spec from:
 
 No normative reference to this spec from other specs.
 
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Console Standard](https://console.spec.whatwg.org/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
-
 Informative references to this spec from:
 
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
@@ -3122,12 +3107,6 @@ Informative references to this spec from:
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Console Standard](https://console.spec.whatwg.org/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 
 Informative references to this spec from:
 
@@ -4108,7 +4087,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## CSS Typed OM Level 1 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## CSS Typed OM Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -4120,9 +4099,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for WebIDL names: 
-     * `PaintWorklet` defined in [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
-     * `LayoutWorklet` defined in [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-properties-values-api-1/`](https://www.w3.org/TR/css-properties-values-api-1/)
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
@@ -4646,7 +4622,7 @@ Informative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 
 
-## DOM Standard {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+## DOM Standard {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -4656,8 +4632,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for WebIDL names: 
-     * `AudioWorklet` defined in [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - Missing references for links: 
      * [`https://w3c.github.io/deviceorientation/spec-source-orientation.html`](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - Inconsistent references for links: 
@@ -4814,7 +4788,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Encoding Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## Encoding Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -4827,8 +4801,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `ReadableStream`, `WritableStream`
-- Missing references for WebIDL names: 
-     * `Worker` defined in [HTML Standard](https://html.spec.whatwg.org/) or [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5442,21 +5414,18 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## HTML Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## HTML Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (20 November 2019)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (22 November 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `WindowProxy`
-- WebIDL names also defined elsewhere: 
-    * `Worker` also defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - Missing references for WebIDL names: 
      * `WebGL2RenderingContext` defined in [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-     * `AudioWorklet` defined in [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - Missing references for links: 
      * [`https://spec.whatwg.org/`](https://spec.whatwg.org/)
      * [`https://w3c.github.io/payment-request/`](https://w3c.github.io/payment-request/)
@@ -5617,11 +5586,6 @@ Normative references to this spec from:
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Console Standard](https://console.spec.whatwg.org/)
-- [Encoding Standard](https://encoding.spec.whatwg.org/)
-
 Informative references to this spec from:
 
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
@@ -5684,7 +5648,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Identity for WebRTC 1.0 {data-spec=true data-ok=true}
+## Identity for WebRTC 1.0 {data-spec=true data-unknownExposedNames=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -6637,7 +6601,6 @@ No informative reference to this spec from other specs.
      * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ServiceWorker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `WindowClient` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
@@ -6953,7 +6916,6 @@ No informative reference to this spec from other specs.
 
 - Missing references for WebIDL names: 
      * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ServiceWorker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
@@ -7527,9 +7489,7 @@ Normative references to this spec from:
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Console Standard](https://console.spec.whatwg.org/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
-- [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
@@ -8070,13 +8030,6 @@ Normative references to this spec from:
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Console Standard](https://console.spec.whatwg.org/)
-- [DOM Standard](https://dom.spec.whatwg.org/)
-- [HTML Standard](https://html.spec.whatwg.org/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
-
 Informative references to this spec from:
 
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
@@ -8126,7 +8079,6 @@ Informative references to this spec from:
      * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ServiceWorker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec/specs/powerfulfeatures/`](https://w3c.github.io/webappsec/specs/powerfulfeatures/)
@@ -8456,7 +8408,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebAssembly JavaScript Interface {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## WebAssembly JavaScript Interface {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -8469,8 +8421,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for WebIDL names: 
-     * `Worklet` defined in [Worklets Level 1](https://drafts.css-houdini.org/worklets/) or [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/) or [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) or [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) or [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/wasm-core/`](https://www.w3.org/TR/wasm-core/)
      * [`https://www.w3.org/TR/wasm-js-api/`](https://www.w3.org/TR/wasm-js-api/)
@@ -8611,7 +8561,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (21 November 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (22 November 2019)
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
@@ -8669,7 +8619,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (20 November 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (22 November 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
@@ -8784,7 +8734,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Worklets Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true}
+## Worklets Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -8796,8 +8746,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- WebIDL names also defined elsewhere: 
-    * `Worklet` also defined in [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/) and [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) and [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) and [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/)
 
@@ -8812,11 +8760,6 @@ Normative references to this spec from:
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Console Standard](https://console.spec.whatwg.org/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 
 Informative references to this spec from:
 

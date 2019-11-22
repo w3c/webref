@@ -2,6 +2,14 @@
 % Reffy
 % November 22, 2019
 
+## Ambient Light Sensor
+
+- URL: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/ambient-light/)
+- Repository: [GitHub w3c/ambient-light](https://github.com/w3c/ambient-light)
+- Spec is OK: *INS* true / *DEL* false
+
+
 ## Beacon
 
 - URL: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
@@ -9,6 +17,22 @@
 - Repository: [GitHub w3c/beacon](https://github.com/w3c/beacon)
 - Spec is OK: *INS* false / *DEL* true
 - No WebIDL definitions found: *INS* true / *DEL* false
+
+
+## Console Standard
+
+- URL: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://console.spec.whatwg.org/)
+- Repository: [GitHub whatwg/console](https://github.com/whatwg/console)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Geolocation Sensor
+
+- URL: [https://wicg.github.io/geolocation-sensor/](https://wicg.github.io/geolocation-sensor/)
+- Crawled version: [Initial URL](https://wicg.github.io/geolocation-sensor/)
+- Repository: [GitHub wicg/geolocation-sensor](https://github.com/wicg/geolocation-sensor)
+- Spec is OK: *INS* true / *DEL* false
 
 
 ## High Resolution Time
@@ -26,6 +50,14 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/)
 - Repository: [GitHub w3c/webrtc-stats](https://github.com/w3c/webrtc-stats)
 - Unknown WebIDL names used: *INS* RTCPriorityType
+
+
+## Identity for WebRTC 1.0
+
+- URL: [https://www.w3.org/TR/webrtc-identity/](https://www.w3.org/TR/webrtc-identity/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-identity/identity.html)
+- Repository: [GitHub w3c/webrtc-identity](https://github.com/w3c/webrtc-identity)
+- Unknown [Exposed] names used: *INS* RTCIdentityProviderGlobalScope
 
 
 ## Input Device Capabilities
@@ -78,6 +110,14 @@
 - URL: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/page-visibility/)
 - Repository: [GitHub w3c/page-visibility](https://github.com/w3c/page-visibility)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Proximity Sensor
+
+- URL: [https://www.w3.org/TR/proximity/](https://www.w3.org/TR/proximity/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/proximity/)
+- Repository: [GitHub w3c/proximity](https://github.com/w3c/proximity)
 - Spec is OK: *INS* true / *DEL* false
 
 
