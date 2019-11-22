@@ -1,6 +1,6 @@
-% Diff between report from "November 21, 2019" and reference report from "November 14, 2019"
+% Diff between report from "November 22, 2019" and reference report from "November 14, 2019"
 % Reffy
-% November 21, 2019
+% November 22, 2019
 
 ## Beacon
 
@@ -11,11 +11,12 @@
 - No WebIDL definitions found: *INS* true / *DEL* false
 
 
-## High Resolution Time Level 2
+## High Resolution Time
 
 - URL: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/)
 - Repository: [GitHub w3c/hr-time](https://github.com/w3c/hr-time)
+- Spec title: *INS* High Resolution Time / *DEL* High Resolution Time Level 2
 - Spec is OK: *INS* true / *DEL* false
 
 
