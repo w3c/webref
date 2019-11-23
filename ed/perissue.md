@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% November 22, 2019
+% November 23, 2019
 
 241 specifications were crawled in this report.
 
@@ -27,9 +27,10 @@ Basically all specifications have normative dependencies on some other specifica
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Input Events Level 2](https://w3c.github.io/input-events/)
 - [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
+- [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 
-=> 5 specifications found
+=> 6 specifications found
 
 Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 

@@ -1,6 +1,6 @@
-% Diff between report from "November 22, 2019" and reference report from "November 14, 2019"
+% Diff between report from "November 23, 2019" and reference report from "November 14, 2019"
 % Reffy
-% November 22, 2019
+% November 23, 2019
 
 ## Accelerometer
 
@@ -329,6 +329,14 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/push-api/)
 - Repository: [GitHub w3c/push-api](https://github.com/w3c/push-api)
 - Missing references for WebIDL names: *DEL* ServiceWorker, Blob
+
+
+## Resize Observer
+
+- URL: [https://drafts.csswg.org/resize-observer/](https://drafts.csswg.org/resize-observer/)
+- Crawled version: [Initial URL](https://drafts.csswg.org/resize-observer/)
+- No WebIDL definitions found: *INS* true / *DEL* false
+- Obsolete WebIDL constructs found: *DEL* false
 
 
 ## Screen Capture
