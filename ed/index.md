@@ -5222,7 +5222,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/geolocation-api/) (02 October 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/geolocation-api/) (24 November 2019)
 - Editor's Draft: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
 - Latest published version: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
@@ -8127,7 +8127,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webcrypto/Overview.html) (14 May 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webcrypto/Overview.html) (24 November 2019)
 - Editor's Draft: [https://w3c.github.io/webcrypto/Overview.html](https://w3c.github.io/webcrypto/Overview.html)
 - Latest published version: [https://www.w3.org/TR/WebCryptoAPI/](https://www.w3.org/TR/WebCryptoAPI/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
@@ -8620,7 +8620,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (22 November 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (24 November 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
