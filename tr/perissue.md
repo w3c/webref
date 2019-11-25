@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% November 18, 2019
+% November 25, 2019
 
 241 specifications were crawled in this report.
 
@@ -42,12 +42,14 @@ Basically all specifications have normative dependencies on some other specifica
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
+- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Input Events Level 2](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
+- [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
-=> 13 specifications found
+=> 15 specifications found
 
 Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 
@@ -122,18 +124,26 @@ Reffy was not expecting to find CSS definitions in the specifications listed her
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [CSS Device Adaptation Module Level 1](http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
-- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
-- [Web NFC](https://w3c.github.io/web-nfc/)
 - [WebRTC DSCP Control API](https://www.w3.org/TR/2018/WD-webrtc-dscp-20180703/)
 - [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
 
-=> 13 specifications found
+=> 11 specifications found
 
+
+
+## List of [Exposed] names not defined in the specifications crawled
+
+- `LayoutWorklet` used in [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
+- `RTCIdentityProviderGlobalScope` used in [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
+
+=> 2 [Exposed] names found
+
+Please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
 
 
 ## List of WebIDL names not defined in the specifications crawled
@@ -150,9 +160,7 @@ Reffy was not expecting to find CSS definitions in the specifications listed her
 - `Date` used in [Reporting API 1](https://w3c.github.io/reporting/)
 - `ElementCSSInlineStyle` used in [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - `KeyframeEffectReadOnly` used in [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
-- `LayoutWorklet` used in [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - `Map` used in [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
-- `NavigatorUserMedia` used in [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/)
 - `Performance` used in [Event Timing API](https://wicg.github.io/event-timing/), [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/), [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/), [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190923/), [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 - `PermissionName` used in [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - `RTCError` used in [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
@@ -173,7 +181,7 @@ Reffy was not expecting to find CSS definitions in the specifications listed her
 - `SupportedType` used in [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/), [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 
-=> 34 WebIDL names found
+=> 32 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -186,10 +194,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `GamepadMappingType` defined in [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20191114/) and [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
 - `Keyboard` defined in [Keyboard Lock](https://wicg.github.io/keyboard-lock/) and [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - `PermissionState` defined in [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/) and [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
-- `Worker` defined in [HTML Standard](https://html.spec.whatwg.org/)
-- `Worklet` defined in [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 
-=> 7 WebIDL names found
+=> 5 WebIDL names found
 
 "There can be only one"...
 
@@ -211,33 +217,21 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `ServiceWorkerRegistration` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `CacheQueryOptions` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEvent` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-    * `ServiceWorker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEventInit` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/) uses `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
-- [Console Standard](https://console.spec.whatwg.org/) uses:
-    * `Worker` but does not reference [HTML Standard](https://html.spec.whatwg.org/) or [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-    * `Worklet` but does not reference [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/) or [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) or [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/) uses:
-    * `ServiceWorker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEvent` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEventInit` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ServiceWorkerGlobalScope` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/) uses `Document` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
-- [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/) uses:
-    * `Worker` but does not reference [HTML Standard](https://html.spec.whatwg.org/) or [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-    * `PaintWorklet` but does not reference [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/) uses:
     * `Document` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
     * `Node` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
     * `Element` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
     * `Range` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
     * `DocumentFragment` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
-- [DOM Standard](https://dom.spec.whatwg.org/) uses `AudioWorklet` but does not reference [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
-- [Encoding](https://www.w3.org/TR/2018/CR-encoding-20180327/) uses `Worker` but does not reference [HTML Standard](https://html.spec.whatwg.org/) or [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/) uses `ReportBody` but does not reference [Reporting API 1](https://w3c.github.io/reporting/)
-- [HTML Standard](https://html.spec.whatwg.org/) uses:
-    * `WebGL2RenderingContext` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-    * `AudioWorklet` but does not reference [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
+- [HTML Standard](https://html.spec.whatwg.org/) uses `WebGL2RenderingContext` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/) uses:
     * `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
     * `URL` but does not reference [URL Standard](https://url.spec.whatwg.org/)
@@ -246,12 +240,10 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `ServiceWorkerRegistration` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ServiceWorkerGlobalScope` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEvent` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-    * `ServiceWorker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEventInit` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `WindowClient` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20191003/) uses:
     * `ServiceWorkerRegistration` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-    * `ServiceWorker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ServiceWorkerGlobalScope` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEvent` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEventInit` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
@@ -264,18 +256,14 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `ServiceWorkerRegistration` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ServiceWorkerGlobalScope` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEvent` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-    * `ServiceWorker` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEventInit` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-- [Web NFC](https://w3c.github.io/web-nfc/) uses `EventHandler` but does not reference [HTML Standard](https://html.spec.whatwg.org/)
-- [Web Share API](https://w3c.github.io/web-share/) uses `Navigator` but does not reference [HTML Standard](https://html.spec.whatwg.org/)
-- [WebAssembly JavaScript Interface](https://www.w3.org/TR/2019/PR-wasm-js-api-1-20191001/) uses `Worklet` but does not reference [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/) or [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/) or [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20191010/) uses:
     * `WebGLRenderingContext` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `WebGLFramebuffer` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `WebGLContextAttributes` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 65 missing references for IDL definitions found in 25 specifications
+=> 50 missing references for IDL definitions found in 18 specifications
 
 
 ## Missing references based on document links
@@ -395,7 +383,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [CSS Conditional Rules Module Level 3](http://www.w3.org/TR/2013/CR-css3-conditional-20130404/) links to:
     * [`https://www.w3.org/TR/2008/REC-CSS1-20080411`](https://www.w3.org/TR/2008/REC-CSS1-20080411) but does not list it in its references
     * [`https://www.w3.org/TR/2013/WD-css3-transitions-20130212/`](https://www.w3.org/TR/2013/WD-css3-transitions-20130212/) but does not list it in its references
-- [CSS Containment Module Level 1](https://www.w3.org/TR/2019/PR-css-contain-1-20191015/) links to:
+- [CSS Containment Module Level 1](https://www.w3.org/TR/2019/REC-css-contain-1-20191121/) links to:
     * [`https://www.w3.org/TR/css-pseudo-4/`](https://www.w3.org/TR/css-pseudo-4/) but does not list it in its references
     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
@@ -864,6 +852,14 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://spec.whatwg.org/`](https://spec.whatwg.org/) but does not list it in its references
     * [`https://w3c.github.io/payment-request/`](https://w3c.github.io/payment-request/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but does not list it in its references
+- [Input Events Level 2](https://www.w3.org/TR/2019/WD-input-events-2-20190530/) links to:
+    * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but does not list it in its references
+    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
+    * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/) but does not list it in its references
+    * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but does not list it in its references
+    * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/) but does not list it in its references
+    * [`https://www.w3.org/TR/cssom-1/`](https://www.w3.org/TR/cssom-1/) but does not list it in its references
+    * [`https://www.w3.org/TR/fingerprinting-guidance/`](https://www.w3.org/TR/fingerprinting-guidance/) but does not list it in its references
 - [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/) links to:
     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
@@ -920,6 +916,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-display-3/`](https://www.w3.org/TR/css-display-3/) but does not list it in its references
     * [`https://www.w3.org/TR/intersection-observer/`](https://www.w3.org/TR/intersection-observer/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
+- [Screen Capture](https://www.w3.org/TR/2019/WD-screen-capture-20191119/) links to [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but does not list it in its references
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/) links to:
     * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-animations/`](https://www.w3.org/TR/css3-animations/) but does not list it in its references
@@ -989,7 +986,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 610 missing references for links found in 147 specifications
+=> 618 missing references for links found in 149 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -1195,7 +1192,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "HTML52" uses URL [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/)
     * [`https://www.w3.org/TR/domcore/`](https://www.w3.org/TR/domcore/) but related reference "DOM41" uses URL [`https://www.w3.org/TR/dom41/`](https://www.w3.org/TR/dom41/)
     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but related reference "DOM41" uses URL [`https://www.w3.org/TR/dom41/`](https://www.w3.org/TR/dom41/)
-- [Input Events Level 2](https://www.w3.org/TR/2019/WD-input-events-2-20190530/) links to [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 - [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/) links to:
     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but related reference "CSSOM-VIEW-1" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -1260,7 +1256,9 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Reporting API 1](https://w3c.github.io/reporting/) links to:
     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
-- [Screen Capture](http://www.w3.org/TR/2016/WD-screen-capture-20160714/) links to [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+- [Screen Capture](https://www.w3.org/TR/2019/WD-screen-capture-20191119/) links to:
+    * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+    * [`https://w3c.github.io/mediacapture-main/getusermedia.html`](https://w3c.github.io/mediacapture-main/getusermedia.html) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/) links to [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIX" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
 - [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190820/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -1303,6 +1301,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM-20151119" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 239 inconsistent references for links found in 127 specifications
+=> 239 inconsistent references for links found in 126 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
