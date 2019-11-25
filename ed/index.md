@@ -5418,7 +5418,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (22 November 2019)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (25 November 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6322,7 +6322,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-mixed-content/) (19 June 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-mixed-content/) (25 November 2019)
 - Editor's Draft: [https://w3c.github.io/webappsec-mixed-content/](https://w3c.github.io/webappsec-mixed-content/)
 - Latest published version: [https://www.w3.org/TR/mixed-content/](https://www.w3.org/TR/mixed-content/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
