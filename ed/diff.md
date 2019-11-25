@@ -1,6 +1,6 @@
-% Diff between report from "November 24, 2019" and reference report from "November 14, 2019"
+% Diff between report from "November 25, 2019" and reference report from "November 14, 2019"
 % Reffy
-% November 24, 2019
+% November 25, 2019
 
 ## Accelerometer
 
