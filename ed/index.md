@@ -3591,7 +3591,7 @@ Informative references to this spec from:
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 
 
-## CSS Spatial Navigation Level 1 {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## CSS Spatial Navigation Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3604,6 +3604,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Missing references for links: 
+     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 

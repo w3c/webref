@@ -92,14 +92,6 @@
 - Missing references for WebIDL names: *DEL* Window
 
 
-## CSS Spatial Navigation Level 1
-
-- URL: [https://www.w3.org/TR/css-nav-1/](https://www.w3.org/TR/css-nav-1/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-nav-1/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *DEL* https://w3c.github.io/webappsec-feature-policy/
-
-
 ## CSS Transitions Level 2
 
 - URL: [https://drafts.csswg.org/css-transitions-2/](https://drafts.csswg.org/css-transitions-2/)
