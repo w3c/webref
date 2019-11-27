@@ -257,16 +257,6 @@
 - Missing references for WebIDL names: *DEL* DOMHighResTimeStamp
 
 
-## MediaStreamTrack Content Hints
-
-- URL: [https://www.w3.org/TR/mst-content-hint/](https://www.w3.org/TR/mst-content-hint/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/mst-content-hint/)
-- Repository: [GitHub w3c/mst-content-hint](https://github.com/w3c/mst-content-hint)
-- Spec is OK: *INS* false / *DEL* true
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
-
-
 ## Moved…
 
 - URL: [https://w3c.github.io/speech-api/](https://w3c.github.io/speech-api/)
