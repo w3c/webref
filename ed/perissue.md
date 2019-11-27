@@ -26,11 +26,10 @@ Basically all specifications have normative dependencies on some other specifica
 - [Beacon](https://w3c.github.io/beacon/)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Input Events Level 2](https://w3c.github.io/input-events/)
-- [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 
-=> 6 specifications found
+=> 5 specifications found
 
 Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 

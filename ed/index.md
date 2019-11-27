@@ -438,7 +438,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.fxtf.org/compositing-1/) (5 December 2018)
+- Crawled version: [Editor's Draft](https://drafts.fxtf.org/compositing-1/) (26 November 2019)
 - Editor's Draft: [https://drafts.fxtf.org/compositing-1/](https://drafts.fxtf.org/compositing-1/)
 - Latest published version: [http://www.w3.org/TR/compositing-1/](http://www.w3.org/TR/compositing-1/)
 - Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2015/CR-compositing-1-20150113/)
@@ -6298,11 +6298,11 @@ Informative references to this spec from:
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 
-## MediaStreamTrack Content Hints {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
+## MediaStreamTrack Content Hints {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/mst-content-hint/) (09 January 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mst-content-hint/) (27 November 2019)
 - Editor's Draft: [https://w3c.github.io/mst-content-hint/](https://w3c.github.io/mst-content-hint/)
 - Latest published version: [https://www.w3.org/TR/mst-content-hint/](https://www.w3.org/TR/mst-content-hint/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
@@ -6311,7 +6311,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8257,6 +8257,7 @@ Normative references to this spec from:
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
+- [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
@@ -8322,7 +8323,6 @@ Informative references to this spec from:
 
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
-- [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
 
 
 ## Web MIDI API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
@@ -8357,7 +8357,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (26 November 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (27 November 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
