@@ -8621,7 +8621,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (26 November 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (28 November 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
