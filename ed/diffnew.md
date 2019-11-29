@@ -1,6 +1,6 @@
-% Diff between report from "November 28, 2019" and reference report from "November 14, 2019"
+% Diff between report from "November 29, 2019" and reference report from "November 14, 2019"
 % Reffy
-% November 28, 2019
+% November 29, 2019
 
 ## Ambient Light Sensor
 
