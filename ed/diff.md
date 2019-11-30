@@ -1,6 +1,6 @@
-% Diff between report from "November 29, 2019" and reference report from "November 14, 2019"
+% Diff between report from "November 30, 2019" and reference report from "November 14, 2019"
 % Reffy
-% November 29, 2019
+% November 30, 2019
 
 ## Accelerometer
 
@@ -356,6 +356,14 @@
 - Spec is OK: *INS* true / *DEL* false
 - Unknown WebIDL names used: *DEL* DedicatedWorker
 - Missing references for WebIDL names: *DEL* EventTarget
+
+
+## Web Animations
+
+- URL: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/web-animations-1/)
+- Repository: [GitHub w3c/web-animations](https://github.com/w3c/web-animations)
+- Inconsistent references for links: *INS* https://www.w3.org/TR/hr-time/
 
 
 ## Web App Manifest

@@ -1,6 +1,6 @@
-% Diff between report from "November 29, 2019" and reference report from "November 14, 2019"
+% Diff between report from "November 30, 2019" and reference report from "November 14, 2019"
 % Reffy
-% November 29, 2019
+% November 30, 2019
 
 ## Ambient Light Sensor
 
@@ -141,6 +141,14 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/)
 - Repository: [GitHub w3c/wake-lock](https://github.com/w3c/wake-lock)
 - Spec is OK: *INS* true / *DEL* false
+
+
+## Web Animations
+
+- URL: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/web-animations-1/)
+- Repository: [GitHub w3c/web-animations](https://github.com/w3c/web-animations)
+- Inconsistent references for links: *INS* https://www.w3.org/TR/hr-time/
 
 
 ## Web App Manifest
