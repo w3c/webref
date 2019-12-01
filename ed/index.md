@@ -3823,7 +3823,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-3/) (28 November 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-3/) (1 December 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
@@ -3884,7 +3884,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-4/) (13 November 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-4/) (30 November 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-text-4/](https://drafts.csswg.org/css-text-4/)
 - Latest published version: [https://www.w3.org/TR/css-text-4/](https://www.w3.org/TR/css-text-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
