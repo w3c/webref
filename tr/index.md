@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% November 25, 2019
+% December 02, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -45,7 +45,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (25 November 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (2 December 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -89,7 +89,7 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190923/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [SVG Markers](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
 - [SVG Strokes](http://www.w3.org/TR/2015/WD-svg-strokes-20150409/)
@@ -339,7 +339,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190923/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
 
 Informative references to this spec from:
 
@@ -432,7 +432,7 @@ Normative references to this spec from:
 - [CSS Round Display Level 1](https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Scrollbars Module Level 1](https://www.w3.org/TR/2018/WD-css-scrollbars-1-20180925/)
-- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
+- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Style Attributes](http://www.w3.org/TR/2013/REC-css-style-attr-20131107/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
@@ -1302,7 +1302,7 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/)
 - [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
-- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
+- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
@@ -1748,7 +1748,7 @@ Normative references to this spec from:
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
-- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
+- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
@@ -2192,7 +2192,7 @@ Normative references to this spec from:
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/)
-- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
+- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
@@ -3057,7 +3057,7 @@ Normative references to this spec from:
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Scrollbars Module Level 1](https://www.w3.org/TR/2018/WD-css-scrollbars-1-20180925/)
-- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
+- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
@@ -3306,7 +3306,7 @@ Normative references to this spec from:
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/)
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/2018/WD-css-page-3-20181018/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
-- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
+- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
@@ -3647,7 +3647,7 @@ Normative references to this spec from:
 
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/2018/WD-css-logical-1-20180827/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
-- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
+- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 
 No informative reference to this spec from other specs.
@@ -3778,16 +3778,17 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/) (23 April 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/) (26 November 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-nav-1/](https://drafts.csswg.org/css-nav-1/)
 - Latest published version: [https://www.w3.org/TR/css-nav-1/](https://www.w3.org/TR/css-nav-1/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-nav-1
 
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
+     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/)
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
@@ -3885,7 +3886,7 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190923/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191115/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
@@ -4151,7 +4152,7 @@ Informative references to this spec from:
 
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
-- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
+- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Syntax Module Level 3](https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
@@ -4501,7 +4502,7 @@ Normative references to this spec from:
 - [CSS Scrollbars Module Level 1](https://www.w3.org/TR/2018/WD-css-scrollbars-1-20180925/)
 - [CSS Shadow Parts](https://www.w3.org/TR/2018/WD-css-shadow-parts-1-20181115/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
-- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
+- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Syntax Module Level 3](https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
@@ -4716,7 +4717,7 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
-- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
+- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/)
@@ -4854,7 +4855,7 @@ Normative references to this spec from:
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Shadow Parts](https://www.w3.org/TR/2018/WD-css-shadow-parts-1-20181115/)
-- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
+- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
@@ -4895,7 +4896,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190923/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190820/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
@@ -5069,7 +5070,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/webappsec-feature-policy/) (21 October 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/webappsec-feature-policy/) (28 November 2019)
 - Repository: [GitHub w3c/webappsec-feature-policy](https://github.com/w3c/webappsec-feature-policy)
 - Shortname: no shortname
 
@@ -5080,14 +5081,13 @@ No informative reference to this spec from other specs.
 - Missing references for links: 
      * [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/)
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP-3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
      * [`https://w3c.github.io/payment-request/`](https://w3c.github.io/payment-request/), related reference "PAYMENT-REQUEST" uses URL [`https://www.w3.org/TR/payment-request/`](https://www.w3.org/TR/payment-request/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20190416/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -5136,7 +5136,7 @@ Normative references to this spec from:
 - [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190923/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191115/)
@@ -5550,7 +5550,7 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190923/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
@@ -5588,7 +5588,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (22 November 2019)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (26 November 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5643,7 +5643,7 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2019/WD-css-properties-values-api-1-20191025/)
-- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
+- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
@@ -5704,7 +5704,7 @@ Normative references to this spec from:
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190923/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
 - [Screen Capture](https://www.w3.org/TR/2019/WD-screen-capture-20191119/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
@@ -6561,7 +6561,7 @@ Normative references to this spec from:
 
 - [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20191114/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190923/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
 - [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 
@@ -6852,7 +6852,7 @@ Normative references to this spec from:
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20190715/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190923/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 
 Informative references to this spec from:
@@ -7184,7 +7184,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/resize-observer/) (21 November 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/resize-observer/) (22 November 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7207,10 +7207,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-resource-timing-2-20190923/) (23 September 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/) (28 November 2019)
 - Editor's Draft: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
 - Latest published version: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-resource-timing-2-20190923/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
 - Repository: [GitHub w3c/resource-timing](https://github.com/w3c/resource-timing)
 - Shortname: resource-timing-2
 
@@ -7514,7 +7514,7 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190923/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
@@ -7732,7 +7732,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
+- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [HTML Standard](https://html.spec.whatwg.org/)
@@ -8177,7 +8177,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (25 November 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (27 November 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8319,7 +8319,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (25 November 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (2 December 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8346,7 +8346,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (25 November 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (2 December 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8424,7 +8424,7 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2019/WD-css-properties-values-api-1-20191025/)
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/)
 - [CSS Shadow Parts](https://www.w3.org/TR/2018/WD-css-shadow-parts-1-20181115/)
-- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
+- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
@@ -8487,7 +8487,7 @@ Normative references to this spec from:
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190923/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
 - [Screen Capture](https://www.w3.org/TR/2019/WD-screen-capture-20191119/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190820/)
@@ -8602,7 +8602,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (24 November 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (1 December 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
@@ -8775,7 +8775,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190911/)
 - [HTML Standard](https://html.spec.whatwg.org/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20190923/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
 
 Informative references to this spec from:
 
