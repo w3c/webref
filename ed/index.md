@@ -203,11 +203,11 @@ Informative references to this spec from:
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 
 
-## Beacon {data-spec=true data-anomaly=true data-noIdlContent=true}
+## Beacon {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/) (05 March 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/) (02 December 2019)
 - Editor's Draft: [https://w3c.github.io/beacon/](https://w3c.github.io/beacon/)
 - Latest published version: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-beacon-20170413/)
@@ -216,7 +216,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -609,7 +609,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/cookie-store/) (16 October 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/cookie-store/) (2 December 2019)
 - Repository: [GitHub wicg/cookie-store](https://github.com/wicg/cookie-store)
 - Shortname: no shortname
 
@@ -8562,7 +8562,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (29 November 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (02 December 2019)
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
@@ -8684,7 +8684,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/) (21 November 2019)
+- Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/) (2 December 2019)
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-20191010/)
