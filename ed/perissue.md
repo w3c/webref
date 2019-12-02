@@ -23,13 +23,12 @@ Basically all specifications have normative dependencies on some other specifica
 
 ## Specifications without WebIDL definitions
 
-- [Beacon](https://w3c.github.io/beacon/)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Input Events Level 2](https://w3c.github.io/input-events/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 
-=> 5 specifications found
+=> 4 specifications found
 
 Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 

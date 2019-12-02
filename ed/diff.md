@@ -27,15 +27,6 @@
 - Missing references for WebIDL names: *DEL* ServiceWorker
 
 
-## Beacon
-
-- URL: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/beacon/)
-- Repository: [GitHub w3c/beacon](https://github.com/w3c/beacon)
-- Spec is OK: *INS* false / *DEL* true
-- No WebIDL definitions found: *INS* true / *DEL* false
-
-
 ## Console Standard
 
 - URL: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
