@@ -1,6 +1,6 @@
-% Diff between report from "November 25, 2019" and reference report from "November 11, 2019"
+% Diff between report from "December 02, 2019" and reference report from "November 11, 2019"
 % Reffy
-% November 25, 2019
+% December 02, 2019
 
 ## Ambient Light Sensor
 
@@ -26,6 +26,15 @@
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Inconsistent references for links: *INS* https://www.w3.org/TR/css-fonts-4/, https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/
+
+
+## CSS Spatial Navigation Level 1
+
+- URL: [https://www.w3.org/TR/css-nav-1/](https://www.w3.org/TR/css-nav-1/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
+- Editor's Draft: [https://drafts.csswg.org/css-nav-1/](https://drafts.csswg.org/css-nav-1/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Missing references for links: *INS* https://w3c.github.io/webappsec-feature-policy/
 
 
 ## CSS Text Module Level 4

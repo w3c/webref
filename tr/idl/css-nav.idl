@@ -1,7 +1,7 @@
 // GENERATED CONTENT - DO NOT EDIT
 // Content was automatically extracted by Reffy into reffy-reports
 // (https://github.com/tidoust/reffy-reports)
-// Source: CSS Spatial Navigation Level 1 (https://www.w3.org/TR/2019/WD-css-nav-1-20190423/)
+// Source: CSS Spatial Navigation Level 1 (https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 
 enum SpatialNavigationDirection {
     "up",
@@ -24,7 +24,6 @@ dictionary FocusableAreasOption {
 };
 
 dictionary SpatialNavigationSearchOptions {
-    required SpatialNavigationDirection dir;
     sequence<Node>? candidates;
     Node? container;
 };
@@ -32,12 +31,13 @@ dictionary SpatialNavigationSearchOptions {
 partial interface Element {
     Node getSpatialNavigationContainer();
     sequence<Node> focusableAreas(optional FocusableAreasOption option);
-    Node? spatialNavigationSearch(SpatialNavigationSearchOptions options);
+    Node? spatialNavigationSearch(SpatialNavigationDirection dir, optional SpatialNavigationSearchOptions options);
 };
 
-[Exposed=Window,
-  Constructor (DOMString type, optional NavigationEventInit eventInitDict)]
+[Exposed=Window]
 interface NavigationEvent : UIEvent {
+    constructor(DOMString type,
+                optional NavigationEventInit eventInitDict);
     readonly attribute SpatialNavigationDirection dir;
     readonly attribute EventTarget? relatedTarget;
 };
