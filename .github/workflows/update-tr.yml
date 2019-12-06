@@ -8,6 +8,8 @@ jobs:
     steps:
     - name: Checkout reffy-reports
       uses: actions/checkout@master
+      with:
+        path: reffy-reports
     - name: Checkout reffy
       uses: actions/checkout@master
       with:
@@ -21,17 +23,16 @@ jobs:
         node-version: 10.x
     - name: Install pandoc
       run: sudo apt-get install pandoc
-    - name: Retrieve W3C API key
-      run: echo "${{ secrets.CONFIG_JSON }}" | base64 --decode > config.json
-      working-directory: ../reffy
-    - name: Install Reffy's dependencies
-      run: npm ci
-      working-directory: ../reffy
+    - name: Setup Reffy
+      run: |
+        echo "${{ secrets.CONFIG_JSON }}" | base64 --decode > config.json
+        npm ci
+      working-directory: reffy
     - name: Run Reffy's crawler
       run: npm run tr
-      working-directory: ../reffy
+      working-directory: reffy
     - name: Copy reports
-      run: rsync -av --exclude=README.md ../reffy/reports/ ./
+      run: rsync -av --exclude=README.md reffy/reports/ reffy-reports/
     - name: Push updates to git
       run: |
         git config user.name "reffy-bot"
@@ -43,3 +44,4 @@ jobs:
         #npm version patch
         git push origin HEAD:master
         #git push origin --tags
+      working-directory: reffy-reports
