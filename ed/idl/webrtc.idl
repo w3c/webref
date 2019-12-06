@@ -296,7 +296,6 @@ dictionary RTCRtpParameters {
 dictionary RTCRtpSendParameters : RTCRtpParameters {
   required DOMString transactionId;
   required sequence<RTCRtpEncodingParameters> encodings;
-  RTCDegradationPreference degradationPreference = "balanced";
 };
 
 dictionary RTCRtpReceiveParameters : RTCRtpParameters {
@@ -312,12 +311,6 @@ dictionary RTCRtpEncodingParameters : RTCRtpCodingParameters {
   boolean active = true;
   unsigned long maxBitrate;
   double scaleResolutionDownBy;
-};
-
-enum RTCDegradationPreference {
-  "maintain-framerate",
-  "maintain-resolution",
-  "balanced"
 };
 
 dictionary RTCRtcpParameters {
