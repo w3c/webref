@@ -24,10 +24,11 @@ jobs:
         node-version: 10.x
     - name: Install pandoc
       run: sudo apt-get install pandoc
-    - name: Setup Reffy
-      run: |
-        echo "${{ secrets.CONFIG_JSON }}" | base64 --decode > config.json
-        npm ci
+    - name: Retrieve W3C API key
+      run: echo "${{ secrets.CONFIG_JSON }}" | base64 --decode > config.json
+      working-directory: ../reffy
+    - name: Install Reffy's dependencies
+      run: npm ci
       working-directory: ../reffy
     - name: Run Reffy's crawler
       run: npm run ed
