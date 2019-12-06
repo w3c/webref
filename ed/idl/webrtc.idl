@@ -8,7 +8,6 @@ dictionary RTCConfiguration {
   RTCIceTransportPolicy iceTransportPolicy;
   RTCBundlePolicy bundlePolicy;
   RTCRtcpMuxPolicy rtcpMuxPolicy;
-  DOMString peerIdentity;
   sequence<RTCCertificate> certificates;
   [EnforceRange] octet iceCandidatePoolSize = 0;
 };
@@ -607,14 +606,6 @@ enum RTCErrorDetailType {
   "data-channel-failure",
   "dtls-failure",
   "fingerprint-failure",
-  "idp-bad-script-failure",
-  "idp-execution-failure",
-  "idp-load-failure",
-  "idp-need-login",
-  "idp-timeout",
-  "idp-tls-failure",
-  "idp-token-expired",
-  "idp-token-invalid",
   "sctp-failure",
   "sdp-syntax-error",
   "hardware-encoder-not-available",
