@@ -20,15 +20,15 @@ jobs:
         path: reffy
     - name: Test base64 decoding
       run: base64 --version
-      working-directory: ../reffy
+      working-directory: $GITHUB_WORKSPACE/reffy
     - name: Test echo
       run: echo "dG90bw=="
-      working-directory: ../reffy
+      working-directory: reffy
     - name: Test base64 decoding to a file
       run: |
         echo "dG90bw==" | base64 --decode > test.txt
         cat test.txt
-      working-directory: ../reffy
+      working-directory: reffy
     - name: Setup node.js
       uses: actions/setup-node@master
       with:
@@ -39,13 +39,13 @@ jobs:
       env:
         CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
       run: echo "$CONFIG_JSON" | base64 --decode > config.json
-      working-directory: ../reffy
+      working-directory: reffy
     - name: Install Reffy's dependencies
       run: npm ci
-      working-directory: ../reffy
+      working-directory: reffy
     - name: Run Reffy's crawler
       run: npm run ed
-      working-directory: ../reffy
+      working-directory: reffy
     - name: Copy reports
       run: rsync -av --exclude=README.md ../reffy/reports/ ./
     - name: Push updates to git
