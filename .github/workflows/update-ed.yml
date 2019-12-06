@@ -20,7 +20,7 @@ jobs:
         path: reffy
     - name: Test base64 decoding
       run: base64 --version
-      working-directory: $GITHUB_WORKSPACE/reffy
+      working-directory: reffy
     - name: Test echo
       run: echo "dG90bw=="
       working-directory: reffy
