@@ -20,6 +20,10 @@ jobs:
         path: reffy
     - name: Test base64 decoding
       run: base64 --version
+      working-directory: ../reffy
+    - name: Test echo
+      run: echo "dG90bw=="
+      working-directory: ../reffy
     - name: Test base64 decoding to a file
       run: |
         echo "dG90bw==" | base64 --decode > test.txt
