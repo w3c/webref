@@ -25,7 +25,9 @@ jobs:
     - name: Install pandoc
       run: sudo apt-get install pandoc
     - name: Retrieve W3C API key
-      run: echo "${{ secrets.CONFIG_JSON }}" | base64 --decode > config.json
+      env:
+        CONFIG_JSON: ${{ secrets.CONFIG_JSON }}
+      run: echo "$CONFIG_JSON" | base64 --decode > config.json
       working-directory: ../reffy
     - name: Install Reffy's dependencies
       run: npm ci
