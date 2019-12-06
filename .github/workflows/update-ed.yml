@@ -19,8 +19,7 @@ jobs:
         fetch-depth: 1
         path: reffy
     - name: Test base64 decoding
-      run: echo "dG90bw==" | base64 --decode
-      working-directory: ../reffy
+      run: base64 --version
     - name: Test base64 decoding to a file
       run: |
         echo "dG90bw==" | base64 --decode > test.txt
