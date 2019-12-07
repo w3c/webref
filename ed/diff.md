@@ -1,6 +1,6 @@
-% Diff between report from "December 06, 2019" and reference report from "December 03, 2019"
+% Diff between report from "December 07, 2019" and reference report from "December 03, 2019"
 % Reffy
-% December 06, 2019
+% December 07, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -80,6 +80,14 @@
 - Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
 - Spec is OK: *INS* true / *DEL* false
 - Unknown WebIDL names used: *DEL* EventHandler, HTMLBodyElement, Window
+
+
+## Compositing and Blending Level 1
+
+- URL: [https://www.w3.org/TR/compositing-1/](https://www.w3.org/TR/compositing-1/)
+- Crawled version: [Editor's Draft](https://drafts.fxtf.org/compositing-1/)
+- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
+- Missing references for links: *INS* https://dom.spec.whatwg.org/
 
 
 ## Console Standard
