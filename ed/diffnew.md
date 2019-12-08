@@ -1,6 +1,6 @@
-% Diff between report from "December 07, 2019" and reference report from "December 03, 2019"
+% Diff between report from "December 08, 2019" and reference report from "December 03, 2019"
 % Reffy
-% December 07, 2019
+% December 08, 2019
 
 ## Audio Output Devices API
 
