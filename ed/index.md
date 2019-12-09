@@ -8427,7 +8427,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/js-api/) (29 November 2019)
+- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/js-api/) (9 December 2019)
 - Editor's Draft: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2019/REC-wasm-js-api-1-20191205/)
@@ -8456,7 +8456,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/web-api/) (29 November 2019)
+- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/web-api/) (9 December 2019)
 - Editor's Draft: [https://webassembly.github.io/spec/web-api/](https://webassembly.github.io/spec/web-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2019/REC-wasm-web-api-1-20191205/)
