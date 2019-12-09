@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% December 02, 2019
+% December 09, 2019
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -45,7 +45,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (2 December 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (9 December 2019)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -663,7 +663,7 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191115/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
 Informative references to this spec from:
@@ -701,7 +701,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (29 October 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (04 December 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -719,7 +719,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/cookie-store/) (16 October 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/cookie-store/) (2 December 2019)
 - Repository: [GitHub wicg/cookie-store](https://github.com/wicg/cookie-store)
 - Shortname: no shortname
 
@@ -1127,7 +1127,7 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
-- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
@@ -1288,6 +1288,7 @@ Normative references to this spec from:
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/2018/WD-css-break-4-20181218/)
 - [CSS Generated Content Module Level 3](https://www.w3.org/TR/2019/WD-css-content-3-20190802/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/)
@@ -1470,7 +1471,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-color-5/) (21 November 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-color-5/) (6 December 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1731,7 +1732,7 @@ Normative references to this spec from:
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/2018/WD-css-break-4-20181218/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
-- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
@@ -1917,7 +1918,6 @@ Normative references to this spec from:
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
-- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Lists Module Level 3](https://www.w3.org/TR/2019/WD-css-lists-3-20190817/)
@@ -1935,6 +1935,7 @@ Informative references to this spec from:
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/2018/WD-css-break-4-20181218/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2019/PR-css-writing-modes-3-20191024/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/)
 
@@ -2337,7 +2338,7 @@ Normative references to this spec from:
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
-- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
@@ -2361,10 +2362,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/) (4 August 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/) (3 December 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-grid-2/](https://drafts.csswg.org/css-grid-2/)
 - Latest published version: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-grid-2
 
@@ -2565,7 +2566,7 @@ Normative references to this spec from:
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/2018/WD-css-break-4-20181218/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
-- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
@@ -2850,7 +2851,6 @@ Normative references to this spec from:
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/2018/WD-css-break-4-20181218/)
-- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
@@ -2863,6 +2863,7 @@ Informative references to this spec from:
 
 - [CSS Containment Module Level 1](https://www.w3.org/TR/2019/REC-css-contain-1-20191121/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 
@@ -2980,6 +2981,7 @@ Normative references to this spec from:
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
@@ -3048,7 +3050,7 @@ Normative references to this spec from:
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/2018/WD-css-break-4-20181218/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
-- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Lists Module Level 3](https://www.w3.org/TR/2019/WD-css-lists-3-20190817/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/)
@@ -3543,7 +3545,7 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Generated Content Module Level 3](https://www.w3.org/TR/2019/WD-css-content-3-20190802/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
-- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/)
@@ -3888,7 +3890,7 @@ Normative references to this spec from:
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
-- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191115/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
@@ -4377,7 +4379,7 @@ Normative references to this spec from:
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/2018/WD-css-break-4-20181218/)
 - [CSS Generated Content Module Level 3](https://www.w3.org/TR/2019/WD-css-content-3-20190802/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
-- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
@@ -4487,6 +4489,7 @@ Normative references to this spec from:
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/2018/WD-css-break-4-20181218/)
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
 - [CSS Generated Content Module Level 3](https://www.w3.org/TR/2019/WD-css-content-3-20190802/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/)
 - [CSS Lists Module Level 3](https://www.w3.org/TR/2019/WD-css-lists-3-20190817/)
@@ -4656,7 +4659,7 @@ Normative references to this spec from:
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/2018/WD-css-break-4-20181218/)
-- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2018/WD-css-grid-2-20180804/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/)
@@ -4727,7 +4730,7 @@ Normative references to this spec from:
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20191102/)
-- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191115/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
 Informative references to this spec from:
@@ -4811,7 +4814,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (13 November 2019)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (6 December 2019)
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
@@ -4821,7 +4824,6 @@ Informative references to this spec from:
 - Missing references for links: 
      * [`https://w3c.github.io/deviceorientation/spec-source-orientation.html`](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
      * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/), related reference "UIEVENTS" uses URL [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -4909,7 +4911,7 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191115/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -4997,11 +4999,11 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20191003/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191115/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
-- [WebAssembly JavaScript Interface](https://www.w3.org/TR/2019/PR-wasm-js-api-1-20191001/)
+- [WebAssembly JavaScript Interface](https://www.w3.org/TR/2019/REC-wasm-js-api-1-20191205/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -5070,7 +5072,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/webappsec-feature-policy/) (28 November 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/webappsec-feature-policy/) (6 December 2019)
 - Repository: [GitHub w3c/webappsec-feature-policy](https://github.com/w3c/webappsec-feature-policy)
 - Shortname: no shortname
 
@@ -5101,7 +5103,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (20 November 2019)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (4 December 2019)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -5139,10 +5141,10 @@ Normative references to this spec from:
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
-- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191115/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
-- [WebAssembly Web API](https://www.w3.org/TR/2019/PR-wasm-web-api-1-20191001/)
+- [WebAssembly Web API](https://www.w3.org/TR/2019/REC-wasm-web-api-1-20191205/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -5333,7 +5335,7 @@ Informative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
-- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191115/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 
 
 ## Gamepad {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true}
@@ -5588,7 +5590,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (26 November 2019)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (6 December 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5721,7 +5723,7 @@ Normative references to this spec from:
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191115/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
@@ -5731,8 +5733,8 @@ Normative references to this spec from:
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Share API](https://w3c.github.io/web-share/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
-- [WebAssembly JavaScript Interface](https://www.w3.org/TR/2019/PR-wasm-js-api-1-20191001/)
-- [WebAssembly Web API](https://www.w3.org/TR/2019/PR-wasm-web-api-1-20191001/)
+- [WebAssembly JavaScript Interface](https://www.w3.org/TR/2019/REC-wasm-js-api-1-20191205/)
+- [WebAssembly Web API](https://www.w3.org/TR/2019/REC-wasm-web-api-1-20191205/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -6320,7 +6322,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
-- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191115/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 
 Informative references to this spec from:
 
@@ -7184,7 +7186,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/resize-observer/) (22 November 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/resize-observer/) (5 December 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7314,7 +7316,7 @@ Normative references to this spec from:
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191115/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -7673,7 +7675,7 @@ Normative references to this spec from:
 - [Accelerometer](https://www.w3.org/TR/2019/WD-accelerometer-20190307/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
-- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191115/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 
 No informative reference to this spec from other specs.
 
@@ -7854,7 +7856,7 @@ Normative references to this spec from:
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
-- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191115/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Share API](https://w3c.github.io/web-share/)
@@ -7985,10 +7987,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-appmanifest-20191115/) (15 November 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-appmanifest-20191209/) (09 December 2019)
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-appmanifest-20191115/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
 - Shortname: appmanifest
 
@@ -8177,7 +8179,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (27 November 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (06 December 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8233,10 +8235,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/PR-wasm-js-api-1-20191001/) (1 October 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/REC-wasm-js-api-1-20191205/) (5 December 2019)
 - Editor's Draft: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
-- Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2019/PR-wasm-js-api-1-20191001/)
+- Latest published status: [Recommendation](https://www.w3.org/TR/2019/REC-wasm-js-api-1-20191205/)
 - Repository: [GitHub webassembly/spec](https://github.com/webassembly/spec)
 - Shortname: wasm-js-api-1
 
@@ -8251,7 +8253,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [WebAssembly Web API](https://www.w3.org/TR/2019/PR-wasm-web-api-1-20191001/)
+- [WebAssembly Web API](https://www.w3.org/TR/2019/REC-wasm-web-api-1-20191205/)
 
 Informative references to this spec from:
 
@@ -8262,10 +8264,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/PR-wasm-web-api-1-20191001/) (1 October 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/REC-wasm-web-api-1-20191205/) (5 December 2019)
 - Editor's Draft: [https://webassembly.github.io/spec/web-api/](https://webassembly.github.io/spec/web-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
-- Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2019/PR-wasm-web-api-1-20191001/)
+- Latest published status: [Recommendation](https://www.w3.org/TR/2019/REC-wasm-web-api-1-20191205/)
 - Repository: [GitHub webassembly/spec](https://github.com/webassembly/spec)
 - Shortname: wasm-web-api-1
 
@@ -8319,7 +8321,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (2 December 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (9 December 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8346,7 +8348,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (2 December 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (9 December 2019)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8502,7 +8504,7 @@ Normative references to this spec from:
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
-- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191115/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
@@ -8511,8 +8513,8 @@ Normative references to this spec from:
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Share API](https://w3c.github.io/web-share/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
-- [WebAssembly JavaScript Interface](https://www.w3.org/TR/2019/PR-wasm-js-api-1-20191001/)
-- [WebAssembly Web API](https://www.w3.org/TR/2019/PR-wasm-web-api-1-20191001/)
+- [WebAssembly JavaScript Interface](https://www.w3.org/TR/2019/REC-wasm-js-api-1-20191205/)
+- [WebAssembly Web API](https://www.w3.org/TR/2019/REC-wasm-web-api-1-20191205/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -8602,7 +8604,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (1 December 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/webusb/) (3 December 2019)
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
