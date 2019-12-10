@@ -4640,7 +4640,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (6 December 2019)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (10 December 2019)
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
