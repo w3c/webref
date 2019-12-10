@@ -1,6 +1,6 @@
-% Diff between report from "December 09, 2019" and reference report from "December 03, 2019"
+% Diff between report from "December 10, 2019" and reference report from "December 03, 2019"
 % Reffy
-% December 09, 2019
+% December 10, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -301,6 +301,14 @@
 - URL: [https://www.w3.org/TR/css-typed-om-1/](https://www.w3.org/TR/css-typed-om-1/)
 - Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-typed-om-1/)
 - Unknown [Exposed] names used: *DEL* Window
+
+
+## CSS Values and Units Module Level 4
+
+- URL: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values-4/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Missing references for links: *DEL* https://www.w3.org/TR/selectors/
 
 
 ## CSSOM View Module
