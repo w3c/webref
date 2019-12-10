@@ -1569,7 +1569,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-counter-styles/) (16 August 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-counter-styles/) (6 December 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-counter-styles/](https://drafts.csswg.org/css-counter-styles/)
 - Latest published version: [https://www.w3.org/TR/css-counter-styles-3/](https://www.w3.org/TR/css-counter-styles-3/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/)
@@ -5201,7 +5201,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/sensors/) (6 December 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/sensors/) (10 December 2019)
 - Editor's Draft: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
 - Latest published version: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/)
@@ -5328,7 +5328,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/gyroscope/) (20 November 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/gyroscope/) (10 December 2019)
 - Editor's Draft: [https://w3c.github.io/gyroscope/](https://w3c.github.io/gyroscope/)
 - Latest published version: [https://www.w3.org/TR/gyroscope/](https://www.w3.org/TR/gyroscope/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-gyroscope-20190307/)
