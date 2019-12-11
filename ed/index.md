@@ -4848,7 +4848,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/encrypted-media/) (19 November 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/encrypted-media/) (05 December 2019)
 - Editor's Draft: [https://w3c.github.io/encrypted-media/](https://w3c.github.io/encrypted-media/)
 - Latest published version: [https://www.w3.org/TR/encrypted-media/](https://www.w3.org/TR/encrypted-media/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
@@ -4937,7 +4937,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (4 December 2019)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (11 December 2019)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -5636,7 +5636,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/) (25 November 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/) (11 December 2019)
 - Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
 - Latest published version: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
@@ -6651,7 +6651,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (06 December 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (11 December 2019)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-payment-request-20190416/)
