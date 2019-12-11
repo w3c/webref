@@ -220,11 +220,6 @@ dictionary RTCPeerConnectionStats : RTCStats {
             unsigned long dataChannelsAccepted;
 };
 
-dictionary RTCMediaStreamStats : RTCStats {
-             DOMString           streamIdentifier;
-             sequence<DOMString> trackIds;
-};
-
 dictionary RTCRtpTransceiverStats {
     DOMString senderId;
     DOMString receiverId;
@@ -376,6 +371,11 @@ dictionary RTCIceServerStats : RTCStats {
            unsigned long totalRequestsSent;
            unsigned long totalResponsesReceived;
            double totalRoundTripTime;
+};
+
+dictionary RTCMediaStreamStats : RTCStats {
+  DOMString streamIdentifier;
+  sequence<DOMString> trackIds;
 };
 
 dictionary RTCReceiverVideoTrackAttachmentStats : RTCVideoReceiverStats {};
