@@ -1,6 +1,6 @@
-% Diff between report from "December 11, 2019" and reference report from "December 03, 2019"
+% Diff between report from "December 12, 2019" and reference report from "December 03, 2019"
 % Reffy
-% December 11, 2019
+% December 12, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -212,6 +212,20 @@
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unknown [Exposed] names used: *DEL* Window
+- WebIDL names also defined elsewhere: *INS* CSSFontFeatureValuesRule, CSSFontFeatureValuesMap, CSSFontPaletteValuesRule
+
+
+## CSS Fonts Module Level 4
+
+- URL: [https://www.w3.org/TR/css-fonts-3/](https://www.w3.org/TR/css-fonts-3/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Spec title: *INS* CSS Fonts Module Level 4 / *DEL* CSS Fonts Module Level 3
+- Unknown WebIDL names used: *INS* CSSOMString
+- WebIDL names also defined elsewhere: *INS* CSSFontFeatureValuesRule, CSSFontFeatureValuesMap, CSSFontPaletteValuesRule
+- Missing references for WebIDL names: *DEL* CSSRule, CSSStyleDeclaration
+- Missing references for links: *INS* https://fetch.spec.whatwg.org/ / *DEL* https://www.w3.org/TR/2002/WD-css3-fonts-20020802/, https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/, https://www.w3.org/TR/2005/REC-charmod-20050215/, https://www.w3.org/TR/2018/WD-charmod-norm-20180420/, https://www.w3.org/TR/2017/WD-css-text-3-20170822/, https://www.w3.org/TR/2013/CR-css3-conditional-20130404/
+- Inconsistent references for links: *INS* https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/, https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/ / *DEL* https://www.w3.org/TR/css3-values/
 
 
 ## CSS Masking Module Level 1
