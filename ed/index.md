@@ -35,7 +35,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/accelerometer/) (20 November 2019)
 - Editor's Draft: [https://w3c.github.io/accelerometer/](https://w3c.github.io/accelerometer/)
 - Latest published version: [https://www.w3.org/TR/accelerometer/](https://www.w3.org/TR/accelerometer/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-accelerometer-20190307/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-accelerometer-20191212/)
 - Repository: [GitHub w3c/accelerometer](https://github.com/w3c/accelerometer)
 - Shortname: accelerometer
 
@@ -5215,7 +5215,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://w3c.github.io/sensors/) (10 December 2019)
 - Editor's Draft: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
 - Latest published version: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-generic-sensor-20190307/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-generic-sensor-20191212/)
 - Repository: [GitHub w3c/sensors](https://github.com/w3c/sensors)
 - Shortname: generic-sensor
 
@@ -5342,7 +5342,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/gyroscope/) (10 December 2019)
 - Editor's Draft: [https://w3c.github.io/gyroscope/](https://w3c.github.io/gyroscope/)
 - Latest published version: [https://www.w3.org/TR/gyroscope/](https://www.w3.org/TR/gyroscope/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-gyroscope-20190307/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-gyroscope-20191212/)
 - Repository: [GitHub w3c/gyroscope](https://github.com/w3c/gyroscope)
 - Shortname: gyroscope
 
@@ -6518,7 +6518,7 @@ Informative references to this spec from:
 - Crawled version: [Editor's Draft](https://w3c.github.io/orientation-sensor/) (20 November 2019)
 - Editor's Draft: [https://w3c.github.io/orientation-sensor/](https://w3c.github.io/orientation-sensor/)
 - Latest published version: [https://www.w3.org/TR/orientation-sensor/](https://www.w3.org/TR/orientation-sensor/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-orientation-sensor-20190307/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-orientation-sensor-20191212/)
 - Repository: [GitHub w3c/orientation-sensor](https://github.com/w3c/orientation-sensor)
 - Shortname: orientation-sensor
 
@@ -7487,7 +7487,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/ServiceWorker/) (18 November 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/ServiceWorker/) (11 December 2019)
 - Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
 - Shortname: no shortname
 
@@ -8182,7 +8182,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/) (13 November 2019)
+- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/) (11 December 2019)
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
