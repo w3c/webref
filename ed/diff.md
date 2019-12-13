@@ -144,26 +144,30 @@
 ## Credential Management Level 1
 
 - URL: [https://www.w3.org/TR/credential-management-1/](https://www.w3.org/TR/credential-management-1/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-credential-management/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/credential-management-1/)
 - Repository: [GitHub w3c/webappsec-credential-management](https://github.com/w3c/webappsec-credential-management)
-- Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *DEL* HTMLFormElement, Navigator
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/credential-management-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/credential-management-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
 ## CSS Animation Worklet API
 
 - URL: [https://www.w3.org/TR/css-animation-worklet-1/](https://www.w3.org/TR/css-animation-worklet-1/)
-- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-animationworklet-1/)
-- Unknown [Exposed] names used: *DEL* Window
+- Crawled version: [Initial URL](https://www.w3.org/TR/css-animation-worklet-1/)
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/css-animation-worklet-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-animation-worklet-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
 ## CSS Animations Level 1
 
 - URL: [https://www.w3.org/TR/css-animations-1/](https://www.w3.org/TR/css-animations-1/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-animations/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/css-animations-1/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *DEL* EventHandler, GlobalEventHandlers
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/css-animations-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-animations-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
 ## CSS Animations Level 2
@@ -171,6 +175,23 @@
 - URL: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
 - Crawled version: [Initial URL](https://drafts.csswg.org/css-animations-2/)
 - Unknown [Exposed] names used: *DEL* Window
+
+
+## CSS Backgrounds and Borders Module Level 3
+
+- URL: [https://www.w3.org/TR/css-backgrounds-3/](https://www.w3.org/TR/css-backgrounds-3/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-backgrounds/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Missing references for links: *INS* https://www.w3.org/TR/css3-images/
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-images/
+
+
+## CSS Box Sizing Module Level 4
+
+- URL: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-sizing-4/)
+- Missing references for links: *INS* https://www.w3.org/TR/css3-images/
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-images/
 
 
 ## CSS Conditional Rules Module Level 3
@@ -197,6 +218,15 @@
 - Unknown [Exposed] names used: *DEL* Window
 
 
+## CSS Fill and Stroke Module Level 3
+
+- URL: [https://www.w3.org/TR/fill-stroke-3/](https://www.w3.org/TR/fill-stroke-3/)
+- Crawled version: [Editor's Draft](https://drafts.fxtf.org/fill-stroke/)
+- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
+- Missing references for links: *INS* https://www.w3.org/TR/css3-images/
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-images/
+
+
 ## CSS Font Loading Module Level 3
 
 - URL: [https://www.w3.org/TR/css-font-loading-3/](https://www.w3.org/TR/css-font-loading-3/)
@@ -204,15 +234,6 @@
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler
-
-
-## CSS Fonts Module Level 4
-
-- URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Unknown [Exposed] names used: *DEL* Window
-- WebIDL names also defined elsewhere: *INS* CSSFontFeatureValuesRule, CSSFontFeatureValuesMap, CSSFontPaletteValuesRule
 
 
 ## CSS Fonts Module Level 4
@@ -226,6 +247,25 @@
 - Missing references for WebIDL names: *DEL* CSSRule, CSSStyleDeclaration
 - Missing references for links: *INS* https://fetch.spec.whatwg.org/ / *DEL* https://www.w3.org/TR/2002/WD-css3-fonts-20020802/, https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/, https://www.w3.org/TR/2005/REC-charmod-20050215/, https://www.w3.org/TR/2018/WD-charmod-norm-20180420/, https://www.w3.org/TR/2017/WD-css-text-3-20170822/, https://www.w3.org/TR/2013/CR-css3-conditional-20130404/
 - Inconsistent references for links: *INS* https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/, https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/ / *DEL* https://www.w3.org/TR/css3-values/
+
+
+## CSS Fonts Module Level 4
+
+- URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Unknown [Exposed] names used: *DEL* Window
+- WebIDL names also defined elsewhere: *INS* CSSFontFeatureValuesRule, CSSFontFeatureValuesMap, CSSFontPaletteValuesRule
+
+
+## CSS Lists Module Level 3
+
+- URL: [https://www.w3.org/TR/css-lists-3/](https://www.w3.org/TR/css-lists-3/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/css-lists-3/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/css-lists-3/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-lists-3/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
 ## CSS Masking Module Level 1
@@ -251,6 +291,24 @@
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-overflow-3/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Missing references for links: *INS* https://www.w3.org/TR/css-text-decor-3/
+
+
+## CSS Paged Media Module Level 3
+
+- URL: [https://www.w3.org/TR/css-page-3/](https://www.w3.org/TR/css-page-3/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/css-page-3/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/css-page-3/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-page-3/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+
+## CSS Painting API Level 1
+
+- URL: [https://www.w3.org/TR/css-paint-api-1/](https://www.w3.org/TR/css-paint-api-1/)
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
+- Missing references for links: *INS* https://www.w3.org/TR/css3-images/
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-images/
 
 
 ## CSS Properties and Values API Level 1
@@ -294,6 +352,16 @@
 - Inconsistent references for links: *INS* https://www.w3.org/TR/1998/REC-CSS2-19980512
 
 
+## CSS Text Module Level 3
+
+- URL: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/css-text-3/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/css-text-3/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-text-3/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+
 ## CSS Transitions
 
 - URL: [https://www.w3.org/TR/css-transitions-1/](https://www.w3.org/TR/css-transitions-1/)
@@ -322,7 +390,18 @@
 - URL: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values-4/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *DEL* https://www.w3.org/TR/selectors/
+- Missing references for links: *INS* https://www.w3.org/TR/css3-images/ / *DEL* https://www.w3.org/TR/selectors/
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-images/
+
+
+## css3-images
+
+- URL: [https://www.w3.org/TR/css3-images/](https://www.w3.org/TR/css3-images/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/css3-images/)
+- Spec title: *INS* css3-images / *DEL* CSS Images Module Level 3
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/css3-images/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css3-images/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
 ## CSSOM View Module
@@ -346,9 +425,11 @@
 ## DOM Parsing and Serialization
 
 - URL: [https://www.w3.org/TR/DOM-Parsing/](https://www.w3.org/TR/DOM-Parsing/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/DOM-Parsing/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/DOM-Parsing/)
 - Repository: [GitHub w3c/DOM-Parsing](https://github.com/w3c/DOM-Parsing)
-- Unknown [Exposed] names used: *DEL* Window
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/DOM-Parsing/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/DOM-Parsing/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
 ## DOM Standard
@@ -455,13 +536,15 @@
 - Unknown WebIDL names used: *DEL* EventHandler
 
 
-## Geolocation API Specification
+## Geolocation API Specification 2nd Edition
 
 - URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/geolocation-api/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/geolocation-API/)
 - Repository: [GitHub w3c/geolocation-api](https://github.com/w3c/geolocation-api)
-- Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *DEL* Navigator
+- Spec title: *INS* Geolocation API Specification 2nd Edition / *DEL* Geolocation API Specification
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/geolocation-API/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/geolocation-API/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
 ## Geolocation Sensor
@@ -670,6 +753,15 @@
 - Repository: [GitHub w3c/mediacapture-record](https://github.com/w3c/mediacapture-record)
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler
+
+
+## Motion Path Module Level 1
+
+- URL: [https://www.w3.org/TR/motion-1/](https://www.w3.org/TR/motion-1/)
+- Crawled version: [Editor's Draft](https://drafts.fxtf.org/motion-1/)
+- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
+- Missing references for links: *INS* https://www.w3.org/TR/css3-images/
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-images/
 
 
 ## Navigation Timing Level 2
@@ -1001,8 +1093,9 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/)
 - Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *DEL* Coordinates
-- Inconsistent references for links: *INS* https://w3c.github.io/geolocation-api/
+- Unknown WebIDL names used: *INS* Credential, CredentialCreationOptions, CredentialRequestOptions, GeolocationCoordinates / *DEL* Coordinates
+- Missing references for links: *INS* https://w3c.github.io/webappsec-credential-management/, https://w3c.github.io/geolocation-api/
+- Inconsistent references for links: *DEL* https://w3c.github.io/webappsec-credential-management/
 
 
 ## Web Background Synchronization
@@ -1026,10 +1119,11 @@
 ## Web Cryptography API
 
 - URL: [https://www.w3.org/TR/WebCryptoAPI/](https://www.w3.org/TR/WebCryptoAPI/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/webcrypto/Overview.html)
+- Crawled version: [Initial URL](https://www.w3.org/TR/WebCryptoAPI/)
 - Repository: [GitHub w3c/webcrypto](https://github.com/w3c/webcrypto)
-- Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *DEL* WindowOrWorkerGlobalScope
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/WebCryptoAPI/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/WebCryptoAPI/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
 ## Web IDL
@@ -1037,6 +1131,8 @@
 - URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Crawled version: [Editor's Draft](https://heycam.github.io/webidl/)
 - Unknown [Exposed] names used: *DEL* Window
+- Missing references for links: *INS* https://www.w3.org/TR/geolocation-API/
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/geolocation-API/
 
 
 ## Web MIDI API
@@ -1082,6 +1178,15 @@
 - Unknown [Exposed] names used: *DEL* Window
 
 
+## WebDriver
+
+- URL: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/)
+- Repository: [GitHub w3c/webdriver](https://github.com/w3c/webdriver)
+- Missing references for links: *INS* https://w3c.github.io/DOM-Parsing/
+- Inconsistent references for links: *DEL* https://w3c.github.io/DOM-Parsing/
+
+
 ## WebGL 2.0 Specification
 
 - URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
@@ -1105,9 +1210,9 @@
 - URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/)
 - Repository: [GitHub w3c/webrtc-pc](https://github.com/w3c/webrtc-pc)
-- Spec is OK: *INS* true / *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *DEL* EventHandler
+- Unknown WebIDL names used: *INS* AlgorithmIdentifier / *DEL* EventHandler
+- Inconsistent references for links: *INS* https://w3c.github.io/webrtc-stats/
 
 
 ## WebUSB API
