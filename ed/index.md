@@ -4949,7 +4949,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (12 December 2019)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (13 December 2019)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -5441,7 +5441,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (11 December 2019)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (13 December 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7486,7 +7486,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/ServiceWorker/) (11 December 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/ServiceWorker/) (13 December 2019)
 - Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
 - Shortname: no shortname
 
@@ -7551,7 +7551,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (12 November 2019)
+- Crawled version: [Living Standard](https://streams.spec.whatwg.org/) (12 December 2019)
 - Repository: [GitHub whatwg/streams](https://github.com/whatwg/streams)
 - Shortname: no shortname
 
@@ -8381,7 +8381,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (12 December 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (13 December 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -8588,7 +8588,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (12 December 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (13 December 2019)
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webrtc-20180927/)
