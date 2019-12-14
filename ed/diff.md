@@ -2,25 +2,13 @@
 % Reffy
 % December 14, 2019
 
-## "MediaStream Image Capture"
-
-- URL: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/image-capture/)
-- Repository: [GitHub w3c/mediacapture-image](https://github.com/w3c/mediacapture-image)
-- Spec title: *INS* "MediaStream Image Capture" / *DEL* MediaStream Image Capture
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/image-capture/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/image-capture/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-
-
 ## Accelerated Shape Detection in Images
 
 - URL: [https://wicg.github.io/shape-detection-api/](https://wicg.github.io/shape-detection-api/)
 - Crawled version: [Initial URL](https://wicg.github.io/shape-detection-api/)
 - Repository: [GitHub wicg/shape-detection-api](https://github.com/wicg/shape-detection-api)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* Point2D / *DEL* ImageBitmapSource
-- Missing references for WebIDL names: *DEL* Point2D
+- Unknown WebIDL names used: *DEL* ImageBitmapSource
 
 
 ## Accelerometer
@@ -54,7 +42,7 @@
 - Crawled version: [Initial URL](https://wicg.github.io/background-fetch/)
 - Repository: [GitHub wicg/background-fetch](https://github.com/wicg/background-fetch)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* ImageResource / *DEL* EventHandler
+- Unknown WebIDL names used: *DEL* EventHandler
 
 
 ## Battery Status API
@@ -138,11 +126,11 @@
 ## Cooperative Scheduling of Background Tasks
 
 - URL: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/requestidlecallback/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/)
 - Repository: [GitHub w3c/requestidlecallback](https://github.com/w3c/requestidlecallback)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/requestidlecallback/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/requestidlecallback/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
+- Spec is OK: *INS* true / *DEL* false
+- Unknown [Exposed] names used: *DEL* Window
+- Unknown WebIDL names used: *DEL* Window
 
 
 ## CORS and RFC1918
@@ -220,6 +208,15 @@
 
 ## CSS Fonts Module Level 4
 
+- URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Unknown [Exposed] names used: *DEL* Window
+- WebIDL names also defined elsewhere: *INS* CSSFontFeatureValuesRule, CSSFontFeatureValuesMap, CSSFontPaletteValuesRule
+
+
+## CSS Fonts Module Level 4
+
 - URL: [https://www.w3.org/TR/css-fonts-3/](https://www.w3.org/TR/css-fonts-3/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
@@ -229,15 +226,6 @@
 - Missing references for WebIDL names: *DEL* CSSRule, CSSStyleDeclaration
 - Missing references for links: *INS* https://fetch.spec.whatwg.org/ / *DEL* https://www.w3.org/TR/2002/WD-css3-fonts-20020802/, https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/, https://www.w3.org/TR/2005/REC-charmod-20050215/, https://www.w3.org/TR/2018/WD-charmod-norm-20180420/, https://www.w3.org/TR/2017/WD-css-text-3-20170822/, https://www.w3.org/TR/2013/CR-css3-conditional-20130404/
 - Inconsistent references for links: *INS* https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/, https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/ / *DEL* https://www.w3.org/TR/css3-values/
-
-
-## CSS Fonts Module Level 4
-
-- URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Unknown [Exposed] names used: *DEL* Window
-- WebIDL names also defined elsewhere: *INS* CSSFontFeatureValuesRule, CSSFontFeatureValuesMap, CSSFontPaletteValuesRule
 
 
 ## CSS Masking Module Level 1
@@ -263,16 +251,6 @@
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-overflow-3/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Missing references for links: *INS* https://www.w3.org/TR/css-text-decor-3/
-
-
-## CSS Overscroll Behavior Module Level 1
-
-- URL: [https://www.w3.org/TR/css-overscroll-1/](https://www.w3.org/TR/css-overscroll-1/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/css-overscroll-1/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/css-overscroll-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-overscroll-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
 ## CSS Properties and Values API Level 1
@@ -413,8 +391,6 @@
 - Crawled version: [Initial URL](https://wicg.github.io/event-timing/)
 - Repository: [GitHub wicg/event-timing](https://github.com/wicg/event-timing)
 - Unknown [Exposed] names used: *DEL* Window
-- Missing references for links: *INS* https://w3c.github.io/pointerevents/
-- Inconsistent references for links: *DEL* https://w3c.github.io/pointerevents/
 
 
 ## Feature Policy
@@ -678,6 +654,15 @@
 - Unknown WebIDL names used: *DEL* AudioTrack, AudioTrackList, EventHandler, TextTrack, TextTrackList, TimeRanges, VideoTrack, VideoTrackList
 
 
+## MediaStream Image Capture
+
+- URL: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-image/)
+- Repository: [GitHub w3c/mediacapture-image](https://github.com/w3c/mediacapture-image)
+- Unknown [Exposed] names used: *DEL* Window
+- Unknown WebIDL names used: *DEL* ImageBitmap
+
+
 ## MediaStream Recording
 
 - URL: [https://www.w3.org/TR/mediastream-recording/](https://www.w3.org/TR/mediastream-recording/)
@@ -787,11 +772,10 @@
 ## Pointer Events
 
 - URL: [https://www.w3.org/TR/pointerevents2/](https://www.w3.org/TR/pointerevents2/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/pointerevents2/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/pointerevents/)
 - Repository: [GitHub w3c/pointerevents](https://github.com/w3c/pointerevents)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/pointerevents2/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/pointerevents2/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
+- Unknown [Exposed] names used: *DEL* Window
+- Unknown WebIDL names used: *DEL* EventHandler, GlobalEventHandlers, Navigator
 
 
 ## Pointer Lock 2.0
@@ -995,11 +979,11 @@
 ## Web App Manifest
 
 - URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/appmanifest/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/manifest/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/appmanifest/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/appmanifest/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
+- Spec is OK: *INS* true / *DEL* false
+- Unknown [Exposed] names used: *DEL* Window
+- Unknown WebIDL names used: *DEL* EventHandler, Window
 
 
 ## Web Audio API
@@ -1058,11 +1042,10 @@
 ## Web MIDI API
 
 - URL: [https://www.w3.org/TR/webmidi/](https://www.w3.org/TR/webmidi/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/webmidi/)
+- Crawled version: [Editor's Draft](http://webaudio.github.io/web-midi-api/)
 - Repository: [GitHub webaudio/web-midi-api](https://github.com/webaudio/web-midi-api)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/webmidi/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/webmidi/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
+- Unknown [Exposed] names used: *DEL* Window
+- Unknown WebIDL names used: *DEL* EventHandler, Navigator
 
 
 ## Web NFC
