@@ -2,16 +2,6 @@
 % Reffy
 % December 14, 2019
 
-## Accessible Rich Internet Applications (WAI-ARIA) 1.2
-
-- URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/wai-aria-1.2/)
-- Repository: [GitHub w3c/aria](https://github.com/w3c/aria)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/wai-aria-1.2/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/wai-aria-1.2/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-
-
 ## Audio Output Devices API
 
 - URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
@@ -60,16 +50,6 @@
 - Spec is OK: *INS* true / *DEL* false
 
 
-## CSS Animations Level 1
-
-- URL: [https://www.w3.org/TR/css-animations-1/](https://www.w3.org/TR/css-animations-1/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/css-animations-1/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/css-animations-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-animations-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-
-
 ## CSS Fonts Module Level 4
 
 - URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
@@ -90,16 +70,6 @@
 - Inconsistent references for links: *INS* https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/, https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/ / *DEL* https://www.w3.org/TR/css3-values/
 
 
-## CSS Multi-column Layout Module Level 1
-
-- URL: [https://www.w3.org/TR/css-multicol-1/](https://www.w3.org/TR/css-multicol-1/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/css-multicol-1/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/css-multicol-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-multicol-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-
-
 ## CSS Overflow Module Level 3
 
 - URL: [https://www.w3.org/TR/css-overflow-3/](https://www.w3.org/TR/css-overflow-3/)
@@ -115,16 +85,6 @@
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Missing references for links: *INS* https://www.w3.org/TR/css-text-decor-3/
 - Inconsistent references for links: *INS* https://www.w3.org/TR/1998/REC-CSS2-19980512
-
-
-## CSS Writing Modes Level 3
-
-- URL: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/css-writing-modes-3/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/css-writing-modes-3/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-writing-modes-3/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
 ## High Resolution Time
@@ -220,16 +180,6 @@
 - Spec is OK: *INS* true / *DEL* false
 
 
-## Presentation API
-
-- URL: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/presentation-api/)
-- Repository: [GitHub w3c/presentation-api](https://github.com/w3c/presentation-api)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/presentation-api/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/presentation-api/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-
-
 ## Resource Timing Level 2
 
 - URL: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
@@ -299,15 +249,5 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/)
 - Repository: [GitHub w3c/webrtc-pc](https://github.com/w3c/webrtc-pc)
 - Inconsistent references for links: *INS* https://w3c.github.io/webrtc-stats/
-
-
-## WebRTC DSCP Control API
-
-- URL: [https://www.w3.org/TR/webrtc-dscp/](https://www.w3.org/TR/webrtc-dscp/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/webrtc-dscp/)
-- Repository: [GitHub w3c/webrtc-dscp-exp](https://github.com/w3c/webrtc-dscp-exp)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/webrtc-dscp/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/webrtc-dscp/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 

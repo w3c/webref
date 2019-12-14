@@ -19,16 +19,6 @@
 - Unknown [Exposed] names used: *DEL* Window
 
 
-## Accessible Rich Internet Applications (WAI-ARIA) 1.2
-
-- URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/wai-aria-1.2/)
-- Repository: [GitHub w3c/aria](https://github.com/w3c/aria)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/wai-aria-1.2/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/wai-aria-1.2/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-
-
 ## Ambient Light Sensor
 
 - URL: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
@@ -170,11 +160,10 @@
 ## CSS Animations Level 1
 
 - URL: [https://www.w3.org/TR/css-animations-1/](https://www.w3.org/TR/css-animations-1/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/css-animations-1/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-animations/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/css-animations-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-animations-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
+- Unknown [Exposed] names used: *DEL* Window
+- Unknown WebIDL names used: *DEL* EventHandler, GlobalEventHandlers
 
 
 ## CSS Animations Level 2
@@ -245,16 +234,6 @@
 - Crawled version: [Editor's Draft](https://drafts.fxtf.org/css-masking-1/)
 - Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
 - Unknown [Exposed] names used: *DEL* Window
-
-
-## CSS Multi-column Layout Module Level 1
-
-- URL: [https://www.w3.org/TR/css-multicol-1/](https://www.w3.org/TR/css-multicol-1/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/css-multicol-1/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/css-multicol-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-multicol-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
 ## CSS Object Model (CSSOM)
@@ -344,16 +323,6 @@
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values-4/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Missing references for links: *DEL* https://www.w3.org/TR/selectors/
-
-
-## CSS Writing Modes Level 3
-
-- URL: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/css-writing-modes-3/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/css-writing-modes-3/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-writing-modes-3/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
 ## CSSOM View Module
@@ -821,11 +790,10 @@
 ## Presentation API
 
 - URL: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/presentation-api/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/)
 - Repository: [GitHub w3c/presentation-api](https://github.com/w3c/presentation-api)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/presentation-api/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/presentation-api/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
+- Unknown [Exposed] names used: *DEL* Window
+- Unknown WebIDL names used: *DEL* BinaryType, EventHandler, Navigator
 
 
 ## Proximity Sensor
@@ -1140,16 +1108,6 @@
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler
 - Inconsistent references for links: *INS* https://w3c.github.io/webrtc-stats/
-
-
-## WebRTC DSCP Control API
-
-- URL: [https://www.w3.org/TR/webrtc-dscp/](https://www.w3.org/TR/webrtc-dscp/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/webrtc-dscp/)
-- Repository: [GitHub w3c/webrtc-dscp-exp](https://github.com/w3c/webrtc-dscp-exp)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/webrtc-dscp/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/webrtc-dscp/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
 ## WebUSB API
