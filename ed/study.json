@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define CSS and WebIDL content",
   "description": "The crawl includes specifications published by W3C Working Groups, W3C Community Groups and WHATWG, that define CSS and/or WebIDL content. The specifications are at various stages of maturity.",
-  "date": "2019-12-14T06:37:32.699Z",
+  "date": "2019-12-14T12:37:39.003Z",
   "stats": {
     "crawled": 241,
-    "errors": 0,
+    "errors": 6,
     "studied": 241
   },
   "results": [
@@ -140,71 +140,31 @@
     {
       "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
       "shortname": "wai-aria-1.2",
-      "date": "14 December 2019",
+      "date": "",
       "url": "https://www.w3.org/TR/wai-aria-1.2/",
-      "latest": "https://www.w3.org/TR/wai-aria-1.2/",
-      "datedUrl": "https://www.w3.org/TR/2018/WD-wai-aria-1.2-20181218/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://rawgit.com/w3c/aria/master/",
-      "crawled": "https://rawgit.com/w3c/aria/master/",
+      "latest": "https://www.w3.org/TR/wai-aria-1.2",
+      "crawled": "https://www.w3.org/TR/wai-aria-1.2/",
       "repository": "https://github.com/w3c/aria",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "FetchError: invalid json response body at https://api.w3.org/specifications/wai-aria-1.2/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/wai-aria-1.2/versions?embed=1 reason: Unexpected token < in JSON at position 0\n    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/aria/",
-          "https://www.w3.org/TR/wai-aria-practices/",
-          "https://www.w3.org/TR/accname-aam-1.1/",
-          "https://www.w3.org/TR/css3-selectors/",
-          "https://www.w3.org/TR/di-gloss/",
-          "https://www.w3.org/TR/2007/REC-xforms-20071029/",
-          "https://www.w3.org/TR/xhtml-role/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/dom/",
-            "ref": {
-              "name": "DOM4",
-              "url": "https://dom.spec.whatwg.org/"
-            }
-          },
-          {
-            "link": "https://www.w3.org/TR/html5/",
-            "ref": {
-              "name": "HTML",
-              "url": "https://html.spec.whatwg.org/multipage/"
-            }
-          },
-          {
-            "link": "https://www.w3.org/TR/html/",
-            "ref": {
-              "name": "HTML",
-              "url": "https://html.spec.whatwg.org/multipage/"
-            }
-          },
-          {
-            "link": "https://www.w3.org/TR/2006/REC-xml-names-20060816/",
-            "ref": {
-              "name": "XML-NAMES",
-              "url": "https://www.w3.org/TR/xml-names/"
-            }
-          }
-        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -613,11 +573,6 @@
               "crawled": "https://drafts.fxtf.org/compositing-2/"
             },
             {
-              "url": "https://www.w3.org/TR/css-animations-1/",
-              "title": "CSS Animations Level 1",
-              "crawled": "https://drafts.csswg.org/css-animations/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-backgrounds-3/",
               "title": "CSS Backgrounds and Borders Module Level 3",
               "crawled": "https://drafts.csswg.org/css-backgrounds/"
@@ -788,11 +743,6 @@
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/"
             },
             {
-              "url": "https://www.w3.org/TR/css-multicol-1/",
-              "title": "CSS Multi-column Layout Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-multicol/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-namespaces-3/",
               "title": "CSS Namespaces Module Level 3",
               "crawled": "https://drafts.csswg.org/css-namespaces/"
@@ -931,11 +881,6 @@
               "url": "https://www.w3.org/TR/css-values-4/",
               "title": "CSS Values and Units Module Level 4",
               "crawled": "https://drafts.csswg.org/css-values-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
@@ -1792,38 +1737,28 @@
     {
       "title": "CSS Animations Level 1",
       "shortname": "css-animations-1",
-      "date": "30 September 2019",
+      "date": "",
       "url": "https://www.w3.org/TR/css-animations-1/",
-      "latest": "https://www.w3.org/TR/css-animations-1/",
-      "datedUrl": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://drafts.csswg.org/css-animations/",
-      "crawled": "https://drafts.csswg.org/css-animations/",
+      "latest": "https://www.w3.org/TR/css-animations-1",
+      "crawled": "https://www.w3.org/TR/css-animations-1/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "FetchError: invalid json response body at https://api.w3.org/specifications/css-animations-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-animations-1/versions?embed=1 reason: Unexpected token < in JSON at position 0\n    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "noCssDefinitions": false,
+        "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "CSSOMString"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://compat.spec.whatwg.org/",
-              "title": "Compatibility Standard",
-              "crawled": "https://compat.spec.whatwg.org/"
-            },
             {
               "url": "https://drafts.csswg.org/css-animations-2/",
               "title": "CSS Animations Level 2",
@@ -1863,11 +1798,6 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
-            },
-            {
-              "url": "https://html.spec.whatwg.org/",
-              "title": "HTML Standard",
-              "crawled": "https://html.spec.whatwg.org/"
             },
             {
               "url": "https://drafts.csswg.org/scroll-animations-1/",
@@ -1928,7 +1858,7 @@
             }
           ]
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -2141,11 +2071,6 @@
               "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
-              "url": "https://www.w3.org/TR/css-multicol-1/",
-              "title": "CSS Multi-column Layout Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-multicol/"
-            },
-            {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/"
@@ -2236,11 +2161,6 @@
               "crawled": "https://drafts.csswg.org/css-values-4/"
             },
             {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://drafts.csswg.org/css-writing-modes-4/"
@@ -2282,11 +2202,6 @@
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/css-animations-1/",
-              "title": "CSS Animations Level 1",
-              "crawled": "https://drafts.csswg.org/css-animations/"
-            },
             {
               "url": "https://www.w3.org/TR/css-sizing-3/",
               "title": "CSS Box Sizing Module Level 3",
@@ -2663,11 +2578,6 @@
               "crawled": "https://drafts.csswg.org/css-line-grid/"
             },
             {
-              "url": "https://www.w3.org/TR/css-multicol-1/",
-              "title": "CSS Multi-column Layout Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-multicol/"
-            },
-            {
               "url": "https://drafts.csswg.org/css-multicol-2/",
               "title": "CSS Multi-column Layout Module Level 2",
               "crawled": "https://drafts.csswg.org/css-multicol-2/"
@@ -2918,11 +2828,6 @@
               "crawled": "https://drafts.csswg.org/css-values-4/"
             },
             {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://drafts.csswg.org/css-writing-modes-4/"
@@ -2938,11 +2843,6 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 2",
               "crawled": "https://drafts.csswg.org/css-contain/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-multicol-1/",
-              "title": "CSS Multi-column Layout Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-multicol/"
             }
           ]
         },
@@ -3041,11 +2941,6 @@
               "url": "https://w3c.github.io/editing/contentEditable.html",
               "title": "ContentEditable",
               "crawled": "https://w3c.github.io/editing/contentEditable.html"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-animations-1/",
-              "title": "CSS Animations Level 1",
-              "crawled": "https://drafts.csswg.org/css-animations/"
             },
             {
               "url": "https://www.w3.org/TR/css-display-3/",
@@ -3432,11 +3327,6 @@
               "crawled": "https://drafts.csswg.org/css-values-4/"
             },
             {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://drafts.csswg.org/css-writing-modes-4/"
@@ -3670,11 +3560,6 @@
               "url": "https://www.w3.org/TR/css-logical-1/",
               "title": "CSS Logical Properties and Values Level 1",
               "crawled": "https://drafts.csswg.org/css-logical-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-multicol-1/",
-              "title": "CSS Multi-column Layout Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-multicol/"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -4532,11 +4417,6 @@
               "crawled": "https://compat.spec.whatwg.org/"
             },
             {
-              "url": "https://www.w3.org/TR/css-animations-1/",
-              "title": "CSS Animations Level 1",
-              "crawled": "https://drafts.csswg.org/css-animations/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
@@ -4650,11 +4530,6 @@
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
               "title": "CSS Mobile Text Size Adjustment Module Level 1",
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-multicol-1/",
-              "title": "CSS Multi-column Layout Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-multicol/"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -4772,11 +4647,6 @@
               "crawled": "https://drafts.csswg.org/css-values-4/"
             },
             {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://drafts.csswg.org/css-writing-modes-4/"
@@ -4879,11 +4749,6 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://www.w3.org/TR/css-animations-1/",
-              "title": "CSS Animations Level 1",
-              "crawled": "https://drafts.csswg.org/css-animations/"
-            },
             {
               "url": "https://drafts.csswg.org/css-backgrounds-4/",
               "title": "CSS Backgrounds and Borders Module Level 4",
@@ -5222,11 +5087,6 @@
               "crawled": "https://drafts.csswg.org/css-ruby-1/"
             },
             {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://drafts.csswg.org/css-writing-modes-4/"
@@ -5545,11 +5405,6 @@
               "crawled": "https://drafts.csswg.org/css-syntax/"
             },
             {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://drafts.csswg.org/css-writing-modes-4/"
@@ -5797,11 +5652,6 @@
               "crawled": "https://drafts.csswg.org/css-pseudo-4/"
             },
             {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://drafts.csswg.org/css-writing-modes-4/"
@@ -5917,11 +5767,6 @@
               "crawled": "https://drafts.csswg.org/css-logical-1/"
             },
             {
-              "url": "https://www.w3.org/TR/css-multicol-1/",
-              "title": "CSS Multi-column Layout Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-multicol/"
-            },
-            {
               "url": "https://drafts.csswg.org/css-multicol-2/",
               "title": "CSS Multi-column Layout Module Level 2",
               "crawled": "https://drafts.csswg.org/css-multicol-2/"
@@ -5975,11 +5820,6 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
@@ -6109,11 +5949,6 @@
               "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
-              "url": "https://www.w3.org/TR/css-multicol-1/",
-              "title": "CSS Multi-column Layout Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-multicol/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-overflow-3/",
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://drafts.csswg.org/css-overflow-3/"
@@ -6179,11 +6014,6 @@
               "url": "https://www.w3.org/TR/css-cascade-4/",
               "title": "CSS Cascading and Inheritance Level 4",
               "crawled": "https://drafts.csswg.org/css-cascade/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
             }
           ]
         },
@@ -6455,11 +6285,6 @@
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/"
             },
             {
-              "url": "https://www.w3.org/TR/css-multicol-1/",
-              "title": "CSS Multi-column Layout Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-multicol/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-overflow-3/",
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://drafts.csswg.org/css-overflow-3/"
@@ -6699,11 +6524,6 @@
               "url": "https://www.w3.org/TR/css-values-4/",
               "title": "CSS Values and Units Module Level 4",
               "crawled": "https://drafts.csswg.org/css-values-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
@@ -6948,11 +6768,6 @@
               "url": "https://www.w3.org/TR/css-values-4/",
               "title": "CSS Values and Units Module Level 4",
               "crawled": "https://drafts.csswg.org/css-values-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
@@ -7356,11 +7171,6 @@
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
             },
             {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://drafts.csswg.org/css-writing-modes-4/"
@@ -7435,30 +7245,25 @@
     {
       "title": "CSS Multi-column Layout Module Level 1",
       "shortname": "css-multicol-1",
-      "date": "16 October 2019",
+      "date": "",
       "url": "https://www.w3.org/TR/css-multicol-1/",
-      "latest": "https://www.w3.org/TR/css-multicol-1/",
-      "datedUrl": "https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://drafts.csswg.org/css-multicol/",
-      "crawled": "https://drafts.csswg.org/css-multicol/",
+      "latest": "https://www.w3.org/TR/css-multicol-1",
+      "crawled": "https://www.w3.org/TR/css-multicol-1/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "noNormativeRefs": false,
+        "error": "FetchError: invalid json response body at https://api.w3.org/specifications/css-multicol-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-multicol-1/versions?embed=1 reason: Unexpected token < in JSON at position 0\n    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "noCssDefinitions": false,
+        "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/2011/CR-css3-multicol-20110412/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -7518,19 +7323,9 @@
               "crawled": "https://drafts.csswg.org/css-regions/"
             },
             {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://drafts.csswg.org/css-writing-modes-4/"
-            },
-            {
-              "url": "https://html.spec.whatwg.org/",
-              "title": "HTML Standard",
-              "crawled": "https://html.spec.whatwg.org/"
             }
           ],
           "informative": [
@@ -7556,7 +7351,7 @@
             }
           ]
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -7725,11 +7520,6 @@
               "url": "https://www.w3.org/TR/css-animation-worklet-1/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-animations-1/",
-              "title": "CSS Animations Level 1",
-              "crawled": "https://drafts.csswg.org/css-animations/"
             },
             {
               "url": "https://drafts.csswg.org/css-animations-2/",
@@ -8065,11 +7855,6 @@
               "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
-              "url": "https://www.w3.org/TR/css-multicol-1/",
-              "title": "CSS Multi-column Layout Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-multicol/"
-            },
-            {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/"
@@ -8153,11 +7938,6 @@
               "url": "https://www.w3.org/TR/css-values-4/",
               "title": "CSS Values and Units Module Level 4",
               "crawled": "https://drafts.csswg.org/css-values-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
@@ -8502,11 +8282,6 @@
               "crawled": "https://drafts.csswg.org/css-values-4/"
             },
             {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://drafts.csswg.org/css-writing-modes-4/"
@@ -8738,11 +8513,6 @@
               "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
-              "url": "https://www.w3.org/TR/css-multicol-1/",
-              "title": "CSS Multi-column Layout Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-multicol/"
-            },
-            {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/"
@@ -8819,11 +8589,6 @@
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/css-animations-1/",
-              "title": "CSS Animations Level 1",
-              "crawled": "https://drafts.csswg.org/css-animations/"
-            },
             {
               "url": "https://www.w3.org/TR/css-break-3/",
               "title": "CSS Fragmentation Module Level 3",
@@ -9315,11 +9080,6 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -9896,11 +9656,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-animations-1/",
-              "title": "CSS Animations Level 1",
-              "crawled": "https://drafts.csswg.org/css-animations/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-cascade-3/",
               "title": "CSS Cascading and Inheritance Level 3",
               "crawled": "https://drafts.csswg.org/css-cascade-3/"
@@ -10150,11 +9905,6 @@
               "crawled": "https://drafts.csswg.org/css-logical-1/"
             },
             {
-              "url": "https://www.w3.org/TR/css-multicol-1/",
-              "title": "CSS Multi-column Layout Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-multicol/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
@@ -10222,11 +9972,6 @@
               "url": "https://www.w3.org/TR/css-ruby-1/",
               "title": "CSS Ruby Layout Module Level 1",
               "crawled": "https://drafts.csswg.org/css-ruby-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
@@ -10345,11 +10090,6 @@
               "url": "https://www.w3.org/TR/css-values-4/",
               "title": "CSS Values and Units Module Level 4",
               "crawled": "https://drafts.csswg.org/css-values-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
@@ -10521,11 +10261,6 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
@@ -11041,11 +10776,6 @@
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/css-animations-1/",
-              "title": "CSS Animations Level 1",
-              "crawled": "https://drafts.csswg.org/css-animations/"
-            },
-            {
               "url": "https://drafts.csswg.org/css-animations-2/",
               "title": "CSS Animations Level 2",
               "crawled": "https://drafts.csswg.org/css-animations-2/"
@@ -11282,11 +11012,6 @@
               "crawled": "https://drafts.fxtf.org/compositing-2/"
             },
             {
-              "url": "https://www.w3.org/TR/css-animations-1/",
-              "title": "CSS Animations Level 1",
-              "crawled": "https://drafts.csswg.org/css-animations/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-backgrounds-3/",
               "title": "CSS Backgrounds and Borders Module Level 3",
               "crawled": "https://drafts.csswg.org/css-backgrounds/"
@@ -11452,11 +11177,6 @@
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/"
             },
             {
-              "url": "https://www.w3.org/TR/css-multicol-1/",
-              "title": "CSS Multi-column Layout Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-multicol/"
-            },
-            {
               "url": "https://drafts.csswg.org/css-multicol-2/",
               "title": "CSS Multi-column Layout Module Level 2",
               "crawled": "https://drafts.csswg.org/css-multicol-2/"
@@ -11565,11 +11285,6 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
@@ -11734,11 +11449,6 @@
               "url": "https://www.w3.org/TR/css-animation-worklet-1/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-animations-1/",
-              "title": "CSS Animations Level 1",
-              "crawled": "https://drafts.csswg.org/css-animations/"
             },
             {
               "url": "https://drafts.csswg.org/css-animations-2/",
@@ -11966,11 +11676,6 @@
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/"
             },
             {
-              "url": "https://www.w3.org/TR/css-multicol-1/",
-              "title": "CSS Multi-column Layout Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-multicol/"
-            },
-            {
               "url": "https://drafts.csswg.org/css-multicol-2/",
               "title": "CSS Multi-column Layout Module Level 2",
               "crawled": "https://drafts.csswg.org/css-multicol-2/"
@@ -12136,11 +11841,6 @@
               "crawled": "https://drafts.csswg.org/css-will-change/"
             },
             {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://drafts.csswg.org/css-writing-modes-4/"
@@ -12246,11 +11946,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-animations-1/",
-              "title": "CSS Animations Level 1",
-              "crawled": "https://drafts.csswg.org/css-animations/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
@@ -12270,32 +11965,25 @@
     {
       "title": "CSS Writing Modes Level 3",
       "shortname": "css-writing-modes-3",
-      "date": "5 December 2019",
+      "date": "",
       "url": "https://www.w3.org/TR/css-writing-modes-3/",
-      "latest": "https://www.w3.org/TR/css-writing-modes-3/",
-      "datedUrl": "https://www.w3.org/TR/2019/REC-css-writing-modes-3-20191210/",
-      "datedStatus": "Recommendation",
-      "edDraft": "https://drafts.csswg.org/css-writing-modes-3/",
-      "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
+      "latest": "https://www.w3.org/TR/css-writing-modes-3",
+      "crawled": "https://www.w3.org/TR/css-writing-modes-3/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "noNormativeRefs": false,
+        "error": "FetchError: invalid json response body at https://api.w3.org/specifications/css-writing-modes-3/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-writing-modes-3/versions?embed=1 reason: Unexpected token < in JSON at position 0\n    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "noCssDefinitions": false,
+        "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/css-logical-1/",
-          "https://www.w3.org/TR/css3-flexbox/",
-          "https://www.w3.org/TR/css3-multicol/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -12433,11 +12121,6 @@
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://drafts.csswg.org/web-animations-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/webvtt1/",
-              "title": "WebVTT: The Web Video Text Tracks Format",
-              "crawled": "https://w3c.github.io/webvtt/"
             }
           ],
           "informative": [
@@ -12448,7 +12131,7 @@
             }
           ]
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -12583,11 +12266,6 @@
               "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
-              "url": "https://www.w3.org/TR/css-multicol-1/",
-              "title": "CSS Multi-column Layout Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-multicol/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-overflow-3/",
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://drafts.csswg.org/css-overflow-3/"
@@ -12681,11 +12359,6 @@
               "url": "https://www.w3.org/TR/css-values-4/",
               "title": "CSS Values and Units Module Level 4",
               "crawled": "https://drafts.csswg.org/css-values-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
             },
             {
               "url": "https://www.w3.org/TR/cssom-view-1/",
@@ -13047,11 +12720,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/wai-aria-1.2/",
-              "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
-              "crawled": "https://rawgit.com/w3c/aria/master/"
-            },
-            {
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
@@ -13105,11 +12773,6 @@
               "url": "https://www.w3.org/TR/css-animation-worklet-1/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-animations-1/",
-              "title": "CSS Animations Level 1",
-              "crawled": "https://drafts.csswg.org/css-animations/"
             },
             {
               "url": "https://drafts.csswg.org/css-animations-2/",
@@ -13400,11 +13063,6 @@
               "url": "https://www.w3.org/TR/preload/",
               "title": "Preload",
               "crawled": "https://w3c.github.io/preload/"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/"
             },
             {
               "url": "https://www.w3.org/TR/push-api/",
@@ -14417,11 +14075,6 @@
               "crawled": "https://w3c.github.io/mediacapture-record/"
             },
             {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/"
-            },
-            {
               "url": "https://www.w3.org/TR/push-api/",
               "title": "Push API",
               "crawled": "https://w3c.github.io/push-api/"
@@ -15338,11 +14991,6 @@
               "crawled": "https://wicg.github.io/shape-detection-api/"
             },
             {
-              "url": "https://www.w3.org/TR/wai-aria-1.2/",
-              "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
-              "crawled": "https://rawgit.com/w3c/aria/master/"
-            },
-            {
               "url": "https://www.w3.org/TR/audio-output/",
               "title": "Audio Output Devices API",
               "crawled": "https://w3c.github.io/mediacapture-output/"
@@ -15416,11 +15064,6 @@
               "url": "https://www.w3.org/TR/css-animation-worklet-1/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-animations-1/",
-              "title": "CSS Animations Level 1",
-              "crawled": "https://drafts.csswg.org/css-animations/"
             },
             {
               "url": "https://www.w3.org/TR/css-backgrounds-3/",
@@ -15591,11 +15234,6 @@
               "url": "https://www.w3.org/TR/css-values-4/",
               "title": "CSS Values and Units Module Level 4",
               "crawled": "https://drafts.csswg.org/css-values-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
@@ -15856,11 +15494,6 @@
               "url": "https://www.w3.org/TR/preload/",
               "title": "Preload",
               "crawled": "https://w3c.github.io/preload/"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/"
             },
             {
               "url": "https://www.w3.org/TR/push-api/",
@@ -16373,11 +16006,6 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/"
             }
           ],
           "informative": [
@@ -17809,11 +17437,6 @@
               "url": "https://www.w3.org/TR/mediacapture-streams/",
               "title": "Media Capture and Streams",
               "crawled": "https://w3c.github.io/mediacapture-main/"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/"
             }
           ],
           "informative": [
@@ -18712,11 +18335,6 @@
               "crawled": "https://w3c.github.io/mediacapture-main/"
             },
             {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/"
-            },
-            {
               "url": "https://www.w3.org/TR/screen-capture/",
               "title": "Screen Capture",
               "crawled": "https://w3c.github.io/mediacapture-screen-share/"
@@ -18973,21 +18591,18 @@
     {
       "title": "Presentation API",
       "shortname": "presentation-api",
-      "date": "30 September 2019",
+      "date": "",
       "url": "https://www.w3.org/TR/presentation-api/",
-      "latest": "https://www.w3.org/TR/presentation-api/",
-      "datedUrl": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/",
-      "datedStatus": "Candidate Recommendation",
-      "edDraft": "https://w3c.github.io/presentation-api/",
-      "crawled": "https://w3c.github.io/presentation-api/",
+      "latest": "https://www.w3.org/TR/presentation-api",
+      "crawled": "https://www.w3.org/TR/presentation-api/",
       "repository": "https://github.com/w3c/presentation-api",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "FetchError: invalid json response body at https://api.w3.org/specifications/presentation-api/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/presentation-api/versions?embed=1 reason: Unexpected token < in JSON at position 0\n    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
@@ -18995,29 +18610,9 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/permissions/",
-            "ref": {
-              "name": "PERMISSIONS",
-              "url": "https://www.w3.org/TR/permissions/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/webappsec-mixed-content/",
-            "ref": {
-              "name": "MIXED-CONTENT",
-              "url": "https://www.w3.org/TR/mixed-content/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://html.spec.whatwg.org/",
-              "title": "HTML Standard",
-              "crawled": "https://html.spec.whatwg.org/"
-            },
             {
               "url": "https://www.w3.org/TR/remote-playback/",
               "title": "Remote Playback API",
@@ -19026,7 +18621,7 @@
           ],
           "informative": []
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -19643,11 +19238,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/wai-aria-1.2/",
-              "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
-              "crawled": "https://rawgit.com/w3c/aria/master/"
-            },
-            {
               "url": "https://www.w3.org/TR/compositing-1/",
               "title": "Compositing and Blending Level 1",
               "crawled": "https://drafts.fxtf.org/compositing-1/"
@@ -19738,11 +19328,6 @@
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
             },
             {
-              "url": "https://www.w3.org/TR/css-writing-modes-3/",
-              "title": "CSS Writing Modes Level 3",
-              "crawled": "https://drafts.csswg.org/css-writing-modes-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://drafts.csswg.org/css-writing-modes-4/"
@@ -19819,11 +19404,6 @@
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/wai-aria-1.2/",
-              "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
-              "crawled": "https://rawgit.com/w3c/aria/master/"
-            },
             {
               "url": "https://www.w3.org/TR/CSS22/",
               "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
@@ -20296,11 +19876,6 @@
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/wai-aria-1.2/",
-              "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
-              "crawled": "https://rawgit.com/w3c/aria/master/"
-            },
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
@@ -21300,11 +20875,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/wai-aria-1.2/",
-              "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
-              "crawled": "https://rawgit.com/w3c/aria/master/"
-            },
-            {
               "url": "https://wicg.github.io/keyboard-map/",
               "title": "Keyboard Map",
               "crawled": "https://wicg.github.io/keyboard-map/"
@@ -21463,11 +21033,6 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/"
             },
             {
               "url": "https://www.w3.org/TR/referrer-policy/",
@@ -22258,11 +21823,6 @@
               "crawled": "https://w3c.github.io/accelerometer/"
             },
             {
-              "url": "https://www.w3.org/TR/wai-aria-1.2/",
-              "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
-              "crawled": "https://rawgit.com/w3c/aria/master/"
-            },
-            {
               "url": "https://www.w3.org/TR/ambient-light/",
               "title": "Ambient Light Sensor",
               "crawled": "https://w3c.github.io/ambient-light/"
@@ -22336,11 +21896,6 @@
               "url": "https://www.w3.org/TR/css-animation-worklet-1/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-animations-1/",
-              "title": "CSS Animations Level 1",
-              "crawled": "https://drafts.csswg.org/css-animations/"
             },
             {
               "url": "https://drafts.csswg.org/css-animations-2/",
@@ -22736,11 +22291,6 @@
               "url": "https://www.w3.org/TR/pointerlock-2/",
               "title": "Pointer Lock 2.0",
               "crawled": "https://w3c.github.io/pointerlock/"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/"
             },
             {
               "url": "https://www.w3.org/TR/proximity/",
@@ -23513,19 +23063,9 @@
               "crawled": "https://w3c.github.io/mst-content-hint/"
             },
             {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/"
-            },
-            {
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/"
-            },
-            {
-              "url": "https://www.w3.org/TR/webrtc-dscp/",
-              "title": "WebRTC DSCP Control API",
-              "crawled": "https://w3c.github.io/webrtc-dscp-exp/"
             }
           ],
           "informative": [
@@ -23543,38 +23083,31 @@
     {
       "title": "WebRTC DSCP Control API",
       "shortname": "webrtc-dscp",
-      "date": "3 October 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/webrtc-dscp/",
-      "latest": "https://www.w3.org/TR/webrtc-dscp/",
-      "datedUrl": "https://www.w3.org/TR/2018/WD-webrtc-dscp-20180703/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://w3c.github.io/webrtc-dscp-exp/",
-      "crawled": "https://w3c.github.io/webrtc-dscp-exp/",
+      "latest": "https://www.w3.org/TR/webrtc-dscp",
+      "crawled": "https://www.w3.org/TR/webrtc-dscp/",
       "repository": "https://github.com/w3c/webrtc-dscp-exp",
       "report": {
-        "noNormativeRefs": false,
+        "error": "FetchError: invalid json response body at https://api.w3.org/specifications/webrtc-dscp/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/webrtc-dscp/versions?embed=1 reason: Unexpected token < in JSON at position 0\n    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "RTCPriorityType"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/webrtc-pc/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
