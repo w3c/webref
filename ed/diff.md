@@ -1,6 +1,6 @@
-% Diff between report from "December 14, 2019" and reference report from "December 03, 2019"
+% Diff between report from "December 15, 2019" and reference report from "December 03, 2019"
 % Reffy
-% December 14, 2019
+% December 15, 2019
 
 ## Accelerated Shape Detection in Images
 
@@ -62,6 +62,17 @@
 - Repository: [GitHub w3c/beacon](https://github.com/w3c/beacon)
 - Spec is OK: *INS* true / *DEL* false
 - Unknown WebIDL names used: *DEL* Navigator
+
+
+## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
+
+- URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/CSS22/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Spec title: *INS* Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification / *DEL* Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/CSS22/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/CSS22/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
 ## Clipboard API and events
@@ -189,6 +200,16 @@
 - Unknown [Exposed] names used: *DEL* Window
 
 
+## CSS Custom Properties for Cascading Variables Module Level 1
+
+- URL: [https://www.w3.org/TR/css-variables-1/](https://www.w3.org/TR/css-variables-1/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/css-variables-1/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/css-variables-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-variables-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+
 ## CSS Device Adaptation Module Level 1
 
 - URL: [https://www.w3.org/TR/css-device-adapt-1/](https://www.w3.org/TR/css-device-adapt-1/)
@@ -285,6 +306,16 @@
 - Unknown WebIDL names used: *DEL* Window
 
 
+## CSS Text Decoration Module Level 3
+
+- URL: [https://www.w3.org/TR/css-text-decor-3/](https://www.w3.org/TR/css-text-decor-3/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/css-text-decor-3/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/css-text-decor-3/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-text-decor-3/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+
 ## CSS Text Decoration Module Level 4
 
 - URL: [https://www.w3.org/TR/css-text-decor-4/](https://www.w3.org/TR/css-text-decor-4/)
@@ -367,6 +398,8 @@
 - Crawled version: [Initial URL](https://wicg.github.io/element-timing/)
 - Repository: [GitHub wicg/element-timing](https://github.com/wicg/element-timing)
 - Unknown [Exposed] names used: *DEL* Window
+- Missing references for links: *INS* https://w3c.github.io/resource-timing/
+- Inconsistent references for links: *DEL* https://w3c.github.io/resource-timing/
 
 
 ## Encoding Standard
@@ -579,6 +612,8 @@
 - Crawled version: [Initial URL](https://wicg.github.io/layout-instability/)
 - Repository: [GitHub wicg/layout-instability](https://github.com/wicg/layout-instability)
 - Unknown [Exposed] names used: *DEL* Window
+- Missing references for links: *INS* https://w3c.github.io/resource-timing/
+- Inconsistent references for links: *DEL* https://w3c.github.io/resource-timing/
 
 
 ## Long Tasks API 1
@@ -677,7 +712,9 @@
 - URL: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/)
 - Repository: [GitHub w3c/navigation-timing](https://github.com/w3c/navigation-timing)
+- Spec is OK: *INS* false / *DEL* true
 - Unknown [Exposed] names used: *DEL* Window
+- Unknown WebIDL names used: *INS* PerformanceResourceTiming
 
 
 ## Network Information API
@@ -841,11 +878,11 @@
 ## Resource Timing Level 2
 
 - URL: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/resource-timing-2/)
 - Repository: [GitHub w3c/resource-timing](https://github.com/w3c/resource-timing)
-- Spec is OK: *INS* true / *DEL* false
-- Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *DEL* EventHandler
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/resource-timing-2/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/resource-timing-2/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
 ## Scalable Vector Graphics (SVG) 2
@@ -878,6 +915,15 @@
 - Repository: [GitHub w3c/selection-api](https://github.com/w3c/selection-api)
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler, GlobalEventHandlers, Window
+
+
+## Server Timing
+
+- URL: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/)
+- Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
+- Missing references for links: *INS* https://w3c.github.io/resource-timing/
+- Inconsistent references for links: *DEL* https://w3c.github.io/resource-timing/
 
 
 ## Service Workers Nightly

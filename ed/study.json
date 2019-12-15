@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define CSS and WebIDL content",
   "description": "The crawl includes specifications published by W3C Working Groups, W3C Community Groups and WHATWG, that define CSS and/or WebIDL content. The specifications are at various stages of maturity.",
-  "date": "2019-12-14T18:37:39.336Z",
+  "date": "2019-12-15T00:37:18.127Z",
   "stats": {
     "crawled": 241,
-    "errors": 0,
+    "errors": 4,
     "studied": 241
   },
   "results": [
@@ -140,7 +140,7 @@
     {
       "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
       "shortname": "wai-aria-1.2",
-      "date": "14 December 2019",
+      "date": "15 December 2019",
       "url": "https://www.w3.org/TR/wai-aria-1.2/",
       "latest": "https://www.w3.org/TR/wai-aria-1.2/",
       "datedUrl": "https://www.w3.org/TR/2018/WD-wai-aria-1.2-20181218/",
@@ -469,13 +469,7 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 2",
-              "crawled": "https://w3c.github.io/resource-timing/"
-            }
-          ],
+          "normative": [],
           "informative": [
             {
               "url": "https://www.w3.org/TR/CSP3/",
@@ -517,55 +511,33 @@
       }
     },
     {
-      "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
+      "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
       "shortname": "CSS22",
-      "date": "27 April 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/CSS22/",
-      "latest": "http://www.w3.org/TR/CSS22/",
-      "datedUrl": "http://www.w3.org/TR/2016/WD-CSS22-20160412/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://drafts.csswg.org/css2/",
-      "crawled": "https://drafts.csswg.org/css2/",
+      "latest": "https://www.w3.org/TR/CSS22",
+      "crawled": "https://www.w3.org/TR/CSS22/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "noNormativeRefs": false,
+        "error": "FetchError: invalid json response body at https://api.w3.org/specifications/CSS22/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/CSS22/versions?embed=1 reason: Unexpected token < in JSON at position 0\n    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "noCssDefinitions": false,
+        "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/css3-color/",
-            "ref": {
-              "name": "CSS3COLOR",
-              "url": "http://www.w3.org/TR/2010/PR-css3-color-20101028/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://html.spec.whatwg.org/",
-              "title": "HTML Standard",
-              "crawled": "https://html.spec.whatwg.org/"
-            },
-            {
-              "url": "https://www.w3.org/TR/webvtt1/",
-              "title": "WebVTT: The Web Video Text Tracks Format",
-              "crawled": "https://w3c.github.io/webvtt/"
-            }
-          ],
+          "normative": [],
           "informative": []
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -883,11 +855,6 @@
               "crawled": "https://drafts.csswg.org/css-tables-3/"
             },
             {
-              "url": "https://www.w3.org/TR/css-text-decor-3/",
-              "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-text-decor-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
               "title": "CSS Text Decoration Module Level 4",
               "crawled": "https://drafts.csswg.org/css-text-decor-4/"
@@ -1009,11 +976,6 @@
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/CSS22/",
-              "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
-              "crawled": "https://drafts.csswg.org/css2/"
-            },
             {
               "url": "https://www.w3.org/TR/css-lists-3/",
               "title": "CSS Lists Module Level 3",
@@ -1845,11 +1807,6 @@
               "crawled": "https://drafts.csswg.org/css-conditional-3/"
             },
             {
-              "url": "https://www.w3.org/TR/css-variables-1/",
-              "title": "CSS Custom Properties for Cascading Variables Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-variables/"
-            },
-            {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/"
@@ -1890,11 +1847,6 @@
               "url": "https://www.w3.org/TR/css-syntax-3/",
               "title": "CSS Syntax Module Level 3",
               "crawled": "https://drafts.csswg.org/css-syntax/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-text-decor-3/",
-              "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-text-decor-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
@@ -2186,11 +2138,6 @@
               "crawled": "https://drafts.csswg.org/css-tables-3/"
             },
             {
-              "url": "https://www.w3.org/TR/css-text-decor-3/",
-              "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-text-decor-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
               "title": "CSS Text Decoration Module Level 4",
               "crawled": "https://drafts.csswg.org/css-text-decor-4/"
@@ -2296,11 +2243,6 @@
               "url": "https://www.w3.org/TR/css3-conditional/",
               "title": "CSS Conditional Rules Module Level 3",
               "crawled": "https://drafts.csswg.org/css-conditional-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-variables-1/",
-              "title": "CSS Custom Properties for Cascading Variables Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-variables/"
             },
             {
               "url": "https://www.w3.org/TR/css-round-display-1/",
@@ -3227,11 +3169,6 @@
               "crawled": "https://drafts.csswg.org/css-counter-styles/"
             },
             {
-              "url": "https://www.w3.org/TR/css-variables-1/",
-              "title": "CSS Custom Properties for Cascading Variables Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-variables/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-device-adapt-1/",
               "title": "CSS Device Adaptation Module Level 1",
               "crawled": "https://drafts.csswg.org/css-device-adapt/"
@@ -3697,11 +3634,6 @@
               "crawled": "https://drafts.csswg.org/css-scrollbars/"
             },
             {
-              "url": "https://www.w3.org/TR/css-text-decor-3/",
-              "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-text-decor-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
               "title": "CSS Text Decoration Module Level 4",
               "crawled": "https://drafts.csswg.org/css-text-decor-4/"
@@ -3888,11 +3820,6 @@
               "crawled": "https://drafts.csswg.org/css-tables-3/"
             },
             {
-              "url": "https://www.w3.org/TR/css-text-decor-3/",
-              "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-text-decor-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
               "title": "CSS Text Decoration Module Level 4",
               "crawled": "https://drafts.csswg.org/css-text-decor-4/"
@@ -3963,11 +3890,6 @@
               "url": "https://www.w3.org/TR/css3-conditional/",
               "title": "CSS Conditional Rules Module Level 3",
               "crawled": "https://drafts.csswg.org/css-conditional-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-variables-1/",
-              "title": "CSS Custom Properties for Cascading Variables Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-variables/"
             },
             {
               "url": "https://drafts.csswg.org/css-nesting-1/",
@@ -4084,11 +4006,6 @@
               "url": "https://drafts.csswg.org/css-conditional-4/",
               "title": "CSS Conditional Rules Module Level 4",
               "crawled": "https://drafts.csswg.org/css-conditional-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-variables-1/",
-              "title": "CSS Custom Properties for Cascading Variables Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-variables/"
             },
             {
               "url": "https://www.w3.org/TR/css-device-adapt-1/",
@@ -4310,21 +4227,18 @@
     {
       "title": "CSS Custom Properties for Cascading Variables Module Level 1",
       "shortname": "css-variables-1",
-      "date": "1 August 2019",
+      "date": "",
       "url": "https://www.w3.org/TR/css-variables-1/",
-      "latest": "http://www.w3.org/TR/css-variables-1/",
-      "datedUrl": "http://www.w3.org/TR/2015/CR-css-variables-1-20151203/",
-      "datedStatus": "Candidate Recommendation",
-      "edDraft": "https://drafts.csswg.org/css-variables/",
-      "crawled": "https://drafts.csswg.org/css-variables/",
+      "latest": "https://www.w3.org/TR/css-variables-1",
+      "crawled": "https://www.w3.org/TR/css-variables-1/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "noNormativeRefs": false,
+        "error": "FetchError: invalid json response body at https://api.w3.org/specifications/css-variables-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-variables-1/versions?embed=1 reason: Unexpected token < in JSON at position 0\n    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
@@ -4409,7 +4323,7 @@
             }
           ]
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -4577,11 +4491,6 @@
               "crawled": "https://drafts.csswg.org/css-contain/"
             },
             {
-              "url": "https://www.w3.org/TR/css-variables-1/",
-              "title": "CSS Custom Properties for Cascading Variables Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-variables/"
-            },
-            {
               "url": "https://www.w3.org/TR/fill-stroke-3/",
               "title": "CSS Fill and Stroke Module Level 3",
               "crawled": "https://drafts.fxtf.org/fill-stroke/"
@@ -4735,11 +4644,6 @@
               "url": "https://www.w3.org/TR/css-tables-3/",
               "title": "CSS Table Module Level 3",
               "crawled": "https://drafts.csswg.org/css-tables-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-text-decor-3/",
-              "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-text-decor-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
@@ -5458,11 +5362,6 @@
               "crawled": "https://drafts.csswg.org/css-scoping/"
             },
             {
-              "url": "https://www.w3.org/TR/css-text-decor-3/",
-              "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-text-decor-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
               "title": "CSS Text Decoration Module Level 4",
               "crawled": "https://drafts.csswg.org/css-text-decor-4/"
@@ -5524,11 +5423,6 @@
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/css-variables-1/",
-              "title": "CSS Custom Properties for Cascading Variables Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-variables/"
-            },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
@@ -5720,11 +5614,6 @@
               "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/"
             },
             {
-              "url": "https://www.w3.org/TR/css-text-decor-3/",
-              "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-text-decor-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
               "title": "CSS Text Decoration Module Level 4",
               "crawled": "https://drafts.csswg.org/css-text-decor-4/"
@@ -5781,11 +5670,6 @@
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/css-variables-1/",
-              "title": "CSS Custom Properties for Cascading Variables Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-variables/"
-            },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
@@ -5955,11 +5839,6 @@
               "url": "https://www.w3.org/TR/css-tables-3/",
               "title": "CSS Table Module Level 3",
               "crawled": "https://drafts.csswg.org/css-tables-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-text-decor-3/",
-              "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-text-decor-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
@@ -6925,11 +6804,6 @@
               "crawled": "https://drafts.csswg.org/css-tables-3/"
             },
             {
-              "url": "https://www.w3.org/TR/css-text-decor-3/",
-              "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-text-decor-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
               "title": "CSS Text Decoration Module Level 4",
               "crawled": "https://drafts.csswg.org/css-text-decor-4/"
@@ -7757,11 +7631,6 @@
               "crawled": "https://drafts.csswg.org/css-counter-styles/"
             },
             {
-              "url": "https://www.w3.org/TR/css-variables-1/",
-              "title": "CSS Custom Properties for Cascading Variables Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-variables/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-device-adapt-1/",
               "title": "CSS Device Adaptation Module Level 1",
               "crawled": "https://drafts.csswg.org/css-device-adapt/"
@@ -8113,11 +7982,6 @@
               "url": "https://www.w3.org/TR/css-tables-3/",
               "title": "CSS Table Module Level 3",
               "crawled": "https://drafts.csswg.org/css-tables-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-text-decor-3/",
-              "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-text-decor-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
@@ -9297,11 +9161,6 @@
               "crawled": "https://drafts.csswg.org/css-inline-3/"
             },
             {
-              "url": "https://www.w3.org/TR/css-text-decor-3/",
-              "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-text-decor-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
               "title": "CSS Text Decoration Module Level 4",
               "crawled": "https://drafts.csswg.org/css-text-decor-4/"
@@ -9931,11 +9790,6 @@
               "crawled": "https://drafts.csswg.org/css-counter-styles/"
             },
             {
-              "url": "https://www.w3.org/TR/css-variables-1/",
-              "title": "CSS Custom Properties for Cascading Variables Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-variables/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-device-adapt-1/",
               "title": "CSS Device Adaptation Module Level 1",
               "crawled": "https://drafts.csswg.org/css-device-adapt/"
@@ -10066,11 +9920,6 @@
               "crawled": "https://drafts.csswg.org/mediaqueries-4/"
             },
             {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 2",
-              "crawled": "https://w3c.github.io/resource-timing/"
-            },
-            {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://drafts.csswg.org/selectors/"
@@ -10169,48 +10018,26 @@
     {
       "title": "CSS Text Decoration Module Level 3",
       "shortname": "css-text-decor-3",
-      "date": "15 November 2019",
+      "date": "",
       "url": "https://www.w3.org/TR/css-text-decor-3/",
-      "latest": "https://www.w3.org/TR/css-text-decor-3/",
-      "datedUrl": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
-      "datedStatus": "Candidate Recommendation",
-      "edDraft": "https://drafts.csswg.org/css-text-decor-3/",
-      "crawled": "https://drafts.csswg.org/css-text-decor-3/",
+      "latest": "https://www.w3.org/TR/css-text-decor-3",
+      "crawled": "https://www.w3.org/TR/css-text-decor-3/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "noNormativeRefs": false,
+        "error": "FetchError: invalid json response body at https://api.w3.org/specifications/css-text-decor-3/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-text-decor-3/versions?embed=1 reason: Unexpected token < in JSON at position 0\n    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "noCssDefinitions": false,
+        "noCssDefinitions": true,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/css3-break/",
-          "https://www.w3.org/TR/css3-color/",
-          "https://www.w3.org/TR/css3-background/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/css3-values/",
-            "ref": {
-              "name": "CSS-VALUES-3",
-              "url": "https://www.w3.org/TR/css-values-3/"
-            }
-          },
-          {
-            "link": "https://www.w3.org/TR/1998/REC-CSS2-19980512",
-            "ref": {
-              "name": "CSS2",
-              "url": "https://www.w3.org/TR/CSS2/"
-            }
-          }
-        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -10242,11 +10069,6 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/"
-            },
-            {
-              "url": "https://www.w3.org/TR/webvtt1/",
-              "title": "WebVTT: The Web Video Text Tracks Format",
-              "crawled": "https://w3c.github.io/webvtt/"
             }
           ],
           "informative": [
@@ -10272,7 +10094,7 @@
             }
           ]
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -10501,11 +10323,6 @@
               "url": "https://www.w3.org/TR/css-ruby-1/",
               "title": "CSS Ruby Layout Module Level 1",
               "crawled": "https://drafts.csswg.org/css-ruby-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-text-decor-3/",
-              "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-text-decor-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
@@ -11527,11 +11344,6 @@
               "crawled": "https://drafts.csswg.org/css-shapes-2/"
             },
             {
-              "url": "https://www.w3.org/TR/css-text-decor-3/",
-              "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-text-decor-3/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
               "title": "CSS Text Decoration Module Level 4",
               "crawled": "https://drafts.csswg.org/css-text-decor-4/"
@@ -11831,11 +11643,6 @@
               "crawled": "https://drafts.csswg.org/css-counter-styles/"
             },
             {
-              "url": "https://www.w3.org/TR/css-variables-1/",
-              "title": "CSS Custom Properties for Cascading Variables Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-variables/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-device-adapt-1/",
               "title": "CSS Device Adaptation Module Level 1",
               "crawled": "https://drafts.csswg.org/css-device-adapt/"
@@ -12084,11 +11891,6 @@
               "url": "https://www.w3.org/TR/css-tables-3/",
               "title": "CSS Table Module Level 3",
               "crawled": "https://drafts.csswg.org/css-tables-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-text-decor-3/",
-              "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-text-decor-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
@@ -12646,11 +12448,6 @@
               "url": "https://www.w3.org/TR/css-shapes-1/",
               "title": "CSS Shapes Module Level 1",
               "crawled": "https://drafts.csswg.org/css-shapes/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-text-decor-3/",
-              "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-text-decor-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-text-decor-4/",
@@ -13427,11 +13224,6 @@
               "crawled": "https://drafts.csswg.org/resize-observer/"
             },
             {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 2",
-              "crawled": "https://w3c.github.io/resource-timing/"
-            },
-            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/"
@@ -13579,11 +13371,6 @@
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/CSS22/",
-              "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
-              "crawled": "https://drafts.csswg.org/css2/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-content-3/",
               "title": "CSS Generated Content Module Level 3",
               "crawled": "https://drafts.csswg.org/css-content-3/"
@@ -13623,7 +13410,9 @@
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/resource-timing/"
+        ],
         "inconsistentRef": [
           {
             "link": "https://w3c.github.io/performance-timeline/",
@@ -13637,13 +13426,6 @@
             "ref": {
               "name": "HR-TIME",
               "url": "https://www.w3.org/TR/hr-time/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/resource-timing/",
-            "ref": {
-              "name": "RESOURCE-TIMING-1",
-              "url": "https://www.w3.org/TR/resource-timing-1/"
             }
           },
           {
@@ -14180,11 +13962,6 @@
               "url": "https://w3c.github.io/reporting/",
               "title": "Reporting API 1",
               "crawled": "https://w3c.github.io/reporting/"
-            },
-            {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 2",
-              "crawled": "https://w3c.github.io/resource-timing/"
             },
             {
               "url": "https://www.w3.org/TR/SVG2/",
@@ -15228,11 +15005,6 @@
               "crawled": "https://w3c.github.io/performance-timeline/"
             },
             {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 2",
-              "crawled": "https://w3c.github.io/resource-timing/"
-            },
-            {
               "url": "https://www.w3.org/TR/user-timing-2/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
@@ -15466,11 +15238,6 @@
               "url": "https://www.w3.org/TR/css-counter-styles-3/",
               "title": "CSS Counter Styles Level 3",
               "crawled": "https://drafts.csswg.org/css-counter-styles/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-variables-1/",
-              "title": "CSS Custom Properties for Cascading Variables Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-variables/"
             },
             {
               "url": "https://www.w3.org/TR/css-display-3/",
@@ -15888,11 +15655,6 @@
               "crawled": "https://drafts.csswg.org/resize-observer/"
             },
             {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 2",
-              "crawled": "https://w3c.github.io/resource-timing/"
-            },
-            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/"
@@ -16153,11 +15915,6 @@
               "url": "https://www.w3.org/TR/css-syntax-3/",
               "title": "CSS Syntax Module Level 3",
               "crawled": "https://drafts.csswg.org/css-syntax/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-text-decor-3/",
-              "title": "CSS Text Decoration Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-text-decor-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-text-3/",
@@ -16705,7 +16462,8 @@
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/uievents/",
-          "https://www.w3.org/TR/pointerevents/"
+          "https://www.w3.org/TR/pointerevents/",
+          "https://w3c.github.io/resource-timing/"
         ],
         "inconsistentRef": [
           {
@@ -16727,13 +16485,6 @@
             "ref": {
               "name": "PAINT-TIMING",
               "url": "https://www.w3.org/TR/paint-timing/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/resource-timing/",
-            "ref": {
-              "name": "RESOURCE-TIMING-1",
-              "url": "https://www.w3.org/TR/resource-timing-1/"
             }
           }
         ],
@@ -17230,13 +16981,7 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/CSS22/",
-              "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
-              "crawled": "https://drafts.csswg.org/css2/"
-            }
-          ]
+          "informative": []
         },
         "noEdDraft": false,
         "ok": false
@@ -17931,7 +17676,9 @@
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "PerformanceResourceTiming"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -17947,11 +17694,6 @@
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
               "crawled": "https://w3c.github.io/navigation-timing/"
-            },
-            {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 2",
-              "crawled": "https://w3c.github.io/resource-timing/"
             },
             {
               "url": "https://www.w3.org/TR/server-timing/",
@@ -17978,7 +17720,7 @@
           ]
         },
         "noEdDraft": false,
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -18577,11 +18319,6 @@
               "url": "https://www.w3.org/TR/paint-timing/",
               "title": "Paint Timing 1",
               "crawled": "https://w3c.github.io/paint-timing/"
-            },
-            {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 2",
-              "crawled": "https://w3c.github.io/resource-timing/"
             },
             {
               "url": "https://www.w3.org/TR/user-timing-2/",
@@ -19364,21 +19101,18 @@
     {
       "title": "Resource Timing Level 2",
       "shortname": "resource-timing-2",
-      "date": "28 November 2019",
+      "date": "",
       "url": "https://www.w3.org/TR/resource-timing-2/",
-      "latest": "https://www.w3.org/TR/resource-timing-2/",
-      "datedUrl": "https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://w3c.github.io/resource-timing/",
-      "crawled": "https://w3c.github.io/resource-timing/",
+      "latest": "https://www.w3.org/TR/resource-timing-2",
+      "crawled": "https://www.w3.org/TR/resource-timing-2/",
       "repository": "https://github.com/w3c/resource-timing",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "FetchError: invalid json response body at https://api.w3.org/specifications/resource-timing-2/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/resource-timing-2/versions?embed=1 reason: Unexpected token < in JSON at position 0\n    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
@@ -19418,8 +19152,8 @@
             }
           ]
         },
-        "noEdDraft": false,
-        "ok": true
+        "noEdDraft": true,
+        "ok": false
       }
     },
     {
@@ -19788,11 +19522,6 @@
               "crawled": "https://drafts.csswg.org/resize-observer/"
             },
             {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 2",
-              "crawled": "https://w3c.github.io/resource-timing/"
-            },
-            {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://drafts.csswg.org/selectors/"
@@ -19823,11 +19552,6 @@
               "url": "https://www.w3.org/TR/wai-aria-1.2/",
               "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
               "crawled": "https://rawgit.com/w3c/aria/master/"
-            },
-            {
-              "url": "https://www.w3.org/TR/CSS22/",
-              "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
-              "crawled": "https://drafts.csswg.org/css2/"
             },
             {
               "url": "https://www.w3.org/TR/clipboard-apis/",
@@ -20387,11 +20111,6 @@
               "crawled": "https://drafts.csswg.org/css-conditional-4/"
             },
             {
-              "url": "https://www.w3.org/TR/css-variables-1/",
-              "title": "CSS Custom Properties for Cascading Variables Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-variables/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
               "crawled": "https://drafts.csswg.org/css-display/"
@@ -20559,17 +20278,10 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://w3c.github.io/webappsec-secure-contexts/"
+          "https://w3c.github.io/webappsec-secure-contexts/",
+          "https://w3c.github.io/resource-timing/"
         ],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/resource-timing/",
-            "ref": {
-              "name": "RESOURCE-TIMING-2",
-              "url": "https://www.w3.org/TR/resource-timing-2/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -20656,11 +20368,6 @@
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 2",
-              "crawled": "https://w3c.github.io/resource-timing/"
-            },
             {
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
@@ -22768,11 +22475,6 @@
               "crawled": "https://drafts.csswg.org/resize-observer/"
             },
             {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 2",
-              "crawled": "https://w3c.github.io/resource-timing/"
-            },
-            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/"
@@ -23103,7 +22805,7 @@
     },
     {
       "title": "Web Share API",
-      "date": "11 December 2019",
+      "date": "14 December 2019",
       "url": "https://w3c.github.io/web-share/",
       "crawled": "https://w3c.github.io/web-share/",
       "report": {
@@ -23341,7 +23043,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "14 December 2019",
+      "date": "15 December 2019",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -23392,7 +23094,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "14 December 2019",
+      "date": "15 December 2019",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -23959,11 +23661,6 @@
               "url": "https://www.w3.org/TR/mixed-content/",
               "title": "Mixed Content",
               "crawled": "https://w3c.github.io/webappsec-mixed-content/"
-            },
-            {
-              "url": "https://www.w3.org/TR/resource-timing-2/",
-              "title": "Resource Timing Level 2",
-              "crawled": "https://w3c.github.io/resource-timing/"
             }
           ],
           "informative": [
