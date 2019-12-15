@@ -53,6 +53,7 @@ Normative references to this spec from:
 
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
+- [Magnetometer](https://w3c.github.io/magnetometer/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 
 Informative references to this spec from:
@@ -177,23 +178,20 @@ Informative references to this spec from:
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
 
 
-## Battery Status API {data-spec=true data-error=true}
+## Battery Status API {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/battery-status/)
-- Latest published version: [https://www.w3.org/TR/battery-status](https://www.w3.org/TR/battery-status)
+- Crawled version: [Editor's Draft](https://w3c.github.io/battery/) (25 September 2019)
+- Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
+- Latest published version: [http://www.w3.org/TR/battery-status/](http://www.w3.org/TR/battery-status/)
+- Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
 - Repository: [GitHub w3c/battery](https://github.com/w3c/battery)
 - Shortname: battery-status
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`FetchError: invalid json response body at https://api.w3.org/specifications/battery-status/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/battery-status/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -201,6 +199,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 
 
@@ -248,27 +247,28 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noCssDefinitions=true}
+## Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](http://dev.w3.org/csswg/css2/) (27 April 2018)
-- Editor's Draft: [http://dev.w3.org/csswg/css2/](http://dev.w3.org/csswg/css2/)
-- Latest published version: [http://www.w3.org/TR/CSS2/](http://www.w3.org/TR/CSS2/)
-- Latest published status: [Recommendation](http://www.w3.org/TR/2011/REC-CSS2-20110607/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/CSS2/)
+- Latest published version: [https://www.w3.org/TR/CSS2](https://www.w3.org/TR/CSS2)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: CSS2
 
 ### Potential issue(s) {.anomalies}
 
-- No normative references found
-- No CSS definitions found
+The following network or parsing error occurred:
+`FetchError: invalid json response body at https://api.w3.org/specifications/CSS2 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/CSS2 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
@@ -335,20 +335,21 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
-- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Media Queries Level 3](http://dev.w3.org/csswg/css3-mediaqueries/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebDriver](https://w3c.github.io/webdriver/)
+- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
 
@@ -385,24 +386,23 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Clipboard API and events {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Clipboard API and events {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/clipboard-apis/) (22 August 2019)
-- Editor's Draft: [https://w3c.github.io/clipboard-apis/](https://w3c.github.io/clipboard-apis/)
-- Latest published version: [https://www.w3.org/TR/clipboard-apis/](https://www.w3.org/TR/clipboard-apis/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/clipboard-apis/)
+- Latest published version: [https://www.w3.org/TR/clipboard-apis](https://www.w3.org/TR/clipboard-apis)
 - Repository: [GitHub w3c/clipboard-apis](https://github.com/w3c/clipboard-apis)
 - Shortname: clipboard-apis
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
-     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
+The following network or parsing error occurred:
+`FetchError: invalid json response body at https://api.w3.org/specifications/clipboard-apis/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/clipboard-apis/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -463,6 +463,7 @@ Normative references to this spec from:
 
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
 
@@ -496,6 +497,7 @@ Normative references to this spec from:
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 
 No informative reference to this spec from other specs.
 
@@ -549,7 +551,6 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
-- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
@@ -677,25 +678,23 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Credential Management Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Credential Management Level 1 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-credential-management/) (23 October 2019)
-- Editor's Draft: [https://w3c.github.io/webappsec-credential-management/](https://w3c.github.io/webappsec-credential-management/)
-- Latest published version: [https://www.w3.org/TR/credential-management-1/](https://www.w3.org/TR/credential-management-1/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/credential-management-1/)
+- Latest published version: [https://www.w3.org/TR/credential-management-1](https://www.w3.org/TR/credential-management-1)
 - Repository: [GitHub w3c/webappsec-credential-management](https://github.com/w3c/webappsec-credential-management)
 - Shortname: credential-management-1
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://w3c.github.io/webappsec/usecases/credentialmanagement/`](https://w3c.github.io/webappsec/usecases/credentialmanagement/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/), related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
-     * [`https://w3c.github.io/webauthn/`](https://w3c.github.io/webauthn/), related reference "WEBAUTHN" uses URL [`https://www.w3.org/TR/webauthn-1/`](https://www.w3.org/TR/webauthn-1/)
+The following network or parsing error occurred:
+`FetchError: invalid json response body at https://api.w3.org/specifications/credential-management-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/credential-management-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -708,7 +707,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## CSS Animation Worklet API {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## CSS Animation Worklet API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -720,6 +719,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Worklet`, `WorkletGlobalScope`
 - Missing references for links: 
      * [`https://w3c.github.io/html/infrastructure.html`](https://w3c.github.io/html/infrastructure.html)
      * [`https://w3c.github.io/web-animations/level-2/`](https://w3c.github.io/web-animations/level-2/)
@@ -772,6 +772,7 @@ Informative references to this spec from:
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 
@@ -874,10 +875,10 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -950,6 +951,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -1126,7 +1128,6 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -1285,8 +1286,8 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
@@ -1380,6 +1381,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -1435,6 +1437,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -1514,6 +1517,7 @@ Informative references to this spec from:
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
+- [Web IDL](https://heycam.github.io/webidl/)
 
 
 ## CSS Conditional Rules Module Level 4 {data-spec=true data-anomaly=true data-noCssDefinitions=true}
@@ -1737,10 +1741,10 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
@@ -1920,7 +1924,6 @@ Informative references to this spec from:
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 
 
@@ -2005,6 +2008,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -2016,7 +2020,6 @@ Informative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -2072,6 +2075,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -2082,7 +2086,6 @@ Informative references to this spec from:
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 
@@ -2136,7 +2139,6 @@ Normative references to this spec from:
 - [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 
 Informative references to this spec from:
@@ -2198,7 +2200,6 @@ Informative references to this spec from:
 
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 
 
 ## CSS Generated Content for Paged Media Module {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2408,8 +2409,8 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
@@ -2494,7 +2495,6 @@ Normative references to this spec from:
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
@@ -2504,7 +2504,7 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 
 
-## CSS Layout API Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## CSS Layout API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -2516,6 +2516,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Worklet`, `WorkletGlobalScope`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
@@ -2663,8 +2664,8 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
@@ -2725,7 +2726,6 @@ Normative references to this spec from:
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 
@@ -2782,7 +2782,6 @@ Normative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [Non-element Selectors Module Level 1](https://drafts.csswg.org/selectors-nonelement/)
-- [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 
 No informative reference to this spec from other specs.
@@ -2874,6 +2873,7 @@ Informative references to this spec from:
 - [CSS Easing Functions Level 1](https://drafts.csswg.org/css-easing/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [Web IDL](https://heycam.github.io/webidl/)
 
 
 ## CSS Overflow Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -2933,9 +2933,9 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -3072,7 +3072,6 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 
 Informative references to this spec from:
@@ -3087,7 +3086,7 @@ Informative references to this spec from:
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
 
 
-## CSS Painting API Level 1 {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## CSS Painting API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3099,6 +3098,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Worklet`, `WorkletGlobalScope`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css3-images/`](https://www.w3.org/TR/css3-images/), related reference "CSS-IMAGES-3" uses URL [`https://www.w3.org/TR/css-images-3/`](https://www.w3.org/TR/css-images-3/)
 
@@ -3109,7 +3109,6 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 
 ## CSS Parser API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -3175,6 +3174,7 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -3387,7 +3387,6 @@ Normative references to this spec from:
 - [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 No informative reference to this spec from other specs.
@@ -3704,7 +3703,6 @@ Normative references to this spec from:
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 Informative references to this spec from:
 
@@ -3768,8 +3766,8 @@ Normative references to this spec from:
 
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -3811,7 +3809,6 @@ Normative references to this spec from:
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 
 Informative references to this spec from:
@@ -3866,9 +3863,9 @@ Normative references to this spec from:
 - [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
@@ -3960,6 +3957,7 @@ Normative references to this spec from:
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
@@ -4209,9 +4207,9 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
@@ -4343,9 +4341,9 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
@@ -4387,23 +4385,23 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Writing Modes Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## CSS Writing Modes Level 3 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-writing-modes-3/) (5 December 2019)
-- Editor's Draft: [https://drafts.csswg.org/css-writing-modes-3/](https://drafts.csswg.org/css-writing-modes-3/)
-- Latest published version: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
-- Latest published status: [Recommendation](https://www.w3.org/TR/2019/REC-css-writing-modes-3-20191210/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/css-writing-modes-3/)
+- Latest published version: [https://www.w3.org/TR/css-writing-modes-3](https://www.w3.org/TR/css-writing-modes-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-writing-modes-3
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-logical-1/`](https://www.w3.org/TR/css-logical-1/)
-     * [`https://www.w3.org/TR/css3-flexbox/`](https://www.w3.org/TR/css3-flexbox/)
-     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
+The following network or parsing error occurred:
+`FetchError: invalid json response body at https://api.w3.org/specifications/css-writing-modes-3/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-writing-modes-3/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4432,10 +4430,10 @@ Normative references to this spec from:
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
-- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
 
@@ -4506,8 +4504,8 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
@@ -4592,33 +4590,36 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Web IDL](https://heycam.github.io/webidl/)
 
 
-## DOM Parsing and Serialization {data-spec=true data-error=true}
+## DOM Parsing and Serialization {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/DOM-Parsing/)
-- Latest published version: [https://www.w3.org/TR/DOM-Parsing](https://www.w3.org/TR/DOM-Parsing)
+- Crawled version: [Editor's Draft](https://w3c.github.io/DOM-Parsing/) (11 December 2019)
+- Editor's Draft: [https://w3c.github.io/DOM-Parsing/](https://w3c.github.io/DOM-Parsing/)
+- Latest published version: [http://www.w3.org/TR/DOM-Parsing/](http://www.w3.org/TR/DOM-Parsing/)
+- Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
 - Repository: [GitHub w3c/DOM-Parsing](https://github.com/w3c/DOM-Parsing)
 - Shortname: DOM-Parsing
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`FetchError: invalid json response body at https://api.w3.org/specifications/DOM-Parsing/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/DOM-Parsing/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [WebDriver](https://w3c.github.io/webdriver/)
+- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [DOM Standard](https://dom.spec.whatwg.org/)
 
 
 ## DOM Standard {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -4642,14 +4643,13 @@ Normative references to this spec from:
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
-- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
-- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
@@ -4675,6 +4675,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
@@ -4689,9 +4690,11 @@ Normative references to this spec from:
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [High Resolution Time](https://w3c.github.io/hr-time/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
@@ -4700,6 +4703,8 @@ Normative references to this spec from:
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
@@ -4730,10 +4735,12 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
+- [Web IDL](https://heycam.github.io/webidl/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
@@ -4751,10 +4758,9 @@ Informative references to this spec from:
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
-- [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
 
 
-## Element Timing API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Element Timing API {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -4764,10 +4770,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PerformanceEntry`
-- Missing references for links: 
-     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/)
 - Inconsistent references for links: 
+     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
      * [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/), related reference "RESOURCE-TIMING-1" uses URL [`https://www.w3.org/TR/resource-timing-1/`](https://www.w3.org/TR/resource-timing-1/)
      * [`https://w3c.github.io/IntersectionObserver/`](https://w3c.github.io/IntersectionObserver/), related reference "INTERSECTION-OBSERVER" uses URL [`https://www.w3.org/TR/intersection-observer/`](https://www.w3.org/TR/intersection-observer/)
@@ -4817,7 +4821,6 @@ Normative references to this spec from:
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
@@ -4854,7 +4857,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## Event Timing API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Event Timing API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -4864,15 +4867,14 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PerformanceEntry`
 - Missing references for links: 
-     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/)
      * [`https://w3c.github.io/pointerevents/extension.html`](https://w3c.github.io/pointerevents/extension.html)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
      * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
      * [`https://w3c.github.io/pointerevents/`](https://w3c.github.io/pointerevents/), related reference "POINTEREVENTS" uses URL [`https://www.w3.org/TR/pointerevents/`](https://www.w3.org/TR/pointerevents/)
      * [`https://w3c.github.io/touch-events/`](https://w3c.github.io/touch-events/), related reference "TOUCH-EVENTS" uses URL [`https://www.w3.org/TR/touch-events/`](https://www.w3.org/TR/touch-events/)
+     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
      * [`https://w3c.github.io/paint-timing/`](https://w3c.github.io/paint-timing/), related reference "PAINT-TIMING" uses URL [`https://www.w3.org/TR/paint-timing/`](https://www.w3.org/TR/paint-timing/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -4897,10 +4899,10 @@ No informative reference to this spec from other specs.
 - Missing references for WebIDL names: 
      * `ReportBody` defined in [Reporting API 1](https://w3c.github.io/reporting/)
 - Missing references for links: 
-     * [`https://w3c.github.io/payment-request/`](https://w3c.github.io/payment-request/)
      * [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+     * [`https://w3c.github.io/payment-request/`](https://w3c.github.io/payment-request/), related reference "PAYMENT-REQUEST" uses URL [`https://www.w3.org/TR/payment-request/`](https://www.w3.org/TR/payment-request/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4935,13 +4937,13 @@ Normative references to this spec from:
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
-- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [File API](https://w3c.github.io/FileAPI/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
@@ -4962,14 +4964,16 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
 
+- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
+- [Web IDL](https://heycam.github.io/webidl/)
 
 
 ## File and Directory Entries API {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -5014,13 +5018,13 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
+- [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
@@ -5031,6 +5035,7 @@ Normative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [WebDriver](https://w3c.github.io/webdriver/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -5038,28 +5043,31 @@ Informative references to this spec from:
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
 
 
-## Filter Effects Module Level 1 {data-spec=true data-error=true}
+## Filter Effects Module Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/filter-effects-1/)
-- Latest published version: [https://www.w3.org/TR/filter-effects-1](https://www.w3.org/TR/filter-effects-1)
+- Crawled version: [Editor's Draft](https://drafts.fxtf.org/filter-effects-1/) (21 October 2019)
+- Editor's Draft: [https://drafts.fxtf.org/filter-effects-1/](https://drafts.fxtf.org/filter-effects-1/)
+- Latest published version: [https://www.w3.org/TR/filter-effects-1/](https://www.w3.org/TR/filter-effects-1/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
 - Shortname: filter-effects-1
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`FetchError: invalid json response body at https://api.w3.org/specifications/filter-effects-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/filter-effects-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css-transitions-1/`](https://www.w3.org/TR/css-transitions-1/)
+     * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
+     * [`https://www.w3.org/TR/2012/WD-filter-effects-20121025/`](https://www.w3.org/TR/2012/WD-filter-effects-20121025/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/), related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
@@ -5139,6 +5147,7 @@ Informative references to this spec from:
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
+- [Web IDL](https://heycam.github.io/webidl/)
 
 
 ## Gamepad {data-spec=true data-anomaly=true data-redefinedIdlNames=true}
@@ -5192,6 +5201,7 @@ Normative references to this spec from:
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
+- [Magnetometer](https://w3c.github.io/magnetometer/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Proximity Sensor](https://w3c.github.io/proximity/)
 
@@ -5228,6 +5238,7 @@ Informative references to this spec from:
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Web IDL](https://heycam.github.io/webidl/)
 
 
 ## Geolocation Sensor {data-spec=true data-ok=true}
@@ -5286,7 +5297,9 @@ Although they do not, the following specs should also normatively reference this
 
 - [SVG Markers](https://svgwg.org/specs/markers/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Web IDL](https://heycam.github.io/webidl/)
 
 
 ## Gyroscope {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -5348,14 +5361,17 @@ Normative references to this spec from:
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Media Playback Quality](https://w3c.github.io/media-playback-quality/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -5413,8 +5429,8 @@ Normative references to this spec from:
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
-- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
@@ -5423,7 +5439,6 @@ Normative references to this spec from:
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
-- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
@@ -5460,10 +5475,10 @@ Normative references to this spec from:
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
@@ -5472,6 +5487,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://w3c.github.io/FileAPI/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
@@ -5482,10 +5498,12 @@ Normative references to this spec from:
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
+- [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
@@ -5502,6 +5520,8 @@ Normative references to this spec from:
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
@@ -5538,6 +5558,7 @@ Normative references to this spec from:
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
+- [Web IDL](https://heycam.github.io/webidl/)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Share API](https://w3c.github.io/web-share/)
@@ -5547,17 +5568,15 @@ Normative references to this spec from:
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
 
-- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
-- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
@@ -5574,10 +5593,11 @@ Informative references to this spec from:
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [File API](https://w3c.github.io/FileAPI/)
+- [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
-- [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
@@ -5596,7 +5616,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `RTCDataChannelState`, `RTCDtlsTransportState`, `RTCIceCandidateType`, `RTCIceRole`, `RTCPriorityType`, `RTCStats`
+- Unknown WebIDL names used: `RTCPriorityType`
 - Missing references for links: 
      * [`https://w3c.github.io/webrtc-pc/`](https://w3c.github.io/webrtc-pc/)
 - Inconsistent references for links: 
@@ -5607,11 +5627,12 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 No informative reference to this spec from other specs.
 
 
-## Identity for WebRTC 1.0 {data-spec=true data-anomaly=true data-unknownExposedNames=true data-unknownIdlNames=true}
+## Identity for WebRTC 1.0 {data-spec=true data-unknownExposedNames=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -5624,8 +5645,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown [Exposed] names used: `RTCIdentityProviderGlobalScope`
-- Unknown WebIDL names used: `RTCConfiguration`, `RTCError`, `RTCErrorInit`, `RTCPeerConnection`
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5634,28 +5654,27 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Indexed Database API 2.0 {data-spec=true data-error=true}
+## Indexed Database API 3.0 {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/IndexedDB-2/)
-- Latest published version: [https://www.w3.org/TR/IndexedDB-2](https://www.w3.org/TR/IndexedDB-2)
+- Crawled version: [Editor's Draft](https://w3c.github.io/IndexedDB/) (12 December 2019)
+- Editor's Draft: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
+- Latest published version: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
+- Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - Repository: [GitHub w3c/IndexedDB](https://github.com/w3c/IndexedDB)
 - Shortname: IndexedDB-2
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`FetchError: invalid json response body at https://api.w3.org/specifications/IndexedDB-2/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/IndexedDB-2/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [HTML Standard](https://html.spec.whatwg.org/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 
 Informative references to this spec from:
@@ -5663,6 +5682,7 @@ Informative references to this spec from:
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
 ## Input Device Capabilities {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
@@ -5791,7 +5811,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Largest Contentful Paint {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Largest Contentful Paint {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -5801,10 +5821,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PerformanceEntry`
-- Missing references for links: 
-     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/)
 - Inconsistent references for links: 
+     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -5816,7 +5834,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Layout Instability API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Layout Instability API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -5826,12 +5844,11 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PerformanceEntry`
 - Missing references for links: 
      * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
      * [`https://www.w3.org/TR/pointerevents/`](https://www.w3.org/TR/pointerevents/)
-     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/)
 - Inconsistent references for links: 
+     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
      * [`https://w3c.github.io/paint-timing/`](https://w3c.github.io/paint-timing/), related reference "PAINT-TIMING" uses URL [`https://www.w3.org/TR/paint-timing/`](https://www.w3.org/TR/paint-timing/)
      * [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/), related reference "RESOURCE-TIMING-1" uses URL [`https://www.w3.org/TR/resource-timing-1/`](https://www.w3.org/TR/resource-timing-1/)
@@ -5843,53 +5860,57 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Long Tasks API 1 {data-spec=true data-error=true}
+## Long Tasks API 1 {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/longtasks-1/)
-- Latest published version: [https://www.w3.org/TR/longtasks-1](https://www.w3.org/TR/longtasks-1)
+- Crawled version: [Editor's Draft](https://w3c.github.io/longtasks/) (2 December 2019)
+- Editor's Draft: [https://w3c.github.io/longtasks/](https://w3c.github.io/longtasks/)
+- Latest published version: [https://www.w3.org/TR/longtasks-1/](https://www.w3.org/TR/longtasks-1/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - Repository: [GitHub w3c/longtasks](https://github.com/w3c/longtasks)
 - Shortname: longtasks-1
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`FetchError: invalid json response body at https://api.w3.org/specifications/longtasks-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/longtasks-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## Magnetometer {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://www.w3.org/TR/magnetometer/)
-- Latest published version: [https://www.w3.org/TR/magnetometer](https://www.w3.org/TR/magnetometer)
-- Repository: [GitHub w3c/magnetometer](https://github.com/w3c/magnetometer)
-- Shortname: magnetometer
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`FetchError: invalid json response body at https://api.w3.org/specifications/magnetometer/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/magnetometer/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
+     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [HTML Standard](https://html.spec.whatwg.org/)
+
+No informative reference to this spec from other specs.
+
+
+## Magnetometer {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://w3c.github.io/magnetometer/) (29 September 2019)
+- Editor's Draft: [https://w3c.github.io/magnetometer/](https://w3c.github.io/magnetometer/)
+- Latest published version: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-magnetometer-20190307/)
+- Repository: [GitHub w3c/magnetometer](https://github.com/w3c/magnetometer)
+- Shortname: magnetometer
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/), related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+     * [`https://w3c.github.io/accelerometer/`](https://w3c.github.io/accelerometer/), related reference "ACCELEROMETER" uses URL [`https://www.w3.org/TR/accelerometer/`](https://www.w3.org/TR/accelerometer/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 
 Informative references to this spec from:
@@ -5950,6 +5971,7 @@ Normative references to this spec from:
 - [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -5960,6 +5982,7 @@ Informative references to this spec from:
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Web IDL](https://heycam.github.io/webidl/)
 
 
 ## Media Capture Depth Stream Extensions {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -6131,6 +6154,7 @@ Normative references to this spec from:
 
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 
 Informative references to this spec from:
 
@@ -6299,7 +6323,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
-- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
@@ -6371,6 +6394,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 
 
@@ -6461,11 +6485,11 @@ Informative references to this spec from:
 - Missing references for links: 
      * [`https://www.w3.org/TR/2016/CR-orientation-event-20160818/`](https://www.w3.org/TR/2016/CR-orientation-event-20160818/)
      * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
-     * [`https://w3c.github.io/magnetometer/`](https://w3c.github.io/magnetometer/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/), related reference "GENERIC-SENSOR" uses URL [`https://www.w3.org/TR/generic-sensor/`](https://www.w3.org/TR/generic-sensor/)
      * [`https://w3c.github.io/accelerometer/`](https://w3c.github.io/accelerometer/), related reference "ACCELEROMETER" uses URL [`https://www.w3.org/TR/accelerometer/`](https://www.w3.org/TR/accelerometer/)
      * [`https://w3c.github.io/gyroscope/`](https://w3c.github.io/gyroscope/), related reference "GYROSCOPE" uses URL [`https://www.w3.org/TR/gyroscope/`](https://www.w3.org/TR/gyroscope/)
+     * [`https://w3c.github.io/magnetometer/`](https://w3c.github.io/magnetometer/), related reference "MAGNETOMETER" uses URL [`https://www.w3.org/TR/magnetometer/`](https://www.w3.org/TR/magnetometer/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6514,7 +6538,7 @@ Informative references to this spec from:
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 
 
-## Paint Timing 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
+## Paint Timing 1 {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -6527,9 +6551,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PerformanceEntry`
-- Missing references for links: 
-     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6542,7 +6565,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Payment Handler API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## Payment Handler API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -6555,7 +6578,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `AddressErrors`, `AddressInit`, `PaymentCurrencyAmount`, `PaymentDetailsModifier`, `PaymentMethodData`, `PaymentOptions`, `PaymentShippingOption`
 - Missing references for WebIDL names: 
      * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
      * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
@@ -6570,7 +6592,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Payment Method: Basic Card {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Payment Method: Basic Card {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -6583,34 +6605,32 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `AddressErrors`, `PaymentAddress`
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
 
 No informative reference to this spec from other specs.
 
 
-## Payment Request API {data-spec=true data-error=true}
+## Payment Request API {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/payment-request/)
-- Latest published version: [https://www.w3.org/TR/payment-request](https://www.w3.org/TR/payment-request)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (11 December 2019)
+- Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
+- Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-payment-request-20191212/)
 - Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
 - Shortname: payment-request
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`FetchError: invalid json response body at https://api.w3.org/specifications/payment-request/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/payment-request/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6623,23 +6643,21 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Performance Timeline Level 2 {data-spec=true data-error=true}
+## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/performance-timeline-2/)
-- Latest published version: [https://www.w3.org/TR/performance-timeline-2](https://www.w3.org/TR/performance-timeline-2)
+- Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/) (06 December 2019)
+- Editor's Draft: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
+- Latest published version: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/)
 - Repository: [GitHub w3c/performance-timeline](https://github.com/w3c/performance-timeline)
 - Shortname: performance-timeline-2
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`FetchError: invalid json response body at https://api.w3.org/specifications/performance-timeline-2/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/performance-timeline-2/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://w3c.github.io/timing-entrytypes-registry/`](https://w3c.github.io/timing-entrytypes-registry/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6649,6 +6667,7 @@ Normative references to this spec from:
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
@@ -6656,6 +6675,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 
 
@@ -6690,10 +6710,10 @@ Normative references to this spec from:
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
+- [Magnetometer](https://w3c.github.io/magnetometer/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
@@ -7003,7 +7023,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Resource Timing Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Resource Timing Level 2 {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -7016,7 +7036,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PerformanceEntry`
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7027,7 +7047,9 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 
 
 ## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -7072,6 +7094,7 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/)
      * [`https://www.w3.org/TR/core-aam-1.1/`](https://www.w3.org/TR/core-aam-1.1/)
      * [`https://www.w3.org/TR/accname-aam-1.1/`](https://www.w3.org/TR/accname-aam-1.1/)
+     * [`https://w3c.github.io/clipboard-apis/`](https://w3c.github.io/clipboard-apis/)
      * [`https://w3c.github.io/graphics-aria/`](https://w3c.github.io/graphics-aria/)
      * [`https://www.w3.org/TR/smil/`](https://www.w3.org/TR/smil/)
      * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/)
@@ -7095,7 +7118,6 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "css-writing-modes-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
      * [`https://www.w3.org/TR/2011/WD-css3-fonts-20111004/`](https://www.w3.org/TR/2011/WD-css3-fonts-20111004/), related reference "css-fonts-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
      * [`https://www.w3.org/TR/2001/REC-smil-animation-20010904/`](https://www.w3.org/TR/2001/REC-smil-animation-20010904/), related reference "smil-animation" uses URL [`https://www.w3.org/TR/smil-animation/`](https://www.w3.org/TR/smil-animation/)
-     * [`https://w3c.github.io/clipboard-apis/`](https://w3c.github.io/clipboard-apis/), related reference "clipboard-apis" uses URL [`https://www.w3.org/TR/clipboard-apis/`](https://www.w3.org/TR/clipboard-apis/)
      * [`https://www.w3.org/TR/referrer-policy/`](https://www.w3.org/TR/referrer-policy/), related reference "ReferrerPolicy" uses URL [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/)
      * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "uievents" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
      * [`https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/`](https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/), related reference "UAAG20" uses URL [`https://www.w3.org/TR/UAAG20/`](https://www.w3.org/TR/UAAG20/)
@@ -7124,10 +7146,10 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
@@ -7144,7 +7166,6 @@ Informative references to this spec from:
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
-- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
@@ -7154,7 +7175,6 @@ Informative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
-- [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 
 
@@ -7224,8 +7244,8 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Battery Status API](https://w3c.github.io/battery/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
-- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
@@ -7245,11 +7265,13 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web IDL](https://heycam.github.io/webidl/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 
 Informative references to this spec from:
 
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 
 
@@ -7280,23 +7302,23 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Selectors Level 3 {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true}
+## Selectors Level 3 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/selectors-3/) (30 January 2018)
-- Editor's Draft: [https://drafts.csswg.org/selectors-3/](https://drafts.csswg.org/selectors-3/)
-- Latest published version: [https://www.w3.org/TR/selectors-3/](https://www.w3.org/TR/selectors-3/)
-- Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-selectors-3-20181106/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/selectors-3/)
+- Latest published version: [https://www.w3.org/TR/selectors-3](https://www.w3.org/TR/selectors-3)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: selectors-3
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
-- Missing references for links: 
-     * [`https://www.w3.org/TR/2011/REC-css3-selectors-20110929/`](https://www.w3.org/TR/2011/REC-css3-selectors-20110929/)
-     * [`https://www.w3.org/TR/css3-namespace/`](https://www.w3.org/TR/css3-namespace/)
+The following network or parsing error occurred:
+`FetchError: invalid json response body at https://api.w3.org/specifications/selectors-3 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/selectors-3 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7314,7 +7336,6 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
-- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
 
@@ -7373,6 +7394,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Non-element Selectors Module Level 1](https://drafts.csswg.org/selectors-nonelement/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
@@ -7454,6 +7476,7 @@ Informative references to this spec from:
 
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
+- [Web IDL](https://heycam.github.io/webidl/)
 
 
 ## Storage Standard {data-spec=true data-ok=true}
@@ -7532,7 +7555,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 
 
@@ -7789,6 +7811,7 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
@@ -7812,9 +7835,10 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
+- [Web IDL](https://heycam.github.io/webidl/)
 
 
-## User Timing Level 3 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## User Timing Level 3 {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -7827,7 +7851,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PerformanceEntry`
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7835,6 +7859,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 
 
@@ -7917,6 +7942,7 @@ Normative references to this spec from:
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 
@@ -7954,7 +7980,7 @@ Informative references to this spec from:
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 
 
-## Web Audio API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Web Audio API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -7967,6 +7993,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Worklet`, `WorkletGlobalScope`
 - Missing references for links: 
      * [`https://w3c.github.io/mediacapture-fromelement/`](https://w3c.github.io/mediacapture-fromelement/)
      * [`https://www.w3.org/TR/html50/`](https://www.w3.org/TR/html50/)
@@ -7982,12 +8009,10 @@ Normative references to this spec from:
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 
-Informative references to this spec from:
-
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+No informative reference to this spec from other specs.
 
 
-## Web Authentication: An API for accessing Public Key Credentials - Level 2 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Web Authentication: An API for accessing Public Key Credentials - Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -8000,10 +8025,11 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `Credential`, `CredentialCreationOptions`, `CredentialRequestOptions`
 - Missing references for links: 
+     * [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/)
      * [`https://w3c.github.io/webdriver/webdriver-spec.html`](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/), related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
      * [`https://w3c.github.io/geolocation-api/`](https://w3c.github.io/geolocation-api/), related reference "Geolocation-API" uses URL [`https://www.w3.org/TR/geolocation-API/`](https://www.w3.org/TR/geolocation-API/)
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
@@ -8012,9 +8038,7 @@ Informative references to this spec from:
 
 No normative reference to this spec from other specs.
 
-Informative references to this spec from:
-
-- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
+No informative reference to this spec from other specs.
 
 
 ## Web Background Synchronization {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
@@ -8092,13 +8116,184 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Informative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+
+
+## Web IDL {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://heycam.github.io/webidl/) (11 December 2019)
+- Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
+- Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
+- Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
+- Shortname: WebIDL-1
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://w3c.github.io/deviceorientation/spec-source-orientation.html`](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/geolocation-API/`](https://www.w3.org/TR/geolocation-API/), related reference "GEOLOCATION-API" uses URL [`https://w3c.github.io/geolocation-api/`](https://w3c.github.io/geolocation-api/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
+- [Accelerometer](https://w3c.github.io/accelerometer/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
+- [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
+- [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Battery Status API](https://w3c.github.io/battery/)
+- [Beacon](https://w3c.github.io/beacon/)
+- [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Console Standard](https://console.spec.whatwg.org/)
+- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
+- [Cookie Store API](https://wicg.github.io/cookie-store/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
+- [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
+- [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
+- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
+- [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
+- [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
+- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
+- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
+- [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
+- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
+- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
+- [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
+- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
+- [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
+- [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
+- [CSS Shadow Parts](http://drafts.csswg.org/css-shadow-parts/)
+- [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
+- [CSS Transitions](https://drafts.csswg.org/css-transitions/)
+- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
+- [DOM Standard](https://dom.spec.whatwg.org/)
+- [Element Timing API](https://wicg.github.io/element-timing/)
+- [Encoding Standard](https://encoding.spec.whatwg.org/)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Event Timing API](https://wicg.github.io/event-timing/)
+- [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [File and Directory Entries API](https://wicg.github.io/entries-api/)
+- [File API](https://w3c.github.io/FileAPI/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
+- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
+- [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
+- [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [Gyroscope](https://w3c.github.io/gyroscope/)
+- [High Resolution Time](https://w3c.github.io/hr-time/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
+- [HTML Standard](https://html.spec.whatwg.org/)
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
+- [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
+- [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
+- [Keyboard Map](https://wicg.github.io/keyboard-map/)
+- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Long Tasks API 1](https://w3c.github.io/longtasks/)
+- [Magnetometer](https://w3c.github.io/magnetometer/)
+- [Media Capabilities](https://w3c.github.io/media-capabilities/)
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
+- [Media Playback Quality](https://w3c.github.io/media-playback-quality/)
+- [Media Session Standard](https://w3c.github.io/mediasession/)
+- [Media Source Extensions™](https://w3c.github.io/media-source/)
+- [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
+- [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
+- [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Information API](https://wicg.github.io/netinfo/)
+- [Notifications API Standard](https://notifications.spec.whatwg.org/)
+- [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
+- [Paint Timing 1](https://w3c.github.io/paint-timing/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Permissions](https://w3c.github.io/permissions/)
+- [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Proximity Sensor](https://w3c.github.io/proximity/)
+- [Push API](https://w3c.github.io/push-api/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
+- [Reporting API 1](https://w3c.github.io/reporting/)
+- [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+- [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Selection API](https://w3c.github.io/selection-api/)
+- [Server Timing](https://w3c.github.io/server-timing/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- [Storage Standard](https://storage.spec.whatwg.org/)
+- [Streams Standard](https://streams.spec.whatwg.org/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
+- [UI Events](https://w3c.github.io/uievents/)
+- [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
+- [Wake Lock API](https://w3c.github.io/wake-lock/)
+- [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
+- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+- [Web NFC](https://w3c.github.io/web-nfc/)
+- [Web Share API](https://w3c.github.io/web-share/)
+- [Web Speech API](https://wicg.github.io/speech-api/)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
+- [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
+- [WebDriver](https://w3c.github.io/webdriver/)
+- [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
+- [WebUSB API](https://wicg.github.io/webusb/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
+- [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
+- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+
+Informative references to this spec from:
+
+- [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
+- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 
 
 ## Web MIDI API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
@@ -8255,12 +8450,12 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
-     * [`https://w3c.github.io/DOM-Parsing/`](https://w3c.github.io/DOM-Parsing/)
      * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html)
      * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
      * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+     * [`https://w3c.github.io/DOM-Parsing/`](https://w3c.github.io/DOM-Parsing/), related reference "DOM-PARSING" uses URL [`https://www.w3.org/TR/DOM-Parsing/`](https://www.w3.org/TR/DOM-Parsing/)
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FILEAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -8302,6 +8497,7 @@ Informative references to this spec from:
 
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [Web IDL](https://heycam.github.io/webidl/)
 
 
 ## WebGL Specification {data-spec=true data-ok=true}
@@ -8332,57 +8528,24 @@ Informative references to this spec from:
 
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [Web IDL](https://heycam.github.io/webidl/)
 
 
-## WebIDL-1 {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://www.w3.org/TR/WebIDL-1/)
-- Latest published version: [https://www.w3.org/TR/WebIDL-1](https://www.w3.org/TR/WebIDL-1)
-- Shortname: WebIDL-1
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`FetchError: invalid json response body at https://api.w3.org/specifications/WebIDL-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/WebIDL-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
-- [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
-- [Media Source Extensions™](https://w3c.github.io/media-source/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
-- [Web Cryptography API](https://w3c.github.io/webcrypto/Overview.html)
-
-No informative reference to this spec from other specs.
-
-
-## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-error=true}
+## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.w3.org/TR/webrtc/)
-- Latest published version: [https://www.w3.org/TR/webrtc](https://www.w3.org/TR/webrtc)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (13 December 2019)
+- Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
+- Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-webrtc-20191213/)
 - Repository: [GitHub w3c/webrtc-pc](https://github.com/w3c/webrtc-pc)
 - Shortname: webrtc
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`FetchError: invalid json response body at https://api.w3.org/specifications/webrtc/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/webrtc/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webrtc-stats/`](https://w3c.github.io/webrtc-stats/), related reference "WEBRTC-STATS" uses URL [`https://www.w3.org/TR/webrtc-stats/`](https://www.w3.org/TR/webrtc-stats/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8416,7 +8579,7 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `RTCPriorityType`, `RTCRtpEncodingParameters`
+- Unknown WebIDL names used: `RTCPriorityType`
 - Missing references for links: 
      * [`https://w3c.github.io/webrtc-pc/`](https://w3c.github.io/webrtc-pc/)
 
@@ -8546,20 +8709,22 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Worklets Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## Worklets Level 1 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/worklets/) (7 October 2019)
-- Editor's Draft: [https://drafts.css-houdini.org/worklets/](https://drafts.css-houdini.org/worklets/)
-- Latest published version: [http://www.w3.org/TR/worklets-1/](http://www.w3.org/TR/worklets-1/)
-- Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/worklets-1/)
+- Latest published version: [https://www.w3.org/TR/worklets-1](https://www.w3.org/TR/worklets-1)
 - Shortname: worklets-1
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/)
+The following network or parsing error occurred:
+`FetchError: invalid json response body at https://api.w3.org/specifications/worklets-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/worklets-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8570,7 +8735,6 @@ Normative references to this spec from:
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
-- [HTML Standard](https://html.spec.whatwg.org/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 No informative reference to this spec from other specs.
@@ -8593,7 +8757,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML Standard](https://html.spec.whatwg.org/)
@@ -8604,6 +8767,7 @@ Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
 

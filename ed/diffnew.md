@@ -13,11 +13,9 @@
 ## Battery Status API
 
 - URL: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/battery-status/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/battery/)
 - Repository: [GitHub w3c/battery](https://github.com/w3c/battery)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/battery-status/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/battery-status/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
+- Spec is OK: *INS* true / *DEL* false
 
 
 ## Beacon
@@ -26,6 +24,27 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/beacon/)
 - Repository: [GitHub w3c/beacon](https://github.com/w3c/beacon)
 - Spec is OK: *INS* true / *DEL* false
+
+
+## Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification
+
+- URL: [https://www.w3.org/TR/CSS2/](https://www.w3.org/TR/CSS2/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/CSS2/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Spec title: *INS* Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification / *DEL* Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/CSS2 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/CSS2 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+
+## Clipboard API and events
+
+- URL: [https://www.w3.org/TR/clipboard-apis/](https://www.w3.org/TR/clipboard-apis/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/clipboard-apis/)
+- Repository: [GitHub w3c/clipboard-apis](https://github.com/w3c/clipboard-apis)
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/clipboard-apis/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/clipboard-apis/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
 ## Compatibility Standard
@@ -52,6 +71,23 @@
 - Spec is OK: *INS* true / *DEL* false
 
 
+## Credential Management Level 1
+
+- URL: [https://www.w3.org/TR/credential-management-1/](https://www.w3.org/TR/credential-management-1/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/credential-management-1/)
+- Repository: [GitHub w3c/webappsec-credential-management](https://github.com/w3c/webappsec-credential-management)
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/credential-management-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/credential-management-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+
+## CSS Animation Worklet API
+
+- URL: [https://www.w3.org/TR/css-animation-worklet-1/](https://www.w3.org/TR/css-animation-worklet-1/)
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-animationworklet-1/)
+- Unknown WebIDL names used: *INS* Worklet, WorkletGlobalScope
+
+
 ## CSS Fonts Module Level 4
 
 - URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
@@ -72,12 +108,26 @@
 - Inconsistent references for links: *INS* https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/, https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/ / *DEL* https://www.w3.org/TR/css3-values/
 
 
+## CSS Layout API Level 1
+
+- URL: [https://www.w3.org/TR/css-layout-api-1/](https://www.w3.org/TR/css-layout-api-1/)
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-layout-api-1/)
+- Unknown WebIDL names used: *INS* Worklet, WorkletGlobalScope
+
+
 ## CSS Overflow Module Level 3
 
 - URL: [https://www.w3.org/TR/css-overflow-3/](https://www.w3.org/TR/css-overflow-3/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-overflow-3/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Missing references for links: *INS* https://www.w3.org/TR/css-text-decor-3/
+
+
+## CSS Painting API Level 1
+
+- URL: [https://www.w3.org/TR/css-paint-api-1/](https://www.w3.org/TR/css-paint-api-1/)
+- Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-paint-api-1/)
+- Unknown WebIDL names used: *INS* Worklet, WorkletGlobalScope
 
 
 ## CSS Text Decoration Module Level 4
@@ -89,48 +139,12 @@
 - Inconsistent references for links: *INS* https://www.w3.org/TR/1998/REC-CSS2-19980512
 
 
-## DOM Parsing and Serialization
+## CSS Writing Modes Level 3
 
-- URL: [https://www.w3.org/TR/DOM-Parsing/](https://www.w3.org/TR/DOM-Parsing/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/DOM-Parsing/)
-- Repository: [GitHub w3c/DOM-Parsing](https://github.com/w3c/DOM-Parsing)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/DOM-Parsing/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/DOM-Parsing/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-
-
-## Element Timing API
-
-- URL: [https://wicg.github.io/element-timing/](https://wicg.github.io/element-timing/)
-- Crawled version: [Initial URL](https://wicg.github.io/element-timing/)
-- Repository: [GitHub wicg/element-timing](https://github.com/wicg/element-timing)
-- Unknown WebIDL names used: *INS* PerformanceEntry
-- Missing references for links: *INS* https://w3c.github.io/performance-timeline/
-
-
-## Event Timing API
-
-- URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
-- Crawled version: [Initial URL](https://wicg.github.io/event-timing/)
-- Repository: [GitHub wicg/event-timing](https://github.com/wicg/event-timing)
-- Unknown WebIDL names used: *INS* PerformanceEntry
-- Missing references for links: *INS* https://w3c.github.io/performance-timeline/
-
-
-## Feature Policy
-
-- URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
-- Crawled version: [Initial URL](https://w3c.github.io/webappsec-feature-policy/)
-- Repository: [GitHub w3c/webappsec-feature-policy](https://github.com/w3c/webappsec-feature-policy)
-- Missing references for links: *INS* https://w3c.github.io/payment-request/
-
-
-## Filter Effects Module Level 1
-
-- URL: [https://www.w3.org/TR/filter-effects-1/](https://www.w3.org/TR/filter-effects-1/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/filter-effects-1/)
-- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/filter-effects-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/filter-effects-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
+- URL: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/css-writing-modes-3/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/css-writing-modes-3/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/css-writing-modes-3/versions?embed=1 reason: Unexpected token < in JSON at position 0
     at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
     at process._tickCallback (internal/process/next_tick.js:68:7)
 
@@ -164,69 +178,12 @@
     at Timer.processTimers (timers.js:223:10)
 
 
-## Identifiers for WebRTC's Statistics API
-
-- URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/)
-- Repository: [GitHub w3c/webrtc-stats](https://github.com/w3c/webrtc-stats)
-- Unknown WebIDL names used: *INS* RTCDataChannelState, RTCDtlsTransportState, RTCIceCandidateType, RTCIceRole, RTCStats
-
-
 ## Identity for WebRTC 1.0
 
 - URL: [https://www.w3.org/TR/webrtc-identity/](https://www.w3.org/TR/webrtc-identity/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-identity/identity.html)
 - Repository: [GitHub w3c/webrtc-identity](https://github.com/w3c/webrtc-identity)
-- Unknown WebIDL names used: *INS* RTCConfiguration, RTCError, RTCErrorInit, RTCPeerConnection / *DEL* EventHandler, WorkerGlobalScope
-
-
-## Indexed Database API 2.0
-
-- URL: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/IndexedDB-2/)
-- Repository: [GitHub w3c/IndexedDB](https://github.com/w3c/IndexedDB)
-- Spec title: *INS* Indexed Database API 2.0 / *DEL* Indexed Database API 3.0
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/IndexedDB-2/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/IndexedDB-2/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-
-
-## Largest Contentful Paint
-
-- URL: [https://wicg.github.io/largest-contentful-paint/](https://wicg.github.io/largest-contentful-paint/)
-- Crawled version: [Initial URL](https://wicg.github.io/largest-contentful-paint/)
-- Repository: [GitHub wicg/largest-contentful-paint](https://github.com/wicg/largest-contentful-paint)
-- Unknown WebIDL names used: *INS* PerformanceEntry
-- Missing references for links: *INS* https://w3c.github.io/performance-timeline/
-
-
-## Layout Instability API
-
-- URL: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
-- Crawled version: [Initial URL](https://wicg.github.io/layout-instability/)
-- Repository: [GitHub wicg/layout-instability](https://github.com/wicg/layout-instability)
-- Unknown WebIDL names used: *INS* PerformanceEntry
-- Missing references for links: *INS* https://w3c.github.io/performance-timeline/
-
-
-## Long Tasks API 1
-
-- URL: [https://www.w3.org/TR/longtasks-1/](https://www.w3.org/TR/longtasks-1/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/longtasks-1/)
-- Repository: [GitHub w3c/longtasks](https://github.com/w3c/longtasks)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/longtasks-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/longtasks-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-
-
-## Magnetometer
-
-- URL: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/magnetometer/)
-- Repository: [GitHub w3c/magnetometer](https://github.com/w3c/magnetometer)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/magnetometer/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/magnetometer/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
+- Spec is OK: *INS* true / *DEL* false
 
 
 ## Media Capture and Streams
@@ -261,14 +218,6 @@
 - Spec is OK: *INS* true / *DEL* false
 
 
-## Orientation Sensor
-
-- URL: [https://www.w3.org/TR/orientation-sensor/](https://www.w3.org/TR/orientation-sensor/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/orientation-sensor/)
-- Repository: [GitHub w3c/orientation-sensor](https://github.com/w3c/orientation-sensor)
-- Missing references for links: *INS* https://w3c.github.io/magnetometer/
-
-
 ## Page Visibility Level 2
 
 - URL: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
@@ -277,50 +226,12 @@
 - Spec is OK: *INS* true / *DEL* false
 
 
-## Paint Timing 1
-
-- URL: [https://www.w3.org/TR/paint-timing/](https://www.w3.org/TR/paint-timing/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/paint-timing/)
-- Repository: [GitHub w3c/paint-timing](https://github.com/w3c/paint-timing)
-- Unknown WebIDL names used: *INS* PerformanceEntry
-- Missing references for links: *INS* https://w3c.github.io/performance-timeline/
-
-
-## Payment Handler API
-
-- URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/)
-- Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
-- Unknown WebIDL names used: *INS* AddressErrors, AddressInit, PaymentCurrencyAmount, PaymentDetailsModifier, PaymentMethodData, PaymentOptions, PaymentShippingOption / *DEL* EventHandler
-
-
-## Payment Method: Basic Card
-
-- URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/)
-- Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* AddressErrors, PaymentAddress
-
-
 ## Payment Request API
 
 - URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/payment-request/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/payment-request/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/payment-request/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-
-
-## Performance Timeline Level 2
-
-- URL: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/performance-timeline-2/)
-- Repository: [GitHub w3c/performance-timeline](https://github.com/w3c/performance-timeline)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/performance-timeline-2/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/performance-timeline-2/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
+- Spec is OK: *INS* true / *DEL* false
 
 
 ## Pointer Lock 2.0
@@ -336,7 +247,25 @@
 - URL: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/)
 - Repository: [GitHub w3c/resource-timing](https://github.com/w3c/resource-timing)
-- Unknown WebIDL names used: *INS* PerformanceEntry / *DEL* EventHandler
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Scalable Vector Graphics (SVG) 2
+
+- URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
+- Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/)
+- Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
+- Missing references for links: *INS* https://w3c.github.io/clipboard-apis/
+
+
+## Selectors Level 3
+
+- URL: [https://www.w3.org/TR/selectors-3/](https://www.w3.org/TR/selectors-3/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/selectors-3/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/selectors-3 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/selectors-3 reason: Unexpected token < in JSON at position 0
+    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
+    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
 ## The Screen Orientation API
@@ -345,15 +274,6 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/)
 - Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
 - Spec is OK: *INS* true / *DEL* false
-
-
-## User Timing Level 3
-
-- URL: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/)
-- Repository: [GitHub w3c/user-timing](https://github.com/w3c/user-timing)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* PerformanceEntry
 
 
 ## Wake Lock API
@@ -372,12 +292,22 @@
 - Spec is OK: *INS* true / *DEL* false
 
 
+## Web Audio API
+
+- URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/)
+- Repository: [GitHub webaudio/web-audio-api](https://github.com/webaudio/web-audio-api)
+- Unknown WebIDL names used: *INS* Worklet, WorkletGlobalScope / *DEL* EventHandler, HTMLMediaElement, MessagePort
+
+
 ## Web Authentication: An API for accessing Public Key Credentials - Level 2
 
 - URL: [https://www.w3.org/TR/webauthn-1/](https://www.w3.org/TR/webauthn-1/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/)
 - Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
-- Inconsistent references for links: *INS* https://w3c.github.io/geolocation-api/
+- Unknown WebIDL names used: *INS* Credential, CredentialCreationOptions, CredentialRequestOptions / *DEL* Coordinates
+- Missing references for links: *INS* https://w3c.github.io/webappsec-credential-management/
+- Inconsistent references for links: *INS* https://w3c.github.io/geolocation-api/ / *DEL* https://w3c.github.io/webappsec-credential-management/
 
 
 ## Web NFC
@@ -395,14 +325,6 @@
 - Spec is OK: *INS* true / *DEL* false
 
 
-## WebDriver
-
-- URL: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/)
-- Repository: [GitHub w3c/webdriver](https://github.com/w3c/webdriver)
-- Missing references for links: *INS* https://w3c.github.io/DOM-Parsing/
-
-
 ## WebGL Specification
 
 - URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -411,31 +333,20 @@
 - Spec is OK: *INS* true / *DEL* false
 
 
-## WebIDL-1
-
-- URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/WebIDL-1/)
-- Spec title: *INS* WebIDL-1 / *DEL* Web IDL
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/WebIDL-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/WebIDL-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
-    at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-
-
 ## WebRTC 1.0: Real-time Communication Between Browsers
 
 - URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/webrtc/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/)
 - Repository: [GitHub w3c/webrtc-pc](https://github.com/w3c/webrtc-pc)
-- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/webrtc/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/webrtc/versions?embed=1 reason: Unexpected token < in JSON at position 0
+- Inconsistent references for links: *INS* https://w3c.github.io/webrtc-stats/
+
+
+## Worklets Level 1
+
+- URL: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/worklets-1/)
+- Spec could not be rendered: *INS* FetchError: invalid json response body at https://api.w3.org/specifications/worklets-1/versions?embed=1 reason: Unexpected token < in JSON at position 0 FetchError: invalid json response body at https://api.w3.org/specifications/worklets-1/versions?embed=1 reason: Unexpected token < in JSON at position 0
     at /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/node-fetch/lib/index.js:272:32
     at process._tickCallback (internal/process/next_tick.js:68:7)
-
-
-## WebRTC DSCP Control API
-
-- URL: [https://www.w3.org/TR/webrtc-dscp/](https://www.w3.org/TR/webrtc-dscp/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-dscp-exp/)
-- Repository: [GitHub w3c/webrtc-dscp-exp](https://github.com/w3c/webrtc-dscp-exp)
-- Unknown WebIDL names used: *INS* RTCRtpEncodingParameters
 
 
