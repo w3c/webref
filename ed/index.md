@@ -5441,7 +5441,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (13 December 2019)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (16 December 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6206,7 +6206,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/mediasession/) (14 October 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/mediasession/) (16 December 2019)
 - Repository: [GitHub w3c/mediasession](https://github.com/w3c/mediasession)
 - Shortname: no shortname
 
@@ -8378,7 +8378,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (13 December 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (16 December 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
