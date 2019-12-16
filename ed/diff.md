@@ -902,7 +902,11 @@
 - URL: [https://www.w3.org/TR/SRI/](https://www.w3.org/TR/SRI/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-subresource-integrity/)
 - Repository: [GitHub w3c/webappsec-subresource-integrity](https://github.com/w3c/webappsec-subresource-integrity)
+- Spec is OK: *INS* true / *DEL* false
+- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
 - Unknown WebIDL names used: *DEL* HTMLLinkElement, HTMLScriptElement
+- Missing references for links: *DEL* https://w3c.github.io/webappsec-csp/
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/html5/
 
 
 ## The Screen Orientation API
