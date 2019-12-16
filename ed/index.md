@@ -7572,11 +7572,11 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Subresource Integrity {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
+## Subresource Integrity {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-subresource-integrity/) (26 August 2016)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-subresource-integrity/) (16 December 2019)
 - Editor's Draft: [https://w3c.github.io/webappsec-subresource-integrity/](https://w3c.github.io/webappsec-subresource-integrity/)
 - Latest published version: [http://www.w3.org/TR/SRI/](http://www.w3.org/TR/SRI/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2016/REC-SRI-20160623/)
@@ -7585,11 +7585,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
-- Missing references for links: 
-     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8312,6 +8308,7 @@ Normative references to this spec from:
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
+- [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events](https://w3c.github.io/uievents/)
@@ -8493,7 +8490,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/) (07 December 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/) (16 December 2019)
 - Editor's Draft: [https://w3c.github.io/webdriver/](https://w3c.github.io/webdriver/)
 - Latest published version: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
