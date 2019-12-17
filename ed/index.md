@@ -1467,7 +1467,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-color-5/) (10 December 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-color-5/) (17 December 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
