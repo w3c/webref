@@ -4860,7 +4860,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/encrypted-media/) (05 December 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/encrypted-media/) (13 December 2019)
 - Editor's Draft: [https://w3c.github.io/encrypted-media/](https://w3c.github.io/encrypted-media/)
 - Latest published version: [https://www.w3.org/TR/encrypted-media/](https://www.w3.org/TR/encrypted-media/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
