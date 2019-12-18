@@ -923,7 +923,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui-4/) (16 December 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui-4/) (18 December 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
 - Latest published version: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
@@ -967,7 +967,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui/) (16 December 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui/) (18 December 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-ui/](https://drafts.csswg.org/css-ui/)
 - Latest published version: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
@@ -1401,7 +1401,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-color/) (19 November 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-color/) (18 December 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-color-4-20191105/)
@@ -1467,7 +1467,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-color-5/) (17 December 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-color-5/) (18 December 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
