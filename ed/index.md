@@ -8028,7 +8028,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (2 December 2019)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (19 December 2019)
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
@@ -8585,7 +8585,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (13 December 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (19 December 2019)
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-webrtc-20191213/)
