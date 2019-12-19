@@ -8399,7 +8399,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-share/) (17 December 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-share/) (19 December 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
