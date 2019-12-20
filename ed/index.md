@@ -1483,7 +1483,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-color-5/) (18 December 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-color-5/) (20 December 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3860,7 +3860,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-3/) (15 November 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-3/) (19 December 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
@@ -7502,7 +7502,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/ServiceWorker/) (13 December 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/ServiceWorker/) (20 December 2019)
 - Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
 - Shortname: no shortname
 
