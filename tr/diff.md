@@ -1,6 +1,16 @@
-% Diff between report from "December 16, 2019" and reference report from "December 02, 2019"
+% Diff between report from "December 23, 2019" and reference report from "December 02, 2019"
 % Reffy
-% December 16, 2019
+% December 23, 2019
+
+## Accessible Rich Internet Applications (WAI-ARIA) 1.2
+
+- URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/)
+- Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
+- Repository: [GitHub w3c/aria](https://github.com/w3c/aria)
+- Missing references for links: *INS* https://w3c.github.io/aria/aria/aria.html / *DEL* https://w3c.github.io/aria/, https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/, https://www.w3.org/TR/2002/REC-xhtml1-20020801/, https://www.w3.org/TR/xml/
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/2004/REC-owl-features-20040210/, https://www.w3.org/TR/2014/REC-rdf-schema-20140225/, https://www.w3.org/TR/2007/REC-xforms-20071029/, https://www.w3.org/TR/2006/REC-xforms-20060314/, https://www.w3.org/TR/2002/REC-UAAG10-20021217/, https://www.w3.org/TR/html52/
+
 
 ## CSS Writing Modes Level 3
 
