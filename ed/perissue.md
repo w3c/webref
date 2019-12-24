@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% December 23, 2019
+% December 24, 2019
 
 241 specifications were crawled in this report.
 
