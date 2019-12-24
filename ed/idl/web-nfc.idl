@@ -27,7 +27,7 @@ interface NDEFRecord {
   readonly attribute USVString? encoding;
   readonly attribute USVString? lang;
 
-  sequence<NDEFRecord> toRecords();
+  sequence<NDEFRecord>? toRecords();
 };
 
 dictionary NDEFRecordInit {
