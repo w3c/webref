@@ -22,6 +22,7 @@ interface NDEFRecord {
   readonly attribute USVString recordType;
   readonly attribute USVString? mediaType;
   readonly attribute USVString? id;
+  readonly attribute boolean isLocal;
   readonly attribute DataView? data;
 
   readonly attribute USVString? encoding;
@@ -34,6 +35,7 @@ dictionary NDEFRecordInit {
   required USVString recordType;
   USVString mediaType;
   USVString id;
+  boolean isLocal = false;
 
   USVString encoding;
   USVString lang;
