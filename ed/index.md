@@ -5555,6 +5555,7 @@ Normative references to this spec from:
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
@@ -5653,7 +5654,6 @@ Informative references to this spec from:
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
-- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
@@ -5745,17 +5745,17 @@ Informative references to this spec from:
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
-## Input Device Capabilities {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true}
+## Input Device Capabilities {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (27 September 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/) (25 December 2019)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7730,10 +7730,10 @@ Normative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 
 Informative references to this spec from:
 
-- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 
 
@@ -8282,6 +8282,7 @@ Normative references to this spec from:
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
@@ -8364,7 +8365,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
-- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 
 
 ## Web MIDI API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}

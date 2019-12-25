@@ -142,6 +142,16 @@
 - Spec is OK: *INS* true / *DEL* false
 
 
+## Input Device Capabilities
+
+- URL: [https://wicg.github.io/InputDeviceCapabilities/](https://wicg.github.io/InputDeviceCapabilities/)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/)
+- Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
+- Spec is OK: *INS* true / *DEL* false
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+
+
 ## Media Capture and Streams
 
 - URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
