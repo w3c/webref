@@ -557,6 +557,16 @@
 - Unknown WebIDL names used: *DEL* DOMStringList, EventHandler, WindowOrWorkerGlobalScope
 
 
+## Input Device Capabilities
+
+- URL: [https://wicg.github.io/InputDeviceCapabilities/](https://wicg.github.io/InputDeviceCapabilities/)
+- Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/)
+- Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
+- Spec is OK: *INS* true / *DEL* false
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+
+
 ## Intersection Observer
 
 - URL: [https://www.w3.org/TR/intersection-observer/](https://www.w3.org/TR/intersection-observer/)
