@@ -8399,7 +8399,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (26 December 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (27 December 2019)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
