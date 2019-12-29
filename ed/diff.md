@@ -178,8 +178,8 @@
 - URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui-4/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *INS* https://www.w3.org/TR/css3-color/, https://www.w3.org/TR/svg2/, https://www.w3.org/TR/css3-ui/, https://www.w3.org/TR/css3-page/, https://www.w3.org/TR/css3-positioning/, https://www.w3.org/TR/selectors4/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-values/, https://www.w3.org/TR/css3-images/
+- Missing references for links: *INS* https://w3c.github.io/contentEditable/ / *DEL* https://w3c.github.io/editing/contentEditable.html
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/html/
 
 
 ## CSS Basic User Interface Module Level 4
@@ -187,8 +187,8 @@
 - URL: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *INS* https://www.w3.org/TR/css3-color/, https://www.w3.org/TR/svg2/, https://www.w3.org/TR/css3-ui/, https://www.w3.org/TR/css3-page/, https://www.w3.org/TR/css3-positioning/, https://www.w3.org/TR/selectors4/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-values/, https://www.w3.org/TR/css3-images/
+- Missing references for links: *INS* https://w3c.github.io/contentEditable/ / *DEL* https://w3c.github.io/editing/contentEditable.html
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/html/
 
 
 ## CSS Conditional Rules Module Level 3
