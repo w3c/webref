@@ -3,7 +3,7 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: Web NFC (https://w3c.github.io/web-nfc/)
 
-[Exposed=Window]
+WebIDL[SecureContext, Exposed=Window]
 interface NDEFMessage {
   constructor(NDEFMessageInit messageInit);
   readonly attribute FrozenArray<NDEFRecord> records;
@@ -13,27 +13,29 @@ dictionary NDEFMessageInit {
   required sequence<NDEFRecordInit> records;
 };
 
-typedef (DOMString or BufferSource or NDEFMessageInit) NDEFRecordDataSource;
+WebIDLtypedef (DOMString or BufferSource or NDEFMessageInit) NDEFRecordDataSource;
 
-[Exposed=Window]
+[SecureContext, Exposed=Window]
 interface NDEFRecord {
   constructor(NDEFRecordInit recordInit);
 
   readonly attribute USVString recordType;
   readonly attribute USVString? mediaType;
   readonly attribute USVString? id;
+  readonly attribute boolean isLocal;
   readonly attribute DataView? data;
 
   readonly attribute USVString? encoding;
   readonly attribute USVString? lang;
 
-  sequence<NDEFRecord> toRecords();
+  sequence<NDEFRecord>? toRecords();
 };
 
 dictionary NDEFRecordInit {
   required USVString recordType;
   USVString mediaType;
   USVString id;
+  boolean isLocal = false;
 
   USVString encoding;
   USVString lang;
@@ -41,7 +43,7 @@ dictionary NDEFRecordInit {
   NDEFRecordDataSource data;
 };
 
-typedef (DOMString or BufferSource or NDEFMessageInit) NDEFMessageSource;
+WebIDLtypedef (DOMString or BufferSource or NDEFMessageInit) NDEFMessageSource;
 
 [SecureContext, Exposed=Window]
 interface NDEFWriter {
@@ -73,20 +75,20 @@ dictionary NDEFReadingEventInit : EventInit {
   required NDEFMessageInit message;
 };
 
-dictionary NDEFPushOptions {
+WebIDLdictionary NDEFPushOptions {
   NDEFPushTarget target = "any";
   boolean ignoreRead = true;
   boolean overwrite = true;
   AbortSignal? signal;
 };
 
-enum NDEFPushTarget {
+WebIDLenum NDEFPushTarget {
   "tag",
   "peer",
   "any"
 };
 
-dictionary NDEFScanOptions {
+WebIDLdictionary NDEFScanOptions {
   USVString id;
   USVString recordType;
   USVString mediaType = "";
