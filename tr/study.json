@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define CSS and WebIDL content",
   "description": "The crawl includes specifications published by W3C Working Groups, W3C Community Groups and WHATWG, that define CSS and/or WebIDL content. The specifications are at various stages of maturity.",
-  "date": "2019-12-23T11:17:22.346Z",
+  "date": "2019-12-30T11:19:23.689Z",
   "stats": {
     "crawled": 241,
     "errors": 0,
@@ -148,7 +148,7 @@
     {
       "title": "404 not found",
       "shortname": "SVG2",
-      "date": "23 December 2019",
+      "date": "30 December 2019",
       "url": "https://www.w3.org/TR/SVG2/",
       "latest": "https://www.w3.org/TR/SVG2/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-SVG2-20181004/",
@@ -13516,7 +13516,7 @@
     },
     {
       "title": "Fetch Standard",
-      "date": "13 December 2019",
+      "date": "28 December 2019",
       "url": "https://fetch.spec.whatwg.org/",
       "crawled": "https://fetch.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/fetch",
@@ -15140,6 +15140,11 @@
               "crawled": "https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/"
             },
             {
+              "url": "https://wicg.github.io/InputDeviceCapabilities/",
+              "title": "Input Device Capabilities",
+              "crawled": "https://wicg.github.io/InputDeviceCapabilities/"
+            },
+            {
               "url": "https://wicg.github.io/keyboard-lock/",
               "title": "Keyboard Lock",
               "crawled": "https://wicg.github.io/keyboard-lock/"
@@ -15597,11 +15602,6 @@
               "crawled": "https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/"
             },
             {
-              "url": "https://wicg.github.io/InputDeviceCapabilities/",
-              "title": "Input Device Capabilities",
-              "crawled": "https://wicg.github.io/InputDeviceCapabilities/"
-            },
-            {
               "url": "https://www.w3.org/TR/mediacapture-fromelement/",
               "title": "Media Capture from DOM Elements",
               "crawled": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/"
@@ -15862,17 +15862,16 @@
     },
     {
       "title": "Input Device Capabilities",
-      "date": "27 September 2019",
+      "date": "25 December 2019",
       "url": "https://wicg.github.io/InputDeviceCapabilities/",
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
       "repository": "https://github.com/wicg/InputDeviceCapabilities",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": true,
+        "noRefToWebIDL": false,
         "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
@@ -16604,16 +16603,13 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "DOMHighResTimeStamp"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -17387,10 +17383,9 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
@@ -17399,7 +17394,6 @@
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://w3c.github.io/ServiceWorker/v1/",
-          "https://fetch.spec.whatwg.org/",
           "https://www.w3.org/TR/netinfo/"
         ],
         "inconsistentRef": [],
@@ -19912,14 +19906,14 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/"
-            }
-          ],
-          "informative": [
+            },
             {
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/"
-            },
+            }
+          ],
+          "informative": [
             {
               "url": "https://www.w3.org/TR/pointerevents2/",
               "title": "Pointer Events",
@@ -21014,17 +21008,16 @@
     },
     {
       "title": "Web NFC",
-      "date": "23 December 2019",
+      "date": "27 December 2019",
       "url": "https://w3c.github.io/web-nfc/",
       "crawled": "https://w3c.github.io/web-nfc/",
       "repository": "https://github.com/w3c/web-nfc",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
@@ -21038,7 +21031,7 @@
           "informative": []
         },
         "noEdDraft": null,
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -21049,10 +21042,9 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
@@ -21264,7 +21256,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "23 December 2019",
+      "date": "30 December 2019",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -21305,7 +21297,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "23 December 2019",
+      "date": "30 December 2019",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -21705,6 +21697,11 @@
               "crawled": "https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/"
             },
             {
+              "url": "https://wicg.github.io/InputDeviceCapabilities/",
+              "title": "Input Device Capabilities",
+              "crawled": "https://wicg.github.io/InputDeviceCapabilities/"
+            },
+            {
               "url": "https://www.w3.org/TR/intersection-observer/",
               "title": "Intersection Observer",
               "crawled": "https://www.w3.org/TR/2019/WD-intersection-observer-20190531/"
@@ -22080,11 +22077,6 @@
               "url": "https://www.w3.org/TR/webrtc-identity/",
               "title": "Identity for WebRTC 1.0",
               "crawled": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/"
-            },
-            {
-              "url": "https://wicg.github.io/InputDeviceCapabilities/",
-              "title": "Input Device Capabilities",
-              "crawled": "https://wicg.github.io/InputDeviceCapabilities/"
             },
             {
               "url": "https://www.w3.org/TR/mst-content-hint/",
