@@ -3,7 +3,7 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: Cooperative Scheduling of Background Tasks (https://w3c.github.io/requestidlecallback/)
 
-partial interface Window {
+WebIDLpartial interface Window {
   unsigned long requestIdleCallback(IdleRequestCallback callback, optional IdleRequestOptions options = {});
   void cancelIdleCallback(unsigned long handle);
 };
@@ -11,8 +11,10 @@ partial interface Window {
 dictionary IdleRequestOptions {
   unsigned long timeout;
 };
+
 [Exposed=Window] interface IdleDeadline {
   DOMHighResTimeStamp timeRemaining();
   readonly attribute boolean didTimeout;
 };
+
 callback IdleRequestCallback = void (IdleDeadline deadline);

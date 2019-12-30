@@ -11,3 +11,7 @@ interface Performance : EventTarget {
     readonly attribute DOMHighResTimeStamp timeOrigin;
     [Default] object toJSON();
 };
+
+WebIDLpartial interface mixin WindowOrWorkerGlobalScope {
+  [Replaceable] readonly attribute Performance performance;
+};

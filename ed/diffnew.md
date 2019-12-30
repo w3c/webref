@@ -68,7 +68,7 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/)
 - Repository: [GitHub w3c/requestidlecallback](https://github.com/w3c/requestidlecallback)
 - No WebIDL definitions found: *INS* true / *DEL* false
-- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
+- Obsolete WebIDL constructs found: *DEL* false
 
 
 ## CSS Basic User Interface Module Level 4
@@ -439,14 +439,6 @@
 - Repository: [GitHub w3c/pointerlock](https://github.com/w3c/pointerlock)
 - No WebIDL definitions found: *INS* true / *DEL* false
 - Obsolete WebIDL constructs found: *DEL* false
-
-
-## Preload
-
-- URL: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/preload/)
-- Repository: [GitHub w3c/preload](https://github.com/w3c/preload)
-- Spec is OK: *INS* true / *DEL* false
 
 
 ## Presentation API

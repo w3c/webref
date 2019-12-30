@@ -141,7 +141,7 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/)
 - Repository: [GitHub w3c/requestidlecallback](https://github.com/w3c/requestidlecallback)
 - No WebIDL definitions found: *INS* true / *DEL* false
-- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
+- Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* Window
 
@@ -783,7 +783,6 @@
 - Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler
-- Missing references for links: *DEL* https://fetch.spec.whatwg.org/
 
 
 ## Notifications API Standard
@@ -902,15 +901,6 @@
 - No WebIDL definitions found: *INS* true / *DEL* false
 - Obsolete WebIDL constructs found: *DEL* false
 - Unknown WebIDL names used: *DEL* EventHandler
-
-
-## Preload
-
-- URL: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/preload/)
-- Repository: [GitHub w3c/preload](https://github.com/w3c/preload)
-- Spec is OK: *INS* true / *DEL* false
-- Missing references for links: *DEL* https://w3c.github.io/webappsec/specs/content-security-policy/
 
 
 ## Presentation API
