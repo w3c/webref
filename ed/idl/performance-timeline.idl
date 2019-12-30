@@ -3,14 +3,7 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: Performance Timeline Level 2 (https://w3c.github.io/performance-timeline/)
 
-partial interface Performance {
-  PerformanceEntryList getEntries ();
-  PerformanceEntryList getEntriesByType (DOMString type);
-  PerformanceEntryList getEntriesByName (DOMString name, optional DOMString type);
-};
-typedef sequence<PerformanceEntry> PerformanceEntryList;
-
-[Exposed=(Window,Worker)]
+WebIDL[Exposed=(Window,Worker)]
 interface PerformanceEntry {
   readonly    attribute DOMString           name;
   readonly    attribute DOMString           entryType;
@@ -19,7 +12,7 @@ interface PerformanceEntry {
   [Default] object toJSON();
 };
 
-callback PerformanceObserverCallback = void (PerformanceObserverEntryList entries,
+WebIDLcallback PerformanceObserverCallback = void (PerformanceObserverEntryList entries,
                                              PerformanceObserver observer);
 [Exposed=(Window,Worker)]
 interface PerformanceObserver {
@@ -28,17 +21,4 @@ interface PerformanceObserver {
   void disconnect ();
   PerformanceEntryList takeRecords();
   [SameObject] static readonly attribute FrozenArray<DOMString> supportedEntryTypes;
-};
-
-dictionary PerformanceObserverInit {
-  sequence<DOMString> entryTypes;
-  DOMString type;
-  boolean buffered;
-};
-
-[Exposed=(Window,Worker)]
-interface PerformanceObserverEntryList {
-  PerformanceEntryList getEntries();
-  PerformanceEntryList getEntriesByType (DOMString type);
-  PerformanceEntryList getEntriesByName (DOMString name, optional DOMString type);
 };

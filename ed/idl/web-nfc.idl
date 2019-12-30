@@ -3,7 +3,7 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: Web NFC (https://w3c.github.io/web-nfc/)
 
-[SecureContext, Exposed=Window]
+WebIDL[SecureContext, Exposed=Window]
 interface NDEFMessage {
   constructor(NDEFMessageInit messageInit);
   readonly attribute FrozenArray<NDEFRecord> records;
@@ -13,7 +13,7 @@ dictionary NDEFMessageInit {
   required sequence<NDEFRecordInit> records;
 };
 
-typedef (DOMString or BufferSource or NDEFMessageInit) NDEFRecordDataSource;
+WebIDLtypedef (DOMString or BufferSource or NDEFMessageInit) NDEFRecordDataSource;
 
 [SecureContext, Exposed=Window]
 interface NDEFRecord {
@@ -43,7 +43,7 @@ dictionary NDEFRecordInit {
   NDEFRecordDataSource data;
 };
 
-typedef (DOMString or BufferSource or NDEFMessageInit) NDEFMessageSource;
+WebIDLtypedef (DOMString or BufferSource or NDEFMessageInit) NDEFMessageSource;
 
 [SecureContext, Exposed=Window]
 interface NDEFWriter {
@@ -75,20 +75,20 @@ dictionary NDEFReadingEventInit : EventInit {
   required NDEFMessageInit message;
 };
 
-dictionary NDEFPushOptions {
+WebIDLdictionary NDEFPushOptions {
   NDEFPushTarget target = "any";
   boolean ignoreRead = true;
   boolean overwrite = true;
   AbortSignal? signal;
 };
 
-enum NDEFPushTarget {
+WebIDLenum NDEFPushTarget {
   "tag",
   "peer",
   "any"
 };
 
-dictionary NDEFScanOptions {
+WebIDLdictionary NDEFScanOptions {
   USVString id;
   USVString recordType;
   USVString mediaType = "";
