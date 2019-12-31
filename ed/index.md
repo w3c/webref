@@ -596,7 +596,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (04 December 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (31 December 2019)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5615,6 +5615,7 @@ Informative references to this spec from:
 
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
@@ -7710,11 +7711,11 @@ Informative references to this spec from:
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 
 
-## UI Events {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## UI Events {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/uievents/) (14 October 2018)
+- Crawled version: [Editor's Draft](https://w3c.github.io/uievents/) (29 December 2019)
 - Editor's Draft: [https://w3c.github.io/uievents/](https://w3c.github.io/uievents/)
 - Latest published version: [https://www.w3.org/TR/uievents/](https://www.w3.org/TR/uievents/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-uievents-20190530/)
@@ -7725,8 +7726,6 @@ Informative references to this spec from:
 
 - Missing references for links: 
      * [`https://www.w3.org/TR/2004/REC-xml-20040204/`](https://www.w3.org/TR/2004/REC-xml-20040204/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/2014/WD-uievents-20140612/`](https://www.w3.org/TR/2014/WD-uievents-20140612/), related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7746,7 +7745,6 @@ Normative references to this spec from:
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
-- [UI Events](https://w3c.github.io/uievents/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
 - [WebDriver](https://w3c.github.io/webdriver/)
