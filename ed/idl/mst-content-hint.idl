@@ -6,3 +6,13 @@
 WebIDLpartial interface MediaStreamTrack {
   attribute DOMString contentHint;
 };
+
+WebIDLenum RTCDegradationPreference {
+  "maintain-framerate",
+  "maintain-resolution",
+  "balanced"
+};
+
+WebIDLpartial dictionary RTCRtpSendParameters {
+ RTCDegradationPreference degradationPreference;
+};

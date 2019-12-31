@@ -1,6 +1,6 @@
-% Diff between report from "December 30, 2019" and reference report from "December 03, 2019"
+% Diff between report from "December 31, 2019" and reference report from "December 03, 2019"
 % Reffy
-% December 30, 2019
+% December 31, 2019
 
 ## Accessible Rich Internet Applications (WAI-ARIA) 1.2
 
