@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% December 31, 2019
+% January 01, 2020
 
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -65,7 +65,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/aria/master/) (31 December 2019)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/aria/master/) (01 January 2020)
 - Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/)
@@ -3711,6 +3711,7 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
@@ -3764,7 +3765,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-decor-3/) (15 November 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-decor-3/) (31 December 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-text-decor-3/](https://drafts.csswg.org/css-text-decor-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-decor-3/](https://www.w3.org/TR/css-text-decor-3/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
@@ -3798,6 +3799,7 @@ Informative references to this spec from:
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 
 
@@ -3805,7 +3807,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-decor-4/) (15 November 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-decor-4/) (31 December 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-text-decor-4/](https://drafts.csswg.org/css-text-decor-4/)
 - Latest published version: [https://www.w3.org/TR/css-text-decor-4/](https://www.w3.org/TR/css-text-decor-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
@@ -3817,7 +3819,6 @@ Informative references to this spec from:
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-text/`](https://www.w3.org/TR/css3-text/)
      * [`https://www.w3.org/TR/css-text/`](https://www.w3.org/TR/css-text/)
-     * [`https://www.w3.org/TR/css-text-decor-3/`](https://www.w3.org/TR/css-text-decor-3/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/1998/REC-CSS2-19980512`](https://www.w3.org/TR/1998/REC-CSS2-19980512), related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2/`](https://www.w3.org/TR/CSS2/)
 
@@ -8518,7 +8519,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (31 December 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (1 January 2020)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8547,7 +8548,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (31 December 2019)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (1 January 2020)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
