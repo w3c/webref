@@ -1,6 +1,6 @@
-% Diff between report from "December 31, 2019" and reference report from "December 03, 2019"
+% Diff between report from "January 01, 2020" and reference report from "December 03, 2019"
 % Reffy
-% December 31, 2019
+% January 01, 2020
 
 ## Accelerated Shape Detection in Images
 
@@ -321,7 +321,6 @@
 - URL: [https://www.w3.org/TR/css-text-decor-4/](https://www.w3.org/TR/css-text-decor-4/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-decor-4/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *INS* https://www.w3.org/TR/css-text-decor-3/
 - Inconsistent references for links: *INS* https://www.w3.org/TR/1998/REC-CSS2-19980512
 
 
