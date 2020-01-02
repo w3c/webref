@@ -8374,7 +8374,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (31 December 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (02 January 2020)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
