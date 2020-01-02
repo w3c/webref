@@ -1,6 +1,6 @@
-% Diff between report from "January 01, 2020" and reference report from "December 03, 2019"
+% Diff between report from "January 02, 2020" and reference report from "December 03, 2019"
 % Reffy
-% January 01, 2020
+% January 02, 2020
 
 ## Accessible Rich Internet Applications (WAI-ARIA) 1.2
 
