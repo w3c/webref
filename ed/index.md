@@ -928,7 +928,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui-4/) (29 December 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
 - Latest published version: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-ui-4
 
