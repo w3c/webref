@@ -520,6 +520,14 @@
 - Obsolete WebIDL constructs found: *DEL* false
 
 
+## UI Events
+
+- URL: [https://www.w3.org/TR/uievents/](https://www.w3.org/TR/uievents/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/uievents/)
+- Repository: [GitHub w3c/uievents](https://github.com/w3c/uievents)
+- Inconsistent references for links: *INS* https://www.w3.org/TR/2004/REC-xml-20040204/ / *DEL* https://www.w3.org/TR/2014/WD-uievents-20140612/
+
+
 ## User Timing Level 3
 
 - URL: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)

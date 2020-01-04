@@ -1064,7 +1064,8 @@
 - Repository: [GitHub w3c/uievents](https://github.com/w3c/uievents)
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* Window
-- Inconsistent references for links: *DEL* https://www.w3.org/TR/2014/WD-uievents-20140612/
+- Missing references for links: *DEL* https://www.w3.org/TR/2004/REC-xml-20040204/
+- Inconsistent references for links: *INS* https://www.w3.org/TR/2004/REC-xml-20040204/ / *DEL* https://www.w3.org/TR/2014/WD-uievents-20140612/
 
 
 ## URL Standard
