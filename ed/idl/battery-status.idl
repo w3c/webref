@@ -3,11 +3,11 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: Battery Status API (https://w3c.github.io/battery/)
 
-WebIDLpartial interface Navigator {
+partial interface Navigator {
   Promise<BatteryManager> getBattery();
 };
 
-WebIDL[Exposed=Window]
+[Exposed=Window]
 interface BatteryManager : EventTarget {
     readonly        attribute boolean             charging;
     readonly        attribute unrestricted double chargingTime;

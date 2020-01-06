@@ -3,7 +3,7 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: User Timing Level 3 (https://w3c.github.io/user-timing/)
 
-WebIDLdictionary PerformanceMarkOptions {
+dictionary PerformanceMarkOptions {
     any detail;
     DOMHighResTimeStamp startTime;
 };
@@ -22,13 +22,13 @@ partial interface Performance {
     void clearMeasures(optional DOMString measureName);
 };
 
-WebIDL[Exposed=(Window,Worker)]
+[Exposed=(Window,Worker)]
 interface PerformanceMark : PerformanceEntry {
   constructor(DOMString markName, optional PerformanceMarkOptions markOptions = {});
   readonly attribute any detail;
 };
 
-WebIDL[Exposed=(Window,Worker)]
+[Exposed=(Window,Worker)]
 interface PerformanceMeasure : PerformanceEntry {
   readonly attribute any detail;
 };

@@ -19,15 +19,6 @@
 - Unknown [Exposed] names used: *DEL* Window
 
 
-## Accessible Rich Internet Applications (WAI-ARIA) 1.2
-
-- URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
-- Crawled version: [Editor's Draft](https://rawgit.com/w3c/aria/master/)
-- Repository: [GitHub w3c/aria](https://github.com/w3c/aria)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-
-
 ## Ambient Light Sensor
 
 - URL: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
@@ -41,8 +32,7 @@
 - URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-output/)
 - Repository: [GitHub w3c/mediacapture-output](https://github.com/w3c/mediacapture-output)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- Spec is OK: *INS* true / *DEL* false
 - Unknown WebIDL names used: *DEL* HTMLMediaElement
 
 
@@ -52,7 +42,7 @@
 - Crawled version: [Initial URL](https://wicg.github.io/background-fetch/)
 - Repository: [GitHub wicg/background-fetch](https://github.com/wicg/background-fetch)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* ImageResource / *DEL* EventHandler
+- Unknown WebIDL names used: *DEL* EventHandler
 
 
 ## Battery Status API
@@ -60,8 +50,7 @@
 - URL: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/battery/)
 - Repository: [GitHub w3c/battery](https://github.com/w3c/battery)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- Spec is OK: *INS* true / *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler, Navigator
 
@@ -71,8 +60,7 @@
 - URL: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/beacon/)
 - Repository: [GitHub w3c/beacon](https://github.com/w3c/beacon)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- Spec is OK: *INS* true / *DEL* false
 - Unknown WebIDL names used: *DEL* Navigator
 
 
@@ -140,8 +128,7 @@
 - URL: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/requestidlecallback/)
 - Repository: [GitHub w3c/requestidlecallback](https://github.com/w3c/requestidlecallback)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- Spec is OK: *INS* true / *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* Window
 
@@ -378,8 +365,6 @@
 - URL: [https://www.w3.org/TR/DOM-Parsing/](https://www.w3.org/TR/DOM-Parsing/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/DOM-Parsing/)
 - Repository: [GitHub w3c/DOM-Parsing](https://github.com/w3c/DOM-Parsing)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 
 
@@ -389,7 +374,7 @@
 - Crawled version: [Living Standard](https://dom.spec.whatwg.org/)
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp / *DEL* EventHandler, HTMLSlotElement, Window
+- Unknown WebIDL names used: *DEL* EventHandler, HTMLSlotElement, Window
 - Inconsistent references for links: *DEL* https://w3c.github.io/hr-time/
 
 
@@ -399,7 +384,6 @@
 - Crawled version: [Initial URL](https://wicg.github.io/element-timing/)
 - Repository: [GitHub wicg/element-timing](https://github.com/wicg/element-timing)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp, PerformanceEntry
 
 
 ## Encoding Standard
@@ -424,7 +408,6 @@
 - Crawled version: [Initial URL](https://wicg.github.io/event-timing/)
 - Repository: [GitHub wicg/event-timing](https://github.com/wicg/event-timing)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp, Performance, PerformanceEntry
 
 
 ## Feature Policy
@@ -476,11 +459,8 @@
 - URL: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/gamepad/)
 - Repository: [GitHub w3c/gamepad](https://github.com/w3c/gamepad)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* Navigator
-- WebIDL names also defined elsewhere: *DEL* GamepadMappingType
 
 
 ## Generic Sensor API
@@ -489,7 +469,7 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/sensors/)
 - Repository: [GitHub w3c/sensors](https://github.com/w3c/sensors)
 - Unknown [Exposed] names used: *DEL* DedicatedWorker, Window
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp / *DEL* EventHandler
+- Unknown WebIDL names used: *DEL* EventHandler
 
 
 ## Geolocation API Specification
@@ -497,8 +477,6 @@
 - URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/geolocation-api/)
 - Repository: [GitHub w3c/geolocation-api](https://github.com/w3c/geolocation-api)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* Navigator
 
@@ -508,9 +486,7 @@
 - URL: [https://wicg.github.io/geolocation-sensor/](https://wicg.github.io/geolocation-sensor/)
 - Crawled version: [Initial URL](https://wicg.github.io/geolocation-sensor/)
 - Repository: [GitHub wicg/geolocation-sensor](https://github.com/wicg/geolocation-sensor)
-- Spec is OK: *INS* false / *DEL* true
 - Unknown [Exposed] names used: *DEL* DedicatedWorker, Window
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
 
 
 ## Geometry Interfaces Module Level 1
@@ -534,8 +510,7 @@
 - URL: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/)
 - Repository: [GitHub w3c/hr-time](https://github.com/w3c/hr-time)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- Spec is OK: *INS* true / *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* WindowOrWorkerGlobalScope
 
@@ -545,8 +520,7 @@
 - URL: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/html-media-capture/)
 - Repository: [GitHub w3c/html-media-capture](https://github.com/w3c/html-media-capture)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- Spec is OK: *INS* true / *DEL* false
 - Unknown WebIDL names used: *DEL* HTMLInputElement
 
 
@@ -561,16 +535,6 @@
     at tryOnTimeout (timers.js:300:5)
     at listOnTimeout (timers.js:263:5)
     at Timer.processTimers (timers.js:223:10)
-
-
-## Identifiers for WebRTC's Statistics API
-
-- URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/)
-- Repository: [GitHub w3c/webrtc-stats](https://github.com/w3c/webrtc-stats)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-- Unknown WebIDL names used: *DEL* RTCPriorityType
 
 
 ## Identity for WebRTC 1.0
@@ -597,7 +561,8 @@
 - URL: [https://wicg.github.io/InputDeviceCapabilities/](https://wicg.github.io/InputDeviceCapabilities/)
 - Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
-- Obsolete WebIDL constructs found: *DEL* false
+- Spec is OK: *INS* true / *DEL* false
+- No WebIDL definitions found: *INS* false / *DEL* true
 - Spec does not reference WebIDL normatively: *INS* false / *DEL* true
 
 
@@ -607,8 +572,6 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/IntersectionObserver/)
 - Repository: [GitHub w3c/IntersectionObserver](https://github.com/w3c/IntersectionObserver)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-- Missing references for WebIDL names: *DEL* DOMHighResTimeStamp
 
 
 ## Keyboard Lock
@@ -635,7 +598,6 @@
 - Crawled version: [Initial URL](https://wicg.github.io/largest-contentful-paint/)
 - Repository: [GitHub wicg/largest-contentful-paint](https://github.com/wicg/largest-contentful-paint)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp, PerformanceEntry
 
 
 ## Layout Instability API
@@ -644,7 +606,6 @@
 - Crawled version: [Initial URL](https://wicg.github.io/layout-instability/)
 - Repository: [GitHub wicg/layout-instability](https://github.com/wicg/layout-instability)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp, PerformanceEntry
 
 
 ## Long Tasks API 1
@@ -653,7 +614,6 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/longtasks/)
 - Repository: [GitHub w3c/longtasks](https://github.com/w3c/longtasks)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* PerformanceEntry
 
 
 ## Magnetometer
@@ -683,25 +643,13 @@
 - Unknown WebIDL names used: *DEL* EventHandler, Navigator
 
 
-## Media Capture Depth Stream Extensions
-
-- URL: [https://www.w3.org/TR/mediacapture-depth/](https://www.w3.org/TR/mediacapture-depth/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-depth/)
-- Repository: [GitHub w3c/mediacapture-depth](https://github.com/w3c/mediacapture-depth)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-
-
 ## Media Capture from DOM Elements
 
 - URL: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-fromelement/)
 - Repository: [GitHub w3c/mediacapture-fromelement](https://github.com/w3c/mediacapture-fromelement)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* HTMLCanvasElement, HTMLMediaElement
-- Missing references for WebIDL names: *DEL* MediaStream, MediaStreamTrack
 
 
 ## Media Playback Quality
@@ -709,8 +657,7 @@
 - URL: [https://w3c.github.io/media-playback-quality/](https://w3c.github.io/media-playback-quality/)
 - Crawled version: [Initial URL](https://w3c.github.io/media-playback-quality/)
 - Repository: [GitHub w3c/media-playback-quality](https://github.com/w3c/media-playback-quality)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- Spec is OK: *INS* true / *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* HTMLVideoElement
 
@@ -749,17 +696,7 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/mediacapture-record/)
 - Repository: [GitHub w3c/mediacapture-record](https://github.com/w3c/mediacapture-record)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp / *DEL* EventHandler
-
-
-## MediaStreamTrack Content Hints
-
-- URL: [https://www.w3.org/TR/mst-content-hint/](https://www.w3.org/TR/mst-content-hint/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/mst-content-hint/)
-- Repository: [GitHub w3c/mst-content-hint](https://github.com/w3c/mst-content-hint)
-- Spec is OK: *INS* false / *DEL* true
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- Unknown WebIDL names used: *DEL* EventHandler
 
 
 ## Navigation Timing Level 2
@@ -767,9 +704,6 @@
 - URL: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/navigation-timing/)
 - Repository: [GitHub w3c/navigation-timing](https://github.com/w3c/navigation-timing)
-- Spec is OK: *INS* false / *DEL* true
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 
 
@@ -778,8 +712,6 @@
 - URL: [https://wicg.github.io/netinfo/](https://wicg.github.io/netinfo/)
 - Crawled version: [Initial URL](https://wicg.github.io/netinfo/)
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler
 
@@ -789,8 +721,9 @@
 - URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
 - Crawled version: [Living Standard](https://notifications.spec.whatwg.org/)
 - Repository: [GitHub whatwg/notifications](https://github.com/whatwg/notifications)
+- Spec is OK: *INS* true / *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* VibratePattern / *DEL* EventHandler
+- Unknown WebIDL names used: *DEL* EventHandler
 
 
 ## Orientation Sensor
@@ -806,8 +739,7 @@
 - URL: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/page-visibility/)
 - Repository: [GitHub w3c/page-visibility](https://github.com/w3c/page-visibility)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- Spec is OK: *INS* true / *DEL* false
 - Unknown WebIDL names used: *DEL* EventHandler
 
 
@@ -817,7 +749,6 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/paint-timing/)
 - Repository: [GitHub w3c/paint-timing](https://github.com/w3c/paint-timing)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* PerformanceEntry
 
 
 ## Payment Handler API
@@ -825,21 +756,8 @@
 - URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/)
 - Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler
-- Missing references for WebIDL names: *DEL* ServiceWorkerRegistration, ServiceWorkerGlobalScope, ExtendableEvent, ExtendableEventInit, WindowClient
-
-
-## Payment Method: Basic Card
-
-- URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-basic-card/)
-- Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
-- Spec is OK: *INS* false / *DEL* true
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 
 
 ## Payment Request API
@@ -847,8 +765,7 @@
 - URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/)
 - Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- Spec is OK: *INS* true / *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler
 
@@ -858,8 +775,6 @@
 - URL: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/performance-timeline/)
 - Repository: [GitHub w3c/performance-timeline](https://github.com/w3c/performance-timeline)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 
 
@@ -886,8 +801,6 @@
 - URL: [https://www.w3.org/TR/pointerevents2/](https://www.w3.org/TR/pointerevents2/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/pointerevents/)
 - Repository: [GitHub w3c/pointerevents](https://github.com/w3c/pointerevents)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler, GlobalEventHandlers, Navigator
 
@@ -897,8 +810,7 @@
 - URL: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/pointerlock/)
 - Repository: [GitHub w3c/pointerlock](https://github.com/w3c/pointerlock)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- Spec is OK: *INS* true / *DEL* false
 - Unknown WebIDL names used: *DEL* EventHandler
 
 
@@ -907,8 +819,6 @@
 - URL: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/presentation-api/)
 - Repository: [GitHub w3c/presentation-api](https://github.com/w3c/presentation-api)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* BinaryType, EventHandler, Navigator
 
@@ -926,11 +836,8 @@
 - URL: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/push-api/)
 - Repository: [GitHub w3c/push-api](https://github.com/w3c/push-api)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler
-- Missing references for WebIDL names: *DEL* ServiceWorkerRegistration, ServiceWorkerGlobalScope, ExtendableEvent, ExtendableEventInit
 
 
 ## Referrer Policy
@@ -946,11 +853,8 @@
 - URL: [https://www.w3.org/TR/remote-playback/](https://www.w3.org/TR/remote-playback/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/)
 - Repository: [GitHub w3c/remote-playback](https://github.com/w3c/remote-playback)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler, HTMLMediaElement
-- Missing references for WebIDL names: *DEL* EventTarget
 
 
 ## Reporting API 1
@@ -966,8 +870,7 @@
 - URL: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/resource-timing/)
 - Repository: [GitHub w3c/resource-timing](https://github.com/w3c/resource-timing)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- Spec is OK: *INS* true / *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler
 
@@ -1000,8 +903,6 @@
 - URL: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/selection-api/)
 - Repository: [GitHub w3c/selection-api](https://github.com/w3c/selection-api)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler, GlobalEventHandlers, Window
 
@@ -1012,7 +913,7 @@
 - Crawled version: [Initial URL](https://w3c.github.io/ServiceWorker/)
 - Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* VisibilityState / *DEL* EventHandler, MessagePort, Navigator, PostMessageOptions, WindowOrWorkerGlobalScope, WorkerGlobalScope, WorkerNavigator, WorkerType
+- Unknown WebIDL names used: *DEL* EventHandler, MessagePort, Navigator, PostMessageOptions, WindowOrWorkerGlobalScope, WorkerGlobalScope, WorkerNavigator, WorkerType
 
 
 ## Storage Standard
@@ -1040,8 +941,7 @@
 - URL: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/)
 - Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- Spec is OK: *INS* true / *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler
 
@@ -1051,8 +951,6 @@
 - URL: [https://www.w3.org/TR/touch-events/](https://www.w3.org/TR/touch-events/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/touch-events/)
 - Repository: [GitHub w3c/touch-events](https://github.com/w3c/touch-events)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler, GlobalEventHandlers
 
@@ -1081,9 +979,6 @@
 - URL: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/user-timing/)
 - Repository: [GitHub w3c/user-timing](https://github.com/w3c/user-timing)
-- Spec is OK: *INS* false / *DEL* true
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 
 
@@ -1092,8 +987,6 @@
 - URL: [https://www.w3.org/TR/vibration/](https://www.w3.org/TR/vibration/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/vibration/)
 - Repository: [GitHub w3c/vibration](https://github.com/w3c/vibration)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown WebIDL names used: *DEL* Navigator
 
 
@@ -1102,8 +995,7 @@
 - URL: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/wake-lock/)
 - Repository: [GitHub w3c/wake-lock](https://github.com/w3c/wake-lock)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- Spec is OK: *INS* true / *DEL* false
 - Unknown [Exposed] names used: *DEL* DedicatedWorker, Window
 - Unknown WebIDL names used: *DEL* EventHandler, Navigator, WorkerNavigator
 
@@ -1114,7 +1006,7 @@
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/web-animations-1/)
 - Repository: [GitHub w3c/web-animations](https://github.com/w3c/web-animations)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp / *DEL* EventHandler
+- Unknown WebIDL names used: *DEL* EventHandler
 
 
 ## Web App Manifest
@@ -1122,8 +1014,7 @@
 - URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/manifest/)
 - Repository: [GitHub w3c/manifest](https://github.com/w3c/manifest)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- Spec is OK: *INS* true / *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler, Window
 
@@ -1134,7 +1025,7 @@
 - Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/)
 - Repository: [GitHub webaudio/web-audio-api](https://github.com/webaudio/web-audio-api)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp / *DEL* EventHandler, HTMLMediaElement, MessagePort
+- Unknown WebIDL names used: *DEL* EventHandler, HTMLMediaElement, MessagePort
 
 
 ## Web Authentication: An API for accessing Public Key Credentials - Level 2
@@ -1143,7 +1034,7 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/webauthn/)
 - Repository: [GitHub w3c/webauthn](https://github.com/w3c/webauthn)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* GeolocationCoordinates / *DEL* Coordinates
+- Unknown WebIDL names used: *DEL* Coordinates
 - Inconsistent references for links: *INS* https://w3c.github.io/geolocation-api/
 
 
@@ -1186,11 +1077,8 @@
 - URL: [https://www.w3.org/TR/webmidi/](https://www.w3.org/TR/webmidi/)
 - Crawled version: [Editor's Draft](http://webaudio.github.io/web-midi-api/)
 - Repository: [GitHub webaudio/web-midi-api](https://github.com/webaudio/web-midi-api)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler, Navigator
-- Missing references for WebIDL names: *DEL* EventTarget, DOMHighResTimeStamp, Event, EventInit
 
 
 ## Web NFC
@@ -1198,8 +1086,7 @@
 - URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
 - Crawled version: [Initial URL](https://w3c.github.io/web-nfc/)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- Spec is OK: *INS* true / *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler
 
@@ -1208,8 +1095,6 @@
 
 - URL: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
 - Crawled version: [Initial URL](https://w3c.github.io/web-share/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 - Unknown WebIDL names used: *DEL* Navigator
 
 
@@ -1228,15 +1113,6 @@
 - Crawled version: [Editor's Draft](https://webassembly.github.io/spec/js-api/)
 - Repository: [GitHub webassembly/spec](https://github.com/webassembly/spec)
 - Unknown [Exposed] names used: *DEL* Window
-
-
-## WebDriver
-
-- URL: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/webdriver/)
-- Repository: [GitHub w3c/webdriver](https://github.com/w3c/webdriver)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 
 
 ## WebGL 2.0 Specification
@@ -1263,7 +1139,7 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/)
 - Repository: [GitHub w3c/webrtc-pc](https://github.com/w3c/webrtc-pc)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp, RTCStatsType / *DEL* EventHandler
+- Unknown WebIDL names used: *DEL* EventHandler
 - Inconsistent references for links: *INS* https://w3c.github.io/webrtc-stats/
 
 
@@ -1291,17 +1167,7 @@
 - Crawled version: [Editor's Draft](https://immersive-web.github.io/webxr/)
 - Repository: [GitHub immersive-web/webxr](https://github.com/immersive-web/webxr)
 - Unknown [Exposed] names used: *DEL* Window
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp / *DEL* EventHandler, Navigator
-- Missing references for WebIDL names: *DEL* DOMHighResTimeStamp
-
-
-## WebXR Gamepads Module - Level 1
-
-- URL: [https://immersive-web.github.io/webxr-gamepads-module/](https://immersive-web.github.io/webxr-gamepads-module/)
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-gamepads-module/)
-- Repository: [GitHub immersive-web/webxr-gamepads-module](https://github.com/immersive-web/webxr-gamepads-module)
-- Unknown WebIDL names used: *INS* Gamepad
-- WebIDL names also defined elsewhere: *DEL* GamepadMappingType
+- Unknown WebIDL names used: *DEL* EventHandler, Navigator
 
 
 ## Worklets Level 1

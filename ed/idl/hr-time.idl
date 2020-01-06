@@ -3,15 +3,15 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: High Resolution Time (https://w3c.github.io/hr-time/)
 
-WebIDLtypedef double DOMHighResTimeStamp;
+typedef double DOMHighResTimeStamp;
 
-WebIDL[Exposed=(Window,Worker)]
+[Exposed=(Window,Worker)]
 interface Performance : EventTarget {
     DOMHighResTimeStamp now();
     readonly attribute DOMHighResTimeStamp timeOrigin;
     [Default] object toJSON();
 };
 
-WebIDLpartial interface mixin WindowOrWorkerGlobalScope {
+partial interface mixin WindowOrWorkerGlobalScope {
   [Replaceable] readonly attribute Performance performance;
 };

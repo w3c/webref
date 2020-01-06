@@ -3,11 +3,11 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: Geolocation API Specification (https://w3c.github.io/geolocation-api/)
 
-WebIDLpartial interface Navigator {
+partial interface Navigator {
   [SameObject] readonly attribute Geolocation geolocation;
 };
 
-WebIDL[Exposed=Window]
+[Exposed=Window]
 interface Geolocation {
   void getCurrentPosition(PositionCallback successCallback,
                           optional PositionErrorCallback errorCallback,
@@ -24,19 +24,19 @@ callback PositionCallback = void (GeolocationPosition position);
 
 callback PositionErrorCallback = void (GeolocationPositionError positionError);
 
-WebIDLdictionary PositionOptions {
+dictionary PositionOptions {
   boolean enableHighAccuracy = false;
   [Clamp] unsigned long timeout = 0xFFFFFFFF;
   [Clamp] unsigned long maximumAge = 0;
 };
 
-WebIDL[Exposed=Window, SecureContext]
+[Exposed=Window, SecureContext]
 interface GeolocationPosition {
   readonly attribute GeolocationCoordinates coords;
   readonly attribute DOMTimeStamp timestamp;
 };
 
-WebIDL[Exposed=Window, SecureContext]
+[Exposed=Window, SecureContext]
 interface GeolocationCoordinates {
   readonly attribute double latitude;
   readonly attribute double longitude;
@@ -47,7 +47,7 @@ interface GeolocationCoordinates {
   readonly attribute double? speed;
 };
 
-WebIDL[Exposed=Window]
+[Exposed=Window]
 interface GeolocationPositionError {
   const unsigned short PERMISSION_DENIED = 1;
   const unsigned short POSITION_UNAVAILABLE = 2;

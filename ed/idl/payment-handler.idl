@@ -3,25 +3,25 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: Payment Handler API (https://w3c.github.io/payment-handler/)
 
-WebIDLpartial interface ServiceWorkerRegistration {
+partial interface ServiceWorkerRegistration {
   [SameObject] readonly attribute PaymentManager paymentManager;
 };
 
-WebIDL[SecureContext, Exposed=(Window,Worker)]
+[SecureContext, Exposed=(Window,Worker)]
 interface PaymentManager {
   [SameObject] readonly attribute PaymentInstruments instruments;
   attribute DOMString userHint;
   Promise<void> enableDelegations(FrozenArray<PaymentDelegation> delegations);
 };
 
-WebIDLenum PaymentDelegation {
+enum PaymentDelegation {
   "shippingAddress",
   "payerName",
   "payerPhone",
   "payerEmail"
 };
 
-WebIDL[SecureContext, Exposed=(Window,Worker)]
+[SecureContext, Exposed=(Window,Worker)]
 interface PaymentInstruments {
   Promise<boolean> delete(DOMString instrumentKey);
   Promise<any> get(DOMString instrumentKey);
@@ -31,24 +31,24 @@ interface PaymentInstruments {
   Promise<void> clear();
 };
 
-WebIDLdictionary PaymentInstrument {
+dictionary PaymentInstrument {
   required DOMString name;
   sequence<ImageObject> icons;
   DOMString method;
   object capabilities;
 };
 
-WebIDLdictionary ImageObject {
+dictionary ImageObject {
     required USVString src;
     DOMString sizes;
     DOMString type;
 };
 
-WebIDLpartial interface ServiceWorkerGlobalScope {
+partial interface ServiceWorkerGlobalScope {
   attribute EventHandler oncanmakepayment;
 };
 
-WebIDL[Exposed=ServiceWorker]
+[Exposed=ServiceWorker]
 interface CanMakePaymentEvent : ExtendableEvent {
   constructor(DOMString type, optional CanMakePaymentEventInit eventInitDict = {});
   readonly attribute USVString topOrigin;
@@ -57,17 +57,17 @@ interface CanMakePaymentEvent : ExtendableEvent {
   void respondWith(Promise<boolean> canMakePaymentResponse);
 };
 
-WebIDLdictionary CanMakePaymentEventInit : ExtendableEventInit {
+dictionary CanMakePaymentEventInit : ExtendableEventInit {
   USVString topOrigin;
   USVString paymentRequestOrigin;
   sequence<PaymentMethodData> methodData;
 };
 
-WebIDLpartial interface ServiceWorkerGlobalScope {
+partial interface ServiceWorkerGlobalScope {
   attribute EventHandler onpaymentrequest;
 };
 
-WebIDLdictionary PaymentRequestDetailsUpdate {
+dictionary PaymentRequestDetailsUpdate {
   DOMString error;
   PaymentCurrencyAmount total;
   FrozenArray<PaymentDetailsModifier> modifiers;
@@ -76,7 +76,7 @@ WebIDLdictionary PaymentRequestDetailsUpdate {
   AddressErrors shippingAddressErrors;
 };
 
-WebIDL[Exposed=ServiceWorker]
+[Exposed=ServiceWorker]
 interface PaymentRequestEvent : ExtendableEvent {
   constructor(DOMString type, optional PaymentRequestEventInit eventInitDict = {});
   readonly attribute USVString topOrigin;
@@ -96,7 +96,7 @@ interface PaymentRequestEvent : ExtendableEvent {
   void respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);
 };
 
-WebIDLdictionary PaymentRequestEventInit : ExtendableEventInit {
+dictionary PaymentRequestEventInit : ExtendableEventInit {
   USVString topOrigin;
   USVString paymentRequestOrigin;
   DOMString paymentRequestId;
@@ -108,7 +108,7 @@ WebIDLdictionary PaymentRequestEventInit : ExtendableEventInit {
   sequence<PaymentShippingOption> shippingOptions;
 };
 
-WebIDLdictionary PaymentHandlerResponse {
+dictionary PaymentHandlerResponse {
 DOMString methodName;
 object details;
 DOMString? payerName;

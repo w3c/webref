@@ -3,32 +3,32 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: Web MIDI API (http://webaudio.github.io/web-midi-api/)
 
-WebIDLpartial interface Navigator {
+partial interface Navigator {
   [SecureContext]
   Promise <MIDIAccess> requestMIDIAccess(optional MIDIOptions options = {});
 };
 
-WebIDLdictionary MIDIOptions {
+dictionary MIDIOptions {
   boolean sysex;
   boolean software;
 };
 
-WebIDL[SecureContext, Exposed=Window] interface MIDIInputMap {
+[SecureContext, Exposed=Window] interface MIDIInputMap {
   readonly maplike <DOMString, MIDIInput>;
 };
 
-WebIDL[SecureContext, Exposed=Window] interface MIDIOutputMap {
+[SecureContext, Exposed=Window] interface MIDIOutputMap {
   readonly maplike <DOMString, MIDIOutput>;
 };
 
-WebIDL[SecureContext, Exposed=Window] interface MIDIAccess: EventTarget {
+[SecureContext, Exposed=Window] interface MIDIAccess: EventTarget {
   readonly attribute MIDIInputMap inputs;
   readonly attribute MIDIOutputMap outputs;
   attribute EventHandler onstatechange;
   readonly attribute boolean sysexEnabled;
 };
 
-WebIDL[SecureContext, Exposed=Window] interface MIDIPort: EventTarget {
+[SecureContext, Exposed=Window] interface MIDIPort: EventTarget {
   readonly attribute DOMString id;
   readonly attribute DOMString? manufacturer;
   readonly attribute DOMString? name;
@@ -41,47 +41,47 @@ WebIDL[SecureContext, Exposed=Window] interface MIDIPort: EventTarget {
   Promise <MIDIPort> close();
 };
 
-WebIDL[SecureContext, Exposed=Window] interface MIDIInput: MIDIPort {
+[SecureContext, Exposed=Window] interface MIDIInput: MIDIPort {
   attribute EventHandler onmidimessage;
 };
 
-WebIDL[SecureContext, Exposed=Window] interface MIDIOutput : MIDIPort {
+[SecureContext, Exposed=Window] interface MIDIOutput : MIDIPort {
   void send(sequence<octet> data, optional DOMHighResTimeStamp timestamp = 0);
   void clear();
 };
 
-WebIDLenum MIDIPortType {
+enum MIDIPortType {
   "input",
   "output",
 };
 
-WebIDLenum MIDIPortDeviceState {
+enum MIDIPortDeviceState {
   "disconnected",
   "connected",
 };
 
-WebIDLenum MIDIPortConnectionState {
+enum MIDIPortConnectionState {
   "open",
   "closed",
   "pending",
 };
 
-WebIDL[SecureContext, Exposed=Window]
+[SecureContext, Exposed=Window]
 interface MIDIMessageEvent : Event {
   constructor(DOMString type, optional MIDIMessageEventInit eventInitDict = {});
   readonly attribute Uint8Array data;
 };
 
-WebIDLdictionary MIDIMessageEventInit: EventInit {
+dictionary MIDIMessageEventInit: EventInit {
   Uint8Array data;
 };
 
-WebIDL[SecureContext, Exposed=Window]
+[SecureContext, Exposed=Window]
 interface MIDIConnectionEvent : Event {
   constructor(DOMString type, optional MIDIConnectionEventInit eventInitDict = {});
   readonly attribute MIDIPort port;
 };
 
-WebIDLdictionary MIDIConnectionEventInit: EventInit {
+dictionary MIDIConnectionEventInit: EventInit {
   MIDIPort port;
 };

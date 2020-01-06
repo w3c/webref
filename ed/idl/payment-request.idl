@@ -3,7 +3,7 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: Payment Request API (https://w3c.github.io/payment-request/)
 
-WebIDL[SecureContext, Exposed=Window]
+[SecureContext, Exposed=Window]
 interface PaymentRequest : EventTarget {
   constructor(
     sequence<PaymentMethodData> methodData,
@@ -30,28 +30,28 @@ interface PaymentRequest : EventTarget {
   attribute EventHandler onpaymentmethodchange;
 };
 
-WebIDLdictionary PaymentMethodData {
+dictionary PaymentMethodData {
   required DOMString supportedMethods;
   object data;
 };
 
-WebIDLdictionary PaymentCurrencyAmount {
+dictionary PaymentCurrencyAmount {
   required DOMString currency;
   required DOMString value;
 };
 
-WebIDLdictionary PaymentDetailsBase {
+dictionary PaymentDetailsBase {
   sequence<PaymentItem> displayItems;
   sequence<PaymentShippingOption> shippingOptions;
   sequence<PaymentDetailsModifier> modifiers;
 };
 
-WebIDLdictionary PaymentDetailsInit : PaymentDetailsBase {
+dictionary PaymentDetailsInit : PaymentDetailsBase {
   DOMString id;
   required PaymentItem total;
 };
 
-WebIDLdictionary PaymentDetailsUpdate : PaymentDetailsBase {
+dictionary PaymentDetailsUpdate : PaymentDetailsBase {
   DOMString error;
   PaymentItem total;
   AddressErrors shippingAddressErrors;
@@ -59,20 +59,20 @@ WebIDLdictionary PaymentDetailsUpdate : PaymentDetailsBase {
   object paymentMethodErrors;
 };
 
-WebIDLdictionary PaymentDetailsModifier {
+dictionary PaymentDetailsModifier {
   required DOMString supportedMethods;
   PaymentItem total;
   sequence<PaymentItem> additionalDisplayItems;
   object data;
 };
 
-WebIDLenum PaymentShippingType {
+enum PaymentShippingType {
   "shipping",
   "delivery",
   "pickup"
 };
 
-WebIDLdictionary PaymentOptions {
+dictionary PaymentOptions {
   boolean requestPayerName = false;
   boolean requestBillingAddress = false;
   boolean requestPayerEmail = false;
@@ -81,13 +81,13 @@ WebIDLdictionary PaymentOptions {
   PaymentShippingType shippingType = "shipping";
 };
 
-WebIDLdictionary PaymentItem {
+dictionary PaymentItem {
   required DOMString label;
   required PaymentCurrencyAmount amount;
   boolean pending = false;
 };
 
-WebIDL[SecureContext, Exposed=(Window)]
+[SecureContext, Exposed=(Window)]
 interface PaymentAddress {
   [Default] object toJSON();
   readonly attribute DOMString city;
@@ -102,7 +102,7 @@ interface PaymentAddress {
   readonly attribute FrozenArray<DOMString> addressLine;
 };
 
-WebIDLdictionary AddressInit {
+dictionary AddressInit {
   DOMString country;
   sequence<DOMString> addressLine;
   DOMString region;
@@ -115,7 +115,7 @@ WebIDLdictionary AddressInit {
   DOMString phone;
 };
 
-WebIDLdictionary AddressErrors {
+dictionary AddressErrors {
   DOMString addressLine;
   DOMString city;
   DOMString country;
@@ -128,20 +128,20 @@ WebIDLdictionary AddressErrors {
   DOMString sortingCode;
 };
 
-WebIDLdictionary PaymentShippingOption {
+dictionary PaymentShippingOption {
   required DOMString id;
   required DOMString label;
   required PaymentCurrencyAmount amount;
   boolean selected = false;
 };
 
-WebIDLenum PaymentComplete {
+enum PaymentComplete {
   "fail",
   "success",
   "unknown"
 };
 
-WebIDL[SecureContext, Exposed=Window]
+[SecureContext, Exposed=Window]
 interface PaymentResponse : EventTarget  {
   [Default] object toJSON();
 
@@ -162,20 +162,20 @@ interface PaymentResponse : EventTarget  {
   attribute EventHandler onpayerdetailchange;
 };
 
-WebIDLdictionary PaymentValidationErrors {
+dictionary PaymentValidationErrors {
   PayerErrors payer;
   AddressErrors shippingAddress;
   DOMString error;
   object paymentMethod;
 };
 
-WebIDLdictionary PayerErrors {
+dictionary PayerErrors {
   DOMString email;
   DOMString name;
   DOMString phone;
 };
 
-WebIDL[SecureContext, Exposed=Window]
+[SecureContext, Exposed=Window]
 interface MerchantValidationEvent : Event {
   constructor(DOMString type, optional MerchantValidationEventInit eventInitDict = {});
   readonly attribute DOMString methodName;
@@ -183,27 +183,27 @@ interface MerchantValidationEvent : Event {
   void complete(Promise<any> merchantSessionPromise);
 };
 
-WebIDLdictionary MerchantValidationEventInit : EventInit {
+dictionary MerchantValidationEventInit : EventInit {
   DOMString methodName = "";
   USVString validationURL = "";
 };
 
-WebIDL[SecureContext, Exposed=Window]
+[SecureContext, Exposed=Window]
 interface PaymentMethodChangeEvent : PaymentRequestUpdateEvent {
   constructor(DOMString type, optional PaymentMethodChangeEventInit eventInitDict = {});
   readonly attribute DOMString methodName;
   readonly attribute object? methodDetails;
 };
 
-WebIDLdictionary PaymentMethodChangeEventInit : PaymentRequestUpdateEventInit {
+dictionary PaymentMethodChangeEventInit : PaymentRequestUpdateEventInit {
   DOMString methodName = "";
   object? methodDetails = null;
 };
 
-WebIDL[SecureContext, Exposed=Window]
+[SecureContext, Exposed=Window]
 interface PaymentRequestUpdateEvent : Event {
   constructor(DOMString type, optional PaymentRequestUpdateEventInit eventInitDict = {});
   void updateWith(Promise<PaymentDetailsUpdate> detailsPromise);
 };
 
-WebIDLdictionary PaymentRequestUpdateEventInit : EventInit {};
+dictionary PaymentRequestUpdateEventInit : EventInit {};
