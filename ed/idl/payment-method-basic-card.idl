@@ -3,15 +3,15 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: Payment Method: Basic Card (https://w3c.github.io/payment-method-basic-card/)
 
-WebIDLdictionary BasicCardRequest {
+dictionary BasicCardRequest {
   sequence<DOMString> supportedNetworks = [];
 };
 
-WebIDLdictionary BasicCardChangeDetails {
+dictionary BasicCardChangeDetails {
   PaymentAddress? billingAddress = null;
 };
 
-WebIDLdictionary BasicCardResponse {
+dictionary BasicCardResponse {
   required DOMString cardNumber;
   DOMString cardholderName = "";
   DOMString cardSecurityCode = "";
@@ -20,7 +20,7 @@ WebIDLdictionary BasicCardResponse {
   PaymentAddress? billingAddress = null;
 };
 
-WebIDLdictionary BasicCardErrors {
+dictionary BasicCardErrors {
   DOMString cardNumber;
   DOMString cardholderName;
   DOMString cardSecurityCode;

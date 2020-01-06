@@ -3,11 +3,11 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: Web Share API (https://w3c.github.io/web-share/)
 
-WebIDLpartial interface Navigator {
+partial interface Navigator {
   [SecureContext] Promise<void> share(optional ShareData data = {});
 };
 
-WebIDLdictionary ShareData {
+dictionary ShareData {
   USVString title;
   USVString text;
   USVString url;

@@ -3,7 +3,7 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: Touch Events - Level 2 (https://w3c.github.io/touch-events/)
 
-WebIDLenum TouchType {
+enum TouchType {
     "direct",
     "stylus"
 };
@@ -46,13 +46,13 @@ interface Touch {
     readonly        attribute TouchType   touchType;
 };
 
-WebIDL[Exposed=Window]
+[Exposed=Window]
 interface TouchList {
     readonly        attribute unsigned long length;
     getter Touch? item (unsigned long index);
 };
 
-WebIDLdictionary TouchEventInit : EventModifierInit {
+dictionary TouchEventInit : EventModifierInit {
              sequence<Touch> touches = [];
              sequence<Touch> targetTouches = [];
              sequence<Touch> changedTouches = [];
@@ -70,7 +70,7 @@ interface TouchEvent : UIEvent {
     readonly        attribute boolean   shiftKey;
 };
 
-WebIDLpartial interface mixin GlobalEventHandlers {
+partial interface mixin GlobalEventHandlers {
                     attribute EventHandler ontouchstart;
                     attribute EventHandler ontouchend;
                     attribute EventHandler ontouchmove;

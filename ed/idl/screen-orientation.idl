@@ -3,11 +3,11 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: The Screen Orientation API (https://w3c.github.io/screen-orientation/)
 
-WebIDLpartial interface Screen {
+partial interface Screen {
   [SameObject] readonly attribute ScreenOrientation orientation;
 };
 
-WebIDL[Exposed=Window]
+[Exposed=Window]
 interface ScreenOrientation : EventTarget {
   Promise<void> lock(OrientationLockType orientation);
   void unlock();

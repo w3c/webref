@@ -3,15 +3,15 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: Media Capture from DOM Elements (https://w3c.github.io/mediacapture-fromelement/)
 
-WebIDLpartial interface HTMLMediaElement {
+partial interface HTMLMediaElement {
     MediaStream captureStream ();
 };
 
-WebIDLpartial interface HTMLCanvasElement {
+partial interface HTMLCanvasElement {
     MediaStream captureStream (optional double frameRequestRate);
 };
 
-WebIDL[Exposed=Window] interface CanvasCaptureMediaStreamTrack : MediaStreamTrack {
+[Exposed=Window] interface CanvasCaptureMediaStreamTrack : MediaStreamTrack {
     readonly        attribute HTMLCanvasElement canvas;
     void requestFrame ();
 };
