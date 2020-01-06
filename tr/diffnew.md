@@ -1,6 +1,6 @@
-% Diff between report from "December 30, 2019" and reference report from "December 02, 2019"
+% Diff between report from "January 06, 2020" and reference report from "December 02, 2019"
 % Reffy
-% December 30, 2019
+% January 06, 2020
 
 ## Accessible Rich Internet Applications (WAI-ARIA) 1.2
 
@@ -9,6 +9,16 @@
 - Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
 - Repository: [GitHub w3c/aria](https://github.com/w3c/aria)
 - Missing references for links: *INS* https://w3c.github.io/aria/aria/aria.html / *DEL* https://w3c.github.io/aria/, https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/, https://www.w3.org/TR/2002/REC-xhtml1-20020801/, https://www.w3.org/TR/xml/
+
+
+## CSS Basic User Interface Module Level 4
+
+- URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- Editor's Draft: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Missing references for links: *INS* https://www.w3.org/TR/css3-color/, https://www.w3.org/TR/css3-ui/, https://www.w3.org/TR/css3-page/, https://w3c.github.io/contentEditable/, https://www.w3.org/TR/selectors4/ / *DEL* https://w3c.github.io/editing/contentEditable.html
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css3-images/ / *DEL* https://www.w3.org/TR/html/
 
 
 ## CSS Writing Modes Level 3
