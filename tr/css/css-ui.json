@@ -1,56 +1,41 @@
 {
   "spec": {
     "title": "CSS Basic User Interface Module Level 4",
-    "url": "https://www.w3.org/TR/2017/WD-css-ui-4-20171222/"
+    "url": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
   },
   "properties": {
-    "box-sizing": {
-      "name": "box-sizing",
-      "value": "content-box | border-box",
-      "initial": "content-box",
-      "appliesTo": "all elements that accept width or height",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "specified value",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete"
-    },
     "outline": {
       "name": "outline",
-      "value": "[ <outline-color> || <outline-style> || <outline-width> ]",
+      "value": "[ <'outline-color'> || <'outline-style'> || <'outline-width'> ]",
       "initial": "see individual properties",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "animationType": "see individual properties"
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar"
     },
     "outline-width": {
       "name": "outline-width",
-      "value": "<border-width>",
+      "value": "<line-width>",
       "initial": "medium",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
       "computedValue": "absolute length; 0 if the outline style is none.",
       "canonicalOrder": "per grammar",
-      "animationType": "length"
+      "animationType": "by computed value"
     },
     "outline-style": {
       "name": "outline-style",
-      "value": "auto | <border-style>",
+      "value": "auto | <outline-line-style>",
       "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "by computed value"
     },
     "outline-color": {
       "name": "outline-color",
@@ -59,10 +44,9 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "The computed value for invert is invert. For <color> values, see resolving color values in [CSS-COLOR-4].",
+      "computedValue": "The computed value for invert is invert. For <color> values, see [[!CSS-COLOR-4#resolving-color-values]] in [CSS-COLOR-4].",
       "canonicalOrder": "per grammar",
-      "animationType": "color"
+      "animationType": "by computed value"
     },
     "outline-offset": {
       "name": "outline-offset",
@@ -71,10 +55,9 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "<length> value in absolute units (px or physical).",
+      "computedValue": "absolute length",
       "canonicalOrder": "per grammar",
-      "animationType": "length"
+      "animationType": "by computed value"
     },
     "resize": {
       "name": "resize",
@@ -83,20 +66,7 @@
       "appliesTo": "elements with overflow other than visible, and optionally replaced elements such as images, videos, and iframes",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete"
-    },
-    "text-overflow": {
-      "name": "text-overflow",
-      "value": "[ clip | ellipsis | <string> | fade | <fade()> ]{1,2}",
-      "initial": "clip",
-      "appliesTo": "block containers",
-      "inherited": "no",
-      "percentages": "refer to the width of the line box",
-      "media": "visual",
-      "computedValue": "As specified, with <length> converted to absolute units",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -107,7 +77,6 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual, interactive",
       "computedValue": "as specified, except with any relative URLs converted to absolute",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
@@ -119,10 +88,9 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "interactive",
-      "computedValue": "The computed value for auto is auto. For <color> values, see resolving color values in [CSS-COLOR-4].",
+      "computedValue": "The computed value for auto is auto. For <color> values, see [[!CSS-COLOR-4#resolving-color-values]] in [CSS-COLOR-4].",
       "canonicalOrder": "per grammar",
-      "animationType": "color"
+      "animationType": "by computed value"
     },
     "caret-shape": {
       "name": "caret-shape",
@@ -131,22 +99,20 @@
       "appliesTo": "elements that accept input",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "interactive",
-      "computedValue": "Same as specified value",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "by computed value"
     },
     "caret": {
       "name": "caret",
-      "value": "<‘caret-color’> || <‘caret-shape’>",
+      "value": "<'caret-color'> || <'caret-shape'>",
       "initial": "auto",
       "appliesTo": "elements that accept input",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "interactive",
-      "computedValue": "See individual properties",
-      "canonicalOrder": "per grammar",
-      "animatable": "See individual properties"
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar"
     },
     "nav-up": {
       "name": "nav-up",
@@ -155,7 +121,6 @@
       "appliesTo": "all enabled elements",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "interactive",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
@@ -167,7 +132,6 @@
       "appliesTo": "all enabled elements",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "interactive",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
@@ -179,7 +143,6 @@
       "appliesTo": "all enabled elements",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "interactive",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
@@ -191,7 +154,6 @@
       "appliesTo": "all enabled elements",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "interactive",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
@@ -203,28 +165,26 @@
       "appliesTo": "all elements, and optionally to the ::before and ::after pseudo elements",
       "inherited": "no",
       "percentages": "n/a",
-      "media": "interactive",
-      "computedValue": "See below",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "not animatable"
     },
     "appearance": {
       "name": "appearance",
-      "value": "auto | none",
-      "initial": "auto",
+      "value": "none | auto | button | textfield | menulist-button | <compat-auto>",
+      "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "media": "all",
-      "computedValue": "As specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     }
   },
   "descriptors": {},
   "valuespaces": {
-    "<fade()>": {
-      "value": "fade( <length> | <percentage> )"
+    "<compat-auto>": {
+      "value": "<compat-auto> = searchfield | textarea | push-button | slider-horizontal | checkbox | radio | square-button | menulist | listbox | meter | progress-bar"
     },
     "<id>": {
       "prose": "The <id> value is an ID selector [SELECT]. In response to directional navigation input corresponding to the property, the focus is navigated to the first element in tree order matching the selector. If this refers to the currently focused element, the directional navigation input respective to the nav- property is ignored — there is no need to refocus the same element. If no element matches the selector, the user agent automatically determines which element to navigate the focus to. If the focus is navigated to an element that was not otherwise focusable, it becomes focusable only as the result of this directional navigation, and the :focus pseudo-class matches the element while it is focused as such. Note: there were other options under consideration for such \"not otherwise focusable\" elements, including focus to the next otherwise focusable element in the document tree (including descendants of such a not otherwise focusable element). Input on such other options is welcome and explicitly solicited, especially from implementation experiences and author experience using the directional navigation properties in their content."
