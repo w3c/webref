@@ -1820,7 +1820,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-exclusions-1/) (10 May 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-exclusions-1/) (5 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -2896,7 +2896,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-overflow-3/) (8 September 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-overflow-3/) (5 January 2020)
 - Editor's Draft: [https://drafts.csswg.org/css-overflow-3/](https://drafts.csswg.org/css-overflow-3/)
 - Latest published version: [https://www.w3.org/TR/css-overflow-3/](https://www.w3.org/TR/css-overflow-3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
@@ -2970,7 +2970,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-overflow-4/) (9 September 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-overflow-4/) (5 January 2020)
 - Editor's Draft: [https://drafts.csswg.org/css-overflow-4/](https://drafts.csswg.org/css-overflow-4/)
 - Latest published version: [https://www.w3.org/TR/css-overflow-4/](https://www.w3.org/TR/css-overflow-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/)
@@ -3027,7 +3027,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-page-floats/) (26 September 2018)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-page-floats/) (5 January 2020)
 - Editor's Draft: [https://drafts.csswg.org/css-page-floats/](https://drafts.csswg.org/css-page-floats/)
 - Latest published version: [http://www.w3.org/TR/css-page-floats-3/](http://www.w3.org/TR/css-page-floats-3/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/)
@@ -3286,7 +3286,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-regions/) (10 May 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-regions/) (5 January 2020)
 - Editor's Draft: [https://drafts.csswg.org/css-regions/](https://drafts.csswg.org/css-regions/)
 - Latest published version: [http://www.w3.org/TR/css-regions-1/](http://www.w3.org/TR/css-regions-1/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
@@ -3738,7 +3738,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-tables-3/) (7 September 2019)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-tables-3/) (5 January 2020)
 - Editor's Draft: [https://drafts.csswg.org/css-tables-3/](https://drafts.csswg.org/css-tables-3/)
 - Latest published version: [https://www.w3.org/TR/css-tables-3/](https://www.w3.org/TR/css-tables-3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
@@ -5376,7 +5376,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/) (21 November 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/hr-time/) (06 January 2020)
 - Editor's Draft: [https://w3c.github.io/hr-time/](https://w3c.github.io/hr-time/)
 - Latest published version: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Latest published status: [Retired](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
@@ -8374,7 +8374,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (03 January 2020)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (06 January 2020)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
