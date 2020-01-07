@@ -5574,7 +5574,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (6 January 2020)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (7 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8584,7 +8584,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/js-api/) (9 December 2019)
+- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/js-api/) (7 January 2020)
 - Editor's Draft: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2019/REC-wasm-js-api-1-20191205/)
@@ -8613,7 +8613,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/web-api/) (9 December 2019)
+- Crawled version: [Editor's Draft](https://webassembly.github.io/spec/web-api/) (7 January 2020)
 - Editor's Draft: [https://webassembly.github.io/spec/web-api/](https://webassembly.github.io/spec/web-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2019/REC-wasm-web-api-1-20191205/)
@@ -8733,7 +8733,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (06 January 2020)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (07 January 2020)
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-webrtc-20191213/)
