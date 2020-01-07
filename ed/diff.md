@@ -82,6 +82,33 @@
 - Unknown WebIDL names used: *DEL* EventHandler, HTMLBodyElement, Window
 
 
+## Compatibility Standard
+
+- URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://compat.spec.whatwg.org/)
+- Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* EventHandler, HTMLBodyElement, Window
+
+
+## Compatibility Standard
+
+- URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://compat.spec.whatwg.org/)
+- Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* EventHandler, HTMLBodyElement, Window
+
+
+## Compatibility Standard
+
+- URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://compat.spec.whatwg.org/)
+- Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
+- Spec is OK: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* EventHandler, HTMLBodyElement, Window
+
+
 ## Compositing and Blending Level 1
 
 - URL: [https://www.w3.org/TR/compositing-1/](https://www.w3.org/TR/compositing-1/)

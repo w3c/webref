@@ -268,13 +268,16 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
@@ -413,6 +416,69 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
+
+
+## Compatibility Standard {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Living Standard](https://compat.spec.whatwg.org/) (18 June 2019)
+- Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+Informative references to this spec from:
+
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+
+
+## Compatibility Standard {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Living Standard](https://compat.spec.whatwg.org/) (18 June 2019)
+- Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+Informative references to this spec from:
+
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+
+
+## Compatibility Standard {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Living Standard](https://compat.spec.whatwg.org/) (18 June 2019)
+- Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+Informative references to this spec from:
+
+- [Pointer Events](https://w3c.github.io/pointerevents/)
 
 
 ## Compatibility Standard {data-spec=true data-ok=true}
@@ -753,6 +819,9 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -839,10 +908,13 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
@@ -923,6 +995,46 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui/) (29 December 2019)
+- Editor's Draft: [https://drafts.csswg.org/css-ui/](https://drafts.csswg.org/css-ui/)
+- Latest published version: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
+- Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Shortname: css-ui-3
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2000/WD-css3-userint-20000216`](https://www.w3.org/TR/2000/WD-css3-userint-20000216)
+     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
+     * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/)
+     * [`https://w3c.github.io/contentEditable/`](https://w3c.github.io/contentEditable/)
+     * [`https://www.w3.org/TR/2017/WD-css-ui-4-20171222/`](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
+     * [`https://www.w3.org/TR/2015/WD-css-ui-4-20150922/`](https://www.w3.org/TR/2015/WD-css-ui-4-20150922/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [HTML Standard](https://html.spec.whatwg.org/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+
+Informative references to this spec from:
+
+- [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
+- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
+- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
+- [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
+- [Selectors Level 4](https://drafts.csswg.org/selectors/)
+
+
+## CSS Basic User Interface Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui-4/) (29 December 2019)
 - Editor's Draft: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
 - Latest published version: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
@@ -958,47 +1070,10 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
-
-
-## CSS Basic User Interface Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true}
-
-### Spec info {.info}
-
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui/) (29 December 2019)
-- Editor's Draft: [https://drafts.csswg.org/css-ui/](https://drafts.csswg.org/css-ui/)
-- Latest published version: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
-- Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Shortname: css-ui-3
-
-### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/2000/WD-css3-userint-20000216`](https://www.w3.org/TR/2000/WD-css3-userint-20000216)
-     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
-     * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/)
-     * [`https://w3c.github.io/contentEditable/`](https://w3c.github.io/contentEditable/)
-     * [`https://www.w3.org/TR/2017/WD-css-ui-4-20171222/`](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
-     * [`https://www.w3.org/TR/2015/WD-css-ui-4-20150922/`](https://www.w3.org/TR/2015/WD-css-ui-4-20150922/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
-- [HTML Standard](https://html.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-
-Informative references to this spec from:
-
-- [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
-- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
-- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
-- [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
-- [Selectors Level 4](https://drafts.csswg.org/selectors/)
 
 
 ## CSS Box Alignment Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1028,6 +1103,9 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
@@ -1103,8 +1181,11 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
@@ -1234,8 +1315,8 @@ Normative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
@@ -1358,11 +1439,14 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
@@ -1415,9 +1499,12 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
@@ -1502,6 +1589,9 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -1697,9 +1787,12 @@ Normative references to this spec from:
 
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
@@ -1905,6 +1998,9 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
@@ -2400,9 +2496,12 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
@@ -2466,8 +2565,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 
 
 ## CSS Inline Layout Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -2665,6 +2764,9 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
@@ -2701,6 +2803,9 @@ This specification looks good!
 
 Normative references to this spec from:
 
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 
@@ -2915,8 +3020,8 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
@@ -2985,8 +3090,8 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 
@@ -3074,8 +3179,8 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
@@ -3166,8 +3271,8 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
@@ -3255,8 +3360,8 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
@@ -3807,7 +3912,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-decor-4/) (1 January 2020)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-decor-4/) (7 January 2020)
 - Editor's Draft: [https://drafts.csswg.org/css-text-decor-4/](https://drafts.csswg.org/css-text-decor-4/)
 - Latest published version: [https://www.w3.org/TR/css-text-decor-4/](https://www.w3.org/TR/css-text-decor-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
@@ -3968,8 +4073,11 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
@@ -4018,6 +4126,9 @@ This specification looks good!
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -4054,6 +4165,9 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
@@ -4175,11 +4289,14 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
@@ -4285,6 +4402,9 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
@@ -4292,8 +4412,8 @@ Normative references to this spec from:
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
@@ -4435,8 +4555,8 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -4494,8 +4614,8 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
@@ -4677,6 +4797,9 @@ Normative references to this spec from:
 - [Beacon](https://w3c.github.io/beacon/)
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
@@ -5105,6 +5228,9 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
@@ -5318,6 +5444,9 @@ Normative references to this spec from:
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
@@ -5470,6 +5599,9 @@ Normative references to this spec from:
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
@@ -5481,8 +5613,8 @@ Normative references to this spec from:
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -5622,8 +5754,8 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
@@ -6159,6 +6291,9 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
@@ -6817,6 +6952,9 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [WebDriver](https://w3c.github.io/webdriver/)
@@ -7177,8 +7315,8 @@ Normative references to this spec from:
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Color Module Level 3](https://drafts.csswg.org/css-color-3/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
@@ -7393,8 +7531,8 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
@@ -7457,8 +7595,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
 
@@ -7686,6 +7824,9 @@ This specification looks good!
 Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
@@ -8032,7 +8173,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (20 December 2019)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (7 January 2020)
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
@@ -8209,6 +8350,9 @@ Normative references to this spec from:
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
@@ -8382,7 +8526,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (06 January 2020)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (07 January 2020)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
