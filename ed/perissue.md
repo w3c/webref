@@ -2,7 +2,7 @@
 % Reffy
 % January 07, 2020
 
-241 specifications were crawled in this report.
+244 specifications were crawled in this report.
 
 
 ## Specifications that do not link to an Editor's Draft
