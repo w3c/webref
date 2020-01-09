@@ -5574,7 +5574,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (8 January 2020)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (9 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7630,7 +7630,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/ServiceWorker/) (20 December 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/ServiceWorker/) (9 January 2020)
 - Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
 - Shortname: no shortname
 
