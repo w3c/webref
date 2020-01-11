@@ -1,6 +1,6 @@
-% Diff between report from "January 10, 2020" and reference report from "December 03, 2019"
+% Diff between report from "January 11, 2020" and reference report from "December 03, 2019"
 % Reffy
-% January 10, 2020
+% January 11, 2020
 
 ## Audio Output Devices API
 
@@ -171,6 +171,17 @@
 - Spec is OK: *INS* true / *DEL* false
 - No WebIDL definitions found: *INS* false / *DEL* true
 - Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+
+
+## Input Events Level 2
+
+- URL: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/input-events/)
+- Repository: [GitHub w3c/input-events](https://github.com/w3c/input-events)
+- No normative references found: *INS* false / *DEL* true
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+- Inconsistent references for links: *INS* https://w3c.github.io/uievents/
 
 
 ## Media Capture and Streams
