@@ -224,14 +224,6 @@
 - Spec is OK: *INS* true / *DEL* false
 
 
-## Payment Handler API
-
-- URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-handler/)
-- Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
-- Spec could not be rendered: *INS* [object Object]
-
-
 ## Payment Request API
 
 - URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
