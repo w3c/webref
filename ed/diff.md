@@ -1,6 +1,6 @@
-% Diff between report from "January 11, 2020" and reference report from "December 03, 2019"
+% Diff between report from "January 12, 2020" and reference report from "December 03, 2019"
 % Reffy
-% January 11, 2020
+% January 12, 2020
 
 ## Accelerated Shape Detection in Images
 
