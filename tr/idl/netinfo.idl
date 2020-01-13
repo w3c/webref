@@ -3,7 +3,7 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: Network Information API (https://wicg.github.io/netinfo/)
 
-WebIDLenum ConnectionType {
+enum ConnectionType {
   "bluetooth",
   "cellular",
   "ethernet",
@@ -15,21 +15,21 @@ WebIDLenum ConnectionType {
   "wimax"
 };
 
-WebIDLenum EffectiveConnectionType {
+enum EffectiveConnectionType {
   "2g",
   "3g",
   "4g",
   "slow-2g"
 };
 
-WebIDLinterface mixin NavigatorNetworkInformation {
+interface mixin NavigatorNetworkInformation {
   [SameObject] readonly attribute NetworkInformation connection;
 };
 
 Navigator includes NavigatorNetworkInformation;
 WorkerNavigator includes NavigatorNetworkInformation;
 
-WebIDL[Exposed=(Window,Worker)]
+[Exposed=(Window,Worker)]
 interface NetworkInformation : EventTarget {
   readonly attribute ConnectionType type;
   readonly attribute EffectiveConnectionType effectiveType;
