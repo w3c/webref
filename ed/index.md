@@ -8522,7 +8522,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (10 January 2020)
+- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/) (13 January 2020)
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
