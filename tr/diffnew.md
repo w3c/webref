@@ -1,6 +1,6 @@
-% Diff between report from "January 06, 2020" and reference report from "December 02, 2019"
+% Diff between report from "January 13, 2020" and reference report from "December 02, 2019"
 % Reffy
-% January 06, 2020
+% January 13, 2020
 
 ## Accessible Rich Internet Applications (WAI-ARIA) 1.2
 
@@ -44,44 +44,9 @@
 - URL: [https://wicg.github.io/InputDeviceCapabilities/](https://wicg.github.io/InputDeviceCapabilities/)
 - Crawled version: [Initial URL](https://wicg.github.io/InputDeviceCapabilities/)
 - Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
-- Obsolete WebIDL constructs found: *DEL* false
+- Spec is OK: *INS* true / *DEL* false
+- No WebIDL definitions found: *INS* false / *DEL* true
 - Spec does not reference WebIDL normatively: *INS* false / *DEL* true
-
-
-## Media Playback Quality
-
-- URL: [https://w3c.github.io/media-playback-quality/](https://w3c.github.io/media-playback-quality/)
-- Crawled version: [Initial URL](https://w3c.github.io/media-playback-quality/)
-- Repository: [GitHub w3c/media-playback-quality](https://github.com/w3c/media-playback-quality)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-
-
-## Network Information API
-
-- URL: [https://wicg.github.io/netinfo/](https://wicg.github.io/netinfo/)
-- Crawled version: [Initial URL](https://wicg.github.io/netinfo/)
-- Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-
-
-## Web NFC
-
-- URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
-- Crawled version: [Initial URL](https://w3c.github.io/web-nfc/)
-- Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
-- Spec is OK: *INS* false / *DEL* true
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-
-
-## Web Share API
-
-- URL: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
-- Crawled version: [Initial URL](https://w3c.github.io/web-share/)
-- No WebIDL definitions found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
 
 
 ## WebRTC 1.0: Real-time Communication Between Browsers

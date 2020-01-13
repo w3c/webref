@@ -1,8 +1,8 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% January 06, 2020
+% January 13, 2020
 
-241 specifications were crawled in this report.
+244 specifications were crawled in this report.
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -42,18 +42,13 @@ Basically all specifications have normative dependencies on some other specifica
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
-- [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Input Events Level 2](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
-- [Media Playback Quality](https://w3c.github.io/media-playback-quality/)
-- [Network Information API](https://wicg.github.io/netinfo/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
-- [Web NFC](https://w3c.github.io/web-nfc/)
-- [Web Share API](https://w3c.github.io/web-share/)
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
-=> 19 specifications found
+=> 14 specifications found
 
 Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 
@@ -161,8 +156,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `CSSStyleRule` used in [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - `Console` used in [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - `DOMException` used in [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2019/CR-webrtc-20191213/)
-- `DOMHighResTimeStamp` used in [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/), [DOM Standard](https://dom.spec.whatwg.org/), [Element Timing API](https://wicg.github.io/element-timing/), [Event Timing API](https://wicg.github.io/event-timing/), [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20191114/), [Generic Sensor API](https://www.w3.org/TR/2019/CR-generic-sensor-20191212/), [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/), [HTML Standard](https://html.spec.whatwg.org/), [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/), [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/), [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/), [Layout Instability API](https://wicg.github.io/layout-instability/), [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/), [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/), [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/), [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/), [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/), [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2019/CR-webrtc-20191213/), [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20191010/)
-- `Date` used in [Reporting API 1](https://w3c.github.io/reporting/)
+- `DOMHighResTimeStamp` used in [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/), [DOM Standard](https://dom.spec.whatwg.org/), [Element Timing API](https://wicg.github.io/element-timing/), [Event Timing API](https://wicg.github.io/event-timing/), [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20191114/), [Generic Sensor API](https://www.w3.org/TR/2019/CR-generic-sensor-20191212/), [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/), [HTML Standard](https://html.spec.whatwg.org/), [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/), [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/), [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/), [Layout Instability API](https://wicg.github.io/layout-instability/), [Media Playback Quality](https://w3c.github.io/media-playback-quality/), [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/), [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/), [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/), [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/), [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/), [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2019/CR-webrtc-20191213/), [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20191010/)
 - `ElementCSSInlineStyle` used in [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - `KeyframeEffectReadOnly` used in [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - `Map` used in [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
@@ -186,7 +180,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `SupportedType` used in [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/), [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 
-=> 33 WebIDL names found
+=> 32 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -836,7 +830,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/) links to [`https://compat.spec.whatwg.org/`](https://compat.spec.whatwg.org/) but does not list it in its references
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/) links to [`https://domparsing.spec.whatwg.org/`](https://domparsing.spec.whatwg.org/) but does not list it in its references
 - [DOM Standard](https://dom.spec.whatwg.org/) links to [`https://w3c.github.io/deviceorientation/spec-source-orientation.html`](https://w3c.github.io/deviceorientation/spec-source-orientation.html) but does not list it in its references
-- [Event Timing API](https://wicg.github.io/event-timing/) links to [`https://w3c.github.io/pointerevents/extension.html`](https://w3c.github.io/pointerevents/extension.html) but does not list it in its references
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/) links to [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/) but does not list it in its references
 - [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190911/) links to [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/) links to:
@@ -993,7 +986,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 619 missing references for links found in 148 specifications
+=> 618 missing references for links found in 147 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
