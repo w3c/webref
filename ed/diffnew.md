@@ -115,7 +115,7 @@
 - URL: [https://www.w3.org/TR/css-overflow-3/](https://www.w3.org/TR/css-overflow-3/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-overflow-3/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *INS* https://www.w3.org/TR/css-text-decor-3/
+- Missing references for links: *INS* https://www.w3.org/TR/css-text-decor-3/ / *DEL* https://www.w3.org/TR/css3-break/
 
 
 ## CSS Text Decoration Module Level 4
