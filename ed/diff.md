@@ -616,6 +616,14 @@
     at Timer.processTimers (timers.js:223:10)
 
 
+## Identifiers for WebRTC's Statistics API
+
+- URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/)
+- Repository: [GitHub w3c/webrtc-stats](https://github.com/w3c/webrtc-stats)
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/2014/REC-html5-20141028/
+
+
 ## Identity for WebRTC 1.0
 
 - URL: [https://www.w3.org/TR/webrtc-identity/](https://www.w3.org/TR/webrtc-identity/)
