@@ -200,6 +200,14 @@
 - Unknown [Exposed] names used: *DEL* Window
 
 
+## CSS Backgrounds and Borders Module Level 3
+
+- URL: [https://www.w3.org/TR/css-backgrounds-3/](https://www.w3.org/TR/css-backgrounds-3/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-backgrounds/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-values/
+
+
 ## CSS Basic User Interface Module Level 4
 
 - URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
@@ -216,6 +224,22 @@
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Missing references for links: *INS* https://w3c.github.io/contentEditable/ / *DEL* https://w3c.github.io/editing/contentEditable.html
 - Inconsistent references for links: *DEL* https://www.w3.org/TR/html/
+
+
+## CSS Box Model Module Level 3
+
+- URL: [https://drafts.csswg.org/css-box-3/](https://drafts.csswg.org/css-box-3/)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-box-3/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Missing references for links: *DEL* https://www.w3.org/TR/css3-break/
+
+
+## CSS Cascading and Inheritance Level 4
+
+- URL: [https://www.w3.org/TR/css-cascade-4/](https://www.w3.org/TR/css-cascade-4/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-cascade/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Missing references for links: *DEL* https://www.w3.org/TR/css3-break/
 
 
 ## CSS Conditional Rules Module Level 3
@@ -240,6 +264,15 @@
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-device-adapt/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unknown [Exposed] names used: *DEL* Window
+
+
+## CSS Fill and Stroke Module Level 3
+
+- URL: [https://www.w3.org/TR/fill-stroke-3/](https://www.w3.org/TR/fill-stroke-3/)
+- Crawled version: [Editor's Draft](https://drafts.fxtf.org/fill-stroke/)
+- Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
+- Missing references for links: *DEL* https://www.w3.org/TR/css3-break/
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-values/
 
 
 ## CSS Font Loading Module Level 3
@@ -295,7 +328,7 @@
 - URL: [https://www.w3.org/TR/css-overflow-3/](https://www.w3.org/TR/css-overflow-3/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-overflow-3/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *INS* https://www.w3.org/TR/css-text-decor-3/
+- Missing references for links: *INS* https://www.w3.org/TR/css-text-decor-3/ / *DEL* https://www.w3.org/TR/css3-break/
 
 
 ## CSS Properties and Values API Level 1
@@ -303,6 +336,7 @@
 - URL: [https://www.w3.org/TR/css-properties-values-api-1/](https://www.w3.org/TR/css-properties-values-api-1/)
 - Crawled version: [Editor's Draft](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Unknown [Exposed] names used: *DEL* Window
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-values/
 
 
 ## CSS Pseudo-Elements Module Level 4
@@ -321,6 +355,14 @@
 - Unknown [Exposed] names used: *DEL* Window
 
 
+## CSS Scroll Snap Module Level 1
+
+- URL: [https://www.w3.org/TR/css-scroll-snap-1/](https://www.w3.org/TR/css-scroll-snap-1/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-scroll-snap-1/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-values/
+
+
 ## CSS Spatial Navigation Level 1
 
 - URL: [https://www.w3.org/TR/css-nav-1/](https://www.w3.org/TR/css-nav-1/)
@@ -328,6 +370,15 @@
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* Window
+
+
+## CSS Text Decoration Module Level 3
+
+- URL: [https://www.w3.org/TR/css-text-decor-3/](https://www.w3.org/TR/css-text-decor-3/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-text-decor-3/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Missing references for links: *DEL* https://www.w3.org/TR/css3-break/
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-values/
 
 
 ## CSS Text Decoration Module Level 4
