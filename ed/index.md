@@ -4767,7 +4767,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (6 January 2020)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (14 January 2020)
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
