@@ -736,8 +736,11 @@
 - URL: [https://w3c.github.io/media-capabilities/](https://w3c.github.io/media-capabilities/)
 - Crawled version: [Initial URL](https://w3c.github.io/media-capabilities/)
 - Repository: [GitHub w3c/media-capabilities](https://github.com/w3c/media-capabilities)
+- Spec is OK: *INS* true / *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* Navigator, WorkerNavigator
+- Missing references for links: *DEL* https://www.w3.org/TR/webrtc/
+- Inconsistent references for links: *DEL* https://w3c.github.io/media-source/, https://www.w3.org/TR/dom/
 
 
 ## Media Capture and Streams

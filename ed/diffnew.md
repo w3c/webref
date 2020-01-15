@@ -192,6 +192,14 @@
 - Inconsistent references for links: *INS* https://w3c.github.io/uievents/
 
 
+## Media Capabilities
+
+- URL: [https://w3c.github.io/media-capabilities/](https://w3c.github.io/media-capabilities/)
+- Crawled version: [Initial URL](https://w3c.github.io/media-capabilities/)
+- Repository: [GitHub w3c/media-capabilities](https://github.com/w3c/media-capabilities)
+- Spec is OK: *INS* true / *DEL* false
+
+
 ## Media Capture and Streams
 
 - URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
