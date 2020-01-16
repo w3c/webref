@@ -19,6 +19,14 @@
 - Unknown [Exposed] names used: *DEL* Window
 
 
+## Accessible Rich Internet Applications (WAI-ARIA) 1.2
+
+- URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
+- Crawled version: [Editor's Draft](https://rawgit.com/w3c/aria/master/)
+- Repository: [GitHub w3c/aria](https://github.com/w3c/aria)
+- Missing references for links: *DEL* https://www.w3.org/TR/di-gloss/, https://www.w3.org/TR/xhtml-role/
+
+
 ## Ambient Light Sensor
 
 - URL: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
