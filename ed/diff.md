@@ -637,8 +637,6 @@
 - URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/)
 - Repository: [GitHub w3c/webrtc-stats](https://github.com/w3c/webrtc-stats)
-- Unknown WebIDL names used: *DEL* RTCPriorityType
-- Missing references for WebIDL names: *INS* RTCPriorityType
 - Inconsistent references for links: *DEL* https://www.w3.org/TR/2014/REC-html5-20141028/
 
 
@@ -852,6 +850,18 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/orientation-sensor/)
 - Repository: [GitHub w3c/orientation-sensor](https://github.com/w3c/orientation-sensor)
 - Unknown [Exposed] names used: *DEL* Window
+
+
+## Page not found · GitHub Pages
+
+- URL: [https://www.w3.org/TR/webrtc-dscp/](https://www.w3.org/TR/webrtc-dscp/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-dscp-exp/)
+- Repository: [GitHub w3c/webrtc-dscp-exp](https://github.com/w3c/webrtc-dscp-exp)
+- Spec title: *INS* Page not found · GitHub Pages / *DEL* WebRTC DSCP Control API
+- No normative references found: *INS* true / *DEL* false
+- No WebIDL definitions found: *INS* true / *DEL* false
+- Unknown WebIDL names used: *DEL* RTCPriorityType
+- Missing references for links: *DEL* https://w3c.github.io/webrtc-pc/
 
 
 ## Page Visibility Level 2
@@ -1262,15 +1272,6 @@
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler
 - Inconsistent references for links: *INS* https://w3c.github.io/webrtc-stats/
-
-
-## WebRTC DSCP Control API
-
-- URL: [https://www.w3.org/TR/webrtc-dscp/](https://www.w3.org/TR/webrtc-dscp/)
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-dscp-exp/)
-- Repository: [GitHub w3c/webrtc-dscp-exp](https://github.com/w3c/webrtc-dscp-exp)
-- Unknown WebIDL names used: *DEL* RTCPriorityType
-- Missing references for links: *DEL* https://w3c.github.io/webrtc-pc/
 
 
 ## WebUSB API

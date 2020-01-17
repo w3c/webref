@@ -5794,7 +5794,7 @@ Informative references to this spec from:
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 
-## Identifiers for WebRTC's Statistics API {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## Identifiers for WebRTC's Statistics API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -5807,8 +5807,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for WebIDL names: 
-     * `RTCPriorityType` defined in [WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)
+- Unknown WebIDL names used: `RTCPriorityType`
 - Missing references for links: 
      * [`https://w3c.github.io/webrtc-pc/`](https://w3c.github.io/webrtc-pc/)
 
@@ -6679,6 +6678,29 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+
+No informative reference to this spec from other specs.
+
+
+## Page not found · GitHub Pages {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-dscp-exp/) (17 January 2020)
+- Editor's Draft: [https://w3c.github.io/webrtc-dscp-exp/](https://w3c.github.io/webrtc-dscp-exp/)
+- Latest published version: [https://www.w3.org/TR/webrtc-dscp/](https://www.w3.org/TR/webrtc-dscp/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-webrtc-dscp-20180703/)
+- Repository: [GitHub w3c/webrtc-dscp-exp](https://github.com/w3c/webrtc-dscp-exp)
+- Shortname: webrtc-dscp
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- No WebIDL definitions found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -8175,7 +8197,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (7 January 2020)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (17 January 2020)
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
@@ -8758,38 +8780,11 @@ Normative references to this spec from:
 - [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)
 
 Informative references to this spec from:
 
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
-
-
-## WebRTC DSCP Control API {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
-
-### Spec info {.info}
-
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-dscp-exp/) (16 January 2020)
-- Editor's Draft: [https://w3c.github.io/webrtc-dscp-exp/](https://w3c.github.io/webrtc-dscp-exp/)
-- Latest published version: [https://www.w3.org/TR/webrtc-dscp/](https://www.w3.org/TR/webrtc-dscp/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-webrtc-dscp-20180703/)
-- Repository: [GitHub w3c/webrtc-dscp-exp](https://github.com/w3c/webrtc-dscp-exp)
-- Shortname: webrtc-dscp
-
-### Potential issue(s) {.anomalies}
-
-- Spec uses WebIDL but does not reference it normatively
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
-
-No informative reference to this spec from other specs.
 
 
 ## WebUSB API {data-spec=true data-anomaly=true data-inconsistentRef=true}
