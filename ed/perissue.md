@@ -14,18 +14,20 @@
 ## Specifications without normative dependencies
 
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
+- [Page not found · GitHub Pages](https://w3c.github.io/webrtc-dscp-exp/)
 
-=> 1 specification found
+=> 2 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
 
 ## Specifications without WebIDL definitions
 
+- [Page not found · GitHub Pages](https://w3c.github.io/webrtc-dscp-exp/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 
-=> 2 specifications found
+=> 3 specifications found
 
 Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 
@@ -97,10 +99,9 @@ Reffy was not expecting to find CSS definitions in the specifications listed her
 
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
-- [WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)
 - [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
 
-=> 4 specifications found
+=> 3 specifications found
 
 
 
@@ -118,11 +119,12 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `CSSOMString` used in [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/), [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - `KeyframeEffectReadOnly` used in [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - `PermissionName` used in [Permissions](https://w3c.github.io/permissions/)
+- `RTCPriorityType` used in [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - `ReadableStream` used in [CSS Parser API](https://wicg.github.io/CSS-Parser-API/), [Encoding Standard](https://encoding.spec.whatwg.org/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://w3c.github.io/FileAPI/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/)
 - `WritableStream` used in [Encoding Standard](https://encoding.spec.whatwg.org/)
 
-=> 6 WebIDL names found
+=> 7 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -161,7 +163,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/) uses `Document` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/) uses `ReportBody` but does not reference [Reporting API 1](https://w3c.github.io/reporting/)
 - [HTML Standard](https://html.spec.whatwg.org/) uses `WebGL2RenderingContext` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/) uses `RTCPriorityType` but does not reference [WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://w3c.github.io/hr-time/)
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/) uses:
     * `MediaStream` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
@@ -201,7 +202,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLContextAttributes` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 44 missing references for IDL definitions found in 18 specifications
+=> 43 missing references for IDL definitions found in 17 specifications
 
 
 ## Missing references based on document links
