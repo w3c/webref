@@ -3553,7 +3553,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-scroll-anchoring-1/) (17 January 2020)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-scroll-anchoring-1/) (18 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7212,7 +7212,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/resize-observer/) (5 December 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/resize-observer/) (18 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
