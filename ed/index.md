@@ -5127,6 +5127,7 @@ Normative references to this spec from:
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 - [Wake Lock API](https://w3c.github.io/wake-lock/)
@@ -5143,7 +5144,6 @@ Informative references to this spec from:
 
 - [Payment Request API](https://w3c.github.io/payment-request/)
 - [Push API](https://w3c.github.io/push-api/)
-- [Server Timing](https://w3c.github.io/server-timing/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
@@ -5556,6 +5556,7 @@ Normative references to this spec from:
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 
@@ -5727,6 +5728,7 @@ Normative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -7624,20 +7626,21 @@ Informative references to this spec from:
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
 
 
-## Server Timing {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+## Server Timing {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/) (05 March 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/) (20 January 2020)
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
 - Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
 - Shortname: server-timing
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Missing references for WebIDL names: 
+     * `DOMHighResTimeStamp` defined in [High Resolution Time](https://w3c.github.io/hr-time/)
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
 - Inconsistent references for links: 
@@ -8197,7 +8200,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (17 January 2020)
+- Crawled version: [Editor's Draft](https://webaudio.github.io/web-audio-api/) (20 January 2020)
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webaudio-20180918/)

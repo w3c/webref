@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define CSS and WebIDL content",
   "description": "The crawl includes specifications published by W3C Working Groups, W3C Community Groups and WHATWG, that define CSS and/or WebIDL content. The specifications are at various stages of maturity.",
-  "date": "2020-01-20T06:38:16.650Z",
+  "date": "2020-01-20T12:38:45.304Z",
   "stats": {
     "crawled": 244,
     "errors": 0,
@@ -14700,6 +14700,11 @@
               "crawled": "https://svgwg.org/svg2-draft/"
             },
             {
+              "url": "https://www.w3.org/TR/server-timing/",
+              "title": "Server Timing",
+              "crawled": "https://w3c.github.io/server-timing/"
+            },
+            {
               "url": "https://w3c.github.io/ServiceWorker/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
@@ -14765,11 +14770,6 @@
               "url": "https://www.w3.org/TR/push-api/",
               "title": "Push API",
               "crawled": "https://w3c.github.io/push-api/"
-            },
-            {
-              "url": "https://www.w3.org/TR/server-timing/",
-              "title": "Server Timing",
-              "crawled": "https://w3c.github.io/server-timing/"
             },
             {
               "url": "https://streams.spec.whatwg.org/",
@@ -16484,6 +16484,11 @@
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://drafts.csswg.org/selectors/"
+            },
+            {
+              "url": "https://www.w3.org/TR/server-timing/",
+              "title": "Server Timing",
+              "crawled": "https://w3c.github.io/server-timing/"
             },
             {
               "url": "https://w3c.github.io/ServiceWorker/",
@@ -21152,10 +21157,10 @@
     {
       "title": "Server Timing",
       "shortname": "server-timing",
-      "date": "05 March 2019",
+      "date": "20 January 2020",
       "url": "https://www.w3.org/TR/server-timing/",
       "latest": "https://www.w3.org/TR/server-timing/",
-      "datedUrl": "https://www.w3.org/TR/2019/WD-server-timing-20190307/",
+      "datedUrl": "https://www.w3.org/TR/2020/WD-server-timing-20200120/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/server-timing/",
       "crawled": "https://w3c.github.io/server-timing/",
@@ -21163,7 +21168,7 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "noIdlContent": true,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
@@ -21172,7 +21177,18 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "DOMHighResTimeStamp",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/hr-time-3/",
+                "title": "High Resolution Time",
+                "crawled": "https://w3c.github.io/hr-time/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/webappsec-secure-contexts/"
         ],
@@ -22481,7 +22497,7 @@
     {
       "title": "Web Audio API",
       "shortname": "webaudio",
-      "date": "17 January 2020",
+      "date": "20 January 2020",
       "url": "https://www.w3.org/TR/webaudio/",
       "latest": "https://www.w3.org/TR/webaudio/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-webaudio-20180918/",

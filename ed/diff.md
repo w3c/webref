@@ -1038,6 +1038,15 @@
 - Unknown WebIDL names used: *DEL* EventHandler, GlobalEventHandlers, Window
 
 
+## Server Timing
+
+- URL: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/)
+- Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Missing references for WebIDL names: *INS* DOMHighResTimeStamp
+
+
 ## Service Workers Nightly
 
 - URL: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
