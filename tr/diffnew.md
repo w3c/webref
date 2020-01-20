@@ -1,6 +1,6 @@
-% Diff between report from "January 13, 2020" and reference report from "December 02, 2019"
+% Diff between report from "January 20, 2020" and reference report from "December 02, 2019"
 % Reffy
-% January 13, 2020
+% January 20, 2020
 
 ## Accessible Rich Internet Applications (WAI-ARIA) 1.2
 
@@ -33,10 +33,12 @@
 ## Identifiers for WebRTC's Statistics API
 
 - URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/)
 - Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
 - Repository: [GitHub w3c/webrtc-stats](https://github.com/w3c/webrtc-stats)
-- Unknown WebIDL names used: *INS* RTCPriorityType
+- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+- Unknown WebIDL names used: *INS* RTCPriorityType / *DEL* RTCRTPStreamStats
+- Missing references for links: *INS* https://w3c.github.io/webrtc-pc/
 
 
 ## Input Device Capabilities
@@ -47,6 +49,24 @@
 - Spec is OK: *INS* true / *DEL* false
 - No WebIDL definitions found: *INS* false / *DEL* true
 - Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+
+
+## Media Capabilities
+
+- URL: [https://w3c.github.io/media-capabilities/](https://w3c.github.io/media-capabilities/)
+- Crawled version: [Initial URL](https://w3c.github.io/media-capabilities/)
+- Repository: [GitHub w3c/media-capabilities](https://github.com/w3c/media-capabilities)
+- Spec is OK: *INS* true / *DEL* false
+
+
+## Server Timing
+
+- URL: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
+- Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
+- Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
 
 
 ## WebRTC 1.0: Real-time Communication Between Browsers

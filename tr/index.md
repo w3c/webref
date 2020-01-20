@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% January 13, 2020
+% January 20, 2020
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -45,7 +45,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (13 January 2020)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (20 January 2020)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -407,6 +407,7 @@ Normative references to this spec from:
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/2018/WD-css-break-4-20181218/)
+- [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
@@ -426,8 +427,10 @@ Normative references to this spec from:
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
 - [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Round Display Level 1](https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Scrollbars Module Level 1](https://www.w3.org/TR/2018/WD-css-scrollbars-1-20180925/)
+- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Style Attributes](http://www.w3.org/TR/2013/REC-css-style-attr-20131107/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
@@ -451,6 +454,7 @@ Normative references to this spec from:
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
 - [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
+- [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selectors Level 3](https://www.w3.org/TR/2018/REC-selectors-3-20181106/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
@@ -1219,7 +1223,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-box-3/) (9 January 2020)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-box-3/) (16 January 2020)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: no shortname
 
@@ -1234,7 +1238,6 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css-position/`](https://www.w3.org/TR/css-position/)
      * [`https://www.w3.org/TR/css-tables/`](https://www.w3.org/TR/css-tables/)
      * [`https://www.w3.org/TR/css-logical-1/`](https://www.w3.org/TR/css-logical-1/)
-     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/)
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -1248,7 +1251,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-sizing-4/) (11 October 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-sizing-4/) (16 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1914,7 +1917,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-exclusions-1/) (5 January 2020)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-exclusions-1/) (16 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -2337,7 +2340,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-gcpm-4/) (17 September 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-gcpm-4/) (16 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -2901,7 +2904,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-size-adjust-1/) (29 October 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-size-adjust-1/) (16 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3712,7 +3715,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-scroll-anchoring-1/) (10 May 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-scroll-anchoring-1/) (18 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3862,7 +3865,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-shapes-2/) (11 January 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-shapes-2/) (16 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4273,7 +4276,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-transforms-2/) (22 November 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-transforms-2/) (16 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4488,12 +4491,14 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Easing Functions Level 1](https://www.w3.org/TR/2019/CR-css-easing-1-20190430/)
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
+- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
 - [CSS Fonts Module Level 3](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/2018/WD-css-break-4-20181218/)
+- [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
 - [CSS Generated Content Module Level 3](https://www.w3.org/TR/2019/WD-css-content-3-20190802/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
@@ -4515,6 +4520,7 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2019/WD-css-properties-values-api-1-20191025/)
 - [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Round Display Level 1](https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring-1/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Scrollbars Module Level 1](https://www.w3.org/TR/2018/WD-css-scrollbars-1-20180925/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
@@ -4936,7 +4942,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (6 January 2020)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (16 January 2020)
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
@@ -5226,7 +5232,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (28 December 2019)
+- Crawled version: [Living Standard](https://fetch.spec.whatwg.org/) (16 January 2020)
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -5262,6 +5268,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
@@ -5276,7 +5283,6 @@ Informative references to this spec from:
 
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20191212/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20191003/)
-- [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
@@ -5670,7 +5676,7 @@ Normative references to this spec from:
 - [Generic Sensor API](https://www.w3.org/TR/2019/CR-generic-sensor-20191212/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [HTML Standard](https://html.spec.whatwg.org/)
-- [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
+- [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
@@ -5717,7 +5723,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (9 January 2020)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (16 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5802,7 +5808,6 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/2018/CR-geometry-1-20181204/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
-- [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
@@ -5843,6 +5848,7 @@ Normative references to this spec from:
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190820/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -5911,29 +5917,28 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/)
 - [Selectors Level 3](https://www.w3.org/TR/2018/REC-selectors-3-20181106/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
-- [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
 
-## Identifiers for WebRTC's Statistics API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-inconsistentRef=true}
+## Identifiers for WebRTC's Statistics API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/) (03 July 2018)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/) (14 January 2020)
 - Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
 - Latest published version: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/)
 - Repository: [GitHub w3c/webrtc-stats](https://github.com/w3c/webrtc-stats)
 - Shortname: webrtc-stats
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `RTCPriorityType`, `RTCRTPStreamStats`
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `RTCPriorityType`
+- Missing references for links: 
+     * [`https://w3c.github.io/webrtc-pc/`](https://w3c.github.io/webrtc-pc/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6243,21 +6248,17 @@ Informative references to this spec from:
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 
 
-## Media Capabilities {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Media Capabilities {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/media-capabilities/) (6 November 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/media-capabilities/) (15 January 2020)
 - Repository: [GitHub w3c/media-capabilities](https://github.com/w3c/media-capabilities)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://www.w3.org/TR/webrtc/`](https://www.w3.org/TR/webrtc/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/media-source/`](https://w3c.github.io/media-source/), related reference "MEDIA-SOURCE" uses URL [`https://www.w3.org/TR/media-source/`](https://www.w3.org/TR/media-source/)
-     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6288,7 +6289,7 @@ Normative references to this spec from:
 - [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [HTML Standard](https://html.spec.whatwg.org/)
-- [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
+- [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
@@ -6364,7 +6365,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/media-playback-quality/) (09 December 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/media-playback-quality/) (18 January 2020)
 - Repository: [GitHub w3c/media-playback-quality](https://github.com/w3c/media-playback-quality)
 - Shortname: no shortname
 
@@ -6695,7 +6696,7 @@ Normative references to this spec from:
 - [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20191114/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
-- [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 
 Informative references to this spec from:
@@ -6991,7 +6992,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/)
-- [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
 
 
 ## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -7047,7 +7048,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/picture-in-picture/) (23 September 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/picture-in-picture/) (14 January 2020)
 - Repository: [GitHub w3c/picture-in-picture](https://github.com/w3c/picture-in-picture)
 - Shortname: no shortname
 
@@ -7319,7 +7320,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/resize-observer/) (5 December 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/resize-observer/) (18 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7360,7 +7361,7 @@ Normative references to this spec from:
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/)
-- [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
 
 Informative references to this spec from:
 
@@ -7397,7 +7398,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/scroll-animations-1/) (18 September 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/scroll-animations-1/) (16 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7585,25 +7586,24 @@ Informative references to this spec from:
 - [CSS Images Module Level 3](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
 
 
-## Server Timing {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+## Server Timing {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-server-timing-20190307/) (07 March 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2020/WD-server-timing-20200120/) (20 January 2020)
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
 - Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
 - Shortname: server-timing
 
 ### Potential issue(s) {.anomalies}
 
-- No WebIDL definitions found
+- Unknown WebIDL names used: `DOMHighResTimeStamp`
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/), related reference "RESOURCE-TIMING-2" uses URL [`https://www.w3.org/TR/resource-timing-2/`](https://www.w3.org/TR/resource-timing-2/)
-     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8459,7 +8459,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (13 January 2020)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (20 January 2020)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8486,7 +8486,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (13 January 2020)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (20 January 2020)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8594,6 +8594,7 @@ Normative references to this spec from:
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
@@ -8635,7 +8636,7 @@ Normative references to this spec from:
 - [Screen Capture](https://www.w3.org/TR/2019/WD-screen-capture-20191119/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190820/)
-- [Server Timing](https://www.w3.org/TR/2019/WD-server-timing-20190307/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -8673,7 +8674,6 @@ Informative references to this spec from:
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
-- [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
@@ -8702,7 +8702,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2018/CR-webrtc-stats-20180703/)
+- [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
 - [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
@@ -8711,6 +8711,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Screen Capture](https://www.w3.org/TR/2019/WD-screen-capture-20191119/)
@@ -8798,7 +8799,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/) (22 October 2019)
+- Crawled version: [Initial URL](https://immersive-web.github.io/webxr-ar-module/) (15 January 2020)
 - Repository: [GitHub immersive-web/webxr-ar-module](https://github.com/immersive-web/webxr-ar-module)
 - Shortname: no shortname
 
