@@ -224,6 +224,14 @@
 - Spec is OK: *INS* true / *DEL* false
 
 
+## MIME Sniffing Standard
+
+- URL: [https://mimesniff.spec.whatwg.org/](https://mimesniff.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://mimesniff.spec.whatwg.org/)
+- Repository: [GitHub whatwg/mimesniff](https://github.com/whatwg/mimesniff)
+- This specification was not in the reference crawl report.
+
+
 ## Notifications API Standard
 
 - URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
@@ -264,6 +272,14 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/pointerlock/)
 - Repository: [GitHub w3c/pointerlock](https://github.com/w3c/pointerlock)
 - Spec is OK: *INS* true / *DEL* false
+
+
+## Quirks Mode Standard
+
+- URL: [https://quirks.spec.whatwg.org/](https://quirks.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://quirks.spec.whatwg.org/)
+- Repository: [GitHub whatwg/quirks](https://github.com/whatwg/quirks)
+- This specification was not in the reference crawl report.
 
 
 ## Resource Timing Level 2

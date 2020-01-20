@@ -817,6 +817,14 @@
 - Unknown WebIDL names used: *DEL* EventHandler
 
 
+## MIME Sniffing Standard
+
+- URL: [https://mimesniff.spec.whatwg.org/](https://mimesniff.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://mimesniff.spec.whatwg.org/)
+- Repository: [GitHub whatwg/mimesniff](https://github.com/whatwg/mimesniff)
+- This specification was not in the reference crawl report.
+
+
 ## Navigation Timing Level 2
 
 - URL: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
@@ -968,6 +976,14 @@
 - Repository: [GitHub w3c/push-api](https://github.com/w3c/push-api)
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler
+
+
+## Quirks Mode Standard
+
+- URL: [https://quirks.spec.whatwg.org/](https://quirks.spec.whatwg.org/)
+- Crawled version: [Living Standard](https://quirks.spec.whatwg.org/)
+- Repository: [GitHub whatwg/quirks](https://github.com/whatwg/quirks)
+- This specification was not in the reference crawl report.
 
 
 ## Referrer Policy
