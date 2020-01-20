@@ -274,6 +274,15 @@
 - Spec is OK: *INS* true / *DEL* false
 
 
+## Server Timing
+
+- URL: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/server-timing/)
+- Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
+- No WebIDL definitions found: *INS* false / *DEL* true
+- Missing references for WebIDL names: *INS* DOMHighResTimeStamp
+
+
 ## Subresource Integrity
 
 - URL: [https://www.w3.org/TR/SRI/](https://www.w3.org/TR/SRI/)
