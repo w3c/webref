@@ -19,6 +19,14 @@
 - Unknown [Exposed] names used: *DEL* Window
 
 
+## Accessible Name and Description Computation 1.2
+
+- URL: [https://w3c.github.io/accname/](https://w3c.github.io/accname/)
+- Crawled version: [Initial URL](https://w3c.github.io/accname/)
+- Repository: [GitHub w3c/accname](https://github.com/w3c/accname)
+- This specification was not in the reference crawl report.
+
+
 ## Accessible Rich Internet Applications (WAI-ARIA) 1.2
 
 - URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
@@ -53,6 +61,14 @@
 - Unknown WebIDL names used: *DEL* EventHandler
 
 
+## Badging API
+
+- URL: [https://wicg.github.io/badging/](https://wicg.github.io/badging/)
+- Crawled version: [Initial URL](https://wicg.github.io/badging/)
+- Repository: [GitHub wicg/badging](https://github.com/wicg/badging)
+- This specification was not in the reference crawl report.
+
+
 ## Battery Status API
 
 - URL: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
@@ -70,6 +86,14 @@
 - Repository: [GitHub w3c/beacon](https://github.com/w3c/beacon)
 - Spec is OK: *INS* true / *DEL* false
 - Unknown WebIDL names used: *DEL* Navigator
+
+
+## Clear Site Data
+
+- URL: [https://www.w3.org/TR/clear-site-data/](https://www.w3.org/TR/clear-site-data/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-clear-site-data/)
+- Repository: [GitHub w3c/webappsec-clear-site-data](https://github.com/w3c/webappsec-clear-site-data)
+- This specification was not in the reference crawl report.
 
 
 ## Clipboard API and events
@@ -166,6 +190,14 @@
 - Spec is OK: *INS* true / *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* Window
+
+
+## Core Accessibility API Mappings 1.2
+
+- URL: [https://w3c.github.io/core-aam/](https://w3c.github.io/core-aam/)
+- Crawled version: [Initial URL](https://w3c.github.io/core-aam/)
+- Repository: [GitHub w3c/aria](https://github.com/w3c/aria)
+- This specification was not in the reference crawl report.
 
 
 ## CORS and RFC1918
@@ -302,15 +334,6 @@
 
 ## CSS Fonts Module Level 4
 
-- URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Unknown [Exposed] names used: *DEL* Window
-- WebIDL names also defined elsewhere: *INS* CSSFontFeatureValuesRule, CSSFontFeatureValuesMap, CSSFontPaletteValuesRule
-
-
-## CSS Fonts Module Level 4
-
 - URL: [https://www.w3.org/TR/css-fonts-3/](https://www.w3.org/TR/css-fonts-3/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
@@ -320,6 +343,15 @@
 - Missing references for WebIDL names: *DEL* CSSRule, CSSStyleDeclaration
 - Missing references for links: *INS* https://fetch.spec.whatwg.org/ / *DEL* https://www.w3.org/TR/2002/WD-css3-fonts-20020802/, https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/, https://www.w3.org/TR/2005/REC-charmod-20050215/, https://www.w3.org/TR/2018/WD-charmod-norm-20180420/, https://www.w3.org/TR/2017/WD-css-text-3-20170822/, https://www.w3.org/TR/2013/CR-css3-conditional-20130404/
 - Inconsistent references for links: *INS* https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/, https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/ / *DEL* https://www.w3.org/TR/css3-values/
+
+
+## CSS Fonts Module Level 4
+
+- URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-fonts-4/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Unknown [Exposed] names used: *DEL* Window
+- WebIDL names also defined elsewhere: *INS* CSSFontFeatureValuesRule, CSSFontFeatureValuesMap, CSSFontPaletteValuesRule
 
 
 ## CSS Masking Module Level 1
@@ -445,6 +477,14 @@
 - Unknown WebIDL names used: *DEL* EventHandler, HTMLElement, HTMLImageElement, Window
 
 
+## Device Memory 1
+
+- URL: [https://www.w3.org/TR/device-memory-1/](https://www.w3.org/TR/device-memory-1/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/device-memory/)
+- Repository: [GitHub w3c/device-memory](https://github.com/w3c/device-memory)
+- This specification was not in the reference crawl report.
+
+
 ## DeviceOrientation Event Specification
 
 - URL: [https://www.w3.org/TR/orientation-event/](https://www.w3.org/TR/orientation-event/)
@@ -541,6 +581,14 @@
 - Unknown WebIDL names used: *DEL* EventHandler
 
 
+## Frame Timing
+
+- URL: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
+- Crawled version: [Initial URL](https://wicg.github.io/frame-timing/)
+- Repository: [GitHub wicg/frame-timing](https://github.com/wicg/frame-timing)
+- This specification was not in the reference crawl report.
+
+
 ## Fullscreen API Standard
 
 - URL: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
@@ -556,6 +604,13 @@
 - Repository: [GitHub w3c/gamepad](https://github.com/w3c/gamepad)
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* Navigator
+
+
+## Gamepad Extensions
+
+- URL: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
+- Crawled version: [Initial URL](https://w3c.github.io/gamepad/extensions.html)
+- This specification was not in the reference crawl report.
 
 
 ## Generic Sensor API
@@ -687,6 +742,14 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/IntersectionObserver/)
 - Repository: [GitHub w3c/IntersectionObserver](https://github.com/w3c/IntersectionObserver)
 - Unknown [Exposed] names used: *DEL* Window
+
+
+## JS Self-Profiling API
+
+- URL: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
+- Crawled version: [Initial URL](https://wicg.github.io/js-self-profiling/)
+- Repository: [GitHub wicg/js-self-profiling](https://github.com/wicg/js-self-profiling)
+- This specification was not in the reference crawl report.
 
 
 ## Keyboard Lock
@@ -825,6 +888,14 @@
 - This specification was not in the reference crawl report.
 
 
+## Native File System
+
+- URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
+- Crawled version: [Initial URL](https://wicg.github.io/native-file-system/)
+- Repository: [GitHub wicg/native-file-system](https://github.com/wicg/native-file-system)
+- This specification was not in the reference crawl report.
+
+
 ## Navigation Timing Level 2
 
 - URL: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
@@ -840,6 +911,13 @@
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler
+
+
+## network-error-logging
+
+- URL: [https://www.w3.org/TR/network-error-logging/](https://www.w3.org/TR/network-error-logging/)
+- Crawled version: [Initial URL](https://www.w3.org/TR/network-error-logging/)
+- This specification was not in the reference crawl report.
 
 
 ## Notifications API Standard
@@ -858,6 +936,22 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/orientation-sensor/)
 - Repository: [GitHub w3c/orientation-sensor](https://github.com/w3c/orientation-sensor)
 - Unknown [Exposed] names used: *DEL* Window
+
+
+## Origin Policy
+
+- URL: [https://wicg.github.io/origin-policy/](https://wicg.github.io/origin-policy/)
+- Crawled version: [Initial URL](https://wicg.github.io/origin-policy/)
+- Repository: [GitHub wicg/origin-policy](https://github.com/wicg/origin-policy)
+- This specification was not in the reference crawl report.
+
+
+## Page Lifecycle
+
+- URL: [https://wicg.github.io/page-lifecycle/](https://wicg.github.io/page-lifecycle/)
+- Crawled version: [Initial URL](https://wicg.github.io/page-lifecycle/)
+- Repository: [GitHub wicg/page-lifecycle](https://github.com/wicg/page-lifecycle)
+- This specification was not in the reference crawl report.
 
 
 ## Page not found · GitHub Pages
@@ -896,6 +990,22 @@
 - Repository: [GitHub w3c/payment-handler](https://github.com/w3c/payment-handler)
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler
+
+
+## Payment Method Identifiers
+
+- URL: [https://www.w3.org/TR/payment-method-id/](https://www.w3.org/TR/payment-method-id/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-id/)
+- Repository: [GitHub w3c/payment-method-id](https://github.com/w3c/payment-method-id)
+- This specification was not in the reference crawl report.
+
+
+## Payment Method Manifest
+
+- URL: [https://www.w3.org/TR/payment-method-manifest/](https://www.w3.org/TR/payment-method-manifest/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-method-manifest/)
+- Repository: [GitHub w3c/payment-method-manifest](https://github.com/w3c/payment-method-manifest)
+- This specification was not in the reference crawl report.
 
 
 ## Payment Request API
@@ -961,6 +1071,14 @@
 - Unknown WebIDL names used: *DEL* BinaryType, EventHandler, Navigator
 
 
+## Priority Hints
+
+- URL: [https://wicg.github.io/priority-hints/](https://wicg.github.io/priority-hints/)
+- Crawled version: [Initial URL](https://wicg.github.io/priority-hints/)
+- Repository: [GitHub wicg/priority-hints](https://github.com/wicg/priority-hints)
+- This specification was not in the reference crawl report.
+
+
 ## Proximity Sensor
 
 - URL: [https://www.w3.org/TR/proximity/](https://www.w3.org/TR/proximity/)
@@ -994,6 +1112,14 @@
 - Inconsistent references for links: *DEL* https://www.w3.org/TR/2010/REC-wsc-ui-20100812/
 
 
+## Relinquishing Permissions
+
+- URL: [https://wicg.github.io/permissions-revoke/](https://wicg.github.io/permissions-revoke/)
+- Crawled version: [Initial URL](https://wicg.github.io/permissions-revoke/)
+- Repository: [GitHub wicg/permissions-revoke](https://github.com/wicg/permissions-revoke)
+- This specification was not in the reference crawl report.
+
+
 ## Remote Playback API
 
 - URL: [https://www.w3.org/TR/remote-playback/](https://www.w3.org/TR/remote-playback/)
@@ -1012,6 +1138,22 @@
 - Unknown WebIDL names used: *DEL* Date
 
 
+## Requesting Permissions
+
+- URL: [https://wicg.github.io/permissions-request/](https://wicg.github.io/permissions-request/)
+- Crawled version: [Initial URL](https://wicg.github.io/permissions-request/)
+- Repository: [GitHub wicg/permissions-request](https://github.com/wicg/permissions-request)
+- This specification was not in the reference crawl report.
+
+
+## Resource Hints
+
+- URL: [https://www.w3.org/TR/resource-hints/](https://www.w3.org/TR/resource-hints/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/resource-hints/)
+- Repository: [GitHub w3c/resource-hints](https://github.com/w3c/resource-hints)
+- This specification was not in the reference crawl report.
+
+
 ## Resource Timing Level 2
 
 - URL: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
@@ -1028,6 +1170,14 @@
 - Crawled version: [Editor's Draft](https://svgwg.org/svg2-draft/)
 - Repository: [GitHub w3c/svgwg](https://github.com/w3c/svgwg)
 - Unknown [Exposed] names used: *DEL* Window
+
+
+## Scalable Video Coding (SVC) Extension for WebRTC
+
+- URL: [https://www.w3.org/TR/webrtc-svc/](https://www.w3.org/TR/webrtc-svc/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-svc/)
+- Repository: [GitHub w3c/webrtc-svc](https://github.com/w3c/webrtc-svc)
+- This specification was not in the reference crawl report.
 
 
 ## Scroll-linked Animations
@@ -1092,6 +1242,13 @@
 - Inconsistent references for links: *DEL* https://www.w3.org/TR/html5/
 
 
+## SVG Animations
+
+- URL: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
+- Crawled version: [Initial URL](https://svgwg.org/specs/animations/)
+- This specification was not in the reference crawl report.
+
+
 ## The Screen Orientation API
 
 - URL: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
@@ -1100,6 +1257,14 @@
 - Spec is OK: *INS* true / *DEL* false
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler
+
+
+## Timing Entry Names Registry
+
+- URL: [https://www.w3.org/TR/timing-entrytypes-registry/](https://www.w3.org/TR/timing-entrytypes-registry/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/timing-entrytypes-registry/)
+- Repository: [GitHub w3c/timing-entrytypes-registry](https://github.com/w3c/timing-entrytypes-registry)
+- This specification was not in the reference crawl report.
 
 
 ## Touch Events - Level 2
@@ -1111,6 +1276,14 @@
 - Unknown WebIDL names used: *DEL* EventHandler, GlobalEventHandlers
 
 
+## Trace Context
+
+- URL: [https://www.w3.org/TR/trace-context/](https://www.w3.org/TR/trace-context/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/trace-context/)
+- Repository: [GitHub w3c/trace-context](https://github.com/w3c/trace-context)
+- This specification was not in the reference crawl report.
+
+
 ## UI Events
 
 - URL: [https://www.w3.org/TR/uievents/](https://www.w3.org/TR/uievents/)
@@ -1120,6 +1293,14 @@
 - Unknown WebIDL names used: *DEL* Window
 - Missing references for links: *DEL* https://www.w3.org/TR/2004/REC-xml-20040204/
 - Inconsistent references for links: *INS* https://www.w3.org/TR/2004/REC-xml-20040204/ / *DEL* https://www.w3.org/TR/2014/WD-uievents-20140612/
+
+
+## Upgrade Insecure Requests
+
+- URL: [https://www.w3.org/TR/upgrade-insecure-requests/](https://www.w3.org/TR/upgrade-insecure-requests/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
+- Repository: [GitHub w3c/webappsec-upgrade-insecure-requests](https://github.com/w3c/webappsec-upgrade-insecure-requests)
+- This specification was not in the reference crawl report.
 
 
 ## URL Standard
@@ -1144,6 +1325,14 @@
 - Crawled version: [Editor's Draft](https://w3c.github.io/vibration/)
 - Repository: [GitHub w3c/vibration](https://github.com/w3c/vibration)
 - Unknown WebIDL names used: *DEL* Navigator
+
+
+## Visual Viewport API
+
+- URL: [https://wicg.github.io/visual-viewport/](https://wicg.github.io/visual-viewport/)
+- Crawled version: [Initial URL](https://wicg.github.io/visual-viewport/)
+- Repository: [GitHub wicg/visual-viewport](https://github.com/wicg/visual-viewport)
+- This specification was not in the reference crawl report.
 
 
 ## Wake Lock API
@@ -1228,6 +1417,14 @@
 - Unknown [Exposed] names used: *DEL* Window
 
 
+## Web Locks API
+
+- URL: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
+- Crawled version: [Initial URL](https://wicg.github.io/web-locks/)
+- Repository: [GitHub wicg/web-locks](https://github.com/wicg/web-locks)
+- This specification was not in the reference crawl report.
+
+
 ## Web MIDI API
 
 - URL: [https://www.w3.org/TR/webmidi/](https://www.w3.org/TR/webmidi/)
@@ -1252,6 +1449,14 @@
 - URL: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
 - Crawled version: [Initial URL](https://w3c.github.io/web-share/)
 - Unknown WebIDL names used: *DEL* Navigator
+
+
+## Web Share Target API
+
+- URL: [https://wicg.github.io/web-share-target/](https://wicg.github.io/web-share-target/)
+- Crawled version: [Initial URL](https://wicg.github.io/web-share-target/)
+- Repository: [GitHub wicg/web-share-target](https://github.com/wicg/web-share-target)
+- This specification was not in the reference crawl report.
 
 
 ## Web Speech API
