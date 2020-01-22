@@ -7294,7 +7294,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (21 January 2020)
+- Crawled version: [Editor's Draft](https://w3c.github.io/payment-request/) (22 January 2020)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-payment-request-20191212/)
@@ -8002,7 +8002,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-svc/) (11 January 2020)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-svc/) (22 January 2020)
 - Editor's Draft: [https://w3c.github.io/webrtc-svc/](https://w3c.github.io/webrtc-svc/)
 - Latest published version: [https://www.w3.org/TR/webrtc-svc/](https://www.w3.org/TR/webrtc-svc/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/)
@@ -8507,10 +8507,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/) (02 November 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/screen-orientation/) (22 January 2020)
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-screen-orientation-20191102/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-screen-orientation-20200122/)
 - Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
 - Shortname: screen-orientation
 
