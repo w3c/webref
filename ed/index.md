@@ -1594,7 +1594,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-color/) (16 January 2020)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-color/) (22 January 2020)
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-color-4-20191105/)
@@ -3672,7 +3672,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-scroll-anchoring-1/) (18 January 2020)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-scroll-anchoring-1/) (22 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
