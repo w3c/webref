@@ -12,8 +12,11 @@ Reffy could not fetch or render these specifications for some reason. This may h
 - [network-error-logging](https://www.w3.org/TR/network-error-logging/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:313:34)
     at process._tickCallback (internal/process/next_tick.js:68:7)`
+- [WebRTC DSCP Control API](https://www.w3.org/TR/webrtc-dscp/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:313:34)
+    at process._tickCallback (internal/process/next_tick.js:68:7)`
 
-=> 1 specification found
+=> 2 specifications found
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -25,21 +28,19 @@ Reffy could not fetch or render these specifications for some reason. This may h
 ## Specifications without normative dependencies
 
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
-- [Page not found · GitHub Pages](https://w3c.github.io/webrtc-dscp-exp/)
 - [Priority Hints](https://wicg.github.io/priority-hints/)
 
-=> 3 specifications found
+=> 2 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
 
 ## Specifications without WebIDL definitions
 
-- [Page not found · GitHub Pages](https://w3c.github.io/webrtc-dscp-exp/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
 
-=> 3 specifications found
+=> 2 specifications found
 
 Reffy was expecting to find IDL content in the specifications  listed here but could not extract any.
 
