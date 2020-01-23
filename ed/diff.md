@@ -1058,8 +1058,8 @@
 - URL: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
 - Crawled version: [Editor's Draft](https://w3c.github.io/pointerlock/)
 - Repository: [GitHub w3c/pointerlock](https://github.com/w3c/pointerlock)
-- Spec is OK: *INS* true / *DEL* false
 - Unknown WebIDL names used: *DEL* EventHandler
+- Inconsistent references for links: *INS* https://w3c.github.io/uievents/
 
 
 ## Presentation API
