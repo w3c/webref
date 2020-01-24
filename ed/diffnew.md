@@ -1,6 +1,6 @@
-% Diff between report from "January 23, 2020" and reference report from "December 03, 2019"
+% Diff between report from "January 24, 2020" and reference report from "December 03, 2019"
 % Reffy
-% January 23, 2020
+% January 24, 2020
 
 ## Accessible Name and Description Computation 1.2
 
@@ -119,7 +119,7 @@
 - URL: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *INS* https://www.w3.org/TR/svg2/, https://w3c.github.io/contentEditable/ / *DEL* https://w3c.github.io/editing/contentEditable.html
+- Missing references for links: *INS* https://www.w3.org/TR/svg2/, https://w3c.github.io/contentEditable/, https://www.w3.org/TR/2020/WD-css-ui-4-20200102/ / *DEL* https://w3c.github.io/editing/contentEditable.html
 
 
 ## CSS Box Sizing Module Level 3
