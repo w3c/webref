@@ -30,6 +30,9 @@
     "<clamp()>": {
       "value": "clamp( <calc-sum>#{3} )"
     },
+    "<round()>": {
+      "value": "round( <rounding-strategy>?, <calc-sum>, <calc-sum> )"
+    },
     "<sin()>": {
       "value": "sin( <calc-sum> )"
     },
@@ -60,6 +63,18 @@
     "<hypot()>": {
       "value": "hypot( <calc-sum># )"
     },
+    "<log()>": {
+      "value": "log( <calc-sum>, <calc-sum>? )"
+    },
+    "<exp()>": {
+      "value": "exp( <calc-sum> )"
+    },
+    "<abs()>": {
+      "value": "abs( <calc-sum> )"
+    },
+    "<sign()>": {
+      "value": "sign( <calc-sum> )"
+    },
     "<calc-sum>": {
       "value": "<calc-product> [ [ '+' | '-' ] <calc-product> ]*"
     },
@@ -67,7 +82,10 @@
       "value": "<calc-value> [ [ '*' | '/' ] <calc-value> ]*"
     },
     "<calc-value>": {
-      "value": "<number> | <dimension> | <percentage> | ( <calc-sum> )"
+      "value": "<number> | <dimension> | <percentage> | <calc-constant> | ( <calc-sum> )"
+    },
+    "<calc-constant>": {
+      "value": "e | pi | infinity | -infinity | NaN"
     },
     "<length-percentage>": {
       "value": "[ <length> | <percentage> ]"
