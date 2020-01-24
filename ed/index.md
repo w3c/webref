@@ -1106,7 +1106,7 @@ No informative reference to this spec from other specs.
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui-4/) (23 January 2020)
 - Editor's Draft: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
 - Latest published version: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-ui-4
 
@@ -4938,7 +4938,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (22 January 2020)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (24 January 2020)
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
@@ -8565,7 +8565,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/trace-context/) (14 January 2020)
+- Crawled version: [Editor's Draft](https://w3c.github.io/trace-context/) (24 January 2020)
 - Editor's Draft: [https://w3c.github.io/trace-context/](https://w3c.github.io/trace-context/)
 - Latest published version: [https://www.w3.org/TR/trace-context-1/](https://www.w3.org/TR/trace-context-1/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2019/PR-trace-context-1-20191121/)
