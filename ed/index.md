@@ -744,7 +744,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (31 December 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (24 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1380,7 +1380,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
@@ -1427,6 +1426,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
@@ -4966,6 +4966,7 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
+- [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
@@ -5848,6 +5849,7 @@ Normative references to this spec from:
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
+- [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
@@ -6011,7 +6013,6 @@ Informative references to this spec from:
 
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
-- [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
@@ -7676,7 +7677,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/) (14 November 2019)
+- Crawled version: [Editor's Draft](https://w3c.github.io/remote-playback/) (24 January 2020)
 - Editor's Draft: [https://w3c.github.io/remote-playback/](https://w3c.github.io/remote-playback/)
 - Latest published version: [https://www.w3.org/TR/remote-playback/](https://www.w3.org/TR/remote-playback/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
