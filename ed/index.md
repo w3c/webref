@@ -6380,7 +6380,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/media-capabilities/) (23 January 2020)
+- Crawled version: [Initial URL](https://w3c.github.io/media-capabilities/) (25 January 2020)
 - Repository: [GitHub w3c/media-capabilities](https://github.com/w3c/media-capabilities)
 - Shortname: no shortname
 
