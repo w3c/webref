@@ -2,11 +2,11 @@
   "type": "study",
   "title": "Specifications that define CSS and WebIDL content",
   "description": "The crawl includes specifications published by W3C Working Groups, W3C Community Groups and WHATWG, that define CSS and/or WebIDL content. The specifications are at various stages of maturity.",
-  "date": "2020-01-20T11:19:50.948Z",
+  "date": "2020-01-27T11:18:53.302Z",
   "stats": {
-    "crawled": 244,
-    "errors": 0,
-    "studied": 244
+    "crawled": 272,
+    "errors": 2,
+    "studied": 272
   },
   "results": [
     {
@@ -148,7 +148,7 @@
     {
       "title": "404 not found",
       "shortname": "SVG2",
-      "date": "20 January 2020",
+      "date": "27 January 2020",
       "url": "https://www.w3.org/TR/SVG2/",
       "latest": "https://www.w3.org/TR/SVG2/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-SVG2-20181004/",
@@ -196,7 +196,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://drafts.csswg.org/css-box-3/",
@@ -316,12 +316,17 @@
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/"
+              "crawled": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/"
             },
             {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/"
+            },
+            {
+              "url": "https://svgwg.org/specs/animations/",
+              "title": "SVG Animations",
+              "crawled": "https://svgwg.org/specs/animations/"
             },
             {
               "url": "https://www.w3.org/TR/svg-markers/",
@@ -545,6 +550,40 @@
       }
     },
     {
+      "title": "Accessible Name and Description Computation 1.2",
+      "date": "16 January 2020",
+      "url": "https://w3c.github.io/accname/",
+      "crawled": "https://w3c.github.io/accname/",
+      "repository": "https://github.com/w3c/accname",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/wai-aria-1.2/",
+          "https://w3c.github.io/aria/",
+          "https://www.w3.org/TR/wai-aria-1.1/",
+          "https://w3c.github.io/core-aam/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
+        "ok": false
+      }
+    },
+    {
       "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
       "shortname": "wai-aria-1.2",
       "date": "18 December 2019",
@@ -599,7 +638,13 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://w3c.github.io/core-aam/",
+              "title": "Core Accessibility API Mappings 1.2",
+              "crawled": "https://w3c.github.io/core-aam/"
+            }
+          ],
           "informative": []
         },
         "noEdDraft": false,
@@ -785,6 +830,35 @@
       }
     },
     {
+      "title": "Badging API",
+      "date": "11 November 2019",
+      "url": "https://wicg.github.io/badging/",
+      "crawled": "https://wicg.github.io/badging/",
+      "repository": "https://github.com/wicg/badging",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
+        "ok": true
+      }
+    },
+    {
       "title": "Battery Status API",
       "shortname": "battery-status",
       "date": "07 July 2016",
@@ -881,7 +955,7 @@
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/"
+              "crawled": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/"
             }
           ],
           "informative": [
@@ -953,6 +1027,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://w3c.github.io/accname/",
+              "title": "Accessible Name and Description Computation 1.2",
+              "crawled": "https://w3c.github.io/accname/"
+            },
+            {
               "url": "https://compat.spec.whatwg.org/",
               "title": "Compatibility Standard",
               "crawled": "https://compat.spec.whatwg.org/"
@@ -1005,7 +1084,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -1333,9 +1412,19 @@
               "crawled": "https://www.w3.org/TR/2018/WD-motion-1-20181218/"
             },
             {
+              "url": "https://wicg.github.io/page-lifecycle/",
+              "title": "Page Lifecycle",
+              "crawled": "https://wicg.github.io/page-lifecycle/"
+            },
+            {
               "url": "https://www.w3.org/TR/pointerevents2/",
               "title": "Pointer Events",
               "crawled": "https://www.w3.org/TR/2019/REC-pointerevents2-20190404/"
+            },
+            {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
             },
             {
               "url": "https://drafts.csswg.org/scroll-animations-1/",
@@ -1454,6 +1543,50 @@
               "crawled": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/"
             }
           ],
+          "informative": []
+        },
+        "noEdDraft": false,
+        "ok": false
+      }
+    },
+    {
+      "title": "Clear Site Data",
+      "shortname": "clear-site-data",
+      "date": "30 November 2017",
+      "url": "https://www.w3.org/TR/clear-site-data/",
+      "latest": "https://www.w3.org/TR/clear-site-data/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-clear-site-data-20171130/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/webappsec-clear-site-data/",
+      "crawled": "https://www.w3.org/TR/2017/WD-clear-site-data-20171130/",
+      "repository": "https://github.com/w3c/webappsec-clear-site-data",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/ServiceWorker/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/IndexedDB/",
+            "ref": {
+              "name": "INDEXEDDB",
+              "url": "https://www.w3.org/TR/IndexedDB/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
           "informative": []
         },
         "noEdDraft": false,
@@ -1939,6 +2072,16 @@
               "crawled": "https://www.w3.org/TR/2016/CR-mixed-content-20160802/"
             },
             {
+              "url": "https://wicg.github.io/origin-policy/",
+              "title": "Origin Policy",
+              "crawled": "https://wicg.github.io/origin-policy/"
+            },
+            {
+              "url": "https://www.w3.org/TR/resource-hints/",
+              "title": "Resource Hints",
+              "crawled": "https://www.w3.org/TR/2019/WD-resource-hints-20190702/"
+            },
+            {
               "url": "https://w3c.github.io/ServiceWorker/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
@@ -1955,6 +2098,11 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/clear-site-data/",
+              "title": "Clear Site Data",
+              "crawled": "https://www.w3.org/TR/2017/WD-clear-site-data-20171130/"
+            },
             {
               "url": "https://www.w3.org/TR/preload/",
               "title": "Preload",
@@ -2020,7 +2168,7 @@
     },
     {
       "title": "ContentEditable",
-      "date": "31 December 2019",
+      "date": "24 January 2020",
       "url": "https://w3c.github.io/editing/contentEditable.html",
       "crawled": "https://w3c.github.io/editing/contentEditable.html",
       "report": {
@@ -2048,7 +2196,7 @@
     },
     {
       "title": "Cookie Store API",
-      "date": "2 December 2019",
+      "date": "22 January 2020",
       "url": "https://wicg.github.io/cookie-store/",
       "crawled": "https://wicg.github.io/cookie-store/",
       "repository": "https://github.com/wicg/cookie-store",
@@ -2147,6 +2295,41 @@
           "informative": []
         },
         "noEdDraft": false,
+        "ok": false
+      }
+    },
+    {
+      "title": "Core Accessibility API Mappings 1.2",
+      "date": "23 October 2019",
+      "url": "https://w3c.github.io/core-aam/",
+      "crawled": "https://w3c.github.io/core-aam/",
+      "repository": "https://github.com/w3c/aria",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/aria/",
+          "https://www.w3.org/TR/wai-aria-practices/",
+          "https://www.w3.org/TR/wai-aria-implementation/",
+          "https://w3c.github.io/accname/",
+          "https://www.w3.org/TR/wai-aria-1.1/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
         "ok": false
       }
     },
@@ -2567,7 +2750,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://drafts.csswg.org/css-box-3/",
@@ -2735,6 +2918,11 @@
               "crawled": "https://www.w3.org/TR/2018/WD-motion-1-20181218/"
             },
             {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            },
+            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/"
@@ -2849,7 +3037,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://www.w3.org/TR/css-images-4/",
@@ -2932,13 +3120,13 @@
     {
       "title": "CSS Basic User Interface Module Level 4",
       "shortname": "css-ui-4",
-      "date": "2 January 2020",
+      "date": "24 January 2020",
       "url": "https://www.w3.org/TR/css-ui-4/",
       "latest": "https://www.w3.org/TR/css-ui-4/",
-      "datedUrl": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/",
+      "datedUrl": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/",
       "datedStatus": "Working Draft",
       "edDraft": "https://drafts.csswg.org/css-ui-4/",
-      "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/",
+      "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
         "noNormativeRefs": false,
@@ -2966,13 +3154,6 @@
           "https://www.w3.org/TR/selectors4/"
         ],
         "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/css3-values/",
-            "ref": {
-              "name": "CSS-VALUES-3",
-              "url": "https://www.w3.org/TR/css-values-3/"
-            }
-          },
           {
             "link": "https://www.w3.org/TR/css3-images/",
             "ref": {
@@ -3200,7 +3381,13 @@
         ],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            }
+          ],
           "informative": []
         },
         "noEdDraft": null,
@@ -3300,11 +3487,6 @@
               "url": "https://www.w3.org/TR/csp-embedded-enforcement/",
               "title": "Content Security Policy: Embedded Enforcement",
               "crawled": "https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/"
-            },
-            {
-              "url": "https://w3c.github.io/editing/contentEditable.html",
-              "title": "ContentEditable",
-              "crawled": "https://w3c.github.io/editing/contentEditable.html"
             },
             {
               "url": "https://www.w3.org/TR/css-animations-1/",
@@ -3432,6 +3614,11 @@
               "crawled": "https://www.w3.org/TR/2018/WD-CSP3-20181015/"
             },
             {
+              "url": "https://w3c.github.io/editing/contentEditable.html",
+              "title": "ContentEditable",
+              "crawled": "https://w3c.github.io/editing/contentEditable.html"
+            },
+            {
               "url": "https://drafts.csswg.org/css-animations-2/",
               "title": "CSS Animations Level 2",
               "crawled": "https://drafts.csswg.org/css-animations-2/"
@@ -3439,7 +3626,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -3687,6 +3874,11 @@
               "crawled": "https://www.w3.org/TR/2018/WD-motion-1-20181218/"
             },
             {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            },
+            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/"
@@ -3859,7 +4051,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://drafts.csswg.org/css-color-5/",
@@ -3935,6 +4127,11 @@
               "url": "https://www.w3.org/TR/filter-effects-1/",
               "title": "Filter Effects Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/"
+            },
+            {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -4028,7 +4225,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://www.w3.org/TR/css-color-adjust-1/",
@@ -4111,6 +4308,11 @@
               "crawled": "https://html.spec.whatwg.org/"
             },
             {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            },
+            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/"
@@ -4160,7 +4362,7 @@
     },
     {
       "title": "CSS Color Module Level 5",
-      "date": "20 December 2019",
+      "date": "24 January 2020",
       "url": "https://drafts.csswg.org/css-color-5/",
       "crawled": "https://drafts.csswg.org/css-color-5/",
       "report": {
@@ -4288,6 +4490,11 @@
               "url": "https://drafts.csswg.org/mediaqueries-5/",
               "title": "Media Queries Level 5",
               "crawled": "https://drafts.csswg.org/mediaqueries-5/"
+            },
+            {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
             }
           ],
           "informative": [
@@ -4666,7 +4873,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20191102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-screen-orientation-20200122/"
             }
           ]
         },
@@ -4745,7 +4952,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -4948,9 +5155,19 @@
               "crawled": "https://wicg.github.io/layout-instability/"
             },
             {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            },
+            {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/"
+            },
+            {
+              "url": "https://wicg.github.io/visual-viewport/",
+              "title": "Visual Viewport API",
+              "crawled": "https://wicg.github.io/visual-viewport/"
             },
             {
               "url": "https://www.w3.org/TR/webdriver1/",
@@ -5572,6 +5789,11 @@
               "crawled": "https://html.spec.whatwg.org/"
             },
             {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            },
+            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/"
@@ -5785,6 +6007,11 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/"
+            },
+            {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -6664,7 +6891,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             }
           ]
         },
@@ -6750,7 +6977,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://drafts.csswg.org/css-sizing-4/",
@@ -6975,6 +7202,11 @@
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/"
+            },
+            {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
             }
           ],
           "informative": [
@@ -7054,7 +7286,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -7165,6 +7397,11 @@
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/"
+            },
+            {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -7601,6 +7838,11 @@
               "url": "https://www.w3.org/TR/motion-1/",
               "title": "Motion Path Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-motion-1-20181218/"
+            },
+            {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
             }
           ],
           "informative": [
@@ -7771,6 +8013,11 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/"
+            },
+            {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
             }
           ],
           "informative": [
@@ -8119,6 +8366,11 @@
               "crawled": "https://html.spec.whatwg.org/"
             },
             {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            },
+            {
               "url": "https://www.w3.org/TR/referrer-policy/",
               "title": "Referrer Policy",
               "crawled": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/"
@@ -8218,7 +8470,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -8453,7 +8705,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
@@ -8464,6 +8716,11 @@
               "url": "https://www.w3.org/TR/cssom-view-1/",
               "title": "CSSOM View Module",
               "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/"
+            },
+            {
+              "url": "https://wicg.github.io/visual-viewport/",
+              "title": "Visual Viewport API",
+              "crawled": "https://wicg.github.io/visual-viewport/"
             }
           ],
           "informative": [
@@ -8571,6 +8828,11 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/"
+            },
+            {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
             }
           ],
           "informative": [
@@ -8648,7 +8910,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://www.w3.org/TR/css-device-adapt-1/",
@@ -8861,7 +9123,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -8967,6 +9229,11 @@
               "url": "https://www.w3.org/TR/motion-1/",
               "title": "Motion Path Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-motion-1-20181218/"
+            },
+            {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -9110,7 +9377,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://drafts.csswg.org/css-box-3/",
@@ -9597,7 +9864,7 @@
     },
     {
       "title": "CSS Scroll Anchoring Module Level 1",
-      "date": "18 January 2020",
+      "date": "22 January 2020",
       "url": "https://drafts.csswg.org/css-scroll-anchoring-1/",
       "crawled": "https://drafts.csswg.org/css-scroll-anchoring-1/",
       "report": {
@@ -10206,9 +10473,14 @@
               "crawled": "https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/"
             },
             {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            },
+            {
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/"
+              "crawled": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/"
             },
             {
               "url": "https://www.w3.org/TR/selectors-4/",
@@ -10294,6 +10566,11 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/"
+            },
+            {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
             }
           ],
           "informative": []
@@ -10393,6 +10670,11 @@
               "url": "https://www.w3.org/TR/filter-effects-1/",
               "title": "Filter Effects Module Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/"
+            },
+            {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -10659,6 +10941,11 @@
               "crawled": "https://wicg.github.io/layout-instability/"
             },
             {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            },
+            {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/"
@@ -10838,7 +11125,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://drafts.csswg.org/css-box-3/",
@@ -11446,7 +11733,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -11754,6 +12041,11 @@
               "crawled": "https://www.w3.org/TR/2018/WD-motion-1-20181218/"
             },
             {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            },
+            {
               "url": "https://drafts.csswg.org/scroll-animations-1/",
               "title": "Scroll-linked Animations",
               "crawled": "https://drafts.csswg.org/scroll-animations-1/"
@@ -11762,6 +12054,11 @@
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/"
+            },
+            {
+              "url": "https://wicg.github.io/visual-viewport/",
+              "title": "Visual Viewport API",
+              "crawled": "https://wicg.github.io/visual-viewport/"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -11897,7 +12194,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -12175,6 +12472,11 @@
               "crawled": "https://w3c.github.io/picture-in-picture/"
             },
             {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            },
+            {
               "url": "https://drafts.csswg.org/scroll-animations-1/",
               "title": "Scroll-linked Animations",
               "crawled": "https://drafts.csswg.org/scroll-animations-1/"
@@ -12320,7 +12622,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -12428,6 +12730,11 @@
               "crawled": "https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/"
             },
             {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            },
+            {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/"
@@ -12509,7 +12816,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -12652,6 +12959,11 @@
               "crawled": "https://wicg.github.io/layout-instability/"
             },
             {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            },
+            {
               "url": "https://drafts.csswg.org/scroll-animations-1/",
               "title": "Scroll-linked Animations",
               "crawled": "https://drafts.csswg.org/scroll-animations-1/"
@@ -12773,7 +13085,12 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20191102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-screen-orientation-20200122/"
+            },
+            {
+              "url": "https://wicg.github.io/visual-viewport/",
+              "title": "Visual Viewport API",
+              "crawled": "https://wicg.github.io/visual-viewport/"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -12816,11 +13133,50 @@
               "url": "https://www.w3.org/TR/pointerevents2/",
               "title": "Pointer Events",
               "crawled": "https://www.w3.org/TR/2019/REC-pointerevents2-20190404/"
+            },
+            {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
             }
           ]
         },
         "noEdDraft": false,
         "ok": false
+      }
+    },
+    {
+      "title": "Device Memory",
+      "shortname": "device-memory-1",
+      "date": "25 September 2018",
+      "url": "https://www.w3.org/TR/device-memory-1/",
+      "latest": "https://www.w3.org/TR/device-memory-1/",
+      "datedUrl": "https://www.w3.org/TR/2018/WD-device-memory-1-20180925/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/device-memory/",
+      "crawled": "https://www.w3.org/TR/2018/WD-device-memory-1-20180925/",
+      "repository": "https://github.com/w3c/device-memory",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": false,
+        "ok": true
       }
     },
     {
@@ -13003,7 +13359,7 @@
     },
     {
       "title": "DOM Standard",
-      "date": "16 January 2020",
+      "date": "24 January 2020",
       "url": "https://dom.spec.whatwg.org/",
       "crawled": "https://dom.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/dom",
@@ -13045,6 +13401,11 @@
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
+            },
+            {
+              "url": "https://wicg.github.io/badging/",
+              "title": "Badging API",
+              "crawled": "https://wicg.github.io/badging/"
             },
             {
               "url": "https://www.w3.org/TR/beacon/",
@@ -13090,6 +13451,11 @@
               "url": "https://www.w3.org/TR/csp-embedded-enforcement/",
               "title": "Content Security Policy: Embedded Enforcement",
               "crawled": "https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/"
+            },
+            {
+              "url": "https://w3c.github.io/editing/contentEditable.html",
+              "title": "ContentEditable",
+              "crawled": "https://w3c.github.io/editing/contentEditable.html"
             },
             {
               "url": "https://wicg.github.io/cookie-store/",
@@ -13259,7 +13625,7 @@
             {
               "url": "https://www.w3.org/TR/gamepad/",
               "title": "Gamepad",
-              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20191114/"
+              "crawled": "https://www.w3.org/TR/2020/WD-gamepad-20200121/"
             },
             {
               "url": "https://www.w3.org/TR/generic-sensor/",
@@ -13322,6 +13688,11 @@
               "crawled": "https://notifications.spec.whatwg.org/"
             },
             {
+              "url": "https://wicg.github.io/page-lifecycle/",
+              "title": "Page Lifecycle",
+              "crawled": "https://wicg.github.io/page-lifecycle/"
+            },
+            {
               "url": "https://www.w3.org/TR/page-visibility-2/",
               "title": "Page Visibility Level 2",
               "crawled": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/"
@@ -13377,6 +13748,11 @@
               "crawled": "https://www.w3.org/TR/2019/WD-push-api-20191003/"
             },
             {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            },
+            {
               "url": "https://www.w3.org/TR/referrer-policy/",
               "title": "Referrer Policy",
               "crawled": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/"
@@ -13394,7 +13770,7 @@
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/"
+              "crawled": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/"
             },
             {
               "url": "https://drafts.csswg.org/scroll-animations-1/",
@@ -13427,9 +13803,14 @@
               "crawled": "https://streams.spec.whatwg.org/"
             },
             {
+              "url": "https://svgwg.org/specs/animations/",
+              "title": "SVG Animations",
+              "crawled": "https://svgwg.org/specs/animations/"
+            },
+            {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20191102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-screen-orientation-20200122/"
             },
             {
               "url": "https://www.w3.org/TR/touch-events/",
@@ -13442,9 +13823,19 @@
               "crawled": "https://www.w3.org/TR/2019/WD-uievents-20190530/"
             },
             {
+              "url": "https://www.w3.org/TR/upgrade-insecure-requests/",
+              "title": "Upgrade Insecure Requests",
+              "crawled": "http://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/"
+            },
+            {
               "url": "https://url.spec.whatwg.org/",
               "title": "URL Standard",
               "crawled": "https://url.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/visual-viewport/",
+              "title": "Visual Viewport API",
+              "crawled": "https://wicg.github.io/visual-viewport/"
             },
             {
               "url": "https://www.w3.org/TR/wake-lock/",
@@ -13480,6 +13871,11 @@
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
               "title": "Web Cryptography API",
               "crawled": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/"
+            },
+            {
+              "url": "https://wicg.github.io/web-locks/",
+              "title": "Web Locks API",
+              "crawled": "https://wicg.github.io/web-locks/"
             },
             {
               "url": "https://www.w3.org/TR/webmidi/",
@@ -13534,6 +13930,11 @@
           ],
           "informative": [
             {
+              "url": "https://w3c.github.io/accname/",
+              "title": "Accessible Name and Description Computation 1.2",
+              "crawled": "https://w3c.github.io/accname/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-content-3/",
               "title": "CSS Generated Content Module Level 3",
               "crawled": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/"
@@ -13547,6 +13948,11 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/origin-policy/",
+              "title": "Origin Policy",
+              "crawled": "https://wicg.github.io/origin-policy/"
             },
             {
               "url": "https://www.w3.org/TR/selectors-3/",
@@ -13622,6 +14028,11 @@
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/"
+            },
+            {
+              "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
+              "title": "Timing Entry Names Registry",
+              "crawled": "https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/"
             }
           ],
           "informative": []
@@ -13703,6 +14114,21 @@
               "crawled": "https://html.spec.whatwg.org/"
             },
             {
+              "url": "https://mimesniff.spec.whatwg.org/",
+              "title": "MIME Sniffing Standard",
+              "crawled": "https://mimesniff.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/origin-policy/",
+              "title": "Origin Policy",
+              "crawled": "https://wicg.github.io/origin-policy/"
+            },
+            {
+              "url": "https://www.w3.org/TR/payment-method-manifest/",
+              "title": "Payment Method Manifest",
+              "crawled": "https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/"
+            },
+            {
               "url": "https://www.w3.org/TR/push-api/",
               "title": "Push API",
               "crawled": "https://www.w3.org/TR/2019/WD-push-api-20191003/"
@@ -13748,7 +14174,13 @@
               "crawled": "https://xhr.spec.whatwg.org/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://wicg.github.io/web-share-target/",
+              "title": "Web Share Target API",
+              "crawled": "https://wicg.github.io/web-share-target/"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": true
@@ -13888,6 +14320,11 @@
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/"
+            },
+            {
+              "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
+              "title": "Timing Entry Names Registry",
+              "crawled": "https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/"
             }
           ],
           "informative": []
@@ -13958,6 +14395,16 @@
               "crawled": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/"
             },
             {
+              "url": "https://wicg.github.io/origin-policy/",
+              "title": "Origin Policy",
+              "crawled": "https://wicg.github.io/origin-policy/"
+            },
+            {
+              "url": "https://wicg.github.io/page-lifecycle/",
+              "title": "Page Lifecycle",
+              "crawled": "https://wicg.github.io/page-lifecycle/"
+            },
+            {
               "url": "https://xhr.spec.whatwg.org/",
               "title": "XMLHttpRequest Standard",
               "crawled": "https://xhr.spec.whatwg.org/"
@@ -14009,6 +14456,11 @@
               "url": "https://www.w3.org/TR/beacon/",
               "title": "Beacon",
               "crawled": "https://www.w3.org/TR/2017/CR-beacon-20170413/"
+            },
+            {
+              "url": "https://www.w3.org/TR/clear-site-data/",
+              "title": "Clear Site Data",
+              "crawled": "https://www.w3.org/TR/2017/WD-clear-site-data-20171130/"
             },
             {
               "url": "https://www.w3.org/TR/CSP3/",
@@ -14086,6 +14538,11 @@
               "crawled": "https://w3c.github.io/mediasession/"
             },
             {
+              "url": "https://mimesniff.spec.whatwg.org/",
+              "title": "MIME Sniffing Standard",
+              "crawled": "https://mimesniff.spec.whatwg.org/"
+            },
+            {
               "url": "https://www.w3.org/TR/mixed-content/",
               "title": "Mixed Content",
               "crawled": "https://www.w3.org/TR/2016/CR-mixed-content-20160802/"
@@ -14093,12 +14550,27 @@
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/"
+              "crawled": "https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/"
             },
             {
               "url": "https://notifications.spec.whatwg.org/",
               "title": "Notifications API Standard",
               "crawled": "https://notifications.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/origin-policy/",
+              "title": "Origin Policy",
+              "crawled": "https://wicg.github.io/origin-policy/"
+            },
+            {
+              "url": "https://www.w3.org/TR/payment-method-id/",
+              "title": "Payment Method Identifiers",
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-method-id-20190905/"
+            },
+            {
+              "url": "https://www.w3.org/TR/payment-method-manifest/",
+              "title": "Payment Method Manifest",
+              "crawled": "https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -14118,7 +14590,7 @@
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/"
+              "crawled": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/"
             },
             {
               "url": "https://www.w3.org/TR/server-timing/",
@@ -14134,6 +14606,16 @@
               "url": "https://www.w3.org/TR/SRI/",
               "title": "Subresource Integrity",
               "crawled": "http://www.w3.org/TR/2016/REC-SRI-20160623/"
+            },
+            {
+              "url": "https://www.w3.org/TR/trace-context/",
+              "title": "Trace Context",
+              "crawled": "https://www.w3.org/TR/2019/PR-trace-context-1-20191121/"
+            },
+            {
+              "url": "https://www.w3.org/TR/upgrade-insecure-requests/",
+              "title": "Upgrade Insecure Requests",
+              "crawled": "http://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -14186,6 +14668,11 @@
               "url": "https://streams.spec.whatwg.org/",
               "title": "Streams Standard",
               "crawled": "https://streams.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/web-share-target/",
+              "title": "Web Share Target API",
+              "crawled": "https://wicg.github.io/web-share-target/"
             }
           ]
         },
@@ -14224,7 +14711,13 @@
         ],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "Native File System",
+              "crawled": "https://wicg.github.io/native-file-system/"
+            }
+          ]
         },
         "noEdDraft": null,
         "ok": false
@@ -14331,6 +14824,11 @@
               "url": "https://www.w3.org/TR/mediastream-recording/",
               "title": "MediaStream Recording",
               "crawled": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/"
+            },
+            {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "Native File System",
+              "crawled": "https://wicg.github.io/native-file-system/"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -14555,6 +15053,35 @@
       }
     },
     {
+      "title": "Frame Timing",
+      "date": "27 September 2019",
+      "url": "https://wicg.github.io/frame-timing/",
+      "crawled": "https://wicg.github.io/frame-timing/",
+      "repository": "https://github.com/wicg/frame-timing",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
+        "ok": true
+      }
+    },
+    {
       "title": "Fullscreen API Standard",
       "date": "26 September 2019",
       "url": "https://fullscreen.spec.whatwg.org/",
@@ -14603,7 +15130,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20191102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-screen-orientation-20200122/"
             },
             {
               "url": "https://www.w3.org/TR/webdriver1/",
@@ -14641,13 +15168,13 @@
     {
       "title": "Gamepad",
       "shortname": "gamepad",
-      "date": "14 November 2019",
+      "date": "21 January 2020",
       "url": "https://www.w3.org/TR/gamepad/",
       "latest": "https://www.w3.org/TR/gamepad/",
-      "datedUrl": "https://www.w3.org/TR/2019/WD-gamepad-20191114/",
+      "datedUrl": "https://www.w3.org/TR/2020/WD-gamepad-20200121/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/gamepad/",
-      "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20191114/",
+      "crawled": "https://www.w3.org/TR/2020/WD-gamepad-20200121/",
       "repository": "https://github.com/w3c/gamepad",
       "report": {
         "noNormativeRefs": false,
@@ -14688,6 +15215,47 @@
           "informative": []
         },
         "noEdDraft": false,
+        "ok": false
+      }
+    },
+    {
+      "title": "Gamepad Extensions",
+      "date": "21 January 2020",
+      "url": "https://w3c.github.io/gamepad/extensions.html",
+      "crawled": "https://w3c.github.io/gamepad/extensions.html",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Gamepad",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/gamepad/",
+                "title": "Gamepad",
+                "crawled": "https://www.w3.org/TR/2020/WD-gamepad-20200121/"
+              }
+            ]
+          }
+        ],
+        "missingLinkRef": [
+          "https://w3c.github.io/gamepad/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
         "ok": false
       }
     },
@@ -14840,6 +15408,11 @@
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://www.w3.org/TR/2017/WD-permissions-20170925/"
+            },
+            {
+              "url": "https://wicg.github.io/permissions-request/",
+              "title": "Requesting Permissions",
+              "crawled": "https://wicg.github.io/permissions-request/"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -15106,9 +15679,14 @@
               "crawled": "https://wicg.github.io/event-timing/"
             },
             {
+              "url": "https://wicg.github.io/frame-timing/",
+              "title": "Frame Timing",
+              "crawled": "https://wicg.github.io/frame-timing/"
+            },
+            {
               "url": "https://www.w3.org/TR/gamepad/",
               "title": "Gamepad",
-              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20191114/"
+              "crawled": "https://www.w3.org/TR/2020/WD-gamepad-20200121/"
             },
             {
               "url": "https://www.w3.org/TR/generic-sensor/",
@@ -15136,6 +15714,11 @@
               "crawled": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/"
             },
             {
+              "url": "https://wicg.github.io/js-self-profiling/",
+              "title": "JS Self-Profiling API",
+              "crawled": "https://wicg.github.io/js-self-profiling/"
+            },
+            {
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/"
@@ -15158,7 +15741,7 @@
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/"
+              "crawled": "https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/"
             },
             {
               "url": "https://www.w3.org/TR/paint-timing/",
@@ -15173,7 +15756,12 @@
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/"
+              "crawled": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/"
+            },
+            {
+              "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
+              "title": "Timing Entry Names Registry",
+              "crawled": "https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/"
             },
             {
               "url": "https://www.w3.org/TR/user-timing-2/",
@@ -15249,7 +15837,7 @@
     },
     {
       "title": "HTML Standard",
-      "date": "16 January 2020",
+      "date": "22 January 2020",
       "url": "https://html.spec.whatwg.org/",
       "crawled": "https://html.spec.whatwg.org/",
       "report": {
@@ -15326,6 +15914,11 @@
               "crawled": "https://wicg.github.io/background-fetch/"
             },
             {
+              "url": "https://wicg.github.io/badging/",
+              "title": "Badging API",
+              "crawled": "https://wicg.github.io/badging/"
+            },
+            {
               "url": "https://www.w3.org/TR/battery-status/",
               "title": "Battery Status API",
               "crawled": "http://www.w3.org/TR/2016/CR-battery-status-20160707/"
@@ -15334,6 +15927,11 @@
               "url": "https://www.w3.org/TR/beacon/",
               "title": "Beacon",
               "crawled": "https://www.w3.org/TR/2017/CR-beacon-20170413/"
+            },
+            {
+              "url": "https://www.w3.org/TR/clear-site-data/",
+              "title": "Clear Site Data",
+              "crawled": "https://www.w3.org/TR/2017/WD-clear-site-data-20171130/"
             },
             {
               "url": "https://www.w3.org/TR/clipboard-apis/",
@@ -15381,6 +15979,11 @@
               "crawled": "https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/"
             },
             {
+              "url": "https://w3c.github.io/editing/contentEditable.html",
+              "title": "ContentEditable",
+              "crawled": "https://w3c.github.io/editing/contentEditable.html"
+            },
+            {
               "url": "https://wicg.github.io/cookie-store/",
               "title": "Cookie Store API",
               "crawled": "https://wicg.github.io/cookie-store/"
@@ -15423,7 +16026,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://www.w3.org/TR/css-cascade-3/",
@@ -15591,6 +16194,11 @@
               "crawled": "https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/"
             },
             {
+              "url": "https://wicg.github.io/frame-timing/",
+              "title": "Frame Timing",
+              "crawled": "https://wicg.github.io/frame-timing/"
+            },
+            {
               "url": "https://fullscreen.spec.whatwg.org/",
               "title": "Fullscreen API Standard",
               "crawled": "https://fullscreen.spec.whatwg.org/"
@@ -15598,7 +16206,7 @@
             {
               "url": "https://www.w3.org/TR/gamepad/",
               "title": "Gamepad",
-              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20191114/"
+              "crawled": "https://www.w3.org/TR/2020/WD-gamepad-20200121/"
             },
             {
               "url": "https://www.w3.org/TR/generic-sensor/",
@@ -15644,6 +16252,11 @@
               "url": "https://wicg.github.io/InputDeviceCapabilities/",
               "title": "Input Device Capabilities",
               "crawled": "https://wicg.github.io/InputDeviceCapabilities/"
+            },
+            {
+              "url": "https://wicg.github.io/js-self-profiling/",
+              "title": "JS Self-Profiling API",
+              "crawled": "https://wicg.github.io/js-self-profiling/"
             },
             {
               "url": "https://wicg.github.io/keyboard-lock/",
@@ -15711,9 +16324,14 @@
               "crawled": "https://www.w3.org/TR/2016/CR-mixed-content-20160802/"
             },
             {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "Native File System",
+              "crawled": "https://wicg.github.io/native-file-system/"
+            },
+            {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/"
+              "crawled": "https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/"
             },
             {
               "url": "https://wicg.github.io/netinfo/",
@@ -15726,6 +16344,16 @@
               "crawled": "https://notifications.spec.whatwg.org/"
             },
             {
+              "url": "https://wicg.github.io/origin-policy/",
+              "title": "Origin Policy",
+              "crawled": "https://wicg.github.io/origin-policy/"
+            },
+            {
+              "url": "https://wicg.github.io/page-lifecycle/",
+              "title": "Page Lifecycle",
+              "crawled": "https://wicg.github.io/page-lifecycle/"
+            },
+            {
               "url": "https://www.w3.org/TR/page-visibility-2/",
               "title": "Page Visibility Level 2",
               "crawled": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/"
@@ -15734,6 +16362,16 @@
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/"
+            },
+            {
+              "url": "https://www.w3.org/TR/payment-method-id/",
+              "title": "Payment Method Identifiers",
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-method-id-20190905/"
+            },
+            {
+              "url": "https://www.w3.org/TR/payment-method-manifest/",
+              "title": "Payment Method Manifest",
+              "crawled": "https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/"
             },
             {
               "url": "https://www.w3.org/TR/payment-request/",
@@ -15781,9 +16419,19 @@
               "crawled": "https://www.w3.org/TR/2019/WD-push-api-20191003/"
             },
             {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            },
+            {
               "url": "https://www.w3.org/TR/referrer-policy/",
               "title": "Referrer Policy",
               "crawled": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/"
+            },
+            {
+              "url": "https://wicg.github.io/permissions-revoke/",
+              "title": "Relinquishing Permissions",
+              "crawled": "https://wicg.github.io/permissions-revoke/"
             },
             {
               "url": "https://www.w3.org/TR/remote-playback/",
@@ -15796,14 +16444,29 @@
               "crawled": "https://w3c.github.io/reporting/"
             },
             {
+              "url": "https://wicg.github.io/permissions-request/",
+              "title": "Requesting Permissions",
+              "crawled": "https://wicg.github.io/permissions-request/"
+            },
+            {
               "url": "https://drafts.csswg.org/resize-observer/",
               "title": "Resize Observer",
               "crawled": "https://drafts.csswg.org/resize-observer/"
             },
             {
+              "url": "https://www.w3.org/TR/resource-hints/",
+              "title": "Resource Hints",
+              "crawled": "https://www.w3.org/TR/2019/WD-resource-hints-20190702/"
+            },
+            {
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/"
+              "crawled": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc-svc/",
+              "title": "Scalable Video Coding (SVC) Extension for WebRTC",
+              "crawled": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/"
             },
             {
               "url": "https://www.w3.org/TR/screen-capture/",
@@ -15851,9 +16514,14 @@
               "crawled": "https://streams.spec.whatwg.org/"
             },
             {
+              "url": "https://svgwg.org/specs/animations/",
+              "title": "SVG Animations",
+              "crawled": "https://svgwg.org/specs/animations/"
+            },
+            {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20191102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-screen-orientation-20200122/"
             },
             {
               "url": "https://www.w3.org/TR/touch-events/",
@@ -15864,6 +16532,11 @@
               "url": "https://www.w3.org/TR/uievents/",
               "title": "UI Events",
               "crawled": "https://www.w3.org/TR/2019/WD-uievents-20190530/"
+            },
+            {
+              "url": "https://www.w3.org/TR/upgrade-insecure-requests/",
+              "title": "Upgrade Insecure Requests",
+              "crawled": "http://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/"
             },
             {
               "url": "https://url.spec.whatwg.org/",
@@ -15879,6 +16552,11 @@
               "url": "https://www.w3.org/TR/vibration/",
               "title": "Vibration API (Second Edition)",
               "crawled": "https://www.w3.org/TR/2016/REC-vibration-20161018/"
+            },
+            {
+              "url": "https://wicg.github.io/visual-viewport/",
+              "title": "Visual Viewport API",
+              "crawled": "https://wicg.github.io/visual-viewport/"
             },
             {
               "url": "https://www.w3.org/TR/wake-lock/",
@@ -15919,6 +16597,11 @@
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
               "title": "Web Cryptography API",
               "crawled": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/"
+            },
+            {
+              "url": "https://wicg.github.io/web-locks/",
+              "title": "Web Locks API",
+              "crawled": "https://wicg.github.io/web-locks/"
             },
             {
               "url": "https://www.w3.org/TR/webmidi/",
@@ -16008,11 +16691,6 @@
               "crawled": "https://www.w3.org/TR/2018/WD-CSP3-20181015/"
             },
             {
-              "url": "https://w3c.github.io/editing/contentEditable.html",
-              "title": "ContentEditable",
-              "crawled": "https://w3c.github.io/editing/contentEditable.html"
-            },
-            {
               "url": "https://www.w3.org/TR/credential-management-1/",
               "title": "Credential Management Level 1",
               "crawled": "https://www.w3.org/TR/2019/WD-credential-management-1-20190117/"
@@ -16020,7 +16698,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://drafts.csswg.org/css-sizing-4/",
@@ -16118,6 +16796,11 @@
               "crawled": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/"
             },
             {
+              "url": "https://mimesniff.spec.whatwg.org/",
+              "title": "MIME Sniffing Standard",
+              "crawled": "https://mimesniff.spec.whatwg.org/"
+            },
+            {
               "url": "https://www.w3.org/TR/orientation-sensor/",
               "title": "Orientation Sensor",
               "crawled": "https://www.w3.org/TR/2019/CR-orientation-sensor-20191212/"
@@ -16125,7 +16808,7 @@
             {
               "url": "https://www.w3.org/TR/payment-method-basic-card/",
               "title": "Payment Method: Basic Card",
-              "crawled": "https://www.w3.org/TR/2019/WD-payment-method-basic-card-20191120/"
+              "crawled": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200123/"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -16156,6 +16839,11 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://www.w3.org/TR/2018/CR-webaudio-20180918/"
+            },
+            {
+              "url": "https://wicg.github.io/web-share-target/",
+              "title": "Web Share Target API",
+              "crawled": "https://wicg.github.io/web-share-target/"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -16327,6 +17015,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/clear-site-data/",
+              "title": "Clear Site Data",
+              "crawled": "https://www.w3.org/TR/2017/WD-clear-site-data-20171130/"
+            },
+            {
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/"
@@ -16352,6 +17045,11 @@
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
               "title": "Web Cryptography API",
               "crawled": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/"
+            },
+            {
+              "url": "https://wicg.github.io/web-locks/",
+              "title": "Web Locks API",
+              "crawled": "https://wicg.github.io/web-locks/"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -16508,6 +17206,38 @@
       }
     },
     {
+      "title": "JS Self-Profiling API",
+      "date": "27 November 2019",
+      "url": "https://wicg.github.io/js-self-profiling/",
+      "crawled": "https://wicg.github.io/js-self-profiling/",
+      "repository": "https://github.com/wicg/js-self-profiling",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [
+          "DOMHighResTimeStamp",
+          "Performance"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
+        "ok": false
+      }
+    },
+    {
       "title": "Keyboard Lock",
       "date": "7 September 2018",
       "url": "https://wicg.github.io/keyboard-lock/",
@@ -16599,7 +17329,7 @@
     },
     {
       "title": "Largest Contentful Paint",
-      "date": "30 December 2019",
+      "date": "22 January 2020",
       "url": "https://wicg.github.io/largest-contentful-paint/",
       "crawled": "https://wicg.github.io/largest-contentful-paint/",
       "repository": "https://github.com/wicg/largest-contentful-paint",
@@ -16641,6 +17371,11 @@
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/"
+            },
+            {
+              "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
+              "title": "Timing Entry Names Registry",
+              "crawled": "https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/"
             }
           ],
           "informative": []
@@ -16705,7 +17440,13 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
+              "title": "Timing Entry Names Registry",
+              "crawled": "https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/"
+            }
+          ],
           "informative": []
         },
         "noEdDraft": null,
@@ -16761,6 +17502,11 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/"
+            },
+            {
+              "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
+              "title": "Timing Entry Names Registry",
+              "crawled": "https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/"
             }
           ],
           "informative": []
@@ -16846,7 +17592,7 @@
     },
     {
       "title": "Media Capabilities",
-      "date": "15 January 2020",
+      "date": "25 January 2020",
       "url": "https://w3c.github.io/media-capabilities/",
       "crawled": "https://w3c.github.io/media-capabilities/",
       "repository": "https://github.com/w3c/media-capabilities",
@@ -16940,6 +17686,11 @@
               "url": "https://www.w3.org/TR/mst-content-hint/",
               "title": "MediaStreamTrack Content Hints",
               "crawled": "https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc-svc/",
+              "title": "Scalable Video Coding (SVC) Extension for WebRTC",
+              "crawled": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/"
             },
             {
               "url": "https://www.w3.org/TR/screen-capture/",
@@ -17313,6 +18064,11 @@
               "url": "https://www.w3.org/TR/css-syntax-3/",
               "title": "CSS Syntax Module Level 3",
               "crawled": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/"
+            },
+            {
+              "url": "https://mimesniff.spec.whatwg.org/",
+              "title": "MIME Sniffing Standard",
+              "crawled": "https://mimesniff.spec.whatwg.org/"
             }
           ]
         },
@@ -17322,7 +18078,7 @@
     },
     {
       "title": "Media Queries Level 5",
-      "date": "16 August 2019",
+      "date": "23 January 2020",
       "url": "https://drafts.csswg.org/mediaqueries-5/",
       "crawled": "https://drafts.csswg.org/mediaqueries-5/",
       "report": {
@@ -17609,6 +18365,102 @@
       }
     },
     {
+      "title": "MIME Sniffing Standard",
+      "date": "16 July 2019",
+      "url": "https://mimesniff.spec.whatwg.org/",
+      "crawled": "https://mimesniff.spec.whatwg.org/",
+      "repository": "https://github.com/whatwg/mimesniff",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-CSP3-20181015/"
+            },
+            {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/"
+            },
+            {
+              "url": "https://www.w3.org/TR/FileAPI/",
+              "title": "File API",
+              "crawled": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/"
+            },
+            {
+              "url": "https://html.spec.whatwg.org/",
+              "title": "HTML Standard",
+              "crawled": "https://html.spec.whatwg.org/"
+            },
+            {
+              "url": "https://w3c.github.io/media-capabilities/",
+              "title": "Media Capabilities",
+              "crawled": "https://w3c.github.io/media-capabilities/"
+            },
+            {
+              "url": "https://wicg.github.io/origin-policy/",
+              "title": "Origin Policy",
+              "crawled": "https://wicg.github.io/origin-policy/"
+            },
+            {
+              "url": "https://www.w3.org/TR/payment-handler/",
+              "title": "Payment Handler API",
+              "crawled": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/"
+            },
+            {
+              "url": "https://www.w3.org/TR/preload/",
+              "title": "Preload",
+              "crawled": "https://www.w3.org/TR/2019/CR-preload-20190626/"
+            },
+            {
+              "url": "https://w3c.github.io/ServiceWorker/",
+              "title": "Service Workers Nightly",
+              "crawled": "https://w3c.github.io/ServiceWorker/"
+            },
+            {
+              "url": "https://www.w3.org/TR/appmanifest/",
+              "title": "Web App Manifest",
+              "crawled": "https://www.w3.org/TR/2019/WD-appmanifest-20191209/"
+            },
+            {
+              "url": "https://w3c.github.io/web-nfc/",
+              "title": "Web NFC",
+              "crawled": "https://w3c.github.io/web-nfc/"
+            },
+            {
+              "url": "https://xhr.spec.whatwg.org/",
+              "title": "XMLHttpRequest Standard",
+              "crawled": "https://xhr.spec.whatwg.org/"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/webaudio/",
+              "title": "Web Audio API",
+              "crawled": "https://www.w3.org/TR/2018/CR-webaudio-20180918/"
+            }
+          ]
+        },
+        "noEdDraft": null,
+        "ok": true
+      }
+    },
+    {
       "title": "Mixed Content",
       "shortname": "mixed-content",
       "date": "2 August 2016",
@@ -17669,6 +18521,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/clear-site-data/",
+              "title": "Clear Site Data",
+              "crawled": "https://www.w3.org/TR/2017/WD-clear-site-data-20171130/"
+            },
+            {
               "url": "https://wicg.github.io/cors-rfc1918/",
               "title": "CORS and RFC1918",
               "crawled": "https://wicg.github.io/cors-rfc1918/"
@@ -17702,6 +18559,16 @@
               "url": "https://www.w3.org/TR/presentation-api/",
               "title": "Presentation API",
               "crawled": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/"
+            },
+            {
+              "url": "https://www.w3.org/TR/resource-hints/",
+              "title": "Resource Hints",
+              "crawled": "https://www.w3.org/TR/2019/WD-resource-hints-20190702/"
+            },
+            {
+              "url": "https://www.w3.org/TR/upgrade-insecure-requests/",
+              "title": "Upgrade Insecure Requests",
+              "crawled": "http://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/"
             },
             {
               "url": "https://www.w3.org/TR/webauthn-1/",
@@ -17807,15 +18674,59 @@
       }
     },
     {
+      "title": "Native File System",
+      "date": "18 November 2019",
+      "url": "https://wicg.github.io/native-file-system/",
+      "crawled": "https://wicg.github.io/native-file-system/",
+      "repository": "https://github.com/wicg/native-file-system",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/permissions/",
+            "ref": {
+              "name": "PERMISSIONS",
+              "url": "https://www.w3.org/TR/permissions/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/FileAPI/",
+            "ref": {
+              "name": "FILE-API",
+              "url": "https://www.w3.org/TR/FileAPI/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
+        "ok": false
+      }
+    },
+    {
       "title": "Navigation Timing Level 2",
       "shortname": "navigation-timing-2",
-      "date": "17 December 2019",
+      "date": "21 January 2020",
       "url": "https://www.w3.org/TR/navigation-timing-2/",
       "latest": "https://www.w3.org/TR/navigation-timing-2/",
-      "datedUrl": "https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/",
+      "datedUrl": "https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/navigation-timing/",
-      "crawled": "https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/",
+      "crawled": "https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/",
       "repository": "https://github.com/w3c/navigation-timing",
       "report": {
         "noNormativeRefs": false,
@@ -17840,22 +18751,27 @@
             {
               "url": "https://www.w3.org/TR/gamepad/",
               "title": "Gamepad",
-              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20191114/"
+              "crawled": "https://www.w3.org/TR/2020/WD-gamepad-20200121/"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/"
+              "crawled": "https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/"
             },
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/"
+              "crawled": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/"
             },
             {
               "url": "https://www.w3.org/TR/server-timing/",
               "title": "Server Timing",
               "crawled": "https://www.w3.org/TR/2020/WD-server-timing-20200120/"
+            },
+            {
+              "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
+              "title": "Timing Entry Names Registry",
+              "crawled": "https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/"
             },
             {
               "url": "https://www.w3.org/TR/user-timing-2/",
@@ -17910,6 +18826,42 @@
           "informative": []
         },
         "noEdDraft": null,
+        "ok": false
+      }
+    },
+    {
+      "title": "network-error-logging",
+      "shortname": "network-error-logging",
+      "date": "",
+      "url": "https://www.w3.org/TR/network-error-logging/",
+      "latest": "https://www.w3.org/TR/network-error-logging",
+      "crawled": "https://www.w3.org/TR/network-error-logging",
+      "report": {
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:313:34)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": [
+            {
+              "url": "https://w3c.github.io/reporting/",
+              "title": "Reporting API 1",
+              "crawled": "https://w3c.github.io/reporting/"
+            }
+          ]
+        },
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -17984,6 +18936,11 @@
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://www.w3.org/TR/2017/WD-permissions-20170925/"
+            },
+            {
+              "url": "https://wicg.github.io/permissions-request/",
+              "title": "Requesting Permissions",
+              "crawled": "https://wicg.github.io/permissions-request/"
             },
             {
               "url": "https://www.w3.org/TR/vibration/",
@@ -18069,6 +19026,74 @@
       }
     },
     {
+      "title": "Origin Policy",
+      "date": "13 January 2020",
+      "url": "https://wicg.github.io/origin-policy/",
+      "crawled": "https://wicg.github.io/origin-policy/",
+      "repository": "https://github.com/wicg/origin-policy",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
+        "ok": true
+      }
+    },
+    {
+      "title": "Page Lifecycle",
+      "date": "9 September 2019",
+      "url": "https://wicg.github.io/page-lifecycle/",
+      "crawled": "https://wicg.github.io/page-lifecycle/",
+      "repository": "https://github.com/wicg/page-lifecycle",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/IntersectionObserver/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/page-visibility-2/",
+            "ref": {
+              "name": "PAGE-VISIBILITY",
+              "url": "https://www.w3.org/TR/page-visibility/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
+        "ok": false
+      }
+    },
+    {
       "title": "Page Visibility Level 2",
       "shortname": "page-visibility-2",
       "date": "17 October 2017",
@@ -18139,6 +19164,11 @@
               "crawled": "https://w3c.github.io/picture-in-picture/"
             },
             {
+              "url": "https://www.w3.org/TR/resource-hints/",
+              "title": "Resource Hints",
+              "crawled": "https://www.w3.org/TR/2019/WD-resource-hints-20190702/"
+            },
+            {
               "url": "https://w3c.github.io/ServiceWorker/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
@@ -18146,7 +19176,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20191102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-screen-orientation-20200122/"
             },
             {
               "url": "https://www.w3.org/TR/vibration/",
@@ -18179,6 +19209,11 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/page-lifecycle/",
+              "title": "Page Lifecycle",
+              "crawled": "https://wicg.github.io/page-lifecycle/"
             },
             {
               "url": "https://www.w3.org/TR/page-visibility-2/",
@@ -18243,6 +19278,11 @@
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/"
+            },
+            {
+              "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
+              "title": "Timing Entry Names Registry",
+              "crawled": "https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/"
             }
           ],
           "informative": []
@@ -18330,7 +19370,117 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/payment-method-manifest/",
+              "title": "Payment Method Manifest",
+              "crawled": "https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/"
+            }
+          ]
+        },
+        "noEdDraft": false,
+        "ok": false
+      }
+    },
+    {
+      "title": "Payment Method Identifiers",
+      "shortname": "payment-method-id",
+      "date": "05 September 2019",
+      "url": "https://www.w3.org/TR/payment-method-id/",
+      "latest": "https://www.w3.org/TR/payment-method-id/",
+      "datedUrl": "https://www.w3.org/TR/2019/CR-payment-method-id-20190905/",
+      "datedStatus": "Candidate Recommendation",
+      "edDraft": "https://w3c.github.io/payment-method-id/",
+      "crawled": "https://www.w3.org/TR/2019/CR-payment-method-id-20190905/",
+      "repository": "https://github.com/w3c/payment-method-id",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/payment-handler/",
+              "title": "Payment Handler API",
+              "crawled": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/"
+            },
+            {
+              "url": "https://www.w3.org/TR/payment-method-manifest/",
+              "title": "Payment Method Manifest",
+              "crawled": "https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/"
+            },
+            {
+              "url": "https://www.w3.org/TR/payment-request/",
+              "title": "Payment Request API",
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-request-20191212/"
+            }
+          ],
           "informative": []
+        },
+        "noEdDraft": false,
+        "ok": true
+      }
+    },
+    {
+      "title": "Payment Method Manifest",
+      "shortname": "payment-method-manifest",
+      "date": "12 December 2017",
+      "url": "https://www.w3.org/TR/payment-method-manifest/",
+      "latest": "https://www.w3.org/TR/payment-method-manifest/",
+      "datedUrl": "https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/payment-method-manifest/",
+      "crawled": "https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/",
+      "repository": "https://github.com/w3c/payment-method-manifest",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/appmanifest/",
+            "ref": {
+              "name": "APPMANIFEST",
+              "url": "https://w3c.github.io/manifest/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/payment-handler/",
+              "title": "Payment Handler API",
+              "crawled": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/payment-method-id/",
+              "title": "Payment Method Identifiers",
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-method-id-20190905/"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": false
@@ -18339,13 +19489,13 @@
     {
       "title": "Payment Method: Basic Card",
       "shortname": "payment-method-basic-card",
-      "date": "20 November 2019",
+      "date": "23 January 2020",
       "url": "https://www.w3.org/TR/payment-method-basic-card/",
       "latest": "https://www.w3.org/TR/payment-method-basic-card/",
-      "datedUrl": "https://www.w3.org/TR/2019/WD-payment-method-basic-card-20191120/",
+      "datedUrl": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200123/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/payment-method-basic-card/",
-      "crawled": "https://www.w3.org/TR/2019/WD-payment-method-basic-card-20191120/",
+      "crawled": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200123/",
       "repository": "https://github.com/w3c/payment-method-basic-card",
       "report": {
         "noNormativeRefs": false,
@@ -18371,6 +19521,11 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/payment-method-id/",
+              "title": "Payment Method Identifiers",
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-method-id-20190905/"
+            },
             {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
@@ -18421,12 +19576,23 @@
               "crawled": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/"
             },
             {
+              "url": "https://www.w3.org/TR/payment-method-manifest/",
+              "title": "Payment Method Manifest",
+              "crawled": "https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/"
+            },
+            {
               "url": "https://www.w3.org/TR/payment-method-basic-card/",
               "title": "Payment Method: Basic Card",
-              "crawled": "https://www.w3.org/TR/2019/WD-payment-method-basic-card-20191120/"
+              "crawled": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200123/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/payment-method-id/",
+              "title": "Payment Method Identifiers",
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-method-id-20190905/"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": true
@@ -18476,6 +19642,11 @@
               "crawled": "https://wicg.github.io/event-timing/"
             },
             {
+              "url": "https://wicg.github.io/frame-timing/",
+              "title": "Frame Timing",
+              "crawled": "https://wicg.github.io/frame-timing/"
+            },
+            {
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/"
@@ -18493,7 +19664,7 @@
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/"
+              "crawled": "https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/"
             },
             {
               "url": "https://www.w3.org/TR/paint-timing/",
@@ -18503,7 +19674,12 @@
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/"
+              "crawled": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/"
+            },
+            {
+              "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
+              "title": "Timing Entry Names Registry",
+              "crawled": "https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/"
             },
             {
               "url": "https://www.w3.org/TR/user-timing-2/",
@@ -18645,6 +19821,11 @@
               "crawled": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/"
             },
             {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "Native File System",
+              "crawled": "https://wicg.github.io/native-file-system/"
+            },
+            {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://www.w3.org/TR/2017/WD-permissions-20170925/"
@@ -18653,6 +19834,16 @@
               "url": "https://www.w3.org/TR/presentation-api/",
               "title": "Presentation API",
               "crawled": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/"
+            },
+            {
+              "url": "https://wicg.github.io/permissions-revoke/",
+              "title": "Relinquishing Permissions",
+              "crawled": "https://wicg.github.io/permissions-revoke/"
+            },
+            {
+              "url": "https://wicg.github.io/permissions-request/",
+              "title": "Requesting Permissions",
+              "crawled": "https://wicg.github.io/permissions-request/"
             },
             {
               "url": "https://www.w3.org/TR/screen-capture/",
@@ -18892,6 +20083,11 @@
               "url": "https://html.spec.whatwg.org/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/"
+            },
+            {
+              "url": "https://www.w3.org/TR/resource-hints/",
+              "title": "Resource Hints",
+              "crawled": "https://www.w3.org/TR/2019/WD-resource-hints-20190702/"
             }
           ],
           "informative": []
@@ -18976,6 +20172,40 @@
           ]
         },
         "noEdDraft": false,
+        "ok": false
+      }
+    },
+    {
+      "title": "Priority Hints",
+      "date": "30 September 2019",
+      "url": "https://wicg.github.io/priority-hints/",
+      "crawled": "https://wicg.github.io/priority-hints/",
+      "repository": "https://github.com/wicg/priority-hints",
+      "report": {
+        "noNormativeRefs": true,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/preload/",
+          "https://www.w3.org/TR/resource-hints/",
+          "https://fetch.spec.whatwg.org/",
+          "https://html.spec.whatwg.org/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
         "ok": false
       }
     },
@@ -19101,6 +20331,49 @@
       }
     },
     {
+      "title": "Quirks Mode Standard",
+      "date": "19 August 2019",
+      "url": "https://quirks.spec.whatwg.org/",
+      "crawled": "https://quirks.spec.whatwg.org/",
+      "repository": "https://github.com/whatwg/quirks",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": true,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/cssom-1/",
+            "ref": {
+              "name": "CSSOM",
+              "url": "https://drafts.csswg.org/cssom/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/selectors-4/",
+              "title": "Selectors Level 4",
+              "crawled": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/"
+            }
+          ]
+        },
+        "noEdDraft": null,
+        "ok": false
+      }
+    },
+    {
       "title": "Referrer Policy",
       "shortname": "referrer-policy",
       "date": "26 January 2017",
@@ -19161,6 +20434,11 @@
               "crawled": "https://html.spec.whatwg.org/"
             },
             {
+              "url": "https://www.w3.org/TR/resource-hints/",
+              "title": "Resource Hints",
+              "crawled": "https://www.w3.org/TR/2019/WD-resource-hints-20190702/"
+            },
+            {
               "url": "https://w3c.github.io/ServiceWorker/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
@@ -19175,6 +20453,43 @@
           ]
         },
         "noEdDraft": false,
+        "ok": false
+      }
+    },
+    {
+      "title": "Relinquishing Permissions",
+      "date": "21 September 2017",
+      "url": "https://wicg.github.io/permissions-revoke/",
+      "crawled": "https://wicg.github.io/permissions-revoke/",
+      "repository": "https://github.com/wicg/permissions-revoke",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/permissions/",
+            "ref": {
+              "name": "PERMISSIONS",
+              "url": "https://www.w3.org/TR/permissions/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
         "ok": false
       }
     },
@@ -19276,6 +20591,59 @@
       }
     },
     {
+      "title": "Requesting Permissions",
+      "date": "28 September 2017",
+      "url": "https://wicg.github.io/permissions-request/",
+      "crawled": "https://wicg.github.io/permissions-request/",
+      "repository": "https://github.com/wicg/permissions-request",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/permissions/",
+            "ref": {
+              "name": "PERMISSIONS",
+              "url": "https://www.w3.org/TR/permissions/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/generic-sensor/",
+              "title": "Generic Sensor API",
+              "crawled": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/"
+            },
+            {
+              "url": "https://webbluetoothcg.github.io/web-bluetooth/",
+              "title": "Web Bluetooth",
+              "crawled": "https://webbluetoothcg.github.io/web-bluetooth/"
+            },
+            {
+              "url": "https://wicg.github.io/webusb/",
+              "title": "WebUSB API",
+              "crawled": "https://wicg.github.io/webusb/"
+            }
+          ],
+          "informative": []
+        },
+        "noEdDraft": null,
+        "ok": false
+      }
+    },
+    {
       "title": "Resize Observer",
       "date": "18 January 2020",
       "url": "https://drafts.csswg.org/resize-observer/",
@@ -19308,15 +20676,92 @@
       }
     },
     {
+      "title": "Resource Hints",
+      "shortname": "resource-hints",
+      "date": "02 July 2019",
+      "url": "https://www.w3.org/TR/resource-hints/",
+      "latest": "https://www.w3.org/TR/resource-hints/",
+      "datedUrl": "https://www.w3.org/TR/2019/WD-resource-hints-20190702/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/resource-hints/",
+      "crawled": "https://www.w3.org/TR/2019/WD-resource-hints-20190702/",
+      "repository": "https://github.com/w3c/resource-hints",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://url.spec.whatwg.org/",
+          "https://fetch.spec.whatwg.org/",
+          "https://w3c.github.io/webappsec/specs/CSP2/",
+          "https://w3c.github.io/webappsec/specs/content-security-policy/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/html5/",
+            "ref": {
+              "name": "HTML",
+              "url": "https://html.spec.whatwg.org/multipage/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/page-visibility/",
+            "ref": {
+              "name": "PAGE-VISIBILITY",
+              "url": "https://www.w3.org/TR/page-visibility/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webappsec-mixed-content/",
+            "ref": {
+              "name": "MIXED-CONTENT",
+              "url": "https://www.w3.org/TR/mixed-content/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://html.spec.whatwg.org/",
+              "title": "HTML Standard",
+              "crawled": "https://html.spec.whatwg.org/"
+            },
+            {
+              "url": "https://www.w3.org/TR/navigation-timing-2/",
+              "title": "Navigation Timing Level 2",
+              "crawled": "https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/"
+            },
+            {
+              "url": "https://www.w3.org/TR/preload/",
+              "title": "Preload",
+              "crawled": "https://www.w3.org/TR/2019/CR-preload-20190626/"
+            }
+          ],
+          "informative": []
+        },
+        "noEdDraft": false,
+        "ok": false
+      }
+    },
+    {
       "title": "Resource Timing Level 2",
       "shortname": "resource-timing-2",
-      "date": "28 November 2019",
+      "date": "23 January 2020",
       "url": "https://www.w3.org/TR/resource-timing-2/",
       "latest": "https://www.w3.org/TR/resource-timing-2/",
-      "datedUrl": "https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/",
+      "datedUrl": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/resource-timing/",
-      "crawled": "https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/",
+      "crawled": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/",
       "repository": "https://github.com/w3c/resource-timing",
       "report": {
         "noNormativeRefs": false,
@@ -19351,12 +20796,17 @@
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/"
+              "crawled": "https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/"
             },
             {
               "url": "https://www.w3.org/TR/server-timing/",
               "title": "Server Timing",
               "crawled": "https://www.w3.org/TR/2020/WD-server-timing-20200120/"
+            },
+            {
+              "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
+              "title": "Timing Entry Names Registry",
+              "crawled": "https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/"
             }
           ],
           "informative": [
@@ -19369,6 +20819,40 @@
         },
         "noEdDraft": false,
         "ok": false
+      }
+    },
+    {
+      "title": "Scalable Video Coding (SVC) Extension for WebRTC",
+      "shortname": "webrtc-svc",
+      "date": "22 October 2019",
+      "url": "https://www.w3.org/TR/webrtc-svc/",
+      "latest": "https://www.w3.org/TR/webrtc-svc/",
+      "datedUrl": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/webrtc-svc/",
+      "crawled": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/",
+      "repository": "https://github.com/w3c/webrtc-svc",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": false,
+        "ok": true
       }
     },
     {
@@ -19531,6 +21015,11 @@
               "crawled": "https://www.w3.org/TR/2016/CR-mixed-content-20160802/"
             },
             {
+              "url": "https://wicg.github.io/origin-policy/",
+              "title": "Origin Policy",
+              "crawled": "https://wicg.github.io/origin-policy/"
+            },
+            {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://www.w3.org/TR/2017/WD-permissions-20170925/"
@@ -19596,6 +21085,11 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://www.w3.org/TR/2019/CR-payment-request-20191212/"
+            },
+            {
+              "url": "https://wicg.github.io/web-share-target/",
+              "title": "Web Share Target API",
+              "crawled": "https://wicg.github.io/web-share-target/"
             },
             {
               "url": "https://wicg.github.io/webusb/",
@@ -19738,7 +21232,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://www.w3.org/TR/css-inline-3/",
@@ -19901,6 +21395,11 @@
               "crawled": "https://w3c.github.io/picture-in-picture/"
             },
             {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            },
+            {
               "url": "https://drafts.csswg.org/scroll-animations-1/",
               "title": "Scroll-linked Animations",
               "crawled": "https://drafts.csswg.org/scroll-animations-1/"
@@ -19915,7 +21414,7 @@
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
             },
             {
               "url": "https://www.w3.org/TR/css3-images/",
@@ -20049,13 +21548,18 @@
               "url": "https://notifications.spec.whatwg.org/",
               "title": "Notifications API Standard",
               "crawled": "https://notifications.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/page-lifecycle/",
+              "title": "Page Lifecycle",
+              "crawled": "https://wicg.github.io/page-lifecycle/"
             }
           ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/"
+              "crawled": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/"
             },
             {
               "url": "https://streams.spec.whatwg.org/",
@@ -20097,7 +21601,18 @@
               "crawled": "https://www.w3.org/TR/2017/WD-permissions-20170925/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/clear-site-data/",
+              "title": "Clear Site Data",
+              "crawled": "https://www.w3.org/TR/2017/WD-clear-site-data-20171130/"
+            },
+            {
+              "url": "https://wicg.github.io/web-locks/",
+              "title": "Web Locks API",
+              "crawled": "https://wicg.github.io/web-locks/"
+            }
+          ]
         },
         "noEdDraft": null,
         "ok": true
@@ -20244,6 +21759,107 @@
       }
     },
     {
+      "title": "SVG Animations",
+      "date": "04 December 2019",
+      "url": "https://svgwg.org/specs/animations/",
+      "crawled": "https://svgwg.org/specs/animations/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/2012/WD-css-animations-1-20120403/",
+          "https://www.w3.org/TR/2012/WD-css-transitions-1-20120403/",
+          "https://www.w3.org/TR/css3-values/",
+          "https://www.w3.org/TR/wai-aria-1.1/",
+          "https://www.w3.org/TR/css-transforms-1/",
+          "https://www.w3.org/TR/css-values/",
+          "https://www.w3.org/TR/smil/",
+          "https://www.w3.org/TR/charmod/",
+          "https://www.w3.org/TR/css-transitions-1/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/xml/",
+            "ref": {
+              "name": "XML10",
+              "url": "http://www.w3.org/TR/2008/REC-xml-20081126/"
+            }
+          },
+          {
+            "link": "https://html.spec.whatwg.org/",
+            "ref": {
+              "name": "HTML",
+              "url": "http://www.w3.org/TR/html5/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2012/WD-dom-20120405/",
+            "ref": {
+              "name": "DOM4",
+              "url": "http://www.w3.org/TR/2014/WD-dom-20140204/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2006/REC-xml-20060816/",
+            "ref": {
+              "name": "XML10",
+              "url": "http://www.w3.org/TR/2008/REC-xml-20081126/"
+            }
+          },
+          {
+            "link": "https://dom.spec.whatwg.org/",
+            "ref": {
+              "name": "DOM4",
+              "url": "http://www.w3.org/TR/2014/WD-dom-20140204/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/dom/",
+            "ref": {
+              "name": "DOM4",
+              "url": "http://www.w3.org/TR/2014/WD-dom-20140204/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2014/REC-html5-20141028/",
+            "ref": {
+              "name": "HTML",
+              "url": "http://www.w3.org/TR/html5/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/html/",
+            "ref": {
+              "name": "HTML",
+              "url": "http://www.w3.org/TR/html5/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/smil-animation/",
+            "ref": {
+              "name": "SMILANIM",
+              "url": "http://www.w3.org/TR/2001/REC-smil-animation-20010904/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
+        "ok": false
+      }
+    },
+    {
       "title": "SVG Markers",
       "shortname": "svg-markers",
       "date": "09 April 2015",
@@ -20323,13 +21939,13 @@
     {
       "title": "The Screen Orientation API",
       "shortname": "screen-orientation",
-      "date": "02 November 2019",
+      "date": "22 January 2020",
       "url": "https://www.w3.org/TR/screen-orientation/",
       "latest": "https://www.w3.org/TR/screen-orientation/",
-      "datedUrl": "https://www.w3.org/TR/2019/WD-screen-orientation-20191102/",
+      "datedUrl": "https://www.w3.org/TR/2020/WD-screen-orientation-20200122/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/screen-orientation/",
-      "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20191102/",
+      "crawled": "https://www.w3.org/TR/2020/WD-screen-orientation-20200122/",
       "repository": "https://github.com/w3c/screen-orientation",
       "report": {
         "noNormativeRefs": false,
@@ -20390,6 +22006,40 @@
         },
         "noEdDraft": false,
         "ok": false
+      }
+    },
+    {
+      "title": "Timing Entry Names Registry",
+      "shortname": "timing-entrytypes-registry",
+      "date": "23 July 2019",
+      "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
+      "latest": "https://www.w3.org/TR/timing-entrytypes-registry/",
+      "datedUrl": "https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/timing-entrytypes-registry/",
+      "crawled": "https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/",
+      "repository": "https://github.com/w3c/timing-entrytypes-registry",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": false,
+        "ok": true
       }
     },
     {
@@ -20464,6 +22114,40 @@
         },
         "noEdDraft": false,
         "ok": false
+      }
+    },
+    {
+      "title": "Trace Context",
+      "shortname": "trace-context",
+      "date": "21 November 2019",
+      "url": "https://www.w3.org/TR/trace-context/",
+      "latest": "https://www.w3.org/TR/trace-context-1/",
+      "datedUrl": "https://www.w3.org/TR/2019/PR-trace-context-1-20191121/",
+      "datedStatus": "Proposed Recommendation",
+      "edDraft": "https://w3c.github.io/trace-context/",
+      "crawled": "https://www.w3.org/TR/2019/PR-trace-context-1-20191121/",
+      "repository": "https://github.com/w3c/trace-context",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": false,
+        "ok": true
       }
     },
     {
@@ -20703,6 +22387,55 @@
       }
     },
     {
+      "title": "Upgrade Insecure Requests",
+      "shortname": "upgrade-insecure-requests",
+      "date": "8 October 2015",
+      "url": "https://www.w3.org/TR/upgrade-insecure-requests/",
+      "latest": "http://www.w3.org/TR/upgrade-insecure-requests/",
+      "datedUrl": "http://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/",
+      "datedStatus": "Candidate Recommendation",
+      "edDraft": "https://w3c.github.io/webappsec-upgrade-insecure-requests/",
+      "crawled": "http://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/",
+      "repository": "https://github.com/w3c/webappsec-upgrade-insecure-requests",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/webappsec/specs/mixedcontent/",
+          "https://www.w3.org/TR/url/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://www.w3.org/TR/2018/WD-CSP3-20181015/"
+            }
+          ]
+        },
+        "noEdDraft": false,
+        "ok": false
+      }
+    },
+    {
       "title": "URL Standard",
       "date": "20 November 2019",
       "url": "https://url.spec.whatwg.org/",
@@ -20734,6 +22467,11 @@
               "url": "https://www.w3.org/TR/beacon/",
               "title": "Beacon",
               "crawled": "https://www.w3.org/TR/2017/CR-beacon-20170413/"
+            },
+            {
+              "url": "https://www.w3.org/TR/clear-site-data/",
+              "title": "Clear Site Data",
+              "crawled": "https://www.w3.org/TR/2017/WD-clear-site-data-20171130/"
             },
             {
               "url": "https://www.w3.org/TR/CSP3/",
@@ -20808,7 +22546,7 @@
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/"
+              "crawled": "https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/"
             },
             {
               "url": "https://notifications.spec.whatwg.org/",
@@ -20816,9 +22554,24 @@
               "crawled": "https://notifications.spec.whatwg.org/"
             },
             {
+              "url": "https://wicg.github.io/origin-policy/",
+              "title": "Origin Policy",
+              "crawled": "https://wicg.github.io/origin-policy/"
+            },
+            {
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/"
+            },
+            {
+              "url": "https://www.w3.org/TR/payment-method-id/",
+              "title": "Payment Method Identifiers",
+              "crawled": "https://www.w3.org/TR/2019/CR-payment-method-id-20190905/"
+            },
+            {
+              "url": "https://www.w3.org/TR/payment-method-manifest/",
+              "title": "Payment Method Manifest",
+              "crawled": "https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/"
             },
             {
               "url": "https://www.w3.org/TR/payment-request/",
@@ -20901,6 +22654,11 @@
               "url": "https://www.w3.org/TR/encoding/",
               "title": "Encoding",
               "crawled": "https://www.w3.org/TR/2018/CR-encoding-20180327/"
+            },
+            {
+              "url": "https://wicg.github.io/web-share-target/",
+              "title": "Web Share Target API",
+              "crawled": "https://wicg.github.io/web-share-target/"
             }
           ]
         },
@@ -20937,7 +22695,13 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
+              "title": "Timing Entry Names Registry",
+              "crawled": "https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/"
+            }
+          ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -21001,6 +22765,41 @@
         },
         "noEdDraft": false,
         "ok": false
+      }
+    },
+    {
+      "title": "Visual Viewport API",
+      "date": "21 January 2020",
+      "url": "https://wicg.github.io/visual-viewport/",
+      "crawled": "https://wicg.github.io/visual-viewport/",
+      "repository": "https://github.com/wicg/visual-viewport",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://wicg.github.io/layout-instability/",
+              "title": "Layout Instability API",
+              "crawled": "https://wicg.github.io/layout-instability/"
+            }
+          ],
+          "informative": []
+        },
+        "noEdDraft": null,
+        "ok": true
       }
     },
     {
@@ -21168,6 +22967,11 @@
               "crawled": "https://wicg.github.io/background-fetch/"
             },
             {
+              "url": "https://wicg.github.io/badging/",
+              "title": "Badging API",
+              "crawled": "https://wicg.github.io/badging/"
+            },
+            {
               "url": "https://w3c.github.io/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://w3c.github.io/mediasession/"
@@ -21176,6 +22980,11 @@
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/"
+            },
+            {
+              "url": "https://www.w3.org/TR/payment-method-manifest/",
+              "title": "Payment Method Manifest",
+              "crawled": "https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/"
             }
           ],
           "informative": [
@@ -21187,7 +22996,12 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20191102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-screen-orientation-20200122/"
+            },
+            {
+              "url": "https://wicg.github.io/web-share-target/",
+              "title": "Web Share Target API",
+              "crawled": "https://wicg.github.io/web-share-target/"
             }
           ]
         },
@@ -21500,6 +23314,38 @@
       }
     },
     {
+      "title": "Web Locks API",
+      "date": "7 October 2019",
+      "url": "https://wicg.github.io/web-locks/",
+      "crawled": "https://wicg.github.io/web-locks/",
+      "repository": "https://github.com/wicg/web-locks",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/ServiceWorker/",
+          "https://www.w3.org/TR/security-privacy-questionnaire/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
+        "ok": false
+      }
+    },
+    {
       "title": "Web MIDI API",
       "shortname": "webmidi",
       "date": "17 March 2015",
@@ -21607,8 +23453,37 @@
       }
     },
     {
+      "title": "Web Share Target API",
+      "date": "27 September 2019",
+      "url": "https://wicg.github.io/web-share-target/",
+      "crawled": "https://wicg.github.io/web-share-target/",
+      "repository": "https://github.com/wicg/web-share-target",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
+        "ok": true
+      }
+    },
+    {
       "title": "Web Speech API",
-      "date": "30 September 2019",
+      "date": "21 January 2020",
       "url": "https://wicg.github.io/speech-api/",
       "crawled": "https://wicg.github.io/speech-api/",
       "report": {
@@ -21799,7 +23674,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "20 January 2020",
+      "date": "27 January 2020",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -21840,7 +23715,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "20 January 2020",
+      "date": "27 January 2020",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -21983,6 +23858,11 @@
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
+            },
+            {
+              "url": "https://wicg.github.io/badging/",
+              "title": "Badging API",
+              "crawled": "https://wicg.github.io/badging/"
             },
             {
               "url": "https://www.w3.org/TR/battery-status/",
@@ -22135,6 +24015,11 @@
               "crawled": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/"
             },
             {
+              "url": "https://www.w3.org/TR/device-memory-1/",
+              "title": "Device Memory",
+              "crawled": "https://www.w3.org/TR/2018/WD-device-memory-1-20180925/"
+            },
+            {
               "url": "https://www.w3.org/TR/orientation-event/",
               "title": "DeviceOrientation Event Specification",
               "crawled": "https://www.w3.org/TR/2019/WD-orientation-event-20190416/"
@@ -22200,6 +24085,11 @@
               "crawled": "https://drafts.css-houdini.org/font-metrics-api/"
             },
             {
+              "url": "https://wicg.github.io/frame-timing/",
+              "title": "Frame Timing",
+              "crawled": "https://wicg.github.io/frame-timing/"
+            },
+            {
               "url": "https://fullscreen.spec.whatwg.org/",
               "title": "Fullscreen API Standard",
               "crawled": "https://fullscreen.spec.whatwg.org/"
@@ -22207,7 +24097,12 @@
             {
               "url": "https://www.w3.org/TR/gamepad/",
               "title": "Gamepad",
-              "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20191114/"
+              "crawled": "https://www.w3.org/TR/2020/WD-gamepad-20200121/"
+            },
+            {
+              "url": "https://w3c.github.io/gamepad/extensions.html",
+              "title": "Gamepad Extensions",
+              "crawled": "https://w3c.github.io/gamepad/extensions.html"
             },
             {
               "url": "https://www.w3.org/TR/generic-sensor/",
@@ -22268,6 +24163,11 @@
               "url": "https://www.w3.org/TR/intersection-observer/",
               "title": "Intersection Observer",
               "crawled": "https://www.w3.org/TR/2019/WD-intersection-observer-20190531/"
+            },
+            {
+              "url": "https://wicg.github.io/js-self-profiling/",
+              "title": "JS Self-Profiling API",
+              "crawled": "https://wicg.github.io/js-self-profiling/"
             },
             {
               "url": "https://wicg.github.io/keyboard-lock/",
@@ -22340,9 +24240,14 @@
               "crawled": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/"
             },
             {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "Native File System",
+              "crawled": "https://wicg.github.io/native-file-system/"
+            },
+            {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/"
+              "crawled": "https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/"
             },
             {
               "url": "https://wicg.github.io/netinfo/",
@@ -22360,6 +24265,11 @@
               "crawled": "https://www.w3.org/TR/2019/CR-orientation-sensor-20191212/"
             },
             {
+              "url": "https://wicg.github.io/page-lifecycle/",
+              "title": "Page Lifecycle",
+              "crawled": "https://wicg.github.io/page-lifecycle/"
+            },
+            {
               "url": "https://www.w3.org/TR/paint-timing/",
               "title": "Paint Timing 1",
               "crawled": "https://www.w3.org/TR/2017/WD-paint-timing-20170907/"
@@ -22372,7 +24282,7 @@
             {
               "url": "https://www.w3.org/TR/payment-method-basic-card/",
               "title": "Payment Method: Basic Card",
-              "crawled": "https://www.w3.org/TR/2019/WD-payment-method-basic-card-20191120/"
+              "crawled": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200123/"
             },
             {
               "url": "https://www.w3.org/TR/payment-request/",
@@ -22420,6 +24330,11 @@
               "crawled": "https://www.w3.org/TR/2019/WD-push-api-20191003/"
             },
             {
+              "url": "https://wicg.github.io/permissions-revoke/",
+              "title": "Relinquishing Permissions",
+              "crawled": "https://wicg.github.io/permissions-revoke/"
+            },
+            {
               "url": "https://www.w3.org/TR/remote-playback/",
               "title": "Remote Playback API",
               "crawled": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/"
@@ -22430,6 +24345,11 @@
               "crawled": "https://w3c.github.io/reporting/"
             },
             {
+              "url": "https://wicg.github.io/permissions-request/",
+              "title": "Requesting Permissions",
+              "crawled": "https://wicg.github.io/permissions-request/"
+            },
+            {
               "url": "https://drafts.csswg.org/resize-observer/",
               "title": "Resize Observer",
               "crawled": "https://drafts.csswg.org/resize-observer/"
@@ -22437,7 +24357,12 @@
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/"
+              "crawled": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc-svc/",
+              "title": "Scalable Video Coding (SVC) Extension for WebRTC",
+              "crawled": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/"
             },
             {
               "url": "https://www.w3.org/TR/screen-capture/",
@@ -22477,7 +24402,7 @@
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
-              "crawled": "https://www.w3.org/TR/2019/WD-screen-orientation-20191102/"
+              "crawled": "https://www.w3.org/TR/2020/WD-screen-orientation-20200122/"
             },
             {
               "url": "https://www.w3.org/TR/uievents/",
@@ -22498,6 +24423,11 @@
               "url": "https://www.w3.org/TR/vibration/",
               "title": "Vibration API (Second Edition)",
               "crawled": "https://www.w3.org/TR/2016/REC-vibration-20161018/"
+            },
+            {
+              "url": "https://wicg.github.io/visual-viewport/",
+              "title": "Visual Viewport API",
+              "crawled": "https://wicg.github.io/visual-viewport/"
             },
             {
               "url": "https://www.w3.org/TR/wake-lock/",
@@ -22538,6 +24468,11 @@
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
               "title": "Web Cryptography API",
               "crawled": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/"
+            },
+            {
+              "url": "https://wicg.github.io/web-locks/",
+              "title": "Web Locks API",
+              "crawled": "https://wicg.github.io/web-locks/"
             },
             {
               "url": "https://w3c.github.io/web-nfc/",
@@ -22652,6 +24587,11 @@
               "crawled": "https://www.w3.org/TR/2016/CR-secure-contexts-20160915/"
             },
             {
+              "url": "https://wicg.github.io/web-share-target/",
+              "title": "Web Share Target API",
+              "crawled": "https://wicg.github.io/web-share-target/"
+            },
+            {
               "url": "https://www.w3.org/TR/WebIDL-1/",
               "title": "WebIDL Level 1",
               "crawled": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/"
@@ -22723,14 +24663,14 @@
               "crawled": "https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/"
             },
             {
+              "url": "https://www.w3.org/TR/webrtc-svc/",
+              "title": "Scalable Video Coding (SVC) Extension for WebRTC",
+              "crawled": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/"
+            },
+            {
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://www.w3.org/TR/2018/CR-webaudio-20180918/"
-            },
-            {
-              "url": "https://www.w3.org/TR/webrtc-dscp/",
-              "title": "WebRTC DSCP Control API",
-              "crawled": "https://www.w3.org/TR/2018/WD-webrtc-dscp-20180703/"
             }
           ],
           "informative": [
@@ -22763,38 +24703,31 @@
     {
       "title": "WebRTC DSCP Control API",
       "shortname": "webrtc-dscp",
-      "date": "3 July 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/webrtc-dscp/",
-      "latest": "https://www.w3.org/TR/webrtc-dscp/",
-      "datedUrl": "https://www.w3.org/TR/2018/WD-webrtc-dscp-20180703/",
-      "datedStatus": "Working Draft",
-      "edDraft": "https://w3c.github.io/webrtc-dscp-exp/",
-      "crawled": "https://www.w3.org/TR/2018/WD-webrtc-dscp-20180703/",
+      "latest": "https://www.w3.org/TR/webrtc-dscp",
+      "crawled": "https://www.w3.org/TR/webrtc-dscp",
       "repository": "https://github.com/w3c/webrtc-dscp-exp",
       "report": {
-        "noNormativeRefs": false,
+        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:313:34)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": true,
-        "noIdlContent": false,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "RTCPriorityType"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/webrtc-pc/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
         },
-        "noEdDraft": false,
+        "noEdDraft": true,
         "ok": false
       }
     },
@@ -23041,7 +24974,7 @@
               {
                 "url": "https://www.w3.org/TR/gamepad/",
                 "title": "Gamepad",
-                "crawled": "https://www.w3.org/TR/2019/WD-gamepad-20191114/"
+                "crawled": "https://www.w3.org/TR/2020/WD-gamepad-20200121/"
               }
             ]
           }
@@ -23184,7 +25117,7 @@
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
-              "crawled": "https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/"
+              "crawled": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/"
             }
           ],
           "informative": [
@@ -23192,6 +25125,11 @@
               "url": "https://www.w3.org/TR/CSP3/",
               "title": "Content Security Policy Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-CSP3-20181015/"
+            },
+            {
+              "url": "https://wicg.github.io/origin-policy/",
+              "title": "Origin Policy",
+              "crawled": "https://wicg.github.io/origin-policy/"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
