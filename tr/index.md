@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% January 20, 2020
+% January 27, 2020
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -45,7 +45,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (20 January 2020)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/CR-SVG2-20181004/) (27 January 2020)
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -66,7 +66,7 @@ Normative references to this spec from:
 - [Compositing and Blending Level 1](http://www.w3.org/TR/2015/CR-compositing-1-20150113/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Color Module Level 3](https://www.w3.org/TR/2018/REC-css-color-3-20180619/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20191105/)
@@ -90,8 +90,9 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
+- [SVG Animations](https://svgwg.org/specs/animations/)
 - [SVG Markers](http://www.w3.org/TR/2015/WD-svg-markers-20150409/)
 - [SVG Strokes](http://www.w3.org/TR/2015/WD-svg-strokes-20150409/)
 - [UI Events](https://www.w3.org/TR/2019/WD-uievents-20190530/)
@@ -173,6 +174,29 @@ Informative references to this spec from:
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 
 
+## Accessible Name and Description Computation 1.2 {data-spec=true data-anomaly=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://w3c.github.io/accname/) (16 January 2020)
+- Repository: [GitHub w3c/accname](https://github.com/w3c/accname)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/wai-aria-1.2/`](https://www.w3.org/TR/wai-aria-1.2/)
+     * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/)
+     * [`https://www.w3.org/TR/wai-aria-1.1/`](https://www.w3.org/TR/wai-aria-1.1/)
+     * [`https://w3c.github.io/core-aam/`](https://w3c.github.io/core-aam/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Accessible Rich Internet Applications (WAI-ARIA) 1.2 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -199,7 +223,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Core Accessibility API Mappings 1.2](https://w3c.github.io/core-aam/)
 
 No informative reference to this spec from other specs.
 
@@ -284,6 +310,25 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## Badging API {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/badging/) (11 November 2019)
+- Repository: [GitHub wicg/badging](https://github.com/wicg/badging)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Battery Status API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
@@ -332,7 +377,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/)
 
 Informative references to this spec from:
 
@@ -377,6 +422,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Accessible Name and Description Computation 1.2](https://w3c.github.io/accname/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
@@ -387,7 +433,7 @@ Normative references to this spec from:
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
@@ -453,7 +499,9 @@ Normative references to this spec from:
 - [Media Queries](http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
+- [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
 - [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selectors Level 3](https://www.w3.org/TR/2018/REC-selectors-3-20181106/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
@@ -495,6 +543,31 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
+
+No informative reference to this spec from other specs.
+
+
+## Clear Site Data {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-clear-site-data-20171130/) (30 November 2017)
+- Editor's Draft: [https://w3c.github.io/webappsec-clear-site-data/](https://w3c.github.io/webappsec-clear-site-data/)
+- Latest published version: [https://www.w3.org/TR/clear-site-data/](https://www.w3.org/TR/clear-site-data/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-clear-site-data-20171130/)
+- Repository: [GitHub w3c/webappsec-clear-site-data](https://github.com/w3c/webappsec-clear-site-data)
+- Shortname: clear-site-data
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/), related reference "INDEXEDDB" uses URL [`https://www.w3.org/TR/IndexedDB/`](https://www.w3.org/TR/IndexedDB/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -724,12 +797,15 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
+- [Origin Policy](https://wicg.github.io/origin-policy/)
+- [Resource Hints](https://www.w3.org/TR/2019/WD-resource-hints-20190702/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
 Informative references to this spec from:
 
+- [Clear Site Data](https://www.w3.org/TR/2017/WD-clear-site-data-20171130/)
 - [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -763,7 +839,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (31 December 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/editing/contentEditable.html) (24 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -781,7 +857,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/cookie-store/) (2 December 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/cookie-store/) (22 January 2020)
 - Repository: [GitHub wicg/cookie-store](https://github.com/wicg/cookie-store)
 - Shortname: no shortname
 
@@ -821,6 +897,30 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
+
+No informative reference to this spec from other specs.
+
+
+## Core Accessibility API Mappings 1.2 {data-spec=true data-anomaly=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://w3c.github.io/core-aam/) (23 October 2019)
+- Repository: [GitHub w3c/aria](https://github.com/w3c/aria)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/)
+     * [`https://www.w3.org/TR/wai-aria-practices/`](https://www.w3.org/TR/wai-aria-practices/)
+     * [`https://www.w3.org/TR/wai-aria-implementation/`](https://www.w3.org/TR/wai-aria-implementation/)
+     * [`https://w3c.github.io/accname/`](https://w3c.github.io/accname/)
+     * [`https://www.w3.org/TR/wai-aria-1.1/`](https://www.w3.org/TR/wai-aria-1.1/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -1012,7 +1112,7 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
@@ -1046,6 +1146,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
@@ -1104,7 +1205,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/2018/WD-css-logical-1-20180827/)
@@ -1128,10 +1229,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/) (2 January 2020)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/) (24 January 2020)
 - Editor's Draft: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
 - Latest published version: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-ui-4
 
@@ -1149,7 +1250,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
      * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/)
 - Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://www.w3.org/TR/css3-images/`](https://www.w3.org/TR/css3-images/), related reference "CSS-IMAGES-3" uses URL [`https://www.w3.org/TR/css-images-3/`](https://www.w3.org/TR/css-images-3/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -1242,7 +1342,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
@@ -1298,7 +1400,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
-- [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/2018/WD-css-logical-1-20180827/)
@@ -1347,8 +1448,9 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
+- [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
@@ -1398,6 +1500,7 @@ Normative references to this spec from:
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
@@ -1469,7 +1572,7 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
@@ -1485,6 +1588,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
@@ -1521,7 +1625,7 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/2019/WD-css-color-adjust-1-20190523/)
 - [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/)
@@ -1538,6 +1642,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
@@ -1555,7 +1660,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-color-5/) (20 December 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-color-5/) (24 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1607,6 +1712,7 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2019/WD-css-properties-values-api-1-20191025/)
 - [CSS Round Display Level 1](https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
 Informative references to this spec from:
 
@@ -1774,7 +1880,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20191102/)
+- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200122/)
 
 
 ## CSS Display Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -1811,7 +1917,7 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
@@ -1852,7 +1958,9 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
@@ -2114,6 +2222,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
@@ -2176,6 +2285,7 @@ Normative references to this spec from:
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
@@ -2518,7 +2628,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 
 
 ## CSS Images Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2556,7 +2666,7 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/)
@@ -2622,6 +2732,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2019/REC-css-writing-modes-3-20191210/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
 Informative references to this spec from:
 
@@ -2658,7 +2769,7 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
@@ -2681,6 +2792,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2019/REC-css-writing-modes-3-20191210/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
@@ -2894,6 +3006,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
 Informative references to this spec from:
 
@@ -2963,6 +3076,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2019/REC-css-writing-modes-3-20191210/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
 Informative references to this spec from:
 
@@ -3104,6 +3218,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
@@ -3146,7 +3261,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Containment Module Level 1](https://www.w3.org/TR/2019/REC-css-contain-1-20191121/)
@@ -3214,9 +3329,10 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 
 Informative references to this spec from:
 
@@ -3272,6 +3388,7 @@ Normative references to this spec from:
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
 Informative references to this spec from:
 
@@ -3310,7 +3427,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Device Adaptation Module Level 1](http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
@@ -3401,7 +3518,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20191105/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
@@ -3423,6 +3540,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
@@ -3492,7 +3610,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/2019/WD-css-color-adjust-1-20190523/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
@@ -3715,7 +3833,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/css-scroll-anchoring-1/) (18 January 2020)
+- Crawled version: [Initial URL](https://drafts.csswg.org/css-scroll-anchoring-1/) (22 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3995,7 +4113,8 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
@@ -4034,6 +4153,7 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
@@ -4072,6 +4192,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2019/REC-css-writing-modes-3-20191210/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
@@ -4166,6 +4287,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
@@ -4241,7 +4363,7 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/2018/WD-css-break-4-20181218/)
@@ -4478,7 +4600,7 @@ Normative references to this spec from:
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
@@ -4540,8 +4662,10 @@ Normative references to this spec from:
 - [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
@@ -4597,7 +4721,7 @@ Normative references to this spec from:
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
@@ -4653,6 +4777,7 @@ Normative references to this spec from:
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
 - [Non-element Selectors Module Level 1](https://www.w3.org/TR/2019/NOTE-selectors-nonelement-1-20190402/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
@@ -4718,7 +4843,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
@@ -4740,6 +4865,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
@@ -4780,7 +4906,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
@@ -4809,6 +4935,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2019/REC-css-writing-modes-3-20191210/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
@@ -4857,7 +4984,8 @@ Normative references to this spec from:
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20191102/)
+- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200122/)
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
@@ -4869,6 +4997,29 @@ Informative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/2018/CR-geometry-1-20181204/)
 - [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
+
+
+## Device Memory {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-device-memory-1-20180925/) (25 September 2018)
+- Editor's Draft: [https://w3c.github.io/device-memory/](https://w3c.github.io/device-memory/)
+- Latest published version: [https://www.w3.org/TR/device-memory-1/](https://www.w3.org/TR/device-memory-1/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-device-memory-1-20180925/)
+- Repository: [GitHub w3c/device-memory](https://github.com/w3c/device-memory)
+- Shortname: device-memory-1
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## DeviceOrientation Event Specification {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -4942,7 +5093,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (16 January 2020)
+- Crawled version: [Living Standard](https://dom.spec.whatwg.org/) (24 January 2020)
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
@@ -4960,6 +5111,7 @@ Normative references to this spec from:
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Badging API](https://wicg.github.io/badging/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Clipboard API and events](https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/)
@@ -4969,6 +5121,7 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
+- [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [CSS Animation Worklet API](https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/)
@@ -5002,7 +5155,7 @@ Normative references to this spec from:
 - [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190911/)
 - [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20191114/)
+- [Gamepad](https://www.w3.org/TR/2020/WD-gamepad-20200121/)
 - [Generic Sensor API](https://www.w3.org/TR/2019/CR-generic-sensor-20191212/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [HTML Standard](https://html.spec.whatwg.org/)
@@ -5015,6 +5168,7 @@ Normative references to this spec from:
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
+- [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Payment Handler API](https://www.w3.org/TR/2019/WD-payment-handler-20191021/)
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20191212/)
@@ -5026,20 +5180,24 @@ Normative references to this spec from:
 - [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20191003/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190820/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20191102/)
+- [SVG Animations](https://svgwg.org/specs/animations/)
+- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200122/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - [UI Events](https://www.w3.org/TR/2019/WD-uievents-20190530/)
+- [Upgrade Insecure Requests](http://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
@@ -5047,6 +5205,7 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Locks API](https://wicg.github.io/web-locks/)
 - [Web MIDI API](http://www.w3.org/TR/2015/WD-webmidi-20150317/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
@@ -5068,9 +5227,11 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
+- [Accessible Name and Description Computation 1.2](https://w3c.github.io/accname/)
 - [CSS Generated Content Module Level 3](https://www.w3.org/TR/2019/WD-css-content-3-20190802/)
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Selectors Level 3](https://www.w3.org/TR/2018/REC-selectors-3-20181106/)
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
@@ -5097,6 +5258,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
+- [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
 
 No informative reference to this spec from other specs.
 
@@ -5128,6 +5290,9 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190911/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
+- [Origin Policy](https://wicg.github.io/origin-policy/)
+- [Payment Method Manifest](https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20191003/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
@@ -5138,7 +5303,9 @@ Normative references to this spec from:
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Web Share Target API](https://wicg.github.io/web-share-target/)
 
 
 ## Encrypted Media Extensions {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -5193,6 +5360,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
+- [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
 
 No informative reference to this spec from other specs.
 
@@ -5221,6 +5389,8 @@ Normative references to this spec from:
 
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Generic Sensor API](https://www.w3.org/TR/2019/CR-generic-sensor-20191212/)
+- [Origin Policy](https://wicg.github.io/origin-policy/)
+- [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -5246,6 +5416,7 @@ Normative references to this spec from:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
+- [Clear Site Data](https://www.w3.org/TR/2017/WD-clear-site-data-20171130/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
@@ -5261,16 +5432,22 @@ Normative references to this spec from:
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
+- [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
+- [Origin Policy](https://wicg.github.io/origin-policy/)
+- [Payment Method Identifiers](https://www.w3.org/TR/2019/CR-payment-method-id-20190905/)
+- [Payment Method Manifest](https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/)
 - [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/)
 - [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
+- [Trace Context](https://www.w3.org/TR/2019/PR-trace-context-1-20191121/)
+- [Upgrade Insecure Requests](http://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
@@ -5284,6 +5461,7 @@ Informative references to this spec from:
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20191212/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20191003/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
+- [Web Share Target API](https://wicg.github.io/web-share-target/)
 
 
 ## File and Directory Entries API {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -5303,7 +5481,9 @@ Informative references to this spec from:
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Native File System](https://wicg.github.io/native-file-system/)
 
 
 ## File API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -5341,6 +5521,7 @@ Normative references to this spec from:
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
+- [Native File System](https://wicg.github.io/native-file-system/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20191003/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
@@ -5437,6 +5618,25 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## Frame Timing {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/frame-timing/) (27 September 2019)
+- Repository: [GitHub wicg/frame-timing](https://github.com/wicg/frame-timing)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Fullscreen API Standard {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
@@ -5459,7 +5659,7 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190828/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20191102/)
+- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200122/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
 Informative references to this spec from:
@@ -5474,10 +5674,10 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-gamepad-20191114/) (14 November 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2020/WD-gamepad-20200121/) (21 January 2020)
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-gamepad-20191114/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-gamepad-20200121/)
 - Repository: [GitHub w3c/gamepad](https://github.com/w3c/gamepad)
 - Shortname: gamepad
 
@@ -5492,6 +5692,31 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)
+
+No informative reference to this spec from other specs.
+
+
+## Gamepad Extensions {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://w3c.github.io/gamepad/extensions.html) (21 January 2020)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for WebIDL names: 
+     * `Gamepad` defined in [Gamepad](https://www.w3.org/TR/2020/WD-gamepad-20200121/)
+- Missing references for links: 
+     * [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -5558,6 +5783,7 @@ Informative references to this spec from:
 - [Generic Sensor API](https://www.w3.org/TR/2019/CR-generic-sensor-20191212/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
+- [Requesting Permissions](https://wicg.github.io/permissions-request/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 
 
@@ -5672,20 +5898,23 @@ Normative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
-- [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20191114/)
+- [Frame Timing](https://wicg.github.io/frame-timing/)
+- [Gamepad](https://www.w3.org/TR/2020/WD-gamepad-20200121/)
 - [Generic Sensor API](https://www.w3.org/TR/2019/CR-generic-sensor-20191212/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
+- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
 - [Media Playback Quality](https://w3c.github.io/media-playback-quality/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/)
+- [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
@@ -5723,7 +5952,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (16 January 2020)
+- Crawled version: [Living Standard](https://html.spec.whatwg.org/) (22 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5747,8 +5976,10 @@ Normative references to this spec from:
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/)
 - [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Badging API](https://wicg.github.io/badging/)
 - [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
+- [Clear Site Data](https://www.w3.org/TR/2017/WD-clear-site-data-20171130/)
 - [Clipboard API and events](https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
@@ -5758,6 +5989,7 @@ Normative references to this spec from:
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
+- [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
@@ -5766,7 +5998,7 @@ Normative references to this spec from:
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/2019/WD-css-color-adjust-1-20190523/)
@@ -5800,8 +6032,9 @@ Normative references to this spec from:
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190911/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
+- [Frame Timing](https://wicg.github.io/frame-timing/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20191114/)
+- [Gamepad](https://www.w3.org/TR/2020/WD-gamepad-20200121/)
 - [Generic Sensor API](https://www.w3.org/TR/2019/CR-generic-sensor-20191212/)
 - [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
@@ -5811,6 +6044,7 @@ Normative references to this spec from:
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
+- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
@@ -5824,11 +6058,16 @@ Normative references to this spec from:
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/)
+- [Native File System](https://wicg.github.io/native-file-system/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/)
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
+- [Origin Policy](https://wicg.github.io/origin-policy/)
+- [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Payment Handler API](https://www.w3.org/TR/2019/WD-payment-handler-20191021/)
+- [Payment Method Identifiers](https://www.w3.org/TR/2019/CR-payment-method-id-20190905/)
+- [Payment Method Manifest](https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/)
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20191212/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -5838,11 +6077,16 @@ Normative references to this spec from:
 - [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20191003/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
+- [Relinquishing Permissions](https://wicg.github.io/permissions-revoke/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
+- [Requesting Permissions](https://wicg.github.io/permissions-request/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
+- [Resource Hints](https://www.w3.org/TR/2019/WD-resource-hints-20190702/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/)
+- [Scalable Video Coding (SVC) Extension for WebRTC](https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/)
 - [Screen Capture](https://www.w3.org/TR/2019/WD-screen-capture-20191119/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
@@ -5852,12 +6096,15 @@ Normative references to this spec from:
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20191102/)
+- [SVG Animations](https://svgwg.org/specs/animations/)
+- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200122/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - [UI Events](https://www.w3.org/TR/2019/WD-uievents-20190530/)
+- [Upgrade Insecure Requests](http://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
@@ -5866,6 +6113,7 @@ Normative references to this spec from:
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Locks API](https://wicg.github.io/web-locks/)
 - [Web MIDI API](http://www.w3.org/TR/2015/WD-webmidi-20150317/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Share API](https://w3c.github.io/web-share/)
@@ -5890,9 +6138,8 @@ Informative references to this spec from:
 
 - [Clipboard API and events](https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
-- [ContentEditable](https://w3c.github.io/editing/contentEditable.html)
 - [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
 - [CSS Generated Content Module Level 3](https://www.w3.org/TR/2019/WD-css-content-3-20190802/)
@@ -5912,14 +6159,16 @@ Informative references to this spec from:
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
+- [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
 - [Orientation Sensor](https://www.w3.org/TR/2019/CR-orientation-sensor-20191212/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20191120/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200123/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/)
 - [Selectors Level 3](https://www.w3.org/TR/2018/REC-selectors-3-20181106/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
+- [Web Share Target API](https://wicg.github.io/web-share-target/)
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
 
@@ -5998,6 +6247,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Clear Site Data](https://www.w3.org/TR/2017/WD-clear-site-data-20171130/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 
@@ -6006,6 +6256,7 @@ Informative references to this spec from:
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Locks API](https://wicg.github.io/web-locks/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2019/CR-webrtc-20191213/)
 
 
@@ -6093,6 +6344,25 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
+## JS Self-Profiling API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/js-self-profiling/) (27 November 2019)
+- Repository: [GitHub wicg/js-self-profiling](https://github.com/wicg/js-self-profiling)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Performance`
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Keyboard Lock {data-spec=true data-anomaly=true data-redefinedIdlNames=true}
 
 ### Spec info {.info}
@@ -6141,7 +6411,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/largest-contentful-paint/) (30 December 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/largest-contentful-paint/) (22 January 2020)
 - Repository: [GitHub wicg/largest-contentful-paint](https://github.com/wicg/largest-contentful-paint)
 - Shortname: no shortname
 
@@ -6157,6 +6427,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Element Timing API](https://wicg.github.io/element-timing/)
+- [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
 
 No informative reference to this spec from other specs.
 
@@ -6183,7 +6454,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
 
 No informative reference to this spec from other specs.
 
@@ -6212,6 +6485,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
 
 No informative reference to this spec from other specs.
 
@@ -6252,7 +6526,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/media-capabilities/) (15 January 2020)
+- Crawled version: [Initial URL](https://w3c.github.io/media-capabilities/) (25 January 2020)
 - Repository: [GitHub w3c/media-capabilities](https://github.com/w3c/media-capabilities)
 - Shortname: no shortname
 
@@ -6294,6 +6568,7 @@ Normative references to this spec from:
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
+- [Scalable Video Coding (SVC) Extension for WebRTC](https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/)
 - [Screen Capture](https://www.w3.org/TR/2019/WD-screen-capture-20191119/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2019/CR-webrtc-20191213/)
@@ -6460,13 +6735,14 @@ Informative references to this spec from:
 
 - [CSS Round Display Level 1](https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/)
 - [CSS Syntax Module Level 3](https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/)
+- [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
 
 
 ## Media Queries Level 5 {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://drafts.csswg.org/mediaqueries-5/) (16 August 2019)
+- Crawled version: [Initial URL](https://drafts.csswg.org/mediaqueries-5/) (23 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6598,6 +6874,40 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## MIME Sniffing Standard {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Living Standard](https://mimesniff.spec.whatwg.org/) (16 July 2019)
+- Repository: [GitHub whatwg/mimesniff](https://github.com/whatwg/mimesniff)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190911/)
+- [HTML Standard](https://html.spec.whatwg.org/)
+- [Media Capabilities](https://w3c.github.io/media-capabilities/)
+- [Origin Policy](https://wicg.github.io/origin-policy/)
+- [Payment Handler API](https://www.w3.org/TR/2019/WD-payment-handler-20191021/)
+- [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
+- [Web NFC](https://w3c.github.io/web-nfc/)
+- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+
+Informative references to this spec from:
+
+- [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
+
+
 ## Mixed Content {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -6624,6 +6934,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Clear Site Data](https://www.w3.org/TR/2017/WD-clear-site-data-20171130/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
@@ -6631,6 +6942,8 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
+- [Resource Hints](https://www.w3.org/TR/2019/WD-resource-hints-20190702/)
+- [Upgrade Insecure Requests](http://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
 
 Informative references to this spec from:
@@ -6674,14 +6987,35 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
+## Native File System {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/native-file-system/) (18 November 2019)
+- Repository: [GitHub wicg/native-file-system](https://github.com/wicg/native-file-system)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FILE-API" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Navigation Timing Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/) (17 December 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/) (21 January 2020)
 - Editor's Draft: [https://w3c.github.io/navigation-timing/](https://w3c.github.io/navigation-timing/)
 - Latest published version: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/)
 - Repository: [GitHub w3c/navigation-timing](https://github.com/w3c/navigation-timing)
 - Shortname: navigation-timing-2
 
@@ -6693,10 +7027,11 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20191114/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
+- [Gamepad](https://www.w3.org/TR/2020/WD-gamepad-20200121/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/)
 - [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
+- [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 
 Informative references to this spec from:
@@ -6725,6 +7060,32 @@ Informative references to this spec from:
 No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
+
+
+## network-error-logging {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](https://www.w3.org/TR/network-error-logging)
+- Latest published version: [https://www.w3.org/TR/network-error-logging](https://www.w3.org/TR/network-error-logging)
+- Shortname: network-error-logging
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:313:34)
+    at process._tickCallback (internal/process/next_tick.js:68:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+Informative references to this spec from:
+
+- [Reporting API 1](https://w3c.github.io/reporting/)
 
 
 ## Non-element Selectors Module Level 1 {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true}
@@ -6773,6 +7134,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
+- [Requesting Permissions](https://wicg.github.io/permissions-request/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 
 
@@ -6807,6 +7169,47 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
+## Origin Policy {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/origin-policy/) (13 January 2020)
+- Repository: [GitHub wicg/origin-policy](https://github.com/wicg/origin-policy)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Page Lifecycle {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/page-lifecycle/) (9 September 2019)
+- Repository: [GitHub wicg/page-lifecycle](https://github.com/wicg/page-lifecycle)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://w3c.github.io/IntersectionObserver/`](https://w3c.github.io/IntersectionObserver/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/), related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Page Visibility Level 2 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -6836,8 +7239,9 @@ Normative references to this spec from:
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/)
 - [Generic Sensor API](https://www.w3.org/TR/2019/CR-generic-sensor-20191212/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
+- [Resource Hints](https://www.w3.org/TR/2019/WD-resource-hints-20190702/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20191102/)
+- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200122/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Authentication: An API for accessing Public Key Credentials Level 1](https://www.w3.org/TR/2019/REC-webauthn-1-20190304/)
@@ -6847,6 +7251,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 
 
@@ -6875,6 +7280,7 @@ Normative references to this spec from:
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
 
 No informative reference to this spec from other specs.
 
@@ -6903,17 +7309,72 @@ No informative reference to this spec from other specs.
 
 No normative reference to this spec from other specs.
 
+Informative references to this spec from:
+
+- [Payment Method Manifest](https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/)
+
+
+## Payment Method Identifiers {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/CR-payment-method-id-20190905/) (05 September 2019)
+- Editor's Draft: [https://w3c.github.io/payment-method-id/](https://w3c.github.io/payment-method-id/)
+- Latest published version: [https://www.w3.org/TR/payment-method-id/](https://www.w3.org/TR/payment-method-id/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-payment-method-id-20190905/)
+- Repository: [GitHub w3c/payment-method-id](https://github.com/w3c/payment-method-id)
+- Shortname: payment-method-id
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Payment Handler API](https://www.w3.org/TR/2019/WD-payment-handler-20191021/)
+- [Payment Method Manifest](https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/)
+- [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20191212/)
+
 No informative reference to this spec from other specs.
+
+
+## Payment Method Manifest {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/) (12 December 2017)
+- Editor's Draft: [https://w3c.github.io/payment-method-manifest/](https://w3c.github.io/payment-method-manifest/)
+- Latest published version: [https://www.w3.org/TR/payment-method-manifest/](https://www.w3.org/TR/payment-method-manifest/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/)
+- Repository: [GitHub w3c/payment-method-manifest](https://github.com/w3c/payment-method-manifest)
+- Shortname: payment-method-manifest
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/appmanifest/`](https://www.w3.org/TR/appmanifest/), related reference "APPMANIFEST" uses URL [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Payment Handler API](https://www.w3.org/TR/2019/WD-payment-handler-20191021/)
+
+Informative references to this spec from:
+
+- [Payment Method Identifiers](https://www.w3.org/TR/2019/CR-payment-method-id-20190905/)
 
 
 ## Payment Method: Basic Card {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20191120/) (20 November 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200123/) (23 January 2020)
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
 - Latest published version: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20191120/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200123/)
 - Repository: [GitHub w3c/payment-method-basic-card](https://github.com/w3c/payment-method-basic-card)
 - Shortname: payment-method-basic-card
 
@@ -6929,6 +7390,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Payment Method Identifiers](https://www.w3.org/TR/2019/CR-payment-method-id-20190905/)
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20191212/)
 
 
@@ -6953,9 +7415,12 @@ Normative references to this spec from:
 
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Payment Handler API](https://www.w3.org/TR/2019/WD-payment-handler-20191021/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20191120/)
+- [Payment Method Manifest](https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200123/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Payment Method Identifiers](https://www.w3.org/TR/2019/CR-payment-method-id-20190905/)
 
 
 ## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
@@ -6981,12 +7446,14 @@ Normative references to this spec from:
 
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
+- [Frame Timing](https://wicg.github.io/frame-timing/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Long Tasks API 1](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/)
+- [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 
 Informative references to this spec from:
@@ -7033,8 +7500,11 @@ Normative references to this spec from:
 - [Magnetometer](https://www.w3.org/TR/2019/WD-magnetometer-20190307/)
 - [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
+- [Native File System](https://wicg.github.io/native-file-system/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
+- [Relinquishing Permissions](https://wicg.github.io/permissions-revoke/)
+- [Requesting Permissions](https://wicg.github.io/permissions-request/)
 - [Screen Capture](https://www.w3.org/TR/2019/WD-screen-capture-20191119/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -7145,6 +7615,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Resource Hints](https://www.w3.org/TR/2019/WD-resource-hints-20190702/)
 
 No informative reference to this spec from other specs.
 
@@ -7178,6 +7649,30 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
+
+
+## Priority Hints {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/priority-hints/) (30 September 2019)
+- Repository: [GitHub wicg/priority-hints](https://github.com/wicg/priority-hints)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- Missing references for links: 
+     * [`https://w3c.github.io/preload/`](https://w3c.github.io/preload/)
+     * [`https://www.w3.org/TR/resource-hints/`](https://www.w3.org/TR/resource-hints/)
+     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Proximity Sensor {data-spec=true data-ok=true}
@@ -7232,6 +7727,29 @@ Informative references to this spec from:
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 
 
+## Quirks Mode Standard {data-spec=true data-anomaly=true data-noCssDefinitions=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Living Standard](https://quirks.spec.whatwg.org/) (19 August 2019)
+- Repository: [GitHub whatwg/quirks](https://github.com/whatwg/quirks)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No CSS definitions found
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/cssom-1/`](https://www.w3.org/TR/cssom-1/), related reference "CSSOM" uses URL [`https://drafts.csswg.org/cssom/`](https://drafts.csswg.org/cssom/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+Informative references to this spec from:
+
+- [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
+
+
 ## Referrer Policy {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -7257,11 +7775,32 @@ Normative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Resource Hints](https://www.w3.org/TR/2019/WD-resource-hints-20190702/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 Informative references to this spec from:
 
 - [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
+
+
+## Relinquishing Permissions {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/permissions-revoke/) (21 September 2017)
+- Repository: [GitHub wicg/permissions-revoke](https://github.com/wicg/permissions-revoke)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Remote Playback API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
@@ -7316,6 +7855,30 @@ Although they do not, the following specs should also normatively reference this
 No informative reference to this spec from other specs.
 
 
+## Requesting Permissions {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/permissions-request/) (28 September 2017)
+- Repository: [GitHub wicg/permissions-request](https://github.com/wicg/permissions-request)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Generic Sensor API](https://www.w3.org/TR/2019/CR-generic-sensor-20191212/)
+- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [WebUSB API](https://wicg.github.io/webusb/)
+
+No informative reference to this spec from other specs.
+
+
 ## Resize Observer {data-spec=true data-anomaly=true data-noIdlContent=true data-missingLinkRef=true}
 
 ### Spec info {.info}
@@ -7339,14 +7902,48 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## Resource Hints {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-resource-hints-20190702/) (02 July 2019)
+- Editor's Draft: [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
+- Latest published version: [https://www.w3.org/TR/resource-hints/](https://www.w3.org/TR/resource-hints/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-resource-hints-20190702/)
+- Repository: [GitHub w3c/resource-hints](https://github.com/w3c/resource-hints)
+- Shortname: resource-hints
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/)
+     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
+     * [`https://w3c.github.io/webappsec/specs/CSP2/`](https://w3c.github.io/webappsec/specs/CSP2/)
+     * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/), related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
+     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/), related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/)
+- [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
+
+No informative reference to this spec from other specs.
+
+
 ## Resource Timing Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/) (28 November 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/) (23 January 2020)
 - Editor's Draft: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
 - Latest published version: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/)
 - Repository: [GitHub w3c/resource-timing](https://github.com/w3c/resource-timing)
 - Shortname: resource-timing-2
 
@@ -7360,12 +7957,35 @@ Normative references to this spec from:
 
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/)
 - [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
+- [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
 
 Informative references to this spec from:
 
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/)
+
+
+## Scalable Video Coding (SVC) Extension for WebRTC {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/) (22 October 2019)
+- Editor's Draft: [https://w3c.github.io/webrtc-svc/](https://w3c.github.io/webrtc-svc/)
+- Latest published version: [https://www.w3.org/TR/webrtc-svc/](https://www.w3.org/TR/webrtc-svc/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/)
+- Repository: [GitHub w3c/webrtc-svc](https://github.com/w3c/webrtc-svc)
+- Shortname: webrtc-svc
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Screen Capture {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -7444,6 +8064,7 @@ Normative references to this spec from:
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
+- [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20191003/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -7460,6 +8081,7 @@ Informative references to this spec from:
 
 - [Encrypted Media Extensions](https://www.w3.org/TR/2017/REC-encrypted-media-20170918/)
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20191212/)
+- [Web Share Target API](https://wicg.github.io/web-share-target/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 
 
@@ -7523,7 +8145,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/)
 - [CSS Syntax Module Level 3](https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/)
@@ -7577,12 +8199,13 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Non-element Selectors Module Level 1](https://www.w3.org/TR/2019/NOTE-selectors-nonelement-1-20190402/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
 Informative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
 
 
@@ -7640,6 +8263,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
+- [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -7651,7 +8275,7 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 
 
@@ -7673,7 +8297,10 @@ Normative references to this spec from:
 
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Clear Site Data](https://www.w3.org/TR/2017/WD-clear-site-data-20171130/)
+- [Web Locks API](https://wicg.github.io/web-locks/)
 
 
 ## Streams Standard {data-spec=true data-ok=true}
@@ -7736,6 +8363,44 @@ Informative references to this spec from:
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
 
 
+## SVG Animations {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://svgwg.org/specs/animations/) (04 December 2019)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No WebIDL definitions found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2012/WD-css-animations-1-20120403/`](https://www.w3.org/TR/2012/WD-css-animations-1-20120403/)
+     * [`https://www.w3.org/TR/2012/WD-css-transitions-1-20120403/`](https://www.w3.org/TR/2012/WD-css-transitions-1-20120403/)
+     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/)
+     * [`https://www.w3.org/TR/wai-aria-1.1/`](https://www.w3.org/TR/wai-aria-1.1/)
+     * [`https://www.w3.org/TR/css-transforms-1/`](https://www.w3.org/TR/css-transforms-1/)
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
+     * [`https://www.w3.org/TR/smil/`](https://www.w3.org/TR/smil/)
+     * [`https://www.w3.org/TR/charmod/`](https://www.w3.org/TR/charmod/)
+     * [`https://www.w3.org/TR/css-transitions-1/`](https://www.w3.org/TR/css-transitions-1/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/xml/`](https://www.w3.org/TR/xml/), related reference "XML10" uses URL [`http://www.w3.org/TR/2008/REC-xml-20081126/`](http://www.w3.org/TR/2008/REC-xml-20081126/)
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/), related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
+     * [`https://www.w3.org/TR/2012/WD-dom-20120405/`](https://www.w3.org/TR/2012/WD-dom-20120405/), related reference "DOM4" uses URL [`http://www.w3.org/TR/2014/WD-dom-20140204/`](http://www.w3.org/TR/2014/WD-dom-20140204/)
+     * [`https://www.w3.org/TR/2006/REC-xml-20060816/`](https://www.w3.org/TR/2006/REC-xml-20060816/), related reference "XML10" uses URL [`http://www.w3.org/TR/2008/REC-xml-20081126/`](http://www.w3.org/TR/2008/REC-xml-20081126/)
+     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/), related reference "DOM4" uses URL [`http://www.w3.org/TR/2014/WD-dom-20140204/`](http://www.w3.org/TR/2014/WD-dom-20140204/)
+     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM4" uses URL [`http://www.w3.org/TR/2014/WD-dom-20140204/`](http://www.w3.org/TR/2014/WD-dom-20140204/)
+     * [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/), related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
+     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/), related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
+     * [`https://www.w3.org/TR/smil-animation/`](https://www.w3.org/TR/smil-animation/), related reference "SMILANIM" uses URL [`http://www.w3.org/TR/2001/REC-smil-animation-20010904/`](http://www.w3.org/TR/2001/REC-smil-animation-20010904/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## SVG Markers {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
@@ -7792,10 +8457,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-screen-orientation-20191102/) (02 November 2019)
+- Crawled version: [Latest published version](https://www.w3.org/TR/2020/WD-screen-orientation-20200122/) (22 January 2020)
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-screen-orientation-20191102/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-screen-orientation-20200122/)
 - Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
 - Shortname: screen-orientation
 
@@ -7814,6 +8479,28 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
+
+No informative reference to this spec from other specs.
+
+
+## Timing Entry Names Registry {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/) (23 July 2019)
+- Editor's Draft: [https://w3c.github.io/timing-entrytypes-registry/](https://w3c.github.io/timing-entrytypes-registry/)
+- Latest published version: [https://www.w3.org/TR/timing-entrytypes-registry/](https://www.w3.org/TR/timing-entrytypes-registry/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
+- Repository: [GitHub w3c/timing-entrytypes-registry](https://github.com/w3c/timing-entrytypes-registry)
+- Shortname: timing-entrytypes-registry
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -7847,6 +8534,28 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Pointer Events](https://www.w3.org/TR/2019/REC-pointerevents2-20190404/)
+
+
+## Trace Context {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](https://www.w3.org/TR/2019/PR-trace-context-1-20191121/) (21 November 2019)
+- Editor's Draft: [https://w3c.github.io/trace-context/](https://w3c.github.io/trace-context/)
+- Latest published version: [https://www.w3.org/TR/trace-context-1/](https://www.w3.org/TR/trace-context-1/)
+- Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2019/PR-trace-context-1-20191121/)
+- Repository: [GitHub w3c/trace-context](https://github.com/w3c/trace-context)
+- Shortname: trace-context
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## UI Events {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -7950,6 +8659,34 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
+## Upgrade Insecure Requests {data-spec=true data-anomaly=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Latest published version](http://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/) (8 October 2015)
+- Editor's Draft: [https://w3c.github.io/webappsec-upgrade-insecure-requests/](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
+- Latest published version: [http://www.w3.org/TR/upgrade-insecure-requests/](http://www.w3.org/TR/upgrade-insecure-requests/)
+- Latest published status: [Candidate Recommendation](http://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/)
+- Repository: [GitHub w3c/webappsec-upgrade-insecure-requests](https://github.com/w3c/webappsec-upgrade-insecure-requests)
+- Shortname: upgrade-insecure-requests
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://w3c.github.io/webappsec/specs/mixedcontent/`](https://w3c.github.io/webappsec/specs/mixedcontent/)
+     * [`https://www.w3.org/TR/url/`](https://www.w3.org/TR/url/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
+
+Informative references to this spec from:
+
+- [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
+
+
 ## URL Standard {data-spec=true data-ok=true}
 
 ### Spec info {.info}
@@ -7968,6 +8705,7 @@ Normative references to this spec from:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
+- [Clear Site Data](https://www.w3.org/TR/2017/WD-clear-site-data-20171130/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
@@ -7982,9 +8720,12 @@ Normative references to this spec from:
 - [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190911/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
+- [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Payment Handler API](https://www.w3.org/TR/2019/WD-payment-handler-20191021/)
+- [Payment Method Identifiers](https://www.w3.org/TR/2019/CR-payment-method-id-20190905/)
+- [Payment Method Manifest](https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/)
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20191212/)
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
@@ -8008,6 +8749,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Encoding](https://www.w3.org/TR/2018/CR-encoding-20180327/)
+- [Web Share Target API](https://wicg.github.io/web-share-target/)
 
 
 ## User Timing Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -8027,7 +8769,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
 
 Informative references to this spec from:
 
@@ -8056,6 +8800,27 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
+
+No informative reference to this spec from other specs.
+
+
+## Visual Viewport API {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/visual-viewport/) (21 January 2020)
+- Repository: [GitHub wicg/visual-viewport](https://github.com/wicg/visual-viewport)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
 
 No informative reference to this spec from other specs.
 
@@ -8141,13 +8906,16 @@ This specification looks good!
 Normative references to this spec from:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Badging API](https://wicg.github.io/badging/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [Payment Handler API](https://www.w3.org/TR/2019/WD-payment-handler-20191021/)
+- [Payment Method Manifest](https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/)
 
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20191102/)
+- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200122/)
+- [Web Share Target API](https://wicg.github.io/web-share-target/)
 
 
 ## Web Audio API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -8288,6 +9056,27 @@ Informative references to this spec from:
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 
 
+## Web Locks API {data-spec=true data-anomaly=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/web-locks/) (7 October 2019)
+- Repository: [GitHub wicg/web-locks](https://github.com/wicg/web-locks)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
+     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Web MIDI API {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -8351,11 +9140,30 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## Web Share Target API {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Initial URL](https://wicg.github.io/web-share-target/) (27 September 2019)
+- Repository: [GitHub wicg/web-share-target](https://github.com/wicg/web-share-target)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Web Speech API {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://wicg.github.io/speech-api/) (30 September 2019)
+- Crawled version: [Initial URL](https://wicg.github.io/speech-api/) (21 January 2020)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8459,7 +9267,7 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (20 January 2020)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/2.0/) (27 January 2020)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8486,7 +9294,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (20 January 2020)
+- Crawled version: [Initial URL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) (27 January 2020)
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -8542,6 +9350,7 @@ Normative references to this spec from:
 - [Ambient Light Sensor](https://www.w3.org/TR/2019/WD-ambient-light-20190307/)
 - [Audio Output Devices API](https://www.w3.org/TR/2017/CR-audio-output-20171003/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Badging API](https://wicg.github.io/badging/)
 - [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
@@ -8572,6 +9381,7 @@ Normative references to this spec from:
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
+- [Device Memory](https://www.w3.org/TR/2018/WD-device-memory-1-20180925/)
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/)
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
@@ -8585,8 +9395,10 @@ Normative references to this spec from:
 - [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190911/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api/)
+- [Frame Timing](https://wicg.github.io/frame-timing/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20191114/)
+- [Gamepad](https://www.w3.org/TR/2020/WD-gamepad-20200121/)
+- [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)
 - [Generic Sensor API](https://www.w3.org/TR/2019/CR-generic-sensor-20191212/)
 - [Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/2018/CR-geometry-1-20181204/)
@@ -8599,6 +9411,7 @@ Normative references to this spec from:
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/)
+- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
@@ -8613,13 +9426,15 @@ Normative references to this spec from:
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/)
 - [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
-- [Navigation Timing Level 2](https://www.w3.org/TR/2019/WD-navigation-timing-2-20191217/)
+- [Native File System](https://wicg.github.io/native-file-system/)
+- [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/)
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Orientation Sensor](https://www.w3.org/TR/2019/CR-orientation-sensor-20191212/)
+- [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Payment Handler API](https://www.w3.org/TR/2019/WD-payment-handler-20191021/)
-- [Payment Method: Basic Card](https://www.w3.org/TR/2019/WD-payment-method-basic-card-20191120/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200123/)
 - [Payment Request API](https://www.w3.org/TR/2019/CR-payment-request-20191212/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/)
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
@@ -8629,10 +9444,13 @@ Normative references to this spec from:
 - [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - [Proximity Sensor](https://www.w3.org/TR/2019/WD-proximity-20190305/)
 - [Push API](https://www.w3.org/TR/2019/WD-push-api-20191003/)
+- [Relinquishing Permissions](https://wicg.github.io/permissions-revoke/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
+- [Requesting Permissions](https://wicg.github.io/permissions-request/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/)
+- [Scalable Video Coding (SVC) Extension for WebRTC](https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/)
 - [Screen Capture](https://www.w3.org/TR/2019/WD-screen-capture-20191119/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190820/)
@@ -8640,11 +9458,12 @@ Normative references to this spec from:
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2019/WD-screen-orientation-20191102/)
+- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200122/)
 - [UI Events](https://www.w3.org/TR/2019/WD-uievents-20190530/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
 - [Web App Manifest](https://www.w3.org/TR/2019/WD-appmanifest-20191209/)
@@ -8653,6 +9472,7 @@ Normative references to this spec from:
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
+- [Web Locks API](https://wicg.github.io/web-locks/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Share API](https://w3c.github.io/web-share/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
@@ -8678,6 +9498,7 @@ Informative references to this spec from:
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
+- [Web Share Target API](https://wicg.github.io/web-share-target/)
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
 
@@ -8706,8 +9527,8 @@ Normative references to this spec from:
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
 - [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/2018/WD-mst-content-hint-20180703/)
+- [Scalable Video Coding (SVC) Extension for WebRTC](https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
-- [WebRTC DSCP Control API](https://www.w3.org/TR/2018/WD-webrtc-dscp-20180703/)
 
 Informative references to this spec from:
 
@@ -8717,23 +9538,23 @@ Informative references to this spec from:
 - [Screen Capture](https://www.w3.org/TR/2019/WD-screen-capture-20191119/)
 
 
-## WebRTC DSCP Control API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true}
+## WebRTC DSCP Control API {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Crawled version: [Latest published version](https://www.w3.org/TR/2018/WD-webrtc-dscp-20180703/) (3 July 2018)
-- Editor's Draft: [https://w3c.github.io/webrtc-dscp-exp/](https://w3c.github.io/webrtc-dscp-exp/)
-- Latest published version: [https://www.w3.org/TR/webrtc-dscp/](https://www.w3.org/TR/webrtc-dscp/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-webrtc-dscp-20180703/)
+- Crawled version: [Latest published version](https://www.w3.org/TR/webrtc-dscp)
+- Latest published version: [https://www.w3.org/TR/webrtc-dscp](https://www.w3.org/TR/webrtc-dscp)
 - Repository: [GitHub w3c/webrtc-dscp-exp](https://github.com/w3c/webrtc-dscp-exp)
 - Shortname: webrtc-dscp
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `RTCPriorityType`
-- Missing references for links: 
-     * [`https://w3c.github.io/webrtc-pc/`](https://w3c.github.io/webrtc-pc/)
+The following network or parsing error occurred:
+`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
+    at fetch.then.then.s (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:313:34)
+    at process._tickCallback (internal/process/next_tick.js:68:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8858,7 +9679,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - WebIDL names also defined elsewhere: 
-    * `GamepadMappingType` also defined in [Gamepad](https://www.w3.org/TR/2019/WD-gamepad-20191114/)
+    * `GamepadMappingType` also defined in [Gamepad](https://www.w3.org/TR/2020/WD-gamepad-20200121/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/), related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
@@ -8919,11 +9740,12 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190911/)
 - [HTML Standard](https://html.spec.whatwg.org/)
-- [Resource Timing Level 2](https://www.w3.org/TR/2019/WD-resource-timing-2-20191128/)
+- [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200123/)
 
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
+- [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2019/CR-webrtc-20191213/)
 
