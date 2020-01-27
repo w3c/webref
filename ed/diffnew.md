@@ -58,30 +58,6 @@
 - Spec is OK: *INS* true / *DEL* false
 
 
-## Compatibility Standard
-
-- URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://compat.spec.whatwg.org/)
-- Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## Compatibility Standard
-
-- URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://compat.spec.whatwg.org/)
-- Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## Compatibility Standard
-
-- URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
-- Crawled version: [Living Standard](https://compat.spec.whatwg.org/)
-- Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
-- Spec is OK: *INS* true / *DEL* false
-
-
 ## Compositing and Blending Level 1
 
 - URL: [https://www.w3.org/TR/compositing-1/](https://www.w3.org/TR/compositing-1/)
@@ -108,18 +84,18 @@
 
 ## CSS Basic User Interface Module Level 4
 
-- URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui-4/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Missing references for links: *INS* https://www.w3.org/TR/svg2/, https://w3c.github.io/contentEditable/ / *DEL* https://w3c.github.io/editing/contentEditable.html
-
-
-## CSS Basic User Interface Module Level 4
-
 - URL: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
 - Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Missing references for links: *INS* https://www.w3.org/TR/svg2/, https://w3c.github.io/contentEditable/, https://www.w3.org/TR/2020/WD-css-ui-4-20200102/ / *DEL* https://w3c.github.io/editing/contentEditable.html
+
+
+## CSS Basic User Interface Module Level 4
+
+- URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-ui-4/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Missing references for links: *INS* https://www.w3.org/TR/svg2/, https://w3c.github.io/contentEditable/ / *DEL* https://w3c.github.io/editing/contentEditable.html
 
 
 ## CSS Box Sizing Module Level 3
@@ -216,6 +192,14 @@
     at tryOnTimeout (timers.js:300:5)
     at listOnTimeout (timers.js:263:5)
     at Timer.processTimers (timers.js:223:10)
+
+
+## Identifiers for WebRTC's Statistics API
+
+- URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-stats/)
+- Repository: [GitHub w3c/webrtc-stats](https://github.com/w3c/webrtc-stats)
+- Missing references for WebIDL names: *INS* RTCPriorityType
 
 
 ## Identity for WebRTC 1.0
@@ -577,12 +561,9 @@
 
 ## WebRTC DSCP Control API
 
-- URL: [https://www.w3.org/TR/webrtc-dscp/](https://www.w3.org/TR/webrtc-dscp/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/webrtc-dscp/)
-- Repository: [GitHub w3c/webrtc-dscp-exp](https://github.com/w3c/webrtc-dscp-exp)
-- Spec could not be rendered: *INS* TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:313:34)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
+- URL: [https://www.w3.org/TR/webrtc-priority/](https://www.w3.org/TR/webrtc-priority/)
+- Crawled version: [Editor's Draft](http://w3c.github.io/webrtc-priority/)
+- This specification was not in the reference crawl report.
 
 
 ## WebXR Device API
