@@ -9,14 +9,11 @@
 
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
-- [network-error-logging](https://www.w3.org/TR/network-error-logging/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:313:34)
-    at process._tickCallback (internal/process/next_tick.js:68:7)`
 - [WebRTC DSCP Control API](https://www.w3.org/TR/webrtc-dscp/): `TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
     at fetch.then.then.s (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:313:34)
     at process._tickCallback (internal/process/next_tick.js:68:7)`
 
-=> 2 specifications found
+=> 1 specification found
 
 
 ## Specifications that do not link to an Editor's Draft

@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define CSS and WebIDL content",
   "description": "The crawl includes specifications published by W3C Working Groups, W3C Community Groups and WHATWG, that define CSS and/or WebIDL content. The specifications are at various stages of maturity.",
-  "date": "2020-01-27T06:39:29.075Z",
+  "date": "2020-01-27T12:37:51.058Z",
   "stats": {
     "crawled": 272,
-    "errors": 2,
+    "errors": 1,
     "studied": 272
   },
   "results": [
@@ -1759,6 +1759,11 @@
               "url": "https://www.w3.org/TR/clear-site-data/",
               "title": "Clear Site Data",
               "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
+            },
+            {
+              "url": "https://www.w3.org/TR/network-error-logging-1/",
+              "title": "Network Error Logging",
+              "crawled": "https://w3c.github.io/network-error-logging/"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -7050,7 +7055,7 @@
     {
       "title": "CSS Grid Layout Module Level 2",
       "shortname": "css-grid-2",
-      "date": "10 January 2020",
+      "date": "26 January 2020",
       "url": "https://www.w3.org/TR/css-grid-2/",
       "latest": "https://www.w3.org/TR/css-grid-2/",
       "datedUrl": "https://www.w3.org/TR/2019/WD-css-grid-2-20191203/",
@@ -12433,7 +12438,7 @@
     {
       "title": "CSS Values and Units Module Level 4",
       "shortname": "css-values-4",
-      "date": "24 January 2020",
+      "date": "26 January 2020",
       "url": "https://www.w3.org/TR/css-values-4/",
       "latest": "https://www.w3.org/TR/css-values-4/",
       "datedUrl": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/",
@@ -15126,6 +15131,11 @@
               "crawled": "https://w3c.github.io/navigation-timing/"
             },
             {
+              "url": "https://www.w3.org/TR/network-error-logging-1/",
+              "title": "Network Error Logging",
+              "crawled": "https://w3c.github.io/network-error-logging/"
+            },
+            {
               "url": "https://notifications.spec.whatwg.org/",
               "title": "Notifications API Standard",
               "crawled": "https://notifications.spec.whatwg.org/"
@@ -16976,6 +16986,11 @@
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
               "crawled": "https://w3c.github.io/navigation-timing/"
+            },
+            {
+              "url": "https://www.w3.org/TR/network-error-logging-1/",
+              "title": "Network Error Logging",
+              "crawled": "https://w3c.github.io/network-error-logging/"
             },
             {
               "url": "https://wicg.github.io/netinfo/",
@@ -19462,6 +19477,46 @@
       }
     },
     {
+      "title": "Network Error Logging",
+      "shortname": "network-error-logging-1",
+      "date": "30 December 2019",
+      "url": "https://www.w3.org/TR/network-error-logging-1/",
+      "latest": "https://www.w3.org/TR/network-error-logging-1/",
+      "datedUrl": "https://www.w3.org/TR/2018/WD-network-error-logging-1-20180925/",
+      "datedStatus": "Working Draft",
+      "edDraft": "https://w3c.github.io/network-error-logging/",
+      "crawled": "https://w3c.github.io/network-error-logging/",
+      "repository": "https://github.com/w3c/network-error-logging",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": [
+            {
+              "url": "https://w3c.github.io/reporting/",
+              "title": "Reporting API 1",
+              "crawled": "https://w3c.github.io/reporting/"
+            }
+          ]
+        },
+        "noEdDraft": false,
+        "ok": true
+      }
+    },
+    {
       "title": "Network Information API",
       "date": "27 September 2019",
       "url": "https://wicg.github.io/netinfo/",
@@ -19491,42 +19546,6 @@
           "informative": []
         },
         "noEdDraft": null,
-        "ok": false
-      }
-    },
-    {
-      "title": "network-error-logging",
-      "shortname": "network-error-logging",
-      "date": "",
-      "url": "https://www.w3.org/TR/network-error-logging/",
-      "latest": "https://www.w3.org/TR/network-error-logging",
-      "crawled": "https://www.w3.org/TR/network-error-logging/",
-      "report": {
-        "error": "TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined\n    at fetch.then.then.s (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:313:34)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
-        "hasUnexpectedIdl": false,
-        "hasInvalidIdl": false,
-        "noCssDefinitions": false,
-        "hasUnexpectedCssDefinitions": false,
-        "unknownExposedNames": [],
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [],
-          "informative": [
-            {
-              "url": "https://w3c.github.io/reporting/",
-              "title": "Reporting API 1",
-              "crawled": "https://w3c.github.io/reporting/"
-            }
-          ]
-        },
-        "noEdDraft": true,
         "ok": false
       }
     },
@@ -21071,6 +21090,11 @@
               "crawled": "https://html.spec.whatwg.org/"
             },
             {
+              "url": "https://www.w3.org/TR/network-error-logging-1/",
+              "title": "Network Error Logging",
+              "crawled": "https://w3c.github.io/network-error-logging/"
+            },
+            {
               "url": "https://www.w3.org/TR/resource-hints/",
               "title": "Resource Hints",
               "crawled": "https://w3c.github.io/resource-hints/"
@@ -21451,6 +21475,11 @@
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
               "crawled": "https://w3c.github.io/navigation-timing/"
+            },
+            {
+              "url": "https://www.w3.org/TR/network-error-logging-1/",
+              "title": "Network Error Logging",
+              "crawled": "https://w3c.github.io/network-error-logging/"
             },
             {
               "url": "https://www.w3.org/TR/server-timing/",
@@ -22156,6 +22185,11 @@
               "url": "https://www.w3.org/TR/mixed-content/",
               "title": "Mixed Content",
               "crawled": "https://w3c.github.io/webappsec-mixed-content/"
+            },
+            {
+              "url": "https://www.w3.org/TR/network-error-logging-1/",
+              "title": "Network Error Logging",
+              "crawled": "https://w3c.github.io/network-error-logging/"
             },
             {
               "url": "https://wicg.github.io/origin-policy/",
@@ -23837,6 +23871,11 @@
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
               "crawled": "https://w3c.github.io/navigation-timing/"
+            },
+            {
+              "url": "https://www.w3.org/TR/network-error-logging-1/",
+              "title": "Network Error Logging",
+              "crawled": "https://w3c.github.io/network-error-logging/"
             },
             {
               "url": "https://notifications.spec.whatwg.org/",
@@ -26075,7 +26114,7 @@
     {
       "title": "WebRTC 1.0: Real-time Communication Between Browsers",
       "shortname": "webrtc",
-      "date": "23 January 2020",
+      "date": "27 January 2020",
       "url": "https://www.w3.org/TR/webrtc/",
       "latest": "https://www.w3.org/TR/webrtc/",
       "datedUrl": "https://www.w3.org/TR/2019/CR-webrtc-20191213/",

@@ -712,6 +712,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Preload](https://w3c.github.io/preload/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -2566,7 +2567,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-grid-2/) (10 January 2020)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-grid-2/) (26 January 2020)
 - Editor's Draft: [https://drafts.csswg.org/css-grid-2/](https://drafts.csswg.org/css-grid-2/)
 - Latest published version: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
@@ -4513,7 +4514,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values-4/) (24 January 2020)
+- Crawled version: [Editor's Draft](https://drafts.csswg.org/css-values-4/) (26 January 2020)
 - Editor's Draft: [https://drafts.csswg.org/css-values-4/](https://drafts.csswg.org/css-values-4/)
 - Latest published version: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
@@ -5292,6 +5293,7 @@ Normative references to this spec from:
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Payment Method Identifiers](https://w3c.github.io/payment-method-id/)
@@ -5937,6 +5939,7 @@ Normative references to this spec from:
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Native File System](https://wicg.github.io/native-file-system/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
@@ -6917,6 +6920,30 @@ Informative references to this spec from:
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 
 
+## Network Error Logging {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Crawled version: [Editor's Draft](https://w3c.github.io/network-error-logging/) (30 December 2019)
+- Editor's Draft: [https://w3c.github.io/network-error-logging/](https://w3c.github.io/network-error-logging/)
+- Latest published version: [https://www.w3.org/TR/network-error-logging-1/](https://www.w3.org/TR/network-error-logging-1/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-network-error-logging-1-20180925/)
+- Repository: [GitHub w3c/network-error-logging](https://github.com/w3c/network-error-logging)
+- Shortname: network-error-logging-1
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+Informative references to this spec from:
+
+- [Reporting API 1](https://w3c.github.io/reporting/)
+
+
 ## Network Information API {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
@@ -6937,32 +6964,6 @@ Informative references to this spec from:
 No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
-
-
-## network-error-logging {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Crawled version: [Initial URL](https://www.w3.org/TR/network-error-logging/)
-- Latest published version: [https://www.w3.org/TR/network-error-logging](https://www.w3.org/TR/network-error-logging)
-- Shortname: network-error-logging
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`TypeError: Cannot read property 'version-history' of undefined TypeError: Cannot read property 'version-history' of undefined
-    at fetch.then.then.s (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:313:34)
-    at process._tickCallback (internal/process/next_tick.js:68:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-Informative references to this spec from:
-
-- [Reporting API 1](https://w3c.github.io/reporting/)
 
 
 ## Non-element Selectors Module Level 1 {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true}
@@ -7646,6 +7647,7 @@ Normative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Resource Hints](https://w3c.github.io/resource-hints/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
@@ -7836,6 +7838,7 @@ Normative references to this spec from:
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Timing Entry Names Registry](https://w3c.github.io/timing-entrytypes-registry/)
 
@@ -8074,6 +8077,7 @@ Normative references to this spec from:
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Push API](https://w3c.github.io/push-api/)
@@ -8751,6 +8755,7 @@ Normative references to this spec from:
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
@@ -9571,7 +9576,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (23 January 2020)
+- Crawled version: [Editor's Draft](https://w3c.github.io/webrtc-pc/) (27 January 2020)
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-webrtc-20191213/)

@@ -904,6 +904,14 @@
 - Unknown [Exposed] names used: *DEL* Window
 
 
+## Network Error Logging
+
+- URL: [https://www.w3.org/TR/network-error-logging-1/](https://www.w3.org/TR/network-error-logging-1/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/network-error-logging/)
+- Repository: [GitHub w3c/network-error-logging](https://github.com/w3c/network-error-logging)
+- This specification was not in the reference crawl report.
+
+
 ## Network Information API
 
 - URL: [https://wicg.github.io/netinfo/](https://wicg.github.io/netinfo/)
@@ -911,13 +919,6 @@
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Unknown [Exposed] names used: *DEL* Window
 - Unknown WebIDL names used: *DEL* EventHandler
-
-
-## network-error-logging
-
-- URL: [https://www.w3.org/TR/network-error-logging/](https://www.w3.org/TR/network-error-logging/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/network-error-logging/)
-- This specification was not in the reference crawl report.
 
 
 ## Notifications API Standard
