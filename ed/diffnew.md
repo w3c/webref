@@ -303,10 +303,11 @@
 - This specification was not in the reference crawl report.
 
 
-## network-error-logging
+## Network Error Logging
 
-- URL: [https://www.w3.org/TR/network-error-logging/](https://www.w3.org/TR/network-error-logging/)
-- Crawled version: [Initial URL](https://www.w3.org/TR/network-error-logging/)
+- URL: [https://www.w3.org/TR/network-error-logging-1/](https://www.w3.org/TR/network-error-logging-1/)
+- Crawled version: [Editor's Draft](https://w3c.github.io/network-error-logging/)
+- Repository: [GitHub w3c/network-error-logging](https://github.com/w3c/network-error-logging)
 - This specification was not in the reference crawl report.
 
 
