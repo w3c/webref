@@ -5928,6 +5928,7 @@ Normative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
@@ -6081,6 +6082,7 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [High Resolution Time](https://w3c.github.io/hr-time/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
+- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
@@ -6212,6 +6214,26 @@ Informative references to this spec from:
 - [Web Share Target API](https://wicg.github.io/web-share-target/)
 
 
+## HTMLVideoElement.requestAnimationFrame() {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
+- Crawled URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
+- Crawled version: 24 January 2020
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Identifiers for WebRTC's Statistics API {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
@@ -6272,7 +6294,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
 - Crawled URL: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
-- Crawled version: 23 January 2020
+- Crawled version: 28 January 2020
 - Editor's Draft: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
 - Latest published version: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
@@ -7555,7 +7577,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
 - Crawled URL: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
-- Crawled version: 31 December 2019
+- Crawled version: 28 January 2020
 - Editor's Draft: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
 - Latest published version: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/)
@@ -9555,6 +9577,7 @@ Normative references to this spec from:
 - [High Resolution Time](https://w3c.github.io/hr-time/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [HTML Standard](https://html.spec.whatwg.org/)
+- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
