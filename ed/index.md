@@ -6494,7 +6494,7 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Crawled version: [Initial URL](https://w3c.github.io/mediasession/) (16 December 2019)
+- Crawled version: [Initial URL](https://w3c.github.io/mediasession/) (27 January 2020)
 - Repository: [GitHub w3c/mediasession](https://github.com/w3c/mediasession)
 - Shortname: no shortname
 
@@ -6649,6 +6649,7 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
+- [Media Session Standard](https://w3c.github.io/mediasession/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Preload](https://w3c.github.io/preload/)
@@ -8807,13 +8808,13 @@ Normative references to this spec from:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Badging API](https://wicg.github.io/badging/)
-- [Media Session Standard](https://w3c.github.io/mediasession/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
 
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Media Session Standard](https://w3c.github.io/mediasession/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Web Share Target API](https://wicg.github.io/web-share-target/)
 
