@@ -10,6 +10,14 @@
 - WebIDL names also defined elsewhere: *INS* DOMParser
 
 
+## Fullscreen API Standard
+
+- Initial URL: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
+- Crawled URL: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
+- Repository: [GitHub whatwg/fullscreen](https://github.com/whatwg/fullscreen)
+- Missing references for links: *DEL* https://www.w3.org/TR/feature-policy-1/
+
+
 ## HTML Standard
 
 - Initial URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
