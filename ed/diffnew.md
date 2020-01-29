@@ -24,14 +24,6 @@
 - This specification was not in the reference crawl report.
 
 
-## Pointer Lock 2.0
-
-- Initial URL: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
-- Crawled URL: [https://w3c.github.io/pointerlock/](https://w3c.github.io/pointerlock/)
-- Repository: [GitHub w3c/pointerlock](https://github.com/w3c/pointerlock)
-- Missing references for WebIDL names: *INS* EventHandler
-
-
 ## Web MIDI API
 
 - Initial URL: [https://www.w3.org/TR/webmidi/](https://www.w3.org/TR/webmidi/)
