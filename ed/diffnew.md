@@ -2,21 +2,6 @@
 % Reffy
 % January 29, 2020
 
-## DOM Parsing and Serialization
-
-- Initial URL: [https://www.w3.org/TR/DOM-Parsing/](https://www.w3.org/TR/DOM-Parsing/)
-- Crawled URL: [https://w3c.github.io/DOM-Parsing/](https://w3c.github.io/DOM-Parsing/)
-- Repository: [GitHub w3c/DOM-Parsing](https://github.com/w3c/DOM-Parsing)
-- WebIDL names also defined elsewhere: *INS* DOMParser
-
-
-## HTML Standard
-
-- Initial URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- WebIDL names also defined elsewhere: *INS* DOMParser
-
-
 ## HTMLVideoElement.requestAnimationFrame()
 
 - Initial URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
