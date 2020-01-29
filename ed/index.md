@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% January 28, 2020
+% January 29, 2020
 
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -96,7 +96,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
-- Crawled version: 28 January 2020
+- Crawled version: 29 January 2020
 - Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/)
@@ -5034,7 +5034,7 @@ Informative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
-## DOM Parsing and Serialization {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## DOM Parsing and Serialization {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -5049,6 +5049,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- WebIDL names also defined elsewhere: 
+    * `DOMParser` also defined in [HTML Standard](https://html.spec.whatwg.org/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM4" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
 
@@ -5192,6 +5194,7 @@ Normative references to this spec from:
 - [Web Cryptography API](http://w3c.github.io/webcrypto/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web Locks API](https://wicg.github.io/web-locks/)
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
@@ -5207,7 +5210,6 @@ Although they do not, the following specs should also normatively reference this
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 
 Informative references to this spec from:
 
@@ -5945,13 +5947,13 @@ Normative references to this spec from:
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Server Timing](https://w3c.github.io/server-timing/)
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 No informative reference to this spec from other specs.
@@ -5981,18 +5983,20 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## HTML Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## HTML Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
 - Crawled URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled version: 22 January 2020
+- Crawled version: 28 January 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `WindowProxy`
+- WebIDL names also defined elsewhere: 
+    * `DOMParser` also defined in [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - Missing references for WebIDL names: 
      * `WebGL2RenderingContext` defined in [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Missing references for links: 
@@ -6120,7 +6124,6 @@ Normative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
-- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Push API](https://w3c.github.io/push-api/)
@@ -6179,6 +6182,10 @@ Normative references to this spec from:
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 
 Informative references to this spec from:
 
@@ -6598,7 +6605,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/media-capabilities/](https://w3c.github.io/media-capabilities/)
 - Crawled URL: [https://w3c.github.io/media-capabilities/](https://w3c.github.io/media-capabilities/)
-- Crawled version: 25 January 2020
+- Crawled version: 28 January 2020
 - Repository: [GitHub w3c/media-capabilities](https://github.com/w3c/media-capabilities)
 - Shortname: no shortname
 
@@ -7722,7 +7729,7 @@ Informative references to this spec from:
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 
 
-## Pointer Lock 2.0 {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Pointer Lock 2.0 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -7737,6 +7744,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Missing references for WebIDL names: 
+     * `EventHandler` defined in [HTML Standard](https://html.spec.whatwg.org/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "ui-events" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 
@@ -9617,7 +9626,6 @@ Normative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
-- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Proximity Sensor](https://w3c.github.io/proximity/)
 - [Push API](https://w3c.github.io/push-api/)
@@ -9700,7 +9708,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Web MIDI API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
+## Web MIDI API {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -9715,11 +9723,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for WebIDL names: 
-     * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
-     * `DOMHighResTimeStamp` defined in [High Resolution Time](https://w3c.github.io/hr-time/)
-     * `Event` defined in [DOM Standard](https://dom.spec.whatwg.org/)
-     * `EventInit` defined in [DOM Standard](https://dom.spec.whatwg.org/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -9915,7 +9919,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- Crawled version: 28 January 2020
+- Crawled version: 29 January 2020
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -9946,7 +9950,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- Crawled version: 28 January 2020
+- Crawled version: 29 January 2020
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 

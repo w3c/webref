@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define CSS and WebIDL content",
   "description": "The crawl includes specifications published by W3C Working Groups, W3C Community Groups and WHATWG, that define CSS and/or WebIDL content. The specifications are at various stages of maturity.",
-  "date": "2020-01-28T18:37:31.012Z",
+  "date": "2020-01-29T00:38:11.405Z",
   "stats": {
     "crawled": 270,
     "errors": 0,
@@ -174,7 +174,7 @@
     {
       "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
       "shortname": "wai-aria-1.2",
-      "date": "28 January 2020",
+      "date": "29 January 2020",
       "url": "https://www.w3.org/TR/wai-aria-1.2/",
       "latest": "https://www.w3.org/TR/wai-aria-1.2/",
       "datedUrl": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/",
@@ -13431,7 +13431,18 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "DOMParser",
+            "refs": [
+              {
+                "url": "https://html.spec.whatwg.org/",
+                "title": "HTML Standard",
+                "crawled": "https://html.spec.whatwg.org/"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [
@@ -14035,6 +14046,11 @@
               "url": "https://wicg.github.io/web-locks/",
               "title": "Web Locks API",
               "crawled": "https://wicg.github.io/web-locks/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webmidi/",
+              "title": "Web MIDI API",
+              "crawled": "http://webaudio.github.io/web-midi-api/"
             },
             {
               "url": "https://w3c.github.io/web-nfc/",
@@ -15958,6 +15974,11 @@
               "crawled": "https://webaudio.github.io/web-audio-api/"
             },
             {
+              "url": "https://www.w3.org/TR/webmidi/",
+              "title": "Web MIDI API",
+              "crawled": "http://webaudio.github.io/web-midi-api/"
+            },
+            {
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/"
@@ -16005,7 +16026,7 @@
     },
     {
       "title": "HTML Standard",
-      "date": "22 January 2020",
+      "date": "28 January 2020",
       "url": "https://html.spec.whatwg.org/",
       "crawled": "https://html.spec.whatwg.org/",
       "report": {
@@ -16021,7 +16042,18 @@
         "unknownIdlNames": [
           "WindowProxy"
         ],
-        "redefinedIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "DOMParser",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/DOM-Parsing/",
+                "title": "DOM Parsing and Serialization",
+                "crawled": "https://w3c.github.io/DOM-Parsing/"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [
           {
             "name": "WebGL2RenderingContext",
@@ -16621,11 +16653,6 @@
               "url": "https://www.w3.org/TR/pointerevents2/",
               "title": "Pointer Events",
               "crawled": "https://w3c.github.io/pointerevents/"
-            },
-            {
-              "url": "https://www.w3.org/TR/pointerlock-2/",
-              "title": "Pointer Lock 2.0",
-              "crawled": "https://w3c.github.io/pointerlock/"
             },
             {
               "url": "https://www.w3.org/TR/preload/",
@@ -17801,7 +17828,7 @@
     },
     {
       "title": "Media Capabilities",
-      "date": "25 January 2020",
+      "date": "28 January 2020",
       "url": "https://w3c.github.io/media-capabilities/",
       "crawled": "https://w3c.github.io/media-capabilities/",
       "repository": "https://github.com/w3c/media-capabilities",
@@ -20268,7 +20295,18 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventHandler",
+            "refs": [
+              {
+                "url": "https://html.spec.whatwg.org/",
+                "title": "HTML Standard",
+                "crawled": "https://html.spec.whatwg.org/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [
           {
@@ -24854,11 +24892,6 @@
               "crawled": "https://w3c.github.io/pointerevents/"
             },
             {
-              "url": "https://www.w3.org/TR/pointerlock-2/",
-              "title": "Pointer Lock 2.0",
-              "crawled": "https://w3c.github.io/pointerlock/"
-            },
-            {
               "url": "https://www.w3.org/TR/presentation-api/",
               "title": "Presentation API",
               "crawled": "https://w3c.github.io/presentation-api/"
@@ -25191,48 +25224,7 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "EventTarget",
-            "refs": [
-              {
-                "url": "https://dom.spec.whatwg.org/",
-                "title": "DOM Standard",
-                "crawled": "https://dom.spec.whatwg.org/"
-              }
-            ]
-          },
-          {
-            "name": "DOMHighResTimeStamp",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/hr-time-3/",
-                "title": "High Resolution Time",
-                "crawled": "https://w3c.github.io/hr-time/"
-              }
-            ]
-          },
-          {
-            "name": "Event",
-            "refs": [
-              {
-                "url": "https://dom.spec.whatwg.org/",
-                "title": "DOM Standard",
-                "crawled": "https://dom.spec.whatwg.org/"
-              }
-            ]
-          },
-          {
-            "name": "EventInit",
-            "refs": [
-              {
-                "url": "https://dom.spec.whatwg.org/",
-                "title": "DOM Standard",
-                "crawled": "https://dom.spec.whatwg.org/"
-              }
-            ]
-          }
-        ],
+        "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -25246,7 +25238,7 @@
           ]
         },
         "noEdDraft": false,
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -25548,7 +25540,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "28 January 2020",
+      "date": "29 January 2020",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -25599,7 +25591,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "28 January 2020",
+      "date": "29 January 2020",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
