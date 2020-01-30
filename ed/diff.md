@@ -2,6 +2,15 @@
 % Reffy
 % January 30, 2020
 
+## ContentEditable
+
+- Initial URL: [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html)
+- Crawled URL: [https://w3c.github.io/contentEditable/](https://w3c.github.io/contentEditable/)
+- Spec is OK: *INS* false / *DEL* true
+- No normative references found: *INS* true / *DEL* false
+- Missing references for links: *INS* https://html.spec.whatwg.org/
+
+
 ## Fullscreen API Standard
 
 - Initial URL: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
