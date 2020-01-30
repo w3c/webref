@@ -723,7 +723,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html)
 - Crawled URL: [https://w3c.github.io/contentEditable/](https://w3c.github.io/contentEditable/)
-- Crawled version: 24 January 2020
+- Crawled version: 30 January 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1598,7 +1598,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Crawled URL: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
-- Crawled version: 24 January 2020
+- Crawled version: 29 January 2020
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-color-4-20191105/)
@@ -6595,11 +6595,13 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Initial URL: [https://w3c.github.io/media-capabilities/](https://w3c.github.io/media-capabilities/)
+- Initial URL: [https://www.w3.org/TR/media-capabilities/](https://www.w3.org/TR/media-capabilities/)
 - Crawled URL: [https://w3c.github.io/media-capabilities/](https://w3c.github.io/media-capabilities/)
 - Crawled version: 28 January 2020
-- Repository: [GitHub w3c/media-capabilities](https://github.com/w3c/media-capabilities)
-- Shortname: no shortname
+- Editor's Draft: [https://w3c.github.io/media-capabilities/](https://w3c.github.io/media-capabilities/)
+- Latest published version: [https://www.w3.org/TR/media-capabilities/](https://www.w3.org/TR/media-capabilities/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-media-capabilities-20200130/)
+- Shortname: media-capabilities
 
 ### Potential issue(s) {.anomalies}
 
@@ -6853,11 +6855,13 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Initial URL: [https://w3c.github.io/mediasession/](https://w3c.github.io/mediasession/)
+- Initial URL: [https://www.w3.org/TR/mediasession/](https://www.w3.org/TR/mediasession/)
 - Crawled URL: [https://w3c.github.io/mediasession/](https://w3c.github.io/mediasession/)
 - Crawled version: 27 January 2020
-- Repository: [GitHub w3c/mediasession](https://github.com/w3c/mediasession)
-- Shortname: no shortname
+- Editor's Draft: [https://w3c.github.io/mediasession/](https://w3c.github.io/mediasession/)
+- Latest published version: [https://www.w3.org/TR/mediasession/](https://www.w3.org/TR/mediasession/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-mediasession-20200130/)
+- Shortname: mediasession
 
 ### Potential issue(s) {.anomalies}
 
@@ -7669,11 +7673,13 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Initial URL: [https://w3c.github.io/picture-in-picture/](https://w3c.github.io/picture-in-picture/)
+- Initial URL: [https://www.w3.org/TR/picture-in-picture/](https://www.w3.org/TR/picture-in-picture/)
 - Crawled URL: [https://w3c.github.io/picture-in-picture/](https://w3c.github.io/picture-in-picture/)
 - Crawled version: 14 January 2020
-- Repository: [GitHub w3c/picture-in-picture](https://github.com/w3c/picture-in-picture)
-- Shortname: no shortname
+- Editor's Draft: [https://w3c.github.io/picture-in-picture/](https://w3c.github.io/picture-in-picture/)
+- Latest published version: [https://www.w3.org/TR/picture-in-picture/](https://www.w3.org/TR/picture-in-picture/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-picture-in-picture-20200130/)
+- Shortname: picture-in-picture
 
 ### Potential issue(s) {.anomalies}
 
@@ -9752,10 +9758,13 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Initial URL: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
+- Initial URL: [https://www.w3.org/TR/web-share/](https://www.w3.org/TR/web-share/)
 - Crawled URL: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
 - Crawled version: 19 December 2019
-- Shortname: no shortname
+- Editor's Draft: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
+- Latest published version: [https://www.w3.org/TR/web-share/](https://www.w3.org/TR/web-share/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-web-share-20191217/)
+- Shortname: web-share
 
 ### Potential issue(s) {.anomalies}
 
@@ -10087,11 +10096,14 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Initial URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
+- Initial URL: [https://www.w3.org/TR/webxr-ar-module/](https://www.w3.org/TR/webxr-ar-module/)
 - Crawled URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
 - Crawled version: 15 January 2020
+- Editor's Draft: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
+- Latest published version: [https://www.w3.org/TR/webxr-ar-module-1/](https://www.w3.org/TR/webxr-ar-module-1/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/)
 - Repository: [GitHub immersive-web/webxr-ar-module](https://github.com/immersive-web/webxr-ar-module)
-- Shortname: no shortname
+- Shortname: webxr-ar-module
 
 ### Potential issue(s) {.anomalies}
 
@@ -10144,11 +10156,14 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Initial URL: [https://immersive-web.github.io/webxr-gamepads-module/](https://immersive-web.github.io/webxr-gamepads-module/)
+- Initial URL: [https://www.w3.org/TR/webxr-gamepads-module/](https://www.w3.org/TR/webxr-gamepads-module/)
 - Crawled URL: [https://immersive-web.github.io/webxr-gamepads-module/](https://immersive-web.github.io/webxr-gamepads-module/)
 - Crawled version: 21 November 2019
+- Editor's Draft: [https://immersive-web.github.io/webxr-gamepads-module/](https://immersive-web.github.io/webxr-gamepads-module/)
+- Latest published version: [https://www.w3.org/TR/webxr-gamepads-module-1/](https://www.w3.org/TR/webxr-gamepads-module-1/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-gamepads-module-1-20191010/)
 - Repository: [GitHub immersive-web/webxr-gamepads-module](https://github.com/immersive-web/webxr-gamepads-module)
-- Shortname: no shortname
+- Shortname: webxr-gamepads-module
 
 ### Potential issue(s) {.anomalies}
 
