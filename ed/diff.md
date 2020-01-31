@@ -80,6 +80,14 @@
 - This specification is not in the new crawl report.
 
 
+## Web Animations
+
+- Initial URL: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
+- Crawled URL: [https://drafts.csswg.org/web-animations-1/](https://drafts.csswg.org/web-animations-1/)
+- Repository: [GitHub w3c/web-animations](https://github.com/w3c/web-animations)
+- Missing references for links: *DEL* https://www.w3.org/TR/selectors4/
+
+
 ## Web MIDI API
 
 - Initial URL: [https://www.w3.org/TR/webmidi/](https://www.w3.org/TR/webmidi/)
