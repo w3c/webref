@@ -1,6 +1,6 @@
-% Diff between report from "January 30, 2020" and reference report from "January 28, 2020"
+% Diff between report from "January 31, 2020" and reference report from "January 28, 2020"
 % Reffy
-% January 30, 2020
+% January 31, 2020
 
 ## ContentEditable
 
@@ -54,6 +54,15 @@
 - Crawled URL: [https://w3c.github.io/mediasession/](https://w3c.github.io/mediasession/)
 - Repository: [GitHub w3c/mediasession](https://github.com/w3c/mediasession)
 - This specification is not in the new crawl report.
+
+
+## Media Source Extensions™
+
+- Initial URL: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
+- Crawled URL: [https://w3c.github.io/media-source/](https://w3c.github.io/media-source/)
+- Repository: [GitHub w3c/media-source](https://github.com/w3c/media-source)
+- Missing references for WebIDL names: *DEL* EventTarget, URL
+- Inconsistent references for links: *INS* https://www.w3.org/TR/html51/
 
 
 ## Picture-in-Picture
