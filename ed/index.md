@@ -3835,7 +3835,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## CSS Shadow Parts {data-spec=true data-anomaly=true data-noCssDefinitions=true}
+## CSS Shadow Parts {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -3851,6 +3851,8 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - No CSS definitions found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7871,10 +7873,10 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
 - Crawled URL: [https://w3c.github.io/push-api/](https://w3c.github.io/push-api/)
-- Crawled version: 03 October 2019
+- Crawled version: 04 February 2020
 - Editor's Draft: [https://w3c.github.io/push-api/](https://w3c.github.io/push-api/)
 - Latest published version: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-push-api-20191003/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-push-api-20200204/)
 - Repository: [GitHub w3c/push-api](https://github.com/w3c/push-api)
 - Shortname: push-api
 
@@ -9758,6 +9760,7 @@ Informative references to this spec from:
 - Editor's Draft: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
 - Latest published version: [https://www.w3.org/TR/web-share/](https://www.w3.org/TR/web-share/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-web-share-20191217/)
+- Repository: [GitHub w3c/web-share](https://github.com/w3c/web-share)
 - Shortname: web-share
 
 ### Potential issue(s) {.anomalies}

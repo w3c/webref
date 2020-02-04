@@ -11,6 +11,14 @@
 - Missing references for links: *INS* https://html.spec.whatwg.org/
 
 
+## CSS Shadow Parts
+
+- Initial URL: [https://www.w3.org/TR/css-shadow-parts-1/](https://www.w3.org/TR/css-shadow-parts-1/)
+- Crawled URL: [http://drafts.csswg.org/css-shadow-parts/](http://drafts.csswg.org/css-shadow-parts/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Missing references for links: *INS* https://www.w3.org/TR/selectors4/
+
+
 ## HTMLVideoElement.requestAnimationFrame()
 
 - Initial URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
@@ -59,6 +67,7 @@
 
 - Initial URL: [https://www.w3.org/TR/web-share/](https://www.w3.org/TR/web-share/)
 - Crawled URL: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
+- Repository: [GitHub w3c/web-share](https://github.com/w3c/web-share)
 - This specification was not in the reference crawl report.
 
 
