@@ -46,6 +46,7 @@
 
 - Initial URL: [https://www.w3.org/TR/media-capabilities/](https://www.w3.org/TR/media-capabilities/)
 - Crawled URL: [https://w3c.github.io/media-capabilities/](https://w3c.github.io/media-capabilities/)
+- Repository: [GitHub w3c/media-capabilities](https://github.com/w3c/media-capabilities)
 - This specification was not in the reference crawl report.
 
 
@@ -53,6 +54,7 @@
 
 - Initial URL: [https://www.w3.org/TR/mediasession/](https://www.w3.org/TR/mediasession/)
 - Crawled URL: [https://w3c.github.io/mediasession/](https://w3c.github.io/mediasession/)
+- Repository: [GitHub w3c/mediasession](https://github.com/w3c/mediasession)
 - This specification was not in the reference crawl report.
 
 
@@ -77,6 +79,7 @@
 
 - Initial URL: [https://www.w3.org/TR/picture-in-picture/](https://www.w3.org/TR/picture-in-picture/)
 - Crawled URL: [https://w3c.github.io/picture-in-picture/](https://w3c.github.io/picture-in-picture/)
+- Repository: [GitHub w3c/picture-in-picture](https://github.com/w3c/picture-in-picture)
 - This specification was not in the reference crawl report.
 
 
