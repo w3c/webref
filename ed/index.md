@@ -1667,7 +1667,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
 - Crawled URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
-- Crawled version: 3 February 2020
+- Crawled version: 4 February 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6603,6 +6603,7 @@ Informative references to this spec from:
 - Editor's Draft: [https://w3c.github.io/media-capabilities/](https://w3c.github.io/media-capabilities/)
 - Latest published version: [https://www.w3.org/TR/media-capabilities/](https://www.w3.org/TR/media-capabilities/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-media-capabilities-20200130/)
+- Repository: [GitHub w3c/media-capabilities](https://github.com/w3c/media-capabilities)
 - Shortname: media-capabilities
 
 ### Potential issue(s) {.anomalies}
@@ -6863,6 +6864,7 @@ Informative references to this spec from:
 - Editor's Draft: [https://w3c.github.io/mediasession/](https://w3c.github.io/mediasession/)
 - Latest published version: [https://www.w3.org/TR/mediasession/](https://www.w3.org/TR/mediasession/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-mediasession-20200130/)
+- Repository: [GitHub w3c/mediasession](https://github.com/w3c/mediasession)
 - Shortname: mediasession
 
 ### Potential issue(s) {.anomalies}
@@ -7680,6 +7682,7 @@ Informative references to this spec from:
 - Editor's Draft: [https://w3c.github.io/picture-in-picture/](https://w3c.github.io/picture-in-picture/)
 - Latest published version: [https://www.w3.org/TR/picture-in-picture/](https://www.w3.org/TR/picture-in-picture/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-picture-in-picture-20200130/)
+- Repository: [GitHub w3c/picture-in-picture](https://github.com/w3c/picture-in-picture)
 - Shortname: picture-in-picture
 
 ### Potential issue(s) {.anomalies}
@@ -9803,6 +9806,7 @@ No informative reference to this spec from other specs.
 - Initial URL: [https://wicg.github.io/speech-api/](https://wicg.github.io/speech-api/)
 - Crawled URL: [https://wicg.github.io/speech-api/](https://wicg.github.io/speech-api/)
 - Crawled version: 21 January 2020
+- Repository: [GitHub wicg/speech-api](https://github.com/wicg/speech-api)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -10023,6 +10027,7 @@ Informative references to this spec from:
 - Editor's Draft: [http://w3c.github.io/webrtc-priority/](http://w3c.github.io/webrtc-priority/)
 - Latest published version: [https://www.w3.org/TR/webrtc-priority/](https://www.w3.org/TR/webrtc-priority/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-webrtc-priority-20200123/)
+- Repository: [GitHub w3c/webrtc-priority](https://github.com/w3c/webrtc-priority)
 - Shortname: webrtc-priority
 
 ### Potential issue(s) {.anomalies}
