@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define CSS and WebIDL content",
   "description": "The crawl includes specifications published by W3C Working Groups, W3C Community Groups and WHATWG, that define CSS and/or WebIDL content. The specifications are at various stages of maturity.",
-  "date": "2020-02-05T12:36:54.265Z",
+  "date": "2020-02-05T18:38:07.233Z",
   "stats": {
     "crawled": 270,
     "errors": 0,
@@ -1740,7 +1740,7 @@
     },
     {
       "title": "Cookie Store API",
-      "date": "22 January 2020",
+      "date": "5 February 2020",
       "url": "https://wicg.github.io/cookie-store/",
       "crawled": "https://wicg.github.io/cookie-store/",
       "repository": "https://github.com/wicg/cookie-store",
@@ -1757,6 +1757,16 @@
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
+          {
+            "name": "ServiceWorkerRegistration",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/"
+              }
+            ]
+          },
           {
             "name": "ExtendableEvent",
             "refs": [
@@ -17114,7 +17124,7 @@
     {
       "title": "Identifiers for WebRTC's Statistics API",
       "shortname": "webrtc-stats",
-      "date": "15 January 2020",
+      "date": "05 February 2020",
       "url": "https://www.w3.org/TR/webrtc-stats/",
       "latest": "https://www.w3.org/TR/webrtc-stats/",
       "datedUrl": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/",
@@ -17134,21 +17144,8 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "RTCPriorityType",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/webrtc-priority/",
-                "title": "WebRTC DSCP Control API",
-                "crawled": "http://w3c.github.io/webrtc-priority/"
-              }
-            ]
-          }
-        ],
-        "missingLinkRef": [
-          "https://w3c.github.io/webrtc-pc/"
-        ],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -17166,7 +17163,7 @@
           "informative": []
         },
         "noEdDraft": false,
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -17198,7 +17195,13 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/webrtc-stats/",
+              "title": "Identifiers for WebRTC's Statistics API",
+              "crawled": "https://w3c.github.io/webrtc-stats/"
+            }
+          ],
           "informative": []
         },
         "noEdDraft": false,
@@ -25353,7 +25356,7 @@
     {
       "title": "WebAssembly JavaScript Interface",
       "shortname": "wasm-js-api-1",
-      "date": "3 February 2020",
+      "date": "5 February 2020",
       "url": "https://www.w3.org/TR/wasm-js-api-1/",
       "latest": "https://www.w3.org/TR/wasm-js-api-1/",
       "datedUrl": "https://www.w3.org/TR/2019/REC-wasm-js-api-1-20191205/",
@@ -25403,7 +25406,7 @@
     {
       "title": "WebAssembly Web API",
       "shortname": "wasm-web-api-1",
-      "date": "3 February 2020",
+      "date": "5 February 2020",
       "url": "https://www.w3.org/TR/wasm-web-api-1/",
       "latest": "https://www.w3.org/TR/wasm-web-api-1/",
       "datedUrl": "https://www.w3.org/TR/2019/REC-wasm-web-api-1-20191205/",
@@ -25768,7 +25771,13 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/webrtc-stats/",
+              "title": "Identifiers for WebRTC's Statistics API",
+              "crawled": "https://w3c.github.io/webrtc-stats/"
+            }
+          ],
           "informative": []
         },
         "noEdDraft": false,

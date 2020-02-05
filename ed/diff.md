@@ -11,6 +11,14 @@
 - Missing references for links: *INS* https://html.spec.whatwg.org/
 
 
+## Cookie Store API
+
+- Initial URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
+- Crawled URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
+- Repository: [GitHub wicg/cookie-store](https://github.com/wicg/cookie-store)
+- Missing references for WebIDL names: *INS* ServiceWorkerRegistration
+
+
 ## CSS Shadow Parts
 
 - Initial URL: [https://www.w3.org/TR/css-shadow-parts-1/](https://www.w3.org/TR/css-shadow-parts-1/)
@@ -32,6 +40,16 @@
 - Initial URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
 - Crawled URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
 - This specification was not in the reference crawl report.
+
+
+## Identifiers for WebRTC's Statistics API
+
+- Initial URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
+- Crawled URL: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
+- Repository: [GitHub w3c/webrtc-stats](https://github.com/w3c/webrtc-stats)
+- Spec is OK: *INS* true / *DEL* false
+- Missing references for WebIDL names: *DEL* RTCPriorityType
+- Missing references for links: *DEL* https://w3c.github.io/webrtc-pc/
 
 
 ## Media Capabilities
