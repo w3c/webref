@@ -1668,7 +1668,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
 - Crawled URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
-- Crawled version: 5 February 2020
+- Crawled version: 7 February 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5078,7 +5078,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Crawled URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Crawled version: 24 January 2020
+- Crawled version: 7 February 2020
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
