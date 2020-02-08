@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define CSS and WebIDL content",
   "description": "The crawl includes specifications published by W3C Working Groups, W3C Community Groups and WHATWG, that define CSS and/or WebIDL content. The specifications are at various stages of maturity.",
-  "date": "2020-02-08T12:37:57.159Z",
+  "date": "2020-02-08T18:38:39.799Z",
   "stats": {
     "crawled": 270,
-    "errors": 0,
+    "errors": 1,
     "studied": 270
   },
   "results": [
@@ -1485,17 +1485,17 @@
     },
     {
       "title": "Console Standard",
-      "date": "13 December 2019",
+      "date": "",
       "url": "https://console.spec.whatwg.org/",
       "crawled": "https://console.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/console",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
+        "error": "Error: FetchError: request to https://console.spec.whatwg.org/ failed, reason: getaddrinfo EAI_AGAIN console.spec.whatwg.org console.spec.whatwg.org:443 Error: FetchError: request to https://console.spec.whatwg.org/ failed, reason: getaddrinfo EAI_AGAIN console.spec.whatwg.org console.spec.whatwg.org:443\n    at process.on.msg (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/fetch.js:52:28)\n    at process.emit (events.js:198:13)\n    at emit (internal/child_process.js:832:12)\n    at process._tickCallback (internal/process/next_tick.js:63:19)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "noIdlContent": true,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
@@ -1515,7 +1515,7 @@
           "informative": []
         },
         "noEdDraft": null,
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -24402,11 +24402,6 @@
               "url": "https://compat.spec.whatwg.org/",
               "title": "Compatibility Standard",
               "crawled": "https://compat.spec.whatwg.org/"
-            },
-            {
-              "url": "https://console.spec.whatwg.org/",
-              "title": "Console Standard",
-              "crawled": "https://console.spec.whatwg.org/"
             },
             {
               "url": "https://www.w3.org/TR/CSP3/",

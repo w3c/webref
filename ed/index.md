@@ -619,19 +619,25 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Console Standard {data-spec=true data-ok=true}
+## Console Standard {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
 - Crawled URL: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
-- Crawled version: 13 December 2019
 - Repository: [GitHub whatwg/console](https://github.com/whatwg/console)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+The following network or parsing error occurred:
+`Error: FetchError: request to https://console.spec.whatwg.org/ failed, reason: getaddrinfo EAI_AGAIN console.spec.whatwg.org console.spec.whatwg.org:443 Error: FetchError: request to https://console.spec.whatwg.org/ failed, reason: getaddrinfo EAI_AGAIN console.spec.whatwg.org console.spec.whatwg.org:443
+    at process.on.msg (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/fetch.js:52:28)
+    at process.emit (events.js:198:13)
+    at emit (internal/child_process.js:832:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -9527,7 +9533,6 @@ Normative references to this spec from:
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [Console Standard](https://console.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
