@@ -1,4 +1,4 @@
-% Diff between report from "February 08, 2020" and reference report from "February 07, 2020"
+% Diff between report from "February 08, 2020" and reference report from "February 08, 2020"
 % Reffy
 % February 08, 2020
 
