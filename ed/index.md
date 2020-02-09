@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% February 08, 2020
+% February 09, 2020
 
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -96,7 +96,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
-- Crawled version: 08 February 2020
+- Crawled version: 09 February 2020
 - Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/)
@@ -619,25 +619,19 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Console Standard {data-spec=true data-error=true}
+## Console Standard {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
 - Crawled URL: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
+- Crawled version: 13 December 2019
 - Repository: [GitHub whatwg/console](https://github.com/whatwg/console)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: FetchError: request to https://console.spec.whatwg.org/ failed, reason: getaddrinfo EAI_AGAIN console.spec.whatwg.org console.spec.whatwg.org:443 Error: FetchError: request to https://console.spec.whatwg.org/ failed, reason: getaddrinfo EAI_AGAIN console.spec.whatwg.org console.spec.whatwg.org:443
-    at process.on.msg (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/fetch.js:52:28)
-    at process.emit (events.js:198:13)
-    at emit (internal/child_process.js:832:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8086,7 +8080,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://drafts.csswg.org/resize-observer/](https://drafts.csswg.org/resize-observer/)
 - Crawled URL: [https://drafts.csswg.org/resize-observer/](https://drafts.csswg.org/resize-observer/)
-- Crawled version: 18 January 2020
+- Crawled version: 8 February 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -9533,6 +9527,7 @@ Normative references to this spec from:
 - [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Console Standard](https://console.spec.whatwg.org/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
@@ -9928,7 +9923,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- Crawled version: 8 February 2020
+- Crawled version: 9 February 2020
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -9959,7 +9954,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- Crawled version: 8 February 2020
+- Crawled version: 9 February 2020
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
