@@ -1,21 +1,8 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% February 08, 2020
+% February 09, 2020
 
 270 specifications were crawled in this report.
-
-
-## Specifications that could not be rendered
-
-Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
-
-- [Console Standard](https://console.spec.whatwg.org/): `Error: FetchError: request to https://console.spec.whatwg.org/ failed, reason: getaddrinfo EAI_AGAIN console.spec.whatwg.org console.spec.whatwg.org:443 Error: FetchError: request to https://console.spec.whatwg.org/ failed, reason: getaddrinfo EAI_AGAIN console.spec.whatwg.org console.spec.whatwg.org:443
-    at process.on.msg (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/fetch.js:52:28)
-    at process.emit (events.js:198:13)
-    at emit (internal/child_process.js:832:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
-
-=> 1 specification found
 
 
 ## Specifications that do not link to an Editor's Draft
