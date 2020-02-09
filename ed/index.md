@@ -1600,7 +1600,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Crawled URL: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
-- Crawled version: 6 February 2020
+- Crawled version: 8 February 2020
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-color-4-20191105/)
