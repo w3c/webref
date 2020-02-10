@@ -8358,7 +8358,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
 - Crawled URL: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
-- Crawled version: 16 January 2020
+- Crawled version: 6 February 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
