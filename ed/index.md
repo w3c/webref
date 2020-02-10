@@ -71,7 +71,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/accname/](https://w3c.github.io/accname/)
 - Crawled URL: [https://w3c.github.io/accname/](https://w3c.github.io/accname/)
-- Crawled version: 16 January 2020
+- Crawled version: 10 February 2020
 - Repository: [GitHub w3c/accname](https://github.com/w3c/accname)
 - Shortname: no shortname
 
@@ -80,7 +80,6 @@ Informative references to this spec from:
 - Missing references for links: 
      * [`https://www.w3.org/TR/wai-aria-1.2/`](https://www.w3.org/TR/wai-aria-1.2/)
      * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/)
-     * [`https://www.w3.org/TR/wai-aria-1.1/`](https://www.w3.org/TR/wai-aria-1.1/)
      * [`https://w3c.github.io/core-aam/`](https://w3c.github.io/core-aam/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -5992,7 +5991,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
 - Crawled URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled version: 7 February 2020
+- Crawled version: 10 February 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
