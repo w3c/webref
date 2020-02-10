@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% February 03, 2020
+% February 10, 2020
 
 270 specifications were crawled in this report.
 
@@ -13,7 +13,6 @@
 
 ## Specifications without normative dependencies
 
-- [404 not found](https://www.w3.org/TR/2018/CR-SVG2-20181004/single-page.html)
 - [Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification](http://www.w3.org/TR/2011/REC-CSS2-20110607/)
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://www.w3.org/TR/2016/WD-CSS22-20160412/)
 - [ContentEditable](https://w3c.github.io/contentEditable/)
@@ -25,6 +24,7 @@
 - [CSS Ruby Layout Module Level 1](http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/)
 - [CSS Scoping Module Level 1](http://www.w3.org/TR/2014/WD-css-scoping-1-20140403/)
 - [CSS Shapes Module Level 1](http://www.w3.org/TR/2014/CR-css-shapes-1-20140320/)
+- [Error 404 - Not found](https://www.w3.org/TR/2018/CR-SVG2-20181004/single-page.html)
 - [Input Events Level 2](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
 - [Priority Hints](https://wicg.github.io/priority-hints/)
 - [WebXR Augmented Reality Module - Level 1](https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/)
@@ -36,7 +36,6 @@ Basically all specifications have normative dependencies on some other specifica
 
 ## Specifications without WebIDL definitions
 
-- [404 not found](https://www.w3.org/TR/2018/CR-SVG2-20181004/single-page.html)
 - [CSS Conditional Rules Module Level 3](http://www.w3.org/TR/2013/CR-css3-conditional-20130404/)
 - [CSS Font Loading Module Level 3](http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
@@ -44,6 +43,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [CSS Object Model (CSSOM)](http://www.w3.org/TR/2016/WD-cssom-1-20160317/)
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
 - [CSSOM View Module](http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/)
+- [Error 404 - Not found](https://www.w3.org/TR/2018/CR-SVG2-20181004/single-page.html)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [Input Events Level 2](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
@@ -58,7 +58,6 @@ Reffy was expecting to find IDL content in the specifications  listed here but c
 
 ## Specifications without CSS definitions
 
-- [404 not found](https://www.w3.org/TR/2018/CR-SVG2-20181004/single-page.html)
 - [Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification](http://www.w3.org/TR/2011/REC-CSS2-20110607/)
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://www.w3.org/TR/2016/WD-CSS22-20160412/)
 - [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
@@ -78,6 +77,7 @@ Reffy was expecting to find IDL content in the specifications  listed here but c
 - [CSS TV Profile 1.0](https://drafts.csswg.org/css-tv/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
+- [Error 404 - Not found](https://www.w3.org/TR/2018/CR-SVG2-20181004/single-page.html)
 - [Media Queries](http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
 - [Non-element Selectors Module Level 1](https://www.w3.org/TR/2019/NOTE-selectors-nonelement-1-20190402/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
@@ -222,6 +222,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `ExtendableEventInit` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/) uses `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/) uses:
+    * `ServiceWorkerRegistration` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEvent` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEventInit` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ServiceWorkerGlobalScope` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
@@ -246,7 +247,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `ExtendableEvent` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEventInit` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `WindowClient` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-- [Push API](https://www.w3.org/TR/2019/WD-push-api-20191003/) uses:
+- [Push API](https://www.w3.org/TR/2020/WD-push-api-20200204/) uses:
     * `ServiceWorkerRegistration` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ServiceWorkerGlobalScope` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEvent` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
@@ -269,7 +270,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/2019/WD-webxr-gamepads-module-1-20191010/) uses `XRInputSource` but does not reference [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20191010/)
 
-=> 54 missing references for IDL definitions found in 22 specifications
+=> 55 missing references for IDL definitions found in 22 specifications
 
 
 ## Missing references based on document links
