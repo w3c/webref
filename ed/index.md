@@ -8080,6 +8080,7 @@ No informative reference to this spec from other specs.
 - Initial URL: [https://drafts.csswg.org/resize-observer/](https://drafts.csswg.org/resize-observer/)
 - Crawled URL: [https://drafts.csswg.org/resize-observer/](https://drafts.csswg.org/resize-observer/)
 - Crawled version: 8 February 2020
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
