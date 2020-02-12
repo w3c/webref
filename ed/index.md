@@ -5991,7 +5991,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
 - Crawled URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled version: 10 February 2020
+- Crawled version: 12 February 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -10025,7 +10025,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webrtc-priority/](https://www.w3.org/TR/webrtc-priority/)
 - Crawled URL: [http://w3c.github.io/webrtc-priority/](http://w3c.github.io/webrtc-priority/)
-- Crawled version: 16 January 2020
+- Crawled version: 12 February 2020
 - Editor's Draft: [http://w3c.github.io/webrtc-priority/](http://w3c.github.io/webrtc-priority/)
 - Latest published version: [https://www.w3.org/TR/webrtc-priority/](https://www.w3.org/TR/webrtc-priority/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-webrtc-priority-20200123/)
