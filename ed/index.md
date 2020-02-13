@@ -6223,7 +6223,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
 - Crawled URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
-- Crawled version: 29 January 2020
+- Crawled version: 12 February 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
