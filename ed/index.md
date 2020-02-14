@@ -3782,7 +3782,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-scroll-snap-1/](https://www.w3.org/TR/css-scroll-snap-1/)
 - Crawled URL: [https://drafts.csswg.org/css-scroll-snap-1/](https://drafts.csswg.org/css-scroll-snap-1/)
-- Crawled version: 16 January 2020
+- Crawled version: 13 February 2020
 - Editor's Draft: [https://drafts.csswg.org/css-scroll-snap-1/](https://drafts.csswg.org/css-scroll-snap-1/)
 - Latest published version: [https://www.w3.org/TR/css-scroll-snap-1/](https://www.w3.org/TR/css-scroll-snap-1/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
@@ -5991,7 +5991,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
 - Crawled URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled version: 12 February 2020
+- Crawled version: 14 February 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
