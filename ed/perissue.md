@@ -15,9 +15,8 @@
 
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
 - [ContentEditable](https://w3c.github.io/contentEditable/)
-- [Priority Hints](https://wicg.github.io/priority-hints/)
 
-=> 3 specifications found
+=> 2 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -559,11 +558,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but does not list it in its references
     * [`https://w3c.github.io/webdriver/webdriver-spec.html`](https://w3c.github.io/webdriver/webdriver-spec.html) but does not list it in its references
 - [Preload](https://w3c.github.io/preload/) links to [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/) but does not list it in its references
-- [Priority Hints](https://wicg.github.io/priority-hints/) links to:
-    * [`https://w3c.github.io/preload/`](https://w3c.github.io/preload/) but does not list it in its references
-    * [`https://www.w3.org/TR/resource-hints/`](https://www.w3.org/TR/resource-hints/) but does not list it in its references
-    * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
-    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [Remote Playback API](https://w3c.github.io/remote-playback/) links to [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but does not list it in its references
 - [Reporting API 1](https://w3c.github.io/reporting/) links to [`https://w3c.github.io/webdriver/webdriver-spec.html`](https://w3c.github.io/webdriver/webdriver-spec.html) but does not list it in its references
 - [Resize Observer](https://drafts.csswg.org/resize-observer/) links to:
@@ -682,7 +676,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 395 missing references for links found in 137 specifications
+=> 391 missing references for links found in 136 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 

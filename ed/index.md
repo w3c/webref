@@ -1504,7 +1504,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-adjust-1/](https://www.w3.org/TR/css-color-adjust-1/)
 - Crawled URL: [https://drafts.csswg.org/css-color-adjust-1/](https://drafts.csswg.org/css-color-adjust-1/)
-- Crawled version: 16 January 2020
+- Crawled version: 13 February 2020
 - Editor's Draft: [https://drafts.csswg.org/css-color-adjust-1/](https://drafts.csswg.org/css-color-adjust-1/)
 - Latest published version: [https://www.w3.org/TR/css-color-adjust-1/](https://www.w3.org/TR/css-color-adjust-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-color-adjust-1-20190523/)
@@ -5443,6 +5443,7 @@ Normative references to this spec from:
 - [Payment Method Identifiers](https://w3c.github.io/payment-method-id/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
 - [Preload](https://w3c.github.io/preload/)
+- [Priority Hints](https://wicg.github.io/priority-hints/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
@@ -6126,6 +6127,7 @@ Normative references to this spec from:
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
+- [Priority Hints](https://wicg.github.io/priority-hints/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
@@ -7787,7 +7789,9 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Resource Hints](https://w3c.github.io/resource-hints/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Priority Hints](https://wicg.github.io/priority-hints/)
 
 
 ## Presentation API {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -7819,24 +7823,19 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Priority Hints {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingLinkRef=true}
+## Priority Hints {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/priority-hints/](https://wicg.github.io/priority-hints/)
 - Crawled URL: [https://wicg.github.io/priority-hints/](https://wicg.github.io/priority-hints/)
-- Crawled version: 30 September 2019
+- Crawled version: 16 February 2020
 - Repository: [GitHub wicg/priority-hints](https://github.com/wicg/priority-hints)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-- No normative references found
-- Missing references for links: 
-     * [`https://w3c.github.io/preload/`](https://w3c.github.io/preload/)
-     * [`https://www.w3.org/TR/resource-hints/`](https://www.w3.org/TR/resource-hints/)
-     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
-     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
