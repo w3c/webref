@@ -2,3 +2,12 @@
 % Reffy
 % February 16, 2020
 
+## Priority Hints
+
+- Initial URL: [https://wicg.github.io/priority-hints/](https://wicg.github.io/priority-hints/)
+- Crawled URL: [https://wicg.github.io/priority-hints/](https://wicg.github.io/priority-hints/)
+- Repository: [GitHub wicg/priority-hints](https://github.com/wicg/priority-hints)
+- Spec is OK: *INS* true / *DEL* false
+- No normative references found: *INS* false / *DEL* true
+
+
