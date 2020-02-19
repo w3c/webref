@@ -6001,7 +6001,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
 - Crawled URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled version: 14 February 2020
+- Crawled version: 19 February 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7328,7 +7328,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/origin-policy/](https://wicg.github.io/origin-policy/)
 - Crawled URL: [https://wicg.github.io/origin-policy/](https://wicg.github.io/origin-policy/)
-- Crawled version: 30 January 2020
+- Crawled version: 19 February 2020
 - Repository: [GitHub wicg/origin-policy](https://github.com/wicg/origin-policy)
 - Shortname: no shortname
 
