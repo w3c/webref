@@ -6001,7 +6001,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
 - Crawled URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled version: 19 February 2020
+- Crawled version: 20 February 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
