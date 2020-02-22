@@ -30,14 +30,14 @@ dictionary SpatialNavigationSearchOptions {
 
 partial interface Element {
     Node getSpatialNavigationContainer();
-    sequence<Node> focusableAreas(optional FocusableAreasOption option);
-    Node? spatialNavigationSearch(SpatialNavigationDirection dir, optional SpatialNavigationSearchOptions options);
+    sequence<Node> focusableAreas(optional FocusableAreasOption option = {});
+    Node? spatialNavigationSearch(SpatialNavigationDirection dir, optional SpatialNavigationSearchOptions options = {});
 };
 
 [Exposed=Window]
 interface NavigationEvent : UIEvent {
     constructor(DOMString type,
-                optional NavigationEventInit eventInitDict);
+                optional NavigationEventInit eventInitDict = {});
     readonly attribute SpatialNavigationDirection dir;
     readonly attribute EventTarget? relatedTarget;
 };
