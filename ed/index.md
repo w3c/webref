@@ -6229,18 +6229,19 @@ Informative references to this spec from:
 - [Web Share Target API](https://wicg.github.io/web-share-target/)
 
 
-## HTMLVideoElement.requestAnimationFrame() {data-spec=true data-ok=true}
+## HTMLVideoElement.requestAnimationFrame() {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
 - Crawled URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
-- Crawled version: 20 February 2020
+- Crawled version: 25 February 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6273,7 +6274,9 @@ Normative references to this spec from:
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
 
 
 ## Identity for WebRTC 1.0 {data-spec=true data-unknownExposedNames=true data-ok=true}
@@ -8446,10 +8449,10 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Crawled URL: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
-- Crawled version: 20 August 2019
+- Crawled version: 26 February 2020
 - Editor's Draft: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
 - Latest published version: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-selection-api-20190820/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-selection-api-20200226/)
 - Repository: [GitHub w3c/selection-api](https://github.com/w3c/selection-api)
 - Shortname: selection-api
 
