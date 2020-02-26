@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define CSS and WebIDL content",
   "description": "The crawl includes specifications published by W3C Working Groups, W3C Community Groups and WHATWG, that define CSS and/or WebIDL content. The specifications are at various stages of maturity.",
-  "date": "2020-02-26T00:38:20.565Z",
+  "date": "2020-02-26T06:38:32.575Z",
   "stats": {
     "crawled": 270,
     "errors": 0,
@@ -17126,7 +17126,7 @@
     },
     {
       "title": "HTMLVideoElement.requestAnimationFrame()",
-      "date": "20 February 2020",
+      "date": "25 February 2020",
       "url": "https://wicg.github.io/video-raf/",
       "crawled": "https://wicg.github.io/video-raf/",
       "report": {
@@ -17143,13 +17143,21 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/hr-time/",
+            "ref": {
+              "name": "HR-TIME-2",
+              "url": "https://www.w3.org/TR/hr-time-2/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
         },
         "noEdDraft": null,
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -17191,7 +17199,13 @@
               "crawled": "https://w3c.github.io/webrtc-pc/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://wicg.github.io/video-raf/",
+              "title": "HTMLVideoElement.requestAnimationFrame()",
+              "crawled": "https://wicg.github.io/video-raf/"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": true
@@ -21901,10 +21915,10 @@
     {
       "title": "Selection API",
       "shortname": "selection-api",
-      "date": "20 August 2019",
+      "date": "26 February 2020",
       "url": "https://www.w3.org/TR/selection-api/",
       "latest": "https://www.w3.org/TR/selection-api/",
-      "datedUrl": "https://www.w3.org/TR/2019/WD-selection-api-20190820/",
+      "datedUrl": "https://www.w3.org/TR/2020/WD-selection-api-20200226/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/selection-api/",
       "crawled": "https://w3c.github.io/selection-api/",
