@@ -267,6 +267,6 @@ dictionary XRPermissionDescriptor: PermissionDescriptor {
   sequence<any> optionalFeatures;
 };
 
-dictionary XRPermissionStatus: PermissionStatus {
-  sequence<any> granted;
+interface XRPermissionStatus: PermissionStatus {
+  attribute FrozenArray granted;
 };
