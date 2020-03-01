@@ -577,6 +577,7 @@ Normative references to this spec from:
 
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
 - [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
@@ -611,7 +612,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
-- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 
@@ -4388,18 +4388,20 @@ Informative references to this spec from:
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
 
 
-## CSS Transforms Module Level 2 {data-spec=true data-ok=true}
+## CSS Transforms Module Level 2 {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
 - Crawled URL: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
-- Crawled version: 16 January 2020
+- Crawled version: 3 March 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
+     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6831,7 +6833,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mediaqueries-4/](https://www.w3.org/TR/mediaqueries-4/)
 - Crawled URL: [https://drafts.csswg.org/mediaqueries-4/](https://drafts.csswg.org/mediaqueries-4/)
-- Crawled version: 6 September 2019
+- Crawled version: 28 February 2020
 - Editor's Draft: [https://drafts.csswg.org/mediaqueries-4/](https://drafts.csswg.org/mediaqueries-4/)
 - Latest published version: [https://www.w3.org/TR/mediaqueries-4/](https://www.w3.org/TR/mediaqueries-4/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
@@ -6881,7 +6883,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
 - Crawled URL: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
-- Crawled version: 23 January 2020
+- Crawled version: 3 March 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8560,7 +8562,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/selectors-4/](https://www.w3.org/TR/selectors-4/)
 - Crawled URL: [https://drafts.csswg.org/selectors/](https://drafts.csswg.org/selectors/)
-- Crawled version: 7 February 2020
+- Crawled version: 28 February 2020
 - Editor's Draft: [https://drafts.csswg.org/selectors/](https://drafts.csswg.org/selectors/)
 - Latest published version: [https://www.w3.org/TR/selectors-4/](https://www.w3.org/TR/selectors-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
