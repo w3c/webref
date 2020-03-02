@@ -1,8 +1,8 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% February 24, 2020
+% March 02, 2020
 
-270 specifications were crawled in this report.
+271 specifications were crawled in this report.
 
 
 ## Specifications that do not link to an Editor's Draft
@@ -165,12 +165,14 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `CSSRuleList` used in [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - `CSSStyleDeclaration` used in [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/), [CSS Device Adaptation Module Level 1](http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/), [CSS Fonts Module Level 3](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/), [CSS Fonts Module Level 4](https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/)
 - `CSSStyleRule` used in [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
+- `CSSStyleSheet` used in [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 - `Console` used in [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - `DOMException` used in [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2019/CR-webrtc-20191213/)
-- `DOMHighResTimeStamp` used in [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/), [DOM Standard](https://dom.spec.whatwg.org/), [Element Timing API](https://wicg.github.io/element-timing/), [Event Timing API](https://wicg.github.io/event-timing/), [Gamepad](https://www.w3.org/TR/2020/WD-gamepad-20200121/), [Generic Sensor API](https://www.w3.org/TR/2019/CR-generic-sensor-20191212/), [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/), [HTML Standard](https://html.spec.whatwg.org/), [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/), [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/), [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/), [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/), [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/), [Layout Instability API](https://wicg.github.io/layout-instability/), [Media Playback Quality](https://w3c.github.io/media-playback-quality/), [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/), [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/), [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/), [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/), [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/), [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/), [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2019/CR-webrtc-20191213/), [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20191010/)
+- `DOMHighResTimeStamp` used in [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/), [DOM Standard](https://dom.spec.whatwg.org/), [Element Timing API](https://wicg.github.io/element-timing/), [Event Timing API](https://wicg.github.io/event-timing/), [Gamepad](https://www.w3.org/TR/2020/WD-gamepad-20200225/), [Generic Sensor API](https://www.w3.org/TR/2019/CR-generic-sensor-20191212/), [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/), [HTML Standard](https://html.spec.whatwg.org/), [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/), [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/), [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/), [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/), [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/), [Layout Instability API](https://wicg.github.io/layout-instability/), [Media Playback Quality](https://w3c.github.io/media-playback-quality/), [MediaStream Recording](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/), [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/), [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/), [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/), [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/), [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/), [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/), [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2019/CR-webrtc-20191213/), [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20191010/)
 - `ElementCSSInlineStyle` used in [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - `KeyframeEffectReadOnly` used in [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - `Map` used in [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
+- `MediaList` used in [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 - `Performance` used in [Event Timing API](https://wicg.github.io/event-timing/), [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/), [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/), [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/), [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/), [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 - `PermissionName` used in [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - `ReadableStream` used in [CSS Parser API](https://wicg.github.io/CSS-Parser-API/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190911/)
@@ -189,7 +191,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `SupportedType` used in [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/), [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 
-=> 30 WebIDL names found
+=> 32 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -200,7 +202,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `BinaryType` defined in [HTML Standard](https://html.spec.whatwg.org/) and [Presentation API](https://www.w3.org/TR/2017/CR-presentation-api-20170601/)
 - `CSSFontFaceRule` defined in [CSS Fonts Module Level 3](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/) and [CSS Fonts Module Level 4](https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/)
 - `DOMParser` defined in [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/) and [HTML Standard](https://html.spec.whatwg.org/)
-- `GamepadMappingType` defined in [Gamepad](https://www.w3.org/TR/2020/WD-gamepad-20200121/) and [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/2019/WD-webxr-gamepads-module-1-20191010/)
+- `GamepadMappingType` defined in [Gamepad](https://www.w3.org/TR/2020/WD-gamepad-20200225/) and [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/2019/WD-webxr-gamepads-module-1-20191010/)
 - `Keyboard` defined in [Keyboard Lock](https://wicg.github.io/keyboard-lock/) and [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - `PermissionState` defined in [DeviceOrientation Event Specification](https://www.w3.org/TR/2019/WD-orientation-event-20190416/) and [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - `XRSessionMode` defined in [WebXR Augmented Reality Module - Level 1](https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/) and [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20191010/)
@@ -242,7 +244,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `Range` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
     * `DocumentFragment` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/) uses `ReportBody` but does not reference [Reporting API 1](https://w3c.github.io/reporting/)
-- [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html) uses `Gamepad` but does not reference [Gamepad](https://www.w3.org/TR/2020/WD-gamepad-20200121/)
+- [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html) uses `Gamepad` but does not reference [Gamepad](https://www.w3.org/TR/2020/WD-gamepad-20200225/)
 - [HTML Standard](https://html.spec.whatwg.org/) uses `WebGL2RenderingContext` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/) uses `RTCPriorityType` but does not reference [WebRTC Priority Control API](https://www.w3.org/TR/2020/WD-webrtc-priority-20200123/)
 - [Media Source Extensions™](https://www.w3.org/TR/2016/REC-media-source-20161117/) uses:
@@ -407,6 +409,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20191105/) links to:
     * [`https://www.w3.org/TR/css-color-3/`](https://www.w3.org/TR/css-color-3/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
+- [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/) links to:
+    * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but does not list it in its references
+    * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
 - [CSS Conditional Rules Module Level 3](http://www.w3.org/TR/2013/CR-css3-conditional-20130404/) links to:
     * [`https://www.w3.org/TR/2008/REC-CSS1-20080411`](https://www.w3.org/TR/2008/REC-CSS1-20080411) but does not list it in its references
     * [`https://www.w3.org/TR/2013/WD-css3-transitions-20130212/`](https://www.w3.org/TR/2013/WD-css3-transitions-20130212/) but does not list it in its references
@@ -782,6 +787,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-animations/`](https://www.w3.org/TR/css3-animations/) but does not list it in its references
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/) links to:
+    * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
+    * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/) links to:
     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
@@ -789,7 +797,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-animations/`](https://www.w3.org/TR/css3-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/2013/WD-css3-transitions-20131119/`](https://www.w3.org/TR/2013/WD-css3-transitions-20131119/) but does not list it in its references
     * [`https://www.w3.org/TR/2013/WD-css3-transitions-20130212/ChangeLog`](https://www.w3.org/TR/2013/WD-css3-transitions-20130212/ChangeLog) but does not list it in its references
-- [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/) links to [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/) but does not list it in its references
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/) links to:
     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-animations/`](https://www.w3.org/TR/css3-animations/) but does not list it in its references
@@ -956,7 +963,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-animations/`](https://www.w3.org/TR/css3-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
-- [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190820/) links to [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/) but does not list it in its references
+- [Selection API](https://www.w3.org/TR/2020/WD-selection-api-20200226/) links to [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/) but does not list it in its references
 - [Selectors Level 3](https://www.w3.org/TR/2018/REC-selectors-3-20181106/) links to [`https://www.w3.org/TR/css3-namespace/`](https://www.w3.org/TR/css3-namespace/) but does not list it in its references
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/) links to:
     * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/) but does not list it in its references
@@ -1042,7 +1049,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/2019/WD-webxr-gamepads-module-1-20191010/) links to [`https://www.w3.org/TR/webxr/`](https://www.w3.org/TR/webxr/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 651 missing references for links found in 161 specifications
+=> 654 missing references for links found in 162 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -1232,6 +1239,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/2018/CR-geometry-1-20181204/) links to:
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but related reference "CSSOM-VIEW" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
+- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/) links to [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/) links to:
     * [`https://www.w3.org/TR/2018/CR-webrtc-20180621/`](https://www.w3.org/TR/2018/CR-webrtc-20180621/) but related reference "WEBRTC" uses URL [`https://www.w3.org/TR/webrtc/`](https://www.w3.org/TR/webrtc/)
     * [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/) but related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
@@ -1318,7 +1326,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
     * [`https://w3c.github.io/mediacapture-main/getusermedia.html`](https://w3c.github.io/mediacapture-main/getusermedia.html) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/) links to [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIX" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
-- [Selection API](https://www.w3.org/TR/2019/WD-selection-api-20190820/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+- [Selection API](https://www.w3.org/TR/2020/WD-selection-api-20200226/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/) links to [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/) but related reference "RESOURCE-TIMING-2" uses URL [`https://www.w3.org/TR/resource-timing-2/`](https://www.w3.org/TR/resource-timing-2/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/) links to:
@@ -1369,6 +1377,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM-20151119" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/2019/WD-webxr-gamepads-module-1-20191010/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 251 inconsistent references for links found in 136 specifications
+=> 252 inconsistent references for links found in 137 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
