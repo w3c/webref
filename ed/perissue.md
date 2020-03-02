@@ -83,9 +83,8 @@ Reffy was not expecting to find CSS definitions in the specifications listed her
 
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
-- [WebXR Device API](https://immersive-web.github.io/webxr/)
 
-=> 3 specifications found
+=> 2 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
@@ -126,10 +125,8 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `ReadableStream` used in [CSS Parser API](https://wicg.github.io/CSS-Parser-API/), [Encoding Standard](https://encoding.spec.whatwg.org/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://w3c.github.io/FileAPI/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/)
 - `WritableStream` used in [Encoding Standard](https://encoding.spec.whatwg.org/)
-- `XRInputSource` used in [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
-- `XRSession` used in [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
 
-=> 8 WebIDL names found
+=> 6 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -195,8 +192,14 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `ServiceWorkerGlobalScope` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEvent` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
     * `ExtendableEventInit` but does not reference [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/) uses:
+    * `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://w3c.github.io/hr-time/)
+    * `WebGLRenderingContext` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `WebGLFramebuffer` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `WebGLContextAttributes` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 35 missing references for IDL definitions found in 16 specifications
+=> 40 missing references for IDL definitions found in 17 specifications
 
 
 ## Missing references based on document links

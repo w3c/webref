@@ -5997,6 +5997,7 @@ Although they do not, the following specs should also normatively reference this
 
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Server Timing](https://w3c.github.io/server-timing/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 No informative reference to this spec from other specs.
 
@@ -6342,7 +6343,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
 - Crawled URL: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
-- Crawled version: 29 February 2020
+- Crawled version: 2 March 2020
 - Editor's Draft: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
 - Latest published version: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
@@ -10012,6 +10013,10 @@ Normative references to this spec from:
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
+
 Informative references to this spec from:
 
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
@@ -10132,7 +10137,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebXR Augmented Reality Module - Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true}
+## WebXR Augmented Reality Module - Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
 
 ### Spec info {.info}
 
@@ -10148,7 +10153,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `XRSession`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -10157,13 +10161,13 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebXR Device API {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
+## WebXR Device API {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled URL: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Crawled version: 28 February 2020
+- Crawled version: 2 March 2020
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-20191010/)
@@ -10172,7 +10176,12 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Invalid WebIDL content found
+- Missing references for WebIDL names: 
+     * `DOMHighResTimeStamp` defined in [High Resolution Time](https://w3c.github.io/hr-time/)
+     * `WebGLRenderingContext` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+     * `WebGLFramebuffer` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+     * `WebGLContextAttributes` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+     * `WebGLRenderingContextBase` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Missing references for links: 
      * [`https://w3c.github.io/orientation-sensor/`](https://w3c.github.io/orientation-sensor/)
      * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
@@ -10190,7 +10199,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebXR Gamepads Module - Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-inconsistentRef=true}
+## WebXR Gamepads Module - Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -10205,7 +10214,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `XRInputSource`
 - WebIDL names also defined elsewhere: 
     * `GamepadMappingType` also defined in [Gamepad](https://w3c.github.io/gamepad/)
 - Inconsistent references for links: 
