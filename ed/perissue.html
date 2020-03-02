@@ -92,9 +92,8 @@
   <ul>
   <li><a href="https://drafts.csswg.org/resize-observer/">Resize Observer</a></li>
   <li><a href="https://svgwg.org/specs/animations/">SVG Animations</a></li>
-  <li><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a></li>
   </ul>
-  <p>=&gt; 3 specifications found</p>
+  <p>=&gt; 2 specifications found</p>
   <p>WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features</p>
   </section>
   <section id="list-of-specifications-with-obsolete-webidl-constructs" class="level2">
@@ -130,10 +129,8 @@
   <li><code>ReadableStream</code> used in <a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a>, <a href="https://encoding.spec.whatwg.org/">Encoding Standard</a>, <a href="https://fetch.spec.whatwg.org/">Fetch Standard</a>, <a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/">HTML Standard</a></li>
   <li><code>WritableStream</code> used in <a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
-  <li><code>XRInputSource</code> used in <a href="https://immersive-web.github.io/webxr-gamepads-module/">WebXR Gamepads Module - Level 1</a></li>
-  <li><code>XRSession</code> used in <a href="https://immersive-web.github.io/webxr-ar-module/">WebXR Augmented Reality Module - Level 1</a></li>
   </ul>
-  <p>=&gt; 8 WebIDL names found</p>
+  <p>=&gt; 6 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -210,8 +207,16 @@
   <li><code>ExtendableEvent</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><code>ExtendableEventInit</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   </ul></li>
+  <li><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a> uses:
+  <ul>
+  <li><code>DOMHighResTimeStamp</code> but does not reference <a href="https://w3c.github.io/hr-time/">High Resolution Time</a></li>
+  <li><code>WebGLRenderingContext</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
+  <li><code>WebGLFramebuffer</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
+  <li><code>WebGLContextAttributes</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
+  <li><code>WebGLRenderingContextBase</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
+  </ul></li>
   </ul>
-  <p>=&gt; 35 missing references for IDL definitions found in 16 specifications</p>
+  <p>=&gt; 40 missing references for IDL definitions found in 17 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
