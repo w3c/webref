@@ -9,6 +9,7 @@ enum GamepadHand {
   "right"
 };
 
+[Exposed=Window]
 interface GamepadHapticActuator {
   readonly attribute GamepadHapticActuatorType type;
   Promise<boolean> pulse(double value, double duration);
@@ -18,6 +19,7 @@ enum GamepadHapticActuatorType {
   "vibration"
 };
 
+[Exposed=Window]
 interface GamepadPose {
   readonly attribute boolean hasOrientation;
   readonly attribute boolean hasPosition;
