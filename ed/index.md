@@ -71,7 +71,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/accname/](https://w3c.github.io/accname/)
 - Crawled URL: [https://w3c.github.io/accname/](https://w3c.github.io/accname/)
-- Crawled version: 28 February 2020
+- Crawled version: 03 March 2020
 - Repository: [GitHub w3c/accname](https://github.com/w3c/accname)
 - Shortname: no shortname
 
@@ -647,7 +647,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/construct-stylesheets/](https://wicg.github.io/construct-stylesheets/)
 - Crawled URL: [https://wicg.github.io/construct-stylesheets/](https://wicg.github.io/construct-stylesheets/)
-- Crawled version: 2 January 2020
+- Crawled version: 3 March 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4411,16 +4411,8 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
-- [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
-- [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 
-Informative references to this spec from:
-
-- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
-- [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
+No informative reference to this spec from other specs.
 
 
 ## CSS Transitions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
@@ -5299,7 +5291,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Crawled URL: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
-- Crawled version: 26 February 2020
+- Crawled version: 3 March 2020
 - Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
 - Latest published version: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-encoding-20180327/)
@@ -5412,7 +5404,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
 - Crawled URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
-- Crawled version: 6 December 2019
+- Crawled version: 3 March 2020
 - Repository: [GitHub w3c/webappsec-feature-policy](https://github.com/w3c/webappsec-feature-policy)
 - Shortname: no shortname
 
@@ -6035,7 +6027,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
 - Crawled URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled version: 28 February 2020
+- Crawled version: 3 March 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6587,7 +6579,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/longtasks-1/](https://www.w3.org/TR/longtasks-1/)
 - Crawled URL: [https://w3c.github.io/longtasks/](https://w3c.github.io/longtasks/)
-- Crawled version: 2 December 2019
+- Crawled version: 3 March 2020
 - Editor's Draft: [https://w3c.github.io/longtasks/](https://w3c.github.io/longtasks/)
 - Latest published version: [https://www.w3.org/TR/longtasks-1/](https://www.w3.org/TR/longtasks-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
@@ -6899,14 +6891,11 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
-- [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 
 Informative references to this spec from:
 
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
-- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 
 
 ## Media Session Standard {data-spec=true data-ok=true}
@@ -8381,7 +8370,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/screen-capture/](https://www.w3.org/TR/screen-capture/)
 - Crawled URL: [https://w3c.github.io/mediacapture-screen-share/](https://w3c.github.io/mediacapture-screen-share/)
-- Crawled version: 30 January 2020
+- Crawled version: 03 March 2020
 - Editor's Draft: [https://w3c.github.io/mediacapture-screen-share/](https://w3c.github.io/mediacapture-screen-share/)
 - Latest published version: [https://www.w3.org/TR/screen-capture/](https://www.w3.org/TR/screen-capture/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-screen-capture-20191119/)
