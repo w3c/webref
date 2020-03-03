@@ -1689,6 +1689,7 @@ Informative references to this spec from:
 - Initial URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
 - Crawled URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
 - Crawled version: 3 March 2020
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1759,6 +1760,7 @@ Informative references to this spec from:
 - Initial URL: [https://drafts.csswg.org/css-conditional-4/](https://drafts.csswg.org/css-conditional-4/)
 - Crawled URL: [https://drafts.csswg.org/css-conditional-4/](https://drafts.csswg.org/css-conditional-4/)
 - Crawled version: 31 March 2019
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4395,6 +4397,7 @@ Informative references to this spec from:
 - Initial URL: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
 - Crawled URL: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
 - Crawled version: 3 March 2020
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6885,6 +6888,7 @@ Informative references to this spec from:
 - Initial URL: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
 - Crawled URL: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
 - Crawled version: 3 March 2020
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -10097,7 +10101,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 2 March 2020
+- Crawled version: 3 March 2020
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
