@@ -972,7 +972,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
 - Crawled URL: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
-- Crawled version: 19 February 2020
+- Crawled version: 3 March 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8994,7 +8994,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/uievents/](https://www.w3.org/TR/uievents/)
 - Crawled URL: [https://w3c.github.io/uievents/](https://w3c.github.io/uievents/)
-- Crawled version: 13 February 2020
+- Crawled version: 3 March 2020
 - Editor's Draft: [https://w3c.github.io/uievents/](https://w3c.github.io/uievents/)
 - Latest published version: [https://www.w3.org/TR/uievents/](https://www.w3.org/TR/uievents/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-uievents-20190530/)
