@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% March 03, 2020
+% March 04, 2020
 
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -95,7 +95,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
-- Crawled version: 03 March 2020
+- Crawled version: 04 March 2020
 - Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/)
@@ -764,7 +764,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Crawled URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
-- Crawled version: 2 March 2020
+- Crawled version: 3 March 2020
 - Repository: [GitHub wicg/cookie-store](https://github.com/wicg/cookie-store)
 - Shortname: no shortname
 
@@ -3542,7 +3542,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-properties-values-api-1/](https://www.w3.org/TR/css-properties-values-api-1/)
 - Crawled URL: [https://drafts.css-houdini.org/css-properties-values-api-1/](https://drafts.css-houdini.org/css-properties-values-api-1/)
-- Crawled version: 13 January 2020
+- Crawled version: 3 March 2020
 - Editor's Draft: [https://drafts.css-houdini.org/css-properties-values-api-1/](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Latest published version: [https://www.w3.org/TR/css-properties-values-api-1/](https://www.w3.org/TR/css-properties-values-api-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-properties-values-api-1-20191025/)
@@ -9962,7 +9962,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- Crawled version: 3 March 2020
+- Crawled version: 4 March 2020
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -9993,7 +9993,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- Crawled version: 3 March 2020
+- Crawled version: 4 March 2020
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -10163,7 +10163,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled URL: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Crawled version: 2 March 2020
+- Crawled version: 3 March 2020
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-20191010/)
@@ -10181,7 +10181,6 @@ No informative reference to this spec from other specs.
 - Missing references for links: 
      * [`https://w3c.github.io/orientation-sensor/`](https://w3c.github.io/orientation-sensor/)
      * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
-     * [`https://www.w3.org/TR/pointerevents/`](https://www.w3.org/TR/pointerevents/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
 

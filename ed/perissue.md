@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% March 03, 2020
+% March 04, 2020
 
 271 specifications were crawled in this report.
 
@@ -685,11 +685,10 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Device API](https://immersive-web.github.io/webxr/) links to:
     * [`https://w3c.github.io/orientation-sensor/`](https://w3c.github.io/orientation-sensor/) but does not list it in its references
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
-    * [`https://www.w3.org/TR/pointerevents/`](https://www.w3.org/TR/pointerevents/) but does not list it in its references
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 399 missing references for links found in 138 specifications
+=> 398 missing references for links found in 138 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
