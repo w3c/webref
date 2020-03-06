@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% March 05, 2020
+% March 06, 2020
 
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -71,7 +71,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/accname/](https://w3c.github.io/accname/)
 - Crawled URL: [https://w3c.github.io/accname/](https://w3c.github.io/accname/)
-- Crawled version: 04 March 2020
+- Crawled version: 05 March 2020
 - Repository: [GitHub w3c/accname](https://github.com/w3c/accname)
 - Shortname: no shortname
 
@@ -95,7 +95,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
-- Crawled version: 05 March 2020
+- Crawled version: 06 March 2020
 - Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/)
@@ -310,41 +310,12 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
-- Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Crawled version: 27 April 2018
-- Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Latest published version: [http://www.w3.org/TR/CSS22/](http://www.w3.org/TR/CSS22/)
-- Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-CSS22-20160412/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Shortname: CSS22
-
-### Potential issue(s) {.anomalies}
-
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/), related reference "CSS3COLOR" uses URL [`http://www.w3.org/TR/2010/PR-css3-color-20101028/`](http://www.w3.org/TR/2010/PR-css3-color-20101028/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [HTML Standard](https://html.spec.whatwg.org/)
-- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
-
-No informative reference to this spec from other specs.
-
-
-## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noCssDefinitions=true}
+## Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/CSS2/](https://www.w3.org/TR/CSS2/)
-- Crawled URL: [http://dev.w3.org/csswg/css2/](http://dev.w3.org/csswg/css2/)
-- Crawled version: 27 April 2018
+- Crawled URL: [http://www.w3.org/TR/CSS2/](http://www.w3.org/TR/CSS2/)
 - Editor's Draft: [http://dev.w3.org/csswg/css2/](http://dev.w3.org/csswg/css2/)
 - Latest published version: [http://www.w3.org/TR/CSS2/](http://www.w3.org/TR/CSS2/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2011/REC-CSS2-20110607/)
@@ -353,8 +324,15 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No normative references found
-- No CSS definitions found
+The following network or parsing error occurred:
+`Error: Crawl took too long Error: Crawl took too long
+    at Timeout._ [as _onTimeout] (/home/runner/work/reffy-reports/reffy-reports/reffy/src/cli/crawl-specs.js:376:29)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -444,7 +422,6 @@ Normative references to this spec from:
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
-- [Media Queries Level 3](http://dev.w3.org/csswg/css3-mediaqueries/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
@@ -463,6 +440,34 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [UI Events](https://w3c.github.io/uievents/)
+
+
+## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
+- Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
+- Crawled version: 27 April 2018
+- Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
+- Latest published version: [http://www.w3.org/TR/CSS22/](http://www.w3.org/TR/CSS22/)
+- Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-CSS22-20160412/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Shortname: CSS22
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/), related reference "CSS3COLOR" uses URL [`http://www.w3.org/TR/2010/PR-css3-color-20101028/`](http://www.w3.org/TR/2010/PR-css3-color-20101028/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+
+No informative reference to this spec from other specs.
 
 
 ## Clear Site Data {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -6000,7 +6005,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
 - Crawled URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled version: 4 March 2020
+- Crawled version: 5 March 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6765,13 +6770,12 @@ Informative references to this spec from:
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 
 
-## Media Queries Level 3 {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true}
+## Media Queries {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/css3-mediaqueries/](https://www.w3.org/TR/css3-mediaqueries/)
-- Crawled URL: [http://dev.w3.org/csswg/css3-mediaqueries/](http://dev.w3.org/csswg/css3-mediaqueries/)
-- Crawled version: 13 April 2012
+- Crawled URL: [http://www.w3.org/TR/css3-mediaqueries/](http://www.w3.org/TR/css3-mediaqueries/)
 - Editor's Draft: [http://dev.w3.org/csswg/css3-mediaqueries/](http://dev.w3.org/csswg/css3-mediaqueries/)
 - Latest published version: [http://www.w3.org/TR/css3-mediaqueries/](http://www.w3.org/TR/css3-mediaqueries/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
@@ -6780,13 +6784,15 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
-- Missing references for links: 
-     * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/)
-     * [`https://www.w3.org/TR/1999/REC-html401-19991224/present/`](https://www.w3.org/TR/1999/REC-html401-19991224/present/)
-     * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/)
-     * [`https://www.w3.org/TR/1999/REC-html401-19991224`](https://www.w3.org/TR/1999/REC-html401-19991224)
-     * [`https://www.w3.org/TR/2011/WD-html5-20110525/`](https://www.w3.org/TR/2011/WD-html5-20110525/)
+The following network or parsing error occurred:
+`Error: Crawl took too long Error: Crawl took too long
+    at Timeout._ [as _onTimeout] (/home/runner/work/reffy-reports/reffy-reports/reffy/src/cli/crawl-specs.js:376:29)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7380,7 +7386,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html)
 - Crawled URL: [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html)
-- Crawled version: 5 March 2020
+- Crawled version: 6 March 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -9956,7 +9962,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- Crawled version: 5 March 2020
+- Crawled version: 6 March 2020
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -9987,7 +9993,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- Crawled version: 5 March 2020
+- Crawled version: 6 March 2020
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
