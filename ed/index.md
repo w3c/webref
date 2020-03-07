@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% March 06, 2020
+% March 07, 2020
 
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -95,7 +95,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
-- Crawled version: 06 March 2020
+- Crawled version: 07 March 2020
 - Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/)
@@ -1187,7 +1187,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-align-3/](https://www.w3.org/TR/css-align-3/)
 - Crawled URL: [https://drafts.csswg.org/css-align/](https://drafts.csswg.org/css-align/)
-- Crawled version: 16 January 2020
+- Crawled version: 6 March 2020
 - Editor's Draft: [https://drafts.csswg.org/css-align/](https://drafts.csswg.org/css-align/)
 - Latest published version: [https://www.w3.org/TR/css-align-3/](https://www.w3.org/TR/css-align-3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
@@ -1271,7 +1271,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
 - Crawled URL: [https://drafts.csswg.org/css-sizing-3/](https://drafts.csswg.org/css-sizing-3/)
-- Crawled version: 16 January 2020
+- Crawled version: 6 March 2020
 - Editor's Draft: [https://drafts.csswg.org/css-sizing-3/](https://drafts.csswg.org/css-sizing-3/)
 - Latest published version: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/)
@@ -6881,7 +6881,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mediasession/](https://www.w3.org/TR/mediasession/)
 - Crawled URL: [https://w3c.github.io/mediasession/](https://w3c.github.io/mediasession/)
-- Crawled version: 3 February 2020
+- Crawled version: 6 March 2020
 - Editor's Draft: [https://w3c.github.io/mediasession/](https://w3c.github.io/mediasession/)
 - Latest published version: [https://www.w3.org/TR/mediasession/](https://www.w3.org/TR/mediasession/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-mediasession-20200130/)
@@ -7383,7 +7383,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html)
 - Crawled URL: [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html)
-- Crawled version: 6 March 2020
+- Crawled version: 7 March 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -9413,7 +9413,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
 - Crawled URL: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
-- Crawled version: 26 February 2020
+- Crawled version: 6 March 2020
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webauthn-2-20191126/)
@@ -9950,6 +9950,7 @@ Normative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 
 No informative reference to this spec from other specs.
 
@@ -9960,7 +9961,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- Crawled version: 6 March 2020
+- Crawled version: 7 March 2020
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -9991,7 +9992,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- Crawled version: 6 March 2020
+- Crawled version: 7 March 2020
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
