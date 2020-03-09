@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define CSS and WebIDL content",
   "description": "The crawl includes specifications published by W3C Working Groups, W3C Community Groups and WHATWG, that define CSS and/or WebIDL content. The specifications are at various stages of maturity.",
-  "date": "2020-03-02T11:19:08.991Z",
+  "date": "2020-03-09T11:19:03.290Z",
   "stats": {
     "crawled": 271,
     "errors": 0,
@@ -275,7 +275,7 @@
     },
     {
       "title": "Accessible Name and Description Computation 1.2",
-      "date": "28 February 2020",
+      "date": "05 March 2020",
       "url": "https://w3c.github.io/accname/",
       "crawled": "https://w3c.github.io/accname/",
       "repository": "https://github.com/w3c/accname",
@@ -1475,11 +1475,6 @@
               "crawled": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/"
             },
             {
-              "url": "https://drafts.csswg.org/css-transforms-2/",
-              "title": "CSS Transforms Module Level 2",
-              "crawled": "https://drafts.csswg.org/css-transforms-2/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/"
@@ -1551,7 +1546,13 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://drafts.csswg.org/css-transforms-2/",
+              "title": "CSS Transforms Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-transforms-2/"
+            }
+          ],
           "informative": []
         },
         "noEdDraft": null,
@@ -1600,7 +1601,7 @@
     },
     {
       "title": "Constructable Stylesheet Objects",
-      "date": "2 January 2020",
+      "date": "3 March 2020",
       "url": "https://wicg.github.io/construct-stylesheets/",
       "crawled": "https://wicg.github.io/construct-stylesheets/",
       "report": {
@@ -1800,38 +1801,8 @@
       }
     },
     {
-      "title": "ContentEditable",
-      "date": "30 January 2020",
-      "url": "https://w3c.github.io/editing/contentEditable.html",
-      "crawled": "https://w3c.github.io/contentEditable/",
-      "report": {
-        "noNormativeRefs": true,
-        "noRefToWebIDL": false,
-        "noIdlContent": false,
-        "hasUnexpectedIdl": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "noCssDefinitions": false,
-        "hasUnexpectedCssDefinitions": false,
-        "unknownExposedNames": [],
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://html.spec.whatwg.org/"
-        ],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [],
-          "informative": []
-        },
-        "noEdDraft": null,
-        "ok": false
-      }
-    },
-    {
       "title": "Cookie Store API",
-      "date": "5 February 2020",
+      "date": "3 March 2020",
       "url": "https://wicg.github.io/cookie-store/",
       "crawled": "https://wicg.github.io/cookie-store/",
       "repository": "https://github.com/wicg/cookie-store",
@@ -2251,7 +2222,7 @@
     },
     {
       "title": "CSS Animations Level 2",
-      "date": "19 February 2020",
+      "date": "4 March 2020",
       "url": "https://drafts.csswg.org/css-animations-2/",
       "crawled": "https://drafts.csswg.org/css-animations-2/",
       "report": {
@@ -2265,13 +2236,12 @@
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [
-          "CSSOMString",
-          "KeyframeEffectReadOnly"
+          "CSSOMString"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://w3c.github.io/web-animations/"
+          "https://www.w3.org/TR/css3-animations/"
         ],
         "inconsistentRef": [],
         "referencedBy": {
@@ -2931,7 +2901,7 @@
     },
     {
       "title": "CSS Box Model Module Level 3",
-      "date": "16 January 2020",
+      "date": "6 March 2020",
       "url": "https://drafts.csswg.org/css-box-3/",
       "crawled": "https://drafts.csswg.org/css-box-3/",
       "repository": "https://github.com/w3c/csswg-drafts",
@@ -3912,9 +3882,10 @@
     },
     {
       "title": "CSS Color Module Level 5",
-      "date": "3 March 2020",
+      "date": "4 March 2020",
       "url": "https://drafts.csswg.org/css-color-5/",
       "crawled": "https://drafts.csswg.org/css-color-5/",
+      "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
@@ -3928,10 +3899,7 @@
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/css3-color/",
-          "https://www.w3.org/TR/svg2/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
@@ -4059,9 +4027,10 @@
     },
     {
       "title": "CSS Conditional Rules Module Level 4",
-      "date": "31 March 2019",
+      "date": "4 March 2020",
       "url": "https://drafts.csswg.org/css-conditional-4/",
       "crawled": "https://drafts.csswg.org/css-conditional-4/",
+      "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
@@ -4759,6 +4728,11 @@
               "crawled": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/"
             },
             {
+              "url": "https://drafts.csswg.org/css-animations-2/",
+              "title": "CSS Animations Level 2",
+              "crawled": "https://drafts.csswg.org/css-animations-2/"
+            },
+            {
               "url": "https://drafts.csswg.org/css-backgrounds-4/",
               "title": "CSS Backgrounds and Borders Module Level 4",
               "crawled": "https://drafts.csswg.org/css-backgrounds-4/"
@@ -4999,11 +4973,6 @@
               "url": "https://www.w3.org/TR/css-align-3/",
               "title": "CSS Box Alignment Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/"
-            },
-            {
-              "url": "https://drafts.csswg.org/css-box-3/",
-              "title": "CSS Box Model Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-box-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-display-3/",
@@ -6150,11 +6119,6 @@
               "url": "https://www.w3.org/TR/css-align-3/",
               "title": "CSS Box Alignment Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/"
-            },
-            {
-              "url": "https://drafts.csswg.org/css-box-3/",
-              "title": "CSS Box Model Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-box-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-display-3/",
@@ -7411,11 +7375,6 @@
               "url": "https://www.w3.org/TR/css-align-3/",
               "title": "CSS Box Alignment Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/"
-            },
-            {
-              "url": "https://drafts.csswg.org/css-box-3/",
-              "title": "CSS Box Model Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-box-3/"
             },
             {
               "url": "https://drafts.csswg.org/css-sizing-4/",
@@ -10736,9 +10695,10 @@
     },
     {
       "title": "CSS Transforms Module Level 2",
-      "date": "3 March 2020",
+      "date": "4 March 2020",
       "url": "https://drafts.csswg.org/css-transforms-2/",
       "crawled": "https://drafts.csswg.org/css-transforms-2/",
+      "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
@@ -10752,10 +10712,7 @@
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/css3-background/",
-          "https://www.w3.org/TR/svg2/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -10787,11 +10744,6 @@
           ],
           "informative": [
             {
-              "url": "https://drafts.csswg.org/css-animations-2/",
-              "title": "CSS Animations Level 2",
-              "crawled": "https://drafts.csswg.org/css-animations-2/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-transforms-1/",
               "title": "CSS Transforms Module Level 1",
               "crawled": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/"
@@ -10804,7 +10756,7 @@
           ]
         },
         "noEdDraft": null,
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -10927,7 +10879,7 @@
     },
     {
       "title": "CSS Transitions Level 2",
-      "date": "1 March 2020",
+      "date": "3 March 2020",
       "url": "https://drafts.csswg.org/css-transitions-2/",
       "crawled": "https://drafts.csswg.org/css-transitions-2/",
       "report": {
@@ -12233,6 +12185,11 @@
         ],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://drafts.csswg.org/css-animations-2/",
+              "title": "CSS Animations Level 2",
+              "crawled": "https://drafts.csswg.org/css-animations-2/"
+            },
             {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
@@ -13671,7 +13628,7 @@
     {
       "title": "Error 404 - Not found",
       "shortname": "SVG2",
-      "date": "2 March 2020",
+      "date": "9 March 2020",
       "url": "https://www.w3.org/TR/SVG2/",
       "latest": "https://www.w3.org/TR/SVG2/",
       "datedUrl": "https://www.w3.org/TR/2018/CR-SVG2-20181004/",
@@ -14027,7 +13984,7 @@
     },
     {
       "title": "Feature Policy",
-      "date": "6 December 2019",
+      "date": "3 March 2020",
       "url": "https://w3c.github.io/webappsec-feature-policy/",
       "crawled": "https://w3c.github.io/webappsec-feature-policy/",
       "repository": "https://github.com/w3c/webappsec-feature-policy",
@@ -15517,7 +15474,7 @@
     },
     {
       "title": "HTML Standard",
-      "date": "28 February 2020",
+      "date": "5 March 2020",
       "url": "https://html.spec.whatwg.org/",
       "crawled": "https://html.spec.whatwg.org/",
       "report": {
@@ -15792,6 +15749,11 @@
               "url": "https://www.w3.org/TR/css-transitions-1/",
               "title": "CSS Transitions",
               "crawled": "https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-transitions-2/",
+              "title": "CSS Transitions Level 2",
+              "crawled": "https://drafts.csswg.org/css-transitions-2/"
             },
             {
               "url": "https://www.w3.org/TR/css-values-4/",
@@ -16553,7 +16515,7 @@
     },
     {
       "title": "HTMLVideoElement.requestAnimationFrame()",
-      "date": "28 February 2020",
+      "date": "4 March 2020",
       "url": "https://wicg.github.io/video-raf/",
       "crawled": "https://wicg.github.io/video-raf/",
       "report": {
@@ -17366,7 +17328,13 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://wicg.github.io/video-raf/",
+              "title": "HTMLVideoElement.requestAnimationFrame()",
+              "crawled": "https://wicg.github.io/video-raf/"
+            }
+          ],
           "informative": []
         },
         "noEdDraft": false,
@@ -17817,9 +17785,10 @@
     },
     {
       "title": "Media Queries Level 5",
-      "date": "3 March 2020",
+      "date": "4 March 2020",
       "url": "https://drafts.csswg.org/mediaqueries-5/",
       "crawled": "https://drafts.csswg.org/mediaqueries-5/",
+      "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
@@ -18832,6 +18801,34 @@
             }
           }
         ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "noEdDraft": null,
+        "ok": false
+      }
+    },
+    {
+      "title": "Page not found · GitHub Pages",
+      "date": "9 March 2020",
+      "url": "https://w3c.github.io/editing/contentEditable.html",
+      "crawled": "https://w3c.github.io/editing/contentEditable.html",
+      "report": {
+        "noNormativeRefs": true,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
+        "hasUnexpectedIdl": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
+        "hasUnexpectedCssDefinitions": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -20273,7 +20270,7 @@
     },
     {
       "title": "Reporting API 1",
-      "date": "10 January 2020",
+      "date": "5 March 2020",
       "url": "https://w3c.github.io/reporting/",
       "crawled": "https://w3c.github.io/reporting/",
       "repository": "https://github.com/w3c/reporting",
@@ -23450,7 +23447,7 @@
     },
     {
       "title": "WebGL 2.0 Specification",
-      "date": "2 March 2020",
+      "date": "9 March 2020",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -23491,7 +23488,7 @@
     },
     {
       "title": "WebGL Specification",
-      "date": "2 March 2020",
+      "date": "9 March 2020",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "repository": "https://github.com/KhronosGroup/WebGL",
@@ -24522,7 +24519,7 @@
     },
     {
       "title": "WebUSB API",
-      "date": "29 February 2020",
+      "date": "8 March 2020",
       "url": "https://wicg.github.io/webusb/",
       "crawled": "https://wicg.github.io/webusb/",
       "repository": "https://github.com/wicg/webusb",
