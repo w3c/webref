@@ -127,7 +127,7 @@
     },
     "border-radius": {
       "name": "border-radius",
-      "value": "<length-percentage>{1,4} [ / <length-percentage>{1,4} ]?",
+      "value": "<length-percentage [0,∞]>{1,4} [ / <length-percentage [0,∞]>{1,4} ]?",
       "initial": "0",
       "appliesTo": "all elements, except table element when border-collapse is collapse",
       "inherited": "no",
@@ -160,7 +160,7 @@
     },
     "border-limit": {
       "name": "border-limit",
-      "value": "all | [ sides | corners ] <length-percentage>? | [ top | right | bottom | left ] <length-percentage>",
+      "value": "all | [ sides | corners ] <length-percentage [0,∞]>? | [ top | right | bottom | left ] <length-percentage [0,∞]>",
       "initial": "round",
       "appliesTo": "all elements, except table element when border-collapse is collapse",
       "inherited": "no",
@@ -171,7 +171,7 @@
     },
     "border-clip": {
       "name": "border-clip",
-      "value": "normal | [ <length-percentage> | <flex> ]+",
+      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
       "initial": "normal",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -182,7 +182,7 @@
     },
     "border-clip-top": {
       "name": "border-clip-top",
-      "value": "normal | [ <length-percentage> | <flex> ]+",
+      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
       "initial": "normal",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -193,7 +193,7 @@
     },
     "border-clip-right": {
       "name": "border-clip-right",
-      "value": "normal | [ <length-percentage> | <flex> ]+",
+      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
       "initial": "normal",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -204,7 +204,7 @@
     },
     "border-clip-bottom": {
       "name": "border-clip-bottom",
-      "value": "normal | [ <length-percentage> | <flex> ]+",
+      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
       "initial": "normal",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -215,7 +215,7 @@
     },
     "border-clip-left": {
       "name": "border-clip-left",
-      "value": "normal | [ <length-percentage> | <flex> ]+",
+      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
       "initial": "normal",
       "appliesTo": "all elements",
       "inherited": "no",
