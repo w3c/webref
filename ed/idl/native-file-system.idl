@@ -17,14 +17,14 @@ interface FileSystemHandle {
   Promise<PermissionState> requestPermission(optional FileSystemHandlePermissionDescriptor descriptor = {});
 };
 
-dictionary FileSystemCreateWriterOptions {
+dictionary FileSystemCreateWritableOptions {
   boolean keepExistingData = false;
 };
 
 [Exposed=(Window,Worker), SecureContext, Serializable]
 interface FileSystemFileHandle : FileSystemHandle {
   Promise<File> getFile();
-  Promise<FileSystemWriter> createWriter(optional FileSystemCreateWriterOptions options = {});
+  Promise<FileSystemWritableFileStream> createWritable(optional FileSystemCreateWritableOptions options);
 };
 
 dictionary FileSystemGetFileOptions {
@@ -50,11 +50,24 @@ interface FileSystemDirectoryHandle : FileSystemHandle {
   Promise<void> removeEntry(USVString name, optional FileSystemRemoveOptions options = {});
 };
 
-[Exposed=(Window,Worker), SecureContext]
-interface FileSystemWriter {
-  Promise<void> write(unsigned long long position, (BufferSource or Blob or USVString) data);
+enum WriteCommandType {
+  "truncate",
+  "seek",
+  "write",
+};
+
+dictionary WriteParams {
+  required WriteCommandType type;
+  unsigned long long? size;
+  unsigned long long? position;
+  (BufferSource or Blob or USVString)? data;
+};
+
+[Exposed=(Window,Worker), SecureContext, Serializable]
+interface FileSystemWritableFileStream : WritableStream {
+  Promise<void> write((BufferSource or Blob or USVString or WriteParams) data);
+  Promise<void> seek(unsigned long long position);
   Promise<void> truncate(unsigned long long size);
-  Promise<void> close();
 };
 
 enum ChooseFileSystemEntriesType { "open-file", "save-file", "open-directory" };
