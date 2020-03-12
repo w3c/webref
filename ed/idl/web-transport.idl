@@ -1,0 +1,107 @@
+// GENERATED CONTENT - DO NOT EDIT
+// Content was automatically extracted by Reffy into reffy-reports
+// (https://github.com/tidoust/reffy-reports)
+// Source: WebTransport (https://wicg.github.io/web-transport/)
+
+interface mixin UnidirectionalStreamsTransport {
+  Promise<SendStream> createSendStream(optional SendStreamParameters parameters);
+  ReadableStream receiveStreams();
+};
+dictionary SendStreamParameters {
+};
+
+interface BidirectionalStreamsTransport {
+    Promise<BidirectionalStream> createBidirectionalStream();
+    ReadableStream receiveBidirectionalStreams();
+};
+
+interface mixin DatagramTransport {
+    readonly attribute unsigned short maxDatagramSize;
+    WritableStream sendDatagrams();
+    ReadableStream receiveDatagrams();
+};
+
+interface mixin WebTransport {
+  readonly attribute WebTransportState state;
+  readonly attribute Promise<WebTransportCloseInfo> closed;
+  void close(optional WebTransportCloseInfo closeInfo);
+  attribute EventHandler onstatechange;
+};
+
+enum WebTransportState {
+  "connecting",
+  "connected",
+  "closed",
+  "failed"
+};
+
+dictionary WebTransportCloseInfo {
+  unsigned short errorCode = 0;
+  DOMString reason = "";
+};
+
+dictionary QuicTransportStats {
+  DOMHighResTimeStamp timestamp;
+  unsigned long long bytesSent;
+  unsigned long long packetsSent;
+  unsigned long numOutgoingStreamsCreated;
+  unsigned long numIncomingStreamsCreated;
+  unsigned long long bytesReceived;
+  unsigned long long packetsReceived;
+  DOMHighResTimeStamp minRtt;
+  unsigned long numReceivedDatagramsDropped;
+};
+
+[Constructor(USVString url), Exposed=(Window,Worker)]
+interface QuicTransport {
+  Promise<QuicTransportStats> getStats();
+};
+
+QuicTransport includes UnidirectionalStreamsTransport;
+QuicTransport includes BidirectionalStreamsTransport;
+QuicTransport includes DatagramTransport;
+QuicTransport includes WebTransport;
+
+[ Exposed=(Window,Worker) ]
+interface mixin OutgoingStream {
+  readonly attribute WritableStream writable;
+  readonly attribute Promise<StreamAbortInfo> writingAborted;
+  void abortWriting(optional StreamAbortInfo abortInfo);
+};
+
+dictionary StreamAbortInfo {
+  unsigned short errorCode = 0;
+};
+
+[ Exposed=(Window,Worker) ]
+interface mixin IncomingStream {
+  readonly attribute ReadableStream readable;
+  readonly attribute Promise<StreamAbortInfo> readingAborted;
+  void abortReading(optional StreamAbortInfo abortInfo);
+  Promise<ArrayBuffer> arrayBuffer();
+};
+
+[ Exposed=(Window,Worker) ]
+interface BidirectionalStream {
+};
+BidirectionalStream includes OutgoingStream;
+BidirectionalStream includes IncomingStream;
+
+[ Exposed=(Window,Worker) ]
+interface SendStream {
+};
+SendStream includes OutgoingStream;
+
+[ Exposed=(Window,Worker) ]
+interface ReceiveStream {
+};
+ReceiveStream includes IncomingStream;
+
+[Constructor (DOMString url), Exposed=(Window,Worker)]
+interface Http3Transport {
+};
+
+Http3Transport includes UnidirectionalStreamsTransport;
+Http3Transport includes BidirectionalStreamsTransport;
+Http3Transport includes DatagramTransport;
+Http3Transport includes WebTransport;
