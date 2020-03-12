@@ -2,10 +2,13 @@
 % Reffy
 % March 12, 2020
 
-## WebTransport
+## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
 
-- Initial URL: [https://wicg.github.io/web-transport/](https://wicg.github.io/web-transport/)
-- Crawled URL: [https://wicg.github.io/web-transport/](https://wicg.github.io/web-transport/)
-- This specification was not in the reference crawl report.
+- Initial URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
+- Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- No normative references found: *INS* true / *DEL* false
+- No CSS definitions found: *INS* true / *DEL* false
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-color/
 
 
