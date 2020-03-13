@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define CSS and WebIDL content",
   "description": "The crawl includes specifications published by W3C Working Groups, W3C Community Groups and WHATWG, that define CSS and/or WebIDL content. The specifications are at various stages of maturity.",
-  "date": "2020-03-13T06:37:38.106Z",
+  "date": "2020-03-13T12:35:48.087Z",
   "stats": {
     "crawled": 273,
-    "errors": 4,
+    "errors": 0,
     "studied": 273
   },
   "results": [
@@ -631,6 +631,11 @@
               "crawled": "https://drafts.fxtf.org/compositing-2/"
             },
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://drafts.csswg.org/css-animations/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-backgrounds-3/",
               "title": "CSS Backgrounds and Borders Module Level 3",
               "crawled": "https://drafts.csswg.org/css-backgrounds/"
@@ -706,6 +711,11 @@
               "crawled": "https://drafts.csswg.org/css-contain/"
             },
             {
+              "url": "https://www.w3.org/TR/css-counter-styles-3/",
+              "title": "CSS Counter Styles Level 3",
+              "crawled": "https://drafts.csswg.org/css-counter-styles/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-variables-1/",
               "title": "CSS Custom Properties for Cascading Variables Module Level 1",
               "crawled": "https://drafts.csswg.org/css-variables/"
@@ -729,6 +739,11 @@
               "url": "https://www.w3.org/TR/css-flexbox-1/",
               "title": "CSS Flexible Box Layout Module Level 1",
               "crawled": "https://drafts.csswg.org/css-flexbox-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-3/",
@@ -799,6 +814,11 @@
               "url": "https://www.w3.org/TR/css-logical-1/",
               "title": "CSS Logical Properties and Values Level 1",
               "crawled": "https://drafts.csswg.org/css-logical-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -1338,6 +1358,11 @@
               "url": "https://www.w3.org/TR/css-color-4/",
               "title": "CSS Color Module Level 4",
               "crawled": "https://drafts.csswg.org/css-color/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://www.w3.org/TR/filter-effects-1/",
@@ -2023,7 +2048,7 @@
     {
       "title": "CSS Animations Level 1",
       "shortname": "css-animations-1",
-      "date": "",
+      "date": "16 January 2020",
       "url": "https://www.w3.org/TR/css-animations-1/",
       "latest": "https://www.w3.org/TR/css-animations-1/",
       "datedUrl": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/",
@@ -2032,16 +2057,18 @@
       "crawled": "https://drafts.csswg.org/css-animations/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 60000 ms exceeded TimeoutError: Navigation timeout of 60000 ms exceeded\n    at Promise.then (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/LifecycleWatcher.js:142:21)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)\n    at Page.goto (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:672:49)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:221:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "noCssDefinitions": true,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -2322,6 +2349,11 @@
               "crawled": "https://drafts.fxtf.org/fill-stroke/"
             },
             {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-fonts-3/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts/"
@@ -2350,6 +2382,11 @@
               "url": "https://www.w3.org/TR/css-logical-1/",
               "title": "CSS Logical Properties and Values Level 1",
               "crawled": "https://drafts.csswg.org/css-logical-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -2499,6 +2536,11 @@
           ],
           "informative": [
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://drafts.csswg.org/css-animations/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-sizing-3/",
               "title": "CSS Box Sizing Module Level 3",
               "crawled": "https://drafts.csswg.org/css-sizing-3/"
@@ -2618,6 +2660,11 @@
               "url": "https://www.w3.org/TR/css-logical-1/",
               "title": "CSS Logical Properties and Values Level 1",
               "crawled": "https://drafts.csswg.org/css-logical-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -3232,6 +3279,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://drafts.csswg.org/css-animations/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
               "crawled": "https://drafts.csswg.org/css-display/"
@@ -3405,6 +3457,11 @@
               "crawled": "https://drafts.csswg.org/css-conditional-3/"
             },
             {
+              "url": "https://www.w3.org/TR/css-counter-styles-3/",
+              "title": "CSS Counter Styles Level 3",
+              "crawled": "https://drafts.csswg.org/css-counter-styles/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-variables-1/",
               "title": "CSS Custom Properties for Cascading Variables Module Level 1",
               "crawled": "https://drafts.csswg.org/css-variables/"
@@ -3433,6 +3490,11 @@
               "url": "https://www.w3.org/TR/css-flexbox-1/",
               "title": "CSS Flexible Box Layout Module Level 1",
               "crawled": "https://drafts.csswg.org/css-flexbox-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-3/",
@@ -3493,6 +3555,11 @@
               "url": "https://www.w3.org/TR/css-logical-1/",
               "title": "CSS Logical Properties and Values Level 1",
               "crawled": "https://drafts.csswg.org/css-logical-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -3820,6 +3887,11 @@
               "crawled": "https://drafts.fxtf.org/fill-stroke/"
             },
             {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-fonts-3/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts/"
@@ -3917,6 +3989,11 @@
           ],
           "informative": [
             {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
+            },
+            {
               "url": "https://drafts.csswg.org/css-nesting-1/",
               "title": "CSS Nesting Module",
               "crawled": "https://drafts.csswg.org/css-nesting-1/"
@@ -4007,6 +4084,11 @@
               "crawled": "https://drafts.fxtf.org/fill-stroke/"
             },
             {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-fonts-3/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts/"
@@ -4020,6 +4102,11 @@
               "url": "https://www.w3.org/TR/css-images-4/",
               "title": "CSS Images Module Level 4",
               "crawled": "https://drafts.csswg.org/css-images-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -4293,6 +4380,11 @@
           ],
           "informative": [
             {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-fonts-3/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts/"
@@ -4403,7 +4495,7 @@
     {
       "title": "CSS Counter Styles Level 3",
       "shortname": "css-counter-styles-3",
-      "date": "",
+      "date": "10 March 2020",
       "url": "https://www.w3.org/TR/css-counter-styles-3/",
       "latest": "https://www.w3.org/TR/css-counter-styles-3/",
       "datedUrl": "https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/",
@@ -4412,16 +4504,18 @@
       "crawled": "https://drafts.csswg.org/css-counter-styles/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 60000 ms exceeded TimeoutError: Navigation timeout of 60000 ms exceeded\n    at Promise.then (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/LifecycleWatcher.js:142:21)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)\n    at Page.goto (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:672:49)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:221:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "noCssDefinitions": true,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -4691,6 +4785,11 @@
               "crawled": "https://compat.spec.whatwg.org/"
             },
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://drafts.csswg.org/css-animations/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
@@ -4794,6 +4893,11 @@
               "url": "https://www.w3.org/TR/css-logical-1/",
               "title": "CSS Logical Properties and Values Level 1",
               "crawled": "https://drafts.csswg.org/css-logical-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -4993,6 +5097,11 @@
               "crawled": "https://drafts.csswg.org/css-conditional-3/"
             },
             {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-fonts-3/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts/"
@@ -5033,6 +5142,11 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://drafts.csswg.org/css-animations/"
+            },
             {
               "url": "https://drafts.csswg.org/css-animations-2/",
               "title": "CSS Animations Level 2",
@@ -5191,6 +5305,11 @@
               "url": "https://www.w3.org/TR/css3-images/",
               "title": "CSS Images Module Level 3",
               "crawled": "https://drafts.csswg.org/css-images-3/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-pseudo-4/",
@@ -5424,6 +5543,11 @@
           ],
           "informative": [
             {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-fonts-3/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts/"
@@ -5437,7 +5561,7 @@
     {
       "title": "CSS Fonts Module Level 4",
       "shortname": "css-fonts-4",
-      "date": "",
+      "date": "26 February 2020",
       "url": "https://www.w3.org/TR/css-fonts-4/",
       "latest": "https://www.w3.org/TR/css-fonts-4/",
       "datedUrl": "https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/",
@@ -5446,20 +5570,89 @@
       "crawled": "https://drafts.csswg.org/css-fonts-4/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 60000 ms exceeded TimeoutError: Navigation timeout of 60000 ms exceeded\n    at Promise.then (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/LifecycleWatcher.js:142:21)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)\n    at Page.goto (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:672:49)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:221:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "noCssDefinitions": true,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "CSSFontFaceRule",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-fonts-3/",
+                "title": "CSS Fonts Module Level 4",
+                "crawled": "https://drafts.csswg.org/css-fonts/"
+              }
+            ]
+          },
+          {
+            "name": "CSSFontFeatureValuesRule",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-fonts-3/",
+                "title": "CSS Fonts Module Level 4",
+                "crawled": "https://drafts.csswg.org/css-fonts/"
+              }
+            ]
+          },
+          {
+            "name": "CSSFontFeatureValuesMap",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-fonts-3/",
+                "title": "CSS Fonts Module Level 4",
+                "crawled": "https://drafts.csswg.org/css-fonts/"
+              }
+            ]
+          },
+          {
+            "name": "CSSFontPaletteValuesRule",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-fonts-3/",
+                "title": "CSS Fonts Module Level 4",
+                "crawled": "https://drafts.csswg.org/css-fonts/"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css3-syntax/",
+          "https://fetch.spec.whatwg.org/",
+          "https://www.w3.org/TR/security-privacy-questionnaire/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/",
+            "ref": {
+              "name": "CSS-FONTS-3",
+              "url": "https://www.w3.org/TR/css-fonts-3/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/",
+            "ref": {
+              "name": "CSS-FONTS-3",
+              "url": "https://www.w3.org/TR/css-fonts-3/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/",
+            "ref": {
+              "name": "CSS-FONTS-3",
+              "url": "https://www.w3.org/TR/css-fonts-3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -5488,6 +5681,11 @@
               "crawled": "https://drafts.csswg.org/css-font-loading/"
             },
             {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-fonts-3/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts/"
@@ -5496,6 +5694,11 @@
               "url": "https://www.w3.org/TR/css-inline-3/",
               "title": "CSS Inline Layout Module Level 3",
               "crawled": "https://drafts.csswg.org/css-inline-3/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -5664,7 +5867,48 @@
         "unknownIdlNames": [
           "CSSOMString"
         ],
-        "redefinedIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "CSSFontFaceRule",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-fonts-4/",
+                "title": "CSS Fonts Module Level 4",
+                "crawled": "https://drafts.csswg.org/css-fonts-4/"
+              }
+            ]
+          },
+          {
+            "name": "CSSFontFeatureValuesRule",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-fonts-4/",
+                "title": "CSS Fonts Module Level 4",
+                "crawled": "https://drafts.csswg.org/css-fonts-4/"
+              }
+            ]
+          },
+          {
+            "name": "CSSFontFeatureValuesMap",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-fonts-4/",
+                "title": "CSS Fonts Module Level 4",
+                "crawled": "https://drafts.csswg.org/css-fonts-4/"
+              }
+            ]
+          },
+          {
+            "name": "CSSFontPaletteValuesRule",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/css-fonts-4/",
+                "title": "CSS Fonts Module Level 4",
+                "crawled": "https://drafts.csswg.org/css-fonts-4/"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/css3-syntax/",
@@ -5722,6 +5966,11 @@
               "crawled": "https://drafts.csswg.org/css-font-loading/"
             },
             {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-fonts-3/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://drafts.csswg.org/css-fonts/"
@@ -5730,6 +5979,11 @@
               "url": "https://www.w3.org/TR/css-inline-3/",
               "title": "CSS Inline Layout Module Level 3",
               "crawled": "https://drafts.csswg.org/css-inline-3/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -6136,6 +6390,11 @@
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/"
             },
             {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-multicol-1/",
               "title": "CSS Multi-column Layout Module Level 1",
               "crawled": "https://drafts.csswg.org/css-multicol/"
@@ -6394,7 +6653,13 @@
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-counter-styles-3/",
+              "title": "CSS Counter Styles Level 3",
+              "crawled": "https://drafts.csswg.org/css-counter-styles/"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": true
@@ -6642,6 +6907,11 @@
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
             {
+              "url": "https://www.w3.org/TR/css-counter-styles-3/",
+              "title": "CSS Counter Styles Level 3",
+              "crawled": "https://drafts.csswg.org/css-counter-styles/"
+            },
+            {
               "url": "https://www.w3.org/TR/fill-stroke-3/",
               "title": "CSS Fill and Stroke Module Level 3",
               "crawled": "https://drafts.fxtf.org/fill-stroke/"
@@ -6665,6 +6935,11 @@
               "url": "https://www.w3.org/TR/css-lists-3/",
               "title": "CSS Lists Module Level 3",
               "crawled": "https://drafts.csswg.org/css-lists-3/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-paint-api-1/",
@@ -6901,6 +7176,11 @@
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/"
             },
             {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-overflow-3/",
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://drafts.csswg.org/css-overflow-3/"
@@ -7131,6 +7411,11 @@
               "crawled": "https://drafts.csswg.org/css-contain/"
             },
             {
+              "url": "https://www.w3.org/TR/css-counter-styles-3/",
+              "title": "CSS Counter Styles Level 3",
+              "crawled": "https://drafts.csswg.org/css-counter-styles/"
+            },
+            {
               "url": "https://drafts.csswg.org/css-exclusions-1/",
               "title": "CSS Exclusions Module Level 1",
               "crawled": "https://drafts.csswg.org/css-exclusions-1/"
@@ -7263,7 +7548,7 @@
     {
       "title": "CSS Masking Module Level 1",
       "shortname": "css-masking-1",
-      "date": "",
+      "date": "29 September 2019",
       "url": "https://www.w3.org/TR/css-masking-1/",
       "latest": "http://www.w3.org/TR/css-masking-1/",
       "datedUrl": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/",
@@ -7272,20 +7557,33 @@
       "crawled": "https://drafts.fxtf.org/css-masking-1/",
       "repository": "https://github.com/w3c/fxtf-drafts",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 60000 ms exceeded TimeoutError: Navigation timeout of 60000 ms exceeded\n    at Promise.then (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/LifecycleWatcher.js:142:21)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)\n    at Page.goto (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:672:49)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:221:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "noIdlContent": true,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "noIdlContent": false,
         "hasUnexpectedIdl": false,
         "hasInvalidIdl": false,
-        "noCssDefinitions": true,
+        "hasObsoleteIdl": false,
+        "noCssDefinitions": false,
         "hasUnexpectedCssDefinitions": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css-shapes/",
+          "https://www.w3.org/TR/css3-background/",
+          "https://www.w3.org/TR/2013/WD-css-masking-20130620/",
+          "https://www.w3.org/TR/2012/WD-css-masking-20121115/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/2011/REC-SVG11-20110816/",
+            "ref": {
+              "name": "SVG11",
+              "url": "https://www.w3.org/TR/SVG11/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -7725,6 +8023,11 @@
               "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/"
             },
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://drafts.csswg.org/css-animations/"
+            },
+            {
               "url": "https://drafts.csswg.org/css-animations-2/",
               "title": "CSS Animations Level 2",
               "crawled": "https://drafts.csswg.org/css-animations-2/"
@@ -7743,6 +8046,11 @@
               "url": "https://www.w3.org/TR/css3-conditional/",
               "title": "CSS Conditional Rules Module Level 3",
               "crawled": "https://drafts.csswg.org/css-conditional-3/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-counter-styles-3/",
+              "title": "CSS Counter Styles Level 3",
+              "crawled": "https://drafts.csswg.org/css-counter-styles/"
             },
             {
               "url": "https://www.w3.org/TR/css-variables-1/",
@@ -7768,6 +8076,11 @@
               "url": "https://www.w3.org/TR/css-font-loading-3/",
               "title": "CSS Font Loading Module Level 3",
               "crawled": "https://drafts.csswg.org/css-font-loading/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-3/",
@@ -8052,6 +8365,11 @@
               "crawled": "https://drafts.csswg.org/css-lists-3/"
             },
             {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-multicol-1/",
               "title": "CSS Multi-column Layout Module Level 1",
               "crawled": "https://drafts.csswg.org/css-multicol/"
@@ -8183,6 +8501,11 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
+            },
             {
               "url": "https://www.w3.org/TR/css-fonts-3/",
               "title": "CSS Fonts Module Level 4",
@@ -8725,6 +9048,11 @@
               "crawled": "https://drafts.csswg.org/css-logical-1/"
             },
             {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-multicol-1/",
               "title": "CSS Multi-column Layout Module Level 1",
               "crawled": "https://drafts.csswg.org/css-multicol/"
@@ -8811,6 +9139,11 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://drafts.csswg.org/css-animations/"
+            },
             {
               "url": "https://www.w3.org/TR/css-break-3/",
               "title": "CSS Fragmentation Module Level 3",
@@ -9012,7 +9345,13 @@
               "crawled": "https://drafts.csswg.org/selectors/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-counter-styles-3/",
+              "title": "CSS Counter Styles Level 3",
+              "crawled": "https://drafts.csswg.org/css-counter-styles/"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": false
@@ -9663,6 +10002,11 @@
               "crawled": "https://drafts.csswg.org/css-line-grid/"
             },
             {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
+            },
+            {
               "url": "https://drafts.csswg.org/css-shapes-2/",
               "title": "CSS Shapes Module Level 2",
               "crawled": "https://drafts.csswg.org/css-shapes-2/"
@@ -9723,6 +10067,11 @@
               "url": "https://drafts.csswg.org/css-backgrounds-4/",
               "title": "CSS Backgrounds and Borders Module Level 4",
               "crawled": "https://drafts.csswg.org/css-backgrounds-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-round-display-1/",
@@ -9897,6 +10246,11 @@
               "crawled": "https://wicg.github.io/construct-stylesheets/"
             },
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://drafts.csswg.org/css-animations/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-cascade-3/",
               "title": "CSS Cascading and Inheritance Level 3",
               "crawled": "https://drafts.csswg.org/css-cascade-3/"
@@ -9922,6 +10276,11 @@
               "crawled": "https://drafts.csswg.org/css-conditional-3/"
             },
             {
+              "url": "https://www.w3.org/TR/css-counter-styles-3/",
+              "title": "CSS Counter Styles Level 3",
+              "crawled": "https://drafts.csswg.org/css-counter-styles/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-variables-1/",
               "title": "CSS Custom Properties for Cascading Variables Module Level 1",
               "crawled": "https://drafts.csswg.org/css-variables/"
@@ -9945,6 +10304,11 @@
               "url": "https://www.w3.org/TR/css-font-loading-3/",
               "title": "CSS Font Loading Module Level 3",
               "crawled": "https://drafts.csswg.org/css-font-loading/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-3/",
@@ -10345,6 +10709,16 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/css-counter-styles-3/",
+              "title": "CSS Counter Styles Level 3",
+              "crawled": "https://drafts.csswg.org/css-counter-styles/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-overflow-3/",
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://drafts.csswg.org/css-overflow-3/"
@@ -10461,9 +10835,19 @@
               "crawled": "https://drafts.csswg.org/css-cascade/"
             },
             {
+              "url": "https://www.w3.org/TR/css-counter-styles-3/",
+              "title": "CSS Counter Styles Level 3",
+              "crawled": "https://drafts.csswg.org/css-counter-styles/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
               "crawled": "https://drafts.csswg.org/css-display/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-3/",
@@ -10484,6 +10868,11 @@
               "url": "https://www.w3.org/TR/css-logical-1/",
               "title": "CSS Logical Properties and Values Level 1",
               "crawled": "https://drafts.csswg.org/css-logical-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -10784,6 +11173,11 @@
               "crawled": "https://drafts.csswg.org/css-images-4/"
             },
             {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-overflow-3/",
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://drafts.csswg.org/css-overflow-3/"
@@ -10860,6 +11254,11 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
+            },
             {
               "url": "https://www.w3.org/TR/css-fonts-3/",
               "title": "CSS Fonts Module Level 4",
@@ -11013,6 +11412,11 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://drafts.csswg.org/css-animations/"
+            },
             {
               "url": "https://drafts.csswg.org/css-animations-2/",
               "title": "CSS Animations Level 2",
@@ -11248,6 +11652,11 @@
               "crawled": "https://drafts.fxtf.org/compositing-2/"
             },
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://drafts.csswg.org/css-animations/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-backgrounds-3/",
               "title": "CSS Backgrounds and Borders Module Level 3",
               "crawled": "https://drafts.csswg.org/css-backgrounds/"
@@ -11313,6 +11722,11 @@
               "crawled": "https://drafts.csswg.org/css-contain/"
             },
             {
+              "url": "https://www.w3.org/TR/css-counter-styles-3/",
+              "title": "CSS Counter Styles Level 3",
+              "crawled": "https://drafts.csswg.org/css-counter-styles/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-variables-1/",
               "title": "CSS Custom Properties for Cascading Variables Module Level 1",
               "crawled": "https://drafts.csswg.org/css-variables/"
@@ -11351,6 +11765,11 @@
               "url": "https://www.w3.org/TR/css-flexbox-1/",
               "title": "CSS Flexible Box Layout Module Level 1",
               "crawled": "https://drafts.csswg.org/css-flexbox-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-3/",
@@ -11421,6 +11840,11 @@
               "url": "https://www.w3.org/TR/css-logical-1/",
               "title": "CSS Logical Properties and Values Level 1",
               "crawled": "https://drafts.csswg.org/css-logical-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -11752,6 +12176,11 @@
               "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/"
             },
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://drafts.csswg.org/css-animations/"
+            },
+            {
               "url": "https://drafts.csswg.org/css-animations-2/",
               "title": "CSS Animations Level 2",
               "crawled": "https://drafts.csswg.org/css-animations-2/"
@@ -11837,6 +12266,11 @@
               "crawled": "https://drafts.csswg.org/css-contain/"
             },
             {
+              "url": "https://www.w3.org/TR/css-counter-styles-3/",
+              "title": "CSS Counter Styles Level 3",
+              "crawled": "https://drafts.csswg.org/css-counter-styles/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-variables-1/",
               "title": "CSS Custom Properties for Cascading Variables Module Level 1",
               "crawled": "https://drafts.csswg.org/css-variables/"
@@ -11880,6 +12314,11 @@
               "url": "https://www.w3.org/TR/css-font-loading-3/",
               "title": "CSS Font Loading Module Level 3",
               "crawled": "https://drafts.csswg.org/css-font-loading/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-3/",
@@ -11955,6 +12394,11 @@
               "url": "https://www.w3.org/TR/css-logical-1/",
               "title": "CSS Logical Properties and Values Level 1",
               "crawled": "https://drafts.csswg.org/css-logical-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -12247,6 +12691,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://drafts.csswg.org/css-animations/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
@@ -12354,6 +12803,11 @@
               "url": "https://www.w3.org/TR/css-logical-1/",
               "title": "CSS Logical Properties and Values Level 1",
               "crawled": "https://drafts.csswg.org/css-logical-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-overflow-3/",
@@ -12519,6 +12973,11 @@
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
             {
+              "url": "https://www.w3.org/TR/css-counter-styles-3/",
+              "title": "CSS Counter Styles Level 3",
+              "crawled": "https://drafts.csswg.org/css-counter-styles/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
               "title": "CSS Flexible Box Layout Module Level 1",
               "crawled": "https://drafts.csswg.org/css-flexbox-1/"
@@ -12572,6 +13031,11 @@
               "url": "https://www.w3.org/TR/css-logical-1/",
               "title": "CSS Logical Properties and Values Level 1",
               "crawled": "https://drafts.csswg.org/css-logical-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -13155,6 +13619,11 @@
               "url": "https://www.w3.org/TR/css-animation-worklet-1/",
               "title": "CSS Animation Worklet API",
               "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://drafts.csswg.org/css-animations/"
             },
             {
               "url": "https://drafts.csswg.org/css-animations-2/",
@@ -14261,6 +14730,11 @@
               "crawled": "https://drafts.csswg.org/css-cascade/"
             },
             {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/"
@@ -14733,6 +15207,11 @@
               "url": "https://www.w3.org/TR/css-backgrounds-3/",
               "title": "CSS Backgrounds and Borders Module Level 3",
               "crawled": "https://drafts.csswg.org/css-backgrounds/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-tables-3/",
@@ -15747,6 +16226,11 @@
               "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/"
             },
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://drafts.csswg.org/css-animations/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-backgrounds-3/",
               "title": "CSS Backgrounds and Borders Module Level 3",
               "crawled": "https://drafts.csswg.org/css-backgrounds/"
@@ -15787,6 +16271,11 @@
               "crawled": "https://drafts.csswg.org/css-conditional-3/"
             },
             {
+              "url": "https://www.w3.org/TR/css-counter-styles-3/",
+              "title": "CSS Counter Styles Level 3",
+              "crawled": "https://drafts.csswg.org/css-counter-styles/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-variables-1/",
               "title": "CSS Custom Properties for Cascading Variables Module Level 1",
               "crawled": "https://drafts.csswg.org/css-variables/"
@@ -15800,6 +16289,11 @@
               "url": "https://www.w3.org/TR/css-font-loading-3/",
               "title": "CSS Font Loading Module Level 3",
               "crawled": "https://drafts.csswg.org/css-font-loading/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-3/",
@@ -20981,6 +21475,11 @@
               "crawled": "https://drafts.csswg.org/css-lists-3/"
             },
             {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/"
@@ -23920,7 +24419,7 @@
     {
       "title": "Web IDL",
       "shortname": "WebIDL-1",
-      "date": "11 March 2020",
+      "date": "13 March 2020",
       "url": "https://www.w3.org/TR/WebIDL-1/",
       "latest": "https://www.w3.org/TR/WebIDL-1/",
       "datedUrl": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/",
@@ -24055,6 +24554,11 @@
               "crawled": "https://drafts.css-houdini.org/css-animationworklet-1/"
             },
             {
+              "url": "https://www.w3.org/TR/css-animations-1/",
+              "title": "CSS Animations Level 1",
+              "crawled": "https://drafts.csswg.org/css-animations/"
+            },
+            {
               "url": "https://drafts.csswg.org/css-animations-2/",
               "title": "CSS Animations Level 2",
               "crawled": "https://drafts.csswg.org/css-animations-2/"
@@ -24065,6 +24569,11 @@
               "crawled": "https://drafts.csswg.org/css-conditional-3/"
             },
             {
+              "url": "https://www.w3.org/TR/css-counter-styles-3/",
+              "title": "CSS Counter Styles Level 3",
+              "crawled": "https://drafts.csswg.org/css-counter-styles/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-device-adapt-1/",
               "title": "CSS Device Adaptation Module Level 1",
               "crawled": "https://drafts.csswg.org/css-device-adapt/"
@@ -24073,6 +24582,11 @@
               "url": "https://www.w3.org/TR/css-font-loading-3/",
               "title": "CSS Font Loading Module Level 3",
               "crawled": "https://drafts.csswg.org/css-font-loading/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-fonts-4/",
+              "title": "CSS Fonts Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-fonts-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-3/",
@@ -24088,6 +24602,11 @@
               "url": "https://www.w3.org/TR/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-layout-api-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-masking-1/",
+              "title": "CSS Masking Module Level 1",
+              "crawled": "https://drafts.fxtf.org/css-masking-1/"
             },
             {
               "url": "https://www.w3.org/TR/cssom-1/",
@@ -25443,7 +25962,7 @@
     },
     {
       "title": "WebUSB API",
-      "date": "12 March 2020",
+      "date": "13 March 2020",
       "url": "https://wicg.github.io/webusb/",
       "crawled": "https://wicg.github.io/webusb/",
       "repository": "https://github.com/wicg/webusb",
