@@ -7,7 +7,7 @@
 - Initial URL: [https://www.w3.org/TR/css-animations-1/](https://www.w3.org/TR/css-animations-1/)
 - Crawled URL: [https://drafts.csswg.org/css-animations/](https://drafts.csswg.org/css-animations/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* TimeoutError: Navigation timeout of 60000 ms exceeded TimeoutError: Navigation timeout of 60000 ms exceeded
+- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 60000 ms exceeded TimeoutError: Navigation timeout of 60000 ms exceeded
     at Promise.then (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/LifecycleWatcher.js:142:21)
   -- ASYNC --
     at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
@@ -22,7 +22,7 @@
 - Initial URL: [https://www.w3.org/TR/css-counter-styles-3/](https://www.w3.org/TR/css-counter-styles-3/)
 - Crawled URL: [https://drafts.csswg.org/css-counter-styles/](https://drafts.csswg.org/css-counter-styles/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* TimeoutError: Navigation timeout of 60000 ms exceeded TimeoutError: Navigation timeout of 60000 ms exceeded
+- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 60000 ms exceeded TimeoutError: Navigation timeout of 60000 ms exceeded
     at Promise.then (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/LifecycleWatcher.js:142:21)
   -- ASYNC --
     at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
@@ -37,7 +37,7 @@
 - Initial URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Crawled URL: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Spec could not be rendered: *INS* TimeoutError: Navigation timeout of 60000 ms exceeded TimeoutError: Navigation timeout of 60000 ms exceeded
+- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 60000 ms exceeded TimeoutError: Navigation timeout of 60000 ms exceeded
     at Promise.then (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/LifecycleWatcher.js:142:21)
   -- ASYNC --
     at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
@@ -47,12 +47,20 @@
     at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
+## CSS Fonts Module Level 4
+
+- Initial URL: [https://www.w3.org/TR/css-fonts-3/](https://www.w3.org/TR/css-fonts-3/)
+- Crawled URL: [https://drafts.csswg.org/css-fonts/](https://drafts.csswg.org/css-fonts/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- WebIDL names also defined elsewhere: *INS* CSSFontFaceRule, CSSFontFeatureValuesRule, CSSFontFeatureValuesMap, CSSFontPaletteValuesRule
+
+
 ## CSS Masking Module Level 1
 
 - Initial URL: [https://www.w3.org/TR/css-masking-1/](https://www.w3.org/TR/css-masking-1/)
 - Crawled URL: [https://drafts.fxtf.org/css-masking-1/](https://drafts.fxtf.org/css-masking-1/)
 - Repository: [GitHub w3c/fxtf-drafts](https://github.com/w3c/fxtf-drafts)
-- Spec could not be rendered: *INS* TimeoutError: Navigation timeout of 60000 ms exceeded TimeoutError: Navigation timeout of 60000 ms exceeded
+- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 60000 ms exceeded TimeoutError: Navigation timeout of 60000 ms exceeded
     at Promise.then (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/LifecycleWatcher.js:142:21)
   -- ASYNC --
     at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
