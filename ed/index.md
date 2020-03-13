@@ -1684,7 +1684,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
 - Crawled URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
-- Crawled version: 11 March 2020
+- Crawled version: 13 March 2020
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: no shortname
 
@@ -6026,7 +6026,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
 - Crawled URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled version: 12 March 2020
+- Crawled version: 13 March 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6644,7 +6644,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/media-capabilities/](https://www.w3.org/TR/media-capabilities/)
 - Crawled URL: [https://w3c.github.io/media-capabilities/](https://w3c.github.io/media-capabilities/)
-- Crawled version: 28 January 2020
+- Crawled version: 13 March 2020
 - Editor's Draft: [https://w3c.github.io/media-capabilities/](https://w3c.github.io/media-capabilities/)
 - Latest published version: [https://www.w3.org/TR/media-capabilities/](https://www.w3.org/TR/media-capabilities/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-media-capabilities-20200130/)
@@ -9313,7 +9313,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
 - Crawled URL: [https://drafts.csswg.org/web-animations-1/](https://drafts.csswg.org/web-animations-1/)
-- Crawled version: 10 March 2020
+- Crawled version: 13 March 2020
 - Editor's Draft: [https://drafts.csswg.org/web-animations-1/](https://drafts.csswg.org/web-animations-1/)
 - Latest published version: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
