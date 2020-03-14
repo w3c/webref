@@ -20,7 +20,21 @@
 <body>
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
-  <p>273 specifications were crawled in this report.</p>
+  <p>275 specifications were crawled in this report.</p>
+  <section id="specifications-that-could-not-be-rendered" class="level2">
+  <h2>Specifications that could not be rendered</h2>
+  <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
+  <ul>
+  <li><a href="https://drafts.csswg.org/css-text-decor-4/">CSS Text Decoration Module Level 4</a>: <code>Error: Failed to launch the browser process! Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion</code>listp-&gt;slotinfo[cnt].gen &lt;= GL(dl_tls_generation)' failed!</li>
+  </ul>
+  <p>TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md Error: Failed to launch the browser process! Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp-&gt;slotinfo[cnt].gen &lt;= GL(dl_tls_generation)' failed!</p>
+  <p>TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md</p>
+  <pre><code>at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:750:14)
+  at ChildProcess.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:740:61)
+  at ChildProcess.emit (events.js:203:15)
+  at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`</code></pre>
+  <p>=&gt; 1 specification found</p>
+  </section>
   <section id="specifications-that-do-not-link-to-an-editors-draft" class="level2">
   <h2>Specifications that do not link to an Editor's Draft</h2>
   <p>=&gt; 0 specification found</p>
@@ -29,65 +43,10 @@
   <h2>Specifications without normative dependencies</h2>
   <ul>
   <li><a href="http://dev.w3.org/csswg/css2/">Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification</a></li>
-  <li><a href="https://drafts.csswg.org/css2/">Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification</a></li>
   <li><a href="https://w3c.github.io/contentEditable/">ContentEditable</a></li>
   </ul>
-  <p>=&gt; 3 specifications found</p>
+  <p>=&gt; 2 specifications found</p>
   <p>Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.</p>
-  </section>
-  <section id="specifications-without-webidl-definitions" class="level2">
-  <h2>Specifications without WebIDL definitions</h2>
-  <p>=&gt; 0 specification found</p>
-  </section>
-  <section id="specifications-without-css-definitions" class="level2">
-  <h2>Specifications without CSS definitions</h2>
-  <ul>
-  <li><a href="http://dev.w3.org/csswg/css2/">Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification</a></li>
-  <li><a href="https://drafts.csswg.org/css2/">Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification</a></li>
-  <li><a href="https://drafts.csswg.org/css-color-5/">CSS Color Module Level 5</a></li>
-  <li><a href="https://drafts.csswg.org/css-conditional-3/">CSS Conditional Rules Module Level 3</a></li>
-  <li><a href="https://drafts.csswg.org/css-conditional-4/">CSS Conditional Rules Module Level 4</a></li>
-  <li><a href="https://drafts.csswg.org/css-variables/">CSS Custom Properties for Cascading Variables Module Level 1</a></li>
-  <li><a href="https://drafts.csswg.org/css-easing/">CSS Easing Functions Level 1</a></li>
-  <li><a href="https://drafts.csswg.org/css-env-1/">CSS Environment Variables Module Level 1</a></li>
-  <li><a href="https://drafts.csswg.org/css-namespaces/">CSS Namespaces Module Level 3</a></li>
-  <li><a href="https://drafts.csswg.org/css-nesting-1/">CSS Nesting Module</a></li>
-  <li><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
-  <li><a href="https://drafts.csswg.org/css-scoping/">CSS Scoping Module Level 1</a></li>
-  <li><a href="http://drafts.csswg.org/css-shadow-parts/">CSS Shadow Parts</a></li>
-  <li><a href="https://drafts.csswg.org/css-style-attr/">CSS Style Attributes</a></li>
-  <li><a href="https://drafts.csswg.org/css-syntax/">CSS Syntax Module Level 3</a></li>
-  <li><a href="https://drafts.csswg.org/css-transitions-2/">CSS Transitions Level 2</a></li>
-  <li><a href="https://drafts.csswg.org/css-tv/">CSS TV Profile 1.0</a></li>
-  <li><a href="https://drafts.csswg.org/css-values-3/">CSS Values and Units Module Level 3</a></li>
-  <li><a href="https://drafts.csswg.org/css-values-4/">CSS Values and Units Module Level 4</a></li>
-  <li><a href="http://dev.w3.org/csswg/css3-mediaqueries/">Media Queries Level 3</a></li>
-  <li><a href="https://drafts.csswg.org/selectors-nonelement/">Non-element Selectors Module Level 1</a></li>
-  <li><a href="https://quirks.spec.whatwg.org/">Quirks Mode Standard</a></li>
-  <li><a href="https://drafts.csswg.org/selectors-3/">Selectors Level 3</a></li>
-  <li><a href="https://drafts.csswg.org/selectors/">Selectors Level 4</a></li>
-  </ul>
-  <p>=&gt; 24 specifications found</p>
-  <p>Reffy was expecting to find CSS definitions in the specifications listed here but could not extract any.</p>
-  </section>
-  <section id="specifications-with-unexpected-webidl-definitions" class="level2">
-  <h2>Specifications with unexpected WebIDL definitions</h2>
-  <ul>
-  <li><a href="https://drafts.csswg.org/css-animations-2/">CSS Animations Level 2</a></li>
-  <li><a href="https://drafts.csswg.org/css-fonts/">CSS Fonts Module Level 4</a></li>
-  <li><a href="https://drafts.csswg.org/css-transitions-2/">CSS Transitions Level 2</a></li>
-  <li><a href="https://svgwg.org/specs/markers/">SVG Markers</a></li>
-  </ul>
-  <p>=&gt; 4 specifications found</p>
-  <p>Reffy was not expecting to find IDL content in the specifications listed here but it did. Note that Reffy cannot deal with specifications that define IDL content and exist at different levels: only one level is flagged as defining the IDL. Other levels will incorrectly appear in this list as a consequence.</p>
-  </section>
-  <section id="specifications-with-unexpected-css-definitions" class="level2">
-  <h2>Specifications with unexpected CSS definitions</h2>
-  <ul>
-  <li><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
-  </ul>
-  <p>=&gt; 1 specification found</p>
-  <p>Reffy was not expecting to find CSS definitions in the specifications listed here but it did.</p>
   </section>
   <section id="list-of-specifications-with-invalid-webidl-content" class="level2">
   <h2>List of specifications with invalid WebIDL content</h2>
@@ -109,10 +68,11 @@
   <li><a href="https://wicg.github.io/frame-timing/">Frame Timing</a></li>
   <li><a href="https://w3c.github.io/webappsec-referrer-policy/">Referrer Policy</a></li>
   <li><a href="https://svgwg.org/specs/animations/">SVG Animations</a></li>
+  <li><a href="https://svgwg.org/specs/markers/">SVG Markers</a></li>
   <li><a href="http://w3c.github.io/webrtc-priority/">WebRTC DSCP Control API</a></li>
   <li><a href="https://immersive-web.github.io/webxr-ar-module/">WebXR Augmented Reality Module - Level 1</a></li>
   </ul>
-  <p>=&gt; 6 specifications found</p>
+  <p>=&gt; 7 specifications found</p>
   </section>
   <section id="list-of-exposed-names-not-defined-in-the-specifications-crawled" class="level2">
   <h2>List of [Exposed] names not defined in the specifications crawled</h2>
@@ -137,16 +97,12 @@
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
   <h2>List of WebIDL names defined in more than one spec</h2>
   <ul>
-  <li><code>CSSFontFaceRule</code> defined in <a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a> and <a href="https://drafts.csswg.org/css-fonts/">CSS Fonts Module Level 4</a></li>
-  <li><code>CSSFontFeatureValuesMap</code> defined in <a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a> and <a href="https://drafts.csswg.org/css-fonts/">CSS Fonts Module Level 4</a></li>
-  <li><code>CSSFontFeatureValuesRule</code> defined in <a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a> and <a href="https://drafts.csswg.org/css-fonts/">CSS Fonts Module Level 4</a></li>
-  <li><code>CSSFontPaletteValuesRule</code> defined in <a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a> and <a href="https://drafts.csswg.org/css-fonts/">CSS Fonts Module Level 4</a></li>
   <li><code>GamepadMappingType</code> defined in <a href="https://w3c.github.io/gamepad/">Gamepad</a> and <a href="https://immersive-web.github.io/webxr-gamepads-module/">WebXR Gamepads Module - Level 1</a></li>
   <li><code>Keyboard</code> defined in <a href="https://wicg.github.io/keyboard-lock/">Keyboard Lock</a> and <a href="https://wicg.github.io/keyboard-map/">Keyboard Map</a></li>
   <li><code>PermissionState</code> defined in <a href="https://w3c.github.io/deviceorientation/">DeviceOrientation Event Specification</a> and <a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><code>SVGMarkerElement</code> defined in <a href="https://svgwg.org/svg2-draft/single-page.html">Scalable Vector Graphics (SVG) 2</a> and <a href="https://svgwg.org/specs/markers/">SVG Markers</a></li>
   </ul>
-  <p>=&gt; 8 WebIDL names found</p>
+  <p>=&gt; 4 WebIDL names found</p>
   <p>&quot;There can be only one&quot;...</p>
   </section>
   <section id="missing-references-for-webidl-names" class="level2">
@@ -310,14 +266,6 @@
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-transitions/"><code>https://www.w3.org/TR/css3-transitions/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://drafts.csswg.org/css-ui-4/">CSS Basic User Interface Module Level 4</a> links to:
-  <ul>
-  <li><a href="https://www.w3.org/TR/2000/WD-css3-userint-20000216"><code>https://www.w3.org/TR/2000/WD-css3-userint-20000216</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css-style-attr/"><code>https://www.w3.org/TR/css-style-attr/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/svg2/"><code>https://www.w3.org/TR/svg2/</code></a> but does not list it in its references</li>
-  <li><a href="https://w3c.github.io/contentEditable/"><code>https://w3c.github.io/contentEditable/</code></a> but does not list it in its references</li>
-  </ul></li>
   <li><a href="https://drafts.csswg.org/css-ui/">CSS Basic User Interface Module Level 4</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/2000/WD-css3-userint-20000216"><code>https://www.w3.org/TR/2000/WD-css3-userint-20000216</code></a> but does not list it in its references</li>
@@ -328,6 +276,14 @@
   <li><a href="https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"><code>https://www.w3.org/TR/2020/WD-css-ui-4-20200102/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-ui-4-20171222/"><code>https://www.w3.org/TR/2017/WD-css-ui-4-20171222/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2015/WD-css-ui-4-20150922/"><code>https://www.w3.org/TR/2015/WD-css-ui-4-20150922/</code></a> but does not list it in its references</li>
+  </ul></li>
+  <li><a href="https://drafts.csswg.org/css-ui-4/">CSS Basic User Interface Module Level 4</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2000/WD-css3-userint-20000216"><code>https://www.w3.org/TR/2000/WD-css3-userint-20000216</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-style-attr/"><code>https://www.w3.org/TR/css-style-attr/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/svg2/"><code>https://www.w3.org/TR/svg2/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/contentEditable/"><code>https://w3c.github.io/contentEditable/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-align/">CSS Box Alignment Module Level 3</a> links to:
   <ul>
@@ -582,11 +538,6 @@
   <ul>
   <li><a href="https://www.w3.org/TR/css3-color/"><code>https://www.w3.org/TR/css3-color/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
-  </ul></li>
-  <li><a href="https://drafts.csswg.org/css-text-decor-4/">CSS Text Decoration Module Level 4</a> links to:
-  <ul>
-  <li><a href="https://www.w3.org/TR/css3-text/"><code>https://www.w3.org/TR/css3-text/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css-text/"><code>https://www.w3.org/TR/css-text/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-text-3/">CSS Text Module Level 3</a> links to:
   <ul>
@@ -867,7 +818,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 394 missing references for links found in 135 specifications</p>
+  <p>=&gt; 392 missing references for links found in 134 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -884,6 +835,7 @@
   <li><a href="https://www.w3.org/TR/2006/REC-xml-names-20060816/"><code>https://www.w3.org/TR/2006/REC-xml-names-20060816/</code></a> but related reference &quot;XML-NAMES&quot; uses URL <a href="https://www.w3.org/TR/xml-names/"><code>https://www.w3.org/TR/xml-names/</code></a></li>
   </ul></li>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a> links to <a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
+  <li><a href="https://drafts.csswg.org/css2/">Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification</a> links to <a href="https://www.w3.org/TR/css3-color/"><code>https://www.w3.org/TR/css3-color/</code></a> but related reference &quot;CSS3COLOR&quot; uses URL <a href="https://www.w3.org/TR/2010/PR-css3-color-20101028/"><code>https://www.w3.org/TR/2010/PR-css3-color-20101028/</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-clear-site-data/">Clear Site Data</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/"><code>https://w3c.github.io/webappsec-mixed-content/</code></a> but related reference &quot;MIXED-CONTENT&quot; uses URL <a href="https://www.w3.org/TR/mixed-content/"><code>https://www.w3.org/TR/mixed-content/</code></a></li>
@@ -988,7 +940,6 @@
   <li><a href="https://drafts.csswg.org/css-nav-1/">CSS Spatial Navigation Level 1</a> links to <a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a> but related reference &quot;UIEVENTS&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
   <li><a href="https://drafts.csswg.org/css-syntax/">CSS Syntax Module Level 3</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://drafts.csswg.org/css-text-decor-3/">CSS Text Decoration Module Level 3</a> links to <a href="https://www.w3.org/TR/1998/REC-CSS2-19980512"><code>https://www.w3.org/TR/1998/REC-CSS2-19980512</code></a> but related reference &quot;CSS2&quot; uses URL <a href="https://www.w3.org/TR/CSS2/"><code>https://www.w3.org/TR/CSS2/</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-text-decor-4/">CSS Text Decoration Module Level 4</a> links to <a href="https://www.w3.org/TR/1998/REC-CSS2-19980512"><code>https://www.w3.org/TR/1998/REC-CSS2-19980512</code></a> but related reference &quot;CSS2&quot; uses URL <a href="https://www.w3.org/TR/CSS2/"><code>https://www.w3.org/TR/CSS2/</code></a></li>
   <li><a href="https://drafts.csswg.org/css-transforms/">CSS Transforms Module Level 1</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/cssom-view/"><code>https://www.w3.org/TR/cssom-view/</code></a> but related reference &quot;CSSOM-VIEW&quot; uses URL <a href="https://www.w3.org/TR/cssom-view-1/"><code>https://www.w3.org/TR/cssom-view-1/</code></a></li>
