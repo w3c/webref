@@ -398,6 +398,7 @@ Normative references to this spec from:
 - [CSS Style Attributes](https://drafts.csswg.org/css-style-attr/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
@@ -956,6 +957,7 @@ Informative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
@@ -1055,6 +1057,7 @@ Normative references to this spec from:
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
@@ -1483,6 +1486,7 @@ Normative references to this spec from:
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
@@ -1588,6 +1592,7 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
@@ -1646,6 +1651,7 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
@@ -1975,6 +1981,7 @@ Normative references to this spec from:
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -2113,6 +2120,7 @@ Normative references to this spec from:
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 
 No informative reference to this spec from other specs.
@@ -2252,6 +2260,7 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -2319,6 +2328,7 @@ Normative references to this spec from:
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -2389,6 +2399,7 @@ Normative references to this spec from:
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
@@ -2763,6 +2774,7 @@ Normative references to this spec from:
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
@@ -3227,6 +3239,7 @@ Normative references to this spec from:
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
@@ -3574,6 +3587,7 @@ Normative references to this spec from:
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 
@@ -3715,6 +3729,7 @@ Normative references to this spec from:
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
@@ -4049,6 +4064,7 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
@@ -4147,15 +4163,17 @@ Informative references to this spec from:
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 
 
-## CSS Text Decoration Module Level 4 {data-spec=true data-error=true}
+## CSS Text Decoration Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/css-text-decor-4/](https://www.w3.org/TR/css-text-decor-4/)
 - Crawled URL: [https://drafts.csswg.org/css-text-decor-4/](https://drafts.csswg.org/css-text-decor-4/)
+- Crawled version: 10 March 2020
 - Editor's Draft: [https://drafts.csswg.org/css-text-decor-4/](https://drafts.csswg.org/css-text-decor-4/)
 - Latest published version: [https://www.w3.org/TR/css-text-decor-4/](https://www.w3.org/TR/css-text-decor-4/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
@@ -4164,24 +4182,11 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Failed to launch the browser process!
-Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch the browser process!
-Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:750:14)
-    at ChildProcess.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:740:61)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css3-text/`](https://www.w3.org/TR/css3-text/)
+     * [`https://www.w3.org/TR/css-text/`](https://www.w3.org/TR/css-text/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/1998/REC-CSS2-19980512`](https://www.w3.org/TR/1998/REC-CSS2-19980512), related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2/`](https://www.w3.org/TR/CSS2/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4248,6 +4253,7 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
@@ -4626,6 +4632,7 @@ Normative references to this spec from:
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
@@ -4761,6 +4768,7 @@ Normative references to this spec from:
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
@@ -4937,6 +4945,7 @@ Normative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -6090,6 +6099,7 @@ Normative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
@@ -8321,6 +8331,7 @@ Normative references to this spec from:
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -8611,6 +8622,7 @@ Normative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Shadow Parts](http://drafts.csswg.org/css-shadow-parts/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
