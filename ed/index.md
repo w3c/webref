@@ -2746,7 +2746,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
 - Crawled URL: [https://drafts.csswg.org/css-inline-3/](https://drafts.csswg.org/css-inline-3/)
-- Crawled version: 5 March 2020
+- Crawled version: 14 March 2020
 - Editor's Draft: [https://drafts.csswg.org/css-inline-3/](https://drafts.csswg.org/css-inline-3/)
 - Latest published version: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
@@ -2823,7 +2823,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-line-grid-1/](https://www.w3.org/TR/css-line-grid-1/)
 - Crawled URL: [https://drafts.csswg.org/css-line-grid/](https://drafts.csswg.org/css-line-grid/)
-- Crawled version: 16 January 2020
+- Crawled version: 14 March 2020
 - Editor's Draft: [https://drafts.csswg.org/css-line-grid/](https://drafts.csswg.org/css-line-grid/)
 - Latest published version: [http://www.w3.org/TR/css-line-grid-1/](http://www.w3.org/TR/css-line-grid-1/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2014/WD-css-line-grid-1-20140916/)
@@ -2892,7 +2892,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-logical-1/](https://www.w3.org/TR/css-logical-1/)
 - Crawled URL: [https://drafts.csswg.org/css-logical-1/](https://drafts.csswg.org/css-logical-1/)
-- Crawled version: 16 January 2020
+- Crawled version: 14 March 2020
 - Editor's Draft: [https://drafts.csswg.org/css-logical-1/](https://drafts.csswg.org/css-logical-1/)
 - Latest published version: [https://www.w3.org/TR/css-logical-1/](https://www.w3.org/TR/css-logical-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-logical-1-20180827/)
@@ -2999,7 +2999,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-multicol-1/](https://www.w3.org/TR/css-multicol-1/)
 - Crawled URL: [https://drafts.csswg.org/css-multicol/](https://drafts.csswg.org/css-multicol/)
-- Crawled version: 10 March 2020
+- Crawled version: 14 March 2020
 - Editor's Draft: [https://drafts.csswg.org/css-multicol/](https://drafts.csswg.org/css-multicol/)
 - Latest published version: [https://www.w3.org/TR/css-multicol-1/](https://www.w3.org/TR/css-multicol-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/)
@@ -3044,7 +3044,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-multicol-2/](https://drafts.csswg.org/css-multicol-2/)
 - Crawled URL: [https://drafts.csswg.org/css-multicol-2/](https://drafts.csswg.org/css-multicol-2/)
-- Crawled version: 10 March 2020
+- Crawled version: 14 March 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
