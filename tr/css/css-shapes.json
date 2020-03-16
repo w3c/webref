@@ -1,42 +1,50 @@
 {
   "spec": {
-    "title": "CSS Shapes Module Level 2",
-    "url": "https://drafts.csswg.org/css-shapes-2/"
+    "title": "CSS Shapes Module Level 1",
+    "url": "http://www.w3.org/TR/2014/CR-css-shapes-1-20140320/"
   },
   "properties": {
-    "shape-inside": {
-      "name": "shape-inside",
-      "value": "auto | outside-shape | [ <basic-shape> || shape-box ] | <image> | display",
-      "initial": "auto",
-      "appliesTo": "block-level elements",
-      "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "computed lengths for <basic-shape>, the absolute URI for <uri>, otherwise as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "as defined for <basic-shape>, otherwise discrete"
-    },
-    "shape-padding": {
-      "name": "shape-padding",
-      "value": "<length>",
+    "shape-outside": {
+      "name": "shape-outside",
+      "value": "none | [ <basic-shape> || <shape-box> ] | <image>",
       "initial": "none",
-      "appliesTo": "block-level elements",
+      "appliesTo": "floats",
       "inherited": "no",
-      "percentages": "n/a",
+      "media": "visual",
+      "computedValue": "as defined for <basic-shape> (with <shape-box> following, if supplied), the <image> with its URI made absolute, otherwise as specified.",
+      "animatable": "as specified for <basic-shape>, otherwise no"
+    },
+    "shape-image-threshold": {
+      "name": "shape-image-threshold",
+      "value": "<number>",
+      "initial": "0.0",
+      "appliesTo": "floats",
+      "inherited": "no",
+      "media": "visual",
+      "computedValue": "The same as the specified value after clipping the <number> to the range [0.0,1.0]",
+      "animatable": "as number"
+    },
+    "shape-margin": {
+      "name": "shape-margin",
+      "value": "<length> | <percentage>",
+      "initial": "0",
+      "appliesTo": "floats",
+      "inherited": "no",
+      "media": "visual",
       "computedValue": "the absolute length",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value"
+      "animatable": "as length, percentage, or calc."
     }
   },
   "descriptors": {},
   "valuespaces": {
-    "<path()>": {
-      "value": "path( [<fill-rule>,]? <string> )"
+    "<shape-box>": {
+      "value": "<box> | margin-box"
     },
-    "<basic-shape>": {
-      "prose": "The shape is computed based on the values of one of inset(), circle(), ellipse() or polygon()."
+    "<shape-arg>": {
+      "prose": "Defines a radius for a circle or ellipse. If omitted it defaults to closest-side. closest-side uses the length from the center of the shape to the closest side of the reference box. For circles, this is the closest side in any dimension. For ellipses, this is the closest side in the radius dimension. farthest-side uses the length from the center of the shape to the farthest side of the reference box. For circles, this is the farthest side in any dimension. For ellipses, this is the farthest side in the radius dimension."
     },
-    "<uri>": {
-      "prose": "If the <uri> references an SVG shape element, that element defines the shape. Otherwise, if the <uri> references an image, the shape is extracted and computed based on the alpha channel of the specified image. If the <uri> does not reference an SVG shape element or an image, the effect is as if the value auto had been specified."
+    "<shape-radius>": {
+      "prose": "Defines a radius for a circle or ellipse. If omitted it defaults to closest-side. closest-side uses the length from the center of the shape to the closest side of the reference box. For circles, this is the closest side in any dimension. For ellipses, this is the closest side in the radius dimension. farthest-side uses the length from the center of the shape to the farthest side of the reference box. For circles, this is the farthest side in any dimension. For ellipses, this is the farthest side in the radius dimension."
     }
   }
 }
