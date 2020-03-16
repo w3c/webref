@@ -9570,7 +9570,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Crawled URL: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
-- Crawled version: 14 March 2020
+- Crawled version: 16 March 2020
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
@@ -9903,7 +9903,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
 - Crawled URL: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
-- Crawled version: 6 March 2020
+- Crawled version: 16 March 2020
 - Editor's Draft: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2019/REC-wasm-js-api-1-20191205/)
@@ -9934,7 +9934,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
 - Crawled URL: [https://webassembly.github.io/spec/web-api/](https://webassembly.github.io/spec/web-api/)
-- Crawled version: 6 March 2020
+- Crawled version: 16 March 2020
 - Editor's Draft: [https://webassembly.github.io/spec/web-api/](https://webassembly.github.io/spec/web-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2019/REC-wasm-web-api-1-20191205/)
