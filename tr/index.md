@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% March 09, 2020
+% March 16, 2020
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -351,7 +351,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noCssDefinitions=true}
+## Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true}
 
 ### Spec info {.info}
 
@@ -367,7 +367,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - No normative references found
-- No CSS definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -379,7 +378,6 @@ Normative references to this spec from:
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/)
-- [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
@@ -449,6 +447,7 @@ Normative references to this spec from:
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
 - [Pointer Events](https://www.w3.org/TR/2019/WD-pointerevents3-20191212/)
+- [Proposals for the future of CSS Paged Media](https://drafts.csswg.org/css-page-4/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selectors Level 3](https://www.w3.org/TR/2018/REC-selectors-3-20181106/)
@@ -458,13 +457,14 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Lists Module Level 3](https://www.w3.org/TR/2019/WD-css-lists-3-20190817/)
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/)
 - [CSS Syntax Module Level 3](https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/)
 - [UI Events](https://www.w3.org/TR/2019/WD-uievents-20190530/)
 
 
-## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noCssDefinitions=true}
+## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true}
 
 ### Spec info {.info}
 
@@ -480,7 +480,6 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - No normative references found
-- No CSS definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -758,6 +757,26 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## ContentEditable {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://w3c.github.io/contentEditable/](https://w3c.github.io/contentEditable/)
+- Crawled URL: [https://w3c.github.io/contentEditable/](https://w3c.github.io/contentEditable/)
+- Crawled version: 30 January 2020
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Cookie Store API {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
@@ -967,7 +986,7 @@ Informative references to this spec from:
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 
 
-## CSS Animations Level 2 {data-spec=true data-anomaly=true data-hasUnexpectedIdl=true data-unknownIdlNames=true data-missingLinkRef=true}
+## CSS Animations Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -978,7 +997,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unexpected WebIDL definitions found
 - Unknown WebIDL names used: `CSSOMString`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-animations/`](https://www.w3.org/TR/css3-animations/)
@@ -1081,7 +1099,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-backgrounds-4/](https://drafts.csswg.org/css-backgrounds-4/)
 - Crawled URL: [https://drafts.csswg.org/css-backgrounds-4/](https://drafts.csswg.org/css-backgrounds-4/)
-- Crawled version: 5 November 2019
+- Crawled version: 10 March 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -1227,7 +1245,6 @@ Normative references to this spec from:
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/)
-- [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
@@ -1501,7 +1518,7 @@ Normative references to this spec from:
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
-- [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
+- [CSS Color Module Level 5](https://www.w3.org/TR/2020/WD-css-color-5-20200303/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/2018/WD-css-logical-1-20180827/)
@@ -1554,7 +1571,7 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/2019/WD-css-color-adjust-1-20190523/)
-- [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
+- [CSS Color Module Level 5](https://www.w3.org/TR/2020/WD-css-color-5-20200303/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
@@ -1583,19 +1600,24 @@ Informative references to this spec from:
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 
 
-## CSS Color Module Level 5 {data-spec=true data-anomaly=true data-noCssDefinitions=true}
+## CSS Color Module Level 5 {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
-- Initial URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
-- Crawled URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
-- Crawled version: 4 March 2020
+- Initial URL: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
+- Crawled URL: [https://www.w3.org/TR/2020/WD-css-color-5-20200303/](https://www.w3.org/TR/2020/WD-css-color-5-20200303/)
+- Crawled version: 3 March 2020
+- Editor's Draft: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
+- Latest published version: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-css-color-5-20200303/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Shortname: no shortname
+- Shortname: css-color-5
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
+     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1604,7 +1626,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## CSS Conditional Rules Module Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-hasInvalidIdl=true data-noCssDefinitions=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Conditional Rules Module Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1619,7 +1641,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
 - Invalid WebIDL content found
 - Spec uses WebIDL but does not reference it normatively
 - Missing references for links: 
@@ -1651,7 +1672,7 @@ Informative references to this spec from:
 - [CSS Text Module Level 4](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
 
 
-## CSS Conditional Rules Module Level 4 {data-spec=true data-anomaly=true data-noCssDefinitions=true}
+## CSS Conditional Rules Module Level 4 {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -1663,7 +1684,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1742,7 +1763,7 @@ Informative references to this spec from:
 - [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
 
 
-## CSS Custom Properties for Cascading Variables Module Level 1 {data-spec=true data-anomaly=true data-noCssDefinitions=true data-inconsistentRef=true}
+## CSS Custom Properties for Cascading Variables Module Level 1 {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1757,7 +1778,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
 - Inconsistent references for links: 
      * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/), related reference "DOM" uses URL [`http://www.w3.org/TR/dom/`](http://www.w3.org/TR/dom/)
      * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES" uses URL [`http://www.w3.org/TR/css-values/`](http://www.w3.org/TR/css-values/)
@@ -1909,7 +1929,7 @@ Informative references to this spec from:
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/)
 
 
-## CSS Easing Functions Level 1 {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Easing Functions Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -1924,7 +1944,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/)
 - Inconsistent references for links: 
@@ -1947,7 +1966,7 @@ Informative references to this spec from:
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 
 
-## CSS Environment Variables Module Level 1 {data-spec=true data-anomaly=true data-noCssDefinitions=true}
+## CSS Environment Variables Module Level 1 {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -1958,7 +1977,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2124,7 +2143,7 @@ Informative references to this spec from:
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/)
 
 
-## CSS Fonts Module Level 3 {data-spec=true data-anomaly=true data-hasUnexpectedIdl=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Fonts Module Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2139,10 +2158,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unexpected WebIDL definitions found
+- Spec uses WebIDL but does not reference it normatively
 - Unknown WebIDL names used: `CSSRule`, `CSSStyleDeclaration`
-- WebIDL names also defined elsewhere: 
-    * `CSSFontFaceRule` also defined in [CSS Fonts Module Level 4](https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/2002/WD-css3-fonts-20020802/`](https://www.w3.org/TR/2002/WD-css3-fonts-20020802/)
      * [`https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/`](https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/)
@@ -2188,7 +2205,7 @@ Informative references to this spec from:
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 
 
-## CSS Fonts Module Level 4 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Fonts Module Level 4 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -2204,8 +2221,6 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `CSSOMString`, `CSSRule`, `CSSStyleDeclaration`
-- WebIDL names also defined elsewhere: 
-    * `CSSFontFaceRule` also defined in [CSS Fonts Module Level 3](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
      * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/)
@@ -3071,7 +3086,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-multicol-2/](https://drafts.csswg.org/css-multicol-2/)
 - Crawled URL: [https://drafts.csswg.org/css-multicol-2/](https://drafts.csswg.org/css-multicol-2/)
-- Crawled version: 14 November 2018
+- Crawled version: 14 March 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -3086,7 +3101,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## CSS Namespaces Module Level 3 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noCssDefinitions=true data-missingLinkRef=true}
+## CSS Namespaces Module Level 3 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -3102,7 +3117,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - No normative references found
-- No CSS definitions found
 - Missing references for links: 
      * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/)
      * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/)
@@ -3124,7 +3138,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Nesting Module {data-spec=true data-anomaly=true data-noCssDefinitions=true}
+## CSS Nesting Module {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -3135,7 +3149,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3219,6 +3233,7 @@ Informative references to this spec from:
 - [CSS Easing Functions Level 1](https://www.w3.org/TR/2019/CR-css-easing-1-20190430/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
 - [CSS Syntax Module Level 3](https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/)
+- [Input Events Level 2](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
 
 
 ## CSS Overflow Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3557,7 +3572,7 @@ Informative references to this spec from:
 - [CSS Round Display Level 1](https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/)
 
 
-## CSS Properties and Values API Level 1 {data-spec=true data-anomaly=true data-hasUnexpectedCssDefinitions=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Properties and Values API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -3571,7 +3586,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unexpected CSS definitions found
 - Unknown WebIDL names used: `CSS`, `CSSOMString`, `CSSRule`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
@@ -3589,7 +3603,7 @@ Informative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 
 
-## CSS Pseudo-Elements Module Level 4 {data-spec=true data-anomaly=true data-noCssDefinitions=true data-unknownIdlNames=true data-missingLinkRef=true}
+## CSS Pseudo-Elements Module Level 4 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -3604,7 +3618,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
 - Unknown WebIDL names used: `CSSOMString`
 - Missing references for links: 
      * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/)
@@ -3802,7 +3815,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Scoping Module Level 1 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noCssDefinitions=true data-missingLinkRef=true}
+## CSS Scoping Module Level 1 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -3818,7 +3831,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - No normative references found
-- No CSS definitions found
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-cascade/`](https://www.w3.org/TR/css3-cascade/)
      * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/)
@@ -3942,7 +3954,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## CSS Shadow Parts {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true}
+## CSS Shadow Parts {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -3957,7 +3969,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
 - Missing references for links: 
      * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/)
 
@@ -4071,7 +4082,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## CSS Style Attributes {data-spec=true data-anomaly=true data-noCssDefinitions=true}
+## CSS Style Attributes {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -4086,7 +4097,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4100,7 +4111,7 @@ Informative references to this spec from:
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 
 
-## CSS Syntax Module Level 3 {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Syntax Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -4115,7 +4126,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
 - Missing references for links: 
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
      * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
@@ -4200,6 +4210,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
@@ -4529,7 +4540,7 @@ Informative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/)
 
 
-## CSS Transitions Level 2 {data-spec=true data-anomaly=true data-hasUnexpectedIdl=true data-noCssDefinitions=true data-unknownIdlNames=true}
+## CSS Transitions Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -4540,8 +4551,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
-- Unexpected WebIDL definitions found
 - Unknown WebIDL names used: `CSSOMString`
 
 ### Known dependencies on this specification {.dependencies}
@@ -4551,7 +4560,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## CSS TV Profile 1.0 {data-spec=true data-anomaly=true data-noCssDefinitions=true}
+## CSS TV Profile 1.0 {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -4562,7 +4571,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4618,7 +4627,27 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Values and Units Module Level 3 {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Typed OM Level 2 {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://drafts.css-houdini.org/css-typed-om-2/](https://drafts.css-houdini.org/css-typed-om-2/)
+- Crawled URL: [https://drafts.css-houdini.org/css-typed-om-2/](https://drafts.css-houdini.org/css-typed-om-2/)
+- Crawled version: 10 May 2018
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## CSS Values and Units Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -4633,7 +4662,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
 - Missing references for links: 
      * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/)
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
@@ -4665,7 +4693,7 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20191105/)
-- [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
+- [CSS Color Module Level 5](https://www.w3.org/TR/2020/WD-css-color-5-20200303/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](http://www.w3.org/TR/2015/CR-css-variables-1-20151203/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
@@ -4735,7 +4763,7 @@ Informative references to this spec from:
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
 
 
-## CSS Values and Units Module Level 4 {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Values and Units Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -4750,7 +4778,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
 - Missing references for links: 
      * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/)
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
@@ -4785,7 +4812,7 @@ Normative references to this spec from:
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/2019/WD-css-color-adjust-1-20190523/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20191105/)
-- [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
+- [CSS Color Module Level 5](https://www.w3.org/TR/2020/WD-css-color-5-20200303/)
 - [CSS Conditional Rules Module Level 4](https://drafts.csswg.org/css-conditional-4/)
 - [CSS Containment Module Level 1](https://www.w3.org/TR/2019/REC-css-contain-1-20191121/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
@@ -5170,7 +5197,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Crawled URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Crawled version: 12 February 2020
+- Crawled version: 14 March 2020
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
@@ -5287,6 +5314,7 @@ Normative references to this spec from:
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2019/CR-webrtc-20191213/)
+- [WebTransport](https://wicg.github.io/web-transport/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 - [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20191010/)
@@ -5306,6 +5334,7 @@ Informative references to this spec from:
 - [CSS Generated Content Module Level 3](https://www.w3.org/TR/2019/WD-css-content-3-20190802/)
 - [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [Input Events Level 2](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Selectors Level 3](https://www.w3.org/TR/2018/REC-selectors-3-20181106/)
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
@@ -5417,13 +5446,13 @@ Informative references to this spec from:
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 
 
-## Error 404 - Not found {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true data-noCssDefinitions=true}
+## Error 404 - Not found {data-spec=true data-anomaly=true data-noNormativeRefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Crawled URL: [https://www.w3.org/TR/2018/CR-SVG2-20181004/single-page.html](https://www.w3.org/TR/2018/CR-SVG2-20181004/single-page.html)
-- Crawled version: 9 March 2020
+- Crawled version: 16 March 2020
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
@@ -5433,8 +5462,6 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - No normative references found
-- No WebIDL definitions found
-- No CSS definitions found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5448,7 +5475,7 @@ Normative references to this spec from:
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Color Module Level 3](https://www.w3.org/TR/2018/REC-css-color-3-20180619/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20191105/)
-- [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
+- [CSS Color Module Level 5](https://www.w3.org/TR/2020/WD-css-color-5-20200303/)
 - [CSS Containment Module Level 1](https://www.w3.org/TR/2019/REC-css-contain-1-20191121/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/)
@@ -5531,7 +5558,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
 - Crawled URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
-- Crawled version: 3 March 2020
+- Crawled version: 12 March 2020
 - Repository: [GitHub w3c/webappsec-feature-policy](https://github.com/w3c/webappsec-feature-policy)
 - Shortname: no shortname
 
@@ -5597,6 +5624,7 @@ Normative references to this spec from:
 - [Media Session Standard](https://www.w3.org/TR/2020/WD-mediasession-20200130/)
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
 - [Mixed Content](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
+- [Native File System](https://wicg.github.io/native-file-system/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/)
 - [Network Error Logging](https://www.w3.org/TR/2018/WD-network-error-logging-1-20180925/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
@@ -6026,6 +6054,7 @@ Normative references to this spec from:
 - [Resize Observer](https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 - [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20191010/)
+- [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 
 No informative reference to this spec from other specs.
 
@@ -6146,7 +6175,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
 - Crawled URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled version: 5 March 2020
+- Crawled version: 15 March 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6321,6 +6350,7 @@ Normative references to this spec from:
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2019/CR-webrtc-20191213/)
+- [WebTransport](https://wicg.github.io/web-transport/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 - [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20191010/)
@@ -6335,6 +6365,7 @@ Informative references to this spec from:
 
 - [Clipboard API and events](https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/)
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
+- [ContentEditable](https://w3c.github.io/contentEditable/)
 - [Credential Management Level 1](https://www.w3.org/TR/2019/WD-credential-management-1-20190117/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
@@ -6355,6 +6386,7 @@ Informative references to this spec from:
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
+- [Input Events Level 2](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
 - [Orientation Sensor](https://www.w3.org/TR/2019/CR-orientation-sensor-20191212/)
@@ -6375,7 +6407,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
 - Crawled URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
-- Crawled version: 4 March 2020
+- Crawled version: 10 March 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6510,7 +6542,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Input Events Level 2 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-noIdlContent=true data-missingLinkRef=true}
+## Input Events Level 2 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -6526,15 +6558,8 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - No normative references found
-- No WebIDL definitions found
-- Missing references for links: 
-     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/)
-     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
-     * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
-     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
-     * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/)
-     * [`https://www.w3.org/TR/cssom-1/`](https://www.w3.org/TR/cssom-1/)
-     * [`https://www.w3.org/TR/fingerprinting-guidance/`](https://www.w3.org/TR/fingerprinting-guidance/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6542,6 +6567,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
+- [Input Events Level 2](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
 - [UI Events](https://www.w3.org/TR/2019/WD-uievents-20190530/)
 
 
@@ -6921,7 +6947,7 @@ Informative references to this spec from:
 - [Media Capabilities](https://www.w3.org/TR/2020/WD-media-capabilities-20200130/)
 
 
-## Media Queries {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true}
+## Media Queries {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -6936,7 +6962,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
 - Missing references for links: 
      * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/)
      * [`https://www.w3.org/TR/1999/REC-html401-19991224/present/`](https://www.w3.org/TR/1999/REC-html401-19991224/present/)
@@ -7272,18 +7297,19 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Native File System {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Native File System {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Crawled URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
-- Crawled version: 18 November 2019
+- Crawled version: 10 March 2020
 - Repository: [GitHub wicg/native-file-system](https://github.com/wicg/native-file-system)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `WritableStream`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FILE-API" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
@@ -7378,7 +7404,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Non-element Selectors Module Level 1 {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true}
+## Non-element Selectors Module Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -7393,7 +7419,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
 - Missing references for links: 
      * [`https://www.w3.org/TR/its20/`](https://www.w3.org/TR/its20/)
      * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/)
@@ -7471,7 +7496,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/origin-policy/](https://wicg.github.io/origin-policy/)
 - Crawled URL: [https://wicg.github.io/origin-policy/](https://wicg.github.io/origin-policy/)
-- Crawled version: 28 February 2020
+- Crawled version: 11 March 2020
 - Repository: [GitHub wicg/origin-policy](https://github.com/wicg/origin-policy)
 - Shortname: no shortname
 
@@ -7502,26 +7527,6 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/IntersectionObserver/`](https://w3c.github.io/IntersectionObserver/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/), related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## Page not found · GitHub Pages {data-spec=true data-anomaly=true data-noNormativeRefs=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html)
-- Crawled URL: [https://w3c.github.io/editing/contentEditable.html](https://w3c.github.io/editing/contentEditable.html)
-- Crawled version: 9 March 2020
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-- No normative references found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8018,6 +8023,26 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## Proposals for the future of CSS Paged Media {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://drafts.csswg.org/css-page-4/](https://drafts.csswg.org/css-page-4/)
+- Crawled URL: [https://drafts.csswg.org/css-page-4/](https://drafts.csswg.org/css-page-4/)
+- Crawled version: 7 March 2013
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Proximity Sensor {data-spec=true data-ok=true}
 
 ### Spec info {.info}
@@ -8074,7 +8099,7 @@ Informative references to this spec from:
 - [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 
 
-## Quirks Mode Standard {data-spec=true data-anomaly=true data-noCssDefinitions=true data-inconsistentRef=true}
+## Quirks Mode Standard {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -8086,7 +8111,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/cssom-1/`](https://www.w3.org/TR/cssom-1/), related reference "CSSOM" uses URL [`https://drafts.csswg.org/cssom/`](https://drafts.csswg.org/cssom/)
 
@@ -8497,7 +8521,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Selectors Level 3 {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true}
+## Selectors Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -8512,7 +8536,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-namespace/`](https://www.w3.org/TR/css3-namespace/)
 
@@ -8538,7 +8561,7 @@ Informative references to this spec from:
 - [CSS Syntax Module Level 3](https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/)
 
 
-## Selectors Level 4 {data-spec=true data-anomaly=true data-noCssDefinitions=true data-missingLinkRef=true data-inconsistentRef=true}
+## Selectors Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -8553,7 +8576,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No CSS definitions found
 - Missing references for links: 
      * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/)
      * [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/)
@@ -8720,7 +8742,9 @@ Normative references to this spec from:
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190911/)
+- [Native File System](https://wicg.github.io/native-file-system/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- [WebTransport](https://wicg.github.io/web-transport/)
 
 No informative reference to this spec from other specs.
 
@@ -8804,7 +8828,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## SVG Markers {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true}
+## SVG Markers {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-hasInvalidIdl=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -8820,6 +8844,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Invalid WebIDL content found
+- Spec uses WebIDL but does not reference it normatively
 - Missing references for links: 
      * [`https://www.w3.org/TR/2014/CR-css-masking-1-20140826/`](https://www.w3.org/TR/2014/CR-css-masking-1-20140826/)
      * [`https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/`](https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/)
@@ -9017,6 +9042,7 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
+- [Input Events Level 2](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
 - [Pointer Events](https://www.w3.org/TR/2019/WD-pointerevents3-20191212/)
 
 
@@ -9165,6 +9191,7 @@ Normative references to this spec from:
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Share API](https://www.w3.org/TR/2019/WD-web-share-20191217/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
+- [WebTransport](https://wicg.github.io/web-transport/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -9457,7 +9484,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
 - Crawled URL: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
-- Crawled version: 24 February 2020
+- Crawled version: 13 March 2020
 - Repository: [GitHub webbluetoothcg/web-bluetooth](https://github.com/webbluetoothcg/web-bluetooth)
 - Shortname: no shortname
 
@@ -9564,7 +9591,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
 - Crawled URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
-- Crawled version: 17 February 2020
+- Crawled version: 11 March 2020
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
@@ -9744,7 +9771,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/specs/latest/2.0/](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-- Crawled version: 9 March 2020
+- Crawled version: 6 March 2020
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -9773,7 +9800,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- Crawled version: 9 March 2020
+- Crawled version: 5 February 2020
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -9963,10 +9990,12 @@ Normative references to this spec from:
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2019/CR-webrtc-20191213/)
+- [WebTransport](https://wicg.github.io/web-transport/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 - [WebXR Device API](https://www.w3.org/TR/2019/WD-webxr-20191010/)
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/2019/WD-webxr-gamepads-module-1-20191010/)
+- [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 - [Worklets Level 1](http://www.w3.org/TR/2016/WD-worklets-1-20160607/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -9976,6 +10005,7 @@ Informative references to this spec from:
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
+- [Input Events Level 2](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
 - [Page Visibility Level 2](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Web Share Target API](https://wicg.github.io/web-share-target/)
@@ -10053,13 +10083,33 @@ Although they do not, the following specs should also normatively reference this
 No informative reference to this spec from other specs.
 
 
+## WebTransport {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/web-transport/](https://wicg.github.io/web-transport/)
+- Crawled URL: [https://wicg.github.io/web-transport/](https://wicg.github.io/web-transport/)
+- Crawled version: 19 December 2019
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Unknown WebIDL names used: `DOMHighResTimeStamp`, `ReadableStream`, `WritableStream`
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## WebUSB API {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 8 March 2020
+- Crawled version: 15 March 2020
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
@@ -10171,7 +10221,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -10204,6 +10256,26 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/webxr/`](https://www.w3.org/TR/webxr/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/), related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## WebXR Hit Test Module {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
+- Crawled URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
+- Crawled version: 27 February 2020
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 

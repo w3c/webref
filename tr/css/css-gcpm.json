@@ -1,21 +1,123 @@
 {
   "spec": {
-    "title": "CSS Generated Content for Paged Media Module Level 4",
-    "url": "https://drafts.csswg.org/css-gcpm-4/"
+    "title": "CSS Generated Content for Paged Media Module",
+    "url": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/"
   },
   "properties": {
-    "copy-into": {
-      "name": "copy-into",
-      "value": "none | [ [ <custom-ident> <content-level>] [, <custom-ident> <content-level>]* ]?",
+    "string-set": {
+      "name": "string-set",
+      "value": "[[ <custom-ident> <content-list>] [, <custom-ident> <content-list>]* ] | none",
       "initial": "none",
-      "appliesTo": "all elements and pseudo-elements, but not ::first-line or ::first-letter.",
+      "appliesTo": "all elements, but not pseudo-elements",
       "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "media": "all",
+      "computedValue": "specified value",
+      "percentages": "N/A"
+    },
+    "position": {
+      "name": "position",
+      "newValues": "running()",
+      "media": "paged"
+    },
+    "running": {
+      "name": "running",
+      "value": "<custom-ident>",
+      "initial": "none",
+      "appliesTo": "elements",
+      "inherited": "no",
+      "media": "all",
+      "computedValue": "specified value",
+      "percentages": "N/A"
+    },
+    "content": {
+      "name": "content",
+      "newValues": "leader()",
+      "media": "paged"
+    },
+    "float": {
+      "name": "float",
+      "newValues": "footnote",
+      "media": "paged"
+    },
+    "footnote-display": {
+      "name": "footnote-display",
+      "value": "block | inline | compact",
+      "initial": "block",
+      "appliesTo": "elements",
+      "inherited": "no",
+      "media": "paged",
+      "computedValue": "specified value",
+      "percentages": "N/A"
+    },
+    "footnote-policy": {
+      "name": "footnote-policy",
+      "value": "auto | line | block",
+      "initial": "auto",
+      "appliesTo": "elements",
+      "inherited": "no",
+      "media": "paged",
+      "computedValue": "specified value",
+      "percentages": "N/A"
+    },
+    "bookmark-level": {
+      "name": "bookmark-level",
+      "value": "none | <integer>",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "media": "paged",
+      "computedValue": "specified value",
+      "percentages": "N/A"
+    },
+    "bookmark-label": {
+      "name": "bookmark-label",
+      "value": "<content-list> | none",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "media": "paged",
+      "computedValue": "specified value",
+      "percentages": "N/A"
+    },
+    "bookmark-state": {
+      "name": "bookmark-state",
+      "value": "open | closed",
+      "initial": "open",
+      "appliesTo": "block-level elements",
+      "inherited": "no",
+      "media": "paged",
+      "computedValue": "specified value",
+      "percentages": "N/A"
     }
   },
   "descriptors": {},
-  "valuespaces": {}
+  "valuespaces": {
+    "<content()>": {
+      "value": "content([text | before | after | first-letter ])"
+    },
+    "<string()>": {
+      "value": "string( <custom-ident> [ , [ first | start | last | first-except] ]? )"
+    },
+    "<running()>": {
+      "value": "string( <custom-ident> )"
+    },
+    "<element()>": {
+      "value": "string( <custom-ident> [ , [ first | start | last | first-except] ]? )"
+    },
+    "<nth()>": {
+      "value": "( An+B [of <custom-ident>]?)"
+    },
+    "<leader()>": {
+      "value": "leader( [dotted | solid | space] | <string>);"
+    },
+    "<target-counter()>": {
+      "value": "target-counter( <url> , <custom-ident> [ , <counter-style> ]? )"
+    },
+    "<target-counters()>": {
+      "value": "target-counter( <url> , <custom-ident> , <string> [ , <counter-style> ]? )"
+    },
+    "<target-text()>": {
+      "value": "target-counter( <url> [ , [ content | before | after | first-letter] ]? )"
+    }
+  }
 }
