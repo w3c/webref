@@ -1,35 +1,74 @@
 {
   "spec": {
-    "title": "CSS Color Module Level 3",
-    "url": "https://drafts.csswg.org/css-color-3/"
+    "title": "CSS Color Module Level 5",
+    "url": "https://drafts.csswg.org/css-color-5/"
   },
-  "properties": {
-    "color": {
-      "name": "color",
-      "value": "<color> | inherit",
-      "initial": "depends on user agent",
-      "appliesTo": "all elements",
-      "inherited": "yes",
-      "percentages": "visual",
-      "computedValue": "The computed value for basic color keywords, RGB hex values and extended color keywords is the equivalent triplet of numerical RGB values, e.g. six digit hex value or rgb(...) functional value, with an alpha value of 1. The computed value of the keyword ‘transparent’ is the quadruplet of all zero numerical RGBA values, e.g. rgba(0,0,0,0). For all other values, the computed value is the specified value."
-    },
-    "opacity": {
-      "name": "opacity",
-      "value": "<alphavalue> | inherit",
-      "initial": "1",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "visual",
-      "computedValue": "The same as the specified value after clipping the <alphavalue> to the range [0.0,1.0]."
-    }
-  },
+  "properties": {},
   "descriptors": {},
   "valuespaces": {
-    "<color>": {
-      "prose": "Color units are defined in a following section."
+    "<color-mix()>": {
+      "value": "color-mix( <color> <color> [ <number> | <percentage> | [ <color-function> <colorspace>? ]?] )"
     },
-    "<alphavalue>": {
-      "prose": "Syntactically a <number>. The uniform opacity setting to be applied across an entire object. Any values outside the range 0.0 (fully transparent) to 1.0 (fully opaque) will be clamped to this range. If the object has children, then the effect is as if the children were blended against the current background using a mask where the value of each pixel of the mask is <alphavalue>. For SVG, ‘has children’ is equivalent to being a container element [SVG11]."
+    "<color-contrast()>": {
+      "value": "color-contrast( <color> <color># )"
+    },
+    "<color-adjust()>": {
+      "value": "color-adjust( <color> [ color-function <colorspace>? ]?] )"
+    },
+    "<rgb()>": {
+      "value": "rgb([from <color>]? <percentage>{3} [ / <alpha-value> ]? ) | rgb([from <color>]? <number>{3} [ / <alpha-value> ]? )"
+    },
+    "<alpha-value>": {
+      "value": "<number> | <percentage>"
+    },
+    "<hsl()>": {
+      "value": "hsl([from <color>]? <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
+    },
+    "<hue>": {
+      "value": "<number> | <angle>"
+    },
+    "<hwb()>": {
+      "value": "hwb([from <color>]? <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
+    },
+    "<lab()>": {
+      "value": "lab([from <color>]? <percentage> <number> <number> [ / <alpha-value> ]? )"
+    },
+    "<lch()>": {
+      "value": "lch([from <color>]? <percentage> <number> <hue> [ / <alpha-value> ]? )"
+    }
+  }
+}
+ "value": "<hex-color> | <named-color> | currentcolor | transparent <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <color()> | <device-cmyk()> | <system-color>"
+    },
+    "<rgb()>": {
+      "value": "rgb( <percentage>{3} [ / <alpha-value> ]? ) | rgb( <number>{3} [ / <alpha-value> ]? )"
+    },
+    "<alpha-value>": {
+      "value": "<number> | <percentage>"
+    },
+    "<hsl()>": {
+      "value": "hsl( <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
+    },
+    "<hue>": {
+      "value": "<number> | <angle>"
+    },
+    "<hwb()>": {
+      "value": "hwb( <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
+    },
+    "<lab()>": {
+      "value": "lab( <percentage> <number> <number> [ / <alpha-value> ]? )"
+    },
+    "<lch()>": {
+      "value": "lch( <percentage> <number> <hue> [ / <alpha-value> ]? )"
+    },
+    "<color()>": {
+      "value": "color( [ [<ident> | <dashed-ident>]? [ <number-percentage>+ | <string> ] [ / <alpha-value> ]? ]# , <color>? )"
+    },
+    "<device-cmyk()>": {
+      "value": "device-cmyk( <cmyk-component>{4} [ / <alpha-value> ]? , <color>? )"
+    },
+    "<cmyk-component>": {
+      "value": "<number> | <percentage>"
     }
   }
 }
