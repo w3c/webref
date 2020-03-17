@@ -13,6 +13,8 @@ interface FileSystemHandle {
   readonly attribute boolean isDirectory;
   readonly attribute USVString name;
 
+  Promise<boolean> isSameEntry(FileSystemHandle other);
+
   Promise<PermissionState> queryPermission(optional FileSystemHandlePermissionDescriptor descriptor = {});
   Promise<PermissionState> requestPermission(optional FileSystemHandlePermissionDescriptor descriptor = {});
 };
@@ -48,6 +50,8 @@ interface FileSystemDirectoryHandle : FileSystemHandle {
   object getEntries();
 
   Promise<void> removeEntry(USVString name, optional FileSystemRemoveOptions options = {});
+
+  Promise<sequence<USVString>?> resolve(FileSystemHandle possibleDescendant);
 };
 
 enum WriteCommandType {
@@ -63,7 +67,7 @@ dictionary WriteParams {
   (BufferSource or Blob or USVString)? data;
 };
 
-[Exposed=(Window,Worker), SecureContext, Serializable]
+[Exposed=(Window,Worker), SecureContext]
 interface FileSystemWritableFileStream : WritableStream {
   Promise<void> write((BufferSource or Blob or USVString or WriteParams) data);
   Promise<void> seek(unsigned long long position);
