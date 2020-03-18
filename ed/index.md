@@ -7039,7 +7039,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mst-content-hint/](https://www.w3.org/TR/mst-content-hint/)
 - Crawled URL: [https://w3c.github.io/mst-content-hint/](https://w3c.github.io/mst-content-hint/)
-- Crawled version: 14 February 2020
+- Crawled version: 18 March 2020
 - Editor's Draft: [https://w3c.github.io/mst-content-hint/](https://w3c.github.io/mst-content-hint/)
 - Latest published version: [https://www.w3.org/TR/mst-content-hint/](https://www.w3.org/TR/mst-content-hint/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/)
@@ -10148,7 +10148,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 17 March 2020
+- Crawled version: 18 March 2020
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
