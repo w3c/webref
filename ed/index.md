@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% March 18, 2020
+% March 19, 2020
 
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -95,7 +95,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
-- Crawled version: 18 March 2020
+- Crawled version: 19 March 2020
 - Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/)
@@ -2733,6 +2733,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
+- [HTML Standard](https://html.spec.whatwg.org/)
 
 Informative references to this spec from:
 
@@ -3707,7 +3708,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-ruby-1/](https://www.w3.org/TR/css-ruby-1/)
 - Crawled URL: [https://drafts.csswg.org/css-ruby-1/](https://drafts.csswg.org/css-ruby-1/)
-- Crawled version: 17 March 2020
+- Crawled version: 18 March 2020
 - Editor's Draft: [https://drafts.csswg.org/css-ruby-1/](https://drafts.csswg.org/css-ruby-1/)
 - Latest published version: [http://www.w3.org/TR/css-ruby-1/](http://www.w3.org/TR/css-ruby-1/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/)
@@ -5320,6 +5321,7 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
+- [Native File System](https://wicg.github.io/native-file-system/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
 - [Push API](https://w3c.github.io/push-api/)
@@ -5475,7 +5477,6 @@ Normative references to this spec from:
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
-- [Native File System](https://wicg.github.io/native-file-system/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
@@ -5505,6 +5506,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Native File System](https://wicg.github.io/native-file-system/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -6034,7 +6036,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
 - Crawled URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled version: 17 March 2020
+- Crawled version: 18 March 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6913,7 +6915,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mediasession/](https://www.w3.org/TR/mediasession/)
 - Crawled URL: [https://w3c.github.io/mediasession/](https://w3c.github.io/mediasession/)
-- Crawled version: 6 March 2020
+- Crawled version: 18 March 2020
 - Editor's Draft: [https://w3c.github.io/mediasession/](https://w3c.github.io/mediasession/)
 - Latest published version: [https://www.w3.org/TR/mediasession/](https://www.w3.org/TR/mediasession/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-mediasession-20200130/)
@@ -7175,7 +7177,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Crawled URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
-- Crawled version: 16 March 2020
+- Crawled version: 18 March 2020
 - Repository: [GitHub wicg/native-file-system](https://github.com/wicg/native-file-system)
 - Shortname: no shortname
 
@@ -9571,7 +9573,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Crawled URL: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
-- Crawled version: 16 March 2020
+- Crawled version: 18 March 2020
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
