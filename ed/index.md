@@ -1073,6 +1073,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
+- [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -1598,6 +1599,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -1994,6 +1996,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Visual Viewport API](https://wicg.github.io/visual-viewport/)
@@ -4258,6 +4261,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
@@ -7002,7 +7006,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/mediastream-recording/](https://www.w3.org/TR/mediastream-recording/)
 - Crawled URL: [https://w3c.github.io/mediacapture-record/](https://w3c.github.io/mediacapture-record/)
-- Crawled version: 24 October 2019
+- Crawled version: 20 March 2020
 - Editor's Draft: [https://w3c.github.io/mediacapture-record/](https://w3c.github.io/mediacapture-record/)
 - Latest published version: [https://www.w3.org/TR/mediastream-recording/](https://www.w3.org/TR/mediastream-recording/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/)
@@ -7013,8 +7017,10 @@ No informative reference to this spec from other specs.
 
 - Missing references for links: 
      * [`https://www.w3.org/TR/webrtc-identity/`](https://www.w3.org/TR/webrtc-identity/)
+     * [`https://www.w3.org/TR/fingerprinting-guidance/`](https://www.w3.org/TR/fingerprinting-guidance/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
+     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/), related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -7448,13 +7454,13 @@ Informative references to this spec from:
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 
 
-## Paint Timing 1 {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Paint Timing 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/paint-timing/](https://www.w3.org/TR/paint-timing/)
 - Crawled URL: [https://w3c.github.io/paint-timing/](https://w3c.github.io/paint-timing/)
-- Crawled version: 16 March 2020
+- Crawled version: 20 March 2020
 - Editor's Draft: [https://w3c.github.io/paint-timing/](https://w3c.github.io/paint-timing/)
 - Latest published version: [https://www.w3.org/TR/paint-timing/](https://www.w3.org/TR/paint-timing/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
@@ -7463,6 +7469,10 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css-images-3/`](https://www.w3.org/TR/css-images-3/)
+     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/)
+     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
 
@@ -8624,6 +8634,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/)
 - [Non-element Selectors Module Level 1](https://drafts.csswg.org/selectors-nonelement/)
+- [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)

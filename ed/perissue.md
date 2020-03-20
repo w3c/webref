@@ -485,7 +485,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/) links to:
     * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
-- [MediaStream Recording](https://w3c.github.io/mediacapture-record/) links to [`https://www.w3.org/TR/webrtc-identity/`](https://www.w3.org/TR/webrtc-identity/) but does not list it in its references
+- [MediaStream Recording](https://w3c.github.io/mediacapture-record/) links to:
+    * [`https://www.w3.org/TR/webrtc-identity/`](https://www.w3.org/TR/webrtc-identity/) but does not list it in its references
+    * [`https://www.w3.org/TR/fingerprinting-guidance/`](https://www.w3.org/TR/fingerprinting-guidance/) but does not list it in its references
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/) links to [`https://www.w3.org/TR/css-display-3/`](https://www.w3.org/TR/css-display-3/) but does not list it in its references
 - [Network Information API](https://wicg.github.io/netinfo/) links to:
     * [`https://w3c.github.io/ServiceWorker/v1/`](https://w3c.github.io/ServiceWorker/v1/) but does not list it in its references
@@ -497,6 +499,10 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/2016/CR-orientation-event-20160818/`](https://www.w3.org/TR/2016/CR-orientation-event-20160818/) but does not list it in its references
     * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/) links to [`https://w3c.github.io/IntersectionObserver/`](https://w3c.github.io/IntersectionObserver/) but does not list it in its references
+- [Paint Timing 1](https://w3c.github.io/paint-timing/) links to:
+    * [`https://www.w3.org/TR/css-images-3/`](https://www.w3.org/TR/css-images-3/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but does not list it in its references
+    * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but does not list it in its references
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/) links to [`https://w3c.github.io/timing-entrytypes-registry/`](https://w3c.github.io/timing-entrytypes-registry/) but does not list it in its references
 - [Permissions](https://w3c.github.io/permissions/) links to:
     * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/) but does not list it in its references
@@ -621,7 +627,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 394 missing references for links found in 135 specifications
+=> 398 missing references for links found in 136 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -786,6 +792,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/) links to:
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
+    * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/) links to:
     * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/) but related reference "XML" uses URL [`https://www.w3.org/TR/xml/`](https://www.w3.org/TR/xml/)
@@ -895,6 +902,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Device API](https://immersive-web.github.io/webxr/) links to [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 215 inconsistent references for links found in 108 specifications
+=> 216 inconsistent references for links found in 108 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
