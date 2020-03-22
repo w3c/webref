@@ -7460,7 +7460,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/paint-timing/](https://www.w3.org/TR/paint-timing/)
 - Crawled URL: [https://w3c.github.io/paint-timing/](https://w3c.github.io/paint-timing/)
-- Crawled version: 20 March 2020
+- Crawled version: 22 March 2020
 - Editor's Draft: [https://w3c.github.io/paint-timing/](https://w3c.github.io/paint-timing/)
 - Latest published version: [https://www.w3.org/TR/paint-timing/](https://www.w3.org/TR/paint-timing/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
