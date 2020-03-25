@@ -1520,7 +1520,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-adjust-1/](https://www.w3.org/TR/css-color-adjust-1/)
 - Crawled URL: [https://drafts.csswg.org/css-color-adjust-1/](https://drafts.csswg.org/css-color-adjust-1/)
-- Crawled version: 11 March 2020
+- Crawled version: 25 March 2020
 - Editor's Draft: [https://drafts.csswg.org/css-color-adjust-1/](https://drafts.csswg.org/css-color-adjust-1/)
 - Latest published version: [https://www.w3.org/TR/css-color-adjust-1/](https://www.w3.org/TR/css-color-adjust-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-color-adjust-1-20190523/)
@@ -6292,7 +6292,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Crawled URL: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
-- Crawled version: 18 March 2020
+- Crawled version: 25 March 2020
 - Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
 - Latest published version: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/)
@@ -6873,6 +6873,7 @@ Normative references to this spec from:
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 
 Informative references to this spec from:
 
@@ -9027,7 +9028,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/trace-context/](https://www.w3.org/TR/trace-context/)
 - Crawled URL: [https://w3c.github.io/trace-context/](https://w3c.github.io/trace-context/)
-- Crawled version: 20 February 2020
+- Crawled version: 25 March 2020
 - Editor's Draft: [https://w3c.github.io/trace-context/](https://w3c.github.io/trace-context/)
 - Latest published version: [https://www.w3.org/TR/trace-context-1/](https://www.w3.org/TR/trace-context-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2020/REC-trace-context-1-20200206/)
@@ -9964,7 +9965,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
 - Crawled URL: [https://w3c.github.io/webdriver/](https://w3c.github.io/webdriver/)
-- Crawled version: 19 March 2020
+- Crawled version: 25 March 2020
 - Editor's Draft: [https://w3c.github.io/webdriver/](https://w3c.github.io/webdriver/)
 - Latest published version: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
@@ -10150,7 +10151,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 23 March 2020
+- Crawled version: 25 March 2020
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
