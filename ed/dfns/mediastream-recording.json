@@ -1,0 +1,826 @@
+{
+  "spec": {
+    "title": "MediaStream Recording",
+    "url": "https://w3c.github.io/mediacapture-record/"
+  },
+  "dfns": [
+    {
+      "id": "mediarecorder",
+      "href": "https://w3c.github.io/mediacapture-record/#mediarecorder",
+      "linkingText": [
+        "MediaRecorder"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-start-timeslice-timeslice",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-start-timeslice-timeslice",
+      "linkingText": [
+        "timeslice"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaRecorder/start(timeslice)",
+        "MediaRecorder/start()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-istypesupported-type-type",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-istypesupported-type-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaRecorder/isTypeSupported(type)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-mediarecorder",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-mediarecorder",
+      "linkingText": [
+        "MediaRecorder(stream, options)",
+        "MediaRecorder(stream)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "constrainedmimetype",
+      "href": "https://w3c.github.io/mediacapture-record/#constrainedmimetype",
+      "linkingText": [
+        "[[ConstrainedMimeType]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "constrainedbitspersecond",
+      "href": "https://w3c.github.io/mediacapture-record/#constrainedbitspersecond",
+      "linkingText": [
+        "[[ConstrainedBitsPerSecond]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-stream",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-stream",
+      "linkingText": [
+        "stream"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-mimetype",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-mimetype",
+      "linkingText": [
+        "mimeType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-state",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-onstart",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-onstart",
+      "linkingText": [
+        "onstart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-onstop",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-onstop",
+      "linkingText": [
+        "onstop"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-ondataavailable",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-ondataavailable",
+      "linkingText": [
+        "ondataavailable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-onpause",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-onpause",
+      "linkingText": [
+        "onpause"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-onresume",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-onresume",
+      "linkingText": [
+        "onresume"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-onerror",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-videobitspersecond",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-videobitspersecond",
+      "linkingText": [
+        "videoBitsPerSecond"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-audiobitspersecond",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-audiobitspersecond",
+      "linkingText": [
+        "audioBitsPerSecond"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-audiobitratemode",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-audiobitratemode",
+      "linkingText": [
+        "audioBitrateMode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-start",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-start",
+      "linkingText": [
+        "start(timeslice)",
+        "start()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-inactivate-the-recorder",
+      "href": "https://w3c.github.io/mediacapture-record/#abstract-opdef-inactivate-the-recorder",
+      "linkingText": [
+        "Inactivate the recorder"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-stop",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-stop",
+      "linkingText": [
+        "stop()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-pause",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-pause",
+      "linkingText": [
+        "pause()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-resume",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-resume",
+      "linkingText": [
+        "resume()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-requestdata",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-requestdata",
+      "linkingText": [
+        "requestData()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-istypesupported",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-istypesupported",
+      "linkingText": [
+        "isTypeSupported(type)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-is-type-supported",
+      "href": "https://w3c.github.io/mediacapture-record/#abstract-opdef-is-type-supported",
+      "linkingText": [
+        "is type supported"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "to-fire-a-blob-event",
+      "href": "https://w3c.github.io/mediacapture-record/#to-fire-a-blob-event",
+      "linkingText": [
+        "To fire a blob event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediarecorderoptions",
+      "href": "https://w3c.github.io/mediacapture-record/#dictdef-mediarecorderoptions",
+      "linkingText": [
+        "MediaRecorderOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorderoptions-mimetype",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorderoptions-mimetype",
+      "linkingText": [
+        "mimeType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaRecorderOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorderoptions-audiobitspersecond",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorderoptions-audiobitspersecond",
+      "linkingText": [
+        "audioBitsPerSecond"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaRecorderOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorderoptions-videobitspersecond",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorderoptions-videobitspersecond",
+      "linkingText": [
+        "videoBitsPerSecond"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaRecorderOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorderoptions-bitspersecond",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorderoptions-bitspersecond",
+      "linkingText": [
+        "bitsPerSecond"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaRecorderOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorderoptions-audiobitratemode",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecorderoptions-audiobitratemode",
+      "linkingText": [
+        "audioBitrateMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaRecorderOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-bitratemode",
+      "href": "https://w3c.github.io/mediacapture-record/#enumdef-bitratemode",
+      "linkingText": [
+        "BitrateMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-bitratemode-cbr",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-bitratemode-cbr",
+      "linkingText": [
+        "\"cbr\"",
+        "cbr"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BitrateMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-bitratemode-vbr",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-bitratemode-vbr",
+      "linkingText": [
+        "\"vbr\"",
+        "vbr"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BitrateMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-recordingstate",
+      "href": "https://w3c.github.io/mediacapture-record/#enumdef-recordingstate",
+      "linkingText": [
+        "RecordingState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-recordingstate-inactive",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-recordingstate-inactive",
+      "linkingText": [
+        "\"inactive\"",
+        "inactive"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RecordingState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-recordingstate-recording",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-recordingstate-recording",
+      "linkingText": [
+        "\"recording\"",
+        "recording"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RecordingState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-recordingstate-paused",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-recordingstate-paused",
+      "linkingText": [
+        "\"paused\"",
+        "paused"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RecordingState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "blobevent",
+      "href": "https://w3c.github.io/mediacapture-record/#blobevent",
+      "linkingText": [
+        "BlobEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blobevent-blobevent",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-blobevent-blobevent",
+      "linkingText": [
+        "BlobEvent(type, eventInitDict)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "BlobEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blobevent-data",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-blobevent-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BlobEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blobevent-timecode",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-blobevent-timecode",
+      "linkingText": [
+        "timecode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BlobEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-blobeventinit",
+      "href": "https://w3c.github.io/mediacapture-record/#dictdef-blobeventinit",
+      "linkingText": [
+        "BlobEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blobeventinit-data",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-blobeventinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BlobEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blobeventinit-timecode",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-blobeventinit-timecode",
+      "linkingText": [
+        "timecode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BlobEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fire-an-error-event",
+      "href": "https://w3c.github.io/mediacapture-record/#fire-an-error-event",
+      "linkingText": [
+        "fire an error event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediarecordererroreventinit",
+      "href": "https://w3c.github.io/mediacapture-record/#dictdef-mediarecordererroreventinit",
+      "linkingText": [
+        "MediaRecorderErrorEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mediarecordererrorevent",
+      "href": "https://w3c.github.io/mediacapture-record/#mediarecordererrorevent",
+      "linkingText": [
+        "MediaRecorderErrorEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecordererrorevent-mediarecordererrorevent",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecordererrorevent-mediarecordererrorevent",
+      "linkingText": [
+        "MediaRecorderErrorEvent(type, eventInitDict)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "MediaRecorderErrorEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecordererrorevent-error",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecordererrorevent-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorderErrorEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecordererroreventinit-error",
+      "href": "https://w3c.github.io/mediacapture-record/#dom-mediarecordererroreventinit-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaRecorderErrorEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "start",
+      "href": "https://w3c.github.io/mediacapture-record/#start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "stop",
+      "href": "https://w3c.github.io/mediacapture-record/#stop",
+      "linkingText": [
+        "stop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dataavailable",
+      "href": "https://w3c.github.io/mediacapture-record/#dataavailable",
+      "linkingText": [
+        "dataavailable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pause",
+      "href": "https://w3c.github.io/mediacapture-record/#pause",
+      "linkingText": [
+        "pause"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "resume",
+      "href": "https://w3c.github.io/mediacapture-record/#resume",
+      "linkingText": [
+        "resume"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "error",
+      "href": "https://w3c.github.io/mediacapture-record/#error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "conformant-user-agent",
+      "href": "https://w3c.github.io/mediacapture-record/#conformant-user-agent",
+      "linkingText": [
+        "conformant user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "conformant-server",
+      "href": "https://w3c.github.io/mediacapture-record/#conformant-server",
+      "linkingText": [
+        "conformant server"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

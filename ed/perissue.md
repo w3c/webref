@@ -13,10 +13,9 @@
 
 ## Specifications without normative dependencies
 
-- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
 - [ContentEditable](https://w3c.github.io/contentEditable/)
 
-=> 2 specifications found
+=> 1 specification found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -65,7 +64,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `CSSOMString` used in [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/), [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - `PermissionName` used in [Permissions](https://w3c.github.io/permissions/)
 - `ReadableStream` used in [CSS Parser API](https://wicg.github.io/CSS-Parser-API/), [Encoding Standard](https://encoding.spec.whatwg.org/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://w3c.github.io/FileAPI/), [WebTransport](https://wicg.github.io/web-transport/)
-- `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/)
+- `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - `WritableStream` used in [Encoding Standard](https://encoding.spec.whatwg.org/), [Native File System](https://wicg.github.io/native-file-system/), [WebTransport](https://wicg.github.io/web-transport/)
 
 => 5 WebIDL names found
@@ -79,7 +78,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `GamepadMappingType` defined in [Gamepad](https://w3c.github.io/gamepad/) and [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
 - `Keyboard` defined in [Keyboard Lock](https://wicg.github.io/keyboard-lock/) and [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - `PermissionState` defined in [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/) and [Permissions](https://w3c.github.io/permissions/)
-- `SVGMarkerElement` defined in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html) and [SVG Markers](https://svgwg.org/specs/markers/)
+- `SVGMarkerElement` defined in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) and [SVG Markers](https://svgwg.org/specs/markers/)
 
 => 4 WebIDL names found
 
@@ -104,7 +103,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/) uses `Document` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/) uses `ReportBody` but does not reference [Reporting API 1](https://w3c.github.io/reporting/)
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html) uses `Gamepad` but does not reference [Gamepad](https://w3c.github.io/gamepad/)
-- [HTML Standard](https://html.spec.whatwg.org/) uses `WebGL2RenderingContext` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/) uses `WebGL2RenderingContext` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://w3c.github.io/hr-time/)
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/) uses:
     * `MediaStream` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
@@ -281,11 +280,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-multicol-1/`](https://www.w3.org/TR/css-multicol-1/) but does not list it in its references
     * [`https://www.w3.org/TR/css-contain-1/`](https://www.w3.org/TR/css-contain-1/) but does not list it in its references
 - [CSS Easing Functions Level 1](https://drafts.csswg.org/css-easing/) links to [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/) but does not list it in its references
-- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/) links to:
+- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/) links to:
     * [`https://www.w3.org/TR/css3-box/`](https://www.w3.org/TR/css3-box/) but does not list it in its references
-    * [`https://www.w3.org/TR/2015/WD-css3-exclusions-20150115/`](https://www.w3.org/TR/2015/WD-css3-exclusions-20150115/) but does not list it in its references
-    * [`https://www.w3.org/TR/2013/WD-css3-exclusions-20130528/`](https://www.w3.org/TR/2013/WD-css3-exclusions-20130528/) but does not list it in its references
-    * [`https://www.w3.org/TR/2012/WD-css3-exclusions-20120503/`](https://www.w3.org/TR/2012/WD-css3-exclusions-20120503/) but does not list it in its references
     * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/) but does not list it in its references
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/) links to:
     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
@@ -463,7 +459,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but does not list it in its references
 - [Geolocation API Specification](https://w3c.github.io/geolocation-api/) links to [`https://w3c.github.io/geolocation-sensor/`](https://w3c.github.io/geolocation-sensor/) but does not list it in its references
 - [Gyroscope](https://w3c.github.io/gyroscope/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
-- [HTML Standard](https://html.spec.whatwg.org/) links to:
+- [HTML Standard](https://html.spec.whatwg.org/multipage/) links to:
     * [`https://spec.whatwg.org/`](https://spec.whatwg.org/) but does not list it in its references
     * [`https://w3c.github.io/payment-request/`](https://w3c.github.io/payment-request/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but does not list it in its references
@@ -521,7 +517,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
     * [`https://w3c.github.io/webappsec/specs/CSP2/`](https://w3c.github.io/webappsec/specs/CSP2/) but does not list it in its references
     * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/) but does not list it in its references
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html) links to:
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) links to:
     * [`https://www.w3.org/TR/svg-integration/`](https://www.w3.org/TR/svg-integration/) but does not list it in its references
     * [`https://www.w3.org/TR/2012/CR-WebIDL-20120419/`](https://www.w3.org/TR/2012/CR-WebIDL-20120419/) but does not list it in its references
     * [`https://www.w3.org/TR/filter-effects/`](https://www.w3.org/TR/filter-effects/) but does not list it in its references
@@ -627,7 +623,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 398 missing references for links found in 136 specifications
+=> 395 missing references for links found in 136 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -644,6 +640,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/) but related reference "XML-NAMES" uses URL [`https://www.w3.org/TR/xml-names/`](https://www.w3.org/TR/xml-names/)
 - [Background Fetch](https://wicg.github.io/background-fetch/) links to [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/) links to [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but related reference "CSS3COLOR" uses URL [`https://www.w3.org/TR/2010/PR-css3-color-20101028/`](https://www.w3.org/TR/2010/PR-css3-color-20101028/)
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/) links to [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but related reference "CSS3COLOR" uses URL [`https://www.w3.org/TR/2010/PR-css3-color-20101028/`](https://www.w3.org/TR/2010/PR-css3-color-20101028/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/) links to:
     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
@@ -681,7 +678,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/2008/REC-CSS2-20080411`](https://www.w3.org/TR/2008/REC-CSS2-20080411) but related reference "CSS21" uses URL [`http://www.w3.org/TR/2011/REC-CSS2-20110607`](http://www.w3.org/TR/2011/REC-CSS2-20110607)
     * [`https://www.w3.org/TR/2001/REC-SVG-20010904`](https://www.w3.org/TR/2001/REC-SVG-20010904) but related reference "SVG11" uses URL [`http://www.w3.org/TR/2011/REC-SVG11-20110816/`](http://www.w3.org/TR/2011/REC-SVG11-20110816/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/) links to [`https://www.w3.org/TR/2008/REC-WCAG20-20081211/`](https://www.w3.org/TR/2008/REC-WCAG20-20081211/) but related reference "WCAG20" uses URL [`https://www.w3.org/TR/WCAG20/`](https://www.w3.org/TR/WCAG20/)
-- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/) links to [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
+- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/) links to [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/) links to [`https://www.w3.org/TR/css3-images/`](https://www.w3.org/TR/css3-images/) but related reference "CSS3-IMAGES" uses URL [`https://www.w3.org/TR/css-images-3/`](https://www.w3.org/TR/css-images-3/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/) links to [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
@@ -833,7 +830,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html) links to:
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) links to:
     * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/) but related reference "xml" uses URL [`https://www.w3.org/TR/xml`](https://www.w3.org/TR/xml)
     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/) but related reference "xml-names" uses URL [`https://www.w3.org/TR/xml-names`](https://www.w3.org/TR/xml-names)
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "dom" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
@@ -903,6 +900,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Device API](https://immersive-web.github.io/webxr/) links to [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 217 inconsistent references for links found in 109 specifications
+=> 218 inconsistent references for links found in 110 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.

@@ -1,0 +1,1159 @@
+{
+  "spec": {
+    "title": "Media Capabilities",
+    "url": "https://w3c.github.io/media-capabilities/"
+  },
+  "dfns": [
+    {
+      "id": "dictdef-mediaconfiguration",
+      "href": "https://w3c.github.io/media-capabilities/#dictdef-mediaconfiguration",
+      "linkingText": [
+        "MediaConfiguration"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaconfiguration-video",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediaconfiguration-video",
+      "linkingText": [
+        "video"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaconfiguration-audio",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediaconfiguration-audio",
+      "linkingText": [
+        "audio"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediadecodingconfiguration",
+      "href": "https://w3c.github.io/media-capabilities/#dictdef-mediadecodingconfiguration",
+      "linkingText": [
+        "MediaDecodingConfiguration"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediadecodingconfiguration-type",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediadecodingconfiguration-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaDecodingConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediadecodingconfiguration-keysystemconfiguration",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediadecodingconfiguration-keysystemconfiguration",
+      "linkingText": [
+        "keySystemConfiguration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaDecodingConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediaencodingconfiguration",
+      "href": "https://w3c.github.io/media-capabilities/#dictdef-mediaencodingconfiguration",
+      "linkingText": [
+        "MediaEncodingConfiguration"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaencodingconfiguration-type",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediaencodingconfiguration-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaEncodingConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valid-mediaconfiguration",
+      "href": "https://w3c.github.io/media-capabilities/#valid-mediaconfiguration",
+      "linkingText": [
+        "valid MediaConfiguration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valid-mediadecodingconfiguration",
+      "href": "https://w3c.github.io/media-capabilities/#valid-mediadecodingconfiguration",
+      "linkingText": [
+        "valid MediaDecodingConfiguration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enumdef-mediadecodingtype",
+      "href": "https://w3c.github.io/media-capabilities/#enumdef-mediadecodingtype",
+      "linkingText": [
+        "MediaDecodingType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediadecodingtype-file",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediadecodingtype-file",
+      "linkingText": [
+        "\"file\"",
+        "file"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaDecodingType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediadecodingtype-media-source",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediadecodingtype-media-source",
+      "linkingText": [
+        "\"media-source\"",
+        "media-source"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaDecodingType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-mediaencodingtype",
+      "href": "https://w3c.github.io/media-capabilities/#enumdef-mediaencodingtype",
+      "linkingText": [
+        "MediaEncodingType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaencodingtype-record",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediaencodingtype-record",
+      "linkingText": [
+        "\"record\"",
+        "record"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaEncodingType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaencodingtype-transmission",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediaencodingtype-transmission",
+      "linkingText": [
+        "\"transmission\"",
+        "transmission"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaEncodingType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valid-media-mime-type",
+      "href": "https://w3c.github.io/media-capabilities/#valid-media-mime-type",
+      "linkingText": [
+        "valid media MIME type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valid-audio-mime-type",
+      "href": "https://w3c.github.io/media-capabilities/#valid-audio-mime-type",
+      "linkingText": [
+        "valid audio MIME type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valid-video-mime-type",
+      "href": "https://w3c.github.io/media-capabilities/#valid-video-mime-type",
+      "linkingText": [
+        "valid video MIME type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-videoconfiguration",
+      "href": "https://w3c.github.io/media-capabilities/#dictdef-videoconfiguration",
+      "linkingText": [
+        "VideoConfiguration"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoconfiguration-contenttype",
+      "href": "https://w3c.github.io/media-capabilities/#dom-videoconfiguration-contenttype",
+      "linkingText": [
+        "contentType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valid-video-configuration",
+      "href": "https://w3c.github.io/media-capabilities/#valid-video-configuration",
+      "linkingText": [
+        "valid video configuration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-videoconfiguration-width",
+      "href": "https://w3c.github.io/media-capabilities/#dom-videoconfiguration-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoconfiguration-height",
+      "href": "https://w3c.github.io/media-capabilities/#dom-videoconfiguration-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoconfiguration-bitrate",
+      "href": "https://w3c.github.io/media-capabilities/#dom-videoconfiguration-bitrate",
+      "linkingText": [
+        "bitrate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoconfiguration-framerate",
+      "href": "https://w3c.github.io/media-capabilities/#dom-videoconfiguration-framerate",
+      "linkingText": [
+        "framerate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoconfiguration-hasalphachannel",
+      "href": "https://w3c.github.io/media-capabilities/#dom-videoconfiguration-hasalphachannel",
+      "linkingText": [
+        "hasAlphaChannel"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoconfiguration-hdrmetadatatype",
+      "href": "https://w3c.github.io/media-capabilities/#dom-videoconfiguration-hdrmetadatatype",
+      "linkingText": [
+        "hdrMetadataType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoconfiguration-colorgamut",
+      "href": "https://w3c.github.io/media-capabilities/#dom-videoconfiguration-colorgamut",
+      "linkingText": [
+        "colorGamut"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoconfiguration-transferfunction",
+      "href": "https://w3c.github.io/media-capabilities/#dom-videoconfiguration-transferfunction",
+      "linkingText": [
+        "transferFunction"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-hdrmetadatatype",
+      "href": "https://w3c.github.io/media-capabilities/#enumdef-hdrmetadatatype",
+      "linkingText": [
+        "HdrMetadataType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-hdrmetadatatype-smptest2086",
+      "href": "https://w3c.github.io/media-capabilities/#dom-hdrmetadatatype-smptest2086",
+      "linkingText": [
+        "\"smpteSt2086\"",
+        "smpteSt2086"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "HdrMetadataType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-hdrmetadatatype-smptest2094-10",
+      "href": "https://w3c.github.io/media-capabilities/#dom-hdrmetadatatype-smptest2094-10",
+      "linkingText": [
+        "\"smpteSt2094-10\"",
+        "smpteSt2094-10"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "HdrMetadataType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-hdrmetadatatype-smptest2094-40",
+      "href": "https://w3c.github.io/media-capabilities/#dom-hdrmetadatatype-smptest2094-40",
+      "linkingText": [
+        "\"smpteSt2094-40\"",
+        "smpteSt2094-40"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "HdrMetadataType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-colorgamut",
+      "href": "https://w3c.github.io/media-capabilities/#enumdef-colorgamut",
+      "linkingText": [
+        "ColorGamut"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-colorgamut-srgb",
+      "href": "https://w3c.github.io/media-capabilities/#dom-colorgamut-srgb",
+      "linkingText": [
+        "\"srgb\"",
+        "srgb"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ColorGamut"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-colorgamut-p3",
+      "href": "https://w3c.github.io/media-capabilities/#dom-colorgamut-p3",
+      "linkingText": [
+        "\"p3\"",
+        "p3"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ColorGamut"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-colorgamut-rec2020",
+      "href": "https://w3c.github.io/media-capabilities/#dom-colorgamut-rec2020",
+      "linkingText": [
+        "\"rec2020\"",
+        "rec2020"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ColorGamut"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-transferfunction",
+      "href": "https://w3c.github.io/media-capabilities/#enumdef-transferfunction",
+      "linkingText": [
+        "TransferFunction"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-transferfunction-srgb",
+      "href": "https://w3c.github.io/media-capabilities/#dom-transferfunction-srgb",
+      "linkingText": [
+        "\"srgb\"",
+        "srgb"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TransferFunction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-transferfunction-pq",
+      "href": "https://w3c.github.io/media-capabilities/#dom-transferfunction-pq",
+      "linkingText": [
+        "\"pq\"",
+        "pq"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TransferFunction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-transferfunction-hlg",
+      "href": "https://w3c.github.io/media-capabilities/#dom-transferfunction-hlg",
+      "linkingText": [
+        "\"hlg\"",
+        "hlg"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TransferFunction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-audioconfiguration",
+      "href": "https://w3c.github.io/media-capabilities/#dictdef-audioconfiguration",
+      "linkingText": [
+        "AudioConfiguration"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioconfiguration-contenttype",
+      "href": "https://w3c.github.io/media-capabilities/#dom-audioconfiguration-contenttype",
+      "linkingText": [
+        "contentType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valid-audio-configuration",
+      "href": "https://w3c.github.io/media-capabilities/#valid-audio-configuration",
+      "linkingText": [
+        "valid audio configuration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-audioconfiguration-channels",
+      "href": "https://w3c.github.io/media-capabilities/#dom-audioconfiguration-channels",
+      "linkingText": [
+        "channels"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioconfiguration-bitrate",
+      "href": "https://w3c.github.io/media-capabilities/#dom-audioconfiguration-bitrate",
+      "linkingText": [
+        "bitrate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioconfiguration-samplerate",
+      "href": "https://w3c.github.io/media-capabilities/#dom-audioconfiguration-samplerate",
+      "linkingText": [
+        "samplerate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioconfiguration-spatialrendering",
+      "href": "https://w3c.github.io/media-capabilities/#dom-audioconfiguration-spatialrendering",
+      "linkingText": [
+        "spatialRendering"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediacapabilitieskeysystemconfiguration",
+      "href": "https://w3c.github.io/media-capabilities/#dictdef-mediacapabilitieskeysystemconfiguration",
+      "linkingText": [
+        "MediaCapabilitiesKeySystemConfiguration"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediacapabilitieskeysystemconfiguration-keysystem",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitieskeysystemconfiguration-keysystem",
+      "linkingText": [
+        "keySystem"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesKeySystemConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediacapabilitieskeysystemconfiguration-initdatatype",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitieskeysystemconfiguration-initdatatype",
+      "linkingText": [
+        "initDataType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesKeySystemConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediacapabilitieskeysystemconfiguration-distinctiveidentifier",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitieskeysystemconfiguration-distinctiveidentifier",
+      "linkingText": [
+        "distinctiveIdentifier"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesKeySystemConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediacapabilitieskeysystemconfiguration-persistentstate",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitieskeysystemconfiguration-persistentstate",
+      "linkingText": [
+        "persistentState"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesKeySystemConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediacapabilitieskeysystemconfiguration-sessiontypes",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitieskeysystemconfiguration-sessiontypes",
+      "linkingText": [
+        "sessionTypes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesKeySystemConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediacapabilitieskeysystemconfiguration-audio",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitieskeysystemconfiguration-audio",
+      "linkingText": [
+        "audio"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesKeySystemConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediacapabilitieskeysystemconfiguration-video",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitieskeysystemconfiguration-video",
+      "linkingText": [
+        "video"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesKeySystemConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-keysystemtrackconfiguration",
+      "href": "https://w3c.github.io/media-capabilities/#dictdef-keysystemtrackconfiguration",
+      "linkingText": [
+        "KeySystemTrackConfiguration"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keysystemtrackconfiguration-robustness",
+      "href": "https://w3c.github.io/media-capabilities/#dom-keysystemtrackconfiguration-robustness",
+      "linkingText": [
+        "robustness"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeySystemTrackConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keysystemtrackconfiguration-encryptionscheme",
+      "href": "https://w3c.github.io/media-capabilities/#dom-keysystemtrackconfiguration-encryptionscheme",
+      "linkingText": [
+        "encryptionScheme"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeySystemTrackConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediacapabilitiesinfo",
+      "href": "https://w3c.github.io/media-capabilities/#dictdef-mediacapabilitiesinfo",
+      "linkingText": [
+        "MediaCapabilitiesInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediacapabilitiesinfo-supported",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitiesinfo-supported",
+      "linkingText": [
+        "supported"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesInfo"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediacapabilitiesinfo-smooth",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitiesinfo-smooth",
+      "linkingText": [
+        "smooth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesInfo"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediacapabilitiesinfo-powerefficient",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitiesinfo-powerefficient",
+      "linkingText": [
+        "powerEfficient"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesInfo"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediacapabilitiesdecodinginfo",
+      "href": "https://w3c.github.io/media-capabilities/#dictdef-mediacapabilitiesdecodinginfo",
+      "linkingText": [
+        "MediaCapabilitiesDecodingInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediacapabilitiesdecodinginfo-keysystemaccess",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitiesdecodinginfo-keysystemaccess",
+      "linkingText": [
+        "keySystemAccess"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesDecodingInfo"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediacapabilitiesdecodinginfo-configuration",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitiesdecodinginfo-configuration",
+      "linkingText": [
+        "configuration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesDecodingInfo"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediacapabilitiesencodinginfo",
+      "href": "https://w3c.github.io/media-capabilities/#dictdef-mediacapabilitiesencodinginfo",
+      "linkingText": [
+        "MediaCapabilitiesEncodingInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediacapabilitiesencodinginfo-configuration",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilitiesencodinginfo-configuration",
+      "linkingText": [
+        "configuration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesEncodingInfo"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mediacapabilitiesinfo-supported",
+      "href": "https://w3c.github.io/media-capabilities/#mediacapabilitiesinfo-supported",
+      "linkingText": [
+        "supported"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaCapabilitiesInfo"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mediacapabilitiesinfo-smooth",
+      "href": "https://w3c.github.io/media-capabilities/#mediacapabilitiesinfo-smooth",
+      "linkingText": [
+        "smooth"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaCapabilitiesInfo"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mediacapabilitiesinfo-powerefficient",
+      "href": "https://w3c.github.io/media-capabilities/#mediacapabilitiesinfo-powerefficient",
+      "linkingText": [
+        "powerEfficient"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaCapabilitiesInfo"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mediacapabilitiesdecodinginfo-keysystemaccess",
+      "href": "https://w3c.github.io/media-capabilities/#mediacapabilitiesdecodinginfo-keysystemaccess",
+      "linkingText": [
+        "keySystemAccess"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaCapabilitiesDecodingInfo"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mediacapabilitiesdecodinginfo-configuration",
+      "href": "https://w3c.github.io/media-capabilities/#mediacapabilitiesdecodinginfo-configuration",
+      "linkingText": [
+        "configuration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaCapabilitiesDecodingInfo"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mediacapabilitiesencodinginfo-configuration",
+      "href": "https://w3c.github.io/media-capabilities/#mediacapabilitiesencodinginfo-configuration",
+      "linkingText": [
+        "configuration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaCapabilitiesEncodingInfo"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-a-mediacapabilitiesencodinginfo",
+      "href": "https://w3c.github.io/media-capabilities/#create-a-mediacapabilitiesencodinginfo",
+      "linkingText": [
+        "Create a MediaCapabilitiesEncodingInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-a-mediacapabilitiesdecodinginfo",
+      "href": "https://w3c.github.io/media-capabilities/#create-a-mediacapabilitiesdecodinginfo",
+      "linkingText": [
+        "Create a MediaCapabilitiesDecodingInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "check-encrypted-decoding-support",
+      "href": "https://w3c.github.io/media-capabilities/#check-encrypted-decoding-support",
+      "linkingText": [
+        "Check Encrypted Decoding Support"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator-mediacapabilities",
+      "href": "https://w3c.github.io/media-capabilities/#dom-navigator-mediacapabilities",
+      "linkingText": [
+        "mediaCapabilities"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-workernavigator-mediacapabilities",
+      "href": "https://w3c.github.io/media-capabilities/#dom-workernavigator-mediacapabilities",
+      "linkingText": [
+        "mediaCapabilities"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WorkerNavigator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mediacapabilities",
+      "href": "https://w3c.github.io/media-capabilities/#mediacapabilities",
+      "linkingText": [
+        "MediaCapabilities"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediacapabilities-decodinginfo",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilities-decodinginfo",
+      "linkingText": [
+        "decodingInfo(configuration)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaCapabilities"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediacapabilities-decodinginfo-configuration-configuration",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilities-decodinginfo-configuration-configuration",
+      "linkingText": [
+        "configuration"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaCapabilities/decodingInfo(configuration)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediacapabilities-encodinginfo",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilities-encodinginfo",
+      "linkingText": [
+        "encodingInfo(configuration)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaCapabilities"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediacapabilities-encodinginfo-configuration-configuration",
+      "href": "https://w3c.github.io/media-capabilities/#dom-mediacapabilities-encodinginfo-configuration-configuration",
+      "linkingText": [
+        "configuration"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaCapabilities/encodingInfo(configuration)"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

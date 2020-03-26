@@ -1,0 +1,1084 @@
+{
+  "spec": {
+    "title": "Media Session Standard",
+    "url": "https://w3c.github.io/mediasession/"
+  },
+  "dfns": [
+    {
+      "id": "guessed-playback-state",
+      "href": "https://w3c.github.io/mediasession/#guessed-playback-state",
+      "linkingText": [
+        "guessed playback state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "actual-playback-state",
+      "href": "https://w3c.github.io/mediasession/#actual-playback-state",
+      "linkingText": [
+        "actual playback state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "active-media-session",
+      "href": "https://w3c.github.io/mediasession/#active-media-session",
+      "linkingText": [
+        "active media session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "audio-focus",
+      "href": "https://w3c.github.io/mediasession/#audio-focus",
+      "linkingText": [
+        "audio focus"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "update-metadata-algorithm",
+      "href": "https://w3c.github.io/mediasession/#update-metadata-algorithm",
+      "linkingText": [
+        "update metadata algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fetch-image-algorithm",
+      "href": "https://w3c.github.io/mediasession/#fetch-image-algorithm",
+      "linkingText": [
+        "fetch image algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "preferred-artwork-image",
+      "href": "https://w3c.github.io/mediasession/#preferred-artwork-image",
+      "linkingText": [
+        "preferred artwork image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "media-session-action",
+      "href": "https://w3c.github.io/mediasession/#media-session-action",
+      "linkingText": [
+        "media session action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "media-session-action-source",
+      "href": "https://w3c.github.io/mediasession/#media-session-action-source",
+      "linkingText": [
+        "media session action source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-play",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-play",
+      "linkingText": [
+        "\"play\"",
+        "play"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-pause",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-pause",
+      "linkingText": [
+        "\"pause\"",
+        "pause"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-seekbackward",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-seekbackward",
+      "linkingText": [
+        "\"seekbackward\"",
+        "seekbackward"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-seekforward",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-seekforward",
+      "linkingText": [
+        "\"seekforward\"",
+        "seekforward"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-previoustrack",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-previoustrack",
+      "linkingText": [
+        "\"previoustrack\"",
+        "previoustrack"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-nexttrack",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-nexttrack",
+      "linkingText": [
+        "\"nexttrack\"",
+        "nexttrack"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-skipad",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-skipad",
+      "linkingText": [
+        "\"skipad\"",
+        "skipad"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-stop",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-stop",
+      "linkingText": [
+        "\"stop\"",
+        "stop"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-seekto",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasessionaction-seekto",
+      "linkingText": [
+        "\"seekto\"",
+        "seekto"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "supported-media-session-actions",
+      "href": "https://w3c.github.io/mediasession/#supported-media-session-actions",
+      "linkingText": [
+        "supported media session actions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "update-action-handler-algorithm",
+      "href": "https://w3c.github.io/mediasession/#update-action-handler-algorithm",
+      "linkingText": [
+        "update action handler algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "handle-media-session-action",
+      "href": "https://w3c.github.io/mediasession/#handle-media-session-action",
+      "linkingText": [
+        "handle media session action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "media-session-actions-update-algorithm",
+      "href": "https://w3c.github.io/mediasession/#media-session-actions-update-algorithm",
+      "linkingText": [
+        "media session actions update algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "position-state①",
+      "href": "https://w3c.github.io/mediasession/#position-state%E2%91%A0",
+      "linkingText": [
+        "position state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "duration",
+      "href": "https://w3c.github.io/mediasession/#duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "playback-rate",
+      "href": "https://w3c.github.io/mediasession/#playback-rate",
+      "linkingText": [
+        "playback rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "last-reported-playback-position",
+      "href": "https://w3c.github.io/mediasession/#last-reported-playback-position",
+      "linkingText": [
+        "last reported playback position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "last-position-updated-time",
+      "href": "https://w3c.github.io/mediasession/#last-position-updated-time",
+      "linkingText": [
+        "last position updated time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "actual-playback-rate",
+      "href": "https://w3c.github.io/mediasession/#actual-playback-rate",
+      "linkingText": [
+        "actual playback rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "current-playback-position",
+      "href": "https://w3c.github.io/mediasession/#current-playback-position",
+      "linkingText": [
+        "current playback position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enumdef-mediasessionplaybackstate",
+      "href": "https://w3c.github.io/mediasession/#enumdef-mediasessionplaybackstate",
+      "linkingText": [
+        "MediaSessionPlaybackState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-mediasessionaction",
+      "href": "https://w3c.github.io/mediasession/#enumdef-mediasessionaction",
+      "linkingText": [
+        "MediaSessionAction"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "callbackdef-mediasessionactionhandler",
+      "href": "https://w3c.github.io/mediasession/#callbackdef-mediasessionactionhandler",
+      "linkingText": [
+        "MediaSessionActionHandler"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionactionhandler-details",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasessionactionhandler-details",
+      "linkingText": [
+        "details"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaSessionActionHandler"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mediasession",
+      "href": "https://w3c.github.io/mediasession/#mediasession",
+      "linkingText": [
+        "MediaSession"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasession-setactionhandler-action-handler-action",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasession-setactionhandler-action-handler-action",
+      "linkingText": [
+        "action"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaSession/setActionHandler(action, handler)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasession-setactionhandler-action-handler-handler",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasession-setactionhandler-action-handler-handler",
+      "linkingText": [
+        "handler"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaSession/setActionHandler(action, handler)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasession-setpositionstate-state-state",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasession-setpositionstate-state-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaSession/setPositionState(state)",
+        "MediaSession/setPositionState()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mediasession-metadata",
+      "href": "https://w3c.github.io/mediasession/#mediasession-metadata",
+      "linkingText": [
+        "metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaSession"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator-mediasession",
+      "href": "https://w3c.github.io/mediasession/#dom-navigator-mediasession",
+      "linkingText": [
+        "mediaSession"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasession-metadata",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasession-metadata",
+      "linkingText": [
+        "metadata"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaSession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasession-playbackstate",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasession-playbackstate",
+      "linkingText": [
+        "playbackState"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaSession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "declared-playback-state",
+      "href": "https://w3c.github.io/mediasession/#declared-playback-state",
+      "linkingText": [
+        "declared playback state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionplaybackstate-none",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasessionplaybackstate-none",
+      "linkingText": [
+        "\"none\"",
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionPlaybackState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionplaybackstate-playing",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasessionplaybackstate-playing",
+      "linkingText": [
+        "\"playing\"",
+        "playing"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionPlaybackState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionplaybackstate-paused",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasessionplaybackstate-paused",
+      "linkingText": [
+        "\"paused\"",
+        "paused"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionPlaybackState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasession-setactionhandler",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasession-setactionhandler",
+      "linkingText": [
+        "setActionHandler(action, handler)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaSession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasession-setpositionstate",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasession-setpositionstate",
+      "linkingText": [
+        "setPositionState(state)",
+        "setPositionState()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaSession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mediametadata",
+      "href": "https://w3c.github.io/mediasession/#mediametadata",
+      "linkingText": [
+        "MediaMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadata-mediametadata-init-init",
+      "href": "https://w3c.github.io/mediasession/#dom-mediametadata-mediametadata-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaMetadata/MediaMetadata(init)",
+        "MediaMetadata/constructor(init)",
+        "MediaMetadata/MediaMetadata()",
+        "MediaMetadata/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediametadatainit",
+      "href": "https://w3c.github.io/mediasession/#dictdef-mediametadatainit",
+      "linkingText": [
+        "MediaMetadataInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadatainit-title",
+      "href": "https://w3c.github.io/mediasession/#dom-mediametadatainit-title",
+      "linkingText": [
+        "title"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaMetadataInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadatainit-artist",
+      "href": "https://w3c.github.io/mediasession/#dom-mediametadatainit-artist",
+      "linkingText": [
+        "artist"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaMetadataInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadatainit-album",
+      "href": "https://w3c.github.io/mediasession/#dom-mediametadatainit-album",
+      "linkingText": [
+        "album"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaMetadataInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadatainit-artwork",
+      "href": "https://w3c.github.io/mediasession/#dom-mediametadatainit-artwork",
+      "linkingText": [
+        "artwork"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaMetadataInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mediametadata-media-session",
+      "href": "https://w3c.github.io/mediasession/#mediametadata-media-session",
+      "linkingText": [
+        "media session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mediametadata-title",
+      "href": "https://w3c.github.io/mediasession/#mediametadata-title",
+      "linkingText": [
+        "title"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mediametadata-artist",
+      "href": "https://w3c.github.io/mediasession/#mediametadata-artist",
+      "linkingText": [
+        "artist"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mediametadata-album",
+      "href": "https://w3c.github.io/mediasession/#mediametadata-album",
+      "linkingText": [
+        "album"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mediametadata-artwork-images",
+      "href": "https://w3c.github.io/mediasession/#mediametadata-artwork-images",
+      "linkingText": [
+        "artwork images"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "empty-metadata",
+      "href": "https://w3c.github.io/mediasession/#empty-metadata",
+      "linkingText": [
+        "empty metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadata-mediametadata",
+      "href": "https://w3c.github.io/mediasession/#dom-mediametadata-mediametadata",
+      "linkingText": [
+        "MediaMetadata(init)",
+        "constructor(init)",
+        "MediaMetadata()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "convert-artwork-algorithm",
+      "href": "https://w3c.github.io/mediasession/#convert-artwork-algorithm",
+      "linkingText": [
+        "convert artwork algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadata-title",
+      "href": "https://w3c.github.io/mediasession/#dom-mediametadata-title",
+      "linkingText": [
+        "title"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadata-artist",
+      "href": "https://w3c.github.io/mediasession/#dom-mediametadata-artist",
+      "linkingText": [
+        "artist"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadata-album",
+      "href": "https://w3c.github.io/mediasession/#dom-mediametadata-album",
+      "linkingText": [
+        "album"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadata-artwork",
+      "href": "https://w3c.github.io/mediasession/#dom-mediametadata-artwork",
+      "linkingText": [
+        "artwork"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediaimage",
+      "href": "https://w3c.github.io/mediasession/#dictdef-mediaimage",
+      "linkingText": [
+        "MediaImage"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaimage-src",
+      "href": "https://w3c.github.io/mediasession/#dom-mediaimage-src",
+      "linkingText": [
+        "src"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaImage"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mediaimage-source",
+      "href": "https://w3c.github.io/mediasession/#mediaimage-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaImage"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaimage-sizes",
+      "href": "https://w3c.github.io/mediasession/#dom-mediaimage-sizes",
+      "linkingText": [
+        "sizes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaImage"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaimage-type",
+      "href": "https://w3c.github.io/mediasession/#dom-mediaimage-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaImage"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediapositionstate",
+      "href": "https://w3c.github.io/mediasession/#dictdef-mediapositionstate",
+      "linkingText": [
+        "MediaPositionState"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediapositionstate-duration",
+      "href": "https://w3c.github.io/mediasession/#dom-mediapositionstate-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaPositionState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediapositionstate-playbackrate",
+      "href": "https://w3c.github.io/mediasession/#dom-mediapositionstate-playbackrate",
+      "linkingText": [
+        "playbackRate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaPositionState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediapositionstate-position",
+      "href": "https://w3c.github.io/mediasession/#dom-mediapositionstate-position",
+      "linkingText": [
+        "position"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaPositionState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediasessionactiondetails",
+      "href": "https://w3c.github.io/mediasession/#dictdef-mediasessionactiondetails",
+      "linkingText": [
+        "MediaSessionActionDetails"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionactiondetails-action",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasessionactiondetails-action",
+      "linkingText": [
+        "action"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaSessionActionDetails"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionactiondetails-seekoffset",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasessionactiondetails-seekoffset",
+      "linkingText": [
+        "seekOffset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaSessionActionDetails"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionactiondetails-seektime",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasessionactiondetails-seektime",
+      "linkingText": [
+        "seekTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaSessionActionDetails"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionactiondetails-fastseek",
+      "href": "https://w3c.github.io/mediasession/#dom-mediasessionactiondetails-fastseek",
+      "linkingText": [
+        "fastSeek"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaSessionActionDetails"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+{
+  "spec": {
+    "title": "CSS Positioned Layout Module Level 3",
+    "url": "https://drafts.csswg.org/css-position/"
+  },
+  "dfns": [
+    {
+      "id": "viewport",
+      "href": "https://drafts.csswg.org/css-position/#viewport",
+      "linkingText": [
+        "viewport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "containing-block",
+      "href": "https://drafts.csswg.org/css-position/#containing-block",
+      "linkingText": [
+        "containing block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "normal-flow",
+      "href": "https://drafts.csswg.org/css-position/#normal-flow",
+      "linkingText": [
+        "Normal Flow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "float",
+      "href": "https://drafts.csswg.org/css-position/#float",
+      "linkingText": [
+        "float",
+        "floated box",
+        "floating box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "positioning-schemes",
+      "href": "https://drafts.csswg.org/css-position/#positioning-schemes",
+      "linkingText": [
+        "Positioning schemes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "relative-position",
+      "href": "https://drafts.csswg.org/css-position/#relative-position",
+      "linkingText": [
+        "relative position",
+        "relatively position",
+        "relpos"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "sticky-position",
+      "href": "https://drafts.csswg.org/css-position/#sticky-position",
+      "linkingText": [
+        "sticky position",
+        "stickily position",
+        "stickypos"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-position",
+      "href": "https://drafts.csswg.org/css-position/#propdef-position",
+      "linkingText": [
+        "position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-position-static",
+      "href": "https://drafts.csswg.org/css-position/#valdef-position-static",
+      "linkingText": [
+        "static"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-position-relative",
+      "href": "https://drafts.csswg.org/css-position/#valdef-position-relative",
+      "linkingText": [
+        "relative"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-position-absolute",
+      "href": "https://drafts.csswg.org/css-position/#valdef-position-absolute",
+      "linkingText": [
+        "absolute"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-position-sticky",
+      "href": "https://drafts.csswg.org/css-position/#valdef-position-sticky",
+      "linkingText": [
+        "sticky"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-position-fixed",
+      "href": "https://drafts.csswg.org/css-position/#valdef-position-fixed",
+      "linkingText": [
+        "fixed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-top",
+      "href": "https://drafts.csswg.org/css-position/#propdef-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-right",
+      "href": "https://drafts.csswg.org/css-position/#propdef-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-bottom",
+      "href": "https://drafts.csswg.org/css-position/#propdef-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-left",
+      "href": "https://drafts.csswg.org/css-position/#propdef-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-top-length",
+      "href": "https://drafts.csswg.org/css-position/#valdef-top-length",
+      "linkingText": [
+        "<length>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "offset-start",
+        "offset-end",
+        "offset-before",
+        "offset-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-top-percentage",
+      "href": "https://drafts.csswg.org/css-position/#valdef-top-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "offset-start",
+        "offset-end",
+        "offset-before",
+        "offset-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-top-auto",
+      "href": "https://drafts.csswg.org/css-position/#valdef-top-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "offset-start",
+        "offset-end",
+        "offset-before",
+        "offset-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-inset-before",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset-before",
+      "linkingText": [
+        "inset-before"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-inset-after",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset-after",
+      "linkingText": [
+        "inset-after"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-inset-start",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset-start",
+      "linkingText": [
+        "inset-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-inset-end",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset-end",
+      "linkingText": [
+        "inset-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stacking-context",
+      "href": "https://drafts.csswg.org/css-position/#stacking-context",
+      "linkingText": [
+        "stacking context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stack-level",
+      "href": "https://drafts.csswg.org/css-position/#stack-level",
+      "linkingText": [
+        "stack level"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "root-stacking-context",
+      "href": "https://drafts.csswg.org/css-position/#root-stacking-context",
+      "linkingText": [
+        "root stacking context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "local-stacking-contexts",
+      "href": "https://drafts.csswg.org/css-position/#local-stacking-contexts",
+      "linkingText": [
+        "local stacking contexts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-z-index",
+      "href": "https://drafts.csswg.org/css-position/#propdef-z-index",
+      "linkingText": [
+        "z-index"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-z-index-integer",
+      "href": "https://drafts.csswg.org/css-position/#valdef-z-index-integer",
+      "linkingText": [
+        "<integer>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "z-index"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-z-index-auto",
+      "href": "https://drafts.csswg.org/css-position/#valdef-z-index-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "z-index"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

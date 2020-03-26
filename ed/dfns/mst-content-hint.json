@@ -1,0 +1,202 @@
+{
+  "spec": {
+    "title": "MediaStreamTrack Content Hints",
+    "url": "https://w3c.github.io/mst-content-hint/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-peerconnection",
+      "href": "https://w3c.github.io/mst-content-hint/#dfn-peerconnection",
+      "linkingText": [
+        "PeerConnection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-mediarecorder",
+      "href": "https://w3c.github.io/mst-content-hint/#dfn-mediarecorder",
+      "linkingText": [
+        "MediaRecorder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-rtcrtpsender",
+      "href": "https://w3c.github.io/mst-content-hint/#dfn-rtcrtpsender",
+      "linkingText": [
+        "RTCRtpSender"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpsendparameters",
+      "href": "https://w3c.github.io/mst-content-hint/#dom-rtcrtpsendparameters",
+      "linkingText": [
+        "RTCRtpSendParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediastreamtrack",
+      "href": "https://w3c.github.io/mst-content-hint/#dom-mediastreamtrack",
+      "linkingText": [
+        "MediaStreamTrack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-kind",
+      "href": "https://w3c.github.io/mst-content-hint/#dfn-kind",
+      "linkingText": [
+        "kind"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-application-set-content-hint",
+      "href": "https://w3c.github.io/mst-content-hint/#dfn-application-set-content-hint",
+      "linkingText": [
+        "application-set\n      content hint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediastreamtrack-contenthint",
+      "href": "https://w3c.github.io/mst-content-hint/#dom-mediastreamtrack-contenthint",
+      "linkingText": [
+        "contentHint"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrack.contentHint"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-apply-a-default",
+      "href": "https://w3c.github.io/mst-content-hint/#dfn-apply-a-default",
+      "linkingText": [
+        "apply a default"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdegradationpreference",
+      "href": "https://w3c.github.io/mst-content-hint/#dom-rtcdegradationpreference",
+      "linkingText": [
+        "RTCDegradationPreference"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [
+        "RTCDegradationPreference"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdegradationpreference-maintain-framerate",
+      "href": "https://w3c.github.io/mst-content-hint/#dom-rtcdegradationpreference-maintain-framerate",
+      "linkingText": [
+        "maintain-framerate"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCDegradationPreference"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdegradationpreference-maintain-resolution",
+      "href": "https://w3c.github.io/mst-content-hint/#dom-rtcdegradationpreference-maintain-resolution",
+      "linkingText": [
+        "maintain-resolution"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCDegradationPreference"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdegradationpreference-balanced",
+      "href": "https://w3c.github.io/mst-content-hint/#dom-rtcdegradationpreference-balanced",
+      "linkingText": [
+        "balanced"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCDegradationPreference"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpsendparameters-degradationpreference",
+      "href": "https://w3c.github.io/mst-content-hint/#dom-rtcrtpsendparameters-degradationpreference",
+      "linkingText": [
+        "degradationPreference"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpSendParameters"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-degradationpreference",
+      "href": "https://w3c.github.io/mst-content-hint/#dfn-degradationpreference",
+      "linkingText": [
+        "degradationPreference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

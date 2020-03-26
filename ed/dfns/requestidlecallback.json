@@ -1,0 +1,503 @@
+{
+  "spec": {
+    "title": "Cooperative Scheduling of Background Tasks",
+    "url": "https://w3c.github.io/requestidlecallback/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-browsing-context",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-browsing-context",
+      "linkingText": [
+        "browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-loop",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-event-loop",
+      "linkingText": [
+        "event loop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-loop-processing-model",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-event-loop-processing-model",
+      "linkingText": [
+        "event loop processing\n    model"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-spin-the-event-loop",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-spin-the-event-loop",
+      "linkingText": [
+        "spin the event\n    loop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fully-active",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-fully-active",
+      "linkingText": [
+        "fully active"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-tasks",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-tasks",
+      "linkingText": [
+        "tasks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-task-source",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-task-source",
+      "linkingText": [
+        "task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-task-queues",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-task-queues",
+      "linkingText": [
+        "task queues"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-queue-a-task",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-queue-a-task",
+      "linkingText": [
+        "queue a task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-microtask-queue",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-microtask-queue",
+      "linkingText": [
+        "microtask queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-list-of-active-timers",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-list-of-active-timers",
+      "linkingText": [
+        "list of active timers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-settimeout",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-settimeout",
+      "linkingText": [
+        "setTimeout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-setinterval",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-setinterval",
+      "linkingText": [
+        "setInterval"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-requestanimationframe",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-requestanimationframe",
+      "linkingText": [
+        "requestAnimationFrame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-report-the-error",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-report-the-error",
+      "linkingText": [
+        "report the error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-current-high-resolution-time",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-current-high-resolution-time",
+      "linkingText": [
+        "current high resolution time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-domhighrestimestamp",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-domhighrestimestamp",
+      "linkingText": [
+        "DOMHighResTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-conforming-implementation",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-conforming-implementation",
+      "linkingText": [
+        "conforming implementation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-hidden",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-hidden",
+      "linkingText": [
+        "hidden"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-window",
+      "href": "https://w3c.github.io/requestidlecallback/#dom-window",
+      "linkingText": [
+        "Window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-list-of-idle-request-callbacks",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-list-of-idle-request-callbacks",
+      "linkingText": [
+        "list of idle request callbacks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-list-of-runnable-idle-callbacks",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-list-of-runnable-idle-callbacks",
+      "linkingText": [
+        "list of runnable idle callbacks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idle-callback-identifier",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-idle-callback-identifier",
+      "linkingText": [
+        "idle callback identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-last-idle-period-deadline",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-last-idle-period-deadline",
+      "linkingText": [
+        "last idle period deadline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-window-requestidlecallback",
+      "href": "https://w3c.github.io/requestidlecallback/#dom-window-requestidlecallback",
+      "linkingText": [
+        "requestIdleCallback()",
+        "requestIdleCallback(callback)",
+        "requestIdleCallback(callback, options)"
+      ],
+      "localLinkingText": [
+        "Window.requestIdleCallback",
+        "Window.requestIdleCallback()",
+        "requestIdleCallback"
+      ],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-idlerequestcallback",
+      "href": "https://w3c.github.io/requestidlecallback/#dom-idlerequestcallback",
+      "linkingText": [
+        "IdleRequestCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-idlerequestoptions",
+      "href": "https://w3c.github.io/requestidlecallback/#dom-idlerequestoptions",
+      "linkingText": [
+        "IdleRequestOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-idlerequestoptions-timeout",
+      "href": "https://w3c.github.io/requestidlecallback/#dom-idlerequestoptions-timeout",
+      "linkingText": [
+        "timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IdleRequestOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-cancelidlecallback",
+      "href": "https://w3c.github.io/requestidlecallback/#dom-window-cancelidlecallback",
+      "linkingText": [
+        "cancelIdleCallback()",
+        "cancelIdleCallback(handle)"
+      ],
+      "localLinkingText": [
+        "Window.cancelIdleCallback",
+        "Window.cancelIdleCallback()",
+        "cancelIdleCallback"
+      ],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-idledeadline",
+      "href": "https://w3c.github.io/requestidlecallback/#dom-idledeadline",
+      "linkingText": [
+        "IdleDeadline"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-time",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-time",
+      "linkingText": [
+        "time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-idledeadline-timeremaining",
+      "href": "https://w3c.github.io/requestidlecallback/#dom-idledeadline-timeremaining",
+      "linkingText": [
+        "timeRemaining()"
+      ],
+      "localLinkingText": [
+        "IdleDeadline.timeRemaining",
+        "IdleDeadline.timeRemaining()",
+        "timeRemaining"
+      ],
+      "type": "method",
+      "for": [
+        "IdleDeadline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-timeout",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-timeout",
+      "linkingText": [
+        "timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-idledeadline-didtimeout",
+      "href": "https://w3c.github.io/requestidlecallback/#dom-idledeadline-didtimeout",
+      "linkingText": [
+        "didTimeout"
+      ],
+      "localLinkingText": [
+        "IdleDeadline.didTimeout"
+      ],
+      "type": "attribute",
+      "for": [
+        "IdleDeadline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-start-an-idle-period-algorithm",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-start-an-idle-period-algorithm",
+      "linkingText": [
+        "start an idle period algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idle-task-task-source",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-idle-task-task-source",
+      "linkingText": [
+        "idle-task\n      task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idle-period",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-idle-period",
+      "linkingText": [
+        "idle period"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-invoke-idle-callbacks-algorithm",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-invoke-idle-callbacks-algorithm",
+      "linkingText": [
+        "invoke idle callbacks algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-invoke-idle-callback-timeout-algorithm",
+      "href": "https://w3c.github.io/requestidlecallback/#dfn-invoke-idle-callback-timeout-algorithm",
+      "linkingText": [
+        "invoke idle callback timeout algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

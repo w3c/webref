@@ -1,0 +1,1082 @@
+{
+  "spec": {
+    "title": "CSS Fill and Stroke Module Level 3",
+    "url": "https://drafts.fxtf.org/fill-stroke/"
+  },
+  "dfns": [
+    {
+      "id": "filled",
+      "href": "https://drafts.fxtf.org/fill-stroke/#filled",
+      "linkingText": [
+        "filled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "stroked",
+      "href": "https://drafts.fxtf.org/fill-stroke/#stroked",
+      "linkingText": [
+        "stroked"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedef-paint",
+      "href": "https://drafts.fxtf.org/fill-stroke/#typedef-paint",
+      "linkingText": [
+        "<paint>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-paint-none",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-paint-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<paint>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-svg-paint",
+      "href": "https://drafts.fxtf.org/fill-stroke/#typedef-svg-paint",
+      "linkingText": [
+        "<svg-paint>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-svg-paint-child",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-svg-paint-child",
+      "linkingText": [
+        "child"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<svg-paint>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-svg-paint-child-integer",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-svg-paint-child-integer",
+      "linkingText": [
+        "child(<integer>)"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<svg-paint>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fill",
+      "href": "https://drafts.fxtf.org/fill-stroke/#fill",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-rule",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-fill-rule",
+      "linkingText": [
+        "fill-rule"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-fill-rule-nonzero",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-fill-rule-nonzero",
+      "linkingText": [
+        "nonzero"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "fill-rule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-fill-rule-evenodd",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-fill-rule-evenodd",
+      "linkingText": [
+        "evenodd"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "fill-rule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-break",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-fill-break",
+      "linkingText": [
+        "fill-break"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-color",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-fill-color",
+      "linkingText": [
+        "fill-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-image",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-fill-image",
+      "linkingText": [
+        "fill-image"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-origin",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-fill-origin",
+      "linkingText": [
+        "fill-origin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fill-positioning-area",
+      "href": "https://drafts.fxtf.org/fill-stroke/#fill-positioning-area",
+      "linkingText": [
+        "fill positioning area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-fill-origin-match-parent",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-fill-origin-match-parent",
+      "linkingText": [
+        "match-parent"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "fill-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-fill-origin-content-box",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-fill-origin-content-box",
+      "linkingText": [
+        "content-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "fill-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-fill-origin-padding-box",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-fill-origin-padding-box",
+      "linkingText": [
+        "padding-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "fill-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-fill-origin-border-box",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-fill-origin-border-box",
+      "linkingText": [
+        "border-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "fill-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-fill-origin-fill-box",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-fill-origin-fill-box",
+      "linkingText": [
+        "fill-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "fill-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-fill-origin-stroke-box",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-fill-origin-stroke-box",
+      "linkingText": [
+        "stroke-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "fill-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fill-painting-area",
+      "href": "https://drafts.fxtf.org/fill-stroke/#fill-painting-area",
+      "linkingText": [
+        "fill painting area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-position",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-fill-position",
+      "linkingText": [
+        "fill-position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-size",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-fill-size",
+      "linkingText": [
+        "fill-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-repeat",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-fill-repeat",
+      "linkingText": [
+        "fill-repeat"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-fill",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-opacity",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-fill-opacity",
+      "linkingText": [
+        "fill-opacity"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stroke",
+      "href": "https://drafts.fxtf.org/fill-stroke/#stroke",
+      "linkingText": [
+        "stroke"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-width",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke-width",
+      "linkingText": [
+        "stroke-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scaled-viewport-size",
+      "href": "https://drafts.fxtf.org/fill-stroke/#scaled-viewport-size",
+      "linkingText": [
+        "scaled viewport size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-align",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke-align",
+      "linkingText": [
+        "stroke-align"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-align-center",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-align-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-align-inset",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-align-inset",
+      "linkingText": [
+        "inset"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-align-outset",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-align-outset",
+      "linkingText": [
+        "outset"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-linecap",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke-linecap",
+      "linkingText": [
+        "stroke-linecap"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linecap-butt",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-linecap-butt",
+      "linkingText": [
+        "butt"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linecap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linecap-round",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-linecap-round",
+      "linkingText": [
+        "round"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linecap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linecap-square",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-linecap-square",
+      "linkingText": [
+        "square"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linecap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-linejoin",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke-linejoin",
+      "linkingText": [
+        "stroke-linejoin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linejoin-crop",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-linejoin-crop",
+      "linkingText": [
+        "crop"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linejoin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linejoin-miter",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-linejoin-miter",
+      "linkingText": [
+        "miter"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linejoin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linejoin-arcs",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-linejoin-arcs",
+      "linkingText": [
+        "arcs"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linejoin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linejoin-bevel",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-linejoin-bevel",
+      "linkingText": [
+        "bevel"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linejoin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linejoin-round",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-linejoin-round",
+      "linkingText": [
+        "round"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linejoin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linejoin-fallback",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-linejoin-fallback",
+      "linkingText": [
+        "fallback"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linejoin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-miterlimit",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke-miterlimit",
+      "linkingText": [
+        "stroke-miterlimit"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-miterlimit-number",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-miterlimit-number",
+      "linkingText": [
+        "<number>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-miterlimit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "--corner-diagonal",
+      "href": "https://drafts.fxtf.org/fill-stroke/#--corner-diagonal",
+      "linkingText": [
+        "corner diagonal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "/"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-break",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke-break",
+      "linkingText": [
+        "stroke-break"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-dasharray",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke-dasharray",
+      "linkingText": [
+        "stroke-dasharray"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-dasharray-none",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-dasharray-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-dasharray"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-dasharray-length-percentage",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-dasharray-length-percentage",
+      "linkingText": [
+        "<length-percentage>+#"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-dasharray"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-dashoffset",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke-dashoffset",
+      "linkingText": [
+        "stroke-dashoffset"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-dash-corner",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke-dash-corner",
+      "linkingText": [
+        "stroke-dash-corner"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-dash-corner-none",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-dash-corner-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-dash-corner"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-dash-justify",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke-dash-justify",
+      "linkingText": [
+        "stroke-dash-justify"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-dash-justify-none",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-dash-justify-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-dash-justify"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-dash-justify-stretch",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-dash-justify-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-dash-justify"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-dash-justify-compress",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-dash-justify-compress",
+      "linkingText": [
+        "compress"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-dash-justify"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-dash-justify-dashes",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-dash-justify-dashes",
+      "linkingText": [
+        "dashes"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-dash-justify"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-dash-justify-gaps",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-dash-justify-gaps",
+      "linkingText": [
+        "gaps"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-dash-justify"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-color",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke-color",
+      "linkingText": [
+        "stroke-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-image",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke-image",
+      "linkingText": [
+        "stroke-image"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-origin",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke-origin",
+      "linkingText": [
+        "stroke-origin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stroke-positioning-area",
+      "href": "https://drafts.fxtf.org/fill-stroke/#stroke-positioning-area",
+      "linkingText": [
+        "stroke positioning area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-origin-match-parent",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-origin-match-parent",
+      "linkingText": [
+        "match-parent"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-origin-content-box",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-origin-content-box",
+      "linkingText": [
+        "content-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-origin-padding-box",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-origin-padding-box",
+      "linkingText": [
+        "padding-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-origin-border-box",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-origin-border-box",
+      "linkingText": [
+        "border-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-origin-fill-box",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-origin-fill-box",
+      "linkingText": [
+        "fill-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-origin-stroke-box",
+      "href": "https://drafts.fxtf.org/fill-stroke/#valdef-stroke-origin-stroke-box",
+      "linkingText": [
+        "stroke-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stroke-painting-area",
+      "href": "https://drafts.fxtf.org/fill-stroke/#stroke-painting-area",
+      "linkingText": [
+        "stroke painting area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-position",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke-position",
+      "linkingText": [
+        "stroke-position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-size",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke-size",
+      "linkingText": [
+        "stroke-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-repeat",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke-repeat",
+      "linkingText": [
+        "stroke-repeat"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke",
+      "linkingText": [
+        "stroke"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-opacity",
+      "href": "https://drafts.fxtf.org/fill-stroke/#propdef-stroke-opacity",
+      "linkingText": [
+        "stroke-opacity"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stroke-shape",
+      "href": "https://drafts.fxtf.org/fill-stroke/#stroke-shape",
+      "linkingText": [
+        "stroke shape"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dash-positions",
+      "href": "https://drafts.fxtf.org/fill-stroke/#dash-positions",
+      "linkingText": [
+        "dash positions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cap-shapes",
+      "href": "https://drafts.fxtf.org/fill-stroke/#cap-shapes",
+      "linkingText": [
+        "cap shapes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "line-join-shape",
+      "href": "https://drafts.fxtf.org/fill-stroke/#line-join-shape",
+      "linkingText": [
+        "line join shape"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "arcs-linejoin",
+      "href": "https://drafts.fxtf.org/fill-stroke/#arcs-linejoin",
+      "linkingText": [
+        "arcs linejoin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

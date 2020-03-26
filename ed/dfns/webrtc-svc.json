@@ -1,0 +1,573 @@
+{
+  "spec": {
+    "title": "Scalable Video Coding (SVC) Extension for WebRTC",
+    "url": "https://w3c.github.io/webrtc-svc/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-user-agent",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-errorevent",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-errorevent",
+      "linkingText": [
+        "ErrorEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-queue-a-task",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-queue-a-task",
+      "linkingText": [
+        "queue a task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fires-a-simple-event",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-fires-a-simple-event",
+      "linkingText": [
+        "fires a simple\n      event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-networking-task-source",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-networking-task-source",
+      "linkingText": [
+        "networking\n      task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-event",
+      "linkingText": [
+        "event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handlers",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-event-handlers",
+      "linkingText": [
+        "event\n      handlers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handler-event-types",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-event-handler-event-types",
+      "linkingText": [
+        "event\n      handler event types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-throw",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-throw",
+      "linkingText": [
+        "throw"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-create",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-create",
+      "linkingText": [
+        "create"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exception"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-simulcast-envelope",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-simulcast-envelope",
+      "linkingText": [
+        "simulcast envelope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fulfill",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-fulfill",
+      "linkingText": [
+        "fulfill",
+        "fulfillment",
+        "fulfilled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-reject",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-reject",
+      "linkingText": [
+        "reject",
+        "rejection",
+        "rejecting",
+        "rejected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-resolve",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-resolve",
+      "linkingText": [
+        "resolve",
+        "resolves",
+        "resolved"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pending",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-settled",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-settled",
+      "linkingText": [
+        "settled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediastream",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-mediastream",
+      "linkingText": [
+        "MediaStream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediastreamtrack",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-mediastreamtrack",
+      "linkingText": [
+        "MediaStreamTrack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediastreamconstraints",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-mediastreamconstraints",
+      "linkingText": [
+        "MediaStreamConstraints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcpeerconnection",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-rtcpeerconnection",
+      "linkingText": [
+        "RTCPeerConnection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcerror",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-rtcerror",
+      "linkingText": [
+        "RTCError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-addtrack",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-addtrack",
+      "linkingText": [
+        "addTrack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-addtransceiver",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-addtransceiver",
+      "linkingText": [
+        "addTransceiver"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-setcodecpreferences",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-setcodecpreferences",
+      "linkingText": [
+        "setCodecPreferences"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-getparameters",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-getparameters",
+      "linkingText": [
+        "getParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-setparameters",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-setparameters",
+      "linkingText": [
+        "setParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcrtpparameters",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-rtcrtpparameters",
+      "linkingText": [
+        "RTCRtpParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcrtpsendparameters",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-rtcrtpsendparameters",
+      "linkingText": [
+        "RTCRtpSendParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcrtpreceiveparameters",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-rtcrtpreceiveparameters",
+      "linkingText": [
+        "RTCRtpReceiveParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcrtpcodingparameters",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-rtcrtpcodingparameters",
+      "linkingText": [
+        "RTCRtpCodingParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpencodingparameters",
+      "href": "https://w3c.github.io/webrtc-svc/#dom-rtcrtpencodingparameters",
+      "linkingText": [
+        "RTCRtpEncodingParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpcodeccapability",
+      "href": "https://w3c.github.io/webrtc-svc/#dom-rtcrtpcodeccapability",
+      "linkingText": [
+        "RTCRtpCodecCapability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcrtptransceiver",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-rtcrtptransceiver",
+      "linkingText": [
+        "RTCRtpTransceiver"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sender",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-sender",
+      "linkingText": [
+        "[[Sender]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-receiver",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-receiver",
+      "linkingText": [
+        "[[Receiver]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcrtpsender",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-rtcrtpsender",
+      "linkingText": [
+        "RTCRtpSender"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sendencodings",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-sendencodings",
+      "linkingText": [
+        "[[SendEncodings]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-lastreturnedparameters",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-lastreturnedparameters",
+      "linkingText": [
+        "[[LastReturnedParameters]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcrtpreceiver",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-rtcrtpreceiver",
+      "linkingText": [
+        "RTCRtpReceiver"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-svc",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-svc",
+      "linkingText": [
+        "SVC"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sst",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-sst",
+      "linkingText": [
+        "SST"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mst",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-mst",
+      "linkingText": [
+        "MST"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-srst",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-srst",
+      "linkingText": [
+        "SRST"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mrst",
+      "href": "https://w3c.github.io/webrtc-svc/#dfn-mrst",
+      "linkingText": [
+        "MRST"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpencodingparameters-scalabilitymode",
+      "href": "https://w3c.github.io/webrtc-svc/#dom-rtcrtpencodingparameters-scalabilitymode",
+      "linkingText": [
+        "scalabilityMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpEncodingParameters"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpcodeccapability-scalabilitymodes",
+      "href": "https://w3c.github.io/webrtc-svc/#dom-rtcrtpcodeccapability-scalabilitymodes",
+      "linkingText": [
+        "scalabilityModes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpCodecCapability"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

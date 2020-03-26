@@ -1,0 +1,841 @@
+{
+  "spec": {
+    "title": "Clipboard API and events",
+    "url": "https://w3c.github.io/clipboard-apis/"
+  },
+  "dfns": [
+    {
+      "id": "editable-context",
+      "href": "https://w3c.github.io/clipboard-apis/#editable-context",
+      "linkingText": [
+        "editable context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "system-clipboard",
+      "href": "https://w3c.github.io/clipboard-apis/#system-clipboard",
+      "linkingText": [
+        "system clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "system-clipboard-data",
+      "href": "https://w3c.github.io/clipboard-apis/#system-clipboard-data",
+      "linkingText": [
+        "system clipboard data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-clipboardeventinit",
+      "href": "https://w3c.github.io/clipboard-apis/#dictdef-clipboardeventinit",
+      "linkingText": [
+        "ClipboardEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboardeventinit-clipboarddata",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboardeventinit-clipboarddata",
+      "linkingText": [
+        "clipboardData"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ClipboardEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "clipboardeventinit-clipboarddata",
+      "href": "https://w3c.github.io/clipboard-apis/#clipboardeventinit-clipboarddata",
+      "linkingText": [
+        "clipboardData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ClipboardEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "clipboardevent",
+      "href": "https://w3c.github.io/clipboard-apis/#clipboardevent",
+      "linkingText": [
+        "ClipboardEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboardevent-clipboardevent",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboardevent-clipboardevent",
+      "linkingText": [
+        "ClipboardEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "ClipboardEvent(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ClipboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboardevent-clipboardevent-type-eventinitdict-type",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboardevent-clipboardevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ClipboardEvent/ClipboardEvent(type, eventInitDict)",
+        "ClipboardEvent/constructor(type, eventInitDict)",
+        "ClipboardEvent/ClipboardEvent(type)",
+        "ClipboardEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboardevent-clipboardevent-type-eventinitdict-eventinitdict",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboardevent-clipboardevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ClipboardEvent/ClipboardEvent(type, eventInitDict)",
+        "ClipboardEvent/constructor(type, eventInitDict)",
+        "ClipboardEvent/ClipboardEvent(type)",
+        "ClipboardEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboardevent-clipboarddata",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboardevent-clipboarddata",
+      "linkingText": [
+        "clipboardData"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ClipboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "clipboardevent-clipboarddata",
+      "href": "https://w3c.github.io/clipboard-apis/#clipboardevent-clipboarddata",
+      "linkingText": [
+        "clipboardData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ClipboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "clipboardchange",
+      "href": "https://w3c.github.io/clipboard-apis/#clipboardchange",
+      "linkingText": [
+        "clipboardchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "copy",
+      "href": "https://w3c.github.io/clipboard-apis/#copy",
+      "linkingText": [
+        "copy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cut",
+      "href": "https://w3c.github.io/clipboard-apis/#cut",
+      "linkingText": [
+        "cut"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "paste",
+      "href": "https://w3c.github.io/clipboard-apis/#paste",
+      "linkingText": [
+        "paste"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "allowed-to-modify-the-clipboard",
+      "href": "https://w3c.github.io/clipboard-apis/#allowed-to-modify-the-clipboard",
+      "linkingText": [
+        "allowed to modify the clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "allowed-to-read-from-clipboard",
+      "href": "https://w3c.github.io/clipboard-apis/#allowed-to-read-from-clipboard",
+      "linkingText": [
+        "allowed to read from clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mandatory-data-types",
+      "href": "https://w3c.github.io/clipboard-apis/#mandatory-data-types",
+      "linkingText": [
+        "Mandatory data types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator-clipboard",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-navigator-clipboard",
+      "linkingText": [
+        "clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "navigator-clipboard",
+      "href": "https://w3c.github.io/clipboard-apis/#navigator-clipboard",
+      "linkingText": [
+        "clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Navigator"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-clipboarditems",
+      "href": "https://w3c.github.io/clipboard-apis/#typedefdef-clipboarditems",
+      "linkingText": [
+        "ClipboardItems"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "clipboard",
+      "href": "https://w3c.github.io/clipboard-apis/#clipboard",
+      "linkingText": [
+        "Clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboard-write-data-data",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboard-write-data-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Clipboard/write(data)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboard-writetext-data-data",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboard-writetext-data-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Clipboard/writeText(data)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-clipboarditemdatatype",
+      "href": "https://w3c.github.io/clipboard-apis/#typedefdef-clipboarditemdatatype",
+      "linkingText": [
+        "ClipboardItemDataType"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-clipboarditemdata",
+      "href": "https://w3c.github.io/clipboard-apis/#typedefdef-clipboarditemdata",
+      "linkingText": [
+        "ClipboardItemData"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "callbackdef-clipboarditemdelayedcallback",
+      "href": "https://w3c.github.io/clipboard-apis/#callbackdef-clipboarditemdelayedcallback",
+      "linkingText": [
+        "ClipboardItemDelayedCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "clipboarditem",
+      "href": "https://w3c.github.io/clipboard-apis/#clipboarditem",
+      "linkingText": [
+        "ClipboardItem"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-clipboarditem",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboarditem-clipboarditem",
+      "linkingText": [
+        "ClipboardItem(items, options)",
+        "constructor(items, options)",
+        "ClipboardItem(items)",
+        "constructor(items)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-clipboarditem-items-options-items",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboarditem-clipboarditem-items-options-items",
+      "linkingText": [
+        "items"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ClipboardItem/ClipboardItem(items, options)",
+        "ClipboardItem/constructor(items, options)",
+        "ClipboardItem/ClipboardItem(items)",
+        "ClipboardItem/constructor(items)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-clipboarditem-items-options-options",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboarditem-clipboarditem-items-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ClipboardItem/ClipboardItem(items, options)",
+        "ClipboardItem/constructor(items, options)",
+        "ClipboardItem/ClipboardItem(items)",
+        "ClipboardItem/constructor(items)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-createdelayed",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboarditem-createdelayed",
+      "linkingText": [
+        "createDelayed(items, options)",
+        "createDelayed(items)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-createdelayed-items-options-items",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboarditem-createdelayed-items-options-items",
+      "linkingText": [
+        "items"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ClipboardItem/createDelayed(items, options)",
+        "ClipboardItem/createDelayed(items)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-createdelayed-items-options-options",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboarditem-createdelayed-items-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ClipboardItem/createDelayed(items, options)",
+        "ClipboardItem/createDelayed(items)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-presentationstyle",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboarditem-presentationstyle",
+      "linkingText": [
+        "presentationStyle"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-lastmodified",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboarditem-lastmodified",
+      "linkingText": [
+        "lastModified"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-delayed",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboarditem-delayed",
+      "linkingText": [
+        "delayed"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-types",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboarditem-types",
+      "linkingText": [
+        "types"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-gettype",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboarditem-gettype",
+      "linkingText": [
+        "getType(type)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-gettype-type-type",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboarditem-gettype-type-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ClipboardItem/getType(type)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-presentationstyle",
+      "href": "https://w3c.github.io/clipboard-apis/#enumdef-presentationstyle",
+      "linkingText": [
+        "PresentationStyle"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationstyle-unspecified",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-presentationstyle-unspecified",
+      "linkingText": [
+        "\"unspecified\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PresentationStyle"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationstyle-inline",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-presentationstyle-inline",
+      "linkingText": [
+        "\"inline\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PresentationStyle"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationstyle-attachment",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-presentationstyle-attachment",
+      "linkingText": [
+        "\"attachment\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PresentationStyle"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-clipboarditemoptions",
+      "href": "https://w3c.github.io/clipboard-apis/#dictdef-clipboarditemoptions",
+      "linkingText": [
+        "ClipboardItemOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditemoptions-presentationstyle",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboarditemoptions-presentationstyle",
+      "linkingText": [
+        "presentationStyle"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ClipboardItemOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboard-read",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboard-read",
+      "linkingText": [
+        "read()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Clipboard"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboard-readtext",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboard-readtext",
+      "linkingText": [
+        "readText()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Clipboard"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboard-write",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboard-write",
+      "linkingText": [
+        "write(data)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Clipboard"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboard-writetext",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboard-writetext",
+      "linkingText": [
+        "writeText(data)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Clipboard"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "script-triggered",
+      "href": "https://w3c.github.io/clipboard-apis/#script-triggered",
+      "linkingText": [
+        "script-triggered"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "script-may-access-clipboard",
+      "href": "https://w3c.github.io/clipboard-apis/#script-may-access-clipboard",
+      "linkingText": [
+        "script-may-access-clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-permissionname-clipboard-read",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-permissionname-clipboard-read",
+      "linkingText": [
+        "\"clipboard-read\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-permissionname-clipboard-write",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-permissionname-clipboard-write",
+      "linkingText": [
+        "\"clipboard-write\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-clipboardpermissiondescriptor",
+      "href": "https://w3c.github.io/clipboard-apis/#dictdef-clipboardpermissiondescriptor",
+      "linkingText": [
+        "ClipboardPermissionDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboardpermissiondescriptor-allowwithoutgesture",
+      "href": "https://w3c.github.io/clipboard-apis/#dom-clipboardpermissiondescriptor-allowwithoutgesture",
+      "linkingText": [
+        "allowWithoutGesture"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ClipboardPermissionDescriptor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "check-clipboard-read-permission",
+      "href": "https://w3c.github.io/clipboard-apis/#check-clipboard-read-permission",
+      "linkingText": [
+        "check clipboard read permission"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "check-clipboard-write-permission",
+      "href": "https://w3c.github.io/clipboard-apis/#check-clipboard-write-permission",
+      "linkingText": [
+        "check clipboard write permission"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "write-content-to-the-clipboard",
+      "href": "https://w3c.github.io/clipboard-apis/#write-content-to-the-clipboard",
+      "linkingText": [
+        "write content to the clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fire-a-clipboard-event",
+      "href": "https://w3c.github.io/clipboard-apis/#fire-a-clipboard-event",
+      "linkingText": [
+        "fire a clipboard event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "process-an-html-paste-event",
+      "href": "https://w3c.github.io/clipboard-apis/#process-an-html-paste-event",
+      "linkingText": [
+        "process an HTML paste event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

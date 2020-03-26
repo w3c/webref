@@ -1,0 +1,2957 @@
+{
+  "spec": {
+    "title": "CSS Fonts Module Level 4",
+    "url": "https://drafts.csswg.org/css-fonts/"
+  },
+  "dfns": [
+    {
+      "id": "propdef-font-family",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-family",
+      "linkingText": [
+        "font-family"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "family-name-value",
+      "href": "https://drafts.csswg.org/css-fonts/#family-name-value",
+      "linkingText": [
+        "<family-name>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "generic-family-value",
+      "href": "https://drafts.csswg.org/css-fonts/#generic-family-value",
+      "linkingText": [
+        "<generic-family>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-family-serif",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-family-serif",
+      "linkingText": [
+        "serif"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-family",
+        "<generic-family>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-family-sans-serif",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-family-sans-serif",
+      "linkingText": [
+        "sans-serif"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-family",
+        "<generic-family>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-family-cursive",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-family-cursive",
+      "linkingText": [
+        "cursive"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-family",
+        "<generic-family>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-family-fantasy",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-family-fantasy",
+      "linkingText": [
+        "fantasy"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-family",
+        "<generic-family>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-family-monospace",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-family-monospace",
+      "linkingText": [
+        "monospace"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-family",
+        "<generic-family>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-family-system-ui",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-family-system-ui",
+      "linkingText": [
+        "system-ui"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-family",
+        "<generic-family>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-family-emoji",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-family-emoji",
+      "linkingText": [
+        "emoji"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-family",
+        "<generic-family>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-family-math",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-family-math",
+      "linkingText": [
+        "math"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-family",
+        "<generic-family>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-family-fangsong",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-family-fangsong",
+      "linkingText": [
+        "fangsong"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-family",
+        "<generic-family>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-family-ui-serif",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-family-ui-serif",
+      "linkingText": [
+        "ui-serif"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-family",
+        "<generic-family>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-family-ui-sans-serif",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-family-ui-sans-serif",
+      "linkingText": [
+        "ui-sans-serif"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-family",
+        "<generic-family>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-family-ui-monospace",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-family-ui-monospace",
+      "linkingText": [
+        "ui-monospace"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-family",
+        "<generic-family>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-family-ui-rounded",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-family-ui-rounded",
+      "linkingText": [
+        "ui-rounded"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-family",
+        "<generic-family>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-weight",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-weight",
+      "linkingText": [
+        "font-weight"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-weight-absolute-values",
+      "href": "https://drafts.csswg.org/css-fonts/#font-weight-absolute-values",
+      "linkingText": [
+        "<font-weight-absolute>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-weight-number",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-weight-number",
+      "linkingText": [
+        "<number>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-weight"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-weight-normal",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-weight-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-weight"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-weight-bold",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-weight-bold",
+      "linkingText": [
+        "bold"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-weight"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-weight-bolder",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-weight-bolder",
+      "linkingText": [
+        "bolder"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-weight"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-weight-lighter",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-weight-lighter",
+      "linkingText": [
+        "lighter"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-weight"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-stretch",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-stretch",
+      "linkingText": [
+        "font-stretch"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-stretch-ultra-condensed",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-stretch-ultra-condensed",
+      "linkingText": [
+        "ultra-condensed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-stretch"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-stretch-extra-condensed",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-stretch-extra-condensed",
+      "linkingText": [
+        "extra-condensed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-stretch"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-stretch-condensed",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-stretch-condensed",
+      "linkingText": [
+        "condensed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-stretch"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-stretch-semi-condensed",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-stretch-semi-condensed",
+      "linkingText": [
+        "semi-condensed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-stretch"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-stretch-normal",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-stretch-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-stretch"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-stretch-semi-expanded",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-stretch-semi-expanded",
+      "linkingText": [
+        "semi-expanded"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-stretch"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-stretch-expanded",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-stretch-expanded",
+      "linkingText": [
+        "expanded"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-stretch"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-stretch-extra-expanded",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-stretch-extra-expanded",
+      "linkingText": [
+        "extra-expanded"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-stretch"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-stretch-ultra-expanded",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-stretch-ultra-expanded",
+      "linkingText": [
+        "ultra-expanded"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-stretch"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-stretch-percentage",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-stretch-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-stretch"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-style",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-style",
+      "linkingText": [
+        "font-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-style-normal",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-style-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-style-italic",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-style-italic",
+      "linkingText": [
+        "italic"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-style-oblique-angle",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-style-oblique-angle",
+      "linkingText": [
+        "oblique <angle>?"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-size",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-size",
+      "linkingText": [
+        "font-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-size-absolute-size",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-size-absolute-size",
+      "linkingText": [
+        "<absolute-size>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-size"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-size-relative-size",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-size-relative-size",
+      "linkingText": [
+        "<relative-size>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-size"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-size-length-percentage",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-size-length-percentage",
+      "linkingText": [
+        "<length-percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-size"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-size-adjust",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-size-adjust",
+      "linkingText": [
+        "font-size-adjust"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "aspect-value",
+      "href": "https://drafts.csswg.org/css-fonts/#aspect-value",
+      "linkingText": [
+        "aspect value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "font-size-adjust-none-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-size-adjust-none-value",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-size-adjust"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "aspect-ratio-value",
+      "href": "https://drafts.csswg.org/css-fonts/#aspect-ratio-value",
+      "linkingText": [
+        "<number>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-size-adjust"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font",
+      "linkingText": [
+        "font"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-variant-css21-values",
+      "href": "https://drafts.csswg.org/css-fonts/#font-variant-css21-values",
+      "linkingText": [
+        "<font-variant-css2>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-stretch-css3-values",
+      "href": "https://drafts.csswg.org/css-fonts/#font-stretch-css3-values",
+      "linkingText": [
+        "<font-stretch-css3>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-caption",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-caption",
+      "linkingText": [
+        "caption"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-icon",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-icon",
+      "linkingText": [
+        "icon"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-menu",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-menu",
+      "linkingText": [
+        "menu"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-message-box",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-message-box",
+      "linkingText": [
+        "message-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-small-caption",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-small-caption",
+      "linkingText": [
+        "small-caption"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-status-bar",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-status-bar",
+      "linkingText": [
+        "status-bar"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-synthesis-weight",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-synthesis-weight",
+      "linkingText": [
+        "font-synthesis-weight"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-synthesis-weight-auto",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-synthesis-weight-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-synthesis-weight"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-synthesis-weight-none",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-synthesis-weight-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-synthesis-weight"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-synthesis-style",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-synthesis-style",
+      "linkingText": [
+        "font-synthesis-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-synthesis-style-auto",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-synthesis-style-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-synthesis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-synthesis-style-none",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-synthesis-style-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-synthesis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-synthesis-small-caps",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-synthesis-small-caps",
+      "linkingText": [
+        "font-synthesis-small-caps"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-synthesis-small-caps-auto",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-synthesis-small-caps-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-synthesis-small-caps"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-synthesis-small-caps-none",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-synthesis-small-caps-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-synthesis-small-caps"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-synthesis",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-synthesis",
+      "linkingText": [
+        "font-synthesis"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-download-timer",
+      "href": "https://drafts.csswg.org/css-fonts/#font-download-timer",
+      "linkingText": [
+        "font download timer"
+      ],
+      "localLinkingText": [
+        "timer"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-block-period",
+      "href": "https://drafts.csswg.org/css-fonts/#font-block-period",
+      "linkingText": [
+        "font block period"
+      ],
+      "localLinkingText": [
+        "block period"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-swap-period",
+      "href": "https://drafts.csswg.org/css-fonts/#font-swap-period",
+      "linkingText": [
+        "font swap period"
+      ],
+      "localLinkingText": [
+        "swap period"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-failure-period",
+      "href": "https://drafts.csswg.org/css-fonts/#font-failure-period",
+      "linkingText": [
+        "font failure period"
+      ],
+      "localLinkingText": [
+        "failure period"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "render-with-a-fallback-font-face",
+      "href": "https://drafts.csswg.org/css-fonts/#render-with-a-fallback-font-face",
+      "linkingText": [
+        "render with a fallback font face"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "render-with-an-invisible-fallback-font-face",
+      "href": "https://drafts.csswg.org/css-fonts/#render-with-an-invisible-fallback-font-face",
+      "linkingText": [
+        "render with an invisible fallback font face"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-font-face-rule",
+      "href": "https://drafts.csswg.org/css-fonts/#at-font-face-rule",
+      "linkingText": [
+        "@font-face"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-font-face-font-family",
+      "href": "https://drafts.csswg.org/css-fonts/#descdef-font-face-font-family",
+      "linkingText": [
+        "font-family"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@font-face"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-font-face-src",
+      "href": "https://drafts.csswg.org/css-fonts/#descdef-font-face-src",
+      "linkingText": [
+        "src"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@font-face"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-format-values",
+      "href": "https://drafts.csswg.org/css-fonts/#font-format-values",
+      "linkingText": [
+        "<font-format>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-technology-values",
+      "href": "https://drafts.csswg.org/css-fonts/#font-technology-values",
+      "linkingText": [
+        "<font-technology>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "color-font-technology-values",
+      "href": "https://drafts.csswg.org/css-fonts/#color-font-technology-values",
+      "linkingText": [
+        "<color-font-technology>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-font-face-font-style",
+      "href": "https://drafts.csswg.org/css-fonts/#descdef-font-face-font-style",
+      "linkingText": [
+        "font-style"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@font-face"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-font-face-font-weight",
+      "href": "https://drafts.csswg.org/css-fonts/#descdef-font-face-font-weight",
+      "linkingText": [
+        "font-weight"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@font-face"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-font-face-font-stretch",
+      "href": "https://drafts.csswg.org/css-fonts/#descdef-font-face-font-stretch",
+      "linkingText": [
+        "font-stretch"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@font-face"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-font-face-unicode-range",
+      "href": "https://drafts.csswg.org/css-fonts/#descdef-font-face-unicode-range",
+      "linkingText": [
+        "unicode-range"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@font-face"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "effective-character-map",
+      "href": "https://drafts.csswg.org/css-fonts/#effective-character-map",
+      "linkingText": [
+        "effective character map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "descdef-font-face-font-feature-settings",
+      "href": "https://drafts.csswg.org/css-fonts/#descdef-font-face-font-feature-settings",
+      "linkingText": [
+        "font-feature-settings"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@font-face"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-font-face-font-variation-settings",
+      "href": "https://drafts.csswg.org/css-fonts/#descdef-font-face-font-variation-settings",
+      "linkingText": [
+        "font-variation-settings"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@font-face"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-font-face-font-named-instance",
+      "href": "https://drafts.csswg.org/css-fonts/#descdef-font-face-font-named-instance",
+      "linkingText": [
+        "font-named-instance"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@font-face"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-font-face-font-display",
+      "href": "https://drafts.csswg.org/css-fonts/#descdef-font-face-font-display",
+      "linkingText": [
+        "font-display"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@font-face"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-face-font-display-auto",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-face-font-display-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@font-face/font-display"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-face-font-display-block",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-face-font-display-block",
+      "linkingText": [
+        "block"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@font-face/font-display"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-face-font-display-swap",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-face-font-display-swap",
+      "linkingText": [
+        "swap"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@font-face/font-display"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-face-font-display-fallback",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-face-font-display-fallback",
+      "linkingText": [
+        "fallback"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@font-face/font-display"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-face-font-display-optional",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-face-font-display-optional",
+      "linkingText": [
+        "optional"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@font-face/font-display"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-font-feature-values-font-display",
+      "href": "https://drafts.csswg.org/css-fonts/#descdef-font-feature-values-font-display",
+      "linkingText": [
+        "font-display"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@font-feature-values"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-font-face-font-language-override",
+      "href": "https://drafts.csswg.org/css-fonts/#descdef-font-face-font-language-override",
+      "linkingText": [
+        "font-language-override"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@font-face"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "character-map",
+      "href": "https://drafts.csswg.org/css-fonts/#character-map",
+      "linkingText": [
+        "character map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "support",
+      "href": "https://drafts.csswg.org/css-fonts/#support",
+      "linkingText": [
+        "support"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "default-face",
+      "href": "https://drafts.csswg.org/css-fonts/#default-face",
+      "linkingText": [
+        "default face"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "composite-face",
+      "href": "https://drafts.csswg.org/css-fonts/#composite-face",
+      "linkingText": [
+        "composite face"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "installed-font-fallback",
+      "href": "https://drafts.csswg.org/css-fonts/#installed-font-fallback",
+      "linkingText": [
+        "installed font fallback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "first-available-font",
+      "href": "https://drafts.csswg.org/css-fonts/#first-available-font",
+      "linkingText": [
+        "first available font"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-kerning",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-kerning",
+      "linkingText": [
+        "font-kerning"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-kerning-auto-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-kerning-auto-value",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-kerning"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-kerning-normal-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-kerning-normal-value",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-kerning"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-kerning-none-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-kerning-none-value",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-kerning"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-variant-ligatures",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-variant-ligatures",
+      "linkingText": [
+        "font-variant-ligatures"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "common-lig-values",
+      "href": "https://drafts.csswg.org/css-fonts/#common-lig-values",
+      "linkingText": [
+        "<common-lig-values>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "discretionary-lig-values",
+      "href": "https://drafts.csswg.org/css-fonts/#discretionary-lig-values",
+      "linkingText": [
+        "<discretionary-lig-values>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "historical-lig-values",
+      "href": "https://drafts.csswg.org/css-fonts/#historical-lig-values",
+      "linkingText": [
+        "<historical-lig-values>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "contextual-alt-values",
+      "href": "https://drafts.csswg.org/css-fonts/#contextual-alt-values",
+      "linkingText": [
+        "<contextual-alt-values>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-variant-ligatures-normal-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-variant-ligatures-normal-value",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-ligatures"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-variant-ligatures-none-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-variant-ligatures-none-value",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-ligatures"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-ligatures-common-ligatures",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-ligatures-common-ligatures",
+      "linkingText": [
+        "common-ligatures"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-ligatures"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-ligatures-no-common-ligatures",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-ligatures-no-common-ligatures",
+      "linkingText": [
+        "no-common-ligatures"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-ligatures"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-ligatures-discretionary-ligatures",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-ligatures-discretionary-ligatures",
+      "linkingText": [
+        "discretionary-ligatures"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-ligatures"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-ligatures-no-discretionary-ligatures",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-ligatures-no-discretionary-ligatures",
+      "linkingText": [
+        "no-discretionary-ligatures"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-ligatures"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-ligatures-historical-ligatures",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-ligatures-historical-ligatures",
+      "linkingText": [
+        "historical-ligatures"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-ligatures"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-ligatures-no-historical-ligatures",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-ligatures-no-historical-ligatures",
+      "linkingText": [
+        "no-historical-ligatures"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-ligatures"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-ligatures-contextual",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-ligatures-contextual",
+      "linkingText": [
+        "contextual"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-ligatures"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-ligatures-no-contextual",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-ligatures-no-contextual",
+      "linkingText": [
+        "no-contextual"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-ligatures"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-variant-position",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-variant-position",
+      "linkingText": [
+        "font-variant-position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-variant-position-normal-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-variant-position-normal-value",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-position-sub",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-position-sub",
+      "linkingText": [
+        "sub"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-position-super",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-position-super",
+      "linkingText": [
+        "super"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-variant-caps",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-variant-caps",
+      "linkingText": [
+        "font-variant-caps"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-variant-caps-normal-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-variant-caps-normal-value",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-caps"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-caps-small-caps",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-small-caps",
+      "linkingText": [
+        "small-caps"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-caps"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-caps-all-small-caps",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-all-small-caps",
+      "linkingText": [
+        "all-small-caps"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-caps"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-caps-petite-caps",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-petite-caps",
+      "linkingText": [
+        "petite-caps"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-caps"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-caps-all-petite-caps",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-all-petite-caps",
+      "linkingText": [
+        "all-petite-caps"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-caps"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-caps-unicase",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-unicase",
+      "linkingText": [
+        "unicase"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-caps"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-caps-titling-caps",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-titling-caps",
+      "linkingText": [
+        "titling-caps"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-caps"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-variant-numeric",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-variant-numeric",
+      "linkingText": [
+        "font-variant-numeric"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "numeric-figure-values",
+      "href": "https://drafts.csswg.org/css-fonts/#numeric-figure-values",
+      "linkingText": [
+        "<numeric-figure-values>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "numeric-spacing-values",
+      "href": "https://drafts.csswg.org/css-fonts/#numeric-spacing-values",
+      "linkingText": [
+        "<numeric-spacing-values>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "numeric-fraction-values",
+      "href": "https://drafts.csswg.org/css-fonts/#numeric-fraction-values",
+      "linkingText": [
+        "<numeric-fraction-values>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-variant-numeric-normal-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-variant-numeric-normal-value",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-numeric"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-numeric-lining-nums",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-numeric-lining-nums",
+      "linkingText": [
+        "lining-nums"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-numeric"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-numeric-oldstyle-nums",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-numeric-oldstyle-nums",
+      "linkingText": [
+        "oldstyle-nums"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-numeric"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-numeric-proportional-nums",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-numeric-proportional-nums",
+      "linkingText": [
+        "proportional-nums"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-numeric"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-numeric-tabular-nums",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-numeric-tabular-nums",
+      "linkingText": [
+        "tabular-nums"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-numeric"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-numeric-diagonal-fractions",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-numeric-diagonal-fractions",
+      "linkingText": [
+        "diagonal-fractions"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-numeric"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-numeric-stacked-fractions",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-numeric-stacked-fractions",
+      "linkingText": [
+        "stacked-fractions"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-numeric"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-numeric-ordinal",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-numeric-ordinal",
+      "linkingText": [
+        "ordinal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-numeric"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-numeric-slashed-zero",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-numeric-slashed-zero",
+      "linkingText": [
+        "slashed-zero"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-numeric"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-variant-alternates",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-variant-alternates",
+      "linkingText": [
+        "font-variant-alternates"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "feature-value-name-value",
+      "href": "https://drafts.csswg.org/css-fonts/#feature-value-name-value",
+      "linkingText": [
+        "<feature-value-name>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-specific",
+      "href": "https://drafts.csswg.org/css-fonts/#font-specific",
+      "linkingText": [
+        "font specific"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "font-variant-alternates-normal-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-variant-alternates-normal-value",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-alternates"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-alternates-historical-forms",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-alternates-historical-forms",
+      "linkingText": [
+        "historical-forms"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-alternates"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stylistic",
+      "href": "https://drafts.csswg.org/css-fonts/#stylistic",
+      "linkingText": [
+        "stylistic(<feature-value-name>)"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-alternates"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "styleset",
+      "href": "https://drafts.csswg.org/css-fonts/#styleset",
+      "linkingText": [
+        "styleset(<feature-value-name>#)"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-alternates"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "character-variant",
+      "href": "https://drafts.csswg.org/css-fonts/#character-variant",
+      "linkingText": [
+        "character-variant(<feature-value-name>#)"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-alternates"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "swash",
+      "href": "https://drafts.csswg.org/css-fonts/#swash",
+      "linkingText": [
+        "swash(<feature-value-name>)"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-alternates"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ornaments",
+      "href": "https://drafts.csswg.org/css-fonts/#ornaments",
+      "linkingText": [
+        "ornaments(<feature-value-name>)"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-alternates"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "annotation",
+      "href": "https://drafts.csswg.org/css-fonts/#annotation",
+      "linkingText": [
+        "annotation(<feature-value-name>)"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-alternates"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-font-feature-values",
+      "href": "https://drafts.csswg.org/css-fonts/#at-ruledef-font-feature-values",
+      "linkingText": [
+        "@font-feature-values"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-feature-value-declaration",
+      "href": "https://drafts.csswg.org/css-fonts/#font-feature-value-declaration",
+      "linkingText": [
+        "font feature value declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-variant-east-asian",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-variant-east-asian",
+      "linkingText": [
+        "font-variant-east-asian"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "east-asian-variant-values",
+      "href": "https://drafts.csswg.org/css-fonts/#east-asian-variant-values",
+      "linkingText": [
+        "<east-asian-variant-values>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "east-asian-width-values",
+      "href": "https://drafts.csswg.org/css-fonts/#east-asian-width-values",
+      "linkingText": [
+        "<east-asian-width-values>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-variant-east-asian-normal-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-variant-east-asian-normal-value",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-east-asian"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-east-asian-jis78",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-east-asian-jis78",
+      "linkingText": [
+        "jis78"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-east-asian"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-east-asian-jis83",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-east-asian-jis83",
+      "linkingText": [
+        "jis83"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-east-asian"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-east-asian-jis90",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-east-asian-jis90",
+      "linkingText": [
+        "jis90"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-east-asian"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-east-asian-jis04",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-east-asian-jis04",
+      "linkingText": [
+        "jis04"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-east-asian"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-east-asian-simplified",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-east-asian-simplified",
+      "linkingText": [
+        "simplified"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-east-asian"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-east-asian-traditional",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-east-asian-traditional",
+      "linkingText": [
+        "traditional"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-east-asian"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-east-asian-full-width",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-east-asian-full-width",
+      "linkingText": [
+        "full-width"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-east-asian"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-east-asian-proportional-width",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-east-asian-proportional-width",
+      "linkingText": [
+        "proportional-width"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-east-asian"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-east-asian-ruby",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-east-asian-ruby",
+      "linkingText": [
+        "ruby"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-east-asian"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-variant",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-variant",
+      "linkingText": [
+        "font-variant"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-variant-normal-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-variant-normal-value",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-variant-none-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-variant-none-value",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-feature-settings",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-feature-settings",
+      "linkingText": [
+        "font-feature-settings"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-feature-settings-normal-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-feature-settings-normal-value",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-feature-settings"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "feature-tag-value",
+      "href": "https://drafts.csswg.org/css-fonts/#feature-tag-value",
+      "linkingText": [
+        "<feature-tag-value>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-feature-settings"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-language-override",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-language-override",
+      "linkingText": [
+        "font-language-override"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-language-override-normal-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-language-override-normal-value",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-language override"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-language-override-string-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-language-override-string-value",
+      "linkingText": [
+        "<string>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-language-override"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-optical-sizing",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-optical-sizing",
+      "linkingText": [
+        "font-optical-sizing"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-optical-sizing-auto-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-optical-sizing-auto-value",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-optical-sizing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-optical-sizing-none-value",
+      "href": "https://drafts.csswg.org/css-fonts/#font-optical-sizing-none-value",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-optical-sizing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-variation-settings",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-variation-settings",
+      "linkingText": [
+        "font-variation-settings"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-palette",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-palette",
+      "linkingText": [
+        "font-palette"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-palette-none",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-palette-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-palette"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-palette-normal",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-palette-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-palette"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-palette-light",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-palette-light",
+      "linkingText": [
+        "light"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-palette"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-palette-dark",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-palette-dark",
+      "linkingText": [
+        "dark"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-palette"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-font-palette-palette-identifier",
+      "href": "https://drafts.csswg.org/css-fonts/#typedef-font-palette-palette-identifier",
+      "linkingText": [
+        "<palette-identifier>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "font-palette"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-font-palette-values",
+      "href": "https://drafts.csswg.org/css-fonts/#at-ruledef-font-palette-values",
+      "linkingText": [
+        "@font-palette-values"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-font-palette-values-font-family",
+      "href": "https://drafts.csswg.org/css-fonts/#descdef-font-palette-values-font-family",
+      "linkingText": [
+        "font-family"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@font-palette-values"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-font-palette-values-base-palette",
+      "href": "https://drafts.csswg.org/css-fonts/#descdef-font-palette-values-base-palette",
+      "linkingText": [
+        "base-palette"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@font-palette-values"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-font-palette-values-override-color",
+      "href": "https://drafts.csswg.org/css-fonts/#descdef-font-palette-values-override-color",
+      "linkingText": [
+        "override-color"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@font-palette-values"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-font-variant-emoji",
+      "href": "https://drafts.csswg.org/css-fonts/#propdef-font-variant-emoji",
+      "linkingText": [
+        "font-variant-emoji"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "emoji-presentation-participating-code-points",
+      "href": "https://drafts.csswg.org/css-fonts/#emoji-presentation-participating-code-points",
+      "linkingText": [
+        "Emoji Presentation Participating Code Points"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-emoji-auto",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-emoji-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-emoji"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-emoji-text",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-emoji-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-emoji"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-emoji-emoji",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-emoji-emoji",
+      "linkingText": [
+        "emoji"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-emoji"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-font-variant-emoji-unicode",
+      "href": "https://drafts.csswg.org/css-fonts/#valdef-font-variant-emoji-unicode",
+      "linkingText": [
+        "unicode"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-variant-emoji"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssfontfacerule-interface",
+      "href": "https://drafts.csswg.org/css-fonts/#cssfontfacerule-interface",
+      "linkingText": [
+        "CSSFontFaceRule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cssfontfacerule",
+      "href": "https://drafts.csswg.org/css-fonts/#cssfontfacerule",
+      "linkingText": [
+        "CSSFontFaceRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontfacerule-style",
+      "href": "https://drafts.csswg.org/css-fonts/#dom-cssfontfacerule-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSFontFaceRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-font_feature_values_rule",
+      "href": "https://drafts.csswg.org/css-fonts/#dom-cssrule-font_feature_values_rule",
+      "linkingText": [
+        "FONT_FEATURE_VALUES_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssfontfeaturevaluesrule",
+      "href": "https://drafts.csswg.org/css-fonts/#cssfontfeaturevaluesrule",
+      "linkingText": [
+        "CSSFontFeatureValuesRule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cssfontfeaturevaluesrule①",
+      "href": "https://drafts.csswg.org/css-fonts/#cssfontfeaturevaluesrule%E2%91%A0",
+      "linkingText": [
+        "CSSFontFeatureValuesRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontfeaturevaluesrule-fontfamily",
+      "href": "https://drafts.csswg.org/css-fonts/#dom-cssfontfeaturevaluesrule-fontfamily",
+      "linkingText": [
+        "fontFamily"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSFontFeatureValuesRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontfeaturevaluesrule-annotation",
+      "href": "https://drafts.csswg.org/css-fonts/#dom-cssfontfeaturevaluesrule-annotation",
+      "linkingText": [
+        "annotation"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSFontFeatureValuesRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontfeaturevaluesrule-ornaments",
+      "href": "https://drafts.csswg.org/css-fonts/#dom-cssfontfeaturevaluesrule-ornaments",
+      "linkingText": [
+        "ornaments"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSFontFeatureValuesRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontfeaturevaluesrule-stylistic",
+      "href": "https://drafts.csswg.org/css-fonts/#dom-cssfontfeaturevaluesrule-stylistic",
+      "linkingText": [
+        "stylistic"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSFontFeatureValuesRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontfeaturevaluesrule-swash",
+      "href": "https://drafts.csswg.org/css-fonts/#dom-cssfontfeaturevaluesrule-swash",
+      "linkingText": [
+        "swash"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSFontFeatureValuesRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontfeaturevaluesrule-charactervariant",
+      "href": "https://drafts.csswg.org/css-fonts/#dom-cssfontfeaturevaluesrule-charactervariant",
+      "linkingText": [
+        "characterVariant"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSFontFeatureValuesRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontfeaturevaluesrule-styleset",
+      "href": "https://drafts.csswg.org/css-fonts/#dom-cssfontfeaturevaluesrule-styleset",
+      "linkingText": [
+        "styleset"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSFontFeatureValuesRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssfontfeaturevaluesmap",
+      "href": "https://drafts.csswg.org/css-fonts/#cssfontfeaturevaluesmap",
+      "linkingText": [
+        "CSSFontFeatureValuesMap"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontfeaturevaluesmap-set",
+      "href": "https://drafts.csswg.org/css-fonts/#dom-cssfontfeaturevaluesmap-set",
+      "linkingText": [
+        "set(featureValueName, values)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSFontFeatureValuesMap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontfeaturevaluesmap-set-featurevaluename-values-featurevaluename",
+      "href": "https://drafts.csswg.org/css-fonts/#dom-cssfontfeaturevaluesmap-set-featurevaluename-values-featurevaluename",
+      "linkingText": [
+        "featureValueName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSFontFeatureValuesMap/set(featureValueName, values)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontfeaturevaluesmap-set-featurevaluename-values-values",
+      "href": "https://drafts.csswg.org/css-fonts/#dom-cssfontfeaturevaluesmap-set-featurevaluename-values-values",
+      "linkingText": [
+        "values"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSFontFeatureValuesMap/set(featureValueName, values)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-font_palette_values_rule",
+      "href": "https://drafts.csswg.org/css-fonts/#dom-cssrule-font_palette_values_rule",
+      "linkingText": [
+        "FONT_PALETTE_VALUES_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssfontpalettevaluesrule",
+      "href": "https://drafts.csswg.org/css-fonts/#cssfontpalettevaluesrule",
+      "linkingText": [
+        "CSSFontPaletteValuesRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontpalettevaluesrule-fontfamily",
+      "href": "https://drafts.csswg.org/css-fonts/#dom-cssfontpalettevaluesrule-fontfamily",
+      "linkingText": [
+        "fontFamily"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSFontPaletteValuesRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontpalettevaluesrule-basepalette",
+      "href": "https://drafts.csswg.org/css-fonts/#dom-cssfontpalettevaluesrule-basepalette",
+      "linkingText": [
+        "basePalette"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSFontPaletteValuesRule"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

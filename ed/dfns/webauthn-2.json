@@ -1,0 +1,4102 @@
+{
+  "spec": {
+    "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
+    "url": "https://w3c.github.io/webauthn/"
+  },
+  "dfns": [
+    {
+      "id": "webauthn-fido2-protocol",
+      "href": "https://w3c.github.io/webauthn/#webauthn-fido2-protocol",
+      "linkingText": [
+        "WebAuthn/FIDO2 protocol"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "base64url-encoding",
+      "href": "https://w3c.github.io/webauthn/#base64url-encoding",
+      "linkingText": [
+        "Base64url Encoding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cbor",
+      "href": "https://w3c.github.io/webauthn/#cbor",
+      "linkingText": [
+        "CBOR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attestation",
+      "href": "https://w3c.github.io/webauthn/#attestation",
+      "linkingText": [
+        "Attestation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attestation-certificate",
+      "href": "https://w3c.github.io/webauthn/#attestation-certificate",
+      "linkingText": [
+        "Attestation Certificate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attestation-key-pair",
+      "href": "https://w3c.github.io/webauthn/#attestation-key-pair",
+      "linkingText": [
+        "attestation key pair"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attestation-private-key",
+      "href": "https://w3c.github.io/webauthn/#attestation-private-key",
+      "linkingText": [
+        "attestation private key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attestation-public-key",
+      "href": "https://w3c.github.io/webauthn/#attestation-public-key",
+      "linkingText": [
+        "attestation public key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authentication",
+      "href": "https://w3c.github.io/webauthn/#authentication",
+      "linkingText": [
+        "Authentication"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authentication-ceremony",
+      "href": "https://w3c.github.io/webauthn/#authentication-ceremony",
+      "linkingText": [
+        "Authentication Ceremony"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authentication-assertion",
+      "href": "https://w3c.github.io/webauthn/#authentication-assertion",
+      "linkingText": [
+        "Authentication Assertion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "assertion",
+      "href": "https://w3c.github.io/webauthn/#assertion",
+      "linkingText": [
+        "Assertion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticator",
+      "href": "https://w3c.github.io/webauthn/#authenticator",
+      "linkingText": [
+        "Authenticator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webauthn-authenticator",
+      "href": "https://w3c.github.io/webauthn/#webauthn-authenticator",
+      "linkingText": [
+        "WebAuthn Authenticator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authorization-gesture",
+      "href": "https://w3c.github.io/webauthn/#authorization-gesture",
+      "linkingText": [
+        "Authorization Gesture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "biometric-recognition",
+      "href": "https://w3c.github.io/webauthn/#biometric-recognition",
+      "linkingText": [
+        "Biometric Recognition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "biometric-authenticator",
+      "href": "https://w3c.github.io/webauthn/#biometric-authenticator",
+      "linkingText": [
+        "Biometric Authenticator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "bound-credential",
+      "href": "https://w3c.github.io/webauthn/#bound-credential",
+      "linkingText": [
+        "Bound credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ceremony",
+      "href": "https://w3c.github.io/webauthn/#ceremony",
+      "linkingText": [
+        "Ceremony"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "client",
+      "href": "https://w3c.github.io/webauthn/#client",
+      "linkingText": [
+        "Client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webauthn-client",
+      "href": "https://w3c.github.io/webauthn/#webauthn-client",
+      "linkingText": [
+        "WebAuthn Client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "client-device",
+      "href": "https://w3c.github.io/webauthn/#client-device",
+      "linkingText": [
+        "Client Device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webauthn-client-device",
+      "href": "https://w3c.github.io/webauthn/#webauthn-client-device",
+      "linkingText": [
+        "WebAuthn Client Device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "client-platform",
+      "href": "https://w3c.github.io/webauthn/#client-platform",
+      "linkingText": [
+        "Client Platform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "client-side",
+      "href": "https://w3c.github.io/webauthn/#client-side",
+      "linkingText": [
+        "Client-Side"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "client-side-resident-public-key-credential-source",
+      "href": "https://w3c.github.io/webauthn/#client-side-resident-public-key-credential-source",
+      "linkingText": [
+        "Client-side-resident Public Key Credential Source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "resident-credential",
+      "href": "https://w3c.github.io/webauthn/#resident-credential",
+      "linkingText": [
+        "Resident Credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "conforming-user-agent",
+      "href": "https://w3c.github.io/webauthn/#conforming-user-agent",
+      "linkingText": [
+        "Conforming User Agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "credential-id",
+      "href": "https://w3c.github.io/webauthn/#credential-id",
+      "linkingText": [
+        "Credential ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "credential-key-pair",
+      "href": "https://w3c.github.io/webauthn/#credential-key-pair",
+      "linkingText": [
+        "Credential Key Pair"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "credential-private-key",
+      "href": "https://w3c.github.io/webauthn/#credential-private-key",
+      "linkingText": [
+        "Credential Private Key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "credential-public-key",
+      "href": "https://w3c.github.io/webauthn/#credential-public-key",
+      "linkingText": [
+        "Credential Public Key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "user-public-key",
+      "href": "https://w3c.github.io/webauthn/#user-public-key",
+      "linkingText": [
+        "User Public Key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "credential-properties",
+      "href": "https://w3c.github.io/webauthn/#credential-properties",
+      "linkingText": [
+        "Credential Properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "human-palatability",
+      "href": "https://w3c.github.io/webauthn/#human-palatability",
+      "linkingText": [
+        "Human Palatability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "public-key-credential-source",
+      "href": "https://w3c.github.io/webauthn/#public-key-credential-source",
+      "linkingText": [
+        "Public Key Credential Source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "public-key-credential-source-type",
+      "href": "https://w3c.github.io/webauthn/#public-key-credential-source-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "public key credential source"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "public-key-credential-source-id",
+      "href": "https://w3c.github.io/webauthn/#public-key-credential-source-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "public key credential source"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "public-key-credential-source-privatekey",
+      "href": "https://w3c.github.io/webauthn/#public-key-credential-source-privatekey",
+      "linkingText": [
+        "privateKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "public key credential source"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "public-key-credential-source-rpid",
+      "href": "https://w3c.github.io/webauthn/#public-key-credential-source-rpid",
+      "linkingText": [
+        "rpId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "public key credential source"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "public-key-credential-source-userhandle",
+      "href": "https://w3c.github.io/webauthn/#public-key-credential-source-userhandle",
+      "linkingText": [
+        "userHandle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "public key credential source"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "public-key-credential-source-otherui",
+      "href": "https://w3c.github.io/webauthn/#public-key-credential-source-otherui",
+      "linkingText": [
+        "otherUI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "public key credential source"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "public-key-credential-source-managing-authenticator",
+      "href": "https://w3c.github.io/webauthn/#public-key-credential-source-managing-authenticator",
+      "linkingText": [
+        "managing authenticator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "public key\ncredential source"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "public-key-credential",
+      "href": "https://w3c.github.io/webauthn/#public-key-credential",
+      "linkingText": [
+        "Public Key Credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "rate-limiting",
+      "href": "https://w3c.github.io/webauthn/#rate-limiting",
+      "linkingText": [
+        "Rate Limiting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "registration",
+      "href": "https://w3c.github.io/webauthn/#registration",
+      "linkingText": [
+        "Registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "registration-ceremony",
+      "href": "https://w3c.github.io/webauthn/#registration-ceremony",
+      "linkingText": [
+        "Registration Ceremony"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "relying-party",
+      "href": "https://w3c.github.io/webauthn/#relying-party",
+      "linkingText": [
+        "Relying Party"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "relying-party-identifier",
+      "href": "https://w3c.github.io/webauthn/#relying-party-identifier",
+      "linkingText": [
+        "Relying Party Identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "rp-id",
+      "href": "https://w3c.github.io/webauthn/#rp-id",
+      "linkingText": [
+        "RP ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "scope",
+      "href": "https://w3c.github.io/webauthn/#scope",
+      "linkingText": [
+        "scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "determines-the-set-of-origins-on-which-the-public-key-credential-may-be-exercised",
+      "href": "https://w3c.github.io/webauthn/#determines-the-set-of-origins-on-which-the-public-key-credential-may-be-exercised",
+      "linkingText": [
+        "determines the set of origins on which the public key credential may be exercised"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "server-side-resident-public-key-credential-source",
+      "href": "https://w3c.github.io/webauthn/#server-side-resident-public-key-credential-source",
+      "linkingText": [
+        "Server-side-resident Public Key Credential Source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "non-resident-credential",
+      "href": "https://w3c.github.io/webauthn/#non-resident-credential",
+      "linkingText": [
+        "Non-Resident Credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "test-of-user-presence",
+      "href": "https://w3c.github.io/webauthn/#test-of-user-presence",
+      "linkingText": [
+        "Test of User Presence"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "user-consent",
+      "href": "https://w3c.github.io/webauthn/#user-consent",
+      "linkingText": [
+        "User Consent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "user-handle",
+      "href": "https://w3c.github.io/webauthn/#user-handle",
+      "linkingText": [
+        "User Handle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "user-verification",
+      "href": "https://w3c.github.io/webauthn/#user-verification",
+      "linkingText": [
+        "User Verification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-user-present",
+      "href": "https://w3c.github.io/webauthn/#concept-user-present",
+      "linkingText": [
+        "User Present"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "up",
+      "href": "https://w3c.github.io/webauthn/#up",
+      "linkingText": [
+        "UP"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-user-verified",
+      "href": "https://w3c.github.io/webauthn/#concept-user-verified",
+      "linkingText": [
+        "User Verified"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "uv",
+      "href": "https://w3c.github.io/webauthn/#uv",
+      "linkingText": [
+        "UV"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webauthn-relying-party",
+      "href": "https://w3c.github.io/webauthn/#webauthn-relying-party",
+      "linkingText": [
+        "WebAuthn Relying Party"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "web-application",
+      "href": "https://w3c.github.io/webauthn/#web-application",
+      "linkingText": [
+        "web application"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "web-authentication-api",
+      "href": "https://w3c.github.io/webauthn/#web-authentication-api",
+      "linkingText": [
+        "Web Authentication API"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "publickeycredential",
+      "href": "https://w3c.github.io/webauthn/#publickeycredential",
+      "linkingText": [
+        "PublicKeyCredential"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-rawid",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-rawid",
+      "linkingText": [
+        "rawId"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-getclientextensionresults",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-getclientextensionresults",
+      "linkingText": [
+        "getClientExtensionResults()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-response",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-response",
+      "linkingText": [
+        "response"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-type-slot",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-type-slot",
+      "linkingText": [
+        "[[type]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-discovery-slot",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-discovery-slot",
+      "linkingText": [
+        "[[discovery]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-identifier-slot",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-identifier-slot",
+      "linkingText": [
+        "[[identifier]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-clientextensionsresults-slot",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-clientextensionsresults-slot",
+      "linkingText": [
+        "[[clientExtensionsResults]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-credentialcreationoptions-publickey",
+      "href": "https://w3c.github.io/webauthn/#dom-credentialcreationoptions-publickey",
+      "linkingText": [
+        "publicKey"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CredentialCreationOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-credentialrequestoptions-publickey",
+      "href": "https://w3c.github.io/webauthn/#dom-credentialrequestoptions-publickey",
+      "linkingText": [
+        "publicKey"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-create-slot",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-create-slot",
+      "linkingText": [
+        "[[Create]](origin, options, sameOriginWithAncestors)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-create-origin-options-sameoriginwithancestors-origin",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-create-origin-options-sameoriginwithancestors-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PublicKeyCredential/[[Create]](origin, options, sameOriginWithAncestors)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-create-origin-options-sameoriginwithancestors-options",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-create-origin-options-sameoriginwithancestors-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PublicKeyCredential/[[Create]](origin, options, sameOriginWithAncestors)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-create-origin-options-sameoriginwithancestors-sameoriginwithancestors",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-create-origin-options-sameoriginwithancestors-sameoriginwithancestors",
+      "linkingText": [
+        "sameOriginWithAncestors"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PublicKeyCredential/[[Create]](origin, options, sameOriginWithAncestors)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "effective-resident-key-requirement-for-credential-creation",
+      "href": "https://w3c.github.io/webauthn/#effective-resident-key-requirement-for-credential-creation",
+      "linkingText": [
+        "effective resident key requirement for credential creation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "effective-user-verification-requirement-for-credential-creation",
+      "href": "https://w3c.github.io/webauthn/#effective-user-verification-requirement-for-credential-creation",
+      "linkingText": [
+        "effective user verification requirement for credential creation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "credentialcreationdata-attestationobjectresult",
+      "href": "https://w3c.github.io/webauthn/#credentialcreationdata-attestationobjectresult",
+      "linkingText": [
+        "attestationObjectResult"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "credentialCreationData"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "credentialcreationdata-clientdatajsonresult",
+      "href": "https://w3c.github.io/webauthn/#credentialcreationdata-clientdatajsonresult",
+      "linkingText": [
+        "clientDataJSONResult"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "credentialCreationData"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "credentialcreationdata-attestationconveyancepreferenceoption",
+      "href": "https://w3c.github.io/webauthn/#credentialcreationdata-attestationconveyancepreferenceoption",
+      "linkingText": [
+        "attestationConveyancePreferenceOption"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "credentialCreationData"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "credentialcreationdata-clientextensionresults",
+      "href": "https://w3c.github.io/webauthn/#credentialcreationdata-clientextensionresults",
+      "linkingText": [
+        "clientExtensionResults"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "credentialCreationData"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-collectfromcredentialstore-slot",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-collectfromcredentialstore-slot",
+      "linkingText": [
+        "[[CollectFromCredentialStore]](origin, options, sameOriginWithAncestors)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-discoverfromexternalsource-slot",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-discoverfromexternalsource-slot",
+      "linkingText": [
+        "[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-origin",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PublicKeyCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-options",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PublicKeyCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-sameoriginwithancestors",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-sameoriginwithancestors",
+      "linkingText": [
+        "sameOriginWithAncestors"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PublicKeyCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "effective-user-verification-requirement-for-assertion",
+      "href": "https://w3c.github.io/webauthn/#effective-user-verification-requirement-for-assertion",
+      "linkingText": [
+        "effective user verification requirement for assertion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "assertioncreationdata-credentialidresult",
+      "href": "https://w3c.github.io/webauthn/#assertioncreationdata-credentialidresult",
+      "linkingText": [
+        "credentialIdResult"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "assertionCreationData"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "assertioncreationdata-clientdatajsonresult",
+      "href": "https://w3c.github.io/webauthn/#assertioncreationdata-clientdatajsonresult",
+      "linkingText": [
+        "clientDataJSONResult"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "assertionCreationData"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "assertioncreationdata-authenticatordataresult",
+      "href": "https://w3c.github.io/webauthn/#assertioncreationdata-authenticatordataresult",
+      "linkingText": [
+        "authenticatorDataResult"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "assertionCreationData"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "assertioncreationdata-signatureresult",
+      "href": "https://w3c.github.io/webauthn/#assertioncreationdata-signatureresult",
+      "linkingText": [
+        "signatureResult"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "assertionCreationData"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "assertioncreationdata-userhandleresult",
+      "href": "https://w3c.github.io/webauthn/#assertioncreationdata-userhandleresult",
+      "linkingText": [
+        "userHandleResult"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "assertionCreationData"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "assertioncreationdata-clientextensionresults",
+      "href": "https://w3c.github.io/webauthn/#assertioncreationdata-clientextensionresults",
+      "linkingText": [
+        "clientExtensionResults"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "assertionCreationData"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-store-slot",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-store-slot",
+      "linkingText": [
+        "[[Store]](credential, sameOriginWithAncestors)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-store-credential-sameoriginwithancestors-credential",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-store-credential-sameoriginwithancestors-credential",
+      "linkingText": [
+        "credential"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PublicKeyCredential/[[Store]](credential, sameOriginWithAncestors)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-store-credential-sameoriginwithancestors-sameoriginwithancestors",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-store-credential-sameoriginwithancestors-sameoriginwithancestors",
+      "linkingText": [
+        "sameOriginWithAncestors"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PublicKeyCredential/[[Store]](credential, sameOriginWithAncestors)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-preventsilentaccess-slot",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-preventsilentaccess-slot",
+      "linkingText": [
+        "[[preventSilentAccess]](credential, sameOriginWithAncestors)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-isuserverifyingplatformauthenticatoravailable",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredential-isuserverifyingplatformauthenticatoravailable",
+      "linkingText": [
+        "isUserVerifyingPlatformAuthenticatorAvailable()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PublicKeyCredential"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "authenticatorresponse",
+      "href": "https://w3c.github.io/webauthn/#authenticatorresponse",
+      "linkingText": [
+        "AuthenticatorResponse"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatorresponse-clientdatajson",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorresponse-clientdatajson",
+      "linkingText": [
+        "clientDataJSON"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AuthenticatorResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "authenticatorattestationresponse",
+      "href": "https://w3c.github.io/webauthn/#authenticatorattestationresponse",
+      "linkingText": [
+        "AuthenticatorAttestationResponse"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatorattestationresponse-gettransports",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponse-gettransports",
+      "linkingText": [
+        "getTransports()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AuthenticatorAttestationResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatorattestationresponse-attestationobject",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponse-attestationobject",
+      "linkingText": [
+        "attestationObject"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AuthenticatorAttestationResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatorattestationresponse-transports-slot",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorattestationresponse-transports-slot",
+      "linkingText": [
+        "[[transports]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AuthenticatorAttestationResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "authenticatorassertionresponse",
+      "href": "https://w3c.github.io/webauthn/#authenticatorassertionresponse",
+      "linkingText": [
+        "AuthenticatorAssertionResponse"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatorassertionresponse-authenticatordata",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorassertionresponse-authenticatordata",
+      "linkingText": [
+        "authenticatorData"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AuthenticatorAssertionResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatorassertionresponse-signature",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorassertionresponse-signature",
+      "linkingText": [
+        "signature"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AuthenticatorAssertionResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatorassertionresponse-userhandle",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorassertionresponse-userhandle",
+      "linkingText": [
+        "userHandle"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AuthenticatorAssertionResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-publickeycredentialparameters",
+      "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialparameters",
+      "linkingText": [
+        "PublicKeyCredentialParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialparameters-type",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialparameters-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialParameters"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialparameters-alg",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialparameters-alg",
+      "linkingText": [
+        "alg"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialParameters"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-publickeycredentialcreationoptions",
+      "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialcreationoptions",
+      "linkingText": [
+        "PublicKeyCredentialCreationOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptions-rp",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-rp",
+      "linkingText": [
+        "rp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptions-user",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-user",
+      "linkingText": [
+        "user"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptions-challenge",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-challenge",
+      "linkingText": [
+        "challenge"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptions-pubkeycredparams",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-pubkeycredparams",
+      "linkingText": [
+        "pubKeyCredParams"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptions-timeout",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-timeout",
+      "linkingText": [
+        "timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptions-excludecredentials",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-excludecredentials",
+      "linkingText": [
+        "excludeCredentials"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptions-authenticatorselection",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-authenticatorselection",
+      "linkingText": [
+        "authenticatorSelection"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptions-attestation",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-attestation",
+      "linkingText": [
+        "attestation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialcreationoptions-extensions",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-extensions",
+      "linkingText": [
+        "extensions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialCreationOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-publickeycredentialentity",
+      "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialentity",
+      "linkingText": [
+        "PublicKeyCredentialEntity"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialentity-name",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialentity-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialEntity"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-publickeycredentialrpentity",
+      "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialrpentity",
+      "linkingText": [
+        "PublicKeyCredentialRpEntity"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialrpentity-id",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrpentity-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRpEntity"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-publickeycredentialuserentity",
+      "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialuserentity",
+      "linkingText": [
+        "PublicKeyCredentialUserEntity"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialuserentity-id",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialuserentity-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialUserEntity"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialuserentity-displayname",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialuserentity-displayname",
+      "linkingText": [
+        "displayName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialUserEntity"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-authenticatorselectioncriteria",
+      "href": "https://w3c.github.io/webauthn/#dictdef-authenticatorselectioncriteria",
+      "linkingText": [
+        "AuthenticatorSelectionCriteria"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatorselectioncriteria-authenticatorattachment",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorselectioncriteria-authenticatorattachment",
+      "linkingText": [
+        "authenticatorAttachment"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticatorSelectionCriteria"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatorselectioncriteria-requireresidentkey",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorselectioncriteria-requireresidentkey",
+      "linkingText": [
+        "requireResidentKey"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticatorSelectionCriteria"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatorselectioncriteria-residentkey",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorselectioncriteria-residentkey",
+      "linkingText": [
+        "residentKey"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticatorSelectionCriteria"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatorselectioncriteria-userverification",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorselectioncriteria-userverification",
+      "linkingText": [
+        "userVerification"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticatorSelectionCriteria"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-authenticatorattachment",
+      "href": "https://w3c.github.io/webauthn/#enumdef-authenticatorattachment",
+      "linkingText": [
+        "AuthenticatorAttachment"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatorattachment-platform",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorattachment-platform",
+      "linkingText": [
+        "\"platform\"",
+        "platform"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AuthenticatorAttachment"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatorattachment-cross-platform",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorattachment-cross-platform",
+      "linkingText": [
+        "\"cross-platform\"",
+        "cross-platform"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AuthenticatorAttachment"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-residentkeyrequirement",
+      "href": "https://w3c.github.io/webauthn/#enumdef-residentkeyrequirement",
+      "linkingText": [
+        "ResidentKeyRequirement"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-residentkeyrequirement-discouraged",
+      "href": "https://w3c.github.io/webauthn/#dom-residentkeyrequirement-discouraged",
+      "linkingText": [
+        "\"discouraged\"",
+        "discouraged"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ResidentKeyRequirement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-residentkeyrequirement-preferred",
+      "href": "https://w3c.github.io/webauthn/#dom-residentkeyrequirement-preferred",
+      "linkingText": [
+        "\"preferred\"",
+        "preferred"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ResidentKeyRequirement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-residentkeyrequirement-required",
+      "href": "https://w3c.github.io/webauthn/#dom-residentkeyrequirement-required",
+      "linkingText": [
+        "\"required\"",
+        "required"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ResidentKeyRequirement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "attestation-conveyance",
+      "href": "https://w3c.github.io/webauthn/#attestation-conveyance",
+      "linkingText": [
+        "Attestation Conveyance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enumdef-attestationconveyancepreference",
+      "href": "https://w3c.github.io/webauthn/#enumdef-attestationconveyancepreference",
+      "linkingText": [
+        "AttestationConveyancePreference"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-attestationconveyancepreference-none",
+      "href": "https://w3c.github.io/webauthn/#dom-attestationconveyancepreference-none",
+      "linkingText": [
+        "\"none\"",
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AttestationConveyancePreference"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-attestationconveyancepreference-indirect",
+      "href": "https://w3c.github.io/webauthn/#dom-attestationconveyancepreference-indirect",
+      "linkingText": [
+        "\"indirect\"",
+        "indirect"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AttestationConveyancePreference"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-attestationconveyancepreference-direct",
+      "href": "https://w3c.github.io/webauthn/#dom-attestationconveyancepreference-direct",
+      "linkingText": [
+        "\"direct\"",
+        "direct"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AttestationConveyancePreference"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-publickeycredentialrequestoptions",
+      "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialrequestoptions",
+      "linkingText": [
+        "PublicKeyCredentialRequestOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptions-challenge",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-challenge",
+      "linkingText": [
+        "challenge"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptions-timeout",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-timeout",
+      "linkingText": [
+        "timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptions-rpid",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-rpid",
+      "linkingText": [
+        "rpId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptions-allowcredentials",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-allowcredentials",
+      "linkingText": [
+        "allowCredentials"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptions-userverification",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-userverification",
+      "linkingText": [
+        "userVerification"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialrequestoptions-extensions",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialrequestoptions-extensions",
+      "linkingText": [
+        "extensions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-authenticationextensionsclientinputs",
+      "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsclientinputs",
+      "linkingText": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-authenticationextensionsclientoutputs",
+      "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsclientoutputs",
+      "linkingText": [
+        "AuthenticationExtensionsClientOutputs"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-authenticationextensionsauthenticatorinputs",
+      "href": "https://w3c.github.io/webauthn/#typedefdef-authenticationextensionsauthenticatorinputs",
+      "linkingText": [
+        "AuthenticationExtensionsAuthenticatorInputs"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-collectedclientdata",
+      "href": "https://w3c.github.io/webauthn/#dictdef-collectedclientdata",
+      "linkingText": [
+        "CollectedClientData"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "client-data",
+      "href": "https://w3c.github.io/webauthn/#client-data",
+      "linkingText": [
+        "client data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-tokenbinding",
+      "href": "https://w3c.github.io/webauthn/#dictdef-tokenbinding",
+      "linkingText": [
+        "TokenBinding"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-tokenbindingstatus",
+      "href": "https://w3c.github.io/webauthn/#enumdef-tokenbindingstatus",
+      "linkingText": [
+        "TokenBindingStatus"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-collectedclientdata-type",
+      "href": "https://w3c.github.io/webauthn/#dom-collectedclientdata-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CollectedClientData"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-collectedclientdata-challenge",
+      "href": "https://w3c.github.io/webauthn/#dom-collectedclientdata-challenge",
+      "linkingText": [
+        "challenge"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CollectedClientData"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-collectedclientdata-origin",
+      "href": "https://w3c.github.io/webauthn/#dom-collectedclientdata-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CollectedClientData"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-collectedclientdata-crossorigin",
+      "href": "https://w3c.github.io/webauthn/#dom-collectedclientdata-crossorigin",
+      "linkingText": [
+        "crossOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CollectedClientData"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-collectedclientdata-tokenbinding",
+      "href": "https://w3c.github.io/webauthn/#dom-collectedclientdata-tokenbinding",
+      "linkingText": [
+        "tokenBinding"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CollectedClientData"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-tokenbinding-status",
+      "href": "https://w3c.github.io/webauthn/#dom-tokenbinding-status",
+      "linkingText": [
+        "status"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TokenBinding"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-tokenbindingstatus-supported",
+      "href": "https://w3c.github.io/webauthn/#dom-tokenbindingstatus-supported",
+      "linkingText": [
+        "\"supported\"",
+        "supported"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TokenBindingStatus"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-tokenbindingstatus-present",
+      "href": "https://w3c.github.io/webauthn/#dom-tokenbindingstatus-present",
+      "linkingText": [
+        "\"present\"",
+        "present"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TokenBindingStatus"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-tokenbinding-id",
+      "href": "https://w3c.github.io/webauthn/#dom-tokenbinding-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TokenBinding"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "collectedclientdata-json-serialized-client-data",
+      "href": "https://w3c.github.io/webauthn/#collectedclientdata-json-serialized-client-data",
+      "linkingText": [
+        "JSON-serialized client data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CollectedClientData"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "collectedclientdata-hash-of-the-serialized-client-data",
+      "href": "https://w3c.github.io/webauthn/#collectedclientdata-hash-of-the-serialized-client-data",
+      "linkingText": [
+        "Hash of the serialized client data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CollectedClientData"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enumdef-publickeycredentialtype",
+      "href": "https://w3c.github.io/webauthn/#enumdef-publickeycredentialtype",
+      "linkingText": [
+        "PublicKeyCredentialType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialtype-public-key",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialtype-public-key",
+      "linkingText": [
+        "\"public-key\"",
+        "public-key"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PublicKeyCredentialType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-publickeycredentialdescriptor",
+      "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialdescriptor",
+      "linkingText": [
+        "PublicKeyCredentialDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialdescriptor-type",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptor-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialDescriptor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialdescriptor-id",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptor-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialDescriptor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredentialdescriptor-transports",
+      "href": "https://w3c.github.io/webauthn/#dom-publickeycredentialdescriptor-transports",
+      "linkingText": [
+        "transports"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PublicKeyCredentialDescriptor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-authenticatortransport",
+      "href": "https://w3c.github.io/webauthn/#enumdef-authenticatortransport",
+      "linkingText": [
+        "AuthenticatorTransport"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatortransport-usb",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatortransport-usb",
+      "linkingText": [
+        "\"usb\"",
+        "usb"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AuthenticatorTransport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatortransport-nfc",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatortransport-nfc",
+      "linkingText": [
+        "\"nfc\"",
+        "nfc"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AuthenticatorTransport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatortransport-ble",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatortransport-ble",
+      "linkingText": [
+        "\"ble\"",
+        "ble"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AuthenticatorTransport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatortransport-internal",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatortransport-internal",
+      "linkingText": [
+        "\"internal\"",
+        "internal"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AuthenticatorTransport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-cosealgorithmidentifier",
+      "href": "https://w3c.github.io/webauthn/#typedefdef-cosealgorithmidentifier",
+      "linkingText": [
+        "COSEAlgorithmIdentifier"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-userverificationrequirement",
+      "href": "https://w3c.github.io/webauthn/#enumdef-userverificationrequirement",
+      "linkingText": [
+        "UserVerificationRequirement"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-userverificationrequirement-required",
+      "href": "https://w3c.github.io/webauthn/#dom-userverificationrequirement-required",
+      "linkingText": [
+        "\"required\"",
+        "required"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "UserVerificationRequirement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-userverificationrequirement-preferred",
+      "href": "https://w3c.github.io/webauthn/#dom-userverificationrequirement-preferred",
+      "linkingText": [
+        "\"preferred\"",
+        "preferred"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "UserVerificationRequirement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-userverificationrequirement-discouraged",
+      "href": "https://w3c.github.io/webauthn/#dom-userverificationrequirement-discouraged",
+      "linkingText": [
+        "\"discouraged\"",
+        "discouraged"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "UserVerificationRequirement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "publickey-credentials-feature",
+      "href": "https://w3c.github.io/webauthn/#publickey-credentials-feature",
+      "linkingText": [
+        "publickey-credentials-feature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "authenticator-model",
+      "href": "https://w3c.github.io/webauthn/#authenticator-model",
+      "linkingText": [
+        "Authenticator Model"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticator-credentials-map",
+      "href": "https://w3c.github.io/webauthn/#authenticator-credentials-map",
+      "linkingText": [
+        "credentials map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "authenticator"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attestation-signature",
+      "href": "https://w3c.github.io/webauthn/#attestation-signature",
+      "linkingText": [
+        "attestation signature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "assertion-signature",
+      "href": "https://w3c.github.io/webauthn/#assertion-signature",
+      "linkingText": [
+        "assertion signature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webauthn-signature",
+      "href": "https://w3c.github.io/webauthn/#webauthn-signature",
+      "linkingText": [
+        "WebAuthn signature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticator-data",
+      "href": "https://w3c.github.io/webauthn/#authenticator-data",
+      "linkingText": [
+        "authenticator data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "rpidhash",
+      "href": "https://w3c.github.io/webauthn/#rpidhash",
+      "linkingText": [
+        "rpIdHash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "flags",
+      "href": "https://w3c.github.io/webauthn/#flags",
+      "linkingText": [
+        "flags"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signcount",
+      "href": "https://w3c.github.io/webauthn/#signcount",
+      "linkingText": [
+        "signCount"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attestedcredentialdata",
+      "href": "https://w3c.github.io/webauthn/#attestedcredentialdata",
+      "linkingText": [
+        "attestedCredentialData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authdataextensions",
+      "href": "https://w3c.github.io/webauthn/#authdataextensions",
+      "linkingText": [
+        "authDataExtensions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticator-data-perform-the-following-steps-to-generate-an-authenticator-data-structure",
+      "href": "https://w3c.github.io/webauthn/#authenticator-data-perform-the-following-steps-to-generate-an-authenticator-data-structure",
+      "linkingText": [
+        "perform the following steps to generate an authenticator data structure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "authenticator data"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signature-counter",
+      "href": "https://w3c.github.io/webauthn/#signature-counter",
+      "linkingText": [
+        "Signature Counter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticator-type",
+      "href": "https://w3c.github.io/webauthn/#authenticator-type",
+      "linkingText": [
+        "authenticator type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "second-factor-platform-authenticator",
+      "href": "https://w3c.github.io/webauthn/#second-factor-platform-authenticator",
+      "linkingText": [
+        "Second-factor platform authenticator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "user-verifying-platform-authenticator",
+      "href": "https://w3c.github.io/webauthn/#user-verifying-platform-authenticator",
+      "linkingText": [
+        "User-verifying platform authenticator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "second-factor-roaming-authenticator",
+      "href": "https://w3c.github.io/webauthn/#second-factor-roaming-authenticator",
+      "linkingText": [
+        "Second-factor roaming authenticator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "first-factor-roaming-authenticator",
+      "href": "https://w3c.github.io/webauthn/#first-factor-roaming-authenticator",
+      "linkingText": [
+        "First-factor roaming authenticator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticator-attachment-modality",
+      "href": "https://w3c.github.io/webauthn/#authenticator-attachment-modality",
+      "linkingText": [
+        "Authenticator Attachment Modality"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "platform-authenticators",
+      "href": "https://w3c.github.io/webauthn/#platform-authenticators",
+      "linkingText": [
+        "platform authenticators"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "roaming-authenticators",
+      "href": "https://w3c.github.io/webauthn/#roaming-authenticators",
+      "linkingText": [
+        "roaming authenticators"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "platform-attachment",
+      "href": "https://w3c.github.io/webauthn/#platform-attachment",
+      "linkingText": [
+        "platform attachment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "platform-credential",
+      "href": "https://w3c.github.io/webauthn/#platform-credential",
+      "linkingText": [
+        "platform credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cross-platform-attachment",
+      "href": "https://w3c.github.io/webauthn/#cross-platform-attachment",
+      "linkingText": [
+        "cross-platform attachment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "roaming-credential",
+      "href": "https://w3c.github.io/webauthn/#roaming-credential",
+      "linkingText": [
+        "roaming credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "credential-storage-modality",
+      "href": "https://w3c.github.io/webauthn/#credential-storage-modality",
+      "linkingText": [
+        "credential storage modality"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "client-side-credential-storage-modality",
+      "href": "https://w3c.github.io/webauthn/#client-side-credential-storage-modality",
+      "linkingText": [
+        "client-side credential storage modality"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "resident-credential-capable",
+      "href": "https://w3c.github.io/webauthn/#resident-credential-capable",
+      "linkingText": [
+        "resident credential capable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "server-side-credential-storage-modality",
+      "href": "https://w3c.github.io/webauthn/#server-side-credential-storage-modality",
+      "linkingText": [
+        "server-side credential storage modality"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authentication-factor-capability",
+      "href": "https://w3c.github.io/webauthn/#authentication-factor-capability",
+      "linkingText": [
+        "Authentication Factor Capability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "multi-factor-capable",
+      "href": "https://w3c.github.io/webauthn/#multi-factor-capable",
+      "linkingText": [
+        "multi-factor capable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "single-factor-capable",
+      "href": "https://w3c.github.io/webauthn/#single-factor-capable",
+      "linkingText": [
+        "single-factor capable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticator-operations",
+      "href": "https://w3c.github.io/webauthn/#authenticator-operations",
+      "linkingText": [
+        "Authenticator Operations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticator-session",
+      "href": "https://w3c.github.io/webauthn/#authenticator-session",
+      "linkingText": [
+        "authenticator session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "credential-id-looking-up",
+      "href": "https://w3c.github.io/webauthn/#credential-id-looking-up",
+      "linkingText": [
+        "looking up"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "credential id"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticatormakecredential",
+      "href": "https://w3c.github.io/webauthn/#authenticatormakecredential",
+      "linkingText": [
+        "authenticatorMakeCredential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticatorgetassertion",
+      "href": "https://w3c.github.io/webauthn/#authenticatorgetassertion",
+      "linkingText": [
+        "authenticatorGetAssertion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticatorcancel",
+      "href": "https://w3c.github.io/webauthn/#authenticatorcancel",
+      "linkingText": [
+        "authenticatorCancel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attestation-object",
+      "href": "https://w3c.github.io/webauthn/#attestation-object",
+      "linkingText": [
+        "attestation object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attestation-statement",
+      "href": "https://w3c.github.io/webauthn/#attestation-statement",
+      "linkingText": [
+        "attestation statement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attestation-statement-format",
+      "href": "https://w3c.github.io/webauthn/#attestation-statement-format",
+      "linkingText": [
+        "attestation statement format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attestation-type",
+      "href": "https://w3c.github.io/webauthn/#attestation-type",
+      "linkingText": [
+        "attestation type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attested-credential-data",
+      "href": "https://w3c.github.io/webauthn/#attested-credential-data",
+      "linkingText": [
+        "Attested credential data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "aaguid",
+      "href": "https://w3c.github.io/webauthn/#aaguid",
+      "linkingText": [
+        "aaguid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "credentialidlength",
+      "href": "https://w3c.github.io/webauthn/#credentialidlength",
+      "linkingText": [
+        "credentialIdLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "credentialid",
+      "href": "https://w3c.github.io/webauthn/#credentialid",
+      "linkingText": [
+        "credentialId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "credentialpublickey",
+      "href": "https://w3c.github.io/webauthn/#credentialpublickey",
+      "linkingText": [
+        "credentialPublicKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signing-procedure",
+      "href": "https://w3c.github.io/webauthn/#signing-procedure",
+      "linkingText": [
+        "Signing procedure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticator-data-for-the-attestation",
+      "href": "https://w3c.github.io/webauthn/#authenticator-data-for-the-attestation",
+      "linkingText": [
+        "authenticator data for the attestation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "verification-procedure",
+      "href": "https://w3c.github.io/webauthn/#verification-procedure",
+      "linkingText": [
+        "Verification procedure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "verification-procedure-inputs",
+      "href": "https://w3c.github.io/webauthn/#verification-procedure-inputs",
+      "linkingText": [
+        "verification procedure inputs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticator-data-claimed-to-have-been-used-for-the-attestation",
+      "href": "https://w3c.github.io/webauthn/#authenticator-data-claimed-to-have-been-used-for-the-attestation",
+      "linkingText": [
+        "authenticator data claimed to have been used for the attestation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attestation-trust-path",
+      "href": "https://w3c.github.io/webauthn/#attestation-trust-path",
+      "linkingText": [
+        "attestation trust path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "basic-attestation",
+      "href": "https://w3c.github.io/webauthn/#basic-attestation",
+      "linkingText": [
+        "Basic Attestation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "basic",
+      "href": "https://w3c.github.io/webauthn/#basic",
+      "linkingText": [
+        "Basic"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "batch-attestation",
+      "href": "https://w3c.github.io/webauthn/#batch-attestation",
+      "linkingText": [
+        "batch attestation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "self-attestation",
+      "href": "https://w3c.github.io/webauthn/#self-attestation",
+      "linkingText": [
+        "Self Attestation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "self",
+      "href": "https://w3c.github.io/webauthn/#self",
+      "linkingText": [
+        "Self"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attestation-ca",
+      "href": "https://w3c.github.io/webauthn/#attestation-ca",
+      "linkingText": [
+        "Attestation CA"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attca",
+      "href": "https://w3c.github.io/webauthn/#attca",
+      "linkingText": [
+        "AttCA"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "elliptic-curve-based-direct-anonymous-attestation",
+      "href": "https://w3c.github.io/webauthn/#elliptic-curve-based-direct-anonymous-attestation",
+      "linkingText": [
+        "Elliptic Curve based Direct Anonymous Attestation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ecdaa",
+      "href": "https://w3c.github.io/webauthn/#ecdaa",
+      "linkingText": [
+        "ECDAA"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "none",
+      "href": "https://w3c.github.io/webauthn/#none",
+      "linkingText": [
+        "None"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attestation-statement-format-identifier",
+      "href": "https://w3c.github.io/webauthn/#attestation-statement-format-identifier",
+      "linkingText": [
+        "attestation statement format identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "identifier-of-the-ecdaa-issuer-public-key",
+      "href": "https://w3c.github.io/webauthn/#identifier-of-the-ecdaa-issuer-public-key",
+      "linkingText": [
+        "identifier of the ECDAA-Issuer public key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ecdaa-issuer-public-key",
+      "href": "https://w3c.github.io/webauthn/#ecdaa-issuer-public-key",
+      "linkingText": [
+        "ECDAA-Issuer public key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "android-key-attestation-certificate-extension-data",
+      "href": "https://w3c.github.io/webauthn/#android-key-attestation-certificate-extension-data",
+      "linkingText": [
+        "android key attestation certificate extension data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webauthn-extensions",
+      "href": "https://w3c.github.io/webauthn/#webauthn-extensions",
+      "linkingText": [
+        "WebAuthn Extensions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "registration-extension",
+      "href": "https://w3c.github.io/webauthn/#registration-extension",
+      "linkingText": [
+        "registration extension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authentication-extension",
+      "href": "https://w3c.github.io/webauthn/#authentication-extension",
+      "linkingText": [
+        "authentication extension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "client-extension",
+      "href": "https://w3c.github.io/webauthn/#client-extension",
+      "linkingText": [
+        "client extension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticator-extension",
+      "href": "https://w3c.github.io/webauthn/#authenticator-extension",
+      "linkingText": [
+        "authenticator extension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "extension-identifier",
+      "href": "https://w3c.github.io/webauthn/#extension-identifier",
+      "linkingText": [
+        "extension identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "client-extension-input",
+      "href": "https://w3c.github.io/webauthn/#client-extension-input",
+      "linkingText": [
+        "client extension input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticator-extension-input",
+      "href": "https://w3c.github.io/webauthn/#authenticator-extension-input",
+      "linkingText": [
+        "authenticator extension input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "client-extension-processing",
+      "href": "https://w3c.github.io/webauthn/#client-extension-processing",
+      "linkingText": [
+        "Client Extension Processing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "client-extension-output",
+      "href": "https://w3c.github.io/webauthn/#client-extension-output",
+      "linkingText": [
+        "client extension output"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticator-extension-processing",
+      "href": "https://w3c.github.io/webauthn/#authenticator-extension-processing",
+      "linkingText": [
+        "Authenticator Extension Processing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticator-extension-output",
+      "href": "https://w3c.github.io/webauthn/#authenticator-extension-output",
+      "linkingText": [
+        "authenticator extension output"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "appid",
+      "href": "https://w3c.github.io/webauthn/#appid",
+      "linkingText": [
+        "AppID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-appid",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-appid",
+      "linkingText": [
+        "appid"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientoutputs-appid",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-appid",
+      "linkingText": [
+        "appid"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientOutputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-appidexclude",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-appidexclude",
+      "linkingText": [
+        "appidExclude"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-txauthsimple",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-txauthsimple",
+      "linkingText": [
+        "txAuthSimple"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientoutputs-txauthsimple",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-txauthsimple",
+      "linkingText": [
+        "txAuthSimple"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientOutputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-txauthgenericarg",
+      "href": "https://w3c.github.io/webauthn/#dictdef-txauthgenericarg",
+      "linkingText": [
+        "txAuthGenericArg"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-txauthgenericarg-contenttype",
+      "href": "https://w3c.github.io/webauthn/#dom-txauthgenericarg-contenttype",
+      "linkingText": [
+        "contentType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "txAuthGenericArg"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-txauthgenericarg-content",
+      "href": "https://w3c.github.io/webauthn/#dom-txauthgenericarg-content",
+      "linkingText": [
+        "content"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "txAuthGenericArg"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-txauthgeneric",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-txauthgeneric",
+      "linkingText": [
+        "txAuthGeneric"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientoutputs-txauthgeneric",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-txauthgeneric",
+      "linkingText": [
+        "txAuthGeneric"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientOutputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-authenticatorselectionlist",
+      "href": "https://w3c.github.io/webauthn/#typedefdef-authenticatorselectionlist",
+      "linkingText": [
+        "AuthenticatorSelectionList"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-authnsel",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-authnsel",
+      "linkingText": [
+        "authnSel"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-aaguid",
+      "href": "https://w3c.github.io/webauthn/#typedefdef-aaguid",
+      "linkingText": [
+        "AAGUID"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientoutputs-authnsel",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-authnsel",
+      "linkingText": [
+        "authnSel"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientOutputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-exts",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-exts",
+      "linkingText": [
+        "exts"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-authenticationextensionssupported",
+      "href": "https://w3c.github.io/webauthn/#typedefdef-authenticationextensionssupported",
+      "linkingText": [
+        "AuthenticationExtensionsSupported"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientoutputs-exts",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-exts",
+      "linkingText": [
+        "exts"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientOutputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-uvi",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-uvi",
+      "linkingText": [
+        "uvi"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientoutputs-uvi",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-uvi",
+      "linkingText": [
+        "uvi"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientOutputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-loc",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-loc",
+      "linkingText": [
+        "loc"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientoutputs-loc",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-loc",
+      "linkingText": [
+        "loc"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientOutputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-uvm",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-uvm",
+      "linkingText": [
+        "uvm"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-uvmentry",
+      "href": "https://w3c.github.io/webauthn/#typedefdef-uvmentry",
+      "linkingText": [
+        "UvmEntry"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-uvmentries",
+      "href": "https://w3c.github.io/webauthn/#typedefdef-uvmentries",
+      "linkingText": [
+        "UvmEntries"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientoutputs-uvm",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-uvm",
+      "linkingText": [
+        "uvm"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientOutputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-authenticatorbiometricperfbounds",
+      "href": "https://w3c.github.io/webauthn/#dictdef-authenticatorbiometricperfbounds",
+      "linkingText": [
+        "AuthenticatorBiometricPerfBounds"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatorbiometricperfbounds-far",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorbiometricperfbounds-far",
+      "linkingText": [
+        "FAR"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticatorBiometricPerfBounds"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatorbiometricperfbounds-frr",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticatorbiometricperfbounds-frr",
+      "linkingText": [
+        "FRR"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticatorBiometricPerfBounds"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "credprops",
+      "href": "https://w3c.github.io/webauthn/#credprops",
+      "linkingText": [
+        "credProps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-credprops",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-credprops",
+      "linkingText": [
+        "credProps"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-credentialpropertiesoutput",
+      "href": "https://w3c.github.io/webauthn/#dictdef-credentialpropertiesoutput",
+      "linkingText": [
+        "CredentialPropertiesOutput"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientoutputs-credprops",
+      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-credprops",
+      "linkingText": [
+        "credProps"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientOutputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-credentialpropertiesoutput-rk",
+      "href": "https://w3c.github.io/webauthn/#dom-credentialpropertiesoutput-rk",
+      "linkingText": [
+        "rk"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CredentialPropertiesOutput"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "credentialpropertiesoutput-resident-key-credential-property",
+      "href": "https://w3c.github.io/webauthn/#credentialpropertiesoutput-resident-key-credential-property",
+      "linkingText": [
+        "resident key credential property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CredentialPropertiesOutput"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "virtual-authenticators",
+      "href": "https://w3c.github.io/webauthn/#virtual-authenticators",
+      "linkingText": [
+        "Virtual Authenticators"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "virtual-authenticator-database",
+      "href": "https://w3c.github.io/webauthn/#virtual-authenticator-database",
+      "linkingText": [
+        "Virtual Authenticator Database"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticatorid",
+      "href": "https://w3c.github.io/webauthn/#authenticatorid",
+      "linkingText": [
+        "authenticatorId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "add-virtual-authenticator",
+      "href": "https://w3c.github.io/webauthn/#add-virtual-authenticator",
+      "linkingText": [
+        "Add Virtual Authenticator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "authenticator-configuration",
+      "href": "https://w3c.github.io/webauthn/#authenticator-configuration",
+      "linkingText": [
+        "Authenticator Configuration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "remove-virtual-authenticator",
+      "href": "https://w3c.github.io/webauthn/#remove-virtual-authenticator",
+      "linkingText": [
+        "Remove Virtual Authenticator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "add-credential",
+      "href": "https://w3c.github.io/webauthn/#add-credential",
+      "linkingText": [
+        "Add Credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "credential-parameters",
+      "href": "https://w3c.github.io/webauthn/#credential-parameters",
+      "linkingText": [
+        "Credential Parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "get-credentials",
+      "href": "https://w3c.github.io/webauthn/#get-credentials",
+      "linkingText": [
+        "Get Credentials"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "remove-credential",
+      "href": "https://w3c.github.io/webauthn/#remove-credential",
+      "linkingText": [
+        "Remove Credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "remove-all-credentials",
+      "href": "https://w3c.github.io/webauthn/#remove-all-credentials",
+      "linkingText": [
+        "Remove All Credentials"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "set-user-verified",
+      "href": "https://w3c.github.io/webauthn/#set-user-verified",
+      "linkingText": [
+        "Set User Verified"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "anonymization-ca",
+      "href": "https://w3c.github.io/webauthn/#anonymization-ca",
+      "linkingText": [
+        "Anonymization CA"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

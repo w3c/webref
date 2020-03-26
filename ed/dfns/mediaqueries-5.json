@@ -1,0 +1,562 @@
+{
+  "spec": {
+    "title": "Media Queries Level 5",
+    "url": "https://drafts.csswg.org/mediaqueries-5/"
+  },
+  "dfns": [
+    {
+      "id": "boolean-context",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#boolean-context",
+      "linkingText": [
+        "boolean context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-media-light-level",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-light-level",
+      "linkingText": [
+        "light-level"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-light-level-dim",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-light-level-dim",
+      "linkingText": [
+        "dim"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/light-level"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-light-level-normal",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-light-level-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/light-level"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-light-level-washed",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-light-level-washed",
+      "linkingText": [
+        "washed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/light-level"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-media-environment-blending",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-environment-blending",
+      "linkingText": [
+        "environment-blending"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-environment-blending-opaque",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-environment-blending-opaque",
+      "linkingText": [
+        "opaque"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/environment-blending"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-environment-blending-additive",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-environment-blending-additive",
+      "linkingText": [
+        "additive"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/environment-blending"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-environment-blending-subtractive",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-environment-blending-subtractive",
+      "linkingText": [
+        "subtractive"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/environment-blending"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-media-scripting",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-scripting",
+      "linkingText": [
+        "scripting"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-scripting-enabled",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-scripting-enabled",
+      "linkingText": [
+        "enabled"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/scripting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-scripting-initial-only",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-scripting-initial-only",
+      "linkingText": [
+        "initial-only"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/scripting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-scripting-none",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-scripting-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/scripting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "custom-media-query",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#custom-media-query",
+      "linkingText": [
+        "custom media query"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-custom-media",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#at-ruledef-custom-media",
+      "linkingText": [
+        "@custom-media"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-custom-media-true",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-custom-media-true",
+      "linkingText": [
+        "true"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@custom-media"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-custom-media-false",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-custom-media-false",
+      "linkingText": [
+        "false"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@custom-media"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-media-inverted-colors",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-inverted-colors",
+      "linkingText": [
+        "inverted-colors"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-inverted-colors-none",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-inverted-colors-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/inverted-colors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-inverted-colors-inverted",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-inverted-colors-inverted",
+      "linkingText": [
+        "inverted"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/inverted-colors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-media-prefers-reduced-motion",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-reduced-motion",
+      "linkingText": [
+        "prefers-reduced-motion"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-prefers-reduced-motion-no-preference",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-reduced-motion-no-preference",
+      "linkingText": [
+        "no-preference"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/prefers-reduced-motion"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-prefers-reduced-motion-reduce",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-reduced-motion-reduce",
+      "linkingText": [
+        "reduce"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/prefers-reduced-motion"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-media-prefers-reduced-transparency",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-reduced-transparency",
+      "linkingText": [
+        "prefers-reduced-transparency"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-prefers-reduced-transparency-no-preference",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-reduced-transparency-no-preference",
+      "linkingText": [
+        "no-preference"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/prefers-reduced-transparency"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-prefers-reduced-transparency-reduce",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-reduced-transparency-reduce",
+      "linkingText": [
+        "reduce"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/prefers-reduced-transparency"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-media-prefers-contrast",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-contrast",
+      "linkingText": [
+        "prefers-contrast"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-prefers-contrast-no-preference",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-contrast-no-preference",
+      "linkingText": [
+        "no-preference"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/prefers-contrast"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-prefers-contrast-high",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-contrast-high",
+      "linkingText": [
+        "high"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/prefers-contrast"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-prefers-contrast-low",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-contrast-low",
+      "linkingText": [
+        "low"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/prefers-contrast"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-media-prefers-color-scheme",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-color-scheme",
+      "linkingText": [
+        "prefers-color-scheme"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-prefers-color-scheme-no-preference",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-color-scheme-no-preference",
+      "linkingText": [
+        "no-preference"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/prefers-color-scheme"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-prefers-color-scheme-light",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-color-scheme-light",
+      "linkingText": [
+        "light"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/prefers-color-scheme"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-prefers-color-scheme-dark",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-color-scheme-dark",
+      "linkingText": [
+        "dark"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/prefers-color-scheme"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-media-forced-colors",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-forced-colors",
+      "linkingText": [
+        "forced-colors"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-prefers-color-scheme-none",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-color-scheme-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/prefers-color-scheme"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-prefers-color-scheme-active",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-color-scheme-active",
+      "linkingText": [
+        "active"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/prefers-color-scheme"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-media-prefers-reduced-data",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-reduced-data",
+      "linkingText": [
+        "prefers-reduced-data"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@media"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-prefers-reduced-data-no-preference",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-reduced-data-no-preference",
+      "linkingText": [
+        "no-preference"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/prefers-reduced-data"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-media-prefers-reduced-data-reduce",
+      "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-reduced-data-reduce",
+      "linkingText": [
+        "reduce"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/prefers-reduced-data"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

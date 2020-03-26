@@ -1,0 +1,2992 @@
+{
+  "spec": {
+    "title": "Payment Request API",
+    "url": "https://w3c.github.io/payment-request/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-payment-method",
+      "href": "https://w3c.github.io/payment-request/#dfn-payment-method",
+      "linkingText": [
+        "payment method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-payment-method-provider",
+      "href": "https://w3c.github.io/payment-request/#dfn-payment-method-provider",
+      "linkingText": [
+        "payment method\n        provider"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-payment-handler",
+      "href": "https://w3c.github.io/payment-request/#dfn-payment-handler",
+      "linkingText": [
+        "payment handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-steps-to-check-if-a-payment-can-be-made",
+      "href": "https://w3c.github.io/payment-request/#dfn-steps-to-check-if-a-payment-can-be-made",
+      "linkingText": [
+        "Steps to check if a payment can be made"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-steps-to-respond-to-a-payment-request",
+      "href": "https://w3c.github.io/payment-request/#dfn-steps-to-respond-to-a-payment-request",
+      "linkingText": [
+        "Steps to respond to a payment request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-steps-for-when-a-user-changes-payment-method",
+      "href": "https://w3c.github.io/payment-request/#dfn-steps-for-when-a-user-changes-payment-method",
+      "linkingText": [
+        "Steps for when a user changes payment method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-paymentrequest",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest",
+      "linkingText": [
+        "PaymentRequest"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-constructor",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(methodData, details)",
+        "constructor(methodData, details, options)"
+      ],
+      "localLinkingText": [
+        "PaymentRequest.constructor",
+        "PaymentRequest.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-payment-relevant-browsing-context",
+      "href": "https://w3c.github.io/payment-request/#dfn-payment-relevant-browsing-context",
+      "linkingText": [
+        "payment-relevant browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-payment-request-is-showing",
+      "href": "https://w3c.github.io/payment-request/#dfn-payment-request-is-showing",
+      "linkingText": [
+        "payment request is showing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-paymentrequest-paymentrequest",
+      "href": "https://w3c.github.io/payment-request/#dfn-paymentrequest-paymentrequest",
+      "linkingText": [
+        "PaymentRequest.PaymentRequest()",
+        "PaymentRequest(methodData, details, options)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-id",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [
+        "PaymentRequest.id"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-show",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-show",
+      "linkingText": [
+        "show()",
+        "show(, detailsPromise)"
+      ],
+      "localLinkingText": [
+        "PaymentRequest.show",
+        "PaymentRequest.show()",
+        "show"
+      ],
+      "type": "method",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-abort",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-abort",
+      "linkingText": [
+        "abort()"
+      ],
+      "localLinkingText": [
+        "PaymentRequest.abort",
+        "PaymentRequest.abort()",
+        "abort"
+      ],
+      "type": "method",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-canmakepayment",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-canmakepayment",
+      "linkingText": [
+        "canMakePayment()"
+      ],
+      "localLinkingText": [
+        "PaymentRequest.canMakePayment",
+        "PaymentRequest.canMakePayment()",
+        "canMakePayment"
+      ],
+      "type": "method",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-hasenrolledinstrument",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-hasenrolledinstrument",
+      "linkingText": [
+        "hasEnrolledInstrument()"
+      ],
+      "localLinkingText": [
+        "PaymentRequest.hasEnrolledInstrument",
+        "PaymentRequest.hasEnrolledInstrument()",
+        "hasEnrolledInstrument"
+      ],
+      "type": "method",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-shippingaddress",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-shippingaddress",
+      "linkingText": [
+        "shippingAddress"
+      ],
+      "localLinkingText": [
+        "PaymentRequest.shippingAddress"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-shippingtype",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-shippingtype",
+      "linkingText": [
+        "shippingType"
+      ],
+      "localLinkingText": [
+        "PaymentRequest.shippingType"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-onmerchantvalidation",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-onmerchantvalidation",
+      "linkingText": [
+        "onmerchantvalidation"
+      ],
+      "localLinkingText": [
+        "PaymentRequest.onmerchantvalidation"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-onshippingaddresschange",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-onshippingaddresschange",
+      "linkingText": [
+        "onshippingaddresschange"
+      ],
+      "localLinkingText": [
+        "PaymentRequest.onshippingaddresschange"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-shippingoption",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-shippingoption",
+      "linkingText": [
+        "shippingOption"
+      ],
+      "localLinkingText": [
+        "PaymentRequest.shippingOption"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-onshippingoptionchange",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-onshippingoptionchange",
+      "linkingText": [
+        "onshippingoptionchange"
+      ],
+      "localLinkingText": [
+        "PaymentRequest.onshippingoptionchange"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-onpaymentmethodchange",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-onpaymentmethodchange",
+      "linkingText": [
+        "onpaymentmethodchange"
+      ],
+      "localLinkingText": [
+        "PaymentRequest.onpaymentmethodchange"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-serializedmethoddata",
+      "href": "https://w3c.github.io/payment-request/#dfn-serializedmethoddata",
+      "linkingText": [
+        "[[serializedMethodData]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-serializedmodifierdata",
+      "href": "https://w3c.github.io/payment-request/#dfn-serializedmodifierdata",
+      "linkingText": [
+        "[[serializedModifierData]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-details",
+      "href": "https://w3c.github.io/payment-request/#dfn-details",
+      "linkingText": [
+        "[[details]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-options",
+      "href": "https://w3c.github.io/payment-request/#dfn-options",
+      "linkingText": [
+        "[[options]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-state",
+      "href": "https://w3c.github.io/payment-request/#dfn-state",
+      "linkingText": [
+        "[[state]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-state-0",
+      "href": "https://w3c.github.io/payment-request/#dfn-state-0",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-created",
+      "href": "https://w3c.github.io/payment-request/#dfn-created",
+      "linkingText": [
+        "created"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-interactive",
+      "href": "https://w3c.github.io/payment-request/#dfn-interactive",
+      "linkingText": [
+        "interactive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-closed",
+      "href": "https://w3c.github.io/payment-request/#dfn-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-updating",
+      "href": "https://w3c.github.io/payment-request/#dfn-updating",
+      "linkingText": [
+        "[[updating]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-acceptpromise",
+      "href": "https://w3c.github.io/payment-request/#dfn-acceptpromise",
+      "linkingText": [
+        "[[acceptPromise]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-response",
+      "href": "https://w3c.github.io/payment-request/#dfn-response",
+      "linkingText": [
+        "[[response]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethoddata",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentmethoddata",
+      "linkingText": [
+        "PaymentMethodData"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethoddata-supportedmethods",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentmethoddata-supportedmethods",
+      "linkingText": [
+        "supportedMethods"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentMethodData"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethoddata-data",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentmethoddata-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentMethodData"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentcurrencyamount",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentcurrencyamount",
+      "linkingText": [
+        "PaymentCurrencyAmount"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentcurrencyamount-currency",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentcurrencyamount-currency",
+      "linkingText": [
+        "currency"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentCurrencyAmount"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentcurrencyamount-value",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentcurrencyamount-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentCurrencyAmount"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-valid-decimal-monetary-value",
+      "href": "https://w3c.github.io/payment-request/#dfn-valid-decimal-monetary-value",
+      "linkingText": [
+        "valid decimal monetary value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-check-and-canonicalize-amount",
+      "href": "https://w3c.github.io/payment-request/#dfn-check-and-canonicalize-amount",
+      "linkingText": [
+        "check and canonicalize amount"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-check-and-canonicalize-total-amount",
+      "href": "https://w3c.github.io/payment-request/#dfn-check-and-canonicalize-total-amount",
+      "linkingText": [
+        "check and canonicalize total amount"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsbase",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsbase",
+      "linkingText": [
+        "PaymentDetailsBase"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsbase-displayitems",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsbase-displayitems",
+      "linkingText": [
+        "displayItems"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsbase-shippingoptions",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsbase-shippingoptions",
+      "linkingText": [
+        "shippingOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsbase-modifiers",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsbase-modifiers",
+      "linkingText": [
+        "modifiers"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsinit",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsinit",
+      "linkingText": [
+        "PaymentDetailsInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsinit-id",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsinit-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsinit-total",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsinit-total",
+      "linkingText": [
+        "total"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsupdate",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsupdate",
+      "linkingText": [
+        "PaymentDetailsUpdate"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsupdate-error",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsupdate-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsUpdate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsupdate-total",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsupdate-total",
+      "linkingText": [
+        "total"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsUpdate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsupdate-shippingaddresserrors",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsupdate-shippingaddresserrors",
+      "linkingText": [
+        "shippingAddressErrors"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsUpdate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsupdate-payererrors",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsupdate-payererrors",
+      "linkingText": [
+        "payerErrors"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsUpdate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsupdate-paymentmethoderrors",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsupdate-paymentmethoderrors",
+      "linkingText": [
+        "paymentMethodErrors"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsUpdate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsmodifier",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsmodifier",
+      "linkingText": [
+        "PaymentDetailsModifier"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsmodifier-supportedmethods",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsmodifier-supportedmethods",
+      "linkingText": [
+        "supportedMethods"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsModifier"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsmodifier-total",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsmodifier-total",
+      "linkingText": [
+        "total"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsModifier"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsmodifier-additionaldisplayitems",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsmodifier-additionaldisplayitems",
+      "linkingText": [
+        "additionalDisplayItems"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsModifier"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsmodifier-data",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentdetailsmodifier-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsModifier"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingtype",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentshippingtype",
+      "linkingText": [
+        "PaymentShippingType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingtype-shipping",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentshippingtype-shipping",
+      "linkingText": [
+        "shipping"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PaymentShippingType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingtype-delivery",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentshippingtype-delivery",
+      "linkingText": [
+        "delivery"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PaymentShippingType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingtype-pickup",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentshippingtype-pickup",
+      "linkingText": [
+        "pickup"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PaymentShippingType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentoptions",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentoptions",
+      "linkingText": [
+        "PaymentOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentoptions-requestbillingaddress",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentoptions-requestbillingaddress",
+      "linkingText": [
+        "requestBillingAddress"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentoptions-requestpayername",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentoptions-requestpayername",
+      "linkingText": [
+        "requestPayerName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentoptions-requestpayeremail",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentoptions-requestpayeremail",
+      "linkingText": [
+        "requestPayerEmail"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentoptions-requestpayerphone",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentoptions-requestpayerphone",
+      "linkingText": [
+        "requestPayerPhone"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentoptions-requestshipping",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentoptions-requestshipping",
+      "linkingText": [
+        "requestShipping"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentoptions-shippingtype",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentoptions-shippingtype",
+      "linkingText": [
+        "shippingType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentitem",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentitem",
+      "linkingText": [
+        "PaymentItem"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentitem-label",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentitem-label",
+      "linkingText": [
+        "label"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentitem-amount",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentitem-amount",
+      "linkingText": [
+        "amount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentitem-pending",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentitem-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-physical-address",
+      "href": "https://w3c.github.io/payment-request/#dfn-physical-address",
+      "linkingText": [
+        "physical address"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-address-line",
+      "href": "https://w3c.github.io/payment-request/#dfn-address-line",
+      "linkingText": [
+        "Address line"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-city",
+      "href": "https://w3c.github.io/payment-request/#dfn-city",
+      "linkingText": [
+        "City"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-country",
+      "href": "https://w3c.github.io/payment-request/#dfn-country",
+      "linkingText": [
+        "Country"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dependent-locality",
+      "href": "https://w3c.github.io/payment-request/#dfn-dependent-locality",
+      "linkingText": [
+        "Dependent locality"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-organization",
+      "href": "https://w3c.github.io/payment-request/#dfn-organization",
+      "linkingText": [
+        "Organization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-phone-number",
+      "href": "https://w3c.github.io/payment-request/#dfn-phone-number",
+      "linkingText": [
+        "Phone number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-postal-code",
+      "href": "https://w3c.github.io/payment-request/#dfn-postal-code",
+      "linkingText": [
+        "Postal code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-recipient",
+      "href": "https://w3c.github.io/payment-request/#dfn-recipient",
+      "linkingText": [
+        "Recipient"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-region",
+      "href": "https://w3c.github.io/payment-request/#dfn-region",
+      "linkingText": [
+        "Region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sorting-code",
+      "href": "https://w3c.github.io/payment-request/#dfn-sorting-code",
+      "linkingText": [
+        "Sorting code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentaddress",
+      "linkingText": [
+        "PaymentAddress"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-paymentaddress-paymentaddress",
+      "href": "https://w3c.github.io/payment-request/#dfn-paymentaddress-paymentaddress",
+      "linkingText": [
+        "PaymentAddress.PaymentAddress()",
+        "internally construct a PaymentAddress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-tojson",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentaddress-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [
+        "PaymentAddress.toJSON",
+        "PaymentAddress.toJSON()",
+        "toJSON"
+      ],
+      "type": "method",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-country",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentaddress-country",
+      "linkingText": [
+        "country"
+      ],
+      "localLinkingText": [
+        "PaymentAddress.country"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-addressline",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentaddress-addressline",
+      "linkingText": [
+        "addressLine"
+      ],
+      "localLinkingText": [
+        "PaymentAddress.addressLine"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-region",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentaddress-region",
+      "linkingText": [
+        "region"
+      ],
+      "localLinkingText": [
+        "PaymentAddress.region"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-city",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentaddress-city",
+      "linkingText": [
+        "city"
+      ],
+      "localLinkingText": [
+        "PaymentAddress.city"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-dependentlocality",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentaddress-dependentlocality",
+      "linkingText": [
+        "dependentLocality"
+      ],
+      "localLinkingText": [
+        "PaymentAddress.dependentLocality"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-postalcode",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentaddress-postalcode",
+      "linkingText": [
+        "postalCode"
+      ],
+      "localLinkingText": [
+        "PaymentAddress.postalCode"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-sortingcode",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentaddress-sortingcode",
+      "linkingText": [
+        "sortingCode"
+      ],
+      "localLinkingText": [
+        "PaymentAddress.sortingCode"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-organization",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentaddress-organization",
+      "linkingText": [
+        "organization"
+      ],
+      "localLinkingText": [
+        "PaymentAddress.organization"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-recipient",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentaddress-recipient",
+      "linkingText": [
+        "recipient"
+      ],
+      "localLinkingText": [
+        "PaymentAddress.recipient"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-phone",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentaddress-phone",
+      "linkingText": [
+        "phone"
+      ],
+      "localLinkingText": [
+        "PaymentAddress.phone"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-paymentaddress-slots",
+      "href": "https://w3c.github.io/payment-request/#dfn-paymentaddress-slots",
+      "linkingText": [
+        "PaymentAddress slots"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-country-0",
+      "href": "https://w3c.github.io/payment-request/#dfn-country-0",
+      "linkingText": [
+        "[[country]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-addressline",
+      "href": "https://w3c.github.io/payment-request/#dfn-addressline",
+      "linkingText": [
+        "[[addressLine]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-region-0",
+      "href": "https://w3c.github.io/payment-request/#dfn-region-0",
+      "linkingText": [
+        "[[region]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-city-0",
+      "href": "https://w3c.github.io/payment-request/#dfn-city-0",
+      "linkingText": [
+        "[[city]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dependentlocality",
+      "href": "https://w3c.github.io/payment-request/#dfn-dependentlocality",
+      "linkingText": [
+        "[[dependentLocality]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-postalcode",
+      "href": "https://w3c.github.io/payment-request/#dfn-postalcode",
+      "linkingText": [
+        "[[postalCode]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sortingcode",
+      "href": "https://w3c.github.io/payment-request/#dfn-sortingcode",
+      "linkingText": [
+        "[[sortingCode]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-organization-0",
+      "href": "https://w3c.github.io/payment-request/#dfn-organization-0",
+      "linkingText": [
+        "[[organization]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-recipient-0",
+      "href": "https://w3c.github.io/payment-request/#dfn-recipient-0",
+      "linkingText": [
+        "[[recipient]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-phone",
+      "href": "https://w3c.github.io/payment-request/#dfn-phone",
+      "linkingText": [
+        "[[phone]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit",
+      "href": "https://w3c.github.io/payment-request/#dom-addressinit",
+      "linkingText": [
+        "AddressInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-addressline",
+      "href": "https://w3c.github.io/payment-request/#dom-addressinit-addressline",
+      "linkingText": [
+        "addressLine"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-city",
+      "href": "https://w3c.github.io/payment-request/#dom-addressinit-city",
+      "linkingText": [
+        "city"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-country",
+      "href": "https://w3c.github.io/payment-request/#dom-addressinit-country",
+      "linkingText": [
+        "country"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-dependentlocality",
+      "href": "https://w3c.github.io/payment-request/#dom-addressinit-dependentlocality",
+      "linkingText": [
+        "dependentLocality"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-organization",
+      "href": "https://w3c.github.io/payment-request/#dom-addressinit-organization",
+      "linkingText": [
+        "organization"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-phone",
+      "href": "https://w3c.github.io/payment-request/#dom-addressinit-phone",
+      "linkingText": [
+        "phone"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-postalcode",
+      "href": "https://w3c.github.io/payment-request/#dom-addressinit-postalcode",
+      "linkingText": [
+        "postalCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-recipient",
+      "href": "https://w3c.github.io/payment-request/#dom-addressinit-recipient",
+      "linkingText": [
+        "recipient"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-region",
+      "href": "https://w3c.github.io/payment-request/#dom-addressinit-region",
+      "linkingText": [
+        "region"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-sortingcode",
+      "href": "https://w3c.github.io/payment-request/#dom-addressinit-sortingcode",
+      "linkingText": [
+        "sortingCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors",
+      "href": "https://w3c.github.io/payment-request/#dom-addresserrors",
+      "linkingText": [
+        "AddressErrors"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-addressline",
+      "href": "https://w3c.github.io/payment-request/#dom-addresserrors-addressline",
+      "linkingText": [
+        "addressLine"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-city",
+      "href": "https://w3c.github.io/payment-request/#dom-addresserrors-city",
+      "linkingText": [
+        "city"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-country",
+      "href": "https://w3c.github.io/payment-request/#dom-addresserrors-country",
+      "linkingText": [
+        "country"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-dependentlocality",
+      "href": "https://w3c.github.io/payment-request/#dom-addresserrors-dependentlocality",
+      "linkingText": [
+        "dependentLocality"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-organization",
+      "href": "https://w3c.github.io/payment-request/#dom-addresserrors-organization",
+      "linkingText": [
+        "organization"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-phone",
+      "href": "https://w3c.github.io/payment-request/#dom-addresserrors-phone",
+      "linkingText": [
+        "phone"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-postalcode",
+      "href": "https://w3c.github.io/payment-request/#dom-addresserrors-postalcode",
+      "linkingText": [
+        "postalCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-recipient",
+      "href": "https://w3c.github.io/payment-request/#dom-addresserrors-recipient",
+      "linkingText": [
+        "recipient"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-region",
+      "href": "https://w3c.github.io/payment-request/#dom-addresserrors-region",
+      "linkingText": [
+        "region"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-sortingcode",
+      "href": "https://w3c.github.io/payment-request/#dom-addresserrors-sortingcode",
+      "linkingText": [
+        "sortingCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-create-a-paymentaddress-from-user-provided-input",
+      "href": "https://w3c.github.io/payment-request/#dfn-create-a-paymentaddress-from-user-provided-input",
+      "linkingText": [
+        "create a PaymentAddress from\n          user-provided input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingoption",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentshippingoption",
+      "linkingText": [
+        "PaymentShippingOption"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingoption-id",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentshippingoption-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentShippingOption"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingoption-label",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentshippingoption-label",
+      "linkingText": [
+        "label"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentShippingOption"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingoption-amount",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentshippingoption-amount",
+      "linkingText": [
+        "amount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentShippingOption"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingoption-selected",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentshippingoption-selected",
+      "linkingText": [
+        "selected"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentShippingOption"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentcomplete",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentcomplete",
+      "linkingText": [
+        "PaymentComplete"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentcomplete-fail",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentcomplete-fail",
+      "linkingText": [
+        "fail"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PaymentComplete"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentcomplete-success",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentcomplete-success",
+      "linkingText": [
+        "success"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PaymentComplete"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentcomplete-unknown",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentcomplete-unknown",
+      "linkingText": [
+        "unknown"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PaymentComplete"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentresponse",
+      "linkingText": [
+        "PaymentResponse"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-retry",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-retry",
+      "linkingText": [
+        "retry()",
+        "retry(, errorFields)"
+      ],
+      "localLinkingText": [
+        "PaymentResponse.retry",
+        "PaymentResponse.retry()",
+        "retry"
+      ],
+      "type": "method",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentvalidationerrors",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentvalidationerrors",
+      "linkingText": [
+        "PaymentValidationErrors"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentvalidationerrors-payer",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentvalidationerrors-payer",
+      "linkingText": [
+        "payer"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentValidationErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentvalidationerrors-shippingaddress",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentvalidationerrors-shippingaddress",
+      "linkingText": [
+        "shippingAddress"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentValidationErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentvalidationerrors-error",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentvalidationerrors-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentValidationErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentvalidationerrors-paymentmethod",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentvalidationerrors-paymentmethod",
+      "linkingText": [
+        "paymentMethod"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentValidationErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-payererrors",
+      "href": "https://w3c.github.io/payment-request/#dom-payererrors",
+      "linkingText": [
+        "PayerErrors"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-payer-details",
+      "href": "https://w3c.github.io/payment-request/#dfn-payer-details",
+      "linkingText": [
+        "Payer details"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-payererrors-email",
+      "href": "https://w3c.github.io/payment-request/#dom-payererrors-email",
+      "linkingText": [
+        "email"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PayerErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-payererrors-name",
+      "href": "https://w3c.github.io/payment-request/#dom-payererrors-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PayerErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-payererrors-phone",
+      "href": "https://w3c.github.io/payment-request/#dom-payererrors-phone",
+      "linkingText": [
+        "phone"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PayerErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-tojson",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [
+        "PaymentResponse.toJSON",
+        "PaymentResponse.toJSON()",
+        "toJSON"
+      ],
+      "type": "method",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-methodname",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-methodname",
+      "linkingText": [
+        "methodName"
+      ],
+      "localLinkingText": [
+        "PaymentResponse.methodName"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-details",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-details",
+      "linkingText": [
+        "details"
+      ],
+      "localLinkingText": [
+        "PaymentResponse.details"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-shippingaddress",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-shippingaddress",
+      "linkingText": [
+        "shippingAddress"
+      ],
+      "localLinkingText": [
+        "PaymentResponse.shippingAddress"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-shippingoption",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-shippingoption",
+      "linkingText": [
+        "shippingOption"
+      ],
+      "localLinkingText": [
+        "PaymentResponse.shippingOption"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-payername",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-payername",
+      "linkingText": [
+        "payerName"
+      ],
+      "localLinkingText": [
+        "PaymentResponse.payerName"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-payeremail",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-payeremail",
+      "linkingText": [
+        "payerEmail"
+      ],
+      "localLinkingText": [
+        "PaymentResponse.payerEmail"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-payerphone",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-payerphone",
+      "linkingText": [
+        "payerPhone"
+      ],
+      "localLinkingText": [
+        "PaymentResponse.payerPhone"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-requestid",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-requestid",
+      "linkingText": [
+        "requestId"
+      ],
+      "localLinkingText": [
+        "PaymentResponse.requestId"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-complete",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-complete",
+      "linkingText": [
+        "complete(result)",
+        "complete()",
+        "complete(, result)"
+      ],
+      "localLinkingText": [
+        "PaymentResponse.complete",
+        "PaymentResponse.complete()",
+        "complete"
+      ],
+      "type": "method",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-onpayerdetailchange",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-onpayerdetailchange",
+      "linkingText": [
+        "onpayerdetailchange"
+      ],
+      "localLinkingText": [
+        "PaymentResponse.onpayerdetailchange"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-complete",
+      "href": "https://w3c.github.io/payment-request/#dfn-complete",
+      "linkingText": [
+        "[[complete]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-request",
+      "href": "https://w3c.github.io/payment-request/#dfn-request",
+      "linkingText": [
+        "[[request]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-retrypromise",
+      "href": "https://w3c.github.io/payment-request/#dfn-retrypromise",
+      "linkingText": [
+        "[[retryPromise]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-payment-feature",
+      "href": "https://w3c.github.io/payment-request/#dfn-payment-feature",
+      "linkingText": [
+        "payment-feature",
+        "payment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-merchantvalidation",
+      "href": "https://w3c.github.io/payment-request/#dfn-merchantvalidation",
+      "linkingText": [
+        "merchantvalidation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-shippingaddresschange",
+      "href": "https://w3c.github.io/payment-request/#dfn-shippingaddresschange",
+      "linkingText": [
+        "shippingaddresschange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-shippingoptionchange",
+      "href": "https://w3c.github.io/payment-request/#dfn-shippingoptionchange",
+      "linkingText": [
+        "shippingoptionchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-payerdetailchange",
+      "href": "https://w3c.github.io/payment-request/#dfn-payerdetailchange",
+      "linkingText": [
+        "payerdetailchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-paymentmethodchange",
+      "href": "https://w3c.github.io/payment-request/#dfn-paymentmethodchange",
+      "linkingText": [
+        "paymentmethodchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-merchantvalidationevent",
+      "href": "https://w3c.github.io/payment-request/#dom-merchantvalidationevent",
+      "linkingText": [
+        "MerchantValidationEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-merchantvalidationevent-constructor",
+      "href": "https://w3c.github.io/payment-request/#dom-merchantvalidationevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(type)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "MerchantValidationEvent.constructor",
+        "MerchantValidationEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "MerchantValidationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-merchantvalidationevent-methodname",
+      "href": "https://w3c.github.io/payment-request/#dom-merchantvalidationevent-methodname",
+      "linkingText": [
+        "methodName"
+      ],
+      "localLinkingText": [
+        "MerchantValidationEvent.methodName"
+      ],
+      "type": "attribute",
+      "for": [
+        "MerchantValidationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-merchantvalidationevent-merchantvalidationevent",
+      "href": "https://w3c.github.io/payment-request/#dfn-merchantvalidationevent-merchantvalidationevent",
+      "linkingText": [
+        "MerchantValidationEvent.MerchantValidationEvent()",
+        "MerchantValidationEvent constructor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-merchantvalidationevent-validationurl",
+      "href": "https://w3c.github.io/payment-request/#dom-merchantvalidationevent-validationurl",
+      "linkingText": [
+        "validationURL"
+      ],
+      "localLinkingText": [
+        "MerchantValidationEvent.validationURL"
+      ],
+      "type": "attribute",
+      "for": [
+        "MerchantValidationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-merchantvalidationevent-complete",
+      "href": "https://w3c.github.io/payment-request/#dom-merchantvalidationevent-complete",
+      "linkingText": [
+        "complete()",
+        "complete(merchantSessionPromise)"
+      ],
+      "localLinkingText": [
+        "MerchantValidationEvent.complete",
+        "MerchantValidationEvent.complete()",
+        "complete"
+      ],
+      "type": "method",
+      "for": [
+        "MerchantValidationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-mechvalidation-waitforupdate",
+      "href": "https://w3c.github.io/payment-request/#dfn-mechvalidation-waitforupdate",
+      "linkingText": [
+        "mechvalidation.waitForUpdate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-merchantvalidationeventinit",
+      "href": "https://w3c.github.io/payment-request/#dom-merchantvalidationeventinit",
+      "linkingText": [
+        "MerchantValidationEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-merchantvalidationeventinit-methodname",
+      "href": "https://w3c.github.io/payment-request/#dom-merchantvalidationeventinit-methodname",
+      "linkingText": [
+        "methodName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MerchantValidationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-merchantvalidationeventinit-validationurl",
+      "href": "https://w3c.github.io/payment-request/#dom-merchantvalidationeventinit-validationurl",
+      "linkingText": [
+        "validationURL"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MerchantValidationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeevent",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentmethodchangeevent",
+      "linkingText": [
+        "PaymentMethodChangeEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeevent-constructor",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentmethodchangeevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(type)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "PaymentMethodChangeEvent.constructor",
+        "PaymentMethodChangeEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "PaymentMethodChangeEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeevent-methoddetails",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentmethodchangeevent-methoddetails",
+      "linkingText": [
+        "methodDetails"
+      ],
+      "localLinkingText": [
+        "PaymentMethodChangeEvent.methodDetails"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentMethodChangeEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeevent-methodname",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentmethodchangeevent-methodname",
+      "linkingText": [
+        "methodName"
+      ],
+      "localLinkingText": [
+        "PaymentMethodChangeEvent.methodName"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentMethodChangeEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeeventinit",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentmethodchangeeventinit",
+      "linkingText": [
+        "PaymentMethodChangeEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeeventinit-methodname",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentmethodchangeeventinit-methodname",
+      "linkingText": [
+        "methodName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentMethodChangeEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeeventinit-methoddetails",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentmethodchangeeventinit-methoddetails",
+      "linkingText": [
+        "methodDetails"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentMethodChangeEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestupdateevent",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequestupdateevent",
+      "linkingText": [
+        "PaymentRequestUpdateEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestupdateevent-constructor",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequestupdateevent-constructor",
+      "linkingText": [
+        "PaymentRequestUpdateEvent.PaymentRequestUpdateEvent()",
+        "Constructor",
+        "constructor()",
+        "constructor(type)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "PaymentRequestUpdateEvent.constructor",
+        "PaymentRequestUpdateEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "PaymentRequestUpdateEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestupdateevent-updatewith",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequestupdateevent-updatewith",
+      "linkingText": [
+        "updateWith(detailsPromise)",
+        "updateWith()"
+      ],
+      "localLinkingText": [
+        "PaymentRequestUpdateEvent.updateWith",
+        "PaymentRequestUpdateEvent.updateWith()",
+        "updateWith"
+      ],
+      "type": "method",
+      "for": [
+        "PaymentRequestUpdateEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-waitforupdate",
+      "href": "https://w3c.github.io/payment-request/#dfn-waitforupdate",
+      "linkingText": [
+        "[[waitForUpdate]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestupdateeventinit",
+      "href": "https://w3c.github.io/payment-request/#dom-paymentrequestupdateeventinit",
+      "linkingText": [
+        "PaymentRequestUpdateEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-validate-the-merchant",
+      "href": "https://w3c.github.io/payment-request/#dfn-validate-the-merchant",
+      "linkingText": [
+        "Validate the merchant",
+        "Merchant validation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-request-merchant-validation-algorithm",
+      "href": "https://w3c.github.io/payment-request/#dfn-request-merchant-validation-algorithm",
+      "linkingText": [
+        "request merchant validation\n          algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-can-make-payment-algorithm",
+      "href": "https://w3c.github.io/payment-request/#dfn-can-make-payment-algorithm",
+      "linkingText": [
+        "can make payment algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-shipping-address-changed-algorithm",
+      "href": "https://w3c.github.io/payment-request/#dfn-shipping-address-changed-algorithm",
+      "linkingText": [
+        "shipping address changed algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-shipping-option-changed-algorithm",
+      "href": "https://w3c.github.io/payment-request/#dfn-shipping-option-changed-algorithm",
+      "linkingText": [
+        "shipping option changed algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-payment-method-changed-algorithm",
+      "href": "https://w3c.github.io/payment-request/#dfn-payment-method-changed-algorithm",
+      "linkingText": [
+        "payment method changed algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "payment handler"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-paymentrequest-updated-algorithm",
+      "href": "https://w3c.github.io/payment-request/#dfn-paymentrequest-updated-algorithm",
+      "linkingText": [
+        "PaymentRequest updated algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-payer-detail-changed-algorithm",
+      "href": "https://w3c.github.io/payment-request/#dfn-payer-detail-changed-algorithm",
+      "linkingText": [
+        "payer detail changed algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-user-accepts-the-payment-request",
+      "href": "https://w3c.github.io/payment-request/#dfn-user-accepts-the-payment-request",
+      "linkingText": [
+        "user accepts the payment request",
+        "user accepts the payment request algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-user-aborts-the-payment-request",
+      "href": "https://w3c.github.io/payment-request/#dfn-user-aborts-the-payment-request",
+      "linkingText": [
+        "user aborts the payment request",
+        "user aborts the payment request algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-update-a-paymentrequest-s-details-algorithm",
+      "href": "https://w3c.github.io/payment-request/#dfn-update-a-paymentrequest-s-details-algorithm",
+      "linkingText": [
+        "update a PaymentRequest's details\n          algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-abort-the-update",
+      "href": "https://w3c.github.io/payment-request/#dfn-abort-the-update",
+      "linkingText": [
+        "abort the update"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-validate-merchant-s-details-algorithm",
+      "href": "https://w3c.github.io/payment-request/#dfn-validate-merchant-s-details-algorithm",
+      "linkingText": [
+        "validate merchant's details algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-internal-slot",
+      "href": "https://w3c.github.io/payment-request/#dfn-internal-slot",
+      "linkingText": [
+        "internal\n          slot"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-json-stringify",
+      "href": "https://w3c.github.io/payment-request/#dfn-json-stringify",
+      "linkingText": [
+        "JSON.stringify"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-json-serialized",
+      "href": "https://w3c.github.io/payment-request/#dfn-json-serialized",
+      "linkingText": [
+        "JSON-serialized",
+        "JSON-serializing",
+        "JSON-serialize"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-country-subdivision-names",
+      "href": "https://w3c.github.io/payment-request/#dfn-country-subdivision-names",
+      "linkingText": [
+        "country subdivision names",
+        "Country subdivision name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-country-subdivision-code-element",
+      "href": "https://w3c.github.io/payment-request/#dfn-country-subdivision-code-element",
+      "linkingText": [
+        "country subdivision code element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-user-agent",
+      "href": "https://w3c.github.io/payment-request/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

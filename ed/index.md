@@ -257,7 +257,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 
 
@@ -309,7 +309,35 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
+- Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
+- Crawled version: 18 March 2020
+- Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
+- Latest published version: [http://www.w3.org/TR/CSS22/](http://www.w3.org/TR/CSS22/)
+- Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-CSS22-20160412/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Shortname: CSS22
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/), related reference "CSS3COLOR" uses URL [`https://www.w3.org/TR/2010/PR-css3-color-20101028/`](https://www.w3.org/TR/2010/PR-css3-color-20101028/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+
+No informative reference to this spec from other specs.
+
+
+## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -324,7 +352,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No normative references found
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/), related reference "CSS3COLOR" uses URL [`https://www.w3.org/TR/2010/PR-css3-color-20101028/`](https://www.w3.org/TR/2010/PR-css3-color-20101028/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -355,7 +384,7 @@ Normative references to this spec from:
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
-- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
+- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
@@ -421,7 +450,7 @@ Normative references to this spec from:
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Proposals for the future of CSS Paged Media](https://drafts.csswg.org/css-page-4/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
@@ -431,37 +460,10 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
+- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [UI Events](https://w3c.github.io/uievents/)
-
-
-## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
-- Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Crawled version: 18 March 2020
-- Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Latest published version: [http://www.w3.org/TR/CSS22/](http://www.w3.org/TR/CSS22/)
-- Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-CSS22-20160412/)
-- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Shortname: CSS22
-
-### Potential issue(s) {.anomalies}
-
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/), related reference "CSS3COLOR" uses URL [`https://www.w3.org/TR/2010/PR-css3-color-20101028/`](https://www.w3.org/TR/2010/PR-css3-color-20101028/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [HTML Standard](https://html.spec.whatwg.org/)
-- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
-
-No informative reference to this spec from other specs.
 
 
 ## Clear Site Data {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -517,7 +519,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -577,7 +579,7 @@ Normative references to this spec from:
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
 
 No informative reference to this spec from other specs.
@@ -693,7 +695,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Resource Hints](https://w3c.github.io/resource-hints/)
@@ -803,7 +805,7 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 No informative reference to this spec from other specs.
 
@@ -947,7 +949,7 @@ Normative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 
@@ -960,7 +962,7 @@ Informative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 
 ## CSS Animations Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
@@ -1070,7 +1072,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
@@ -1142,8 +1144,8 @@ Normative references to this spec from:
 
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
-- [HTML Standard](https://html.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -1242,7 +1244,7 @@ Normative references to this spec from:
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -1254,11 +1256,14 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Initial URL: [https://drafts.csswg.org/css-box-3/](https://drafts.csswg.org/css-box-3/)
+- Initial URL: [https://www.w3.org/TR/css-box-3/](https://www.w3.org/TR/css-box-3/)
 - Crawled URL: [https://drafts.csswg.org/css-box-3/](https://drafts.csswg.org/css-box-3/)
 - Crawled version: 6 March 2020
+- Editor's Draft: [https://drafts.csswg.org/css-box-3/](https://drafts.csswg.org/css-box-3/)
+- Latest published version: [https://www.w3.org/TR/css-box-3/](https://www.w3.org/TR/css-box-3/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Shortname: no shortname
+- Shortname: css-box-3
 
 ### Potential issue(s) {.anomalies}
 
@@ -1277,9 +1282,49 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
+- [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
+- [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
+- [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
+- [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
+- [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
+- [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
+- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
+- [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
+- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
+- [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
+- [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
+- [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
+- [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
+- [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
+- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
+- [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
+- [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
+- [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
+- [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
+- [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
+- [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
+- [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
+- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 
 
 ## CSS Box Sizing Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -1499,11 +1544,11 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -1600,7 +1645,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -1658,7 +1703,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -1676,7 +1721,7 @@ Informative references to this spec from:
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 
 ## CSS Color Module Level 5 {data-spec=true data-ok=true}
@@ -1758,11 +1803,14 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Initial URL: [https://drafts.csswg.org/css-conditional-4/](https://drafts.csswg.org/css-conditional-4/)
+- Initial URL: [https://www.w3.org/TR/css-conditional-4/](https://www.w3.org/TR/css-conditional-4/)
 - Crawled URL: [https://drafts.csswg.org/css-conditional-4/](https://drafts.csswg.org/css-conditional-4/)
 - Crawled version: 4 March 2020
+- Editor's Draft: [https://drafts.csswg.org/css-conditional-4/](https://drafts.csswg.org/css-conditional-4/)
+- Latest published version: [https://www.w3.org/TR/css-conditional-4/](https://www.w3.org/TR/css-conditional-4/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-css-conditional-4-20200303/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Shortname: no shortname
+- Shortname: css-conditional-4
 
 ### Potential issue(s) {.anomalies}
 
@@ -1993,7 +2041,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
@@ -2069,27 +2117,35 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Initial URL: [https://drafts.csswg.org/css-exclusions-1/](https://drafts.csswg.org/css-exclusions-1/)
-- Crawled URL: [https://drafts.csswg.org/css-exclusions-1/](https://drafts.csswg.org/css-exclusions-1/)
+- Initial URL: [https://www.w3.org/TR/css3-exclusions/](https://www.w3.org/TR/css3-exclusions/)
+- Crawled URL: [https://drafts.csswg.org/css-exclusions/](https://drafts.csswg.org/css-exclusions/)
 - Crawled version: 16 January 2020
-- Shortname: no shortname
+- Editor's Draft: [https://drafts.csswg.org/css-exclusions/](https://drafts.csswg.org/css-exclusions/)
+- Latest published version: [http://www.w3.org/TR/css3-exclusions/](http://www.w3.org/TR/css3-exclusions/)
+- Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-css3-exclusions-20150115/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Shortname: css3-exclusions
 
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-box/`](https://www.w3.org/TR/css3-box/)
-     * [`https://www.w3.org/TR/2015/WD-css3-exclusions-20150115/`](https://www.w3.org/TR/2015/WD-css3-exclusions-20150115/)
-     * [`https://www.w3.org/TR/2013/WD-css3-exclusions-20130528/`](https://www.w3.org/TR/2013/WD-css3-exclusions-20130528/)
-     * [`https://www.w3.org/TR/2012/WD-css3-exclusions-20120503/`](https://www.w3.org/TR/2012/WD-css3-exclusions-20120503/)
      * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
 
-No informative reference to this spec from other specs.
+- [CSS Page Floats](https://drafts.csswg.org/css-page-floats/)
+- [Proposals for the future of CSS Paged Media](https://drafts.csswg.org/css-page-4/)
+
+Informative references to this spec from:
+
+- [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
+- [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
+- [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 
 
 ## CSS Fill and Stroke Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2177,7 +2233,7 @@ Informative references to this spec from:
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
+- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
@@ -2210,7 +2266,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 Informative references to this spec from:
 
@@ -2270,9 +2326,9 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -2337,9 +2393,9 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -2606,13 +2662,13 @@ Normative references to this spec from:
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 Informative references to this spec from:
 
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
-- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
+- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
@@ -2693,7 +2749,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -2735,7 +2791,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 Informative references to this spec from:
 
@@ -2784,7 +2840,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -2875,7 +2931,7 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
-- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
+- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
@@ -2966,7 +3022,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -3030,7 +3086,7 @@ Normative references to this spec from:
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -3171,11 +3227,11 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Input Events Level 2](https://w3c.github.io/input-events/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -3253,9 +3309,9 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 
 Informative references to this spec from:
@@ -3349,7 +3405,7 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
+- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
@@ -3489,7 +3545,7 @@ Normative references to this spec from:
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
-- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
+- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/)
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
@@ -3509,7 +3565,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -3764,8 +3820,8 @@ Normative references to this spec from:
 
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [HTML Standard](https://html.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 
 No informative reference to this spec from other specs.
@@ -3922,7 +3978,7 @@ Normative references to this spec from:
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -4007,7 +4063,7 @@ This specification looks good!
 Normative references to this spec from:
 
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 
 Informative references to this spec from:
@@ -4073,7 +4129,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
@@ -4154,7 +4210,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -4262,7 +4318,7 @@ Normative references to this spec from:
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -4306,7 +4362,7 @@ Normative references to this spec from:
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 No informative reference to this spec from other specs.
@@ -4361,7 +4417,7 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 
 Informative references to this spec from:
@@ -4380,11 +4436,14 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Initial URL: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
+- Initial URL: [https://www.w3.org/TR/css-transforms-2/](https://www.w3.org/TR/css-transforms-2/)
 - Crawled URL: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
 - Crawled version: 4 March 2020
+- Editor's Draft: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
+- Latest published version: [https://www.w3.org/TR/css-transforms-2/](https://www.w3.org/TR/css-transforms-2/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Shortname: no shortname
+- Shortname: css-transforms-2
 
 ### Potential issue(s) {.anomalies}
 
@@ -4395,8 +4454,16 @@ This specification looks good!
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
+- [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
+- [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 
 
 ## CSS Transitions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
@@ -4442,8 +4509,8 @@ Informative references to this spec from:
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
-- [HTML Standard](https://html.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 
 ## CSS Transitions Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -4590,7 +4657,7 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Easing Functions Level 1](https://drafts.csswg.org/css-easing/)
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
-- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
+- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
@@ -4650,7 +4717,7 @@ Normative references to this spec from:
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
@@ -4721,7 +4788,7 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Easing Functions Level 1](https://drafts.csswg.org/css-easing/)
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
-- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
+- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
@@ -4855,7 +4922,7 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
-- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions-1/)
+- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
@@ -4874,7 +4941,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -4991,7 +5058,7 @@ Normative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
@@ -5094,7 +5161,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -5176,7 +5243,7 @@ Normative references to this spec from:
 - [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [High Resolution Time](https://w3c.github.io/hr-time/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Input Events Level 2](https://w3c.github.io/input-events/)
@@ -5209,7 +5276,7 @@ Normative references to this spec from:
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Screen Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
@@ -5254,6 +5321,7 @@ Informative references to this spec from:
 
 - [Accessible Name and Description Computation 1.2](https://w3c.github.io/accname/)
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
+- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
@@ -5317,7 +5385,7 @@ Normative references to this spec from:
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
 - [Native File System](https://wicg.github.io/native-file-system/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
@@ -5469,7 +5537,7 @@ Normative references to this spec from:
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
@@ -5486,7 +5554,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
@@ -5564,7 +5632,7 @@ Normative references to this spec from:
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
@@ -5618,7 +5686,7 @@ Normative references to this spec from:
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 No informative reference to this spec from other specs.
 
@@ -5707,7 +5775,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
@@ -5894,12 +5962,12 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
@@ -5972,7 +6040,7 @@ Normative references to this spec from:
 - [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
@@ -6031,9 +6099,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Initial URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
-- Crawled URL: [https://html.spec.whatwg.org/](https://html.spec.whatwg.org/)
+- Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
+- Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled version: 26 March 2020
+- Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6182,7 +6251,7 @@ Normative references to this spec from:
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Hints](https://w3c.github.io/resource-hints/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Video Coding (SVC) Extension for WebRTC](https://w3c.github.io/webrtc-svc/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Screen Wake Lock API](https://w3c.github.io/wake-lock/)
@@ -6364,7 +6433,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 
 Informative references to this spec from:
@@ -6452,7 +6521,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Element Timing API](https://wicg.github.io/element-timing/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 No informative reference to this spec from other specs.
 
@@ -6588,7 +6657,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/longtasks-1/](https://www.w3.org/TR/longtasks-1/)
 - Crawled URL: [https://w3c.github.io/longtasks/](https://w3c.github.io/longtasks/)
-- Crawled version: 3 March 2020
+- Crawled version: 26 March 2020
 - Editor's Draft: [https://w3c.github.io/longtasks/](https://w3c.github.io/longtasks/)
 - Latest published version: [https://www.w3.org/TR/longtasks-1/](https://www.w3.org/TR/longtasks-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-longtasks-1-20170907/)
@@ -6605,7 +6674,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Timing Entry Names Registry](https://w3c.github.io/timing-entrytypes-registry/)
 
 No informative reference to this spec from other specs.
@@ -6694,7 +6763,7 @@ Normative references to this spec from:
 
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
@@ -6829,6 +6898,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
+- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
 
 
 ## Media Queries Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -6886,11 +6956,14 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Initial URL: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
+- Initial URL: [https://www.w3.org/TR/mediaqueries-5/](https://www.w3.org/TR/mediaqueries-5/)
 - Crawled URL: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
 - Crawled version: 18 March 2020
+- Editor's Draft: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
+- Latest published version: [https://www.w3.org/TR/mediaqueries-5/](https://www.w3.org/TR/mediaqueries-5/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-mediaqueries-5-20200318/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
-- Shortname: no shortname
+- Shortname: mediaqueries-5
 
 ### Potential issue(s) {.anomalies}
 
@@ -6900,11 +6973,14 @@ This specification looks good!
 
 Normative references to this spec from:
 
+- [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
+- [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 
 Informative references to this spec from:
 
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 
 
 ## Media Session Standard {data-spec=true data-ok=true}
@@ -6956,7 +7032,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [File API](https://w3c.github.io/FileAPI/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [URL Standard](https://url.spec.whatwg.org/)
@@ -7080,7 +7156,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
@@ -7126,7 +7202,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Resource Hints](https://w3c.github.io/resource-hints/)
@@ -7446,7 +7522,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 
@@ -7478,7 +7554,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Event Timing API](https://wicg.github.io/event-timing/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Timing Entry Names Registry](https://w3c.github.io/timing-entrytypes-registry/)
 
@@ -7777,7 +7853,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [UI Events](https://w3c.github.io/uievents/)
 
 No informative reference to this spec from other specs.
@@ -7805,7 +7881,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 
 Informative references to this spec from:
@@ -7835,7 +7911,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Resource Hints](https://w3c.github.io/resource-hints/)
 
 Informative references to this spec from:
@@ -7866,7 +7942,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 
 No informative reference to this spec from other specs.
@@ -8019,10 +8095,10 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Resource Hints](https://w3c.github.io/resource-hints/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 
 Informative references to this spec from:
@@ -8199,7 +8275,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Preload](https://w3c.github.io/preload/)
 
@@ -8244,7 +8320,7 @@ Informative references to this spec from:
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
-- Crawled URL: [https://svgwg.org/svg2-draft/single-page.html](https://svgwg.org/svg2-draft/single-page.html)
+- Crawled URL: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Crawled version: 16 February 2020
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
@@ -8343,7 +8419,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
@@ -8358,6 +8434,7 @@ Informative references to this spec from:
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
+- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -8498,7 +8575,7 @@ Normative references to this spec from:
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
@@ -8551,7 +8628,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 No informative reference to this spec from other specs.
 
@@ -8603,7 +8680,7 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 
 ## Selectors Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -8653,7 +8730,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Non-element Selectors Module Level 1](https://drafts.csswg.org/selectors-nonelement/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
@@ -8726,7 +8803,7 @@ Normative references to this spec from:
 
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
@@ -8826,7 +8903,7 @@ Normative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Preload](https://w3c.github.io/preload/)
 
 Informative references to this spec from:
@@ -8893,7 +8970,7 @@ No informative reference to this spec from other specs.
 
 - Spec uses WebIDL but does not reference it normatively
 - WebIDL names also defined elsewhere: 
-    * `SVGMarkerElement` also defined in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+    * `SVGMarkerElement` also defined in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - Missing references for WebIDL names: 
      * `DOMPoint` defined in [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
      * `DOMPointReadOnly` defined in [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
@@ -8960,7 +9037,7 @@ Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 
 No informative reference to this spec from other specs.
@@ -9014,7 +9091,7 @@ Normative references to this spec from:
 
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 
 Informative references to this spec from:
@@ -9028,7 +9105,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/trace-context/](https://www.w3.org/TR/trace-context/)
 - Crawled URL: [https://w3c.github.io/trace-context/](https://w3c.github.io/trace-context/)
-- Crawled version: 25 March 2020
+- Crawled version: 26 March 2020
 - Editor's Draft: [https://w3c.github.io/trace-context/](https://w3c.github.io/trace-context/)
 - Latest published version: [https://www.w3.org/TR/trace-context-1/](https://www.w3.org/TR/trace-context-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2020/REC-trace-context-1-20200206/)
@@ -9073,7 +9150,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
 - [Input Events Level 2](https://w3c.github.io/input-events/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
@@ -9081,7 +9158,7 @@ Normative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
@@ -9218,7 +9295,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
@@ -9234,7 +9311,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
@@ -9261,7 +9338,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
 - Crawled URL: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
-- Crawled version: 27 September 2019
+- Crawled version: 26 March 2020
 - Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
 - Latest published version: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
@@ -9367,7 +9444,7 @@ Normative references to this spec from:
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 
 Informative references to this spec from:
@@ -9561,7 +9638,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
@@ -9656,7 +9733,7 @@ Normative references to this spec from:
 - [Gyroscope](https://w3c.github.io/gyroscope/)
 - [High Resolution Time](https://w3c.github.io/hr-time/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
@@ -9708,7 +9785,7 @@ Normative references to this spec from:
 - [Requesting Permissions](https://wicg.github.io/permissions-request/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/single-page.html)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Video Coding (SVC) Extension for WebRTC](https://w3c.github.io/webrtc-svc/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Screen Wake Lock API](https://w3c.github.io/wake-lock/)
@@ -9929,7 +10006,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 
 ## WebAssembly Web API {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -10018,7 +10095,7 @@ Normative references to this spec from:
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 Informative references to this spec from:
 
@@ -10045,7 +10122,7 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 
@@ -10190,7 +10267,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 No informative reference to this spec from other specs.
 
@@ -10331,7 +10408,7 @@ Normative references to this spec from:
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 Informative references to this spec from:
@@ -10361,7 +10438,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
-- [HTML Standard](https://html.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 

@@ -1,0 +1,504 @@
+{
+  "spec": {
+    "title": "CSS Transforms Module Level 2",
+    "url": "https://drafts.csswg.org/css-transforms-2/"
+  },
+  "dfns": [
+    {
+      "id": "3d-transformed-element",
+      "href": "https://drafts.csswg.org/css-transforms-2/#3d-transformed-element",
+      "linkingText": [
+        "3D transformed element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "3d-matrix",
+      "href": "https://drafts.csswg.org/css-transforms-2/#3d-matrix",
+      "linkingText": [
+        "3D matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "identity-transform-function",
+      "href": "https://drafts.csswg.org/css-transforms-2/#identity-transform-function",
+      "linkingText": [
+        "identity transform function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "perspective-matrix",
+      "href": "https://drafts.csswg.org/css-transforms-2/#perspective-matrix",
+      "linkingText": [
+        "perspective matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "accumulated-3d-transformation-matrix",
+      "href": "https://drafts.csswg.org/css-transforms-2/#accumulated-3d-transformation-matrix",
+      "linkingText": [
+        "accumulated 3D transformation matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "3d-rendering-context",
+      "href": "https://drafts.csswg.org/css-transforms-2/#3d-rendering-context",
+      "linkingText": [
+        "3D rendering context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-translate",
+      "href": "https://drafts.csswg.org/css-transforms-2/#propdef-translate",
+      "linkingText": [
+        "translate"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-rotate",
+      "href": "https://drafts.csswg.org/css-transforms-2/#propdef-rotate",
+      "linkingText": [
+        "rotate"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-rotate-x",
+      "href": "https://drafts.csswg.org/css-transforms-2/#valdef-rotate-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "rotate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-rotate-y",
+      "href": "https://drafts.csswg.org/css-transforms-2/#valdef-rotate-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "rotate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-rotate-z",
+      "href": "https://drafts.csswg.org/css-transforms-2/#valdef-rotate-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "rotate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-scale",
+      "href": "https://drafts.csswg.org/css-transforms-2/#propdef-scale",
+      "linkingText": [
+        "scale"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-translate-none",
+      "href": "https://drafts.csswg.org/css-transforms-2/#valdef-translate-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "translate",
+        "rotate",
+        "scale"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-transform-style",
+      "href": "https://drafts.csswg.org/css-transforms-2/#propdef-transform-style",
+      "linkingText": [
+        "transform-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-perspective",
+      "href": "https://drafts.csswg.org/css-transforms-2/#propdef-perspective",
+      "linkingText": [
+        "perspective"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-length-0",
+      "href": "https://drafts.csswg.org/css-transforms-2/#valdef-perspective-length-0",
+      "linkingText": [
+        "<length [0,∞]>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-none",
+      "href": "https://drafts.csswg.org/css-transforms-2/#valdef-perspective-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-perspective-origin",
+      "href": "https://drafts.csswg.org/css-transforms-2/#propdef-perspective-origin",
+      "linkingText": [
+        "perspective-origin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-origin-percentage",
+      "href": "https://drafts.csswg.org/css-transforms-2/#valdef-perspective-origin-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-origin-length",
+      "href": "https://drafts.csswg.org/css-transforms-2/#valdef-perspective-origin-length",
+      "linkingText": [
+        "<length>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-origin-top",
+      "href": "https://drafts.csswg.org/css-transforms-2/#valdef-perspective-origin-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-origin-right",
+      "href": "https://drafts.csswg.org/css-transforms-2/#valdef-perspective-origin-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-origin-bottom",
+      "href": "https://drafts.csswg.org/css-transforms-2/#valdef-perspective-origin-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-origin-left",
+      "href": "https://drafts.csswg.org/css-transforms-2/#valdef-perspective-origin-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-origin-center",
+      "href": "https://drafts.csswg.org/css-transforms-2/#valdef-perspective-origin-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-backface-visibility",
+      "href": "https://drafts.csswg.org/css-transforms-2/#propdef-backface-visibility",
+      "linkingText": [
+        "backface-visibility"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-transform-function",
+      "href": "https://drafts.csswg.org/css-transforms-2/#typedef-transform-function",
+      "linkingText": [
+        "<transform-function>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "3d-transform-functions",
+      "href": "https://drafts.csswg.org/css-transforms-2/#3d-transform-functions",
+      "linkingText": [
+        "3d transform functions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-matrix3d",
+      "href": "https://drafts.csswg.org/css-transforms-2/#funcdef-matrix3d",
+      "linkingText": [
+        "matrix3d()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-translate3d",
+      "href": "https://drafts.csswg.org/css-transforms-2/#funcdef-translate3d",
+      "linkingText": [
+        "translate3d()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-translatez",
+      "href": "https://drafts.csswg.org/css-transforms-2/#funcdef-translatez",
+      "linkingText": [
+        "translateZ()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-scale3d",
+      "href": "https://drafts.csswg.org/css-transforms-2/#funcdef-scale3d",
+      "linkingText": [
+        "scale3d()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-scalez",
+      "href": "https://drafts.csswg.org/css-transforms-2/#funcdef-scalez",
+      "linkingText": [
+        "scaleZ()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-rotate3d",
+      "href": "https://drafts.csswg.org/css-transforms-2/#funcdef-rotate3d",
+      "linkingText": [
+        "rotate3d()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-rotatex",
+      "href": "https://drafts.csswg.org/css-transforms-2/#funcdef-rotatex",
+      "linkingText": [
+        "rotateX()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-rotatey",
+      "href": "https://drafts.csswg.org/css-transforms-2/#funcdef-rotatey",
+      "linkingText": [
+        "rotateY()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-rotatez",
+      "href": "https://drafts.csswg.org/css-transforms-2/#funcdef-rotatez",
+      "linkingText": [
+        "rotateZ()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-perspective",
+      "href": "https://drafts.csswg.org/css-transforms-2/#funcdef-perspective",
+      "linkingText": [
+        "perspective()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "accumulation-for-one-based-values",
+      "href": "https://drafts.csswg.org/css-transforms-2/#accumulation-for-one-based-values",
+      "linkingText": [
+        "accumulation for one-based values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

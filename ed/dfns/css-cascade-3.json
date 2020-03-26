@@ -1,0 +1,373 @@
+{
+  "spec": {
+    "title": "CSS Cascading and Inheritance Level 3",
+    "url": "https://drafts.csswg.org/css-cascade-3/"
+  },
+  "dfns": [
+    {
+      "id": "at-ruledef-import",
+      "href": "https://drafts.csswg.org/css-cascade-3/#at-ruledef-import",
+      "linkingText": [
+        "@import"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "import-conditions",
+      "href": "https://drafts.csswg.org/css-cascade-3/#import-conditions",
+      "linkingText": [
+        "import conditions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "shorthand-property",
+      "href": "https://drafts.csswg.org/css-cascade-3/#shorthand-property",
+      "linkingText": [
+        "shorthand property",
+        "shorthand"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "longhand",
+      "href": "https://drafts.csswg.org/css-cascade-3/#longhand",
+      "linkingText": [
+        "longhand",
+        "longhand property",
+        "sub-property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "reset-only-sub-property",
+      "href": "https://drafts.csswg.org/css-cascade-3/#reset-only-sub-property",
+      "linkingText": [
+        "reset-only sub-property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-all",
+      "href": "https://drafts.csswg.org/css-cascade-3/#propdef-all",
+      "linkingText": [
+        "all"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "declared-value",
+      "href": "https://drafts.csswg.org/css-cascade-3/#declared-value",
+      "linkingText": [
+        "declared value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cascaded-value",
+      "href": "https://drafts.csswg.org/css-cascade-3/#cascaded-value",
+      "linkingText": [
+        "cascaded value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "specified-value",
+      "href": "https://drafts.csswg.org/css-cascade-3/#specified-value",
+      "linkingText": [
+        "specified value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "computed-value",
+      "href": "https://drafts.csswg.org/css-cascade-3/#computed-value",
+      "linkingText": [
+        "computed value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "used-value",
+      "href": "https://drafts.csswg.org/css-cascade-3/#used-value",
+      "linkingText": [
+        "used value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "actual-value",
+      "href": "https://drafts.csswg.org/css-cascade-3/#actual-value",
+      "linkingText": [
+        "actual value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cascade",
+      "href": "https://drafts.csswg.org/css-cascade-3/#cascade",
+      "linkingText": [
+        "cascade"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "output-of-the-cascade",
+      "href": "https://drafts.csswg.org/css-cascade-3/#output-of-the-cascade",
+      "linkingText": [
+        "output of the cascade"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "origin",
+      "href": "https://drafts.csswg.org/css-cascade-3/#origin",
+      "linkingText": [
+        "cascade origin"
+      ],
+      "localLinkingText": [
+        "origin"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cascade-origin-author",
+      "href": "https://drafts.csswg.org/css-cascade-3/#cascade-origin-author",
+      "linkingText": [
+        "author origin",
+        "author style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cascade-origin-user",
+      "href": "https://drafts.csswg.org/css-cascade-3/#cascade-origin-user",
+      "linkingText": [
+        "user origin",
+        "user style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cascade-origin-ua",
+      "href": "https://drafts.csswg.org/css-cascade-3/#cascade-origin-ua",
+      "linkingText": [
+        "user agent origin",
+        "ua origin",
+        "user agent style sheet",
+        "ua style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cascade-origin-animation",
+      "href": "https://drafts.csswg.org/css-cascade-3/#cascade-origin-animation",
+      "linkingText": [
+        "Animation Origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cascade-origin-transition",
+      "href": "https://drafts.csswg.org/css-cascade-3/#cascade-origin-transition",
+      "linkingText": [
+        "Transition Origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "important",
+      "href": "https://drafts.csswg.org/css-cascade-3/#important",
+      "linkingText": [
+        "important"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "bang-important",
+      "href": "https://drafts.csswg.org/css-cascade-3/#bang-important",
+      "linkingText": [
+        "!important"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "initial-value",
+      "href": "https://drafts.csswg.org/css-cascade-3/#initial-value",
+      "linkingText": [
+        "initial value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inheritance",
+      "href": "https://drafts.csswg.org/css-cascade-3/#inheritance",
+      "linkingText": [
+        "inheritance",
+        "inherit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inherited-value",
+      "href": "https://drafts.csswg.org/css-cascade-3/#inherited-value",
+      "linkingText": [
+        "inherited value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inherited-property",
+      "href": "https://drafts.csswg.org/css-cascade-3/#inherited-property",
+      "linkingText": [
+        "inherited property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-all-initial",
+      "href": "https://drafts.csswg.org/css-cascade-3/#valdef-all-initial",
+      "linkingText": [
+        "initial"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "all"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-all-inherit",
+      "href": "https://drafts.csswg.org/css-cascade-3/#valdef-all-inherit",
+      "linkingText": [
+        "inherit"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "all"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-all-unset",
+      "href": "https://drafts.csswg.org/css-cascade-3/#valdef-all-unset",
+      "linkingText": [
+        "unset"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "all"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

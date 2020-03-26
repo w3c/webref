@@ -1,0 +1,3654 @@
+{
+  "spec": {
+    "title": "Web Animations",
+    "url": "https://drafts.csswg.org/web-animations-1/"
+  },
+  "dfns": [
+    {
+      "id": "time-value",
+      "href": "https://drafts.csswg.org/web-animations-1/#time-value",
+      "linkingText": [
+        "time value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "unresolved",
+      "href": "https://drafts.csswg.org/web-animations-1/#unresolved",
+      "linkingText": [
+        "unresolved"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "timeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#timeline",
+      "linkingText": [
+        "timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "timeline-current-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#timeline-current-time",
+      "linkingText": [
+        "timeline current time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "inactive-timeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#inactive-timeline",
+      "linkingText": [
+        "inactive timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "monotonically-increasing-timeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#monotonically-increasing-timeline",
+      "linkingText": [
+        "monotonically increasing timeline"
+      ],
+      "localLinkingText": [
+        "monotonically increasing"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "timeline-time-to-origin-relative-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#timeline-time-to-origin-relative-time",
+      "linkingText": [
+        "timeline time\nto origin-relative time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "timeline-associated-with-a-document",
+      "href": "https://drafts.csswg.org/web-animations-1/#timeline-associated-with-a-document",
+      "linkingText": [
+        "timeline associated with\na document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "update-animations-and-send-events",
+      "href": "https://drafts.csswg.org/web-animations-1/#update-animations-and-send-events",
+      "linkingText": [
+        "update animations and send events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animation-frame",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-frame",
+      "linkingText": [
+        "animation frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "document-timeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#document-timeline",
+      "linkingText": [
+        "document timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "origin-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#origin-time",
+      "linkingText": [
+        "origin time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "default-document-timeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#default-document-timeline",
+      "linkingText": [
+        "default document timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#concept-animation",
+      "linkingText": [
+        "animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "associated-effect",
+      "href": "https://drafts.csswg.org/web-animations-1/#associated-effect",
+      "linkingText": [
+        "associated effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "document-for-timing",
+      "href": "https://drafts.csswg.org/web-animations-1/#document-for-timing",
+      "linkingText": [
+        "document for timing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "start-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#start-time",
+      "linkingText": [
+        "start time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "hold-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#hold-time",
+      "linkingText": [
+        "hold time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "global-animation-list",
+      "href": "https://drafts.csswg.org/web-animations-1/#global-animation-list",
+      "linkingText": [
+        "global animation list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "set-the-timeline-of-an-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#set-the-timeline-of-an-animation",
+      "linkingText": [
+        "set the timeline of an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "set-the-associated-effect-of-an-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#set-the-associated-effect-of-an-animation",
+      "linkingText": [
+        "set the associated effect of an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reset-an-animations-pending-tasks",
+      "href": "https://drafts.csswg.org/web-animations-1/#reset-an-animations-pending-tasks",
+      "linkingText": [
+        "reset an animation’s pending tasks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "current-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#current-time",
+      "linkingText": [
+        "current time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "silently-set-the-current-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#silently-set-the-current-time",
+      "linkingText": [
+        "silently set the current time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "set-the-current-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#set-the-current-time",
+      "linkingText": [
+        "set the current time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "set-the-start-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#set-the-start-time",
+      "linkingText": [
+        "set the start time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ready",
+      "href": "https://drafts.csswg.org/web-animations-1/#ready",
+      "linkingText": [
+        "ready"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "current-ready-promise",
+      "href": "https://drafts.csswg.org/web-animations-1/#current-ready-promise",
+      "linkingText": [
+        "current ready promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "play-an-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#play-an-animation",
+      "linkingText": [
+        "play an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pending-play-task",
+      "href": "https://drafts.csswg.org/web-animations-1/#pending-play-task",
+      "linkingText": [
+        "pending play task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pause-an-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#pause-an-animation",
+      "linkingText": [
+        "pause an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pending-pause-task",
+      "href": "https://drafts.csswg.org/web-animations-1/#pending-pause-task",
+      "linkingText": [
+        "pending pause task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "current-finished-promise",
+      "href": "https://drafts.csswg.org/web-animations-1/#current-finished-promise",
+      "linkingText": [
+        "current finished promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "associated-effect-end",
+      "href": "https://drafts.csswg.org/web-animations-1/#associated-effect-end",
+      "linkingText": [
+        "associated effect end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "previous-current-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#previous-current-time",
+      "linkingText": [
+        "previous current time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "update-an-animations-finished-state",
+      "href": "https://drafts.csswg.org/web-animations-1/#update-an-animations-finished-state",
+      "linkingText": [
+        "update an animation’s finished state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "finish-notification-steps",
+      "href": "https://drafts.csswg.org/web-animations-1/#finish-notification-steps",
+      "linkingText": [
+        "finish notification steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "finish-an-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#finish-an-animation",
+      "linkingText": [
+        "finish an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cancel-an-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#cancel-an-animation",
+      "linkingText": [
+        "cancel an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "playback-rate",
+      "href": "https://drafts.csswg.org/web-animations-1/#playback-rate",
+      "linkingText": [
+        "playback rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "set-the-playback-rate",
+      "href": "https://drafts.csswg.org/web-animations-1/#set-the-playback-rate",
+      "linkingText": [
+        "set the playback rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pending-playback-rate",
+      "href": "https://drafts.csswg.org/web-animations-1/#pending-playback-rate",
+      "linkingText": [
+        "pending playback rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "effective-playback-rate",
+      "href": "https://drafts.csswg.org/web-animations-1/#effective-playback-rate",
+      "linkingText": [
+        "effective playback rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "apply-any-pending-playback-rate",
+      "href": "https://drafts.csswg.org/web-animations-1/#apply-any-pending-playback-rate",
+      "linkingText": [
+        "apply any pending playback rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "seamlessly-update-the-playback-rate",
+      "href": "https://drafts.csswg.org/web-animations-1/#seamlessly-update-the-playback-rate",
+      "linkingText": [
+        "seamlessly update the playback rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reverse-an-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#reverse-an-animation",
+      "linkingText": [
+        "reverse an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "play-state",
+      "href": "https://drafts.csswg.org/web-animations-1/#play-state",
+      "linkingText": [
+        "play state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "idle-play-state",
+      "href": "https://drafts.csswg.org/web-animations-1/#idle-play-state",
+      "linkingText": [
+        "idle play state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "paused-play-state",
+      "href": "https://drafts.csswg.org/web-animations-1/#paused-play-state",
+      "linkingText": [
+        "paused play state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "finished-play-state",
+      "href": "https://drafts.csswg.org/web-animations-1/#finished-play-state",
+      "linkingText": [
+        "finished play state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "running-play-state",
+      "href": "https://drafts.csswg.org/web-animations-1/#running-play-state",
+      "linkingText": [
+        "running play state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-events",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-events",
+      "linkingText": [
+        "Animation events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pending-animation-event-queue",
+      "href": "https://drafts.csswg.org/web-animations-1/#pending-animation-event-queue",
+      "linkingText": [
+        "pending animation event queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "scheduled-event-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#scheduled-event-time",
+      "linkingText": [
+        "scheduled event time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-time-to-timeline-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-time-to-timeline-time",
+      "linkingText": [
+        "animation time to timeline time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-time-to-origin-relative-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-time-to-origin-relative-time",
+      "linkingText": [
+        "animation time to origin-relative time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-playback-events",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-playback-events",
+      "linkingText": [
+        "animation playback events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "finish-event",
+      "href": "https://drafts.csswg.org/web-animations-1/#finish-event",
+      "linkingText": [
+        "finish event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cancel-event",
+      "href": "https://drafts.csswg.org/web-animations-1/#cancel-event",
+      "linkingText": [
+        "cancel event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "remove-event",
+      "href": "https://drafts.csswg.org/web-animations-1/#remove-event",
+      "linkingText": [
+        "remove event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-effect",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-effect",
+      "linkingText": [
+        "animation effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "associated-with-an-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#associated-with-an-animation",
+      "linkingText": [
+        "associated with an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "associated-with-a-timeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#associated-with-a-timeline",
+      "linkingText": [
+        "associated with a timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "active-interval",
+      "href": "https://drafts.csswg.org/web-animations-1/#active-interval",
+      "linkingText": [
+        "active interval"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "start-delay",
+      "href": "https://drafts.csswg.org/web-animations-1/#start-delay",
+      "linkingText": [
+        "start delay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "end-delay",
+      "href": "https://drafts.csswg.org/web-animations-1/#end-delay",
+      "linkingText": [
+        "end delay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "end-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#end-time",
+      "linkingText": [
+        "end time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "local-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#local-time",
+      "linkingText": [
+        "local time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-direction",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-direction",
+      "linkingText": [
+        "animation direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "before-active-boundary-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#before-active-boundary-time",
+      "linkingText": [
+        "before-active boundary time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "active-after-boundary-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#active-after-boundary-time",
+      "linkingText": [
+        "active-after boundary time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "before-phase",
+      "href": "https://drafts.csswg.org/web-animations-1/#before-phase",
+      "linkingText": [
+        "before phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "after-phase",
+      "href": "https://drafts.csswg.org/web-animations-1/#after-phase",
+      "linkingText": [
+        "after phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "active-phase",
+      "href": "https://drafts.csswg.org/web-animations-1/#active-phase",
+      "linkingText": [
+        "active phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "idle-phase",
+      "href": "https://drafts.csswg.org/web-animations-1/#idle-phase",
+      "linkingText": [
+        "idle phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "in-play",
+      "href": "https://drafts.csswg.org/web-animations-1/#in-play",
+      "linkingText": [
+        "in play"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "current",
+      "href": "https://drafts.csswg.org/web-animations-1/#current",
+      "linkingText": [
+        "current"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "in-effect",
+      "href": "https://drafts.csswg.org/web-animations-1/#in-effect",
+      "linkingText": [
+        "in effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fill-mode",
+      "href": "https://drafts.csswg.org/web-animations-1/#fill-mode",
+      "linkingText": [
+        "fill mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iteration-interval",
+      "href": "https://drafts.csswg.org/web-animations-1/#iteration-interval",
+      "linkingText": [
+        "iteration interval"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iteration-duration",
+      "href": "https://drafts.csswg.org/web-animations-1/#iteration-duration",
+      "linkingText": [
+        "iteration duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iteration-count",
+      "href": "https://drafts.csswg.org/web-animations-1/#iteration-count",
+      "linkingText": [
+        "iteration count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iteration-start",
+      "href": "https://drafts.csswg.org/web-animations-1/#iteration-start",
+      "linkingText": [
+        "iteration start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "active-duration",
+      "href": "https://drafts.csswg.org/web-animations-1/#active-duration",
+      "linkingText": [
+        "active duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "active-time",
+      "href": "https://drafts.csswg.org/web-animations-1/#active-time",
+      "linkingText": [
+        "active time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "overall-progress",
+      "href": "https://drafts.csswg.org/web-animations-1/#overall-progress",
+      "linkingText": [
+        "overall progress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "simple-iteration-progress",
+      "href": "https://drafts.csswg.org/web-animations-1/#simple-iteration-progress",
+      "linkingText": [
+        "simple iteration progress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "current-iteration",
+      "href": "https://drafts.csswg.org/web-animations-1/#current-iteration",
+      "linkingText": [
+        "current iteration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "playback-direction",
+      "href": "https://drafts.csswg.org/web-animations-1/#playback-direction",
+      "linkingText": [
+        "playback direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "directed-progress",
+      "href": "https://drafts.csswg.org/web-animations-1/#directed-progress",
+      "linkingText": [
+        "directed progress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "transformed-progress",
+      "href": "https://drafts.csswg.org/web-animations-1/#transformed-progress",
+      "linkingText": [
+        "transformed progress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iteration-progress",
+      "href": "https://drafts.csswg.org/web-animations-1/#iteration-progress",
+      "linkingText": [
+        "iteration progress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "target-property",
+      "href": "https://drafts.csswg.org/web-animations-1/#target-property",
+      "linkingText": [
+        "target property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "effect-value",
+      "href": "https://drafts.csswg.org/web-animations-1/#effect-value",
+      "linkingText": [
+        "effect value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-animatable",
+      "href": "https://drafts.csswg.org/web-animations-1/#concept-animatable",
+      "linkingText": [
+        "animatable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-type",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-type",
+      "linkingText": [
+        "Animation type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "not-animatable",
+      "href": "https://drafts.csswg.org/web-animations-1/#not-animatable",
+      "linkingText": [
+        "not animatable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "discrete",
+      "href": "https://drafts.csswg.org/web-animations-1/#discrete",
+      "linkingText": [
+        "discrete"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "by-computed-value",
+      "href": "https://drafts.csswg.org/web-animations-1/#by-computed-value",
+      "linkingText": [
+        "by computed value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "repeatable-list",
+      "href": "https://drafts.csswg.org/web-animations-1/#repeatable-list",
+      "linkingText": [
+        "repeatable list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "keyframe-effect",
+      "href": "https://drafts.csswg.org/web-animations-1/#keyframe-effect",
+      "linkingText": [
+        "keyframe effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "effect-target",
+      "href": "https://drafts.csswg.org/web-animations-1/#effect-target",
+      "linkingText": [
+        "effect target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "target-element",
+      "href": "https://drafts.csswg.org/web-animations-1/#target-element",
+      "linkingText": [
+        "target element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "target-pseudo-selector",
+      "href": "https://drafts.csswg.org/web-animations-1/#target-pseudo-selector",
+      "linkingText": [
+        "target pseudo-selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "keyframe",
+      "href": "https://drafts.csswg.org/web-animations-1/#keyframe",
+      "linkingText": [
+        "keyframe"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "keyframe-offset",
+      "href": "https://drafts.csswg.org/web-animations-1/#keyframe-offset",
+      "linkingText": [
+        "keyframe offset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "loosely-sorted-by-offset",
+      "href": "https://drafts.csswg.org/web-animations-1/#loosely-sorted-by-offset",
+      "linkingText": [
+        "loosely sorted by offset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "keyframe-specific-composite-operation",
+      "href": "https://drafts.csswg.org/web-animations-1/#keyframe-specific-composite-operation",
+      "linkingText": [
+        "keyframe-specific composite operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "computed-keyframes",
+      "href": "https://drafts.csswg.org/web-animations-1/#computed-keyframes",
+      "linkingText": [
+        "computed keyframes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "computed-keyframe-offset",
+      "href": "https://drafts.csswg.org/web-animations-1/#computed-keyframe-offset",
+      "linkingText": [
+        "computed keyframe offset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "compute-missing-keyframe-offsets",
+      "href": "https://drafts.csswg.org/web-animations-1/#compute-missing-keyframe-offsets",
+      "linkingText": [
+        "compute missing keyframe offsets"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "offsetk",
+      "href": "https://drafts.csswg.org/web-animations-1/#offsetk",
+      "linkingText": [
+        "offsetk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "neutral-value-for-composition",
+      "href": "https://drafts.csswg.org/web-animations-1/#neutral-value-for-composition",
+      "linkingText": [
+        "neutral value for composition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "composite",
+      "href": "https://drafts.csswg.org/web-animations-1/#composite",
+      "linkingText": [
+        "composite",
+        "composition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-class",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-class",
+      "linkingText": [
+        "animation class"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "effect-stack",
+      "href": "https://drafts.csswg.org/web-animations-1/#effect-stack",
+      "linkingText": [
+        "effect stack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-composite-order",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-composite-order",
+      "linkingText": [
+        "animation composite order"
+      ],
+      "localLinkingText": [
+        "composite order"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "associated-animation-of-an-animation-effect",
+      "href": "https://drafts.csswg.org/web-animations-1/#associated-animation-of-an-animation-effect",
+      "linkingText": [
+        "associated animation of an animation effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "underlying-value",
+      "href": "https://drafts.csswg.org/web-animations-1/#underlying-value",
+      "linkingText": [
+        "underlying value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "composited-value",
+      "href": "https://drafts.csswg.org/web-animations-1/#composited-value",
+      "linkingText": [
+        "composited value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "composite-operation",
+      "href": "https://drafts.csswg.org/web-animations-1/#composite-operation",
+      "linkingText": [
+        "composite operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "composite-operation-replace",
+      "href": "https://drafts.csswg.org/web-animations-1/#composite-operation-replace",
+      "linkingText": [
+        "composite operation replace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "composite-operation-add",
+      "href": "https://drafts.csswg.org/web-animations-1/#composite-operation-add",
+      "linkingText": [
+        "composite operation add"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "composite-operation-accumulate",
+      "href": "https://drafts.csswg.org/web-animations-1/#composite-operation-accumulate",
+      "linkingText": [
+        "composite operation accumulate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "replace-state",
+      "href": "https://drafts.csswg.org/web-animations-1/#replace-state",
+      "linkingText": [
+        "replace state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "active-replace-state",
+      "href": "https://drafts.csswg.org/web-animations-1/#active-replace-state",
+      "linkingText": [
+        "active replace state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "removed-replace-state",
+      "href": "https://drafts.csswg.org/web-animations-1/#removed-replace-state",
+      "linkingText": [
+        "removed replace state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "persisted-replace-state",
+      "href": "https://drafts.csswg.org/web-animations-1/#persisted-replace-state",
+      "linkingText": [
+        "persisted replace state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "replaceable-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#replaceable-animation",
+      "linkingText": [
+        "replaceable animation"
+      ],
+      "localLinkingText": [
+        "replaceable"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "remove-replaced-animations",
+      "href": "https://drafts.csswg.org/web-animations-1/#remove-replaced-animations",
+      "linkingText": [
+        "remove replaced animations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animationtimeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#animationtimeline",
+      "linkingText": [
+        "AnimationTimeline"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationtimeline-currenttime",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationtimeline-currenttime",
+      "linkingText": [
+        "currentTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationTimeline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-documenttimelineoptions",
+      "href": "https://drafts.csswg.org/web-animations-1/#dictdef-documenttimelineoptions",
+      "linkingText": [
+        "DocumentTimelineOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "documenttimeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#documenttimeline",
+      "linkingText": [
+        "DocumentTimeline"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-documenttimelineoptions-origintime",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-documenttimelineoptions-origintime",
+      "linkingText": [
+        "originTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DocumentTimelineOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-documenttimeline-documenttimeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-documenttimeline-documenttimeline",
+      "linkingText": [
+        "DocumentTimeline(options)",
+        "constructor(options)",
+        "DocumentTimeline()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "DocumentTimeline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-documenttimeline-documenttimeline-options-options",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-documenttimeline-documenttimeline-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DocumentTimeline/DocumentTimeline(options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation",
+      "linkingText": [
+        "Animation"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-animation",
+      "linkingText": [
+        "Animation(effect, timeline)",
+        "constructor(effect, timeline)",
+        "Animation(effect)",
+        "constructor(effect)",
+        "Animation()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-animation-effect-timeline-effect",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-animation-effect-timeline-effect",
+      "linkingText": [
+        "effect"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Animation/Animation(effect, timeline)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-animation-effect-timeline-timeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-animation-effect-timeline-timeline",
+      "linkingText": [
+        "timeline"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Animation/Animation(effect, timeline)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-id",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-effect",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-effect",
+      "linkingText": [
+        "effect"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-timeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-timeline",
+      "linkingText": [
+        "timeline"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-starttime",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-starttime",
+      "linkingText": [
+        "startTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-currenttime",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-currenttime",
+      "linkingText": [
+        "currentTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-playbackrate",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-playbackrate",
+      "linkingText": [
+        "playbackRate"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-playstate",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-playstate",
+      "linkingText": [
+        "playState"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-replacestate",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-replacestate",
+      "linkingText": [
+        "replaceState"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-pending",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-ready",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-ready",
+      "linkingText": [
+        "ready"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-finished",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-finished",
+      "linkingText": [
+        "finished"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-onfinish",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-onfinish",
+      "linkingText": [
+        "onfinish"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-oncancel",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-oncancel",
+      "linkingText": [
+        "oncancel"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-onremove",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-onremove",
+      "linkingText": [
+        "onremove"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-cancel",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-cancel",
+      "linkingText": [
+        "cancel()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-finish",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-finish",
+      "linkingText": [
+        "finish()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-play",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-play",
+      "linkingText": [
+        "play()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-pause",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-pause",
+      "linkingText": [
+        "pause()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-updateplaybackrate",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-updateplaybackrate",
+      "linkingText": [
+        "updatePlaybackRate(playbackRate)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-updateplaybackrate-playbackrate-playbackrate",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-updateplaybackrate-playbackrate-playbackrate",
+      "linkingText": [
+        "playbackRate"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Animation/updatePlaybackRate(playbackRate)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-reverse",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-reverse",
+      "linkingText": [
+        "reverse()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-persist",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-persist",
+      "linkingText": [
+        "persist()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-commitstyles",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animation-commitstyles",
+      "linkingText": [
+        "commitStyles()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "commit-computed-styles",
+      "href": "https://drafts.csswg.org/web-animations-1/#commit-computed-styles",
+      "linkingText": [
+        "commit computed styles"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enumdef-animationplaystate",
+      "href": "https://drafts.csswg.org/web-animations-1/#enumdef-animationplaystate",
+      "linkingText": [
+        "AnimationPlayState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaystate-idle",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaystate-idle",
+      "linkingText": [
+        "\"idle\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AnimationPlayState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaystate-running",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaystate-running",
+      "linkingText": [
+        "\"running\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AnimationPlayState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaystate-paused",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaystate-paused",
+      "linkingText": [
+        "\"paused\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AnimationPlayState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaystate-finished",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaystate-finished",
+      "linkingText": [
+        "\"finished\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AnimationPlayState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-animationreplacestate",
+      "href": "https://drafts.csswg.org/web-animations-1/#enumdef-animationreplacestate",
+      "linkingText": [
+        "AnimationReplaceState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationreplacestate-active",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationreplacestate-active",
+      "linkingText": [
+        "\"active\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AnimationReplaceState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationreplacestate-removed",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationreplacestate-removed",
+      "linkingText": [
+        "\"removed\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AnimationReplaceState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationreplacestate-persisted",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationreplacestate-persisted",
+      "linkingText": [
+        "\"persisted\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AnimationReplaceState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animationeffect",
+      "href": "https://drafts.csswg.org/web-animations-1/#animationeffect",
+      "linkingText": [
+        "AnimationEffect"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationeffect-gettiming",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-gettiming",
+      "linkingText": [
+        "getTiming()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AnimationEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationeffect-getcomputedtiming",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-getcomputedtiming",
+      "linkingText": [
+        "getComputedTiming()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AnimationEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationeffect-updatetiming",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-updatetiming",
+      "linkingText": [
+        "updateTiming(timing)",
+        "updateTiming()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AnimationEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationeffect-updatetiming-timing-timing",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-updatetiming-timing-timing",
+      "linkingText": [
+        "timing"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationEffect/updateTiming(timing)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-effecttiming",
+      "href": "https://drafts.csswg.org/web-animations-1/#dictdef-effecttiming",
+      "linkingText": [
+        "EffectTiming"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-optionaleffecttiming",
+      "href": "https://drafts.csswg.org/web-animations-1/#dictdef-optionaleffecttiming",
+      "linkingText": [
+        "OptionalEffectTiming"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-effecttiming-delay",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-delay",
+      "linkingText": [
+        "delay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-optionaleffecttiming-delay",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-delay",
+      "linkingText": [
+        "delay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-effecttiming-enddelay",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-enddelay",
+      "linkingText": [
+        "endDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-optionaleffecttiming-enddelay",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-enddelay",
+      "linkingText": [
+        "endDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-effecttiming-fill",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-fill",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-optionaleffecttiming-fill",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-fill",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-effecttiming-iterationstart",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-iterationstart",
+      "linkingText": [
+        "iterationStart"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-optionaleffecttiming-iterationstart",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-iterationstart",
+      "linkingText": [
+        "iterationStart"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-effecttiming-iterations",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-iterations",
+      "linkingText": [
+        "iterations"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-optionaleffecttiming-iterations",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-iterations",
+      "linkingText": [
+        "iterations"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-effecttiming-duration",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-optionaleffecttiming-duration",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-effecttiming-direction",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-optionaleffecttiming-direction",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-effecttiming-easing",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-effecttiming-easing",
+      "linkingText": [
+        "easing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-optionaleffecttiming-easing",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-optionaleffecttiming-easing",
+      "linkingText": [
+        "easing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-fillmode",
+      "href": "https://drafts.csswg.org/web-animations-1/#enumdef-fillmode",
+      "linkingText": [
+        "FillMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fillmode-none",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-fillmode-none",
+      "linkingText": [
+        "\"none\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fillmode-forwards",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-fillmode-forwards",
+      "linkingText": [
+        "\"forwards\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fillmode-backwards",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-fillmode-backwards",
+      "linkingText": [
+        "\"backwards\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fillmode-both",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-fillmode-both",
+      "linkingText": [
+        "\"both\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fillmode-auto",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-fillmode-auto",
+      "linkingText": [
+        "\"auto\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-playbackdirection",
+      "href": "https://drafts.csswg.org/web-animations-1/#enumdef-playbackdirection",
+      "linkingText": [
+        "PlaybackDirection"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-playbackdirection-normal",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-playbackdirection-normal",
+      "linkingText": [
+        "\"normal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PlaybackDirection"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-playbackdirection-reverse",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-playbackdirection-reverse",
+      "linkingText": [
+        "\"reverse\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PlaybackDirection"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-playbackdirection-alternate",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-playbackdirection-alternate",
+      "linkingText": [
+        "\"alternate\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PlaybackDirection"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-playbackdirection-alternate-reverse",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-playbackdirection-alternate-reverse",
+      "linkingText": [
+        "\"alternate-reverse\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PlaybackDirection"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "update-the-timing-properties-of-an-animation-effect",
+      "href": "https://drafts.csswg.org/web-animations-1/#update-the-timing-properties-of-an-animation-effect",
+      "linkingText": [
+        "update the timing properties of an animation effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-computedeffecttiming",
+      "href": "https://drafts.csswg.org/web-animations-1/#dictdef-computedeffecttiming",
+      "linkingText": [
+        "ComputedEffectTiming"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-computedeffecttiming-endtime",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-computedeffecttiming-endtime",
+      "linkingText": [
+        "endTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputedEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-computedeffecttiming-activeduration",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-computedeffecttiming-activeduration",
+      "linkingText": [
+        "activeDuration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputedEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-computedeffecttiming-localtime",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-computedeffecttiming-localtime",
+      "linkingText": [
+        "localTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputedEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-computedeffecttiming-progress",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-computedeffecttiming-progress",
+      "linkingText": [
+        "progress"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputedEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-computedeffecttiming-currentiteration",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-computedeffecttiming-currentiteration",
+      "linkingText": [
+        "currentIteration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputedEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "keyframeeffect",
+      "href": "https://drafts.csswg.org/web-animations-1/#keyframeeffect",
+      "linkingText": [
+        "KeyframeEffect"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-setkeyframes-keyframes-keyframes",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-setkeyframes-keyframes-keyframes",
+      "linkingText": [
+        "keyframes"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyframeEffect/setKeyframes(keyframes)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-keyframeeffect",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-keyframeeffect",
+      "linkingText": [
+        "KeyframeEffect(target, keyframes, options)",
+        "constructor(target, keyframes, options)",
+        "KeyframeEffect(target, keyframes)",
+        "constructor(target, keyframes)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-keyframeeffect-target-keyframes-options-target",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-keyframeeffect-target-keyframes-options-target",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyframeEffect/KeyframeEffect(target, keyframes, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-keyframeeffect-target-keyframes-options-keyframes",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-keyframeeffect-target-keyframes-options-keyframes",
+      "linkingText": [
+        "keyframes"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyframeEffect/KeyframeEffect(target, keyframes, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-keyframeeffect-target-keyframes-options-options",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-keyframeeffect-target-keyframes-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyframeEffect/KeyframeEffect(target, keyframes, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-keyframeeffect-source",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-keyframeeffect-source",
+      "linkingText": [
+        "KeyframeEffect(source)",
+        "constructor(source)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-keyframeeffect-source-source",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-keyframeeffect-source-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyframeEffect/KeyframeEffect(source)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-target",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-target",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-pseudoelement",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-pseudoelement",
+      "linkingText": [
+        "pseudoElement"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-composite",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-composite",
+      "linkingText": [
+        "composite"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-getkeyframes",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-getkeyframes",
+      "linkingText": [
+        "getKeyframes()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-basecomputedkeyframe",
+      "href": "https://drafts.csswg.org/web-animations-1/#dictdef-basecomputedkeyframe",
+      "linkingText": [
+        "BaseComputedKeyframe"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basecomputedkeyframe-offset",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-basecomputedkeyframe-offset",
+      "linkingText": [
+        "offset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BaseComputedKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basecomputedkeyframe-computedoffset",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-basecomputedkeyframe-computedoffset",
+      "linkingText": [
+        "computedOffset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BaseComputedKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basecomputedkeyframe-easing",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-basecomputedkeyframe-easing",
+      "linkingText": [
+        "easing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BaseComputedKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basecomputedkeyframe-composite",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-basecomputedkeyframe-composite",
+      "linkingText": [
+        "composite"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BaseComputedKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-setkeyframes",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-setkeyframes",
+      "linkingText": [
+        "setKeyframes(keyframes)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-setkeyframes-keyframes",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-setkeyframes-keyframes",
+      "linkingText": [
+        "keyframes"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyframeEffect/setKeyframes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animation-property-name-to-idl-attribute-name",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation-property-name-to-idl-attribute-name",
+      "linkingText": [
+        "animation property name to IDL attribute name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "idl-attribute-name-to-animation-property-name",
+      "href": "https://drafts.csswg.org/web-animations-1/#idl-attribute-name-to-animation-property-name",
+      "linkingText": [
+        "IDL attribute name to animation property name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "check-the-completion-record",
+      "href": "https://drafts.csswg.org/web-animations-1/#check-the-completion-record",
+      "linkingText": [
+        "check the completion record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "process-a-keyframe-like-object",
+      "href": "https://drafts.csswg.org/web-animations-1/#process-a-keyframe-like-object",
+      "linkingText": [
+        "process a keyframe-like object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-basepropertyindexedkeyframe",
+      "href": "https://drafts.csswg.org/web-animations-1/#dictdef-basepropertyindexedkeyframe",
+      "linkingText": [
+        "BasePropertyIndexedKeyframe"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basepropertyindexedkeyframe-offset",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-basepropertyindexedkeyframe-offset",
+      "linkingText": [
+        "offset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasePropertyIndexedKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basepropertyindexedkeyframe-easing",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-basepropertyindexedkeyframe-easing",
+      "linkingText": [
+        "easing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasePropertyIndexedKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basepropertyindexedkeyframe-composite",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-basepropertyindexedkeyframe-composite",
+      "linkingText": [
+        "composite"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasePropertyIndexedKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-basekeyframe",
+      "href": "https://drafts.csswg.org/web-animations-1/#dictdef-basekeyframe",
+      "linkingText": [
+        "BaseKeyframe"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basekeyframe-offset",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-basekeyframe-offset",
+      "linkingText": [
+        "offset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BaseKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basekeyframe-easing",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-basekeyframe-easing",
+      "linkingText": [
+        "easing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BaseKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basekeyframe-composite",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-basekeyframe-composite",
+      "linkingText": [
+        "composite"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BaseKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "process-a-keyframes-argument",
+      "href": "https://drafts.csswg.org/web-animations-1/#process-a-keyframes-argument",
+      "linkingText": [
+        "process a keyframes argument"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-keyframeeffectoptions",
+      "href": "https://drafts.csswg.org/web-animations-1/#dictdef-keyframeeffectoptions",
+      "linkingText": [
+        "KeyframeEffectOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffectoptions-composite",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffectoptions-composite",
+      "linkingText": [
+        "composite"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyframeEffectOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffectoptions-pseudoelement",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffectoptions-pseudoelement",
+      "linkingText": [
+        "pseudoElement"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyframeEffectOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "compositeoperation",
+      "href": "https://drafts.csswg.org/web-animations-1/#compositeoperation",
+      "linkingText": [
+        "CompositeOperation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enumdef-compositeoperation",
+      "href": "https://drafts.csswg.org/web-animations-1/#enumdef-compositeoperation",
+      "linkingText": [
+        "CompositeOperation"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositeoperation-replace",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-compositeoperation-replace",
+      "linkingText": [
+        "\"replace\"",
+        "replace"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CompositeOperation",
+        "CompositeOperationOrAuto"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositeoperation-add",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-compositeoperation-add",
+      "linkingText": [
+        "\"add\"",
+        "add"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CompositeOperation",
+        "CompositeOperationOrAuto"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositeoperation-accumulate",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-compositeoperation-accumulate",
+      "linkingText": [
+        "\"accumulate\"",
+        "accumulate"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CompositeOperation",
+        "CompositeOperationOrAuto"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-compositeoperationorauto",
+      "href": "https://drafts.csswg.org/web-animations-1/#enumdef-compositeoperationorauto",
+      "linkingText": [
+        "CompositeOperationOrAuto"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositeoperationorauto-auto",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-compositeoperationorauto-auto",
+      "linkingText": [
+        "\"auto\"",
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CompositeOperationOrAuto"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animatable",
+      "href": "https://drafts.csswg.org/web-animations-1/#animatable",
+      "linkingText": [
+        "Animatable"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-keyframeanimationoptions",
+      "href": "https://drafts.csswg.org/web-animations-1/#dictdef-keyframeanimationoptions",
+      "linkingText": [
+        "KeyframeAnimationOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-getanimationsoptions",
+      "href": "https://drafts.csswg.org/web-animations-1/#dictdef-getanimationsoptions",
+      "linkingText": [
+        "GetAnimationsOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animatable-animate",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animatable-animate",
+      "linkingText": [
+        "animate(keyframes, options)",
+        "animate(keyframes)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animatable"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animatable-animate-keyframes-options-keyframes",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animatable-animate-keyframes-options-keyframes",
+      "linkingText": [
+        "keyframes"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Animatable/animate(keyframes, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animatable-animate-keyframes-options-options",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animatable-animate-keyframes-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Animatable/animate(keyframes, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animatable-getanimations",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animatable-getanimations",
+      "linkingText": [
+        "getAnimations(options)",
+        "getAnimations()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animatable"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "relevant-animation",
+      "href": "https://drafts.csswg.org/web-animations-1/#relevant-animation",
+      "linkingText": [
+        "relevant animation"
+      ],
+      "localLinkingText": [
+        "relevant"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-animatable-getanimations-options-options",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animatable-getanimations-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Animatable/getAnimations(options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeanimationoptions-id",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-keyframeanimationoptions-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyframeAnimationOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-getanimationsoptions-subtree",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-getanimationsoptions-subtree",
+      "linkingText": [
+        "subtree"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GetAnimationsOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-timeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-document-timeline",
+      "linkingText": [
+        "timeline"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-documentorshadowroot-getanimations",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-documentorshadowroot-getanimations",
+      "linkingText": [
+        "getAnimations()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DocumentOrShadowRoot"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animationplaybackevent",
+      "href": "https://drafts.csswg.org/web-animations-1/#animationplaybackevent",
+      "linkingText": [
+        "AnimationPlaybackEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-type",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type, eventInitDict)",
+        "AnimationPlaybackEvent/constructor(type, eventInitDict)",
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type)",
+        "AnimationPlaybackEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-eventinitdict",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type, eventInitDict)",
+        "AnimationPlaybackEvent/constructor(type, eventInitDict)",
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type)",
+        "AnimationPlaybackEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-animationplaybackeventinit",
+      "href": "https://drafts.csswg.org/web-animations-1/#dictdef-animationplaybackeventinit",
+      "linkingText": [
+        "AnimationPlaybackEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaybackevent-animationplaybackevent",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaybackevent-animationplaybackevent",
+      "linkingText": [
+        "AnimationPlaybackEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "AnimationPlaybackEvent(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "AnimationPlaybackEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaybackevent-currenttime",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaybackevent-currenttime",
+      "linkingText": [
+        "currentTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationPlaybackEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaybackevent-timelinetime",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaybackevent-timelinetime",
+      "linkingText": [
+        "timelineTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationPlaybackEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaybackeventinit-currenttime",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaybackeventinit-currenttime",
+      "linkingText": [
+        "currentTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AnimationPlaybackEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaybackeventinit-timelinetime",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationplaybackeventinit-timelinetime",
+      "linkingText": [
+        "timelineTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AnimationPlaybackEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "conforming-scripted-web-animations-user-agent",
+      "href": "https://drafts.csswg.org/web-animations-1/#conforming-scripted-web-animations-user-agent",
+      "linkingText": [
+        "conforming scripted Web Animations user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "combining-shadow-lists",
+      "href": "https://drafts.csswg.org/web-animations-1/#combining-shadow-lists",
+      "linkingText": [
+        "combining shadow lists"
+      ],
+      "localLinkingText": [
+        "shadow lists"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,1132 @@
+{
+  "spec": {
+    "title": "Pointer Events",
+    "url": "https://w3c.github.io/pointerevents/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-active-buttons-state",
+      "href": "https://w3c.github.io/pointerevents/#dfn-active-buttons-state",
+      "linkingText": [
+        "active buttons state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-active-document",
+      "href": "https://w3c.github.io/pointerevents/#dfn-active-document",
+      "linkingText": [
+        "active document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-active-pointer",
+      "href": "https://w3c.github.io/pointerevents/#dfn-active-pointer",
+      "linkingText": [
+        "active pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-canceled-event",
+      "href": "https://w3c.github.io/pointerevents/#dfn-canceled-event",
+      "linkingText": [
+        "canceled event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-contact-geometry",
+      "href": "https://w3c.github.io/pointerevents/#dfn-contact-geometry",
+      "linkingText": [
+        "contact geometry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-digitizer",
+      "href": "https://w3c.github.io/pointerevents/#dfn-digitizer",
+      "linkingText": [
+        "digitizer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-hit-test",
+      "href": "https://w3c.github.io/pointerevents/#dfn-hit-test",
+      "linkingText": [
+        "hit test"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-pointer",
+      "href": "https://w3c.github.io/pointerevents/#dfn-pointer",
+      "linkingText": [
+        "pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-user-agent",
+      "href": "https://w3c.github.io/pointerevents/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-pointereventinit-pointerid",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-pointerid",
+      "linkingText": [
+        "pointerId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-width",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-height",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-pressure",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-pressure",
+      "linkingText": [
+        "pressure"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-tangentialpressure",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-tangentialpressure",
+      "linkingText": [
+        "tangentialPressure"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-tiltx",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-tiltx",
+      "linkingText": [
+        "tiltX"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-tilty",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-tilty",
+      "linkingText": [
+        "tiltY"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-twist",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-twist",
+      "linkingText": [
+        "twist"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-pointertype",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-pointertype",
+      "linkingText": [
+        "pointerType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-isprimary",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-isprimary",
+      "linkingText": [
+        "isPrimary"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-coalescedevents",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-coalescedevents",
+      "linkingText": [
+        "coalescedEvents"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-predictedevents",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit-predictedevents",
+      "linkingText": [
+        "predictedEvents"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-constructor",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(type)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "PointerEvent.constructor",
+        "PointerEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-pointerid",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-pointerid",
+      "linkingText": [
+        "pointerId"
+      ],
+      "localLinkingText": [
+        "PointerEvent.pointerId"
+      ],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-width",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [
+        "PointerEvent.width"
+      ],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-height",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [
+        "PointerEvent.height"
+      ],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-pressure",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-pressure",
+      "linkingText": [
+        "pressure"
+      ],
+      "localLinkingText": [
+        "PointerEvent.pressure"
+      ],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-tangentialpressure",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-tangentialpressure",
+      "linkingText": [
+        "tangentialPressure"
+      ],
+      "localLinkingText": [
+        "PointerEvent.tangentialPressure"
+      ],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-tiltx",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-tiltx",
+      "linkingText": [
+        "tiltX"
+      ],
+      "localLinkingText": [
+        "PointerEvent.tiltX"
+      ],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-tilty",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-tilty",
+      "linkingText": [
+        "tiltY"
+      ],
+      "localLinkingText": [
+        "PointerEvent.tiltY"
+      ],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-twist",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-twist",
+      "linkingText": [
+        "twist"
+      ],
+      "localLinkingText": [
+        "PointerEvent.twist"
+      ],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-pointertype",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-pointertype",
+      "linkingText": [
+        "pointerType"
+      ],
+      "localLinkingText": [
+        "PointerEvent.pointerType"
+      ],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-isprimary",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-isprimary",
+      "linkingText": [
+        "isPrimary"
+      ],
+      "localLinkingText": [
+        "PointerEvent.isPrimary"
+      ],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-getcoalescedevents",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-getcoalescedevents",
+      "linkingText": [
+        "getCoalescedEvents()"
+      ],
+      "localLinkingText": [
+        "PointerEvent.getCoalescedEvents",
+        "PointerEvent.getCoalescedEvents()",
+        "getCoalescedEvents"
+      ],
+      "type": "method",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-getpredictedevents",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent-getpredictedevents",
+      "linkingText": [
+        "getPredictedEvents()"
+      ],
+      "localLinkingText": [
+        "PointerEvent.getPredictedEvents",
+        "PointerEvent.getPredictedEvents()",
+        "getPredictedEvents"
+      ],
+      "type": "method",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointereventinit",
+      "linkingText": [
+        "PointerEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent",
+      "href": "https://w3c.github.io/pointerevents/#dom-pointerevent",
+      "linkingText": [
+        "PointerEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-coalesced-event-list",
+      "href": "https://w3c.github.io/pointerevents/#dfn-coalesced-event-list",
+      "linkingText": [
+        "coalesced event list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-predicted-event-list",
+      "href": "https://w3c.github.io/pointerevents/#dfn-predicted-event-list",
+      "linkingText": [
+        "predicted event list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-coalesced-events-targets-dirty",
+      "href": "https://w3c.github.io/pointerevents/#dfn-coalesced-events-targets-dirty",
+      "linkingText": [
+        "coalesced events targets dirty"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-predicted-events-targets-dirty",
+      "href": "https://w3c.github.io/pointerevents/#dfn-predicted-events-targets-dirty",
+      "linkingText": [
+        "predicted events targets dirty"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-chorded-button-interactions",
+      "href": "https://w3c.github.io/pointerevents/#dfn-chorded-button-interactions",
+      "linkingText": [
+        "Chorded Button Interactions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-primary-pointer",
+      "href": "https://w3c.github.io/pointerevents/#dfn-primary-pointer",
+      "linkingText": [
+        "Primary Pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fire-a-pointer-event",
+      "href": "https://w3c.github.io/pointerevents/#dfn-fire-a-pointer-event",
+      "linkingText": [
+        "fire a pointer event",
+        "fire a pointer event named e"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fire-an-event-named-e",
+      "href": "https://w3c.github.io/pointerevents/#dfn-fire-an-event-named-e",
+      "linkingText": [
+        "fire an event named e"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointer-capture-target-override",
+      "href": "https://w3c.github.io/pointerevents/#dfn-pointer-capture-target-override",
+      "linkingText": [
+        "pointer capture target override"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointerover-event",
+      "href": "https://w3c.github.io/pointerevents/#dfn-pointerover-event",
+      "linkingText": [
+        "pointerover event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointerenter-event",
+      "href": "https://w3c.github.io/pointerevents/#dfn-pointerenter-event",
+      "linkingText": [
+        "pointerenter event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointerdown-event",
+      "href": "https://w3c.github.io/pointerevents/#dfn-pointerdown-event",
+      "linkingText": [
+        "pointerdown event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointermove-event",
+      "href": "https://w3c.github.io/pointerevents/#dfn-pointermove-event",
+      "linkingText": [
+        "pointermove event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointerrawupdate-event",
+      "href": "https://w3c.github.io/pointerevents/#dfn-pointerrawupdate-event",
+      "linkingText": [
+        "pointerrawupdate event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointerup-event",
+      "href": "https://w3c.github.io/pointerevents/#dfn-pointerup-event",
+      "linkingText": [
+        "pointerup event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointercancel-event",
+      "href": "https://w3c.github.io/pointerevents/#dfn-pointercancel-event",
+      "linkingText": [
+        "pointercancel event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointerout-event",
+      "href": "https://w3c.github.io/pointerevents/#dfn-pointerout-event",
+      "linkingText": [
+        "pointerout event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointerleave-event",
+      "href": "https://w3c.github.io/pointerevents/#dfn-pointerleave-event",
+      "linkingText": [
+        "pointerleave event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-gotpointercapture-event",
+      "href": "https://w3c.github.io/pointerevents/#dfn-gotpointercapture-event",
+      "linkingText": [
+        "gotpointercapture event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-lostpointercapture-event",
+      "href": "https://w3c.github.io/pointerevents/#dfn-lostpointercapture-event",
+      "linkingText": [
+        "lostpointercapture event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-element",
+      "href": "https://w3c.github.io/pointerevents/#dom-element",
+      "linkingText": [
+        "Element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-element-setpointercapture",
+      "href": "https://w3c.github.io/pointerevents/#dom-element-setpointercapture",
+      "linkingText": [
+        "setPointerCapture()",
+        "setPointerCapture(pointerId)"
+      ],
+      "localLinkingText": [
+        "Element.setPointerCapture",
+        "Element.setPointerCapture()",
+        "setPointerCapture"
+      ],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-releasepointercapture",
+      "href": "https://w3c.github.io/pointerevents/#dom-element-releasepointercapture",
+      "linkingText": [
+        "releasePointerCapture()",
+        "releasePointerCapture(pointerId)"
+      ],
+      "localLinkingText": [
+        "Element.releasePointerCapture",
+        "Element.releasePointerCapture()",
+        "releasePointerCapture"
+      ],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-haspointercapture",
+      "href": "https://w3c.github.io/pointerevents/#dom-element-haspointercapture",
+      "linkingText": [
+        "hasPointerCapture()",
+        "hasPointerCapture(pointerId)"
+      ],
+      "localLinkingText": [
+        "Element.hasPointerCapture",
+        "Element.hasPointerCapture()",
+        "hasPointerCapture"
+      ],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers",
+      "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers",
+      "linkingText": [
+        "GlobalEventHandlers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-ongotpointercapture",
+      "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-ongotpointercapture",
+      "linkingText": [
+        "ongotpointercapture"
+      ],
+      "localLinkingText": [
+        "GlobalEventHandlers.ongotpointercapture"
+      ],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onlostpointercapture",
+      "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onlostpointercapture",
+      "linkingText": [
+        "onlostpointercapture"
+      ],
+      "localLinkingText": [
+        "GlobalEventHandlers.onlostpointercapture"
+      ],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onpointerdown",
+      "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerdown",
+      "linkingText": [
+        "onpointerdown"
+      ],
+      "localLinkingText": [
+        "GlobalEventHandlers.onpointerdown"
+      ],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onpointermove",
+      "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointermove",
+      "linkingText": [
+        "onpointermove"
+      ],
+      "localLinkingText": [
+        "GlobalEventHandlers.onpointermove"
+      ],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onpointerup",
+      "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerup",
+      "linkingText": [
+        "onpointerup"
+      ],
+      "localLinkingText": [
+        "GlobalEventHandlers.onpointerup"
+      ],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onpointercancel",
+      "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointercancel",
+      "linkingText": [
+        "onpointercancel"
+      ],
+      "localLinkingText": [
+        "GlobalEventHandlers.onpointercancel"
+      ],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onpointerover",
+      "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerover",
+      "linkingText": [
+        "onpointerover"
+      ],
+      "localLinkingText": [
+        "GlobalEventHandlers.onpointerover"
+      ],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onpointerout",
+      "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerout",
+      "linkingText": [
+        "onpointerout"
+      ],
+      "localLinkingText": [
+        "GlobalEventHandlers.onpointerout"
+      ],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onpointerenter",
+      "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerenter",
+      "linkingText": [
+        "onpointerenter"
+      ],
+      "localLinkingText": [
+        "GlobalEventHandlers.onpointerenter"
+      ],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onpointerleave",
+      "href": "https://w3c.github.io/pointerevents/#dom-globaleventhandlers-onpointerleave",
+      "linkingText": [
+        "onpointerleave"
+      ],
+      "localLinkingText": [
+        "GlobalEventHandlers.onpointerleave"
+      ],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator",
+      "href": "https://w3c.github.io/pointerevents/#dom-navigator",
+      "linkingText": [
+        "Navigator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator-maxtouchpoints",
+      "href": "https://w3c.github.io/pointerevents/#dom-navigator-maxtouchpoints",
+      "linkingText": [
+        "maxTouchPoints"
+      ],
+      "localLinkingText": [
+        "Navigator.maxTouchPoints"
+      ],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-touch-action",
+      "href": "https://w3c.github.io/pointerevents/#dfn-touch-action",
+      "linkingText": [
+        "touch-action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-conforming-touch-behavior",
+      "href": "https://w3c.github.io/pointerevents/#dfn-conforming-touch-behavior",
+      "linkingText": [
+        "conforming-touch-behavior",
+        "conforms to an element's touch-action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointer-capture",
+      "href": "https://w3c.github.io/pointerevents/#dfn-pointer-capture",
+      "linkingText": [
+        "Pointer Capture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pending-pointer-capture-target-override",
+      "href": "https://w3c.github.io/pointerevents/#dfn-pending-pointer-capture-target-override",
+      "linkingText": [
+        "pending pointer capture target override"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-implicit-pointer-capture",
+      "href": "https://w3c.github.io/pointerevents/#dfn-implicit-pointer-capture",
+      "linkingText": [
+        "Implicit Pointer Capture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-compatibility-mouse-events",
+      "href": "https://w3c.github.io/pointerevents/#dfn-compatibility-mouse-events",
+      "linkingText": [
+        "compatibility mouse events",
+        "Compatibility Mapping with Mouse Events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-tracking-the-effective-position-of-the-legacy-mouse-pointer",
+      "href": "https://w3c.github.io/pointerevents/#dfn-tracking-the-effective-position-of-the-legacy-mouse-pointer",
+      "linkingText": [
+        "Tracking the effective position of the legacy mouse pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-effective-position-of-the-legacy-mouse-pointer",
+      "href": "https://w3c.github.io/pointerevents/#dfn-effective-position-of-the-legacy-mouse-pointer",
+      "linkingText": [
+        "effective position of the legacy mouse pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

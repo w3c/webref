@@ -1,0 +1,1245 @@
+{
+  "spec": {
+    "title": "CSS Inline Layout Module Level 3",
+    "url": "https://drafts.csswg.org/css-inline-3/"
+  },
+  "dfns": [
+    {
+      "id": "root-inline-box",
+      "href": "https://drafts.csswg.org/css-inline-3/#root-inline-box",
+      "linkingText": [
+        "root inline box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "line-box",
+      "href": "https://drafts.csswg.org/css-inline-3/#line-box",
+      "linkingText": [
+        "line box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-dominant-baseline",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-dominant-baseline",
+      "linkingText": [
+        "dominant-baseline"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dominant-baseline",
+      "href": "https://drafts.csswg.org/css-inline-3/#dominant-baseline",
+      "linkingText": [
+        "dominant baseline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-dominant-baseline-auto",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "dominant-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-dominant-baseline-text-bottom",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-text-bottom",
+      "linkingText": [
+        "text-bottom"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "dominant-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-dominant-baseline-alphabetic",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-alphabetic",
+      "linkingText": [
+        "alphabetic"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "dominant-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-dominant-baseline-ideographic",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-ideographic",
+      "linkingText": [
+        "ideographic"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "dominant-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-dominant-baseline-middle",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-middle",
+      "linkingText": [
+        "middle"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "dominant-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-dominant-baseline-central",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-central",
+      "linkingText": [
+        "central"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "dominant-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-dominant-baseline-mathematical",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-mathematical",
+      "linkingText": [
+        "mathematical"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "dominant-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-dominant-baseline-hanging",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-hanging",
+      "linkingText": [
+        "hanging"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "dominant-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-dominant-baseline-text-top",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-text-top",
+      "linkingText": [
+        "text-top"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "dominant-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-vertical-align",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-vertical-align",
+      "linkingText": [
+        "vertical-align"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-baseline-source",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-baseline-source",
+      "linkingText": [
+        "baseline-source"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-alignment-baseline-auto",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "alignment-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-alignment-baseline-first",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-first",
+      "linkingText": [
+        "first"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "alignment-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-alignment-baseline-last",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-last",
+      "linkingText": [
+        "last"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "alignment-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-alignment-baseline",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-alignment-baseline",
+      "linkingText": [
+        "alignment-baseline"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-alignment-baseline-baseline",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-baseline",
+      "linkingText": [
+        "baseline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "alignment-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-alignment-baseline-text-bottom",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-text-bottom",
+      "linkingText": [
+        "text-bottom"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "alignment-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-alignment-baseline-alphabetic",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-alphabetic",
+      "linkingText": [
+        "alphabetic"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "alignment-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-alignment-baseline-ideographic",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-ideographic",
+      "linkingText": [
+        "ideographic"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "alignment-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-alignment-baseline-middle",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-middle",
+      "linkingText": [
+        "middle"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "alignment-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-alignment-baseline-central",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-central",
+      "linkingText": [
+        "central"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "alignment-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-alignment-baseline-mathematical",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-mathematical",
+      "linkingText": [
+        "mathematical"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "alignment-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-alignment-baseline-text-top",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-text-top",
+      "linkingText": [
+        "text-top"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "alignment-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-alignment-baseline-top",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "alignment-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-alignment-baseline-center",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "alignment-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-alignment-baseline-bottom",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "alignment-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-alignment-baseline-text-before-edge",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-text-before-edge",
+      "linkingText": [
+        "text-before-edge"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "alignment-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-alignment-baseline-text-after-edge",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-text-after-edge",
+      "linkingText": [
+        "text-after-edge"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "alignment-baseline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-baseline-shift",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-baseline-shift",
+      "linkingText": [
+        "baseline-shift"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-baseline-shift-length",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-baseline-shift-length",
+      "linkingText": [
+        "<length>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "baseline-shift"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-baseline-shift-percentage",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-baseline-shift-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "baseline-shift"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-baseline-shift-sub",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-baseline-shift-sub",
+      "linkingText": [
+        "sub"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "baseline-shift"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-baseline-shift-super",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-baseline-shift-super",
+      "linkingText": [
+        "super"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "baseline-shift"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "baseline-shift-baseline",
+      "href": "https://drafts.csswg.org/css-inline-3/#baseline-shift-baseline",
+      "linkingText": [
+        "baseline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "baseline-shift"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-line-height",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-line-height",
+      "linkingText": [
+        "line-height"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "strut",
+      "href": "https://drafts.csswg.org/css-inline-3/#strut",
+      "linkingText": [
+        "strut"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-height-normal",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-height-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "line-height"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-height-length",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-height-length",
+      "linkingText": [
+        "<length>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "line-height"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-height-number",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-height-number",
+      "linkingText": [
+        "<number>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "line-height"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-height-percentage",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-height-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "line-height"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-line-sizing",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-line-sizing",
+      "linkingText": [
+        "line-sizing"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-sizing-legacy",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-sizing-legacy",
+      "linkingText": [
+        "legacy"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "line-sizing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-sizing-normal",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-sizing-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "line-sizing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-leading-trim-over",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-leading-trim-over",
+      "linkingText": [
+        "leading-trim-over"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-leading-trim-over-normal",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-leading-trim-over-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leading-trim-over",
+        "leading-trim"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-leading-trim-over-text",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-leading-trim-over-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leading-trim-over",
+        "leading-trim"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-leading-trim-over-cap",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-leading-trim-over-cap",
+      "linkingText": [
+        "cap"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leading-trim-over",
+        "leading-trim"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-leading-trim-over-ex",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-leading-trim-over-ex",
+      "linkingText": [
+        "ex"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leading-trim-over",
+        "leading-trim"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-leading-trim-over-ideographic",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-leading-trim-over-ideographic",
+      "linkingText": [
+        "ideographic"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leading-trim-over",
+        "leading-trim"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-leading-trim-over-ideographic-ink",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-leading-trim-over-ideographic-ink",
+      "linkingText": [
+        "ideographic-ink"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leading-trim-over",
+        "leading-trim"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-leading-trim-under",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-leading-trim-under",
+      "linkingText": [
+        "leading-trim-under"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-leading-trim-under-normal",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-leading-trim-under-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leading-trim-under"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-leading-trim-under-text",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-leading-trim-under-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leading-trim-under"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-leading-trim-under-alphabetic",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-leading-trim-under-alphabetic",
+      "linkingText": [
+        "alphabetic"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leading-trim-under"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-leading-trim-under-ideographic",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-leading-trim-under-ideographic",
+      "linkingText": [
+        "ideographic"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leading-trim-under"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-leading-trim-under-ideographic-ink",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-leading-trim-under-ideographic-ink",
+      "linkingText": [
+        "ideographic-ink"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leading-trim-under"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-leading-trim",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-leading-trim",
+      "linkingText": [
+        "leading-trim"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-inline-sizing",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-inline-sizing",
+      "linkingText": [
+        "inline-sizing"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-inline-sizing-normal",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-inline-sizing-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inline-sizing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-inline-sizing-stretch",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-inline-sizing-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "inline-sizing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dropped-initial",
+      "href": "https://drafts.csswg.org/css-inline-3/#dropped-initial",
+      "linkingText": [
+        "dropped initial"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sunken-initial",
+      "href": "https://drafts.csswg.org/css-inline-3/#sunken-initial",
+      "linkingText": [
+        "sunken initial"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "raised-initial",
+      "href": "https://drafts.csswg.org/css-inline-3/#raised-initial",
+      "linkingText": [
+        "raised initial"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-initial-letters",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-initial-letters",
+      "linkingText": [
+        "initial-letters"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-initial-letters-normal",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letters-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "initial-letters"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-initial-letters-number",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letters-number",
+      "linkingText": [
+        "<number>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "initial-letters"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "initial-letters-initial-letter-size",
+      "href": "https://drafts.csswg.org/css-inline-3/#initial-letters-initial-letter-size",
+      "linkingText": [
+        "initial letter size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "initial-letters"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-initial-letters-integer",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letters-integer",
+      "linkingText": [
+        "<integer>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "initial-letters"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "initial-letters-initial-letter-sink",
+      "href": "https://drafts.csswg.org/css-inline-3/#initial-letters-initial-letter-sink",
+      "linkingText": [
+        "initial letter sink"
+      ],
+      "localLinkingText": [
+        "sink"
+      ],
+      "type": "dfn",
+      "for": [
+        "initial-letters"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-initial-letters-raise",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letters-raise",
+      "linkingText": [
+        "raise"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "initial-letters"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-initial-letters-drop",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letters-drop",
+      "linkingText": [
+        "drop"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "initial-letters"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "initial-letter",
+      "href": "https://drafts.csswg.org/css-inline-3/#initial-letter",
+      "linkingText": [
+        "initial letter",
+        "initial letter box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-initial-letters-align",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-initial-letters-align",
+      "linkingText": [
+        "initial-letters-align"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-initial-letters-align-alphabetic",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letters-align-alphabetic",
+      "linkingText": [
+        "alphabetic"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "initial-letters-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-initial-letters-align-ideographic",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letters-align-ideographic",
+      "linkingText": [
+        "ideographic"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "initial-letters-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-initial-letters-align-hebrew",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letters-align-hebrew",
+      "linkingText": [
+        "hebrew"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "initial-letters-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-initial-letters-align-hanging",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letters-align-hanging",
+      "linkingText": [
+        "hanging"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "initial-letters-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-initial-letters-align-border-box",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letters-align-border-box",
+      "linkingText": [
+        "border-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "initial-letters-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inline-initial-letter",
+      "href": "https://drafts.csswg.org/css-inline-3/#inline-initial-letter",
+      "linkingText": [
+        "inline initial letter",
+        "inline initial letter box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "atomic-initial-letter",
+      "href": "https://drafts.csswg.org/css-inline-3/#atomic-initial-letter",
+      "linkingText": [
+        "atomic initial letter",
+        "atomic initial letter box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-initial-letters-wrap",
+      "href": "https://drafts.csswg.org/css-inline-3/#propdef-initial-letters-wrap",
+      "linkingText": [
+        "initial-letters-wrap"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-initial-letters-wrap-none",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letters-wrap-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "initial-letters-wrap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-initial-letters-wrap-first",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letters-wrap-first",
+      "linkingText": [
+        "first"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "initial-letters-wrap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-initial-letters-wrap-all",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letters-wrap-all",
+      "linkingText": [
+        "all"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "initial-letters-wrap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-initial-letters-wrap-grid",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letters-wrap-grid",
+      "linkingText": [
+        "grid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "initial-letters-wrap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-initial-letters-wrap-length",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letters-wrap-length",
+      "linkingText": [
+        "<length>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "initial-letters-wrap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-initial-letters-wrap-percentage",
+      "href": "https://drafts.csswg.org/css-inline-3/#valdef-initial-letters-wrap-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "initial-letters-wrap"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

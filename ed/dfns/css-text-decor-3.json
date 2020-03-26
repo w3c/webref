@@ -1,0 +1,484 @@
+{
+  "spec": {
+    "title": "CSS Text Decoration Module Level 3",
+    "url": "https://drafts.csswg.org/css-text-decor-3/"
+  },
+  "dfns": [
+    {
+      "id": "character",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#character",
+      "linkingText": [
+        "character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "letter",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#letter",
+      "linkingText": [
+        "letter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "content-language",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#content-language",
+      "linkingText": [
+        "content language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "decorating-box",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#decorating-box",
+      "linkingText": [
+        "decorating box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-decoration-line",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-decoration-line",
+      "linkingText": [
+        "text-decoration-line"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-line-none",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-decoration-line-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-line-underline",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-decoration-line-underline",
+      "linkingText": [
+        "underline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-line-overline",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-decoration-line-overline",
+      "linkingText": [
+        "overline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-line-line-through",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-decoration-line-line-through",
+      "linkingText": [
+        "line-through"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-line-blink",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-decoration-line-blink",
+      "linkingText": [
+        "blink"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-decoration-style",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-decoration-style",
+      "linkingText": [
+        "text-decoration-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-decoration-color",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-decoration-color",
+      "linkingText": [
+        "text-decoration-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-decoration",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-decoration",
+      "linkingText": [
+        "text-decoration"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-underline-position",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-underline-position",
+      "linkingText": [
+        "text-underline-position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "underline-auto",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#underline-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-underline-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "underline-under",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#underline-under",
+      "linkingText": [
+        "under"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-underline-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "underline-left",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#underline-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-underline-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "underline-right",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#underline-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-underline-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-emphasis-style",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-emphasis-style",
+      "linkingText": [
+        "text-emphasis-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-style-none",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-emphasis-style-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-style-filled",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-emphasis-style-filled",
+      "linkingText": [
+        "filled"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-text-emphasis-open",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-text-emphasis-open",
+      "linkingText": [
+        "open"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-text-emphasis"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-style-dot",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-emphasis-style-dot",
+      "linkingText": [
+        "dot"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-style-circle",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-emphasis-style-circle",
+      "linkingText": [
+        "circle"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-style-double-circle",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-emphasis-style-double-circle",
+      "linkingText": [
+        "double-circle"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-style-triangle",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-emphasis-style-triangle",
+      "linkingText": [
+        "triangle"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-style-sesame",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-emphasis-style-sesame",
+      "linkingText": [
+        "sesame"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-style-string",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-emphasis-style-string",
+      "linkingText": [
+        "<string>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-emphasis-color",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-emphasis-color",
+      "linkingText": [
+        "text-emphasis-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-emphasis",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-emphasis",
+      "linkingText": [
+        "text-emphasis"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-emphasis-position",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-emphasis-position",
+      "linkingText": [
+        "text-emphasis-position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-position-over",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-emphasis-position-over",
+      "linkingText": [
+        "over"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-position-under",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-emphasis-position-under",
+      "linkingText": [
+        "under"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-position-right",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-emphasis-position-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-position-left",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#valdef-text-emphasis-position-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-shadow",
+      "href": "https://drafts.csswg.org/css-text-decor-3/#propdef-text-shadow",
+      "linkingText": [
+        "text-shadow"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

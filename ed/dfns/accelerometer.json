@@ -1,0 +1,428 @@
+{
+  "spec": {
+    "title": "Accelerometer",
+    "url": "https://w3c.github.io/accelerometer/"
+  },
+  "dfns": [
+    {
+      "id": "accelerometer-sensor-type",
+      "href": "https://w3c.github.io/accelerometer/#accelerometer-sensor-type",
+      "linkingText": [
+        "Accelerometer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "acceleration",
+      "href": "https://w3c.github.io/accelerometer/#acceleration",
+      "linkingText": [
+        "acceleration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "linear-acceleration",
+      "href": "https://w3c.github.io/accelerometer/#linear-acceleration",
+      "linkingText": [
+        "linear acceleration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "gravity",
+      "href": "https://w3c.github.io/accelerometer/#gravity",
+      "linkingText": [
+        "gravity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "device-coordinate-system",
+      "href": "https://w3c.github.io/accelerometer/#device-coordinate-system",
+      "linkingText": [
+        "device coordinate system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "screen-coordinate-system",
+      "href": "https://w3c.github.io/accelerometer/#screen-coordinate-system",
+      "linkingText": [
+        "screen coordinate system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "accelerometer",
+      "href": "https://w3c.github.io/accelerometer/#accelerometer",
+      "linkingText": [
+        "Accelerometer"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometer-accelerometer",
+      "href": "https://w3c.github.io/accelerometer/#dom-accelerometer-accelerometer",
+      "linkingText": [
+        "Accelerometer(options)",
+        "constructor(options)",
+        "Accelerometer()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Accelerometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometer-accelerometer-options-options",
+      "href": "https://w3c.github.io/accelerometer/#dom-accelerometer-accelerometer-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Accelerometer/Accelerometer(options)",
+        "Accelerometer/constructor(options)",
+        "Accelerometer/Accelerometer()",
+        "Accelerometer/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometer-x",
+      "href": "https://w3c.github.io/accelerometer/#dom-accelerometer-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Accelerometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometer-y",
+      "href": "https://w3c.github.io/accelerometer/#dom-accelerometer-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Accelerometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometer-z",
+      "href": "https://w3c.github.io/accelerometer/#dom-accelerometer-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Accelerometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-accelerometerlocalcoordinatesystem",
+      "href": "https://w3c.github.io/accelerometer/#enumdef-accelerometerlocalcoordinatesystem",
+      "linkingText": [
+        "AccelerometerLocalCoordinateSystem"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometerlocalcoordinatesystem-device",
+      "href": "https://w3c.github.io/accelerometer/#dom-accelerometerlocalcoordinatesystem-device",
+      "linkingText": [
+        "\"device\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AccelerometerLocalCoordinateSystem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometerlocalcoordinatesystem-screen",
+      "href": "https://w3c.github.io/accelerometer/#dom-accelerometerlocalcoordinatesystem-screen",
+      "linkingText": [
+        "\"screen\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AccelerometerLocalCoordinateSystem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-accelerometersensoroptions",
+      "href": "https://w3c.github.io/accelerometer/#dictdef-accelerometersensoroptions",
+      "linkingText": [
+        "AccelerometerSensorOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometersensoroptions-referenceframe",
+      "href": "https://w3c.github.io/accelerometer/#dom-accelerometersensoroptions-referenceframe",
+      "linkingText": [
+        "referenceFrame"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AccelerometerSensorOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "linearaccelerationsensor",
+      "href": "https://w3c.github.io/accelerometer/#linearaccelerationsensor",
+      "linkingText": [
+        "LinearAccelerationSensor"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-linearaccelerationsensor-linearaccelerationsensor",
+      "href": "https://w3c.github.io/accelerometer/#dom-linearaccelerationsensor-linearaccelerationsensor",
+      "linkingText": [
+        "LinearAccelerationSensor(options)",
+        "constructor(options)",
+        "LinearAccelerationSensor()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "LinearAccelerationSensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-linearaccelerationsensor-linearaccelerationsensor-options-options",
+      "href": "https://w3c.github.io/accelerometer/#dom-linearaccelerationsensor-linearaccelerationsensor-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LinearAccelerationSensor/LinearAccelerationSensor(options)",
+        "LinearAccelerationSensor/constructor(options)",
+        "LinearAccelerationSensor/LinearAccelerationSensor()",
+        "LinearAccelerationSensor/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "gravitysensor",
+      "href": "https://w3c.github.io/accelerometer/#gravitysensor",
+      "linkingText": [
+        "GravitySensor"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gravitysensor-gravitysensor",
+      "href": "https://w3c.github.io/accelerometer/#dom-gravitysensor-gravitysensor",
+      "linkingText": [
+        "GravitySensor(options)",
+        "constructor(options)",
+        "GravitySensor()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "GravitySensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gravitysensor-gravitysensor-options-options",
+      "href": "https://w3c.github.io/accelerometer/#dom-gravitysensor-gravitysensor-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GravitySensor/GravitySensor(options)",
+        "GravitySensor/constructor(options)",
+        "GravitySensor/GravitySensor()",
+        "GravitySensor/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "construct-an-accelerometer-object",
+      "href": "https://w3c.github.io/accelerometer/#construct-an-accelerometer-object",
+      "linkingText": [
+        "Construct an accelerometer object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-accelerometerreadingvalues",
+      "href": "https://w3c.github.io/accelerometer/#dictdef-accelerometerreadingvalues",
+      "linkingText": [
+        "AccelerometerReadingValues"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometerreadingvalues-x",
+      "href": "https://w3c.github.io/accelerometer/#dom-accelerometerreadingvalues-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AccelerometerReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometerreadingvalues-y",
+      "href": "https://w3c.github.io/accelerometer/#dom-accelerometerreadingvalues-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AccelerometerReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometerreadingvalues-z",
+      "href": "https://w3c.github.io/accelerometer/#dom-accelerometerreadingvalues-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AccelerometerReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-linearaccelerationreadingvalues",
+      "href": "https://w3c.github.io/accelerometer/#dictdef-linearaccelerationreadingvalues",
+      "linkingText": [
+        "LinearAccelerationReadingValues"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-gravityreadingvalues",
+      "href": "https://w3c.github.io/accelerometer/#dictdef-gravityreadingvalues",
+      "linkingText": [
+        "GravityReadingValues"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "conformant-user-agent",
+      "href": "https://w3c.github.io/accelerometer/#conformant-user-agent",
+      "linkingText": [
+        "conformant user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

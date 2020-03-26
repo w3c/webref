@@ -1,0 +1,610 @@
+{
+  "spec": {
+    "title": "SVG Animations",
+    "url": "https://svgwg.org/specs/animations/"
+  },
+  "dfns": [
+    {
+      "id": "animation-element",
+      "href": "https://svgwg.org/specs/animations/#animation-element",
+      "linkingText": [
+        "animation element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-event-attribute",
+      "href": "https://svgwg.org/specs/animations/#animation-event-attribute",
+      "linkingText": [
+        "animation event attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "PresentationTime",
+      "href": "https://svgwg.org/specs/animations/#PresentationTime",
+      "linkingText": [
+        "presentation time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "HrefAttribute",
+      "href": "https://svgwg.org/specs/animations/#HrefAttribute",
+      "linkingText": [
+        "href"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AttributeNameAttribute",
+      "href": "https://svgwg.org/specs/animations/#AttributeNameAttribute",
+      "linkingText": [
+        "attributeName"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animation-timing-attributes",
+      "href": "https://svgwg.org/specs/animations/#animation-timing-attributes",
+      "linkingText": [
+        "animation timing attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "BeginAttribute",
+      "href": "https://svgwg.org/specs/animations/#BeginAttribute",
+      "linkingText": [
+        "begin"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "syncbase",
+      "href": "https://svgwg.org/specs/animations/#syncbase",
+      "linkingText": [
+        "syncbase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "DurAttribute",
+      "href": "https://svgwg.org/specs/animations/#DurAttribute",
+      "linkingText": [
+        "dur"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "EndAttribute",
+      "href": "https://svgwg.org/specs/animations/#EndAttribute",
+      "linkingText": [
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MinAttribute",
+      "href": "https://svgwg.org/specs/animations/#MinAttribute",
+      "linkingText": [
+        "min"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MaxAttribute",
+      "href": "https://svgwg.org/specs/animations/#MaxAttribute",
+      "linkingText": [
+        "max"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "RestartAttribute",
+      "href": "https://svgwg.org/specs/animations/#RestartAttribute",
+      "linkingText": [
+        "restart"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "RepeatCountAttribute",
+      "href": "https://svgwg.org/specs/animations/#RepeatCountAttribute",
+      "linkingText": [
+        "repeatCount"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "RepeatDurAttribute",
+      "href": "https://svgwg.org/specs/animations/#RepeatDurAttribute",
+      "linkingText": [
+        "repeatDur"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "FillAttribute",
+      "href": "https://svgwg.org/specs/animations/#FillAttribute",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animation-value-attributes",
+      "href": "https://svgwg.org/specs/animations/#animation-value-attributes",
+      "linkingText": [
+        "animation value attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "CalcModeAttribute",
+      "href": "https://svgwg.org/specs/animations/#CalcModeAttribute",
+      "linkingText": [
+        "calcMode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ValuesAttribute",
+      "href": "https://svgwg.org/specs/animations/#ValuesAttribute",
+      "linkingText": [
+        "values"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "KeyTimesAttribute",
+      "href": "https://svgwg.org/specs/animations/#KeyTimesAttribute",
+      "linkingText": [
+        "keyTimes"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "KeySplinesAttribute",
+      "href": "https://svgwg.org/specs/animations/#KeySplinesAttribute",
+      "linkingText": [
+        "keySplines"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "DataTypeControlPoint",
+      "href": "https://svgwg.org/specs/animations/#DataTypeControlPoint",
+      "linkingText": [
+        "<control-point>"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "FromAttribute",
+      "href": "https://svgwg.org/specs/animations/#FromAttribute",
+      "linkingText": [
+        "from"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ToAttribute",
+      "href": "https://svgwg.org/specs/animations/#ToAttribute",
+      "linkingText": [
+        "to"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ByAttribute",
+      "href": "https://svgwg.org/specs/animations/#ByAttribute",
+      "linkingText": [
+        "by"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-addition-attributes",
+      "href": "https://svgwg.org/specs/animations/#animation-addition-attributes",
+      "linkingText": [
+        "animation addition attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "AdditiveAttribute",
+      "href": "https://svgwg.org/specs/animations/#AdditiveAttribute",
+      "linkingText": [
+        "additive"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AccumulateAttribute",
+      "href": "https://svgwg.org/specs/animations/#AccumulateAttribute",
+      "linkingText": [
+        "accumulate"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-animate",
+      "href": "https://svgwg.org/specs/animations/#elementdef-animate",
+      "linkingText": [
+        "animate"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-set",
+      "href": "https://svgwg.org/specs/animations/#elementdef-set",
+      "linkingText": [
+        "set"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "SetElementToAttribute",
+      "href": "https://svgwg.org/specs/animations/#SetElementToAttribute",
+      "linkingText": [
+        "to"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-discard",
+      "href": "https://svgwg.org/specs/animations/#elementdef-discard",
+      "linkingText": [
+        "discard"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "DiscardElementHrefAttribute",
+      "href": "https://svgwg.org/specs/animations/#DiscardElementHrefAttribute",
+      "linkingText": [
+        "href"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "DiscardElementBeginAttribute",
+      "href": "https://svgwg.org/specs/animations/#DiscardElementBeginAttribute",
+      "linkingText": [
+        "begin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "elementdef-animateMotion",
+      "href": "https://svgwg.org/specs/animations/#elementdef-animateMotion",
+      "linkingText": [
+        "animateMotion"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AnimateMotionElementCalcModeAttribute",
+      "href": "https://svgwg.org/specs/animations/#AnimateMotionElementCalcModeAttribute",
+      "linkingText": [
+        "calcMode"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animateMotion"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AnimateMotionElementPathAttribute",
+      "href": "https://svgwg.org/specs/animations/#AnimateMotionElementPathAttribute",
+      "linkingText": [
+        "path"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animateMotion"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "KeyPointsAttribute",
+      "href": "https://svgwg.org/specs/animations/#KeyPointsAttribute",
+      "linkingText": [
+        "keyPoints"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "RotateAttribute",
+      "href": "https://svgwg.org/specs/animations/#RotateAttribute",
+      "linkingText": [
+        "rotate"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "OriginAttribute",
+      "href": "https://svgwg.org/specs/animations/#OriginAttribute",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-mpath",
+      "href": "https://svgwg.org/specs/animations/#elementdef-mpath",
+      "linkingText": [
+        "mpath"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MPathElementHrefAttribute",
+      "href": "https://svgwg.org/specs/animations/#MPathElementHrefAttribute",
+      "linkingText": [
+        "href"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "mpath"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-animateTransform",
+      "href": "https://svgwg.org/specs/animations/#elementdef-animateTransform",
+      "linkingText": [
+        "animateTransform"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AnimateTransformElementTypeAttribute",
+      "href": "https://svgwg.org/specs/animations/#AnimateTransformElementTypeAttribute",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animateTransform"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "SVGElementPlaybackorderAttribute",
+      "href": "https://svgwg.org/specs/animations/#SVGElementPlaybackorderAttribute",
+      "linkingText": [
+        "playbackorder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "SVGElementTimelinebeginAttribute",
+      "href": "https://svgwg.org/specs/animations/#SVGElementTimelinebeginAttribute",
+      "linkingText": [
+        "timelinebegin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

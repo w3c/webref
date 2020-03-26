@@ -1,0 +1,884 @@
+{
+  "spec": {
+    "title": "Web MIDI API",
+    "url": "http://webaudio.github.io/web-midi-api/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-user-agent",
+      "href": "http://webaudio.github.io/web-midi-api/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "WebAudio",
+      "href": "http://webaudio.github.io/web-midi-api/#WebAudio",
+      "linkingText": [
+        "Web Audio API"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-midi",
+      "href": "http://webaudio.github.io/web-midi-api/#dfn-midi",
+      "linkingText": [
+        "MIDI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-midi-device",
+      "href": "http://webaudio.github.io/web-midi-api/#dfn-midi-device",
+      "linkingText": [
+        "MIDI device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-midi-input-port",
+      "href": "http://webaudio.github.io/web-midi-api/#dfn-midi-input-port",
+      "linkingText": [
+        "MIDI input\n        port"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-midi-output-port",
+      "href": "http://webaudio.github.io/web-midi-api/#dfn-midi-output-port",
+      "linkingText": [
+        "MIDI output port"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-midi-interface",
+      "href": "http://webaudio.github.io/web-midi-api/#dfn-midi-interface",
+      "linkingText": [
+        "MIDI interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-midi-message",
+      "href": "http://webaudio.github.io/web-midi-api/#dfn-midi-message",
+      "linkingText": [
+        "MIDI message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-midi-system-real-time-message",
+      "href": "http://webaudio.github.io/web-midi-api/#dfn-midi-system-real-time-message",
+      "linkingText": [
+        "MIDI System Real-Time message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-system-exclusive",
+      "href": "http://webaudio.github.io/web-midi-api/#dfn-system-exclusive",
+      "linkingText": [
+        "system exclusive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-midi-fp",
+      "href": "http://webaudio.github.io/web-midi-api/#dfn-midi-fp",
+      "linkingText": [
+        "midi-fp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-navigator",
+      "linkingText": [
+        "Navigator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator-requestmidiaccess",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-navigator-requestmidiaccess",
+      "linkingText": [
+        "requestMIDIAccess()",
+        "requestMIDIAccess(, options)"
+      ],
+      "localLinkingText": [
+        "Navigator.requestMIDIAccess",
+        "Navigator.requestMIDIAccess()",
+        "requestMIDIAccess"
+      ],
+      "type": "method",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-algorithm-to-request-midi-access",
+      "href": "http://webaudio.github.io/web-midi-api/#dfn-algorithm-to-request-midi-access",
+      "linkingText": [
+        "algorithm to request MIDI Access"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-midioptions",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midioptions",
+      "linkingText": [
+        "MIDIOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midioptions-sysex",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midioptions-sysex",
+      "linkingText": [
+        "sysex"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MIDIOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midioptions-software",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midioptions-software",
+      "linkingText": [
+        "software"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MIDIOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiinputmap",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiinputmap",
+      "linkingText": [
+        "MIDIInputMap"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midioutputmap",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midioutputmap",
+      "linkingText": [
+        "MIDIOutputMap"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiaccess",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiaccess",
+      "linkingText": [
+        "MIDIAccess"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiaccess-inputs",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiaccess-inputs",
+      "linkingText": [
+        "inputs"
+      ],
+      "localLinkingText": [
+        "MIDIAccess.inputs"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIAccess"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiaccess-outputs",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiaccess-outputs",
+      "linkingText": [
+        "outputs"
+      ],
+      "localLinkingText": [
+        "MIDIAccess.outputs"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIAccess"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiaccess-onstatechange",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiaccess-onstatechange",
+      "linkingText": [
+        "onstatechange"
+      ],
+      "localLinkingText": [
+        "MIDIAccess.onstatechange"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIAccess"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiaccess-sysexenabled",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiaccess-sysexenabled",
+      "linkingText": [
+        "sysexEnabled"
+      ],
+      "localLinkingText": [
+        "MIDIAccess.sysexEnabled"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIAccess"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiport",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiport",
+      "linkingText": [
+        "MIDIPort"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiport-id",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiport-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [
+        "MIDIPort.id"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiport-manufacturer",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiport-manufacturer",
+      "linkingText": [
+        "manufacturer"
+      ],
+      "localLinkingText": [
+        "MIDIPort.manufacturer"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiport-name",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiport-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [
+        "MIDIPort.name"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiport-type",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiport-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [
+        "MIDIPort.type"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiport-version",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiport-version",
+      "linkingText": [
+        "version"
+      ],
+      "localLinkingText": [
+        "MIDIPort.version"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiport-state",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiport-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [
+        "MIDIPort.state"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiport-connection",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiport-connection",
+      "linkingText": [
+        "connection"
+      ],
+      "localLinkingText": [
+        "MIDIPort.connection"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiport-onstatechange",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiport-onstatechange",
+      "linkingText": [
+        "onstatechange"
+      ],
+      "localLinkingText": [
+        "MIDIPort.onstatechange"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiport-open",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiport-open",
+      "linkingText": [
+        "open()"
+      ],
+      "localLinkingText": [
+        "MIDIPort.open",
+        "MIDIPort.open()",
+        "open"
+      ],
+      "type": "method",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-open-the-port",
+      "href": "http://webaudio.github.io/web-midi-api/#dfn-open-the-port",
+      "linkingText": [
+        "open the port",
+        "algorithm to open a MIDIPort"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-midiport-close",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiport-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [
+        "MIDIPort.close",
+        "MIDIPort.close()",
+        "close"
+      ],
+      "type": "method",
+      "for": [
+        "MIDIPort"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-algorithm-to-close-a-midiport",
+      "href": "http://webaudio.github.io/web-midi-api/#dfn-algorithm-to-close-a-midiport",
+      "linkingText": [
+        "algorithm to close a MIDIPort"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-midiinput",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiinput",
+      "linkingText": [
+        "MIDIInput"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiinput-onmidimessage",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiinput-onmidimessage",
+      "linkingText": [
+        "onmidimessage"
+      ],
+      "localLinkingText": [
+        "MIDIInput.onmidimessage"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIInput"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midioutput",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midioutput",
+      "linkingText": [
+        "MIDIOutput"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midioutput-send",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midioutput-send",
+      "linkingText": [
+        "send()",
+        "send(data)",
+        "send(data, timestamp)"
+      ],
+      "localLinkingText": [
+        "MIDIOutput.send",
+        "MIDIOutput.send()",
+        "send"
+      ],
+      "type": "method",
+      "for": [
+        "MIDIOutput"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midioutput-clear",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midioutput-clear",
+      "linkingText": [
+        "clear()"
+      ],
+      "localLinkingText": [
+        "MIDIOutput.clear",
+        "MIDIOutput.clear()",
+        "clear"
+      ],
+      "type": "method",
+      "for": [
+        "MIDIOutput"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiporttype",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiporttype",
+      "linkingText": [
+        "MIDIPortType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiporttype-input",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiporttype-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MIDIPortType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiporttype-output",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiporttype-output",
+      "linkingText": [
+        "output"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MIDIPortType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiportdevicestate",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiportdevicestate",
+      "linkingText": [
+        "MIDIPortDeviceState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiportdevicestate-disconnected",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiportdevicestate-disconnected",
+      "linkingText": [
+        "disconnected"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MIDIPortDeviceState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiportdevicestate-connected",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiportdevicestate-connected",
+      "linkingText": [
+        "connected"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MIDIPortDeviceState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiportconnectionstate",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiportconnectionstate",
+      "linkingText": [
+        "MIDIPortConnectionState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiportconnectionstate-open",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiportconnectionstate-open",
+      "linkingText": [
+        "open"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MIDIPortConnectionState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiportconnectionstate-closed",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiportconnectionstate-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MIDIPortConnectionState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiportconnectionstate-pending",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiportconnectionstate-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MIDIPortConnectionState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midimessageevent",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midimessageevent",
+      "linkingText": [
+        "MIDIMessageEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midimessageevent-constructor",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midimessageevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(type)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "MIDIMessageEvent.constructor",
+        "MIDIMessageEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "MIDIMessageEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midimessageevent-data",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midimessageevent-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [
+        "MIDIMessageEvent.data"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIMessageEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midimessageeventinit",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midimessageeventinit",
+      "linkingText": [
+        "MIDIMessageEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midimessageeventinit-data",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midimessageeventinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MIDIMessageEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiconnectionevent",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiconnectionevent",
+      "linkingText": [
+        "MIDIConnectionEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiconnectionevent-constructor",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiconnectionevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(type)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "MIDIConnectionEvent.constructor",
+        "MIDIConnectionEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "MIDIConnectionEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiconnectionevent-port",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiconnectionevent-port",
+      "linkingText": [
+        "port"
+      ],
+      "localLinkingText": [
+        "MIDIConnectionEvent.port"
+      ],
+      "type": "attribute",
+      "for": [
+        "MIDIConnectionEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiconnectioneventinit",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiconnectioneventinit",
+      "linkingText": [
+        "MIDIConnectionEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-midiconnectioneventinit-port",
+      "href": "http://webaudio.github.io/web-midi-api/#dom-midiconnectioneventinit-port",
+      "linkingText": [
+        "port"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MIDIConnectionEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

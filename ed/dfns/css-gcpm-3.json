@@ -1,0 +1,310 @@
+{
+  "spec": {
+    "title": "CSS Generated Content for Paged Media Module",
+    "url": "https://drafts.csswg.org/css-gcpm/"
+  },
+  "dfns": [
+    {
+      "id": "named-string",
+      "href": "https://drafts.csswg.org/css-gcpm/#named-string",
+      "linkingText": [
+        "named string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "running-elements0",
+      "href": "https://drafts.csswg.org/css-gcpm/#running-elements0",
+      "linkingText": [
+        "Running elements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-string-set",
+      "href": "https://drafts.csswg.org/css-gcpm/#propdef-string-set",
+      "linkingText": [
+        "string-set"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "content-list",
+      "href": "https://drafts.csswg.org/css-gcpm/#content-list",
+      "linkingText": [
+        "content-list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "funcdef-content",
+      "href": "https://drafts.csswg.org/css-gcpm/#funcdef-content",
+      "linkingText": [
+        "content()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "entry-value",
+      "href": "https://drafts.csswg.org/css-gcpm/#entry-value",
+      "linkingText": [
+        "entry value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "exit-value",
+      "href": "https://drafts.csswg.org/css-gcpm/#exit-value",
+      "linkingText": [
+        "exit value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "funcdef-string",
+      "href": "https://drafts.csswg.org/css-gcpm/#funcdef-string",
+      "linkingText": [
+        "string()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-running",
+      "href": "https://drafts.csswg.org/css-gcpm/#funcdef-running",
+      "linkingText": [
+        "running()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-running",
+      "href": "https://drafts.csswg.org/css-gcpm/#propdef-running",
+      "linkingText": [
+        "running"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "funcdef-element",
+      "href": "https://drafts.csswg.org/css-gcpm/#funcdef-element",
+      "linkingText": [
+        "element()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-footnote",
+      "href": "https://drafts.csswg.org/css-gcpm/#valdef-float-footnote",
+      "linkingText": [
+        "footnote"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-footnote-display",
+      "href": "https://drafts.csswg.org/css-gcpm/#propdef-footnote-display",
+      "linkingText": [
+        "footnote-display"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "footnote-display-block",
+      "href": "https://drafts.csswg.org/css-gcpm/#footnote-display-block",
+      "linkingText": [
+        "block"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "propdef-footnote-display"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "footnote-display-inline",
+      "href": "https://drafts.csswg.org/css-gcpm/#footnote-display-inline",
+      "linkingText": [
+        "inline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "propdef-footnote-display"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "footnote-display-compact",
+      "href": "https://drafts.csswg.org/css-gcpm/#footnote-display-compact",
+      "linkingText": [
+        "compact"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "propdef-footnote-display"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "footnote-counter",
+      "href": "https://drafts.csswg.org/css-gcpm/#footnote-counter",
+      "linkingText": [
+        "footnote counter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-footnote-policy",
+      "href": "https://drafts.csswg.org/css-gcpm/#propdef-footnote-policy",
+      "linkingText": [
+        "footnote-policy"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-footnote-policy-auto",
+      "href": "https://drafts.csswg.org/css-gcpm/#valdef-footnote-policy-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "footnote-policy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "footnote-policy-line",
+      "href": "https://drafts.csswg.org/css-gcpm/#footnote-policy-line",
+      "linkingText": [
+        "line"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "footnote-policy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-footnote-policy-block",
+      "href": "https://drafts.csswg.org/css-gcpm/#valdef-footnote-policy-block",
+      "linkingText": [
+        "block"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "footnote-policy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "page-selectors",
+      "href": "https://drafts.csswg.org/css-gcpm/#page-selectors",
+      "linkingText": [
+        "page selectors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "funcdef-nth",
+      "href": "https://drafts.csswg.org/css-gcpm/#funcdef-nth",
+      "linkingText": [
+        "nth()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "page-group",
+      "href": "https://drafts.csswg.org/css-gcpm/#page-group",
+      "linkingText": [
+        "page group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

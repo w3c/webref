@@ -1,0 +1,611 @@
+{
+  "spec": {
+    "title": "Battery Status API",
+    "url": "https://w3c.github.io/battery/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-user-agent",
+      "href": "https://w3c.github.io/battery/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator",
+      "href": "https://w3c.github.io/battery/#dom-navigator",
+      "linkingText": [
+        "Navigator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-eventhandler",
+      "href": "https://w3c.github.io/battery/#dfn-eventhandler",
+      "linkingText": [
+        "EventHandler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-queue-a-task",
+      "href": "https://w3c.github.io/battery/#dfn-queue-a-task",
+      "linkingText": [
+        "queue a\n          task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-eventtarget",
+      "href": "https://w3c.github.io/battery/#dfn-eventtarget",
+      "linkingText": [
+        "EventTarget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fires-an-event",
+      "href": "https://w3c.github.io/battery/#dfn-fires-an-event",
+      "linkingText": [
+        "fires\n          an event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handlers",
+      "href": "https://w3c.github.io/battery/#dfn-event-handlers",
+      "linkingText": [
+        "event\n          handlers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handler-event-types",
+      "href": "https://w3c.github.io/battery/#dfn-event-handler-event-types",
+      "linkingText": [
+        "event handler event types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-browsing-context",
+      "href": "https://w3c.github.io/battery/#dfn-browsing-context",
+      "linkingText": [
+        "browsing\n          context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-relevant-global-object",
+      "href": "https://w3c.github.io/battery/#dfn-relevant-global-object",
+      "linkingText": [
+        "relevant\n          global object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-relevant-settings-object",
+      "href": "https://w3c.github.io/battery/#dfn-relevant-settings-object",
+      "linkingText": [
+        "relevant\n          settings object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-current-settings-object",
+      "href": "https://w3c.github.io/battery/#dfn-current-settings-object",
+      "linkingText": [
+        "current\n          settings object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-top-level-browsing-context",
+      "href": "https://w3c.github.io/battery/#dfn-top-level-browsing-context",
+      "linkingText": [
+        "top-level browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-incumbent-settings-object",
+      "href": "https://w3c.github.io/battery/#dfn-incumbent-settings-object",
+      "linkingText": [
+        "incumbent settings object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-associated-document",
+      "href": "https://w3c.github.io/battery/#dfn-associated-document",
+      "linkingText": [
+        "associated\n          Document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-promise",
+      "href": "https://w3c.github.io/battery/#dfn-promise",
+      "linkingText": [
+        "Promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-realm",
+      "href": "https://w3c.github.io/battery/#dfn-realm",
+      "linkingText": [
+        "realm",
+        "Realms"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-securityerror",
+      "href": "https://w3c.github.io/battery/#dfn-securityerror",
+      "linkingText": [
+        "SecurityError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-notallowederror",
+      "href": "https://w3c.github.io/battery/#dfn-notallowederror",
+      "linkingText": [
+        "NotAllowedError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-domexception",
+      "href": "https://w3c.github.io/battery/#dfn-domexception",
+      "linkingText": [
+        "DOMException"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-secure-context",
+      "href": "https://w3c.github.io/battery/#dfn-secure-context",
+      "linkingText": [
+        "secure\n          context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-active-document",
+      "href": "https://w3c.github.io/battery/#dfn-active-document",
+      "linkingText": [
+        "active\n          document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-origin",
+      "href": "https://w3c.github.io/battery/#dfn-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-same-origin-domain",
+      "href": "https://w3c.github.io/battery/#dfn-same-origin-domain",
+      "linkingText": [
+        "same\n          origin-domain"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-allowed-to-use",
+      "href": "https://w3c.github.io/battery/#dfn-allowed-to-use",
+      "linkingText": [
+        "allowed\n          to use"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-policy-controlled-feature",
+      "href": "https://w3c.github.io/battery/#dfn-policy-controlled-feature",
+      "linkingText": [
+        "policy-controlled feature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-feature-name",
+      "href": "https://w3c.github.io/battery/#dfn-feature-name",
+      "linkingText": [
+        "feature\n          name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-default-allowlist",
+      "href": "https://w3c.github.io/battery/#dfn-default-allowlist",
+      "linkingText": [
+        "default\n          allowlist"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-battery-promise",
+      "href": "https://w3c.github.io/battery/#dfn-battery-promise",
+      "linkingText": [
+        "battery\n        promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator-getbattery",
+      "href": "https://w3c.github.io/battery/#dom-navigator-getbattery",
+      "linkingText": [
+        "getBattery()"
+      ],
+      "localLinkingText": [
+        "Navigator.getBattery",
+        "Navigator.getBattery()",
+        "getBattery"
+      ],
+      "type": "method",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-batterymanager",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager",
+      "linkingText": [
+        "BatteryManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-current-battery-status-information",
+      "href": "https://w3c.github.io/battery/#dfn-current-battery-status-information",
+      "linkingText": [
+        "current\n        battery status information"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-batterymanager-charging",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager-charging",
+      "linkingText": [
+        "charging"
+      ],
+      "localLinkingText": [
+        "BatteryManager.charging"
+      ],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-batterymanager-chargingtime",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager-chargingtime",
+      "linkingText": [
+        "chargingTime"
+      ],
+      "localLinkingText": [
+        "BatteryManager.chargingTime"
+      ],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-batterymanager-dischargingtime",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager-dischargingtime",
+      "linkingText": [
+        "dischargingTime"
+      ],
+      "localLinkingText": [
+        "BatteryManager.dischargingTime"
+      ],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-batterymanager-level",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager-level",
+      "linkingText": [
+        "level"
+      ],
+      "localLinkingText": [
+        "BatteryManager.level"
+      ],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-create-a-new-batterymanager-object",
+      "href": "https://w3c.github.io/battery/#dfn-create-a-new-batterymanager-object",
+      "linkingText": [
+        "create a new\n        BatteryManager object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-default-values",
+      "href": "https://w3c.github.io/battery/#dfn-default-values",
+      "linkingText": [
+        "default\n        values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-unable-to-report-the-battery-status-information",
+      "href": "https://w3c.github.io/battery/#dfn-unable-to-report-the-battery-status-information",
+      "linkingText": [
+        "unable to report the battery\n        status information"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-batterymanager-onchargingchange",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager-onchargingchange",
+      "linkingText": [
+        "onchargingchange"
+      ],
+      "localLinkingText": [
+        "BatteryManager.onchargingchange"
+      ],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-chargingchange",
+      "href": "https://w3c.github.io/battery/#dfn-chargingchange",
+      "linkingText": [
+        "chargingchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-batterymanager-onchargingtimechange",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager-onchargingtimechange",
+      "linkingText": [
+        "onchargingtimechange"
+      ],
+      "localLinkingText": [
+        "BatteryManager.onchargingtimechange"
+      ],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-chargingtimechange",
+      "href": "https://w3c.github.io/battery/#dfn-chargingtimechange",
+      "linkingText": [
+        "chargingtimechange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-batterymanager-ondischargingtimechange",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager-ondischargingtimechange",
+      "linkingText": [
+        "ondischargingtimechange"
+      ],
+      "localLinkingText": [
+        "BatteryManager.ondischargingtimechange"
+      ],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-dischargingtimechange",
+      "href": "https://w3c.github.io/battery/#dfn-dischargingtimechange",
+      "linkingText": [
+        "dischargingtimechange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-batterymanager-onlevelchange",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager-onlevelchange",
+      "linkingText": [
+        "onlevelchange"
+      ],
+      "localLinkingText": [
+        "BatteryManager.onlevelchange"
+      ],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-levelchange",
+      "href": "https://w3c.github.io/battery/#dfn-levelchange",
+      "linkingText": [
+        "levelchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}
