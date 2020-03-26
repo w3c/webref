@@ -1,0 +1,436 @@
+{
+  "spec": {
+    "title": "CSS Device Adaptation Module Level 1",
+    "url": "https://drafts.csswg.org/css-device-adapt/"
+  },
+  "dfns": [
+    {
+      "id": "initial-viewport",
+      "href": "https://drafts.csswg.org/css-device-adapt/#initial-viewport",
+      "linkingText": [
+        "initial viewport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "actual-viewport",
+      "href": "https://drafts.csswg.org/css-device-adapt/#actual-viewport",
+      "linkingText": [
+        "actual viewport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-viewport",
+      "href": "https://drafts.csswg.org/css-device-adapt/#at-ruledef-viewport",
+      "linkingText": [
+        "@viewport"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-viewport-min-width",
+      "href": "https://drafts.csswg.org/css-device-adapt/#descdef-viewport-min-width",
+      "linkingText": [
+        "min-width"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@viewport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-viewport-max-width",
+      "href": "https://drafts.csswg.org/css-device-adapt/#descdef-viewport-max-width",
+      "linkingText": [
+        "max-width"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@viewport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-viewport-length",
+      "href": "https://drafts.csswg.org/css-device-adapt/#typedef-viewport-length",
+      "linkingText": [
+        "<viewport-length>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-viewport-length-auto",
+      "href": "https://drafts.csswg.org/css-device-adapt/#valdef-viewport-length-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "viewport-length"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-viewport-length-length",
+      "href": "https://drafts.csswg.org/css-device-adapt/#valdef-viewport-length-length",
+      "linkingText": [
+        "<length>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "viewport-length"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-viewport-length-percentage",
+      "href": "https://drafts.csswg.org/css-device-adapt/#valdef-viewport-length-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "viewport-length"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-viewport-width",
+      "href": "https://drafts.csswg.org/css-device-adapt/#descdef-viewport-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@viewport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-viewport-min-height",
+      "href": "https://drafts.csswg.org/css-device-adapt/#descdef-viewport-min-height",
+      "linkingText": [
+        "min-height"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@viewport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-viewport-max-height",
+      "href": "https://drafts.csswg.org/css-device-adapt/#descdef-viewport-max-height",
+      "linkingText": [
+        "max-height"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@viewport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-viewport-height",
+      "href": "https://drafts.csswg.org/css-device-adapt/#descdef-viewport-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@viewport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-viewport-zoom",
+      "href": "https://drafts.csswg.org/css-device-adapt/#descdef-viewport-zoom",
+      "linkingText": [
+        "zoom"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@viewport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-zoom-auto",
+      "href": "https://drafts.csswg.org/css-device-adapt/#valdef-zoom-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "zoom"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-viewport-min-zoom",
+      "href": "https://drafts.csswg.org/css-device-adapt/#descdef-viewport-min-zoom",
+      "linkingText": [
+        "min-zoom"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@viewport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-viewport-max-zoom",
+      "href": "https://drafts.csswg.org/css-device-adapt/#descdef-viewport-max-zoom",
+      "linkingText": [
+        "max-zoom"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@viewport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-viewport-user-zoom",
+      "href": "https://drafts.csswg.org/css-device-adapt/#descdef-viewport-user-zoom",
+      "linkingText": [
+        "user-zoom"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@viewport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-user-zoom-zoom",
+      "href": "https://drafts.csswg.org/css-device-adapt/#valdef-user-zoom-zoom",
+      "linkingText": [
+        "zoom"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "user-zoom"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-user-zoom-fixed",
+      "href": "https://drafts.csswg.org/css-device-adapt/#valdef-user-zoom-fixed",
+      "linkingText": [
+        "fixed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "user-zoom"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-viewport-orientation",
+      "href": "https://drafts.csswg.org/css-device-adapt/#descdef-viewport-orientation",
+      "linkingText": [
+        "orientation"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@viewport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-orientation-auto",
+      "href": "https://drafts.csswg.org/css-device-adapt/#valdef-orientation-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "orientation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-orientation-portrait",
+      "href": "https://drafts.csswg.org/css-device-adapt/#valdef-orientation-portrait",
+      "linkingText": [
+        "portrait"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "orientation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-orientation-landscape",
+      "href": "https://drafts.csswg.org/css-device-adapt/#valdef-orientation-landscape",
+      "linkingText": [
+        "landscape"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "orientation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "width",
+      "href": "https://drafts.csswg.org/css-device-adapt/#width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "height",
+      "href": "https://drafts.csswg.org/css-device-adapt/#height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "initial-width",
+      "href": "https://drafts.csswg.org/css-device-adapt/#initial-width",
+      "linkingText": [
+        "initial-width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "initial-height",
+      "href": "https://drafts.csswg.org/css-device-adapt/#initial-height",
+      "linkingText": [
+        "initial-height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "specifications-whose-evaluations-are-both-affected-by-the-same-changes-to-the-user-environment-and-so-always-must-be-evaluated-together-in-order-to-ensure-proper-rendering",
+      "href": "https://drafts.csswg.org/css-device-adapt/#specifications-whose-evaluations-are-both-affected-by-the-same-changes-to-the-user-environment-and-so-always-must-be-evaluated-together-in-order-to-ensure-proper-rendering",
+      "linkingText": [
+        "Specifications\nwhose evaluations are both affected by the same changes to the user\nenvironment, and so always must be evaluated together in order to\nensure proper rendering."
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-viewport_rule",
+      "href": "https://drafts.csswg.org/css-device-adapt/#dom-cssrule-viewport_rule",
+      "linkingText": [
+        "VIEWPORT_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssviewportrule",
+      "href": "https://drafts.csswg.org/css-device-adapt/#cssviewportrule",
+      "linkingText": [
+        "CSSViewportRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssviewportrule-style",
+      "href": "https://drafts.csswg.org/css-device-adapt/#dom-cssviewportrule-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSViewportRule"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

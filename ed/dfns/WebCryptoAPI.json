@@ -1,0 +1,1832 @@
+{
+  "spec": {
+    "title": "Web Cryptography API",
+    "url": "http://w3c.github.io/webcrypto/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-conforming-implementation",
+      "href": "http://w3c.github.io/webcrypto/#dfn-conforming-implementation",
+      "linkingText": [
+        "conforming user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-applicable-specification",
+      "href": "http://w3c.github.io/webcrypto/#dfn-applicable-specification",
+      "linkingText": [
+        "applicable specification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-DOMException",
+      "href": "http://w3c.github.io/webcrypto/#dfn-DOMException",
+      "linkingText": [
+        "DOMException"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ArrayBuffer",
+      "href": "http://w3c.github.io/webcrypto/#dfn-ArrayBuffer",
+      "linkingText": [
+        "ArrayBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ArrayBufferView",
+      "href": "http://w3c.github.io/webcrypto/#dfn-ArrayBufferView",
+      "linkingText": [
+        "ArrayBufferView"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-structured-clone",
+      "href": "http://w3c.github.io/webcrypto/#dfn-structured-clone",
+      "linkingText": [
+        "structured clone"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-DOMString",
+      "href": "http://w3c.github.io/webcrypto/#dfn-DOMString",
+      "linkingText": [
+        "DOMString"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "BufferSource",
+      "href": "http://w3c.github.io/webcrypto/#BufferSource",
+      "linkingText": [
+        "BufferSource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-octet-string",
+      "href": "http://w3c.github.io/webcrypto/#dfn-octet-string",
+      "linkingText": [
+        "octet string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-octet-string-containing",
+      "href": "http://w3c.github.io/webcrypto/#dfn-octet-string-containing",
+      "linkingText": [
+        "octet string containing a bit string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-convert-integer-to-octet-string",
+      "href": "http://w3c.github.io/webcrypto/#dfn-convert-integer-to-octet-string",
+      "linkingText": [
+        "convert a non-negative\n          integer i to an octet string of length n"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "case-sensitive",
+      "href": "http://w3c.github.io/webcrypto/#case-sensitive",
+      "linkingText": [
+        "case-sensitive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "case-insensitive",
+      "href": "http://w3c.github.io/webcrypto/#case-insensitive",
+      "linkingText": [
+        "ASCII case-insensitive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "terminate-the-algorithm",
+      "href": "http://w3c.github.io/webcrypto/#terminate-the-algorithm",
+      "linkingText": [
+        "terminate the\n          algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-parse-an-asn1-structure",
+      "href": "http://w3c.github.io/webcrypto/#concept-parse-an-asn1-structure",
+      "linkingText": [
+        "parse an ASN.1\n          structure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-parse-a-spki",
+      "href": "http://w3c.github.io/webcrypto/#concept-parse-a-spki",
+      "linkingText": [
+        "parse a\n          subjectPublicKeyInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-parse-a-privateKeyInfo",
+      "href": "http://w3c.github.io/webcrypto/#concept-parse-a-privateKeyInfo",
+      "linkingText": [
+        "parse a\n          PrivateKeyInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-parse-a-jwk",
+      "href": "http://w3c.github.io/webcrypto/#concept-parse-a-jwk",
+      "linkingText": [
+        "parse a JWK"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-contents-of-arraybuffer",
+      "href": "http://w3c.github.io/webcrypto/#concept-contents-of-arraybuffer",
+      "linkingText": [
+        "contents of an ArrayBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-usage-intersection",
+      "href": "http://w3c.github.io/webcrypto/#concept-usage-intersection",
+      "linkingText": [
+        "usage\n          intersection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-normalized-usages",
+      "href": "http://w3c.github.io/webcrypto/#concept-normalized-usages",
+      "linkingText": [
+        "normalized value of a usages list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-cached-object",
+      "href": "http://w3c.github.io/webcrypto/#concept-cached-object",
+      "linkingText": [
+        "cached ECMAScript\n          object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-Crypto",
+      "href": "http://w3c.github.io/webcrypto/#dfn-Crypto",
+      "linkingText": [
+        "Crypto"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-Crypto-method-getRandomValues",
+      "href": "http://w3c.github.io/webcrypto/#dfn-Crypto-method-getRandomValues",
+      "linkingText": [
+        "getRandomValues"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-Crypto-attribute-subtle",
+      "href": "http://w3c.github.io/webcrypto/#dfn-Crypto-attribute-subtle",
+      "linkingText": [
+        "subtle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AlgorithmIdentifier",
+      "href": "http://w3c.github.io/webcrypto/#dfn-AlgorithmIdentifier",
+      "linkingText": [
+        "AlgorithmIdentifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HashAlgorithmIdentifier",
+      "href": "http://w3c.github.io/webcrypto/#dfn-HashAlgorithmIdentifier",
+      "linkingText": [
+        "HashAlgorithmIdentifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-Algorithm",
+      "href": "http://w3c.github.io/webcrypto/#dfn-Algorithm",
+      "linkingText": [
+        "Algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-KeyAlgorithm",
+      "href": "http://w3c.github.io/webcrypto/#dfn-KeyAlgorithm",
+      "linkingText": [
+        "KeyAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKey",
+      "href": "http://w3c.github.io/webcrypto/#dfn-CryptoKey",
+      "linkingText": [
+        "CryptoKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RecognizedKeyType",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RecognizedKeyType",
+      "linkingText": [
+        "recognized key type values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RecognizedKeyUsage",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RecognizedKeyUsage",
+      "linkingText": [
+        "recognized key usage values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKey-slot-type",
+      "href": "http://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKey-slot-extractable",
+      "href": "http://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-extractable",
+      "linkingText": [
+        "extractable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKey-slot-algorithm",
+      "href": "http://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-algorithm",
+      "linkingText": [
+        "algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKey-slot-algorithm_cached",
+      "href": "http://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-algorithm_cached",
+      "linkingText": [
+        "algorithm_cached"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKey-slot-usages",
+      "href": "http://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-usages",
+      "linkingText": [
+        "usages"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKey-slot-usages_cached",
+      "href": "http://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-usages_cached",
+      "linkingText": [
+        "usages_cached"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKey-slot-handle",
+      "href": "http://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-handle",
+      "linkingText": [
+        "handle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto",
+      "href": "http://w3c.github.io/webcrypto/#dfn-SubtleCrypto",
+      "linkingText": [
+        "SubtleCrypto"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RecognizedKeyFormats",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RecognizedKeyFormats",
+      "linkingText": [
+        "recognized key format values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-encrypt",
+      "href": "http://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-encrypt",
+      "linkingText": [
+        "encrypt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-decrypt",
+      "href": "http://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-decrypt",
+      "linkingText": [
+        "decrypt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-sign",
+      "href": "http://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-sign",
+      "linkingText": [
+        "sign"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-verify",
+      "href": "http://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-verify",
+      "linkingText": [
+        "verify"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-digest",
+      "href": "http://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-digest",
+      "linkingText": [
+        "digest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-generateKey",
+      "href": "http://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-generateKey",
+      "linkingText": [
+        "generateKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-deriveKey",
+      "href": "http://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-deriveKey",
+      "linkingText": [
+        "deriveKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-deriveBits",
+      "href": "http://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-deriveBits",
+      "linkingText": [
+        "deriveBits"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-importKey",
+      "href": "http://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-importKey",
+      "linkingText": [
+        "importKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-exportKey",
+      "href": "http://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-exportKey",
+      "linkingText": [
+        "exportKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-wrapKey",
+      "href": "http://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-wrapKey",
+      "linkingText": [
+        "wrapKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-unwrapKey",
+      "href": "http://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-unwrapKey",
+      "linkingText": [
+        "unwrapKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-TypeError",
+      "href": "http://w3c.github.io/webcrypto/#dfn-TypeError",
+      "linkingText": [
+        "TypeError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-NotSupportedError",
+      "href": "http://w3c.github.io/webcrypto/#dfn-NotSupportedError",
+      "linkingText": [
+        "NotSupportedError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SyntaxError",
+      "href": "http://w3c.github.io/webcrypto/#dfn-SyntaxError",
+      "linkingText": [
+        "SyntaxError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-InvalidAccessError",
+      "href": "http://w3c.github.io/webcrypto/#dfn-InvalidAccessError",
+      "linkingText": [
+        "InvalidAccessError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-DataError",
+      "href": "http://w3c.github.io/webcrypto/#dfn-DataError",
+      "linkingText": [
+        "DataError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-OperationError",
+      "href": "http://w3c.github.io/webcrypto/#dfn-OperationError",
+      "linkingText": [
+        "OperationError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-throw",
+      "href": "http://w3c.github.io/webcrypto/#concept-throw",
+      "linkingText": [
+        "throw"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaOtherPrimesInfo",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RsaOtherPrimesInfo",
+      "linkingText": [
+        "RsaOtherPrimesInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-JsonWebKey",
+      "href": "http://w3c.github.io/webcrypto/#dfn-JsonWebKey",
+      "linkingText": [
+        "JsonWebKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-BigInteger",
+      "href": "http://w3c.github.io/webcrypto/#dfn-BigInteger",
+      "linkingText": [
+        "BigInteger"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKeyPair",
+      "href": "http://w3c.github.io/webcrypto/#dfn-CryptoKeyPair",
+      "linkingText": [
+        "CryptoKeyPair"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKeyPair-publicKey",
+      "href": "http://w3c.github.io/webcrypto/#dfn-CryptoKeyPair-publicKey",
+      "linkingText": [
+        "publicKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKeyPair-privateKey",
+      "href": "http://w3c.github.io/webcrypto/#dfn-CryptoKeyPair-privateKey",
+      "linkingText": [
+        "privateKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "recognized-algorithm-name",
+      "href": "http://w3c.github.io/webcrypto/#recognized-algorithm-name",
+      "linkingText": [
+        "recognized algorithm name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "supported-operation",
+      "href": "http://w3c.github.io/webcrypto/#supported-operation",
+      "linkingText": [
+        "supported operations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "supported-operations",
+      "href": "http://w3c.github.io/webcrypto/#supported-operations",
+      "linkingText": [
+        "Operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "algorithm-specific-params",
+      "href": "http://w3c.github.io/webcrypto/#algorithm-specific-params",
+      "linkingText": [
+        "Parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "algorithm-result",
+      "href": "http://w3c.github.io/webcrypto/#algorithm-result",
+      "linkingText": [
+        "Result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-supportedAlgorithms",
+      "href": "http://w3c.github.io/webcrypto/#dfn-supportedAlgorithms",
+      "linkingText": [
+        "supportedAlgorithms"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-define-an-algorithm",
+      "href": "http://w3c.github.io/webcrypto/#concept-define-an-algorithm",
+      "linkingText": [
+        "define an algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-normalize-an-algorithm",
+      "href": "http://w3c.github.io/webcrypto/#dfn-normalize-an-algorithm",
+      "linkingText": [
+        "normalize an algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rsa-ssa-extended-import-steps",
+      "href": "http://w3c.github.io/webcrypto/#dfn-rsa-ssa-extended-import-steps",
+      "linkingText": [
+        "key import steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rsa-ssa-extended-export-steps",
+      "href": "http://w3c.github.io/webcrypto/#dfn-rsa-ssa-extended-export-steps",
+      "linkingText": [
+        "key export steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaKeyGenParams",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RsaKeyGenParams",
+      "linkingText": [
+        "RsaKeyGenParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaKeyGenParams-modulusLength",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RsaKeyGenParams-modulusLength",
+      "linkingText": [
+        "modulusLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaKeyGenParams-publicExponent",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RsaKeyGenParams-publicExponent",
+      "linkingText": [
+        "publicExponent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaHashedKeyGenParams",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RsaHashedKeyGenParams",
+      "linkingText": [
+        "RsaHashedKeyGenParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaHashedKeyGenParams-hash",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RsaHashedKeyGenParams-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaKeyAlgorithm",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RsaKeyAlgorithm",
+      "linkingText": [
+        "RsaKeyAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaKeyAlgorithm-modulusLength",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RsaKeyAlgorithm-modulusLength",
+      "linkingText": [
+        "modulusLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaKeyAlgorithm-publicExponent",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RsaKeyAlgorithm-publicExponent",
+      "linkingText": [
+        "publicExponent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaHashedKeyAlgorithm",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RsaHashedKeyAlgorithm",
+      "linkingText": [
+        "RsaHashedKeyAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaHashedKeyAlgorithm-hash",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RsaHashedKeyAlgorithm-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaHashedImportParams",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RsaHashedImportParams",
+      "linkingText": [
+        "RsaHashedImportParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaHashedImportParams-hash",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RsaHashedImportParams-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rsa-pss-extended-import-steps",
+      "href": "http://w3c.github.io/webcrypto/#dfn-rsa-pss-extended-import-steps",
+      "linkingText": [
+        "key import steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rsa-pss-extended-export-steps",
+      "href": "http://w3c.github.io/webcrypto/#dfn-rsa-pss-extended-export-steps",
+      "linkingText": [
+        "key export steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaPssParams",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RsaPssParams",
+      "linkingText": [
+        "RsaPssParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaPssParams-saltLength",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RsaPssParams-saltLength",
+      "linkingText": [
+        "saltLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rsa-oaep-extended-import-steps",
+      "href": "http://w3c.github.io/webcrypto/#dfn-rsa-oaep-extended-import-steps",
+      "linkingText": [
+        "key import steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rsa-oaep-extended-export-steps",
+      "href": "http://w3c.github.io/webcrypto/#dfn-rsa-oaep-extended-export-steps",
+      "linkingText": [
+        "key export steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaOaepParams",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RsaOaepParams",
+      "linkingText": [
+        "RsaOaepParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaOaepParams-label",
+      "href": "http://w3c.github.io/webcrypto/#dfn-RsaOaepParams-label",
+      "linkingText": [
+        "label"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdsa-extended-namedcurve-values",
+      "href": "http://w3c.github.io/webcrypto/#dfn-ecdsa-extended-namedcurve-values",
+      "linkingText": [
+        "the curve name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdsa-extended-signature-steps",
+      "href": "http://w3c.github.io/webcrypto/#dfn-ecdsa-extended-signature-steps",
+      "linkingText": [
+        "ECDSA signature steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdsa-extended-verification-steps",
+      "href": "http://w3c.github.io/webcrypto/#dfn-ecdsa-extended-verification-steps",
+      "linkingText": [
+        "ECDSA verification steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdsa-extended-generation-steps",
+      "href": "http://w3c.github.io/webcrypto/#dfn-ecdsa-extended-generation-steps",
+      "linkingText": [
+        "ECDSA generation steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdsa-extended-import-steps",
+      "href": "http://w3c.github.io/webcrypto/#dfn-ecdsa-extended-import-steps",
+      "linkingText": [
+        "ECDSA key import steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdsa-extended-export-steps",
+      "href": "http://w3c.github.io/webcrypto/#dfn-ecdsa-extended-export-steps",
+      "linkingText": [
+        "ECDSA key export steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcdsaParams",
+      "href": "http://w3c.github.io/webcrypto/#dfn-EcdsaParams",
+      "linkingText": [
+        "EcdsaParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcdsaParams-hash",
+      "href": "http://w3c.github.io/webcrypto/#dfn-EcdsaParams-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcKeyGenParams",
+      "href": "http://w3c.github.io/webcrypto/#dfn-EcKeyGenParams",
+      "linkingText": [
+        "EcKeyGenParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcKeyGenParams-namedCurve",
+      "href": "http://w3c.github.io/webcrypto/#dfn-EcKeyGenParams-namedCurve",
+      "linkingText": [
+        "namedCurve"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-NamedCurve",
+      "href": "http://w3c.github.io/webcrypto/#dfn-NamedCurve",
+      "linkingText": [
+        "NamedCurve"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcKeyAlgorithm",
+      "href": "http://w3c.github.io/webcrypto/#dfn-EcKeyAlgorithm",
+      "linkingText": [
+        "EcKeyAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcKeyAlgorithm-namedCurve",
+      "href": "http://w3c.github.io/webcrypto/#dfn-EcKeyAlgorithm-namedCurve",
+      "linkingText": [
+        "namedCurve"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcKeyImportParams",
+      "href": "http://w3c.github.io/webcrypto/#dfn-EcKeyImportParams",
+      "linkingText": [
+        "EcKeyImportParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcKeyImportParams-namedCurve",
+      "href": "http://w3c.github.io/webcrypto/#dfn-EcKeyImportParams-namedCurve",
+      "linkingText": [
+        "namedCurve"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdh-extended-namedcurve-values",
+      "href": "http://w3c.github.io/webcrypto/#dfn-ecdh-extended-namedcurve-values",
+      "linkingText": [
+        "the curve name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdh-extended-generation-steps",
+      "href": "http://w3c.github.io/webcrypto/#dfn-ecdh-extended-generation-steps",
+      "linkingText": [
+        "ECDH generation steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdh-extended-derivation-steps",
+      "href": "http://w3c.github.io/webcrypto/#dfn-ecdh-extended-derivation-steps",
+      "linkingText": [
+        "ECDH derivation steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdh-extended-import-steps",
+      "href": "http://w3c.github.io/webcrypto/#dfn-ecdh-extended-import-steps",
+      "linkingText": [
+        "ECDH key import steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdh-extended-export-steps",
+      "href": "http://w3c.github.io/webcrypto/#dfn-ecdh-extended-export-steps",
+      "linkingText": [
+        "ECDH key export steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcdhKeyDeriveParams",
+      "href": "http://w3c.github.io/webcrypto/#dfn-EcdhKeyDeriveParams",
+      "linkingText": [
+        "EcdhKeyDeriveParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcdhKeyDeriveParams-public",
+      "href": "http://w3c.github.io/webcrypto/#dfn-EcdhKeyDeriveParams-public",
+      "linkingText": [
+        "public"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesCtrParams",
+      "href": "http://w3c.github.io/webcrypto/#dfn-AesCtrParams",
+      "linkingText": [
+        "AesCtrParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesCtrParams-counter",
+      "href": "http://w3c.github.io/webcrypto/#dfn-AesCtrParams-counter",
+      "linkingText": [
+        "counter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesCtrParams-length",
+      "href": "http://w3c.github.io/webcrypto/#dfn-AesCtrParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesKeyAlgorithm",
+      "href": "http://w3c.github.io/webcrypto/#dfn-AesKeyAlgorithm",
+      "linkingText": [
+        "AesKeyAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesKeyAlgorithm-length",
+      "href": "http://w3c.github.io/webcrypto/#dfn-AesKeyAlgorithm-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesKeyGenParams",
+      "href": "http://w3c.github.io/webcrypto/#dfn-AesKeyGenParams",
+      "linkingText": [
+        "AesKeyGenParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesKeyGenParams-length",
+      "href": "http://w3c.github.io/webcrypto/#dfn-AesKeyGenParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesDerivedKeyParams",
+      "href": "http://w3c.github.io/webcrypto/#dfn-AesDerivedKeyParams",
+      "linkingText": [
+        "AesDerivedKeyParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesDerivedKeyParams-length",
+      "href": "http://w3c.github.io/webcrypto/#dfn-AesDerivedKeyParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesCbcParams",
+      "href": "http://w3c.github.io/webcrypto/#dfn-AesCbcParams",
+      "linkingText": [
+        "AesCbcParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesCbcParams-iv",
+      "href": "http://w3c.github.io/webcrypto/#dfn-AesCbcParams-iv",
+      "linkingText": [
+        "iv"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesGcmParams",
+      "href": "http://w3c.github.io/webcrypto/#dfn-AesGcmParams",
+      "linkingText": [
+        "AesGcmParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesGcmParams-iv",
+      "href": "http://w3c.github.io/webcrypto/#dfn-AesGcmParams-iv",
+      "linkingText": [
+        "iv"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesGcmParams-additionalData",
+      "href": "http://w3c.github.io/webcrypto/#dfn-AesGcmParams-additionalData",
+      "linkingText": [
+        "additionalData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesGcmParams-tagLength",
+      "href": "http://w3c.github.io/webcrypto/#dfn-AesGcmParams-tagLength",
+      "linkingText": [
+        "tagLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-hmac-extended-import-steps",
+      "href": "http://w3c.github.io/webcrypto/#dfn-hmac-extended-import-steps",
+      "linkingText": [
+        "key import steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-hmac-extended-export-steps",
+      "href": "http://w3c.github.io/webcrypto/#dfn-hmac-extended-export-steps",
+      "linkingText": [
+        "key export steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacImportParams",
+      "href": "http://w3c.github.io/webcrypto/#dfn-HmacImportParams",
+      "linkingText": [
+        "HmacImportParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacImportParams-hash",
+      "href": "http://w3c.github.io/webcrypto/#dfn-HmacImportParams-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacImportParams-length",
+      "href": "http://w3c.github.io/webcrypto/#dfn-HmacImportParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacKeyAlgorithm",
+      "href": "http://w3c.github.io/webcrypto/#dfn-HmacKeyAlgorithm",
+      "linkingText": [
+        "HmacKeyAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacKeyAlgorithm-hash",
+      "href": "http://w3c.github.io/webcrypto/#dfn-HmacKeyAlgorithm-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacKeyAlgorithm-length",
+      "href": "http://w3c.github.io/webcrypto/#dfn-HmacKeyAlgorithm-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacKeyGenParams",
+      "href": "http://w3c.github.io/webcrypto/#dfn-HmacKeyGenParams",
+      "linkingText": [
+        "HmacKeyGenParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacKeyGenParams-hash",
+      "href": "http://w3c.github.io/webcrypto/#dfn-HmacKeyGenParams-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacKeyGenParams-length",
+      "href": "http://w3c.github.io/webcrypto/#dfn-HmacKeyGenParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HkdfParams",
+      "href": "http://w3c.github.io/webcrypto/#dfn-HkdfParams",
+      "linkingText": [
+        "HkdfParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HkdfParams-hash",
+      "href": "http://w3c.github.io/webcrypto/#dfn-HkdfParams-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HkdfParams-salt",
+      "href": "http://w3c.github.io/webcrypto/#dfn-HkdfParams-salt",
+      "linkingText": [
+        "salt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HkdfParams-info",
+      "href": "http://w3c.github.io/webcrypto/#dfn-HkdfParams-info",
+      "linkingText": [
+        "info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-Pbkdf2Params",
+      "href": "http://w3c.github.io/webcrypto/#dfn-Pbkdf2Params",
+      "linkingText": [
+        "Pbkdf2Params"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-Pbkdf2Params-salt",
+      "href": "http://w3c.github.io/webcrypto/#dfn-Pbkdf2Params-salt",
+      "linkingText": [
+        "salt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-Pbkdf2Params-iterations",
+      "href": "http://w3c.github.io/webcrypto/#dfn-Pbkdf2Params-iterations",
+      "linkingText": [
+        "iterations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-Pbkdf2Params-hash",
+      "href": "http://w3c.github.io/webcrypto/#dfn-Pbkdf2Params-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

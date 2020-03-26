@@ -1,0 +1,355 @@
+{
+  "spec": {
+    "title": "User Timing Level 3",
+    "url": "https://w3c.github.io/user-timing/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-user-timing",
+      "href": "https://w3c.github.io/user-timing/#dfn-user-timing",
+      "linkingText": [
+        "User Timing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performance",
+      "href": "https://w3c.github.io/user-timing/#dom-performance",
+      "linkingText": [
+        "Performance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-domhighrestimestamp",
+      "href": "https://w3c.github.io/user-timing/#dfn-domhighrestimestamp",
+      "linkingText": [
+        "DOMHighResTimeStamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-performanceentry",
+      "href": "https://w3c.github.io/user-timing/#dfn-performanceentry",
+      "linkingText": [
+        "PerformanceEntry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performance-mark",
+      "href": "https://w3c.github.io/user-timing/#dom-performance-mark",
+      "linkingText": [
+        "mark()",
+        "mark(markName)",
+        "mark(markName, markOptions)"
+      ],
+      "localLinkingText": [
+        "Performance.mark",
+        "Performance.mark()",
+        "mark"
+      ],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancemarkoptions",
+      "href": "https://w3c.github.io/user-timing/#dom-performancemarkoptions",
+      "linkingText": [
+        "PerformanceMarkOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancemarkoptions-detail",
+      "href": "https://w3c.github.io/user-timing/#dom-performancemarkoptions-detail",
+      "linkingText": [
+        "detail"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PerformanceMarkOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancemarkoptions-starttime",
+      "href": "https://w3c.github.io/user-timing/#dom-performancemarkoptions-starttime",
+      "linkingText": [
+        "startTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PerformanceMarkOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performance-clearmarks",
+      "href": "https://w3c.github.io/user-timing/#dom-performance-clearmarks",
+      "linkingText": [
+        "clearMarks()",
+        "clearMarks(, markName)"
+      ],
+      "localLinkingText": [
+        "Performance.clearMarks",
+        "Performance.clearMarks()",
+        "clearMarks"
+      ],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performance-measure",
+      "href": "https://w3c.github.io/user-timing/#dom-performance-measure",
+      "linkingText": [
+        "measure()",
+        "measure(measureName)",
+        "measure(measureName, startOrMeasureOptions)",
+        "measure(measureName, startOrMeasureOptions, endMark)"
+      ],
+      "localLinkingText": [
+        "Performance.measure",
+        "Performance.measure()",
+        "measure"
+      ],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancemeasureoptions",
+      "href": "https://w3c.github.io/user-timing/#dom-performancemeasureoptions",
+      "linkingText": [
+        "PerformanceMeasureOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancemeasureoptions-detail",
+      "href": "https://w3c.github.io/user-timing/#dom-performancemeasureoptions-detail",
+      "linkingText": [
+        "detail"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PerformanceMeasureOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancemeasureoptions-start",
+      "href": "https://w3c.github.io/user-timing/#dom-performancemeasureoptions-start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PerformanceMeasureOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancemeasureoptions-duration",
+      "href": "https://w3c.github.io/user-timing/#dom-performancemeasureoptions-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PerformanceMeasureOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancemeasureoptions-end",
+      "href": "https://w3c.github.io/user-timing/#dom-performancemeasureoptions-end",
+      "linkingText": [
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PerformanceMeasureOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performance-clearmeasures",
+      "href": "https://w3c.github.io/user-timing/#dom-performance-clearmeasures",
+      "linkingText": [
+        "clearMeasures()",
+        "clearMeasures(, measureName)"
+      ],
+      "localLinkingText": [
+        "Performance.clearMeasures",
+        "Performance.clearMeasures()",
+        "clearMeasures"
+      ],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancemark",
+      "href": "https://w3c.github.io/user-timing/#dom-performancemark",
+      "linkingText": [
+        "PerformanceMark"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancemark-constructor",
+      "href": "https://w3c.github.io/user-timing/#dom-performancemark-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(markName)",
+        "constructor(markName, markOptions)"
+      ],
+      "localLinkingText": [
+        "PerformanceMark.constructor",
+        "PerformanceMark.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "PerformanceMark"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancemark-detail",
+      "href": "https://w3c.github.io/user-timing/#dom-performancemark-detail",
+      "linkingText": [
+        "detail"
+      ],
+      "localLinkingText": [
+        "PerformanceMark.detail"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceMark"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-performancemark-constructor",
+      "href": "https://w3c.github.io/user-timing/#dfn-performancemark-constructor",
+      "linkingText": [
+        "PerformanceMark Constructor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performancemeasure",
+      "href": "https://w3c.github.io/user-timing/#dom-performancemeasure",
+      "linkingText": [
+        "PerformanceMeasure"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancemeasure-detail",
+      "href": "https://w3c.github.io/user-timing/#dom-performancemeasure-detail",
+      "linkingText": [
+        "detail"
+      ],
+      "localLinkingText": [
+        "PerformanceMeasure.detail"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceMeasure"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-convert-a-mark-to-a-timestamp",
+      "href": "https://w3c.github.io/user-timing/#dfn-convert-a-mark-to-a-timestamp",
+      "linkingText": [
+        "convert a mark to a timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-convert-a-name-to-a-timestamp",
+      "href": "https://w3c.github.io/user-timing/#dfn-convert-a-name-to-a-timestamp",
+      "linkingText": [
+        "convert a name to a timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

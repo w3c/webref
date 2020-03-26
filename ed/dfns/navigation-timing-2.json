@@ -1,0 +1,950 @@
+{
+  "spec": {
+    "title": "Navigation Timing Level 2",
+    "url": "https://w3c.github.io/navigation-timing/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-navigation",
+      "href": "https://w3c.github.io/navigation-timing/#dfn-navigation",
+      "linkingText": [
+        "navigation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-current-document",
+      "href": "https://w3c.github.io/navigation-timing/#dfn-current-document",
+      "linkingText": [
+        "current document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-javascript",
+      "href": "https://w3c.github.io/navigation-timing/#dfn-javascript",
+      "linkingText": [
+        "JavaScript"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-performanceentry",
+      "href": "https://w3c.github.io/navigation-timing/#dfn-performanceentry",
+      "linkingText": [
+        "PerformanceEntry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-PerformanceNavigationTiming-name",
+      "href": "https://w3c.github.io/navigation-timing/#dom-PerformanceNavigationTiming-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-PerformanceNavigationTiming-entryType",
+      "href": "https://w3c.github.io/navigation-timing/#dom-PerformanceNavigationTiming-entryType",
+      "linkingText": [
+        "entryType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-PerformanceNavigationTiming-startTime",
+      "href": "https://w3c.github.io/navigation-timing/#dom-PerformanceNavigationTiming-startTime",
+      "linkingText": [
+        "startTime"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-domhighrestimestamp",
+      "href": "https://w3c.github.io/navigation-timing/#dfn-domhighrestimestamp",
+      "linkingText": [
+        "DOMHighResTimeStamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-PerformanceNavigationTiming-duration",
+      "href": "https://w3c.github.io/navigation-timing/#dom-PerformanceNavigationTiming-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-performanceresourcetiming",
+      "href": "https://w3c.github.io/navigation-timing/#dfn-performanceresourcetiming",
+      "linkingText": [
+        "PerformanceResourceTiming"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-initiatortype",
+      "href": "https://w3c.github.io/navigation-timing/#dfn-initiatortype",
+      "linkingText": [
+        "initiatorType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-PerformanceNavigationTiming-workerStart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-PerformanceNavigationTiming-workerStart",
+      "linkingText": [
+        "workerStart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigationtiming",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming",
+      "linkingText": [
+        "PerformanceNavigationTiming"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigationtiming-unloadeventstart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-unloadeventstart",
+      "linkingText": [
+        "unloadEventStart"
+      ],
+      "localLinkingText": [
+        "PerformanceNavigationTiming.unloadEventStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigationtiming-unloadeventend",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-unloadeventend",
+      "linkingText": [
+        "unloadEventEnd"
+      ],
+      "localLinkingText": [
+        "PerformanceNavigationTiming.unloadEventEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigationtiming-dominteractive",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-dominteractive",
+      "linkingText": [
+        "domInteractive"
+      ],
+      "localLinkingText": [
+        "PerformanceNavigationTiming.domInteractive"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigationtiming-domcontentloadedeventstart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-domcontentloadedeventstart",
+      "linkingText": [
+        "domContentLoadedEventStart"
+      ],
+      "localLinkingText": [
+        "PerformanceNavigationTiming.domContentLoadedEventStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigationtiming-domcontentloadedeventend",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-domcontentloadedeventend",
+      "linkingText": [
+        "domContentLoadedEventEnd"
+      ],
+      "localLinkingText": [
+        "PerformanceNavigationTiming.domContentLoadedEventEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigationtiming-domcomplete",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-domcomplete",
+      "linkingText": [
+        "domComplete"
+      ],
+      "localLinkingText": [
+        "PerformanceNavigationTiming.domComplete"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigationtiming-loadeventstart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-loadeventstart",
+      "linkingText": [
+        "loadEventStart"
+      ],
+      "localLinkingText": [
+        "PerformanceNavigationTiming.loadEventStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigationtiming-loadeventend",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-loadeventend",
+      "linkingText": [
+        "loadEventEnd"
+      ],
+      "localLinkingText": [
+        "PerformanceNavigationTiming.loadEventEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigationtiming-type",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [
+        "PerformanceNavigationTiming.type"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigationtiming-redirectcount",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-redirectcount",
+      "linkingText": [
+        "redirectCount"
+      ],
+      "localLinkingText": [
+        "PerformanceNavigationTiming.redirectCount"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigationtiming-tojson",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [
+        "PerformanceNavigationTiming.toJSON",
+        "PerformanceNavigationTiming.toJSON()",
+        "toJSON"
+      ],
+      "type": "method",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-navigationtype",
+      "href": "https://w3c.github.io/navigation-timing/#dom-navigationtype",
+      "linkingText": [
+        "NavigationType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-navigationtype-navigate",
+      "href": "https://w3c.github.io/navigation-timing/#dom-navigationtype-navigate",
+      "linkingText": [
+        "navigate"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "NavigationType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-navigationtype-reload",
+      "href": "https://w3c.github.io/navigation-timing/#dom-navigationtype-reload",
+      "linkingText": [
+        "reload"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "NavigationType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-navigationtype-back_forward",
+      "href": "https://w3c.github.io/navigation-timing/#dom-navigationtype-back_forward",
+      "linkingText": [
+        "back_forward"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "NavigationType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-navigationtype-prerender",
+      "href": "https://w3c.github.io/navigation-timing/#dom-navigationtype-prerender",
+      "linkingText": [
+        "prerender"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "NavigationType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-same-origin-check",
+      "href": "https://w3c.github.io/navigation-timing/#dfn-same-origin-check",
+      "linkingText": [
+        "same-origin check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming",
+      "linkingText": [
+        "PerformanceTiming"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-navigationstart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-navigationstart",
+      "linkingText": [
+        "navigationStart"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.navigationStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-unloadeventstart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-unloadeventstart",
+      "linkingText": [
+        "unloadEventStart"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.unloadEventStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-unloadeventend",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-unloadeventend",
+      "linkingText": [
+        "unloadEventEnd"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.unloadEventEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-redirectstart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-redirectstart",
+      "linkingText": [
+        "redirectStart"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.redirectStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-redirectend",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-redirectend",
+      "linkingText": [
+        "redirectEnd"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.redirectEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-fetchstart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-fetchstart",
+      "linkingText": [
+        "fetchStart"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.fetchStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-domainlookupstart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-domainlookupstart",
+      "linkingText": [
+        "domainLookupStart"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.domainLookupStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-domainlookupend",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-domainlookupend",
+      "linkingText": [
+        "domainLookupEnd"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.domainLookupEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-connectstart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-connectstart",
+      "linkingText": [
+        "connectStart"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.connectStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-connectend",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-connectend",
+      "linkingText": [
+        "connectEnd"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.connectEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-secureconnectionstart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-secureconnectionstart",
+      "linkingText": [
+        "secureConnectionStart"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.secureConnectionStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-requeststart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-requeststart",
+      "linkingText": [
+        "requestStart"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.requestStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-responsestart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-responsestart",
+      "linkingText": [
+        "responseStart"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.responseStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-responseend",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-responseend",
+      "linkingText": [
+        "responseEnd"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.responseEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-domloading",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-domloading",
+      "linkingText": [
+        "domLoading"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.domLoading"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-dominteractive",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-dominteractive",
+      "linkingText": [
+        "domInteractive"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.domInteractive"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-domcontentloadedeventstart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-domcontentloadedeventstart",
+      "linkingText": [
+        "domContentLoadedEventStart"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.domContentLoadedEventStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-domcontentloadedeventend",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-domcontentloadedeventend",
+      "linkingText": [
+        "domContentLoadedEventEnd"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.domContentLoadedEventEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-domcomplete",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-domcomplete",
+      "linkingText": [
+        "domComplete"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.domComplete"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-loadeventstart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-loadeventstart",
+      "linkingText": [
+        "loadEventStart"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.loadEventStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-loadeventend",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-loadeventend",
+      "linkingText": [
+        "loadEventEnd"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.loadEventEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancetiming-tojson",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [
+        "PerformanceTiming.toJSON",
+        "PerformanceTiming.toJSON()",
+        "toJSON"
+      ],
+      "type": "method",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigation",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation",
+      "linkingText": [
+        "PerformanceNavigation"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigation-type_navigate",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation-type_navigate",
+      "linkingText": [
+        "TYPE_NAVIGATE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "PerformanceNavigation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigation-type_reload",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation-type_reload",
+      "linkingText": [
+        "TYPE_RELOAD"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "PerformanceNavigation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigation-type_back_forward",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation-type_back_forward",
+      "linkingText": [
+        "TYPE_BACK_FORWARD"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "PerformanceNavigation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigation-type_reserved",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation-type_reserved",
+      "linkingText": [
+        "TYPE_RESERVED"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "PerformanceNavigation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigation-type",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [
+        "PerformanceNavigation.type"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigation-redirectcount",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation-redirectcount",
+      "linkingText": [
+        "redirectCount"
+      ],
+      "localLinkingText": [
+        "PerformanceNavigation.redirectCount"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancenavigation-tojson",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [
+        "PerformanceNavigation.toJSON",
+        "PerformanceNavigation.toJSON()",
+        "toJSON"
+      ],
+      "type": "method",
+      "for": [
+        "PerformanceNavigation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performance",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performance",
+      "linkingText": [
+        "Performance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performance-timing",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performance-timing",
+      "linkingText": [
+        "timing"
+      ],
+      "localLinkingText": [
+        "Performance.timing"
+      ],
+      "type": "attribute",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performance-navigation",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performance-navigation",
+      "linkingText": [
+        "navigation"
+      ],
+      "localLinkingText": [
+        "Performance.navigation"
+      ],
+      "type": "attribute",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

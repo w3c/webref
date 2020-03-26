@@ -1,0 +1,736 @@
+{
+  "spec": {
+    "title": "CSS Fragmentation Module Level 4",
+    "url": "https://drafts.csswg.org/css-break-4/"
+  },
+  "dfns": [
+    {
+      "id": "pagination",
+      "href": "https://drafts.csswg.org/css-break-4/#pagination",
+      "linkingText": [
+        "pagination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragmentation-container",
+      "href": "https://drafts.csswg.org/css-break-4/#fragmentation-container",
+      "linkingText": [
+        "fragmentation container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragmentainer",
+      "href": "https://drafts.csswg.org/css-break-4/#fragmentainer",
+      "linkingText": [
+        "fragmentainer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragmentation-context",
+      "href": "https://drafts.csswg.org/css-break-4/#fragmentation-context",
+      "linkingText": [
+        "fragmentation context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragmented-flow",
+      "href": "https://drafts.csswg.org/css-break-4/#fragmented-flow",
+      "linkingText": [
+        "fragmented flow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragmentation-root",
+      "href": "https://drafts.csswg.org/css-break-4/#fragmentation-root",
+      "linkingText": [
+        "fragmentation root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragmentation-direction",
+      "href": "https://drafts.csswg.org/css-break-4/#fragmentation-direction",
+      "linkingText": [
+        "fragmentation direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragmentation",
+      "href": "https://drafts.csswg.org/css-break-4/#fragmentation",
+      "linkingText": [
+        "fragmentation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "box-fragment",
+      "href": "https://drafts.csswg.org/css-break-4/#box-fragment",
+      "linkingText": [
+        "box fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragment",
+      "href": "https://drafts.csswg.org/css-break-4/#fragment",
+      "linkingText": [
+        "fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "remaining-fragmentainer-extent",
+      "href": "https://drafts.csswg.org/css-break-4/#remaining-fragmentainer-extent",
+      "linkingText": [
+        "remaining fragmentainer extent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragmentation-break",
+      "href": "https://drafts.csswg.org/css-break-4/#fragmentation-break",
+      "linkingText": [
+        "fragmentation break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "break",
+      "href": "https://drafts.csswg.org/css-break-4/#break",
+      "linkingText": [
+        "break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-break-before",
+      "href": "https://drafts.csswg.org/css-break-4/#propdef-break-before",
+      "linkingText": [
+        "break-before"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-break-after",
+      "href": "https://drafts.csswg.org/css-break-4/#propdef-break-after",
+      "linkingText": [
+        "break-after"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "forced-break-values",
+      "href": "https://drafts.csswg.org/css-break-4/#forced-break-values",
+      "linkingText": [
+        "forced break values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "avoid-break-values",
+      "href": "https://drafts.csswg.org/css-break-4/#avoid-break-values",
+      "linkingText": [
+        "avoid break values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-auto",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-avoid",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-avoid",
+      "linkingText": [
+        "avoid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-always",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-always",
+      "linkingText": [
+        "always"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-all",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-all",
+      "linkingText": [
+        "all"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-avoid-page",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-avoid-page",
+      "linkingText": [
+        "avoid-page"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-page",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-page",
+      "linkingText": [
+        "page"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-left",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-right",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-recto",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-recto",
+      "linkingText": [
+        "recto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-verso",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-verso",
+      "linkingText": [
+        "verso"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-avoid-column",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-avoid-column",
+      "linkingText": [
+        "avoid-column"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-column",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-column",
+      "linkingText": [
+        "column"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-avoid-region",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-avoid-region",
+      "linkingText": [
+        "avoid-region"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-region",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-before-region",
+      "linkingText": [
+        "region"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propagate",
+      "href": "https://drafts.csswg.org/css-break-4/#propagate",
+      "linkingText": [
+        "propagate",
+        "propagation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-break-inside",
+      "href": "https://drafts.csswg.org/css-break-4/#propdef-break-inside",
+      "linkingText": [
+        "break-inside"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-inside-auto",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-inside-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-inside",
+        "page-break-inside"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-inside-avoid",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-inside-avoid",
+      "linkingText": [
+        "avoid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-inside",
+        "page-break-inside"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-inside-avoid-page",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-inside-avoid-page",
+      "linkingText": [
+        "avoid-page"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-inside",
+        "page-break-inside"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-inside-avoid-column",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-inside-avoid-column",
+      "linkingText": [
+        "avoid-column"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-inside",
+        "page-break-inside"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-inside-avoid-region",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-break-inside-avoid-region",
+      "linkingText": [
+        "avoid-region"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-inside",
+        "page-break-inside"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-orphans",
+      "href": "https://drafts.csswg.org/css-break-4/#propdef-orphans",
+      "linkingText": [
+        "orphans"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-widows",
+      "href": "https://drafts.csswg.org/css-break-4/#propdef-widows",
+      "linkingText": [
+        "widows"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "monolithic",
+      "href": "https://drafts.csswg.org/css-break-4/#monolithic",
+      "linkingText": [
+        "monolithic"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "page-break",
+      "href": "https://drafts.csswg.org/css-break-4/#page-break",
+      "linkingText": [
+        "page break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "spread-break",
+      "href": "https://drafts.csswg.org/css-break-4/#spread-break",
+      "linkingText": [
+        "spread break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "column-break",
+      "href": "https://drafts.csswg.org/css-break-4/#column-break",
+      "linkingText": [
+        "column break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "region-break",
+      "href": "https://drafts.csswg.org/css-break-4/#region-break",
+      "linkingText": [
+        "region break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "line-break",
+      "href": "https://drafts.csswg.org/css-break-4/#line-break",
+      "linkingText": [
+        "line break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "forced-break",
+      "href": "https://drafts.csswg.org/css-break-4/#forced-break",
+      "linkingText": [
+        "forced break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "unforced-break",
+      "href": "https://drafts.csswg.org/css-break-4/#unforced-break",
+      "linkingText": [
+        "unforced break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-margin-break",
+      "href": "https://drafts.csswg.org/css-break-4/#propdef-margin-break",
+      "linkingText": [
+        "margin-break"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-margin-break-auto",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-margin-break-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "margin-break"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-margin-break-keep",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-margin-break-keep",
+      "linkingText": [
+        "keep"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "margin-break"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-margin-break-discard",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-margin-break-discard",
+      "linkingText": [
+        "discard"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "margin-break"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-box-decoration-break",
+      "href": "https://drafts.csswg.org/css-break-4/#propdef-box-decoration-break",
+      "linkingText": [
+        "box-decoration-break"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-box-decoration-break-clone",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-box-decoration-break-clone",
+      "linkingText": [
+        "clone"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "box-decoration-break"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-box-decoration-break-slice",
+      "href": "https://drafts.csswg.org/css-break-4/#valdef-box-decoration-break-slice",
+      "linkingText": [
+        "slice"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "box-decoration-break"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

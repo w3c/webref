@@ -1,0 +1,241 @@
+{
+  "spec": {
+    "title": "Page Visibility Level 2",
+    "url": "https://w3c.github.io/page-visibility/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-visibility-state",
+      "href": "https://w3c.github.io/page-visibility/#dfn-visibility-state",
+      "linkingText": [
+        "visibility state",
+        "visibility states"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-hidden",
+      "href": "https://w3c.github.io/page-visibility/#dfn-hidden",
+      "linkingText": [
+        "hidden"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-visible",
+      "href": "https://w3c.github.io/page-visibility/#dfn-visible",
+      "linkingText": [
+        "visible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-visibilitystate",
+      "href": "https://w3c.github.io/page-visibility/#dom-visibilitystate",
+      "linkingText": [
+        "VisibilityState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-visibilitystate-hidden",
+      "href": "https://w3c.github.io/page-visibility/#dom-visibilitystate-hidden",
+      "linkingText": [
+        "hidden"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VisibilityState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-visibilitystate-visible",
+      "href": "https://w3c.github.io/page-visibility/#dom-visibilitystate-visible",
+      "linkingText": [
+        "visible"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VisibilityState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-hidden",
+      "href": "https://w3c.github.io/page-visibility/#dom-document-hidden",
+      "linkingText": [
+        "hidden"
+      ],
+      "localLinkingText": [
+        "Document.hidden"
+      ],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-steps-to-determine-if-the-document-is-hidden",
+      "href": "https://w3c.github.io/page-visibility/#dfn-steps-to-determine-if-the-document-is-hidden",
+      "linkingText": [
+        "steps to\n          determine if the document is hidden"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-document-visibilitystate",
+      "href": "https://w3c.github.io/page-visibility/#dom-document-visibilitystate",
+      "linkingText": [
+        "visibilityState"
+      ],
+      "localLinkingText": [
+        "Document.visibilityState"
+      ],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-steps-to-determine-the-visibility-state",
+      "href": "https://w3c.github.io/page-visibility/#dfn-steps-to-determine-the-visibility-state",
+      "linkingText": [
+        "steps to determine the visibility state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-document-onvisibilitychange",
+      "href": "https://w3c.github.io/page-visibility/#dom-document-onvisibilitychange",
+      "linkingText": [
+        "onvisibilitychange"
+      ],
+      "localLinkingText": [
+        "Document.onvisibilitychange"
+      ],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-visibilitychange",
+      "href": "https://w3c.github.io/page-visibility/#dfn-visibilitychange",
+      "linkingText": [
+        "visibilitychange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-now-visible-algorithm",
+      "href": "https://w3c.github.io/page-visibility/#dfn-now-visible-algorithm",
+      "linkingText": [
+        "now visible\n        algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-external-now-visible-algorithm",
+      "href": "https://w3c.github.io/page-visibility/#dfn-external-now-visible-algorithm",
+      "linkingText": [
+        "external now visible algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-now-hidden-algorithm",
+      "href": "https://w3c.github.io/page-visibility/#dfn-now-hidden-algorithm",
+      "linkingText": [
+        "now hidden\n        algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-external-now-hidden-algorithm",
+      "href": "https://w3c.github.io/page-visibility/#dfn-external-now-hidden-algorithm",
+      "linkingText": [
+        "external now hidden algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-session-history-entry",
+      "href": "https://w3c.github.io/page-visibility/#dfn-session-history-entry",
+      "linkingText": [
+        "session\n          history entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-unloading-document-visibility-change-steps",
+      "href": "https://w3c.github.io/page-visibility/#dfn-unloading-document-visibility-change-steps",
+      "linkingText": [
+        "unloading\n          document visibility change steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

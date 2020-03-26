@@ -1,0 +1,1582 @@
+{
+  "spec": {
+    "title": "Selectors Level 4",
+    "url": "https://drafts.csswg.org/selectors/"
+  },
+  "dfns": [
+    {
+      "id": "selector",
+      "href": "https://drafts.csswg.org/selectors/#selector",
+      "linkingText": [
+        "selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selector-subject",
+      "href": "https://drafts.csswg.org/selectors/#selector-subject",
+      "linkingText": [
+        "subject",
+        "subject of a selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "selector"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "match",
+      "href": "https://drafts.csswg.org/selectors/#match",
+      "linkingText": [
+        "match"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "simple",
+      "href": "https://drafts.csswg.org/selectors/#simple",
+      "linkingText": [
+        "simple selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "compound",
+      "href": "https://drafts.csswg.org/selectors/#compound",
+      "linkingText": [
+        "compound selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selector-combinator",
+      "href": "https://drafts.csswg.org/selectors/#selector-combinator",
+      "linkingText": [
+        "combinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "selector"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "complex",
+      "href": "https://drafts.csswg.org/selectors/#complex",
+      "linkingText": [
+        "complex selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-of-simple-selectors",
+      "href": "https://drafts.csswg.org/selectors/#list-of-simple-selectors",
+      "linkingText": [
+        "list of simple selectors",
+        "list of compound selectors",
+        "list of complex selectors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selector-list",
+      "href": "https://drafts.csswg.org/selectors/#selector-list",
+      "linkingText": [
+        "selector list",
+        "list of selectors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "featureless",
+      "href": "https://drafts.csswg.org/selectors/#featureless",
+      "linkingText": [
+        "featureless"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "document-language",
+      "href": "https://drafts.csswg.org/selectors/#document-language",
+      "linkingText": [
+        "document language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "host-language",
+      "href": "https://drafts.csswg.org/selectors/#host-language",
+      "linkingText": [
+        "host language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "scoped-selector",
+      "href": "https://drafts.csswg.org/selectors/#scoped-selector",
+      "linkingText": [
+        "scoped selector"
+      ],
+      "localLinkingText": [
+        "scope"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scoping-root",
+      "href": "https://drafts.csswg.org/selectors/#scoping-root",
+      "linkingText": [
+        "scoping root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scoping-element",
+      "href": "https://drafts.csswg.org/selectors/#scoping-element",
+      "linkingText": [
+        "scoping element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "virtual-scoping-root",
+      "href": "https://drafts.csswg.org/selectors/#virtual-scoping-root",
+      "linkingText": [
+        "virtual scoping root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "relative-selector",
+      "href": "https://drafts.csswg.org/selectors/#relative-selector",
+      "linkingText": [
+        "relative selector",
+        "relative",
+        "scope-relative"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "absolutize",
+      "href": "https://drafts.csswg.org/selectors/#absolutize",
+      "linkingText": [
+        "absolutize a relative selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "absolutize-list",
+      "href": "https://drafts.csswg.org/selectors/#absolutize-list",
+      "linkingText": [
+        "absolutize a relative selector list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "pseudo-class",
+      "href": "https://drafts.csswg.org/selectors/#pseudo-class",
+      "linkingText": [
+        "pseudo-class"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "functional-pseudo-class",
+      "href": "https://drafts.csswg.org/selectors/#functional-pseudo-class",
+      "linkingText": [
+        "functional pseudo-class"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "pseudo-element",
+      "href": "https://drafts.csswg.org/selectors/#pseudo-element",
+      "linkingText": [
+        "pseudo-element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "originating-element",
+      "href": "https://drafts.csswg.org/selectors/#originating-element",
+      "linkingText": [
+        "originating element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "whitespace",
+      "href": "https://drafts.csswg.org/selectors/#whitespace",
+      "linkingText": [
+        "White space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "nsdecl",
+      "href": "https://drafts.csswg.org/selectors/#nsdecl",
+      "linkingText": [
+        "declared"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "invalid-selector",
+      "href": "https://drafts.csswg.org/selectors/#invalid-selector",
+      "linkingText": [
+        "invalid selector"
+      ],
+      "localLinkingText": [
+        "invalid"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "matches-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#matches-pseudo",
+      "linkingText": [
+        ":is()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selectordef-matches",
+      "href": "https://drafts.csswg.org/selectors/#selectordef-matches",
+      "linkingText": [
+        ":matches()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "negation-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#negation-pseudo",
+      "linkingText": [
+        ":not()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "where-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#where-pseudo",
+      "linkingText": [
+        ":where()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "has-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#has-pseudo",
+      "linkingText": [
+        ":has()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "type-selector",
+      "href": "https://drafts.csswg.org/selectors/#type-selector",
+      "linkingText": [
+        "type selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "universal-selector",
+      "href": "https://drafts.csswg.org/selectors/#universal-selector",
+      "linkingText": [
+        "universal selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "defined-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#defined-pseudo",
+      "linkingText": [
+        ":defined"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "attribute-selector",
+      "href": "https://drafts.csswg.org/selectors/#attribute-selector",
+      "linkingText": [
+        "attribute selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "class-selector",
+      "href": "https://drafts.csswg.org/selectors/#class-selector",
+      "linkingText": [
+        "class selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "id-selector",
+      "href": "https://drafts.csswg.org/selectors/#id-selector",
+      "linkingText": [
+        "ID selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dir-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#dir-pseudo",
+      "linkingText": [
+        ":dir()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "lang-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#lang-pseudo",
+      "linkingText": [
+        ":lang()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "language-range",
+      "href": "https://drafts.csswg.org/selectors/#language-range",
+      "linkingText": [
+        "language range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "any-link-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#any-link-pseudo",
+      "linkingText": [
+        ":any-link"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "link-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#link-pseudo",
+      "linkingText": [
+        ":link"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "visited-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#visited-pseudo",
+      "linkingText": [
+        ":visited"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "local-link-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#local-link-pseudo",
+      "linkingText": [
+        ":local-link"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "target-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#target-pseudo",
+      "linkingText": [
+        ":target"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "target-within-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#target-within-pseudo",
+      "linkingText": [
+        ":target-within"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scope-element",
+      "href": "https://drafts.csswg.org/selectors/#scope-element",
+      "linkingText": [
+        ":scope element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scope-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#scope-pseudo",
+      "linkingText": [
+        ":scope"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "user-action-pseudo-class",
+      "href": "https://drafts.csswg.org/selectors/#user-action-pseudo-class",
+      "linkingText": [
+        "user action pseudo-class"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "hover-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#hover-pseudo",
+      "linkingText": [
+        ":hover"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "active-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#active-pseudo",
+      "linkingText": [
+        ":active"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "focus-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#focus-pseudo",
+      "linkingText": [
+        ":focus"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "focus-visible-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#focus-visible-pseudo",
+      "linkingText": [
+        ":focus-visible"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "focus-within-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#focus-within-pseudo",
+      "linkingText": [
+        ":focus-within"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "current-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#current-pseudo",
+      "linkingText": [
+        ":current"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selectordef-current",
+      "href": "https://drafts.csswg.org/selectors/#selectordef-current",
+      "linkingText": [
+        ":current()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "past-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#past-pseudo",
+      "linkingText": [
+        ":past"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "future-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#future-pseudo",
+      "linkingText": [
+        ":future"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selectordef-playing",
+      "href": "https://drafts.csswg.org/selectors/#selectordef-playing",
+      "linkingText": [
+        ":playing"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selectordef-paused",
+      "href": "https://drafts.csswg.org/selectors/#selectordef-paused",
+      "linkingText": [
+        ":paused"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enabled-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#enabled-pseudo",
+      "linkingText": [
+        ":enabled"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "disabled-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#disabled-pseudo",
+      "linkingText": [
+        ":disabled"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "read-write-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#read-write-pseudo",
+      "linkingText": [
+        ":read-write"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "read-only-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#read-only-pseudo",
+      "linkingText": [
+        ":read-only"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "placeholder-shown-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#placeholder-shown-pseudo",
+      "linkingText": [
+        ":placeholder-shown"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#default-pseudo",
+      "linkingText": [
+        ":default"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "checked-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#checked-pseudo",
+      "linkingText": [
+        ":checked"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "indetermine-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#indetermine-pseudo",
+      "linkingText": [
+        ":indeterminate"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "blank-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#blank-pseudo",
+      "linkingText": [
+        ":blank"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valid-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#valid-pseudo",
+      "linkingText": [
+        ":valid"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "invalid-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#invalid-pseudo",
+      "linkingText": [
+        ":invalid"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "in-range-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#in-range-pseudo",
+      "linkingText": [
+        ":in-range"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "out-of-range-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#out-of-range-pseudo",
+      "linkingText": [
+        ":out-of-range"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "required-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#required-pseudo",
+      "linkingText": [
+        ":required"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "optional-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#optional-pseudo",
+      "linkingText": [
+        ":optional"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "user-invalid-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#user-invalid-pseudo",
+      "linkingText": [
+        ":user-invalid"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "structural-pseudo-classes",
+      "href": "https://drafts.csswg.org/selectors/#structural-pseudo-classes",
+      "linkingText": [
+        "structural pseudo-classes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "root-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#root-pseudo",
+      "linkingText": [
+        ":root"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "empty-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#empty-pseudo",
+      "linkingText": [
+        ":empty"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "nth-child-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#nth-child-pseudo",
+      "linkingText": [
+        ":nth-child()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "nth-last-child-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#nth-last-child-pseudo",
+      "linkingText": [
+        ":nth-last-child()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "first-child-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#first-child-pseudo",
+      "linkingText": [
+        ":first-child"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "last-child-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#last-child-pseudo",
+      "linkingText": [
+        ":last-child"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "only-child-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#only-child-pseudo",
+      "linkingText": [
+        ":only-child"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "nth-of-type-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#nth-of-type-pseudo",
+      "linkingText": [
+        ":nth-of-type()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "nth-last-of-type-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#nth-last-of-type-pseudo",
+      "linkingText": [
+        ":nth-last-of-type()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "first-of-type-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#first-of-type-pseudo",
+      "linkingText": [
+        ":first-of-type"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "last-of-type-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#last-of-type-pseudo",
+      "linkingText": [
+        ":last-of-type"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "only-of-type-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#only-of-type-pseudo",
+      "linkingText": [
+        ":only-of-type"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descendant-combinator",
+      "href": "https://drafts.csswg.org/selectors/#descendant-combinator",
+      "linkingText": [
+        "descendant combinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "child-combinator",
+      "href": "https://drafts.csswg.org/selectors/#child-combinator",
+      "linkingText": [
+        "child combinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selectordef-child",
+      "href": "https://drafts.csswg.org/selectors/#selectordef-child",
+      "linkingText": [
+        ">"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "next-sibling-combinator",
+      "href": "https://drafts.csswg.org/selectors/#next-sibling-combinator",
+      "linkingText": [
+        "next-sibling combinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selectordef-adjacent",
+      "href": "https://drafts.csswg.org/selectors/#selectordef-adjacent",
+      "linkingText": [
+        "+"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "subsequent-sibling-combinator",
+      "href": "https://drafts.csswg.org/selectors/#subsequent-sibling-combinator",
+      "linkingText": [
+        "subsequent-sibling combinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selectordef-sibling",
+      "href": "https://drafts.csswg.org/selectors/#selectordef-sibling",
+      "linkingText": [
+        "~"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "column-combinator",
+      "href": "https://drafts.csswg.org/selectors/#column-combinator",
+      "linkingText": [
+        "column combinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selectordef-column",
+      "href": "https://drafts.csswg.org/selectors/#selectordef-column",
+      "linkingText": [
+        "||"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "nth-col-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#nth-col-pseudo",
+      "linkingText": [
+        ":nth-col()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "nth-last-col-pseudo",
+      "href": "https://drafts.csswg.org/selectors/#nth-last-col-pseudo",
+      "linkingText": [
+        ":nth-last-col()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "specificity",
+      "href": "https://drafts.csswg.org/selectors/#specificity",
+      "linkingText": [
+        "specificity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-selector-list",
+      "href": "https://drafts.csswg.org/selectors/#typedef-selector-list",
+      "linkingText": [
+        "<selector-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-complex-selector-list",
+      "href": "https://drafts.csswg.org/selectors/#typedef-complex-selector-list",
+      "linkingText": [
+        "<complex-selector-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-compound-selector-list",
+      "href": "https://drafts.csswg.org/selectors/#typedef-compound-selector-list",
+      "linkingText": [
+        "<compound-selector-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-simple-selector-list",
+      "href": "https://drafts.csswg.org/selectors/#typedef-simple-selector-list",
+      "linkingText": [
+        "<simple-selector-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-relative-selector-list",
+      "href": "https://drafts.csswg.org/selectors/#typedef-relative-selector-list",
+      "linkingText": [
+        "<relative-selector-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-complex-selector",
+      "href": "https://drafts.csswg.org/selectors/#typedef-complex-selector",
+      "linkingText": [
+        "<complex-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-relative-selector",
+      "href": "https://drafts.csswg.org/selectors/#typedef-relative-selector",
+      "linkingText": [
+        "<relative-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-compound-selector",
+      "href": "https://drafts.csswg.org/selectors/#typedef-compound-selector",
+      "linkingText": [
+        "<compound-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-simple-selector",
+      "href": "https://drafts.csswg.org/selectors/#typedef-simple-selector",
+      "linkingText": [
+        "<simple-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-combinator",
+      "href": "https://drafts.csswg.org/selectors/#typedef-combinator",
+      "linkingText": [
+        "<combinator>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-type-selector",
+      "href": "https://drafts.csswg.org/selectors/#typedef-type-selector",
+      "linkingText": [
+        "<type-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-ns-prefix",
+      "href": "https://drafts.csswg.org/selectors/#typedef-ns-prefix",
+      "linkingText": [
+        "<ns-prefix>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedef-wq-name",
+      "href": "https://drafts.csswg.org/selectors/#typedef-wq-name",
+      "linkingText": [
+        "<wq-name>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedef-subclass-selector",
+      "href": "https://drafts.csswg.org/selectors/#typedef-subclass-selector",
+      "linkingText": [
+        "<subclass-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedef-id-selector",
+      "href": "https://drafts.csswg.org/selectors/#typedef-id-selector",
+      "linkingText": [
+        "<id-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-class-selector",
+      "href": "https://drafts.csswg.org/selectors/#typedef-class-selector",
+      "linkingText": [
+        "<class-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-attribute-selector",
+      "href": "https://drafts.csswg.org/selectors/#typedef-attribute-selector",
+      "linkingText": [
+        "<attribute-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-attr-matcher",
+      "href": "https://drafts.csswg.org/selectors/#typedef-attr-matcher",
+      "linkingText": [
+        "<attr-matcher>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedef-attr-modifier",
+      "href": "https://drafts.csswg.org/selectors/#typedef-attr-modifier",
+      "linkingText": [
+        "<attr-modifier>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedef-pseudo-class-selector",
+      "href": "https://drafts.csswg.org/selectors/#typedef-pseudo-class-selector",
+      "linkingText": [
+        "<pseudo-class-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-pseudo-element-selector",
+      "href": "https://drafts.csswg.org/selectors/#typedef-pseudo-element-selector",
+      "linkingText": [
+        "<pseudo-element-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-selector",
+      "href": "https://drafts.csswg.org/selectors/#parse-a-selector",
+      "linkingText": [
+        "parse a selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-relative-selector",
+      "href": "https://drafts.csswg.org/selectors/#parse-a-relative-selector",
+      "linkingText": [
+        "parse a relative selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "match-a-selector-against-an-element",
+      "href": "https://drafts.csswg.org/selectors/#match-a-selector-against-an-element",
+      "linkingText": [
+        "match a selector against an element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "match-a-complex-selector-against-an-element",
+      "href": "https://drafts.csswg.org/selectors/#match-a-complex-selector-against-an-element",
+      "linkingText": [
+        "match a complex selector against an element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "match-a-selector-against-a-pseudo-element",
+      "href": "https://drafts.csswg.org/selectors/#match-a-selector-against-a-pseudo-element",
+      "linkingText": [
+        "match a selector against a pseudo-element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "match-a-selector-against-a-tree",
+      "href": "https://drafts.csswg.org/selectors/#match-a-selector-against-a-tree",
+      "linkingText": [
+        "match a selector against a tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "unknown--webkit--pseudo-elements",
+      "href": "https://drafts.csswg.org/selectors/#unknown--webkit--pseudo-elements",
+      "linkingText": [
+        "unknown -webkit- pseudo-elements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "evaluating-selectors",
+      "href": "https://drafts.csswg.org/selectors/#evaluating-selectors",
+      "linkingText": [
+        "evaluating a selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,1488 @@
+{
+  "spec": {
+    "title": "Encrypted Media Extensions",
+    "url": "https://w3c.github.io/encrypted-media/"
+  },
+  "dfns": [
+    {
+      "id": "initialization-data-type",
+      "href": "https://w3c.github.io/encrypted-media/#initialization-data-type",
+      "linkingText": [
+        "Initialization Data Type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "associable",
+      "href": "https://w3c.github.io/encrypted-media/#associable",
+      "linkingText": [
+        "associable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "non-associable",
+      "href": "https://w3c.github.io/encrypted-media/#non-associable",
+      "linkingText": [
+        "non-associable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "associable-by-entity",
+      "href": "https://w3c.github.io/encrypted-media/#associable-by-entity",
+      "linkingText": [
+        "associable by an entity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "non-associable-by-entity",
+      "href": "https://w3c.github.io/encrypted-media/#non-associable-by-entity",
+      "linkingText": [
+        "non-associable by an entity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "non-associable-by-application",
+      "href": "https://w3c.github.io/encrypted-media/#non-associable-by-application",
+      "linkingText": [
+        "non-associable by the application"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "associable-by-application",
+      "href": "https://w3c.github.io/encrypted-media/#associable-by-application",
+      "linkingText": [
+        "associable by the application"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "permanent-identifier",
+      "href": "https://w3c.github.io/encrypted-media/#permanent-identifier",
+      "linkingText": [
+        "Permanent Identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "distinctive-permanent-identifier",
+      "href": "https://w3c.github.io/encrypted-media/#distinctive-permanent-identifier",
+      "linkingText": [
+        "Distinctive Permanent Identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "uses-distinctive-identifiers",
+      "href": "https://w3c.github.io/encrypted-media/#uses-distinctive-identifiers",
+      "linkingText": [
+        "uses Distinctive Identifier(s)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "uses-distinctive-permanent-identifiers",
+      "href": "https://w3c.github.io/encrypted-media/#uses-distinctive-permanent-identifiers",
+      "linkingText": [
+        "uses Distinctive Permanent Identifier(s)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "uses-distinctive-identifiers-or-distinctive-permanent-identifiers",
+      "href": "https://w3c.github.io/encrypted-media/#uses-distinctive-identifiers-or-distinctive-permanent-identifiers",
+      "linkingText": [
+        "uses Distinctive Identifier(s) or Distinctive Permanent Identifier(s)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-encrypted-media",
+      "href": "https://w3c.github.io/encrypted-media/#dfn-encrypted-media",
+      "linkingText": [
+        "encrypted-media"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator",
+      "href": "https://w3c.github.io/encrypted-media/#dom-navigator",
+      "linkingText": [
+        "Navigator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator-requestmediakeysystemaccess",
+      "href": "https://w3c.github.io/encrypted-media/#dom-navigator-requestmediakeysystemaccess",
+      "linkingText": [
+        "Navigator.requestMediaKeySystemAccess()",
+        "Navigator.requestMediaKeySystemAccess",
+        "requestMediaKeySystemAccess()",
+        "requestMediaKeySystemAccess"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysrequirement",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysrequirement",
+      "linkingText": [
+        "MediaKeysRequirement"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysrequirement-required",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysrequirement-required",
+      "linkingText": [
+        "required"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaKeysRequirement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysrequirement-optional",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysrequirement-optional",
+      "linkingText": [
+        "optional"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaKeysRequirement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysrequirement-not-allowed",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysrequirement-not-allowed",
+      "linkingText": [
+        "not-allowed"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaKeysRequirement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration",
+      "linkingText": [
+        "MediaKeySystemConfiguration"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-label",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-label",
+      "linkingText": [
+        "label"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-initdatatypes",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-initdatatypes",
+      "linkingText": [
+        "initDataTypes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-audiocapabilities",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-audiocapabilities",
+      "linkingText": [
+        "audioCapabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-videocapabilities",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-videocapabilities",
+      "linkingText": [
+        "videoCapabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-distinctiveidentifier",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-distinctiveidentifier",
+      "linkingText": [
+        "distinctiveIdentifier"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-persistentstate",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-persistentstate",
+      "linkingText": [
+        "persistentState"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-sessiontypes",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemconfiguration-sessiontypes",
+      "linkingText": [
+        "sessionTypes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemmediacapability",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability",
+      "linkingText": [
+        "MediaKeySystemMediaCapability"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemmediacapability-contenttype",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability-contenttype",
+      "linkingText": [
+        "contentType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemMediaCapability"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemmediacapability-encryptionscheme",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability-encryptionscheme",
+      "linkingText": [
+        "encryptionScheme"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemMediaCapability"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scheme-cenc",
+      "href": "https://w3c.github.io/encrypted-media/#scheme-cenc",
+      "linkingText": [
+        "cenc"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "scheme-cbcs",
+      "href": "https://w3c.github.io/encrypted-media/#scheme-cbcs",
+      "linkingText": [
+        "cbcs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "scheme-cbcs-1-9",
+      "href": "https://w3c.github.io/encrypted-media/#scheme-cbcs-1-9",
+      "linkingText": [
+        "cbcs-1-9"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-mediakeysystemmediacapability-robustness",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemmediacapability-robustness",
+      "linkingText": [
+        "robustness"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaKeySystemMediaCapability"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemaccess",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemaccess",
+      "linkingText": [
+        "MediaKeySystemAccess"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemaccess-keysystem",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemaccess-keysystem",
+      "linkingText": [
+        "MediaKeySystemAccess.keySystem",
+        "keySystem"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaKeySystemAccess"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemaccess-getconfiguration",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemaccess-getconfiguration",
+      "linkingText": [
+        "MediaKeySystemAccess.getConfiguration()",
+        "MediaKeySystemAccess.getConfiguration",
+        "getConfiguration()",
+        "getConfiguration"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaKeySystemAccess"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemaccess-createmediakeys",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysystemaccess-createmediakeys",
+      "linkingText": [
+        "MediaKeySystemAccess.createMediaKeys()",
+        "MediaKeySystemAccess.createMediaKeys",
+        "createMediaKeys()",
+        "createMediaKeys"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaKeySystemAccess"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeys",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeys",
+      "linkingText": [
+        "MediaKeys"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysessiontype",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysessiontype",
+      "linkingText": [
+        "MediaKeySessionType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysessiontype-temporary",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysessiontype-temporary",
+      "linkingText": [
+        "temporary"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaKeySessionType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysessiontype-persistent-license",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysessiontype-persistent-license",
+      "linkingText": [
+        "persistent-license"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaKeySessionType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "record-of-license-destruction",
+      "href": "https://w3c.github.io/encrypted-media/#record-of-license-destruction",
+      "linkingText": [
+        "record of license destruction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysessiontype-persistent-usage-record",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysessiontype-persistent-usage-record",
+      "linkingText": [
+        "persistent-usage-record"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaKeySessionType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "record-of-key-usage",
+      "href": "https://w3c.github.io/encrypted-media/#record-of-key-usage",
+      "linkingText": [
+        "record of key usage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "first-decryption-time",
+      "href": "https://w3c.github.io/encrypted-media/#first-decryption-time",
+      "linkingText": [
+        "first decryption time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "latest-decryption-time",
+      "href": "https://w3c.github.io/encrypted-media/#latest-decryption-time",
+      "linkingText": [
+        "latest decryption time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "key-usage-accuracy",
+      "href": "https://w3c.github.io/encrypted-media/#key-usage-accuracy",
+      "linkingText": [
+        "key usage accuracy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeys-createsession",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeys-createsession",
+      "linkingText": [
+        "MediaKeys.createSession()",
+        "MediaKeys.createSession",
+        "createSession()",
+        "createSession"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaKeys"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeys-setservercertificate",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeys-setservercertificate",
+      "linkingText": [
+        "MediaKeys.setServerCertificate()",
+        "MediaKeys.setServerCertificate",
+        "setServerCertificate()",
+        "setServerCertificate"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaKeys"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession",
+      "linkingText": [
+        "MediaKeySession"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "media-key-session-closed",
+      "href": "https://w3c.github.io/encrypted-media/#media-key-session-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-sessionid",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-sessionid",
+      "linkingText": [
+        "MediaKeySession.sessionId",
+        "sessionId"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaKeySession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-expiration",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-expiration",
+      "linkingText": [
+        "MediaKeySession.expiration",
+        "expiration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaKeySession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-closed",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-closed",
+      "linkingText": [
+        "MediaKeySession.closed",
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaKeySession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-keystatuses",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-keystatuses",
+      "linkingText": [
+        "MediaKeySession.keyStatuses",
+        "keyStatuses"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaKeySession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-onkeystatuseschange",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-onkeystatuseschange",
+      "linkingText": [
+        "MediaKeySession.onkeystatuseschange",
+        "onkeystatuseschange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaKeySession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-onmessage",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-onmessage",
+      "linkingText": [
+        "MediaKeySession.onmessage",
+        "onmessage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaKeySession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-generaterequest",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-generaterequest",
+      "linkingText": [
+        "MediaKeySession.generateRequest()",
+        "MediaKeySession.generateRequest",
+        "generateRequest()",
+        "generateRequest"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaKeySession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-load",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-load",
+      "linkingText": [
+        "MediaKeySession.load()",
+        "MediaKeySession.load",
+        "load()",
+        "load"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaKeySession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-update",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-update",
+      "linkingText": [
+        "MediaKeySession.update()",
+        "MediaKeySession.update",
+        "update()",
+        "update"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaKeySession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-close",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-close",
+      "linkingText": [
+        "MediaKeySession.close()",
+        "MediaKeySession.close",
+        "close()",
+        "close"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaKeySession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-remove",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeysession-remove",
+      "linkingText": [
+        "MediaKeySession.remove()",
+        "MediaKeySession.remove",
+        "remove()",
+        "remove"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaKeySession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatusmap",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatusmap",
+      "linkingText": [
+        "MediaKeyStatusMap"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatusmap-size",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatusmap-size",
+      "linkingText": [
+        "MediaKeyStatusMap.size",
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaKeyStatusMap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatusmap-has",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatusmap-has",
+      "linkingText": [
+        "MediaKeyStatusMap.has()",
+        "MediaKeyStatusMap.has",
+        "has()",
+        "has"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaKeyStatusMap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatusmap-get",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatusmap-get",
+      "linkingText": [
+        "MediaKeyStatusMap.get()",
+        "MediaKeyStatusMap.get",
+        "get()",
+        "get"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaKeyStatusMap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-iterable",
+      "href": "https://w3c.github.io/encrypted-media/#dfn-iterable",
+      "linkingText": [
+        "iterable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaKeyStatusMap"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatus",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus",
+      "linkingText": [
+        "MediaKeyStatus"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatus-usable",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus-usable",
+      "linkingText": [
+        "usable"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaKeyStatus"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatus-expired",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus-expired",
+      "linkingText": [
+        "expired"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaKeyStatus"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatus-released",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus-released",
+      "linkingText": [
+        "released"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaKeyStatus"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatus-output-restricted",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus-output-restricted",
+      "linkingText": [
+        "output-restricted"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaKeyStatus"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatus-output-downscaled",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus-output-downscaled",
+      "linkingText": [
+        "output-downscaled"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaKeyStatus"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatus-status-pending",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus-status-pending",
+      "linkingText": [
+        "status-pending"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaKeyStatus"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatus-internal-error",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeystatus-internal-error",
+      "linkingText": [
+        "internal-error"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaKeyStatus"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessagetype",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessagetype",
+      "linkingText": [
+        "MediaKeyMessageType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessagetype-license-request",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessagetype-license-request",
+      "linkingText": [
+        "license-request"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaKeyMessageType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessagetype-license-renewal",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessagetype-license-renewal",
+      "linkingText": [
+        "license-renewal"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaKeyMessageType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessagetype-license-release",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessagetype-license-release",
+      "linkingText": [
+        "license-release"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaKeyMessageType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessagetype-individualization-request",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessagetype-individualization-request",
+      "linkingText": [
+        "individualization-request"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaKeyMessageType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessageevent-constructor",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageevent-constructor",
+      "linkingText": [
+        "MediaKeyMessageEvent.constructor()",
+        "MediaKeyMessageEvent.constructor",
+        "constructor()",
+        "constructor"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "MediaKeyMessageEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessageevent",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageevent",
+      "linkingText": [
+        "MediaKeyMessageEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessageevent-messagetype",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageevent-messagetype",
+      "linkingText": [
+        "MediaKeyMessageEvent.messageType",
+        "messageType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaKeyMessageEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessageevent-message",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageevent-message",
+      "linkingText": [
+        "MediaKeyMessageEvent.message",
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaKeyMessageEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessageeventinit",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageeventinit",
+      "linkingText": [
+        "MediaKeyMessageEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessageeventinit-messagetype",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageeventinit-messagetype",
+      "linkingText": [
+        "messageType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaKeyMessageEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessageeventinit-message",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediakeymessageeventinit-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaKeyMessageEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-evt-keystatuseschange",
+      "href": "https://w3c.github.io/encrypted-media/#dom-evt-keystatuseschange",
+      "linkingText": [
+        "keystatuseschange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-evt-message",
+      "href": "https://w3c.github.io/encrypted-media/#dom-evt-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-TypeError",
+      "href": "https://w3c.github.io/encrypted-media/#dfn-TypeError",
+      "linkingText": [
+        "TypeError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-NotSupportedError",
+      "href": "https://w3c.github.io/encrypted-media/#dfn-NotSupportedError",
+      "linkingText": [
+        "NotSupportedError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-InvalidStateError",
+      "href": "https://w3c.github.io/encrypted-media/#dfn-InvalidStateError",
+      "linkingText": [
+        "InvalidStateError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-QuotaExceededError",
+      "href": "https://w3c.github.io/encrypted-media/#dfn-QuotaExceededError",
+      "linkingText": [
+        "QuotaExceededError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlmediaelement",
+      "href": "https://w3c.github.io/encrypted-media/#dom-htmlmediaelement",
+      "linkingText": [
+        "HTMLMediaElement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlmediaelement-mediakeys",
+      "href": "https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-mediakeys",
+      "linkingText": [
+        "HTMLMediaElement.mediaKeys",
+        "mediaKeys"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLMediaElement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlmediaelement-onencrypted",
+      "href": "https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-onencrypted",
+      "linkingText": [
+        "HTMLMediaElement.onencrypted",
+        "onencrypted"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLMediaElement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlmediaelement-onwaitingforkey",
+      "href": "https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-onwaitingforkey",
+      "linkingText": [
+        "HTMLMediaElement.onwaitingforkey",
+        "onwaitingforkey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLMediaElement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlmediaelement-setmediakeys",
+      "href": "https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-setmediakeys",
+      "linkingText": [
+        "HTMLMediaElement.setMediaKeys()",
+        "HTMLMediaElement.setMediaKeys",
+        "setMediaKeys()",
+        "setMediaKeys"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "HTMLMediaElement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaencryptedevent-constructor",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedevent-constructor",
+      "linkingText": [
+        "MediaEncryptedEvent.constructor()",
+        "MediaEncryptedEvent.constructor",
+        "constructor()",
+        "constructor"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "MediaEncryptedEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaencryptedevent",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedevent",
+      "linkingText": [
+        "MediaEncryptedEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaencryptedevent-initdatatype",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedevent-initdatatype",
+      "linkingText": [
+        "MediaEncryptedEvent.initDataType",
+        "initDataType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaEncryptedEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaencryptedevent-initdata",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedevent-initdata",
+      "linkingText": [
+        "MediaEncryptedEvent.initData",
+        "initData"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaEncryptedEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaencryptedeventinit",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedeventinit",
+      "linkingText": [
+        "MediaEncryptedEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaencryptedeventinit-initdatatype",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedeventinit-initdatatype",
+      "linkingText": [
+        "initDataType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaEncryptedEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaencryptedeventinit-initdata",
+      "href": "https://w3c.github.io/encrypted-media/#dom-mediaencryptedeventinit-initdata",
+      "linkingText": [
+        "initData"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaEncryptedEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-evt-encrypted",
+      "href": "https://w3c.github.io/encrypted-media/#dom-evt-encrypted",
+      "linkingText": [
+        "encrypted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-evt-waitingforkey",
+      "href": "https://w3c.github.io/encrypted-media/#dom-evt-waitingforkey",
+      "linkingText": [
+        "waitingforkey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    }
+  ]
+}

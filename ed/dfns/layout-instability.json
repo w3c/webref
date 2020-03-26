@@ -1,0 +1,304 @@
+{
+  "spec": {
+    "title": "Layout Instability API",
+    "url": "https://wicg.github.io/layout-instability/"
+  },
+  "dfns": [
+    {
+      "id": "starting-point",
+      "href": "https://wicg.github.io/layout-instability/#starting-point",
+      "linkingText": [
+        "starting point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "visual-representation",
+      "href": "https://wicg.github.io/layout-instability/#visual-representation",
+      "linkingText": [
+        "visual representation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "in-the-previous-frame",
+      "href": "https://wicg.github.io/layout-instability/#in-the-previous-frame",
+      "linkingText": [
+        "in the previous frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "previous-frame-starting-point",
+      "href": "https://wicg.github.io/layout-instability/#previous-frame-starting-point",
+      "linkingText": [
+        "previous frame starting point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "previous-frame-visual-representation",
+      "href": "https://wicg.github.io/layout-instability/#previous-frame-visual-representation",
+      "linkingText": [
+        "previous frame visual representation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "has-shifted",
+      "href": "https://wicg.github.io/layout-instability/#has-shifted",
+      "linkingText": [
+        "has shifted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "has-not-shifted",
+      "href": "https://wicg.github.io/layout-instability/#has-not-shifted",
+      "linkingText": [
+        "has not shifted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "unstable",
+      "href": "https://wicg.github.io/layout-instability/#unstable",
+      "linkingText": [
+        "unstable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "unstable-node-set",
+      "href": "https://wicg.github.io/layout-instability/#unstable-node-set",
+      "linkingText": [
+        "unstable node set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "viewport-base-distance",
+      "href": "https://wicg.github.io/layout-instability/#viewport-base-distance",
+      "linkingText": [
+        "viewport base distance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "move-vector",
+      "href": "https://wicg.github.io/layout-instability/#move-vector",
+      "linkingText": [
+        "move vector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "move-distance",
+      "href": "https://wicg.github.io/layout-instability/#move-distance",
+      "linkingText": [
+        "move distance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "maximum-move-distance",
+      "href": "https://wicg.github.io/layout-instability/#maximum-move-distance",
+      "linkingText": [
+        "maximum move distance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "distance-fraction",
+      "href": "https://wicg.github.io/layout-instability/#distance-fraction",
+      "linkingText": [
+        "distance fraction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "impact-region",
+      "href": "https://wicg.github.io/layout-instability/#impact-region",
+      "linkingText": [
+        "impact region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "impact-fraction",
+      "href": "https://wicg.github.io/layout-instability/#impact-fraction",
+      "linkingText": [
+        "impact fraction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "layout-shift-value",
+      "href": "https://wicg.github.io/layout-instability/#layout-shift-value",
+      "linkingText": [
+        "layout shift value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "excluding-input",
+      "href": "https://wicg.github.io/layout-instability/#excluding-input",
+      "linkingText": [
+        "excluding input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "layoutshift",
+      "href": "https://wicg.github.io/layout-instability/#layoutshift",
+      "linkingText": [
+        "LayoutShift"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-layoutshift-tojson",
+      "href": "https://wicg.github.io/layout-instability/#dom-layoutshift-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "LayoutShift"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "report-the-layout-shift",
+      "href": "https://wicg.github.io/layout-instability/#report-the-layout-shift",
+      "linkingText": [
+        "report the layout shift"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-layoutshift-value",
+      "href": "https://wicg.github.io/layout-instability/#dom-layoutshift-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutShift"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-layoutshift-lastinputtime",
+      "href": "https://wicg.github.io/layout-instability/#dom-layoutshift-lastinputtime",
+      "linkingText": [
+        "lastInputTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutShift"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-layoutshift-hadrecentinput",
+      "href": "https://wicg.github.io/layout-instability/#dom-layoutshift-hadrecentinput",
+      "linkingText": [
+        "hadRecentInput"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutShift"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

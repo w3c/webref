@@ -1,0 +1,535 @@
+{
+  "spec": {
+    "title": "Payment Method: Basic Card",
+    "url": "https://w3c.github.io/payment-method-basic-card/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-pmi",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-pmi",
+      "linkingText": [
+        "PMI",
+        "standardized payment method identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-basic-card",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-basic-card",
+      "linkingText": [
+        "basic-card"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-card-s",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-card-s",
+      "linkingText": [
+        "card's",
+        "card"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-details",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-details",
+      "linkingText": [
+        "details"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pan",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-pan",
+      "linkingText": [
+        "PAN",
+        "primary account number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-card-holder-s-name",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-card-holder-s-name",
+      "linkingText": [
+        "card holder's\n        name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-security-code",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-security-code",
+      "linkingText": [
+        "security code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-expiry-month",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-expiry-month",
+      "linkingText": [
+        "expiry month"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-expiry-year",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-expiry-year",
+      "linkingText": [
+        "expiry year"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-billing-address",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-billing-address",
+      "linkingText": [
+        "billing address"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-network",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-network",
+      "linkingText": [
+        "network"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-iin",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-iin",
+      "linkingText": [
+        "IIN",
+        "Issuer identification numbers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-supported-card",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-supported-card",
+      "linkingText": [
+        "supported card"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-known-networks",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-known-networks",
+      "linkingText": [
+        "known networks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardrequest",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccardrequest",
+      "linkingText": [
+        "BasicCardRequest"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardrequest-supportednetworks",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccardrequest-supportednetworks",
+      "linkingText": [
+        "supportedNetworks"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardrequest-requestsecuritycode",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccardrequest-requestsecuritycode",
+      "linkingText": [
+        "requestSecurityCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-steps-to-check-if-a-payment-can-be-made",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-steps-to-check-if-a-payment-can-be-made",
+      "linkingText": [
+        "steps to check if a payment can be made"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-steps-to-check-if-an-instrument-is-supported",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-steps-to-check-if-an-instrument-is-supported",
+      "linkingText": [
+        "steps to check if an instrument is supported"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-steps-to-respond-to-a-payment-request",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-steps-to-respond-to-a-payment-request",
+      "linkingText": [
+        "steps to respond to a payment request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-steps-for-when-a-user-changes-payment-method",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-steps-for-when-a-user-changes-payment-method",
+      "linkingText": [
+        "steps for when a user changes payment method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardchangedetails",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccardchangedetails",
+      "linkingText": [
+        "BasicCardChangeDetails"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardchangedetails-billingaddress",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccardchangedetails-billingaddress",
+      "linkingText": [
+        "billingAddress"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardChangeDetails"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-steps-for-selecting-the-payment-handler",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-steps-for-selecting-the-payment-handler",
+      "linkingText": [
+        "steps for selecting the payment handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-apply-the-modifiers",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-apply-the-modifiers",
+      "linkingText": [
+        "apply the modifiers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardresponse",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccardresponse",
+      "linkingText": [
+        "BasicCardResponse"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardresponse-cardholdername",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccardresponse-cardholdername",
+      "linkingText": [
+        "cardholderName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardresponse-cardnumber",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccardresponse-cardnumber",
+      "linkingText": [
+        "cardNumber"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardresponse-expirymonth",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccardresponse-expirymonth",
+      "linkingText": [
+        "expiryMonth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardresponse-expiryyear",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccardresponse-expiryyear",
+      "linkingText": [
+        "expiryYear"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardresponse-cardsecuritycode",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccardresponse-cardsecuritycode",
+      "linkingText": [
+        "cardSecurityCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardresponse-billingaddress",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccardresponse-billingaddress",
+      "linkingText": [
+        "billingAddress"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccarderrors",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccarderrors",
+      "linkingText": [
+        "BasicCardErrors"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccarderrors-cardholdername",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccarderrors-cardholdername",
+      "linkingText": [
+        "cardholderName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccarderrors-cardnumber",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccarderrors-cardnumber",
+      "linkingText": [
+        "cardNumber"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccarderrors-expirymonth",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccarderrors-expirymonth",
+      "linkingText": [
+        "expiryMonth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccarderrors-expiryyear",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccarderrors-expiryyear",
+      "linkingText": [
+        "expiryYear"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccarderrors-cardsecuritycode",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccarderrors-cardsecuritycode",
+      "linkingText": [
+        "cardSecurityCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccarderrors-billingaddress",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dom-basiccarderrors-billingaddress",
+      "linkingText": [
+        "billingAddress"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-payment-handler",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-payment-handler",
+      "linkingText": [
+        "payment handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pci-dss",
+      "href": "https://w3c.github.io/payment-method-basic-card/#dfn-pci-dss",
+      "linkingText": [
+        "PCI DSS",
+        "Payment Card Industry Data Security Standard Compliance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    }
+  ]
+}

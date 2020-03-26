@@ -1,0 +1,2483 @@
+{
+  "spec": {
+    "title": "Encoding Standard",
+    "url": "https://encoding.spec.whatwg.org/"
+  },
+  "dfns": [
+    {
+      "id": "concept-token",
+      "href": "https://encoding.spec.whatwg.org/#concept-token",
+      "linkingText": [
+        "token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-stream",
+      "href": "https://encoding.spec.whatwg.org/#concept-stream",
+      "linkingText": [
+        "stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "end-of-stream",
+      "href": "https://encoding.spec.whatwg.org/#end-of-stream",
+      "linkingText": [
+        "End-of-stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-stream-read",
+      "href": "https://encoding.spec.whatwg.org/#concept-stream-read",
+      "linkingText": [
+        "read"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stream"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-stream-prepend",
+      "href": "https://encoding.spec.whatwg.org/#concept-stream-prepend",
+      "linkingText": [
+        "prepended"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stream"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-stream-push",
+      "href": "https://encoding.spec.whatwg.org/#concept-stream-push",
+      "linkingText": [
+        "pushed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stream"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "encoding",
+      "href": "https://encoding.spec.whatwg.org/#encoding",
+      "linkingText": [
+        "encoding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "name",
+      "href": "https://encoding.spec.whatwg.org/#name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "encoding"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "label",
+      "href": "https://encoding.spec.whatwg.org/#label",
+      "linkingText": [
+        "label"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "encoding"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "decoder",
+      "href": "https://encoding.spec.whatwg.org/#decoder",
+      "linkingText": [
+        "decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "encoder",
+      "href": "https://encoding.spec.whatwg.org/#encoder",
+      "linkingText": [
+        "encoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "handler",
+      "href": "https://encoding.spec.whatwg.org/#handler",
+      "linkingText": [
+        "handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "finished",
+      "href": "https://encoding.spec.whatwg.org/#finished",
+      "linkingText": [
+        "finished"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "error",
+      "href": "https://encoding.spec.whatwg.org/#error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "continue",
+      "href": "https://encoding.spec.whatwg.org/#continue",
+      "linkingText": [
+        "continue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "error-mode",
+      "href": "https://encoding.spec.whatwg.org/#error-mode",
+      "linkingText": [
+        "error mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-encoding-run",
+      "href": "https://encoding.spec.whatwg.org/#concept-encoding-run",
+      "linkingText": [
+        "run"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "encoding"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-encoding-process",
+      "href": "https://encoding.spec.whatwg.org/#concept-encoding-process",
+      "linkingText": [
+        "process"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "encoding"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-encoding-get",
+      "href": "https://encoding.spec.whatwg.org/#concept-encoding-get",
+      "linkingText": [
+        "get an encoding",
+        "getting an encoding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "get-an-output-encoding",
+      "href": "https://encoding.spec.whatwg.org/#get-an-output-encoding",
+      "linkingText": [
+        "get an output encoding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "index",
+      "href": "https://encoding.spec.whatwg.org/#index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "index-code-point",
+      "href": "https://encoding.spec.whatwg.org/#index-code-point",
+      "linkingText": [
+        "index code point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "index-pointer",
+      "href": "https://encoding.spec.whatwg.org/#index-pointer",
+      "linkingText": [
+        "index pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "index-big5",
+      "href": "https://encoding.spec.whatwg.org/#index-big5",
+      "linkingText": [
+        "index Big5"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "index-euc-kr",
+      "href": "https://encoding.spec.whatwg.org/#index-euc-kr",
+      "linkingText": [
+        "index EUC-KR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "index-gb18030",
+      "href": "https://encoding.spec.whatwg.org/#index-gb18030",
+      "linkingText": [
+        "index gb18030"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "index-gb18030-ranges",
+      "href": "https://encoding.spec.whatwg.org/#index-gb18030-ranges",
+      "linkingText": [
+        "index gb18030 ranges"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "index-jis0208",
+      "href": "https://encoding.spec.whatwg.org/#index-jis0208",
+      "linkingText": [
+        "index jis0208"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "index-jis0212",
+      "href": "https://encoding.spec.whatwg.org/#index-jis0212",
+      "linkingText": [
+        "index jis0212"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "index-iso-2022-jp-katakana",
+      "href": "https://encoding.spec.whatwg.org/#index-iso-2022-jp-katakana",
+      "linkingText": [
+        "index ISO-2022-JP katakana"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "index-gb18030-ranges-code-point",
+      "href": "https://encoding.spec.whatwg.org/#index-gb18030-ranges-code-point",
+      "linkingText": [
+        "index gb18030 ranges code point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "index-gb18030-ranges-pointer",
+      "href": "https://encoding.spec.whatwg.org/#index-gb18030-ranges-pointer",
+      "linkingText": [
+        "index gb18030 ranges pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "index-shift_jis-pointer",
+      "href": "https://encoding.spec.whatwg.org/#index-shift_jis-pointer",
+      "linkingText": [
+        "index Shift_JIS pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "index-big5-pointer",
+      "href": "https://encoding.spec.whatwg.org/#index-big5-pointer",
+      "linkingText": [
+        "index Big5 pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "decode",
+      "href": "https://encoding.spec.whatwg.org/#decode",
+      "linkingText": [
+        "decode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "utf-8-decode",
+      "href": "https://encoding.spec.whatwg.org/#utf-8-decode",
+      "linkingText": [
+        "UTF-8 decode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "utf-8-decode-without-bom",
+      "href": "https://encoding.spec.whatwg.org/#utf-8-decode-without-bom",
+      "linkingText": [
+        "UTF-8 decode without BOM"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "utf-8-decode-without-bom-or-fail",
+      "href": "https://encoding.spec.whatwg.org/#utf-8-decode-without-bom-or-fail",
+      "linkingText": [
+        "UTF-8 decode without BOM or fail"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "encode",
+      "href": "https://encoding.spec.whatwg.org/#encode",
+      "linkingText": [
+        "encode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "utf-8-encode",
+      "href": "https://encoding.spec.whatwg.org/#utf-8-encode",
+      "linkingText": [
+        "UTF-8 encode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "bom-sniff",
+      "href": "https://encoding.spec.whatwg.org/#bom-sniff",
+      "linkingText": [
+        "BOM sniff"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "textdecodercommon",
+      "href": "https://encoding.spec.whatwg.org/#textdecodercommon",
+      "linkingText": [
+        "TextDecoderCommon"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "textdecoder-encoding",
+      "href": "https://encoding.spec.whatwg.org/#textdecoder-encoding",
+      "linkingText": [
+        "encoding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextDecoderCommon"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textdecoder-ignore-bom-flag",
+      "href": "https://encoding.spec.whatwg.org/#textdecoder-ignore-bom-flag",
+      "linkingText": [
+        "ignore BOM"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextDecoderCommon"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textdecoder-bom-seen-flag",
+      "href": "https://encoding.spec.whatwg.org/#textdecoder-bom-seen-flag",
+      "linkingText": [
+        "BOM seen"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextDecoderCommon"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textdecoder-error-mode",
+      "href": "https://encoding.spec.whatwg.org/#textdecoder-error-mode",
+      "linkingText": [
+        "error mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextDecoderCommon"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-td-serialize",
+      "href": "https://encoding.spec.whatwg.org/#concept-td-serialize",
+      "linkingText": [
+        "serialize stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextDecoderCommon"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoder-encoding",
+      "href": "https://encoding.spec.whatwg.org/#dom-textdecoder-encoding",
+      "linkingText": [
+        "encoding"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "TextDecoderCommon"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoder-fatal",
+      "href": "https://encoding.spec.whatwg.org/#dom-textdecoder-fatal",
+      "linkingText": [
+        "fatal"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "TextDecoderCommon"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoder-ignorebom",
+      "href": "https://encoding.spec.whatwg.org/#dom-textdecoder-ignorebom",
+      "linkingText": [
+        "ignoreBOM"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "TextDecoderCommon"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "textdecoderoptions",
+      "href": "https://encoding.spec.whatwg.org/#textdecoderoptions",
+      "linkingText": [
+        "TextDecoderOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoderoptions-fatal",
+      "href": "https://encoding.spec.whatwg.org/#dom-textdecoderoptions-fatal",
+      "linkingText": [
+        "fatal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextDecoderOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoderoptions-ignorebom",
+      "href": "https://encoding.spec.whatwg.org/#dom-textdecoderoptions-ignorebom",
+      "linkingText": [
+        "ignoreBOM"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextDecoderOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "textdecodeoptions",
+      "href": "https://encoding.spec.whatwg.org/#textdecodeoptions",
+      "linkingText": [
+        "TextDecodeOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecodeoptions-stream",
+      "href": "https://encoding.spec.whatwg.org/#dom-textdecodeoptions-stream",
+      "linkingText": [
+        "stream"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextDecodeOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "textdecoder",
+      "href": "https://encoding.spec.whatwg.org/#textdecoder",
+      "linkingText": [
+        "TextDecoder"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoder-textdecoder-label-options-label",
+      "href": "https://encoding.spec.whatwg.org/#dom-textdecoder-textdecoder-label-options-label",
+      "linkingText": [
+        "label"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "TextDecoder/TextDecoder(label, options)",
+        "TextDecoder/constructor(label, options)",
+        "TextDecoder/TextDecoder(label)",
+        "TextDecoder/constructor(label)",
+        "TextDecoder/TextDecoder()",
+        "TextDecoder/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoder-textdecoder-label-options-options",
+      "href": "https://encoding.spec.whatwg.org/#dom-textdecoder-textdecoder-label-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "TextDecoder/TextDecoder(label, options)",
+        "TextDecoder/constructor(label, options)",
+        "TextDecoder/TextDecoder(label)",
+        "TextDecoder/constructor(label)",
+        "TextDecoder/TextDecoder()",
+        "TextDecoder/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoder-decode-input-options-input",
+      "href": "https://encoding.spec.whatwg.org/#dom-textdecoder-decode-input-options-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "TextDecoder/decode(input, options)",
+        "TextDecoder/decode(input)",
+        "TextDecoder/decode()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoder-decode-input-options-options",
+      "href": "https://encoding.spec.whatwg.org/#dom-textdecoder-decode-input-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "TextDecoder/decode(input, options)",
+        "TextDecoder/decode(input)",
+        "TextDecoder/decode()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "textdecoder-decoder",
+      "href": "https://encoding.spec.whatwg.org/#textdecoder-decoder",
+      "linkingText": [
+        "decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextDecoder"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textdecoder-stream",
+      "href": "https://encoding.spec.whatwg.org/#textdecoder-stream",
+      "linkingText": [
+        "stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextDecoder"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textdecoder-do-not-flush-flag",
+      "href": "https://encoding.spec.whatwg.org/#textdecoder-do-not-flush-flag",
+      "linkingText": [
+        "do not flush"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextDecoder"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoder",
+      "href": "https://encoding.spec.whatwg.org/#dom-textdecoder",
+      "linkingText": [
+        "TextDecoder(label, options)",
+        "constructor(label, options)",
+        "TextDecoder(label)",
+        "constructor(label)",
+        "TextDecoder()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "TextDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoder-decode",
+      "href": "https://encoding.spec.whatwg.org/#dom-textdecoder-decode",
+      "linkingText": [
+        "decode(input, options)",
+        "decode(input)",
+        "decode()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "TextDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "textencodercommon",
+      "href": "https://encoding.spec.whatwg.org/#textencodercommon",
+      "linkingText": [
+        "TextEncoderCommon"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textencoder-encoding",
+      "href": "https://encoding.spec.whatwg.org/#dom-textencoder-encoding",
+      "linkingText": [
+        "encoding"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "TextEncoderCommon"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-textencoderencodeintoresult",
+      "href": "https://encoding.spec.whatwg.org/#dictdef-textencoderencodeintoresult",
+      "linkingText": [
+        "TextEncoderEncodeIntoResult"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textencoderencodeintoresult-read",
+      "href": "https://encoding.spec.whatwg.org/#dom-textencoderencodeintoresult-read",
+      "linkingText": [
+        "read"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextEncoderEncodeIntoResult"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textencoderencodeintoresult-written",
+      "href": "https://encoding.spec.whatwg.org/#dom-textencoderencodeintoresult-written",
+      "linkingText": [
+        "written"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextEncoderEncodeIntoResult"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "textencoder",
+      "href": "https://encoding.spec.whatwg.org/#textencoder",
+      "linkingText": [
+        "TextEncoder"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textencoder-encode-input-input",
+      "href": "https://encoding.spec.whatwg.org/#dom-textencoder-encode-input-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "TextEncoder/encode(input)",
+        "TextEncoder/encode()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textencoder-encodeinto-source-destination-source",
+      "href": "https://encoding.spec.whatwg.org/#dom-textencoder-encodeinto-source-destination-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "TextEncoder/encodeInto(source, destination)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textencoder-encodeinto-source-destination-destination",
+      "href": "https://encoding.spec.whatwg.org/#dom-textencoder-encodeinto-source-destination-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "TextEncoder/encodeInto(source, destination)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textencoder",
+      "href": "https://encoding.spec.whatwg.org/#dom-textencoder",
+      "linkingText": [
+        "TextEncoder()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "TextEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textencoder-encode",
+      "href": "https://encoding.spec.whatwg.org/#dom-textencoder-encode",
+      "linkingText": [
+        "encode(input)",
+        "encode()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "TextEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textencoder-encodeinto",
+      "href": "https://encoding.spec.whatwg.org/#dom-textencoder-encodeinto",
+      "linkingText": [
+        "encodeInto(source, destination)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "TextEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "generictransformstream",
+      "href": "https://encoding.spec.whatwg.org/#generictransformstream",
+      "linkingText": [
+        "GenericTransformStream"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "generictransformstream-transform",
+      "href": "https://encoding.spec.whatwg.org/#generictransformstream-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "GenericTransformStream"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-generictransformstream-readable",
+      "href": "https://encoding.spec.whatwg.org/#dom-generictransformstream-readable",
+      "linkingText": [
+        "readable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GenericTransformStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-generictransformstream-writable",
+      "href": "https://encoding.spec.whatwg.org/#dom-generictransformstream-writable",
+      "linkingText": [
+        "writable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GenericTransformStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "textdecoderstream",
+      "href": "https://encoding.spec.whatwg.org/#textdecoderstream",
+      "linkingText": [
+        "TextDecoderStream"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoderstream-textdecoderstream-label-options-label",
+      "href": "https://encoding.spec.whatwg.org/#dom-textdecoderstream-textdecoderstream-label-options-label",
+      "linkingText": [
+        "label"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "TextDecoderStream/TextDecoderStream(label, options)",
+        "TextDecoderStream/constructor(label, options)",
+        "TextDecoderStream/TextDecoderStream(label)",
+        "TextDecoderStream/constructor(label)",
+        "TextDecoderStream/TextDecoderStream()",
+        "TextDecoderStream/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoderstream-textdecoderstream-label-options-options",
+      "href": "https://encoding.spec.whatwg.org/#dom-textdecoderstream-textdecoderstream-label-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "TextDecoderStream/TextDecoderStream(label, options)",
+        "TextDecoderStream/constructor(label, options)",
+        "TextDecoderStream/TextDecoderStream(label)",
+        "TextDecoderStream/constructor(label)",
+        "TextDecoderStream/TextDecoderStream()",
+        "TextDecoderStream/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "textdecoderstream-decoder",
+      "href": "https://encoding.spec.whatwg.org/#textdecoderstream-decoder",
+      "linkingText": [
+        "decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextDecoderStream"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textdecoderstream-stream",
+      "href": "https://encoding.spec.whatwg.org/#textdecoderstream-stream",
+      "linkingText": [
+        "stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextDecoderStream"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoderstream",
+      "href": "https://encoding.spec.whatwg.org/#dom-textdecoderstream",
+      "linkingText": [
+        "TextDecoderStream(label, options)",
+        "constructor(label, options)",
+        "TextDecoderStream(label)",
+        "constructor(label)",
+        "TextDecoderStream()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "TextDecoderStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "decode-and-enqueue-a-chunk",
+      "href": "https://encoding.spec.whatwg.org/#decode-and-enqueue-a-chunk",
+      "linkingText": [
+        "decode and enqueue a chunk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "flush-and-enqueue",
+      "href": "https://encoding.spec.whatwg.org/#flush-and-enqueue",
+      "linkingText": [
+        "flush and enqueue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textencoderstream",
+      "href": "https://encoding.spec.whatwg.org/#textencoderstream",
+      "linkingText": [
+        "TextEncoderStream"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "textencoderstream-encoder",
+      "href": "https://encoding.spec.whatwg.org/#textencoderstream-encoder",
+      "linkingText": [
+        "encoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextEncoderStream"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textencoderstream-pending-high-surrogate",
+      "href": "https://encoding.spec.whatwg.org/#textencoderstream-pending-high-surrogate",
+      "linkingText": [
+        "pending high surrogate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextEncoderStream"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-textencoderstream",
+      "href": "https://encoding.spec.whatwg.org/#dom-textencoderstream",
+      "linkingText": [
+        "TextEncoderStream()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "TextEncoderStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "encode-and-enqueue-a-chunk",
+      "href": "https://encoding.spec.whatwg.org/#encode-and-enqueue-a-chunk",
+      "linkingText": [
+        "encode and enqueue a chunk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "convert-code-unit-to-scalar-value",
+      "href": "https://encoding.spec.whatwg.org/#convert-code-unit-to-scalar-value",
+      "linkingText": [
+        "convert code unit to scalar value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "encode-and-flush",
+      "href": "https://encoding.spec.whatwg.org/#encode-and-flush",
+      "linkingText": [
+        "encode and flush"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "utf-8",
+      "href": "https://encoding.spec.whatwg.org/#utf-8",
+      "linkingText": [
+        "UTF-8"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "utf-8-decoder",
+      "href": "https://encoding.spec.whatwg.org/#utf-8-decoder",
+      "linkingText": [
+        "UTF-8 decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "utf-8-code-point",
+      "href": "https://encoding.spec.whatwg.org/#utf-8-code-point",
+      "linkingText": [
+        "UTF-8 code point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "utf-8-bytes-seen",
+      "href": "https://encoding.spec.whatwg.org/#utf-8-bytes-seen",
+      "linkingText": [
+        "UTF-8 bytes seen"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "utf-8-bytes-needed",
+      "href": "https://encoding.spec.whatwg.org/#utf-8-bytes-needed",
+      "linkingText": [
+        "UTF-8 bytes needed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "utf-8-lower-boundary",
+      "href": "https://encoding.spec.whatwg.org/#utf-8-lower-boundary",
+      "linkingText": [
+        "UTF-8 lower boundary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "utf-8-upper-boundary",
+      "href": "https://encoding.spec.whatwg.org/#utf-8-upper-boundary",
+      "linkingText": [
+        "UTF-8 upper boundary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "utf-8-encoder",
+      "href": "https://encoding.spec.whatwg.org/#utf-8-encoder",
+      "linkingText": [
+        "UTF-8 encoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "single-byte-encoding",
+      "href": "https://encoding.spec.whatwg.org/#single-byte-encoding",
+      "linkingText": [
+        "single-byte encoding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "index-single-byte",
+      "href": "https://encoding.spec.whatwg.org/#index-single-byte",
+      "linkingText": [
+        "Index single-byte"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ibm866",
+      "href": "https://encoding.spec.whatwg.org/#ibm866",
+      "linkingText": [
+        "IBM866"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iso-8859-2",
+      "href": "https://encoding.spec.whatwg.org/#iso-8859-2",
+      "linkingText": [
+        "ISO-8859-2"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iso-8859-3",
+      "href": "https://encoding.spec.whatwg.org/#iso-8859-3",
+      "linkingText": [
+        "ISO-8859-3"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iso-8859-4",
+      "href": "https://encoding.spec.whatwg.org/#iso-8859-4",
+      "linkingText": [
+        "ISO-8859-4"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iso-8859-5",
+      "href": "https://encoding.spec.whatwg.org/#iso-8859-5",
+      "linkingText": [
+        "ISO-8859-5"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iso-8859-6",
+      "href": "https://encoding.spec.whatwg.org/#iso-8859-6",
+      "linkingText": [
+        "ISO-8859-6"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iso-8859-7",
+      "href": "https://encoding.spec.whatwg.org/#iso-8859-7",
+      "linkingText": [
+        "ISO-8859-7"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iso-8859-8",
+      "href": "https://encoding.spec.whatwg.org/#iso-8859-8",
+      "linkingText": [
+        "ISO-8859-8"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iso-8859-8-i",
+      "href": "https://encoding.spec.whatwg.org/#iso-8859-8-i",
+      "linkingText": [
+        "ISO-8859-8-I"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iso-8859-10",
+      "href": "https://encoding.spec.whatwg.org/#iso-8859-10",
+      "linkingText": [
+        "ISO-8859-10"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iso-8859-13",
+      "href": "https://encoding.spec.whatwg.org/#iso-8859-13",
+      "linkingText": [
+        "ISO-8859-13"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iso-8859-14",
+      "href": "https://encoding.spec.whatwg.org/#iso-8859-14",
+      "linkingText": [
+        "ISO-8859-14"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iso-8859-15",
+      "href": "https://encoding.spec.whatwg.org/#iso-8859-15",
+      "linkingText": [
+        "ISO-8859-15"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iso-8859-16",
+      "href": "https://encoding.spec.whatwg.org/#iso-8859-16",
+      "linkingText": [
+        "ISO-8859-16"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "koi8-r",
+      "href": "https://encoding.spec.whatwg.org/#koi8-r",
+      "linkingText": [
+        "KOI8-R"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "koi8-u",
+      "href": "https://encoding.spec.whatwg.org/#koi8-u",
+      "linkingText": [
+        "KOI8-U"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "macintosh",
+      "href": "https://encoding.spec.whatwg.org/#macintosh",
+      "linkingText": [
+        "macintosh"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "windows-874",
+      "href": "https://encoding.spec.whatwg.org/#windows-874",
+      "linkingText": [
+        "windows-874"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "windows-1250",
+      "href": "https://encoding.spec.whatwg.org/#windows-1250",
+      "linkingText": [
+        "windows-1250"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "windows-1251",
+      "href": "https://encoding.spec.whatwg.org/#windows-1251",
+      "linkingText": [
+        "windows-1251"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "windows-1252",
+      "href": "https://encoding.spec.whatwg.org/#windows-1252",
+      "linkingText": [
+        "windows-1252"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "windows-1253",
+      "href": "https://encoding.spec.whatwg.org/#windows-1253",
+      "linkingText": [
+        "windows-1253"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "windows-1254",
+      "href": "https://encoding.spec.whatwg.org/#windows-1254",
+      "linkingText": [
+        "windows-1254"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "windows-1255",
+      "href": "https://encoding.spec.whatwg.org/#windows-1255",
+      "linkingText": [
+        "windows-1255"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "windows-1256",
+      "href": "https://encoding.spec.whatwg.org/#windows-1256",
+      "linkingText": [
+        "windows-1256"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "windows-1257",
+      "href": "https://encoding.spec.whatwg.org/#windows-1257",
+      "linkingText": [
+        "windows-1257"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "windows-1258",
+      "href": "https://encoding.spec.whatwg.org/#windows-1258",
+      "linkingText": [
+        "windows-1258"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "x-mac-cyrillic",
+      "href": "https://encoding.spec.whatwg.org/#x-mac-cyrillic",
+      "linkingText": [
+        "x-mac-cyrillic"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "single-byte-decoder",
+      "href": "https://encoding.spec.whatwg.org/#single-byte-decoder",
+      "linkingText": [
+        "single-byte decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "single-byte-encoder",
+      "href": "https://encoding.spec.whatwg.org/#single-byte-encoder",
+      "linkingText": [
+        "single-byte encoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "gbk",
+      "href": "https://encoding.spec.whatwg.org/#gbk",
+      "linkingText": [
+        "GBK"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "gbk-decoder",
+      "href": "https://encoding.spec.whatwg.org/#gbk-decoder",
+      "linkingText": [
+        "GBK decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "gbk-encoder",
+      "href": "https://encoding.spec.whatwg.org/#gbk-encoder",
+      "linkingText": [
+        "GBK encoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "gb18030",
+      "href": "https://encoding.spec.whatwg.org/#gb18030",
+      "linkingText": [
+        "gb18030"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "gb18030-decoder",
+      "href": "https://encoding.spec.whatwg.org/#gb18030-decoder",
+      "linkingText": [
+        "gb18030 decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "gb18030-first",
+      "href": "https://encoding.spec.whatwg.org/#gb18030-first",
+      "linkingText": [
+        "gb18030 first"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "gb18030-second",
+      "href": "https://encoding.spec.whatwg.org/#gb18030-second",
+      "linkingText": [
+        "gb18030 second"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "gb18030-third",
+      "href": "https://encoding.spec.whatwg.org/#gb18030-third",
+      "linkingText": [
+        "gb18030 third"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "gb18030-encoder",
+      "href": "https://encoding.spec.whatwg.org/#gb18030-encoder",
+      "linkingText": [
+        "gb18030 encoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "gbk-flag",
+      "href": "https://encoding.spec.whatwg.org/#gbk-flag",
+      "linkingText": [
+        "is GBK"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "big5",
+      "href": "https://encoding.spec.whatwg.org/#big5",
+      "linkingText": [
+        "Big5"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "big5-decoder",
+      "href": "https://encoding.spec.whatwg.org/#big5-decoder",
+      "linkingText": [
+        "Big5 decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "big5-lead",
+      "href": "https://encoding.spec.whatwg.org/#big5-lead",
+      "linkingText": [
+        "Big5 lead"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "big5-encoder",
+      "href": "https://encoding.spec.whatwg.org/#big5-encoder",
+      "linkingText": [
+        "Big5 encoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "euc-jp",
+      "href": "https://encoding.spec.whatwg.org/#euc-jp",
+      "linkingText": [
+        "EUC-JP"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "euc-jp-decoder",
+      "href": "https://encoding.spec.whatwg.org/#euc-jp-decoder",
+      "linkingText": [
+        "EUC-JP decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "euc-jp-jis0212-flag",
+      "href": "https://encoding.spec.whatwg.org/#euc-jp-jis0212-flag",
+      "linkingText": [
+        "EUC-JP jis0212"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "euc-jp-lead",
+      "href": "https://encoding.spec.whatwg.org/#euc-jp-lead",
+      "linkingText": [
+        "EUC-JP lead"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "euc-jp-encoder",
+      "href": "https://encoding.spec.whatwg.org/#euc-jp-encoder",
+      "linkingText": [
+        "EUC-JP encoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp",
+      "linkingText": [
+        "ISO-2022-JP"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp-decoder",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-decoder",
+      "linkingText": [
+        "ISO-2022-JP decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp-decoder-state",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-decoder-state",
+      "linkingText": [
+        "ISO-2022-JP decoder state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp-decoder-output-state",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-decoder-output-state",
+      "linkingText": [
+        "ISO-2022-JP decoder output state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp-lead",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-lead",
+      "linkingText": [
+        "ISO-2022-JP lead"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp-output-flag",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-output-flag",
+      "linkingText": [
+        "ISO-2022-JP output"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp-decoder-ascii",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-decoder-ascii",
+      "linkingText": [
+        "ISO-2022-JP decoder ASCII"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp-decoder-roman",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-decoder-roman",
+      "linkingText": [
+        "ISO-2022-JP decoder Roman"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp-decoder-katakana",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-decoder-katakana",
+      "linkingText": [
+        "ISO-2022-JP decoder katakana"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp-decoder-lead-byte",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-decoder-lead-byte",
+      "linkingText": [
+        "ISO-2022-JP decoder lead byte"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp-decoder-trail-byte",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-decoder-trail-byte",
+      "linkingText": [
+        "ISO-2022-JP decoder trail byte"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp-decoder-escape-start",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-decoder-escape-start",
+      "linkingText": [
+        "ISO-2022-JP decoder escape start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp-decoder-escape",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-decoder-escape",
+      "linkingText": [
+        "ISO-2022-JP decoder escape"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp-encoder",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-encoder",
+      "linkingText": [
+        "ISO-2022-JP encoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp-encoder-state",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-state",
+      "linkingText": [
+        "ISO-2022-JP encoder state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp-encoder-ascii",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-ascii",
+      "linkingText": [
+        "ISO-2022-JP encoder ASCII"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp-encoder-roman",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-roman",
+      "linkingText": [
+        "ISO-2022-JP encoder Roman"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iso-2022-jp-encoder-jis0208",
+      "href": "https://encoding.spec.whatwg.org/#iso-2022-jp-encoder-jis0208",
+      "linkingText": [
+        "ISO-2022-JP encoder jis0208"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "shift_jis",
+      "href": "https://encoding.spec.whatwg.org/#shift_jis",
+      "linkingText": [
+        "Shift_JIS"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "shift_jis-decoder",
+      "href": "https://encoding.spec.whatwg.org/#shift_jis-decoder",
+      "linkingText": [
+        "Shift_JIS decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "shift_jis-lead",
+      "href": "https://encoding.spec.whatwg.org/#shift_jis-lead",
+      "linkingText": [
+        "Shift_JIS lead"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "shift_jis-encoder",
+      "href": "https://encoding.spec.whatwg.org/#shift_jis-encoder",
+      "linkingText": [
+        "Shift_JIS encoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "euc-kr",
+      "href": "https://encoding.spec.whatwg.org/#euc-kr",
+      "linkingText": [
+        "EUC-KR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "euc-kr-decoder",
+      "href": "https://encoding.spec.whatwg.org/#euc-kr-decoder",
+      "linkingText": [
+        "EUC-KR decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "euc-kr-lead",
+      "href": "https://encoding.spec.whatwg.org/#euc-kr-lead",
+      "linkingText": [
+        "EUC-KR lead"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "euc-kr-encoder",
+      "href": "https://encoding.spec.whatwg.org/#euc-kr-encoder",
+      "linkingText": [
+        "EUC-KR encoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "replacement",
+      "href": "https://encoding.spec.whatwg.org/#replacement",
+      "linkingText": [
+        "replacement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "replacement-decoder",
+      "href": "https://encoding.spec.whatwg.org/#replacement-decoder",
+      "linkingText": [
+        "replacement decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "replacement-error-returned-flag",
+      "href": "https://encoding.spec.whatwg.org/#replacement-error-returned-flag",
+      "linkingText": [
+        "replacement error returned"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "shared-utf-16-decoder",
+      "href": "https://encoding.spec.whatwg.org/#shared-utf-16-decoder",
+      "linkingText": [
+        "shared UTF-16 decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "utf-16-lead-byte",
+      "href": "https://encoding.spec.whatwg.org/#utf-16-lead-byte",
+      "linkingText": [
+        "UTF-16 lead byte"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "utf-16-lead-surrogate",
+      "href": "https://encoding.spec.whatwg.org/#utf-16-lead-surrogate",
+      "linkingText": [
+        "UTF-16 lead surrogate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "utf-16be-decoder-flag",
+      "href": "https://encoding.spec.whatwg.org/#utf-16be-decoder-flag",
+      "linkingText": [
+        "is UTF-16BE decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "utf-16be",
+      "href": "https://encoding.spec.whatwg.org/#utf-16be",
+      "linkingText": [
+        "UTF-16BE"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "utf-16be-decoder",
+      "href": "https://encoding.spec.whatwg.org/#utf-16be-decoder",
+      "linkingText": [
+        "UTF-16BE decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "utf-16le",
+      "href": "https://encoding.spec.whatwg.org/#utf-16le",
+      "linkingText": [
+        "UTF-16LE"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "utf-16le-decoder",
+      "href": "https://encoding.spec.whatwg.org/#utf-16le-decoder",
+      "linkingText": [
+        "UTF-16LE decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "x-user-defined",
+      "href": "https://encoding.spec.whatwg.org/#x-user-defined",
+      "linkingText": [
+        "x-user-defined"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "x-user-defined-decoder",
+      "href": "https://encoding.spec.whatwg.org/#x-user-defined-decoder",
+      "linkingText": [
+        "x-user-defined decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "x-user-defined-encoder",
+      "href": "https://encoding.spec.whatwg.org/#x-user-defined-encoder",
+      "linkingText": [
+        "x-user-defined encoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

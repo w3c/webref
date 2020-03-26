@@ -1,0 +1,686 @@
+{
+  "spec": {
+    "title": "Performance Timeline Level 2",
+    "url": "https://w3c.github.io/performance-timeline/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-performance-timeline",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-performance-timeline",
+      "linkingText": [
+        "Performance Timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-performance-observer-task-queued-flag",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-performance-observer-task-queued-flag",
+      "linkingText": [
+        "performance observer task queued flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-list-of-registered-performance-observer-objects",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-list-of-registered-performance-observer-objects",
+      "linkingText": [
+        "list of registered performance observer objects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-performance-entry-buffer-map",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-performance-entry-buffer-map",
+      "linkingText": [
+        "performance entry buffer map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-performance-entry-buffer",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-performance-entry-buffer",
+      "linkingText": [
+        "performance entry buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-maxbuffersize",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-maxbuffersize",
+      "linkingText": [
+        "maxBufferSize"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-availablefromtimeline",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-availablefromtimeline",
+      "linkingText": [
+        "availableFromTimeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-relevant-performance-entry-tuple",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-relevant-performance-entry-tuple",
+      "linkingText": [
+        "relevant performance entry tuple"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performance",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performance",
+      "linkingText": [
+        "Performance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceentrylist",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceentrylist",
+      "linkingText": [
+        "PerformanceEntryList"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performance-getentries",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performance-getentries",
+      "linkingText": [
+        "getEntries()"
+      ],
+      "localLinkingText": [
+        "Performance.getEntries",
+        "Performance.getEntries()",
+        "getEntries"
+      ],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performance-getentriesbytype",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performance-getentriesbytype",
+      "linkingText": [
+        "getEntriesByType()",
+        "getEntriesByType(type)"
+      ],
+      "localLinkingText": [
+        "Performance.getEntriesByType",
+        "Performance.getEntriesByType()",
+        "getEntriesByType"
+      ],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performance-getentriesbyname",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performance-getentriesbyname",
+      "linkingText": [
+        "getEntriesByName()",
+        "getEntriesByName(name)",
+        "getEntriesByName(name, type)"
+      ],
+      "localLinkingText": [
+        "Performance.getEntriesByName",
+        "Performance.getEntriesByName()",
+        "getEntriesByName"
+      ],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceentry",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry",
+      "linkingText": [
+        "PerformanceEntry"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceentry-name",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [
+        "PerformanceEntry.name"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceEntry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceentry-entrytype",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype",
+      "linkingText": [
+        "entryType"
+      ],
+      "localLinkingText": [
+        "PerformanceEntry.entryType"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceEntry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceentry-starttime",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime",
+      "linkingText": [
+        "startTime"
+      ],
+      "localLinkingText": [
+        "PerformanceEntry.startTime"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceEntry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceentry-duration",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [
+        "PerformanceEntry.duration"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceEntry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceentry-tojson",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [
+        "PerformanceEntry.toJSON",
+        "PerformanceEntry.toJSON()",
+        "toJSON"
+      ],
+      "type": "method",
+      "for": [
+        "PerformanceEntry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserver",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver",
+      "linkingText": [
+        "PerformanceObserver"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobservercallback",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobservercallback",
+      "linkingText": [
+        "PerformanceObserverCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-observer-buffer",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-observer-buffer",
+      "linkingText": [
+        "observer\n      buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-observer-type",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-observer-type",
+      "linkingText": [
+        "observer type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-registered-performance-observer",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-registered-performance-observer",
+      "linkingText": [
+        "registered performance observer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-observer",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-observer",
+      "linkingText": [
+        "observer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-options-list",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-options-list",
+      "linkingText": [
+        "options list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserver-constructor",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(callback)"
+      ],
+      "localLinkingText": [
+        "PerformanceObserver.constructor",
+        "PerformanceObserver.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "PerformanceObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserver-observe",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-observe",
+      "linkingText": [
+        "observe()",
+        "observe(, options)"
+      ],
+      "localLinkingText": [
+        "PerformanceObserver.observe",
+        "PerformanceObserver.observe()",
+        "observe"
+      ],
+      "type": "method",
+      "for": [
+        "PerformanceObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-register-the-observer",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-register-the-observer",
+      "linkingText": [
+        "register\n      the observer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserverinit",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverinit",
+      "linkingText": [
+        "PerformanceObserverInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserverinit-entrytypes",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes",
+      "linkingText": [
+        "entryTypes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PerformanceObserverInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserverinit-type",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PerformanceObserverInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserverinit-buffered",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-buffered",
+      "linkingText": [
+        "buffered"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PerformanceObserverInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserverentrylist",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverentrylist",
+      "linkingText": [
+        "PerformanceObserverEntryList"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserverentrylist-getentries",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverentrylist-getentries",
+      "linkingText": [
+        "getEntries()"
+      ],
+      "localLinkingText": [
+        "PerformanceObserverEntryList.getEntries",
+        "PerformanceObserverEntryList.getEntries()",
+        "getEntries"
+      ],
+      "type": "method",
+      "for": [
+        "PerformanceObserverEntryList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserverentrylist-getentriesbytype",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverentrylist-getentriesbytype",
+      "linkingText": [
+        "getEntriesByType()",
+        "getEntriesByType(type)"
+      ],
+      "localLinkingText": [
+        "PerformanceObserverEntryList.getEntriesByType",
+        "PerformanceObserverEntryList.getEntriesByType()",
+        "getEntriesByType"
+      ],
+      "type": "method",
+      "for": [
+        "PerformanceObserverEntryList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserverentrylist-getentriesbyname",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverentrylist-getentriesbyname",
+      "linkingText": [
+        "getEntriesByName()",
+        "getEntriesByName(name)",
+        "getEntriesByName(name, type)"
+      ],
+      "localLinkingText": [
+        "PerformanceObserverEntryList.getEntriesByName",
+        "PerformanceObserverEntryList.getEntriesByName()",
+        "getEntriesByName"
+      ],
+      "type": "method",
+      "for": [
+        "PerformanceObserverEntryList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserver-takerecords",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-takerecords",
+      "linkingText": [
+        "takeRecords()"
+      ],
+      "localLinkingText": [
+        "PerformanceObserver.takeRecords",
+        "PerformanceObserver.takeRecords()",
+        "takeRecords"
+      ],
+      "type": "method",
+      "for": [
+        "PerformanceObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserver-disconnect",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-disconnect",
+      "linkingText": [
+        "disconnect()"
+      ],
+      "localLinkingText": [
+        "PerformanceObserver.disconnect",
+        "PerformanceObserver.disconnect()",
+        "disconnect"
+      ],
+      "type": "method",
+      "for": [
+        "PerformanceObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-frozen-array-of-supported-entry-types",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-frozen-array-of-supported-entry-types",
+      "linkingText": [
+        "frozen array of supported entry\n      types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserver-supportedentrytypes",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-supportedentrytypes",
+      "linkingText": [
+        "supportedEntryTypes"
+      ],
+      "localLinkingText": [
+        "PerformanceObserver.supportedEntryTypes"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-queue-a-performanceentry",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry",
+      "linkingText": [
+        "queue a PerformanceEntry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-queue-the-performanceobserver-task",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-queue-the-performanceobserver-task",
+      "linkingText": [
+        "queue the PerformanceObserver task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-filter-buffer-map-by-name-and-type",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-filter-buffer-map-by-name-and-type",
+      "linkingText": [
+        "filter buffer map by name and type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-filter-buffer-by-name-and-type",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-filter-buffer-by-name-and-type",
+      "linkingText": [
+        "filter buffer by name and type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-determine-eligibility-for-adding-a-performance-entry",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-determine-eligibility-for-adding-a-performance-entry",
+      "linkingText": [
+        "determine eligibility for adding a performance entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-keyed",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-keyed",
+      "linkingText": [
+        "keyed",
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-getting-the-value-of-entry",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-getting-the-value-of-entry",
+      "linkingText": [
+        "getting the value of entry",
+        "getting the value of an entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

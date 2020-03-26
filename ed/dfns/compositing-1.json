@@ -1,0 +1,316 @@
+{
+  "spec": {
+    "title": "Compositing and Blending Level 1",
+    "url": "https://drafts.fxtf.org/compositing-1/"
+  },
+  "dfns": [
+    {
+      "id": "propdef-mix-blend-mode",
+      "href": "https://drafts.fxtf.org/compositing-1/#propdef-mix-blend-mode",
+      "linkingText": [
+        "mix-blend-mode"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ltblendmodegt",
+      "href": "https://drafts.fxtf.org/compositing-1/#ltblendmodegt",
+      "linkingText": [
+        "<blend-mode>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-isolation",
+      "href": "https://drafts.fxtf.org/compositing-1/#propdef-isolation",
+      "linkingText": [
+        "isolation"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "isolated-propid",
+      "href": "https://drafts.fxtf.org/compositing-1/#isolated-propid",
+      "linkingText": [
+        "<isolation-mode>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-background-blend-mode",
+      "href": "https://drafts.fxtf.org/compositing-1/#propdef-background-blend-mode",
+      "linkingText": [
+        "background-blend-mode"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "compositemode",
+      "href": "https://drafts.fxtf.org/compositing-1/#compositemode",
+      "linkingText": [
+        "<composite-mode>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "backdrop",
+      "href": "https://drafts.fxtf.org/compositing-1/#backdrop",
+      "linkingText": [
+        "backdrop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-normal",
+      "href": "https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-multiply",
+      "href": "https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-multiply",
+      "linkingText": [
+        "multiply"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-screen",
+      "href": "https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-screen",
+      "linkingText": [
+        "screen"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-overlay",
+      "href": "https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-overlay",
+      "linkingText": [
+        "overlay"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-darken",
+      "href": "https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-darken",
+      "linkingText": [
+        "darken"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-lighten",
+      "href": "https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-lighten",
+      "linkingText": [
+        "lighten"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-color-dodge",
+      "href": "https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-color-dodge",
+      "linkingText": [
+        "color-dodge"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-color-burn",
+      "href": "https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-color-burn",
+      "linkingText": [
+        "color-burn"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-hard-light",
+      "href": "https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-hard-light",
+      "linkingText": [
+        "hard-light"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-soft-light",
+      "href": "https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-soft-light",
+      "linkingText": [
+        "soft-light"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-difference",
+      "href": "https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-difference",
+      "linkingText": [
+        "difference"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-exclusion",
+      "href": "https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-exclusion",
+      "linkingText": [
+        "exclusion"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-hue",
+      "href": "https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-hue",
+      "linkingText": [
+        "hue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-saturation",
+      "href": "https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-saturation",
+      "linkingText": [
+        "saturation"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-color",
+      "href": "https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-color",
+      "linkingText": [
+        "color"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-luminosity",
+      "href": "https://drafts.fxtf.org/compositing-1/#valdef-blend-mode-luminosity",
+      "linkingText": [
+        "luminosity"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,2119 @@
+{
+  "spec": {
+    "title": "CSS Values and Units Module Level 4",
+    "url": "https://drafts.csswg.org/css-values-4/"
+  },
+  "dfns": [
+    {
+      "id": "css-value-definition-syntax",
+      "href": "https://drafts.csswg.org/css-values-4/#css-value-definition-syntax",
+      "linkingText": [
+        "value definition syntax"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "comb-comma",
+      "href": "https://drafts.csswg.org/css-values-4/#comb-comma",
+      "linkingText": [
+        ","
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "comb-all",
+      "href": "https://drafts.csswg.org/css-values-4/#comb-all",
+      "linkingText": [
+        "&&"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "comb-any",
+      "href": "https://drafts.csswg.org/css-values-4/#comb-any",
+      "linkingText": [
+        "||"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "comb-one",
+      "href": "https://drafts.csswg.org/css-values-4/#comb-one",
+      "linkingText": [
+        "|"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mult-zero-plus",
+      "href": "https://drafts.csswg.org/css-values-4/#mult-zero-plus",
+      "linkingText": [
+        "*"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mult-one-plus",
+      "href": "https://drafts.csswg.org/css-values-4/#mult-one-plus",
+      "linkingText": [
+        "+"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mult-opt",
+      "href": "https://drafts.csswg.org/css-values-4/#mult-opt",
+      "linkingText": [
+        "?"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mult-num",
+      "href": "https://drafts.csswg.org/css-values-4/#mult-num",
+      "linkingText": [
+        "{A}"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mult-num-range",
+      "href": "https://drafts.csswg.org/css-values-4/#mult-num-range",
+      "linkingText": [
+        "{A,B}"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mult-comma",
+      "href": "https://drafts.csswg.org/css-values-4/#mult-comma",
+      "linkingText": [
+        "#"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mult-req",
+      "href": "https://drafts.csswg.org/css-values-4/#mult-req",
+      "linkingText": [
+        "!"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "combine",
+      "href": "https://drafts.csswg.org/css-values-4/#combine",
+      "linkingText": [
+        "combine"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "interpolation",
+      "href": "https://drafts.csswg.org/css-values-4/#interpolation",
+      "linkingText": [
+        "interpolation",
+        "interpolate",
+        "value interpolation",
+        "interpolation procedure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "addition",
+      "href": "https://drafts.csswg.org/css-values-4/#addition",
+      "linkingText": [
+        "value addition",
+        "addition procedure"
+      ],
+      "localLinkingText": [
+        "add",
+        "addition"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "accumulation",
+      "href": "https://drafts.csswg.org/css-values-4/#accumulation",
+      "linkingText": [
+        "value accumulation",
+        "accumulation procedure"
+      ],
+      "localLinkingText": [
+        "accumulate",
+        "accumulation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "not-additive",
+      "href": "https://drafts.csswg.org/css-values-4/#not-additive",
+      "linkingText": [
+        "not additive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-textual-data-types",
+      "href": "https://drafts.csswg.org/css-values-4/#css-textual-data-types",
+      "linkingText": [
+        "textual data types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-identifier",
+      "href": "https://drafts.csswg.org/css-values-4/#css-identifier",
+      "linkingText": [
+        "CSS identifier",
+        "CSS ident",
+        "identifier",
+        "ident"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-ident",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-ident",
+      "linkingText": [
+        "<ident>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-keyword",
+      "href": "https://drafts.csswg.org/css-values-4/#css-keyword",
+      "linkingText": [
+        "keyword"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-wide-keywords",
+      "href": "https://drafts.csswg.org/css-values-4/#css-wide-keywords",
+      "linkingText": [
+        "CSS-wide keywords"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "identifier-value",
+      "href": "https://drafts.csswg.org/css-values-4/#identifier-value",
+      "linkingText": [
+        "<custom-ident>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-dashed-ident",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-dashed-ident",
+      "linkingText": [
+        "<dashed-ident>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "string-value",
+      "href": "https://drafts.csswg.org/css-values-4/#string-value",
+      "linkingText": [
+        "<string>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-url",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-url",
+      "linkingText": [
+        "url()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "url-value",
+      "href": "https://drafts.csswg.org/css-values-4/#url-value",
+      "linkingText": [
+        "<url>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "url-local-url-flag",
+      "href": "https://drafts.csswg.org/css-values-4/#url-local-url-flag",
+      "linkingText": [
+        "local url flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "url()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-url-modifier",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-url-modifier",
+      "linkingText": [
+        "<url-modifier>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "numeric-data-types",
+      "href": "https://drafts.csswg.org/css-values-4/#numeric-data-types",
+      "linkingText": [
+        "numeric data types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-bracketed-range-notation",
+      "href": "https://drafts.csswg.org/css-values-4/#css-bracketed-range-notation",
+      "linkingText": [
+        "CSS bracketed range notation"
+      ],
+      "localLinkingText": [
+        "bracketed range notation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "integer-value",
+      "href": "https://drafts.csswg.org/css-values-4/#integer-value",
+      "linkingText": [
+        "<integer>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "integer",
+      "href": "https://drafts.csswg.org/css-values-4/#integer",
+      "linkingText": [
+        "integer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "number-value",
+      "href": "https://drafts.csswg.org/css-values-4/#number-value",
+      "linkingText": [
+        "<number>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "number",
+      "href": "https://drafts.csswg.org/css-values-4/#number",
+      "linkingText": [
+        "number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "zero-value",
+      "href": "https://drafts.csswg.org/css-values-4/#zero-value",
+      "linkingText": [
+        "<zero>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dimension",
+      "href": "https://drafts.csswg.org/css-values-4/#dimension",
+      "linkingText": [
+        "dimension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-dimension",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-dimension",
+      "linkingText": [
+        "<dimension>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "compatible-units",
+      "href": "https://drafts.csswg.org/css-values-4/#compatible-units",
+      "linkingText": [
+        "compatible units"
+      ],
+      "localLinkingText": [
+        "compatible"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "canonical-unit",
+      "href": "https://drafts.csswg.org/css-values-4/#canonical-unit",
+      "linkingText": [
+        "canonical unit"
+      ],
+      "localLinkingText": [
+        "canonical"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "percentage-value",
+      "href": "https://drafts.csswg.org/css-values-4/#percentage-value",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "percentage",
+      "href": "https://drafts.csswg.org/css-values-4/#percentage",
+      "linkingText": [
+        "percentage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-length-percentage",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-length-percentage",
+      "linkingText": [
+        "<length-percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-frequency-percentage",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-frequency-percentage",
+      "linkingText": [
+        "<frequency-percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-angle-percentage",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-angle-percentage",
+      "linkingText": [
+        "<angle-percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-time-percentage",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-time-percentage",
+      "linkingText": [
+        "<time-percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "length-value",
+      "href": "https://drafts.csswg.org/css-values-4/#length-value",
+      "linkingText": [
+        "<length>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "relative-length",
+      "href": "https://drafts.csswg.org/css-values-4/#relative-length",
+      "linkingText": [
+        "relative length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "font-relative-length",
+      "href": "https://drafts.csswg.org/css-values-4/#font-relative-length",
+      "linkingText": [
+        "font-relative lengths"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "em",
+      "href": "https://drafts.csswg.org/css-values-4/#em",
+      "linkingText": [
+        "em"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ex",
+      "href": "https://drafts.csswg.org/css-values-4/#ex",
+      "linkingText": [
+        "ex"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cap",
+      "href": "https://drafts.csswg.org/css-values-4/#cap",
+      "linkingText": [
+        "cap"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ch",
+      "href": "https://drafts.csswg.org/css-values-4/#ch",
+      "linkingText": [
+        "ch"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "length-advance-measure",
+      "href": "https://drafts.csswg.org/css-values-4/#length-advance-measure",
+      "linkingText": [
+        "advance measure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ic",
+      "href": "https://drafts.csswg.org/css-values-4/#ic",
+      "linkingText": [
+        "ic"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rem",
+      "href": "https://drafts.csswg.org/css-values-4/#rem",
+      "linkingText": [
+        "rem"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "lh",
+      "href": "https://drafts.csswg.org/css-values-4/#lh",
+      "linkingText": [
+        "lh"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rlh",
+      "href": "https://drafts.csswg.org/css-values-4/#rlh",
+      "linkingText": [
+        "rlh"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "viewport-percentage-lengths",
+      "href": "https://drafts.csswg.org/css-values-4/#viewport-percentage-lengths",
+      "linkingText": [
+        "viewport-percentage lengths"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "vw",
+      "href": "https://drafts.csswg.org/css-values-4/#vw",
+      "linkingText": [
+        "vw"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "vh",
+      "href": "https://drafts.csswg.org/css-values-4/#vh",
+      "linkingText": [
+        "vh"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-length-vi",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-length-vi",
+      "linkingText": [
+        "vi"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-length-vb",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-length-vb",
+      "linkingText": [
+        "vb"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "vmin",
+      "href": "https://drafts.csswg.org/css-values-4/#vmin",
+      "linkingText": [
+        "vmin"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "vmax",
+      "href": "https://drafts.csswg.org/css-values-4/#vmax",
+      "linkingText": [
+        "vmax"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "absolute-length",
+      "href": "https://drafts.csswg.org/css-values-4/#absolute-length",
+      "linkingText": [
+        "absolute length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "physical-unit",
+      "href": "https://drafts.csswg.org/css-values-4/#physical-unit",
+      "linkingText": [
+        "physical unit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "pixel-unit",
+      "href": "https://drafts.csswg.org/css-values-4/#pixel-unit",
+      "linkingText": [
+        "pixel unit",
+        "visual angle unit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cm",
+      "href": "https://drafts.csswg.org/css-values-4/#cm",
+      "linkingText": [
+        "cm"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mm",
+      "href": "https://drafts.csswg.org/css-values-4/#mm",
+      "linkingText": [
+        "mm"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "Q",
+      "href": "https://drafts.csswg.org/css-values-4/#Q",
+      "linkingText": [
+        "Q"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "in",
+      "href": "https://drafts.csswg.org/css-values-4/#in",
+      "linkingText": [
+        "in"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "pc",
+      "href": "https://drafts.csswg.org/css-values-4/#pc",
+      "linkingText": [
+        "pc"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "pt",
+      "href": "https://drafts.csswg.org/css-values-4/#pt",
+      "linkingText": [
+        "pt"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "px",
+      "href": "https://drafts.csswg.org/css-values-4/#px",
+      "linkingText": [
+        "px"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "anchor-unit",
+      "href": "https://drafts.csswg.org/css-values-4/#anchor-unit",
+      "linkingText": [
+        "anchor unit",
+        "anchor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reference-pixel",
+      "href": "https://drafts.csswg.org/css-values-4/#reference-pixel",
+      "linkingText": [
+        "reference pixel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "angle-value",
+      "href": "https://drafts.csswg.org/css-values-4/#angle-value",
+      "linkingText": [
+        "<angle>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "deg",
+      "href": "https://drafts.csswg.org/css-values-4/#deg",
+      "linkingText": [
+        "deg"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<angle>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grad",
+      "href": "https://drafts.csswg.org/css-values-4/#grad",
+      "linkingText": [
+        "grad"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<angle>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rad",
+      "href": "https://drafts.csswg.org/css-values-4/#rad",
+      "linkingText": [
+        "rad"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<angle>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "turn",
+      "href": "https://drafts.csswg.org/css-values-4/#turn",
+      "linkingText": [
+        "turn"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<angle>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "bearing-angle",
+      "href": "https://drafts.csswg.org/css-values-4/#bearing-angle",
+      "linkingText": [
+        "bearing angle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "time-value",
+      "href": "https://drafts.csswg.org/css-values-4/#time-value",
+      "linkingText": [
+        "<time>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "s",
+      "href": "https://drafts.csswg.org/css-values-4/#s",
+      "linkingText": [
+        "s"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<time>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ms",
+      "href": "https://drafts.csswg.org/css-values-4/#ms",
+      "linkingText": [
+        "ms"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<time>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "frequency-value",
+      "href": "https://drafts.csswg.org/css-values-4/#frequency-value",
+      "linkingText": [
+        "<frequency>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "Hz",
+      "href": "https://drafts.csswg.org/css-values-4/#Hz",
+      "linkingText": [
+        "Hz"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<frequency>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "kHz",
+      "href": "https://drafts.csswg.org/css-values-4/#kHz",
+      "linkingText": [
+        "kHz"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<frequency>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "resolution-value",
+      "href": "https://drafts.csswg.org/css-values-4/#resolution-value",
+      "linkingText": [
+        "<resolution>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dpi",
+      "href": "https://drafts.csswg.org/css-values-4/#dpi",
+      "linkingText": [
+        "dpi"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<resolution>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dpcm",
+      "href": "https://drafts.csswg.org/css-values-4/#dpcm",
+      "linkingText": [
+        "dpcm"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<resolution>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dppx",
+      "href": "https://drafts.csswg.org/css-values-4/#dppx",
+      "linkingText": [
+        "dppx"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<resolution>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "x",
+      "href": "https://drafts.csswg.org/css-values-4/#x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<resolution>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-position",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-position",
+      "linkingText": [
+        "<position>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "functional-notation",
+      "href": "https://drafts.csswg.org/css-values-4/#functional-notation",
+      "linkingText": [
+        "functional notation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-toggle",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-toggle",
+      "linkingText": [
+        "toggle()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-toggle-value",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-toggle-value",
+      "linkingText": [
+        "<toggle-value>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-attr",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-attr",
+      "linkingText": [
+        "attr()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-attr-type",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-attr-type",
+      "linkingText": [
+        "<attr-type>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-dimension-unit",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-dimension-unit",
+      "linkingText": [
+        "<dimension-unit>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "attr-substitution-value",
+      "href": "https://drafts.csswg.org/css-values-4/#attr-substitution-value",
+      "linkingText": [
+        "substitution value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attr()"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-attr-string",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-attr-string",
+      "linkingText": [
+        "string"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-attr-url",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-attr-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-attr-ident",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-attr-ident",
+      "linkingText": [
+        "ident"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-attr-color",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-attr-color",
+      "linkingText": [
+        "color"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-attr-number",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-attr-number",
+      "linkingText": [
+        "number"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-attr-percentage",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-attr-percentage",
+      "linkingText": [
+        "percentage"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-attr-length",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-attr-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-attr-angle",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-attr-angle",
+      "linkingText": [
+        "angle"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-attr-time",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-attr-time",
+      "linkingText": [
+        "time"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-attr-frequency",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-attr-frequency",
+      "linkingText": [
+        "frequency"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-attr-flex",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-attr-flex",
+      "linkingText": [
+        "flex"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-attr-dimension-unit",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-attr-dimension-unit",
+      "linkingText": [
+        "<dimension-unit>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "substitute-an-attr",
+      "href": "https://drafts.csswg.org/css-values-4/#substitute-an-attr",
+      "linkingText": [
+        "substitute an attr()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "math-function",
+      "href": "https://drafts.csswg.org/css-values-4/#math-function",
+      "linkingText": [
+        "math function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-calc",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-calc",
+      "linkingText": [
+        "calc()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "calc-calculation",
+      "href": "https://drafts.csswg.org/css-values-4/#calc-calculation",
+      "linkingText": [
+        "calculation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "calc()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-min",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-min",
+      "linkingText": [
+        "min()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-max",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-max",
+      "linkingText": [
+        "max()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-clamp",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-clamp",
+      "linkingText": [
+        "clamp()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-round",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-round",
+      "linkingText": [
+        "round()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-rounding-strategy",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-rounding-strategy",
+      "linkingText": [
+        "<rounding-strategy>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-rounding-strategy-nearest",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-rounding-strategy-nearest",
+      "linkingText": [
+        "nearest"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<rounding-strategy>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-rounding-strategy-up",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-rounding-strategy-up",
+      "linkingText": [
+        "up"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<rounding-strategy>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-rounding-strategy-down",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-rounding-strategy-down",
+      "linkingText": [
+        "down"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<rounding-strategy>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-rounding-strategy-to-zero",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-rounding-strategy-to-zero",
+      "linkingText": [
+        "to-zero"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<rounding-strategy>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-mod",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-mod",
+      "linkingText": [
+        "mod()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-rem",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-rem",
+      "linkingText": [
+        "rem()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "between-zero-and-b",
+      "href": "https://drafts.csswg.org/css-values-4/#between-zero-and-b",
+      "linkingText": [
+        "between zero and B"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "funcdef-sin",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-sin",
+      "linkingText": [
+        "sin()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-cos",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-cos",
+      "linkingText": [
+        "cos()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-tan",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-tan",
+      "linkingText": [
+        "tan()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-asin",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-asin",
+      "linkingText": [
+        "asin()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-acos",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-acos",
+      "linkingText": [
+        "acos()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-atan",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-atan",
+      "linkingText": [
+        "atan()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-atan2",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-atan2",
+      "linkingText": [
+        "atan2()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-pow",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-pow",
+      "linkingText": [
+        "pow()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-sqrt",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-sqrt",
+      "linkingText": [
+        "sqrt()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-hypot",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-hypot",
+      "linkingText": [
+        "hypot()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-log",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-log",
+      "linkingText": [
+        "log()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-exp",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-exp",
+      "linkingText": [
+        "exp()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-abs",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-abs",
+      "linkingText": [
+        "abs()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-sign",
+      "href": "https://drafts.csswg.org/css-values-4/#funcdef-sign",
+      "linkingText": [
+        "sign()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-calc-e",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-calc-e",
+      "linkingText": [
+        "e"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "calc()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-calc-pi",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-calc-pi",
+      "linkingText": [
+        "pi"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "calc()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-calc-infinity",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-calc-infinity",
+      "linkingText": [
+        "infinity"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "calc()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-calc--infinity",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-calc--infinity",
+      "linkingText": [
+        "-infinity"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "calc()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-calc-nan",
+      "href": "https://drafts.csswg.org/css-values-4/#valdef-calc-nan",
+      "linkingText": [
+        "NaN"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "calc()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-calc-sum",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-calc-sum",
+      "linkingText": [
+        "<calc-sum>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-calc-product",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-calc-product",
+      "linkingText": [
+        "<calc-product>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-calc-value",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-calc-value",
+      "linkingText": [
+        "<calc-value>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-calc-constant",
+      "href": "https://drafts.csswg.org/css-values-4/#typedef-calc-constant",
+      "linkingText": [
+        "<calc-constant>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "determine-the-type-of-a-calculation",
+      "href": "https://drafts.csswg.org/css-values-4/#determine-the-type-of-a-calculation",
+      "linkingText": [
+        "determine the type of a calculation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "top-level-calculation",
+      "href": "https://drafts.csswg.org/css-values-4/#top-level-calculation",
+      "linkingText": [
+        "top-level calculation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "calculation-tree",
+      "href": "https://drafts.csswg.org/css-values-4/#calculation-tree",
+      "linkingText": [
+        "calculation tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "calculation-tree-operator-nodes",
+      "href": "https://drafts.csswg.org/css-values-4/#calculation-tree-operator-nodes",
+      "linkingText": [
+        "operator nodes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "calculation tree"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "calculation-tree-calc-operator-nodes",
+      "href": "https://drafts.csswg.org/css-values-4/#calculation-tree-calc-operator-nodes",
+      "linkingText": [
+        "calc-operator nodes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "calculation tree"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parse-a-calculation",
+      "href": "https://drafts.csswg.org/css-values-4/#parse-a-calculation",
+      "linkingText": [
+        "parse a calculation",
+        "parsing a calculation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "simplify-a-calculation-tree",
+      "href": "https://drafts.csswg.org/css-values-4/#simplify-a-calculation-tree",
+      "linkingText": [
+        "simplify a calculation tree",
+        "simplifying a calculation tree"
+      ],
+      "localLinkingText": [
+        "simplify"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-math-function",
+      "href": "https://drafts.csswg.org/css-values-4/#serialize-a-math-function",
+      "linkingText": [
+        "serialize a math function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-calculation-tree",
+      "href": "https://drafts.csswg.org/css-values-4/#serialize-a-calculation-tree",
+      "linkingText": [
+        "serialize a calculation tree",
+        "serialize the calculation tree",
+        "serializing a calculation tree",
+        "serializing the calculation tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "sort-a-calculations-children",
+      "href": "https://drafts.csswg.org/css-values-4/#sort-a-calculations-children",
+      "linkingText": [
+        "sort a calculation’s children"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

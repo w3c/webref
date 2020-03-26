@@ -1,0 +1,625 @@
+{
+  "spec": {
+    "title": "JS Self-Profiling API",
+    "url": "https://wicg.github.io/js-self-profiling/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-sample",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-sample",
+      "linkingText": [
+        "sample",
+        "samples"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-stack",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-stack",
+      "linkingText": [
+        "stack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-frame",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-frame",
+      "linkingText": [
+        "frame",
+        "frames"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-profiling-session",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-profiling-session",
+      "linkingText": [
+        "profiling session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-global-object",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-global-object",
+      "linkingText": [
+        "global object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-state",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sample-interval",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-sample-interval",
+      "linkingText": [
+        "sample interval"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-origin",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-time-origin",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-time-origin",
+      "linkingText": [
+        "time origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sample-buffer",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-sample-buffer",
+      "linkingText": [
+        "sample buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sample-buffer-size-limit",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-sample-buffer-size-limit",
+      "linkingText": [
+        "sample buffer size limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-samplebufferfull",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-samplebufferfull",
+      "linkingText": [
+        "samplebufferfull"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sampling-algorithm",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-sampling-algorithm",
+      "linkingText": [
+        "sampling algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-execution-contexts",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-execution-contexts",
+      "linkingText": [
+        "execution contexts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-profiler",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profiler",
+      "linkingText": [
+        "Profiler"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-profiler-sampleinterval",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profiler-sampleinterval",
+      "linkingText": [
+        "sampleInterval"
+      ],
+      "localLinkingText": [
+        "Profiler.sampleInterval"
+      ],
+      "type": "attribute",
+      "for": [
+        "Profiler"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-domhighrestimestamp",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-domhighrestimestamp",
+      "linkingText": [
+        "DOMHighResTimeStamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-profiler-stopped",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profiler-stopped",
+      "linkingText": [
+        "stopped"
+      ],
+      "localLinkingText": [
+        "Profiler.stopped"
+      ],
+      "type": "attribute",
+      "for": [
+        "Profiler"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-profiler-stop",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profiler-stop",
+      "linkingText": [
+        "stop()"
+      ],
+      "localLinkingText": [
+        "Profiler.stop",
+        "Profiler.stop()",
+        "stop"
+      ],
+      "type": "method",
+      "for": [
+        "Profiler"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-profilertrace",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilertrace",
+      "linkingText": [
+        "ProfilerTrace"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-profilerresource",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerresource",
+      "linkingText": [
+        "ProfilerResource"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [
+        "ProfilerResource"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-profilertrace-resources",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilertrace-resources",
+      "linkingText": [
+        "resources"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProfilerTrace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-profilertrace-frames",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilertrace-frames",
+      "linkingText": [
+        "frames"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProfilerTrace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-profilertrace-stacks",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilertrace-stacks",
+      "linkingText": [
+        "stacks"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProfilerTrace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-profilertrace-samples",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilertrace-samples",
+      "linkingText": [
+        "samples"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProfilerTrace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-profilersample",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilersample",
+      "linkingText": [
+        "ProfilerSample"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-profilersample-timestamp",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilersample-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProfilerSample"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-current-high-resolution-time",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-current-high-resolution-time",
+      "linkingText": [
+        "current high resolution time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-profilersample-stackid",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilersample-stackid",
+      "linkingText": [
+        "stackId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProfilerSample"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-profilerstack",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerstack",
+      "linkingText": [
+        "ProfilerStack"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-profilerstack-parentid",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerstack-parentid",
+      "linkingText": [
+        "parentId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProfilerStack"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-profilerstack-frameid",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerstack-frameid",
+      "linkingText": [
+        "frameId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProfilerStack"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-profilerframe",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerframe",
+      "linkingText": [
+        "ProfilerFrame"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-function-instance",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-function-instance",
+      "linkingText": [
+        "function instance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-profilerframe-name",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerframe-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProfilerFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-function-instance-name",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-function-instance-name",
+      "linkingText": [
+        "function instance name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-profilerframe-resourceid",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerframe-resourceid",
+      "linkingText": [
+        "resourceId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProfilerFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-script-record",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-script-record",
+      "linkingText": [
+        "script record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-source-text-module-record",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-source-text-module-record",
+      "linkingText": [
+        "source text module record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-profilerframe-line",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerframe-line",
+      "linkingText": [
+        "line"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProfilerFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-profilerframe-column",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerframe-column",
+      "linkingText": [
+        "column"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProfilerFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performance",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-performance",
+      "linkingText": [
+        "Performance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-profilerinitoptions",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerinitoptions",
+      "linkingText": [
+        "ProfilerInitOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-profilerinitoptions-sampleinterval",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerinitoptions-sampleinterval",
+      "linkingText": [
+        "ProfilerInitOptions.sampleInterval"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProfilerInitOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-profilerinitoptions-maxbuffersize",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerinitoptions-maxbuffersize",
+      "linkingText": [
+        "ProfilerInitOptions.maxBufferSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProfilerInitOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performance-profile",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-performance-profile",
+      "linkingText": [
+        "profile()",
+        "profile(options)"
+      ],
+      "localLinkingText": [
+        "Performance.profile",
+        "Performance.profile()",
+        "profile"
+      ],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-current",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-current",
+      "linkingText": [
+        "current"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

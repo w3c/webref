@@ -1,0 +1,1450 @@
+{
+  "spec": {
+    "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
+    "url": "https://rawgit.com/w3c/aria/master/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-accessibility-api",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-accessibility-api",
+      "linkingText": [
+        "accessibility api",
+        "accessibility apis",
+        "Accessibility API"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-accessibility-subtree",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-accessibility-subtree",
+      "linkingText": [
+        "Accessibility Subtree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-accessibility-tree",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-accessibility-tree",
+      "linkingText": [
+        "Accessibility Tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-accessible-description",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-accessible-description",
+      "linkingText": [
+        "Accessible Description"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-accessible-name",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-accessible-name",
+      "linkingText": [
+        "accessible name",
+        "accessible names",
+        "Accessible Name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-accessible-object",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-accessible-object",
+      "linkingText": [
+        "accessible object",
+        "accessible objects",
+        "Accessible object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-activation-behavior",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-activation-behavior",
+      "linkingText": [
+        "Activation behavior"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-assistive-technology",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-assistive-technology",
+      "linkingText": [
+        "assistive technology",
+        "Assistive Technologies"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-attribute",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-attribute",
+      "linkingText": [
+        "attribute",
+        "attributes",
+        "Attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-class",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-class",
+      "linkingText": [
+        "class",
+        "classes",
+        "Class"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-deprecated",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-deprecated",
+      "linkingText": [
+        "deprecated",
+        "deprecate",
+        "deprecation",
+        "Deprecated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-desktop-focus",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-desktop-focus",
+      "linkingText": [
+        "desktop focus",
+        "desktop focus events",
+        "Desktop focus event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-element",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-element",
+      "linkingText": [
+        "element",
+        "elements",
+        "element's",
+        "Element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-event",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-event",
+      "linkingText": [
+        "event",
+        "events",
+        "Event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-expose",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-expose",
+      "linkingText": [
+        "Expose"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-graphical-document",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-graphical-document",
+      "linkingText": [
+        "graphical document",
+        "graphical documents",
+        "Graphical Document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-hidden",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-hidden",
+      "linkingText": [
+        "Hidden"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-informative",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-informative",
+      "linkingText": [
+        "informative",
+        "non-normative",
+        "Informative"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-keyboard-accessible",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-keyboard-accessible",
+      "linkingText": [
+        "Keyboard Accessible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-landmark",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-landmark",
+      "linkingText": [
+        "landmark",
+        "landmarks",
+        "Landmark"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-live-region",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-live-region",
+      "linkingText": [
+        "live region",
+        "live regions",
+        "Live Region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-primary-content-element",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-primary-content-element",
+      "linkingText": [
+        "Primary Content Element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-managed-state",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-managed-state",
+      "linkingText": [
+        "managed state",
+        "managed states",
+        "Managed State"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-nemeth-braille",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-nemeth-braille",
+      "linkingText": [
+        "Nemeth Braille"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-node",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-node",
+      "linkingText": [
+        "Node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-normative",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-normative",
+      "linkingText": [
+        "Normative"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-object",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-object",
+      "linkingText": [
+        "object",
+        "objects",
+        "Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-ontology",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-ontology",
+      "linkingText": [
+        "Ontology"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-operable",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-operable",
+      "linkingText": [
+        "Operable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-owned-element",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-owned-element",
+      "linkingText": [
+        "owned element",
+        "owned",
+        "owned element's",
+        "owned elements",
+        "Owned Element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-owning-element",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-owning-element",
+      "linkingText": [
+        "owning element",
+        "owning",
+        "Owning Element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-perceivable",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-perceivable",
+      "linkingText": [
+        "Perceivable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-property",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-property",
+      "linkingText": [
+        "property",
+        "properties",
+        "Property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-relationship",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-relationship",
+      "linkingText": [
+        "relationship",
+        "relationships",
+        "Relationship"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-role",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-role",
+      "linkingText": [
+        "role",
+        "roles",
+        "Role"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-root-wai-aria-node",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-root-wai-aria-node",
+      "linkingText": [
+        "Root WAI-ARIA node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-semantics",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-semantics",
+      "linkingText": [
+        "semantics",
+        "semantic",
+        "semantically",
+        "Semantics"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-state",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-state",
+      "linkingText": [
+        "state",
+        "states",
+        "State"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-sub-document",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-sub-document",
+      "linkingText": [
+        "Sub-document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-target-element",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-target-element",
+      "linkingText": [
+        "Target Element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-taxonomy",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-taxonomy",
+      "linkingText": [
+        "Taxonomy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-text-node",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-text-node",
+      "linkingText": [
+        "Text node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-tooltip-attribute",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-tooltip-attribute",
+      "linkingText": [
+        "Tooltip attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-understandable",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-understandable",
+      "linkingText": [
+        "Understandable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-user-agent",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-user-agent",
+      "linkingText": [
+        "user agent",
+        "user agents",
+        "User Agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-valid-idref",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-valid-idref",
+      "linkingText": [
+        "Valid IDREF"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-widget",
+      "href": "https://rawgit.com/w3c/aria/master/#dfn-widget",
+      "linkingText": [
+        "widget",
+        "widgets",
+        "Widget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-accessibilityrole",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-accessibilityrole",
+      "linkingText": [
+        "AccessibilityRole"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accessibilityrole-role",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-accessibilityrole-role",
+      "linkingText": [
+        "role"
+      ],
+      "localLinkingText": [
+        "AccessibilityRole.role"
+      ],
+      "type": "attribute",
+      "for": [
+        "AccessibilityRole"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes",
+      "linkingText": [
+        "AriaAttributes"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaactivedescendantelement",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariaactivedescendantelement",
+      "linkingText": [
+        "ariaActiveDescendantElement"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaActiveDescendantElement"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaatomic",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariaatomic",
+      "linkingText": [
+        "ariaAtomic"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaAtomic"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaautocomplete",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariaautocomplete",
+      "linkingText": [
+        "ariaAutoComplete"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaAutoComplete"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariabusy",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariabusy",
+      "linkingText": [
+        "ariaBusy"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaBusy"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariachecked",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariachecked",
+      "linkingText": [
+        "ariaChecked"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaChecked"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariacolcount",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariacolcount",
+      "linkingText": [
+        "ariaColCount"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaColCount"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariacolindex",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariacolindex",
+      "linkingText": [
+        "ariaColIndex"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaColIndex"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariacolindextext",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariacolindextext",
+      "linkingText": [
+        "ariaColIndexText"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaColIndexText"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariacolspan",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariacolspan",
+      "linkingText": [
+        "ariaColSpan"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaColSpan"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariacontrolselements",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariacontrolselements",
+      "linkingText": [
+        "ariaControlsElements"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaControlsElements"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariacurrent",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariacurrent",
+      "linkingText": [
+        "ariaCurrent"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaCurrent"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariadescribedbyelements",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariadescribedbyelements",
+      "linkingText": [
+        "ariaDescribedByElements"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaDescribedByElements"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariadescription",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariadescription",
+      "linkingText": [
+        "ariaDescription"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaDescription"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariadetailselements",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariadetailselements",
+      "linkingText": [
+        "ariaDetailsElements"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaDetailsElements"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariadisabled",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariadisabled",
+      "linkingText": [
+        "ariaDisabled"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaDisabled"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaerrormessageelement",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariaerrormessageelement",
+      "linkingText": [
+        "ariaErrorMessageElement"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaErrorMessageElement"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaexpanded",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariaexpanded",
+      "linkingText": [
+        "ariaExpanded"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaExpanded"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaflowtoelements",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariaflowtoelements",
+      "linkingText": [
+        "ariaFlowToElements"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaFlowToElements"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariahaspopup",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariahaspopup",
+      "linkingText": [
+        "ariaHasPopup"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaHasPopup"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariahidden",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariahidden",
+      "linkingText": [
+        "ariaHidden"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaHidden"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariainvalid",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariainvalid",
+      "linkingText": [
+        "ariaInvalid"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaInvalid"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariakeyshortcuts",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariakeyshortcuts",
+      "linkingText": [
+        "ariaKeyShortcuts"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaKeyShortcuts"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-arialabel",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-arialabel",
+      "linkingText": [
+        "ariaLabel"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaLabel"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-arialabelledbyelements",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-arialabelledbyelements",
+      "linkingText": [
+        "ariaLabelledByElements"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaLabelledByElements"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-arialevel",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-arialevel",
+      "linkingText": [
+        "ariaLevel"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaLevel"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-arialive",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-arialive",
+      "linkingText": [
+        "ariaLive"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaLive"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariamodal",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariamodal",
+      "linkingText": [
+        "ariaModal"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaModal"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariamultiline",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariamultiline",
+      "linkingText": [
+        "ariaMultiLine"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaMultiLine"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariamultiselectable",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariamultiselectable",
+      "linkingText": [
+        "ariaMultiSelectable"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaMultiSelectable"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaorientation",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariaorientation",
+      "linkingText": [
+        "ariaOrientation"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaOrientation"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaownselements",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariaownselements",
+      "linkingText": [
+        "ariaOwnsElements"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaOwnsElements"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaplaceholder",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariaplaceholder",
+      "linkingText": [
+        "ariaPlaceholder"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaPlaceholder"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaposinset",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariaposinset",
+      "linkingText": [
+        "ariaPosInSet"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaPosInSet"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariapressed",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariapressed",
+      "linkingText": [
+        "ariaPressed"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaPressed"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariareadonly",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariareadonly",
+      "linkingText": [
+        "ariaReadOnly"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaReadOnly"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariarelevant",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariarelevant",
+      "linkingText": [
+        "ariaRelevant"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaRelevant"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariarequired",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariarequired",
+      "linkingText": [
+        "ariaRequired"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaRequired"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaroledescription",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariaroledescription",
+      "linkingText": [
+        "ariaRoleDescription"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaRoleDescription"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariarowcount",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariarowcount",
+      "linkingText": [
+        "ariaRowCount"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaRowCount"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariarowindex",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariarowindex",
+      "linkingText": [
+        "ariaRowIndex"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaRowIndex"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariarowindextext",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariarowindextext",
+      "linkingText": [
+        "ariaRowIndexText"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaRowIndexText"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariarowspan",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariarowspan",
+      "linkingText": [
+        "ariaRowSpan"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaRowSpan"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaselected",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariaselected",
+      "linkingText": [
+        "ariaSelected"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaSelected"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariasetsize",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariasetsize",
+      "linkingText": [
+        "ariaSetSize"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaSetSize"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariasort",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariasort",
+      "linkingText": [
+        "ariaSort"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaSort"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariavaluemax",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariavaluemax",
+      "linkingText": [
+        "ariaValueMax"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaValueMax"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariavaluemin",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariavaluemin",
+      "linkingText": [
+        "ariaValueMin"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaValueMin"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariavaluenow",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariavaluenow",
+      "linkingText": [
+        "ariaValueNow"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaValueNow"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariavaluetext",
+      "href": "https://rawgit.com/w3c/aria/master/#dom-ariaattributes-ariavaluetext",
+      "linkingText": [
+        "ariaValueText"
+      ],
+      "localLinkingText": [
+        "AriaAttributes.ariaValueText"
+      ],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

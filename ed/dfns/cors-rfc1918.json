@@ -1,0 +1,221 @@
+{
+  "spec": {
+    "title": "CORS and RFC1918",
+    "url": "https://wicg.github.io/cors-rfc1918/"
+  },
+  "dfns": [
+    {
+      "id": "private-address",
+      "href": "https://wicg.github.io/cors-rfc1918/#private-address",
+      "linkingText": [
+        "private address"
+      ],
+      "localLinkingText": [
+        "private"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "local-address",
+      "href": "https://wicg.github.io/cors-rfc1918/#local-address",
+      "linkingText": [
+        "local address"
+      ],
+      "localLinkingText": [
+        "local"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "public-address",
+      "href": "https://wicg.github.io/cors-rfc1918/#public-address",
+      "linkingText": [
+        "public address"
+      ],
+      "localLinkingText": [
+        "public"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "external-request",
+      "href": "https://wicg.github.io/cors-rfc1918/#external-request",
+      "linkingText": [
+        "external request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "internal-request",
+      "href": "https://wicg.github.io/cors-rfc1918/#internal-request",
+      "linkingText": [
+        "internal request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "http-headerdef-access-control-request-external",
+      "href": "https://wicg.github.io/cors-rfc1918/#http-headerdef-access-control-request-external",
+      "linkingText": [
+        "Access-Control-Request-External"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "http-headerdef-access-control-allow-external",
+      "href": "https://wicg.github.io/cors-rfc1918/#http-headerdef-access-control-allow-external",
+      "linkingText": [
+        "Access-Control-Allow-External"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "treat-as-public-address",
+      "href": "https://wicg.github.io/cors-rfc1918/#treat-as-public-address",
+      "linkingText": [
+        "treat-as-public-address"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enumdef-addressspace",
+      "href": "https://wicg.github.io/cors-rfc1918/#enumdef-addressspace",
+      "linkingText": [
+        "AddressSpace"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressspace-local",
+      "href": "https://wicg.github.io/cors-rfc1918/#dom-addressspace-local",
+      "linkingText": [
+        "\"local\"",
+        "local"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AddressSpace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressspace-private",
+      "href": "https://wicg.github.io/cors-rfc1918/#dom-addressspace-private",
+      "linkingText": [
+        "\"private\"",
+        "private"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AddressSpace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressspace-public",
+      "href": "https://wicg.github.io/cors-rfc1918/#dom-addressspace-public",
+      "linkingText": [
+        "\"public\"",
+        "public"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AddressSpace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-addressspace",
+      "href": "https://wicg.github.io/cors-rfc1918/#dom-document-addressspace",
+      "linkingText": [
+        "addressSpace"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-workerglobalscope-addressspace",
+      "href": "https://wicg.github.io/cors-rfc1918/#dom-workerglobalscope-addressspace",
+      "linkingText": [
+        "addressSpace"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cache-request-network-type",
+      "href": "https://wicg.github.io/cors-rfc1918/#cache-request-network-type",
+      "linkingText": [
+        "request network type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cache"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "address-space",
+      "href": "https://wicg.github.io/cors-rfc1918/#address-space",
+      "linkingText": [
+        "address space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

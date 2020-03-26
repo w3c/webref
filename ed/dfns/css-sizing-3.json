@@ -1,0 +1,835 @@
+{
+  "spec": {
+    "title": "CSS Box Sizing Module Level 3",
+    "url": "https://drafts.csswg.org/css-sizing-3/"
+  },
+  "dfns": [
+    {
+      "id": "size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inner-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#inner-size",
+      "linkingText": [
+        "inner size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "outer-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#outer-size",
+      "linkingText": [
+        "outer size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "definite",
+      "href": "https://drafts.csswg.org/css-sizing-3/#definite",
+      "linkingText": [
+        "definite",
+        "definite size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "indefinite",
+      "href": "https://drafts.csswg.org/css-sizing-3/#indefinite",
+      "linkingText": [
+        "indefinite",
+        "indefinite size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "available",
+      "href": "https://drafts.csswg.org/css-sizing-3/#available",
+      "linkingText": [
+        "available space",
+        "available inline space",
+        "available block space"
+      ],
+      "localLinkingText": [
+        "available"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stretch-fit",
+      "href": "https://drafts.csswg.org/css-sizing-3/#stretch-fit",
+      "linkingText": [
+        "stretch fit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fallback",
+      "href": "https://drafts.csswg.org/css-sizing-3/#fallback",
+      "linkingText": [
+        "fallback",
+        "fallback size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stretch-fit-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#stretch-fit-size",
+      "linkingText": [
+        "stretch-fit size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stretch-fit-inline-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#stretch-fit-inline-size",
+      "linkingText": [
+        "stretch-fit inline size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stretch-fit-block-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#stretch-fit-block-size",
+      "linkingText": [
+        "stretch-fit block size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "max-content",
+      "href": "https://drafts.csswg.org/css-sizing-3/#max-content",
+      "linkingText": [
+        "max-content",
+        "max-content size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "max-content-inline-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#max-content-inline-size",
+      "linkingText": [
+        "max-content inline size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "max-content-block-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#max-content-block-size",
+      "linkingText": [
+        "max-content block size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "min-content",
+      "href": "https://drafts.csswg.org/css-sizing-3/#min-content",
+      "linkingText": [
+        "min-content",
+        "min-content size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "min-content-inline-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#min-content-inline-size",
+      "linkingText": [
+        "min-content inline size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "min-content-block-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#min-content-block-size",
+      "linkingText": [
+        "min-content block size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fit-content-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#fit-content-size",
+      "linkingText": [
+        "fit-content size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fit-content-inline-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#fit-content-inline-size",
+      "linkingText": [
+        "fit-content inline size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fit-content-block-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#fit-content-block-size",
+      "linkingText": [
+        "fit-content block size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "intrinsic-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#intrinsic-size",
+      "linkingText": [
+        "intrinsic size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "max-content-contribution",
+      "href": "https://drafts.csswg.org/css-sizing-3/#max-content-contribution",
+      "linkingText": [
+        "max-content contribution",
+        "max-content inline-size contribution",
+        "max-content block-size contribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "min-content-contribution",
+      "href": "https://drafts.csswg.org/css-sizing-3/#min-content-contribution",
+      "linkingText": [
+        "min-content contribution",
+        "min-content inline-size contribution",
+        "min-content block-size contribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "intrinsic-size-contribution",
+      "href": "https://drafts.csswg.org/css-sizing-3/#intrinsic-size-contribution",
+      "linkingText": [
+        "intrinsic size contribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "constraints",
+      "href": "https://drafts.csswg.org/css-sizing-3/#constraints",
+      "linkingText": [
+        "intrinsic size constraint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "max-content-constraint",
+      "href": "https://drafts.csswg.org/css-sizing-3/#max-content-constraint",
+      "linkingText": [
+        "max-content constraint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "min-content-constraint",
+      "href": "https://drafts.csswg.org/css-sizing-3/#min-content-constraint",
+      "linkingText": [
+        "min-content constraint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "sizing-property",
+      "href": "https://drafts.csswg.org/css-sizing-3/#sizing-property",
+      "linkingText": [
+        "sizing property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "preferred-size-properties",
+      "href": "https://drafts.csswg.org/css-sizing-3/#preferred-size-properties",
+      "linkingText": [
+        "preferred size property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-width",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-height",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "preferred-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#preferred-size",
+      "linkingText": [
+        "preferred size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "width",
+      "href": "https://drafts.csswg.org/css-sizing-3/#width",
+      "linkingText": [
+        "width",
+        "preferred width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "height",
+      "href": "https://drafts.csswg.org/css-sizing-3/#height",
+      "linkingText": [
+        "height",
+        "preferred height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "min-size-properties",
+      "href": "https://drafts.csswg.org/css-sizing-3/#min-size-properties",
+      "linkingText": [
+        "min size property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-min-width",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-min-width",
+      "linkingText": [
+        "min-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-min-height",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-min-height",
+      "linkingText": [
+        "min-height"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "min-width",
+      "href": "https://drafts.csswg.org/css-sizing-3/#min-width",
+      "linkingText": [
+        "min width",
+        "minimum width",
+        "min size",
+        "minimum size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "min-height",
+      "href": "https://drafts.csswg.org/css-sizing-3/#min-height",
+      "linkingText": [
+        "min height",
+        "minimum height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "max-size-properties",
+      "href": "https://drafts.csswg.org/css-sizing-3/#max-size-properties",
+      "linkingText": [
+        "max size property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-max-width",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-max-width",
+      "linkingText": [
+        "max-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-max-height",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-max-height",
+      "linkingText": [
+        "max-height"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "max-width",
+      "href": "https://drafts.csswg.org/css-sizing-3/#max-width",
+      "linkingText": [
+        "max width",
+        "maximum width",
+        "max size",
+        "maximum size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "max-height",
+      "href": "https://drafts.csswg.org/css-sizing-3/#max-height",
+      "linkingText": [
+        "max height",
+        "maximum height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-width-length-percentage",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-length-percentage",
+      "linkingText": [
+        "<length-percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "width",
+        "min-width",
+        "max-width",
+        "height",
+        "min-height",
+        "max-height"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-width-auto",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "width",
+        "height",
+        "min-width",
+        "min-height"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "automatic-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#automatic-size",
+      "linkingText": [
+        "automatic size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "automatic-minimum-size",
+      "href": "https://drafts.csswg.org/css-sizing-3/#automatic-minimum-size",
+      "linkingText": [
+        "automatic minimum size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-max-width-none",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-max-width-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "max-width",
+        "max-height"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-width-min-content",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-min-content",
+      "linkingText": [
+        "min-content"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "width",
+        "min-width",
+        "max-width",
+        "height",
+        "min-height",
+        "max-height"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-width-max-content",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-max-content",
+      "linkingText": [
+        "max-content"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "width",
+        "min-width",
+        "max-width",
+        "height",
+        "min-height",
+        "max-height"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-width-fit-content-length-percentage",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-width-fit-content-length-percentage",
+      "linkingText": [
+        "fit-content(<length-percentage>)"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "width",
+        "min-width",
+        "max-width",
+        "height",
+        "min-height",
+        "max-height"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "behave-as-auto",
+      "href": "https://drafts.csswg.org/css-sizing-3/#behave-as-auto",
+      "linkingText": [
+        "behave as auto",
+        "behaves as auto",
+        "behaving as auto"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-box-sizing",
+      "href": "https://drafts.csswg.org/css-sizing-3/#propdef-box-sizing",
+      "linkingText": [
+        "box-sizing"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-box-sizing-content-box",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-box-sizing-content-box",
+      "linkingText": [
+        "content-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "box-sizing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-box-sizing-border-box",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-box-sizing-border-box",
+      "linkingText": [
+        "border-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "box-sizing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-column-width-min-content",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-column-width-min-content",
+      "linkingText": [
+        "min-content"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "column-width"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-column-width-max-content",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-column-width-max-content",
+      "linkingText": [
+        "max-content"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "column-width"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-column-width-fit-content-length-percentage",
+      "href": "https://drafts.csswg.org/css-sizing-3/#valdef-column-width-fit-content-length-percentage",
+      "linkingText": [
+        "fit-content(<length-percentage>)"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "column-width"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "intrinsic-sizing",
+      "href": "https://drafts.csswg.org/css-sizing-3/#intrinsic-sizing",
+      "linkingText": [
+        "Intrinsic sizing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-intrinsic-sizes",
+      "href": "https://drafts.csswg.org/css-sizing-3/#dfn-intrinsic-sizes",
+      "linkingText": [
+        "intrinsic sizes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "extrinsic-sizing",
+      "href": "https://drafts.csswg.org/css-sizing-3/#extrinsic-sizing",
+      "linkingText": [
+        "Extrinsic sizing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cyclic-percentage",
+      "href": "https://drafts.csswg.org/css-sizing-3/#cyclic-percentage",
+      "linkingText": [
+        "cyclic percentage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

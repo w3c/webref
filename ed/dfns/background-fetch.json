@@ -1,0 +1,1722 @@
+{
+  "spec": {
+    "title": "Background Fetch",
+    "url": "https://wicg.github.io/background-fetch/"
+  },
+  "dfns": [
+    {
+      "id": "temporarily-unavailable",
+      "href": "https://wicg.github.io/background-fetch/#temporarily-unavailable",
+      "linkingText": [
+        "temporarily unavailable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-task-source",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-task-source",
+      "linkingText": [
+        "background fetch task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "queue-a-bgfetch-task",
+      "href": "https://wicg.github.io/background-fetch/#queue-a-bgfetch-task",
+      "linkingText": [
+        "queue a bgfetch task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "service-worker-registration-active-background-fetches",
+      "href": "https://wicg.github.io/background-fetch/#service-worker-registration-active-background-fetches",
+      "linkingText": [
+        "Active background fetches"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker registration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "service-worker-registration-active-background-fetches-edit-queue",
+      "href": "https://wicg.github.io/background-fetch/#service-worker-registration-active-background-fetches-edit-queue",
+      "linkingText": [
+        "active background fetches edit queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker registration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch",
+      "linkingText": [
+        "background fetch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-id",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-records",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-records",
+      "linkingText": [
+        "Records"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-title",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-title",
+      "linkingText": [
+        "title"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-download-total",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-download-total",
+      "linkingText": [
+        "download total"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-upload-total",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-upload-total",
+      "linkingText": [
+        "upload total"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-uploaded",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-uploaded",
+      "linkingText": [
+        "uploaded"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-result",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-result",
+      "linkingText": [
+        "result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-failure-reason",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-failure-reason",
+      "linkingText": [
+        "failure reason"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-records-available-flag",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-records-available-flag",
+      "linkingText": [
+        "records available flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-icons",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-icons",
+      "linkingText": [
+        "Icons"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-service-worker-registration",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-service-worker-registration",
+      "linkingText": [
+        "service worker registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-update-handling-queue",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-update-handling-queue",
+      "linkingText": [
+        "update handling queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-paused-flag",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-paused-flag",
+      "linkingText": [
+        "paused flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-abort-all-flag",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-abort-all-flag",
+      "linkingText": [
+        "abort all flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-stored-body-bytes-total",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-stored-body-bytes-total",
+      "linkingText": [
+        "stored body bytes total"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-display",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-display",
+      "linkingText": [
+        "display"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-record",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-record",
+      "linkingText": [
+        "background fetch record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-record-request",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-record-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch record"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-record-response-data",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-record-response-data",
+      "linkingText": [
+        "response data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch record"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-response",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-response",
+      "linkingText": [
+        "Background fetch response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-response-response",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-response-response",
+      "linkingText": [
+        "response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch response"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-response-bytes",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-response-bytes",
+      "linkingText": [
+        "Bytes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch response"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-response-result",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-response-result",
+      "linkingText": [
+        "result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch response"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-response-exposed",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-response-exposed",
+      "linkingText": [
+        "exposed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "background fetch response"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "perform-a-background-fetch",
+      "href": "https://wicg.github.io/background-fetch/#perform-a-background-fetch",
+      "linkingText": [
+        "perform a background fetch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "complete-a-record",
+      "href": "https://wicg.github.io/background-fetch/#complete-a-record",
+      "linkingText": [
+        "complete a record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "update-background-fetch-instances",
+      "href": "https://wicg.github.io/background-fetch/#update-background-fetch-instances",
+      "linkingText": [
+        "update background fetch instances"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fire-a-background-fetch-click-event",
+      "href": "https://wicg.github.io/background-fetch/#fire-a-background-fetch-click-event",
+      "linkingText": [
+        "fire a background fetch click event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "get-a-backgroundfetchregistration-instance",
+      "href": "https://wicg.github.io/background-fetch/#get-a-backgroundfetchregistration-instance",
+      "linkingText": [
+        "get a BackgroundFetchRegistration instance",
+        "getting a BackgroundFetchRegistration instance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "validate-a-partial-response",
+      "href": "https://wicg.github.io/background-fetch/#validate-a-partial-response",
+      "linkingText": [
+        "validate a partial response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "extract-content-range-values",
+      "href": "https://wicg.github.io/background-fetch/#extract-content-range-values",
+      "linkingText": [
+        "extract content-range values",
+        "extracting content-range values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-record-objects",
+      "href": "https://wicg.github.io/background-fetch/#create-record-objects",
+      "linkingText": [
+        "create record objects",
+        "creating record objects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "contains-background-fetch",
+      "href": "https://wicg.github.io/background-fetch/#contains-background-fetch",
+      "linkingText": [
+        "contains background fetch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "does-not-contain-background-fetch",
+      "href": "https://wicg.github.io/background-fetch/#does-not-contain-background-fetch",
+      "linkingText": [
+        "does not contain background fetch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "single-byte-content-range",
+      "href": "https://wicg.github.io/background-fetch/#single-byte-content-range",
+      "linkingText": [
+        "single byte content-range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-onbackgroundfetchsuccess",
+      "href": "https://wicg.github.io/background-fetch/#dom-serviceworkerglobalscope-onbackgroundfetchsuccess",
+      "linkingText": [
+        "onbackgroundfetchsuccess"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-onbackgroundfetchfail",
+      "href": "https://wicg.github.io/background-fetch/#dom-serviceworkerglobalscope-onbackgroundfetchfail",
+      "linkingText": [
+        "onbackgroundfetchfail"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-onbackgroundfetchabort",
+      "href": "https://wicg.github.io/background-fetch/#dom-serviceworkerglobalscope-onbackgroundfetchabort",
+      "linkingText": [
+        "onbackgroundfetchabort"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-onbackgroundfetchclick",
+      "href": "https://wicg.github.io/background-fetch/#dom-serviceworkerglobalscope-onbackgroundfetchclick",
+      "linkingText": [
+        "onbackgroundfetchclick"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eventdef-serviceworkerglobalscope-backgroundfetchsuccess",
+      "href": "https://wicg.github.io/background-fetch/#eventdef-serviceworkerglobalscope-backgroundfetchsuccess",
+      "linkingText": [
+        "backgroundfetchsuccess"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eventdef-serviceworkerglobalscope-backgroundfetchfail",
+      "href": "https://wicg.github.io/background-fetch/#eventdef-serviceworkerglobalscope-backgroundfetchfail",
+      "linkingText": [
+        "backgroundfetchfail"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eventdef-serviceworkerglobalscope-backgroundfetchabort",
+      "href": "https://wicg.github.io/background-fetch/#eventdef-serviceworkerglobalscope-backgroundfetchabort",
+      "linkingText": [
+        "backgroundfetchabort"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eventdef-serviceworkerglobalscope-backgroundfetchclick",
+      "href": "https://wicg.github.io/background-fetch/#eventdef-serviceworkerglobalscope-backgroundfetchclick",
+      "linkingText": [
+        "backgroundfetchclick"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serviceworkerregistration-background-fetch-manager",
+      "href": "https://wicg.github.io/background-fetch/#serviceworkerregistration-background-fetch-manager",
+      "linkingText": [
+        "background fetch manager"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerregistration-backgroundfetch",
+      "href": "https://wicg.github.io/background-fetch/#dom-serviceworkerregistration-backgroundfetch",
+      "linkingText": [
+        "backgroundFetch"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchmanager",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchmanager",
+      "linkingText": [
+        "BackgroundFetchManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchmanager-fetch-id-requests-options-id",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchmanager-fetch-id-requests-options-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BackgroundFetchManager/fetch(id, requests, options)",
+        "BackgroundFetchManager/fetch(id, requests)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchmanager-fetch-id-requests-options-requests",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchmanager-fetch-id-requests-options-requests",
+      "linkingText": [
+        "requests"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BackgroundFetchManager/fetch(id, requests, options)",
+        "BackgroundFetchManager/fetch(id, requests)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchmanager-fetch-id-requests-options-options",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchmanager-fetch-id-requests-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BackgroundFetchManager/fetch(id, requests, options)",
+        "BackgroundFetchManager/fetch(id, requests)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchmanager-get-id-id",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchmanager-get-id-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BackgroundFetchManager/get(id)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-backgroundfetchuioptions",
+      "href": "https://wicg.github.io/background-fetch/#dictdef-backgroundfetchuioptions",
+      "linkingText": [
+        "BackgroundFetchUIOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchuioptions-icons",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchuioptions-icons",
+      "linkingText": [
+        "icons"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BackgroundFetchUIOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchuioptions-title",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchuioptions-title",
+      "linkingText": [
+        "title"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BackgroundFetchUIOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-backgroundfetchoptions",
+      "href": "https://wicg.github.io/background-fetch/#dictdef-backgroundfetchoptions",
+      "linkingText": [
+        "BackgroundFetchOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchoptions-downloadtotal",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchoptions-downloadtotal",
+      "linkingText": [
+        "downloadTotal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BackgroundFetchOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchmanager-backgroundfetchregistration-instances",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchmanager-backgroundfetchregistration-instances",
+      "linkingText": [
+        "BackgroundFetchRegistration instances"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BackgroundFetchManager"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchmanager-service-worker-registration",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchmanager-service-worker-registration",
+      "linkingText": [
+        "service worker registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BackgroundFetchManager"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchmanager-fetch",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchmanager-fetch",
+      "linkingText": [
+        "fetch(id, requests, options)",
+        "fetch(id, requests)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "BackgroundFetchManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchmanager-get",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchmanager-get",
+      "linkingText": [
+        "get(id)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "BackgroundFetchManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchmanager-getids",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchmanager-getids",
+      "linkingText": [
+        "getIds()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "BackgroundFetchManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchregistration",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchregistration",
+      "linkingText": [
+        "BackgroundFetchRegistration"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchregistration-match-request-options-request",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-match-request-options-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BackgroundFetchRegistration/match(request, options)",
+        "BackgroundFetchRegistration/match(request)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchregistration-match-request-options-options",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-match-request-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BackgroundFetchRegistration/match(request, options)",
+        "BackgroundFetchRegistration/match(request)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchregistration-matchall-request-options-request",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-matchall-request-options-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BackgroundFetchRegistration/matchAll(request, options)",
+        "BackgroundFetchRegistration/matchAll(request)",
+        "BackgroundFetchRegistration/matchAll()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchregistration-matchall-request-options-options",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-matchall-request-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BackgroundFetchRegistration/matchAll(request, options)",
+        "BackgroundFetchRegistration/matchAll(request)",
+        "BackgroundFetchRegistration/matchAll()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-backgroundfetchresult",
+      "href": "https://wicg.github.io/background-fetch/#enumdef-backgroundfetchresult",
+      "linkingText": [
+        "BackgroundFetchResult"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchresult",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchresult",
+      "linkingText": [
+        "\"\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BackgroundFetchResult"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchresult-success",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchresult-success",
+      "linkingText": [
+        "\"success\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BackgroundFetchResult"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchresult-failure",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchresult-failure",
+      "linkingText": [
+        "\"failure\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BackgroundFetchResult"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-backgroundfetchfailurereason",
+      "href": "https://wicg.github.io/background-fetch/#enumdef-backgroundfetchfailurereason",
+      "linkingText": [
+        "BackgroundFetchFailureReason"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchfailurereason",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchfailurereason",
+      "linkingText": [
+        "\"\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BackgroundFetchFailureReason"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchfailurereason-aborted",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchfailurereason-aborted",
+      "linkingText": [
+        "\"aborted\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BackgroundFetchFailureReason"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchfailurereason-bad-status",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchfailurereason-bad-status",
+      "linkingText": [
+        "\"bad-status\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BackgroundFetchFailureReason"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchfailurereason-fetch-error",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchfailurereason-fetch-error",
+      "linkingText": [
+        "\"fetch-error\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BackgroundFetchFailureReason"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchfailurereason-quota-exceeded",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchfailurereason-quota-exceeded",
+      "linkingText": [
+        "\"quota-exceeded\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BackgroundFetchFailureReason"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchfailurereason-download-total-exceeded",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchfailurereason-download-total-exceeded",
+      "linkingText": [
+        "\"download-total-exceeded\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BackgroundFetchFailureReason"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchregistration-background-fetch",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchregistration-background-fetch",
+      "linkingText": [
+        "background fetch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchregistration-downloaded",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchregistration-downloaded",
+      "linkingText": [
+        "downloaded"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchregistration-uploaded",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchregistration-uploaded",
+      "linkingText": [
+        "uploaded"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchregistration-result",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchregistration-result",
+      "linkingText": [
+        "result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchregistration-failure-reason",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchregistration-failure-reason",
+      "linkingText": [
+        "failure reason"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchregistration-id",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchregistration-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchregistration-upload-total",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchregistration-upload-total",
+      "linkingText": [
+        "upload total"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchregistration-download-total",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchregistration-download-total",
+      "linkingText": [
+        "download total"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchregistration-records-available-flag",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchregistration-records-available-flag",
+      "linkingText": [
+        "records available flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchregistration-id",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchregistration-uploadtotal",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-uploadtotal",
+      "linkingText": [
+        "uploadTotal"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchregistration-downloadtotal",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-downloadtotal",
+      "linkingText": [
+        "downloadTotal"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchregistration-uploaded",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-uploaded",
+      "linkingText": [
+        "uploaded"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchregistration-downloaded",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-downloaded",
+      "linkingText": [
+        "downloaded"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchregistration-result",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-result",
+      "linkingText": [
+        "result"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchregistration-failurereason",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-failurereason",
+      "linkingText": [
+        "failureReason"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchregistration-recordsavailable",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-recordsavailable",
+      "linkingText": [
+        "recordsAvailable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchregistration-onprogress",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-onprogress",
+      "linkingText": [
+        "onprogress"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eventdef-backgroundfetchregistration-progress",
+      "href": "https://wicg.github.io/background-fetch/#eventdef-backgroundfetchregistration-progress",
+      "linkingText": [
+        "progress"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchregistration-abort",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-abort",
+      "linkingText": [
+        "abort()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchregistration-match",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-match",
+      "linkingText": [
+        "match(request, options)",
+        "match(request)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchregistration-matchall",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchregistration-matchall",
+      "linkingText": [
+        "matchAll(request, options)",
+        "matchAll(request)",
+        "matchAll()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "BackgroundFetchRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchrecord",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchrecord",
+      "linkingText": [
+        "BackgroundFetchRecord"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchrecord-request",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchrecord-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BackgroundFetchRecord"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchrecord-response-promise",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchrecord-response-promise",
+      "linkingText": [
+        "response promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BackgroundFetchRecord"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchrecord-request",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchrecord-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BackgroundFetchRecord"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchrecord-responseready",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchrecord-responseready",
+      "linkingText": [
+        "responseReady"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BackgroundFetchRecord"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchevent",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchevent",
+      "linkingText": [
+        "BackgroundFetchEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchevent-backgroundfetchevent",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchevent-backgroundfetchevent",
+      "linkingText": [
+        "BackgroundFetchEvent(type, init)",
+        "constructor(type, init)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "BackgroundFetchEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchevent-constructor-type-init-type",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchevent-constructor-type-init-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BackgroundFetchEvent/constructor(type, init)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchevent-constructor-type-init-init",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchevent-constructor-type-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BackgroundFetchEvent/constructor(type, init)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-backgroundfetcheventinit",
+      "href": "https://wicg.github.io/background-fetch/#dictdef-backgroundfetcheventinit",
+      "linkingText": [
+        "BackgroundFetchEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetcheventinit-registration",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetcheventinit-registration",
+      "linkingText": [
+        "registration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BackgroundFetchEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchevent-background-fetch",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchevent-background-fetch",
+      "linkingText": [
+        "background fetch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BackgroundFetchEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchevent-registration",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchevent-registration",
+      "linkingText": [
+        "registration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BackgroundFetchEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchupdateuievent",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchupdateuievent",
+      "linkingText": [
+        "BackgroundFetchUpdateUIEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchupdateuievent-backgroundfetchupdateuievent",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchupdateuievent-backgroundfetchupdateuievent",
+      "linkingText": [
+        "BackgroundFetchUpdateUIEvent(type, init)",
+        "constructor(type, init)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "BackgroundFetchUpdateUIEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchupdateuievent-constructor-type-init-type",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchupdateuievent-constructor-type-init-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BackgroundFetchUpdateUIEvent/constructor(type, init)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchupdateuievent-constructor-type-init-init",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchupdateuievent-constructor-type-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BackgroundFetchUpdateUIEvent/constructor(type, init)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchupdateuievent-updateui-options-options",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchupdateuievent-updateui-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BackgroundFetchUpdateUIEvent/updateUI(options)",
+        "BackgroundFetchUpdateUIEvent/updateUI()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "backgroundfetchupdateuievent-ui-updated-flag",
+      "href": "https://wicg.github.io/background-fetch/#backgroundfetchupdateuievent-ui-updated-flag",
+      "linkingText": [
+        "UI updated flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BackgroundFetchUpdateUIEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-backgroundfetchupdateuievent-updateui",
+      "href": "https://wicg.github.io/background-fetch/#dom-backgroundfetchupdateuievent-updateui",
+      "linkingText": [
+        "updateUI(options)",
+        "updateUI()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "BackgroundFetchUpdateUIEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "background-fetch-click",
+      "href": "https://wicg.github.io/background-fetch/#background-fetch-click",
+      "linkingText": [
+        "background fetch click"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

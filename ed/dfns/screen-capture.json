@@ -1,0 +1,821 @@
+{
+  "spec": {
+    "title": "Screen Capture",
+    "url": "https://w3c.github.io/mediacapture-screen-share/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-user-agents",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-user-agents",
+      "linkingText": [
+        "user agents",
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-create",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-create",
+      "linkingText": [
+        "create"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fulfill",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-fulfill",
+      "linkingText": [
+        "fulfill",
+        "fulfillment",
+        "fulfilled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-reject",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-reject",
+      "linkingText": [
+        "reject",
+        "rejection",
+        "rejecting",
+        "rejected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-resolve",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-resolve",
+      "linkingText": [
+        "resolve",
+        "resolves",
+        "resolved"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pending",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-settled",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-settled",
+      "linkingText": [
+        "settled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-display-surface",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-display-surface",
+      "linkingText": [
+        "display surface",
+        "display surfaces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-monitor",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-monitor",
+      "linkingText": [
+        "monitor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-windows",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-windows",
+      "linkingText": [
+        "windows",
+        "window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-application",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-application",
+      "linkingText": [
+        "application"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-browser",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-browser",
+      "linkingText": [
+        "browser"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-logical-display-surfaces",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-logical-display-surfaces",
+      "linkingText": [
+        "logical display surfaces",
+        "logical display surface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-visible-display-surface",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-visible-display-surface",
+      "linkingText": [
+        "visible display surface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-source-pixel-ratio",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-source-pixel-ratio",
+      "linkingText": [
+        "source pixel ratio"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-permission",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-permission",
+      "linkingText": [
+        "permission"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-retrieve-the-permission-state",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-retrieve-the-permission-state",
+      "linkingText": [
+        "retrieve the permission state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "prompt-the-user-to-choose",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#prompt-the-user-to-choose",
+      "linkingText": [
+        "prompt the user to choose"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-permission",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#create-permission",
+      "linkingText": [
+        "create a permission storage entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-devicechange",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-devicechange",
+      "linkingText": [
+        "devicechange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksupportedconstraints",
+      "linkingText": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackconstraintset",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackconstraintset",
+      "linkingText": [
+        "MediaTrackConstraintSet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksettings",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksettings",
+      "linkingText": [
+        "MediaTrackSettings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediadevices",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediadevices",
+      "linkingText": [
+        "MediaDevices"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediadevices-getdisplaymedia",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediadevices-getdisplaymedia",
+      "linkingText": [
+        "MediaDevices.getDisplayMedia()",
+        "MediaDevices.getDisplayMedia",
+        "getDisplayMedia()",
+        "getDisplayMedia"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaDevices"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-applyconstraints-algorithm",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-applyconstraints-algorithm",
+      "linkingText": [
+        "ApplyConstraints algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-width",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-height",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-framerate",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-framerate",
+      "linkingText": [
+        "frameRate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-aspectratio",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-aspectratio",
+      "linkingText": [
+        "aspectRatio"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-resizemode",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-resizemode",
+      "linkingText": [
+        "resizeMode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-displaysurface",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-displaysurface",
+      "linkingText": [
+        "displaySurface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-logicalsurface",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-logicalsurface",
+      "linkingText": [
+        "logicalSurface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-cursor",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-cursor",
+      "linkingText": [
+        "cursor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-restrictownaudio",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-restrictownaudio",
+      "linkingText": [
+        "restrictOwnAudio"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-own-audio-restriction",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-own-audio-restriction",
+      "linkingText": [
+        "own audio restriction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-floor-value",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-floor-value",
+      "linkingText": [
+        "floor value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-displaymediastreamconstraints",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamconstraints",
+      "linkingText": [
+        "DisplayMediaStreamConstraints"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-displaymediastreamconstraints-video",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamconstraints-video",
+      "linkingText": [
+        "video"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DisplayMediaStreamConstraints"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-displaymediastreamconstraints-audio",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamconstraints-audio",
+      "linkingText": [
+        "audio"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DisplayMediaStreamConstraints"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-displaysurface",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksupportedconstraints-displaysurface",
+      "linkingText": [
+        "displaySurface"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-logicalsurface",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksupportedconstraints-logicalsurface",
+      "linkingText": [
+        "logicalSurface"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-cursor",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksupportedconstraints-cursor",
+      "linkingText": [
+        "cursor"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-restrictownaudio",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksupportedconstraints-restrictownaudio",
+      "linkingText": [
+        "restrictOwnAudio"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackconstraintset-displaysurface",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackconstraintset-displaysurface",
+      "linkingText": [
+        "displaySurface"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackconstraintset-logicalsurface",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackconstraintset-logicalsurface",
+      "linkingText": [
+        "logicalSurface"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackconstraintset-cursor",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackconstraintset-cursor",
+      "linkingText": [
+        "cursor"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackconstraintset-restrictownaudio",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatrackconstraintset-restrictownaudio",
+      "linkingText": [
+        "restrictOwnAudio"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksettings-displaysurface",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksettings-displaysurface",
+      "linkingText": [
+        "displaySurface"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksettings-logicalsurface",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksettings-logicalsurface",
+      "linkingText": [
+        "logicalSurface"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksettings-cursor",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-mediatracksettings-cursor",
+      "linkingText": [
+        "cursor"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-displaycapturesurfacetype",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaycapturesurfacetype",
+      "linkingText": [
+        "DisplayCaptureSurfaceType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-displaycapturesurfacetype-monitor",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaycapturesurfacetype-monitor",
+      "linkingText": [
+        "monitor"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "DisplayCaptureSurfaceType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-displaycapturesurfacetype-window",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaycapturesurfacetype-window",
+      "linkingText": [
+        "window"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "DisplayCaptureSurfaceType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-displaycapturesurfacetype-application",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaycapturesurfacetype-application",
+      "linkingText": [
+        "application"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "DisplayCaptureSurfaceType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-displaycapturesurfacetype-browser",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-displaycapturesurfacetype-browser",
+      "linkingText": [
+        "browser"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "DisplayCaptureSurfaceType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cursorcaptureconstraint",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-cursorcaptureconstraint",
+      "linkingText": [
+        "CursorCaptureConstraint"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cursorcaptureconstraint-never",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-cursorcaptureconstraint-never",
+      "linkingText": [
+        "never"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CursorCaptureConstraint"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cursorcaptureconstraint-always",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-cursorcaptureconstraint-always",
+      "linkingText": [
+        "always"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CursorCaptureConstraint"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cursorcaptureconstraint-motion",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dom-cursorcaptureconstraint-motion",
+      "linkingText": [
+        "motion"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CursorCaptureConstraint"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-display-capture-feature",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-display-capture-feature",
+      "linkingText": [
+        "display-capture-feature",
+        "display-capture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-active-user-consent",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-active-user-consent",
+      "linkingText": [
+        "Active user consent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-elevated-permissions",
+      "href": "https://w3c.github.io/mediacapture-screen-share/#dfn-elevated-permissions",
+      "linkingText": [
+        "elevated permissions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,5246 @@
+{
+  "spec": {
+    "title": "Web IDL",
+    "url": "https://heycam.github.io/webidl/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-idl-fragment",
+      "href": "https://heycam.github.io/webidl/#dfn-idl-fragment",
+      "linkingText": [
+        "IDL fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-definition",
+      "href": "https://heycam.github.io/webidl/#dfn-definition",
+      "linkingText": [
+        "definitions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-named-definition",
+      "href": "https://heycam.github.io/webidl/#dfn-named-definition",
+      "linkingText": [
+        "named definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-identifier",
+      "href": "https://heycam.github.io/webidl/#dfn-identifier",
+      "linkingText": [
+        "identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-reserved-identifier",
+      "href": "https://heycam.github.io/webidl/#dfn-reserved-identifier",
+      "linkingText": [
+        "reserved identifiers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-interface",
+      "href": "https://heycam.github.io/webidl/#dfn-interface",
+      "linkingText": [
+        "interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-interface-member",
+      "href": "https://heycam.github.io/webidl/#dfn-interface-member",
+      "linkingText": [
+        "interface member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-inherit",
+      "href": "https://heycam.github.io/webidl/#dfn-inherit",
+      "linkingText": [
+        "inherit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "interface"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-inherited-interfaces",
+      "href": "https://heycam.github.io/webidl/#dfn-inherited-interfaces",
+      "linkingText": [
+        "inherited interfaces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "interface-inclusive-inherited-interfaces",
+      "href": "https://heycam.github.io/webidl/#interface-inclusive-inherited-interfaces",
+      "linkingText": [
+        "inclusive inherited interfaces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "interface"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-partial-interface",
+      "href": "https://heycam.github.io/webidl/#dfn-partial-interface",
+      "linkingText": [
+        "partial interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "qualified-name",
+      "href": "https://heycam.github.io/webidl/#qualified-name",
+      "linkingText": [
+        "qualified name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "interface-mixin",
+      "href": "https://heycam.github.io/webidl/#interface-mixin",
+      "linkingText": [
+        "interface mixin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "interface-mixin-member",
+      "href": "https://heycam.github.io/webidl/#interface-mixin-member",
+      "linkingText": [
+        "interface mixin member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "partial-interface-mixin",
+      "href": "https://heycam.github.io/webidl/#partial-interface-mixin",
+      "linkingText": [
+        "partial interface mixin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "includes-statement",
+      "href": "https://heycam.github.io/webidl/#includes-statement",
+      "linkingText": [
+        "includes statement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "include",
+      "href": "https://heycam.github.io/webidl/#include",
+      "linkingText": [
+        "include"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "interface"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "host-interfaces",
+      "href": "https://heycam.github.io/webidl/#host-interfaces",
+      "linkingText": [
+        "host interfaces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-callback-interface",
+      "href": "https://heycam.github.io/webidl/#dfn-callback-interface",
+      "linkingText": [
+        "callback interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "callback-interface-member",
+      "href": "https://heycam.github.io/webidl/#callback-interface-member",
+      "linkingText": [
+        "callback interface member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-member",
+      "href": "https://heycam.github.io/webidl/#dfn-member",
+      "linkingText": [
+        "members"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "this",
+      "href": "https://heycam.github.io/webidl/#this",
+      "linkingText": [
+        "this"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "the-given-value",
+      "href": "https://heycam.github.io/webidl/#the-given-value",
+      "linkingText": [
+        "the given value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-constant",
+      "href": "https://heycam.github.io/webidl/#dfn-constant",
+      "linkingText": [
+        "constant"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-attribute",
+      "href": "https://heycam.github.io/webidl/#dfn-attribute",
+      "linkingText": [
+        "attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-regular-attribute",
+      "href": "https://heycam.github.io/webidl/#dfn-regular-attribute",
+      "linkingText": [
+        "regular attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "get-the-underlying-value",
+      "href": "https://heycam.github.io/webidl/#get-the-underlying-value",
+      "linkingText": [
+        "get the underlying value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-read-only",
+      "href": "https://heycam.github.io/webidl/#dfn-read-only",
+      "linkingText": [
+        "read only"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-inherit-getter",
+      "href": "https://heycam.github.io/webidl/#dfn-inherit-getter",
+      "linkingText": [
+        "inherit its getter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-operation",
+      "href": "https://heycam.github.io/webidl/#dfn-operation",
+      "linkingText": [
+        "operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-regular-operation",
+      "href": "https://heycam.github.io/webidl/#dfn-regular-operation",
+      "linkingText": [
+        "regular operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-return-type",
+      "href": "https://heycam.github.io/webidl/#dfn-return-type",
+      "linkingText": [
+        "return type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-variadic",
+      "href": "https://heycam.github.io/webidl/#dfn-variadic",
+      "linkingText": [
+        "variadic"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-optional-argument",
+      "href": "https://heycam.github.io/webidl/#dfn-optional-argument",
+      "linkingText": [
+        "optional argument"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-optional-argument-default-value",
+      "href": "https://heycam.github.io/webidl/#dfn-optional-argument-default-value",
+      "linkingText": [
+        "default value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "optional argument"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "value-of-string-literal-tokens",
+      "href": "https://heycam.github.io/webidl/#value-of-string-literal-tokens",
+      "linkingText": [
+        "value of string literal tokens"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-code-unit",
+      "href": "https://heycam.github.io/webidl/#dfn-code-unit",
+      "linkingText": [
+        "code units"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-json-types",
+      "href": "https://heycam.github.io/webidl/#dfn-json-types",
+      "linkingText": [
+        "JSON type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-constructors",
+      "href": "https://heycam.github.io/webidl/#idl-constructors",
+      "linkingText": [
+        "Constructor operations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-special-operation",
+      "href": "https://heycam.github.io/webidl/#dfn-special-operation",
+      "linkingText": [
+        "special operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-special-keyword",
+      "href": "https://heycam.github.io/webidl/#dfn-special-keyword",
+      "linkingText": [
+        "special keyword"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-getter",
+      "href": "https://heycam.github.io/webidl/#dfn-getter",
+      "linkingText": [
+        "getter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-setter",
+      "href": "https://heycam.github.io/webidl/#dfn-setter",
+      "linkingText": [
+        "setter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-deleter",
+      "href": "https://heycam.github.io/webidl/#dfn-deleter",
+      "linkingText": [
+        "deleter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-stringifier",
+      "href": "https://heycam.github.io/webidl/#dfn-stringifier",
+      "linkingText": [
+        "stringifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-named-property-getter",
+      "href": "https://heycam.github.io/webidl/#dfn-named-property-getter",
+      "linkingText": [
+        "named property getter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-named-property-setter",
+      "href": "https://heycam.github.io/webidl/#dfn-named-property-setter",
+      "linkingText": [
+        "named property setter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-indexed-property-getter",
+      "href": "https://heycam.github.io/webidl/#dfn-indexed-property-getter",
+      "linkingText": [
+        "indexed property getter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-indexed-property-setter",
+      "href": "https://heycam.github.io/webidl/#dfn-indexed-property-setter",
+      "linkingText": [
+        "indexed property setter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-named-property-deleter",
+      "href": "https://heycam.github.io/webidl/#dfn-named-property-deleter",
+      "linkingText": [
+        "named property deleter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-stringification-behavior",
+      "href": "https://heycam.github.io/webidl/#dfn-stringification-behavior",
+      "linkingText": [
+        "stringification behavior"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-indexed-properties",
+      "href": "https://heycam.github.io/webidl/#idl-indexed-properties",
+      "linkingText": [
+        "Indexed properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-support-indexed-properties",
+      "href": "https://heycam.github.io/webidl/#dfn-support-indexed-properties",
+      "linkingText": [
+        "support indexed properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-supported-property-indices",
+      "href": "https://heycam.github.io/webidl/#dfn-supported-property-indices",
+      "linkingText": [
+        "supported property indices"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-determine-the-value-of-an-indexed-property",
+      "href": "https://heycam.github.io/webidl/#dfn-determine-the-value-of-an-indexed-property",
+      "linkingText": [
+        "determine the value of an indexed property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-set-the-value-of-an-existing-indexed-property",
+      "href": "https://heycam.github.io/webidl/#dfn-set-the-value-of-an-existing-indexed-property",
+      "linkingText": [
+        "set the value of an existing indexed property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-set-the-value-of-a-new-indexed-property",
+      "href": "https://heycam.github.io/webidl/#dfn-set-the-value-of-a-new-indexed-property",
+      "linkingText": [
+        "set the value of a new indexed property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-named-properties",
+      "href": "https://heycam.github.io/webidl/#idl-named-properties",
+      "linkingText": [
+        "Named properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-support-named-properties",
+      "href": "https://heycam.github.io/webidl/#dfn-support-named-properties",
+      "linkingText": [
+        "support named properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-supported-property-names",
+      "href": "https://heycam.github.io/webidl/#dfn-supported-property-names",
+      "linkingText": [
+        "supported property names"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-determine-the-value-of-a-named-property",
+      "href": "https://heycam.github.io/webidl/#dfn-determine-the-value-of-a-named-property",
+      "linkingText": [
+        "determine the value of a named property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-set-the-value-of-an-existing-named-property",
+      "href": "https://heycam.github.io/webidl/#dfn-set-the-value-of-an-existing-named-property",
+      "linkingText": [
+        "set the value of an existing named property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-set-the-value-of-a-new-named-property",
+      "href": "https://heycam.github.io/webidl/#dfn-set-the-value-of-a-new-named-property",
+      "linkingText": [
+        "set the value of a new named property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-delete-an-existing-named-property",
+      "href": "https://heycam.github.io/webidl/#dfn-delete-an-existing-named-property",
+      "linkingText": [
+        "delete an existing named property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-static-attribute",
+      "href": "https://heycam.github.io/webidl/#dfn-static-attribute",
+      "linkingText": [
+        "Static attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-static-operation",
+      "href": "https://heycam.github.io/webidl/#dfn-static-operation",
+      "linkingText": [
+        "static operations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-overloaded",
+      "href": "https://heycam.github.io/webidl/#dfn-overloaded",
+      "linkingText": [
+        "overloaded"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-effective-overload-set",
+      "href": "https://heycam.github.io/webidl/#dfn-effective-overload-set",
+      "linkingText": [
+        "effective overload set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "effective-overload-set-tuple-callable",
+      "href": "https://heycam.github.io/webidl/#effective-overload-set-tuple-callable",
+      "linkingText": [
+        "callable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "effective overload set tuple"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "type-list",
+      "href": "https://heycam.github.io/webidl/#type-list",
+      "linkingText": [
+        "type list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "optionality-list",
+      "href": "https://heycam.github.io/webidl/#optionality-list",
+      "linkingText": [
+        "optionality list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-optionality-value",
+      "href": "https://heycam.github.io/webidl/#dfn-optionality-value",
+      "linkingText": [
+        "optionality values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "compute-the-effective-overload-set",
+      "href": "https://heycam.github.io/webidl/#compute-the-effective-overload-set",
+      "linkingText": [
+        "compute the effective overload set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-distinguishable",
+      "href": "https://heycam.github.io/webidl/#dfn-distinguishable",
+      "linkingText": [
+        "distinguishable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-distinguishing-argument-index",
+      "href": "https://heycam.github.io/webidl/#dfn-distinguishing-argument-index",
+      "linkingText": [
+        "distinguishing argument index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-iterable",
+      "href": "https://heycam.github.io/webidl/#dfn-iterable",
+      "linkingText": [
+        "iterable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-iterable-declaration",
+      "href": "https://heycam.github.io/webidl/#dfn-iterable-declaration",
+      "linkingText": [
+        "iterable declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-value-iterator",
+      "href": "https://heycam.github.io/webidl/#dfn-value-iterator",
+      "linkingText": [
+        "value iterator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-pair-iterator",
+      "href": "https://heycam.github.io/webidl/#dfn-pair-iterator",
+      "linkingText": [
+        "pair iterator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "value-pair",
+      "href": "https://heycam.github.io/webidl/#value-pair",
+      "linkingText": [
+        "value pair"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "value-pair-key",
+      "href": "https://heycam.github.io/webidl/#value-pair-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "value pair"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "value-pair-value",
+      "href": "https://heycam.github.io/webidl/#value-pair-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "value pair"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-value-pairs-to-iterate-over",
+      "href": "https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over",
+      "linkingText": [
+        "value pairs to iterate over"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-async-iterable-declaration",
+      "href": "https://heycam.github.io/webidl/#dfn-async-iterable-declaration",
+      "linkingText": [
+        "asynchronously iterable declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-get-the-next-iteration-result",
+      "href": "https://heycam.github.io/webidl/#dfn-get-the-next-iteration-result",
+      "linkingText": [
+        "get the next iteration result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "asynchronous-iterator-return",
+      "href": "https://heycam.github.io/webidl/#asynchronous-iterator-return",
+      "linkingText": [
+        "asynchronous iterator return"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "asynchronous-iterator-initialization-steps",
+      "href": "https://heycam.github.io/webidl/#asynchronous-iterator-initialization-steps",
+      "linkingText": [
+        "asynchronous iterator initialization steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "sessionmanager-async-iterator-current-state",
+      "href": "https://heycam.github.io/webidl/#sessionmanager-async-iterator-current-state",
+      "linkingText": [
+        "current state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SessionManager async iterator"
+      ],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-maplike",
+      "href": "https://heycam.github.io/webidl/#dfn-maplike",
+      "linkingText": [
+        "maplike"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-maplike-declaration",
+      "href": "https://heycam.github.io/webidl/#dfn-maplike-declaration",
+      "linkingText": [
+        "maplike declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-map-entries",
+      "href": "https://heycam.github.io/webidl/#dfn-map-entries",
+      "linkingText": [
+        "map entries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-setlike",
+      "href": "https://heycam.github.io/webidl/#dfn-setlike",
+      "linkingText": [
+        "setlike"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-setlike-declaration",
+      "href": "https://heycam.github.io/webidl/#dfn-setlike-declaration",
+      "linkingText": [
+        "setlike declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-set-entries",
+      "href": "https://heycam.github.io/webidl/#dfn-set-entries",
+      "linkingText": [
+        "set entries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-namespace",
+      "href": "https://heycam.github.io/webidl/#dfn-namespace",
+      "linkingText": [
+        "namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-namespace-member",
+      "href": "https://heycam.github.io/webidl/#dfn-namespace-member",
+      "linkingText": [
+        "namespace member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-partial-namespace",
+      "href": "https://heycam.github.io/webidl/#dfn-partial-namespace",
+      "linkingText": [
+        "partial namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-dictionary",
+      "href": "https://heycam.github.io/webidl/#dfn-dictionary",
+      "linkingText": [
+        "dictionary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-dictionary-member",
+      "href": "https://heycam.github.io/webidl/#dfn-dictionary-member",
+      "linkingText": [
+        "dictionary members"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-inherit-dictionary",
+      "href": "https://heycam.github.io/webidl/#dfn-inherit-dictionary",
+      "linkingText": [
+        "inherit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "dictionary"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-inherited-dictionaries",
+      "href": "https://heycam.github.io/webidl/#dfn-inherited-dictionaries",
+      "linkingText": [
+        "inherited dictionaries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "required-dictionary-member",
+      "href": "https://heycam.github.io/webidl/#required-dictionary-member",
+      "linkingText": [
+        "required"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "dictionary member"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictionary-member-optional",
+      "href": "https://heycam.github.io/webidl/#dictionary-member-optional",
+      "linkingText": [
+        "optional"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "dictionary member"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-dictionary-member-default-value",
+      "href": "https://heycam.github.io/webidl/#dfn-dictionary-member-default-value",
+      "linkingText": [
+        "default value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "dictionary member"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-partial-dictionary",
+      "href": "https://heycam.github.io/webidl/#dfn-partial-dictionary",
+      "linkingText": [
+        "partial dictionary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-exception",
+      "href": "https://heycam.github.io/webidl/#dfn-exception",
+      "linkingText": [
+        "exception"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-exception-error-name",
+      "href": "https://heycam.github.io/webidl/#dfn-exception-error-name",
+      "linkingText": [
+        "error name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exception"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-exception-message",
+      "href": "https://heycam.github.io/webidl/#dfn-exception-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exception"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-simple-exception",
+      "href": "https://heycam.github.io/webidl/#dfn-simple-exception",
+      "linkingText": [
+        "simple exception"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "exceptiondef-evalerror",
+      "href": "https://heycam.github.io/webidl/#exceptiondef-evalerror",
+      "linkingText": [
+        "EvalError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "exceptiondef-rangeerror",
+      "href": "https://heycam.github.io/webidl/#exceptiondef-rangeerror",
+      "linkingText": [
+        "RangeError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "exceptiondef-referenceerror",
+      "href": "https://heycam.github.io/webidl/#exceptiondef-referenceerror",
+      "linkingText": [
+        "ReferenceError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "exceptiondef-typeerror",
+      "href": "https://heycam.github.io/webidl/#exceptiondef-typeerror",
+      "linkingText": [
+        "TypeError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "exceptiondef-urierror",
+      "href": "https://heycam.github.io/webidl/#exceptiondef-urierror",
+      "linkingText": [
+        "URIError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-create-exception",
+      "href": "https://heycam.github.io/webidl/#dfn-create-exception",
+      "linkingText": [
+        "created"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exception"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-throw",
+      "href": "https://heycam.github.io/webidl/#dfn-throw",
+      "linkingText": [
+        "throw"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exception"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-error-names-table",
+      "href": "https://heycam.github.io/webidl/#dfn-error-names-table",
+      "linkingText": [
+        "error names table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "indexsizeerror",
+      "href": "https://heycam.github.io/webidl/#indexsizeerror",
+      "linkingText": [
+        "IndexSizeError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-index_size_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-index_size_err",
+      "linkingText": [
+        "INDEX_SIZE_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "domstringsizeerror",
+      "href": "https://heycam.github.io/webidl/#domstringsizeerror",
+      "linkingText": [
+        "DOMStringSizeError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-domstring_size_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-domstring_size_err",
+      "linkingText": [
+        "DOMSTRING_SIZE_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "hierarchyrequesterror",
+      "href": "https://heycam.github.io/webidl/#hierarchyrequesterror",
+      "linkingText": [
+        "HierarchyRequestError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-hierarchy_request_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-hierarchy_request_err",
+      "linkingText": [
+        "HIERARCHY_REQUEST_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "wrongdocumenterror",
+      "href": "https://heycam.github.io/webidl/#wrongdocumenterror",
+      "linkingText": [
+        "WrongDocumentError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-wrong_document_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-wrong_document_err",
+      "linkingText": [
+        "WRONG_DOCUMENT_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "invalidcharactererror",
+      "href": "https://heycam.github.io/webidl/#invalidcharactererror",
+      "linkingText": [
+        "InvalidCharacterError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-invalid_character_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-invalid_character_err",
+      "linkingText": [
+        "INVALID_CHARACTER_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "nodataallowederror",
+      "href": "https://heycam.github.io/webidl/#nodataallowederror",
+      "linkingText": [
+        "NoDataAllowedError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-no_data_allowed_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-no_data_allowed_err",
+      "linkingText": [
+        "NO_DATA_ALLOWED_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "nomodificationallowederror",
+      "href": "https://heycam.github.io/webidl/#nomodificationallowederror",
+      "linkingText": [
+        "NoModificationAllowedError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-no_modification_allowed_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-no_modification_allowed_err",
+      "linkingText": [
+        "NO_MODIFICATION_ALLOWED_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "notfounderror",
+      "href": "https://heycam.github.io/webidl/#notfounderror",
+      "linkingText": [
+        "NotFoundError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-not_found_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-not_found_err",
+      "linkingText": [
+        "NOT_FOUND_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "notsupportederror",
+      "href": "https://heycam.github.io/webidl/#notsupportederror",
+      "linkingText": [
+        "NotSupportedError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-not_supported_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-not_supported_err",
+      "linkingText": [
+        "NOT_SUPPORTED_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inuseattributeerror",
+      "href": "https://heycam.github.io/webidl/#inuseattributeerror",
+      "linkingText": [
+        "InUseAttributeError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-inuse_attribute_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-inuse_attribute_err",
+      "linkingText": [
+        "INUSE_ATTRIBUTE_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "invalidstateerror",
+      "href": "https://heycam.github.io/webidl/#invalidstateerror",
+      "linkingText": [
+        "InvalidStateError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-invalid_state_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-invalid_state_err",
+      "linkingText": [
+        "INVALID_STATE_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "syntaxerror",
+      "href": "https://heycam.github.io/webidl/#syntaxerror",
+      "linkingText": [
+        "SyntaxError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-syntax_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-syntax_err",
+      "linkingText": [
+        "SYNTAX_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "invalidmodificationerror",
+      "href": "https://heycam.github.io/webidl/#invalidmodificationerror",
+      "linkingText": [
+        "InvalidModificationError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-invalid_modification_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-invalid_modification_err",
+      "linkingText": [
+        "INVALID_MODIFICATION_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "namespaceerror",
+      "href": "https://heycam.github.io/webidl/#namespaceerror",
+      "linkingText": [
+        "NamespaceError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-namespace_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-namespace_err",
+      "linkingText": [
+        "NAMESPACE_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "invalidaccesserror",
+      "href": "https://heycam.github.io/webidl/#invalidaccesserror",
+      "linkingText": [
+        "InvalidAccessError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-invalid_access_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-invalid_access_err",
+      "linkingText": [
+        "INVALID_ACCESS_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "validationerror",
+      "href": "https://heycam.github.io/webidl/#validationerror",
+      "linkingText": [
+        "ValidationError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-validation_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-validation_err",
+      "linkingText": [
+        "VALIDATION_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typemismatcherror",
+      "href": "https://heycam.github.io/webidl/#typemismatcherror",
+      "linkingText": [
+        "TypeMismatchError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-type_mismatch_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-type_mismatch_err",
+      "linkingText": [
+        "TYPE_MISMATCH_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "securityerror",
+      "href": "https://heycam.github.io/webidl/#securityerror",
+      "linkingText": [
+        "SecurityError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-security_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-security_err",
+      "linkingText": [
+        "SECURITY_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "networkerror",
+      "href": "https://heycam.github.io/webidl/#networkerror",
+      "linkingText": [
+        "NetworkError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-network_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-network_err",
+      "linkingText": [
+        "NETWORK_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "aborterror",
+      "href": "https://heycam.github.io/webidl/#aborterror",
+      "linkingText": [
+        "AbortError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-abort_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-abort_err",
+      "linkingText": [
+        "ABORT_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "urlmismatcherror",
+      "href": "https://heycam.github.io/webidl/#urlmismatcherror",
+      "linkingText": [
+        "URLMismatchError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-url_mismatch_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-url_mismatch_err",
+      "linkingText": [
+        "URL_MISMATCH_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "quotaexceedederror",
+      "href": "https://heycam.github.io/webidl/#quotaexceedederror",
+      "linkingText": [
+        "QuotaExceededError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-quota_exceeded_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-quota_exceeded_err",
+      "linkingText": [
+        "QUOTA_EXCEEDED_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "timeouterror",
+      "href": "https://heycam.github.io/webidl/#timeouterror",
+      "linkingText": [
+        "TimeoutError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-timeout_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-timeout_err",
+      "linkingText": [
+        "TIMEOUT_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "invalidnodetypeerror",
+      "href": "https://heycam.github.io/webidl/#invalidnodetypeerror",
+      "linkingText": [
+        "InvalidNodeTypeError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-invalid_node_type_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-invalid_node_type_err",
+      "linkingText": [
+        "INVALID_NODE_TYPE_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "datacloneerror",
+      "href": "https://heycam.github.io/webidl/#datacloneerror",
+      "linkingText": [
+        "DataCloneError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-data_clone_err",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-data_clone_err",
+      "linkingText": [
+        "DATA_CLONE_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "encodingerror",
+      "href": "https://heycam.github.io/webidl/#encodingerror",
+      "linkingText": [
+        "EncodingError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "notreadableerror",
+      "href": "https://heycam.github.io/webidl/#notreadableerror",
+      "linkingText": [
+        "NotReadableError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "unknownerror",
+      "href": "https://heycam.github.io/webidl/#unknownerror",
+      "linkingText": [
+        "UnknownError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "constrainterror",
+      "href": "https://heycam.github.io/webidl/#constrainterror",
+      "linkingText": [
+        "ConstraintError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dataerror",
+      "href": "https://heycam.github.io/webidl/#dataerror",
+      "linkingText": [
+        "DataError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transactioninactiveerror",
+      "href": "https://heycam.github.io/webidl/#transactioninactiveerror",
+      "linkingText": [
+        "TransactionInactiveError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readonlyerror",
+      "href": "https://heycam.github.io/webidl/#readonlyerror",
+      "linkingText": [
+        "ReadOnlyError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "versionerror",
+      "href": "https://heycam.github.io/webidl/#versionerror",
+      "linkingText": [
+        "VersionError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "operationerror",
+      "href": "https://heycam.github.io/webidl/#operationerror",
+      "linkingText": [
+        "OperationError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "notallowederror",
+      "href": "https://heycam.github.io/webidl/#notallowederror",
+      "linkingText": [
+        "NotAllowedError"
+      ],
+      "localLinkingText": [],
+      "type": "exception",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-enumeration",
+      "href": "https://heycam.github.io/webidl/#dfn-enumeration",
+      "linkingText": [
+        "enumeration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-enumeration-value",
+      "href": "https://heycam.github.io/webidl/#dfn-enumeration-value",
+      "linkingText": [
+        "enumeration value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-callback-function",
+      "href": "https://heycam.github.io/webidl/#dfn-callback-function",
+      "linkingText": [
+        "callback function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-typedef",
+      "href": "https://heycam.github.io/webidl/#dfn-typedef",
+      "linkingText": [
+        "typedef"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "type-being-given-a-new-name",
+      "href": "https://heycam.github.io/webidl/#type-being-given-a-new-name",
+      "linkingText": [
+        "type being given a new name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-platform-object",
+      "href": "https://heycam.github.io/webidl/#dfn-platform-object",
+      "linkingText": [
+        "platform object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-legacy-platform-object",
+      "href": "https://heycam.github.io/webidl/#dfn-legacy-platform-object",
+      "linkingText": [
+        "Legacy platform objects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-integer-type",
+      "href": "https://heycam.github.io/webidl/#dfn-integer-type",
+      "linkingText": [
+        "integer types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-numeric-type",
+      "href": "https://heycam.github.io/webidl/#dfn-numeric-type",
+      "linkingText": [
+        "numeric types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-primitive-type",
+      "href": "https://heycam.github.io/webidl/#dfn-primitive-type",
+      "linkingText": [
+        "primitive types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-string-type",
+      "href": "https://heycam.github.io/webidl/#dfn-string-type",
+      "linkingText": [
+        "string types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-typed-array-type",
+      "href": "https://heycam.github.io/webidl/#dfn-typed-array-type",
+      "linkingText": [
+        "typed array types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-buffer-source-type",
+      "href": "https://heycam.github.io/webidl/#dfn-buffer-source-type",
+      "linkingText": [
+        "buffer source types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-object-type",
+      "href": "https://heycam.github.io/webidl/#dfn-object-type",
+      "linkingText": [
+        "object types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-type-name",
+      "href": "https://heycam.github.io/webidl/#dfn-type-name",
+      "linkingText": [
+        "type name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-any",
+      "href": "https://heycam.github.io/webidl/#idl-any",
+      "linkingText": [
+        "any"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-specific-type",
+      "href": "https://heycam.github.io/webidl/#dfn-specific-type",
+      "linkingText": [
+        "specific type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-void",
+      "href": "https://heycam.github.io/webidl/#idl-void",
+      "linkingText": [
+        "void"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-boolean",
+      "href": "https://heycam.github.io/webidl/#idl-boolean",
+      "linkingText": [
+        "boolean"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-byte",
+      "href": "https://heycam.github.io/webidl/#idl-byte",
+      "linkingText": [
+        "byte"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-octet",
+      "href": "https://heycam.github.io/webidl/#idl-octet",
+      "linkingText": [
+        "octet"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-short",
+      "href": "https://heycam.github.io/webidl/#idl-short",
+      "linkingText": [
+        "short"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-unsigned-short",
+      "href": "https://heycam.github.io/webidl/#idl-unsigned-short",
+      "linkingText": [
+        "unsigned short"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-long",
+      "href": "https://heycam.github.io/webidl/#idl-long",
+      "linkingText": [
+        "long"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-unsigned-long",
+      "href": "https://heycam.github.io/webidl/#idl-unsigned-long",
+      "linkingText": [
+        "unsigned long"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-long-long",
+      "href": "https://heycam.github.io/webidl/#idl-long-long",
+      "linkingText": [
+        "long long"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-unsigned-long-long",
+      "href": "https://heycam.github.io/webidl/#idl-unsigned-long-long",
+      "linkingText": [
+        "unsigned long long"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-float",
+      "href": "https://heycam.github.io/webidl/#idl-float",
+      "linkingText": [
+        "float"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-unrestricted-float",
+      "href": "https://heycam.github.io/webidl/#idl-unrestricted-float",
+      "linkingText": [
+        "unrestricted float"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-double",
+      "href": "https://heycam.github.io/webidl/#idl-double",
+      "linkingText": [
+        "double"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-unrestricted-double",
+      "href": "https://heycam.github.io/webidl/#idl-unrestricted-double",
+      "linkingText": [
+        "unrestricted double"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-DOMString",
+      "href": "https://heycam.github.io/webidl/#idl-DOMString",
+      "linkingText": [
+        "DOMString"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-ByteString",
+      "href": "https://heycam.github.io/webidl/#idl-ByteString",
+      "linkingText": [
+        "ByteString"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-USVString",
+      "href": "https://heycam.github.io/webidl/#idl-USVString",
+      "linkingText": [
+        "USVString"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-object",
+      "href": "https://heycam.github.io/webidl/#idl-object",
+      "linkingText": [
+        "object"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-symbol",
+      "href": "https://heycam.github.io/webidl/#idl-symbol",
+      "linkingText": [
+        "symbol"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-interface",
+      "href": "https://heycam.github.io/webidl/#idl-interface",
+      "linkingText": [
+        "Interface types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "idl-callback-interface",
+      "href": "https://heycam.github.io/webidl/#idl-callback-interface",
+      "linkingText": [
+        "Callback interface types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-callback-context",
+      "href": "https://heycam.github.io/webidl/#dfn-callback-context",
+      "linkingText": [
+        "callback context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-dictionary",
+      "href": "https://heycam.github.io/webidl/#idl-dictionary",
+      "linkingText": [
+        "Dictionary types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "idl-enumeration",
+      "href": "https://heycam.github.io/webidl/#idl-enumeration",
+      "linkingText": [
+        "Enumeration types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-callback-function",
+      "href": "https://heycam.github.io/webidl/#idl-callback-function",
+      "linkingText": [
+        "Callback function types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-nullable-type",
+      "href": "https://heycam.github.io/webidl/#dfn-nullable-type",
+      "linkingText": [
+        "nullable type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-inner-type",
+      "href": "https://heycam.github.io/webidl/#dfn-inner-type",
+      "linkingText": [
+        "inner type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "nullable types"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-sequence",
+      "href": "https://heycam.github.io/webidl/#idl-sequence",
+      "linkingText": [
+        "sequence"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "sequence-type",
+      "href": "https://heycam.github.io/webidl/#sequence-type",
+      "linkingText": [
+        "sequence type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-record",
+      "href": "https://heycam.github.io/webidl/#idl-record",
+      "linkingText": [
+        "record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "record-type",
+      "href": "https://heycam.github.io/webidl/#record-type",
+      "linkingText": [
+        "record type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-promise",
+      "href": "https://heycam.github.io/webidl/#idl-promise",
+      "linkingText": [
+        "Promise",
+        "Promise<T>"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-promise-type",
+      "href": "https://heycam.github.io/webidl/#dfn-promise-type",
+      "linkingText": [
+        "promise type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-union-type",
+      "href": "https://heycam.github.io/webidl/#dfn-union-type",
+      "linkingText": [
+        "union type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-union-member-type",
+      "href": "https://heycam.github.io/webidl/#dfn-union-member-type",
+      "linkingText": [
+        "member types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "union"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-flattened-union-member-types",
+      "href": "https://heycam.github.io/webidl/#dfn-flattened-union-member-types",
+      "linkingText": [
+        "flattened member types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "union"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-number-of-nullable-member-types",
+      "href": "https://heycam.github.io/webidl/#dfn-number-of-nullable-member-types",
+      "linkingText": [
+        "number of nullable member types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-includes-a-nullable-type",
+      "href": "https://heycam.github.io/webidl/#dfn-includes-a-nullable-type",
+      "linkingText": [
+        "includes a nullable type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "annotated-types",
+      "href": "https://heycam.github.io/webidl/#annotated-types",
+      "linkingText": [
+        "annotated types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "annotated-types-inner-type",
+      "href": "https://heycam.github.io/webidl/#annotated-types-inner-type",
+      "linkingText": [
+        "inner type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "annotated types"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "extended-attributes-applicable-to-types",
+      "href": "https://heycam.github.io/webidl/#extended-attributes-applicable-to-types",
+      "linkingText": [
+        "applicable to types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "extended attributes"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "idl-type-extended-attribute-associated-with",
+      "href": "https://heycam.github.io/webidl/#idl-type-extended-attribute-associated-with",
+      "linkingText": [
+        "extended attribute associated with",
+        "extended attributes associated with"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "IDL type"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "idl-ArrayBuffer",
+      "href": "https://heycam.github.io/webidl/#idl-ArrayBuffer",
+      "linkingText": [
+        "ArrayBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-DataView",
+      "href": "https://heycam.github.io/webidl/#idl-DataView",
+      "linkingText": [
+        "DataView"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-Int8Array",
+      "href": "https://heycam.github.io/webidl/#idl-Int8Array",
+      "linkingText": [
+        "Int8Array"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-Int16Array",
+      "href": "https://heycam.github.io/webidl/#idl-Int16Array",
+      "linkingText": [
+        "Int16Array"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-Int32Array",
+      "href": "https://heycam.github.io/webidl/#idl-Int32Array",
+      "linkingText": [
+        "Int32Array"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-Uint8Array",
+      "href": "https://heycam.github.io/webidl/#idl-Uint8Array",
+      "linkingText": [
+        "Uint8Array"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-Uint16Array",
+      "href": "https://heycam.github.io/webidl/#idl-Uint16Array",
+      "linkingText": [
+        "Uint16Array"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-Uint32Array",
+      "href": "https://heycam.github.io/webidl/#idl-Uint32Array",
+      "linkingText": [
+        "Uint32Array"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-Uint8ClampedArray",
+      "href": "https://heycam.github.io/webidl/#idl-Uint8ClampedArray",
+      "linkingText": [
+        "Uint8ClampedArray"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-Float32Array",
+      "href": "https://heycam.github.io/webidl/#idl-Float32Array",
+      "linkingText": [
+        "Float32Array"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-Float64Array",
+      "href": "https://heycam.github.io/webidl/#idl-Float64Array",
+      "linkingText": [
+        "Float64Array"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-get-buffer-source-reference",
+      "href": "https://heycam.github.io/webidl/#dfn-get-buffer-source-reference",
+      "linkingText": [
+        "get a reference to the buffer source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-get-buffer-source-copy",
+      "href": "https://heycam.github.io/webidl/#dfn-get-buffer-source-copy",
+      "linkingText": [
+        "get a copy of the buffer source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-frozen-array",
+      "href": "https://heycam.github.io/webidl/#idl-frozen-array",
+      "linkingText": [
+        "FrozenArray",
+        "FrozenArray<T>"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-frozen-array-type",
+      "href": "https://heycam.github.io/webidl/#dfn-frozen-array-type",
+      "linkingText": [
+        "frozen array type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-observable-array",
+      "href": "https://heycam.github.io/webidl/#idl-observable-array",
+      "linkingText": [
+        "ObservableArrayT",
+        "ObservableArray<T>"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-observable-array-type",
+      "href": "https://heycam.github.io/webidl/#dfn-observable-array-type",
+      "linkingText": [
+        "observable array type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "observable-array-attribute-set-an-indexed-value",
+      "href": "https://heycam.github.io/webidl/#observable-array-attribute-set-an-indexed-value",
+      "linkingText": [
+        "set an indexed value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "observable array attribute"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "observable-array-attribute-delete-an-indexed-value",
+      "href": "https://heycam.github.io/webidl/#observable-array-attribute-delete-an-indexed-value",
+      "linkingText": [
+        "delete an indexed value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "observable array attribute"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "observable-array-attribute-backing-list",
+      "href": "https://heycam.github.io/webidl/#observable-array-attribute-backing-list",
+      "linkingText": [
+        "backing list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "observable array attribute"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-extended-attribute",
+      "href": "https://heycam.github.io/webidl/#dfn-extended-attribute",
+      "linkingText": [
+        "extended attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-xattr-no-arguments",
+      "href": "https://heycam.github.io/webidl/#dfn-xattr-no-arguments",
+      "linkingText": [
+        "takes no arguments"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "extended attribute"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-xattr-argument-list",
+      "href": "https://heycam.github.io/webidl/#dfn-xattr-argument-list",
+      "linkingText": [
+        "takes an argument list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "extended attribute"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-xattr-named-argument-list",
+      "href": "https://heycam.github.io/webidl/#dfn-xattr-named-argument-list",
+      "linkingText": [
+        "takes a named argument list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "extended attribute"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-xattr-identifier",
+      "href": "https://heycam.github.io/webidl/#dfn-xattr-identifier",
+      "linkingText": [
+        "takes an identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "extended attribute"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-xattr-identifier-list",
+      "href": "https://heycam.github.io/webidl/#dfn-xattr-identifier-list",
+      "linkingText": [
+        "takes an identifier list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "extended attribute"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-class-string",
+      "href": "https://heycam.github.io/webidl/#dfn-class-string",
+      "linkingText": [
+        "class string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ecmascript-throw",
+      "href": "https://heycam.github.io/webidl/#ecmascript-throw",
+      "linkingText": [
+        "ECMAScript throw"
+      ],
+      "localLinkingText": [
+        "throw"
+      ],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-initial-object",
+      "href": "https://heycam.github.io/webidl/#dfn-initial-object",
+      "linkingText": [
+        "initial objects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-associated-realm",
+      "href": "https://heycam.github.io/webidl/#dfn-associated-realm",
+      "linkingText": [
+        "associated Realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-convert-ecmascript-to-idl-value",
+      "href": "https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value",
+      "linkingText": [
+        "converted to an IDL value",
+        "converted to IDL values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-convert-idl-to-ecmascript-value",
+      "href": "https://heycam.github.io/webidl/#dfn-convert-idl-to-ecmascript-value",
+      "linkingText": [
+        "converted to an ECMAScript value",
+        "converted to ECMAScript values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-integerpart",
+      "href": "https://heycam.github.io/webidl/#abstract-opdef-integerpart",
+      "linkingText": [
+        "IntegerPart"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-converttoint",
+      "href": "https://heycam.github.io/webidl/#abstract-opdef-converttoint",
+      "linkingText": [
+        "ConvertToInt"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-sequence-from-iterable",
+      "href": "https://heycam.github.io/webidl/#create-sequence-from-iterable",
+      "linkingText": [
+        "Creating a sequence from an iterable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "a-new-promise",
+      "href": "https://heycam.github.io/webidl/#a-new-promise",
+      "linkingText": [
+        "a new promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "a-promise-resolved-with",
+      "href": "https://heycam.github.io/webidl/#a-promise-resolved-with",
+      "linkingText": [
+        "a promise resolved with"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "a-promise-rejected-with",
+      "href": "https://heycam.github.io/webidl/#a-promise-rejected-with",
+      "linkingText": [
+        "a promise rejected with"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "resolve",
+      "href": "https://heycam.github.io/webidl/#resolve",
+      "linkingText": [
+        "resolve"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "reject",
+      "href": "https://heycam.github.io/webidl/#reject",
+      "linkingText": [
+        "reject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-perform-steps-once-promise-is-settled",
+      "href": "https://heycam.github.io/webidl/#dfn-perform-steps-once-promise-is-settled",
+      "linkingText": [
+        "react",
+        "reacting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "promise"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "upon-fulfillment",
+      "href": "https://heycam.github.io/webidl/#upon-fulfillment",
+      "linkingText": [
+        "upon fulfillment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "upon-rejection",
+      "href": "https://heycam.github.io/webidl/#upon-rejection",
+      "linkingText": [
+        "upon rejection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "wait-for-all",
+      "href": "https://heycam.github.io/webidl/#wait-for-all",
+      "linkingText": [
+        "wait for all",
+        "waiting for all"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "waiting-for-all-promise",
+      "href": "https://heycam.github.io/webidl/#waiting-for-all-promise",
+      "linkingText": [
+        "get a promise to wait for all",
+        "getting a promise to wait for all"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "environment-ready-promise",
+      "href": "https://heycam.github.io/webidl/#environment-ready-promise",
+      "linkingText": [
+        "ready promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Environment"
+      ],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-detach",
+      "href": "https://heycam.github.io/webidl/#dfn-detach",
+      "linkingText": [
+        "detach"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ArrayBuffer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-create-frozen-array",
+      "href": "https://heycam.github.io/webidl/#dfn-create-frozen-array",
+      "linkingText": [
+        "create a frozen array",
+        "creating a frozen array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-frozen-array-from-iterable",
+      "href": "https://heycam.github.io/webidl/#create-frozen-array-from-iterable",
+      "linkingText": [
+        "Creating a frozen array from an iterable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "backing-observable-array-exotic-object",
+      "href": "https://heycam.github.io/webidl/#backing-observable-array-exotic-object",
+      "linkingText": [
+        "backing observable array exotic object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "AllowShared",
+      "href": "https://heycam.github.io/webidl/#AllowShared",
+      "linkingText": [
+        "AllowShared"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "Clamp",
+      "href": "https://heycam.github.io/webidl/#Clamp",
+      "linkingText": [
+        "Clamp"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "Default",
+      "href": "https://heycam.github.io/webidl/#Default",
+      "linkingText": [
+        "Default"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "EnforceRange",
+      "href": "https://heycam.github.io/webidl/#EnforceRange",
+      "linkingText": [
+        "EnforceRange"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "Exposed",
+      "href": "https://heycam.github.io/webidl/#Exposed",
+      "linkingText": [
+        "Exposed"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "own-exposure-set",
+      "href": "https://heycam.github.io/webidl/#own-exposure-set",
+      "linkingText": [
+        "own exposure set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-exposure-set",
+      "href": "https://heycam.github.io/webidl/#dfn-exposure-set",
+      "linkingText": [
+        "exposure set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-exposed",
+      "href": "https://heycam.github.io/webidl/#dfn-exposed",
+      "linkingText": [
+        "exposed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "Global",
+      "href": "https://heycam.github.io/webidl/#Global",
+      "linkingText": [
+        "Global"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-global-name",
+      "href": "https://heycam.github.io/webidl/#dfn-global-name",
+      "linkingText": [
+        "global names"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "LegacyNamespace",
+      "href": "https://heycam.github.io/webidl/#LegacyNamespace",
+      "linkingText": [
+        "LegacyNamespace"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "LegacyUnenumerableNamedProperties",
+      "href": "https://heycam.github.io/webidl/#LegacyUnenumerableNamedProperties",
+      "linkingText": [
+        "LegacyUnenumerableNamedProperties"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "LegacyWindowAlias",
+      "href": "https://heycam.github.io/webidl/#LegacyWindowAlias",
+      "linkingText": [
+        "LegacyWindowAlias"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "legacywindowalias-identifier",
+      "href": "https://heycam.github.io/webidl/#legacywindowalias-identifier",
+      "linkingText": [
+        "LegacyWindowAlias identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "LenientSetter",
+      "href": "https://heycam.github.io/webidl/#LenientSetter",
+      "linkingText": [
+        "LenientSetter"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "LenientThis",
+      "href": "https://heycam.github.io/webidl/#LenientThis",
+      "linkingText": [
+        "LenientThis"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "NamedConstructor",
+      "href": "https://heycam.github.io/webidl/#NamedConstructor",
+      "linkingText": [
+        "NamedConstructor"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "namedconstructor-identifier",
+      "href": "https://heycam.github.io/webidl/#namedconstructor-identifier",
+      "linkingText": [
+        "NamedConstructor identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "NewObject",
+      "href": "https://heycam.github.io/webidl/#NewObject",
+      "linkingText": [
+        "NewObject"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "NoInterfaceObject",
+      "href": "https://heycam.github.io/webidl/#NoInterfaceObject",
+      "linkingText": [
+        "NoInterfaceObject"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "OverrideBuiltins",
+      "href": "https://heycam.github.io/webidl/#OverrideBuiltins",
+      "linkingText": [
+        "OverrideBuiltins"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "PutForwards",
+      "href": "https://heycam.github.io/webidl/#PutForwards",
+      "linkingText": [
+        "PutForwards"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "Replaceable",
+      "href": "https://heycam.github.io/webidl/#Replaceable",
+      "linkingText": [
+        "Replaceable"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "SameObject",
+      "href": "https://heycam.github.io/webidl/#SameObject",
+      "linkingText": [
+        "SameObject"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "SecureContext",
+      "href": "https://heycam.github.io/webidl/#SecureContext",
+      "linkingText": [
+        "SecureContext"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "available-in-both-secure-and-non-secure-contexts",
+      "href": "https://heycam.github.io/webidl/#available-in-both-secure-and-non-secure-contexts",
+      "linkingText": [
+        "available in both secure and non-secure contexts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-available-only-in-secure-contexts",
+      "href": "https://heycam.github.io/webidl/#dfn-available-only-in-secure-contexts",
+      "linkingText": [
+        "available only in secure contexts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TreatNonObjectAsNull",
+      "href": "https://heycam.github.io/webidl/#TreatNonObjectAsNull",
+      "linkingText": [
+        "TreatNonObjectAsNull"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TreatNullAs",
+      "href": "https://heycam.github.io/webidl/#TreatNullAs",
+      "linkingText": [
+        "TreatNullAs"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "Unforgeable",
+      "href": "https://heycam.github.io/webidl/#Unforgeable",
+      "linkingText": [
+        "Unforgeable"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-unforgeable-on-an-interface",
+      "href": "https://heycam.github.io/webidl/#dfn-unforgeable-on-an-interface",
+      "linkingText": [
+        "unforgeable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "Unscopable",
+      "href": "https://heycam.github.io/webidl/#Unscopable",
+      "linkingText": [
+        "Unscopable"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-perform-a-security-check",
+      "href": "https://heycam.github.io/webidl/#dfn-perform-a-security-check",
+      "linkingText": [
+        "perform a security check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-overload-resolution-algorithm",
+      "href": "https://heycam.github.io/webidl/#dfn-overload-resolution-algorithm",
+      "linkingText": [
+        "overload resolution algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-interface-object",
+      "href": "https://heycam.github.io/webidl/#dfn-interface-object",
+      "linkingText": [
+        "interface object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-named-constructor",
+      "href": "https://heycam.github.io/webidl/#dfn-named-constructor",
+      "linkingText": [
+        "named constructor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "overridden-constructor-steps",
+      "href": "https://heycam.github.io/webidl/#overridden-constructor-steps",
+      "linkingText": [
+        "overridden constructor steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-an-interface-object",
+      "href": "https://heycam.github.io/webidl/#create-an-interface-object",
+      "linkingText": [
+        "create an interface object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-a-named-constructor",
+      "href": "https://heycam.github.io/webidl/#create-a-named-constructor",
+      "linkingText": [
+        "create a named constructor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-interface-prototype-object",
+      "href": "https://heycam.github.io/webidl/#dfn-interface-prototype-object",
+      "linkingText": [
+        "interface prototype object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-an-interface-prototype-object",
+      "href": "https://heycam.github.io/webidl/#create-an-interface-prototype-object",
+      "linkingText": [
+        "create an interface prototype object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-named-properties-object",
+      "href": "https://heycam.github.io/webidl/#dfn-named-properties-object",
+      "linkingText": [
+        "named properties object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-a-named-properties-object",
+      "href": "https://heycam.github.io/webidl/#create-a-named-properties-object",
+      "linkingText": [
+        "create a named properties object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "define-the-constants",
+      "href": "https://heycam.github.io/webidl/#define-the-constants",
+      "linkingText": [
+        "define the constants"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "define-the-regular-attributes",
+      "href": "https://heycam.github.io/webidl/#define-the-regular-attributes",
+      "linkingText": [
+        "define the regular attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "define-the-static-attributes",
+      "href": "https://heycam.github.io/webidl/#define-the-static-attributes",
+      "linkingText": [
+        "define the static attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "define-the-unforgeable-regular-attributes",
+      "href": "https://heycam.github.io/webidl/#define-the-unforgeable-regular-attributes",
+      "linkingText": [
+        "define the unforgeable regular attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "define-the-attributes",
+      "href": "https://heycam.github.io/webidl/#define-the-attributes",
+      "linkingText": [
+        "define the attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-attribute-getter",
+      "href": "https://heycam.github.io/webidl/#dfn-attribute-getter",
+      "linkingText": [
+        "attribute getter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-attribute-setter",
+      "href": "https://heycam.github.io/webidl/#dfn-attribute-setter",
+      "linkingText": [
+        "attribute setter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "define-the-regular-operations",
+      "href": "https://heycam.github.io/webidl/#define-the-regular-operations",
+      "linkingText": [
+        "define the regular operations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "define-the-static-operations",
+      "href": "https://heycam.github.io/webidl/#define-the-static-operations",
+      "linkingText": [
+        "define the static operations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "define-the-unforgeable-regular-operations",
+      "href": "https://heycam.github.io/webidl/#define-the-unforgeable-regular-operations",
+      "linkingText": [
+        "define the unforgeable regular operations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "define-the-operations",
+      "href": "https://heycam.github.io/webidl/#define-the-operations",
+      "linkingText": [
+        "define the operations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-create-operation-function",
+      "href": "https://heycam.github.io/webidl/#dfn-create-operation-function",
+      "linkingText": [
+        "creating an operation function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "corresponding-default-operation",
+      "href": "https://heycam.github.io/webidl/#corresponding-default-operation",
+      "linkingText": [
+        "corresponding default operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "default-tojson-operation",
+      "href": "https://heycam.github.io/webidl/#default-tojson-operation",
+      "linkingText": [
+        "default toJSON operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "collect-attribute-values-of-an-inheritance-stack",
+      "href": "https://heycam.github.io/webidl/#collect-attribute-values-of-an-inheritance-stack",
+      "linkingText": [
+        "collect attribute values of an inheritance stack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "collect-attribute-values",
+      "href": "https://heycam.github.io/webidl/#collect-attribute-values",
+      "linkingText": [
+        "collect attribute values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-an-inheritance-stack",
+      "href": "https://heycam.github.io/webidl/#create-an-inheritance-stack",
+      "linkingText": [
+        "create an inheritance stack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "define-the-iteration-methods",
+      "href": "https://heycam.github.io/webidl/#define-the-iteration-methods",
+      "linkingText": [
+        "define the iteration methods"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-default-iterator-object",
+      "href": "https://heycam.github.io/webidl/#dfn-default-iterator-object",
+      "linkingText": [
+        "default iterator object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-iterator-object-target",
+      "href": "https://heycam.github.io/webidl/#default-iterator-object-target",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "default iterator object"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "default-iterator-object-kind",
+      "href": "https://heycam.github.io/webidl/#default-iterator-object-kind",
+      "linkingText": [
+        "kind"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "default iterator object"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "default-iterator-object-index",
+      "href": "https://heycam.github.io/webidl/#default-iterator-object-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "default iterator object"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-iterator-prototype-object",
+      "href": "https://heycam.github.io/webidl/#dfn-iterator-prototype-object",
+      "linkingText": [
+        "iterator prototype object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iterator-result",
+      "href": "https://heycam.github.io/webidl/#iterator-result",
+      "linkingText": [
+        "iterator result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "define-the-asynchronous-iteration-methods",
+      "href": "https://heycam.github.io/webidl/#define-the-asynchronous-iteration-methods",
+      "linkingText": [
+        "define the asynchronous iteration methods"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-default-asynchronous-iterator-object",
+      "href": "https://heycam.github.io/webidl/#dfn-default-asynchronous-iterator-object",
+      "linkingText": [
+        "default asynchronous iterator object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-asynchronous-iterator-object-target",
+      "href": "https://heycam.github.io/webidl/#default-asynchronous-iterator-object-target",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "default asynchronous iterator object"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "default-asynchronous-iterator-object-kind",
+      "href": "https://heycam.github.io/webidl/#default-asynchronous-iterator-object-kind",
+      "linkingText": [
+        "kind"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "default asynchronous iterator object"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "default-asynchronous-iterator-object-ongoing-promise",
+      "href": "https://heycam.github.io/webidl/#default-asynchronous-iterator-object-ongoing-promise",
+      "linkingText": [
+        "ongoing promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "default asynchronous iterator object"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "default-asynchronous-iterator-object-is-finished",
+      "href": "https://heycam.github.io/webidl/#default-asynchronous-iterator-object-is-finished",
+      "linkingText": [
+        "is finished"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "default asynchronous iterator object"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-asynchronous-iterator-prototype-object",
+      "href": "https://heycam.github.io/webidl/#dfn-asynchronous-iterator-prototype-object",
+      "linkingText": [
+        "asynchronous iterator prototype object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-forwards-to-the-internal-map-object",
+      "href": "https://heycam.github.io/webidl/#dfn-forwards-to-the-internal-map-object",
+      "linkingText": [
+        "forwards to the internal map object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-map-size-getter",
+      "href": "https://heycam.github.io/webidl/#dfn-map-size-getter",
+      "linkingText": [
+        "map size getter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-forwards-to-the-internal-set-object",
+      "href": "https://heycam.github.io/webidl/#dfn-forwards-to-the-internal-set-object",
+      "linkingText": [
+        "forwards to the internal set object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-set-size-getter",
+      "href": "https://heycam.github.io/webidl/#dfn-set-size-getter",
+      "linkingText": [
+        "set size getter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-a-platform-object",
+      "href": "https://heycam.github.io/webidl/#is-a-platform-object",
+      "linkingText": [
+        "is a platform object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "implements",
+      "href": "https://heycam.github.io/webidl/#implements",
+      "linkingText": [
+        "implements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "new",
+      "href": "https://heycam.github.io/webidl/#new",
+      "linkingText": [
+        "new"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "internally-create-a-new-object-implementing-the-interface",
+      "href": "https://heycam.github.io/webidl/#internally-create-a-new-object-implementing-the-interface",
+      "linkingText": [
+        "internally create a new object implementing the interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "define-the-global-property-references",
+      "href": "https://heycam.github.io/webidl/#define-the-global-property-references",
+      "linkingText": [
+        "define the global property references"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-primary-interface",
+      "href": "https://heycam.github.io/webidl/#dfn-primary-interface",
+      "linkingText": [
+        "primary interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-change-global-environment",
+      "href": "https://heycam.github.io/webidl/#dfn-change-global-environment",
+      "linkingText": [
+        "change"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Realm"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-unforgeable-property-name",
+      "href": "https://heycam.github.io/webidl/#dfn-unforgeable-property-name",
+      "linkingText": [
+        "unforgeable property name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "legacy-platform-object-getownproperty",
+      "href": "https://heycam.github.io/webidl/#legacy-platform-object-getownproperty",
+      "linkingText": [
+        "GetOwnProperty"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "legacy platform object"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "is-an-array-index",
+      "href": "https://heycam.github.io/webidl/#is-an-array-index",
+      "linkingText": [
+        "is an array index",
+        "is not an array index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-named-property-visibility",
+      "href": "https://heycam.github.io/webidl/#dfn-named-property-visibility",
+      "linkingText": [
+        "named property visibility algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "invoke-indexed-setter",
+      "href": "https://heycam.github.io/webidl/#invoke-indexed-setter",
+      "linkingText": [
+        "invoke the indexed property setter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "invoke-named-setter",
+      "href": "https://heycam.github.io/webidl/#invoke-named-setter",
+      "linkingText": [
+        "invoke the named property setter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "LegacyPlatformObjectGetOwnProperty",
+      "href": "https://heycam.github.io/webidl/#LegacyPlatformObjectGetOwnProperty",
+      "linkingText": [
+        "LegacyPlatformObjectGetOwnProperty"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "observable-array-exotic-object",
+      "href": "https://heycam.github.io/webidl/#observable-array-exotic-object",
+      "linkingText": [
+        "observable array exotic object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "creating-an-observable-array-exotic-object",
+      "href": "https://heycam.github.io/webidl/#creating-an-observable-array-exotic-object",
+      "linkingText": [
+        "creating an observable array exotic object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "observable-array-exotic-object-set-the-length",
+      "href": "https://heycam.github.io/webidl/#observable-array-exotic-object-set-the-length",
+      "linkingText": [
+        "set the length",
+        "setting the length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "observable array exotic object"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "observable-array-exotic-object-set-the-indexed-value",
+      "href": "https://heycam.github.io/webidl/#observable-array-exotic-object-set-the-indexed-value",
+      "linkingText": [
+        "set the indexed value",
+        "setting the indexed value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "observable array exotic object"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "web-idl-arguments-list",
+      "href": "https://heycam.github.io/webidl/#web-idl-arguments-list",
+      "linkingText": [
+        "Web IDL arguments list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "web-idl-arguments-list-converting",
+      "href": "https://heycam.github.io/webidl/#web-idl-arguments-list-converting",
+      "linkingText": [
+        "converting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Web IDL arguments list"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "call-a-user-objects-operation",
+      "href": "https://heycam.github.io/webidl/#call-a-user-objects-operation",
+      "linkingText": [
+        "call a user object’s operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-callback-this-value",
+      "href": "https://heycam.github.io/webidl/#dfn-callback-this-value",
+      "linkingText": [
+        "callback this value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-legacy-callback-interface-object",
+      "href": "https://heycam.github.io/webidl/#dfn-legacy-callback-interface-object",
+      "linkingText": [
+        "legacy callback interface object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-a-legacy-callback-interface-object",
+      "href": "https://heycam.github.io/webidl/#create-a-legacy-callback-interface-object",
+      "linkingText": [
+        "create a legacy callback interface object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "invoke-a-callback-function",
+      "href": "https://heycam.github.io/webidl/#invoke-a-callback-function",
+      "linkingText": [
+        "invoke"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "construct-a-callback-function",
+      "href": "https://heycam.github.io/webidl/#construct-a-callback-function",
+      "linkingText": [
+        "construct"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-namespace-object",
+      "href": "https://heycam.github.io/webidl/#dfn-namespace-object",
+      "linkingText": [
+        "namespace object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-a-namespace-object",
+      "href": "https://heycam.github.io/webidl/#create-a-namespace-object",
+      "linkingText": [
+        "create a namespace object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "es-exception-objects",
+      "href": "https://heycam.github.io/webidl/#es-exception-objects",
+      "linkingText": [
+        "Exception objects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "an-exception-was-thrown",
+      "href": "https://heycam.github.io/webidl/#an-exception-was-thrown",
+      "linkingText": [
+        "an exception was thrown"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "synthetic-module-record",
+      "href": "https://heycam.github.io/webidl/#synthetic-module-record",
+      "linkingText": [
+        "Synthetic Module Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-createsyntheticmodule",
+      "href": "https://heycam.github.io/webidl/#abstract-opdef-createsyntheticmodule",
+      "linkingText": [
+        "CreateSyntheticModule"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-setsyntheticmoduleexport",
+      "href": "https://heycam.github.io/webidl/#abstract-opdef-setsyntheticmoduleexport",
+      "linkingText": [
+        "SetSyntheticModuleExport"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-synthetic-module-record-getexportednames",
+      "href": "https://heycam.github.io/webidl/#abstract-opdef-synthetic-module-record-getexportednames",
+      "linkingText": [
+        "GetExportedNames"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "Synthetic Module Record"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-synthetic-module-record-resolveexport",
+      "href": "https://heycam.github.io/webidl/#abstract-opdef-synthetic-module-record-resolveexport",
+      "linkingText": [
+        "ResolveExport"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "Synthetic Module Record"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-synthetic-module-record-link",
+      "href": "https://heycam.github.io/webidl/#abstract-opdef-synthetic-module-record-link",
+      "linkingText": [
+        "Link"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "Synthetic Module Record"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-synthetic-module-record-evaluate",
+      "href": "https://heycam.github.io/webidl/#abstract-opdef-synthetic-module-record-evaluate",
+      "linkingText": [
+        "Evaluate"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "Synthetic Module Record"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ArrayBufferView",
+      "href": "https://heycam.github.io/webidl/#ArrayBufferView",
+      "linkingText": [
+        "ArrayBufferView"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "BufferSource",
+      "href": "https://heycam.github.io/webidl/#BufferSource",
+      "linkingText": [
+        "BufferSource"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-DOMException",
+      "href": "https://heycam.github.io/webidl/#idl-DOMException",
+      "linkingText": [
+        "DOMException"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-domexception-message-name-message",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-domexception-message-name-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMException/DOMException(message, name)",
+        "DOMException/constructor(message, name)",
+        "DOMException/DOMException(message)",
+        "DOMException/constructor(message)",
+        "DOMException/DOMException()",
+        "DOMException/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-domexception-message-name-name",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-domexception-message-name-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMException/DOMException(message, name)",
+        "DOMException/constructor(message, name)",
+        "DOMException/DOMException(message)",
+        "DOMException/constructor(message)",
+        "DOMException/DOMException()",
+        "DOMException/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "domexception-name",
+      "href": "https://heycam.github.io/webidl/#domexception-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DOMException"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domexception-message",
+      "href": "https://heycam.github.io/webidl/#domexception-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DOMException"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-domexception",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-domexception",
+      "linkingText": [
+        "DOMException(message, name)",
+        "constructor(message, name)",
+        "DOMException(message)",
+        "constructor(message)",
+        "DOMException()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-name",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-message",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-code",
+      "href": "https://heycam.github.io/webidl/#dom-domexception-code",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMException"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "DOMTimeStamp",
+      "href": "https://heycam.github.io/webidl/#DOMTimeStamp",
+      "linkingText": [
+        "DOMTimeStamp"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "Function",
+      "href": "https://heycam.github.io/webidl/#Function",
+      "linkingText": [
+        "Function"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-function-arguments",
+      "href": "https://heycam.github.io/webidl/#dom-function-arguments",
+      "linkingText": [
+        "arguments"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Function"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "VoidFunction",
+      "href": "https://heycam.github.io/webidl/#VoidFunction",
+      "linkingText": [
+        "VoidFunction"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-example-term",
+      "href": "https://heycam.github.io/webidl/#dfn-example-term",
+      "linkingText": [
+        "example term"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-conforming-set-of-idl-fragments",
+      "href": "https://heycam.github.io/webidl/#dfn-conforming-set-of-idl-fragments",
+      "linkingText": [
+        "conforming set of IDL fragments"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-conforming-implementation",
+      "href": "https://heycam.github.io/webidl/#dfn-conforming-implementation",
+      "linkingText": [
+        "conforming implementation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-conforming-ecmascript-implementation",
+      "href": "https://heycam.github.io/webidl/#dfn-conforming-ecmascript-implementation",
+      "linkingText": [
+        "conforming ECMAScript implementation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

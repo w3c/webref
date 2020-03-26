@@ -1,0 +1,3376 @@
+{
+  "spec": {
+    "title": "Scalable Vector Graphics (SVG) 2",
+    "url": "https://svgwg.org/svg2-draft/"
+  },
+  "dfns": [
+    {
+      "id": "processing-mode",
+      "href": "https://svgwg.org/svg2-draft/conform.html#processing-mode",
+      "linkingText": [
+        "processing modes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermSVGGenerator",
+      "href": "https://svgwg.org/svg2-draft/conform.html#TermSVGGenerator",
+      "linkingText": [
+        "SVG generators"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermSVGAuthoringTool",
+      "href": "https://svgwg.org/svg2-draft/conform.html#TermSVGAuthoringTool",
+      "linkingText": [
+        "SVG authoring tools"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermSVGServer",
+      "href": "https://svgwg.org/svg2-draft/conform.html#TermSVGServer",
+      "linkingText": [
+        "SVG servers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermSVGInterpreter",
+      "href": "https://svgwg.org/svg2-draft/conform.html#TermSVGInterpreter",
+      "linkingText": [
+        "SVG interpreters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermSVGViewer",
+      "href": "https://svgwg.org/svg2-draft/conform.html#TermSVGViewer",
+      "linkingText": [
+        "SVG viewers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermSVGUserAgent",
+      "href": "https://svgwg.org/svg2-draft/conform.html#TermSVGUserAgent",
+      "linkingText": [
+        "SVG user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermUserAgent",
+      "href": "https://svgwg.org/svg2-draft/conform.html#TermUserAgent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermRenderingTree",
+      "href": "https://svgwg.org/svg2-draft/render.html#TermRenderingTree",
+      "linkingText": [
+        "rendering tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermRenderedElement",
+      "href": "https://svgwg.org/svg2-draft/render.html#TermRenderedElement",
+      "linkingText": [
+        "rendered element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermNonRenderedElement",
+      "href": "https://svgwg.org/svg2-draft/render.html#TermNonRenderedElement",
+      "linkingText": [
+        "non-rendered element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermReusedGraphics",
+      "href": "https://svgwg.org/svg2-draft/render.html#TermReusedGraphics",
+      "linkingText": [
+        "re-used graphics"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermNeverRenderedElement",
+      "href": "https://svgwg.org/svg2-draft/render.html#TermNeverRenderedElement",
+      "linkingText": [
+        "never-rendered element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermRenderableElement",
+      "href": "https://svgwg.org/svg2-draft/render.html#TermRenderableElement",
+      "linkingText": [
+        "renderable element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermStackingContext",
+      "href": "https://svgwg.org/svg2-draft/render.html#TermStackingContext",
+      "linkingText": [
+        "stacking contexts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermInitialValue",
+      "href": "https://svgwg.org/svg2-draft/types.html#TermInitialValue",
+      "linkingText": [
+        "initial value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermInvalidValue",
+      "href": "https://svgwg.org/svg2-draft/types.html#TermInvalidValue",
+      "linkingText": [
+        "invalid value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermReflect",
+      "href": "https://svgwg.org/svg2-draft/types.html#TermReflect",
+      "linkingText": [
+        "reflect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermSynchronize",
+      "href": "https://svgwg.org/svg2-draft/types.html#TermSynchronize",
+      "linkingText": [
+        "synchronized"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermReserialize",
+      "href": "https://svgwg.org/svg2-draft/types.html#TermReserialize",
+      "linkingText": [
+        "reserialized"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "NumberValue",
+      "href": "https://svgwg.org/svg2-draft/types.html#NumberValue",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "LengthValue",
+      "href": "https://svgwg.org/svg2-draft/types.html#LengthValue",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "AngleValue",
+      "href": "https://svgwg.org/svg2-draft/types.html#AngleValue",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermListInterface",
+      "href": "https://svgwg.org/svg2-draft/types.html#TermListInterface",
+      "linkingText": [
+        "list interfaces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermSynchronizeList",
+      "href": "https://svgwg.org/svg2-draft/types.html#TermSynchronizeList",
+      "linkingText": [
+        "synchronized"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermDetach",
+      "href": "https://svgwg.org/svg2-draft/types.html#TermDetach",
+      "linkingText": [
+        "detached"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermAttach",
+      "href": "https://svgwg.org/svg2-draft/types.html#TermAttach",
+      "linkingText": [
+        "attached"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermNumericTypeValue",
+      "href": "https://svgwg.org/svg2-draft/types.html#TermNumericTypeValue",
+      "linkingText": [
+        "numeric type value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "InterfaceSVGTests",
+      "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGTests",
+      "linkingText": [
+        "SVGTests"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "InterfaceSVGFitToViewBox",
+      "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGFitToViewBox",
+      "linkingText": [
+        "SVGFitToViewBox"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "InterfaceSVGURIReference",
+      "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGURIReference",
+      "linkingText": [
+        "SVGURIReference"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermStructuralElement",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermStructuralElement",
+      "linkingText": [
+        "structural element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermStructurallyExternalElement",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermStructurallyExternalElement",
+      "linkingText": [
+        "structurally external element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermCurrentSVGDocumentFragment",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermCurrentSVGDocumentFragment",
+      "linkingText": [
+        "current SVG document fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermOutermostSVGElement",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermOutermostSVGElement",
+      "linkingText": [
+        "outermost svg element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermSVGDocumentFragment",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermSVGDocumentFragment",
+      "linkingText": [
+        "SVG document fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermSVGElements",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermSVGElements",
+      "linkingText": [
+        "SVG elements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "graphics-element",
+      "href": "https://svgwg.org/svg2-draft/struct.html#graphics-element",
+      "linkingText": [
+        "graphics element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "graphics-referencing-element",
+      "href": "https://svgwg.org/svg2-draft/struct.html#graphics-referencing-element",
+      "linkingText": [
+        "graphics referencing element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-svg",
+      "href": "https://svgwg.org/svg2-draft/struct.html#elementdef-svg",
+      "linkingText": [
+        "svg"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "container-element",
+      "href": "https://svgwg.org/svg2-draft/struct.html#container-element",
+      "linkingText": [
+        "container element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-g",
+      "href": "https://svgwg.org/svg2-draft/struct.html#elementdef-g",
+      "linkingText": [
+        "g"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-defs",
+      "href": "https://svgwg.org/svg2-draft/struct.html#elementdef-defs",
+      "linkingText": [
+        "defs"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-symbol",
+      "href": "https://svgwg.org/svg2-draft/struct.html#elementdef-symbol",
+      "linkingText": [
+        "symbol"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "SymbolElementRefXAttribute",
+      "href": "https://svgwg.org/svg2-draft/struct.html#SymbolElementRefXAttribute",
+      "linkingText": [
+        "refX"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "symbol"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "SymbolElementRefYAttribute",
+      "href": "https://svgwg.org/svg2-draft/struct.html#SymbolElementRefYAttribute",
+      "linkingText": [
+        "refY"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "symbol"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-use",
+      "href": "https://svgwg.org/svg2-draft/struct.html#elementdef-use",
+      "linkingText": [
+        "use"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "UseElementHrefAttribute",
+      "href": "https://svgwg.org/svg2-draft/struct.html#UseElementHrefAttribute",
+      "linkingText": [
+        "href"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermReferencedElement",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermReferencedElement",
+      "linkingText": [
+        "referenced element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermReferencedDocumentSubtree",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermReferencedDocumentSubtree",
+      "linkingText": [
+        "referenced document subtree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermShadowRoot",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermShadowRoot",
+      "linkingText": [
+        "shadow root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermShadowHost",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermShadowHost",
+      "linkingText": [
+        "shadow host"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermShadowTree",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermShadowTree",
+      "linkingText": [
+        "shadow tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermUseElementShadowTree",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermUseElementShadowTree",
+      "linkingText": [
+        "use-element shadow tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermElementInstance",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermElementInstance",
+      "linkingText": [
+        "element instance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermInstanceRoot",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermInstanceRoot",
+      "linkingText": [
+        "instance root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermCorrespondingElement",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermCorrespondingElement",
+      "linkingText": [
+        "corresponding element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermCorrespondingUseElement",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermCorrespondingUseElement",
+      "linkingText": [
+        "corresponding use element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermConditionalProcessingAttribute",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermConditionalProcessingAttribute",
+      "linkingText": [
+        "conditional processing attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-switch",
+      "href": "https://svgwg.org/svg2-draft/struct.html#elementdef-switch",
+      "linkingText": [
+        "switch"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "RequiredExtensionsAttribute",
+      "href": "https://svgwg.org/svg2-draft/struct.html#RequiredExtensionsAttribute",
+      "linkingText": [
+        "requiredExtensions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "SystemLanguageAttribute",
+      "href": "https://svgwg.org/svg2-draft/struct.html#SystemLanguageAttribute",
+      "linkingText": [
+        "systemLanguage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermDescriptiveElement",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermDescriptiveElement",
+      "linkingText": [
+        "descriptive element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-title",
+      "href": "https://svgwg.org/svg2-draft/struct.html#elementdef-title",
+      "linkingText": [
+        "title"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-desc",
+      "href": "https://svgwg.org/svg2-draft/struct.html#elementdef-desc",
+      "linkingText": [
+        "desc"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-metadata",
+      "href": "https://svgwg.org/svg2-draft/struct.html#elementdef-metadata",
+      "linkingText": [
+        "metadata"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermCoreAttribute",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermCoreAttribute",
+      "linkingText": [
+        "core attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "IDAttribute",
+      "href": "https://svgwg.org/svg2-draft/struct.html#IDAttribute",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "core-attributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "LangAttribute",
+      "href": "https://svgwg.org/svg2-draft/struct.html#LangAttribute",
+      "linkingText": [
+        "lang"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "core-attributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "XMLSpaceAttribute",
+      "href": "https://svgwg.org/svg2-draft/struct.html#XMLSpaceAttribute",
+      "linkingText": [
+        "xml:space"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "core-attributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "SVGElementTabindexAttribute",
+      "href": "https://svgwg.org/svg2-draft/struct.html#SVGElementTabindexAttribute",
+      "linkingText": [
+        "tabindex"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "core-attributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "SVGElementAutofocusAttribute",
+      "href": "https://svgwg.org/svg2-draft/struct.html#SVGElementAutofocusAttribute",
+      "linkingText": [
+        "autofocus"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "core-attributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermARIAAttribute",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermARIAAttribute",
+      "linkingText": [
+        "ARIA attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "RoleAttribute",
+      "href": "https://svgwg.org/svg2-draft/struct.html#RoleAttribute",
+      "linkingText": [
+        "role"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermInclusionCriteria",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermInclusionCriteria",
+      "linkingText": [
+        "inclusion criteria"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "CurrentTranslatePointObject",
+      "href": "https://svgwg.org/svg2-draft/struct.html#CurrentTranslatePointObject",
+      "linkingText": [
+        "current translate point object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermFindIntersectingOrEnclosedDescendants",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermFindIntersectingOrEnclosedDescendants",
+      "linkingText": [
+        "find the intersecting\nor enclosed descendants"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermFindNonContainerGraphicsElements",
+      "href": "https://svgwg.org/svg2-draft/struct.html#TermFindNonContainerGraphicsElements",
+      "linkingText": [
+        "find the non-container\ngraphics elements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "InterfaceSVGElementInstance",
+      "href": "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGElementInstance",
+      "linkingText": [
+        "SVGElementInstance"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "InterfaceGetSVGDocument",
+      "href": "https://svgwg.org/svg2-draft/struct.html#InterfaceGetSVGDocument",
+      "linkingText": [
+        "GetSVGDocument"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermProperty",
+      "href": "https://svgwg.org/svg2-draft/styling.html#TermProperty",
+      "linkingText": [
+        "properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "elementdef-style",
+      "href": "https://svgwg.org/svg2-draft/styling.html#elementdef-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StyleElementTypeAttribute",
+      "href": "https://svgwg.org/svg2-draft/styling.html#StyleElementTypeAttribute",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StyleElementMediaAttribute",
+      "href": "https://svgwg.org/svg2-draft/styling.html#StyleElementMediaAttribute",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StyleElementTitleAttribute",
+      "href": "https://svgwg.org/svg2-draft/styling.html#StyleElementTitleAttribute",
+      "linkingText": [
+        "title"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ClassAttribute",
+      "href": "https://svgwg.org/svg2-draft/styling.html#ClassAttribute",
+      "linkingText": [
+        "class"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "core-attributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StyleAttribute",
+      "href": "https://svgwg.org/svg2-draft/styling.html#StyleAttribute",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "core-attributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermPresentationAttribute",
+      "href": "https://svgwg.org/svg2-draft/styling.html#TermPresentationAttribute",
+      "linkingText": [
+        "presentation attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "geometry-properties",
+      "href": "https://svgwg.org/svg2-draft/geometry.html#geometry-properties",
+      "linkingText": [
+        "geometry properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "CxProperty",
+      "href": "https://svgwg.org/svg2-draft/geometry.html#CxProperty",
+      "linkingText": [
+        "cx"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "CyProperty",
+      "href": "https://svgwg.org/svg2-draft/geometry.html#CyProperty",
+      "linkingText": [
+        "cy"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "RProperty",
+      "href": "https://svgwg.org/svg2-draft/geometry.html#RProperty",
+      "linkingText": [
+        "r"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "RxProperty",
+      "href": "https://svgwg.org/svg2-draft/geometry.html#RxProperty",
+      "linkingText": [
+        "rx"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "RyProperty",
+      "href": "https://svgwg.org/svg2-draft/geometry.html#RyProperty",
+      "linkingText": [
+        "ry"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "XProperty",
+      "href": "https://svgwg.org/svg2-draft/geometry.html#XProperty",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "YProperty",
+      "href": "https://svgwg.org/svg2-draft/geometry.html#YProperty",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermSVGViewport",
+      "href": "https://svgwg.org/svg2-draft/coords.html#TermSVGViewport",
+      "linkingText": [
+        "SVG viewports"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermUserUnits",
+      "href": "https://svgwg.org/svg2-draft/coords.html#TermUserUnits",
+      "linkingText": [
+        "user units"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermInitialViewport",
+      "href": "https://svgwg.org/svg2-draft/coords.html#TermInitialViewport",
+      "linkingText": [
+        "initial viewport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermViewportCoordinateSystem",
+      "href": "https://svgwg.org/svg2-draft/coords.html#TermViewportCoordinateSystem",
+      "linkingText": [
+        "viewport coordinate system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermUserCoordinateSystem",
+      "href": "https://svgwg.org/svg2-draft/coords.html#TermUserCoordinateSystem",
+      "linkingText": [
+        "user coordinate system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermFurthestAncestorSVGViewport",
+      "href": "https://svgwg.org/svg2-draft/coords.html#TermFurthestAncestorSVGViewport",
+      "linkingText": [
+        "furthest ancestral SVG viewport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermSVGContext",
+      "href": "https://svgwg.org/svg2-draft/coords.html#TermSVGContext",
+      "linkingText": [
+        "SVG\ncontext"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermCanvas",
+      "href": "https://svgwg.org/svg2-draft/coords.html#TermCanvas",
+      "linkingText": [
+        "canvas"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermViewBox",
+      "href": "https://svgwg.org/svg2-draft/coords.html#TermViewBox",
+      "linkingText": [
+        "viewBox"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "svg"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermPreserveAspectRatio",
+      "href": "https://svgwg.org/svg2-draft/coords.html#TermPreserveAspectRatio",
+      "linkingText": [
+        "preserveAspectRatio"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "svg"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "bounding-box",
+      "href": "https://svgwg.org/svg2-draft/coords.html#bounding-box",
+      "linkingText": [
+        "bounding box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermObjectBoundingBox",
+      "href": "https://svgwg.org/svg2-draft/coords.html#TermObjectBoundingBox",
+      "linkingText": [
+        "object bounding box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermStrokeBoundingBox",
+      "href": "https://svgwg.org/svg2-draft/coords.html#TermStrokeBoundingBox",
+      "linkingText": [
+        "stroke bounding box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermDecoratedBoundingBox",
+      "href": "https://svgwg.org/svg2-draft/coords.html#TermDecoratedBoundingBox",
+      "linkingText": [
+        "decorated bounding box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermFullGlyphCell",
+      "href": "https://svgwg.org/svg2-draft/coords.html#TermFullGlyphCell",
+      "linkingText": [
+        "full glyph cell"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "VectorEffectProperty",
+      "href": "https://svgwg.org/svg2-draft/coords.html#VectorEffectProperty",
+      "linkingText": [
+        "vector-effect"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TransformValue",
+      "href": "https://svgwg.org/svg2-draft/coords.html#TransformValue",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TransformMatrixObject",
+      "href": "https://svgwg.org/svg2-draft/coords.html#TransformMatrixObject",
+      "linkingText": [
+        "matrix object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermEquivalentPath",
+      "href": "https://svgwg.org/svg2-draft/paths.html#TermEquivalentPath",
+      "linkingText": [
+        "equivalent path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "elementdef-path",
+      "href": "https://svgwg.org/svg2-draft/paths.html#elementdef-path",
+      "linkingText": [
+        "path"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "DProperty",
+      "href": "https://svgwg.org/svg2-draft/paths.html#DProperty",
+      "linkingText": [
+        "d"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermPathSegment",
+      "href": "https://svgwg.org/svg2-draft/paths.html#TermPathSegment",
+      "linkingText": [
+        "path segment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermInitialPoint",
+      "href": "https://svgwg.org/svg2-draft/paths.html#TermInitialPoint",
+      "linkingText": [
+        "initial point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermClosedSubpath",
+      "href": "https://svgwg.org/svg2-draft/paths.html#TermClosedSubpath",
+      "linkingText": [
+        "closed subpath"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermOpenSubpath",
+      "href": "https://svgwg.org/svg2-draft/paths.html#TermOpenSubpath",
+      "linkingText": [
+        "open subpath"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermSegment-CompletingClosePath",
+      "href": "https://svgwg.org/svg2-draft/paths.html#TermSegment-CompletingClosePath",
+      "linkingText": [
+        "segment-completing close path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermPathDirection",
+      "href": "https://svgwg.org/svg2-draft/paths.html#TermPathDirection",
+      "linkingText": [
+        "direction of a path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermPathSegmentStartDirection",
+      "href": "https://svgwg.org/svg2-draft/paths.html#TermPathSegmentStartDirection",
+      "linkingText": [
+        "direction at the start\nof a path segment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermPathSegmentEndDirection",
+      "href": "https://svgwg.org/svg2-draft/paths.html#TermPathSegmentEndDirection",
+      "linkingText": [
+        "direction at the end of a path\nsegment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "basic-shape",
+      "href": "https://svgwg.org/svg2-draft/shapes.html#basic-shape",
+      "linkingText": [
+        "basic shape"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermShapeElement",
+      "href": "https://svgwg.org/svg2-draft/shapes.html#TermShapeElement",
+      "linkingText": [
+        "shape elements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-rect",
+      "href": "https://svgwg.org/svg2-draft/shapes.html#elementdef-rect",
+      "linkingText": [
+        "rect"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-circle",
+      "href": "https://svgwg.org/svg2-draft/shapes.html#elementdef-circle",
+      "linkingText": [
+        "circle"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-ellipse",
+      "href": "https://svgwg.org/svg2-draft/shapes.html#elementdef-ellipse",
+      "linkingText": [
+        "ellipse"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-line",
+      "href": "https://svgwg.org/svg2-draft/shapes.html#elementdef-line",
+      "linkingText": [
+        "line"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "LineElementX1Attribute",
+      "href": "https://svgwg.org/svg2-draft/shapes.html#LineElementX1Attribute",
+      "linkingText": [
+        "x1"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "LineElementY1Attribute",
+      "href": "https://svgwg.org/svg2-draft/shapes.html#LineElementY1Attribute",
+      "linkingText": [
+        "y1"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "LineElementX2Attribute",
+      "href": "https://svgwg.org/svg2-draft/shapes.html#LineElementX2Attribute",
+      "linkingText": [
+        "x2"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "LineElementY2Attribute",
+      "href": "https://svgwg.org/svg2-draft/shapes.html#LineElementY2Attribute",
+      "linkingText": [
+        "y2"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-polyline",
+      "href": "https://svgwg.org/svg2-draft/shapes.html#elementdef-polyline",
+      "linkingText": [
+        "polyline"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "PolylineElementPointsAttribute",
+      "href": "https://svgwg.org/svg2-draft/shapes.html#PolylineElementPointsAttribute",
+      "linkingText": [
+        "points"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "polyline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "DataTypePoints",
+      "href": "https://svgwg.org/svg2-draft/shapes.html#DataTypePoints",
+      "linkingText": [
+        "<points>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-polygon",
+      "href": "https://svgwg.org/svg2-draft/shapes.html#elementdef-polygon",
+      "linkingText": [
+        "polygon"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "PolygonElementPointsAttribute",
+      "href": "https://svgwg.org/svg2-draft/shapes.html#PolygonElementPointsAttribute",
+      "linkingText": [
+        "points"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "polygon"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "InterfaceSVGAnimatedPoints",
+      "href": "https://svgwg.org/svg2-draft/shapes.html#InterfaceSVGAnimatedPoints",
+      "linkingText": [
+        "SVGAnimatedPoints"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermCharacter",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermCharacter",
+      "linkingText": [
+        "character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermAddressableCharacter",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermAddressableCharacter",
+      "linkingText": [
+        "addressable character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermTypographicCharacterUnit",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermTypographicCharacterUnit",
+      "linkingText": [
+        "typographic character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermFont",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermFont",
+      "linkingText": [
+        "font"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermGlyph",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermGlyph",
+      "linkingText": [
+        "glyph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermTextContentElement",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermTextContentElement",
+      "linkingText": [
+        "text content element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermTextContentChildElement",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermTextContentChildElement",
+      "linkingText": [
+        "text content child element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermTextContentBlockElement",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermTextContentBlockElement",
+      "linkingText": [
+        "text content block element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermContentArea",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermContentArea",
+      "linkingText": [
+        "content area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermWrappingContext",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermWrappingContext",
+      "linkingText": [
+        "wrapping context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermWrappingArea",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermWrappingArea",
+      "linkingText": [
+        "wrapping area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermLineBox",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermLineBox",
+      "linkingText": [
+        "line box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermInlineBaseDirection",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermInlineBaseDirection",
+      "linkingText": [
+        "inline-base direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermBlockFlowDirection",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermBlockFlowDirection",
+      "linkingText": [
+        "block-flow direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermAlignmentPoint",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermAlignmentPoint",
+      "linkingText": [
+        "alignment point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermCurrentTextPosition",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermCurrentTextPosition",
+      "linkingText": [
+        "current text position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermTextChunk",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermTextChunk",
+      "linkingText": [
+        "text chunk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermWhiteSpaceCharacter",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermWhiteSpaceCharacter",
+      "linkingText": [
+        "white space characters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermBaseline",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermBaseline",
+      "linkingText": [
+        "baseline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermBaselineTable",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermBaselineTable",
+      "linkingText": [
+        "baseline-table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermDominantBaseline",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermDominantBaseline",
+      "linkingText": [
+        "dominant baseline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermAlignmentBaseline",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermAlignmentBaseline",
+      "linkingText": [
+        "alignment baseline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-text",
+      "href": "https://svgwg.org/svg2-draft/text.html#elementdef-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-tspan",
+      "href": "https://svgwg.org/svg2-draft/text.html#elementdef-tspan",
+      "linkingText": [
+        "tspan"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextElementXAttribute",
+      "href": "https://svgwg.org/svg2-draft/text.html#TextElementXAttribute",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextElementYAttribute",
+      "href": "https://svgwg.org/svg2-draft/text.html#TextElementYAttribute",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextElementDXAttribute",
+      "href": "https://svgwg.org/svg2-draft/text.html#TextElementDXAttribute",
+      "linkingText": [
+        "dx"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextElementDYAttribute",
+      "href": "https://svgwg.org/svg2-draft/text.html#TextElementDYAttribute",
+      "linkingText": [
+        "dy"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextElementRotateAttribute",
+      "href": "https://svgwg.org/svg2-draft/text.html#TextElementRotateAttribute",
+      "linkingText": [
+        "rotate"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextElementTextLengthAttribute",
+      "href": "https://svgwg.org/svg2-draft/text.html#TextElementTextLengthAttribute",
+      "linkingText": [
+        "textLength"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextElementLengthAdjustAttribute",
+      "href": "https://svgwg.org/svg2-draft/text.html#TextElementLengthAdjustAttribute",
+      "linkingText": [
+        "lengthAdjust"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "InlineSizeProperty",
+      "href": "https://svgwg.org/svg2-draft/text.html#InlineSizeProperty",
+      "linkingText": [
+        "inline-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ShapeInsideProperty",
+      "href": "https://svgwg.org/svg2-draft/text.html#ShapeInsideProperty",
+      "linkingText": [
+        "shape-inside"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ShapesubtractProperty",
+      "href": "https://svgwg.org/svg2-draft/text.html#ShapesubtractProperty",
+      "linkingText": [
+        "shape-subtract"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ShapeMarginProperty",
+      "href": "https://svgwg.org/svg2-draft/text.html#ShapeMarginProperty",
+      "linkingText": [
+        "shape-margin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermResolvedDescendantNode",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermResolvedDescendantNode",
+      "linkingText": [
+        "resolved descendant node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-textPath",
+      "href": "https://svgwg.org/svg2-draft/text.html#elementdef-textPath",
+      "linkingText": [
+        "textPath"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "CharWidth",
+      "href": "https://svgwg.org/svg2-draft/text.html#CharWidth",
+      "linkingText": [
+        "charwidth"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StartPointOnPath",
+      "href": "https://svgwg.org/svg2-draft/text.html#StartPointOnPath",
+      "linkingText": [
+        "startpoint-on-the-path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "EndPointOnPath",
+      "href": "https://svgwg.org/svg2-draft/text.html#EndPointOnPath",
+      "linkingText": [
+        "endpoint-on-the-path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MidPointOnPath",
+      "href": "https://svgwg.org/svg2-draft/text.html#MidPointOnPath",
+      "linkingText": [
+        "midpoint-on-the-path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "GlyphMidline",
+      "href": "https://svgwg.org/svg2-draft/text.html#GlyphMidline",
+      "linkingText": [
+        "glyph-midline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextAnchorProperty",
+      "href": "https://svgwg.org/svg2-draft/text.html#TextAnchorProperty",
+      "linkingText": [
+        "text-anchor"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermFindTypographicCharacterForCharacter",
+      "href": "https://svgwg.org/svg2-draft/text.html#TermFindTypographicCharacterForCharacter",
+      "linkingText": [
+        "find the typographic\ncharacter for a character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermPositioningRectangle",
+      "href": "https://svgwg.org/svg2-draft/embedded.html#TermPositioningRectangle",
+      "linkingText": [
+        "positioning rectangle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-image",
+      "href": "https://svgwg.org/svg2-draft/embedded.html#elementdef-image",
+      "linkingText": [
+        "image"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermImageRenderingRectangle",
+      "href": "https://svgwg.org/svg2-draft/embedded.html#TermImageRenderingRectangle",
+      "linkingText": [
+        "image-rendering rectangle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ImageElementCrossoriginAttribute",
+      "href": "https://svgwg.org/svg2-draft/embedded.html#ImageElementCrossoriginAttribute",
+      "linkingText": [
+        "crossorigin"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "image"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ImageElementHrefAttribute",
+      "href": "https://svgwg.org/svg2-draft/embedded.html#ImageElementHrefAttribute",
+      "linkingText": [
+        "href"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "image"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-foreignObject",
+      "href": "https://svgwg.org/svg2-draft/embedded.html#elementdef-foreignObject",
+      "linkingText": [
+        "foreignObject"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermFill",
+      "href": "https://svgwg.org/svg2-draft/painting.html#TermFill",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermStroke",
+      "href": "https://svgwg.org/svg2-draft/painting.html#TermStroke",
+      "linkingText": [
+        "stroke"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermPaint",
+      "href": "https://svgwg.org/svg2-draft/painting.html#TermPaint",
+      "linkingText": [
+        "paint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "DataTypePaint",
+      "href": "https://svgwg.org/svg2-draft/painting.html#DataTypePaint",
+      "linkingText": [
+        "<paint>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermPaintServerElement",
+      "href": "https://svgwg.org/svg2-draft/painting.html#TermPaintServerElement",
+      "linkingText": [
+        "paint server element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermContextElement",
+      "href": "https://svgwg.org/svg2-draft/painting.html#TermContextElement",
+      "linkingText": [
+        "context element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "FillProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#FillProperty",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "FillRuleProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#FillRuleProperty",
+      "linkingText": [
+        "fill-rule"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "FillOpacityProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#FillOpacityProperty",
+      "linkingText": [
+        "fill-opacity"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StrokeProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#StrokeProperty",
+      "linkingText": [
+        "stroke"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StrokeOpacityProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#StrokeOpacityProperty",
+      "linkingText": [
+        "stroke-opacity"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StrokeWidthProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#StrokeWidthProperty",
+      "linkingText": [
+        "stroke-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StrokeLinecapProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#StrokeLinecapProperty",
+      "linkingText": [
+        "stroke-linecap"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StrokeLinejoinProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#StrokeLinejoinProperty",
+      "linkingText": [
+        "stroke-linejoin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StrokeMiterlimitProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#StrokeMiterlimitProperty",
+      "linkingText": [
+        "stroke-miterlimit"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StrokeDasharrayProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#StrokeDasharrayProperty",
+      "linkingText": [
+        "stroke-dasharray"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "DataTypeDasharray",
+      "href": "https://svgwg.org/svg2-draft/painting.html#DataTypeDasharray",
+      "linkingText": [
+        "<dasharray>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StrokeDashoffsetProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#StrokeDashoffsetProperty",
+      "linkingText": [
+        "stroke-dashoffset"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermStrokeShape",
+      "href": "https://svgwg.org/svg2-draft/painting.html#TermStrokeShape",
+      "linkingText": [
+        "stroke shape"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermDashPositions",
+      "href": "https://svgwg.org/svg2-draft/painting.html#TermDashPositions",
+      "linkingText": [
+        "dash positions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermCapShape",
+      "href": "https://svgwg.org/svg2-draft/painting.html#TermCapShape",
+      "linkingText": [
+        "cap shapes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermLineJoinShape",
+      "href": "https://svgwg.org/svg2-draft/painting.html#TermLineJoinShape",
+      "linkingText": [
+        "line join shape"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermVertexMarker",
+      "href": "https://svgwg.org/svg2-draft/painting.html#TermVertexMarker",
+      "linkingText": [
+        "vertex markers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermMarkerProperties",
+      "href": "https://svgwg.org/svg2-draft/painting.html#TermMarkerProperties",
+      "linkingText": [
+        "marker properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-marker",
+      "href": "https://svgwg.org/svg2-draft/painting.html#elementdef-marker",
+      "linkingText": [
+        "marker"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerUnitsAttribute",
+      "href": "https://svgwg.org/svg2-draft/painting.html#MarkerUnitsAttribute",
+      "linkingText": [
+        "markerUnits"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerWidthAttribute",
+      "href": "https://svgwg.org/svg2-draft/painting.html#MarkerWidthAttribute",
+      "linkingText": [
+        "markerWidth"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerHeightAttribute",
+      "href": "https://svgwg.org/svg2-draft/painting.html#MarkerHeightAttribute",
+      "linkingText": [
+        "markerHeight"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerElementRefXAttribute",
+      "href": "https://svgwg.org/svg2-draft/painting.html#MarkerElementRefXAttribute",
+      "linkingText": [
+        "refX"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerElementRefYAttribute",
+      "href": "https://svgwg.org/svg2-draft/painting.html#MarkerElementRefYAttribute",
+      "linkingText": [
+        "refY"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "OrientAttribute",
+      "href": "https://svgwg.org/svg2-draft/painting.html#OrientAttribute",
+      "linkingText": [
+        "orient"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerStartProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#MarkerStartProperty",
+      "linkingText": [
+        "marker-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerMidProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#MarkerMidProperty",
+      "linkingText": [
+        "marker-mid"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerEndProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#MarkerEndProperty",
+      "linkingText": [
+        "marker-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "DataTypeMarkerRef",
+      "href": "https://svgwg.org/svg2-draft/painting.html#DataTypeMarkerRef",
+      "linkingText": [
+        "<marker-ref>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#MarkerProperty",
+      "linkingText": [
+        "marker"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "PaintOrderProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#PaintOrderProperty",
+      "linkingText": [
+        "paint-order"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ColorInterpolationProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#ColorInterpolationProperty",
+      "linkingText": [
+        "color-interpolation"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ShapeRenderingProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#ShapeRenderingProperty",
+      "linkingText": [
+        "shape-rendering"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextRenderingProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#TextRenderingProperty",
+      "linkingText": [
+        "text-rendering"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ImageRenderingProperty",
+      "href": "https://svgwg.org/svg2-draft/painting.html#ImageRenderingProperty",
+      "linkingText": [
+        "image-rendering"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermGradientElement",
+      "href": "https://svgwg.org/svg2-draft/pservers.html#TermGradientElement",
+      "linkingText": [
+        "gradient element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-linearGradient",
+      "href": "https://svgwg.org/svg2-draft/pservers.html#elementdef-linearGradient",
+      "linkingText": [
+        "linearGradient"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-radialGradient",
+      "href": "https://svgwg.org/svg2-draft/pservers.html#elementdef-radialGradient",
+      "linkingText": [
+        "radialGradient"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-stop",
+      "href": "https://svgwg.org/svg2-draft/pservers.html#elementdef-stop",
+      "linkingText": [
+        "stop"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-pattern",
+      "href": "https://svgwg.org/svg2-draft/pservers.html#elementdef-pattern",
+      "linkingText": [
+        "pattern"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermHitTesting",
+      "href": "https://svgwg.org/svg2-draft/interact.html#TermHitTesting",
+      "linkingText": [
+        "hit-testing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "PointerEventsProperty",
+      "href": "https://svgwg.org/svg2-draft/interact.html#PointerEventsProperty",
+      "linkingText": [
+        "pointer-events"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermFocusable",
+      "href": "https://svgwg.org/svg2-draft/interact.html#TermFocusable",
+      "linkingText": [
+        "focusable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermEventAttribute",
+      "href": "https://svgwg.org/svg2-draft/interact.html#TermEventAttribute",
+      "linkingText": [
+        "event attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "OnBeginEventAttribute",
+      "href": "https://svgwg.org/svg2-draft/interact.html#OnBeginEventAttribute",
+      "linkingText": [
+        "onbegin"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate",
+        "animateMotion",
+        "animateTransform",
+        "discard",
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "OnEndEventAttribute",
+      "href": "https://svgwg.org/svg2-draft/interact.html#OnEndEventAttribute",
+      "linkingText": [
+        "onend"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate",
+        "animateMotion",
+        "animateTransform",
+        "discard",
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "OnRepeatEventAttribute",
+      "href": "https://svgwg.org/svg2-draft/interact.html#OnRepeatEventAttribute",
+      "linkingText": [
+        "onrepeat"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate",
+        "animateMotion",
+        "animateTransform",
+        "discard",
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-script",
+      "href": "https://svgwg.org/svg2-draft/interact.html#elementdef-script",
+      "linkingText": [
+        "script"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ScriptElementCrossoriginAttribute",
+      "href": "https://svgwg.org/svg2-draft/interact.html#ScriptElementCrossoriginAttribute",
+      "linkingText": [
+        "crossorigin"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "script"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ScriptElementTypeAttribute",
+      "href": "https://svgwg.org/svg2-draft/interact.html#ScriptElementTypeAttribute",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "script"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ScriptElementHrefAttribute",
+      "href": "https://svgwg.org/svg2-draft/interact.html#ScriptElementHrefAttribute",
+      "linkingText": [
+        "href"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "script"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermURLReference",
+      "href": "https://svgwg.org/svg2-draft/linking.html#TermURLReference",
+      "linkingText": [
+        "URL reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermURLReferenceWithFragmentIdentifier",
+      "href": "https://svgwg.org/svg2-draft/linking.html#TermURLReferenceWithFragmentIdentifier",
+      "linkingText": [
+        "URL reference with fragment identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermExternalReference",
+      "href": "https://svgwg.org/svg2-draft/linking.html#TermExternalReference",
+      "linkingText": [
+        "external file reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermSameDocumentURL",
+      "href": "https://svgwg.org/svg2-draft/linking.html#TermSameDocumentURL",
+      "linkingText": [
+        "same-document URL reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermDataURL",
+      "href": "https://svgwg.org/svg2-draft/linking.html#TermDataURL",
+      "linkingText": [
+        "data URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermCircularReference",
+      "href": "https://svgwg.org/svg2-draft/linking.html#TermCircularReference",
+      "linkingText": [
+        "circular reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermUnresolvedReference",
+      "href": "https://svgwg.org/svg2-draft/linking.html#TermUnresolvedReference",
+      "linkingText": [
+        "unresolved reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermInvalidReference",
+      "href": "https://svgwg.org/svg2-draft/linking.html#TermInvalidReference",
+      "linkingText": [
+        "invalid reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "XLinkHrefAttribute",
+      "href": "https://svgwg.org/svg2-draft/linking.html#XLinkHrefAttribute",
+      "linkingText": [
+        "xlink:href"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a",
+        "image",
+        "linearGradient",
+        "pattern",
+        "radialGradient",
+        "script",
+        "textPath",
+        "use"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "XLinkTitleAttribute",
+      "href": "https://svgwg.org/svg2-draft/linking.html#XLinkTitleAttribute",
+      "linkingText": [
+        "xlink:title"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a",
+        "image",
+        "linearGradient",
+        "pattern",
+        "radialGradient",
+        "script",
+        "textPath",
+        "use"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-a",
+      "href": "https://svgwg.org/svg2-draft/linking.html#elementdef-a",
+      "linkingText": [
+        "a"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AElementHrefAttribute",
+      "href": "https://svgwg.org/svg2-draft/linking.html#AElementHrefAttribute",
+      "linkingText": [
+        "href"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AElementTargetAttribute",
+      "href": "https://svgwg.org/svg2-draft/linking.html#AElementTargetAttribute",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AElementDownloadAttribute",
+      "href": "https://svgwg.org/svg2-draft/linking.html#AElementDownloadAttribute",
+      "linkingText": [
+        "download"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AElementPingAttribute",
+      "href": "https://svgwg.org/svg2-draft/linking.html#AElementPingAttribute",
+      "linkingText": [
+        "ping"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AElementRelAttribute",
+      "href": "https://svgwg.org/svg2-draft/linking.html#AElementRelAttribute",
+      "linkingText": [
+        "rel"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AElementHreflangAttribute",
+      "href": "https://svgwg.org/svg2-draft/linking.html#AElementHreflangAttribute",
+      "linkingText": [
+        "hreflang"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AElementTypeAttribute",
+      "href": "https://svgwg.org/svg2-draft/linking.html#AElementTypeAttribute",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AElementReferrerpolicyAttribute",
+      "href": "https://svgwg.org/svg2-draft/linking.html#AElementReferrerpolicyAttribute",
+      "linkingText": [
+        "referrerpolicy"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "svg-fragment-identifier",
+      "href": "https://svgwg.org/svg2-draft/linking.html#svg-fragment-identifier",
+      "linkingText": [
+        "SVG\nfragment identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "SVGViewSpecification",
+      "href": "https://svgwg.org/svg2-draft/linking.html#SVGViewSpecification",
+      "linkingText": [
+        "SVG view specification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-view",
+      "href": "https://svgwg.org/svg2-draft/linking.html#elementdef-view",
+      "linkingText": [
+        "view"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

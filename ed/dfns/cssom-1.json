@@ -1,0 +1,2769 @@
+{
+  "spec": {
+    "title": "CSS Object Model (CSSOM)",
+    "url": "https://drafts.csswg.org/cssom/"
+  },
+  "dfns": [
+    {
+      "id": "set",
+      "href": "https://drafts.csswg.org/cssom/#set",
+      "linkingText": [
+        "set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "unset",
+      "href": "https://drafts.csswg.org/cssom/#unset",
+      "linkingText": [
+        "unset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "supported-styling-language",
+      "href": "https://drafts.csswg.org/cssom/#supported-styling-language",
+      "linkingText": [
+        "supported styling language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "supported-css-property",
+      "href": "https://drafts.csswg.org/cssom/#supported-css-property",
+      "linkingText": [
+        "supported CSS property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "escape-a-character",
+      "href": "https://drafts.csswg.org/cssom/#escape-a-character",
+      "linkingText": [
+        "escape a character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "escape-a-character-as-code-point",
+      "href": "https://drafts.csswg.org/cssom/#escape-a-character-as-code-point",
+      "linkingText": [
+        "escape a character as code point",
+        "escaped as code point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "serialize-an-identifier",
+      "href": "https://drafts.csswg.org/cssom/#serialize-an-identifier",
+      "linkingText": [
+        "serialize an identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-string",
+      "href": "https://drafts.csswg.org/cssom/#serialize-a-string",
+      "linkingText": [
+        "serialize a string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-url",
+      "href": "https://drafts.csswg.org/cssom/#serialize-a-url",
+      "linkingText": [
+        "serialize a URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-local",
+      "href": "https://drafts.csswg.org/cssom/#serialize-a-local",
+      "linkingText": [
+        "serialize a LOCAL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-comma-separated-list",
+      "href": "https://drafts.csswg.org/cssom/#serialize-a-comma-separated-list",
+      "linkingText": [
+        "serialize a comma-separated list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-whitespace-separated-list",
+      "href": "https://drafts.csswg.org/cssom/#serialize-a-whitespace-separated-list",
+      "linkingText": [
+        "serialize a whitespace-separated list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssomstring",
+      "href": "https://drafts.csswg.org/cssom/#cssomstring",
+      "linkingText": [
+        "CSSOMString"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-media-query-list",
+      "href": "https://drafts.csswg.org/cssom/#parse-a-media-query-list",
+      "linkingText": [
+        "parse a media query list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-media-query",
+      "href": "https://drafts.csswg.org/cssom/#parse-a-media-query",
+      "linkingText": [
+        "parse a media query"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-media-query-list",
+      "href": "https://drafts.csswg.org/cssom/#serialize-a-media-query-list",
+      "linkingText": [
+        "serialize a media query list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-media-query",
+      "href": "https://drafts.csswg.org/cssom/#serialize-a-media-query",
+      "linkingText": [
+        "serialize a media query"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-media-feature-value",
+      "href": "https://drafts.csswg.org/cssom/#serialize-a-media-feature-value",
+      "linkingText": [
+        "serialize a media feature value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "compare-media-queries",
+      "href": "https://drafts.csswg.org/cssom/#compare-media-queries",
+      "linkingText": [
+        "compare media queries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "medialist-collection-of-media-queries",
+      "href": "https://drafts.csswg.org/cssom/#medialist-collection-of-media-queries",
+      "linkingText": [
+        "collection of media queries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "medialist",
+      "href": "https://drafts.csswg.org/cssom/#medialist",
+      "linkingText": [
+        "MediaList"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MediaList-stringification-behavior",
+      "href": "https://drafts.csswg.org/cssom/#MediaList-stringification-behavior",
+      "linkingText": [
+        "stringification behavior"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-medialist-item-index-index",
+      "href": "https://drafts.csswg.org/cssom/#dom-medialist-item-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaList/item(index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-medialist-appendmedium-medium-medium",
+      "href": "https://drafts.csswg.org/cssom/#dom-medialist-appendmedium-medium-medium",
+      "linkingText": [
+        "medium"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaList/appendMedium(medium)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-medialist-deletemedium-medium-medium",
+      "href": "https://drafts.csswg.org/cssom/#dom-medialist-deletemedium-medium-medium",
+      "linkingText": [
+        "medium"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaList/deleteMedium(medium)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-a-medialist-object",
+      "href": "https://drafts.csswg.org/cssom/#create-a-medialist-object",
+      "linkingText": [
+        "create a MediaList object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-medialist-mediatext",
+      "href": "https://drafts.csswg.org/cssom/#dom-medialist-mediatext",
+      "linkingText": [
+        "mediaText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-medialist-item",
+      "href": "https://drafts.csswg.org/cssom/#dom-medialist-item",
+      "linkingText": [
+        "item(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-medialist-length",
+      "href": "https://drafts.csswg.org/cssom/#dom-medialist-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-medialist-appendmedium",
+      "href": "https://drafts.csswg.org/cssom/#dom-medialist-appendmedium",
+      "linkingText": [
+        "appendMedium(medium)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-medialist-deletemedium",
+      "href": "https://drafts.csswg.org/cssom/#dom-medialist-deletemedium",
+      "linkingText": [
+        "deleteMedium(medium)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-group-of-selectors",
+      "href": "https://drafts.csswg.org/cssom/#parse-a-group-of-selectors",
+      "linkingText": [
+        "parse a group of selectors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-group-of-selectors",
+      "href": "https://drafts.csswg.org/cssom/#serialize-a-group-of-selectors",
+      "linkingText": [
+        "serialize a group of selectors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-selector",
+      "href": "https://drafts.csswg.org/cssom/#serialize-a-selector",
+      "linkingText": [
+        "serialize a selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-simple-selector",
+      "href": "https://drafts.csswg.org/cssom/#serialize-a-simple-selector",
+      "linkingText": [
+        "serialize a simple selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom/#css-style-sheet",
+      "linkingText": [
+        "CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-type",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-style-sheet-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-location",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-style-sheet-location",
+      "linkingText": [
+        "location"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-parent-css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-style-sheet-parent-css-style-sheet",
+      "linkingText": [
+        "parent CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-owner-node",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-style-sheet-owner-node",
+      "linkingText": [
+        "owner node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-owner-css-rule",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-style-sheet-owner-css-rule",
+      "linkingText": [
+        "owner CSS rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-media",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-style-sheet-media",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-title",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-style-sheet-title",
+      "linkingText": [
+        "title"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-alternate-flag",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-style-sheet-alternate-flag",
+      "linkingText": [
+        "alternate flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-disabled-flag",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-style-sheet-disabled-flag",
+      "linkingText": [
+        "disabled flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-css-rules",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-style-sheet-css-rules",
+      "linkingText": [
+        "CSS rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-origin-clean-flag",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-style-sheet-origin-clean-flag",
+      "linkingText": [
+        "origin-clean flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "stylesheet",
+      "href": "https://drafts.csswg.org/cssom/#stylesheet",
+      "linkingText": [
+        "StyleSheet"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheet-type",
+      "href": "https://drafts.csswg.org/cssom/#dom-stylesheet-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheet-href",
+      "href": "https://drafts.csswg.org/cssom/#dom-stylesheet-href",
+      "linkingText": [
+        "href"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheet-ownernode",
+      "href": "https://drafts.csswg.org/cssom/#dom-stylesheet-ownernode",
+      "linkingText": [
+        "ownerNode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheet-parentstylesheet",
+      "href": "https://drafts.csswg.org/cssom/#dom-stylesheet-parentstylesheet",
+      "linkingText": [
+        "parentStyleSheet"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheet-title",
+      "href": "https://drafts.csswg.org/cssom/#dom-stylesheet-title",
+      "linkingText": [
+        "title"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheet-media",
+      "href": "https://drafts.csswg.org/cssom/#dom-stylesheet-media",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheet-disabled",
+      "href": "https://drafts.csswg.org/cssom/#dom-stylesheet-disabled",
+      "linkingText": [
+        "disabled"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssstylesheet",
+      "href": "https://drafts.csswg.org/cssom/#cssstylesheet",
+      "linkingText": [
+        "CSSStyleSheet"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-insertrule-rule-index-rule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-insertrule-rule-index-rule",
+      "linkingText": [
+        "rule"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleSheet/insertRule(rule, index)",
+        "CSSStyleSheet/insertRule(rule)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-insertrule-rule-index-index",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-insertrule-rule-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleSheet/insertRule(rule, index)",
+        "CSSStyleSheet/insertRule(rule)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-deleterule-index-index",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-deleterule-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleSheet/deleteRule(index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-ownerrule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-ownerrule",
+      "linkingText": [
+        "ownerRule"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-cssrules",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-cssrules",
+      "linkingText": [
+        "cssRules"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-insertrule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-insertrule",
+      "linkingText": [
+        "insertRule(rule, index)",
+        "insertRule(rule)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-deleterule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-deleterule",
+      "linkingText": [
+        "deleteRule(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-addrule-selector-style-index-selector",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-addrule-selector-style-index-selector",
+      "linkingText": [
+        "selector"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleSheet/addRule(selector, style, index)",
+        "CSSStyleSheet/addRule(selector, style)",
+        "CSSStyleSheet/addRule(selector)",
+        "CSSStyleSheet/addRule()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-addrule-selector-style-index-style",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-addrule-selector-style-index-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleSheet/addRule(selector, style, index)",
+        "CSSStyleSheet/addRule(selector, style)",
+        "CSSStyleSheet/addRule(selector)",
+        "CSSStyleSheet/addRule()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-addrule-selector-style-index-index",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-addrule-selector-style-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleSheet/addRule(selector, style, index)",
+        "CSSStyleSheet/addRule(selector, style)",
+        "CSSStyleSheet/addRule(selector)",
+        "CSSStyleSheet/addRule()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-removerule-index-index",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-removerule-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleSheet/removeRule(index)",
+        "CSSStyleSheet/removeRule()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-rules",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-rules",
+      "linkingText": [
+        "rules"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-removerule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-removerule",
+      "linkingText": [
+        "removeRule(index)",
+        "removeRule()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-addrule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-addrule",
+      "linkingText": [
+        "addRule(selector, style, index)",
+        "addRule(selector, style)",
+        "addRule(selector)",
+        "addRule()",
+        "addRule(selector, block, optionalIndex)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "documentorshadowroot-document-or-shadow-root-css-style-sheets",
+      "href": "https://drafts.csswg.org/cssom/#documentorshadowroot-document-or-shadow-root-css-style-sheets",
+      "linkingText": [
+        "document or shadow root CSS style sheets"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DocumentOrShadowRoot"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-a-css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom/#create-a-css-style-sheet",
+      "linkingText": [
+        "create a CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "add-a-css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom/#add-a-css-style-sheet",
+      "linkingText": [
+        "add a CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "remove-a-css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom/#remove-a-css-style-sheet",
+      "linkingText": [
+        "remove a CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "persistent-css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom/#persistent-css-style-sheet",
+      "linkingText": [
+        "persistent CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-style-sheet-set",
+      "href": "https://drafts.csswg.org/cssom/#css-style-sheet-set",
+      "linkingText": [
+        "CSS style sheet set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-style-sheet-set-name",
+      "href": "https://drafts.csswg.org/cssom/#css-style-sheet-set-name",
+      "linkingText": [
+        "CSS style sheet set name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enabled-css-style-sheet-set",
+      "href": "https://drafts.csswg.org/cssom/#enabled-css-style-sheet-set",
+      "linkingText": [
+        "enabled CSS style sheet set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enable-a-css-style-sheet-set",
+      "href": "https://drafts.csswg.org/cssom/#enable-a-css-style-sheet-set",
+      "linkingText": [
+        "enable a CSS style sheet set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "select-a-css-style-sheet-set",
+      "href": "https://drafts.csswg.org/cssom/#select-a-css-style-sheet-set",
+      "linkingText": [
+        "select a CSS style sheet set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "last-css-style-sheet-set-name",
+      "href": "https://drafts.csswg.org/cssom/#last-css-style-sheet-set-name",
+      "linkingText": [
+        "last CSS style sheet set name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "preferred-css-style-sheet-set-name",
+      "href": "https://drafts.csswg.org/cssom/#preferred-css-style-sheet-set-name",
+      "linkingText": [
+        "preferred CSS style sheet set name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "change-the-preferred-css-style-sheet-set-name",
+      "href": "https://drafts.csswg.org/cssom/#change-the-preferred-css-style-sheet-set-name",
+      "linkingText": [
+        "change the preferred CSS style sheet set name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stylesheetlist",
+      "href": "https://drafts.csswg.org/cssom/#stylesheetlist",
+      "linkingText": [
+        "StyleSheetList"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheetlist-item-index-index",
+      "href": "https://drafts.csswg.org/cssom/#dom-stylesheetlist-item-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "StyleSheetList/item(index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheetlist-item",
+      "href": "https://drafts.csswg.org/cssom/#dom-stylesheetlist-item",
+      "linkingText": [
+        "item(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StyleSheetList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheetlist-length",
+      "href": "https://drafts.csswg.org/cssom/#dom-stylesheetlist-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StyleSheetList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-documentorshadowroot-stylesheets",
+      "href": "https://drafts.csswg.org/cssom/#dom-documentorshadowroot-stylesheets",
+      "linkingText": [
+        "styleSheets"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DocumentOrShadowRoot"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fetch-a-css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom/#fetch-a-css-style-sheet",
+      "linkingText": [
+        "fetch a CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "associated-css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom/#associated-css-style-sheet",
+      "linkingText": [
+        "associated CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "linkstyle",
+      "href": "https://drafts.csswg.org/cssom/#linkstyle",
+      "linkingText": [
+        "LinkStyle"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-linkstyle-sheet",
+      "href": "https://drafts.csswg.org/cssom/#dom-linkstyle-sheet",
+      "linkingText": [
+        "sheet"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LinkStyle"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "prolog",
+      "href": "https://drafts.csswg.org/cssom/#prolog",
+      "linkingText": [
+        "prolog"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-rule",
+      "href": "https://drafts.csswg.org/cssom/#css-rule",
+      "linkingText": [
+        "CSS rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-css-rule-type",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-rule-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-rule-text",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-rule-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-rule-parent-css-rule",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-rule-parent-css-rule",
+      "linkingText": [
+        "parent CSS rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-rule-parent-css-style-sheet",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-rule-parent-css-style-sheet",
+      "linkingText": [
+        "parent CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-rule-child-css-rules",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-rule-child-css-rules",
+      "linkingText": [
+        "child CSS rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parse-a-css-rule",
+      "href": "https://drafts.csswg.org/cssom/#parse-a-css-rule",
+      "linkingText": [
+        "parse a CSS rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-css-rule",
+      "href": "https://drafts.csswg.org/cssom/#serialize-a-css-rule",
+      "linkingText": [
+        "serialize a CSS rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "insert-a-css-rule",
+      "href": "https://drafts.csswg.org/cssom/#insert-a-css-rule",
+      "linkingText": [
+        "insert a CSS rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "remove-a-css-rule",
+      "href": "https://drafts.csswg.org/cssom/#remove-a-css-rule",
+      "linkingText": [
+        "remove a CSS rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssrulelist",
+      "href": "https://drafts.csswg.org/cssom/#cssrulelist",
+      "linkingText": [
+        "CSSRuleList"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrulelist-item-index-index",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssrulelist-item-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSRuleList/item(index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrulelist-item",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssrulelist-item",
+      "linkingText": [
+        "item(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSRuleList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrulelist-length",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssrulelist-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSRuleList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssrule",
+      "href": "https://drafts.csswg.org/cssom/#cssrule",
+      "linkingText": [
+        "CSSRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-style_rule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssrule-style_rule",
+      "linkingText": [
+        "STYLE_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-charset_rule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssrule-charset_rule",
+      "linkingText": [
+        "CHARSET_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-import_rule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssrule-import_rule",
+      "linkingText": [
+        "IMPORT_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-media_rule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssrule-media_rule",
+      "linkingText": [
+        "MEDIA_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-font_face_rule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssrule-font_face_rule",
+      "linkingText": [
+        "FONT_FACE_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-page_rule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssrule-page_rule",
+      "linkingText": [
+        "PAGE_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-margin_rule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssrule-margin_rule",
+      "linkingText": [
+        "MARGIN_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-namespace_rule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssrule-namespace_rule",
+      "linkingText": [
+        "NAMESPACE_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-csstext",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssrule-csstext",
+      "linkingText": [
+        "cssText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-parentrule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssrule-parentrule",
+      "linkingText": [
+        "parentRule"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-parentstylesheet",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssrule-parentstylesheet",
+      "linkingText": [
+        "parentStyleSheet"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-type",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssrule-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssstylerule",
+      "href": "https://drafts.csswg.org/cssom/#cssstylerule",
+      "linkingText": [
+        "CSSStyleRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylerule-selectortext",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylerule-selectortext",
+      "linkingText": [
+        "selectorText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylerule-style",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylerule-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-declarations-specified-order",
+      "href": "https://drafts.csswg.org/cssom/#concept-declarations-specified-order",
+      "linkingText": [
+        "specified order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cssimportrule",
+      "href": "https://drafts.csswg.org/cssom/#cssimportrule",
+      "linkingText": [
+        "CSSImportRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssimportrule-href",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssimportrule-href",
+      "linkingText": [
+        "href"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSImportRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssimportrule-media",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssimportrule-media",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSImportRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssimportrule-stylesheet",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssimportrule-stylesheet",
+      "linkingText": [
+        "styleSheet"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSImportRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssgroupingrule",
+      "href": "https://drafts.csswg.org/cssom/#cssgroupingrule",
+      "linkingText": [
+        "CSSGroupingRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssgroupingrule-insertrule-rule-index-rule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssgroupingrule-insertrule-rule-index-rule",
+      "linkingText": [
+        "rule"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSGroupingRule/insertRule(rule, index)",
+        "CSSGroupingRule/insertRule(rule)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssgroupingrule-insertrule-rule-index-index",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssgroupingrule-insertrule-rule-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSGroupingRule/insertRule(rule, index)",
+        "CSSGroupingRule/insertRule(rule)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssgroupingrule-deleterule-index-index",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssgroupingrule-deleterule-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSGroupingRule/deleteRule(index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssgroupingrule-cssrules",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssgroupingrule-cssrules",
+      "linkingText": [
+        "cssRules"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSGroupingRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssgroupingrule-insertrule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssgroupingrule-insertrule",
+      "linkingText": [
+        "insertRule(rule, index)",
+        "insertRule(rule)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSGroupingRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssgroupingrule-deleterule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssgroupingrule-deleterule",
+      "linkingText": [
+        "deleteRule(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSGroupingRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-list-of-css-page-selectors",
+      "href": "https://drafts.csswg.org/cssom/#parse-a-list-of-css-page-selectors",
+      "linkingText": [
+        "parse a list of CSS page selectors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "serialize-a-list-of-css-page-selectors",
+      "href": "https://drafts.csswg.org/cssom/#serialize-a-list-of-css-page-selectors",
+      "linkingText": [
+        "serialize a list of CSS page selectors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "csspagerule",
+      "href": "https://drafts.csswg.org/cssom/#csspagerule",
+      "linkingText": [
+        "CSSPageRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-csspagerule-selectortext",
+      "href": "https://drafts.csswg.org/cssom/#dom-csspagerule-selectortext",
+      "linkingText": [
+        "selectorText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSPageRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-csspagerule-style",
+      "href": "https://drafts.csswg.org/cssom/#dom-csspagerule-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSPageRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssgroupingrule-selectortext",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssgroupingrule-selectortext",
+      "linkingText": [
+        "selectorText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSGroupingRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssgroupingrule-style",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssgroupingrule-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSGroupingRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssmarginrule",
+      "href": "https://drafts.csswg.org/cssom/#cssmarginrule",
+      "linkingText": [
+        "CSSMarginRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssmarginrule-name",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssmarginrule-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSMarginRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssmarginrule-style",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssmarginrule-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSMarginRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssnamespacerule",
+      "href": "https://drafts.csswg.org/cssom/#cssnamespacerule",
+      "linkingText": [
+        "CSSNamespaceRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssnamespacerule-namespaceuri",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssnamespacerule-namespaceuri",
+      "linkingText": [
+        "namespaceURI"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSNamespaceRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssnamespacerule-prefix",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssnamespacerule-prefix",
+      "linkingText": [
+        "prefix"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSNamespaceRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-declaration",
+      "href": "https://drafts.csswg.org/cssom/#css-declaration",
+      "linkingText": [
+        "CSS declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-declaration-property-name",
+      "href": "https://drafts.csswg.org/cssom/#css-declaration-property-name",
+      "linkingText": [
+        "property name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS declaration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-declaration-value",
+      "href": "https://drafts.csswg.org/cssom/#css-declaration-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS declaration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-declaration-important-flag",
+      "href": "https://drafts.csswg.org/cssom/#css-declaration-important-flag",
+      "linkingText": [
+        "important flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS declaration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-declaration-case-sensitive-flag",
+      "href": "https://drafts.csswg.org/cssom/#css-declaration-case-sensitive-flag",
+      "linkingText": [
+        "case-sensitive flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS declaration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-declaration-block",
+      "href": "https://drafts.csswg.org/cssom/#css-declaration-block",
+      "linkingText": [
+        "CSS declaration block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssstyledeclaration-readonly-flag",
+      "href": "https://drafts.csswg.org/cssom/#cssstyledeclaration-readonly-flag",
+      "linkingText": [
+        "readonly flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssstyledeclaration-declarations",
+      "href": "https://drafts.csswg.org/cssom/#cssstyledeclaration-declarations",
+      "linkingText": [
+        "declarations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssstyledeclaration-parent-css-rule",
+      "href": "https://drafts.csswg.org/cssom/#cssstyledeclaration-parent-css-rule",
+      "linkingText": [
+        "parent CSS rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssstyledeclaration-owner-node",
+      "href": "https://drafts.csswg.org/cssom/#cssstyledeclaration-owner-node",
+      "linkingText": [
+        "owner node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssstyledeclaration-updating-flag",
+      "href": "https://drafts.csswg.org/cssom/#cssstyledeclaration-updating-flag",
+      "linkingText": [
+        "updating flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-css-declaration-block",
+      "href": "https://drafts.csswg.org/cssom/#parse-a-css-declaration-block",
+      "linkingText": [
+        "parse a CSS declaration block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-css-declaration",
+      "href": "https://drafts.csswg.org/cssom/#serialize-a-css-declaration",
+      "linkingText": [
+        "serialize a CSS declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-css-declaration-block",
+      "href": "https://drafts.csswg.org/cssom/#serialize-a-css-declaration-block",
+      "linkingText": [
+        "serialize a CSS declaration block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "update-style-attribute-for",
+      "href": "https://drafts.csswg.org/cssom/#update-style-attribute-for",
+      "linkingText": [
+        "update style attribute for"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-shorthands-preferred-order",
+      "href": "https://drafts.csswg.org/cssom/#concept-shorthands-preferred-order",
+      "linkingText": [
+        "preferred order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssstyledeclaration",
+      "href": "https://drafts.csswg.org/cssom/#cssstyledeclaration",
+      "linkingText": [
+        "CSSStyleDeclaration"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-item-index-index",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-item-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/item(index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-getpropertyvalue-property-property",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-getpropertyvalue-property-property",
+      "linkingText": [
+        "property"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/getPropertyValue(property)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-getpropertypriority-property-property",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-getpropertypriority-property-property",
+      "linkingText": [
+        "property"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/getPropertyPriority(property)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-setproperty-property-value-priority-property",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-setproperty-property-value-priority-property",
+      "linkingText": [
+        "property"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/setProperty(property, value, priority)",
+        "CSSStyleDeclaration/setProperty(property, value)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-setproperty-property-value-priority-value",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-setproperty-property-value-priority-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/setProperty(property, value, priority)",
+        "CSSStyleDeclaration/setProperty(property, value)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-setproperty-property-value-priority-priority",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-setproperty-property-value-priority-priority",
+      "linkingText": [
+        "priority"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/setProperty(property, value, priority)",
+        "CSSStyleDeclaration/setProperty(property, value)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-removeproperty-property-property",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-removeproperty-property-property",
+      "linkingText": [
+        "property"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/removeProperty(property)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-csstext",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-csstext",
+      "linkingText": [
+        "cssText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-length",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-item",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-item",
+      "linkingText": [
+        "item(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-getpropertyvalue",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-getpropertyvalue",
+      "linkingText": [
+        "getPropertyValue(property)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-getpropertypriority",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-getpropertypriority",
+      "linkingText": [
+        "getPropertyPriority(property)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-setproperty",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-setproperty",
+      "linkingText": [
+        "setProperty(property, value, priority)",
+        "setProperty(property, value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-a-css-declaration",
+      "href": "https://drafts.csswg.org/cssom/#set-a-css-declaration",
+      "linkingText": [
+        "set a CSS declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-removeproperty",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-removeproperty",
+      "linkingText": [
+        "removeProperty(property)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-parentrule",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-parentrule",
+      "linkingText": [
+        "parentRule"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-cssfloat",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-cssfloat",
+      "linkingText": [
+        "cssFloat"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-camel_cased_attribute",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-camel_cased_attribute",
+      "linkingText": [
+        "camel_cased_attribute"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-camel-cased-attribute",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-camel-cased-attribute",
+      "linkingText": [
+        "camel-cased attribute"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-webkit_cased_attribute",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-webkit_cased_attribute",
+      "linkingText": [
+        "webkit_cased_attribute"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-webkit-cased-attribute",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-webkit-cased-attribute",
+      "linkingText": [
+        "webkit-cased attribute"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-dashed_attribute",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-dashed_attribute",
+      "linkingText": [
+        "dashed_attribute"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-dashed-attribute",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-dashed-attribute",
+      "linkingText": [
+        "dashed attribute"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-property-to-idl-attribute",
+      "href": "https://drafts.csswg.org/cssom/#css-property-to-idl-attribute",
+      "linkingText": [
+        "CSS property to IDL attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "idl-attribute-to-css-property",
+      "href": "https://drafts.csswg.org/cssom/#idl-attribute-to-css-property",
+      "linkingText": [
+        "IDL attribute to CSS property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-css-value",
+      "href": "https://drafts.csswg.org/cssom/#parse-a-css-value",
+      "linkingText": [
+        "parse a CSS value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-css-value",
+      "href": "https://drafts.csswg.org/cssom/#serialize-a-css-value",
+      "linkingText": [
+        "serialize a CSS value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-css-component-value",
+      "href": "https://drafts.csswg.org/cssom/#serialize-a-css-component-value",
+      "linkingText": [
+        "serialize a CSS component value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementcssinlinestyle",
+      "href": "https://drafts.csswg.org/cssom/#elementcssinlinestyle",
+      "linkingText": [
+        "ElementCSSInlineStyle"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-elementcssinlinestyle-style",
+      "href": "https://drafts.csswg.org/cssom/#dom-elementcssinlinestyle-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ElementCSSInlineStyle"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-getcomputedstyle-elt-pseudoelt-elt",
+      "href": "https://drafts.csswg.org/cssom/#dom-window-getcomputedstyle-elt-pseudoelt-elt",
+      "linkingText": [
+        "elt"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/getComputedStyle(elt, pseudoElt)",
+        "Window/getComputedStyle(elt)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-getcomputedstyle-elt-pseudoelt-pseudoelt",
+      "href": "https://drafts.csswg.org/cssom/#dom-window-getcomputedstyle-elt-pseudoelt-pseudoelt",
+      "linkingText": [
+        "pseudoElt"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/getComputedStyle(elt, pseudoElt)",
+        "Window/getComputedStyle(elt)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-getcomputedstyle",
+      "href": "https://drafts.csswg.org/cssom/#dom-window-getcomputedstyle",
+      "linkingText": [
+        "getComputedStyle(elt, pseudoElt)",
+        "getComputedStyle(elt)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "namespacedef-css",
+      "href": "https://drafts.csswg.org/cssom/#namespacedef-css",
+      "linkingText": [
+        "CSS"
+      ],
+      "localLinkingText": [],
+      "type": "namespace",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-css-escape-ident-ident",
+      "href": "https://drafts.csswg.org/cssom/#dom-css-escape-ident-ident",
+      "linkingText": [
+        "ident"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/escape(ident)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-css-escape",
+      "href": "https://drafts.csswg.org/cssom/#dom-css-escape",
+      "linkingText": [
+        "escape(ident)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "resolved-value",
+      "href": "https://drafts.csswg.org/cssom/#resolved-value",
+      "linkingText": [
+        "resolved value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "resolved-value-special-case-property-like-color",
+      "href": "https://drafts.csswg.org/cssom/#resolved-value-special-case-property-like-color",
+      "linkingText": [
+        "resolved value special case property like color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "resolved-value-special-case-property-like-height",
+      "href": "https://drafts.csswg.org/cssom/#resolved-value-special-case-property-like-height",
+      "linkingText": [
+        "resolved value special case property like height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "resolved-value-special-case-property-like-top",
+      "href": "https://drafts.csswg.org/cssom/#resolved-value-special-case-property-like-top",
+      "linkingText": [
+        "resolved value special case property like top"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "resolved-value-special-case-property",
+      "href": "https://drafts.csswg.org/cssom/#resolved-value-special-case-property",
+      "linkingText": [
+        "resolved value special case property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "http-default-style",
+      "href": "https://drafts.csswg.org/cssom/#http-default-style",
+      "linkingText": [
+        "http-default-style"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

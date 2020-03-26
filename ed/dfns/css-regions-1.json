@@ -1,0 +1,561 @@
+{
+  "spec": {
+    "title": "CSS Regions Module Level 1",
+    "url": "https://drafts.csswg.org/css-regions/"
+  },
+  "dfns": [
+    {
+      "id": "css-region",
+      "href": "https://drafts.csswg.org/css-regions/#css-region",
+      "linkingText": [
+        "CSS Region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "region-chain",
+      "href": "https://drafts.csswg.org/css-regions/#region-chain",
+      "linkingText": [
+        "region chain"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "last-usable-region",
+      "href": "https://drafts.csswg.org/css-regions/#last-usable-region",
+      "linkingText": [
+        "last usable region",
+        "last usable CSS region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "named-flow",
+      "href": "https://drafts.csswg.org/css-regions/#named-flow",
+      "linkingText": [
+        "named flow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-flow-into",
+      "href": "https://drafts.csswg.org/css-regions/#propdef-flow-into",
+      "linkingText": [
+        "flow-into"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "element",
+      "href": "https://drafts.csswg.org/css-regions/#element",
+      "linkingText": [
+        "element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "content",
+      "href": "https://drafts.csswg.org/css-regions/#content",
+      "linkingText": [
+        "content"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "specified-flow",
+      "href": "https://drafts.csswg.org/css-regions/#specified-flow",
+      "linkingText": [
+        "specified flow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-flow-from",
+      "href": "https://drafts.csswg.org/css-regions/#propdef-flow-from",
+      "linkingText": [
+        "flow-from"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "nested-region-context",
+      "href": "https://drafts.csswg.org/css-regions/#nested-region-context",
+      "linkingText": [
+        "nested region context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-region-fragment",
+      "href": "https://drafts.csswg.org/css-regions/#propdef-region-fragment",
+      "linkingText": [
+        "region-fragment"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "document-namedflows",
+      "href": "https://drafts.csswg.org/css-regions/#document-namedflows",
+      "linkingText": [
+        "namedFlows"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-document-namedflows",
+      "href": "https://drafts.csswg.org/css-regions/#dom-document-namedflows",
+      "linkingText": [
+        "namedFlows"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "namedflowmap",
+      "href": "https://drafts.csswg.org/css-regions/#namedflowmap",
+      "linkingText": [
+        "NamedFlowMap"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-get",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflowmap-get",
+      "linkingText": [
+        "get(flowName)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlowMap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-get-flowname-flowname",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflowmap-get-flowname-flowname",
+      "linkingText": [
+        "flowName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "NamedFlowMap/get(flowName)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-has",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflowmap-has",
+      "linkingText": [
+        "has(flowName)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlowMap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-has-flowname-flowname",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflowmap-has-flowname-flowname",
+      "linkingText": [
+        "flowName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "NamedFlowMap/has(flowName)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-set",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflowmap-set",
+      "linkingText": [
+        "set(flowName, flowValue)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlowMap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-set-flowname-flowvalue-flowname",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflowmap-set-flowname-flowvalue-flowname",
+      "linkingText": [
+        "flowName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "NamedFlowMap/set(flowName, flowValue)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-set-flowname-flowvalue-flowvalue",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflowmap-set-flowname-flowvalue-flowvalue",
+      "linkingText": [
+        "flowValue"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "NamedFlowMap/set(flowName, flowValue)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-delete",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflowmap-delete",
+      "linkingText": [
+        "delete(flowName)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlowMap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-delete-flowname-flowname",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflowmap-delete-flowname-flowname",
+      "linkingText": [
+        "flowName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "NamedFlowMap/delete(flowName)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-get①",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflowmap-get%E2%91%A0",
+      "linkingText": [
+        "get()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlowMap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-has①",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflowmap-has%E2%91%A0",
+      "linkingText": [
+        "has()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlowMap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-set①",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflowmap-set%E2%91%A0",
+      "linkingText": [
+        "set()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlowMap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-delete①",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflowmap-delete%E2%91%A0",
+      "linkingText": [
+        "delete()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlowMap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "namedflow",
+      "href": "https://drafts.csswg.org/css-regions/#namedflow",
+      "linkingText": [
+        "NamedFlow"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflow-getregionsbycontent",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflow-getregionsbycontent",
+      "linkingText": [
+        "getRegionsByContent(node)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflow-getregionsbycontent-node-node",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflow-getregionsbycontent-node-node",
+      "linkingText": [
+        "node"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "NamedFlow/getRegionsByContent(node)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflow-name",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflow-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NamedFlow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflow-overset",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflow-overset",
+      "linkingText": [
+        "overset"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NamedFlow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflow-getregions",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflow-getregions",
+      "linkingText": [
+        "getRegions()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflow-firstemptyregionindex",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflow-firstemptyregionindex",
+      "linkingText": [
+        "firstEmptyRegionIndex"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NamedFlow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflow-getcontent",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflow-getcontent",
+      "linkingText": [
+        "getContent()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflow-getregionsbycontent①",
+      "href": "https://drafts.csswg.org/css-regions/#dom-namedflow-getregionsbycontent%E2%91%A0",
+      "linkingText": [
+        "getRegionsByContent()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "region",
+      "href": "https://drafts.csswg.org/css-regions/#region",
+      "linkingText": [
+        "Region"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-region-regionoverset",
+      "href": "https://drafts.csswg.org/css-regions/#dom-region-regionoverset",
+      "linkingText": [
+        "regionOverset"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Region"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-region-getregionflowranges",
+      "href": "https://drafts.csswg.org/css-regions/#dom-region-getregionflowranges",
+      "linkingText": [
+        "getRegionFlowRanges()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Region"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "region-flow-content-box",
+      "href": "https://drafts.csswg.org/css-regions/#region-flow-content-box",
+      "linkingText": [
+        "region flow content box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "rfcb",
+      "href": "https://drafts.csswg.org/css-regions/#rfcb",
+      "linkingText": [
+        "RFCB"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "flow-fragment-height",
+      "href": "https://drafts.csswg.org/css-regions/#flow-fragment-height",
+      "linkingText": [
+        "flow fragment height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,1154 @@
+{
+  "spec": {
+    "title": "Identity for WebRTC 1.0",
+    "url": "https://w3c.github.io/webrtc-identity/identity.html"
+  },
+  "dfns": [
+    {
+      "id": "dfn-user-agent",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-errorevent",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-errorevent",
+      "linkingText": [
+        "ErrorEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-queue-a-task",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-queue-a-task",
+      "linkingText": [
+        "queue a\n    task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fire-a-simple-event",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-fire-a-simple-event",
+      "linkingText": [
+        "fire a\n    simple event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-networking-task-source",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-networking-task-source",
+      "linkingText": [
+        "networking\n    task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-event",
+      "linkingText": [
+        "event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handlers",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-event-handlers",
+      "linkingText": [
+        "event\n    handlers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handler-event-types",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-event-handler-event-types",
+      "linkingText": [
+        "event\n    handler event types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-performance-timeorigin",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-performance-timeorigin",
+      "linkingText": [
+        "performance.timeOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-performance-now",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-performance-now",
+      "linkingText": [
+        "performance.now()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediastream",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-mediastream",
+      "linkingText": [
+        "MediaStream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediastreamtrack",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-mediastreamtrack",
+      "linkingText": [
+        "MediaStreamTrack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediastreamconstraints",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-mediastreamconstraints",
+      "linkingText": [
+        "MediaStreamConstraints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-blob",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-blob",
+      "linkingText": [
+        "Blob"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-media-description",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-media-description",
+      "linkingText": [
+        "media description"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-media-transport",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-media-transport",
+      "linkingText": [
+        "media transport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-generation",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-generation",
+      "linkingText": [
+        "generation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcstatstype",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-rtcstatstype",
+      "linkingText": [
+        "RTCStatsType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-stats-object",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-stats-object",
+      "linkingText": [
+        "stats object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-monitored-object",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-monitored-object",
+      "linkingText": [
+        "monitored object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-throw",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-throw",
+      "linkingText": [
+        "throw"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-create",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-create",
+      "linkingText": [
+        "create"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fulfill",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-fulfill",
+      "linkingText": [
+        "fulfill",
+        "fulfillment",
+        "fulfilled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-reject",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-reject",
+      "linkingText": [
+        "reject",
+        "rejection",
+        "rejecting",
+        "rejected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-resolve",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-resolve",
+      "linkingText": [
+        "resolve",
+        "resolves",
+        "resolved"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pending",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-settled",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-settled",
+      "linkingText": [
+        "settled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-bundle",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-bundle",
+      "linkingText": [
+        "bundle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-bundle-only",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-bundle-only",
+      "linkingText": [
+        "bundle-only"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-bundle-policy",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-bundle-policy",
+      "linkingText": [
+        "bundle-policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-oauth-client",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-oauth-client",
+      "linkingText": [
+        "OAuth Client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-authorization-server",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-authorization-server",
+      "linkingText": [
+        "Authorization Server"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcpeerconnection",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-rtcpeerconnection",
+      "linkingText": [
+        "rtcpeerconnection",
+        "rtcpeerconnection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-setremotedescription",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-setremotedescription",
+      "linkingText": [
+        "setRemoteDescription"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-createoffer",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-createoffer",
+      "linkingText": [
+        "createOffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-createanswer",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-createanswer",
+      "linkingText": [
+        "createAnswer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-addtrack",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-addtrack",
+      "linkingText": [
+        "addTrack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcerror",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-rtcerror",
+      "linkingText": [
+        "rtcerror",
+        "rtcerror"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-realm",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-realm",
+      "linkingText": [
+        "realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityproviderglobalscope",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityproviderglobalscope",
+      "linkingText": [
+        "RTCIdentityProviderGlobalScope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityproviderglobalscope-rtcidentityprovider",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityproviderglobalscope-rtcidentityprovider",
+      "linkingText": [
+        "rtcIdentityProvider"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityproviderglobalscope"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityproviderregistrar",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityproviderregistrar",
+      "linkingText": [
+        "RTCIdentityProviderRegistrar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityproviderregistrar-register",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityproviderregistrar-register",
+      "linkingText": [
+        "register",
+        "register()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityproviderregistrar"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityprovider",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityprovider",
+      "linkingText": [
+        "RTCIdentityProvider"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityprovider-generateassertion",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityprovider-generateassertion",
+      "linkingText": [
+        "generateAssertion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityprovider"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityprovider-validateassertion",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityprovider-validateassertion",
+      "linkingText": [
+        "validateAssertion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityprovider"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-generateassertioncallback",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-generateassertioncallback",
+      "linkingText": [
+        "GenerateAssertionCallback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-validateassertioncallback",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-validateassertioncallback",
+      "linkingText": [
+        "ValidateAssertionCallback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityassertionresult",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityassertionresult",
+      "linkingText": [
+        "RTCIdentityAssertionResult"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityassertionresult-idp",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityassertionresult-idp",
+      "linkingText": [
+        "idp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityassertionresult"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityassertionresult-assertion",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityassertionresult-assertion",
+      "linkingText": [
+        "assertion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityassertionresult"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityproviderdetails",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityproviderdetails",
+      "linkingText": [
+        "RTCIdentityProviderDetails"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityproviderdetails-domain",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityproviderdetails-domain",
+      "linkingText": [
+        "domain"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityproviderdetails"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityproviderdetails-protocol",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityproviderdetails-protocol",
+      "linkingText": [
+        "protocol"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityproviderdetails"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityvalidationresult",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityvalidationresult",
+      "linkingText": [
+        "RTCIdentityValidationResult"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityvalidationresult-identity",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityvalidationresult-identity",
+      "linkingText": [
+        "identity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityvalidationresult"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityvalidationresult-contents",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityvalidationresult-contents",
+      "linkingText": [
+        "contents"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityvalidationresult"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-peeridentity",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-peeridentity",
+      "linkingText": [
+        "peerIdentity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcpeerconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idploginurl",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-idploginurl",
+      "linkingText": [
+        "idpLoginUrl"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcpeerconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idperrorinfo",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-idperrorinfo",
+      "linkingText": [
+        "idpErrorInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcpeerconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-setidentityprovider",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-setidentityprovider",
+      "linkingText": [
+        "setIdentityProvider"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcpeerconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-getidentityassertion",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-getidentityassertion",
+      "linkingText": [
+        "getIdentityAssertion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcpeerconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcconfiguration",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcconfiguration",
+      "linkingText": [
+        "RTCConfiguration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcconfiguration-peeridentity",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcconfiguration-peeridentity",
+      "linkingText": [
+        "peerIdentity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcconfiguration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityprovideroptions",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityprovideroptions",
+      "linkingText": [
+        "RTCIdentityProviderOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityprovideroptions-protocol",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityprovideroptions-protocol",
+      "linkingText": [
+        "protocol"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityprovideroptions"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityprovideroptions-usernamehint",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityprovideroptions-usernamehint",
+      "linkingText": [
+        "usernameHint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityprovideroptions"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityprovideroptions-peeridentity",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dom-rtcidentityprovideroptions-peeridentity",
+      "linkingText": [
+        "peerIdentity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityprovideroptions"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcidentityassertion",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-rtcidentityassertion",
+      "linkingText": [
+        "RTCIdentityAssertion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idp",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-idp",
+      "linkingText": [
+        "idp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityassertion"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-name",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityassertion"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "target-peer-identity",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#target-peer-identity",
+      "linkingText": [
+        "target peer identity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-httprequeststatuscode",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-httprequeststatuscode",
+      "linkingText": [
+        "httpRequestStatusCode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcerror"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcerrorinit",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-rtcerrorinit",
+      "linkingText": [
+        "RTCErrorInit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-httprequeststatuscode-0",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-httprequeststatuscode-0",
+      "linkingText": [
+        "httpRequestStatusCode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcerrorinit"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcerrordetailtypeidp",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-rtcerrordetailtypeidp",
+      "linkingText": [
+        "RTCErrorDetailTypeIdp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idp-bad-script-failure",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-idp-bad-script-failure",
+      "linkingText": [
+        "idp-bad-script-failure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcerrordetailtypeidp"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idp-execution-failure",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-idp-execution-failure",
+      "linkingText": [
+        "idp-execution-failure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcerrordetailtypeidp"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idp-load-failure",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-idp-load-failure",
+      "linkingText": [
+        "idp-load-failure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcerrordetailtypeidp"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idp-need-login",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-idp-need-login",
+      "linkingText": [
+        "idp-need-login"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcerrordetailtypeidp"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idp-timeout",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-idp-timeout",
+      "linkingText": [
+        "idp-timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcerrordetailtypeidp"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idp-tls-failure",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-idp-tls-failure",
+      "linkingText": [
+        "idp-tls-failure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcerrordetailtypeidp"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idp-token-expired",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-idp-token-expired",
+      "linkingText": [
+        "idp-token-expired"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcerrordetailtypeidp"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idp-token-invalid",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-idp-token-invalid",
+      "linkingText": [
+        "idp-token-invalid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcerrordetailtypeidp"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-peeridentity-0",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-peeridentity-0",
+      "linkingText": [
+        "peerIdentity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediastreamconstraints"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-peeridentity-1",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-peeridentity-1",
+      "linkingText": [
+        "peerIdentity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-isolated",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-isolated",
+      "linkingText": [
+        "isolated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediastreamtrack"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-onisolationchange",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#dfn-onisolationchange",
+      "linkingText": [
+        "onisolationchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediastreamtrack"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "event-isolationchange",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html#event-isolationchange",
+      "linkingText": [
+        "isolationchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    }
+  ]
+}

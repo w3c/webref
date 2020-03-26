@@ -1,0 +1,340 @@
+{
+  "spec": {
+    "title": "HTMLVideoElement.requestAnimationFrame()",
+    "url": "https://wicg.github.io/video-raf/"
+  },
+  "dfns": [
+    {
+      "id": "dictdef-videoframemetadata",
+      "href": "https://wicg.github.io/video-raf/#dictdef-videoframemetadata",
+      "linkingText": [
+        "VideoFrameMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "media-pixels",
+      "href": "https://wicg.github.io/video-raf/#media-pixels",
+      "linkingText": [
+        "media pixels"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframemetadata-presentedtime",
+      "href": "https://wicg.github.io/video-raf/#dom-videoframemetadata-presentedtime",
+      "linkingText": [
+        "presentedTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframemetadata-expecteddisplaytime",
+      "href": "https://wicg.github.io/video-raf/#dom-videoframemetadata-expecteddisplaytime",
+      "linkingText": [
+        "expectedDisplayTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframemetadata-width",
+      "href": "https://wicg.github.io/video-raf/#dom-videoframemetadata-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframemetadata-height",
+      "href": "https://wicg.github.io/video-raf/#dom-videoframemetadata-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframemetadata-presentationtimestamp",
+      "href": "https://wicg.github.io/video-raf/#dom-videoframemetadata-presentationtimestamp",
+      "linkingText": [
+        "presentationTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframemetadata-processingduration",
+      "href": "https://wicg.github.io/video-raf/#dom-videoframemetadata-processingduration",
+      "linkingText": [
+        "processingDuration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframemetadata-presentedframes",
+      "href": "https://wicg.github.io/video-raf/#dom-videoframemetadata-presentedframes",
+      "linkingText": [
+        "presentedFrames"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframemetadata-capturetime",
+      "href": "https://wicg.github.io/video-raf/#dom-videoframemetadata-capturetime",
+      "linkingText": [
+        "captureTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframemetadata-receivetime",
+      "href": "https://wicg.github.io/video-raf/#dom-videoframemetadata-receivetime",
+      "linkingText": [
+        "receiveTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframemetadata-rtptimestamp",
+      "href": "https://wicg.github.io/video-raf/#dom-videoframemetadata-rtptimestamp",
+      "linkingText": [
+        "rtpTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "callbackdef-videoframerequestcallback",
+      "href": "https://wicg.github.io/video-raf/#callbackdef-videoframerequestcallback",
+      "linkingText": [
+        "VideoFrameRequestCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframerequestcallback-now",
+      "href": "https://wicg.github.io/video-raf/#dom-videoframerequestcallback-now",
+      "linkingText": [
+        "now"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoFrameRequestCallback"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframerequestcallback-metadata",
+      "href": "https://wicg.github.io/video-raf/#dom-videoframerequestcallback-metadata",
+      "linkingText": [
+        "metadata"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoFrameRequestCallback"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "canceled",
+      "href": "https://wicg.github.io/video-raf/#canceled",
+      "linkingText": [
+        "canceled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlvideoelement-requestanimationframe-callback-callback",
+      "href": "https://wicg.github.io/video-raf/#dom-htmlvideoelement-requestanimationframe-callback-callback",
+      "linkingText": [
+        "callback"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "HTMLVideoElement/requestAnimationFrame(callback)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlvideoelement-cancelanimationframe-handle-handle",
+      "href": "https://wicg.github.io/video-raf/#dom-htmlvideoelement-cancelanimationframe-handle-handle",
+      "linkingText": [
+        "handle"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "HTMLVideoElement/cancelAnimationFrame(handle)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-of-animation-frame-callbacks",
+      "href": "https://wicg.github.io/video-raf/#list-of-animation-frame-callbacks",
+      "linkingText": [
+        "list of animation frame callbacks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "last-presented-frame-indentifier",
+      "href": "https://wicg.github.io/video-raf/#last-presented-frame-indentifier",
+      "linkingText": [
+        "last presented frame indentifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-frame-callback-identifier",
+      "href": "https://wicg.github.io/video-raf/#animation-frame-callback-identifier",
+      "linkingText": [
+        "animation frame callback identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlvideoelement-requestanimationframe",
+      "href": "https://wicg.github.io/video-raf/#dom-htmlvideoelement-requestanimationframe",
+      "linkingText": [
+        "requestAnimationFrame(callback)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "HTMLVideoElement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlvideoelement-cancelanimationframe",
+      "href": "https://wicg.github.io/video-raf/#dom-htmlvideoelement-cancelanimationframe",
+      "linkingText": [
+        "cancelAnimationFrame(handle)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "HTMLVideoElement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "associated-video-element",
+      "href": "https://wicg.github.io/video-raf/#associated-video-element",
+      "linkingText": [
+        "associated video element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "run-the-video-animation-frame-callbacks",
+      "href": "https://wicg.github.io/video-raf/#run-the-video-animation-frame-callbacks",
+      "linkingText": [
+        "run the video animation frame callbacks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

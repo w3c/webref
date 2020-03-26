@@ -1,0 +1,2921 @@
+{
+  "spec": {
+    "title": "UI Events",
+    "url": "https://w3c.github.io/uievents/"
+  },
+  "dfns": [
+    {
+      "id": "internal-key-modifier-state",
+      "href": "https://w3c.github.io/uievents/#internal-key-modifier-state",
+      "linkingText": [
+        "internal key modifier state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "modifier-key-name",
+      "href": "https://w3c.github.io/uievents/#modifier-key-name",
+      "linkingText": [
+        "key modifier name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-uievent-uievent",
+      "href": "https://w3c.github.io/uievents/#dom-uievent-uievent",
+      "linkingText": [
+        "UIEvent(type, eventInitDict)",
+        "UIEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "UIEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uievent-uievent-type-eventinitdict-type",
+      "href": "https://w3c.github.io/uievents/#dom-uievent-uievent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "UIEvent/UIEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uievent-uievent-type-eventinitdict-eventinitdict",
+      "href": "https://w3c.github.io/uievents/#dom-uievent-uievent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "UIEvent/UIEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "uievent",
+      "href": "https://w3c.github.io/uievents/#uievent",
+      "linkingText": [
+        "UIEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uievent-view",
+      "href": "https://w3c.github.io/uievents/#dom-uievent-view",
+      "linkingText": [
+        "view"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "UIEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uievent-detail",
+      "href": "https://w3c.github.io/uievents/#dom-uievent-detail",
+      "linkingText": [
+        "detail"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "UIEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-uieventinit",
+      "href": "https://w3c.github.io/uievents/#dictdef-uieventinit",
+      "linkingText": [
+        "UIEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uieventinit-view",
+      "href": "https://w3c.github.io/uievents/#dom-uieventinit-view",
+      "linkingText": [
+        "view"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "UIEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uieventinit-detail",
+      "href": "https://w3c.github.io/uievents/#dom-uieventinit-detail",
+      "linkingText": [
+        "detail"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "UIEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "load",
+      "href": "https://w3c.github.io/uievents/#load",
+      "linkingText": [
+        "load"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "unload",
+      "href": "https://w3c.github.io/uievents/#unload",
+      "linkingText": [
+        "unload"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "abort",
+      "href": "https://w3c.github.io/uievents/#abort",
+      "linkingText": [
+        "abort"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "error",
+      "href": "https://w3c.github.io/uievents/#error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "select",
+      "href": "https://w3c.github.io/uievents/#select",
+      "linkingText": [
+        "select"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-focusevent-focusevent",
+      "href": "https://w3c.github.io/uievents/#dom-focusevent-focusevent",
+      "linkingText": [
+        "FocusEvent(type, eventInitDict)",
+        "FocusEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "FocusEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-focusevent-focusevent-type-eventinitdict-type",
+      "href": "https://w3c.github.io/uievents/#dom-focusevent-focusevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FocusEvent/FocusEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-focusevent-focusevent-type-eventinitdict-eventinitdict",
+      "href": "https://w3c.github.io/uievents/#dom-focusevent-focusevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FocusEvent/FocusEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "focusevent",
+      "href": "https://w3c.github.io/uievents/#focusevent",
+      "linkingText": [
+        "FocusEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-focusevent-relatedtarget",
+      "href": "https://w3c.github.io/uievents/#dom-focusevent-relatedtarget",
+      "linkingText": [
+        "relatedTarget"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FocusEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-focuseventinit",
+      "href": "https://w3c.github.io/uievents/#dictdef-focuseventinit",
+      "linkingText": [
+        "FocusEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-focuseventinit-relatedtarget",
+      "href": "https://w3c.github.io/uievents/#dom-focuseventinit-relatedtarget",
+      "linkingText": [
+        "relatedTarget"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FocusEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "blur",
+      "href": "https://w3c.github.io/uievents/#blur",
+      "linkingText": [
+        "blur"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "focus",
+      "href": "https://w3c.github.io/uievents/#focus",
+      "linkingText": [
+        "focus"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "focusin",
+      "href": "https://w3c.github.io/uievents/#focusin",
+      "linkingText": [
+        "focusin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "focusout",
+      "href": "https://w3c.github.io/uievents/#focusout",
+      "linkingText": [
+        "focusout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-mouseevent",
+      "href": "https://w3c.github.io/uievents/#dom-mouseevent-mouseevent",
+      "linkingText": [
+        "MouseEvent(type, eventInitDict)",
+        "MouseEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-mouseevent-type-eventinitdict-type",
+      "href": "https://w3c.github.io/uievents/#dom-mouseevent-mouseevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MouseEvent/MouseEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-mouseevent-type-eventinitdict-eventinitdict",
+      "href": "https://w3c.github.io/uievents/#dom-mouseevent-mouseevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MouseEvent/MouseEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mouseevent",
+      "href": "https://w3c.github.io/uievents/#mouseevent",
+      "linkingText": [
+        "MouseEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-getmodifierstate-keyarg-keyarg",
+      "href": "https://w3c.github.io/uievents/#dom-mouseevent-getmodifierstate-keyarg-keyarg",
+      "linkingText": [
+        "keyArg"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MouseEvent/getModifierState(keyArg)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-screenx",
+      "href": "https://w3c.github.io/uievents/#dom-mouseevent-screenx",
+      "linkingText": [
+        "screenX"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-screeny",
+      "href": "https://w3c.github.io/uievents/#dom-mouseevent-screeny",
+      "linkingText": [
+        "screenY"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-clientx",
+      "href": "https://w3c.github.io/uievents/#dom-mouseevent-clientx",
+      "linkingText": [
+        "clientX"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-clienty",
+      "href": "https://w3c.github.io/uievents/#dom-mouseevent-clienty",
+      "linkingText": [
+        "clientY"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-ctrlkey",
+      "href": "https://w3c.github.io/uievents/#dom-mouseevent-ctrlkey",
+      "linkingText": [
+        "ctrlKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-shiftkey",
+      "href": "https://w3c.github.io/uievents/#dom-mouseevent-shiftkey",
+      "linkingText": [
+        "shiftKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-altkey",
+      "href": "https://w3c.github.io/uievents/#dom-mouseevent-altkey",
+      "linkingText": [
+        "altKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-metakey",
+      "href": "https://w3c.github.io/uievents/#dom-mouseevent-metakey",
+      "linkingText": [
+        "metaKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-button",
+      "href": "https://w3c.github.io/uievents/#dom-mouseevent-button",
+      "linkingText": [
+        "button"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-buttons",
+      "href": "https://w3c.github.io/uievents/#dom-mouseevent-buttons",
+      "linkingText": [
+        "buttons"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-relatedtarget",
+      "href": "https://w3c.github.io/uievents/#dom-mouseevent-relatedtarget",
+      "linkingText": [
+        "relatedTarget"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-getmodifierstate",
+      "href": "https://w3c.github.io/uievents/#dom-mouseevent-getmodifierstate",
+      "linkingText": [
+        "getModifierState(keyArg)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mouseeventinit",
+      "href": "https://w3c.github.io/uievents/#dictdef-mouseeventinit",
+      "linkingText": [
+        "MouseEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-screenx",
+      "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-screenx",
+      "linkingText": [
+        "screenX"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-screeny",
+      "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-screeny",
+      "linkingText": [
+        "screenY"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-clientx",
+      "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-clientx",
+      "linkingText": [
+        "clientX"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-clienty",
+      "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-clienty",
+      "linkingText": [
+        "clientY"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-button",
+      "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-button",
+      "linkingText": [
+        "button"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-buttons",
+      "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-buttons",
+      "linkingText": [
+        "buttons"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-relatedtarget",
+      "href": "https://w3c.github.io/uievents/#dom-mouseeventinit-relatedtarget",
+      "linkingText": [
+        "relatedTarget"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-eventmodifierinit",
+      "href": "https://w3c.github.io/uievents/#dictdef-eventmodifierinit",
+      "linkingText": [
+        "EventModifierInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-ctrlkey",
+      "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-ctrlkey",
+      "linkingText": [
+        "ctrlKey"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-shiftkey",
+      "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-shiftkey",
+      "linkingText": [
+        "shiftKey"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-altkey",
+      "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-altkey",
+      "linkingText": [
+        "altKey"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-metakey",
+      "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-metakey",
+      "linkingText": [
+        "metaKey"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifieraltgraph",
+      "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifieraltgraph",
+      "linkingText": [
+        "modifierAltGraph"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifiercapslock",
+      "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiercapslock",
+      "linkingText": [
+        "modifierCapsLock"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifierfn",
+      "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierfn",
+      "linkingText": [
+        "modifierFn"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifierfnlock",
+      "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierfnlock",
+      "linkingText": [
+        "modifierFnLock"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifierhyper",
+      "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierhyper",
+      "linkingText": [
+        "modifierHyper"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifiernumlock",
+      "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiernumlock",
+      "linkingText": [
+        "modifierNumLock"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifierscrolllock",
+      "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierscrolllock",
+      "linkingText": [
+        "modifierScrollLock"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifiersuper",
+      "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiersuper",
+      "linkingText": [
+        "modifierSuper"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifiersymbol",
+      "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiersymbol",
+      "linkingText": [
+        "modifierSymbol"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifiersymbollock",
+      "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiersymbollock",
+      "linkingText": [
+        "modifierSymbolLock"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "auxclick",
+      "href": "https://w3c.github.io/uievents/#auxclick",
+      "linkingText": [
+        "auxclick"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "click",
+      "href": "https://w3c.github.io/uievents/#click",
+      "linkingText": [
+        "click"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dblclick",
+      "href": "https://w3c.github.io/uievents/#dblclick",
+      "linkingText": [
+        "dblclick"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mousedown",
+      "href": "https://w3c.github.io/uievents/#mousedown",
+      "linkingText": [
+        "mousedown"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mouseenter",
+      "href": "https://w3c.github.io/uievents/#mouseenter",
+      "linkingText": [
+        "mouseenter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mouseleave",
+      "href": "https://w3c.github.io/uievents/#mouseleave",
+      "linkingText": [
+        "mouseleave"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mousemove",
+      "href": "https://w3c.github.io/uievents/#mousemove",
+      "linkingText": [
+        "mousemove"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mouseout",
+      "href": "https://w3c.github.io/uievents/#mouseout",
+      "linkingText": [
+        "mouseout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mouseover",
+      "href": "https://w3c.github.io/uievents/#mouseover",
+      "linkingText": [
+        "mouseover"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mouseup",
+      "href": "https://w3c.github.io/uievents/#mouseup",
+      "linkingText": [
+        "mouseup"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-wheelevent",
+      "href": "https://w3c.github.io/uievents/#dom-wheelevent-wheelevent",
+      "linkingText": [
+        "WheelEvent(type, eventInitDict)",
+        "WheelEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-wheelevent-type-eventinitdict-type",
+      "href": "https://w3c.github.io/uievents/#dom-wheelevent-wheelevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WheelEvent/WheelEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-wheelevent-type-eventinitdict-eventinitdict",
+      "href": "https://w3c.github.io/uievents/#dom-wheelevent-wheelevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WheelEvent/WheelEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "wheelevent",
+      "href": "https://w3c.github.io/uievents/#wheelevent",
+      "linkingText": [
+        "WheelEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-dom_delta_pixel",
+      "href": "https://w3c.github.io/uievents/#dom-wheelevent-dom_delta_pixel",
+      "linkingText": [
+        "DOM_DELTA_PIXEL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-dom_delta_line",
+      "href": "https://w3c.github.io/uievents/#dom-wheelevent-dom_delta_line",
+      "linkingText": [
+        "DOM_DELTA_LINE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-dom_delta_page",
+      "href": "https://w3c.github.io/uievents/#dom-wheelevent-dom_delta_page",
+      "linkingText": [
+        "DOM_DELTA_PAGE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-deltax",
+      "href": "https://w3c.github.io/uievents/#dom-wheelevent-deltax",
+      "linkingText": [
+        "deltaX"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-deltay",
+      "href": "https://w3c.github.io/uievents/#dom-wheelevent-deltay",
+      "linkingText": [
+        "deltaY"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-deltaz",
+      "href": "https://w3c.github.io/uievents/#dom-wheelevent-deltaz",
+      "linkingText": [
+        "deltaZ"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-deltamode",
+      "href": "https://w3c.github.io/uievents/#dom-wheelevent-deltamode",
+      "linkingText": [
+        "deltaMode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-wheeleventinit",
+      "href": "https://w3c.github.io/uievents/#dictdef-wheeleventinit",
+      "linkingText": [
+        "WheelEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheeleventinit-deltax",
+      "href": "https://w3c.github.io/uievents/#dom-wheeleventinit-deltax",
+      "linkingText": [
+        "deltaX"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WheelEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheeleventinit-deltay",
+      "href": "https://w3c.github.io/uievents/#dom-wheeleventinit-deltay",
+      "linkingText": [
+        "deltaY"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WheelEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheeleventinit-deltaz",
+      "href": "https://w3c.github.io/uievents/#dom-wheeleventinit-deltaz",
+      "linkingText": [
+        "deltaZ"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WheelEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheeleventinit-deltamode",
+      "href": "https://w3c.github.io/uievents/#dom-wheeleventinit-deltamode",
+      "linkingText": [
+        "deltaMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WheelEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "wheel",
+      "href": "https://w3c.github.io/uievents/#wheel",
+      "linkingText": [
+        "wheel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-inputevent-inputevent",
+      "href": "https://w3c.github.io/uievents/#dom-inputevent-inputevent",
+      "linkingText": [
+        "InputEvent(type, eventInitDict)",
+        "InputEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "InputEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-inputevent-inputevent-type-eventinitdict-type",
+      "href": "https://w3c.github.io/uievents/#dom-inputevent-inputevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "InputEvent/InputEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-inputevent-inputevent-type-eventinitdict-eventinitdict",
+      "href": "https://w3c.github.io/uievents/#dom-inputevent-inputevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "InputEvent/InputEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inputevent",
+      "href": "https://w3c.github.io/uievents/#inputevent",
+      "linkingText": [
+        "InputEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-inputevent-data",
+      "href": "https://w3c.github.io/uievents/#dom-inputevent-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InputEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-inputevent-iscomposing",
+      "href": "https://w3c.github.io/uievents/#dom-inputevent-iscomposing",
+      "linkingText": [
+        "isComposing"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InputEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-inputevent-inputtype",
+      "href": "https://w3c.github.io/uievents/#dom-inputevent-inputtype",
+      "linkingText": [
+        "inputType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InputEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-inputeventinit",
+      "href": "https://w3c.github.io/uievents/#dictdef-inputeventinit",
+      "linkingText": [
+        "InputEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-inputeventinit-data",
+      "href": "https://w3c.github.io/uievents/#dom-inputeventinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "InputEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-inputeventinit-iscomposing",
+      "href": "https://w3c.github.io/uievents/#dom-inputeventinit-iscomposing",
+      "linkingText": [
+        "isComposing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "InputEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-inputeventinit-inputtype",
+      "href": "https://w3c.github.io/uievents/#dom-inputeventinit-inputtype",
+      "linkingText": [
+        "inputType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "InputEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "beforeinput",
+      "href": "https://w3c.github.io/uievents/#beforeinput",
+      "linkingText": [
+        "beforeinput"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "input",
+      "href": "https://w3c.github.io/uievents/#input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-keyboardevent",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-keyboardevent",
+      "linkingText": [
+        "KeyboardEvent(type, eventInitDict)",
+        "KeyboardEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-keyboardevent-type-eventinitdict-type",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-keyboardevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyboardEvent/KeyboardEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-keyboardevent-type-eventinitdict-eventinitdict",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-keyboardevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyboardEvent/KeyboardEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "keyboardevent",
+      "href": "https://w3c.github.io/uievents/#keyboardevent",
+      "linkingText": [
+        "KeyboardEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-getmodifierstate-keyarg-keyarg",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-getmodifierstate-keyarg-keyarg",
+      "linkingText": [
+        "keyArg"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyboardEvent/getModifierState(keyArg)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-dom_key_location_standard",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-dom_key_location_standard",
+      "linkingText": [
+        "DOM_KEY_LOCATION_STANDARD"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-dom_key_location_left",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-dom_key_location_left",
+      "linkingText": [
+        "DOM_KEY_LOCATION_LEFT"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-dom_key_location_right",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-dom_key_location_right",
+      "linkingText": [
+        "DOM_KEY_LOCATION_RIGHT"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-dom_key_location_numpad",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-dom_key_location_numpad",
+      "linkingText": [
+        "DOM_KEY_LOCATION_NUMPAD"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-key",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-code",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-code",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-location",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-location",
+      "linkingText": [
+        "location"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-ctrlkey",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-ctrlkey",
+      "linkingText": [
+        "ctrlKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-shiftkey",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-shiftkey",
+      "linkingText": [
+        "shiftKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-altkey",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-altkey",
+      "linkingText": [
+        "altKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-metakey",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-metakey",
+      "linkingText": [
+        "metaKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-repeat",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-repeat",
+      "linkingText": [
+        "repeat"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-iscomposing",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-iscomposing",
+      "linkingText": [
+        "isComposing"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-getmodifierstate",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-getmodifierstate",
+      "linkingText": [
+        "getModifierState(keyArg)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-keyboardeventinit",
+      "href": "https://w3c.github.io/uievents/#dictdef-keyboardeventinit",
+      "linkingText": [
+        "KeyboardEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardeventinit-key",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardeventinit-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyboardEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardeventinit-code",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardeventinit-code",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyboardEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardeventinit-location",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardeventinit-location",
+      "linkingText": [
+        "location"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyboardEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardeventinit-repeat",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardeventinit-repeat",
+      "linkingText": [
+        "repeat"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyboardEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardeventinit-iscomposing",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardeventinit-iscomposing",
+      "linkingText": [
+        "isComposing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyboardEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "keydown",
+      "href": "https://w3c.github.io/uievents/#keydown",
+      "linkingText": [
+        "keydown"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "keyup",
+      "href": "https://w3c.github.io/uievents/#keyup",
+      "linkingText": [
+        "keyup"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-compositionevent-compositionevent",
+      "href": "https://w3c.github.io/uievents/#dom-compositionevent-compositionevent",
+      "linkingText": [
+        "CompositionEvent(type, eventInitDict)",
+        "CompositionEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CompositionEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositionevent-compositionevent-type-eventinitdict-type",
+      "href": "https://w3c.github.io/uievents/#dom-compositionevent-compositionevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CompositionEvent/CompositionEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositionevent-compositionevent-type-eventinitdict-eventinitdict",
+      "href": "https://w3c.github.io/uievents/#dom-compositionevent-compositionevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CompositionEvent/CompositionEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "compositionevent",
+      "href": "https://w3c.github.io/uievents/#compositionevent",
+      "linkingText": [
+        "CompositionEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositionevent-data",
+      "href": "https://w3c.github.io/uievents/#dom-compositionevent-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CompositionEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-compositioneventinit",
+      "href": "https://w3c.github.io/uievents/#dictdef-compositioneventinit",
+      "linkingText": [
+        "CompositionEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositioneventinit-data",
+      "href": "https://w3c.github.io/uievents/#dom-compositioneventinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CompositionEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "compositionstart",
+      "href": "https://w3c.github.io/uievents/#compositionstart",
+      "linkingText": [
+        "compositionstart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "compositionupdate",
+      "href": "https://w3c.github.io/uievents/#compositionupdate",
+      "linkingText": [
+        "compositionupdate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "compositionend",
+      "href": "https://w3c.github.io/uievents/#compositionend",
+      "linkingText": [
+        "compositionend"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-uievent-inituievent",
+      "href": "https://w3c.github.io/uievents/#dom-uievent-inituievent",
+      "linkingText": [
+        "initUIEvent()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "UIEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-initmouseevent",
+      "href": "https://w3c.github.io/uievents/#dom-mouseevent-initmouseevent",
+      "linkingText": [
+        "initMouseEvent()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-initwheelevent",
+      "href": "https://w3c.github.io/uievents/#dom-wheelevent-initwheelevent",
+      "linkingText": [
+        "initWheelEvent()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardeveng-initkeyboardevent",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardeveng-initkeyboardevent",
+      "linkingText": [
+        "initKeyboardEvent()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "KeyboardEveng"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositionevent-initcompositionevent",
+      "href": "https://w3c.github.io/uievents/#dom-compositionevent-initcompositionevent",
+      "linkingText": [
+        "initCompositionEvent()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CompositionEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uievent-which",
+      "href": "https://w3c.github.io/uievents/#dom-uievent-which",
+      "linkingText": [
+        "which"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "UIEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "uieventinit-which",
+      "href": "https://w3c.github.io/uievents/#uieventinit-which",
+      "linkingText": [
+        "which"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "UIEventInit"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-charcode",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-charcode",
+      "linkingText": [
+        "charCode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-keycode",
+      "href": "https://w3c.github.io/uievents/#dom-keyboardevent-keycode",
+      "linkingText": [
+        "keyCode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "keyboardeventinit-charcode",
+      "href": "https://w3c.github.io/uievents/#keyboardeventinit-charcode",
+      "linkingText": [
+        "charCode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "KeyboardEventInit"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "keyboardeventinit-keycode",
+      "href": "https://w3c.github.io/uievents/#keyboardeventinit-keycode",
+      "linkingText": [
+        "keyCode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "KeyboardEventInit"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domactivate",
+      "href": "https://w3c.github.io/uievents/#domactivate",
+      "linkingText": [
+        "DOMActivate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domfocusin",
+      "href": "https://w3c.github.io/uievents/#domfocusin",
+      "linkingText": [
+        "DOMFocusIn"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domfocusout",
+      "href": "https://w3c.github.io/uievents/#domfocusout",
+      "linkingText": [
+        "DOMFocusOut"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "keypress",
+      "href": "https://w3c.github.io/uievents/#keypress",
+      "linkingText": [
+        "keypress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mutationevent-modification",
+      "href": "https://w3c.github.io/uievents/#dom-mutationevent-modification",
+      "linkingText": [
+        "MODIFICATION"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mutationevent-addition",
+      "href": "https://w3c.github.io/uievents/#dom-mutationevent-addition",
+      "linkingText": [
+        "ADDITION"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mutationevent-removal",
+      "href": "https://w3c.github.io/uievents/#dom-mutationevent-removal",
+      "linkingText": [
+        "REMOVAL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mutationevent-relatednode",
+      "href": "https://w3c.github.io/uievents/#mutationevent-relatednode",
+      "linkingText": [
+        "relatedNode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mutationevent-prevvalue",
+      "href": "https://w3c.github.io/uievents/#mutationevent-prevvalue",
+      "linkingText": [
+        "prevValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mutationevent-newvalue",
+      "href": "https://w3c.github.io/uievents/#mutationevent-newvalue",
+      "linkingText": [
+        "newValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mutationevent-attrname",
+      "href": "https://w3c.github.io/uievents/#mutationevent-attrname",
+      "linkingText": [
+        "attrName"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mutationevent-attrchange",
+      "href": "https://w3c.github.io/uievents/#mutationevent-attrchange",
+      "linkingText": [
+        "attrChange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mutationevent-initmutationevent",
+      "href": "https://w3c.github.io/uievents/#dom-mutationevent-initmutationevent",
+      "linkingText": [
+        "initMutationEvent()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domattrmodified",
+      "href": "https://w3c.github.io/uievents/#domattrmodified",
+      "linkingText": [
+        "DOMAttrModified"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domcharacterdatamodified",
+      "href": "https://w3c.github.io/uievents/#domcharacterdatamodified",
+      "linkingText": [
+        "DOMCharacterDataModified"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domnodeinserted",
+      "href": "https://w3c.github.io/uievents/#domnodeinserted",
+      "linkingText": [
+        "DOMNodeInserted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domnodeinsertedintodocument",
+      "href": "https://w3c.github.io/uievents/#domnodeinsertedintodocument",
+      "linkingText": [
+        "DOMNodeInsertedIntoDocument"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domnoderemoved",
+      "href": "https://w3c.github.io/uievents/#domnoderemoved",
+      "linkingText": [
+        "DOMNodeRemoved"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domnoderemovedfromdocument",
+      "href": "https://w3c.github.io/uievents/#domnoderemovedfromdocument",
+      "linkingText": [
+        "DOMNodeRemovedFromDocument"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domsubtreemodified",
+      "href": "https://w3c.github.io/uievents/#domsubtreemodified",
+      "linkingText": [
+        "DOMSubtreeModified"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "activation-behavior",
+      "href": "https://w3c.github.io/uievents/#activation-behavior",
+      "linkingText": [
+        "activation behavior"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "activation-trigger",
+      "href": "https://w3c.github.io/uievents/#activation-trigger",
+      "linkingText": [
+        "activation trigger"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "author",
+      "href": "https://w3c.github.io/uievents/#author",
+      "linkingText": [
+        "author"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "body-element",
+      "href": "https://w3c.github.io/uievents/#body-element",
+      "linkingText": [
+        "body element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "bubble-phase",
+      "href": "https://w3c.github.io/uievents/#bubble-phase",
+      "linkingText": [
+        "bubble phase",
+        "bubbling phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "capture-phase",
+      "href": "https://w3c.github.io/uievents/#capture-phase",
+      "linkingText": [
+        "capture phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "character-value",
+      "href": "https://w3c.github.io/uievents/#character-value",
+      "linkingText": [
+        "character value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "current-event-target",
+      "href": "https://w3c.github.io/uievents/#current-event-target",
+      "linkingText": [
+        "current event target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dead-key",
+      "href": "https://w3c.github.io/uievents/#dead-key",
+      "linkingText": [
+        "dead key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "default-action",
+      "href": "https://w3c.github.io/uievents/#default-action",
+      "linkingText": [
+        "default action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "delta",
+      "href": "https://w3c.github.io/uievents/#delta",
+      "linkingText": [
+        "delta"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "deprecates",
+      "href": "https://w3c.github.io/uievents/#deprecates",
+      "linkingText": [
+        "deprecates",
+        "deprecated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dispatch",
+      "href": "https://w3c.github.io/uievents/#dispatch",
+      "linkingText": [
+        "dispatch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "document",
+      "href": "https://w3c.github.io/uievents/#document",
+      "linkingText": [
+        "document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-application",
+      "href": "https://w3c.github.io/uievents/#dom-application",
+      "linkingText": [
+        "DOM application"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-level-0",
+      "href": "https://w3c.github.io/uievents/#dom-level-0",
+      "linkingText": [
+        "DOM Level 0"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "empty-string",
+      "href": "https://w3c.github.io/uievents/#empty-string",
+      "linkingText": [
+        "empty string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "event",
+      "href": "https://w3c.github.io/uievents/#event",
+      "linkingText": [
+        "event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "event-focus",
+      "href": "https://w3c.github.io/uievents/#event-focus",
+      "linkingText": [
+        "event focus"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "focus-ring",
+      "href": "https://w3c.github.io/uievents/#focus-ring",
+      "linkingText": [
+        "focus ring"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "event-handler",
+      "href": "https://w3c.github.io/uievents/#event-handler",
+      "linkingText": [
+        "event handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "event-listener",
+      "href": "https://w3c.github.io/uievents/#event-listener",
+      "linkingText": [
+        "event listener"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "event-order",
+      "href": "https://w3c.github.io/uievents/#event-order",
+      "linkingText": [
+        "event order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "event-phase",
+      "href": "https://w3c.github.io/uievents/#event-phase",
+      "linkingText": [
+        "event phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "event-target",
+      "href": "https://w3c.github.io/uievents/#event-target",
+      "linkingText": [
+        "event target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "event-type",
+      "href": "https://w3c.github.io/uievents/#event-type",
+      "linkingText": [
+        "event type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fire",
+      "href": "https://w3c.github.io/uievents/#fire",
+      "linkingText": [
+        "fire"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "host-language",
+      "href": "https://w3c.github.io/uievents/#host-language",
+      "linkingText": [
+        "host language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "hysteresis",
+      "href": "https://w3c.github.io/uievents/#hysteresis",
+      "linkingText": [
+        "hysteresis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ime",
+      "href": "https://w3c.github.io/uievents/#ime",
+      "linkingText": [
+        "IME"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "input-method-editor",
+      "href": "https://w3c.github.io/uievents/#input-method-editor",
+      "linkingText": [
+        "input method editor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "key-mapping",
+      "href": "https://w3c.github.io/uievents/#key-mapping",
+      "linkingText": [
+        "key mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "key-value",
+      "href": "https://w3c.github.io/uievents/#key-value",
+      "linkingText": [
+        "key value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "modifier-key",
+      "href": "https://w3c.github.io/uievents/#modifier-key",
+      "linkingText": [
+        "modifier key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "namespace-uris",
+      "href": "https://w3c.github.io/uievents/#namespace-uris",
+      "linkingText": [
+        "namespace URIs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "phase",
+      "href": "https://w3c.github.io/uievents/#phase",
+      "linkingText": [
+        "phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propagation-path",
+      "href": "https://w3c.github.io/uievents/#propagation-path",
+      "linkingText": [
+        "propagation path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "qwerty",
+      "href": "https://w3c.github.io/uievents/#qwerty",
+      "linkingText": [
+        "QWERTY"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "root-element",
+      "href": "https://w3c.github.io/uievents/#root-element",
+      "linkingText": [
+        "root element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "rotation",
+      "href": "https://w3c.github.io/uievents/#rotation",
+      "linkingText": [
+        "rotation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "target-phase",
+      "href": "https://w3c.github.io/uievents/#target-phase",
+      "linkingText": [
+        "target phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "text-composition-system",
+      "href": "https://w3c.github.io/uievents/#text-composition-system",
+      "linkingText": [
+        "text composition system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "topmost-event-target",
+      "href": "https://w3c.github.io/uievents/#topmost-event-target",
+      "linkingText": [
+        "topmost event target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "unicode-character-categories",
+      "href": "https://w3c.github.io/uievents/#unicode-character-categories",
+      "linkingText": [
+        "Unicode character categories"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "un-initialized-value",
+      "href": "https://w3c.github.io/uievents/#un-initialized-value",
+      "linkingText": [
+        "un-initialized value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "user-agent",
+      "href": "https://w3c.github.io/uievents/#user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "window",
+      "href": "https://w3c.github.io/uievents/#window",
+      "linkingText": [
+        "Window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}
