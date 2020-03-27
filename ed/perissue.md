@@ -13,19 +13,21 @@
 
 ## Specifications without normative dependencies
 
+- [[No title found for https://immersive-web.github.io/webxr-ar-module/]](https://immersive-web.github.io/webxr-ar-module/)
 - [ContentEditable](https://w3c.github.io/contentEditable/)
 
-=> 1 specification found
+=> 2 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
 
 ## List of specifications with invalid WebIDL content
 
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
 
-=> 2 specifications found
+=> 3 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
@@ -44,9 +46,8 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [SVG Animations](https://svgwg.org/specs/animations/)
 - [SVG Markers](https://svgwg.org/specs/markers/)
 - [WebRTC DSCP Control API](http://w3c.github.io/webrtc-priority/)
-- [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
 
-=> 7 specifications found
+=> 6 specifications found
 
 
 
@@ -471,6 +472,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Layout Instability API](https://wicg.github.io/layout-instability/) links to:
     * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/) but does not list it in its references
     * [`https://www.w3.org/TR/pointerevents/`](https://www.w3.org/TR/pointerevents/) but does not list it in its references
+    * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/) but does not list it in its references
 - [Magnetometer](https://w3c.github.io/magnetometer/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
 - [Media Queries Level 3](http://dev.w3.org/csswg/css3-mediaqueries/) links to:
     * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/) but does not list it in its references
@@ -623,7 +625,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 395 missing references for links found in 136 specifications
+=> 396 missing references for links found in 136 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
