@@ -173,6 +173,18 @@
       "informative": false
     },
     {
+      "id": "node-impact-region",
+      "href": "https://wicg.github.io/layout-instability/#node-impact-region",
+      "linkingText": [
+        "node impact region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "impact-region",
       "href": "https://wicg.github.io/layout-instability/#impact-region",
       "linkingText": [
@@ -247,6 +259,44 @@
       "informative": false
     },
     {
+      "id": "layoutshiftattribution",
+      "href": "https://wicg.github.io/layout-instability/#layoutshiftattribution",
+      "linkingText": [
+        "LayoutShiftAttribution"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-layoutshiftattribution-node",
+      "href": "https://wicg.github.io/layout-instability/#dom-layoutshiftattribution-node",
+      "linkingText": [
+        "node"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutShiftAttribution"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "associated-node",
+      "href": "https://wicg.github.io/layout-instability/#associated-node",
+      "linkingText": [
+        "associated node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "report-the-layout-shift",
       "href": "https://wicg.github.io/layout-instability/#report-the-layout-shift",
       "linkingText": [
@@ -296,6 +346,72 @@
       "type": "attribute",
       "for": [
         "LayoutShift"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-layoutshift-sources",
+      "href": "https://wicg.github.io/layout-instability/#dom-layoutshift-sources",
+      "linkingText": [
+        "sources"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutShift"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "report-the-layout-shift-sources",
+      "href": "https://wicg.github.io/layout-instability/#report-the-layout-shift-sources",
+      "linkingText": [
+        "report the layout shift sources"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-the-attribution",
+      "href": "https://wicg.github.io/layout-instability/#create-the-attribution",
+      "linkingText": [
+        "create the attribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-layoutshiftattribution-previousrect",
+      "href": "https://wicg.github.io/layout-instability/#dom-layoutshiftattribution-previousrect",
+      "linkingText": [
+        "previousRect"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutShiftAttribution"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-layoutshiftattribution-currentrect",
+      "href": "https://wicg.github.io/layout-instability/#dom-layoutshiftattribution-currentrect",
+      "linkingText": [
+        "currentRect"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LayoutShiftAttribution"
       ],
       "access": "public",
       "informative": false
