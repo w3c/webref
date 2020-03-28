@@ -5301,7 +5301,6 @@ Normative references to this spec from:
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Screen Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
@@ -6278,7 +6277,6 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Video Coding (SVC) Extension for WebRTC](https://w3c.github.io/webrtc-svc/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
-- [Screen Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
@@ -7537,7 +7535,6 @@ Normative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Resource Hints](https://w3c.github.io/resource-hints/)
-- [Screen Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
@@ -7818,7 +7815,6 @@ Normative references to this spec from:
 - [Relinquishing Permissions](https://wicg.github.io/permissions-revoke/)
 - [Requesting Permissions](https://wicg.github.io/permissions-request/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
-- [Screen Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
@@ -8522,30 +8518,6 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
-
-
-## Screen Wake Lock API {data-spec=true data-ok=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
-- Crawled URL: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
-- Crawled version: 25 March 2020
-- Editor's Draft: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
-- Latest published version: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
-- Repository: [GitHub w3c/wake-lock](https://github.com/w3c/wake-lock)
-- Shortname: wake-lock
-
-### Potential issue(s) {.anomalies}
-
-This specification looks good!
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
 
 
 ## Scroll-linked Animations {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -9435,6 +9407,43 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
+## Wake Lock API {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
+- Crawled URL: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
+- Editor's Draft: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
+- Latest published version: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
+- Repository: [GitHub w3c/wake-lock](https://github.com/w3c/wake-lock)
+- Shortname: wake-lock
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation.
+    at rewriteError (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:167:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
+    at DOMWorld.addScriptTag (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:245:29)
+  -- ASYNC --
+    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.addScriptTag (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:421:29)
+    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23)
+    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:305:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Web Animations {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -9812,7 +9821,6 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Video Coding (SVC) Extension for WebRTC](https://w3c.github.io/webrtc-svc/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
-- [Screen Wake Lock API](https://w3c.github.io/wake-lock/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
