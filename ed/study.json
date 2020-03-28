@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Specifications that define CSS and WebIDL content",
   "description": "The crawl includes specifications published by W3C Working Groups, W3C Community Groups and WHATWG, that define CSS and/or WebIDL content. The specifications are at various stages of maturity.",
-  "date": "2020-03-27T18:37:13.329Z",
+  "date": "2020-03-28T00:37:06.952Z",
   "stats": {
     "crawled": 275,
     "errors": 0,
@@ -191,7 +191,7 @@
     {
       "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
       "shortname": "wai-aria-1.2",
-      "date": "27 March 2020",
+      "date": "28 March 2020",
       "url": "https://www.w3.org/TR/wai-aria-1.2/",
       "latest": "https://www.w3.org/TR/wai-aria-1.2/",
       "datedUrl": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/",
@@ -4850,6 +4850,7 @@
           "https://www.w3.org/TR/css-cascade/",
           "https://www.w3.org/TR/css-writing-modes-3/",
           "https://www.w3.org/TR/css-multicol-1/",
+          "https://www.w3.org/TR/css3-speech/",
           "https://www.w3.org/TR/css-contain-1/"
         ],
         "inconsistentRef": [],
@@ -14782,7 +14783,7 @@
     {
       "title": "File API",
       "shortname": "FileAPI",
-      "date": "11 September 2019",
+      "date": "27 March 2020",
       "url": "https://www.w3.org/TR/FileAPI/",
       "latest": "https://www.w3.org/TR/FileAPI/",
       "datedUrl": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/",
@@ -14803,13 +14804,6 @@
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/FileAPI/",
-            "ref": {
-              "name": "FileAPI",
-              "url": "https://www.w3.org/TR/FileAPI/"
-            }
-          },
           {
             "link": "https://w3c.github.io/media-source/",
             "ref": {
@@ -14834,11 +14828,6 @@
               "url": "https://wicg.github.io/entries-api/",
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/"
-            },
-            {
-              "url": "https://www.w3.org/TR/FileAPI/",
-              "title": "File API",
-              "crawled": "https://w3c.github.io/FileAPI/"
             },
             {
               "url": "https://www.w3.org/TR/html-media-capture/",
@@ -15777,6 +15766,11 @@
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/"
+            },
+            {
+              "url": "https://wicg.github.io/web-transport/",
+              "title": "WebTransport",
+              "crawled": "https://wicg.github.io/web-transport/"
             }
           ],
           "informative": []
@@ -17238,7 +17232,7 @@
     },
     {
       "title": "JS Self-Profiling API",
-      "date": "27 November 2019",
+      "date": "27 March 2020",
       "url": "https://wicg.github.io/js-self-profiling/",
       "crawled": "https://wicg.github.io/js-self-profiling/",
       "repository": "https://github.com/wicg/js-self-profiling",
@@ -20535,7 +20529,7 @@
     {
       "title": "Resize Observer",
       "shortname": "resize-observer-1",
-      "date": "27 February 2020",
+      "date": "27 March 2020",
       "url": "https://www.w3.org/TR/resize-observer-1/",
       "latest": "https://www.w3.org/TR/resize-observer-1/",
       "datedUrl": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/",
@@ -20546,7 +20540,8 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "hasInvalidIdl": true,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -25255,7 +25250,7 @@
     },
     {
       "title": "WebTransport",
-      "date": "19 December 2019",
+      "date": "28 March 2020",
       "url": "https://wicg.github.io/web-transport/",
       "crawled": "https://wicg.github.io/web-transport/",
       "report": {
@@ -25269,18 +25264,7 @@
           "WritableStream"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "DOMHighResTimeStamp",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/hr-time-3/",
-                "title": "High Resolution Time",
-                "crawled": "https://w3c.github.io/hr-time/"
-              }
-            ]
-          }
-        ],
+        "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
