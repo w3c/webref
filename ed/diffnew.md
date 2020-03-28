@@ -1,24 +1,21 @@
-% Diff between report from "March 27, 2020" and reference report from "March 27, 2020"
+% Diff between report from "March 28, 2020" and reference report from "March 27, 2020"
 % Reffy
-% March 27, 2020
+% March 28, 2020
 
-## [No title found for https://immersive-web.github.io/webxr-ar-module/]
+## CSS Display Module Level 3
 
-- Initial URL: [https://www.w3.org/TR/webxr-ar-module/](https://www.w3.org/TR/webxr-ar-module/)
-- Crawled URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
-- Repository: [GitHub immersive-web/webxr-ar-module](https://github.com/immersive-web/webxr-ar-module)
-- Spec title: *INS* [No title found for https://immersive-web.github.io/webxr-ar-module/] / *DEL* WebXR Augmented Reality Module - Level 1
-- No normative references found: *INS* true / *DEL* false
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+- Initial URL: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
+- Crawled URL: [https://drafts.csswg.org/css-display/](https://drafts.csswg.org/css-display/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Missing references for links: *INS* https://www.w3.org/TR/css3-speech/
 
 
-## Layout Instability API
+## Resize Observer
 
-- Initial URL: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
-- Crawled URL: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
-- Repository: [GitHub wicg/layout-instability](https://github.com/wicg/layout-instability)
-- Invalid WebIDL content found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
-- Missing references for links: *INS* https://infra.spec.whatwg.org/
+- Initial URL: [https://www.w3.org/TR/resize-observer-1/](https://www.w3.org/TR/resize-observer-1/)
+- Crawled URL: [https://drafts.csswg.org/resize-observer/](https://drafts.csswg.org/resize-observer/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Invalid WebIDL content found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
 
 
