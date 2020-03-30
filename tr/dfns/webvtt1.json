@@ -1,0 +1,2582 @@
+{
+  "spec": {
+    "title": "WebVTT: The Web Video Text Tracks Format",
+    "url": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/"
+  },
+  "dfns": [
+    {
+      "id": "webvtt",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt",
+      "linkingText": [
+        "WebVTT"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "user-agents-that-do-not-support-css",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#user-agents-that-do-not-support-css",
+      "linkingText": [
+        "User agents that do not support CSS"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "user-agents-that-do-not-support-a-full-html-css-engine",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#user-agents-that-do-not-support-a-full-html-css-engine",
+      "linkingText": [
+        "User agents that do not support a full HTML CSS engine"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "user-agents-that-support-a-full-html-css-engine",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#user-agents-that-support-a-full-html-css-engine",
+      "linkingText": [
+        "User agents that support a full HTML CSS engine"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue",
+      "linkingText": [
+        "WebVTT cue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cue-text",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#cue-text",
+      "linkingText": [
+        "cue text"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-caption-or-subtitle-cue",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-caption-or-subtitle-cue",
+      "linkingText": [
+        "WebVTT caption or subtitle cue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-box",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-box",
+      "linkingText": [
+        "WebVTT cue box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-writing-direction",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-writing-direction",
+      "linkingText": [
+        "WebVTT cue writing direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-horizontal-writing-direction",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-horizontal-writing-direction",
+      "linkingText": [
+        "WebVTT cue horizontal writing direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-vertical-growing-left-writing-direction",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-vertical-growing-left-writing-direction",
+      "linkingText": [
+        "WebVTT cue vertical growing left writing direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-vertical-growing-right-writing-direction",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-vertical-growing-right-writing-direction",
+      "linkingText": [
+        "WebVTT cue vertical growing right writing direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-snap-to-lines-flag",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-snap-to-lines-flag",
+      "linkingText": [
+        "WebVTT cue snap-to-lines flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-line",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-line",
+      "linkingText": [
+        "WebVTT cue line"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-line-automatic",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-line-automatic",
+      "linkingText": [
+        "WebVTT cue line\n  automatic"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cue-computed-line",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#cue-computed-line",
+      "linkingText": [
+        "cue computed line"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-line-alignment",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-line-alignment",
+      "linkingText": [
+        "WebVTT cue line alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-line-start-alignment",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-line-start-alignment",
+      "linkingText": [
+        "WebVTT cue line start alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-line-center-alignment",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-line-center-alignment",
+      "linkingText": [
+        "WebVTT cue line center alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-line-end-alignment",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-line-end-alignment",
+      "linkingText": [
+        "WebVTT cue line end alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-position",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-position",
+      "linkingText": [
+        "WebVTT cue position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-automatic-position",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-automatic-position",
+      "linkingText": [
+        "WebVTT cue\n  automatic position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cue-computed-position",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#cue-computed-position",
+      "linkingText": [
+        "cue computed position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-position-alignment",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-position-alignment",
+      "linkingText": [
+        "WebVTT cue position alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-position-line-left-alignment",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-position-line-left-alignment",
+      "linkingText": [
+        "WebVTT cue position line-left alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-position-center-alignment",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-position-center-alignment",
+      "linkingText": [
+        "WebVTT cue position center alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-position-line-right-alignment",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-position-line-right-alignment",
+      "linkingText": [
+        "WebVTT cue position line-right alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-position-automatic-alignment",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-position-automatic-alignment",
+      "linkingText": [
+        "WebVTT cue position automatic alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cue-computed-position-alignment",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#cue-computed-position-alignment",
+      "linkingText": [
+        "cue computed position alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-size",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-size",
+      "linkingText": [
+        "WebVTT cue size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-text-alignment",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-text-alignment",
+      "linkingText": [
+        "WebVTT cue text alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-start-alignment",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-start-alignment",
+      "linkingText": [
+        "WebVTT cue start alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-center-alignment",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-center-alignment",
+      "linkingText": [
+        "WebVTT cue center alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-end-alignment",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-end-alignment",
+      "linkingText": [
+        "WebVTT cue end alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-left-alignment",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-left-alignment",
+      "linkingText": [
+        "WebVTT cue left alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-right-alignment",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-right-alignment",
+      "linkingText": [
+        "WebVTT cue right alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-region",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-region",
+      "linkingText": [
+        "WebVTT cue region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region",
+      "linkingText": [
+        "WebVTT region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-identifier",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-identifier",
+      "linkingText": [
+        "WebVTT region identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-width",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-width",
+      "linkingText": [
+        "WebVTT region width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-lines",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-lines",
+      "linkingText": [
+        "WebVTT region lines"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-anchor",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-anchor",
+      "linkingText": [
+        "WebVTT region anchor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-viewport-anchor",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-viewport-anchor",
+      "linkingText": [
+        "WebVTT region viewport anchor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-scroll",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-scroll",
+      "linkingText": [
+        "WebVTT region scroll"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-scroll-none",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-scroll-none",
+      "linkingText": [
+        "WebVTT region scroll none"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-scroll-up",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-scroll-up",
+      "linkingText": [
+        "WebVTT region scroll up"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "text-track-list-of-regions",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#text-track-list-of-regions",
+      "linkingText": [
+        "text track list of regions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-chapter-cue",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-chapter-cue",
+      "linkingText": [
+        "WebVTT chapter cue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-metadata-cue",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-metadata-cue",
+      "linkingText": [
+        "WebVTT metadata cue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-file",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-file",
+      "linkingText": [
+        "WebVTT file"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-file-body",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-file-body",
+      "linkingText": [
+        "WebVTT file body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-line-terminator",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-line-terminator",
+      "linkingText": [
+        "WebVTT line terminator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-definition-block",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-definition-block",
+      "linkingText": [
+        "WebVTT region definition block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-style-block",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-style-block",
+      "linkingText": [
+        "WebVTT style block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-block",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-block",
+      "linkingText": [
+        "WebVTT cue block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cue-payload",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#cue-payload",
+      "linkingText": [
+        "cue payload"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-identifier",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-identifier",
+      "linkingText": [
+        "WebVTT cue identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-timings",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-timings",
+      "linkingText": [
+        "WebVTT cue timings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-timestamp",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-timestamp",
+      "linkingText": [
+        "WebVTT timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-settings-list",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-settings-list",
+      "linkingText": [
+        "WebVTT cue settings list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-setting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-setting",
+      "linkingText": [
+        "WebVTT cue\nsetting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-setting-name",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-setting-name",
+      "linkingText": [
+        "WebVTT cue setting name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-setting-value",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-setting-value",
+      "linkingText": [
+        "WebVTT cue setting value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-percentage",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-percentage",
+      "linkingText": [
+        "WebVTT percentage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-comment-block",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-comment-block",
+      "linkingText": [
+        "WebVTT comment block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-metadata-text",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-metadata-text",
+      "linkingText": [
+        "WebVTT metadata text"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-caption-or-subtitle-cue-text",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-caption-or-subtitle-cue-text",
+      "linkingText": [
+        "WebVTT caption or subtitle cue text"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-caption-or-subtitle-cue-components",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-caption-or-subtitle-cue-components",
+      "linkingText": [
+        "WebVTT caption or subtitle cue components"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cue-component-class-names",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#cue-component-class-names",
+      "linkingText": [
+        "cue component class names"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-internal-text",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-internal-text",
+      "linkingText": [
+        "WebVTT cue internal text"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-class-span",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-class-span",
+      "linkingText": [
+        "WebVTT cue class span"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-italics-span",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-italics-span",
+      "linkingText": [
+        "WebVTT cue italics span"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-bold-span",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-bold-span",
+      "linkingText": [
+        "WebVTT cue bold span"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-underline-span",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-underline-span",
+      "linkingText": [
+        "WebVTT cue underline span"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-ruby-span",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-ruby-span",
+      "linkingText": [
+        "WebVTT cue ruby span"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-ruby-text-span",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-ruby-text-span",
+      "linkingText": [
+        "WebVTT cue ruby text span"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-voice-span",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-voice-span",
+      "linkingText": [
+        "WebVTT cue voice span"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-language-span",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-language-span",
+      "linkingText": [
+        "WebVTT cue language span"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-span-start-tag",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-span-start-tag",
+      "linkingText": [
+        "WebVTT cue span start tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-span-end-tag",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-span-end-tag",
+      "linkingText": [
+        "WebVTT cue span end tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-timestamp",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-timestamp",
+      "linkingText": [
+        "WebVTT cue timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-text-span",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-text-span",
+      "linkingText": [
+        "WebVTT cue text span"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-span-start-tag-annotation-text",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-span-start-tag-annotation-text",
+      "linkingText": [
+        "WebVTT cue span start tag annotation text"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-chapter-title-text",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-chapter-title-text",
+      "linkingText": [
+        "WebVTT chapter title text"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-settings-list",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-settings-list",
+      "linkingText": [
+        "WebVTT region settings list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-identifier-setting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-identifier-setting",
+      "linkingText": [
+        "WebVTT region identifier setting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-width-setting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-width-setting",
+      "linkingText": [
+        "WebVTT region width setting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-lines-setting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-lines-setting",
+      "linkingText": [
+        "WebVTT region lines setting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-anchor-setting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-anchor-setting",
+      "linkingText": [
+        "WebVTT region anchor setting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-viewport-anchor-setting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-viewport-anchor-setting",
+      "linkingText": [
+        "WebVTT region viewport anchor setting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-scroll-setting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-scroll-setting",
+      "linkingText": [
+        "WebVTT region scroll setting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-vertical-text-cue-setting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-vertical-text-cue-setting",
+      "linkingText": [
+        "WebVTT vertical text cue setting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-line-cue-setting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-line-cue-setting",
+      "linkingText": [
+        "WebVTT line cue setting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-position-cue-setting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-position-cue-setting",
+      "linkingText": [
+        "WebVTT position cue setting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-size-cue-setting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-size-cue-setting",
+      "linkingText": [
+        "WebVTT size cue setting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-alignment-cue-setting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-alignment-cue-setting",
+      "linkingText": [
+        "WebVTT alignment cue setting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-cue-setting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-cue-setting",
+      "linkingText": [
+        "WebVTT region cue setting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-file-using-only-nested-cues",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-file-using-only-nested-cues",
+      "linkingText": [
+        "WebVTT file using only nested cues"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-file-using-metadata-content",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-file-using-metadata-content",
+      "linkingText": [
+        "WebVTT file using metadata content"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-file-using-chapter-title-text",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-file-using-chapter-title-text",
+      "linkingText": [
+        "WebVTT file using chapter title text"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-file-using-caption-or-subtitle-cue-text",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-file-using-caption-or-subtitle-cue-text",
+      "linkingText": [
+        "WebVTT file using caption or subtitle cue text"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-parser",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-parser",
+      "linkingText": [
+        "WebVTT parser"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "incremental-webvtt-parser",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#incremental-webvtt-parser",
+      "linkingText": [
+        "incremental WebVTT parser"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-parser-algorithm",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-parser-algorithm",
+      "linkingText": [
+        "WebVTT parser algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "collect-a-webvtt-block",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#collect-a-webvtt-block",
+      "linkingText": [
+        "collect a WebVTT block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "collect-webvtt-region-settings",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#collect-webvtt-region-settings",
+      "linkingText": [
+        "collect WebVTT region settings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-region-object",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-region-object",
+      "linkingText": [
+        "WebVTT region object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parse-a-percentage-string",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#parse-a-percentage-string",
+      "linkingText": [
+        "parse a percentage string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "collect-webvtt-cue-timings-and-settings",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#collect-webvtt-cue-timings-and-settings",
+      "linkingText": [
+        "collect WebVTT cue timings and settings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parse-the-webvtt-cue-settings",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#parse-the-webvtt-cue-settings",
+      "linkingText": [
+        "parse the WebVTT cue settings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "collect-a-webvtt-timestamp",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#collect-a-webvtt-timestamp",
+      "linkingText": [
+        "collect a WebVTT timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-node-object",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-node-object",
+      "linkingText": [
+        "WebVTT Node Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-internal-node-object",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-internal-node-object",
+      "linkingText": [
+        "WebVTT Internal Node Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-node-objects-applicable-classes",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-node-objects-applicable-classes",
+      "linkingText": [
+        "WebVTT Node Object’s applicable classes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-node-objects-applicable-language",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-node-objects-applicable-language",
+      "linkingText": [
+        "WebVTT Node Object’s applicable\nlanguage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "list-of-webvtt-node-objects",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#list-of-webvtt-node-objects",
+      "linkingText": [
+        "List of WebVTT Node Objects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-class-object",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-class-object",
+      "linkingText": [
+        "WebVTT Class Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-italic-object",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-italic-object",
+      "linkingText": [
+        "WebVTT Italic Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-bold-object",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-bold-object",
+      "linkingText": [
+        "WebVTT Bold Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-underline-object",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-underline-object",
+      "linkingText": [
+        "WebVTT Underline Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-ruby-object",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-ruby-object",
+      "linkingText": [
+        "WebVTT Ruby Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-ruby-text-object",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-ruby-text-object",
+      "linkingText": [
+        "WebVTT Ruby Text Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-voice-object",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-voice-object",
+      "linkingText": [
+        "WebVTT Voice Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-language-object",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-language-object",
+      "linkingText": [
+        "WebVTT Language Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-leaf-node-object",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-leaf-node-object",
+      "linkingText": [
+        "WebVTT Leaf Node Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-text-object",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-text-object",
+      "linkingText": [
+        "WebVTT Text Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-timestamp-object",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-timestamp-object",
+      "linkingText": [
+        "WebVTT Timestamp Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-text-parsing-rules",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-text-parsing-rules",
+      "linkingText": [
+        "WebVTT cue text parsing rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attach-a-webvtt-internal-node-object",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#attach-a-webvtt-internal-node-object",
+      "linkingText": [
+        "attach a WebVTT Internal Node Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-text-tokenizer",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-text-tokenizer",
+      "linkingText": [
+        "WebVTT cue text tokenizer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-data-state",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-data-state",
+      "linkingText": [
+        "WebVTT data state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "html-character-reference-in-data-state",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#html-character-reference-in-data-state",
+      "linkingText": [
+        "HTML character reference in data state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-tag-state",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-tag-state",
+      "linkingText": [
+        "WebVTT tag state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-start-tag-state",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-start-tag-state",
+      "linkingText": [
+        "WebVTT start tag state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-start-tag-class-state",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-start-tag-class-state",
+      "linkingText": [
+        "WebVTT start tag class state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-start-tag-annotation-state",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-start-tag-annotation-state",
+      "linkingText": [
+        "WebVTT start tag annotation state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "html-character-reference-in-annotation-state",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#html-character-reference-in-annotation-state",
+      "linkingText": [
+        "HTML character reference in annotation state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-end-tag-state",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-end-tag-state",
+      "linkingText": [
+        "WebVTT end tag state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-timestamp-tag-state",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-timestamp-tag-state",
+      "linkingText": [
+        "WebVTT timestamp tag state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consume-an-html-character-reference",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#consume-an-html-character-reference",
+      "linkingText": [
+        "consume an HTML character reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-text-dom-construction-rules",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-text-dom-construction-rules",
+      "linkingText": [
+        "WebVTT cue text DOM construction rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-rules-for-extracting-the-chapter-title",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-rules-for-extracting-the-chapter-title",
+      "linkingText": [
+        "WebVTT rules for extracting the chapter title"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "rules-for-updating-the-display-of-webvtt-text-tracks",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#rules-for-updating-the-display-of-webvtt-text-tracks",
+      "linkingText": [
+        "rules for updating the display of WebVTT text tracks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "apply-webvtt-cue-settings",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#apply-webvtt-cue-settings",
+      "linkingText": [
+        "apply WebVTT cue settings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "obtain-a-set-of-css-boxes",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#obtain-a-set-of-css-boxes",
+      "linkingText": [
+        "obtain a set of CSS boxes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "webvtt-cue-background-box",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#webvtt-cue-background-box",
+      "linkingText": [
+        "WebVTT cue background box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cue",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#cue",
+      "linkingText": [
+        "::cue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cue-selector",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#cue-selector",
+      "linkingText": [
+        "::cue(selector)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "past",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#past",
+      "linkingText": [
+        ":past"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "in-the-past",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#in-the-past",
+      "linkingText": [
+        "in the past"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "future",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#future",
+      "linkingText": [
+        ":future"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "in-the-future",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#in-the-future",
+      "linkingText": [
+        "in the future"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cue-region",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#cue-region",
+      "linkingText": [
+        "::cue-region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cue-region-selector",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#cue-region-selector",
+      "linkingText": [
+        "::cue-region(selector)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enumdef-autokeyword",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#enumdef-autokeyword",
+      "linkingText": [
+        "AutoKeyword"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-autokeyword-auto",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-autokeyword-auto",
+      "linkingText": [
+        "\"auto\"",
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AutoKeyword"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-lineandpositionsetting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#typedefdef-lineandpositionsetting",
+      "linkingText": [
+        "LineAndPositionSetting"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-directionsetting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#enumdef-directionsetting",
+      "linkingText": [
+        "DirectionSetting"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-directionsetting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-directionsetting",
+      "linkingText": [
+        "\"\"",
+        ""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "DirectionSetting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-directionsetting-rl",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-directionsetting-rl",
+      "linkingText": [
+        "\"rl\"",
+        "rl"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "DirectionSetting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-directionsetting-lr",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-directionsetting-lr",
+      "linkingText": [
+        "\"lr\"",
+        "lr"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "DirectionSetting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-linealignsetting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#enumdef-linealignsetting",
+      "linkingText": [
+        "LineAlignSetting"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-linealignsetting-start",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-linealignsetting-start",
+      "linkingText": [
+        "\"start\"",
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "LineAlignSetting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-linealignsetting-center",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-linealignsetting-center",
+      "linkingText": [
+        "\"center\"",
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "LineAlignSetting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-linealignsetting-end",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-linealignsetting-end",
+      "linkingText": [
+        "\"end\"",
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "LineAlignSetting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-positionalignsetting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#enumdef-positionalignsetting",
+      "linkingText": [
+        "PositionAlignSetting"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-positionalignsetting-line-left",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-positionalignsetting-line-left",
+      "linkingText": [
+        "\"line-left\"",
+        "line-left"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PositionAlignSetting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-positionalignsetting-center",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-positionalignsetting-center",
+      "linkingText": [
+        "\"center\"",
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PositionAlignSetting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-positionalignsetting-line-right",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-positionalignsetting-line-right",
+      "linkingText": [
+        "\"line-right\"",
+        "line-right"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PositionAlignSetting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-positionalignsetting-auto",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-positionalignsetting-auto",
+      "linkingText": [
+        "\"auto\"",
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PositionAlignSetting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-alignsetting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#enumdef-alignsetting",
+      "linkingText": [
+        "AlignSetting"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-alignsetting-start",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-alignsetting-start",
+      "linkingText": [
+        "\"start\"",
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AlignSetting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-alignsetting-center",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-alignsetting-center",
+      "linkingText": [
+        "\"center\"",
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AlignSetting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-alignsetting-end",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-alignsetting-end",
+      "linkingText": [
+        "\"end\"",
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AlignSetting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-alignsetting-left",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-alignsetting-left",
+      "linkingText": [
+        "\"left\"",
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AlignSetting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-alignsetting-right",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-alignsetting-right",
+      "linkingText": [
+        "\"right\"",
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AlignSetting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttcue-vttcue-starttime-endtime-text-starttime",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttcue-vttcue-starttime-endtime-text-starttime",
+      "linkingText": [
+        "startTime"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VTTCue/VTTCue(startTime, endTime, text)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttcue-vttcue-starttime-endtime-text-endtime",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttcue-vttcue-starttime-endtime-text-endtime",
+      "linkingText": [
+        "endTime"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VTTCue/VTTCue(startTime, endTime, text)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttcue-vttcue-starttime-endtime-text-text",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttcue-vttcue-starttime-endtime-text-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VTTCue/VTTCue(startTime, endTime, text)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "vttcue",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#vttcue",
+      "linkingText": [
+        "VTTCue"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttcue-vttcue",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttcue-vttcue",
+      "linkingText": [
+        "VTTCue(startTime, endTime, text)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "VTTCue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttcue-region",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttcue-region",
+      "linkingText": [
+        "region"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTCue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttcue-vertical",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttcue-vertical",
+      "linkingText": [
+        "vertical"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTCue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttcue-snaptolines",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttcue-snaptolines",
+      "linkingText": [
+        "snapToLines"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTCue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttcue-line",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttcue-line",
+      "linkingText": [
+        "line"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTCue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttcue-linealign",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttcue-linealign",
+      "linkingText": [
+        "lineAlign"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTCue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttcue-position",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttcue-position",
+      "linkingText": [
+        "position"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTCue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttcue-positionalign",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttcue-positionalign",
+      "linkingText": [
+        "positionAlign"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTCue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttcue-size",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttcue-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTCue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttcue-align",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttcue-align",
+      "linkingText": [
+        "align"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTCue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttcue-text",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttcue-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTCue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttcue-getcueashtml",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttcue-getcueashtml",
+      "linkingText": [
+        "getCueAsHTML()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VTTCue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-scrollsetting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#enumdef-scrollsetting",
+      "linkingText": [
+        "ScrollSetting"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrollsetting",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-scrollsetting",
+      "linkingText": [
+        "\"\"",
+        ""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScrollSetting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrollsetting-up",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-scrollsetting-up",
+      "linkingText": [
+        "\"up\"",
+        "up"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScrollSetting"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "vttregion",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#vttregion",
+      "linkingText": [
+        "VTTRegion"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttregion-vttregion",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttregion-vttregion",
+      "linkingText": [
+        "VTTRegion()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "VTTRegion"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttregion-id",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttregion-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTRegion"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttregion-width",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttregion-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTRegion"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttregion-lines",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttregion-lines",
+      "linkingText": [
+        "lines"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTRegion"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttregion-regionanchorx",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttregion-regionanchorx",
+      "linkingText": [
+        "regionAnchorX"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTRegion"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttregion-regionanchory",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttregion-regionanchory",
+      "linkingText": [
+        "regionAnchorY"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTRegion"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttregion-viewportanchorx",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttregion-viewportanchorx",
+      "linkingText": [
+        "viewportAnchorX"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTRegion"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttregion-viewportanchory",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttregion-viewportanchory",
+      "linkingText": [
+        "viewportAnchorY"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTRegion"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-vttregion-scroll",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#dom-vttregion-scroll",
+      "linkingText": [
+        "scroll"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VTTRegion"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "text-vtt",
+      "href": "https://www.w3.org/TR/2019/CR-webvtt1-20190404/#text-vtt",
+      "linkingText": [
+        "text/vtt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,1156 @@
+{
+  "spec": {
+    "title": "CSS Paged Media Module Level 3",
+    "url": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/"
+  },
+  "dfns": [
+    {
+      "id": "page-sheet",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#page-sheet",
+      "linkingText": [
+        "Page sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "printable-area",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#printable-area",
+      "linkingText": [
+        "printable area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "page-orientation",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#page-orientation",
+      "linkingText": [
+        "Page Orientation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "portrait",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#portrait",
+      "linkingText": [
+        "portrait",
+        "portrait orientation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "landscape",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#landscape",
+      "linkingText": [
+        "landscape",
+        "landscape orientation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "duplex-printing",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#duplex-printing",
+      "linkingText": [
+        "Duplex Printing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "binding-edge",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#binding-edge",
+      "linkingText": [
+        "Binding Edge"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "facing-pages",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#facing-pages",
+      "linkingText": [
+        "Facing Pages"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "left-page",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#left-page",
+      "linkingText": [
+        "Left Page"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "right-page",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#right-page",
+      "linkingText": [
+        "Right Page"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "page-box",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#page-box",
+      "linkingText": [
+        "page box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "page-area",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#page-area",
+      "linkingText": [
+        "page area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "page-margin-boxes",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#page-margin-boxes",
+      "linkingText": [
+        "page-margin boxes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "content-empty",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#content-empty",
+      "linkingText": [
+        "Content-empty page"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "page-progression",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#page-progression",
+      "linkingText": [
+        "page progression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-page",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#at-ruledef-page",
+      "linkingText": [
+        "@page"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "page-context",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#page-context",
+      "linkingText": [
+        "page context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "page-selector",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#page-selector",
+      "linkingText": [
+        "page selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "match",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#match",
+      "linkingText": [
+        "match"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "page-type-selector",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#page-type-selector",
+      "linkingText": [
+        "page type selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "page-pseudo-class",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#page-pseudo-class",
+      "linkingText": [
+        "page pseudo-class"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-left",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-left",
+      "linkingText": [
+        ":left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@page"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-right",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-right",
+      "linkingText": [
+        ":right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@page"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-first",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-first",
+      "linkingText": [
+        ":first"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@page"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-blank",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-blank",
+      "linkingText": [
+        ":blank"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@page"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-page-selector-list",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#typedef-page-selector-list",
+      "linkingText": [
+        "<page-selector-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-page-selector",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#typedef-page-selector",
+      "linkingText": [
+        "<page-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-pseudo-page",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#typedef-pseudo-page",
+      "linkingText": [
+        "<pseudo-page>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-top-left-corner",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#at-ruledef-top-left-corner",
+      "linkingText": [
+        "@top-left-corner"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-top-left",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#at-ruledef-top-left",
+      "linkingText": [
+        "@top-left"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-top-center",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#at-ruledef-top-center",
+      "linkingText": [
+        "@top-center"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-top-right",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#at-ruledef-top-right",
+      "linkingText": [
+        "@top-right"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-top-right-corner",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#at-ruledef-top-right-corner",
+      "linkingText": [
+        "@top-right-corner"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-bottom-left-corner",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#at-ruledef-bottom-left-corner",
+      "linkingText": [
+        "@bottom-left-corner"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-bottom-left",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#at-ruledef-bottom-left",
+      "linkingText": [
+        "@bottom-left"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-bottom-center",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#at-ruledef-bottom-center",
+      "linkingText": [
+        "@bottom-center"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-bottom-right",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#at-ruledef-bottom-right",
+      "linkingText": [
+        "@bottom-right"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-bottom-right-corner",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#at-ruledef-bottom-right-corner",
+      "linkingText": [
+        "@bottom-right-corner"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-left-top",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#at-ruledef-left-top",
+      "linkingText": [
+        "@left-top"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-left-middle",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#at-ruledef-left-middle",
+      "linkingText": [
+        "@left-middle"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-left-bottom",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#at-ruledef-left-bottom",
+      "linkingText": [
+        "@left-bottom"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-right-top",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#at-ruledef-right-top",
+      "linkingText": [
+        "@right-top"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-right-middle",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#at-ruledef-right-middle",
+      "linkingText": [
+        "@right-middle"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-right-bottom",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#at-ruledef-right-bottom",
+      "linkingText": [
+        "@right-bottom"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "specificity",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#specificity",
+      "linkingText": [
+        "specificity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "page-header",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#page-header",
+      "linkingText": [
+        "page header"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "page-footer",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#page-footer",
+      "linkingText": [
+        "page footer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "margin-at-rule",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#margin-at-rule",
+      "linkingText": [
+        "margin at-rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "margin-context",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#margin-context",
+      "linkingText": [
+        "margin context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "generated",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#generated",
+      "linkingText": [
+        "generated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "available-width",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#available-width",
+      "linkingText": [
+        "available width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "available-height",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#available-height",
+      "linkingText": [
+        "available height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "outer-width",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#outer-width",
+      "linkingText": [
+        "outer width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "min-content-width",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#min-content-width",
+      "linkingText": [
+        "min-content width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "max-content-width",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#max-content-width",
+      "linkingText": [
+        "max-content width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "outer-min-width",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#outer-min-width",
+      "linkingText": [
+        "outer min width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "outer-max-width",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#outer-max-width",
+      "linkingText": [
+        "outer max width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "containing-block",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#containing-block",
+      "linkingText": [
+        "containing block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "flex-space",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#flex-space",
+      "linkingText": [
+        "flex space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "flex-factor",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#flex-factor",
+      "linkingText": [
+        "flex factor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "descdef-page-size",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#descdef-page-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@page"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-size-auto",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-size-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@page/size"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-size-landscape",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-size-landscape",
+      "linkingText": [
+        "landscape"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@page/size"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-size-portrait",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-size-portrait",
+      "linkingText": [
+        "portrait"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@page/size"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-size-length",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-size-length",
+      "linkingText": [
+        "<length>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@page/size"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-page-size-page-size",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#typedef-page-size-page-size",
+      "linkingText": [
+        "<page-size>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "@page/size"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-size-a5",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-size-a5",
+      "linkingText": [
+        "A5"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<page-size>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-size-a4",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-size-a4",
+      "linkingText": [
+        "A4"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<page-size>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-size-a3",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-size-a3",
+      "linkingText": [
+        "A3"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<page-size>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-size-b5",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-size-b5",
+      "linkingText": [
+        "B5"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<page-size>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-size-b4",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-size-b4",
+      "linkingText": [
+        "B4"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<page-size>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-size-jis-b5",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-size-jis-b5",
+      "linkingText": [
+        "JIS-B5"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<page-size>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-size-jis-b4",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-size-jis-b4",
+      "linkingText": [
+        "JIS-B4"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<page-size>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-size-letter",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-size-letter",
+      "linkingText": [
+        "letter"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<page-size>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-size-legal",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-size-legal",
+      "linkingText": [
+        "legal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<page-size>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-size-ledger",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-size-ledger",
+      "linkingText": [
+        "ledger"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<page-size>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-page-marks",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#descdef-page-marks",
+      "linkingText": [
+        "marks"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@page"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-marks-none",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-marks-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@page/marks"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-marks-crop",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-marks-crop",
+      "linkingText": [
+        "crop"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@page/marks"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-marks-cross",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-marks-cross",
+      "linkingText": [
+        "cross"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@page/marks"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-page-bleed",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#descdef-page-bleed",
+      "linkingText": [
+        "bleed"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@page"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "bleed-area",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#bleed-area",
+      "linkingText": [
+        "bleed area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-bleed-auto",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-bleed-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@page/bleed"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-page-bleed-length",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#valdef-page-bleed-length",
+      "linkingText": [
+        "<length>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@page/bleed"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-page",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#propdef-page",
+      "linkingText": [
+        "page"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "named-page",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#named-page",
+      "linkingText": [
+        "named page"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "start-page-value",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#start-page-value",
+      "linkingText": [
+        "start page value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "end-page-value",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#end-page-value",
+      "linkingText": [
+        "end page value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "page-property",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#page-property",
+      "linkingText": [
+        "page property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "page-margin-property",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#page-margin-property",
+      "linkingText": [
+        "page-margin property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "signature",
+      "href": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/#signature",
+      "linkingText": [
+        "signature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

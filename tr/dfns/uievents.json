@@ -1,0 +1,2969 @@
+{
+  "spec": {
+    "title": "UI Events",
+    "url": "https://www.w3.org/TR/2019/WD-uievents-20190530/"
+  },
+  "dfns": [
+    {
+      "id": "internal-key-modifier-state",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#internal-key-modifier-state",
+      "linkingText": [
+        "internal key modifier state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "modifier-key-name",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#modifier-key-name",
+      "linkingText": [
+        "key modifier name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-uievent-uievent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-uievent-uievent",
+      "linkingText": [
+        "UIEvent(type, eventInitDict)",
+        "UIEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "UIEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uievent-uievent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-uievent-uievent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "UIEvent/UIEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uievent-uievent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-uievent-uievent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "UIEvent/UIEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "uievent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#uievent",
+      "linkingText": [
+        "UIEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uievent-view",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-uievent-view",
+      "linkingText": [
+        "view"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "UIEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uievent-detail",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-uievent-detail",
+      "linkingText": [
+        "detail"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "UIEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-uieventinit",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dictdef-uieventinit",
+      "linkingText": [
+        "UIEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uieventinit-view",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-uieventinit-view",
+      "linkingText": [
+        "view"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "UIEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uieventinit-detail",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-uieventinit-detail",
+      "linkingText": [
+        "detail"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "UIEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "load",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#load",
+      "linkingText": [
+        "load"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "unload",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#unload",
+      "linkingText": [
+        "unload"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "abort",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#abort",
+      "linkingText": [
+        "abort"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "error",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "select",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#select",
+      "linkingText": [
+        "select"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-focusevent-focusevent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-focusevent-focusevent",
+      "linkingText": [
+        "FocusEvent(type, eventInitDict)",
+        "FocusEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "FocusEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-focusevent-focusevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-focusevent-focusevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FocusEvent/FocusEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-focusevent-focusevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-focusevent-focusevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FocusEvent/FocusEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "focusevent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#focusevent",
+      "linkingText": [
+        "FocusEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-focusevent-relatedtarget",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-focusevent-relatedtarget",
+      "linkingText": [
+        "relatedTarget"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FocusEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-focuseventinit",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dictdef-focuseventinit",
+      "linkingText": [
+        "FocusEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-focuseventinit-relatedtarget",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-focuseventinit-relatedtarget",
+      "linkingText": [
+        "relatedTarget"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FocusEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "blur",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#blur",
+      "linkingText": [
+        "blur"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "focus",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#focus",
+      "linkingText": [
+        "focus"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "focusin",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#focusin",
+      "linkingText": [
+        "focusin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "focusout",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#focusout",
+      "linkingText": [
+        "focusout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-mouseevent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseevent-mouseevent",
+      "linkingText": [
+        "MouseEvent(type, eventInitDict)",
+        "MouseEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-mouseevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseevent-mouseevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MouseEvent/MouseEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-mouseevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseevent-mouseevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MouseEvent/MouseEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mouseevent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#mouseevent",
+      "linkingText": [
+        "MouseEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-getmodifierstate-keyarg-keyarg",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseevent-getmodifierstate-keyarg-keyarg",
+      "linkingText": [
+        "keyArg"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MouseEvent/getModifierState(keyArg)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-screenx",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseevent-screenx",
+      "linkingText": [
+        "screenX"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-screeny",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseevent-screeny",
+      "linkingText": [
+        "screenY"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-clientx",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseevent-clientx",
+      "linkingText": [
+        "clientX"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-clienty",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseevent-clienty",
+      "linkingText": [
+        "clientY"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-ctrlkey",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseevent-ctrlkey",
+      "linkingText": [
+        "ctrlKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-shiftkey",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseevent-shiftkey",
+      "linkingText": [
+        "shiftKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-altkey",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseevent-altkey",
+      "linkingText": [
+        "altKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-metakey",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseevent-metakey",
+      "linkingText": [
+        "metaKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-button",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseevent-button",
+      "linkingText": [
+        "button"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-buttons",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseevent-buttons",
+      "linkingText": [
+        "buttons"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-relatedtarget",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseevent-relatedtarget",
+      "linkingText": [
+        "relatedTarget"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-getmodifierstate",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseevent-getmodifierstate",
+      "linkingText": [
+        "getModifierState(keyArg)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mouseeventinit",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dictdef-mouseeventinit",
+      "linkingText": [
+        "MouseEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-screenx",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseeventinit-screenx",
+      "linkingText": [
+        "screenX"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-screeny",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseeventinit-screeny",
+      "linkingText": [
+        "screenY"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-clientx",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseeventinit-clientx",
+      "linkingText": [
+        "clientX"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-clienty",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseeventinit-clienty",
+      "linkingText": [
+        "clientY"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-button",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseeventinit-button",
+      "linkingText": [
+        "button"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-buttons",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseeventinit-buttons",
+      "linkingText": [
+        "buttons"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-relatedtarget",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseeventinit-relatedtarget",
+      "linkingText": [
+        "relatedTarget"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-eventmodifierinit",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dictdef-eventmodifierinit",
+      "linkingText": [
+        "EventModifierInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-ctrlkey",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-eventmodifierinit-ctrlkey",
+      "linkingText": [
+        "ctrlKey"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-shiftkey",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-eventmodifierinit-shiftkey",
+      "linkingText": [
+        "shiftKey"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-altkey",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-eventmodifierinit-altkey",
+      "linkingText": [
+        "altKey"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-metakey",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-eventmodifierinit-metakey",
+      "linkingText": [
+        "metaKey"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifieraltgraph",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-eventmodifierinit-modifieraltgraph",
+      "linkingText": [
+        "modifierAltGraph"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifiercapslock",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-eventmodifierinit-modifiercapslock",
+      "linkingText": [
+        "modifierCapsLock"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifierfn",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-eventmodifierinit-modifierfn",
+      "linkingText": [
+        "modifierFn"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifierfnlock",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-eventmodifierinit-modifierfnlock",
+      "linkingText": [
+        "modifierFnLock"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifierhyper",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-eventmodifierinit-modifierhyper",
+      "linkingText": [
+        "modifierHyper"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifiernumlock",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-eventmodifierinit-modifiernumlock",
+      "linkingText": [
+        "modifierNumLock"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifierscrolllock",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-eventmodifierinit-modifierscrolllock",
+      "linkingText": [
+        "modifierScrollLock"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifiersuper",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-eventmodifierinit-modifiersuper",
+      "linkingText": [
+        "modifierSuper"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifiersymbol",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-eventmodifierinit-modifiersymbol",
+      "linkingText": [
+        "modifierSymbol"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-eventmodifierinit-modifiersymbollock",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-eventmodifierinit-modifiersymbollock",
+      "linkingText": [
+        "modifierSymbolLock"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EventModifierInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "auxclick",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#auxclick",
+      "linkingText": [
+        "auxclick"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "click",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#click",
+      "linkingText": [
+        "click"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dblclick",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dblclick",
+      "linkingText": [
+        "dblclick"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mousedown",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#mousedown",
+      "linkingText": [
+        "mousedown"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mouseenter",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#mouseenter",
+      "linkingText": [
+        "mouseenter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mouseleave",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#mouseleave",
+      "linkingText": [
+        "mouseleave"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mousemove",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#mousemove",
+      "linkingText": [
+        "mousemove"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mouseout",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#mouseout",
+      "linkingText": [
+        "mouseout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mouseover",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#mouseover",
+      "linkingText": [
+        "mouseover"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mouseup",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#mouseup",
+      "linkingText": [
+        "mouseup"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-wheelevent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-wheelevent-wheelevent",
+      "linkingText": [
+        "WheelEvent(type, eventInitDict)",
+        "WheelEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-wheelevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-wheelevent-wheelevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WheelEvent/WheelEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-wheelevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-wheelevent-wheelevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WheelEvent/WheelEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "wheelevent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#wheelevent",
+      "linkingText": [
+        "WheelEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-dom_delta_pixel",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-wheelevent-dom_delta_pixel",
+      "linkingText": [
+        "DOM_DELTA_PIXEL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-dom_delta_line",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-wheelevent-dom_delta_line",
+      "linkingText": [
+        "DOM_DELTA_LINE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-dom_delta_page",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-wheelevent-dom_delta_page",
+      "linkingText": [
+        "DOM_DELTA_PAGE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-deltax",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-wheelevent-deltax",
+      "linkingText": [
+        "deltaX"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-deltay",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-wheelevent-deltay",
+      "linkingText": [
+        "deltaY"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-deltaz",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-wheelevent-deltaz",
+      "linkingText": [
+        "deltaZ"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-deltamode",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-wheelevent-deltamode",
+      "linkingText": [
+        "deltaMode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-wheeleventinit",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dictdef-wheeleventinit",
+      "linkingText": [
+        "WheelEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheeleventinit-deltax",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-wheeleventinit-deltax",
+      "linkingText": [
+        "deltaX"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WheelEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheeleventinit-deltay",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-wheeleventinit-deltay",
+      "linkingText": [
+        "deltaY"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WheelEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheeleventinit-deltaz",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-wheeleventinit-deltaz",
+      "linkingText": [
+        "deltaZ"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WheelEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheeleventinit-deltamode",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-wheeleventinit-deltamode",
+      "linkingText": [
+        "deltaMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WheelEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "wheel",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#wheel",
+      "linkingText": [
+        "wheel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-inputevent-inputevent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-inputevent-inputevent",
+      "linkingText": [
+        "InputEvent(type, eventInitDict)",
+        "InputEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "InputEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-inputevent-inputevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-inputevent-inputevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "InputEvent/InputEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-inputevent-inputevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-inputevent-inputevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "InputEvent/InputEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inputevent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#inputevent",
+      "linkingText": [
+        "InputEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-inputevent-data",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-inputevent-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InputEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-inputevent-iscomposing",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-inputevent-iscomposing",
+      "linkingText": [
+        "isComposing"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InputEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-inputevent-inputtype",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-inputevent-inputtype",
+      "linkingText": [
+        "inputType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InputEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-inputeventinit",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dictdef-inputeventinit",
+      "linkingText": [
+        "InputEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-inputeventinit-data",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-inputeventinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "InputEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-inputeventinit-iscomposing",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-inputeventinit-iscomposing",
+      "linkingText": [
+        "isComposing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "InputEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-inputeventinit-inputtype",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-inputeventinit-inputtype",
+      "linkingText": [
+        "inputType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "InputEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "beforeinput",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#beforeinput",
+      "linkingText": [
+        "beforeinput"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "input",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-keyboardevent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-keyboardevent",
+      "linkingText": [
+        "KeyboardEvent(type, eventInitDict)",
+        "KeyboardEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-keyboardevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-keyboardevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyboardEvent/KeyboardEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-keyboardevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-keyboardevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyboardEvent/KeyboardEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "keyboardevent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#keyboardevent",
+      "linkingText": [
+        "KeyboardEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-getmodifierstate-keyarg-keyarg",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-getmodifierstate-keyarg-keyarg",
+      "linkingText": [
+        "keyArg"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyboardEvent/getModifierState(keyArg)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-dom_key_location_standard",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-dom_key_location_standard",
+      "linkingText": [
+        "DOM_KEY_LOCATION_STANDARD"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-dom_key_location_left",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-dom_key_location_left",
+      "linkingText": [
+        "DOM_KEY_LOCATION_LEFT"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-dom_key_location_right",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-dom_key_location_right",
+      "linkingText": [
+        "DOM_KEY_LOCATION_RIGHT"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-dom_key_location_numpad",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-dom_key_location_numpad",
+      "linkingText": [
+        "DOM_KEY_LOCATION_NUMPAD"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-key",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-code",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-code",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-location",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-location",
+      "linkingText": [
+        "location"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-ctrlkey",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-ctrlkey",
+      "linkingText": [
+        "ctrlKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-shiftkey",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-shiftkey",
+      "linkingText": [
+        "shiftKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-altkey",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-altkey",
+      "linkingText": [
+        "altKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-metakey",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-metakey",
+      "linkingText": [
+        "metaKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-repeat",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-repeat",
+      "linkingText": [
+        "repeat"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-iscomposing",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-iscomposing",
+      "linkingText": [
+        "isComposing"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-getmodifierstate",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-getmodifierstate",
+      "linkingText": [
+        "getModifierState(keyArg)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-keyboardeventinit",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dictdef-keyboardeventinit",
+      "linkingText": [
+        "KeyboardEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardeventinit-key",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardeventinit-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyboardEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardeventinit-code",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardeventinit-code",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyboardEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardeventinit-location",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardeventinit-location",
+      "linkingText": [
+        "location"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyboardEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardeventinit-repeat",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardeventinit-repeat",
+      "linkingText": [
+        "repeat"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyboardEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardeventinit-iscomposing",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardeventinit-iscomposing",
+      "linkingText": [
+        "isComposing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyboardEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "keydown",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#keydown",
+      "linkingText": [
+        "keydown"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "keyup",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#keyup",
+      "linkingText": [
+        "keyup"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-compositionevent-compositionevent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-compositionevent-compositionevent",
+      "linkingText": [
+        "CompositionEvent(type, eventInitDict)",
+        "CompositionEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CompositionEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositionevent-compositionevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-compositionevent-compositionevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CompositionEvent/CompositionEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositionevent-compositionevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-compositionevent-compositionevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CompositionEvent/CompositionEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "compositionevent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#compositionevent",
+      "linkingText": [
+        "CompositionEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositionevent-data",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-compositionevent-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CompositionEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-compositioneventinit",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dictdef-compositioneventinit",
+      "linkingText": [
+        "CompositionEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositioneventinit-data",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-compositioneventinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CompositionEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "compositionstart",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#compositionstart",
+      "linkingText": [
+        "compositionstart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "compositionupdate",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#compositionupdate",
+      "linkingText": [
+        "compositionupdate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "compositionend",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#compositionend",
+      "linkingText": [
+        "compositionend"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-uievent-inituievent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-uievent-inituievent",
+      "linkingText": [
+        "initUIEvent()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "UIEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-initmouseevent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mouseevent-initmouseevent",
+      "linkingText": [
+        "initMouseEvent()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-wheelevent-initwheelevent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-wheelevent-initwheelevent",
+      "linkingText": [
+        "initWheelEvent()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WheelEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardeveng-initkeyboardevent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardeveng-initkeyboardevent",
+      "linkingText": [
+        "initKeyboardEvent()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "KeyboardEveng"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositionevent-initcompositionevent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-compositionevent-initcompositionevent",
+      "linkingText": [
+        "initCompositionEvent()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CompositionEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uievent-which",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-uievent-which",
+      "linkingText": [
+        "which"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "UIEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "uieventinit-which",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#uieventinit-which",
+      "linkingText": [
+        "which"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "UIEventInit"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-charcode",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-charcode",
+      "linkingText": [
+        "charCode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyboardevent-keycode",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-keyboardevent-keycode",
+      "linkingText": [
+        "keyCode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "keyboardeventinit-charcode",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#keyboardeventinit-charcode",
+      "linkingText": [
+        "charCode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "KeyboardEventInit"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "keyboardeventinit-keycode",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#keyboardeventinit-keycode",
+      "linkingText": [
+        "keyCode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "KeyboardEventInit"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domactivate",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#domactivate",
+      "linkingText": [
+        "DOMActivate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domfocusin",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#domfocusin",
+      "linkingText": [
+        "DOMFocusIn"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domfocusout",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#domfocusout",
+      "linkingText": [
+        "DOMFocusOut"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "keypress",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#keypress",
+      "linkingText": [
+        "keypress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mutationevent-modification",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mutationevent-modification",
+      "linkingText": [
+        "MODIFICATION"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mutationevent-addition",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mutationevent-addition",
+      "linkingText": [
+        "ADDITION"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mutationevent-removal",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mutationevent-removal",
+      "linkingText": [
+        "REMOVAL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mutationevent-relatednode",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#mutationevent-relatednode",
+      "linkingText": [
+        "relatedNode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mutationevent-prevvalue",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#mutationevent-prevvalue",
+      "linkingText": [
+        "prevValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mutationevent-newvalue",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#mutationevent-newvalue",
+      "linkingText": [
+        "newValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mutationevent-attrname",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#mutationevent-attrname",
+      "linkingText": [
+        "attrName"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mutationevent-attrchange",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#mutationevent-attrchange",
+      "linkingText": [
+        "attrChange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mutationevent-initmutationevent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-mutationevent-initmutationevent",
+      "linkingText": [
+        "initMutationEvent()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MutationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "domattrmodified",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#domattrmodified",
+      "linkingText": [
+        "DOMAttrModified"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domcharacterdatamodified",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#domcharacterdatamodified",
+      "linkingText": [
+        "DOMCharacterDataModified"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domnodeinserted",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#domnodeinserted",
+      "linkingText": [
+        "DOMNodeInserted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domnodeinsertedintodocument",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#domnodeinsertedintodocument",
+      "linkingText": [
+        "DOMNodeInsertedIntoDocument"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domnoderemoved",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#domnoderemoved",
+      "linkingText": [
+        "DOMNodeRemoved"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domnoderemovedfromdocument",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#domnoderemovedfromdocument",
+      "linkingText": [
+        "DOMNodeRemovedFromDocument"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "domsubtreemodified",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#domsubtreemodified",
+      "linkingText": [
+        "DOMSubtreeModified"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "activation-behavior",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#activation-behavior",
+      "linkingText": [
+        "activation behavior"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "activation-trigger",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#activation-trigger",
+      "linkingText": [
+        "activation trigger"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "author",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#author",
+      "linkingText": [
+        "author"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "body-element",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#body-element",
+      "linkingText": [
+        "body element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "bubble-phase",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#bubble-phase",
+      "linkingText": [
+        "bubble phase",
+        "bubbling phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "capture-phase",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#capture-phase",
+      "linkingText": [
+        "capture phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "candidate-event-handlers",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#candidate-event-handlers",
+      "linkingText": [
+        "candidate event handlers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "candidate-event-listeners",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#candidate-event-listeners",
+      "linkingText": [
+        "candidate event listeners"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "character-value",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#character-value",
+      "linkingText": [
+        "character value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "current-event-target",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#current-event-target",
+      "linkingText": [
+        "current event target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dead-key",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dead-key",
+      "linkingText": [
+        "dead key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "default-action",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#default-action",
+      "linkingText": [
+        "default action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "delta",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#delta",
+      "linkingText": [
+        "delta"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "deprecates",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#deprecates",
+      "linkingText": [
+        "deprecates",
+        "deprecated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dispatch",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dispatch",
+      "linkingText": [
+        "dispatch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "document",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#document",
+      "linkingText": [
+        "document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-application",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-application",
+      "linkingText": [
+        "DOM application"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-level-0",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#dom-level-0",
+      "linkingText": [
+        "DOM Level 0"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "empty-string",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#empty-string",
+      "linkingText": [
+        "empty string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "event",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#event",
+      "linkingText": [
+        "event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "event-focus",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#event-focus",
+      "linkingText": [
+        "event focus"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "focus-ring",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#focus-ring",
+      "linkingText": [
+        "focus ring"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "event-handler",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#event-handler",
+      "linkingText": [
+        "event handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "event-listener",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#event-listener",
+      "linkingText": [
+        "event listener"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "event-order",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#event-order",
+      "linkingText": [
+        "event order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "event-phase",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#event-phase",
+      "linkingText": [
+        "event phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "event-target",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#event-target",
+      "linkingText": [
+        "event target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "event-type",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#event-type",
+      "linkingText": [
+        "event type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fire",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#fire",
+      "linkingText": [
+        "fire"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "host-language",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#host-language",
+      "linkingText": [
+        "host language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "hysteresis",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#hysteresis",
+      "linkingText": [
+        "hysteresis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ime",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#ime",
+      "linkingText": [
+        "IME"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "input-method-editor",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#input-method-editor",
+      "linkingText": [
+        "input method editor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "key-mapping",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#key-mapping",
+      "linkingText": [
+        "key mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "key-value",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#key-value",
+      "linkingText": [
+        "key value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "local-name",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#local-name",
+      "linkingText": [
+        "local name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "modifier-key",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#modifier-key",
+      "linkingText": [
+        "modifier key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "namespace-uris",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#namespace-uris",
+      "linkingText": [
+        "namespace URIs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "phase",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#phase",
+      "linkingText": [
+        "phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propagation-path",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#propagation-path",
+      "linkingText": [
+        "propagation path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "qwerty",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#qwerty",
+      "linkingText": [
+        "QWERTY"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "root-element",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#root-element",
+      "linkingText": [
+        "root element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "rotation",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#rotation",
+      "linkingText": [
+        "rotation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "target-phase",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#target-phase",
+      "linkingText": [
+        "target phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "text-composition-system",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#text-composition-system",
+      "linkingText": [
+        "text composition system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "topmost-event-target",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#topmost-event-target",
+      "linkingText": [
+        "topmost event target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "tree",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#tree",
+      "linkingText": [
+        "tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "unicode-character-categories",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#unicode-character-categories",
+      "linkingText": [
+        "Unicode character categories"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "un-initialized-value",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#un-initialized-value",
+      "linkingText": [
+        "un-initialized value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "user-agent",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "window",
+      "href": "https://www.w3.org/TR/2019/WD-uievents-20190530/#window",
+      "linkingText": [
+        "Window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

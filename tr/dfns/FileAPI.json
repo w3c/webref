@@ -1,0 +1,1533 @@
+{
+  "spec": {
+    "title": "File API",
+    "url": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/"
+  },
+  "dfns": [
+    {
+      "id": "terminate-an-algorithm",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#terminate-an-algorithm",
+      "linkingText": [
+        "terminate an algorithm",
+        "terminate this algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "UnixEpoch",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#UnixEpoch",
+      "linkingText": [
+        "Unix Epoch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "snapshot-state",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#snapshot-state",
+      "linkingText": [
+        "snapshot state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Blob"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-Blob",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-Blob",
+      "linkingText": [
+        "Blob"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blob-blobparts",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-blob-blobparts",
+      "linkingText": [
+        "blobParts"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Blob"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blob-options",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-blob-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Blob"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-endingtype",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#enumdef-endingtype",
+      "linkingText": [
+        "EndingType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-endingtype-transparent",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-endingtype-transparent",
+      "linkingText": [
+        "\"transparent\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "EndingType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-endingtype-native",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-endingtype-native",
+      "linkingText": [
+        "\"native\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "EndingType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-BlobPropertyBag",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-BlobPropertyBag",
+      "linkingText": [
+        "BlobPropertyBag"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-blobpart",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#typedefdef-blobpart",
+      "linkingText": [
+        "BlobPart"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "blob-get-stream",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#blob-get-stream",
+      "linkingText": [
+        "get stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Blob"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-blobParts",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-blobParts",
+      "linkingText": [
+        "blobParts"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Blob/Blob(blobParts, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-BPtype",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-BPtype",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BlobPropertyBag"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blobpropertybag-endings",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-blobpropertybag-endings",
+      "linkingText": [
+        "endings"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BlobPropertyBag"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "process-blob-parts",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#process-blob-parts",
+      "linkingText": [
+        "process blob parts",
+        "processing blob parts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "convert-line-endings-to-native",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#convert-line-endings-to-native",
+      "linkingText": [
+        "convert line endings to native",
+        "converting line endings to native"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-size",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Blob"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-type",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Blob"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-slice",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-slice",
+      "linkingText": [
+        "slice(start, end, contentType), slice(start, end), slice(start), slice()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Blob"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-start",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Blob/slice(start, end, contentType)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-end",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-end",
+      "linkingText": [
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Blob/slice(start, end, contentType)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-contentTypeBlob",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-contentTypeBlob",
+      "linkingText": [
+        "contentType"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Blob/slice(start, end, contentType)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blob-stream",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-blob-stream",
+      "linkingText": [
+        "stream()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Blob"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blob-text",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-blob-text",
+      "linkingText": [
+        "text()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Blob"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blob-arraybuffer",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-blob-arraybuffer",
+      "linkingText": [
+        "arrayBuffer()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Blob"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "file-type-guidelines",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#file-type-guidelines",
+      "linkingText": [
+        "file type guidelines"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-file",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-file",
+      "linkingText": [
+        "File"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-file-filebits",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-file-filebits",
+      "linkingText": [
+        "fileBits"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "File"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-file-filename",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-file-filename",
+      "linkingText": [
+        "fileName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "File"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-file-options",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-file-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "File"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-FilePropertyBag",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-FilePropertyBag",
+      "linkingText": [
+        "FilePropertyBag"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-fileBits",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-fileBits",
+      "linkingText": [
+        "fileBits"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "File/File(fileBits, fileName, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-fileName",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-fileName",
+      "linkingText": [
+        "fileName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "File/File(fileBits, fileName, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-FPdate",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-FPdate",
+      "linkingText": [
+        "lastModified"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FilePropertyBag"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-name",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "File"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-lastModified",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-lastModified",
+      "linkingText": [
+        "lastModified"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "File"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-filelist",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-filelist",
+      "linkingText": [
+        "FileList"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-length",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FileList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-item",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-item",
+      "linkingText": [
+        "item(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-index",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FileList/item(index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fileReadingTaskSource",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#fileReadingTaskSource",
+      "linkingText": [
+        "file reading task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-filereader",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-filereader",
+      "linkingText": [
+        "FileReader"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filereader-readasarraybuffer-blob-blob",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-filereader-readasarraybuffer-blob-blob",
+      "linkingText": [
+        "blob"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FileReader/readAsArrayBuffer(blob)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filereader-readasbinarystring-blob-blob",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-filereader-readasbinarystring-blob-blob",
+      "linkingText": [
+        "blob"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FileReader/readAsBinaryString(blob)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filereader-readastext-blob-encoding-blob",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-filereader-readastext-blob-encoding-blob",
+      "linkingText": [
+        "blob"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FileReader/readAsText(blob, encoding)",
+        "FileReader/readAsText(blob)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filereader-readastext-blob-encoding-encoding",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-filereader-readastext-blob-encoding-encoding",
+      "linkingText": [
+        "encoding"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FileReader/readAsText(blob, encoding)",
+        "FileReader/readAsText(blob)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filereader-readasdataurl-blob-blob",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-filereader-readasdataurl-blob-blob",
+      "linkingText": [
+        "blob"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FileReader/readAsDataURL(blob)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filereader-empty",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-filereader-empty",
+      "linkingText": [
+        "EMPTY"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filereader-loading",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-filereader-loading",
+      "linkingText": [
+        "LOADING"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filereader-done",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-filereader-done",
+      "linkingText": [
+        "DONE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "filereader-state",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#filereader-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FileReader"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "filereader-result",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#filereader-result",
+      "linkingText": [
+        "result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FileReader"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "filereader-error",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#filereader-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FileReader"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "filereaderConstrctr",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#filereaderConstrctr",
+      "linkingText": [
+        "FileReader()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filereader-readystate",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-filereader-readystate",
+      "linkingText": [
+        "readyState"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filereader-result",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-filereader-result",
+      "linkingText": [
+        "result"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filereader-error",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-filereader-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readOperation",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#readOperation",
+      "linkingText": [
+        "read operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-onloadstart",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-onloadstart",
+      "linkingText": [
+        "onloadstart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-onprogress",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-onprogress",
+      "linkingText": [
+        "onprogress"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-onabort",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-onabort",
+      "linkingText": [
+        "onabort"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-onerror",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-onload",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-onload",
+      "linkingText": [
+        "onload"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-onloadend",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-onloadend",
+      "linkingText": [
+        "onloadend"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "asynchronous-read-methods",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#asynchronous-read-methods",
+      "linkingText": [
+        "asynchronous read method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "read-method",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#read-method",
+      "linkingText": [
+        "read method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-readAsDataURL",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-readAsDataURL",
+      "linkingText": [
+        "readAsDataURL(blob)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-readAsText",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-readAsText",
+      "linkingText": [
+        "readAsText(blob, encoding)",
+        "readAsText(blob)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-readAsArrayBuffer",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-readAsArrayBuffer",
+      "linkingText": [
+        "readAsArrayBuffer(blob)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-readAsBinaryString",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-readAsBinaryString",
+      "linkingText": [
+        "readAsBinaryString(blob)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-abort",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-abort",
+      "linkingText": [
+        "abort()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "blob-package-data",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#blob-package-data",
+      "linkingText": [
+        "package data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Blob"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fire-a-progress-event",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#fire-a-progress-event",
+      "linkingText": [
+        "fire a progress event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-loadstart-event",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-loadstart-event",
+      "linkingText": [
+        "loadstart"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-progress-event",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-progress-event",
+      "linkingText": [
+        "progress"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-abort-event",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-abort-event",
+      "linkingText": [
+        "abort"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-error-event",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-error-event",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-load-event",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-load-event",
+      "linkingText": [
+        "load"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-loadend-event",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-loadend-event",
+      "linkingText": [
+        "loadend"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "FileReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "read-method-sync",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#read-method-sync",
+      "linkingText": [
+        "synchronous read method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-FileReaderSync",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-FileReaderSync",
+      "linkingText": [
+        "FileReaderSync"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filereadersync-readasarraybuffer-blob-blob",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-filereadersync-readasarraybuffer-blob-blob",
+      "linkingText": [
+        "blob"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FileReaderSync/readAsArrayBuffer(blob)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filereadersync-readasbinarystring-blob-blob",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-filereadersync-readasbinarystring-blob-blob",
+      "linkingText": [
+        "blob"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FileReaderSync/readAsBinaryString(blob)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filereadersync-readastext-blob-encoding-blob",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-filereadersync-readastext-blob-encoding-blob",
+      "linkingText": [
+        "blob"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FileReaderSync/readAsText(blob, encoding)",
+        "FileReaderSync/readAsText(blob)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filereadersync-readastext-blob-encoding-encoding",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-filereadersync-readastext-blob-encoding-encoding",
+      "linkingText": [
+        "encoding"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FileReaderSync/readAsText(blob, encoding)",
+        "FileReaderSync/readAsText(blob)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filereadersync-readasdataurl-blob-blob",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-filereadersync-readasdataurl-blob-blob",
+      "linkingText": [
+        "blob"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FileReaderSync/readAsDataURL(blob)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-readAsTextSync",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-readAsTextSync",
+      "linkingText": [
+        "readAsText(blob, encoding)",
+        "readAsText(blob)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileReaderSync"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-readAsDataURLSync",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-readAsDataURLSync",
+      "linkingText": [
+        "readAsDataURL(blob)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileReaderSync"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-readAsArrayBufferSync",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-readAsArrayBufferSync",
+      "linkingText": [
+        "readAsArrayBuffer(blob)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileReaderSync"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-readAsBinaryStringSync",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-readAsBinaryStringSync",
+      "linkingText": [
+        "readAsBinaryString(blob)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FileReaderSync"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "file-error-read",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#file-error-read",
+      "linkingText": [
+        "file read error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "failureReason",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#failureReason",
+      "linkingText": [
+        "failure reason"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "NotFoundFR",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#NotFoundFR",
+      "linkingText": [
+        "NotFound"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "UnsafeFileFR",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#UnsafeFileFR",
+      "linkingText": [
+        "UnsafeFile"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TooManyReadsFR",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#TooManyReadsFR",
+      "linkingText": [
+        "TooManyReads"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "SnapshotStateFR",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#SnapshotStateFR",
+      "linkingText": [
+        "SnapshotState"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "FileLockFR",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#FileLockFR",
+      "linkingText": [
+        "FileLock"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "BlobURLStore",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#BlobURLStore",
+      "linkingText": [
+        "blob URL store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "blob-url-entry",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#blob-url-entry",
+      "linkingText": [
+        "blob URL entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "blob-url-entry-object",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#blob-url-entry-object",
+      "linkingText": [
+        "object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "blob URL entry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "blob-url-entry-environment",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#blob-url-entry-environment",
+      "linkingText": [
+        "environment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "blob URL entry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "blob-url",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#blob-url",
+      "linkingText": [
+        "blob URL",
+        "object URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "unicodeBlobURL",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#unicodeBlobURL",
+      "linkingText": [
+        "generate a new blob URL",
+        "generating a new blob URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "add-an-entry",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#add-an-entry",
+      "linkingText": [
+        "add an entry",
+        "add the entry",
+        "add an entry to the blob URL store",
+        "add the entry to the blob URL store",
+        "adding an entry to the blob URL store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "blob url store"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "removeTheEntry",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#removeTheEntry",
+      "linkingText": [
+        "remove an entry",
+        "remove the entry",
+        "remove an entry from the blob URL store",
+        "remove the entry from the blob URL store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "blob url store"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "blob-url-resolve",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#blob-url-resolve",
+      "linkingText": [
+        "resolve"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "blob URL"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "lifeTime",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#lifeTime",
+      "linkingText": [
+        "lifetime",
+        "lifetime stipulation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "blob url"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-url-createobjecturl-obj-obj",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-url-createobjecturl-obj-obj",
+      "linkingText": [
+        "obj"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "URL/createObjectURL(obj)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-url-revokeobjecturl-url-url",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dom-url-revokeobjecturl-url-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "URL/revokeObjectURL(url)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-createObjectURL",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-createObjectURL",
+      "linkingText": [
+        "createObjectURL(obj)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "URL"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-revokeObjectURL",
+      "href": "https://www.w3.org/TR/2019/WD-FileAPI-20190911/#dfn-revokeObjectURL",
+      "linkingText": [
+        "revokeObjectURL(url)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "URL"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "spec": {
+    "title": "Storage Standard",
+    "url": "https://storage.spec.whatwg.org/"
+  },
+  "dfns": [
+    {
+      "id": "site-storage",
+      "href": "https://storage.spec.whatwg.org/#site-storage",
+      "linkingText": [
+        "site storage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "site-storage-unit",
+      "href": "https://storage.spec.whatwg.org/#site-storage-unit",
+      "linkingText": [
+        "site storage units"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "bucket",
+      "href": "https://storage.spec.whatwg.org/#bucket",
+      "linkingText": [
+        "bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "bucket-mode",
+      "href": "https://storage.spec.whatwg.org/#bucket-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "bucket"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "persistent-bucket",
+      "href": "https://storage.spec.whatwg.org/#persistent-bucket",
+      "linkingText": [
+        "persistent bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "non-persistent-bucket",
+      "href": "https://storage.spec.whatwg.org/#non-persistent-bucket",
+      "linkingText": [
+        "non-persistent bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-permissionname-persistent-storage",
+      "href": "https://storage.spec.whatwg.org/#dom-permissionname-persistent-storage",
+      "linkingText": [
+        "\"persistent-storage\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "site-storage-usage",
+      "href": "https://storage.spec.whatwg.org/#site-storage-usage",
+      "linkingText": [
+        "site storage usage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "site-storage-quota",
+      "href": "https://storage.spec.whatwg.org/#site-storage-quota",
+      "linkingText": [
+        "site storage quota"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "navigatorstorage",
+      "href": "https://storage.spec.whatwg.org/#navigatorstorage",
+      "linkingText": [
+        "NavigatorStorage"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-navigatorstorage-storage",
+      "href": "https://storage.spec.whatwg.org/#dom-navigatorstorage-storage",
+      "linkingText": [
+        "storage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NavigatorStorage"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "storagemanager",
+      "href": "https://storage.spec.whatwg.org/#storagemanager",
+      "linkingText": [
+        "StorageManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-storageestimate",
+      "href": "https://storage.spec.whatwg.org/#dictdef-storageestimate",
+      "linkingText": [
+        "StorageEstimate"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-storageestimate-usage",
+      "href": "https://storage.spec.whatwg.org/#dom-storageestimate-usage",
+      "linkingText": [
+        "usage"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageEstimate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-storageestimate-quota",
+      "href": "https://storage.spec.whatwg.org/#dom-storageestimate-quota",
+      "linkingText": [
+        "quota"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageEstimate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-storagemanager-persisted",
+      "href": "https://storage.spec.whatwg.org/#dom-storagemanager-persisted",
+      "linkingText": [
+        "persisted()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-storagemanager-persist",
+      "href": "https://storage.spec.whatwg.org/#dom-storagemanager-persist",
+      "linkingText": [
+        "persist()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-storagemanager-estimate",
+      "href": "https://storage.spec.whatwg.org/#dom-storagemanager-estimate",
+      "linkingText": [
+        "estimate()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageManager"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

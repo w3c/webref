@@ -1,0 +1,502 @@
+{
+  "spec": {
+    "title": "CSS Page Floats",
+    "url": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/"
+  },
+  "dfns": [
+    {
+      "id": "float",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#float",
+      "linkingText": [
+        "Float"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "float-block-formatting-context",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#float-block-formatting-context",
+      "linkingText": [
+        "Float block formatting context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "float-anchor",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#float-anchor",
+      "linkingText": [
+        "Float anchor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "float-containing-block-formatting-context",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#float-containing-block-formatting-context",
+      "linkingText": [
+        "Float containing block formatting context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "initial-float-reference",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#initial-float-reference",
+      "linkingText": [
+        "Initial float reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "float-reference",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#float-reference",
+      "linkingText": [
+        "Float reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "not-overlapping",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#not-overlapping",
+      "linkingText": [
+        "Not overlapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-float-reference",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#propdef-float-reference",
+      "linkingText": [
+        "float-reference"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-reference-inline",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-float-reference-inline",
+      "linkingText": [
+        "inline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float-reference"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-reference-column",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-float-reference-column",
+      "linkingText": [
+        "column"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float-reference"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-reference-region",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-float-reference-region",
+      "linkingText": [
+        "region"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float-reference"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-reference-page",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-float-reference-page",
+      "linkingText": [
+        "page"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float-reference"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-float",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#propdef-float",
+      "linkingText": [
+        "float"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-inline-start",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-float-inline-start",
+      "linkingText": [
+        "inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-inline-end",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-float-inline-end",
+      "linkingText": [
+        "inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-block-start",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-float-block-start",
+      "linkingText": [
+        "block-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-block-end",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-float-block-end",
+      "linkingText": [
+        "block-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-left",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-float-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-right",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-float-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-top",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-float-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-bottom",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-float-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-snap-block-length--start--end--near",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-float-snap-block-length--start--end--near",
+      "linkingText": [
+        "snap-block(<length> [, start | end | near ]?)"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-snap-block",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-float-snap-block",
+      "linkingText": [
+        "snap-block"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-snap-inline-length--left--right--near",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-float-snap-inline-length--left--right--near",
+      "linkingText": [
+        "snap-inline(<length> [, left | right | near ]?)"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-snap-inline",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-float-snap-inline",
+      "linkingText": [
+        "snap-inline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-float-none",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-float-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-clear",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#propdef-clear",
+      "linkingText": [
+        "clear"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-clear-inline-start",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-clear-inline-start",
+      "linkingText": [
+        "inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "clear"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-clear-inline-end",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-clear-inline-end",
+      "linkingText": [
+        "inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "clear"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-clear-block-start",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-clear-block-start",
+      "linkingText": [
+        "block-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "clear"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-clear-block-end",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-clear-block-end",
+      "linkingText": [
+        "block-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "clear"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-clear-left",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-clear-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "clear"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-clear-right",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-clear-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "clear"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-clear-top",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-clear-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "clear"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-clear-bottom",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#valdef-clear-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "clear"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-float-defer",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#propdef-float-defer",
+      "linkingText": [
+        "float-defer"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-float-offset",
+      "href": "http://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/#propdef-float-offset",
+      "linkingText": [
+        "float-offset"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

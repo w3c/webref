@@ -1,0 +1,1100 @@
+{
+  "spec": {
+    "title": "Pointer Events",
+    "url": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-active-buttons-state",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-active-buttons-state",
+      "linkingText": [
+        "active buttons state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-active-document",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-active-document",
+      "linkingText": [
+        "active document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-active-pointer",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-active-pointer",
+      "linkingText": [
+        "active pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-canceled-event",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-canceled-event",
+      "linkingText": [
+        "canceled event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-contact-geometry",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-contact-geometry",
+      "linkingText": [
+        "contact geometry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-digitizer",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-digitizer",
+      "linkingText": [
+        "digitizer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-hit-test",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-hit-test",
+      "linkingText": [
+        "hit test"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-pointer",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-pointer",
+      "linkingText": [
+        "pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-user-agent",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-pointereventinit-pointerid",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointereventinit-pointerid",
+      "linkingText": [
+        "pointerId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-width",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointereventinit-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-height",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointereventinit-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-pressure",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointereventinit-pressure",
+      "linkingText": [
+        "pressure"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-tangentialpressure",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointereventinit-tangentialpressure",
+      "linkingText": [
+        "tangentialPressure"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-tiltx",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointereventinit-tiltx",
+      "linkingText": [
+        "tiltX"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-tilty",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointereventinit-tilty",
+      "linkingText": [
+        "tiltY"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-twist",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointereventinit-twist",
+      "linkingText": [
+        "twist"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-pointertype",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointereventinit-pointertype",
+      "linkingText": [
+        "pointerType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-isprimary",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointereventinit-isprimary",
+      "linkingText": [
+        "isPrimary"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-coalescedevents",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointereventinit-coalescedevents",
+      "linkingText": [
+        "coalescedEvents"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-predictedevents",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointereventinit-predictedevents",
+      "linkingText": [
+        "predictedEvents"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-constructor",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointerevent-constructor",
+      "linkingText": [
+        "PointerEvent.constructor()",
+        "PointerEvent.constructor",
+        "constructor()",
+        "constructor"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-pointerid",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointerevent-pointerid",
+      "linkingText": [
+        "PointerEvent.pointerId",
+        "pointerId"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-width",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointerevent-width",
+      "linkingText": [
+        "PointerEvent.width",
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-height",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointerevent-height",
+      "linkingText": [
+        "PointerEvent.height",
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-pressure",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointerevent-pressure",
+      "linkingText": [
+        "PointerEvent.pressure",
+        "pressure"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-tangentialpressure",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointerevent-tangentialpressure",
+      "linkingText": [
+        "PointerEvent.tangentialPressure",
+        "tangentialPressure"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-tiltx",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointerevent-tiltx",
+      "linkingText": [
+        "PointerEvent.tiltX",
+        "tiltX"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-tilty",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointerevent-tilty",
+      "linkingText": [
+        "PointerEvent.tiltY",
+        "tiltY"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-twist",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointerevent-twist",
+      "linkingText": [
+        "PointerEvent.twist",
+        "twist"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-pointertype",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointerevent-pointertype",
+      "linkingText": [
+        "PointerEvent.pointerType",
+        "pointerType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-isprimary",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointerevent-isprimary",
+      "linkingText": [
+        "PointerEvent.isPrimary",
+        "isPrimary"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-getcoalescedevents",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointerevent-getcoalescedevents",
+      "linkingText": [
+        "PointerEvent.getCoalescedEvents()",
+        "PointerEvent.getCoalescedEvents",
+        "getCoalescedEvents()",
+        "getCoalescedEvents"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-getpredictedevents",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointerevent-getpredictedevents",
+      "linkingText": [
+        "PointerEvent.getPredictedEvents()",
+        "PointerEvent.getPredictedEvents",
+        "getPredictedEvents()",
+        "getPredictedEvents"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointereventinit",
+      "linkingText": [
+        "PointerEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-pointerevent",
+      "linkingText": [
+        "PointerEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-coalesced-event-list",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-coalesced-event-list",
+      "linkingText": [
+        "coalesced event list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-predicted-event-list",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-predicted-event-list",
+      "linkingText": [
+        "predicted event list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-coalesced-events-targets-dirty",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-coalesced-events-targets-dirty",
+      "linkingText": [
+        "coalesced events targets dirty"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-predicted-events-targets-dirty",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-predicted-events-targets-dirty",
+      "linkingText": [
+        "predicted events targets dirty"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-chorded-button-interactions",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-chorded-button-interactions",
+      "linkingText": [
+        "Chorded Button Interactions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-primary-pointer",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-primary-pointer",
+      "linkingText": [
+        "Primary Pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fire-a-pointer-event",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-fire-a-pointer-event",
+      "linkingText": [
+        "fire a pointer event",
+        "fire a pointer event named e"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fire-an-event-named-e",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-fire-an-event-named-e",
+      "linkingText": [
+        "fire an event named e"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointer-capture-target-override",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-pointer-capture-target-override",
+      "linkingText": [
+        "pointer capture target override"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointerover-event",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-pointerover-event",
+      "linkingText": [
+        "pointerover event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointerenter-event",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-pointerenter-event",
+      "linkingText": [
+        "pointerenter event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointerdown-event",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-pointerdown-event",
+      "linkingText": [
+        "pointerdown event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointermove-event",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-pointermove-event",
+      "linkingText": [
+        "pointermove event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointerrawupdate-event",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-pointerrawupdate-event",
+      "linkingText": [
+        "pointerrawupdate event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointerup-event",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-pointerup-event",
+      "linkingText": [
+        "pointerup event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointercancel-event",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-pointercancel-event",
+      "linkingText": [
+        "pointercancel event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointerout-event",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-pointerout-event",
+      "linkingText": [
+        "pointerout event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointerleave-event",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-pointerleave-event",
+      "linkingText": [
+        "pointerleave event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-gotpointercapture-event",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-gotpointercapture-event",
+      "linkingText": [
+        "gotpointercapture event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-lostpointercapture-event",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-lostpointercapture-event",
+      "linkingText": [
+        "lostpointercapture event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-element",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-element",
+      "linkingText": [
+        "Element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-element-setpointercapture",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-element-setpointercapture",
+      "linkingText": [
+        "Element.setPointerCapture()",
+        "Element.setPointerCapture",
+        "setPointerCapture()",
+        "setPointerCapture"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-releasepointercapture",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-element-releasepointercapture",
+      "linkingText": [
+        "Element.releasePointerCapture()",
+        "Element.releasePointerCapture",
+        "releasePointerCapture()",
+        "releasePointerCapture"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-haspointercapture",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-element-haspointercapture",
+      "linkingText": [
+        "Element.hasPointerCapture()",
+        "Element.hasPointerCapture",
+        "hasPointerCapture()",
+        "hasPointerCapture"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-globaleventhandlers",
+      "linkingText": [
+        "GlobalEventHandlers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-ongotpointercapture",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-globaleventhandlers-ongotpointercapture",
+      "linkingText": [
+        "GlobalEventHandlers.ongotpointercapture",
+        "ongotpointercapture"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onlostpointercapture",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-globaleventhandlers-onlostpointercapture",
+      "linkingText": [
+        "GlobalEventHandlers.onlostpointercapture",
+        "onlostpointercapture"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onpointerdown",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-globaleventhandlers-onpointerdown",
+      "linkingText": [
+        "GlobalEventHandlers.onpointerdown",
+        "onpointerdown"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onpointermove",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-globaleventhandlers-onpointermove",
+      "linkingText": [
+        "GlobalEventHandlers.onpointermove",
+        "onpointermove"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onpointerup",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-globaleventhandlers-onpointerup",
+      "linkingText": [
+        "GlobalEventHandlers.onpointerup",
+        "onpointerup"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onpointercancel",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-globaleventhandlers-onpointercancel",
+      "linkingText": [
+        "GlobalEventHandlers.onpointercancel",
+        "onpointercancel"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onpointerover",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-globaleventhandlers-onpointerover",
+      "linkingText": [
+        "GlobalEventHandlers.onpointerover",
+        "onpointerover"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onpointerout",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-globaleventhandlers-onpointerout",
+      "linkingText": [
+        "GlobalEventHandlers.onpointerout",
+        "onpointerout"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onpointerenter",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-globaleventhandlers-onpointerenter",
+      "linkingText": [
+        "GlobalEventHandlers.onpointerenter",
+        "onpointerenter"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onpointerleave",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-globaleventhandlers-onpointerleave",
+      "linkingText": [
+        "GlobalEventHandlers.onpointerleave",
+        "onpointerleave"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-navigator",
+      "linkingText": [
+        "Navigator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator-maxtouchpoints",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dom-navigator-maxtouchpoints",
+      "linkingText": [
+        "Navigator.maxTouchPoints",
+        "maxTouchPoints"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-touch-action",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-touch-action",
+      "linkingText": [
+        "touch-action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-conforming-touch-behavior",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-conforming-touch-behavior",
+      "linkingText": [
+        "conforming-touch-behavior",
+        "conforms to an element's touch-action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointer-capture",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-pointer-capture",
+      "linkingText": [
+        "Pointer Capture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pending-pointer-capture-target-override",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-pending-pointer-capture-target-override",
+      "linkingText": [
+        "pending pointer capture target override"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-implicit-pointer-capture",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-implicit-pointer-capture",
+      "linkingText": [
+        "Implicit Pointer Capture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-compatibility-mouse-events",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-compatibility-mouse-events",
+      "linkingText": [
+        "compatibility mouse events",
+        "Compatibility Mapping with Mouse Events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-tracking-the-effective-position-of-the-legacy-mouse-pointer",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-tracking-the-effective-position-of-the-legacy-mouse-pointer",
+      "linkingText": [
+        "Tracking the effective position of the legacy mouse pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-effective-position-of-the-legacy-mouse-pointer",
+      "href": "https://www.w3.org/TR/2019/WD-pointerevents3-20191212/#dfn-effective-position-of-the-legacy-mouse-pointer",
+      "linkingText": [
+        "effective position of the legacy mouse pointer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

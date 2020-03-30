@@ -1,0 +1,3446 @@
+{
+  "spec": {
+    "title": "Streams Standard",
+    "url": "https://streams.spec.whatwg.org/"
+  },
+  "dfns": [
+    {
+      "id": "chunk",
+      "href": "https://streams.spec.whatwg.org/#chunk",
+      "linkingText": [
+        "chunk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream",
+      "href": "https://streams.spec.whatwg.org/#readable-stream",
+      "linkingText": [
+        "readable stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "underlying-source",
+      "href": "https://streams.spec.whatwg.org/#underlying-source",
+      "linkingText": [
+        "underlying source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "push-source",
+      "href": "https://streams.spec.whatwg.org/#push-source",
+      "linkingText": [
+        "push source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pull-source",
+      "href": "https://streams.spec.whatwg.org/#pull-source",
+      "linkingText": [
+        "pull source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consumer",
+      "href": "https://streams.spec.whatwg.org/#consumer",
+      "linkingText": [
+        "consumer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cancel-a-readable-stream",
+      "href": "https://streams.spec.whatwg.org/#cancel-a-readable-stream",
+      "linkingText": [
+        "cancel a readable stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "tee-a-readable-stream",
+      "href": "https://streams.spec.whatwg.org/#tee-a-readable-stream",
+      "linkingText": [
+        "tee a readable stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "branches-of-a-readable-stream-tee",
+      "href": "https://streams.spec.whatwg.org/#branches-of-a-readable-stream-tee",
+      "linkingText": [
+        "branches of a readable stream tee"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "underlying-byte-source",
+      "href": "https://streams.spec.whatwg.org/#underlying-byte-source",
+      "linkingText": [
+        "underlying byte source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream",
+      "linkingText": [
+        "readable byte stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "writable-stream",
+      "href": "https://streams.spec.whatwg.org/#writable-stream",
+      "linkingText": [
+        "writable stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "underlying-sink",
+      "href": "https://streams.spec.whatwg.org/#underlying-sink",
+      "linkingText": [
+        "underlying sink"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "producer",
+      "href": "https://streams.spec.whatwg.org/#producer",
+      "linkingText": [
+        "producer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "abort-a-writable-stream",
+      "href": "https://streams.spec.whatwg.org/#abort-a-writable-stream",
+      "linkingText": [
+        "abort a writable stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "transform-stream",
+      "href": "https://streams.spec.whatwg.org/#transform-stream",
+      "linkingText": [
+        "transform stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-side",
+      "href": "https://streams.spec.whatwg.org/#writable-side",
+      "linkingText": [
+        "writable side"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-side",
+      "href": "https://streams.spec.whatwg.org/#readable-side",
+      "linkingText": [
+        "readable side"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transformer",
+      "href": "https://streams.spec.whatwg.org/#transformer",
+      "linkingText": [
+        "transformer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "identity-transform-stream",
+      "href": "https://streams.spec.whatwg.org/#identity-transform-stream",
+      "linkingText": [
+        "identity transform stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "piping",
+      "href": "https://streams.spec.whatwg.org/#piping",
+      "linkingText": [
+        "piping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pipe-chain",
+      "href": "https://streams.spec.whatwg.org/#pipe-chain",
+      "linkingText": [
+        "pipe chain"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "original-source",
+      "href": "https://streams.spec.whatwg.org/#original-source",
+      "linkingText": [
+        "original source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ultimate-sink",
+      "href": "https://streams.spec.whatwg.org/#ultimate-sink",
+      "linkingText": [
+        "ultimate sink"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "backpressure",
+      "href": "https://streams.spec.whatwg.org/#backpressure",
+      "linkingText": [
+        "backpressure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "internal-queues",
+      "href": "https://streams.spec.whatwg.org/#internal-queues",
+      "linkingText": [
+        "internal queues"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "queuing-strategy",
+      "href": "https://streams.spec.whatwg.org/#queuing-strategy",
+      "linkingText": [
+        "queuing strategy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "high-water-mark",
+      "href": "https://streams.spec.whatwg.org/#high-water-mark",
+      "linkingText": [
+        "high water mark"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "desired-size-to-fill-a-streams-internal-queue",
+      "href": "https://streams.spec.whatwg.org/#desired-size-to-fill-a-streams-internal-queue",
+      "linkingText": [
+        "desired size to fill a stream’s internal queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reader",
+      "href": "https://streams.spec.whatwg.org/#reader",
+      "linkingText": [
+        "reader",
+        "readable stream reader"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "default-readers",
+      "href": "https://streams.spec.whatwg.org/#default-readers",
+      "linkingText": [
+        "default readers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "byob-readers",
+      "href": "https://streams.spec.whatwg.org/#byob-readers",
+      "linkingText": [
+        "BYOB readers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "writer",
+      "href": "https://streams.spec.whatwg.org/#writer",
+      "linkingText": [
+        "writer",
+        "writable stream writer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock",
+      "href": "https://streams.spec.whatwg.org/#lock",
+      "linkingText": [
+        "lock",
+        "locked to a reader",
+        "locked to a writer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "active",
+      "href": "https://streams.spec.whatwg.org/#active",
+      "linkingText": [
+        "active",
+        "active reader",
+        "active writer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "release-a-lock",
+      "href": "https://streams.spec.whatwg.org/#release-a-lock",
+      "linkingText": [
+        "release a lock",
+        "release a read lock",
+        "release a write lock"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "rs-class",
+      "href": "https://streams.spec.whatwg.org/#rs-class",
+      "linkingText": [
+        "ReadableStream"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-constructor",
+      "href": "https://streams.spec.whatwg.org/#rs-constructor",
+      "linkingText": [
+        "ReadableStream(underlyingSource, strategy)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-underlying-source-start",
+      "href": "https://streams.spec.whatwg.org/#dom-underlying-source-start",
+      "linkingText": [
+        "start(controller)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "underlying source"
+      ],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "dom-underlying-source-pull",
+      "href": "https://streams.spec.whatwg.org/#dom-underlying-source-pull",
+      "linkingText": [
+        "pull(controller)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "underlying source"
+      ],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "dom-underlying-source-cancel",
+      "href": "https://streams.spec.whatwg.org/#dom-underlying-source-cancel",
+      "linkingText": [
+        "cancel(reason)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "underlying source"
+      ],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "underlying-source-type",
+      "href": "https://streams.spec.whatwg.org/#underlying-source-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "underlying source"
+      ],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "underlying-source-autoallocatechunksize",
+      "href": "https://streams.spec.whatwg.org/#underlying-source-autoallocatechunksize",
+      "linkingText": [
+        "autoAllocateChunkSize"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "underlying source"
+      ],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "rs-locked",
+      "href": "https://streams.spec.whatwg.org/#rs-locked",
+      "linkingText": [
+        "locked"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-cancel",
+      "href": "https://streams.spec.whatwg.org/#rs-cancel",
+      "linkingText": [
+        "cancel(reason)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-get-iterator",
+      "href": "https://streams.spec.whatwg.org/#rs-get-iterator",
+      "linkingText": [
+        "getIterator({ preventCancel } = {})"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-get-reader",
+      "href": "https://streams.spec.whatwg.org/#rs-get-reader",
+      "linkingText": [
+        "getReader({ mode } = {})"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-pipe-through",
+      "href": "https://streams.spec.whatwg.org/#rs-pipe-through",
+      "linkingText": [
+        "pipeThrough(transform, options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-pipe-to",
+      "href": "https://streams.spec.whatwg.org/#rs-pipe-to",
+      "linkingText": [
+        "pipeTo(dest, options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-tee",
+      "href": "https://streams.spec.whatwg.org/#rs-tee",
+      "linkingText": [
+        "tee()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-asynciterator",
+      "href": "https://streams.spec.whatwg.org/#rs-asynciterator",
+      "linkingText": [
+        "[@@asyncIterator]({ preventCancel } = {})"
+      ],
+      "localLinkingText": [],
+      "type": "iterator",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-asynciterator-prototype",
+      "href": "https://streams.spec.whatwg.org/#rs-asynciterator-prototype",
+      "linkingText": [
+        "ReadableStreamAsyncIteratorPrototype"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-asynciterator-prototype-next",
+      "href": "https://streams.spec.whatwg.org/#rs-asynciterator-prototype-next",
+      "linkingText": [
+        "next()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStreamAsyncIteratorPrototype"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-asynciterator-prototype-return",
+      "href": "https://streams.spec.whatwg.org/#rs-asynciterator-prototype-return",
+      "linkingText": [
+        "return(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStreamAsyncIteratorPrototype"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "acquire-readable-stream-byob-reader",
+      "href": "https://streams.spec.whatwg.org/#acquire-readable-stream-byob-reader",
+      "linkingText": [
+        "AcquireReadableStreamBYOBReader"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "acquire-readable-stream-reader",
+      "href": "https://streams.spec.whatwg.org/#acquire-readable-stream-reader",
+      "linkingText": [
+        "AcquireReadableStreamDefaultReader"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-readable-stream",
+      "href": "https://streams.spec.whatwg.org/#create-readable-stream",
+      "linkingText": [
+        "CreateReadableStream"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-readable-byte-stream",
+      "href": "https://streams.spec.whatwg.org/#create-readable-byte-stream",
+      "linkingText": [
+        "CreateReadableByteStream"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "initialize-readable-stream",
+      "href": "https://streams.spec.whatwg.org/#initialize-readable-stream",
+      "linkingText": [
+        "InitializeReadableStream"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-readable-stream",
+      "href": "https://streams.spec.whatwg.org/#is-readable-stream",
+      "linkingText": [
+        "IsReadableStream"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-readable-stream-disturbed",
+      "href": "https://streams.spec.whatwg.org/#is-readable-stream-disturbed",
+      "linkingText": [
+        "IsReadableStreamDisturbed"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-readable-stream-locked",
+      "href": "https://streams.spec.whatwg.org/#is-readable-stream-locked",
+      "linkingText": [
+        "IsReadableStreamLocked"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-readable-stream-asynciterator",
+      "href": "https://streams.spec.whatwg.org/#is-readable-stream-asynciterator",
+      "linkingText": [
+        "IsReadableStreamAsyncIterator"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-tee",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-tee",
+      "linkingText": [
+        "ReadableStreamTee"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-pipe-to",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-pipe-to",
+      "linkingText": [
+        "ReadableStreamPipeTo"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-cancelsteps",
+      "href": "https://streams.spec.whatwg.org/#abstract-opdef-cancelsteps",
+      "linkingText": [
+        "[[CancelSteps]]"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-pullsteps",
+      "href": "https://streams.spec.whatwg.org/#abstract-opdef-pullsteps",
+      "linkingText": [
+        "[[PullSteps]]"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-add-read-into-request",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-add-read-into-request",
+      "linkingText": [
+        "ReadableStreamAddReadIntoRequest"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-add-read-request",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-add-read-request",
+      "linkingText": [
+        "ReadableStreamAddReadRequest"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-cancel",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-cancel",
+      "linkingText": [
+        "ReadableStreamCancel"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-close",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-close",
+      "linkingText": [
+        "ReadableStreamClose"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-create-read-result",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-create-read-result",
+      "linkingText": [
+        "ReadableStreamCreateReadResult"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-error",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-error",
+      "linkingText": [
+        "ReadableStreamError"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-fulfill-read-into-request",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-fulfill-read-into-request",
+      "linkingText": [
+        "ReadableStreamFulfillReadIntoRequest"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-fulfill-read-request",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-fulfill-read-request",
+      "linkingText": [
+        "ReadableStreamFulfillReadRequest"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-get-num-read-into-requests",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-get-num-read-into-requests",
+      "linkingText": [
+        "ReadableStreamGetNumReadIntoRequests"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-get-num-read-requests",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-get-num-read-requests",
+      "linkingText": [
+        "ReadableStreamGetNumReadRequests"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-has-byob-reader",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-has-byob-reader",
+      "linkingText": [
+        "ReadableStreamHasBYOBReader"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-has-default-reader",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-has-default-reader",
+      "linkingText": [
+        "ReadableStreamHasDefaultReader"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-reader-class",
+      "href": "https://streams.spec.whatwg.org/#default-reader-class",
+      "linkingText": [
+        "ReadableStreamDefaultReader"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-reader-constructor",
+      "href": "https://streams.spec.whatwg.org/#default-reader-constructor",
+      "linkingText": [
+        "ReadableStreamDefaultReader(stream)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ReadableStreamDefaultReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-reader-closed",
+      "href": "https://streams.spec.whatwg.org/#default-reader-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ReadableStreamDefaultReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-reader-cancel",
+      "href": "https://streams.spec.whatwg.org/#default-reader-cancel",
+      "linkingText": [
+        "cancel(reason)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStreamDefaultReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-reader-read",
+      "href": "https://streams.spec.whatwg.org/#default-reader-read",
+      "linkingText": [
+        "read()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStreamDefaultReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-reader-release-lock",
+      "href": "https://streams.spec.whatwg.org/#default-reader-release-lock",
+      "linkingText": [
+        "releaseLock()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStreamDefaultReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "byob-reader-class",
+      "href": "https://streams.spec.whatwg.org/#byob-reader-class",
+      "linkingText": [
+        "ReadableStreamBYOBReader"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "byob-reader-constructor",
+      "href": "https://streams.spec.whatwg.org/#byob-reader-constructor",
+      "linkingText": [
+        "ReadableStreamBYOBReader(stream)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ReadableStreamBYOBReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "byob-reader-closed",
+      "href": "https://streams.spec.whatwg.org/#byob-reader-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ReadableStreamBYOBReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "byob-reader-cancel",
+      "href": "https://streams.spec.whatwg.org/#byob-reader-cancel",
+      "linkingText": [
+        "cancel(reason)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStreamBYOBReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "byob-reader-read",
+      "href": "https://streams.spec.whatwg.org/#byob-reader-read",
+      "linkingText": [
+        "read(view)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStreamBYOBReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "byob-reader-release-lock",
+      "href": "https://streams.spec.whatwg.org/#byob-reader-release-lock",
+      "linkingText": [
+        "releaseLock()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStreamBYOBReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-readable-stream-default-reader",
+      "href": "https://streams.spec.whatwg.org/#is-readable-stream-default-reader",
+      "linkingText": [
+        "IsReadableStreamDefaultReader"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-readable-stream-byob-reader",
+      "href": "https://streams.spec.whatwg.org/#is-readable-stream-byob-reader",
+      "linkingText": [
+        "IsReadableStreamBYOBReader"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-reader-generic-cancel",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-reader-generic-cancel",
+      "linkingText": [
+        "ReadableStreamReaderGenericCancel"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-reader-generic-initialize",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-reader-generic-initialize",
+      "linkingText": [
+        "ReadableStreamReaderGenericInitialize"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-reader-generic-release",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-reader-generic-release",
+      "linkingText": [
+        "ReadableStreamReaderGenericRelease"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-byob-reader-read",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-byob-reader-read",
+      "linkingText": [
+        "ReadableStreamBYOBReaderRead"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-default-reader-read",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-default-reader-read",
+      "linkingText": [
+        "ReadableStreamDefaultReaderRead"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-default-controller-class",
+      "href": "https://streams.spec.whatwg.org/#rs-default-controller-class",
+      "linkingText": [
+        "ReadableStreamDefaultController"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-default-controller-constructor",
+      "href": "https://streams.spec.whatwg.org/#rs-default-controller-constructor",
+      "linkingText": [
+        "ReadableStreamDefaultController()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ReadableStreamDefaultController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-default-controller-desired-size",
+      "href": "https://streams.spec.whatwg.org/#rs-default-controller-desired-size",
+      "linkingText": [
+        "desiredSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ReadableStreamDefaultController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-default-controller-close",
+      "href": "https://streams.spec.whatwg.org/#rs-default-controller-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStreamDefaultController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-default-controller-enqueue",
+      "href": "https://streams.spec.whatwg.org/#rs-default-controller-enqueue",
+      "linkingText": [
+        "enqueue(chunk)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStreamDefaultController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-default-controller-error",
+      "href": "https://streams.spec.whatwg.org/#rs-default-controller-error",
+      "linkingText": [
+        "error(e)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStreamDefaultController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-readable-stream-default-controller",
+      "href": "https://streams.spec.whatwg.org/#is-readable-stream-default-controller",
+      "linkingText": [
+        "IsReadableStreamDefaultController"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-default-controller-call-pull-if-needed",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-default-controller-call-pull-if-needed",
+      "linkingText": [
+        "ReadableStreamDefaultControllerCallPullIfNeeded"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-default-controller-should-call-pull",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-default-controller-should-call-pull",
+      "linkingText": [
+        "ReadableStreamDefaultControllerShouldCallPull"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-default-controller-clear-algorithms",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-default-controller-clear-algorithms",
+      "linkingText": [
+        "ReadableStreamDefaultControllerClearAlgorithms"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-default-controller-close",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-default-controller-close",
+      "linkingText": [
+        "ReadableStreamDefaultControllerClose"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-default-controller-enqueue",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-default-controller-enqueue",
+      "linkingText": [
+        "ReadableStreamDefaultControllerEnqueue"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-default-controller-error",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-default-controller-error",
+      "linkingText": [
+        "ReadableStreamDefaultControllerError"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-default-controller-get-desired-size",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-default-controller-get-desired-size",
+      "linkingText": [
+        "ReadableStreamDefaultControllerGetDesiredSize"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-default-controller-has-backpressure",
+      "href": "https://streams.spec.whatwg.org/#rs-default-controller-has-backpressure",
+      "linkingText": [
+        "ReadableStreamDefaultControllerHasBackpressure"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-stream-default-controller-can-close-or-enqueue",
+      "href": "https://streams.spec.whatwg.org/#readable-stream-default-controller-can-close-or-enqueue",
+      "linkingText": [
+        "ReadableStreamDefaultControllerCanCloseOrEnqueue"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-up-readable-stream-default-controller",
+      "href": "https://streams.spec.whatwg.org/#set-up-readable-stream-default-controller",
+      "linkingText": [
+        "SetUpReadableStreamDefaultController"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-up-readable-stream-default-controller-from-underlying-source",
+      "href": "https://streams.spec.whatwg.org/#set-up-readable-stream-default-controller-from-underlying-source",
+      "linkingText": [
+        "SetUpReadableStreamDefaultControllerFromUnderlyingSource"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rbs-controller-class",
+      "href": "https://streams.spec.whatwg.org/#rbs-controller-class",
+      "linkingText": [
+        "ReadableByteStreamController"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rbs-controller-constructor",
+      "href": "https://streams.spec.whatwg.org/#rbs-controller-constructor",
+      "linkingText": [
+        "ReadableByteStreamController()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ReadableByteStreamController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rbs-controller-byob-request",
+      "href": "https://streams.spec.whatwg.org/#rbs-controller-byob-request",
+      "linkingText": [
+        "byobRequest"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ReadableByteStreamController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rbs-controller-desired-size",
+      "href": "https://streams.spec.whatwg.org/#rbs-controller-desired-size",
+      "linkingText": [
+        "desiredSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ReadableByteStreamController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rbs-controller-close",
+      "href": "https://streams.spec.whatwg.org/#rbs-controller-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableByteStreamController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rbs-controller-enqueue",
+      "href": "https://streams.spec.whatwg.org/#rbs-controller-enqueue",
+      "linkingText": [
+        "enqueue(chunk)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableByteStreamController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rbs-controller-error",
+      "href": "https://streams.spec.whatwg.org/#rbs-controller-error",
+      "linkingText": [
+        "error(e)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableByteStreamController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-byob-request-class",
+      "href": "https://streams.spec.whatwg.org/#rs-byob-request-class",
+      "linkingText": [
+        "ReadableStreamBYOBRequest"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-byob-request-constructor",
+      "href": "https://streams.spec.whatwg.org/#rs-byob-request-constructor",
+      "linkingText": [
+        "ReadableStreamBYOBRequest(controller, view)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ReadableStreamBYOBRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-byob-request-view",
+      "href": "https://streams.spec.whatwg.org/#rs-byob-request-view",
+      "linkingText": [
+        "view"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ReadableStreamBYOBRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-byob-request-respond",
+      "href": "https://streams.spec.whatwg.org/#rs-byob-request-respond",
+      "linkingText": [
+        "respond(bytesWritten)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStreamBYOBRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rs-byob-request-respond-with-new-view",
+      "href": "https://streams.spec.whatwg.org/#rs-byob-request-respond-with-new-view",
+      "linkingText": [
+        "respondWithNewView(view)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReadableStreamBYOBRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-readable-stream-byob-request",
+      "href": "https://streams.spec.whatwg.org/#is-readable-stream-byob-request",
+      "linkingText": [
+        "IsReadableStreamBYOBRequest"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-readable-byte-stream-controller",
+      "href": "https://streams.spec.whatwg.org/#is-readable-byte-stream-controller",
+      "linkingText": [
+        "IsReadableByteStreamController"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-call-pull-if-needed",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-call-pull-if-needed",
+      "linkingText": [
+        "ReadableByteStreamControllerCallPullIfNeeded"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-clear-algorithms",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-clear-algorithms",
+      "linkingText": [
+        "ReadableByteStreamControllerClearAlgorithms"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-clear-pending-pull-intos",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-clear-pending-pull-intos",
+      "linkingText": [
+        "ReadableByteStreamControllerClearPendingPullIntos"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-close",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-close",
+      "linkingText": [
+        "ReadableByteStreamControllerClose"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-commit-pull-into-descriptor",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-commit-pull-into-descriptor",
+      "linkingText": [
+        "ReadableByteStreamControllerCommitPullIntoDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-convert-pull-into-descriptor",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-convert-pull-into-descriptor",
+      "linkingText": [
+        "ReadableByteStreamControllerConvertPullIntoDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-enqueue",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-enqueue",
+      "linkingText": [
+        "ReadableByteStreamControllerEnqueue"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-enqueue-chunk-to-queue",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-enqueue-chunk-to-queue",
+      "linkingText": [
+        "ReadableByteStreamControllerEnqueueChunkToQueue"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-error",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-error",
+      "linkingText": [
+        "ReadableByteStreamControllerError"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-fill-head-pull-into-descriptor",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-fill-head-pull-into-descriptor",
+      "linkingText": [
+        "ReadableByteStreamControllerFillHeadPullIntoDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-fill-pull-into-descriptor-from-queue",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-fill-pull-into-descriptor-from-queue",
+      "linkingText": [
+        "ReadableByteStreamControllerFillPullIntoDescriptorFromQueue"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-get-desired-size",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-get-desired-size",
+      "linkingText": [
+        "ReadableByteStreamControllerGetDesiredSize"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-handle-queue-drain",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-handle-queue-drain",
+      "linkingText": [
+        "ReadableByteStreamControllerHandleQueueDrain"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-invalidate-byob-request",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-invalidate-byob-request",
+      "linkingText": [
+        "ReadableByteStreamControllerInvalidateBYOBRequest"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-process-pull-into-descriptors-using-queue",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-process-pull-into-descriptors-using-queue",
+      "linkingText": [
+        "ReadableByteStreamControllerProcessPullIntoDescriptorsUsingQueue"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-pull-into",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-pull-into",
+      "linkingText": [
+        "ReadableByteStreamControllerPullInto"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-respond",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-respond",
+      "linkingText": [
+        "ReadableByteStreamControllerRespond"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-respond-in-closed-state",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-respond-in-closed-state",
+      "linkingText": [
+        "ReadableByteStreamControllerRespondInClosedState"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-respond-in-readable-state",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-respond-in-readable-state",
+      "linkingText": [
+        "ReadableByteStreamControllerRespondInReadableState"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-respond-internal",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-respond-internal",
+      "linkingText": [
+        "ReadableByteStreamControllerRespondInternal"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-respond-with-new-view",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-respond-with-new-view",
+      "linkingText": [
+        "ReadableByteStreamControllerRespondWithNewView"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-shift-pending-pull-into",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-shift-pending-pull-into",
+      "linkingText": [
+        "ReadableByteStreamControllerShiftPendingPullInto"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-controller-should-call-pull",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-should-call-pull",
+      "linkingText": [
+        "ReadableByteStreamControllerShouldCallPull"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-up-readable-byte-stream-controller",
+      "href": "https://streams.spec.whatwg.org/#set-up-readable-byte-stream-controller",
+      "linkingText": [
+        "SetUpReadableByteStreamController"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-up-readable-byte-stream-controller-from-underlying-source",
+      "href": "https://streams.spec.whatwg.org/#set-up-readable-byte-stream-controller-from-underlying-source",
+      "linkingText": [
+        "SetUpReadableByteStreamControllerFromUnderlyingSource"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-up-readable-stream-byob-request",
+      "href": "https://streams.spec.whatwg.org/#set-up-readable-stream-byob-request",
+      "linkingText": [
+        "SetUpReadableStreamBYOBRequest"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ws-class",
+      "href": "https://streams.spec.whatwg.org/#ws-class",
+      "linkingText": [
+        "WritableStream"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ws-constructor",
+      "href": "https://streams.spec.whatwg.org/#ws-constructor",
+      "linkingText": [
+        "WritableStream(underlyingSink, strategy)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "WritableStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-underlying-sink-start",
+      "href": "https://streams.spec.whatwg.org/#dom-underlying-sink-start",
+      "linkingText": [
+        "start(controller)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "underlying sink"
+      ],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "dom-underlying-sink-write",
+      "href": "https://streams.spec.whatwg.org/#dom-underlying-sink-write",
+      "linkingText": [
+        "write(chunk, controller)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "underlying sink"
+      ],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "dom-underlying-sink-close",
+      "href": "https://streams.spec.whatwg.org/#dom-underlying-sink-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "underlying sink"
+      ],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "dom-underlying-sink-abort",
+      "href": "https://streams.spec.whatwg.org/#dom-underlying-sink-abort",
+      "linkingText": [
+        "abort(reason)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "underlying sink"
+      ],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "ws-locked",
+      "href": "https://streams.spec.whatwg.org/#ws-locked",
+      "linkingText": [
+        "locked"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WritableStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ws-abort",
+      "href": "https://streams.spec.whatwg.org/#ws-abort",
+      "linkingText": [
+        "abort(reason)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WritableStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ws-close",
+      "href": "https://streams.spec.whatwg.org/#ws-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WritableStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ws-get-writer",
+      "href": "https://streams.spec.whatwg.org/#ws-get-writer",
+      "linkingText": [
+        "getWriter()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WritableStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "acquire-writable-stream-default-writer",
+      "href": "https://streams.spec.whatwg.org/#acquire-writable-stream-default-writer",
+      "linkingText": [
+        "AcquireWritableStreamDefaultWriter"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-writable-stream",
+      "href": "https://streams.spec.whatwg.org/#create-writable-stream",
+      "linkingText": [
+        "CreateWritableStream"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "initialize-writable-stream",
+      "href": "https://streams.spec.whatwg.org/#initialize-writable-stream",
+      "linkingText": [
+        "InitializeWritableStream"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-writable-stream",
+      "href": "https://streams.spec.whatwg.org/#is-writable-stream",
+      "linkingText": [
+        "IsWritableStream"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-writable-stream-locked",
+      "href": "https://streams.spec.whatwg.org/#is-writable-stream-locked",
+      "linkingText": [
+        "IsWritableStreamLocked"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-abort",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-abort",
+      "linkingText": [
+        "WritableStreamAbort"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-close",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-close",
+      "linkingText": [
+        "WritableStreamClose"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-add-write-request",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-add-write-request",
+      "linkingText": [
+        "WritableStreamAddWriteRequest"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-deal-with-rejection",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-deal-with-rejection",
+      "linkingText": [
+        "WritableStreamDealWithRejection"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-start-erroring",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-start-erroring",
+      "linkingText": [
+        "WritableStreamStartErroring"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-finish-erroring",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-finish-erroring",
+      "linkingText": [
+        "WritableStreamFinishErroring"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-finish-in-flight-write",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-finish-in-flight-write",
+      "linkingText": [
+        "WritableStreamFinishInFlightWrite"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-finish-in-flight-write-with-error",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-finish-in-flight-write-with-error",
+      "linkingText": [
+        "WritableStreamFinishInFlightWriteWithError"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-finish-in-flight-close",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-finish-in-flight-close",
+      "linkingText": [
+        "WritableStreamFinishInFlightClose"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-finish-in-flight-close-with-error",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-finish-in-flight-close-with-error",
+      "linkingText": [
+        "WritableStreamFinishInFlightCloseWithError"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-close-queued-or-in-flight",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-close-queued-or-in-flight",
+      "linkingText": [
+        "WritableStreamCloseQueuedOrInFlight"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-has-operation-marked-in-flight",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-has-operation-marked-in-flight",
+      "linkingText": [
+        "WritableStreamHasOperationMarkedInFlight"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-mark-close-request-in-flight",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-mark-close-request-in-flight",
+      "linkingText": [
+        "WritableStreamMarkCloseRequestInFlight"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-mark-first-write-request-in-flight",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-mark-first-write-request-in-flight",
+      "linkingText": [
+        "WritableStreamMarkFirstWriteRequestInFlight"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-reject-close-and-closed-promise-if-needed",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-reject-close-and-closed-promise-if-needed",
+      "linkingText": [
+        "WritableStreamRejectCloseAndClosedPromiseIfNeeded"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-update-backpressure",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-update-backpressure",
+      "linkingText": [
+        "WritableStreamUpdateBackpressure"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-writer-class",
+      "href": "https://streams.spec.whatwg.org/#default-writer-class",
+      "linkingText": [
+        "WritableStreamDefaultWriter"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-writer-constructor",
+      "href": "https://streams.spec.whatwg.org/#default-writer-constructor",
+      "linkingText": [
+        "WritableStreamDefaultWriter(stream)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-writer-closed",
+      "href": "https://streams.spec.whatwg.org/#default-writer-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-writer-desired-size",
+      "href": "https://streams.spec.whatwg.org/#default-writer-desired-size",
+      "linkingText": [
+        "desiredSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-writer-ready",
+      "href": "https://streams.spec.whatwg.org/#default-writer-ready",
+      "linkingText": [
+        "ready"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-writer-abort",
+      "href": "https://streams.spec.whatwg.org/#default-writer-abort",
+      "linkingText": [
+        "abort(reason)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-writer-close",
+      "href": "https://streams.spec.whatwg.org/#default-writer-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-writer-release-lock",
+      "href": "https://streams.spec.whatwg.org/#default-writer-release-lock",
+      "linkingText": [
+        "releaseLock()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-writer-write",
+      "href": "https://streams.spec.whatwg.org/#default-writer-write",
+      "linkingText": [
+        "write(chunk)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WritableStreamDefaultWriter"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-writable-stream-default-writer",
+      "href": "https://streams.spec.whatwg.org/#is-writable-stream-default-writer",
+      "linkingText": [
+        "IsWritableStreamDefaultWriter"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-writer-abort",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-writer-abort",
+      "linkingText": [
+        "WritableStreamDefaultWriterAbort"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-writer-close",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-writer-close",
+      "linkingText": [
+        "WritableStreamDefaultWriterClose"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-writer-close-with-error-propagation",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-writer-close-with-error-propagation",
+      "linkingText": [
+        "WritableStreamDefaultWriterCloseWithErrorPropagation"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-writer-ensure-closed-promise-rejected",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-writer-ensure-closed-promise-rejected",
+      "linkingText": [
+        "WritableStreamDefaultWriterEnsureClosedPromiseRejected"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-writer-ensure-ready-promise-rejected",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-writer-ensure-ready-promise-rejected",
+      "linkingText": [
+        "WritableStreamDefaultWriterEnsureReadyPromiseRejected"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-writer-get-desired-size",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-writer-get-desired-size",
+      "linkingText": [
+        "WritableStreamDefaultWriterGetDesiredSize"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-writer-release",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-writer-release",
+      "linkingText": [
+        "WritableStreamDefaultWriterRelease"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-writer-write",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-writer-write",
+      "linkingText": [
+        "WritableStreamDefaultWriterWrite"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ws-default-controller-class",
+      "href": "https://streams.spec.whatwg.org/#ws-default-controller-class",
+      "linkingText": [
+        "WritableStreamDefaultController"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ws-default-controller-constructor",
+      "href": "https://streams.spec.whatwg.org/#ws-default-controller-constructor",
+      "linkingText": [
+        "WritableStreamDefaultController()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "WritableStreamDefaultController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ws-default-controller-error",
+      "href": "https://streams.spec.whatwg.org/#ws-default-controller-error",
+      "linkingText": [
+        "error(e)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WritableStreamDefaultController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-writable-stream-default-controller",
+      "href": "https://streams.spec.whatwg.org/#is-writable-stream-default-controller",
+      "linkingText": [
+        "IsWritableStreamDefaultController"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-up-writable-stream-default-controller",
+      "href": "https://streams.spec.whatwg.org/#set-up-writable-stream-default-controller",
+      "linkingText": [
+        "SetUpWritableStreamDefaultController"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-up-writable-stream-default-controller-from-underlying-sink",
+      "href": "https://streams.spec.whatwg.org/#set-up-writable-stream-default-controller-from-underlying-sink",
+      "linkingText": [
+        "SetUpWritableStreamDefaultControllerFromUnderlyingSink"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-controller-clear-algorithms",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-controller-clear-algorithms",
+      "linkingText": [
+        "WritableStreamDefaultControllerClearAlgorithms"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-controller-close",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-controller-close",
+      "linkingText": [
+        "WritableStreamDefaultControllerClose"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-controller-get-chunk-size",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-controller-get-chunk-size",
+      "linkingText": [
+        "WritableStreamDefaultControllerGetChunkSize"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-controller-get-desired-size",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-controller-get-desired-size",
+      "linkingText": [
+        "WritableStreamDefaultControllerGetDesiredSize"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-controller-write",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-controller-write",
+      "linkingText": [
+        "WritableStreamDefaultControllerWrite"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-controller-advance-queue-if-needed",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-controller-advance-queue-if-needed",
+      "linkingText": [
+        "WritableStreamDefaultControllerAdvanceQueueIfNeeded"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-controller-error-if-needed",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-controller-error-if-needed",
+      "linkingText": [
+        "WritableStreamDefaultControllerErrorIfNeeded"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-controller-process-close",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-controller-process-close",
+      "linkingText": [
+        "WritableStreamDefaultControllerProcessClose"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-controller-process-write",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-controller-process-write",
+      "linkingText": [
+        "WritableStreamDefaultControllerProcessWrite"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-controller-get-backpressure",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-controller-get-backpressure",
+      "linkingText": [
+        "WritableStreamDefaultControllerGetBackpressure"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "writable-stream-default-controller-error",
+      "href": "https://streams.spec.whatwg.org/#writable-stream-default-controller-error",
+      "linkingText": [
+        "WritableStreamDefaultControllerError"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ts-class",
+      "href": "https://streams.spec.whatwg.org/#ts-class",
+      "linkingText": [
+        "TransformStream"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ts-constructor",
+      "href": "https://streams.spec.whatwg.org/#ts-constructor",
+      "linkingText": [
+        "TransformStream(transformer, writableStrategy,\nreadableStrategy)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "TransformStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-transformer-start",
+      "href": "https://streams.spec.whatwg.org/#dom-transformer-start",
+      "linkingText": [
+        "start(controller)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "transformer"
+      ],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "dom-transformer-transform",
+      "href": "https://streams.spec.whatwg.org/#dom-transformer-transform",
+      "linkingText": [
+        "transform(chunk, controller)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "transformer"
+      ],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "dom-transformer-flush",
+      "href": "https://streams.spec.whatwg.org/#dom-transformer-flush",
+      "linkingText": [
+        "flush(controller)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "transformer"
+      ],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "ts-readable",
+      "href": "https://streams.spec.whatwg.org/#ts-readable",
+      "linkingText": [
+        "readable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "TransformStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ts-writable",
+      "href": "https://streams.spec.whatwg.org/#ts-writable",
+      "linkingText": [
+        "writable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "TransformStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-transform-stream",
+      "href": "https://streams.spec.whatwg.org/#create-transform-stream",
+      "linkingText": [
+        "CreateTransformStream"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "initialize-transform-stream",
+      "href": "https://streams.spec.whatwg.org/#initialize-transform-stream",
+      "linkingText": [
+        "InitializeTransformStream"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-transform-stream",
+      "href": "https://streams.spec.whatwg.org/#is-transform-stream",
+      "linkingText": [
+        "IsTransformStream"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transform-stream-error",
+      "href": "https://streams.spec.whatwg.org/#transform-stream-error",
+      "linkingText": [
+        "TransformStreamError"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transform-stream-error-writable-and-unblock-write",
+      "href": "https://streams.spec.whatwg.org/#transform-stream-error-writable-and-unblock-write",
+      "linkingText": [
+        "TransformStreamErrorWritableAndUnblockWrite"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transform-stream-set-backpressure",
+      "href": "https://streams.spec.whatwg.org/#transform-stream-set-backpressure",
+      "linkingText": [
+        "TransformStreamSetBackpressure"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ts-default-controller-class",
+      "href": "https://streams.spec.whatwg.org/#ts-default-controller-class",
+      "linkingText": [
+        "TransformStreamDefaultController"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ts-default-controller-constructor",
+      "href": "https://streams.spec.whatwg.org/#ts-default-controller-constructor",
+      "linkingText": [
+        "TransformStreamDefaultController()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "TransformStreamDefaultController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ts-default-controller-desired-size",
+      "href": "https://streams.spec.whatwg.org/#ts-default-controller-desired-size",
+      "linkingText": [
+        "desiredSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "TransformStreamDefaultController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ts-default-controller-enqueue",
+      "href": "https://streams.spec.whatwg.org/#ts-default-controller-enqueue",
+      "linkingText": [
+        "enqueue(chunk)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "TransformStreamDefaultController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ts-default-controller-error",
+      "href": "https://streams.spec.whatwg.org/#ts-default-controller-error",
+      "linkingText": [
+        "error(reason)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "TransformStreamDefaultController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ts-default-controller-terminate",
+      "href": "https://streams.spec.whatwg.org/#ts-default-controller-terminate",
+      "linkingText": [
+        "terminate()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "TransformStreamDefaultController"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-transform-stream-default-controller",
+      "href": "https://streams.spec.whatwg.org/#is-transform-stream-default-controller",
+      "linkingText": [
+        "IsTransformStreamDefaultController"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-up-transform-stream-default-controller",
+      "href": "https://streams.spec.whatwg.org/#set-up-transform-stream-default-controller",
+      "linkingText": [
+        "SetUpTransformStreamDefaultController"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-up-transform-stream-default-controller-from-transformer",
+      "href": "https://streams.spec.whatwg.org/#set-up-transform-stream-default-controller-from-transformer",
+      "linkingText": [
+        "SetUpTransformStreamDefaultControllerFromTransformer"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transform-stream-default-controller-clear-algorithms",
+      "href": "https://streams.spec.whatwg.org/#transform-stream-default-controller-clear-algorithms",
+      "linkingText": [
+        "TransformStreamDefaultControllerClearAlgorithms"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transform-stream-default-controller-enqueue",
+      "href": "https://streams.spec.whatwg.org/#transform-stream-default-controller-enqueue",
+      "linkingText": [
+        "TransformStreamDefaultControllerEnqueue"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transform-stream-default-controller-error",
+      "href": "https://streams.spec.whatwg.org/#transform-stream-default-controller-error",
+      "linkingText": [
+        "TransformStreamDefaultControllerError"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transform-stream-default-controller-perform-transform",
+      "href": "https://streams.spec.whatwg.org/#transform-stream-default-controller-perform-transform",
+      "linkingText": [
+        "TransformStreamDefaultControllerPerformTransform"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transform-stream-default-controller-terminate",
+      "href": "https://streams.spec.whatwg.org/#transform-stream-default-controller-terminate",
+      "linkingText": [
+        "TransformStreamDefaultControllerTerminate"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transform-stream-default-sink-write-algorithm",
+      "href": "https://streams.spec.whatwg.org/#transform-stream-default-sink-write-algorithm",
+      "linkingText": [
+        "TransformStreamDefaultSinkWriteAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transform-stream-default-sink-abort-algorithm",
+      "href": "https://streams.spec.whatwg.org/#transform-stream-default-sink-abort-algorithm",
+      "linkingText": [
+        "TransformStreamDefaultSinkAbortAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transform-stream-default-sink-close-algorithm",
+      "href": "https://streams.spec.whatwg.org/#transform-stream-default-sink-close-algorithm",
+      "linkingText": [
+        "TransformStreamDefaultSinkCloseAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transform-stream-default-source-pull",
+      "href": "https://streams.spec.whatwg.org/#transform-stream-default-source-pull",
+      "linkingText": [
+        "TransformStreamDefaultSourcePullAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-queuing-strategy-size",
+      "href": "https://streams.spec.whatwg.org/#dom-queuing-strategy-size",
+      "linkingText": [
+        "size(chunk)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "queuing strategy"
+      ],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "queuing-strategy-highwatermark",
+      "href": "https://streams.spec.whatwg.org/#queuing-strategy-highwatermark",
+      "linkingText": [
+        "highWaterMark"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "queuing strategy"
+      ],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "blqs-class",
+      "href": "https://streams.spec.whatwg.org/#blqs-class",
+      "linkingText": [
+        "ByteLengthQueuingStrategy"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "blqs-constructor",
+      "href": "https://streams.spec.whatwg.org/#blqs-constructor",
+      "linkingText": [
+        "ByteLengthQueuingStrategy(options)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ByteLengthQueuingStrategy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "blqs-size",
+      "href": "https://streams.spec.whatwg.org/#blqs-size",
+      "linkingText": [
+        "size(chunk)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ByteLengthQueuingStrategy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cqs-class",
+      "href": "https://streams.spec.whatwg.org/#cqs-class",
+      "linkingText": [
+        "CountQueuingStrategy"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cqs-constructor",
+      "href": "https://streams.spec.whatwg.org/#cqs-constructor",
+      "linkingText": [
+        "CountQueuingStrategy(options)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CountQueuingStrategy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cqs-size",
+      "href": "https://streams.spec.whatwg.org/#cqs-size",
+      "linkingText": [
+        "size()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CountQueuingStrategy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dequeue-value",
+      "href": "https://streams.spec.whatwg.org/#dequeue-value",
+      "linkingText": [
+        "DequeueValue"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enqueue-value-with-size",
+      "href": "https://streams.spec.whatwg.org/#enqueue-value-with-size",
+      "linkingText": [
+        "EnqueueValueWithSize"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "peek-queue-value",
+      "href": "https://streams.spec.whatwg.org/#peek-queue-value",
+      "linkingText": [
+        "PeekQueueValue"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "reset-queue",
+      "href": "https://streams.spec.whatwg.org/#reset-queue",
+      "linkingText": [
+        "ResetQueue"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-algorithm-from-underlying-method",
+      "href": "https://streams.spec.whatwg.org/#create-algorithm-from-underlying-method",
+      "linkingText": [
+        "CreateAlgorithmFromUnderlyingMethod"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "invoke-or-noop",
+      "href": "https://streams.spec.whatwg.org/#invoke-or-noop",
+      "linkingText": [
+        "InvokeOrNoop"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-finite-non-negative-number",
+      "href": "https://streams.spec.whatwg.org/#is-finite-non-negative-number",
+      "linkingText": [
+        "IsFiniteNonNegativeNumber"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "is-non-negative-number",
+      "href": "https://streams.spec.whatwg.org/#is-non-negative-number",
+      "linkingText": [
+        "IsNonNegativeNumber"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "promise-call",
+      "href": "https://streams.spec.whatwg.org/#promise-call",
+      "linkingText": [
+        "PromiseCall"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transfer-array-buffer",
+      "href": "https://streams.spec.whatwg.org/#transfer-array-buffer",
+      "linkingText": [
+        "TransferArrayBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "validate-and-normalize-high-water-mark",
+      "href": "https://streams.spec.whatwg.org/#validate-and-normalize-high-water-mark",
+      "linkingText": [
+        "ValidateAndNormalizeHighWaterMark"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "make-size-algorithm-from-size-function",
+      "href": "https://streams.spec.whatwg.org/#make-size-algorithm-from-size-function",
+      "linkingText": [
+        "MakeSizeAlgorithmFromSizeFunction"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

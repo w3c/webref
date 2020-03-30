@@ -1,0 +1,535 @@
+{
+  "spec": {
+    "title": "Payment Method: Basic Card",
+    "url": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-pmi",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-pmi",
+      "linkingText": [
+        "PMI",
+        "standardized payment method identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-basic-card",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-basic-card",
+      "linkingText": [
+        "basic-card"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-card-s",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-card-s",
+      "linkingText": [
+        "card's",
+        "card"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-details",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-details",
+      "linkingText": [
+        "details"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pan",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-pan",
+      "linkingText": [
+        "PAN",
+        "primary account number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-card-holder-s-name",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-card-holder-s-name",
+      "linkingText": [
+        "card holder's\n        name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-security-code",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-security-code",
+      "linkingText": [
+        "security code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-expiry-month",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-expiry-month",
+      "linkingText": [
+        "expiry month"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-expiry-year",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-expiry-year",
+      "linkingText": [
+        "expiry year"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-billing-address",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-billing-address",
+      "linkingText": [
+        "billing address"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-network",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-network",
+      "linkingText": [
+        "network"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-iin",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-iin",
+      "linkingText": [
+        "IIN",
+        "Issuer identification numbers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-supported-card",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-supported-card",
+      "linkingText": [
+        "supported card"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-known-networks",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-known-networks",
+      "linkingText": [
+        "known networks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardrequest",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccardrequest",
+      "linkingText": [
+        "BasicCardRequest"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardrequest-supportednetworks",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccardrequest-supportednetworks",
+      "linkingText": [
+        "supportedNetworks"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardrequest-requestsecuritycode",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccardrequest-requestsecuritycode",
+      "linkingText": [
+        "requestSecurityCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-steps-to-check-if-a-payment-can-be-made",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-steps-to-check-if-a-payment-can-be-made",
+      "linkingText": [
+        "steps to check if a payment can be made"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-steps-to-check-if-an-instrument-is-supported",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-steps-to-check-if-an-instrument-is-supported",
+      "linkingText": [
+        "steps to check if an instrument is supported"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-steps-to-respond-to-a-payment-request",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-steps-to-respond-to-a-payment-request",
+      "linkingText": [
+        "steps to respond to a payment request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-steps-for-when-a-user-changes-payment-method",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-steps-for-when-a-user-changes-payment-method",
+      "linkingText": [
+        "steps for when a user changes payment method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardchangedetails",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccardchangedetails",
+      "linkingText": [
+        "BasicCardChangeDetails"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardchangedetails-billingaddress",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccardchangedetails-billingaddress",
+      "linkingText": [
+        "billingAddress"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardChangeDetails"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-steps-for-selecting-the-payment-handler",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-steps-for-selecting-the-payment-handler",
+      "linkingText": [
+        "steps for selecting the payment handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-apply-the-modifiers",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-apply-the-modifiers",
+      "linkingText": [
+        "apply the modifiers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardresponse",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccardresponse",
+      "linkingText": [
+        "BasicCardResponse"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardresponse-cardholdername",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccardresponse-cardholdername",
+      "linkingText": [
+        "cardholderName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardresponse-cardnumber",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccardresponse-cardnumber",
+      "linkingText": [
+        "cardNumber"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardresponse-expirymonth",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccardresponse-expirymonth",
+      "linkingText": [
+        "expiryMonth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardresponse-expiryyear",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccardresponse-expiryyear",
+      "linkingText": [
+        "expiryYear"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardresponse-cardsecuritycode",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccardresponse-cardsecuritycode",
+      "linkingText": [
+        "cardSecurityCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccardresponse-billingaddress",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccardresponse-billingaddress",
+      "linkingText": [
+        "billingAddress"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccarderrors",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccarderrors",
+      "linkingText": [
+        "BasicCardErrors"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccarderrors-cardholdername",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccarderrors-cardholdername",
+      "linkingText": [
+        "cardholderName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccarderrors-cardnumber",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccarderrors-cardnumber",
+      "linkingText": [
+        "cardNumber"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccarderrors-expirymonth",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccarderrors-expirymonth",
+      "linkingText": [
+        "expiryMonth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccarderrors-expiryyear",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccarderrors-expiryyear",
+      "linkingText": [
+        "expiryYear"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccarderrors-cardsecuritycode",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccarderrors-cardsecuritycode",
+      "linkingText": [
+        "cardSecurityCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basiccarderrors-billingaddress",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dom-basiccarderrors-billingaddress",
+      "linkingText": [
+        "billingAddress"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasicCardErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-payment-handler",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-payment-handler",
+      "linkingText": [
+        "payment handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pci-dss",
+      "href": "https://www.w3.org/TR/2020/WD-payment-method-basic-card-20200213/#dfn-pci-dss",
+      "linkingText": [
+        "PCI DSS",
+        "Payment Card Industry Data Security Standard Compliance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    }
+  ]
+}

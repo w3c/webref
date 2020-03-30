@@ -1,0 +1,542 @@
+{
+  "spec": {
+    "title": "CSS Transforms Module Level 1",
+    "url": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/"
+  },
+  "dfns": [
+    {
+      "id": "transformable-element",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#transformable-element",
+      "linkingText": [
+        "transformable element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transformed-element",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#transformed-element",
+      "linkingText": [
+        "transformed element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "user-coordinate-system",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#user-coordinate-system",
+      "linkingText": [
+        "user coordinate system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "local-coordinate-system",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#local-coordinate-system",
+      "linkingText": [
+        "local coordinate system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transformation-matrix",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#transformation-matrix",
+      "linkingText": [
+        "transformation matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "current-transformation-matrix",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#current-transformation-matrix",
+      "linkingText": [
+        "current transformation matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "2d-matrix",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#2d-matrix",
+      "linkingText": [
+        "2D matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "identity-transform-function",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#identity-transform-function",
+      "linkingText": [
+        "identity transform function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "post-multiply",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#post-multiply",
+      "linkingText": [
+        "post-multiply"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "post-multiplied",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#post-multiplied",
+      "linkingText": [
+        "post-multiplied"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "pre-multiply",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#pre-multiply",
+      "linkingText": [
+        "pre-multiply"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "pre-multiplied",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#pre-multiplied",
+      "linkingText": [
+        "pre-multiplied"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "multiply",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#multiply",
+      "linkingText": [
+        "multiply"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "containing-block-for-all-descendants",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#containing-block-for-all-descendants",
+      "linkingText": [
+        "containing block for all descendants"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-transform",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#propdef-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-transform-list",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#typedef-transform-list",
+      "linkingText": [
+        "<transform-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-transform-origin",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#propdef-transform-origin",
+      "linkingText": [
+        "transform-origin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-transform-origin-top",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#valdef-transform-origin-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-transform-origin-right",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#valdef-transform-origin-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-transform-origin-bottom",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#valdef-transform-origin-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-transform-origin-left",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#valdef-transform-origin-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-transform-origin-center",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#valdef-transform-origin-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-transform-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#propdef-transform-box",
+      "linkingText": [
+        "transform-box"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "reference-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#reference-box",
+      "linkingText": [
+        "reference box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-transform-box-content-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#valdef-transform-box-content-box",
+      "linkingText": [
+        "content-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-box"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-transform-box-border-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#valdef-transform-box-border-box",
+      "linkingText": [
+        "border-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-box"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-transform-box-fill-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#valdef-transform-box-fill-box",
+      "linkingText": [
+        "fill-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-box"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-transform-box-stroke-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#valdef-transform-box-stroke-box",
+      "linkingText": [
+        "stroke-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-box"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-transform-box-view-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#valdef-transform-box-view-box",
+      "linkingText": [
+        "view-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "transform-box"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-transform-function",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#typedef-transform-function",
+      "linkingText": [
+        "<transform-function>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-transform-matrix",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#funcdef-transform-matrix",
+      "linkingText": [
+        "matrix()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-transform-translate",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#funcdef-transform-translate",
+      "linkingText": [
+        "translate()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-transform-translatex",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#funcdef-transform-translatex",
+      "linkingText": [
+        "translateX()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-transform-translatey",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#funcdef-transform-translatey",
+      "linkingText": [
+        "translateY()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-transform-scale",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#funcdef-transform-scale",
+      "linkingText": [
+        "scale()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-transform-scalex",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#funcdef-transform-scalex",
+      "linkingText": [
+        "scaleX()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-transform-scaley",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#funcdef-transform-scaley",
+      "linkingText": [
+        "scaleY()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-transform-rotate",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#funcdef-transform-rotate",
+      "linkingText": [
+        "rotate()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-transform-skew",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#funcdef-transform-skew",
+      "linkingText": [
+        "skew()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-transform-skewx",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#funcdef-transform-skewx",
+      "linkingText": [
+        "skewX()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-transform-skewy",
+      "href": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/#funcdef-transform-skewy",
+      "linkingText": [
+        "skewY()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "transform"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

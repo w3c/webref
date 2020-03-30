@@ -1,0 +1,1025 @@
+{
+  "spec": {
+    "title": "CSS Box Alignment Module Level 3",
+    "url": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/"
+  },
+  "dfns": [
+    {
+      "id": "box-alignment-properties",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#box-alignment-properties",
+      "linkingText": [
+        "box alignment properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "alignment-subject",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#alignment-subject",
+      "linkingText": [
+        "alignment subject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "alignment-container",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#alignment-container",
+      "linkingText": [
+        "alignment container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fallback-alignment",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#fallback-alignment",
+      "linkingText": [
+        "fallback alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "positional-alignment",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#positional-alignment",
+      "linkingText": [
+        "positional alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-self-position-center",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-self-position-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<self-position>",
+        "<content-position>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-self-position-start",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-self-position-start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<self-position>",
+        "<content-position>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-self-position-end",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-self-position-end",
+      "linkingText": [
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<self-position>",
+        "<content-position>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-self-position-self-start",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-self-position-self-start",
+      "linkingText": [
+        "self-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<self-position>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-self-position-self-end",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-self-position-self-end",
+      "linkingText": [
+        "self-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<self-position>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-self-position-flex-start",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-self-position-flex-start",
+      "linkingText": [
+        "flex-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<self-position>",
+        "<content-position>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-self-position-flex-end",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-self-position-flex-end",
+      "linkingText": [
+        "flex-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<self-position>",
+        "<content-position>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-justify-content-left",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-justify-content-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-content",
+        "justify-self",
+        "justify-items"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-justify-content-right",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-justify-content-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-content",
+        "justify-self",
+        "justify-items"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-self-position",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#typedef-self-position",
+      "linkingText": [
+        "<self-position>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-content-position",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#typedef-content-position",
+      "linkingText": [
+        "<content-position>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "baseline-alignment",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#baseline-alignment",
+      "linkingText": [
+        "Baseline alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-baseline-position",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#typedef-baseline-position",
+      "linkingText": [
+        "<baseline-position>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "baseline-alignment-preference",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#baseline-alignment-preference",
+      "linkingText": [
+        "baseline alignment preference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-justify-self-baseline",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-justify-self-baseline",
+      "linkingText": [
+        "baseline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-self",
+        "justify-items",
+        "align-content",
+        "align-self",
+        "align-items",
+        "<baseline-position>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-justify-self-first-baseline",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-justify-self-first-baseline",
+      "linkingText": [
+        "first baseline",
+        "first"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-self",
+        "justify-items",
+        "align-content",
+        "align-self",
+        "align-items",
+        "<baseline-position>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "first-baseline-alignment",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#first-baseline-alignment",
+      "linkingText": [
+        "first-baseline alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-justify-self-last-baseline",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-justify-self-last-baseline",
+      "linkingText": [
+        "last baseline",
+        "last"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-self",
+        "justify-items",
+        "align-content",
+        "align-self",
+        "align-items",
+        "<baseline-position>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "last-baseline-alignment",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#last-baseline-alignment",
+      "linkingText": [
+        "last-baseline alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "distributed-alignment",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#distributed-alignment",
+      "linkingText": [
+        "distributed alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-content-space-between",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-align-content-space-between",
+      "linkingText": [
+        "space-between"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-content",
+        "justify-content",
+        "<content-distribution>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-content-space-around",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-align-content-space-around",
+      "linkingText": [
+        "space-around"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-content",
+        "justify-content",
+        "<content-distribution>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-content-space-evenly",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-align-content-space-evenly",
+      "linkingText": [
+        "space-evenly"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-content",
+        "justify-content",
+        "<content-distribution>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-content-stretch",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-align-content-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-content",
+        "justify-content",
+        "<content-distribution>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-content-distribution",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#typedef-content-distribution",
+      "linkingText": [
+        "<content-distribution>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "overflow-alignment",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#overflow-alignment",
+      "linkingText": [
+        "overflow alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-overflow-position",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#typedef-overflow-position",
+      "linkingText": [
+        "<overflow-position>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-overflow-position-safe",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-overflow-position-safe",
+      "linkingText": [
+        "safe"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<overflow-position>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-overflow-position-unsafe",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-overflow-position-unsafe",
+      "linkingText": [
+        "unsafe"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<overflow-position>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "content-distribution",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#content-distribution",
+      "linkingText": [
+        "content-distribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "content-distribution-properties",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#content-distribution-properties",
+      "linkingText": [
+        "content-distribution properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-align-content",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#propdef-align-content",
+      "linkingText": [
+        "align-content"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-justify-content",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#propdef-justify-content",
+      "linkingText": [
+        "justify-content"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-justify-content-normal",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-justify-content-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-content",
+        "align-content"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-place-content",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#propdef-place-content",
+      "linkingText": [
+        "place-content"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "baseline-content-alignment",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#baseline-content-alignment",
+      "linkingText": [
+        "baseline content-alignment",
+        "first-baseline content-alignment",
+        "last-baseline content-alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "coordinated-self-alignment-preference",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#coordinated-self-alignment-preference",
+      "linkingText": [
+        "coordinated self-alignment preference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "self-alignment",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#self-alignment",
+      "linkingText": [
+        "self-alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "self-alignment-properties",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#self-alignment-properties",
+      "linkingText": [
+        "self-alignment properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-justify-self",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#propdef-justify-self",
+      "linkingText": [
+        "justify-self"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-justify-self-auto",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-justify-self-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-self"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-justify-self-normal",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-justify-self-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-self"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-justify-self-stretch",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-justify-self-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-self"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-align-self",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#propdef-align-self",
+      "linkingText": [
+        "align-self"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-self-auto",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-align-self-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-self"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-self-normal",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-align-self-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-self"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-self-stretch",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-align-self-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-self"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-place-self",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#propdef-place-self",
+      "linkingText": [
+        "place-self"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "baseline-self-alignment",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#baseline-self-alignment",
+      "linkingText": [
+        "baseline self-alignment",
+        "first-baseline self-alignment",
+        "last-baseline self-alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-justify-items",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#propdef-justify-items",
+      "linkingText": [
+        "justify-items"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-justify-items-legacy",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-justify-items-legacy",
+      "linkingText": [
+        "legacy"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-items"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-align-items",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#propdef-align-items",
+      "linkingText": [
+        "align-items"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-place-items",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#propdef-place-items",
+      "linkingText": [
+        "place-items"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-row-gap",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#propdef-row-gap",
+      "linkingText": [
+        "row-gap"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-column-gap",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#propdef-column-gap",
+      "linkingText": [
+        "column-gap"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "gutter",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#gutter",
+      "linkingText": [
+        "gutter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-row-gap-normal",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#valdef-row-gap-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "row-gap",
+        "column-gap",
+        "gap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-gap",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#propdef-gap",
+      "linkingText": [
+        "gap"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-grid-row-gap",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#propdef-grid-row-gap",
+      "linkingText": [
+        "grid-row-gap"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-grid-column-gap",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#propdef-grid-column-gap",
+      "linkingText": [
+        "grid-column-gap"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-grid-gap",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#propdef-grid-gap",
+      "linkingText": [
+        "grid-gap"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "baseline-set",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#baseline-set",
+      "linkingText": [
+        "baseline set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "first-baseline-set",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#first-baseline-set",
+      "linkingText": [
+        "first baseline set",
+        "first baselines"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "last-baseline-set",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#last-baseline-set",
+      "linkingText": [
+        "last baseline set",
+        "last baselines"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "alignment-baseline",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#alignment-baseline",
+      "linkingText": [
+        "alignment baseline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "generate-baselines",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#generate-baselines",
+      "linkingText": [
+        "generate baselines"
+      ],
+      "localLinkingText": [
+        "generate",
+        "generated"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "synthesize-baseline",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#synthesize-baseline",
+      "linkingText": [
+        "synthesize baseline",
+        "synthesized baseline"
+      ],
+      "localLinkingText": [
+        "synthesize",
+        "synthesized"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "baseline-sharing-group",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#baseline-sharing-group",
+      "linkingText": [
+        "baseline-sharing group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "shared-alignment-context",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#shared-alignment-context",
+      "linkingText": [
+        "shared alignment context",
+        "alignment context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "compatible-baseline-alignment-preferences",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#compatible-baseline-alignment-preferences",
+      "linkingText": [
+        "compatible baseline alignment preferences"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "static-position-rectangle",
+      "href": "https://www.w3.org/TR/2018/WD-css-align-3-20181206/#static-position-rectangle",
+      "linkingText": [
+        "static position rectangle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

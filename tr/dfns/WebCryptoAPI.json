@@ -1,0 +1,1844 @@
+{
+  "spec": {
+    "title": "Web Cryptography API",
+    "url": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-conforming-implementation",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-conforming-implementation",
+      "linkingText": [
+        "conforming user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-applicable-specification",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-applicable-specification",
+      "linkingText": [
+        "applicable specification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-DOMException",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-DOMException",
+      "linkingText": [
+        "DOMException"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ArrayBuffer",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-ArrayBuffer",
+      "linkingText": [
+        "ArrayBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ArrayBufferView",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-ArrayBufferView",
+      "linkingText": [
+        "ArrayBufferView"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-structured-clone",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-structured-clone",
+      "linkingText": [
+        "structured clone"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-DOMString",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-DOMString",
+      "linkingText": [
+        "DOMString"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "BufferSource",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#BufferSource",
+      "linkingText": [
+        "BufferSource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-octet-string",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-octet-string",
+      "linkingText": [
+        "octet string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-octet-string-containing",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-octet-string-containing",
+      "linkingText": [
+        "octet string containing a bit string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-convert-integer-to-octet-string",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-convert-integer-to-octet-string",
+      "linkingText": [
+        "convert a non-negative\n          integer i to an octet string of length n"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "case-sensitive",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#case-sensitive",
+      "linkingText": [
+        "case-sensitive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "case-insensitive",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#case-insensitive",
+      "linkingText": [
+        "ASCII case-insensitive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "terminate-the-algorithm",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#terminate-the-algorithm",
+      "linkingText": [
+        "terminate the\n          algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-parse-an-asn1-structure",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#concept-parse-an-asn1-structure",
+      "linkingText": [
+        "parse an ASN.1\n          structure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-parse-a-spki",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#concept-parse-a-spki",
+      "linkingText": [
+        "parse a\n          subjectPublicKeyInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-parse-a-privateKeyInfo",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#concept-parse-a-privateKeyInfo",
+      "linkingText": [
+        "parse a\n          PrivateKeyInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-parse-a-jwk",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#concept-parse-a-jwk",
+      "linkingText": [
+        "parse a JWK"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-contents-of-arraybuffer",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#concept-contents-of-arraybuffer",
+      "linkingText": [
+        "contents of an ArrayBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-usage-intersection",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#concept-usage-intersection",
+      "linkingText": [
+        "usage\n          intersection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-normalized-usages",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#concept-normalized-usages",
+      "linkingText": [
+        "normalized value of a usages list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-cached-object",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#concept-cached-object",
+      "linkingText": [
+        "cached ECMAScript\n          object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-GlobalCrypto",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-GlobalCrypto",
+      "linkingText": [
+        "GlobalCrypto"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-Crypto",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-Crypto",
+      "linkingText": [
+        "Crypto"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-Crypto-method-getRandomValues",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-Crypto-method-getRandomValues",
+      "linkingText": [
+        "getRandomValues"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-Crypto-attribute-subtle",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-Crypto-attribute-subtle",
+      "linkingText": [
+        "subtle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AlgorithmIdentifier",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-AlgorithmIdentifier",
+      "linkingText": [
+        "AlgorithmIdentifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HashAlgorithmIdentifier",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-HashAlgorithmIdentifier",
+      "linkingText": [
+        "HashAlgorithmIdentifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-Algorithm",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-Algorithm",
+      "linkingText": [
+        "Algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-KeyAlgorithm",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-KeyAlgorithm",
+      "linkingText": [
+        "KeyAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKey",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-CryptoKey",
+      "linkingText": [
+        "CryptoKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RecognizedKeyType",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RecognizedKeyType",
+      "linkingText": [
+        "recognized key type values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RecognizedKeyUsage",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RecognizedKeyUsage",
+      "linkingText": [
+        "recognized key usage values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKey-slot-type",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-CryptoKey-slot-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKey-slot-extractable",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-CryptoKey-slot-extractable",
+      "linkingText": [
+        "extractable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKey-slot-algorithm",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-CryptoKey-slot-algorithm",
+      "linkingText": [
+        "algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKey-slot-algorithm_cached",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-CryptoKey-slot-algorithm_cached",
+      "linkingText": [
+        "algorithm_cached"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKey-slot-usages",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-CryptoKey-slot-usages",
+      "linkingText": [
+        "usages"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKey-slot-usages_cached",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-CryptoKey-slot-usages_cached",
+      "linkingText": [
+        "usages_cached"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKey-slot-handle",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-CryptoKey-slot-handle",
+      "linkingText": [
+        "handle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-SubtleCrypto",
+      "linkingText": [
+        "SubtleCrypto"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RecognizedKeyFormats",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RecognizedKeyFormats",
+      "linkingText": [
+        "recognized key format values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-encrypt",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-SubtleCrypto-method-encrypt",
+      "linkingText": [
+        "encrypt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-decrypt",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-SubtleCrypto-method-decrypt",
+      "linkingText": [
+        "decrypt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-sign",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-SubtleCrypto-method-sign",
+      "linkingText": [
+        "sign"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-verify",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-SubtleCrypto-method-verify",
+      "linkingText": [
+        "verify"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-digest",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-SubtleCrypto-method-digest",
+      "linkingText": [
+        "digest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-generateKey",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-SubtleCrypto-method-generateKey",
+      "linkingText": [
+        "generateKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-deriveKey",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-SubtleCrypto-method-deriveKey",
+      "linkingText": [
+        "deriveKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-deriveBits",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-SubtleCrypto-method-deriveBits",
+      "linkingText": [
+        "deriveBits"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-importKey",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-SubtleCrypto-method-importKey",
+      "linkingText": [
+        "importKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-exportKey",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-SubtleCrypto-method-exportKey",
+      "linkingText": [
+        "exportKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-wrapKey",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-SubtleCrypto-method-wrapKey",
+      "linkingText": [
+        "wrapKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-unwrapKey",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-SubtleCrypto-method-unwrapKey",
+      "linkingText": [
+        "unwrapKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-TypeError",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-TypeError",
+      "linkingText": [
+        "TypeError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-NotSupportedError",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-NotSupportedError",
+      "linkingText": [
+        "NotSupportedError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-SyntaxError",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-SyntaxError",
+      "linkingText": [
+        "SyntaxError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-InvalidAccessError",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-InvalidAccessError",
+      "linkingText": [
+        "InvalidAccessError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-DataError",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-DataError",
+      "linkingText": [
+        "DataError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-OperationError",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-OperationError",
+      "linkingText": [
+        "OperationError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-throw",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#concept-throw",
+      "linkingText": [
+        "throw"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaOtherPrimesInfo",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RsaOtherPrimesInfo",
+      "linkingText": [
+        "RsaOtherPrimesInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-JsonWebKey",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-JsonWebKey",
+      "linkingText": [
+        "JsonWebKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-BigInteger",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-BigInteger",
+      "linkingText": [
+        "BigInteger"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKeyPair",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-CryptoKeyPair",
+      "linkingText": [
+        "CryptoKeyPair"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKeyPair-publicKey",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-CryptoKeyPair-publicKey",
+      "linkingText": [
+        "publicKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-CryptoKeyPair-privateKey",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-CryptoKeyPair-privateKey",
+      "linkingText": [
+        "privateKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "recognized-algorithm-name",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#recognized-algorithm-name",
+      "linkingText": [
+        "recognized algorithm name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "supported-operation",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#supported-operation",
+      "linkingText": [
+        "supported operations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "supported-operations",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#supported-operations",
+      "linkingText": [
+        "Operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "algorithm-specific-params",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#algorithm-specific-params",
+      "linkingText": [
+        "Parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "algorithm-result",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#algorithm-result",
+      "linkingText": [
+        "Result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-supportedAlgorithms",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-supportedAlgorithms",
+      "linkingText": [
+        "supportedAlgorithms"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-define-an-algorithm",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#concept-define-an-algorithm",
+      "linkingText": [
+        "define an algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-normalize-an-algorithm",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-normalize-an-algorithm",
+      "linkingText": [
+        "normalize an algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rsa-ssa-extended-import-steps",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-rsa-ssa-extended-import-steps",
+      "linkingText": [
+        "key import steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rsa-ssa-extended-export-steps",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-rsa-ssa-extended-export-steps",
+      "linkingText": [
+        "key export steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaKeyGenParams",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RsaKeyGenParams",
+      "linkingText": [
+        "RsaKeyGenParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaKeyGenParams-modulusLength",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RsaKeyGenParams-modulusLength",
+      "linkingText": [
+        "modulusLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaKeyGenParams-publicExponent",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RsaKeyGenParams-publicExponent",
+      "linkingText": [
+        "publicExponent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaHashedKeyGenParams",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RsaHashedKeyGenParams",
+      "linkingText": [
+        "RsaHashedKeyGenParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaHashedKeyGenParams-hash",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RsaHashedKeyGenParams-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaKeyAlgorithm",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RsaKeyAlgorithm",
+      "linkingText": [
+        "RsaKeyAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaKeyAlgorithm-modulusLength",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RsaKeyAlgorithm-modulusLength",
+      "linkingText": [
+        "modulusLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaKeyAlgorithm-publicExponent",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RsaKeyAlgorithm-publicExponent",
+      "linkingText": [
+        "publicExponent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaHashedKeyAlgorithm",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RsaHashedKeyAlgorithm",
+      "linkingText": [
+        "RsaHashedKeyAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaHashedKeyAlgorithm-hash",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RsaHashedKeyAlgorithm-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaHashedImportParams",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RsaHashedImportParams",
+      "linkingText": [
+        "RsaHashedImportParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaHashedImportParams-hash",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RsaHashedImportParams-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rsa-pss-extended-import-steps",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-rsa-pss-extended-import-steps",
+      "linkingText": [
+        "key import steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rsa-pss-extended-export-steps",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-rsa-pss-extended-export-steps",
+      "linkingText": [
+        "key export steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaPssParams",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RsaPssParams",
+      "linkingText": [
+        "RsaPssParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaPssParams-saltLength",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RsaPssParams-saltLength",
+      "linkingText": [
+        "saltLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rsa-oaep-extended-import-steps",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-rsa-oaep-extended-import-steps",
+      "linkingText": [
+        "key import steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rsa-oaep-extended-export-steps",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-rsa-oaep-extended-export-steps",
+      "linkingText": [
+        "key export steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaOaepParams",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RsaOaepParams",
+      "linkingText": [
+        "RsaOaepParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-RsaOaepParams-label",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-RsaOaepParams-label",
+      "linkingText": [
+        "label"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdsa-extended-namedcurve-values",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-ecdsa-extended-namedcurve-values",
+      "linkingText": [
+        "the curve name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdsa-extended-signature-steps",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-ecdsa-extended-signature-steps",
+      "linkingText": [
+        "ECDSA signature steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdsa-extended-verification-steps",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-ecdsa-extended-verification-steps",
+      "linkingText": [
+        "ECDSA verification steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdsa-extended-generation-steps",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-ecdsa-extended-generation-steps",
+      "linkingText": [
+        "ECDSA generation steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdsa-extended-import-steps",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-ecdsa-extended-import-steps",
+      "linkingText": [
+        "ECDSA key import steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdsa-extended-export-steps",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-ecdsa-extended-export-steps",
+      "linkingText": [
+        "ECDSA key export steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcdsaParams",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-EcdsaParams",
+      "linkingText": [
+        "EcdsaParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcdsaParams-hash",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-EcdsaParams-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcKeyGenParams",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-EcKeyGenParams",
+      "linkingText": [
+        "EcKeyGenParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcKeyGenParams-namedCurve",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-EcKeyGenParams-namedCurve",
+      "linkingText": [
+        "namedCurve"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-NamedCurve",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-NamedCurve",
+      "linkingText": [
+        "NamedCurve"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcKeyAlgorithm",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-EcKeyAlgorithm",
+      "linkingText": [
+        "EcKeyAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcKeyAlgorithm-namedCurve",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-EcKeyAlgorithm-namedCurve",
+      "linkingText": [
+        "namedCurve"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcKeyImportParams",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-EcKeyImportParams",
+      "linkingText": [
+        "EcKeyImportParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcKeyImportParams-namedCurve",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-EcKeyImportParams-namedCurve",
+      "linkingText": [
+        "namedCurve"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdh-extended-namedcurve-values",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-ecdh-extended-namedcurve-values",
+      "linkingText": [
+        "the curve name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdh-extended-generation-steps",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-ecdh-extended-generation-steps",
+      "linkingText": [
+        "ECDH generation steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdh-extended-derivation-steps",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-ecdh-extended-derivation-steps",
+      "linkingText": [
+        "ECDH derivation steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdh-extended-import-steps",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-ecdh-extended-import-steps",
+      "linkingText": [
+        "ECDH key import steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdh-extended-export-steps",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-ecdh-extended-export-steps",
+      "linkingText": [
+        "ECDH key export steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcdhKeyDeriveParams",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-EcdhKeyDeriveParams",
+      "linkingText": [
+        "EcdhKeyDeriveParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-EcdhKeyDeriveParams-public",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-EcdhKeyDeriveParams-public",
+      "linkingText": [
+        "public"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesCtrParams",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-AesCtrParams",
+      "linkingText": [
+        "AesCtrParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesCtrParams-counter",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-AesCtrParams-counter",
+      "linkingText": [
+        "counter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesCtrParams-length",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-AesCtrParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesKeyAlgorithm",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-AesKeyAlgorithm",
+      "linkingText": [
+        "AesKeyAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesKeyAlgorithm-length",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-AesKeyAlgorithm-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesKeyGenParams",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-AesKeyGenParams",
+      "linkingText": [
+        "AesKeyGenParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesKeyGenParams-length",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-AesKeyGenParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesDerivedKeyParams",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-AesDerivedKeyParams",
+      "linkingText": [
+        "AesDerivedKeyParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesDerivedKeyParams-length",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-AesDerivedKeyParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesCbcParams",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-AesCbcParams",
+      "linkingText": [
+        "AesCbcParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesCbcParams-iv",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-AesCbcParams-iv",
+      "linkingText": [
+        "iv"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesGcmParams",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-AesGcmParams",
+      "linkingText": [
+        "AesGcmParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesGcmParams-iv",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-AesGcmParams-iv",
+      "linkingText": [
+        "iv"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesGcmParams-additionalData",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-AesGcmParams-additionalData",
+      "linkingText": [
+        "additionalData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-AesGcmParams-tagLength",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-AesGcmParams-tagLength",
+      "linkingText": [
+        "tagLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-hmac-extended-import-steps",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-hmac-extended-import-steps",
+      "linkingText": [
+        "key import steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-hmac-extended-export-steps",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-hmac-extended-export-steps",
+      "linkingText": [
+        "key export steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacImportParams",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-HmacImportParams",
+      "linkingText": [
+        "HmacImportParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacImportParams-hash",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-HmacImportParams-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacImportParams-length",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-HmacImportParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacKeyAlgorithm",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-HmacKeyAlgorithm",
+      "linkingText": [
+        "HmacKeyAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacKeyAlgorithm-hash",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-HmacKeyAlgorithm-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacKeyAlgorithm-length",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-HmacKeyAlgorithm-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacKeyGenParams",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-HmacKeyGenParams",
+      "linkingText": [
+        "HmacKeyGenParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacKeyGenParams-hash",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-HmacKeyGenParams-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HmacKeyGenParams-length",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-HmacKeyGenParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HkdfParams",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-HkdfParams",
+      "linkingText": [
+        "HkdfParams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HkdfParams-hash",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-HkdfParams-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HkdfParams-salt",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-HkdfParams-salt",
+      "linkingText": [
+        "salt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-HkdfParams-info",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-HkdfParams-info",
+      "linkingText": [
+        "info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-Pbkdf2Params",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-Pbkdf2Params",
+      "linkingText": [
+        "Pbkdf2Params"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-Pbkdf2Params-salt",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-Pbkdf2Params-salt",
+      "linkingText": [
+        "salt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-Pbkdf2Params-iterations",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-Pbkdf2Params-iterations",
+      "linkingText": [
+        "iterations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-Pbkdf2Params-hash",
+      "href": "https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#dfn-Pbkdf2Params-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

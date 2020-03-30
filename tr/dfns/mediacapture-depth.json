@@ -1,0 +1,1858 @@
+{
+  "spec": {
+    "title": "Media Capture Depth Stream Extensions",
+    "url": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-user-agent",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediastreamtrack",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-mediastreamtrack",
+      "linkingText": [
+        "MediaStreamTrack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediastream",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-mediastream",
+      "linkingText": [
+        "MediaStream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-constraints",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-constraints",
+      "linkingText": [
+        "Constraints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-capabilities",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-capabilities",
+      "linkingText": [
+        "Capabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-constraintset",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-constraintset",
+      "linkingText": [
+        "ConstraintSet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-settings",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-settings",
+      "linkingText": [
+        "Settings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-types-of-constrainable-properties",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-types-of-constrainable-properties",
+      "linkingText": [
+        "types\n        of constrainable properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-constraindomstring",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-constraindomstring",
+      "linkingText": [
+        "ConstrainDOMString"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-constraindouble",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-constraindouble",
+      "linkingText": [
+        "ConstrainDouble"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-constrainboolean",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-constrainboolean",
+      "linkingText": [
+        "ConstrainBoolean"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-doublerange",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-doublerange",
+      "linkingText": [
+        "DoubleRange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksettings",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksettings",
+      "linkingText": [
+        "MediaTrackSettings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediatrackconstraints",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-mediatrackconstraints",
+      "linkingText": [
+        "MediaTrackConstraints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksupportedconstraints",
+      "linkingText": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackcapabilities",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackcapabilities",
+      "linkingText": [
+        "MediaTrackCapabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackconstraintset",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackconstraintset",
+      "linkingText": [
+        "MediaTrackConstraintSet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-getusermedia",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-getusermedia",
+      "linkingText": [
+        "getUserMedia()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-getsettings",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-getsettings",
+      "linkingText": [
+        "getSettings()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-navigatorusermediasuccesscallback",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-navigatorusermediasuccesscallback",
+      "linkingText": [
+        "NavigatorUserMediaSuccessCallback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-muted",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-muted",
+      "linkingText": [
+        "muted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-disabled",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-disabled",
+      "linkingText": [
+        "disabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-overconstrained",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-overconstrained",
+      "linkingText": [
+        "overconstrained"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-source",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-consumer",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-consumer",
+      "linkingText": [
+        "consumer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediadevicekind",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-mediadevicekind",
+      "linkingText": [
+        "MediaDeviceKind"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-video",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-video",
+      "linkingText": [
+        "video"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-imagedata",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-imagedata",
+      "linkingText": [
+        "ImageData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-data",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-canvas-pixel-arraybuffer",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-canvas-pixel-arraybuffer",
+      "linkingText": [
+        "Canvas Pixel\n        ArrayBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-videotrack",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-videotrack",
+      "linkingText": [
+        "VideoTrack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-htmlmediaelement",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-htmlmediaelement",
+      "linkingText": [
+        "HTMLMediaElement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-srcobject",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-srcobject",
+      "linkingText": [
+        "srcObject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-htmlvideoelement",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-htmlvideoelement",
+      "linkingText": [
+        "HTMLVideoElement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-canvasimagesource",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-canvasimagesource",
+      "linkingText": [
+        "CanvasImageSource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-media-data",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-media-data",
+      "linkingText": [
+        "media data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-media-provider-object",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-media-provider-object",
+      "linkingText": [
+        "media provider\n        object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-assigned-media-provider-object",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-assigned-media-provider-object",
+      "linkingText": [
+        "assigned media provider\n        object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-potentially-playing",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-potentially-playing",
+      "linkingText": [
+        "potentially playing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-permission",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-permission",
+      "linkingText": [
+        "permission"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-camera",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-camera",
+      "linkingText": [
+        "camera"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dataview",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-dataview",
+      "linkingText": [
+        "DataView"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-uint8clampedarray",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-uint8clampedarray",
+      "linkingText": [
+        "Uint8ClampedArray"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-uint16array",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-uint16array",
+      "linkingText": [
+        "Uint16Array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-present",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-present",
+      "linkingText": [
+        "present"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-not-present",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-not-present",
+      "linkingText": [
+        "not present"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-default-value",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-default-value",
+      "linkingText": [
+        "default value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-depth-color-stream",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-depth-color-stream",
+      "linkingText": [
+        "depth+color stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-depth-only-stream",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-depth-only-stream",
+      "linkingText": [
+        "depth-only stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-color-only-stream",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-color-only-stream",
+      "linkingText": [
+        "color-only stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-depth-stream-track",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-depth-stream-track",
+      "linkingText": [
+        "depth stream track"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-color-stream-track",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-color-stream-track",
+      "linkingText": [
+        "color stream track"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-depth-map",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-depth-map",
+      "linkingText": [
+        "depth map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-depth-map-values",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-depth-map-values",
+      "linkingText": [
+        "depth map values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-normalized",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-normalized",
+      "linkingText": [
+        "Normalized"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-invalid-depth-map-value",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-invalid-depth-map-value",
+      "linkingText": [
+        "invalid depth map value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-floating-point",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-floating-point",
+      "linkingText": [
+        "floating-point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-unsigned-fixed-point",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-unsigned-fixed-point",
+      "linkingText": [
+        "unsigned\n          fixed-point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-near-value",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-near-value",
+      "linkingText": [
+        "near value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-near-plane",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-near-plane",
+      "linkingText": [
+        "near plane"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-far-value",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-far-value",
+      "linkingText": [
+        "far value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-far-plane",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-far-plane",
+      "linkingText": [
+        "far plane"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-horizontal-focal-length",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-horizontal-focal-length",
+      "linkingText": [
+        "horizontal focal\n          length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-focal-length",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-focal-length",
+      "linkingText": [
+        "focal length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-vertical-focal-length",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-vertical-focal-length",
+      "linkingText": [
+        "vertical focal length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-principal-point",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-principal-point",
+      "linkingText": [
+        "principal point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-principal-point-x",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-principal-point-x",
+      "linkingText": [
+        "principal point x"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-principal-point-y",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-principal-point-y",
+      "linkingText": [
+        "principal point\n          y"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-transformation-from-depth-to-video",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-transformation-from-depth-to-video",
+      "linkingText": [
+        "transformation from depth\n          to video"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-transformation-matrix",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-transformation-matrix",
+      "linkingText": [
+        "transformation matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-videodeviceid",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-videodeviceid",
+      "linkingText": [
+        "videoDeviceId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-deprojection-distortion-coefficients",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-deprojection-distortion-coefficients",
+      "linkingText": [
+        "deprojection distortion coefficients"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-projection-distortion-coefficients",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-projection-distortion-coefficients",
+      "linkingText": [
+        "projection\n          distortion coefficients"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-calculate-depth-map-value",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-calculate-depth-map-value",
+      "linkingText": [
+        "calculate depth map value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-convert-the-depth-map-value-to-distance",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-convert-the-depth-map-value-to-distance",
+      "linkingText": [
+        "convert the depth map value to distance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-applicable-constraint",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-applicable-constraint",
+      "linkingText": [
+        "applicable constraint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-allowed-values",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-allowed-values",
+      "linkingText": [
+        "allowed values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-distortioncoefficients",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-distortioncoefficients",
+      "linkingText": [
+        "DistortionCoefficients"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-distortioncoefficients-k1",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-distortioncoefficients-k1",
+      "linkingText": [
+        "k1"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "distortioncoefficients"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-distortioncoefficients-k2",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-distortioncoefficients-k2",
+      "linkingText": [
+        "k2"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "distortioncoefficients"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-distortioncoefficients-p1",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-distortioncoefficients-p1",
+      "linkingText": [
+        "p1"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "distortioncoefficients"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-distortioncoefficients-p2",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-distortioncoefficients-p2",
+      "linkingText": [
+        "p2"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "distortioncoefficients"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-distortioncoefficients-k3",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-distortioncoefficients-k3",
+      "linkingText": [
+        "k3"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "distortioncoefficients"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-k1",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-k1",
+      "linkingText": [
+        "k1"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-k2",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-k2",
+      "linkingText": [
+        "k2"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-k3",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-k3",
+      "linkingText": [
+        "k3"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-radial-distortion-coefficients",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-radial-distortion-coefficients",
+      "linkingText": [
+        "radial distortion coefficients"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-p1",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-p1",
+      "linkingText": [
+        "p1"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-p2",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-p2",
+      "linkingText": [
+        "p2"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-tangential-distortion-coefficients",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-tangential-distortion-coefficients",
+      "linkingText": [
+        "tangential distortion coefficients"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-transformation",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-transformation",
+      "linkingText": [
+        "Transformation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-transformation-transformationmatrix",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-transformation-transformationmatrix",
+      "linkingText": [
+        "transformationMatrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transformation"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-transformation-videodeviceid",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-transformation-videodeviceid",
+      "linkingText": [
+        "videoDeviceId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transformation"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-videokind",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksupportedconstraints-videokind",
+      "linkingText": [
+        "videoKind"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksupportedconstraints"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackcapabilities-videokind",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackcapabilities-videokind",
+      "linkingText": [
+        "videoKind"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackcapabilities"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackconstraintset-videokind",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackconstraintset-videokind",
+      "linkingText": [
+        "videoKind"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackconstraintset"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksettings-videokind",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksettings-videokind",
+      "linkingText": [
+        "videoKind"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksettings"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-video-kind",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-video-kind",
+      "linkingText": [
+        "video\n            kind"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-videokindenum",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-videokindenum",
+      "linkingText": [
+        "VideoKindEnum"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-videokindenum-color",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-videokindenum-color",
+      "linkingText": [
+        "color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "videokindenum"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-videokindenum-depth",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-videokindenum-depth",
+      "linkingText": [
+        "depth"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "videokindenum"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-focallengthx",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksupportedconstraints-focallengthx",
+      "linkingText": [
+        "focalLengthX"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksupportedconstraints"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackcapabilities-focallengthx",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackcapabilities-focallengthx",
+      "linkingText": [
+        "focalLengthX"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackcapabilities"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackconstraintset-focallengthx",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackconstraintset-focallengthx",
+      "linkingText": [
+        "focalLengthX"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackconstraintset"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksettings-focallengthx",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksettings-focallengthx",
+      "linkingText": [
+        "focalLengthX"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksettings"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-focallengthy",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksupportedconstraints-focallengthy",
+      "linkingText": [
+        "focalLengthY"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksupportedconstraints"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackcapabilities-focallengthy",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackcapabilities-focallengthy",
+      "linkingText": [
+        "focalLengthY"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackcapabilities"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackconstraintset-focallengthy",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackconstraintset-focallengthy",
+      "linkingText": [
+        "focalLengthY"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackconstraintset"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksettings-focallengthy",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksettings-focallengthy",
+      "linkingText": [
+        "focalLengthY"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksettings"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-principalpointx",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksupportedconstraints-principalpointx",
+      "linkingText": [
+        "principalPointX"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksupportedconstraints"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackcapabilities-principalpointx",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackcapabilities-principalpointx",
+      "linkingText": [
+        "principalPointX"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackcapabilities"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackconstraintset-principalpointx",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackconstraintset-principalpointx",
+      "linkingText": [
+        "principalPointX"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackconstraintset"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksettings-principalpointx",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksettings-principalpointx",
+      "linkingText": [
+        "principalPointX"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksettings"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-principalpointy",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksupportedconstraints-principalpointy",
+      "linkingText": [
+        "principalPointY"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksupportedconstraints"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackcapabilities-principalpointy",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackcapabilities-principalpointy",
+      "linkingText": [
+        "principalPointY"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackcapabilities"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackconstraintset-principalpointy",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackconstraintset-principalpointy",
+      "linkingText": [
+        "principalPointY"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackconstraintset"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksettings-principalpointy",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksettings-principalpointy",
+      "linkingText": [
+        "principalPointY"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksettings"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients",
+      "linkingText": [
+        "deprojectionDistortionCoefficients"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksupportedconstraints"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackcapabilities-deprojectiondistortioncoefficients",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackcapabilities-deprojectiondistortioncoefficients",
+      "linkingText": [
+        "deprojectionDistortionCoefficients"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackcapabilities"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackconstraintset-deprojectiondistortioncoefficients",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackconstraintset-deprojectiondistortioncoefficients",
+      "linkingText": [
+        "deprojectionDistortionCoefficients"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackconstraintset"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksettings-deprojectiondistortioncoefficients",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksettings-deprojectiondistortioncoefficients",
+      "linkingText": [
+        "deprojectionDistortionCoefficients"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksettings"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-projectiondistortioncoefficients",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksupportedconstraints-projectiondistortioncoefficients",
+      "linkingText": [
+        "projectionDistortionCoefficients"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksupportedconstraints"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackcapabilities-projectiondistortioncoefficients",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackcapabilities-projectiondistortioncoefficients",
+      "linkingText": [
+        "projectionDistortionCoefficients"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackcapabilities"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackconstraintset-projectiondistortioncoefficients",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackconstraintset-projectiondistortioncoefficients",
+      "linkingText": [
+        "projectionDistortionCoefficients"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackconstraintset"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksettings-projectiondistortioncoefficients",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksettings-projectiondistortioncoefficients",
+      "linkingText": [
+        "projectionDistortionCoefficients"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksettings"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-depthnear",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksupportedconstraints-depthnear",
+      "linkingText": [
+        "depthNear"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksupportedconstraints"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackcapabilities-depthnear",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackcapabilities-depthnear",
+      "linkingText": [
+        "depthNear"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackcapabilities"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackconstraintset-depthnear",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackconstraintset-depthnear",
+      "linkingText": [
+        "depthNear"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackconstraintset"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksettings-depthnear",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksettings-depthnear",
+      "linkingText": [
+        "depthNear"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksettings"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-depthfar",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksupportedconstraints-depthfar",
+      "linkingText": [
+        "depthFar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksupportedconstraints"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackcapabilities-depthfar",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackcapabilities-depthfar",
+      "linkingText": [
+        "depthFar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackcapabilities"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackconstraintset-depthfar",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackconstraintset-depthfar",
+      "linkingText": [
+        "depthFar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackconstraintset"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksettings-depthfar",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksettings-depthfar",
+      "linkingText": [
+        "depthFar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksettings"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-depthtovideotransform",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksupportedconstraints-depthtovideotransform",
+      "linkingText": [
+        "depthToVideoTransform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksupportedconstraints"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackcapabilities-depthtovideotransform",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackcapabilities-depthtovideotransform",
+      "linkingText": [
+        "depthToVideoTransform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackcapabilities"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatrackconstraintset-depthtovideotransform",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatrackconstraintset-depthtovideotransform",
+      "linkingText": [
+        "depthToVideoTransform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatrackconstraintset"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediatracksettings-depthtovideotransform",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dom-mediatracksettings-depthtovideotransform",
+      "linkingText": [
+        "depthToVideoTransform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediatracksettings"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-uploaded",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-uploaded",
+      "linkingText": [
+        "uploaded"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-map-depth-and-color",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-map-depth-and-color",
+      "linkingText": [
+        "map depth and color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-algorithm-to-map-depth-pixels-to-color-pixels",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-algorithm-to-map-depth-pixels-to-color-pixels",
+      "linkingText": [
+        "algorithm to map depth pixels to color pixels"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-deproject",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-deproject",
+      "linkingText": [
+        "deproject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-transform",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-project",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-project",
+      "linkingText": [
+        "project"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-upload-to-float-texture",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-upload-to-float-texture",
+      "linkingText": [
+        "upload to float texture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-readpixels-from-float",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-readpixels-from-float",
+      "linkingText": [
+        "readPixels from float"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-x3d-point-cloud-rendering",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/#dfn-x3d-point-cloud-rendering",
+      "linkingText": [
+        "3D point cloud rendering"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    }
+  ]
+}

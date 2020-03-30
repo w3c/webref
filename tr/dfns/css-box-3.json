@@ -1,0 +1,422 @@
+{
+  "spec": {
+    "title": "CSS Box Model Module Level 3",
+    "url": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/"
+  },
+  "dfns": [
+    {
+      "id": "content-area",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#content-area",
+      "linkingText": [
+        "content area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "padding-area",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#padding-area",
+      "linkingText": [
+        "padding area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "border-area",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#border-area",
+      "linkingText": [
+        "border area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "margin-area",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#margin-area",
+      "linkingText": [
+        "margin area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "content-edge",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#content-edge",
+      "linkingText": [
+        "content edge"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inner-edge",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#inner-edge",
+      "linkingText": [
+        "inner edge"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "content-box",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#content-box",
+      "linkingText": [
+        "content box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "padding-edge",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#padding-edge",
+      "linkingText": [
+        "padding edge"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "padding-box",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#padding-box",
+      "linkingText": [
+        "padding box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "border-edge",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#border-edge",
+      "linkingText": [
+        "border edge"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "border-box",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#border-box",
+      "linkingText": [
+        "border box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "margin-edge",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#margin-edge",
+      "linkingText": [
+        "margin edge"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "outer-edge",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#outer-edge",
+      "linkingText": [
+        "outer edge"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "margin-box",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#margin-box",
+      "linkingText": [
+        "margin box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "margin",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#margin",
+      "linkingText": [
+        "margin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "margin-properties",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#margin-properties",
+      "linkingText": [
+        "margin properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-margin-top",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#propdef-margin-top",
+      "linkingText": [
+        "margin-top"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-margin-right",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#propdef-margin-right",
+      "linkingText": [
+        "margin-right"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-margin-bottom",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#propdef-margin-bottom",
+      "linkingText": [
+        "margin-bottom"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-margin-left",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#propdef-margin-left",
+      "linkingText": [
+        "margin-left"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-margin",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#propdef-margin",
+      "linkingText": [
+        "margin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-margin-trim",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#propdef-margin-trim",
+      "linkingText": [
+        "margin-trim"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-margin-trim-none",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#valdef-margin-trim-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "margin-trim"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-margin-trim-in-flow",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#valdef-margin-trim-in-flow",
+      "linkingText": [
+        "in-flow"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "margin-trim"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-margin-trim-all",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#valdef-margin-trim-all",
+      "linkingText": [
+        "all"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "margin-trim"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "padding",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#padding",
+      "linkingText": [
+        "Padding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "padding-properties",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#padding-properties",
+      "linkingText": [
+        "padding properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-padding-top",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#propdef-padding-top",
+      "linkingText": [
+        "padding-top"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-padding-right",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#propdef-padding-right",
+      "linkingText": [
+        "padding-right"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-padding-bottom",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#propdef-padding-bottom",
+      "linkingText": [
+        "padding-bottom"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-padding-left",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#propdef-padding-left",
+      "linkingText": [
+        "padding-left"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-padding",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#propdef-padding",
+      "linkingText": [
+        "padding"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "border",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#border",
+      "linkingText": [
+        "border"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "border-properties",
+      "href": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/#border-properties",
+      "linkingText": [
+        "border properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

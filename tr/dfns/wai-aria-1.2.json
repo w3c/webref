@@ -1,0 +1,1233 @@
+{
+  "spec": {
+    "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
+    "url": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-accessibility-api",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-accessibility-api",
+      "linkingText": [
+        "accessibility api",
+        "accessibility apis",
+        "Accessibility API"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-accessibility-tree",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-accessibility-tree",
+      "linkingText": [
+        "Accessibility Tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-accessible-description",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-accessible-description",
+      "linkingText": [
+        "Accessible Description"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-accessible-name",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-accessible-name",
+      "linkingText": [
+        "accessible name",
+        "accessible names",
+        "Accessible Name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-accessible-object",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-accessible-object",
+      "linkingText": [
+        "accessible object",
+        "accessible objects",
+        "Accessible object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-assistive-technology",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-assistive-technology",
+      "linkingText": [
+        "assistive technology",
+        "Assistive Technologies"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-attribute",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-attribute",
+      "linkingText": [
+        "attribute",
+        "attributes",
+        "Attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-class",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-class",
+      "linkingText": [
+        "class",
+        "classes",
+        "Class"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-deprecated",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-deprecated",
+      "linkingText": [
+        "deprecated",
+        "deprecate",
+        "deprecation",
+        "Deprecated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-desktop-focus",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-desktop-focus",
+      "linkingText": [
+        "desktop focus",
+        "desktop focus events",
+        "Desktop focus event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-element",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-element",
+      "linkingText": [
+        "element",
+        "elements",
+        "element's",
+        "Element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-event",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-event",
+      "linkingText": [
+        "event",
+        "events",
+        "Event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-graphical-document",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-graphical-document",
+      "linkingText": [
+        "graphical document",
+        "graphical documents",
+        "Graphical Document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-hidden",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-hidden",
+      "linkingText": [
+        "Hidden"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-informative",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-informative",
+      "linkingText": [
+        "informative",
+        "non-normative",
+        "Informative"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-keyboard-accessible",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-keyboard-accessible",
+      "linkingText": [
+        "Keyboard Accessible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-landmark",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-landmark",
+      "linkingText": [
+        "landmark",
+        "landmarks",
+        "Landmark"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-live-region",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-live-region",
+      "linkingText": [
+        "live region",
+        "live regions",
+        "Live Region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-managed-state",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-managed-state",
+      "linkingText": [
+        "managed state",
+        "managed states",
+        "Managed State"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-nemeth-braille",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-nemeth-braille",
+      "linkingText": [
+        "Nemeth Braille"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-node",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-node",
+      "linkingText": [
+        "Node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-normative",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-normative",
+      "linkingText": [
+        "Normative"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-object",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-object",
+      "linkingText": [
+        "object",
+        "objects",
+        "Object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-ontology",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-ontology",
+      "linkingText": [
+        "Ontology"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-operable",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-operable",
+      "linkingText": [
+        "Operable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-owned-element",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-owned-element",
+      "linkingText": [
+        "owned element",
+        "owned",
+        "owned element's",
+        "owned elements",
+        "Owned Element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-perceivable",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-perceivable",
+      "linkingText": [
+        "Perceivable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-property",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-property",
+      "linkingText": [
+        "property",
+        "properties",
+        "Property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-relationship",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-relationship",
+      "linkingText": [
+        "relationship",
+        "relationships",
+        "Relationship"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-role",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-role",
+      "linkingText": [
+        "role",
+        "roles",
+        "Role"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-semantics",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-semantics",
+      "linkingText": [
+        "semantics",
+        "semantic",
+        "semantically",
+        "Semantics"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-state",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-state",
+      "linkingText": [
+        "state",
+        "states",
+        "State"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-text-node",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-text-node",
+      "linkingText": [
+        "Text node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-understandable",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-understandable",
+      "linkingText": [
+        "Understandable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-user-agent",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-user-agent",
+      "linkingText": [
+        "user agent",
+        "user agents",
+        "User Agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-valid-idref",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-valid-idref",
+      "linkingText": [
+        "Valid IDREF"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-widget",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dfn-widget",
+      "linkingText": [
+        "widget",
+        "widgets",
+        "Widget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-accessibilityrole",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-accessibilityrole",
+      "linkingText": [
+        "AccessibilityRole"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accessibilityrole-role",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-accessibilityrole-role",
+      "linkingText": [
+        "AccessibilityRole.role",
+        "role"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AccessibilityRole"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes",
+      "linkingText": [
+        "AriaAttributes"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaactivedescendant",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariaactivedescendant",
+      "linkingText": [
+        "AriaAttributes.ariaActiveDescendant",
+        "ariaActiveDescendant"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaatomic",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariaatomic",
+      "linkingText": [
+        "AriaAttributes.ariaAtomic",
+        "ariaAtomic"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaautocomplete",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariaautocomplete",
+      "linkingText": [
+        "AriaAttributes.ariaAutoComplete",
+        "ariaAutoComplete"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariabusy",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariabusy",
+      "linkingText": [
+        "AriaAttributes.ariaBusy",
+        "ariaBusy"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariachecked",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariachecked",
+      "linkingText": [
+        "AriaAttributes.ariaChecked",
+        "ariaChecked"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariacolcount",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariacolcount",
+      "linkingText": [
+        "AriaAttributes.ariaColCount",
+        "ariaColCount"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariacolindex",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariacolindex",
+      "linkingText": [
+        "AriaAttributes.ariaColIndex",
+        "ariaColIndex"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariacolspan",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariacolspan",
+      "linkingText": [
+        "AriaAttributes.ariaColSpan",
+        "ariaColSpan"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariacontrols",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariacontrols",
+      "linkingText": [
+        "AriaAttributes.ariaControls",
+        "ariaControls"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariacurrent",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariacurrent",
+      "linkingText": [
+        "AriaAttributes.ariaCurrent",
+        "ariaCurrent"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariadescribedby",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariadescribedby",
+      "linkingText": [
+        "AriaAttributes.ariaDescribedBy",
+        "ariaDescribedBy"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariadetails",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariadetails",
+      "linkingText": [
+        "AriaAttributes.ariaDetails",
+        "ariaDetails"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariadisabled",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariadisabled",
+      "linkingText": [
+        "AriaAttributes.ariaDisabled",
+        "ariaDisabled"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaerrormessage",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariaerrormessage",
+      "linkingText": [
+        "AriaAttributes.ariaErrorMessage",
+        "ariaErrorMessage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaexpanded",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariaexpanded",
+      "linkingText": [
+        "AriaAttributes.ariaExpanded",
+        "ariaExpanded"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaflowto",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariaflowto",
+      "linkingText": [
+        "AriaAttributes.ariaFlowTo",
+        "ariaFlowTo"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariahaspopup",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariahaspopup",
+      "linkingText": [
+        "AriaAttributes.ariaHasPopup",
+        "ariaHasPopup"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariahidden",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariahidden",
+      "linkingText": [
+        "AriaAttributes.ariaHidden",
+        "ariaHidden"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariainvalid",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariainvalid",
+      "linkingText": [
+        "AriaAttributes.ariaInvalid",
+        "ariaInvalid"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariakeyshortcuts",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariakeyshortcuts",
+      "linkingText": [
+        "AriaAttributes.ariaKeyShortcuts",
+        "ariaKeyShortcuts"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-arialabel",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-arialabel",
+      "linkingText": [
+        "AriaAttributes.ariaLabel",
+        "ariaLabel"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-arialabelledby",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-arialabelledby",
+      "linkingText": [
+        "AriaAttributes.ariaLabelledBy",
+        "ariaLabelledBy"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-arialevel",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-arialevel",
+      "linkingText": [
+        "AriaAttributes.ariaLevel",
+        "ariaLevel"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-arialive",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-arialive",
+      "linkingText": [
+        "AriaAttributes.ariaLive",
+        "ariaLive"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariamodal",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariamodal",
+      "linkingText": [
+        "AriaAttributes.ariaModal",
+        "ariaModal"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariamultiline",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariamultiline",
+      "linkingText": [
+        "AriaAttributes.ariaMultiLine",
+        "ariaMultiLine"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariamultiselectable",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariamultiselectable",
+      "linkingText": [
+        "AriaAttributes.ariaMultiSelectable",
+        "ariaMultiSelectable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaorientation",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariaorientation",
+      "linkingText": [
+        "AriaAttributes.ariaOrientation",
+        "ariaOrientation"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaowns",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariaowns",
+      "linkingText": [
+        "AriaAttributes.ariaOwns",
+        "ariaOwns"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaplaceholder",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariaplaceholder",
+      "linkingText": [
+        "AriaAttributes.ariaPlaceholder",
+        "ariaPlaceholder"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaposinset",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariaposinset",
+      "linkingText": [
+        "AriaAttributes.ariaPosInSet",
+        "ariaPosInSet"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariapressed",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariapressed",
+      "linkingText": [
+        "AriaAttributes.ariaPressed",
+        "ariaPressed"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariareadonly",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariareadonly",
+      "linkingText": [
+        "AriaAttributes.ariaReadOnly",
+        "ariaReadOnly"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariarelevant",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariarelevant",
+      "linkingText": [
+        "AriaAttributes.ariaRelevant",
+        "ariaRelevant"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariarequired",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariarequired",
+      "linkingText": [
+        "AriaAttributes.ariaRequired",
+        "ariaRequired"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaroledescription",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariaroledescription",
+      "linkingText": [
+        "AriaAttributes.ariaRoleDescription",
+        "ariaRoleDescription"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariarowcount",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariarowcount",
+      "linkingText": [
+        "AriaAttributes.ariaRowCount",
+        "ariaRowCount"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariarowindex",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariarowindex",
+      "linkingText": [
+        "AriaAttributes.ariaRowIndex",
+        "ariaRowIndex"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariarowspan",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariarowspan",
+      "linkingText": [
+        "AriaAttributes.ariaRowSpan",
+        "ariaRowSpan"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariaselected",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariaselected",
+      "linkingText": [
+        "AriaAttributes.ariaSelected",
+        "ariaSelected"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariasetsize",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariasetsize",
+      "linkingText": [
+        "AriaAttributes.ariaSetSize",
+        "ariaSetSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariasort",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariasort",
+      "linkingText": [
+        "AriaAttributes.ariaSort",
+        "ariaSort"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariavaluemax",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariavaluemax",
+      "linkingText": [
+        "AriaAttributes.ariaValueMax",
+        "ariaValueMax"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariavaluemin",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariavaluemin",
+      "linkingText": [
+        "AriaAttributes.ariaValueMin",
+        "ariaValueMin"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariavaluenow",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariavaluenow",
+      "linkingText": [
+        "AriaAttributes.ariaValueNow",
+        "ariaValueNow"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ariaattributes-ariavaluetext",
+      "href": "https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/#dom-ariaattributes-ariavaluetext",
+      "linkingText": [
+        "AriaAttributes.ariaValueText",
+        "ariaValueText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AriaAttributes"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

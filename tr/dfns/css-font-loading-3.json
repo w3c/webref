@@ -1,0 +1,856 @@
+{
+  "spec": {
+    "title": "CSS Font Loading Module Level 3",
+    "url": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/"
+  },
+  "dfns": [
+    {
+      "id": "dom-promise",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-promise",
+      "linkingText": [
+        "Promises"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-binarydata",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#typedefdef-binarydata",
+      "linkingText": [
+        "BinaryData"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-fontfacedescriptors",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dictdef-fontfacedescriptors",
+      "linkingText": [
+        "FontFaceDescriptors"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfacedescriptors-style",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfacedescriptors-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceDescriptors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfacedescriptors-weight",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfacedescriptors-weight",
+      "linkingText": [
+        "weight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceDescriptors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfacedescriptors-stretch",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfacedescriptors-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceDescriptors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfacedescriptors-unicoderange",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfacedescriptors-unicoderange",
+      "linkingText": [
+        "unicodeRange"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceDescriptors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfacedescriptors-variant",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfacedescriptors-variant",
+      "linkingText": [
+        "variant"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceDescriptors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfacedescriptors-featuresettings",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfacedescriptors-featuresettings",
+      "linkingText": [
+        "featureSettings"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FontFaceDescriptors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-fontfaceloadstatus",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#enumdef-fontfaceloadstatus",
+      "linkingText": [
+        "FontFaceLoadStatus"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontface",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontface",
+      "linkingText": [
+        "FontFace"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontface-family",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontface-family",
+      "linkingText": [
+        "family"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontface-style",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontface-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontface-weight",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontface-weight",
+      "linkingText": [
+        "weight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontface-stretch",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontface-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontface-unicoderange",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontface-unicoderange",
+      "linkingText": [
+        "unicodeRange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontface-variant",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontface-variant",
+      "linkingText": [
+        "variant"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontface-featuresettings",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontface-featuresettings",
+      "linkingText": [
+        "featureSettings"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontface-status",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontface-status",
+      "linkingText": [
+        "status"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontface-loaded",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontface-loaded",
+      "linkingText": [
+        "loaded"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontface-fontstatuspromise",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontface-fontstatuspromise",
+      "linkingText": [
+        "[[FontStatusPromise]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontface-urls",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontface-urls",
+      "linkingText": [
+        "[[Urls]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontface-data",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontface-data",
+      "linkingText": [
+        "[[Data]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontface-fontface",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontface-fontface",
+      "linkingText": [
+        "FontFace"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfacefontface-family",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfacefontface-family",
+      "linkingText": [
+        "family"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFace/FontFace()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfacefontface-source",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfacefontface-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFace/FontFace()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfacefontface-descriptors",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfacefontface-descriptors",
+      "linkingText": [
+        "descriptors"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFace/FontFace()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontface-load",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontface-load",
+      "linkingText": [
+        "load()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FontFace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-connected",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#css-connected",
+      "linkingText": [
+        "CSS-connected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-cssfontfaceloadeventinit",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dictdef-cssfontfaceloadeventinit",
+      "linkingText": [
+        "CSSFontFaceLoadEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontfaceloadeventinit-fontfaces",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-cssfontfaceloadeventinit-fontfaces",
+      "linkingText": [
+        "fontfaces"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CSSFontFaceLoadEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontfaceloadeventcssfontfaceloadevent-type",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-cssfontfaceloadeventcssfontfaceloadevent-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSFontFaceLoadEvent/CSSFontFaceLoadEvent()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontfaceloadeventcssfontfaceloadevent-eventinitdict",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-cssfontfaceloadeventcssfontfaceloadevent-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSFontFaceLoadEvent/CSSFontFaceLoadEvent()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontfaceloadevent",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-cssfontfaceloadevent",
+      "linkingText": [
+        "CSSFontFaceLoadEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssfontfaceloadevent-fontfaces",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-cssfontfaceloadevent-fontfaces",
+      "linkingText": [
+        "fontfaces"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSFontFaceLoadEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-fontfacesetloadstatus",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#enumdef-fontfacesetloadstatus",
+      "linkingText": [
+        "FontFaceSetLoadStatus"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfaceset",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfaceset",
+      "linkingText": [
+        "FontFaceSet"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfaceset-onloading",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfaceset-onloading",
+      "linkingText": [
+        "onloading"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfaceset-onloadingdone",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfaceset-onloadingdone",
+      "linkingText": [
+        "onloadingdone"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfaceset-onloadingerror",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfaceset-onloadingerror",
+      "linkingText": [
+        "onloadingerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "no-pending-font-loads",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#no-pending-font-loads",
+      "linkingText": [
+        "no pending font loads"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "possibly-pending-font-loads",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#possibly-pending-font-loads",
+      "linkingText": [
+        "possibly pending font loads"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfaceset-status",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfaceset-status",
+      "linkingText": [
+        "status"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfaceset-loadingfonts",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfaceset-loadingfonts",
+      "linkingText": [
+        "[[LoadingFonts]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfaceset-loadedfonts",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfaceset-loadedfonts",
+      "linkingText": [
+        "[[LoadedFonts]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfaceset-failedfonts",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfaceset-failedfonts",
+      "linkingText": [
+        "[[FailedFonts]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfaceset-pendingreadypromises",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfaceset-pendingreadypromises",
+      "linkingText": [
+        "[[PendingReadyPromises]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfaceset-loading",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfaceset-loading",
+      "linkingText": [
+        "loading"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfaceset-loadingdone",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfaceset-loadingdone",
+      "linkingText": [
+        "loadingdone"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfaceset-loadingerror",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfaceset-loadingerror",
+      "linkingText": [
+        "loadingerror"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fire-a-font-load-event",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#fire-a-font-load-event",
+      "linkingText": [
+        "fire a font load event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "find-the-matching-font-faces",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#find-the-matching-font-faces",
+      "linkingText": [
+        "find the matching font faces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfaceset-load",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfaceset-load",
+      "linkingText": [
+        "load"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfacesetload-font",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfacesetload-font",
+      "linkingText": [
+        "font"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFaceSet/load()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfacesetload-text",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfacesetload-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFaceSet/load()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfaceset-check",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfaceset-check",
+      "linkingText": [
+        "check"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfacesetcheck-font",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfacesetcheck-font",
+      "linkingText": [
+        "font"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFaceSet/check()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfacesetcheck-text",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfacesetcheck-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontFaceSet/check()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfaceset-ready",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfaceset-ready",
+      "linkingText": [
+        "ready()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FontFaceSet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfacesource",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfacesource",
+      "linkingText": [
+        "FontFaceSource"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontfacesource-fonts",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#dom-fontfacesource-fonts",
+      "linkingText": [
+        "fonts"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontFaceSource"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-source",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#font-source",
+      "linkingText": [
+        "font source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "available-font-faces",
+      "href": "http://www.w3.org/TR/2014/WD-css-font-loading-3-20140522/#available-font-faces",
+      "linkingText": [
+        "available font faces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

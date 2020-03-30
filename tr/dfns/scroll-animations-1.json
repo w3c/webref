@@ -1,0 +1,384 @@
+{
+  "spec": {
+    "title": "Scroll-linked Animations",
+    "url": "https://drafts.csswg.org/scroll-animations-1/"
+  },
+  "dfns": [
+    {
+      "id": "enumdef-scrolldirection",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#enumdef-scrolldirection",
+      "linkingText": [
+        "ScrollDirection"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolldirection-block",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolldirection-block",
+      "linkingText": [
+        "\"block\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScrollDirection"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolldirection-inline",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolldirection-inline",
+      "linkingText": [
+        "\"inline\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScrollDirection"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolldirection-horizontal",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolldirection-horizontal",
+      "linkingText": [
+        "\"horizontal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScrollDirection"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolldirection-vertical",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolldirection-vertical",
+      "linkingText": [
+        "\"vertical\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScrollDirection"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-scrolltimelineautokeyword",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#enumdef-scrolltimelineautokeyword",
+      "linkingText": [
+        "ScrollTimelineAutoKeyword"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolltimelineautokeyword-auto",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimelineautokeyword-auto",
+      "linkingText": [
+        "\"auto\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScrollTimelineAutoKeyword"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-scrolltimelineoptions",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dictdef-scrolltimelineoptions",
+      "linkingText": [
+        "ScrollTimelineOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolltimelineoptions-scrollsource",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimelineoptions-scrollsource",
+      "linkingText": [
+        "scrollSource"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ScrollTimelineOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolltimelineoptions-orientation",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimelineoptions-orientation",
+      "linkingText": [
+        "orientation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ScrollTimelineOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolltimelineoptions-startscrolloffset",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimelineoptions-startscrolloffset",
+      "linkingText": [
+        "startScrollOffset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ScrollTimelineOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolltimelineoptions-endscrolloffset",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimelineoptions-endscrolloffset",
+      "linkingText": [
+        "endScrollOffset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ScrollTimelineOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolltimelineoptions-timerange",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimelineoptions-timerange",
+      "linkingText": [
+        "timeRange"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ScrollTimelineOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scrolltimeline",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#scrolltimeline",
+      "linkingText": [
+        "ScrollTimeline"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolltimeline-scrolltimeline-options-options",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-scrolltimeline-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ScrollTimeline/ScrollTimeline(options)",
+        "ScrollTimeline/constructor(options)",
+        "ScrollTimeline/ScrollTimeline()",
+        "ScrollTimeline/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scroll-timeline",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline",
+      "linkingText": [
+        "scroll timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolltimeline-scrolltimeline",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-scrolltimeline",
+      "linkingText": [
+        "ScrollTimeline(options)",
+        "constructor(options)",
+        "ScrollTimeline()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ScrollTimeline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolltimeline-scrollsource",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-scrollsource",
+      "linkingText": [
+        "scrollSource"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ScrollTimeline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolltimeline-orientation",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-orientation",
+      "linkingText": [
+        "orientation"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ScrollTimeline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolltimeline-startscrolloffset",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-startscrolloffset",
+      "linkingText": [
+        "startScrollOffset"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ScrollTimeline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolltimeline-endscrolloffset",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-endscrolloffset",
+      "linkingText": [
+        "endScrollOffset"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ScrollTimeline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolltimeline-timerange",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-timerange",
+      "linkingText": [
+        "timeRange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ScrollTimeline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "effective-time-range",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#effective-time-range",
+      "linkingText": [
+        "effective time range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-animation-timeline",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#propdef-animation-timeline",
+      "linkingText": [
+        "animation-timeline"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-single-animation-timeline",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#typedef-single-animation-timeline",
+      "linkingText": [
+        "<single-animation-timeline>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-scroll-direction",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#typedef-scroll-direction",
+      "linkingText": [
+        "<scroll-direction>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-scroll-offset",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#typedef-scroll-offset",
+      "linkingText": [
+        "<scroll-offset>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "layout-cycles",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#layout-cycles",
+      "linkingText": [
+        "layout cycles"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

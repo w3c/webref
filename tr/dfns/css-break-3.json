@@ -1,0 +1,652 @@
+{
+  "spec": {
+    "title": "CSS Fragmentation Module Level 3",
+    "url": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/"
+  },
+  "dfns": [
+    {
+      "id": "pagination",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#pagination",
+      "linkingText": [
+        "pagination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragmentation-container",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#fragmentation-container",
+      "linkingText": [
+        "fragmentation container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragmentainer",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#fragmentainer",
+      "linkingText": [
+        "fragmentainer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragmentation-context",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#fragmentation-context",
+      "linkingText": [
+        "fragmentation context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragmented-flow",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#fragmented-flow",
+      "linkingText": [
+        "fragmented flow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragmentation-root",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#fragmentation-root",
+      "linkingText": [
+        "fragmentation root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragmentation-direction",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#fragmentation-direction",
+      "linkingText": [
+        "fragmentation direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragmentation",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#fragmentation",
+      "linkingText": [
+        "fragmentation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "box-fragment",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#box-fragment",
+      "linkingText": [
+        "box fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragment",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#fragment",
+      "linkingText": [
+        "fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "remaining-fragmentainer-extent",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#remaining-fragmentainer-extent",
+      "linkingText": [
+        "remaining fragmentainer extent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fragmentation-break",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#fragmentation-break",
+      "linkingText": [
+        "fragmentation break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "break",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#break",
+      "linkingText": [
+        "break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-break-before",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#propdef-break-before",
+      "linkingText": [
+        "break-before"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-break-after",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#propdef-break-after",
+      "linkingText": [
+        "break-after"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "forced-break-values",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#forced-break-values",
+      "linkingText": [
+        "forced break values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "avoid-break-values",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#avoid-break-values",
+      "linkingText": [
+        "avoid break values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-auto",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-break-before-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-avoid",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-break-before-avoid",
+      "linkingText": [
+        "avoid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-avoid-page",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-break-before-avoid-page",
+      "linkingText": [
+        "avoid-page"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-page",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-break-before-page",
+      "linkingText": [
+        "page"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-left",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-break-before-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-right",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-break-before-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-recto",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-break-before-recto",
+      "linkingText": [
+        "recto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-verso",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-break-before-verso",
+      "linkingText": [
+        "verso"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-avoid-column",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-break-before-avoid-column",
+      "linkingText": [
+        "avoid-column"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-column",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-break-before-column",
+      "linkingText": [
+        "column"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-avoid-region",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-break-before-avoid-region",
+      "linkingText": [
+        "avoid-region"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-before-region",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-break-before-region",
+      "linkingText": [
+        "region"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-before",
+        "break-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propagate",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#propagate",
+      "linkingText": [
+        "propagate",
+        "propagation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-break-inside",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#propdef-break-inside",
+      "linkingText": [
+        "break-inside"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-inside-auto",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-break-inside-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-inside",
+        "page-break-inside"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-inside-avoid",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-break-inside-avoid",
+      "linkingText": [
+        "avoid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-inside",
+        "page-break-inside"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-inside-avoid-page",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-break-inside-avoid-page",
+      "linkingText": [
+        "avoid-page"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-inside",
+        "page-break-inside"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-inside-avoid-column",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-break-inside-avoid-column",
+      "linkingText": [
+        "avoid-column"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-inside",
+        "page-break-inside"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-break-inside-avoid-region",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-break-inside-avoid-region",
+      "linkingText": [
+        "avoid-region"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "break-inside",
+        "page-break-inside"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-orphans",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#propdef-orphans",
+      "linkingText": [
+        "orphans"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-widows",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#propdef-widows",
+      "linkingText": [
+        "widows"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "monolithic",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#monolithic",
+      "linkingText": [
+        "monolithic"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "page-break",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#page-break",
+      "linkingText": [
+        "page break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "spread-break",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#spread-break",
+      "linkingText": [
+        "spread break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "column-break",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#column-break",
+      "linkingText": [
+        "column break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "region-break",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#region-break",
+      "linkingText": [
+        "region break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "line-break",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#line-break",
+      "linkingText": [
+        "line break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "forced-break",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#forced-break",
+      "linkingText": [
+        "forced break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "unforced-break",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#unforced-break",
+      "linkingText": [
+        "unforced break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-box-decoration-break",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#propdef-box-decoration-break",
+      "linkingText": [
+        "box-decoration-break"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-box-decoration-break-clone",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-box-decoration-break-clone",
+      "linkingText": [
+        "clone"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "box-decoration-break"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-box-decoration-break-slice",
+      "href": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/#valdef-box-decoration-break-slice",
+      "linkingText": [
+        "slice"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "box-decoration-break"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

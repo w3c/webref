@@ -1,0 +1,1202 @@
+{
+  "spec": {
+    "title": "CSS Masking Module Level 1",
+    "url": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/"
+  },
+  "dfns": [
+    {
+      "id": "clipping-path",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#clipping-path",
+      "linkingText": [
+        "clipping path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mask-size",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#mask-size",
+      "linkingText": [
+        "mask-size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mask-position",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#mask-position",
+      "linkingText": [
+        "mask-position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "clipping-region",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#clipping-region",
+      "linkingText": [
+        "clipping region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-clip-path",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-clip-path",
+      "linkingText": [
+        "clip-path"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-clip-source",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#typedef-clip-source",
+      "linkingText": [
+        "<clip-source>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-geometry-box",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#typedef-geometry-box",
+      "linkingText": [
+        "<geometry-box>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-fill-box0",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-fill-box0",
+      "linkingText": [
+        "fill-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "clip-path"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-stroke-box0",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-stroke-box0",
+      "linkingText": [
+        "stroke-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "clip-path"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-view-box0",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-view-box0",
+      "linkingText": [
+        "view-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "clip-path"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-clippath",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#elementdef-clippath",
+      "linkingText": [
+        "clipPath"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "element-attrdef-clippathunits",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#element-attrdef-clippathunits",
+      "linkingText": [
+        "clipPathUnits"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-userspaceonuse0",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-userspaceonuse0",
+      "linkingText": [
+        "userSpaceOnUse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "clipPathUnits"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-objectboundingbox0",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-objectboundingbox0",
+      "linkingText": [
+        "objectBoundingBox"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "clipPathUnits"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-clip-rule",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-clip-rule",
+      "linkingText": [
+        "clip-rule"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-nonzero",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-nonzero",
+      "linkingText": [
+        "nonzero"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "clip-rule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-evenodd",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-evenodd",
+      "linkingText": [
+        "evenodd"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "clip-rule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-mask-image",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-mask-image",
+      "linkingText": [
+        "mask-image"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mask-layer-image",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#mask-layer-image",
+      "linkingText": [
+        "mask layer image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-mask-reference",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#typedef-mask-reference",
+      "linkingText": [
+        "<mask-reference>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-mask-source",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#typedef-mask-source",
+      "linkingText": [
+        "<mask-source>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-url",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-url",
+      "linkingText": [
+        "<url>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-image"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-mask-mode",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-mask-mode",
+      "linkingText": [
+        "mask-mode"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-masking-mode",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#typedef-masking-mode",
+      "linkingText": [
+        "<masking-mode>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-alpha0",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-alpha0",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-mode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-luminance0",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-luminance0",
+      "linkingText": [
+        "luminance"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-mode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-auto",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-mode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-mask-repeat",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-mask-repeat",
+      "linkingText": [
+        "mask-repeat"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-mask-position",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-mask-position",
+      "linkingText": [
+        "mask-position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-mask-clip",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-mask-clip",
+      "linkingText": [
+        "mask-clip"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mask-painting-area",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#mask-painting-area",
+      "linkingText": [
+        "mask painting area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-content-box0",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-content-box0",
+      "linkingText": [
+        "content-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-clip"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-padding-box0",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-padding-box0",
+      "linkingText": [
+        "padding-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-clip"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-border-box0",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-border-box0",
+      "linkingText": [
+        "border-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-clip"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-margin-box0",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-margin-box0",
+      "linkingText": [
+        "margin-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-clip"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-fill-box1",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-fill-box1",
+      "linkingText": [
+        "fill-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-clip"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-stroke-box1",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-stroke-box1",
+      "linkingText": [
+        "stroke-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-clip"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-view-box1",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-view-box1",
+      "linkingText": [
+        "view-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-clip"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-no-clip",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-no-clip",
+      "linkingText": [
+        "no-clip"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-clip"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-mask-origin",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-mask-origin",
+      "linkingText": [
+        "mask-origin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mask-positioning-area",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#mask-positioning-area",
+      "linkingText": [
+        "mask positioning area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-content-box",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-content-box",
+      "linkingText": [
+        "content-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-padding-box",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-padding-box",
+      "linkingText": [
+        "padding-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-border-box",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-border-box",
+      "linkingText": [
+        "border-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-margin-box",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-margin-box",
+      "linkingText": [
+        "margin-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-fill-box",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-fill-box",
+      "linkingText": [
+        "fill-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-stroke-box",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-stroke-box",
+      "linkingText": [
+        "stroke-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-view-box",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-view-box",
+      "linkingText": [
+        "view-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-mask-size",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-mask-size",
+      "linkingText": [
+        "mask-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-mask-composite",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-mask-composite",
+      "linkingText": [
+        "mask-composite"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-compositing-operator",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#typedef-compositing-operator",
+      "linkingText": [
+        "<compositing-operator>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "source",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "destination",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#destination",
+      "linkingText": [
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valuedef-add",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-add",
+      "linkingText": [
+        "add"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-composite"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-subtract",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-subtract",
+      "linkingText": [
+        "subtract"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-composite"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-intersect",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-intersect",
+      "linkingText": [
+        "intersect"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-composite"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-exclude",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-exclude",
+      "linkingText": [
+        "exclude"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-composite"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-mask",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-mask",
+      "linkingText": [
+        "mask"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-mask-layer",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#typedef-mask-layer",
+      "linkingText": [
+        "<mask-layer>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mask-image",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#mask-image",
+      "linkingText": [
+        "mask image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-mask-border-source",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-mask-border-source",
+      "linkingText": [
+        "mask-border-source"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mask-border-image",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#mask-border-image",
+      "linkingText": [
+        "mask border image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-mask-border-mode",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-mask-border-mode",
+      "linkingText": [
+        "mask-border-mode"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-alpha1",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-alpha1",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-border-mode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-luminance1",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-luminance1",
+      "linkingText": [
+        "luminance"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-border-mode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-mask-border-slice",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-mask-border-slice",
+      "linkingText": [
+        "mask-border-slice"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-fill",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-fill",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-border-slice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-mask-border-width",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-mask-border-width",
+      "linkingText": [
+        "mask-border-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mask-border-image-area",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#mask-border-image-area",
+      "linkingText": [
+        "mask border image area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-mask-border-outset",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-mask-border-outset",
+      "linkingText": [
+        "mask-border-outset"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-mask-border-repeat",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-mask-border-repeat",
+      "linkingText": [
+        "mask-border-repeat"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-mask-border",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-mask-border",
+      "linkingText": [
+        "mask-border"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-mask",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#elementdef-mask",
+      "linkingText": [
+        "mask"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "element-attrdef-maskunits",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#element-attrdef-maskunits",
+      "linkingText": [
+        "maskUnits"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-userspaceonuse1",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-userspaceonuse1",
+      "linkingText": [
+        "userSpaceOnUse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "maskUnits"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-objectboundingbox1",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-objectboundingbox1",
+      "linkingText": [
+        "objectBoundingBox"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "maskUnits"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "element-attrdef-maskcontentunits",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#element-attrdef-maskcontentunits",
+      "linkingText": [
+        "maskContentUnits"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-userspaceonuse",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-userspaceonuse",
+      "linkingText": [
+        "userSpaceOnUse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "maskContentUnits"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-objectboundingbox",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-objectboundingbox",
+      "linkingText": [
+        "objectBoundingBox"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "maskContentUnits"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "element-attrdef-x",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#element-attrdef-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "element-attrdef-y",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#element-attrdef-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "element-attrdef-width",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#element-attrdef-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "element-attrdef-height",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#element-attrdef-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-mask-type",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-mask-type",
+      "linkingText": [
+        "mask-type"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-luminance",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-luminance",
+      "linkingText": [
+        "luminance"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-type"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-alpha",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#valuedef-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "mask-type"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-clip",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#propdef-clip",
+      "linkingText": [
+        "clip"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-rect",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#funcdef-rect",
+      "linkingText": [
+        "rect()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-top",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#typedef-top",
+      "linkingText": [
+        "<top>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-right",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#typedef-right",
+      "linkingText": [
+        "<right>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-bottom",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#typedef-bottom",
+      "linkingText": [
+        "<bottom>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-left",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#typedef-left",
+      "linkingText": [
+        "<left>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stroke-bounding-box",
+      "href": "http://www.w3.org/TR/2014/CR-css-masking-1-20140826/#stroke-bounding-box",
+      "linkingText": [
+        "stroke bounding box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

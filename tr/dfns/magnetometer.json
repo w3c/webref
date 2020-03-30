@@ -1,0 +1,552 @@
+{
+  "spec": {
+    "title": "Magnetometer",
+    "url": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/"
+  },
+  "dfns": [
+    {
+      "id": "magnetic-field",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#magnetic-field",
+      "linkingText": [
+        "magnetic field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "hard-iron-distortion",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#hard-iron-distortion",
+      "linkingText": [
+        "Hard iron distortion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "soft-iron-distortion",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#soft-iron-distortion",
+      "linkingText": [
+        "Soft iron distortion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "calibrated-magnetic-field",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#calibrated-magnetic-field",
+      "linkingText": [
+        "calibrated magnetic field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "uncalibrated-magnetic-field",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#uncalibrated-magnetic-field",
+      "linkingText": [
+        "uncalibrated magnetic field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "magnetometer-sensor-type",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#magnetometer-sensor-type",
+      "linkingText": [
+        "Magnetometer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-magnetometer-magnetometer",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-magnetometer-magnetometer",
+      "linkingText": [
+        "Magnetometer(sensorOptions)",
+        "Magnetometer()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Magnetometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-magnetometer-magnetometer-sensoroptions-sensoroptions",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-magnetometer-magnetometer-sensoroptions-sensoroptions",
+      "linkingText": [
+        "sensorOptions"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Magnetometer/Magnetometer(sensorOptions)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "magnetometer",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#magnetometer",
+      "linkingText": [
+        "Magnetometer"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-magnetometer-x",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-magnetometer-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Magnetometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-magnetometer-y",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-magnetometer-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Magnetometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-magnetometer-z",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-magnetometer-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Magnetometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-magnetometerlocalcoordinatesystem",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#enumdef-magnetometerlocalcoordinatesystem",
+      "linkingText": [
+        "MagnetometerLocalCoordinateSystem"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-magnetometerlocalcoordinatesystem-device",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-magnetometerlocalcoordinatesystem-device",
+      "linkingText": [
+        "\"device\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MagnetometerLocalCoordinateSystem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-magnetometerlocalcoordinatesystem-screen",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-magnetometerlocalcoordinatesystem-screen",
+      "linkingText": [
+        "\"screen\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MagnetometerLocalCoordinateSystem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-magnetometersensoroptions",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dictdef-magnetometersensoroptions",
+      "linkingText": [
+        "MagnetometerSensorOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-magnetometersensoroptions-referenceframe",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-magnetometersensoroptions-referenceframe",
+      "linkingText": [
+        "referenceFrame"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MagnetometerSensorOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uncalibratedmagnetometer-uncalibratedmagnetometer",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-uncalibratedmagnetometer-uncalibratedmagnetometer",
+      "linkingText": [
+        "UncalibratedMagnetometer(sensorOptions)",
+        "UncalibratedMagnetometer()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "UncalibratedMagnetometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uncalibratedmagnetometer-uncalibratedmagnetometer-sensoroptions-sensoroptions",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-uncalibratedmagnetometer-uncalibratedmagnetometer-sensoroptions-sensoroptions",
+      "linkingText": [
+        "sensorOptions"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "UncalibratedMagnetometer/UncalibratedMagnetometer(sensorOptions)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "uncalibratedmagnetometer",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#uncalibratedmagnetometer",
+      "linkingText": [
+        "UncalibratedMagnetometer"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uncalibratedmagnetometer-x",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-uncalibratedmagnetometer-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "UncalibratedMagnetometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uncalibratedmagnetometer-y",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-uncalibratedmagnetometer-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "UncalibratedMagnetometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uncalibratedmagnetometer-z",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-uncalibratedmagnetometer-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "UncalibratedMagnetometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uncalibratedmagnetometer-xbias",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-uncalibratedmagnetometer-xbias",
+      "linkingText": [
+        "xBias"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "UncalibratedMagnetometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uncalibratedmagnetometer-ybias",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-uncalibratedmagnetometer-ybias",
+      "linkingText": [
+        "yBias"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "UncalibratedMagnetometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uncalibratedmagnetometer-zbias",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-uncalibratedmagnetometer-zbias",
+      "linkingText": [
+        "zBias"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "UncalibratedMagnetometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "construct-a-magnetometer-object",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#construct-a-magnetometer-object",
+      "linkingText": [
+        "Construct a magnetometer object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-magnetometerreadingvalues",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dictdef-magnetometerreadingvalues",
+      "linkingText": [
+        "MagnetometerReadingValues"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-magnetometerreadingvalues-x",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-magnetometerreadingvalues-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MagnetometerReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-magnetometerreadingvalues-y",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-magnetometerreadingvalues-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MagnetometerReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-magnetometerreadingvalues-z",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-magnetometerreadingvalues-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MagnetometerReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-uncalibratedmagnetometerreadingvalues",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dictdef-uncalibratedmagnetometerreadingvalues",
+      "linkingText": [
+        "UncalibratedMagnetometerReadingValues"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uncalibratedmagnetometerreadingvalues-x",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-uncalibratedmagnetometerreadingvalues-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "UncalibratedMagnetometerReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uncalibratedmagnetometerreadingvalues-y",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-uncalibratedmagnetometerreadingvalues-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "UncalibratedMagnetometerReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uncalibratedmagnetometerreadingvalues-z",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-uncalibratedmagnetometerreadingvalues-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "UncalibratedMagnetometerReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uncalibratedmagnetometerreadingvalues-xbias",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-uncalibratedmagnetometerreadingvalues-xbias",
+      "linkingText": [
+        "xBias"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "UncalibratedMagnetometerReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uncalibratedmagnetometerreadingvalues-ybias",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-uncalibratedmagnetometerreadingvalues-ybias",
+      "linkingText": [
+        "yBias"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "UncalibratedMagnetometerReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-uncalibratedmagnetometerreadingvalues-zbias",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#dom-uncalibratedmagnetometerreadingvalues-zbias",
+      "linkingText": [
+        "zBias"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "UncalibratedMagnetometerReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "magnetic-declination",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#magnetic-declination",
+      "linkingText": [
+        "Magnetic declination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "declination-angle",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#declination-angle",
+      "linkingText": [
+        "declination angle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "conformant-user-agent",
+      "href": "https://www.w3.org/TR/2019/WD-magnetometer-20190307/#conformant-user-agent",
+      "linkingText": [
+        "conformant user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,4484 @@
+{
+  "spec": {
+    "title": "Geometry Interfaces Module Level 1",
+    "url": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/"
+  },
+  "dfns": [
+    {
+      "id": "point",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#point",
+      "linkingText": [
+        "point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointreadonly-dompointreadonly-x-y-z-w-x",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointreadonly-dompointreadonly-x-y-z-w-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMPointReadOnly/DOMPointReadOnly(x, y, z, w)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointreadonly-dompointreadonly-x-y-z-w-y",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointreadonly-dompointreadonly-x-y-z-w-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMPointReadOnly/DOMPointReadOnly(x, y, z, w)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointreadonly-dompointreadonly-x-y-z-w-z",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointreadonly-dompointreadonly-x-y-z-w-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMPointReadOnly/DOMPointReadOnly(x, y, z, w)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointreadonly-dompointreadonly-x-y-z-w-w",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointreadonly-dompointreadonly-x-y-z-w-w",
+      "linkingText": [
+        "w"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMPointReadOnly/DOMPointReadOnly(x, y, z, w)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dompointreadonly",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dompointreadonly",
+      "linkingText": [
+        "DOMPointReadOnly"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointreadonly-frompoint-other-other",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointreadonly-frompoint-other-other",
+      "linkingText": [
+        "other"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMPointReadOnly/fromPoint(other)",
+        "DOMPointReadOnly/fromPoint()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointreadonly-matrixtransform-matrix-matrix",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointreadonly-matrixtransform-matrix-matrix",
+      "linkingText": [
+        "matrix"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMPointReadOnly/matrixTransform(matrix)",
+        "DOMPointReadOnly/matrixTransform()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointreadonly-tojson",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointreadonly-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMPointReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompoint-dompoint-x-y-z-w-x",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompoint-dompoint-x-y-z-w-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMPoint/DOMPoint(x, y, z, w)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompoint-dompoint-x-y-z-w-y",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompoint-dompoint-x-y-z-w-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMPoint/DOMPoint(x, y, z, w)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompoint-dompoint-x-y-z-w-z",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompoint-dompoint-x-y-z-w-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMPoint/DOMPoint(x, y, z, w)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompoint-dompoint-x-y-z-w-w",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompoint-dompoint-x-y-z-w-w",
+      "linkingText": [
+        "w"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMPoint/DOMPoint(x, y, z, w)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "svgpoint",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#svgpoint",
+      "linkingText": [
+        "SVGPoint"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dompoint",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dompoint",
+      "linkingText": [
+        "DOMPoint"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompoint-frompoint-other-other",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompoint-frompoint-other-other",
+      "linkingText": [
+        "other"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMPoint/fromPoint(other)",
+        "DOMPoint/fromPoint()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-dompointinit",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dictdef-dompointinit",
+      "linkingText": [
+        "DOMPointInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointinit-x",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointinit-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMPointInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointinit-y",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointinit-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMPointInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointinit-z",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointinit-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMPointInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointinit-w",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointinit-w",
+      "linkingText": [
+        "w"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMPointInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "point-x-coordinate",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#point-x-coordinate",
+      "linkingText": [
+        "x coordinate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "point"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "point-y-coordinate",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#point-y-coordinate",
+      "linkingText": [
+        "y coordinate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "point"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "point-z-coordinate",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#point-z-coordinate",
+      "linkingText": [
+        "z coordinate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "point"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "point-w-perspective",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#point-w-perspective",
+      "linkingText": [
+        "w perspective"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "point"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointreadonly-dompointreadonly",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointreadonly-dompointreadonly",
+      "linkingText": [
+        "DOMPointReadOnly(x, y, z, w)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "DOMPointReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompoint-dompoint",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompoint-dompoint",
+      "linkingText": [
+        "DOMPoint(x, y, z, w)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "DOMPoint"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointreadonly-frompoint",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointreadonly-frompoint",
+      "linkingText": [
+        "fromPoint(other)",
+        "fromPoint()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMPointReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompoint-frompoint",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompoint-frompoint",
+      "linkingText": [
+        "fromPoint(other)",
+        "fromPoint()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMPoint"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-a-dompointreadonly-from-the-dictionary",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#create-a-dompointreadonly-from-the-dictionary",
+      "linkingText": [
+        "create a DOMPointReadOnly from the dictionary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-a-dompoint-from-the-dictionary",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#create-a-dompoint-from-the-dictionary",
+      "linkingText": [
+        "create a DOMPoint from the\ndictionary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointreadonly-x",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointreadonly-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMPointReadOnly",
+        "DOMPoint"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointreadonly-y",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointreadonly-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMPointReadOnly",
+        "DOMPoint"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointreadonly-z",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointreadonly-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMPointReadOnly",
+        "DOMPoint"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointreadonly-w",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointreadonly-w",
+      "linkingText": [
+        "w"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMPointReadOnly",
+        "DOMPoint"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dompointreadonly-matrixtransform",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dompointreadonly-matrixtransform",
+      "linkingText": [
+        "matrixTransform(matrix)",
+        "matrixTransform()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMPointReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transform-a-point-with-a-matrix",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#transform-a-point-with-a-matrix",
+      "linkingText": [
+        "transform a point with a matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rectangle",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#rectangle",
+      "linkingText": [
+        "rectangle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "rectangle-origin",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#rectangle-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rectangle"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "rectangle-x-coordinate",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#rectangle-x-coordinate",
+      "linkingText": [
+        "x coordinate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rectangle"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "rectangle-y-coordinate",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#rectangle-y-coordinate",
+      "linkingText": [
+        "y coordinate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rectangle"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "rectangle-width-dimension",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#rectangle-width-dimension",
+      "linkingText": [
+        "width dimension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rectangle"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "rectangle-height-dimension",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#rectangle-height-dimension",
+      "linkingText": [
+        "height dimension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rectangle"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-domrectreadonly-x-y-width-height-x",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-domrectreadonly-x-y-width-height-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMRectReadOnly/DOMRectReadOnly(x, y, width, height)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-domrectreadonly-x-y-width-height-y",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-domrectreadonly-x-y-width-height-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMRectReadOnly/DOMRectReadOnly(x, y, width, height)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-domrectreadonly-x-y-width-height-width",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-domrectreadonly-x-y-width-height-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMRectReadOnly/DOMRectReadOnly(x, y, width, height)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-domrectreadonly-x-y-width-height-height",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-domrectreadonly-x-y-width-height-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMRectReadOnly/DOMRectReadOnly(x, y, width, height)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "domrectreadonly",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#domrectreadonly",
+      "linkingText": [
+        "DOMRectReadOnly"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-fromrect-other-other",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-fromrect-other-other",
+      "linkingText": [
+        "other"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMRectReadOnly/fromRect(other)",
+        "DOMRectReadOnly/fromRect()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-x",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-y",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-width",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-height",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-top",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-right",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-bottom",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-left",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-tojson",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMRectReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrect-domrect-x-y-width-height-x",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrect-domrect-x-y-width-height-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMRect/DOMRect(x, y, width, height)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrect-domrect-x-y-width-height-y",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrect-domrect-x-y-width-height-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMRect/DOMRect(x, y, width, height)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrect-domrect-x-y-width-height-width",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrect-domrect-x-y-width-height-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMRect/DOMRect(x, y, width, height)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrect-domrect-x-y-width-height-height",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrect-domrect-x-y-width-height-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMRect/DOMRect(x, y, width, height)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "svgrect",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#svgrect",
+      "linkingText": [
+        "SVGRect"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "domrect",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#domrect",
+      "linkingText": [
+        "DOMRect"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrect-fromrect-other-other",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrect-fromrect-other-other",
+      "linkingText": [
+        "other"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMRect/fromRect(other)",
+        "DOMRect/fromRect()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrect-x",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrect-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrect-y",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrect-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrect-width",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrect-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrect-height",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrect-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-domrectinit",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dictdef-domrectinit",
+      "linkingText": [
+        "DOMRectInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectinit-x",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectinit-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMRectInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectinit-y",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectinit-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMRectInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectinit-width",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectinit-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMRectInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectinit-height",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectinit-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMRectInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-domrectreadonly",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-domrectreadonly",
+      "linkingText": [
+        "DOMRectReadOnly(x, y, width, height)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "DOMRectReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrect-domrect",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrect-domrect",
+      "linkingText": [
+        "DOMRect(x, y, width, height)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "DOMRect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-fromrect",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-fromrect",
+      "linkingText": [
+        "fromRect()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMRectReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrect-fromrect",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrect-fromrect",
+      "linkingText": [
+        "fromRect()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMRect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-a-domrectreadonly-from-the-dictionary",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#create-a-domrectreadonly-from-the-dictionary",
+      "linkingText": [
+        "create a DOMRectReadOnly from the dictionary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-a-domrect-from-the-dictionary",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#create-a-domrect-from-the-dictionary",
+      "linkingText": [
+        "create a DOMRect from the\ndictionary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-domrect-x",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-domrect-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly DOMRect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-domrect-y",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-domrect-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly DOMRect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-domrect-width",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-domrect-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly DOMRect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-domrect-height",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-domrect-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly DOMRect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-domrect-top",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-domrect-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly DOMRect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-domrect-right",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-domrect-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly DOMRect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-domrect-bottom",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-domrect-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly DOMRect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectreadonly-domrect-left",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectreadonly-domrect-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRectReadOnly DOMRect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "domrectlist",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#domrectlist",
+      "linkingText": [
+        "DOMRectList"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectlist-item-index-index",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectlist-item-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMRectList/item(index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectlist-length",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectlist-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMRectList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domrectlist-item",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domrectlist-item",
+      "linkingText": [
+        "item(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMRectList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "quadrilateral",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#quadrilateral",
+      "linkingText": [
+        "quadrilateral"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domquad-domquad-p1-p2-p3-p4-p1",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquad-domquad-p1-p2-p3-p4-p1",
+      "linkingText": [
+        "p1"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMQuad/DOMQuad(p1, p2, p3, p4)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domquad-domquad-p1-p2-p3-p4-p2",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquad-domquad-p1-p2-p3-p4-p2",
+      "linkingText": [
+        "p2"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMQuad/DOMQuad(p1, p2, p3, p4)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domquad-domquad-p1-p2-p3-p4-p3",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquad-domquad-p1-p2-p3-p4-p3",
+      "linkingText": [
+        "p3"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMQuad/DOMQuad(p1, p2, p3, p4)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domquad-domquad-p1-p2-p3-p4-p4",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquad-domquad-p1-p2-p3-p4-p4",
+      "linkingText": [
+        "p4"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMQuad/DOMQuad(p1, p2, p3, p4)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "domquad",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#domquad",
+      "linkingText": [
+        "DOMQuad"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domquad-fromrect-other-other",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquad-fromrect-other-other",
+      "linkingText": [
+        "other"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMQuad/fromRect(other)",
+        "DOMQuad/fromRect()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domquad-fromquad-other-other",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquad-fromquad-other-other",
+      "linkingText": [
+        "other"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMQuad/fromQuad(other)",
+        "DOMQuad/fromQuad()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domquad-tojson",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquad-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMQuad"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-domquadinit",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dictdef-domquadinit",
+      "linkingText": [
+        "DOMQuadInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domquadinit-p1",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquadinit-p1",
+      "linkingText": [
+        "p1"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMQuadInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domquadinit-p2",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquadinit-p2",
+      "linkingText": [
+        "p2"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMQuadInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domquadinit-p3",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquadinit-p3",
+      "linkingText": [
+        "p3"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMQuadInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domquadinit-p4",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquadinit-p4",
+      "linkingText": [
+        "p4"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMQuadInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "quadrilateral-point-1",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#quadrilateral-point-1",
+      "linkingText": [
+        "point 1"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "quadrilateral"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "quadrilateral-point-2",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#quadrilateral-point-2",
+      "linkingText": [
+        "point 2"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "quadrilateral"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "quadrilateral-point-3",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#quadrilateral-point-3",
+      "linkingText": [
+        "point 3"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "quadrilateral"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "quadrilateral-point-4",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#quadrilateral-point-4",
+      "linkingText": [
+        "point 4"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "quadrilateral"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domquad-domquad",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquad-domquad",
+      "linkingText": [
+        "DOMQuad(p1, p2, p3, p4)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "DOMQuad"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domquad-fromrect",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquad-fromrect",
+      "linkingText": [
+        "fromRect()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMQuad"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-a-domquad-from-the-domrectinit-dictionary",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#create-a-domquad-from-the-domrectinit-dictionary",
+      "linkingText": [
+        "create a DOMQuad from the DOMRectInit dictionary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domquad-fromquad",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquad-fromquad",
+      "linkingText": [
+        "fromQuad()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMQuad"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-a-domquad-from-the-domquadinit-dictionary",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#create-a-domquad-from-the-domquadinit-dictionary",
+      "linkingText": [
+        "create a DOMQuad from the DOMQuadInit dictionary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domquad-p1",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquad-p1",
+      "linkingText": [
+        "p1"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMQuad"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domquad-p2",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquad-p2",
+      "linkingText": [
+        "p2"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMQuad"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domquad-p3",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquad-p3",
+      "linkingText": [
+        "p3"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMQuad"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domquad-p4",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquad-p4",
+      "linkingText": [
+        "p4"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMQuad"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domquad-getbounds",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-domquad-getbounds",
+      "linkingText": [
+        "getBounds()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMQuad"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "matrix",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix",
+      "linkingText": [
+        "matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "4x4-abstract-matrix",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#4x4-abstract-matrix",
+      "linkingText": [
+        "4x4 abstract matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "post-multiply",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#post-multiply",
+      "linkingText": [
+        "post-multiply"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "pre-multiply",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#pre-multiply",
+      "linkingText": [
+        "pre-multiply"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "multiply",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#multiply",
+      "linkingText": [
+        "multiply"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-dommatrixreadonly-init-init",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-dommatrixreadonly-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/DOMMatrixReadOnly(init)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dommatrixreadonly",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dommatrixreadonly",
+      "linkingText": [
+        "DOMMatrixReadOnly"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-frommatrix-other-other",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-frommatrix-other-other",
+      "linkingText": [
+        "other"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/fromMatrix(other)",
+        "DOMMatrixReadOnly/fromMatrix()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-fromfloat32array-array32-array32",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-fromfloat32array-array32-array32",
+      "linkingText": [
+        "array32"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/fromFloat32Array(array32)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-fromfloat64array-array64-array64",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-fromfloat64array-array64-array64",
+      "linkingText": [
+        "array64"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/fromFloat64Array(array64)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-translate-tx-ty-tz-tx",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-translate-tx-ty-tz-tx",
+      "linkingText": [
+        "tx"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/translate(tx, ty, tz)",
+        "DOMMatrixReadOnly/translate(tx, ty)",
+        "DOMMatrixReadOnly/translate(tx)",
+        "DOMMatrixReadOnly/translate()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-translate-tx-ty-tz-ty",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-translate-tx-ty-tz-ty",
+      "linkingText": [
+        "ty"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/translate(tx, ty, tz)",
+        "DOMMatrixReadOnly/translate(tx, ty)",
+        "DOMMatrixReadOnly/translate(tx)",
+        "DOMMatrixReadOnly/translate()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-translate-tx-ty-tz-tz",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-translate-tx-ty-tz-tz",
+      "linkingText": [
+        "tz"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/translate(tx, ty, tz)",
+        "DOMMatrixReadOnly/translate(tx, ty)",
+        "DOMMatrixReadOnly/translate(tx)",
+        "DOMMatrixReadOnly/translate()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-scale-scalex-scaley-scalez-originx-originy-originz-scalex",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-scale-scalex-scaley-scalez-originx-originy-originz-scalex",
+      "linkingText": [
+        "scaleX"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY, originZ)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY)",
+        "DOMMatrixReadOnly/scale(scaleX)",
+        "DOMMatrixReadOnly/scale()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-scale-scalex-scaley-scalez-originx-originy-originz-scaley",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-scale-scalex-scaley-scalez-originx-originy-originz-scaley",
+      "linkingText": [
+        "scaleY"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY, originZ)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY)",
+        "DOMMatrixReadOnly/scale(scaleX)",
+        "DOMMatrixReadOnly/scale()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-scale-scalex-scaley-scalez-originx-originy-originz-scalez",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-scale-scalex-scaley-scalez-originx-originy-originz-scalez",
+      "linkingText": [
+        "scaleZ"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY, originZ)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY)",
+        "DOMMatrixReadOnly/scale(scaleX)",
+        "DOMMatrixReadOnly/scale()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-scale-scalex-scaley-scalez-originx-originy-originz-originx",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-scale-scalex-scaley-scalez-originx-originy-originz-originx",
+      "linkingText": [
+        "originX"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY, originZ)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY)",
+        "DOMMatrixReadOnly/scale(scaleX)",
+        "DOMMatrixReadOnly/scale()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-scale-scalex-scaley-scalez-originx-originy-originz-originy",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-scale-scalex-scaley-scalez-originx-originy-originz-originy",
+      "linkingText": [
+        "originY"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY, originZ)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY)",
+        "DOMMatrixReadOnly/scale(scaleX)",
+        "DOMMatrixReadOnly/scale()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-scale-scalex-scaley-scalez-originx-originy-originz-originz",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-scale-scalex-scaley-scalez-originx-originy-originz-originz",
+      "linkingText": [
+        "originZ"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY, originZ)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX, originY)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ, originX)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY, scaleZ)",
+        "DOMMatrixReadOnly/scale(scaleX, scaleY)",
+        "DOMMatrixReadOnly/scale(scaleX)",
+        "DOMMatrixReadOnly/scale()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-scalenonuniform-scalex-scaley-scalex",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-scalenonuniform-scalex-scaley-scalex",
+      "linkingText": [
+        "scaleX"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/scaleNonUniform(scaleX, scaleY)",
+        "DOMMatrixReadOnly/scaleNonUniform(scaleX)",
+        "DOMMatrixReadOnly/scaleNonUniform()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-scalenonuniform-scalex-scaley-scaley",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-scalenonuniform-scalex-scaley-scaley",
+      "linkingText": [
+        "scaleY"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/scaleNonUniform(scaleX, scaleY)",
+        "DOMMatrixReadOnly/scaleNonUniform(scaleX)",
+        "DOMMatrixReadOnly/scaleNonUniform()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-scale3d-scale-originx-originy-originz-scale",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-scale3d-scale-originx-originy-originz-scale",
+      "linkingText": [
+        "scale"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/scale3d(scale, originX, originY, originZ)",
+        "DOMMatrixReadOnly/scale3d(scale, originX, originY)",
+        "DOMMatrixReadOnly/scale3d(scale, originX)",
+        "DOMMatrixReadOnly/scale3d(scale)",
+        "DOMMatrixReadOnly/scale3d()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-scale3d-scale-originx-originy-originz-originx",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-scale3d-scale-originx-originy-originz-originx",
+      "linkingText": [
+        "originX"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/scale3d(scale, originX, originY, originZ)",
+        "DOMMatrixReadOnly/scale3d(scale, originX, originY)",
+        "DOMMatrixReadOnly/scale3d(scale, originX)",
+        "DOMMatrixReadOnly/scale3d(scale)",
+        "DOMMatrixReadOnly/scale3d()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-scale3d-scale-originx-originy-originz-originy",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-scale3d-scale-originx-originy-originz-originy",
+      "linkingText": [
+        "originY"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/scale3d(scale, originX, originY, originZ)",
+        "DOMMatrixReadOnly/scale3d(scale, originX, originY)",
+        "DOMMatrixReadOnly/scale3d(scale, originX)",
+        "DOMMatrixReadOnly/scale3d(scale)",
+        "DOMMatrixReadOnly/scale3d()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-scale3d-scale-originx-originy-originz-originz",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-scale3d-scale-originx-originy-originz-originz",
+      "linkingText": [
+        "originZ"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/scale3d(scale, originX, originY, originZ)",
+        "DOMMatrixReadOnly/scale3d(scale, originX, originY)",
+        "DOMMatrixReadOnly/scale3d(scale, originX)",
+        "DOMMatrixReadOnly/scale3d(scale)",
+        "DOMMatrixReadOnly/scale3d()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-rotate-rotx-roty-rotz-rotx",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-rotate-rotx-roty-rotz-rotx",
+      "linkingText": [
+        "rotX"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/rotate(rotX, rotY, rotZ)",
+        "DOMMatrixReadOnly/rotate(rotX, rotY)",
+        "DOMMatrixReadOnly/rotate(rotX)",
+        "DOMMatrixReadOnly/rotate()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-rotate-rotx-roty-rotz-roty",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-rotate-rotx-roty-rotz-roty",
+      "linkingText": [
+        "rotY"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/rotate(rotX, rotY, rotZ)",
+        "DOMMatrixReadOnly/rotate(rotX, rotY)",
+        "DOMMatrixReadOnly/rotate(rotX)",
+        "DOMMatrixReadOnly/rotate()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-rotate-rotx-roty-rotz-rotz",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-rotate-rotx-roty-rotz-rotz",
+      "linkingText": [
+        "rotZ"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/rotate(rotX, rotY, rotZ)",
+        "DOMMatrixReadOnly/rotate(rotX, rotY)",
+        "DOMMatrixReadOnly/rotate(rotX)",
+        "DOMMatrixReadOnly/rotate()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-rotatefromvector-x-y-x",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-rotatefromvector-x-y-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/rotateFromVector(x, y)",
+        "DOMMatrixReadOnly/rotateFromVector(x)",
+        "DOMMatrixReadOnly/rotateFromVector()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-rotatefromvector-x-y-y",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-rotatefromvector-x-y-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/rotateFromVector(x, y)",
+        "DOMMatrixReadOnly/rotateFromVector(x)",
+        "DOMMatrixReadOnly/rotateFromVector()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-rotateaxisangle-x-y-z-angle-x",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-rotateaxisangle-x-y-z-angle-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/rotateAxisAngle(x, y, z, angle)",
+        "DOMMatrixReadOnly/rotateAxisAngle(x, y, z)",
+        "DOMMatrixReadOnly/rotateAxisAngle(x, y)",
+        "DOMMatrixReadOnly/rotateAxisAngle(x)",
+        "DOMMatrixReadOnly/rotateAxisAngle()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-rotateaxisangle-x-y-z-angle-y",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-rotateaxisangle-x-y-z-angle-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/rotateAxisAngle(x, y, z, angle)",
+        "DOMMatrixReadOnly/rotateAxisAngle(x, y, z)",
+        "DOMMatrixReadOnly/rotateAxisAngle(x, y)",
+        "DOMMatrixReadOnly/rotateAxisAngle(x)",
+        "DOMMatrixReadOnly/rotateAxisAngle()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-rotateaxisangle-x-y-z-angle-z",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-rotateaxisangle-x-y-z-angle-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/rotateAxisAngle(x, y, z, angle)",
+        "DOMMatrixReadOnly/rotateAxisAngle(x, y, z)",
+        "DOMMatrixReadOnly/rotateAxisAngle(x, y)",
+        "DOMMatrixReadOnly/rotateAxisAngle(x)",
+        "DOMMatrixReadOnly/rotateAxisAngle()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-rotateaxisangle-x-y-z-angle-angle",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-rotateaxisangle-x-y-z-angle-angle",
+      "linkingText": [
+        "angle"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/rotateAxisAngle(x, y, z, angle)",
+        "DOMMatrixReadOnly/rotateAxisAngle(x, y, z)",
+        "DOMMatrixReadOnly/rotateAxisAngle(x, y)",
+        "DOMMatrixReadOnly/rotateAxisAngle(x)",
+        "DOMMatrixReadOnly/rotateAxisAngle()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-skewx-sx-sx",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-skewx-sx-sx",
+      "linkingText": [
+        "sx"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/skewX(sx)",
+        "DOMMatrixReadOnly/skewX()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-skewy-sy-sy",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-skewy-sy-sy",
+      "linkingText": [
+        "sy"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/skewY(sy)",
+        "DOMMatrixReadOnly/skewY()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-multiply-other-other",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-multiply-other-other",
+      "linkingText": [
+        "other"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/multiply(other)",
+        "DOMMatrixReadOnly/multiply()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-transformpoint-point-point",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-transformpoint-point-point",
+      "linkingText": [
+        "point"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrixReadOnly/transformPoint(point)",
+        "DOMMatrixReadOnly/transformPoint()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-tojson",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-dommatrix-init-init",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-dommatrix-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/DOMMatrix(init)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "svgmatrix",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#svgmatrix",
+      "linkingText": [
+        "SVGMatrix"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "webkitcssmatrix",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#webkitcssmatrix",
+      "linkingText": [
+        "WebKitCSSMatrix"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dommatrix",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dommatrix",
+      "linkingText": [
+        "DOMMatrix"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-frommatrix-other-other",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-frommatrix-other-other",
+      "linkingText": [
+        "other"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/fromMatrix(other)",
+        "DOMMatrix/fromMatrix()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-fromfloat32array-array32-array32",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-fromfloat32array-array32-array32",
+      "linkingText": [
+        "array32"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/fromFloat32Array(array32)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-fromfloat64array-array64-array64",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-fromfloat64array-array64-array64",
+      "linkingText": [
+        "array64"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/fromFloat64Array(array64)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-multiplyself-other-other",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-multiplyself-other-other",
+      "linkingText": [
+        "other"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/multiplySelf(other)",
+        "DOMMatrix/multiplySelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-premultiplyself-other-other",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-premultiplyself-other-other",
+      "linkingText": [
+        "other"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/preMultiplySelf(other)",
+        "DOMMatrix/preMultiplySelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-translateself-tx-ty-tz-tx",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-translateself-tx-ty-tz-tx",
+      "linkingText": [
+        "tx"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/translateSelf(tx, ty, tz)",
+        "DOMMatrix/translateSelf(tx, ty)",
+        "DOMMatrix/translateSelf(tx)",
+        "DOMMatrix/translateSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-translateself-tx-ty-tz-ty",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-translateself-tx-ty-tz-ty",
+      "linkingText": [
+        "ty"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/translateSelf(tx, ty, tz)",
+        "DOMMatrix/translateSelf(tx, ty)",
+        "DOMMatrix/translateSelf(tx)",
+        "DOMMatrix/translateSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-translateself-tx-ty-tz-tz",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-translateself-tx-ty-tz-tz",
+      "linkingText": [
+        "tz"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/translateSelf(tx, ty, tz)",
+        "DOMMatrix/translateSelf(tx, ty)",
+        "DOMMatrix/translateSelf(tx)",
+        "DOMMatrix/translateSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-scaleself-scalex-scaley-scalez-originx-originy-originz-scalex",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-scaleself-scalex-scaley-scalez-originx-originy-originz-scalex",
+      "linkingText": [
+        "scaleX"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY, originZ)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY)",
+        "DOMMatrix/scaleSelf(scaleX)",
+        "DOMMatrix/scaleSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-scaleself-scalex-scaley-scalez-originx-originy-originz-scaley",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-scaleself-scalex-scaley-scalez-originx-originy-originz-scaley",
+      "linkingText": [
+        "scaleY"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY, originZ)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY)",
+        "DOMMatrix/scaleSelf(scaleX)",
+        "DOMMatrix/scaleSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-scaleself-scalex-scaley-scalez-originx-originy-originz-scalez",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-scaleself-scalex-scaley-scalez-originx-originy-originz-scalez",
+      "linkingText": [
+        "scaleZ"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY, originZ)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY)",
+        "DOMMatrix/scaleSelf(scaleX)",
+        "DOMMatrix/scaleSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-scaleself-scalex-scaley-scalez-originx-originy-originz-originx",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-scaleself-scalex-scaley-scalez-originx-originy-originz-originx",
+      "linkingText": [
+        "originX"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY, originZ)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY)",
+        "DOMMatrix/scaleSelf(scaleX)",
+        "DOMMatrix/scaleSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-scaleself-scalex-scaley-scalez-originx-originy-originz-originy",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-scaleself-scalex-scaley-scalez-originx-originy-originz-originy",
+      "linkingText": [
+        "originY"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY, originZ)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY)",
+        "DOMMatrix/scaleSelf(scaleX)",
+        "DOMMatrix/scaleSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-scaleself-scalex-scaley-scalez-originx-originy-originz-originz",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-scaleself-scalex-scaley-scalez-originx-originy-originz-originz",
+      "linkingText": [
+        "originZ"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY, originZ)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX, originY)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ, originX)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY, scaleZ)",
+        "DOMMatrix/scaleSelf(scaleX, scaleY)",
+        "DOMMatrix/scaleSelf(scaleX)",
+        "DOMMatrix/scaleSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-scale3dself-scale-originx-originy-originz-scale",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-scale3dself-scale-originx-originy-originz-scale",
+      "linkingText": [
+        "scale"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/scale3dSelf(scale, originX, originY, originZ)",
+        "DOMMatrix/scale3dSelf(scale, originX, originY)",
+        "DOMMatrix/scale3dSelf(scale, originX)",
+        "DOMMatrix/scale3dSelf(scale)",
+        "DOMMatrix/scale3dSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-scale3dself-scale-originx-originy-originz-originx",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-scale3dself-scale-originx-originy-originz-originx",
+      "linkingText": [
+        "originX"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/scale3dSelf(scale, originX, originY, originZ)",
+        "DOMMatrix/scale3dSelf(scale, originX, originY)",
+        "DOMMatrix/scale3dSelf(scale, originX)",
+        "DOMMatrix/scale3dSelf(scale)",
+        "DOMMatrix/scale3dSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-scale3dself-scale-originx-originy-originz-originy",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-scale3dself-scale-originx-originy-originz-originy",
+      "linkingText": [
+        "originY"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/scale3dSelf(scale, originX, originY, originZ)",
+        "DOMMatrix/scale3dSelf(scale, originX, originY)",
+        "DOMMatrix/scale3dSelf(scale, originX)",
+        "DOMMatrix/scale3dSelf(scale)",
+        "DOMMatrix/scale3dSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-scale3dself-scale-originx-originy-originz-originz",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-scale3dself-scale-originx-originy-originz-originz",
+      "linkingText": [
+        "originZ"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/scale3dSelf(scale, originX, originY, originZ)",
+        "DOMMatrix/scale3dSelf(scale, originX, originY)",
+        "DOMMatrix/scale3dSelf(scale, originX)",
+        "DOMMatrix/scale3dSelf(scale)",
+        "DOMMatrix/scale3dSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-rotateself-rotx-roty-rotz-rotx",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-rotateself-rotx-roty-rotz-rotx",
+      "linkingText": [
+        "rotX"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/rotateSelf(rotX, rotY, rotZ)",
+        "DOMMatrix/rotateSelf(rotX, rotY)",
+        "DOMMatrix/rotateSelf(rotX)",
+        "DOMMatrix/rotateSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-rotateself-rotx-roty-rotz-roty",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-rotateself-rotx-roty-rotz-roty",
+      "linkingText": [
+        "rotY"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/rotateSelf(rotX, rotY, rotZ)",
+        "DOMMatrix/rotateSelf(rotX, rotY)",
+        "DOMMatrix/rotateSelf(rotX)",
+        "DOMMatrix/rotateSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-rotateself-rotx-roty-rotz-rotz",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-rotateself-rotx-roty-rotz-rotz",
+      "linkingText": [
+        "rotZ"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/rotateSelf(rotX, rotY, rotZ)",
+        "DOMMatrix/rotateSelf(rotX, rotY)",
+        "DOMMatrix/rotateSelf(rotX)",
+        "DOMMatrix/rotateSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-rotatefromvectorself-x-y-x",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-rotatefromvectorself-x-y-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/rotateFromVectorSelf(x, y)",
+        "DOMMatrix/rotateFromVectorSelf(x)",
+        "DOMMatrix/rotateFromVectorSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-rotatefromvectorself-x-y-y",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-rotatefromvectorself-x-y-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/rotateFromVectorSelf(x, y)",
+        "DOMMatrix/rotateFromVectorSelf(x)",
+        "DOMMatrix/rotateFromVectorSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-rotateaxisangleself-x-y-z-angle-x",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-rotateaxisangleself-x-y-z-angle-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/rotateAxisAngleSelf(x, y, z, angle)",
+        "DOMMatrix/rotateAxisAngleSelf(x, y, z)",
+        "DOMMatrix/rotateAxisAngleSelf(x, y)",
+        "DOMMatrix/rotateAxisAngleSelf(x)",
+        "DOMMatrix/rotateAxisAngleSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-rotateaxisangleself-x-y-z-angle-y",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-rotateaxisangleself-x-y-z-angle-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/rotateAxisAngleSelf(x, y, z, angle)",
+        "DOMMatrix/rotateAxisAngleSelf(x, y, z)",
+        "DOMMatrix/rotateAxisAngleSelf(x, y)",
+        "DOMMatrix/rotateAxisAngleSelf(x)",
+        "DOMMatrix/rotateAxisAngleSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-rotateaxisangleself-x-y-z-angle-z",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-rotateaxisangleself-x-y-z-angle-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/rotateAxisAngleSelf(x, y, z, angle)",
+        "DOMMatrix/rotateAxisAngleSelf(x, y, z)",
+        "DOMMatrix/rotateAxisAngleSelf(x, y)",
+        "DOMMatrix/rotateAxisAngleSelf(x)",
+        "DOMMatrix/rotateAxisAngleSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-rotateaxisangleself-x-y-z-angle-angle",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-rotateaxisangleself-x-y-z-angle-angle",
+      "linkingText": [
+        "angle"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/rotateAxisAngleSelf(x, y, z, angle)",
+        "DOMMatrix/rotateAxisAngleSelf(x, y, z)",
+        "DOMMatrix/rotateAxisAngleSelf(x, y)",
+        "DOMMatrix/rotateAxisAngleSelf(x)",
+        "DOMMatrix/rotateAxisAngleSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-skewxself-sx-sx",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-skewxself-sx-sx",
+      "linkingText": [
+        "sx"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/skewXSelf(sx)",
+        "DOMMatrix/skewXSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-skewyself-sy-sy",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-skewyself-sy-sy",
+      "linkingText": [
+        "sy"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/skewYSelf(sy)",
+        "DOMMatrix/skewYSelf()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-setmatrixvalue-transformlist-transformlist",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-setmatrixvalue-transformlist-transformlist",
+      "linkingText": [
+        "transformList"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DOMMatrix/setMatrixValue(transformList)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-dommatrix2dinit",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dictdef-dommatrix2dinit",
+      "linkingText": [
+        "DOMMatrix2DInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix2dinit-a",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix2dinit-a",
+      "linkingText": [
+        "a"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrix2DInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix2dinit-b",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix2dinit-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrix2DInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix2dinit-c",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix2dinit-c",
+      "linkingText": [
+        "c"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrix2DInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix2dinit-d",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix2dinit-d",
+      "linkingText": [
+        "d"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrix2DInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix2dinit-e",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix2dinit-e",
+      "linkingText": [
+        "e"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrix2DInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix2dinit-f",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix2dinit-f",
+      "linkingText": [
+        "f"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrix2DInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix2dinit-m11",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix2dinit-m11",
+      "linkingText": [
+        "m11"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrix2DInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix2dinit-m12",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix2dinit-m12",
+      "linkingText": [
+        "m12"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrix2DInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix2dinit-m21",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix2dinit-m21",
+      "linkingText": [
+        "m21"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrix2DInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix2dinit-m22",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix2dinit-m22",
+      "linkingText": [
+        "m22"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrix2DInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix2dinit-m41",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix2dinit-m41",
+      "linkingText": [
+        "m41"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrix2DInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix2dinit-m42",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix2dinit-m42",
+      "linkingText": [
+        "m42"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrix2DInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-dommatrixinit",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dictdef-dommatrixinit",
+      "linkingText": [
+        "DOMMatrixInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixinit-m13",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixinit-m13",
+      "linkingText": [
+        "m13"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrixInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixinit-m14",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixinit-m14",
+      "linkingText": [
+        "m14"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrixInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixinit-m23",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixinit-m23",
+      "linkingText": [
+        "m23"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrixInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixinit-m24",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixinit-m24",
+      "linkingText": [
+        "m24"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrixInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixinit-m31",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixinit-m31",
+      "linkingText": [
+        "m31"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrixInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixinit-m32",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixinit-m32",
+      "linkingText": [
+        "m32"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrixInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixinit-m33",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixinit-m33",
+      "linkingText": [
+        "m33"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrixInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixinit-m34",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixinit-m34",
+      "linkingText": [
+        "m34"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrixInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixinit-m43",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixinit-m43",
+      "linkingText": [
+        "m43"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrixInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixinit-m44",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixinit-m44",
+      "linkingText": [
+        "m44"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrixInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixinit-is2d",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixinit-is2d",
+      "linkingText": [
+        "is2D"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DOMMatrixInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "matrix-m11-element",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-m11-element",
+      "linkingText": [
+        "m11 element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matrix-m12-element",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-m12-element",
+      "linkingText": [
+        "m12 element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matrix-m13-element",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-m13-element",
+      "linkingText": [
+        "m13 element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matrix-m14-element",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-m14-element",
+      "linkingText": [
+        "m14 element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matrix-m21-element",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-m21-element",
+      "linkingText": [
+        "m21 element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matrix-m22-element",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-m22-element",
+      "linkingText": [
+        "m22 element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matrix-m23-element",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-m23-element",
+      "linkingText": [
+        "m23 element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matrix-m24-element",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-m24-element",
+      "linkingText": [
+        "m24 element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matrix-m31-element",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-m31-element",
+      "linkingText": [
+        "m31 element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matrix-m32-element",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-m32-element",
+      "linkingText": [
+        "m32 element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matrix-m33-element",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-m33-element",
+      "linkingText": [
+        "m33 element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matrix-m34-element",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-m34-element",
+      "linkingText": [
+        "m34 element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matrix-m41-element",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-m41-element",
+      "linkingText": [
+        "m41 element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matrix-m42-element",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-m42-element",
+      "linkingText": [
+        "m42 element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matrix-m43-element",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-m43-element",
+      "linkingText": [
+        "m43 element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matrix-m44-element",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-m44-element",
+      "linkingText": [
+        "m44 element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matrix-validate-and-fixup-2d",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-validate-and-fixup-2d",
+      "linkingText": [
+        "validate and fixup (2D)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matrix-validate-and-fixup",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-validate-and-fixup",
+      "linkingText": [
+        "validate and fixup"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parse-a-string-into-an-abstract-matrix",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#parse-a-string-into-an-abstract-matrix",
+      "linkingText": [
+        "parse a string into an abstract matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-a-2d-matrix",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#create-a-2d-matrix",
+      "linkingText": [
+        "create a 2d matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-a-3d-matrix",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#create-a-3d-matrix",
+      "linkingText": [
+        "create a 3d matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-dommatrixreadonly",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-dommatrixreadonly",
+      "linkingText": [
+        "DOMMatrixReadOnly(init)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-dommatrix",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-dommatrix",
+      "linkingText": [
+        "DOMMatrix(init)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-frommatrix",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-frommatrix",
+      "linkingText": [
+        "fromMatrix()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-frommatrix",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-frommatrix",
+      "linkingText": [
+        "fromMatrix()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-a-dommatrixreadonly-from-the-2d-dictionary",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#create-a-dommatrixreadonly-from-the-2d-dictionary",
+      "linkingText": [
+        "create a DOMMatrixReadOnly from the 2D dictionary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-a-dommatrix-from-the-2d-dictionary",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#create-a-dommatrix-from-the-2d-dictionary",
+      "linkingText": [
+        "create a\nDOMMatrix from the 2D dictionary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-a-dommatrixreadonly-from-the-dictionary",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#create-a-dommatrixreadonly-from-the-dictionary",
+      "linkingText": [
+        "create a DOMMatrixReadOnly from the dictionary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-a-dommatrix-from-the-dictionary",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#create-a-dommatrix-from-the-dictionary",
+      "linkingText": [
+        "create a\nDOMMatrix from the dictionary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-fromfloat32array",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-fromfloat32array",
+      "linkingText": [
+        "fromFloat32Array(array32)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-fromfloat32array",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-fromfloat32array",
+      "linkingText": [
+        "fromFloat32Array(array32)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-fromfloat64array",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-fromfloat64array",
+      "linkingText": [
+        "fromFloat64Array(array64)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-fromfloat64array",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-fromfloat64array",
+      "linkingText": [
+        "fromFloat64Array(array64)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-m11",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-m11",
+      "linkingText": [
+        "m11"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-a",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-a",
+      "linkingText": [
+        "a"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-m12",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-m12",
+      "linkingText": [
+        "m12"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-b",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-m13",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-m13",
+      "linkingText": [
+        "m13"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-m14",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-m14",
+      "linkingText": [
+        "m14"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-m21",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-m21",
+      "linkingText": [
+        "m21"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-c",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-c",
+      "linkingText": [
+        "c"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-m22",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-m22",
+      "linkingText": [
+        "m22"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-d",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-d",
+      "linkingText": [
+        "d"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-m23",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-m23",
+      "linkingText": [
+        "m23"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-m24",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-m24",
+      "linkingText": [
+        "m24"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-m31",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-m31",
+      "linkingText": [
+        "m31"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-m32",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-m32",
+      "linkingText": [
+        "m32"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-m33",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-m33",
+      "linkingText": [
+        "m33"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-m34",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-m34",
+      "linkingText": [
+        "m34"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-m41",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-m41",
+      "linkingText": [
+        "m41"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-e",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-e",
+      "linkingText": [
+        "e"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-m42",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-m42",
+      "linkingText": [
+        "m42"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-f",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-f",
+      "linkingText": [
+        "f"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-m43",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-m43",
+      "linkingText": [
+        "m43"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-m44",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-m44",
+      "linkingText": [
+        "m44"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly",
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-is2d",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-is2d",
+      "linkingText": [
+        "is2D"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-isidentity",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-isidentity",
+      "linkingText": [
+        "isIdentity"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "matrix-is-2d",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#matrix-is-2d",
+      "linkingText": [
+        "is 2D"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "matrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-translate",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-translate",
+      "linkingText": [
+        "translate(tx, ty, tz)",
+        "translate(tx, ty)",
+        "translate(tx)",
+        "translate()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-scale",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-scale",
+      "linkingText": [
+        "scale(scaleX, scaleY, scaleZ, originX, originY, originZ)",
+        "scale(scaleX, scaleY, scaleZ, originX, originY)",
+        "scale(scaleX, scaleY, scaleZ, originX)",
+        "scale(scaleX, scaleY, scaleZ)",
+        "scale(scaleX, scaleY)",
+        "scale(scaleX)",
+        "scale()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-scalenonuniform",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-scalenonuniform",
+      "linkingText": [
+        "scaleNonUniform(scaleX, scaleY)",
+        "scaleNonUniform(scaleX)",
+        "scaleNonUniform()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-scale3d",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-scale3d",
+      "linkingText": [
+        "scale3d(scale, originX, originY, originZ)",
+        "scale3d(scale, originX, originY)",
+        "scale3d(scale, originX)",
+        "scale3d(scale)",
+        "scale3d()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-rotate",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-rotate",
+      "linkingText": [
+        "rotate(rotX, rotY, rotZ)",
+        "rotate(rotX, rotY)",
+        "rotate(rotX)",
+        "rotate()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-rotatefromvector",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-rotatefromvector",
+      "linkingText": [
+        "rotateFromVector(x, y)",
+        "rotateFromVector(x)",
+        "rotateFromVector()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-rotateaxisangle",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-rotateaxisangle",
+      "linkingText": [
+        "rotateAxisAngle(x, y, z, angle)",
+        "rotateAxisAngle(x, y, z)",
+        "rotateAxisAngle(x, y)",
+        "rotateAxisAngle(x)",
+        "rotateAxisAngle()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-skewx",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-skewx",
+      "linkingText": [
+        "skewX(sx)",
+        "skewX()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-skewy",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-skewy",
+      "linkingText": [
+        "skewY(sy)",
+        "skewY()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-multiply",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-multiply",
+      "linkingText": [
+        "multiply(other)",
+        "multiply()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-flipx",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-flipx",
+      "linkingText": [
+        "flipX()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-flipy",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-flipy",
+      "linkingText": [
+        "flipY()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-inverse",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-inverse",
+      "linkingText": [
+        "inverse()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-transformpoint",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-transformpoint",
+      "linkingText": [
+        "transformPoint(point)",
+        "transformPoint()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-tofloat32array",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-tofloat32array",
+      "linkingText": [
+        "toFloat32Array()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrixreadonly-tofloat64array",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrixreadonly-tofloat64array",
+      "linkingText": [
+        "toFloat64Array()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dommatrixreadonly-stringification-behavior",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dommatrixreadonly-stringification-behavior",
+      "linkingText": [
+        "stringification behavior"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DOMMatrixReadOnly"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-multiplyself",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-multiplyself",
+      "linkingText": [
+        "multiplySelf(other)",
+        "multiplySelf()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-premultiplyself",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-premultiplyself",
+      "linkingText": [
+        "preMultiplySelf(other)",
+        "preMultiplySelf()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-translateself",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-translateself",
+      "linkingText": [
+        "translateSelf(tx, ty, tz)",
+        "translateSelf(tx, ty)",
+        "translateSelf(tx)",
+        "translateSelf()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-scaleself",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-scaleself",
+      "linkingText": [
+        "scaleSelf(scaleX, scaleY, scaleZ, originX, originY, originZ)",
+        "scaleSelf(scaleX, scaleY, scaleZ, originX, originY)",
+        "scaleSelf(scaleX, scaleY, scaleZ, originX)",
+        "scaleSelf(scaleX, scaleY, scaleZ)",
+        "scaleSelf(scaleX, scaleY)",
+        "scaleSelf(scaleX)",
+        "scaleSelf()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-scale3dself",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-scale3dself",
+      "linkingText": [
+        "scale3dSelf(scale, originX, originY, originZ)",
+        "scale3dSelf(scale, originX, originY)",
+        "scale3dSelf(scale, originX)",
+        "scale3dSelf(scale)",
+        "scale3dSelf()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-rotateself",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-rotateself",
+      "linkingText": [
+        "rotateSelf(rotX, rotY, rotZ)",
+        "rotateSelf(rotX, rotY)",
+        "rotateSelf(rotX)",
+        "rotateSelf()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-rotatefromvectorself",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-rotatefromvectorself",
+      "linkingText": [
+        "rotateFromVectorSelf(x, y)",
+        "rotateFromVectorSelf(x)",
+        "rotateFromVectorSelf()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-rotateaxisangleself",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-rotateaxisangleself",
+      "linkingText": [
+        "rotateAxisAngleSelf(x, y, z, angle)",
+        "rotateAxisAngleSelf(x, y, z)",
+        "rotateAxisAngleSelf(x, y)",
+        "rotateAxisAngleSelf(x)",
+        "rotateAxisAngleSelf()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-skewxself",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-skewxself",
+      "linkingText": [
+        "skewXSelf(sx)",
+        "skewXSelf()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-skewyself",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-skewyself",
+      "linkingText": [
+        "skewYSelf(sy)",
+        "skewYSelf()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-invertself",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-invertself",
+      "linkingText": [
+        "invertSelf()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dommatrix-setmatrixvalue",
+      "href": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/#dom-dommatrix-setmatrixvalue",
+      "linkingText": [
+        "setMatrixValue(transformList)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DOMMatrix"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

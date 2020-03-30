@@ -1,0 +1,514 @@
+{
+  "spec": {
+    "title": "Geolocation Sensor",
+    "url": "https://w3c.github.io/geolocation-sensor/"
+  },
+  "dfns": [
+    {
+      "id": "geolocation",
+      "href": "https://w3c.github.io/geolocation-sensor/#geolocation",
+      "linkingText": [
+        "geolocation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "geolocation-sensor",
+      "href": "https://w3c.github.io/geolocation-sensor/#geolocation-sensor",
+      "linkingText": [
+        "Geolocation Sensor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "latest-geolocation-reading",
+      "href": "https://w3c.github.io/geolocation-sensor/#latest-geolocation-reading",
+      "linkingText": [
+        "latest geolocation reading"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "geolocationsensor",
+      "href": "https://w3c.github.io/geolocation-sensor/#geolocationsensor",
+      "linkingText": [
+        "GeolocationSensor"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensor-geolocationsensor",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-geolocationsensor",
+      "linkingText": [
+        "GeolocationSensor(options)",
+        "constructor(options)",
+        "GeolocationSensor()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "GeolocationSensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensor-geolocationsensor-options-options",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-geolocationsensor-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GeolocationSensor/GeolocationSensor(options)",
+        "GeolocationSensor/constructor(options)",
+        "GeolocationSensor/GeolocationSensor()",
+        "GeolocationSensor/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensor-read",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-read",
+      "linkingText": [
+        "read(readOptions)",
+        "read()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GeolocationSensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensor-read-readoptions-readoptions",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-read-readoptions-readoptions",
+      "linkingText": [
+        "readOptions"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GeolocationSensor/read(readOptions)",
+        "GeolocationSensor/read()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensor-latitude",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-latitude",
+      "linkingText": [
+        "latitude"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GeolocationSensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensor-longitude",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-longitude",
+      "linkingText": [
+        "longitude"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GeolocationSensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensor-altitude",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-altitude",
+      "linkingText": [
+        "altitude"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GeolocationSensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensor-accuracy",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-accuracy",
+      "linkingText": [
+        "accuracy"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GeolocationSensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensor-altitudeaccuracy",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-altitudeaccuracy",
+      "linkingText": [
+        "altitudeAccuracy"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GeolocationSensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensor-heading",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-heading",
+      "linkingText": [
+        "heading"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GeolocationSensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensor-speed",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensor-speed",
+      "linkingText": [
+        "speed"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GeolocationSensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-geolocationsensoroptions",
+      "href": "https://w3c.github.io/geolocation-sensor/#dictdef-geolocationsensoroptions",
+      "linkingText": [
+        "GeolocationSensorOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-readoptions",
+      "href": "https://w3c.github.io/geolocation-sensor/#dictdef-readoptions",
+      "linkingText": [
+        "ReadOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-readoptions-signal",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-readoptions-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReadOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-geolocationsensorreading",
+      "href": "https://w3c.github.io/geolocation-sensor/#dictdef-geolocationsensorreading",
+      "linkingText": [
+        "GeolocationSensorReading"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensorreading-timestamp",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensorreading-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationSensorReading"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensorreading-latitude",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensorreading-latitude",
+      "linkingText": [
+        "latitude"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationSensorReading"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensorreading-longitude",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensorreading-longitude",
+      "linkingText": [
+        "longitude"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationSensorReading"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensorreading-altitude",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensorreading-altitude",
+      "linkingText": [
+        "altitude"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationSensorReading"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensorreading-accuracy",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensorreading-accuracy",
+      "linkingText": [
+        "accuracy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationSensorReading"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensorreading-altitudeaccuracy",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensorreading-altitudeaccuracy",
+      "linkingText": [
+        "altitudeAccuracy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationSensorReading"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensorreading-heading",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensorreading-heading",
+      "linkingText": [
+        "heading"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationSensorReading"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationsensorreading-speed",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationsensorreading-speed",
+      "linkingText": [
+        "speed"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationSensorReading"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "resolve-a-geolocation-promise",
+      "href": "https://w3c.github.io/geolocation-sensor/#resolve-a-geolocation-promise",
+      "linkingText": [
+        "resolve a geolocation promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "construct-a-geolocation-sensor-object",
+      "href": "https://w3c.github.io/geolocation-sensor/#construct-a-geolocation-sensor-object",
+      "linkingText": [
+        "Construct a geolocation sensor object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-geolocationreadingvalues",
+      "href": "https://w3c.github.io/geolocation-sensor/#dictdef-geolocationreadingvalues",
+      "linkingText": [
+        "GeolocationReadingValues"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationreadingvalues-latitude",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationreadingvalues-latitude",
+      "linkingText": [
+        "latitude"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationreadingvalues-longitude",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationreadingvalues-longitude",
+      "linkingText": [
+        "longitude"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationreadingvalues-altitude",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationreadingvalues-altitude",
+      "linkingText": [
+        "altitude"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationreadingvalues-accuracy",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationreadingvalues-accuracy",
+      "linkingText": [
+        "accuracy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationreadingvalues-altitudeaccuracy",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationreadingvalues-altitudeaccuracy",
+      "linkingText": [
+        "altitudeAccuracy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationreadingvalues-heading",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationreadingvalues-heading",
+      "linkingText": [
+        "heading"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geolocationreadingvalues-speed",
+      "href": "https://w3c.github.io/geolocation-sensor/#dom-geolocationreadingvalues-speed",
+      "linkingText": [
+        "speed"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

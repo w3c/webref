@@ -1,0 +1,202 @@
+{
+  "spec": {
+    "title": "MediaStreamTrack Content Hints",
+    "url": "https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-peerconnection",
+      "href": "https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/#dfn-peerconnection",
+      "linkingText": [
+        "PeerConnection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-mediarecorder",
+      "href": "https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/#dfn-mediarecorder",
+      "linkingText": [
+        "MediaRecorder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-rtcrtpsender",
+      "href": "https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/#dfn-rtcrtpsender",
+      "linkingText": [
+        "RTCRtpSender"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpsendparameters",
+      "href": "https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/#dom-rtcrtpsendparameters",
+      "linkingText": [
+        "RTCRtpSendParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediastreamtrack",
+      "href": "https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/#dom-mediastreamtrack",
+      "linkingText": [
+        "MediaStreamTrack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-kind",
+      "href": "https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/#dfn-kind",
+      "linkingText": [
+        "kind"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-application-set-content-hint",
+      "href": "https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/#dfn-application-set-content-hint",
+      "linkingText": [
+        "application-set\n      content hint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediastreamtrack-contenthint",
+      "href": "https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/#dom-mediastreamtrack-contenthint",
+      "linkingText": [
+        "contentHint"
+      ],
+      "localLinkingText": [
+        "MediaStreamTrack.contentHint"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-apply-a-default",
+      "href": "https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/#dfn-apply-a-default",
+      "linkingText": [
+        "apply a default"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdegradationpreference",
+      "href": "https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/#dom-rtcdegradationpreference",
+      "linkingText": [
+        "RTCDegradationPreference"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [
+        "RTCDegradationPreference"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdegradationpreference-maintain-framerate",
+      "href": "https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/#dom-rtcdegradationpreference-maintain-framerate",
+      "linkingText": [
+        "maintain-framerate"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCDegradationPreference"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdegradationpreference-maintain-resolution",
+      "href": "https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/#dom-rtcdegradationpreference-maintain-resolution",
+      "linkingText": [
+        "maintain-resolution"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCDegradationPreference"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdegradationpreference-balanced",
+      "href": "https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/#dom-rtcdegradationpreference-balanced",
+      "linkingText": [
+        "balanced"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCDegradationPreference"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpsendparameters-degradationpreference",
+      "href": "https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/#dom-rtcrtpsendparameters-degradationpreference",
+      "linkingText": [
+        "degradationPreference"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpSendParameters"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-degradationpreference",
+      "href": "https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/#dfn-degradationpreference",
+      "linkingText": [
+        "degradationPreference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

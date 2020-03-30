@@ -1,0 +1,1684 @@
+{
+  "spec": {
+    "title": "CSS Backgrounds and Borders Module Level 3",
+    "url": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/"
+  },
+  "dfns": [
+    {
+      "id": "typedef-image",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#typedef-image",
+      "linkingText": [
+        "<image>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-background-color",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-background-color",
+      "linkingText": [
+        "background-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-background-image",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-background-image",
+      "linkingText": [
+        "background-image"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-bg-image",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#typedef-bg-image",
+      "linkingText": [
+        "<bg-image>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-image-none",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-image-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-image"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-background-repeat",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-background-repeat",
+      "linkingText": [
+        "background-repeat"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-repeat-style",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#typedef-repeat-style",
+      "linkingText": [
+        "<repeat-style>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-repeat-repeat-x",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-repeat-repeat-x",
+      "linkingText": [
+        "repeat-x"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-repeat"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-repeat-repeat-y",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-repeat-repeat-y",
+      "linkingText": [
+        "repeat-y"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-repeat"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-repeat-repeat",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-repeat-repeat",
+      "linkingText": [
+        "repeat"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-repeat"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-repeat-space",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-repeat-space",
+      "linkingText": [
+        "space"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-repeat"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-repeat-round",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-repeat-round",
+      "linkingText": [
+        "round"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-repeat"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-repeat-no-repeat",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-repeat-no-repeat",
+      "linkingText": [
+        "no-repeat"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-repeat"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-background-attachment",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-background-attachment",
+      "linkingText": [
+        "background-attachment"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-attachment",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#typedef-attachment",
+      "linkingText": [
+        "<attachment>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-attachment-fixed",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-attachment-fixed",
+      "linkingText": [
+        "fixed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-attachment"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-attachment-local",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-attachment-local",
+      "linkingText": [
+        "local"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-attachment"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-attachment-scroll",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-attachment-scroll",
+      "linkingText": [
+        "scroll"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-attachment"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-background-position",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-background-position",
+      "linkingText": [
+        "background-position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-bg-position",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#typedef-bg-position",
+      "linkingText": [
+        "<bg-position>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-position-percentage",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-position-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-position-length",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-position-length",
+      "linkingText": [
+        "<length>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-position-top",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-position-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-position-right",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-position-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-position-bottom",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-position-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-position-left",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-position-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-position-center",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-position-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-background-clip",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-background-clip",
+      "linkingText": [
+        "background-clip"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "background-painting-area",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#background-painting-area",
+      "linkingText": [
+        "background painting area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedef-box",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#typedef-box",
+      "linkingText": [
+        "<box>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-clip-border-box",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-clip-border-box",
+      "linkingText": [
+        "border-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-clip"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-clip-padding-box",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-clip-padding-box",
+      "linkingText": [
+        "padding-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-clip"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-clip-content-box",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-clip-content-box",
+      "linkingText": [
+        "content-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-clip"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-background-origin",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-background-origin",
+      "linkingText": [
+        "background-origin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "background-positioning-area",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#background-positioning-area",
+      "linkingText": [
+        "background positioning area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-origin-padding-box",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-origin-padding-box",
+      "linkingText": [
+        "padding-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-origin-border-box",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-origin-border-box",
+      "linkingText": [
+        "border-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-origin-content-box",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-origin-content-box",
+      "linkingText": [
+        "content-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-background-size",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-background-size",
+      "linkingText": [
+        "background-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-bg-size",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#typedef-bg-size",
+      "linkingText": [
+        "<bg-size>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-size-contain",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-size-contain",
+      "linkingText": [
+        "contain"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-size"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-size-cover",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-size-cover",
+      "linkingText": [
+        "cover"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-size"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-size-length-percentage",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-size-length-percentage",
+      "linkingText": [
+        "<length-percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-size"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-background-size-auto",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-background-size-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "background-size"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-background",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-background",
+      "linkingText": [
+        "background"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-bg-layer",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#typedef-bg-layer",
+      "linkingText": [
+        "<bg-layer>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-final-bg-layer",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#typedef-final-bg-layer",
+      "linkingText": [
+        "<final-bg-layer>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-top-color",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-top-color",
+      "linkingText": [
+        "border-top-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-right-color",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-right-color",
+      "linkingText": [
+        "border-right-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-bottom-color",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-bottom-color",
+      "linkingText": [
+        "border-bottom-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-left-color",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-left-color",
+      "linkingText": [
+        "border-left-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-color",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-color",
+      "linkingText": [
+        "border-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-top-style",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-top-style",
+      "linkingText": [
+        "border-top-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-right-style",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-right-style",
+      "linkingText": [
+        "border-right-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-bottom-style",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-bottom-style",
+      "linkingText": [
+        "border-bottom-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-left-style",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-left-style",
+      "linkingText": [
+        "border-left-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-style",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-style",
+      "linkingText": [
+        "border-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-line-style",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#typedef-line-style",
+      "linkingText": [
+        "<line-style>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-style-none",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-line-style-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<line-style>",
+        "border-style",
+        "border-top-style",
+        "border-left-style",
+        "border-bottom-style",
+        "border-right-style",
+        "border"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-style-hidden",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-line-style-hidden",
+      "linkingText": [
+        "hidden"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<line-style>",
+        "border-style",
+        "border-top-style",
+        "border-left-style",
+        "border-bottom-style",
+        "border-right-style",
+        "border"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-style-dotted",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-line-style-dotted",
+      "linkingText": [
+        "dotted"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<line-style>",
+        "border-style",
+        "border-top-style",
+        "border-left-style",
+        "border-bottom-style",
+        "border-right-style",
+        "border"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-style-dashed",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-line-style-dashed",
+      "linkingText": [
+        "dashed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<line-style>",
+        "border-style",
+        "border-top-style",
+        "border-left-style",
+        "border-bottom-style",
+        "border-right-style",
+        "border"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-style-solid",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-line-style-solid",
+      "linkingText": [
+        "solid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<line-style>",
+        "border-style",
+        "border-top-style",
+        "border-left-style",
+        "border-bottom-style",
+        "border-right-style",
+        "border"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-style-double",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-line-style-double",
+      "linkingText": [
+        "double"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<line-style>",
+        "border-style",
+        "border-top-style",
+        "border-left-style",
+        "border-bottom-style",
+        "border-right-style",
+        "border"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-style-groove",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-line-style-groove",
+      "linkingText": [
+        "groove"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<line-style>",
+        "border-style",
+        "border-top-style",
+        "border-left-style",
+        "border-bottom-style",
+        "border-right-style",
+        "border"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-style-ridge",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-line-style-ridge",
+      "linkingText": [
+        "ridge"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<line-style>",
+        "border-style",
+        "border-top-style",
+        "border-left-style",
+        "border-bottom-style",
+        "border-right-style",
+        "border"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-style-inset",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-line-style-inset",
+      "linkingText": [
+        "inset"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<line-style>",
+        "border-style",
+        "border-top-style",
+        "border-left-style",
+        "border-bottom-style",
+        "border-right-style",
+        "border"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-style-outset",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-line-style-outset",
+      "linkingText": [
+        "outset"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<line-style>",
+        "border-style",
+        "border-top-style",
+        "border-left-style",
+        "border-bottom-style",
+        "border-right-style",
+        "border"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-top-width",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-top-width",
+      "linkingText": [
+        "border-top-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-right-width",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-right-width",
+      "linkingText": [
+        "border-right-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-bottom-width",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-bottom-width",
+      "linkingText": [
+        "border-bottom-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-left-width",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-left-width",
+      "linkingText": [
+        "border-left-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-width",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-width",
+      "linkingText": [
+        "border-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-line-width",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#typedef-line-width",
+      "linkingText": [
+        "<line-width>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-width-thin",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-line-width-thin",
+      "linkingText": [
+        "thin"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<line-width>",
+        "border-width",
+        "border-top-width",
+        "border-left-width",
+        "border-bottom-width",
+        "border-right-width",
+        "border"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-width-medium",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-line-width-medium",
+      "linkingText": [
+        "medium"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<line-width>",
+        "border-width",
+        "border-top-width",
+        "border-left-width",
+        "border-bottom-width",
+        "border-right-width",
+        "border"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-line-width-thick",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-line-width-thick",
+      "linkingText": [
+        "thick"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<line-width>",
+        "border-width",
+        "border-top-width",
+        "border-left-width",
+        "border-bottom-width",
+        "border-right-width",
+        "border"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-top",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-top",
+      "linkingText": [
+        "border-top"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-right",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-right",
+      "linkingText": [
+        "border-right"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-bottom",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-bottom",
+      "linkingText": [
+        "border-bottom"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-left",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-left",
+      "linkingText": [
+        "border-left"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border",
+      "linkingText": [
+        "border"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-top-left-radius",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-top-left-radius",
+      "linkingText": [
+        "border-top-left-radius"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-top-right-radius",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-top-right-radius",
+      "linkingText": [
+        "border-top-right-radius"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-bottom-right-radius",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-bottom-right-radius",
+      "linkingText": [
+        "border-bottom-right-radius"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-bottom-left-radius",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-bottom-left-radius",
+      "linkingText": [
+        "border-bottom-left-radius"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-radius",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-radius",
+      "linkingText": [
+        "border-radius"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "border-radius",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#border-radius",
+      "linkingText": [
+        "border radius"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-image-source",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-image-source",
+      "linkingText": [
+        "border-image-source"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-image-slice",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-image-slice",
+      "linkingText": [
+        "border-image-slice"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-border-image-slice-percentage",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-border-image-slice-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "border-image-slice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-border-image-slice-number",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-border-image-slice-number",
+      "linkingText": [
+        "<number>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "border-image-slice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "border-image-slice-fill",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#border-image-slice-fill",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "border-image-slice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-image-width",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-image-width",
+      "linkingText": [
+        "border-image-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "border-image-area",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#border-image-area",
+      "linkingText": [
+        "border image area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-border-image-width-length-percentage",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-border-image-width-length-percentage",
+      "linkingText": [
+        "<length-percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "border-image-width"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-border-image-width-number",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-border-image-width-number",
+      "linkingText": [
+        "<number>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "border-image-width"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-border-image-width-auto",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-border-image-width-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "border-image-width"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-image-outset",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-image-outset",
+      "linkingText": [
+        "border-image-outset"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-image-repeat",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-image-repeat",
+      "linkingText": [
+        "border-image-repeat"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-border-image-repeat-stretch",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-border-image-repeat-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "border-image-repeat"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-border-image-repeat-repeat",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-border-image-repeat-repeat",
+      "linkingText": [
+        "repeat"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "border-image-repeat"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-border-image-repeat-round",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-border-image-repeat-round",
+      "linkingText": [
+        "round"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "border-image-repeat"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-border-image-repeat-space",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#valdef-border-image-repeat-space",
+      "linkingText": [
+        "space"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "border-image-repeat"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-image",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-border-image",
+      "linkingText": [
+        "border-image"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-box-shadow",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#propdef-box-shadow",
+      "linkingText": [
+        "box-shadow"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "box-shadow-none",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#box-shadow-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "box-shadow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-shadow",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#typedef-shadow",
+      "linkingText": [
+        "<shadow>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "shadow-offset-x",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#shadow-offset-x",
+      "linkingText": [
+        "1st <length>"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "horizontal-offset",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#horizontal-offset",
+      "linkingText": [
+        "horizontal offset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "shadow-offset-y",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#shadow-offset-y",
+      "linkingText": [
+        "2nd <length>"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "vertical-offset",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#vertical-offset",
+      "linkingText": [
+        "vertical offset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "shadow-blur-radius",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#shadow-blur-radius",
+      "linkingText": [
+        "3rd <length>"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "blur-radius",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#blur-radius",
+      "linkingText": [
+        "blur radius"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "shadow-spread-distance",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#shadow-spread-distance",
+      "linkingText": [
+        "4th <length>"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "spread-distance",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#spread-distance",
+      "linkingText": [
+        "spread distance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "shadow-color",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#shadow-color",
+      "linkingText": [
+        "<color>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "box-shadow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "shadow-inset",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#shadow-inset",
+      "linkingText": [
+        "inset"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "box-shadow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "outer-box-shadow",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#outer-box-shadow",
+      "linkingText": [
+        "outer box-shadow"
+      ],
+      "localLinkingText": [
+        "outer shadow"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "inner-box-shadow",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#inner-box-shadow",
+      "linkingText": [
+        "inner box-shadow"
+      ],
+      "localLinkingText": [
+        "inner shadow"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ua",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#ua",
+      "linkingText": [
+        "UA"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "user-agent",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#user-agent",
+      "linkingText": [
+        "User Agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "document",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#document",
+      "linkingText": [
+        "document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "style-sheet",
+      "href": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/#style-sheet",
+      "linkingText": [
+        "style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

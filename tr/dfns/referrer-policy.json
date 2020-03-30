@@ -1,0 +1,375 @@
+{
+  "spec": {
+    "title": "Referrer Policy",
+    "url": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/"
+  },
+  "dfns": [
+    {
+      "id": "same-origin-request",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#same-origin-request",
+      "linkingText": [
+        "same-origin request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cross-origin-request",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#cross-origin-request",
+      "linkingText": [
+        "cross-origin request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "referrer-policy",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#referrer-policy",
+      "linkingText": [
+        "referrer policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-referrerpolicy",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#enumdef-referrerpolicy",
+      "linkingText": [
+        "ReferrerPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-referrerpolicy",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#dom-referrerpolicy",
+      "linkingText": [
+        "\"\"",
+        ""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-referrerpolicy-no-referrer",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#dom-referrerpolicy-no-referrer",
+      "linkingText": [
+        "\"no-referrer\"",
+        "no-referrer"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-referrerpolicy-no-referrer-when-downgrade",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#dom-referrerpolicy-no-referrer-when-downgrade",
+      "linkingText": [
+        "\"no-referrer-when-downgrade\"",
+        "no-referrer-when-downgrade"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-referrerpolicy-same-origin",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#dom-referrerpolicy-same-origin",
+      "linkingText": [
+        "\"same-origin\"",
+        "same-origin"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-referrerpolicy-origin",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#dom-referrerpolicy-origin",
+      "linkingText": [
+        "\"origin\"",
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-referrerpolicy-strict-origin",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#dom-referrerpolicy-strict-origin",
+      "linkingText": [
+        "\"strict-origin\"",
+        "strict-origin"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-referrerpolicy-origin-when-cross-origin",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#dom-referrerpolicy-origin-when-cross-origin",
+      "linkingText": [
+        "\"origin-when-cross-origin\"",
+        "origin-when-cross-origin"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-referrerpolicy-strict-origin-when-cross-origin",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#dom-referrerpolicy-strict-origin-when-cross-origin",
+      "linkingText": [
+        "\"strict-origin-when-cross-origin\"",
+        "strict-origin-when-cross-origin"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-referrerpolicy-unsafe-url",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#dom-referrerpolicy-unsafe-url",
+      "linkingText": [
+        "\"unsafe-url\"",
+        "unsafe-url"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "referrer-policy-no-referrer",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#referrer-policy-no-referrer",
+      "linkingText": [
+        "\"no-referrer\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "referrer-policy-no-referrer-when-downgrade",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#referrer-policy-no-referrer-when-downgrade",
+      "linkingText": [
+        "\"no-referrer-when-downgrade\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "referrer-policy-same-origin",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#referrer-policy-same-origin",
+      "linkingText": [
+        "\"same-origin\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "referrer-policy-origin",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#referrer-policy-origin",
+      "linkingText": [
+        "\"origin\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "referrer-policy-strict-origin",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#referrer-policy-strict-origin",
+      "linkingText": [
+        "\"strict-origin\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "referrer-policy-origin-when-cross-origin",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#referrer-policy-origin-when-cross-origin",
+      "linkingText": [
+        "\"origin-when-cross-origin\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "referrer-policy-strict-origin-when-cross-origin",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#referrer-policy-strict-origin-when-cross-origin",
+      "linkingText": [
+        "\"strict-origin-when-cross-origin\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "referrer-policy-unsafe-url",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#referrer-policy-unsafe-url",
+      "linkingText": [
+        "\"unsafe-url\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "referrer-policy-empty-string",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#referrer-policy-empty-string",
+      "linkingText": [
+        "The empty string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "referrer-policy-header-dfn",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#referrer-policy-header-dfn",
+      "linkingText": [
+        "Referrer-Policy"
+      ],
+      "localLinkingText": [
+        "referrer-policy header"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "policy-token",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#policy-token",
+      "linkingText": [
+        "policy-token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssstylesheet-referrer-policy",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#cssstylesheet-referrer-policy",
+      "linkingText": [
+        "referrer policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "set-requests-referrer-policy-on-redirect",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#set-requests-referrer-policy-on-redirect",
+      "linkingText": [
+        "Set request’s referrer policy on redirect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "determine-requests-referrer",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#determine-requests-referrer",
+      "linkingText": [
+        "Determine request’s Referrer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "origin-only-flag",
+      "href": "https://www.w3.org/TR/2017/CR-referrer-policy-20170126/#origin-only-flag",
+      "linkingText": [
+        "origin-only flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

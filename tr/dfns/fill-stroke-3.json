@@ -1,0 +1,1082 @@
+{
+  "spec": {
+    "title": "CSS Fill and Stroke Module Level 3",
+    "url": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/"
+  },
+  "dfns": [
+    {
+      "id": "filled",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#filled",
+      "linkingText": [
+        "filled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "stroked",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#stroked",
+      "linkingText": [
+        "stroked"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedef-paint",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#typedef-paint",
+      "linkingText": [
+        "<paint>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-paint-none",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-paint-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<paint>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-svg-paint",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#typedef-svg-paint",
+      "linkingText": [
+        "<svg-paint>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-svg-paint-child",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-svg-paint-child",
+      "linkingText": [
+        "child"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<svg-paint>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-svg-paint-child-integer",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-svg-paint-child-integer",
+      "linkingText": [
+        "child(<integer>)"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<svg-paint>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fill",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#fill",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-rule",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-fill-rule",
+      "linkingText": [
+        "fill-rule"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-fill-rule-nonzero",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-fill-rule-nonzero",
+      "linkingText": [
+        "nonzero"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "fill-rule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-fill-rule-evenodd",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-fill-rule-evenodd",
+      "linkingText": [
+        "evenodd"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "fill-rule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-break",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-fill-break",
+      "linkingText": [
+        "fill-break"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-color",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-fill-color",
+      "linkingText": [
+        "fill-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-image",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-fill-image",
+      "linkingText": [
+        "fill-image"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-origin",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-fill-origin",
+      "linkingText": [
+        "fill-origin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fill-positioning-area",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#fill-positioning-area",
+      "linkingText": [
+        "fill positioning area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-fill-origin-match-parent",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-fill-origin-match-parent",
+      "linkingText": [
+        "match-parent"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "fill-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-fill-origin-content-box",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-fill-origin-content-box",
+      "linkingText": [
+        "content-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "fill-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-fill-origin-padding-box",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-fill-origin-padding-box",
+      "linkingText": [
+        "padding-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "fill-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-fill-origin-border-box",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-fill-origin-border-box",
+      "linkingText": [
+        "border-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "fill-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-fill-origin-fill-box",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-fill-origin-fill-box",
+      "linkingText": [
+        "fill-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "fill-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-fill-origin-stroke-box",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-fill-origin-stroke-box",
+      "linkingText": [
+        "stroke-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "fill-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fill-painting-area",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#fill-painting-area",
+      "linkingText": [
+        "fill painting area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-position",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-fill-position",
+      "linkingText": [
+        "fill-position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-size",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-fill-size",
+      "linkingText": [
+        "fill-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-repeat",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-fill-repeat",
+      "linkingText": [
+        "fill-repeat"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-fill",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-fill-opacity",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-fill-opacity",
+      "linkingText": [
+        "fill-opacity"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stroke",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#stroke",
+      "linkingText": [
+        "stroke"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-width",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke-width",
+      "linkingText": [
+        "stroke-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scaled-viewport-size",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#scaled-viewport-size",
+      "linkingText": [
+        "scaled viewport size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-align",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke-align",
+      "linkingText": [
+        "stroke-align"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-align-center",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-align-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-align-inset",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-align-inset",
+      "linkingText": [
+        "inset"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-align-outset",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-align-outset",
+      "linkingText": [
+        "outset"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-linecap",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke-linecap",
+      "linkingText": [
+        "stroke-linecap"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linecap-butt",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-linecap-butt",
+      "linkingText": [
+        "butt"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linecap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linecap-round",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-linecap-round",
+      "linkingText": [
+        "round"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linecap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linecap-square",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-linecap-square",
+      "linkingText": [
+        "square"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linecap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-linejoin",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke-linejoin",
+      "linkingText": [
+        "stroke-linejoin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linejoin-crop",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-linejoin-crop",
+      "linkingText": [
+        "crop"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linejoin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linejoin-miter",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-linejoin-miter",
+      "linkingText": [
+        "miter"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linejoin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linejoin-arcs",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-linejoin-arcs",
+      "linkingText": [
+        "arcs"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linejoin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linejoin-bevel",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-linejoin-bevel",
+      "linkingText": [
+        "bevel"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linejoin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linejoin-round",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-linejoin-round",
+      "linkingText": [
+        "round"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linejoin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-linejoin-fallback",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-linejoin-fallback",
+      "linkingText": [
+        "fallback"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-linejoin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-miterlimit",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke-miterlimit",
+      "linkingText": [
+        "stroke-miterlimit"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-miterlimit-number",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-miterlimit-number",
+      "linkingText": [
+        "<number>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-miterlimit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "--corner-diagonal",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#--corner-diagonal",
+      "linkingText": [
+        "corner diagonal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "/"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-break",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke-break",
+      "linkingText": [
+        "stroke-break"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-dasharray",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke-dasharray",
+      "linkingText": [
+        "stroke-dasharray"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-dasharray-none",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-dasharray-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-dasharray"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-dasharray-length-percentage",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-dasharray-length-percentage",
+      "linkingText": [
+        "<length-percentage>+#"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-dasharray"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-dashoffset",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke-dashoffset",
+      "linkingText": [
+        "stroke-dashoffset"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-dash-corner",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke-dash-corner",
+      "linkingText": [
+        "stroke-dash-corner"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-dash-corner-none",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-dash-corner-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-dash-corner"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-dash-justify",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke-dash-justify",
+      "linkingText": [
+        "stroke-dash-justify"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-dash-justify-none",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-dash-justify-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-dash-justify"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-dash-justify-stretch",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-dash-justify-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-dash-justify"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-dash-justify-compress",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-dash-justify-compress",
+      "linkingText": [
+        "compress"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-dash-justify"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-dash-justify-dashes",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-dash-justify-dashes",
+      "linkingText": [
+        "dashes"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-dash-justify"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-dash-justify-gaps",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-dash-justify-gaps",
+      "linkingText": [
+        "gaps"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-dash-justify"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-color",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke-color",
+      "linkingText": [
+        "stroke-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-image",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke-image",
+      "linkingText": [
+        "stroke-image"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-origin",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke-origin",
+      "linkingText": [
+        "stroke-origin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stroke-positioning-area",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#stroke-positioning-area",
+      "linkingText": [
+        "stroke positioning area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-origin-match-parent",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-origin-match-parent",
+      "linkingText": [
+        "match-parent"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-origin-content-box",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-origin-content-box",
+      "linkingText": [
+        "content-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-origin-padding-box",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-origin-padding-box",
+      "linkingText": [
+        "padding-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-origin-border-box",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-origin-border-box",
+      "linkingText": [
+        "border-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-origin-fill-box",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-origin-fill-box",
+      "linkingText": [
+        "fill-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-stroke-origin-stroke-box",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#valdef-stroke-origin-stroke-box",
+      "linkingText": [
+        "stroke-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "stroke-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stroke-painting-area",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#stroke-painting-area",
+      "linkingText": [
+        "stroke painting area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-position",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke-position",
+      "linkingText": [
+        "stroke-position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-size",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke-size",
+      "linkingText": [
+        "stroke-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-repeat",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke-repeat",
+      "linkingText": [
+        "stroke-repeat"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke",
+      "linkingText": [
+        "stroke"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-stroke-opacity",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#propdef-stroke-opacity",
+      "linkingText": [
+        "stroke-opacity"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stroke-shape",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#stroke-shape",
+      "linkingText": [
+        "stroke shape"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dash-positions",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#dash-positions",
+      "linkingText": [
+        "dash positions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cap-shapes",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#cap-shapes",
+      "linkingText": [
+        "cap shapes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "line-join-shape",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#line-join-shape",
+      "linkingText": [
+        "line join shape"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "arcs-linejoin",
+      "href": "https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/#arcs-linejoin",
+      "linkingText": [
+        "arcs linejoin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

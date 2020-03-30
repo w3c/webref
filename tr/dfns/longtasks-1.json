@@ -1,0 +1,230 @@
+{
+  "spec": {
+    "title": "Long Tasks API 1",
+    "url": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/"
+  },
+  "dfns": [
+    {
+      "id": "long-task",
+      "href": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/#long-task",
+      "linkingText": [
+        "Long task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "frame",
+      "href": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/#frame",
+      "linkingText": [
+        "Frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "frame-context",
+      "href": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/#frame-context",
+      "linkingText": [
+        "frame context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "culprit-frame",
+      "href": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/#culprit-frame",
+      "linkingText": [
+        "Culprit frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attribution",
+      "href": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/#attribution",
+      "linkingText": [
+        "Attribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "performancelongtasktiming",
+      "href": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/#performancelongtasktiming",
+      "linkingText": [
+        "PerformanceLongTaskTiming"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performancelongtasktiming-attribution",
+      "href": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/#dom-performancelongtasktiming-attribution",
+      "linkingText": [
+        "attribution"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceLongTaskTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceentry-attribution",
+      "href": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/#dom-performanceentry-attribution",
+      "linkingText": [
+        "attribution"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceEntry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "taskattributiontiming",
+      "href": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/#taskattributiontiming",
+      "linkingText": [
+        "TaskAttributionTiming"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-taskattributiontiming-containertype",
+      "href": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/#dom-taskattributiontiming-containertype",
+      "linkingText": [
+        "containerType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "TaskAttributionTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-taskattributiontiming-containername",
+      "href": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/#dom-taskattributiontiming-containername",
+      "linkingText": [
+        "containerName"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "TaskAttributionTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-taskattributiontiming-containerid",
+      "href": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/#dom-taskattributiontiming-containerid",
+      "linkingText": [
+        "containerId"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "TaskAttributionTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-taskattributiontiming-containersrc",
+      "href": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/#dom-taskattributiontiming-containersrc",
+      "linkingText": [
+        "containerSrc"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "TaskAttributionTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "task-start-time",
+      "href": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/#task-start-time",
+      "linkingText": [
+        "start time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "task"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "task-end-time",
+      "href": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/#task-end-time",
+      "linkingText": [
+        "end time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "task"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "task-script-evaluation-environment-settings",
+      "href": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/#task-script-evaluation-environment-settings",
+      "linkingText": [
+        "script evaluation environment settings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "task"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "report-long-tasks",
+      "href": "https://www.w3.org/TR/2017/WD-longtasks-1-20170907/#report-long-tasks",
+      "linkingText": [
+        "Report Long Tasks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

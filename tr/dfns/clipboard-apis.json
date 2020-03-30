@@ -1,0 +1,837 @@
+{
+  "spec": {
+    "title": "Clipboard API and events",
+    "url": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/"
+  },
+  "dfns": [
+    {
+      "id": "editable-context",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#editable-context",
+      "linkingText": [
+        "editable context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "system-clipboard",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#system-clipboard",
+      "linkingText": [
+        "system clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "system-clipboard-data",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#system-clipboard-data",
+      "linkingText": [
+        "system clipboard data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-clipboardeventinit",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dictdef-clipboardeventinit",
+      "linkingText": [
+        "ClipboardEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboardeventinit-clipboarddata",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboardeventinit-clipboarddata",
+      "linkingText": [
+        "clipboardData"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ClipboardEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "clipboardeventinit-clipboarddata",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#clipboardeventinit-clipboarddata",
+      "linkingText": [
+        "clipboardData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ClipboardEventInit"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboardevent-clipboardevent",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboardevent-clipboardevent",
+      "linkingText": [
+        "ClipboardEvent(type, eventInitDict)",
+        "ClipboardEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ClipboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboardevent-clipboardevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboardevent-clipboardevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ClipboardEvent/ClipboardEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboardevent-clipboardevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboardevent-clipboardevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ClipboardEvent/ClipboardEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "clipboardevent",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#clipboardevent",
+      "linkingText": [
+        "ClipboardEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboardevent-clipboarddata",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboardevent-clipboarddata",
+      "linkingText": [
+        "clipboardData"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ClipboardEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "clipboardevent-clipboarddata",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#clipboardevent-clipboarddata",
+      "linkingText": [
+        "clipboardData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ClipboardEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "clipboard-events",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#clipboard-events",
+      "linkingText": [
+        "Clipboard events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "clipboardchange",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#clipboardchange",
+      "linkingText": [
+        "clipboardchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "copy",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#copy",
+      "linkingText": [
+        "copy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cut",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#cut",
+      "linkingText": [
+        "cut"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "paste",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#paste",
+      "linkingText": [
+        "paste"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "allowed-to-modify-the-clipboard",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#allowed-to-modify-the-clipboard",
+      "linkingText": [
+        "allowed to modify the clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "allowed-to-read-from-clipboard",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#allowed-to-read-from-clipboard",
+      "linkingText": [
+        "allowed to read from clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mandatory-data-types",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#mandatory-data-types",
+      "linkingText": [
+        "Mandatory data types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator-clipboard",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-navigator-clipboard",
+      "linkingText": [
+        "clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "navigator-clipboard",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#navigator-clipboard",
+      "linkingText": [
+        "clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Navigator"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-clipboarditems",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#typedefdef-clipboarditems",
+      "linkingText": [
+        "ClipboardItems"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "clipboard",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#clipboard",
+      "linkingText": [
+        "Clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboard-write-data-data",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboard-write-data-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Clipboard/write(data)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboard-writetext-data-data",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboard-writetext-data-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Clipboard/writeText(data)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-clipboarditemdatatype",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#typedefdef-clipboarditemdatatype",
+      "linkingText": [
+        "ClipboardItemDataType"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-clipboarditemdata",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#typedefdef-clipboarditemdata",
+      "linkingText": [
+        "ClipboardItemData"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "callbackdef-clipboarditemdelayedcallback",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#callbackdef-clipboarditemdelayedcallback",
+      "linkingText": [
+        "ClipboardItemDelayedCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-clipboarditem",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboarditem-clipboarditem",
+      "linkingText": [
+        "ClipboardItem(items, options)",
+        "ClipboardItem(items)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-clipboarditem-items-options-items",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboarditem-clipboarditem-items-options-items",
+      "linkingText": [
+        "items"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ClipboardItem/ClipboardItem(items, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-clipboarditem-items-options-options",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboarditem-clipboarditem-items-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ClipboardItem/ClipboardItem(items, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "clipboarditem",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#clipboarditem",
+      "linkingText": [
+        "ClipboardItem"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-createdelayed",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboarditem-createdelayed",
+      "linkingText": [
+        "createDelayed(items, options)",
+        "createDelayed(items)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-createdelayed-items-options-items",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboarditem-createdelayed-items-options-items",
+      "linkingText": [
+        "items"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ClipboardItem/createDelayed(items, options)",
+        "ClipboardItem/createDelayed(items)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-createdelayed-items-options-options",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboarditem-createdelayed-items-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ClipboardItem/createDelayed(items, options)",
+        "ClipboardItem/createDelayed(items)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-presentationstyle",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboarditem-presentationstyle",
+      "linkingText": [
+        "presentationStyle"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-lastmodified",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboarditem-lastmodified",
+      "linkingText": [
+        "lastModified"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-delayed",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboarditem-delayed",
+      "linkingText": [
+        "delayed"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-types",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboarditem-types",
+      "linkingText": [
+        "types"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-gettype",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboarditem-gettype",
+      "linkingText": [
+        "getType(type)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ClipboardItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditem-gettype-type-type",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboarditem-gettype-type-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ClipboardItem/getType(type)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-presentationstyle",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#enumdef-presentationstyle",
+      "linkingText": [
+        "PresentationStyle"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationstyle-unspecified",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-presentationstyle-unspecified",
+      "linkingText": [
+        "\"unspecified\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PresentationStyle"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationstyle-inline",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-presentationstyle-inline",
+      "linkingText": [
+        "\"inline\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PresentationStyle"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationstyle-attachment",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-presentationstyle-attachment",
+      "linkingText": [
+        "\"attachment\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PresentationStyle"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-clipboarditemoptions",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dictdef-clipboarditemoptions",
+      "linkingText": [
+        "ClipboardItemOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboarditemoptions-presentationstyle",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboarditemoptions-presentationstyle",
+      "linkingText": [
+        "presentationStyle"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ClipboardItemOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboard-read",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboard-read",
+      "linkingText": [
+        "read()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Clipboard"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboard-readtext",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboard-readtext",
+      "linkingText": [
+        "readText()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Clipboard"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboard-write",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboard-write",
+      "linkingText": [
+        "write(data)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Clipboard"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboard-writetext",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboard-writetext",
+      "linkingText": [
+        "writeText(data)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Clipboard"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "script-triggered",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#script-triggered",
+      "linkingText": [
+        "script-triggered"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "script-may-access-clipboard",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#script-may-access-clipboard",
+      "linkingText": [
+        "script-may-access-clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-permissionname-clipboard-read",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-permissionname-clipboard-read",
+      "linkingText": [
+        "\"clipboard-read\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-permissionname-clipboard-write",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-permissionname-clipboard-write",
+      "linkingText": [
+        "\"clipboard-write\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-clipboardpermissiondescriptor",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dictdef-clipboardpermissiondescriptor",
+      "linkingText": [
+        "ClipboardPermissionDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clipboardpermissiondescriptor-allowwithoutgesture",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#dom-clipboardpermissiondescriptor-allowwithoutgesture",
+      "linkingText": [
+        "allowWithoutGesture"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ClipboardPermissionDescriptor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "check-clipboard-read-permission",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#check-clipboard-read-permission",
+      "linkingText": [
+        "check clipboard read permission"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "check-clipboard-write-permission",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#check-clipboard-write-permission",
+      "linkingText": [
+        "check clipboard write permission"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "write-content-to-the-clipboard",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#write-content-to-the-clipboard",
+      "linkingText": [
+        "write content to the clipboard"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fire-a-clipboard-event",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#fire-a-clipboard-event",
+      "linkingText": [
+        "fire a clipboard event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "process-an-html-paste-event",
+      "href": "https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/#process-an-html-paste-event",
+      "linkingText": [
+        "process an HTML paste event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,1879 @@
+{
+  "spec": {
+    "title": "Content Security Policy Level 3",
+    "url": "https://www.w3.org/TR/2018/WD-CSP3-20181015/"
+  },
+  "dfns": [
+    {
+      "id": "content-security-policy",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#content-security-policy",
+      "linkingText": [
+        "Content Security Policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-optional-ascii-whitespace",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-optional-ascii-whitespace",
+      "linkingText": [
+        "optional-ascii-whitespace"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-required-ascii-whitespace",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-required-ascii-whitespace",
+      "linkingText": [
+        "required-ascii-whitespace"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "content-security-policy-object",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#content-security-policy-object",
+      "linkingText": [
+        "content security policy object"
+      ],
+      "localLinkingText": [
+        "policy"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "policy-directive-set",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#policy-directive-set",
+      "linkingText": [
+        "directive set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "policy-disposition",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#policy-disposition",
+      "linkingText": [
+        "disposition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "policy-source",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#policy-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "csp-list",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#csp-list",
+      "linkingText": [
+        "CSP list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "contains-a-header-delivered-content-security-policy",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#contains-a-header-delivered-content-security-policy",
+      "linkingText": [
+        "contains a header-delivered Content Security Policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialized-csp",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#serialized-csp",
+      "linkingText": [
+        "serialized CSP"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-serialized-policy",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-serialized-policy",
+      "linkingText": [
+        "serialized-policy"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialized-csp-list",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#serialized-csp-list",
+      "linkingText": [
+        "serialized CSP list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-serialized-policy-list",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-serialized-policy-list",
+      "linkingText": [
+        "serialized-policy-list"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-parse-a-serialized-csp",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#abstract-opdef-parse-a-serialized-csp",
+      "linkingText": [
+        "parse a serialized CSP"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-parse-a-serialized-csp-list",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#abstract-opdef-parse-a-serialized-csp-list",
+      "linkingText": [
+        "parse a serialized CSP list"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "directives",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#directives",
+      "linkingText": [
+        "directives"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "directive-name",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#directive-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "directive-value",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#directive-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialized-directive",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#serialized-directive",
+      "linkingText": [
+        "serialized directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-serialized-directive",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-serialized-directive",
+      "linkingText": [
+        "serialized-directive"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-directive-name",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-directive-name",
+      "linkingText": [
+        "directive-name"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-directive-value",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-directive-value",
+      "linkingText": [
+        "directive-value"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "directive-pre-request-check",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#directive-pre-request-check",
+      "linkingText": [
+        "pre-request check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "directive-post-request-check",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#directive-post-request-check",
+      "linkingText": [
+        "post-request check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "directive-response-check",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#directive-response-check",
+      "linkingText": [
+        "response check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "directive-inline-check",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#directive-inline-check",
+      "linkingText": [
+        "inline check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "directive-initialization",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#directive-initialization",
+      "linkingText": [
+        "initialization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "directive-pre-navigation-check",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#directive-pre-navigation-check",
+      "linkingText": [
+        "pre-navigation check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "directive-navigation-response-check",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#directive-navigation-response-check",
+      "linkingText": [
+        "navigation response check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "source-lists",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#source-lists",
+      "linkingText": [
+        "source lists"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "source-expression",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#source-expression",
+      "linkingText": [
+        "source expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialized-source-list",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#serialized-source-list",
+      "linkingText": [
+        "serialized source list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-serialized-source-list",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-serialized-source-list",
+      "linkingText": [
+        "serialized-source-list"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-none",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-none",
+      "linkingText": [
+        "'none'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-source-expression",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-source-expression",
+      "linkingText": [
+        "source-expression"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-scheme-source",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-scheme-source",
+      "linkingText": [
+        "scheme-source"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-host-source",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-host-source",
+      "linkingText": [
+        "host-source"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-scheme-part",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-scheme-part",
+      "linkingText": [
+        "scheme-part"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-host-part",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-host-part",
+      "linkingText": [
+        "host-part"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-host-char",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-host-char",
+      "linkingText": [
+        "host-char"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-port-part",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-port-part",
+      "linkingText": [
+        "port-part"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-path-part",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-path-part",
+      "linkingText": [
+        "path-part"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-keyword-source",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-keyword-source",
+      "linkingText": [
+        "keyword-source"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-self",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-self",
+      "linkingText": [
+        "'self'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-unsafe-inline",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-unsafe-inline",
+      "linkingText": [
+        "'unsafe-inline'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-unsafe-eval",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-unsafe-eval",
+      "linkingText": [
+        "'unsafe-eval'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-strict-dynamic",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-strict-dynamic",
+      "linkingText": [
+        "'strict-dynamic'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-unsafe-hashes",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-unsafe-hashes",
+      "linkingText": [
+        "'unsafe-hashes'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-report-sample",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-report-sample",
+      "linkingText": [
+        "'report-sample'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-unsafe-allow-redirects",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-unsafe-allow-redirects",
+      "linkingText": [
+        "'unsafe-allow-redirects'"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-nonce-source",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-nonce-source",
+      "linkingText": [
+        "nonce-source"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-base64-value",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-base64-value",
+      "linkingText": [
+        "base64-value"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-hash-source",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-hash-source",
+      "linkingText": [
+        "hash-source"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-hash-algorithm",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-hash-algorithm",
+      "linkingText": [
+        "hash-algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "violation",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#violation",
+      "linkingText": [
+        "violation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "violation-global-object",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#violation-global-object",
+      "linkingText": [
+        "global object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "violation-url",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#violation-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "violation-status",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#violation-status",
+      "linkingText": [
+        "status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "violation-resource",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#violation-resource",
+      "linkingText": [
+        "resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "violation-referrer",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#violation-referrer",
+      "linkingText": [
+        "referrer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "violation-policy",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#violation-policy",
+      "linkingText": [
+        "policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "violation-disposition",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#violation-disposition",
+      "linkingText": [
+        "disposition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "violation-effective-directive",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#violation-effective-directive",
+      "linkingText": [
+        "effective directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "violation-source-file",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#violation-source-file",
+      "linkingText": [
+        "source file"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "violation-line-number",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#violation-line-number",
+      "linkingText": [
+        "line number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "violation-column-number",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#violation-column-number",
+      "linkingText": [
+        "column number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "violation-element",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#violation-element",
+      "linkingText": [
+        "element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "violation-sample",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#violation-sample",
+      "linkingText": [
+        "sample"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "violation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "header-content-security-policy",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#header-content-security-policy",
+      "linkingText": [
+        "Content-Security-Policy"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "header-content-security-policy-report-only",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#header-content-security-policy-report-only",
+      "linkingText": [
+        "Content-Security-Policy-Report-Only"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "global-object-csp-list",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#global-object-csp-list",
+      "linkingText": [
+        "CSP list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "global object"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enforced",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#enforced",
+      "linkingText": [
+        "enforced"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "monitored",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#monitored",
+      "linkingText": [
+        "monitored"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "embedding-document",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#embedding-document",
+      "linkingText": [
+        "embedding document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "can-compile-strings",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#can-compile-strings",
+      "linkingText": [
+        "EnsureCSPDoesNotBlockStringCompilation(callerRealm, calleeRealm, source)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "violation-report",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#violation-report",
+      "linkingText": [
+        "violation report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-securitypolicyviolationeventdisposition",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#enumdef-securitypolicyviolationeventdisposition",
+      "linkingText": [
+        "SecurityPolicyViolationEventDisposition"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationeventdisposition-enforce",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationeventdisposition-enforce",
+      "linkingText": [
+        "\"enforce\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SecurityPolicyViolationEventDisposition"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationeventdisposition-report",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationeventdisposition-report",
+      "linkingText": [
+        "\"report\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SecurityPolicyViolationEventDisposition"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-securitypolicyviolationevent",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationevent-securitypolicyviolationevent",
+      "linkingText": [
+        "SecurityPolicyViolationEvent(type, eventInitDict)",
+        "SecurityPolicyViolationEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-securitypolicyviolationevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationevent-securitypolicyviolationevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-securitypolicyviolationevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationevent-securitypolicyviolationevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "securitypolicyviolationevent",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#securitypolicyviolationevent",
+      "linkingText": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-documenturi",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationevent-documenturi",
+      "linkingText": [
+        "documentURI"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-referrer",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationevent-referrer",
+      "linkingText": [
+        "referrer"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-blockeduri",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationevent-blockeduri",
+      "linkingText": [
+        "blockedURI"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-violateddirective",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationevent-violateddirective",
+      "linkingText": [
+        "violatedDirective"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-effectivedirective",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationevent-effectivedirective",
+      "linkingText": [
+        "effectiveDirective"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-originalpolicy",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationevent-originalpolicy",
+      "linkingText": [
+        "originalPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-sourcefile",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationevent-sourcefile",
+      "linkingText": [
+        "sourceFile"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-sample",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationevent-sample",
+      "linkingText": [
+        "sample"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-disposition",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationevent-disposition",
+      "linkingText": [
+        "disposition"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-statuscode",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationevent-statuscode",
+      "linkingText": [
+        "statusCode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-linenumber",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationevent-linenumber",
+      "linkingText": [
+        "lineNumber"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-columnnumber",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationevent-columnnumber",
+      "linkingText": [
+        "columnNumber"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-securitypolicyviolationeventinit",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dictdef-securitypolicyviolationeventinit",
+      "linkingText": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-documenturi",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationeventinit-documenturi",
+      "linkingText": [
+        "documentURI"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-referrer",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationeventinit-referrer",
+      "linkingText": [
+        "referrer"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-blockeduri",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationeventinit-blockeduri",
+      "linkingText": [
+        "blockedURI"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-violateddirective",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationeventinit-violateddirective",
+      "linkingText": [
+        "violatedDirective"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-effectivedirective",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationeventinit-effectivedirective",
+      "linkingText": [
+        "effectiveDirective"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-originalpolicy",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationeventinit-originalpolicy",
+      "linkingText": [
+        "originalPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-sourcefile",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationeventinit-sourcefile",
+      "linkingText": [
+        "sourceFile"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-sample",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationeventinit-sample",
+      "linkingText": [
+        "sample"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-disposition",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationeventinit-disposition",
+      "linkingText": [
+        "disposition"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-statuscode",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationeventinit-statuscode",
+      "linkingText": [
+        "statusCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-linenumber",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationeventinit-linenumber",
+      "linkingText": [
+        "lineNumber"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-columnnumber",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#dom-securitypolicyviolationeventinit-columnnumber",
+      "linkingText": [
+        "columnNumber"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fetch-directives",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#fetch-directives",
+      "linkingText": [
+        "Fetch directives"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "child-src",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#child-src",
+      "linkingText": [
+        "child-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "connect-src",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#connect-src",
+      "linkingText": [
+        "connect-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-src",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#default-src",
+      "linkingText": [
+        "default-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "font-src",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#font-src",
+      "linkingText": [
+        "font-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "frame-src",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#frame-src",
+      "linkingText": [
+        "frame-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "img-src",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#img-src",
+      "linkingText": [
+        "img-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "manifest-src",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#manifest-src",
+      "linkingText": [
+        "manifest-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "media-src",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#media-src",
+      "linkingText": [
+        "media-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "prefetch-src",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#prefetch-src",
+      "linkingText": [
+        "prefetch-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "object-src",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#object-src",
+      "linkingText": [
+        "object-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "script-src",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#script-src",
+      "linkingText": [
+        "script-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "script-src-elem",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#script-src-elem",
+      "linkingText": [
+        "script-src-elem"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "script-src-attr",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#script-src-attr",
+      "linkingText": [
+        "script-src-attr"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "style-src",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#style-src",
+      "linkingText": [
+        "style-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "style-src-elem",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#style-src-elem",
+      "linkingText": [
+        "style-src-elem"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "style-src-attr",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#style-src-attr",
+      "linkingText": [
+        "style-src-attr"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "worker-src",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#worker-src",
+      "linkingText": [
+        "worker-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "base-uri",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#base-uri",
+      "linkingText": [
+        "base-uri"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "plugin-types",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#plugin-types",
+      "linkingText": [
+        "plugin-types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-media-type-list",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-media-type-list",
+      "linkingText": [
+        "media-type-list"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-media-type",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-media-type",
+      "linkingText": [
+        "media-type"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "plugin-types-post-request-check",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#plugin-types-post-request-check",
+      "linkingText": [
+        "plugin-types Post-Request Check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "should-plugin-element-be-blocked-a-priori-by-content-security-policy",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#should-plugin-element-be-blocked-a-priori-by-content-security-policy",
+      "linkingText": [
+        "Should plugin element be blocked a priori by Content Security Policy?:"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sandbox",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#sandbox",
+      "linkingText": [
+        "sandbox"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "form-action",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#form-action",
+      "linkingText": [
+        "form-action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "frame-ancestors",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#frame-ancestors",
+      "linkingText": [
+        "frame-ancestors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-ancestor-source-list",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-ancestor-source-list",
+      "linkingText": [
+        "ancestor-source-list"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grammardef-ancestor-source",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#grammardef-ancestor-source",
+      "linkingText": [
+        "ancestor-source"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "navigate-to",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#navigate-to",
+      "linkingText": [
+        "navigate-to"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "report-uri",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#report-uri",
+      "linkingText": [
+        "report-uri"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "report-to",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#report-to",
+      "linkingText": [
+        "report-to"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scheme-part-match",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#scheme-part-match",
+      "linkingText": [
+        "scheme-part match"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "host-part-match",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#host-part-match",
+      "linkingText": [
+        "host-part match"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "port-part-matches",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#port-part-matches",
+      "linkingText": [
+        "port-part matches"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "path-part-match",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#path-part-match",
+      "linkingText": [
+        "path-part match"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "source-list-allows-all-inline-behavior",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#source-list-allows-all-inline-behavior",
+      "linkingText": [
+        "allows all inline behavior"
+      ],
+      "localLinkingText": [
+        "allow all inline behavior"
+      ],
+      "type": "dfn",
+      "for": [
+        "source list"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "request-effective-directive",
+      "href": "https://www.w3.org/TR/2018/WD-CSP3-20181015/#request-effective-directive",
+      "linkingText": [
+        "effective directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

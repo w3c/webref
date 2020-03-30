@@ -1,0 +1,380 @@
+{
+  "spec": {
+    "title": "DOM Parsing and Serialization",
+    "url": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-other-applicable-specifications",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-other-applicable-specifications",
+      "linkingText": [
+        "other applicable specifications"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-context-object",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-context-object",
+      "linkingText": [
+        "context object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-html-ns",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-html-ns",
+      "linkingText": [
+        "html-ns"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-xml-ns",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-xml-ns",
+      "linkingText": [
+        "xml-ns"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-xmlns-ns",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-xmlns-ns",
+      "linkingText": [
+        "xmlns-ns"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-concept-parse-fragment",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-concept-parse-fragment",
+      "linkingText": [
+        "concept-parse-fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-concept-fragment-serializing-algorithm",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-concept-fragment-serializing-algorithm",
+      "linkingText": [
+        "concept-fragment-serializing-algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-concept-well-formed",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-concept-well-formed",
+      "linkingText": [
+        "concept-well-formed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-concept-serialize-html",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-concept-serialize-html",
+      "linkingText": [
+        "concept-serialize-html"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-concept-serialize-xml",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-concept-serialize-xml",
+      "linkingText": [
+        "concept-serialize-xml"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-concept-context-namespace",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-concept-context-namespace",
+      "linkingText": [
+        "concept-context-namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-concept-namespace-prefix-map",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-concept-namespace-prefix-map",
+      "linkingText": [
+        "concept-namespace-prefix-map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-concept-generated-prefix",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-concept-generated-prefix",
+      "linkingText": [
+        "concept-generated-prefix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-concept-algorithm-exception",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-concept-algorithm-exception",
+      "linkingText": [
+        "concept-algorithm-exception"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-concept-xml-serialization-algorithm",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-concept-xml-serialization-algorithm",
+      "linkingText": [
+        "concept-xml-serialization-algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-concept-serialize-doctype",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-concept-serialize-doctype",
+      "linkingText": [
+        "concept-serialize-doctype"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-concept-record-namespace-info",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-concept-record-namespace-info",
+      "linkingText": [
+        "concept-record-namespace-info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-record-namespace-loop",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-record-namespace-loop",
+      "linkingText": [
+        "record-namespace-loop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-concept-generate-prefix",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-concept-generate-prefix",
+      "linkingText": [
+        "concept-generate-prefix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-concept-serialize-xml-attributes",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-concept-serialize-xml-attributes",
+      "linkingText": [
+        "concept-serialize-xml-attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-concept-namespace-localname-set",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-concept-namespace-localname-set",
+      "linkingText": [
+        "concept-namespace-localname-set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-serialize-attributes-loop",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-serialize-attributes-loop",
+      "linkingText": [
+        "serialize-attributes-loop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-concept-serialize-attr-value",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-concept-serialize-attr-value",
+      "linkingText": [
+        "concept-serialize-attr-value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dom-domparser",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-dom-domparser",
+      "linkingText": [
+        "dom-domparser"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dom-domparser-parsefromstring",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-dom-domparser-parsefromstring",
+      "linkingText": [
+        "dom-domparser-parsefromstring"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dom-xmlserializer",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-dom-xmlserializer",
+      "linkingText": [
+        "dom-xmlserializer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dom-xmlserializer-serializetostring",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-dom-xmlserializer-serializetostring",
+      "linkingText": [
+        "dom-xmlserializer-serializetostring"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dom-element-innerhtml",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-dom-element-innerhtml",
+      "linkingText": [
+        "dom-element-innerhtml"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dom-element-outerhtml",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-dom-element-outerhtml",
+      "linkingText": [
+        "dom-element-outerhtml"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dom-element-insertadjacenthtml",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-dom-element-insertadjacenthtml",
+      "linkingText": [
+        "dom-element-insertadjacenthtml"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dom-range-createcontextualfragment",
+      "href": "http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/#dfn-dom-range-createcontextualfragment",
+      "linkingText": [
+        "dom-range-createcontextualfragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

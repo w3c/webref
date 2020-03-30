@@ -1,0 +1,406 @@
+{
+  "spec": {
+    "title": "CSS Generated Content for Paged Media Module",
+    "url": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/"
+  },
+  "dfns": [
+    {
+      "id": "named-strings0",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#named-strings0",
+      "linkingText": [
+        "Named strings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "running-elements0",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#running-elements0",
+      "linkingText": [
+        "Running elements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-string-set",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#propdef-string-set",
+      "linkingText": [
+        "string-set"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "content-list",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#content-list",
+      "linkingText": [
+        "content-list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "funcdef-content",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#funcdef-content",
+      "linkingText": [
+        "content()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "entry-value",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#entry-value",
+      "linkingText": [
+        "entry value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "exit-value",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#exit-value",
+      "linkingText": [
+        "exit value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "funcdef-string",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#funcdef-string",
+      "linkingText": [
+        "string()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-running",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#funcdef-running",
+      "linkingText": [
+        "running()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-running",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#propdef-running",
+      "linkingText": [
+        "running"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "funcdef-element",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#funcdef-element",
+      "linkingText": [
+        "element()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-footnote",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#valuedef-footnote",
+      "linkingText": [
+        "footnote"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "float"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-footnote-display",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#propdef-footnote-display",
+      "linkingText": [
+        "footnote-display"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "footnote-display-block",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#footnote-display-block",
+      "linkingText": [
+        "block"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "footnote-display"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "footnote-display-inline",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#footnote-display-inline",
+      "linkingText": [
+        "inline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "footnote-display"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "footnote-display-compact",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#footnote-display-compact",
+      "linkingText": [
+        "compact"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "footnote-display"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "footnote-counter",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#footnote-counter",
+      "linkingText": [
+        "footnote counter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-footnote-policy",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#propdef-footnote-policy",
+      "linkingText": [
+        "footnote-policy"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-auto",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#valuedef-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "footnote-policy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "footnote-policy-line",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#footnote-policy-line",
+      "linkingText": [
+        "line"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "footnote-policy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-block",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#valuedef-block",
+      "linkingText": [
+        "block"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "footnote-policy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "page-selectors",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#page-selectors",
+      "linkingText": [
+        "page selectors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "funcdef-nth",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#funcdef-nth",
+      "linkingText": [
+        "nth()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "page-group",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#page-group",
+      "linkingText": [
+        "page group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "funcdef-leader",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#funcdef-leader",
+      "linkingText": [
+        "leader()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-target-counter",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#funcdef-target-counter",
+      "linkingText": [
+        "target-counter()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-target-counters",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#funcdef-target-counters",
+      "linkingText": [
+        "target-counters()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "target-text-function",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#target-text-function",
+      "linkingText": [
+        "target-text()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "bookmarks0",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#bookmarks0",
+      "linkingText": [
+        "bookmarks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-bookmark-level",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#propdef-bookmark-level",
+      "linkingText": [
+        "bookmark-level"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-bookmark-label",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#propdef-bookmark-label",
+      "linkingText": [
+        "bookmark-label"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-bookmark-state",
+      "href": "http://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/#propdef-bookmark-state",
+      "linkingText": [
+        "bookmark-state"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

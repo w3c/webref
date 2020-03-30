@@ -1,0 +1,514 @@
+{
+  "spec": {
+    "title": "CSS Regions Module Level 1",
+    "url": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/"
+  },
+  "dfns": [
+    {
+      "id": "css-region",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#css-region",
+      "linkingText": [
+        "CSS Region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "region-chain",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#region-chain",
+      "linkingText": [
+        "region chain"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "named-flow",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#named-flow",
+      "linkingText": [
+        "named flow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-flow-into",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#propdef-flow-into",
+      "linkingText": [
+        "flow-into"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "element",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#element",
+      "linkingText": [
+        "element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "content",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#content",
+      "linkingText": [
+        "content"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "specified-flow",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#specified-flow",
+      "linkingText": [
+        "specified flow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-flow-from",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#propdef-flow-from",
+      "linkingText": [
+        "flow-from"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "nested-region-context",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#nested-region-context",
+      "linkingText": [
+        "nested region context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-break-before",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#propdef-break-before",
+      "linkingText": [
+        "break-before"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-break-after",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#propdef-break-after",
+      "linkingText": [
+        "break-after"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-break-inside",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#propdef-break-inside",
+      "linkingText": [
+        "break-inside"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-region-fragment",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#propdef-region-fragment",
+      "linkingText": [
+        "region-fragment"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "document-namedflows",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#document-namedflows",
+      "linkingText": [
+        "namedFlows"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-document-namedflows",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-document-namedflows",
+      "linkingText": [
+        "namedFlows"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflowmap",
+      "linkingText": [
+        "NamedFlowMap"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-get-flowname",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflowmap-get-flowname",
+      "linkingText": [
+        "flowName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "NamedFlowMap/get()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-has-flowname",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflowmap-has-flowname",
+      "linkingText": [
+        "flowName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "NamedFlowMap/has()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-set-flowname",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflowmap-set-flowname",
+      "linkingText": [
+        "flowName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "NamedFlowMap/set()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-set-flowvalue",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflowmap-set-flowvalue",
+      "linkingText": [
+        "flowValue"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "NamedFlowMap/set()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-delete-flowname",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflowmap-delete-flowname",
+      "linkingText": [
+        "flowName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "NamedFlowMap/delete()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-get",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflowmap-get",
+      "linkingText": [
+        "get()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlowMap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-has",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflowmap-has",
+      "linkingText": [
+        "has()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlowMap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-set",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflowmap-set",
+      "linkingText": [
+        "set()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlowMap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflowmap-delete",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflowmap-delete",
+      "linkingText": [
+        "delete()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlowMap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflow",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflow",
+      "linkingText": [
+        "NamedFlow"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflow-getregionsbycontent-node",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflow-getregionsbycontent-node",
+      "linkingText": [
+        "node"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "NamedFlow/getRegionsByContent()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflow-name",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflow-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NamedFlow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflow-overset",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflow-overset",
+      "linkingText": [
+        "overset"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NamedFlow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflow-getregions",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflow-getregions",
+      "linkingText": [
+        "getRegions()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflow-firstemptyregionindex",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflow-firstemptyregionindex",
+      "linkingText": [
+        "firstEmptyRegionIndex"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NamedFlow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflow-getcontent",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflow-getcontent",
+      "linkingText": [
+        "getContent()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-namedflow-getregionsbycontent",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-namedflow-getregionsbycontent",
+      "linkingText": [
+        "getRegionsByContent()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NamedFlow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-region",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-region",
+      "linkingText": [
+        "Region"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-region-regionoverset",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-region-regionoverset",
+      "linkingText": [
+        "regionOverset"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Region"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-region-getregionflowranges",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#dom-region-getregionflowranges",
+      "linkingText": [
+        "getRegionFlowRanges()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Region"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "region-flow-content-box",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#region-flow-content-box",
+      "linkingText": [
+        "region flow content box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "rfcb",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#rfcb",
+      "linkingText": [
+        "RFCB"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "flow-fragment-height",
+      "href": "http://www.w3.org/TR/2014/WD-css-regions-1-20141009/#flow-fragment-height",
+      "linkingText": [
+        "flow fragment height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

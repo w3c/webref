@@ -1,0 +1,427 @@
+{
+  "spec": {
+    "title": "CSS Positioned Layout Module Level 3",
+    "url": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/"
+  },
+  "dfns": [
+    {
+      "id": "viewport",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#viewport",
+      "linkingText": [
+        "viewport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "containing-block",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#containing-block",
+      "linkingText": [
+        "containing block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "normal-flow",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#normal-flow",
+      "linkingText": [
+        "Normal Flow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "float",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#float",
+      "linkingText": [
+        "float",
+        "floated box",
+        "floating box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "positioning-schemes",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#positioning-schemes",
+      "linkingText": [
+        "Positioning schemes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "relative-position",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#relative-position",
+      "linkingText": [
+        "relative position",
+        "relatively position",
+        "relpos"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "sticky-position",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#sticky-position",
+      "linkingText": [
+        "sticky position",
+        "stickily position",
+        "stickypos"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-position",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#propdef-position",
+      "linkingText": [
+        "position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-position-static",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#valdef-position-static",
+      "linkingText": [
+        "static"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-position-relative",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#valdef-position-relative",
+      "linkingText": [
+        "relative"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-position-absolute",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#valdef-position-absolute",
+      "linkingText": [
+        "absolute"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-position-sticky",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#valdef-position-sticky",
+      "linkingText": [
+        "sticky"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-position-fixed",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#valdef-position-fixed",
+      "linkingText": [
+        "fixed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-top",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#propdef-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-right",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#propdef-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-bottom",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#propdef-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-left",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#propdef-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-top-length",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#valdef-top-length",
+      "linkingText": [
+        "<length>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "offset-start",
+        "offset-end",
+        "offset-before",
+        "offset-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-top-percentage",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#valdef-top-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "offset-start",
+        "offset-end",
+        "offset-before",
+        "offset-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-top-auto",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#valdef-top-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "offset-start",
+        "offset-end",
+        "offset-before",
+        "offset-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-offset-before",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#propdef-offset-before",
+      "linkingText": [
+        "offset-before"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-offset-after",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#propdef-offset-after",
+      "linkingText": [
+        "offset-after"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-offset-start",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#propdef-offset-start",
+      "linkingText": [
+        "offset-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-offset-end",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#propdef-offset-end",
+      "linkingText": [
+        "offset-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stacking-context",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#stacking-context",
+      "linkingText": [
+        "stacking context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stack-level",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#stack-level",
+      "linkingText": [
+        "stack level"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "root-stacking-context",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#root-stacking-context",
+      "linkingText": [
+        "root stacking context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "local-stacking-contexts",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#local-stacking-contexts",
+      "linkingText": [
+        "local stacking contexts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-z-index",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#propdef-z-index",
+      "linkingText": [
+        "z-index"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-z-index-integer",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#valdef-z-index-integer",
+      "linkingText": [
+        "<integer>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "z-index"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-z-index-auto",
+      "href": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/#valdef-z-index-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "z-index"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

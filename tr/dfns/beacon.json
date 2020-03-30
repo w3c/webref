@@ -1,0 +1,404 @@
+{
+  "spec": {
+    "title": "Beacon",
+    "url": "https://www.w3.org/TR/2017/CR-beacon-20170413/"
+  },
+  "dfns": [
+    {
+      "id": "document-url",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#document-url",
+      "linkingText": [
+        "document\n            URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "document",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#document",
+      "linkingText": [
+        "document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "throw-a-name-exception",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#throw-a-name-exception",
+      "linkingText": [
+        "throw a name\n            exception"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "api-base-url",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#api-base-url",
+      "linkingText": [
+        "API base\n            URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "api-referrer-source",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#api-referrer-source",
+      "linkingText": [
+        "API\n            referrer source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "entry-settings-object",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#entry-settings-object",
+      "linkingText": [
+        "entry\n            settings object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "multipart-form-data-boundary-string",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#multipart-form-data-boundary-string",
+      "linkingText": [
+        "multipart/form-data boundary string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "multipart-form-data-encoding-algorithm",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#multipart-form-data-encoding-algorithm",
+      "linkingText": [
+        "multipart/form-data encoding algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "origin",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#origin",
+      "linkingText": [
+        "resource origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-header-value",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#concept-header-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-request",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#concept-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-request-method",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#concept-request-method",
+      "linkingText": [
+        "method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-request-url",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#concept-request-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-request-list",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#concept-request-list",
+      "linkingText": [
+        "header\n            list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-request-origin",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#concept-request-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-keep-alive-flag",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#concept-keep-alive-flag",
+      "linkingText": [
+        "keep-alive flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "origin-header-flag",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#origin-header-flag",
+      "linkingText": [
+        "Origin header flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-request-referrer",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#concept-request-referrer",
+      "linkingText": [
+        "referrer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-request-body",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#concept-request-body",
+      "linkingText": [
+        "body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-request-mode",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#concept-request-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-request-credentials-mode",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#concept-request-credentials-mode",
+      "linkingText": [
+        "credentials\n            mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fetch",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#fetch",
+      "linkingText": [
+        "fetch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "bodyinit",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#bodyinit",
+      "linkingText": [
+        "BodyInit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "blob",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#blob",
+      "linkingText": [
+        "Blob"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "type",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "arraybufferview",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#arraybufferview",
+      "linkingText": [
+        "ArrayBufferView"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "arraybuffer",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#arraybuffer",
+      "linkingText": [
+        "ArrayBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "url-parser",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#url-parser",
+      "linkingText": [
+        "URL\n            parser"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "scheme",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#scheme",
+      "linkingText": [
+        "scheme"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "usvstring",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#usvstring",
+      "linkingText": [
+        "USVString"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typeerror",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#typeerror",
+      "linkingText": [
+        "TypeError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "formdata",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#formdata",
+      "linkingText": [
+        "FormData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator-sendbeacon",
+      "href": "https://www.w3.org/TR/2017/CR-beacon-20170413/#dom-navigator-sendbeacon",
+      "linkingText": [
+        "sendBeacon"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

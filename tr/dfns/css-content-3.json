@@ -1,0 +1,723 @@
+{
+  "spec": {
+    "title": "CSS Generated Content Module Level 3",
+    "url": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/"
+  },
+  "dfns": [
+    {
+      "id": "propdef-content",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#propdef-content",
+      "linkingText": [
+        "content"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-content-normal",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-content-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-content-none",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-content-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-content-content-replacement",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#typedef-content-content-replacement",
+      "linkingText": [
+        "<content-replacement>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "content"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-content-content-list",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#typedef-content-content-list",
+      "linkingText": [
+        "<content-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "content"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-content---string--counter",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-content---string--counter",
+      "linkingText": [
+        "/ [ <string> | <counter> ]+"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-content-string",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-content-string",
+      "linkingText": [
+        "<string>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content",
+        "<content-list>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-content-list-image",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-content-list-image",
+      "linkingText": [
+        "<image>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<content-list>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-content-contents",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-content-contents",
+      "linkingText": [
+        "contents"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content",
+        "<content-list>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-quotes",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#propdef-quotes",
+      "linkingText": [
+        "quotes"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-quotes-none",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-quotes-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "quotes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-quotes-auto",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-quotes-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "quotes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-quote",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#typedef-quote",
+      "linkingText": [
+        "<quote>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-content-open-quote",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-content-open-quote",
+      "linkingText": [
+        "open-quote"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content",
+        "<content-list>",
+        "<quote>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-content-close-quote",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-content-close-quote",
+      "linkingText": [
+        "close-quote"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content",
+        "<content-list>",
+        "<quote>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-content-no-open-quote",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-content-no-open-quote",
+      "linkingText": [
+        "no-open-quote"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content",
+        "<content-list>",
+        "<quote>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-content-no-close-quote",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-content-no-close-quote",
+      "linkingText": [
+        "no-close-quote"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content",
+        "<content-list>",
+        "<quote>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-content-leader",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#funcdef-content-leader",
+      "linkingText": [
+        "leader()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "content",
+        "<content-list>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-leader",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#funcdef-leader",
+      "linkingText": [
+        "leader()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-leader-type",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#typedef-leader-type",
+      "linkingText": [
+        "<leader-type>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-leader-dotted",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-leader-dotted",
+      "linkingText": [
+        "dotted"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leader()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-leader-solid",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-leader-solid",
+      "linkingText": [
+        "solid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leader()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-leader-space",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-leader-space",
+      "linkingText": [
+        "space"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leader()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-leader-string",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-leader-string",
+      "linkingText": [
+        "<string>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leader()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-target",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#typedef-target",
+      "linkingText": [
+        "<target>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-target-counter",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#funcdef-target-counter",
+      "linkingText": [
+        "target-counter()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-target-counters",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#funcdef-target-counters",
+      "linkingText": [
+        "target-counters()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "target-text-function",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#target-text-function",
+      "linkingText": [
+        "target-text()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "named-string",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#named-string",
+      "linkingText": [
+        "named string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-string-set",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#propdef-string-set",
+      "linkingText": [
+        "string-set"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-string-set-none",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-string-set-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "string-set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-string",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#funcdef-string",
+      "linkingText": [
+        "string()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-string-first",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-string-first",
+      "linkingText": [
+        "first"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "string()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-string-start",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-string-start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "string()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-string-last",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-string-last",
+      "linkingText": [
+        "last"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "string()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-string-first-except",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-string-first-except",
+      "linkingText": [
+        "first-except"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "string()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "entry-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#entry-value",
+      "linkingText": [
+        "entry value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "exit-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#exit-value",
+      "linkingText": [
+        "exit value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "funcdef-content",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#funcdef-content",
+      "linkingText": [
+        "content()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-content-text",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-content-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-content-before",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-content-before",
+      "linkingText": [
+        "before"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-content-after",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-content-after",
+      "linkingText": [
+        "after"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-content-first-letter",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-content-first-letter",
+      "linkingText": [
+        "first-letter"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-content-marker",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-content-marker",
+      "linkingText": [
+        "marker"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "bookmarks",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#bookmarks",
+      "linkingText": [
+        "bookmarks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-bookmark-level",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#propdef-bookmark-level",
+      "linkingText": [
+        "bookmark-level"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-bookmark-level-integer",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-bookmark-level-integer",
+      "linkingText": [
+        "<integer>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "bookmark-level"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-bookmark-level-none",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-bookmark-level-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "bookmark-level"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-bookmark-label",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#propdef-bookmark-label",
+      "linkingText": [
+        "bookmark-label"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-bookmark-label-content-list",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-bookmark-label-content-list",
+      "linkingText": [
+        "<content-list>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "bookmark-label"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-bookmark-state",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#propdef-bookmark-state",
+      "linkingText": [
+        "bookmark-state"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-bookmark-state-open",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-bookmark-state-open",
+      "linkingText": [
+        "open"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "bookmark-state"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-bookmark-state-closed",
+      "href": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/#valdef-bookmark-state-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "bookmark-state"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

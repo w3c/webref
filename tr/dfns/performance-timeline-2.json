@@ -1,0 +1,538 @@
+{
+  "spec": {
+    "title": "Performance Timeline Level 2",
+    "url": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-performance-timeline",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dfn-performance-timeline",
+      "linkingText": [
+        "Performance Timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-performance-observer-task-queued-flag",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dfn-performance-observer-task-queued-flag",
+      "linkingText": [
+        "performance observer task queued flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-list-of-registered-performance-observer-objects",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dfn-list-of-registered-performance-observer-objects",
+      "linkingText": [
+        "list of registered performance observer objects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-performance-entry-buffer",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dfn-performance-entry-buffer",
+      "linkingText": [
+        "performance entry buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-relevant-performance-entry-buffer",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dfn-relevant-performance-entry-buffer",
+      "linkingText": [
+        "relevant performance entry buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performance",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performance",
+      "linkingText": [
+        "Performance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceentrylist",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceentrylist",
+      "linkingText": [
+        "PerformanceEntryList"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performance-getentries",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performance-getentries",
+      "linkingText": [
+        "Performance.getEntries()",
+        "Performance.getEntries",
+        "getEntries()",
+        "getEntries"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performance-getentriesbytype",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performance-getentriesbytype",
+      "linkingText": [
+        "Performance.getEntriesByType()",
+        "Performance.getEntriesByType",
+        "getEntriesByType()",
+        "getEntriesByType"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performance-getentriesbyname",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performance-getentriesbyname",
+      "linkingText": [
+        "Performance.getEntriesByName()",
+        "Performance.getEntriesByName",
+        "getEntriesByName()",
+        "getEntriesByName"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceentry",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceentry",
+      "linkingText": [
+        "PerformanceEntry"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceentry-name",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceentry-name",
+      "linkingText": [
+        "PerformanceEntry.name",
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceEntry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceentry-entrytype",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceentry-entrytype",
+      "linkingText": [
+        "PerformanceEntry.entryType",
+        "entryType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceEntry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceentry-starttime",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceentry-starttime",
+      "linkingText": [
+        "PerformanceEntry.startTime",
+        "startTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceEntry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceentry-duration",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceentry-duration",
+      "linkingText": [
+        "PerformanceEntry.duration",
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceEntry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceentry-tojson",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceentry-tojson",
+      "linkingText": [
+        "PerformanceEntry.toJSON()",
+        "PerformanceEntry.toJSON",
+        "toJSON()",
+        "toJSON"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PerformanceEntry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserver",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceobserver",
+      "linkingText": [
+        "PerformanceObserver"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobservercallback",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceobservercallback",
+      "linkingText": [
+        "PerformanceObserverCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-observer-buffer",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dfn-observer-buffer",
+      "linkingText": [
+        "observer\n        buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-observer-type",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dfn-observer-type",
+      "linkingText": [
+        "observer type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-registered-performance-observer",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dfn-registered-performance-observer",
+      "linkingText": [
+        "registered performance observer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-observer",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dfn-observer",
+      "linkingText": [
+        "observer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-options-list",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dfn-options-list",
+      "linkingText": [
+        "options list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserver-constructor",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceobserver-constructor",
+      "linkingText": [
+        "PerformanceObserver.constructor()",
+        "PerformanceObserver.constructor",
+        "constructor()",
+        "constructor"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "PerformanceObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserver-observe",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceobserver-observe",
+      "linkingText": [
+        "PerformanceObserver.observe()",
+        "PerformanceObserver.observe",
+        "observe()",
+        "observe"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PerformanceObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-register-the-observer",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dfn-register-the-observer",
+      "linkingText": [
+        "register the observer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserverinit",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceobserverinit",
+      "linkingText": [
+        "PerformanceObserverInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserverinit-entrytypes",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceobserverinit-entrytypes",
+      "linkingText": [
+        "entryTypes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PerformanceObserverInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserverinit-type",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceobserverinit-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PerformanceObserverInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserverentrylist",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceobserverentrylist",
+      "linkingText": [
+        "PerformanceObserverEntryList"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserverentrylist-getentries",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceobserverentrylist-getentries",
+      "linkingText": [
+        "PerformanceObserverEntryList.getEntries()",
+        "PerformanceObserverEntryList.getEntries",
+        "getEntries()",
+        "getEntries"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PerformanceObserverEntryList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserverentrylist-getentriesbytype",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceobserverentrylist-getentriesbytype",
+      "linkingText": [
+        "PerformanceObserverEntryList.getEntriesByType()",
+        "PerformanceObserverEntryList.getEntriesByType",
+        "getEntriesByType()",
+        "getEntriesByType"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PerformanceObserverEntryList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserverentrylist-getentriesbyname",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceobserverentrylist-getentriesbyname",
+      "linkingText": [
+        "PerformanceObserverEntryList.getEntriesByName()",
+        "PerformanceObserverEntryList.getEntriesByName",
+        "getEntriesByName()",
+        "getEntriesByName"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PerformanceObserverEntryList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserver-takerecords",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceobserver-takerecords",
+      "linkingText": [
+        "PerformanceObserver.takeRecords()",
+        "PerformanceObserver.takeRecords",
+        "takeRecords()",
+        "takeRecords"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PerformanceObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserver-disconnect",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceobserver-disconnect",
+      "linkingText": [
+        "PerformanceObserver.disconnect()",
+        "PerformanceObserver.disconnect",
+        "disconnect()",
+        "disconnect"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PerformanceObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-frozen-array-of-supported-entry-types",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dfn-frozen-array-of-supported-entry-types",
+      "linkingText": [
+        "frozen array of supported entry types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceobserver-supportedentrytypes",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dom-performanceobserver-supportedentrytypes",
+      "linkingText": [
+        "PerformanceObserver.supportedEntryTypes",
+        "supportedEntryTypes"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-queue-a-performanceentry",
+      "href": "https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/#dfn-queue-a-performanceentry",
+      "linkingText": [
+        "queue a PerformanceEntry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

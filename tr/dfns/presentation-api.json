@@ -1,0 +1,2124 @@
+{
+  "spec": {
+    "title": "Presentation API",
+    "url": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-x1-ua-mode",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-x1-ua-mode",
+      "linkingText": [
+        "1-UA mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-x2-ua-mode",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-x2-ua-mode",
+      "linkingText": [
+        "2-UA\n        mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-user-agents",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-user-agents",
+      "linkingText": [
+        "user agents"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-controlling-user-agent",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-controlling-user-agent",
+      "linkingText": [
+        "Controlling user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-receiving-user-agent",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-receiving-user-agent",
+      "linkingText": [
+        "Receiving user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-active-sandboxing-flag-set",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-active-sandboxing-flag-set",
+      "linkingText": [
+        "active sandboxing flag set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-allowed-to-show-a-popup",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-allowed-to-show-a-popup",
+      "linkingText": [
+        "allowed\n          to show a popup"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-application-cache",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-application-cache",
+      "linkingText": [
+        "application cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-browsing-context",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-browsing-context",
+      "linkingText": [
+        "browsing\n          context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-creating-a-new-browsing-context",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-creating-a-new-browsing-context",
+      "linkingText": [
+        "creating a new browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-current-realm",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-current-realm",
+      "linkingText": [
+        "current\n          realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-current-settings-object",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-current-settings-object",
+      "linkingText": [
+        "current settings object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-discard-a-browsing-context",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-discard-a-browsing-context",
+      "linkingText": [
+        "discard a browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-eventhandler",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-eventhandler",
+      "linkingText": [
+        "EventHandler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handler",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-event-handler",
+      "linkingText": [
+        "event\n          handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handler-event-type",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-event-handler-event-type",
+      "linkingText": [
+        "event handler event type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-firing-an-event",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-firing-an-event",
+      "linkingText": [
+        "firing an\n          event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-firing-a-simple-event",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-firing-a-simple-event",
+      "linkingText": [
+        "firing a simple event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-in-parallel",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-in-parallel",
+      "linkingText": [
+        "in\n          parallel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-list-of-descendant-browsing-contexts",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-list-of-descendant-browsing-contexts",
+      "linkingText": [
+        "list of descendant browsing contexts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-navigate",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-navigate",
+      "linkingText": [
+        "navigate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-navigator",
+      "linkingText": [
+        "Navigator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-nested-browsing-context",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-nested-browsing-context",
+      "linkingText": [
+        "nested browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-parse-a-sandboxing-directive",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-parse-a-sandboxing-directive",
+      "linkingText": [
+        "parse a sandboxing directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-queue-a-task",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-queue-a-task",
+      "linkingText": [
+        "queue a\n          task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-relevant-settings-object",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-relevant-settings-object",
+      "linkingText": [
+        "relevant settings object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-responsible-browsing-context",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-responsible-browsing-context",
+      "linkingText": [
+        "responsible browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sandboxed-auxiliary-navigation-browsing-context-flag",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-sandboxed-auxiliary-navigation-browsing-context-flag",
+      "linkingText": [
+        "sandboxed auxiliary navigation browsing context flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sandboxed-top-level-navigation-browsing-context-flag",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-sandboxed-top-level-navigation-browsing-context-flag",
+      "linkingText": [
+        "sandboxed top-level navigation browsing context flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sandboxed-modals-flag",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-sandboxed-modals-flag",
+      "linkingText": [
+        "sandboxed\n          modals flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sandboxed-presentation-browsing-context-flag",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-sandboxed-presentation-browsing-context-flag",
+      "linkingText": [
+        "sandboxed presentation browsing context flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sandboxing-flag-set",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-sandboxing-flag-set",
+      "linkingText": [
+        "sandboxing\n          flag set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-session-history",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-session-history",
+      "linkingText": [
+        "session\n          history"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-task-source",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-task-source",
+      "linkingText": [
+        "task\n          source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-top-level-browsing-context",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-top-level-browsing-context",
+      "linkingText": [
+        "top-level browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-trusted-event",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-trusted-event",
+      "linkingText": [
+        "trusted\n          event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-unload-a-document",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-unload-a-document",
+      "linkingText": [
+        "unload a\n          document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-javascript-realm",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-javascript-realm",
+      "linkingText": [
+        "JavaScript\n        realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-eventtarget",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-eventtarget",
+      "linkingText": [
+        "EventTarget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-event",
+      "linkingText": [
+        "Event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-eventinit",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-eventinit",
+      "linkingText": [
+        "EventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-messageevent",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-messageevent",
+      "linkingText": [
+        "MessageEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-throw",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-throw",
+      "linkingText": [
+        "throw"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-promise",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-promise",
+      "linkingText": [
+        "Promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-arraybuffer",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-arraybuffer",
+      "linkingText": [
+        "ArrayBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-arraybufferview",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-arraybufferview",
+      "linkingText": [
+        "ArrayBufferView"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-invalidaccesserror",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-invalidaccesserror",
+      "linkingText": [
+        "InvalidAccessError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-notfounderror",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-notfounderror",
+      "linkingText": [
+        "NotFoundError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-notsupportederror",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-notsupportederror",
+      "linkingText": [
+        "NotSupportedError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-operationerror",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-operationerror",
+      "linkingText": [
+        "OperationError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-securityerror",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-securityerror",
+      "linkingText": [
+        "SecurityError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-syntaxerror",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-syntaxerror",
+      "linkingText": [
+        "SyntaxError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-notallowederror",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-notallowederror",
+      "linkingText": [
+        "NotAllowedError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-resolving-a-promise",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-resolving-a-promise",
+      "linkingText": [
+        "resolving\n        a Promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rejecting-a-promise",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-rejecting-a-promise",
+      "linkingText": [
+        "rejecting\n        a Promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-url",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-url",
+      "linkingText": [
+        "URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-blob",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-blob",
+      "linkingText": [
+        "Blob"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-accept-language",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-accept-language",
+      "linkingText": [
+        "Accept-Language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-http-authentication",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-http-authentication",
+      "linkingText": [
+        "HTTP\n        authentication"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcdatachannel",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-rtcdatachannel",
+      "linkingText": [
+        "RTCDataChannel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-cookie-store",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-cookie-store",
+      "linkingText": [
+        "cookie store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-uuid",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-uuid",
+      "linkingText": [
+        "UUID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-permission-descriptor-type",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-permission-descriptor-type",
+      "linkingText": [
+        "permission\n        descriptor type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-permission-state",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-permission-state",
+      "linkingText": [
+        "permission\n        state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-database",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-database",
+      "linkingText": [
+        "database"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-local-storage-areas",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-local-storage-areas",
+      "linkingText": [
+        "local\n        storage areas"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-session-storage-areas",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-session-storage-areas",
+      "linkingText": [
+        "session\n        storage areas"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-a-priori-authenticated-url",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-a-priori-authenticated-url",
+      "linkingText": [
+        "a priori authenticated URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-service-worker",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-service-worker",
+      "linkingText": [
+        "service\n        worker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-a-list-of-registered-service-worker-registrations",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-a-list-of-registered-service-worker-registrations",
+      "linkingText": [
+        "a list of registered service worker registrations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-caches",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-caches",
+      "linkingText": [
+        "caches"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-window-client",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-window-client",
+      "linkingText": [
+        "window\n        client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-worker-client",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-worker-client",
+      "linkingText": [
+        "worker\n        client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dial",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-dial",
+      "linkingText": [
+        "DIAL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-presentation-display",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-presentation-display",
+      "linkingText": [
+        "presentation display",
+        "presentation displays"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-presentation-connection",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-presentation-connection",
+      "linkingText": [
+        "presentation connection",
+        "presentation connections"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-presentation-connection-state",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-presentation-connection-state",
+      "linkingText": [
+        "presentation connection state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-presentation-identifier",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-presentation-identifier",
+      "linkingText": [
+        "presentation identifier",
+        "presentation identifiers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-presentation-url",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-presentation-url",
+      "linkingText": [
+        "presentation URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-valid-presentation-identifier",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-valid-presentation-identifier",
+      "linkingText": [
+        "valid\n          presentation identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-available-presentation-display",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-available-presentation-display",
+      "linkingText": [
+        "available presentation display",
+        "available presentation displays"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-controlling-browsing-context",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-controlling-browsing-context",
+      "linkingText": [
+        "controlling browsing context",
+        "controlling browsing contexts",
+        "controller"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-receiving-browsing-context",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-receiving-browsing-context",
+      "linkingText": [
+        "receiving browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-destination-browsing-context",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-destination-browsing-context",
+      "linkingText": [
+        "destination browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-set-of-controlled-presentations",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-set-of-controlled-presentations",
+      "linkingText": [
+        "set of controlled presentations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-set-of-presentation-controllers",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-set-of-presentation-controllers",
+      "linkingText": [
+        "set of presentation controllers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-presentation-controllers-monitor",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-presentation-controllers-monitor",
+      "linkingText": [
+        "presentation\n          controllers monitor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-presentation-controllers-promise",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-presentation-controllers-promise",
+      "linkingText": [
+        "presentation\n          controllers promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-default-presentation-request",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-default-presentation-request",
+      "linkingText": [
+        "default\n          presentation request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-presentation-task-source",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-presentation-task-source",
+      "linkingText": [
+        "presentation task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentation",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentation",
+      "linkingText": [
+        "Presentation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator-presentation",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-navigator-presentation",
+      "linkingText": [
+        "presentation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "navigator"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentation-defaultrequest",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentation-defaultrequest",
+      "linkingText": [
+        "defaultRequest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentation"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentation-receiver",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentation-receiver",
+      "linkingText": [
+        "receiver"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentation"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationrequest",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationrequest",
+      "linkingText": [
+        "PresentationRequest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-presentation-request-urls",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-presentation-request-urls",
+      "linkingText": [
+        "presentation request URLs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationrequest-start",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationrequest-start",
+      "linkingText": [
+        "start()",
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationrequest"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-select-a-presentation-display",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-select-a-presentation-display",
+      "linkingText": [
+        "select a presentation display"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-start-a-presentation-from-a-default-presentation-request",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-start-a-presentation-from-a-default-presentation-request",
+      "linkingText": [
+        "start\n            a presentation from a default presentation request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-start-a-presentation-connection",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-start-a-presentation-connection",
+      "linkingText": [
+        "start a presentation\n            connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationrequest-reconnect",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationrequest-reconnect",
+      "linkingText": [
+        "reconnect()",
+        "reconnect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationrequest"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-reconnect-to-a-presentation",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-reconnect-to-a-presentation",
+      "linkingText": [
+        "reconnect to a presentation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationrequest-onconnectionavailable",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationrequest-onconnectionavailable",
+      "linkingText": [
+        "onconnectionavailable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationrequest"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-connectionavailable",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-connectionavailable",
+      "linkingText": [
+        "connectionavailable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationavailability",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationavailability",
+      "linkingText": [
+        "PresentationAvailability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-presentation-display-availability",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-presentation-display-availability",
+      "linkingText": [
+        "presentation display availability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationavailability-value",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationavailability-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationavailability"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationavailability-onchange",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationavailability-onchange",
+      "linkingText": [
+        "onchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationavailability"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-change",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-change",
+      "linkingText": [
+        "change"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-set-of-presentation-availability-objects",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-set-of-presentation-availability-objects",
+      "linkingText": [
+        "set of\n            presentation availability objects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-list-of-available-presentation-displays",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-list-of-available-presentation-displays",
+      "linkingText": [
+        "list of available\n            presentation displays"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationrequest-getavailability",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationrequest-getavailability",
+      "linkingText": [
+        "getavailability()",
+        "getAvailability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationrequest"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-monitor-the-list-of-available-presentation-displays",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-monitor-the-list-of-available-presentation-displays",
+      "linkingText": [
+        "monitor the list of\n            available presentation displays"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectionavailableevent",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectionavailableevent",
+      "linkingText": [
+        "PresentationConnectionAvailableEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectionavailableevent-connection",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectionavailableevent-connection",
+      "linkingText": [
+        "connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnectionavailableevent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectionavailableeventinit-connection",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectionavailableeventinit-connection",
+      "linkingText": [
+        "connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnectionavailableeventinit"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectionavailableeventinit",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectionavailableeventinit",
+      "linkingText": [
+        "PresentationConnectionAvailableEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnection",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnection",
+      "linkingText": [
+        "PresentationConnection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnection-id",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnection-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnection-url",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnection-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnection-state",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnection-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectionstate",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectionstate",
+      "linkingText": [
+        "PresentationConnectionState"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectionstate-connecting",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectionstate-connecting",
+      "linkingText": [
+        "connecting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnectionstate"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectionstate-connected",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectionstate-connected",
+      "linkingText": [
+        "connected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnectionstate"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectionstate-closed",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectionstate-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnectionstate"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectionstate-terminated",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectionstate-terminated",
+      "linkingText": [
+        "terminated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnectionstate"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnection-close",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnection-close",
+      "linkingText": [
+        "close()",
+        "close"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnection-terminate",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnection-terminate",
+      "linkingText": [
+        "terminate()",
+        "terminate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnection-binarytype",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnection-binarytype",
+      "linkingText": [
+        "binaryType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-binarytype",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-binarytype",
+      "linkingText": [
+        "BinaryType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-binarytype-blob",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-binarytype-blob",
+      "linkingText": [
+        "blob"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "binarytype"
+      ],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-binarytype-arraybuffer",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-binarytype-arraybuffer",
+      "linkingText": [
+        "arraybuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "binarytype"
+      ],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-presentationconnection-send!overload-3",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnection-send!overload-3",
+      "linkingText": [
+        "send()",
+        "send"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-establish-a-presentation-connection",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-establish-a-presentation-connection",
+      "linkingText": [
+        "establish a presentation\n            connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-presentation-message-data",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-presentation-message-data",
+      "linkingText": [
+        "presentation message data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-presentation-message-type",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-presentation-message-type",
+      "linkingText": [
+        "presentation\n            message type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-send-a-message",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-send-a-message",
+      "linkingText": [
+        "send\n            a message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-receive-a-message",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-receive-a-message",
+      "linkingText": [
+        "receive a message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectioncloseevent",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectioncloseevent",
+      "linkingText": [
+        "PresentationConnectionCloseEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectioncloseevent-reason",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectioncloseevent-reason",
+      "linkingText": [
+        "reason"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnectioncloseevent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectionclosereason",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectionclosereason",
+      "linkingText": [
+        "PresentationConnectionCloseReason"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectionclosereason-error",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectionclosereason-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnectionclosereason"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectionclosereason-closed",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectionclosereason-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnectionclosereason"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectionclosereason-wentaway",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectionclosereason-wentaway",
+      "linkingText": [
+        "wentaway"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnectionclosereason"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectioncloseevent-message",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectioncloseevent-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnectioncloseevent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectioncloseeventinit-reason",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectioncloseeventinit-reason",
+      "linkingText": [
+        "reason"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnectioncloseeventinit"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectioncloseeventinit",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectioncloseeventinit",
+      "linkingText": [
+        "PresentationConnectionCloseEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectioncloseeventinit-message",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectioncloseeventinit-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnectioncloseeventinit"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-start-closing-a-presentation-connection",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-start-closing-a-presentation-connection",
+      "linkingText": [
+        "start\n            closing a presentation connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-close-a-presentation-connection",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-close-a-presentation-connection",
+      "linkingText": [
+        "close a presentation\n            connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-terminate-a-presentation-in-a-controlling-browsing-context",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-terminate-a-presentation-in-a-controlling-browsing-context",
+      "linkingText": [
+        "terminate a presentation in a\n            controlling browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-send-a-termination-request",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-send-a-termination-request",
+      "linkingText": [
+        "Send a termination request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-terminate-a-presentation-in-a-receiving-browsing-context",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-terminate-a-presentation-in-a-receiving-browsing-context",
+      "linkingText": [
+        "terminate a presentation in a\n            receiving browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-send-a-termination-confirmation",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-send-a-termination-confirmation",
+      "linkingText": [
+        "send a termination\n            confirmation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnection-onmessage",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnection-onmessage",
+      "linkingText": [
+        "onmessage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-message",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnection-onconnect",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnection-onconnect",
+      "linkingText": [
+        "onconnect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-connect",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-connect",
+      "linkingText": [
+        "connect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnection-onclose",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnection-onclose",
+      "linkingText": [
+        "onclose"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-close",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-close",
+      "linkingText": [
+        "close"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnection-onterminate",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnection-onterminate",
+      "linkingText": [
+        "onterminate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-terminate",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-terminate",
+      "linkingText": [
+        "terminate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationreceiver",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationreceiver",
+      "linkingText": [
+        "PresentationReceiver"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationreceiver-connectionlist",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationreceiver-connectionlist",
+      "linkingText": [
+        "connectionList"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationreceiver"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-create-a-receiving-browsing-context",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-create-a-receiving-browsing-context",
+      "linkingText": [
+        "create a receiving browsing\n            context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectionlist",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectionlist",
+      "linkingText": [
+        "PresentationConnectionList"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectionlist-connections",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectionlist-connections",
+      "linkingText": [
+        "connections"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnectionlist"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-monitoring-incoming-presentation-connections",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dfn-monitoring-incoming-presentation-connections",
+      "linkingText": [
+        "monitoring\n            incoming presentation connections"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-presentationconnectionlist-onconnectionavailable",
+      "href": "https://www.w3.org/TR/2017/CR-presentation-api-20170601/#dom-presentationconnectionlist-onconnectionavailable",
+      "linkingText": [
+        "onconnectionavailable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "presentationconnectionlist"
+      ],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

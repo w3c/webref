@@ -1,0 +1,808 @@
+{
+  "spec": {
+    "title": "Web Locks API",
+    "url": "https://wicg.github.io/web-locks/"
+  },
+  "dfns": [
+    {
+      "id": "lock-task-queue",
+      "href": "https://wicg.github.io/web-locks/#lock-task-queue",
+      "linkingText": [
+        "lock task queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "web-locks-tasks-source",
+      "href": "https://wicg.github.io/web-locks/#web-locks-tasks-source",
+      "linkingText": [
+        "web locks tasks source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "resource-name",
+      "href": "https://wicg.github.io/web-locks/#resource-name",
+      "linkingText": [
+        "resource name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-manager",
+      "href": "https://wicg.github.io/web-locks/#lock-manager",
+      "linkingText": [
+        "lock manager"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mode",
+      "href": "https://wicg.github.io/web-locks/#mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-concept",
+      "href": "https://wicg.github.io/web-locks/#lock-concept",
+      "linkingText": [
+        "lock-concept"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-concept-agent",
+      "href": "https://wicg.github.io/web-locks/#lock-concept-agent",
+      "linkingText": [
+        "agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock-concept"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-concept-clientid",
+      "href": "https://wicg.github.io/web-locks/#lock-concept-clientid",
+      "linkingText": [
+        "clientId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock-concept"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-concept-origin",
+      "href": "https://wicg.github.io/web-locks/#lock-concept-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock-concept"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-concept-name",
+      "href": "https://wicg.github.io/web-locks/#lock-concept-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock-concept"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-concept-mode",
+      "href": "https://wicg.github.io/web-locks/#lock-concept-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock-concept"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-concept-waiting-promise",
+      "href": "https://wicg.github.io/web-locks/#lock-concept-waiting-promise",
+      "linkingText": [
+        "waiting promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock-concept"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-concept-released-promise",
+      "href": "https://wicg.github.io/web-locks/#lock-concept-released-promise",
+      "linkingText": [
+        "released promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock-concept"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-concept-held-lock-set",
+      "href": "https://wicg.github.io/web-locks/#lock-concept-held-lock-set",
+      "linkingText": [
+        "held lock set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock-concept"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-request",
+      "href": "https://wicg.github.io/web-locks/#lock-request",
+      "linkingText": [
+        "lock request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-request-agent",
+      "href": "https://wicg.github.io/web-locks/#lock-request-agent",
+      "linkingText": [
+        "agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock request"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-request-clientid",
+      "href": "https://wicg.github.io/web-locks/#lock-request-clientid",
+      "linkingText": [
+        "clientId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock request"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-request-origin",
+      "href": "https://wicg.github.io/web-locks/#lock-request-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock request"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-request-name",
+      "href": "https://wicg.github.io/web-locks/#lock-request-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock request"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-request-mode",
+      "href": "https://wicg.github.io/web-locks/#lock-request-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock request"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-request-promise",
+      "href": "https://wicg.github.io/web-locks/#lock-request-promise",
+      "linkingText": [
+        "promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock request"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-request-lock-request-queue",
+      "href": "https://wicg.github.io/web-locks/#lock-request-lock-request-queue",
+      "linkingText": [
+        "lock request queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock request"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-request-lock-request-queue-map",
+      "href": "https://wicg.github.io/web-locks/#lock-request-lock-request-queue-map",
+      "linkingText": [
+        "lock request queue map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock request"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lock-request-grantable",
+      "href": "https://wicg.github.io/web-locks/#lock-request-grantable",
+      "linkingText": [
+        "grantable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "lock request"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "navigatorlocks",
+      "href": "https://wicg.github.io/web-locks/#navigatorlocks",
+      "linkingText": [
+        "NavigatorLocks"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-navigatorlocks-locks",
+      "href": "https://wicg.github.io/web-locks/#dom-navigatorlocks-locks",
+      "linkingText": [
+        "locks"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NavigatorLocks"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "lockmanager",
+      "href": "https://wicg.github.io/web-locks/#lockmanager",
+      "linkingText": [
+        "LockManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockmanager-request-name-callback-name",
+      "href": "https://wicg.github.io/web-locks/#dom-lockmanager-request-name-callback-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LockManager/request(name, callback)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockmanager-request-name-callback-callback",
+      "href": "https://wicg.github.io/web-locks/#dom-lockmanager-request-name-callback-callback",
+      "linkingText": [
+        "callback"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LockManager/request(name, callback)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockmanager-request-name-options-callback-name",
+      "href": "https://wicg.github.io/web-locks/#dom-lockmanager-request-name-options-callback-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LockManager/request(name, options, callback)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockmanager-request-name-options-callback-options",
+      "href": "https://wicg.github.io/web-locks/#dom-lockmanager-request-name-options-callback-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LockManager/request(name, options, callback)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockmanager-request-name-options-callback-callback",
+      "href": "https://wicg.github.io/web-locks/#dom-lockmanager-request-name-options-callback-callback",
+      "linkingText": [
+        "callback"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LockManager/request(name, options, callback)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "callbackdef-lockgrantedcallback",
+      "href": "https://wicg.github.io/web-locks/#callbackdef-lockgrantedcallback",
+      "linkingText": [
+        "LockGrantedCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockgrantedcallback-lock",
+      "href": "https://wicg.github.io/web-locks/#dom-lockgrantedcallback-lock",
+      "linkingText": [
+        "lock"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LockGrantedCallback"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-lockmode",
+      "href": "https://wicg.github.io/web-locks/#enumdef-lockmode",
+      "linkingText": [
+        "LockMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockmode-shared",
+      "href": "https://wicg.github.io/web-locks/#dom-lockmode-shared",
+      "linkingText": [
+        "\"shared\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "LockMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockmode-exclusive",
+      "href": "https://wicg.github.io/web-locks/#dom-lockmode-exclusive",
+      "linkingText": [
+        "\"exclusive\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "LockMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-lockoptions",
+      "href": "https://wicg.github.io/web-locks/#dictdef-lockoptions",
+      "linkingText": [
+        "LockOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockoptions-mode",
+      "href": "https://wicg.github.io/web-locks/#dom-lockoptions-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockoptions-ifavailable",
+      "href": "https://wicg.github.io/web-locks/#dom-lockoptions-ifavailable",
+      "linkingText": [
+        "ifAvailable"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockoptions-steal",
+      "href": "https://wicg.github.io/web-locks/#dom-lockoptions-steal",
+      "linkingText": [
+        "steal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockoptions-signal",
+      "href": "https://wicg.github.io/web-locks/#dom-lockoptions-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-lockmanagersnapshot",
+      "href": "https://wicg.github.io/web-locks/#dictdef-lockmanagersnapshot",
+      "linkingText": [
+        "LockManagerSnapshot"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockmanagersnapshot-held",
+      "href": "https://wicg.github.io/web-locks/#dom-lockmanagersnapshot-held",
+      "linkingText": [
+        "held"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockManagerSnapshot"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockmanagersnapshot-pending",
+      "href": "https://wicg.github.io/web-locks/#dom-lockmanagersnapshot-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockManagerSnapshot"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-lockinfo",
+      "href": "https://wicg.github.io/web-locks/#dictdef-lockinfo",
+      "linkingText": [
+        "LockInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockinfo-name",
+      "href": "https://wicg.github.io/web-locks/#dom-lockinfo-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockInfo"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockinfo-mode",
+      "href": "https://wicg.github.io/web-locks/#dom-lockinfo-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockInfo"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockinfo-clientid",
+      "href": "https://wicg.github.io/web-locks/#dom-lockinfo-clientid",
+      "linkingText": [
+        "clientId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "LockInfo"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockmanager-request",
+      "href": "https://wicg.github.io/web-locks/#dom-lockmanager-request",
+      "linkingText": [
+        "request(name, callback)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "LockManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockmanager-request-name-options-callback",
+      "href": "https://wicg.github.io/web-locks/#dom-lockmanager-request-name-options-callback",
+      "linkingText": [
+        "request(name, options, callback)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "LockManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lockmanager-query",
+      "href": "https://wicg.github.io/web-locks/#dom-lockmanager-query",
+      "linkingText": [
+        "query()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "LockManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "lock",
+      "href": "https://wicg.github.io/web-locks/#lock",
+      "linkingText": [
+        "Lock"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lock-name",
+      "href": "https://wicg.github.io/web-locks/#dom-lock-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Lock"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-lock-mode",
+      "href": "https://wicg.github.io/web-locks/#dom-lock-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Lock"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "request-a-lock",
+      "href": "https://wicg.github.io/web-locks/#request-a-lock",
+      "linkingText": [
+        "request a lock"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "release-the-lock",
+      "href": "https://wicg.github.io/web-locks/#release-the-lock",
+      "linkingText": [
+        "release the lock"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "abort-the-request",
+      "href": "https://wicg.github.io/web-locks/#abort-the-request",
+      "linkingText": [
+        "abort the request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "process-the-lock-request-queue",
+      "href": "https://wicg.github.io/web-locks/#process-the-lock-request-queue",
+      "linkingText": [
+        "process the lock request queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "snapshot-the-lock-state",
+      "href": "https://wicg.github.io/web-locks/#snapshot-the-lock-state",
+      "linkingText": [
+        "snapshot the lock state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

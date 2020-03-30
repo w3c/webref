@@ -1,0 +1,500 @@
+{
+  "spec": {
+    "title": "CSS Ruby Layout Module Level 1",
+    "url": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/"
+  },
+  "dfns": [
+    {
+      "id": "ruby",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#ruby",
+      "linkingText": [
+        "Ruby"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-display",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#propdef-display",
+      "linkingText": [
+        "display"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ruby-container",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#ruby-container",
+      "linkingText": [
+        "ruby container box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ruby-base-box",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#ruby-base-box",
+      "linkingText": [
+        "ruby base box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ruby-annotation-box",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#ruby-annotation-box",
+      "linkingText": [
+        "ruby annotation box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ruby-base-container-box",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#ruby-base-container-box",
+      "linkingText": [
+        "ruby base container box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ruby-annotation-container-box",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#ruby-annotation-container-box",
+      "linkingText": [
+        "ruby annotation container box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ruby-formatting-context",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#ruby-formatting-context",
+      "linkingText": [
+        "ruby formatting context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "internal-ruby-boxes",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#internal-ruby-boxes",
+      "linkingText": [
+        "internal ruby boxes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "intra-ruby-white-space",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#intra-ruby-white-space",
+      "linkingText": [
+        "intra-ruby white space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "inter-level-white-space",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#inter-level-white-space",
+      "linkingText": [
+        "inter-level white space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "inter-base-white-space",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#inter-base-white-space",
+      "linkingText": [
+        "inter-base white space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "inter-annotation-white-space",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#inter-annotation-white-space",
+      "linkingText": [
+        "inter-annotation white space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "inter-segment-white-space",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#inter-segment-white-space",
+      "linkingText": [
+        "inter-segment white space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "intra-level-white-space",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#intra-level-white-space",
+      "linkingText": [
+        "intra-level white space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pairing",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#pairing",
+      "linkingText": [
+        "pairing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "span",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#span",
+      "linkingText": [
+        "span"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "spanning-annotation",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#spanning-annotation",
+      "linkingText": [
+        "spanning annotation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ruby-segments",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#ruby-segments",
+      "linkingText": [
+        "ruby segments"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "annotation-level",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#annotation-level",
+      "linkingText": [
+        "level"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "base-level",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#base-level",
+      "linkingText": [
+        "base level"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "nested-ruby",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#nested-ruby",
+      "linkingText": [
+        ""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "hidden-ruby-annotation",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#hidden-ruby-annotation",
+      "linkingText": [
+        "hidden"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-ruby-position",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#propdef-ruby-position",
+      "linkingText": [
+        "ruby-position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-ruby-position-over",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#valuedef-ruby-position-over",
+      "linkingText": [
+        "over"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ruby-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-ruby-position-right",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#valuedef-ruby-position-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ruby-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-ruby-position-under",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#valuedef-ruby-position-under",
+      "linkingText": [
+        "under"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ruby-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-ruby-position-left",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#valuedef-ruby-position-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ruby-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-ruby-position-inter-character",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#valuedef-ruby-position-inter-character",
+      "linkingText": [
+        "inter-character"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ruby-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-ruby-merge",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#propdef-ruby-merge",
+      "linkingText": [
+        "ruby-merge"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "collapsed-annotation",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#collapsed-annotation",
+      "linkingText": [
+        "collapsed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valuedef-ruby-merge-ruby-mergeseparate",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#valuedef-ruby-merge-ruby-mergeseparate",
+      "linkingText": [
+        "separate"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ruby-merge"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-ruby-merge-ruby-mergecollapse",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#valuedef-ruby-merge-ruby-mergecollapse",
+      "linkingText": [
+        "collapse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ruby-merge"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-ruby-merge-ruby-mergeauto",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#valuedef-ruby-merge-ruby-mergeauto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ruby-merge"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-ruby-align",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#propdef-ruby-align",
+      "linkingText": [
+        "ruby-align"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-ruby-align-ruby-alignstart",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#valuedef-ruby-align-ruby-alignstart",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ruby-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-ruby-align-ruby-aligncenter",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#valuedef-ruby-align-ruby-aligncenter",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ruby-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-ruby-align-ruby-alignspace-between",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#valuedef-ruby-align-ruby-alignspace-between",
+      "linkingText": [
+        "space-between"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ruby-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valuedef-ruby-align-ruby-alignspace-around",
+      "href": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/#valuedef-ruby-align-ruby-alignspace-around",
+      "linkingText": [
+        "space-around"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ruby-align"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

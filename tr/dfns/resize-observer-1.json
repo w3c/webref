@@ -1,0 +1,665 @@
+{
+  "spec": {
+    "title": "Resize Observer",
+    "url": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/"
+  },
+  "dfns": [
+    {
+      "id": "enumdef-resizeobserverboxoptions",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#enumdef-resizeobserverboxoptions",
+      "linkingText": [
+        "ResizeObserverBoxOptions"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserverboxoptions-border-box",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserverboxoptions-border-box",
+      "linkingText": [
+        "\"border-box\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ResizeObserverBoxOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserverboxoptions-content-box",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserverboxoptions-content-box",
+      "linkingText": [
+        "\"content-box\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ResizeObserverBoxOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserverboxoptions-device-pixel-content-box",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserverboxoptions-device-pixel-content-box",
+      "linkingText": [
+        "\"device-pixel-content-box\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ResizeObserverBoxOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-resizeobserveroptions",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dictdef-resizeobserveroptions",
+      "linkingText": [
+        "ResizeObserverOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserveroptions-box",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserveroptions-box",
+      "linkingText": [
+        "box"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ResizeObserverOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserver-resizeobserver-callback-callback",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserver-resizeobserver-callback-callback",
+      "linkingText": [
+        "callback"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ResizeObserver/ResizeObserver(callback)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "resizeobserver",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#resizeobserver",
+      "linkingText": [
+        "ResizeObserver"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserver-observe-target-options-target",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserver-observe-target-options-target",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ResizeObserver/observe(target, options)",
+        "ResizeObserver/observe(target)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserver-observe-target-options-options",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserver-observe-target-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ResizeObserver/observe(target, options)",
+        "ResizeObserver/observe(target)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserver-unobserve-target-target",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserver-unobserve-target-target",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ResizeObserver/unobserve(target)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserver-resizeobserver",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserver-resizeobserver",
+      "linkingText": [
+        "ResizeObserver(callback)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ResizeObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserver-observe",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserver-observe",
+      "linkingText": [
+        "observe(target, options)",
+        "observe(target)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ResizeObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserver-unobserve",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserver-unobserve",
+      "linkingText": [
+        "unobserve(target)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ResizeObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserver-disconnect",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserver-disconnect",
+      "linkingText": [
+        "disconnect()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ResizeObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "callbackdef-resizeobservercallback",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#callbackdef-resizeobservercallback",
+      "linkingText": [
+        "ResizeObserverCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobservercallback-entries",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobservercallback-entries",
+      "linkingText": [
+        "entries"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ResizeObserverCallback"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobservercallback-observer",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobservercallback-observer",
+      "linkingText": [
+        "observer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ResizeObserverCallback"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "resizeobserverentry",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#resizeobserverentry",
+      "linkingText": [
+        "ResizeObserverEntry"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserverentry-target",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserverentry-target",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ResizeObserverEntry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserverentry-contentrect",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserverentry-contentrect",
+      "linkingText": [
+        "contentRect"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ResizeObserverEntry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserverentry-borderboxsize",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserverentry-borderboxsize",
+      "linkingText": [
+        "borderBoxSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ResizeObserverEntry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserverentry-contentboxsize",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserverentry-contentboxsize",
+      "linkingText": [
+        "contentBoxSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ResizeObserverEntry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserverentry-devicepixelcontentboxsize",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserverentry-devicepixelcontentboxsize",
+      "linkingText": [
+        "devicePixelContentBoxSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ResizeObserverEntry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "resizeobserversize",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#resizeobserversize",
+      "linkingText": [
+        "ResizeObserverSize"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserversize-inlinesize",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserversize-inlinesize",
+      "linkingText": [
+        "inlineSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ResizeObserverSize"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserversize-blocksize",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserversize-blocksize",
+      "linkingText": [
+        "blockSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ResizeObserverSize"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobservation-resizeobservation",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobservation-resizeobservation",
+      "linkingText": [
+        "ResizeObservation(target)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ResizeObservation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobservation-resizeobservation-target-target",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobservation-resizeobservation-target-target",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ResizeObservation/ResizeObservation(target)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "resizeobservation",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#resizeobservation",
+      "linkingText": [
+        "ResizeObservation"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobservation-target",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobservation-target",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ResizeObservation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobservation-observedbox",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobservation-observedbox",
+      "linkingText": [
+        "observedBox"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ResizeObservation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobservation-lastreportedsizes",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobservation-lastreportedsizes",
+      "linkingText": [
+        "lastReportedSizes"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ResizeObservation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobservation-resizeobservation-target-options",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobservation-resizeobservation-target-options",
+      "linkingText": [
+        "ResizeObservation(target, options)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ResizeObservation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobservation-isactive",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobservation-isactive",
+      "linkingText": [
+        "isActive()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ResizeObservation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-resizeobservers",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-document-resizeobservers",
+      "linkingText": [
+        "resizeObservers"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserver-callback",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserver-callback",
+      "linkingText": [
+        "callback"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ResizeObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserver-observationtargets",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserver-observationtargets",
+      "linkingText": [
+        "observationTargets"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ResizeObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserver-activetargets",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserver-activetargets",
+      "linkingText": [
+        "activeTargets"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ResizeObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-resizeobserver-skippedtargets",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#dom-resizeobserver-skippedtargets",
+      "linkingText": [
+        "skippedTargets"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ResizeObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "content-rect",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#content-rect",
+      "linkingText": [
+        "content rect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "gather-active-observations-at-depth",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#gather-active-observations-at-depth",
+      "linkingText": [
+        "gather active observations at depth"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "has-active-observations",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#has-active-observations",
+      "linkingText": [
+        "has active observations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "has-skipped-observations",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#has-skipped-observations",
+      "linkingText": [
+        "has skipped observations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-and-populate-a-resizeobserverentry",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#create-and-populate-a-resizeobserverentry",
+      "linkingText": [
+        "create and populate a ResizeObserverEntry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "broadcast-active-observations",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#broadcast-active-observations",
+      "linkingText": [
+        "broadcast active observations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "deliver-resize-loop-error-notification",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#deliver-resize-loop-error-notification",
+      "linkingText": [
+        "deliver resize loop error notification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "calculate-depth-for-node",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#calculate-depth-for-node",
+      "linkingText": [
+        "calculate depth for node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "calculate-box-size①",
+      "href": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/#calculate-box-size%E2%91%A0",
+      "linkingText": [
+        "calculate box size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

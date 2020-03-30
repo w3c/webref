@@ -1,0 +1,1106 @@
+{
+  "spec": {
+    "title": "Media Session Standard",
+    "url": "https://www.w3.org/TR/2020/WD-mediasession-20200130/"
+  },
+  "dfns": [
+    {
+      "id": "guessed-playback-state",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#guessed-playback-state",
+      "linkingText": [
+        "guessed playback state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "actual-playback-state",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#actual-playback-state",
+      "linkingText": [
+        "actual playback state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "active-media-session",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#active-media-session",
+      "linkingText": [
+        "active media session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "audio-focus",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#audio-focus",
+      "linkingText": [
+        "audio focus"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "update-metadata-algorithm",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#update-metadata-algorithm",
+      "linkingText": [
+        "update metadata algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fetch-image-algorithm",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#fetch-image-algorithm",
+      "linkingText": [
+        "fetch image algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "preferred-artwork-image",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#preferred-artwork-image",
+      "linkingText": [
+        "preferred artwork image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "media-session-action",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#media-session-action",
+      "linkingText": [
+        "media session action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "media-session-action-source",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#media-session-action-source",
+      "linkingText": [
+        "media session action source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-play",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasessionaction-play",
+      "linkingText": [
+        "\"play\"",
+        "play"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-pause",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasessionaction-pause",
+      "linkingText": [
+        "\"pause\"",
+        "pause"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-seekbackward",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasessionaction-seekbackward",
+      "linkingText": [
+        "\"seekbackward\"",
+        "seekbackward"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-seekforward",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasessionaction-seekforward",
+      "linkingText": [
+        "\"seekforward\"",
+        "seekforward"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-previoustrack",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasessionaction-previoustrack",
+      "linkingText": [
+        "\"previoustrack\"",
+        "previoustrack"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-nexttrack",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasessionaction-nexttrack",
+      "linkingText": [
+        "\"nexttrack\"",
+        "nexttrack"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-skipad",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasessionaction-skipad",
+      "linkingText": [
+        "\"skipad\"",
+        "skipad"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-stop",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasessionaction-stop",
+      "linkingText": [
+        "\"stop\"",
+        "stop"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionaction-seekto",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasessionaction-seekto",
+      "linkingText": [
+        "\"seekto\"",
+        "seekto"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionAction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "supported-media-session-actions",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#supported-media-session-actions",
+      "linkingText": [
+        "supported media session actions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "update-action-handler-algorithm",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#update-action-handler-algorithm",
+      "linkingText": [
+        "update action handler algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "handle-media-session-action",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#handle-media-session-action",
+      "linkingText": [
+        "handle media session action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "media-session-actions-update-algorithm",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#media-session-actions-update-algorithm",
+      "linkingText": [
+        "media session actions update algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "position-state①",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#position-state%E2%91%A0",
+      "linkingText": [
+        "position state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "duration",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "playback-rate",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#playback-rate",
+      "linkingText": [
+        "playback rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "last-reported-playback-position",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#last-reported-playback-position",
+      "linkingText": [
+        "last reported playback position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "last-position-updated-time",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#last-position-updated-time",
+      "linkingText": [
+        "last position updated time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "actual-playback-rate",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#actual-playback-rate",
+      "linkingText": [
+        "actual playback rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "current-playback-position",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#current-playback-position",
+      "linkingText": [
+        "current playback position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enumdef-mediasessionplaybackstate",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#enumdef-mediasessionplaybackstate",
+      "linkingText": [
+        "MediaSessionPlaybackState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-mediasessionaction",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#enumdef-mediasessionaction",
+      "linkingText": [
+        "MediaSessionAction"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "callbackdef-mediasessionactionhandler",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#callbackdef-mediasessionactionhandler",
+      "linkingText": [
+        "MediaSessionActionHandler"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionactionhandler-details",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasessionactionhandler-details",
+      "linkingText": [
+        "details"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaSessionActionHandler"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mediasession",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#mediasession",
+      "linkingText": [
+        "MediaSession"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasession-setactionhandler-action-handler-action",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasession-setactionhandler-action-handler-action",
+      "linkingText": [
+        "action"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaSession/setActionHandler(action, handler)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasession-setactionhandler-action-handler-handler",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasession-setactionhandler-action-handler-handler",
+      "linkingText": [
+        "handler"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaSession/setActionHandler(action, handler)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasession-setpositionstate-state-state",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasession-setpositionstate-state-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaSession/setPositionState(state)",
+        "MediaSession/setPositionState()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mediasession-metadata",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#mediasession-metadata",
+      "linkingText": [
+        "metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaSession"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator-mediasession",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-navigator-mediasession",
+      "linkingText": [
+        "mediaSession"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasession-metadata",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasession-metadata",
+      "linkingText": [
+        "metadata"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaSession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasession-playbackstate",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasession-playbackstate",
+      "linkingText": [
+        "playbackState"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaSession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "declared-playback-state",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#declared-playback-state",
+      "linkingText": [
+        "declared playback state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionplaybackstate-none",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasessionplaybackstate-none",
+      "linkingText": [
+        "\"none\"",
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionPlaybackState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionplaybackstate-playing",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasessionplaybackstate-playing",
+      "linkingText": [
+        "\"playing\"",
+        "playing"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionPlaybackState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionplaybackstate-paused",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasessionplaybackstate-paused",
+      "linkingText": [
+        "\"paused\"",
+        "paused"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaSessionPlaybackState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasession-setactionhandler",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasession-setactionhandler",
+      "linkingText": [
+        "setActionHandler(action, handler)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaSession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasession-setpositionstate",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasession-setpositionstate",
+      "linkingText": [
+        "setPositionState(state)",
+        "setPositionState()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaSession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mediametadata",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#mediametadata",
+      "linkingText": [
+        "MediaMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadata-constructor-init-init",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediametadata-constructor-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaMetadata/constructor(init)",
+        "MediaMetadata/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediametadatainit",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dictdef-mediametadatainit",
+      "linkingText": [
+        "MediaMetadataInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadatainit-title",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediametadatainit-title",
+      "linkingText": [
+        "title"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaMetadataInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadatainit-artist",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediametadatainit-artist",
+      "linkingText": [
+        "artist"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaMetadataInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadatainit-album",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediametadatainit-album",
+      "linkingText": [
+        "album"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaMetadataInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadatainit-artwork",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediametadatainit-artwork",
+      "linkingText": [
+        "artwork"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaMetadataInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mediametadata-media-session",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#mediametadata-media-session",
+      "linkingText": [
+        "media session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mediametadata-title",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#mediametadata-title",
+      "linkingText": [
+        "title"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mediametadata-artist",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#mediametadata-artist",
+      "linkingText": [
+        "artist"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mediametadata-album",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#mediametadata-album",
+      "linkingText": [
+        "album"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mediametadata-artwork-images",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#mediametadata-artwork-images",
+      "linkingText": [
+        "artwork images"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "empty-metadata",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#empty-metadata",
+      "linkingText": [
+        "empty metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadata-mediametadata",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediametadata-mediametadata",
+      "linkingText": [
+        "MediaMetadata(init)",
+        "constructor(init)",
+        "MediaMetadata()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "convert-artwork-algorithm",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#convert-artwork-algorithm",
+      "linkingText": [
+        "convert artwork algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadata-title",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediametadata-title",
+      "linkingText": [
+        "title"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadata-artist",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediametadata-artist",
+      "linkingText": [
+        "artist"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadata-album",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediametadata-album",
+      "linkingText": [
+        "album"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediametadata-artwork",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediametadata-artwork",
+      "linkingText": [
+        "artwork"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediaimage",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dictdef-mediaimage",
+      "linkingText": [
+        "MediaImage"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaimage-src",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediaimage-src",
+      "linkingText": [
+        "src"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaImage"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mediaimage-source",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#mediaimage-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaImage"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaimage-sizes",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediaimage-sizes",
+      "linkingText": [
+        "sizes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaImage"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaimage-type",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediaimage-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaImage"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediapositionstate",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dictdef-mediapositionstate",
+      "linkingText": [
+        "MediaPositionState"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediapositionstate-duration",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediapositionstate-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaPositionState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediapositionstate-playbackrate",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediapositionstate-playbackrate",
+      "linkingText": [
+        "playbackRate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaPositionState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediapositionstate-position",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediapositionstate-position",
+      "linkingText": [
+        "position"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaPositionState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediasessionactiondetails",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dictdef-mediasessionactiondetails",
+      "linkingText": [
+        "MediaSessionActionDetails"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediasessionseekactiondetails",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dictdef-mediasessionseekactiondetails",
+      "linkingText": [
+        "MediaSessionSeekActionDetails"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediasessionseektoactiondetails",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dictdef-mediasessionseektoactiondetails",
+      "linkingText": [
+        "MediaSessionSeekToActionDetails"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionactiondetails-action",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasessionactiondetails-action",
+      "linkingText": [
+        "action"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaSessionActionDetails"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionseekactiondetails-seekoffset",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasessionseekactiondetails-seekoffset",
+      "linkingText": [
+        "seekOffset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaSessionSeekActionDetails"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionseektoactiondetails-seektime",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasessionseektoactiondetails-seektime",
+      "linkingText": [
+        "seekTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaSessionSeekToActionDetails"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasessionseektoactiondetails-fastseek",
+      "href": "https://www.w3.org/TR/2020/WD-mediasession-20200130/#dom-mediasessionseektoactiondetails-fastseek",
+      "linkingText": [
+        "fastSeek"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaSessionSeekToActionDetails"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

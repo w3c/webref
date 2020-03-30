@@ -1,0 +1,742 @@
+{
+  "spec": {
+    "title": "CSS Logical Properties and Values Level 1",
+    "url": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/"
+  },
+  "dfns": [
+    {
+      "id": "valdef-logical-page-recto",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#valdef-logical-page-recto",
+      "linkingText": [
+        "recto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "logical-page"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-logical-page-verso",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#valdef-logical-page-verso",
+      "linkingText": [
+        "verso"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "logical-page"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-logical-page-selector-recto",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#valdef-logical-page-selector-recto",
+      "linkingText": [
+        ":recto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "logical-page-selector"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-logical-page-selector-verso",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#valdef-logical-page-selector-verso",
+      "linkingText": [
+        ":verso"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "logical-page-selector"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "logical-property-group",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#logical-property-group",
+      "linkingText": [
+        "logical property group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mapping-logic",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#mapping-logic",
+      "linkingText": [
+        "mapping logic"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-block-size",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-block-size",
+      "linkingText": [
+        "block-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-inline-size",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-inline-size",
+      "linkingText": [
+        "inline-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-min-block-size",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-min-block-size",
+      "linkingText": [
+        "min-block-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-min-inline-size",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-min-inline-size",
+      "linkingText": [
+        "min-inline-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-max-block-size",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-max-block-size",
+      "linkingText": [
+        "max-block-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-max-inline-size",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-max-inline-size",
+      "linkingText": [
+        "max-inline-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-margin-block-start",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-margin-block-start",
+      "linkingText": [
+        "margin-block-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-margin-block-end",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-margin-block-end",
+      "linkingText": [
+        "margin-block-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-margin-inline-start",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-margin-inline-start",
+      "linkingText": [
+        "margin-inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-margin-inline-end",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-margin-inline-end",
+      "linkingText": [
+        "margin-inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-margin-block",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-margin-block",
+      "linkingText": [
+        "margin-block"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-margin-inline",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-margin-inline",
+      "linkingText": [
+        "margin-inline"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-inset-block-start",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-inset-block-start",
+      "linkingText": [
+        "inset-block-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-inset-block-end",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-inset-block-end",
+      "linkingText": [
+        "inset-block-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-inset-inline-start",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-inset-inline-start",
+      "linkingText": [
+        "inset-inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-inset-inline-end",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-inset-inline-end",
+      "linkingText": [
+        "inset-inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-inset-block",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-inset-block",
+      "linkingText": [
+        "inset-block"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-inset-inline",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-inset-inline",
+      "linkingText": [
+        "inset-inline"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-inset",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-inset",
+      "linkingText": [
+        "inset"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-padding-block-start",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-padding-block-start",
+      "linkingText": [
+        "padding-block-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-padding-block-end",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-padding-block-end",
+      "linkingText": [
+        "padding-block-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-padding-inline-start",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-padding-inline-start",
+      "linkingText": [
+        "padding-inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-padding-inline-end",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-padding-inline-end",
+      "linkingText": [
+        "padding-inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-padding-block",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-padding-block",
+      "linkingText": [
+        "padding-block"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-padding-inline",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-padding-inline",
+      "linkingText": [
+        "padding-inline"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-block-start-width",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-block-start-width",
+      "linkingText": [
+        "border-block-start-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-block-end-width",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-block-end-width",
+      "linkingText": [
+        "border-block-end-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-inline-start-width",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-inline-start-width",
+      "linkingText": [
+        "border-inline-start-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-inline-end-width",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-inline-end-width",
+      "linkingText": [
+        "border-inline-end-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-block-width",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-block-width",
+      "linkingText": [
+        "border-block-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-inline-width",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-inline-width",
+      "linkingText": [
+        "border-inline-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-block-start-style",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-block-start-style",
+      "linkingText": [
+        "border-block-start-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-block-end-style",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-block-end-style",
+      "linkingText": [
+        "border-block-end-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-inline-start-style",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-inline-start-style",
+      "linkingText": [
+        "border-inline-start-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-inline-end-style",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-inline-end-style",
+      "linkingText": [
+        "border-inline-end-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-block-style",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-block-style",
+      "linkingText": [
+        "border-block-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-inline-style",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-inline-style",
+      "linkingText": [
+        "border-inline-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-block-start-color",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-block-start-color",
+      "linkingText": [
+        "border-block-start-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-block-end-color",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-block-end-color",
+      "linkingText": [
+        "border-block-end-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-inline-start-color",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-inline-start-color",
+      "linkingText": [
+        "border-inline-start-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-inline-end-color",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-inline-end-color",
+      "linkingText": [
+        "border-inline-end-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-block-color",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-block-color",
+      "linkingText": [
+        "border-block-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-inline-color",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-inline-color",
+      "linkingText": [
+        "border-inline-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-block-start",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-block-start",
+      "linkingText": [
+        "border-block-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-block-end",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-block-end",
+      "linkingText": [
+        "border-block-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-inline-start",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-inline-start",
+      "linkingText": [
+        "border-inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-inline-end",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-inline-end",
+      "linkingText": [
+        "border-inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-block",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-block",
+      "linkingText": [
+        "border-block"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-inline",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-inline",
+      "linkingText": [
+        "border-inline"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-start-start-radius",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-start-start-radius",
+      "linkingText": [
+        "border-start-start-radius"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-start-end-radius",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-start-end-radius",
+      "linkingText": [
+        "border-start-end-radius"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-end-start-radius",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-end-start-radius",
+      "linkingText": [
+        "border-end-start-radius"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-end-end-radius",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#propdef-border-end-end-radius",
+      "linkingText": [
+        "border-end-end-radius"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-margin-logical",
+      "href": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/#valdef-margin-logical",
+      "linkingText": [
+        "logical"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "margin",
+        "padding",
+        "border-color",
+        "border-style",
+        "border-width"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

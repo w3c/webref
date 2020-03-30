@@ -1,0 +1,1578 @@
+{
+  "spec": {
+    "title": "Cookie Store API",
+    "url": "https://wicg.github.io/cookie-store/"
+  },
+  "dfns": [
+    {
+      "id": "script-visible",
+      "href": "https://wicg.github.io/cookie-store/#script-visible",
+      "linkingText": [
+        "script-visible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie",
+      "href": "https://wicg.github.io/cookie-store/#cookie",
+      "linkingText": [
+        "cookie"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-name",
+      "href": "https://wicg.github.io/cookie-store/#cookie-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cookie"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-value",
+      "href": "https://wicg.github.io/cookie-store/#cookie-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cookie"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-expiry-time",
+      "href": "https://wicg.github.io/cookie-store/#cookie-expiry-time",
+      "linkingText": [
+        "expiry-time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cookie"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-domain",
+      "href": "https://wicg.github.io/cookie-store/#cookie-domain",
+      "linkingText": [
+        "domain"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cookie"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-path",
+      "href": "https://wicg.github.io/cookie-store/#cookie-path",
+      "linkingText": [
+        "path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cookie"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-creation-time",
+      "href": "https://wicg.github.io/cookie-store/#cookie-creation-time",
+      "linkingText": [
+        "creation-time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cookie"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-last-access-time",
+      "href": "https://wicg.github.io/cookie-store/#cookie-last-access-time",
+      "linkingText": [
+        "last-access-time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cookie"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-persistent-flag",
+      "href": "https://wicg.github.io/cookie-store/#cookie-persistent-flag",
+      "linkingText": [
+        "persistent-flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cookie"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-host-only-flag",
+      "href": "https://wicg.github.io/cookie-store/#cookie-host-only-flag",
+      "linkingText": [
+        "host-only-flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cookie"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-secure-only-flag",
+      "href": "https://wicg.github.io/cookie-store/#cookie-secure-only-flag",
+      "linkingText": [
+        "secure-only-flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cookie"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-http-only-flag",
+      "href": "https://wicg.github.io/cookie-store/#cookie-http-only-flag",
+      "linkingText": [
+        "http-only-flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cookie"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-same-site-flag",
+      "href": "https://wicg.github.io/cookie-store/#cookie-same-site-flag",
+      "linkingText": [
+        "same-site-flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cookie"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-store",
+      "href": "https://wicg.github.io/cookie-store/#cookie-store",
+      "linkingText": [
+        "cookie store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-change-subscription-list",
+      "href": "https://wicg.github.io/cookie-store/#cookie-change-subscription-list",
+      "linkingText": [
+        "cookie change subscription list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-change-subscription",
+      "href": "https://wicg.github.io/cookie-store/#cookie-change-subscription",
+      "linkingText": [
+        "cookie change subscription"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-change-subscription-name",
+      "href": "https://wicg.github.io/cookie-store/#cookie-change-subscription-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cookie change subscription"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-change-subscription-url",
+      "href": "https://wicg.github.io/cookie-store/#cookie-change-subscription-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cookie change subscription"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-change-subscription-matchtype",
+      "href": "https://wicg.github.io/cookie-store/#cookie-change-subscription-matchtype",
+      "linkingText": [
+        "matchType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cookie change subscription"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookiestore",
+      "href": "https://wicg.github.io/cookie-store/#cookiestore",
+      "linkingText": [
+        "CookieStore"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-get-name-name",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-get-name-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CookieStore/get(name)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-get-options-options",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-get-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CookieStore/get(options)",
+        "CookieStore/get()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-getall-name-name",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-getall-name-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CookieStore/getAll(name)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-getall-options-options",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-getall-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CookieStore/getAll(options)",
+        "CookieStore/getAll()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-set-name-value-options-name",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-set-name-value-options-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CookieStore/set(name, value, options)",
+        "CookieStore/set(name, value)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-set-name-value-options-value",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-set-name-value-options-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CookieStore/set(name, value, options)",
+        "CookieStore/set(name, value)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-set-name-value-options-options",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-set-name-value-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CookieStore/set(name, value, options)",
+        "CookieStore/set(name, value)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-set-options-options",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-set-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CookieStore/set(options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-delete-name-name",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-delete-name-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CookieStore/delete(name)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-delete-options-options",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-delete-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CookieStore/delete(options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-onchange",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-onchange",
+      "linkingText": [
+        "onchange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CookieStore"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-cookiematchtype",
+      "href": "https://wicg.github.io/cookie-store/#enumdef-cookiematchtype",
+      "linkingText": [
+        "CookieMatchType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiematchtype-equals",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiematchtype-equals",
+      "linkingText": [
+        "\"equals\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CookieMatchType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiematchtype-starts-with",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiematchtype-starts-with",
+      "linkingText": [
+        "\"starts-with\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CookieMatchType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-cookiestoregetoptions",
+      "href": "https://wicg.github.io/cookie-store/#dictdef-cookiestoregetoptions",
+      "linkingText": [
+        "CookieStoreGetOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoregetoptions-name",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoregetoptions-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieStoreGetOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoregetoptions-url",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoregetoptions-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieStoreGetOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoregetoptions-matchtype",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoregetoptions-matchtype",
+      "linkingText": [
+        "matchType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieStoreGetOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-cookiesamesite",
+      "href": "https://wicg.github.io/cookie-store/#enumdef-cookiesamesite",
+      "linkingText": [
+        "CookieSameSite"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiesamesite-strict",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiesamesite-strict",
+      "linkingText": [
+        "\"strict\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CookieSameSite"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiesamesite-lax",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiesamesite-lax",
+      "linkingText": [
+        "\"lax\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CookieSameSite"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiesamesite-none",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiesamesite-none",
+      "linkingText": [
+        "\"none\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CookieSameSite"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-cookiestoresetoptions",
+      "href": "https://wicg.github.io/cookie-store/#dictdef-cookiestoresetoptions",
+      "linkingText": [
+        "CookieStoreSetOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoresetoptions-expires",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoresetoptions-expires",
+      "linkingText": [
+        "expires"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieStoreSetOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoresetoptions-domain",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoresetoptions-domain",
+      "linkingText": [
+        "domain"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieStoreSetOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoresetoptions-path",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoresetoptions-path",
+      "linkingText": [
+        "path"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieStoreSetOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoresetoptions-secure",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoresetoptions-secure",
+      "linkingText": [
+        "secure"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieStoreSetOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoresetoptions-samesite",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoresetoptions-samesite",
+      "linkingText": [
+        "sameSite"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieStoreSetOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-cookiestoresetextraoptions",
+      "href": "https://wicg.github.io/cookie-store/#dictdef-cookiestoresetextraoptions",
+      "linkingText": [
+        "CookieStoreSetExtraOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoresetextraoptions-name",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoresetextraoptions-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieStoreSetExtraOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoresetextraoptions-value",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoresetextraoptions-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieStoreSetExtraOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-cookiestoredeleteoptions",
+      "href": "https://wicg.github.io/cookie-store/#dictdef-cookiestoredeleteoptions",
+      "linkingText": [
+        "CookieStoreDeleteOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoredeleteoptions-name",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoredeleteoptions-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieStoreDeleteOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoredeleteoptions-domain",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoredeleteoptions-domain",
+      "linkingText": [
+        "domain"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieStoreDeleteOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoredeleteoptions-path",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoredeleteoptions-path",
+      "linkingText": [
+        "path"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieStoreDeleteOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-cookielistitem",
+      "href": "https://wicg.github.io/cookie-store/#dictdef-cookielistitem",
+      "linkingText": [
+        "CookieListItem"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookielistitem-name",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookielistitem-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieListItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookielistitem-value",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookielistitem-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieListItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookielistitem-domain",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookielistitem-domain",
+      "linkingText": [
+        "domain"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieListItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookielistitem-path",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookielistitem-path",
+      "linkingText": [
+        "path"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieListItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookielistitem-expires",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookielistitem-expires",
+      "linkingText": [
+        "expires"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieListItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookielistitem-secure",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookielistitem-secure",
+      "linkingText": [
+        "secure"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieListItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookielistitem-samesite",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookielistitem-samesite",
+      "linkingText": [
+        "sameSite"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieListItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-cookielist",
+      "href": "https://wicg.github.io/cookie-store/#typedefdef-cookielist",
+      "linkingText": [
+        "CookieList"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-get",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-get",
+      "linkingText": [
+        "get(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CookieStore"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-get-options",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-get-options",
+      "linkingText": [
+        "get(options)",
+        "get()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CookieStore"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-getall",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-getall",
+      "linkingText": [
+        "getAll(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CookieStore"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-getall-options",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-getall-options",
+      "linkingText": [
+        "getAll(options)",
+        "getAll()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CookieStore"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-set",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-set",
+      "linkingText": [
+        "set(name, value, options)",
+        "set(name, value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CookieStore"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-set-options",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-set-options",
+      "linkingText": [
+        "set(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CookieStore"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-delete",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-delete",
+      "linkingText": [
+        "delete(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CookieStore"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestore-delete-options",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestore-delete-options",
+      "linkingText": [
+        "delete(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CookieStore"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cookiestoremanager",
+      "href": "https://wicg.github.io/cookie-store/#cookiestoremanager",
+      "linkingText": [
+        "CookieStoreManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoremanager-subscribe-subscriptions-subscriptions",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoremanager-subscribe-subscriptions-subscriptions",
+      "linkingText": [
+        "subscriptions"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CookieStoreManager/subscribe(subscriptions)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoremanager-unsubscribe-subscriptions-subscriptions",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoremanager-unsubscribe-subscriptions-subscriptions",
+      "linkingText": [
+        "subscriptions"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CookieStoreManager/unsubscribe(subscriptions)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoremanager-subscribe",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoremanager-subscribe",
+      "linkingText": [
+        "subscribe(subscriptions)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CookieStoreManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoremanager-getsubscriptions",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoremanager-getsubscriptions",
+      "linkingText": [
+        "getSubscriptions()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CookieStoreManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiestoremanager-unsubscribe",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiestoremanager-unsubscribe",
+      "linkingText": [
+        "unsubscribe(subscriptions)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CookieStoreManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerregistration-cookies",
+      "href": "https://wicg.github.io/cookie-store/#dom-serviceworkerregistration-cookies",
+      "linkingText": [
+        "cookies"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cookiechangeevent",
+      "href": "https://wicg.github.io/cookie-store/#cookiechangeevent",
+      "linkingText": [
+        "CookieChangeEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiechangeevent-cookiechangeevent",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiechangeevent-cookiechangeevent",
+      "linkingText": [
+        "CookieChangeEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "CookieChangeEvent(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CookieChangeEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiechangeevent-cookiechangeevent-type-eventinitdict-type",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiechangeevent-cookiechangeevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CookieChangeEvent/CookieChangeEvent(type, eventInitDict)",
+        "CookieChangeEvent/constructor(type, eventInitDict)",
+        "CookieChangeEvent/CookieChangeEvent(type)",
+        "CookieChangeEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiechangeevent-cookiechangeevent-type-eventinitdict-eventinitdict",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiechangeevent-cookiechangeevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CookieChangeEvent/CookieChangeEvent(type, eventInitDict)",
+        "CookieChangeEvent/constructor(type, eventInitDict)",
+        "CookieChangeEvent/CookieChangeEvent(type)",
+        "CookieChangeEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiechangeevent-changed",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiechangeevent-changed",
+      "linkingText": [
+        "changed"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CookieChangeEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiechangeevent-deleted",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiechangeevent-deleted",
+      "linkingText": [
+        "deleted"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CookieChangeEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-cookiechangeeventinit",
+      "href": "https://wicg.github.io/cookie-store/#dictdef-cookiechangeeventinit",
+      "linkingText": [
+        "CookieChangeEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiechangeeventinit-changed",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiechangeeventinit-changed",
+      "linkingText": [
+        "changed"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieChangeEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cookiechangeeventinit-deleted",
+      "href": "https://wicg.github.io/cookie-store/#dom-cookiechangeeventinit-deleted",
+      "linkingText": [
+        "deleted"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CookieChangeEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "extendablecookiechangeevent",
+      "href": "https://wicg.github.io/cookie-store/#extendablecookiechangeevent",
+      "linkingText": [
+        "ExtendableCookieChangeEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablecookiechangeevent-extendablecookiechangeevent",
+      "href": "https://wicg.github.io/cookie-store/#dom-extendablecookiechangeevent-extendablecookiechangeevent",
+      "linkingText": [
+        "ExtendableCookieChangeEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "ExtendableCookieChangeEvent(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ExtendableCookieChangeEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablecookiechangeevent-extendablecookiechangeevent-type-eventinitdict-type",
+      "href": "https://wicg.github.io/cookie-store/#dom-extendablecookiechangeevent-extendablecookiechangeevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ExtendableCookieChangeEvent/ExtendableCookieChangeEvent(type, eventInitDict)",
+        "ExtendableCookieChangeEvent/constructor(type, eventInitDict)",
+        "ExtendableCookieChangeEvent/ExtendableCookieChangeEvent(type)",
+        "ExtendableCookieChangeEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablecookiechangeevent-extendablecookiechangeevent-type-eventinitdict-eventinitdict",
+      "href": "https://wicg.github.io/cookie-store/#dom-extendablecookiechangeevent-extendablecookiechangeevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ExtendableCookieChangeEvent/ExtendableCookieChangeEvent(type, eventInitDict)",
+        "ExtendableCookieChangeEvent/constructor(type, eventInitDict)",
+        "ExtendableCookieChangeEvent/ExtendableCookieChangeEvent(type)",
+        "ExtendableCookieChangeEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablecookiechangeevent-changed",
+      "href": "https://wicg.github.io/cookie-store/#dom-extendablecookiechangeevent-changed",
+      "linkingText": [
+        "changed"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ExtendableCookieChangeEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablecookiechangeevent-deleted",
+      "href": "https://wicg.github.io/cookie-store/#dom-extendablecookiechangeevent-deleted",
+      "linkingText": [
+        "deleted"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ExtendableCookieChangeEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-extendablecookiechangeeventinit",
+      "href": "https://wicg.github.io/cookie-store/#dictdef-extendablecookiechangeeventinit",
+      "linkingText": [
+        "ExtendableCookieChangeEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablecookiechangeeventinit-changed",
+      "href": "https://wicg.github.io/cookie-store/#dom-extendablecookiechangeeventinit-changed",
+      "linkingText": [
+        "changed"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ExtendableCookieChangeEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablecookiechangeeventinit-deleted",
+      "href": "https://wicg.github.io/cookie-store/#dom-extendablecookiechangeeventinit-deleted",
+      "linkingText": [
+        "deleted"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ExtendableCookieChangeEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-cookiestore",
+      "href": "https://wicg.github.io/cookie-store/#dom-window-cookiestore",
+      "linkingText": [
+        "cookieStore"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-cookiestore",
+      "href": "https://wicg.github.io/cookie-store/#dom-serviceworkerglobalscope-cookiestore",
+      "linkingText": [
+        "cookieStore"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-oncookiechange",
+      "href": "https://wicg.github.io/cookie-store/#dom-serviceworkerglobalscope-oncookiechange",
+      "linkingText": [
+        "oncookiechange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "encode",
+      "href": "https://wicg.github.io/cookie-store/#encode",
+      "linkingText": [
+        "encode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "decode",
+      "href": "https://wicg.github.io/cookie-store/#decode",
+      "linkingText": [
+        "decode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "as-a-timestamp",
+      "href": "https://wicg.github.io/cookie-store/#as-a-timestamp",
+      "linkingText": [
+        "as a timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "date-serialize",
+      "href": "https://wicg.github.io/cookie-store/#date-serialize",
+      "linkingText": [
+        "date serialize"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "query-cookies",
+      "href": "https://wicg.github.io/cookie-store/#query-cookies",
+      "linkingText": [
+        "query cookies"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matches",
+      "href": "https://wicg.github.io/cookie-store/#matches",
+      "linkingText": [
+        "matches"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-a-cookielistitem",
+      "href": "https://wicg.github.io/cookie-store/#create-a-cookielistitem",
+      "linkingText": [
+        "create a CookieListItem"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "set-a-cookie",
+      "href": "https://wicg.github.io/cookie-store/#set-a-cookie",
+      "linkingText": [
+        "set a cookie"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "delete-a-cookie",
+      "href": "https://wicg.github.io/cookie-store/#delete-a-cookie",
+      "linkingText": [
+        "delete a cookie"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "process-cookie-changes",
+      "href": "https://wicg.github.io/cookie-store/#process-cookie-changes",
+      "linkingText": [
+        "process cookie changes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "observable-changes",
+      "href": "https://wicg.github.io/cookie-store/#observable-changes",
+      "linkingText": [
+        "observable changes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cookie-change",
+      "href": "https://wicg.github.io/cookie-store/#cookie-change",
+      "linkingText": [
+        "cookie change"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fire-a-change-event",
+      "href": "https://wicg.github.io/cookie-store/#fire-a-change-event",
+      "linkingText": [
+        "fire a change event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "prepare-lists",
+      "href": "https://wicg.github.io/cookie-store/#prepare-lists",
+      "linkingText": [
+        "prepare lists"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

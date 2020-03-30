@@ -1,0 +1,223 @@
+{
+  "spec": {
+    "title": "Media Capture from DOM Elements",
+    "url": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-user-agent",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlmediaelement",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/#dom-htmlmediaelement",
+      "linkingText": [
+        "HTMLMediaElement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlcanvaselement",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/#dom-htmlcanvaselement",
+      "linkingText": [
+        "HTMLCanvasElement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-track",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/#dfn-track",
+      "linkingText": [
+        "track"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-videotrack",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/#dfn-videotrack",
+      "linkingText": [
+        "VideoTrack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-audiotrack",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/#dfn-audiotrack",
+      "linkingText": [
+        "AudioTrack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediastreamtrack",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/#dfn-mediastreamtrack",
+      "linkingText": [
+        "MediaStreamTrack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediastream",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/#dfn-mediastream",
+      "linkingText": [
+        "MediaStream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlmediaelement-capturestream()",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/#dom-htmlmediaelement-capturestream()",
+      "linkingText": [
+        "capturestream()",
+        "captureStream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "htmlmediaelement"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-muted",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/#dfn-muted",
+      "linkingText": [
+        "muted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-disabled",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/#dfn-disabled",
+      "linkingText": [
+        "disabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlcanvaselement-capturestream()",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/#dom-htmlcanvaselement-capturestream()",
+      "linkingText": [
+        "capturestream()",
+        "captureStream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "htmlcanvaselement"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-origin-clean",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/#dfn-origin-clean",
+      "linkingText": [
+        "origin-clean"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-framecapturerequested",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/#dfn-framecapturerequested",
+      "linkingText": [
+        "frameCaptureRequested"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-canvascapturemediastreamtrack",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/#dom-canvascapturemediastreamtrack",
+      "linkingText": [
+        "CanvasCaptureMediaStreamTrack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-canvascapturemediastreamtrack-canvas",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/#dom-canvascapturemediastreamtrack-canvas",
+      "linkingText": [
+        "canvas"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "canvascapturemediastreamtrack"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-canvascapturemediastreamtrack-requestframe",
+      "href": "https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/#dom-canvascapturemediastreamtrack-requestframe",
+      "linkingText": [
+        "requestframe()",
+        "requestFrame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "canvascapturemediastreamtrack"
+      ],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

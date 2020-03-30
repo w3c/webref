@@ -1,0 +1,472 @@
+{
+  "spec": {
+    "title": "Fullscreen API Standard",
+    "url": "https://fullscreen.spec.whatwg.org/"
+  },
+  "dfns": [
+    {
+      "id": "descendant-browsing-context",
+      "href": "https://fullscreen.spec.whatwg.org/#descendant-browsing-context",
+      "linkingText": [
+        "descendant browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fullscreen-flag",
+      "href": "https://fullscreen.spec.whatwg.org/#fullscreen-flag",
+      "linkingText": [
+        "fullscreen flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iframe-fullscreen-flag",
+      "href": "https://fullscreen.spec.whatwg.org/#iframe-fullscreen-flag",
+      "linkingText": [
+        "iframe fullscreen flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fullscreen-element",
+      "href": "https://fullscreen.spec.whatwg.org/#fullscreen-element",
+      "linkingText": [
+        "fullscreen element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-of-pending-fullscreen-events",
+      "href": "https://fullscreen.spec.whatwg.org/#list-of-pending-fullscreen-events",
+      "linkingText": [
+        "list of pending fullscreen events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fullscreen-an-element",
+      "href": "https://fullscreen.spec.whatwg.org/#fullscreen-an-element",
+      "linkingText": [
+        "fullscreen an element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "unfullscreen-an-element",
+      "href": "https://fullscreen.spec.whatwg.org/#unfullscreen-an-element",
+      "linkingText": [
+        "unfullscreen an element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "unfullscreen-a-document",
+      "href": "https://fullscreen.spec.whatwg.org/#unfullscreen-a-document",
+      "linkingText": [
+        "unfullscreen a document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fully-exit-fullscreen",
+      "href": "https://fullscreen.spec.whatwg.org/#fully-exit-fullscreen",
+      "linkingText": [
+        "fully exit fullscreen"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fullscreen-is-supported",
+      "href": "https://fullscreen.spec.whatwg.org/#fullscreen-is-supported",
+      "linkingText": [
+        "Fullscreen is supported"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "run-the-fullscreen-steps",
+      "href": "https://fullscreen.spec.whatwg.org/#run-the-fullscreen-steps",
+      "linkingText": [
+        "run the fullscreen steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enumdef-fullscreennavigationui",
+      "href": "https://fullscreen.spec.whatwg.org/#enumdef-fullscreennavigationui",
+      "linkingText": [
+        "FullscreenNavigationUI"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fullscreennavigationui-auto",
+      "href": "https://fullscreen.spec.whatwg.org/#dom-fullscreennavigationui-auto",
+      "linkingText": [
+        "\"auto\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FullscreenNavigationUI"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fullscreennavigationui-show",
+      "href": "https://fullscreen.spec.whatwg.org/#dom-fullscreennavigationui-show",
+      "linkingText": [
+        "\"show\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FullscreenNavigationUI"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fullscreennavigationui-hide",
+      "href": "https://fullscreen.spec.whatwg.org/#dom-fullscreennavigationui-hide",
+      "linkingText": [
+        "\"hide\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FullscreenNavigationUI"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-fullscreenoptions",
+      "href": "https://fullscreen.spec.whatwg.org/#dictdef-fullscreenoptions",
+      "linkingText": [
+        "FullscreenOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fullscreenoptions-navigationui",
+      "href": "https://fullscreen.spec.whatwg.org/#dom-fullscreenoptions-navigationui",
+      "linkingText": [
+        "navigationUI"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FullscreenOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-requestfullscreen-options-options",
+      "href": "https://fullscreen.spec.whatwg.org/#dom-element-requestfullscreen-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Element/requestFullscreen(options)",
+        "Element/requestFullscreen()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-onfullscreenchange",
+      "href": "https://fullscreen.spec.whatwg.org/#dom-element-onfullscreenchange",
+      "linkingText": [
+        "onfullscreenchange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-onfullscreenerror",
+      "href": "https://fullscreen.spec.whatwg.org/#dom-element-onfullscreenerror",
+      "linkingText": [
+        "onfullscreenerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fullscreen-element-ready-check",
+      "href": "https://fullscreen.spec.whatwg.org/#fullscreen-element-ready-check",
+      "linkingText": [
+        "fullscreen element ready check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-element-requestfullscreen",
+      "href": "https://fullscreen.spec.whatwg.org/#dom-element-requestfullscreen",
+      "linkingText": [
+        "requestFullscreen(options)",
+        "requestFullscreen()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-fullscreenenabled",
+      "href": "https://fullscreen.spec.whatwg.org/#dom-document-fullscreenenabled",
+      "linkingText": [
+        "fullscreenEnabled"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-fullscreen",
+      "href": "https://fullscreen.spec.whatwg.org/#dom-document-fullscreen",
+      "linkingText": [
+        "fullscreen"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-fullscreenelement",
+      "href": "https://fullscreen.spec.whatwg.org/#dom-document-fullscreenelement",
+      "linkingText": [
+        "fullscreenElement"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DocumentOrShadowRoot"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "simple-fullscreen-document",
+      "href": "https://fullscreen.spec.whatwg.org/#simple-fullscreen-document",
+      "linkingText": [
+        "simple fullscreen document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "collect-documents-to-unfullscreen",
+      "href": "https://fullscreen.spec.whatwg.org/#collect-documents-to-unfullscreen",
+      "linkingText": [
+        "collect documents to unfullscreen"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "exit-fullscreen",
+      "href": "https://fullscreen.spec.whatwg.org/#exit-fullscreen",
+      "linkingText": [
+        "exit fullscreen"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-document-exitfullscreen",
+      "href": "https://fullscreen.spec.whatwg.org/#dom-document-exitfullscreen",
+      "linkingText": [
+        "exitFullscreen()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "handler-document-onfullscreenchange",
+      "href": "https://fullscreen.spec.whatwg.org/#handler-document-onfullscreenchange",
+      "linkingText": [
+        "onfullscreenchange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "handler-document-onfullscreenerror",
+      "href": "https://fullscreen.spec.whatwg.org/#handler-document-onfullscreenerror",
+      "linkingText": [
+        "onfullscreenerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "top-layer",
+      "href": "https://fullscreen.spec.whatwg.org/#top-layer",
+      "linkingText": [
+        "top layer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "top-layer-add",
+      "href": "https://fullscreen.spec.whatwg.org/#top-layer-add",
+      "linkingText": [
+        "add"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "top layer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-pe-backdrop",
+      "href": "https://fullscreen.spec.whatwg.org/#css-pe-backdrop",
+      "linkingText": [
+        "::backdrop"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-pc-fullscreen",
+      "href": "https://fullscreen.spec.whatwg.org/#css-pc-fullscreen",
+      "linkingText": [
+        ":fullscreen"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fullscreen-feature",
+      "href": "https://fullscreen.spec.whatwg.org/#fullscreen-feature",
+      "linkingText": [
+        "fullscreen-feature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "spec": {
+    "title": "Accelerometer",
+    "url": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/"
+  },
+  "dfns": [
+    {
+      "id": "accelerometer-sensor-type",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#accelerometer-sensor-type",
+      "linkingText": [
+        "Accelerometer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "acceleration",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#acceleration",
+      "linkingText": [
+        "acceleration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "linear-acceleration",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#linear-acceleration",
+      "linkingText": [
+        "linear acceleration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "gravity",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#gravity",
+      "linkingText": [
+        "gravity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "device-coordinate-system",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#device-coordinate-system",
+      "linkingText": [
+        "device coordinate system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "screen-coordinate-system",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#screen-coordinate-system",
+      "linkingText": [
+        "screen coordinate system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "accelerometer",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#accelerometer",
+      "linkingText": [
+        "Accelerometer"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometer-accelerometer",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dom-accelerometer-accelerometer",
+      "linkingText": [
+        "Accelerometer(options)",
+        "constructor(options)",
+        "Accelerometer()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Accelerometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometer-constructor-options-options",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dom-accelerometer-constructor-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Accelerometer/constructor(options)",
+        "Accelerometer/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometer-x",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dom-accelerometer-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Accelerometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometer-y",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dom-accelerometer-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Accelerometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometer-z",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dom-accelerometer-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Accelerometer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-accelerometerlocalcoordinatesystem",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#enumdef-accelerometerlocalcoordinatesystem",
+      "linkingText": [
+        "AccelerometerLocalCoordinateSystem"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometerlocalcoordinatesystem-device",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dom-accelerometerlocalcoordinatesystem-device",
+      "linkingText": [
+        "\"device\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AccelerometerLocalCoordinateSystem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometerlocalcoordinatesystem-screen",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dom-accelerometerlocalcoordinatesystem-screen",
+      "linkingText": [
+        "\"screen\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AccelerometerLocalCoordinateSystem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-accelerometersensoroptions",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dictdef-accelerometersensoroptions",
+      "linkingText": [
+        "AccelerometerSensorOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometersensoroptions-referenceframe",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dom-accelerometersensoroptions-referenceframe",
+      "linkingText": [
+        "referenceFrame"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AccelerometerSensorOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "linearaccelerationsensor",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#linearaccelerationsensor",
+      "linkingText": [
+        "LinearAccelerationSensor"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-linearaccelerationsensor-linearaccelerationsensor",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dom-linearaccelerationsensor-linearaccelerationsensor",
+      "linkingText": [
+        "LinearAccelerationSensor(options)",
+        "constructor(options)",
+        "LinearAccelerationSensor()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "LinearAccelerationSensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-linearaccelerationsensor-constructor-options-options",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dom-linearaccelerationsensor-constructor-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "LinearAccelerationSensor/constructor(options)",
+        "LinearAccelerationSensor/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "gravitysensor",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#gravitysensor",
+      "linkingText": [
+        "GravitySensor"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gravitysensor-gravitysensor",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dom-gravitysensor-gravitysensor",
+      "linkingText": [
+        "GravitySensor(options)",
+        "constructor(options)",
+        "GravitySensor()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "GravitySensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gravitysensor-constructor-options-options",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dom-gravitysensor-constructor-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GravitySensor/constructor(options)",
+        "GravitySensor/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "construct-an-accelerometer-object",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#construct-an-accelerometer-object",
+      "linkingText": [
+        "Construct an accelerometer object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-accelerometerreadingvalues",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dictdef-accelerometerreadingvalues",
+      "linkingText": [
+        "AccelerometerReadingValues"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometerreadingvalues-x",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dom-accelerometerreadingvalues-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AccelerometerReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometerreadingvalues-y",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dom-accelerometerreadingvalues-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AccelerometerReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-accelerometerreadingvalues-z",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dom-accelerometerreadingvalues-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AccelerometerReadingValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-linearaccelerationreadingvalues",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dictdef-linearaccelerationreadingvalues",
+      "linkingText": [
+        "LinearAccelerationReadingValues"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-gravityreadingvalues",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#dictdef-gravityreadingvalues",
+      "linkingText": [
+        "GravityReadingValues"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "conformant-user-agent",
+      "href": "https://www.w3.org/TR/2019/CR-accelerometer-20191212/#conformant-user-agent",
+      "linkingText": [
+        "conformant user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

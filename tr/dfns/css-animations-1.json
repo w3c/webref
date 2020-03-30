@@ -1,0 +1,987 @@
+{
+  "spec": {
+    "title": "CSS Animations Level 1",
+    "url": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/"
+  },
+  "dfns": [
+    {
+      "id": "at-ruledef-keyframes",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#at-ruledef-keyframes",
+      "linkingText": [
+        "@keyframes"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-keyframes-name",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#typedef-keyframes-name",
+      "linkingText": [
+        "<keyframes-name>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-keyframe-block",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#typedef-keyframe-block",
+      "linkingText": [
+        "<keyframe-block>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-keyframe-selector",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#typedef-keyframe-selector",
+      "linkingText": [
+        "<keyframe-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-animation-name",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#propdef-animation-name",
+      "linkingText": [
+        "animation-name"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-animation-name-none",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#valdef-animation-name-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-name"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-animation-name-keyframes-name",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#valdef-animation-name-keyframes-name",
+      "linkingText": [
+        "<keyframes-name>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-name"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-animation-duration",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#propdef-animation-duration",
+      "linkingText": [
+        "animation-duration"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-animation-duration-time",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#valdef-animation-duration-time",
+      "linkingText": [
+        "<time>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-duration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-animation-timing-function",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#propdef-animation-timing-function",
+      "linkingText": [
+        "animation-timing-function"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "active-duration",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#active-duration",
+      "linkingText": [
+        "active duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-animation-iteration-count",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#propdef-animation-iteration-count",
+      "linkingText": [
+        "animation-iteration-count"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-single-animation-iteration-count",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#typedef-single-animation-iteration-count",
+      "linkingText": [
+        "<single-animation-iteration-count>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-animation-iteration-count-infinite",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#valdef-animation-iteration-count-infinite",
+      "linkingText": [
+        "infinite"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-iteration-count"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-animation-iteration-count-number",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#valdef-animation-iteration-count-number",
+      "linkingText": [
+        "<number>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-iteration-count"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-animation-direction",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#propdef-animation-direction",
+      "linkingText": [
+        "animation-direction"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-single-animation-direction",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#typedef-single-animation-direction",
+      "linkingText": [
+        "<single-animation-direction>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-animation-direction-normal",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#valdef-animation-direction-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-direction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-animation-direction-reverse",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#valdef-animation-direction-reverse",
+      "linkingText": [
+        "reverse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-direction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-animation-direction-alternate",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#valdef-animation-direction-alternate",
+      "linkingText": [
+        "alternate"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-direction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-animation-direction-alternate-reverse",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#valdef-animation-direction-alternate-reverse",
+      "linkingText": [
+        "alternate-reverse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-direction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-animation-play-state",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#propdef-animation-play-state",
+      "linkingText": [
+        "animation-play-state"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-single-animation-play-state",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#typedef-single-animation-play-state",
+      "linkingText": [
+        "<single-animation-play-state>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-animation-play-state-running",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#valdef-animation-play-state-running",
+      "linkingText": [
+        "running"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-play-state"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-animation-play-state-paused",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#valdef-animation-play-state-paused",
+      "linkingText": [
+        "paused"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-play-state"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-animation-delay",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#propdef-animation-delay",
+      "linkingText": [
+        "animation-delay"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-animation-delay-time",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#valdef-animation-delay-time",
+      "linkingText": [
+        "<time>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-delay"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-animation-fill-mode",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#propdef-animation-fill-mode",
+      "linkingText": [
+        "animation-fill-mode"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-single-animation-fill-mode",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#typedef-single-animation-fill-mode",
+      "linkingText": [
+        "<single-animation-fill-mode>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-animation-fill-mode-none",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#valdef-animation-fill-mode-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-fill-mode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-animation-fill-mode-forwards",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#valdef-animation-fill-mode-forwards",
+      "linkingText": [
+        "forwards"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-fill-mode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-animation-fill-mode-backwards",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#valdef-animation-fill-mode-backwards",
+      "linkingText": [
+        "backwards"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-fill-mode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-animation-fill-mode-both",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#valdef-animation-fill-mode-both",
+      "linkingText": [
+        "both"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "animation-fill-mode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-animation",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#propdef-animation",
+      "linkingText": [
+        "animation"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-single-animation",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#typedef-single-animation",
+      "linkingText": [
+        "<single-animation>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationevent-animationevent",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-animationevent-animationevent",
+      "linkingText": [
+        "AnimationEvent(type, animationEventInitDict)",
+        "AnimationEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "AnimationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationevent-animationevent-type-animationeventinitdict-type",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-animationevent-animationevent-type-animationeventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationEvent/AnimationEvent(type, animationEventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationevent-animationevent-type-animationeventinitdict-animationeventinitdict",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-animationevent-animationevent-type-animationeventinitdict-animationeventinitdict",
+      "linkingText": [
+        "animationEventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationEvent/AnimationEvent(type, animationEventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animationevent",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#animationevent",
+      "linkingText": [
+        "AnimationEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-animationeventinit",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dictdef-animationeventinit",
+      "linkingText": [
+        "AnimationEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationeventinit-animationname",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-animationeventinit-animationname",
+      "linkingText": [
+        "animationName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AnimationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationeventinit-elapsedtime",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-animationeventinit-elapsedtime",
+      "linkingText": [
+        "elapsedTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AnimationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationeventinit-pseudoelement",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-animationeventinit-pseudoelement",
+      "linkingText": [
+        "pseudoElement"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AnimationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationevent-animationname",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-animationevent-animationname",
+      "linkingText": [
+        "animationName"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationevent-elapsedtime",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-animationevent-elapsedtime",
+      "linkingText": [
+        "elapsedTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationevent-pseudoelement",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-animationevent-pseudoelement",
+      "linkingText": [
+        "pseudoElement"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-animationevent",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#funcdef-animationevent",
+      "linkingText": [
+        "AnimationEvent()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eventdef-animationevent-animationstart",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#eventdef-animationevent-animationstart",
+      "linkingText": [
+        "animationstart"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "animationevent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eventdef-animationevent-animationend",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#eventdef-animationevent-animationend",
+      "linkingText": [
+        "animationend"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "animationevent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eventdef-animationevent-animationiteration",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#eventdef-animationevent-animationiteration",
+      "linkingText": [
+        "animationiteration"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "animationevent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eventdef-animationevent-animationcancel",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#eventdef-animationevent-animationcancel",
+      "linkingText": [
+        "animationcancel"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "animationevent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-onanimationstart",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-document-onanimationstart",
+      "linkingText": [
+        "onanimationstart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document",
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-onanimationiteration",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-document-onanimationiteration",
+      "linkingText": [
+        "onanimationiteration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document",
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-onanimationend",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-document-onanimationend",
+      "linkingText": [
+        "onanimationend"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document",
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-onanimationcancel",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-document-onanimationcancel",
+      "linkingText": [
+        "onanimationcancel"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document",
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-keyframes_rule",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-cssrule-keyframes_rule",
+      "linkingText": [
+        "KEYFRAMES_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-keyframe_rule",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-cssrule-keyframe_rule",
+      "linkingText": [
+        "KEYFRAME_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "csskeyframerule",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#csskeyframerule",
+      "linkingText": [
+        "CSSKeyframeRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-csskeyframerule-keytext",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-csskeyframerule-keytext",
+      "linkingText": [
+        "keyText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSKeyframeRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-csskeyframerule-style",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-csskeyframerule-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSKeyframeRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "csskeyframesrule",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#csskeyframesrule",
+      "linkingText": [
+        "CSSKeyframesRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-csskeyframesrule-name",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-csskeyframesrule-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSKeyframesRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-csskeyframesrule-cssrules",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-csskeyframesrule-cssrules",
+      "linkingText": [
+        "cssRules"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSKeyframesRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-csskeyframesrule-appendrule",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-csskeyframesrule-appendrule",
+      "linkingText": [
+        "appendRule(rule)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSKeyframesRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-csskeyframesrule-appendrule-rule-rule",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-csskeyframesrule-appendrule-rule-rule",
+      "linkingText": [
+        "rule"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSKeyframesRule/appendRule(rule)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-csskeyframesrule-deleterule",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-csskeyframesrule-deleterule",
+      "linkingText": [
+        "deleteRule(select)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSKeyframesRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-csskeyframesrule-deleterule-select-select",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-csskeyframesrule-deleterule-select-select",
+      "linkingText": [
+        "select"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSKeyframesRule/deleteRule(select)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-csskeyframesrule-findrule",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-csskeyframesrule-findrule",
+      "linkingText": [
+        "findRule(select)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSKeyframesRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-csskeyframesrule-findrule-select-select",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-csskeyframesrule-findrule-select-select",
+      "linkingText": [
+        "select"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSKeyframesRule/findRule(select)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onanimationstart",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-globaleventhandlers-onanimationstart",
+      "linkingText": [
+        "onanimationstart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onanimationiteration",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-globaleventhandlers-onanimationiteration",
+      "linkingText": [
+        "onanimationiteration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onanimationend",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-globaleventhandlers-onanimationend",
+      "linkingText": [
+        "onanimationend"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-globaleventhandlers-onanimationcancel",
+      "href": "https://www.w3.org/TR/2018/WD-css-animations-1-20181011/#dom-globaleventhandlers-onanimationcancel",
+      "linkingText": [
+        "onanimationcancel"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

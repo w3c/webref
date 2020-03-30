@@ -1,0 +1,982 @@
+{
+  "spec": {
+    "title": "Media Source Extensions™",
+    "url": "https://www.w3.org/TR/2016/REC-media-source-20161117/"
+  },
+  "dfns": [
+    {
+      "id": "live-seekable-range",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#live-seekable-range",
+      "linkingText": [
+        "live seekable range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-readystate-closed",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-readystate-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "readystate"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-readystate-open",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-readystate-open",
+      "linkingText": [
+        "open"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "readystate"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-readystate-ended",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-readystate-ended",
+      "linkingText": [
+        "ended"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "readystate"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-endofstreamerror-network",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-endofstreamerror-network",
+      "linkingText": [
+        "network"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "endofstreamerror"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-endofstreamerror-decode",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-endofstreamerror-decode",
+      "linkingText": [
+        "decode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "endofstreamerror"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasource-sourcebuffers",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-mediasource-sourcebuffers",
+      "linkingText": [
+        "sourceBuffers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediasource"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasource-activesourcebuffers",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-mediasource-activesourcebuffers",
+      "linkingText": [
+        "activeSourceBuffers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediasource"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-readystate",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-readystate",
+      "linkingText": [
+        "readyState"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasource-duration",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-mediasource-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediasource"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasource-onsourceopen",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-mediasource-onsourceopen",
+      "linkingText": [
+        "onsourceopen"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediasource"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasource-onsourceended",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-mediasource-onsourceended",
+      "linkingText": [
+        "onsourceended"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediasource"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasource-onsourceclose",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-mediasource-onsourceclose",
+      "linkingText": [
+        "onsourceclose"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediasource"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasource-addsourcebuffer",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-mediasource-addsourcebuffer",
+      "linkingText": [
+        "addSourceBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediasource"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasource-removesourcebuffer",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-mediasource-removesourcebuffer",
+      "linkingText": [
+        "removeSourceBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediasource"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasource-endofstream",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-mediasource-endofstream",
+      "linkingText": [
+        "endOfStream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediasource"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasource-setliveseekablerange",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-mediasource-setliveseekablerange",
+      "linkingText": [
+        "setLiveSeekableRange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediasource"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasource-clearliveseekablerange",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-mediasource-clearliveseekablerange",
+      "linkingText": [
+        "clearLiveSeekableRange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediasource"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediasource-istypesupported",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-mediasource-istypesupported",
+      "linkingText": [
+        "isTypeSupported"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediasource"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-evt-sourceopen",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-evt-sourceopen",
+      "linkingText": [
+        "sourceopen"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-evt-sourceended",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-evt-sourceended",
+      "linkingText": [
+        "sourceended"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-evt-sourceclose",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-evt-sourceclose",
+      "linkingText": [
+        "sourceclose"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enough-data",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#enough-data",
+      "linkingText": [
+        "enough data to ensure uninterrupted playback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-appendmode-segments",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-appendmode-segments",
+      "linkingText": [
+        "segments"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "appendmode"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-appendmode-sequence",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-appendmode-sequence",
+      "linkingText": [
+        "sequence"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "appendmode"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebuffer-mode",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebuffer-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebuffer-updating",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebuffer-updating",
+      "linkingText": [
+        "updating"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebuffer-buffered",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebuffer-buffered",
+      "linkingText": [
+        "buffered"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebuffer-timestampoffset",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebuffer-timestampoffset",
+      "linkingText": [
+        "timestampOffset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebuffer-audiotracks",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebuffer-audiotracks",
+      "linkingText": [
+        "audioTracks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebuffer-videotracks",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebuffer-videotracks",
+      "linkingText": [
+        "videoTracks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebuffer-texttracks",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebuffer-texttracks",
+      "linkingText": [
+        "textTracks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebuffer-appendwindowstart",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebuffer-appendwindowstart",
+      "linkingText": [
+        "appendWindowStart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebuffer-appendwindowend",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebuffer-appendwindowend",
+      "linkingText": [
+        "appendWindowEnd"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebuffer-onupdatestart",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebuffer-onupdatestart",
+      "linkingText": [
+        "onupdatestart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebuffer-onupdate",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebuffer-onupdate",
+      "linkingText": [
+        "onupdate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebuffer-onupdateend",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebuffer-onupdateend",
+      "linkingText": [
+        "onupdateend"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebuffer-onerror",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebuffer-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebuffer-onabort",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebuffer-onabort",
+      "linkingText": [
+        "onabort"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebuffer-appendbuffer",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebuffer-appendbuffer",
+      "linkingText": [
+        "appendBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebuffer-abort",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebuffer-abort",
+      "linkingText": [
+        "abort"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebuffer-remove",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebuffer-remove",
+      "linkingText": [
+        "remove"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "track-buffer",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#track-buffer",
+      "linkingText": [
+        "track buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "last-decode-timestamp",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#last-decode-timestamp",
+      "linkingText": [
+        "last decode timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "last-frame-duration",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#last-frame-duration",
+      "linkingText": [
+        "last frame duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "highest-end-timestamp",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#highest-end-timestamp",
+      "linkingText": [
+        "highest end timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "need-RAP-flag",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#need-RAP-flag",
+      "linkingText": [
+        "need random access point flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "track-buffer-ranges",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#track-buffer-ranges",
+      "linkingText": [
+        "track buffer ranges"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-evt-updatestart",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-evt-updatestart",
+      "linkingText": [
+        "updatestart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-evt-update",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-evt-update",
+      "linkingText": [
+        "update"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-evt-updateend",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-evt-updateend",
+      "linkingText": [
+        "updateend"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-evt-error",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-evt-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-evt-abort",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-evt-abort",
+      "linkingText": [
+        "abort"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sourcebuffer-append-state",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#sourcebuffer-append-state",
+      "linkingText": [
+        "append state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sourcebuffer-waiting-for-segment",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#sourcebuffer-waiting-for-segment",
+      "linkingText": [
+        "WAITING_FOR_SEGMENT"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sourcebuffer-parsing-init-segment",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#sourcebuffer-parsing-init-segment",
+      "linkingText": [
+        "PARSING_INIT_SEGMENT"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sourcebuffer-parsing-media-segment",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#sourcebuffer-parsing-media-segment",
+      "linkingText": [
+        "PARSING_MEDIA_SEGMENT"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sourcebuffer-input-buffer",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#sourcebuffer-input-buffer",
+      "linkingText": [
+        "input buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sourcebuffer-buffer-full-flag",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#sourcebuffer-buffer-full-flag",
+      "linkingText": [
+        "buffer full flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sourcebuffer-group-start-timestamp",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#sourcebuffer-group-start-timestamp",
+      "linkingText": [
+        "group start timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sourcebuffer-group-end-timestamp",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#sourcebuffer-group-end-timestamp",
+      "linkingText": [
+        "group end timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sourcebuffer-generate-timestamps-flag",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#sourcebuffer-generate-timestamps-flag",
+      "linkingText": [
+        "generate timestamps flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "first-init-segment-received-flag",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#first-init-segment-received-flag",
+      "linkingText": [
+        "first initialization segment received flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebufferlist-length",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebufferlist-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebufferlist"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebufferlist-onaddsourcebuffer",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebufferlist-onaddsourcebuffer",
+      "linkingText": [
+        "onaddsourcebuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebufferlist"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sourcebufferlist-onremovesourcebuffer",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-sourcebufferlist-onremovesourcebuffer",
+      "linkingText": [
+        "onremovesourcebuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "sourcebufferlist"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sourcebufferlist-getter",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dfn-sourcebufferlist-getter",
+      "linkingText": [
+        "getter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-evt-addsourcebuffer",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-evt-addsourcebuffer",
+      "linkingText": [
+        "addsourcebuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-evt-removesourcebuffer",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-evt-removesourcebuffer",
+      "linkingText": [
+        "removesourcebuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-url-createobjecturl",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-url-createobjecturl",
+      "linkingText": [
+        "createObjectURL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "url"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-audiotrack-sourcebuffer",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-audiotrack-sourcebuffer",
+      "linkingText": [
+        "sourceBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "audiotrack"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-videotrack-sourcebuffer",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-videotrack-sourcebuffer",
+      "linkingText": [
+        "sourceBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "videotrack"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-texttrack-sourcebuffer",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#dom-texttrack-sourcebuffer",
+      "linkingText": [
+        "sourceBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "texttrack"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "byte-stream-format-specs",
+      "href": "https://www.w3.org/TR/2016/REC-media-source-20161117/#byte-stream-format-specs",
+      "linkingText": [
+        "byte stream format specifications"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

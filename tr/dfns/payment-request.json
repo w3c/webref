@@ -1,0 +1,2908 @@
+{
+  "spec": {
+    "title": "Payment Request API",
+    "url": "https://www.w3.org/TR/2019/CR-payment-request-20191212/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-payment-method",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-payment-method",
+      "linkingText": [
+        "payment method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-payment-method-provider",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-payment-method-provider",
+      "linkingText": [
+        "payment method\n        provider"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-payment-handler",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-payment-handler",
+      "linkingText": [
+        "payment handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-steps-to-check-if-a-payment-can-be-made",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-steps-to-check-if-a-payment-can-be-made",
+      "linkingText": [
+        "Steps to check if a payment can be made"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-steps-to-respond-to-a-payment-request",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-steps-to-respond-to-a-payment-request",
+      "linkingText": [
+        "Steps to respond to a payment request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-steps-for-when-a-user-changes-payment-method",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-steps-for-when-a-user-changes-payment-method",
+      "linkingText": [
+        "Steps for when a user changes payment method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-paymentrequest",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentrequest",
+      "linkingText": [
+        "PaymentRequest"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-constructor",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentrequest-constructor",
+      "linkingText": [
+        "PaymentRequest.constructor()",
+        "PaymentRequest.constructor",
+        "constructor()",
+        "constructor"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-payment-relevant-browsing-context",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-payment-relevant-browsing-context",
+      "linkingText": [
+        "payment-relevant browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-payment-request-is-showing",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-payment-request-is-showing",
+      "linkingText": [
+        "payment request is showing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-paymentrequest-paymentrequest",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-paymentrequest-paymentrequest",
+      "linkingText": [
+        "PaymentRequest.PaymentRequest()",
+        "PaymentRequest(methodData, details, options)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-id",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentrequest-id",
+      "linkingText": [
+        "PaymentRequest.id",
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-show",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentrequest-show",
+      "linkingText": [
+        "PaymentRequest.show()",
+        "PaymentRequest.show",
+        "show()",
+        "show"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-abort",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentrequest-abort",
+      "linkingText": [
+        "PaymentRequest.abort()",
+        "PaymentRequest.abort",
+        "abort()",
+        "abort"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-canmakepayment",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentrequest-canmakepayment",
+      "linkingText": [
+        "PaymentRequest.canMakePayment()",
+        "PaymentRequest.canMakePayment",
+        "canMakePayment()",
+        "canMakePayment"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-shippingaddress",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentrequest-shippingaddress",
+      "linkingText": [
+        "PaymentRequest.shippingAddress",
+        "shippingAddress"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-shippingtype",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentrequest-shippingtype",
+      "linkingText": [
+        "PaymentRequest.shippingType",
+        "shippingType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-onmerchantvalidation",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentrequest-onmerchantvalidation",
+      "linkingText": [
+        "PaymentRequest.onmerchantvalidation",
+        "onmerchantvalidation"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-onshippingaddresschange",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentrequest-onshippingaddresschange",
+      "linkingText": [
+        "PaymentRequest.onshippingaddresschange",
+        "onshippingaddresschange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-shippingoption",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentrequest-shippingoption",
+      "linkingText": [
+        "PaymentRequest.shippingOption",
+        "shippingOption"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-onshippingoptionchange",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentrequest-onshippingoptionchange",
+      "linkingText": [
+        "PaymentRequest.onshippingoptionchange",
+        "onshippingoptionchange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequest-onpaymentmethodchange",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentrequest-onpaymentmethodchange",
+      "linkingText": [
+        "PaymentRequest.onpaymentmethodchange",
+        "onpaymentmethodchange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-serializedmethoddata",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-serializedmethoddata",
+      "linkingText": [
+        "[[serializedMethodData]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-serializedmodifierdata",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-serializedmodifierdata",
+      "linkingText": [
+        "[[serializedModifierData]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-details",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-details",
+      "linkingText": [
+        "[[details]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-options",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-options",
+      "linkingText": [
+        "[[options]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-state",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-state",
+      "linkingText": [
+        "[[state]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-state-0",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-state-0",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-created",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-created",
+      "linkingText": [
+        "created"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-interactive",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-interactive",
+      "linkingText": [
+        "interactive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-closed",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-updating",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-updating",
+      "linkingText": [
+        "[[updating]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-acceptpromise",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-acceptpromise",
+      "linkingText": [
+        "[[acceptPromise]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-response",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-response",
+      "linkingText": [
+        "[[response]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethoddata",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentmethoddata",
+      "linkingText": [
+        "PaymentMethodData"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethoddata-supportedmethods",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentmethoddata-supportedmethods",
+      "linkingText": [
+        "supportedMethods"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentMethodData"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethoddata-data",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentmethoddata-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentMethodData"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentcurrencyamount",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentcurrencyamount",
+      "linkingText": [
+        "PaymentCurrencyAmount"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentcurrencyamount-currency",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentcurrencyamount-currency",
+      "linkingText": [
+        "currency"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentCurrencyAmount"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentcurrencyamount-value",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentcurrencyamount-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentCurrencyAmount"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-javascript-string",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-javascript-string",
+      "linkingText": [
+        "JavaScript string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-valid-decimal-monetary-value",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-valid-decimal-monetary-value",
+      "linkingText": [
+        "valid decimal monetary\n          value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-check-and-canonicalize-amount",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-check-and-canonicalize-amount",
+      "linkingText": [
+        "check and canonicalize amount"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-check-and-canonicalize-total-amount",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-check-and-canonicalize-total-amount",
+      "linkingText": [
+        "check and canonicalize total amount"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsbase",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsbase",
+      "linkingText": [
+        "PaymentDetailsBase"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsbase-displayitems",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsbase-displayitems",
+      "linkingText": [
+        "displayItems"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsbase-shippingoptions",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsbase-shippingoptions",
+      "linkingText": [
+        "shippingOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsbase-modifiers",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsbase-modifiers",
+      "linkingText": [
+        "modifiers"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsinit",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsinit",
+      "linkingText": [
+        "PaymentDetailsInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsinit-id",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsinit-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsinit-total",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsinit-total",
+      "linkingText": [
+        "total"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsupdate",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsupdate",
+      "linkingText": [
+        "PaymentDetailsUpdate"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsupdate-error",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsupdate-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsUpdate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsupdate-total",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsupdate-total",
+      "linkingText": [
+        "total"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsUpdate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsupdate-shippingaddresserrors",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsupdate-shippingaddresserrors",
+      "linkingText": [
+        "shippingAddressErrors"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsUpdate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsupdate-payererrors",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsupdate-payererrors",
+      "linkingText": [
+        "payerErrors"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsUpdate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsupdate-paymentmethoderrors",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsupdate-paymentmethoderrors",
+      "linkingText": [
+        "paymentMethodErrors"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsUpdate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsmodifier",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsmodifier",
+      "linkingText": [
+        "PaymentDetailsModifier"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsmodifier-supportedmethods",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsmodifier-supportedmethods",
+      "linkingText": [
+        "supportedMethods"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsModifier"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsmodifier-total",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsmodifier-total",
+      "linkingText": [
+        "total"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsModifier"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsmodifier-additionaldisplayitems",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsmodifier-additionaldisplayitems",
+      "linkingText": [
+        "additionalDisplayItems"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsModifier"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentdetailsmodifier-data",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentdetailsmodifier-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentDetailsModifier"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingtype",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentshippingtype",
+      "linkingText": [
+        "PaymentShippingType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingtype-shipping",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentshippingtype-shipping",
+      "linkingText": [
+        "shipping"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PaymentShippingType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingtype-delivery",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentshippingtype-delivery",
+      "linkingText": [
+        "delivery"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PaymentShippingType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingtype-pickup",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentshippingtype-pickup",
+      "linkingText": [
+        "pickup"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PaymentShippingType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentoptions",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentoptions",
+      "linkingText": [
+        "PaymentOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentoptions-requestbillingaddress",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentoptions-requestbillingaddress",
+      "linkingText": [
+        "requestBillingAddress"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentoptions-requestpayername",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentoptions-requestpayername",
+      "linkingText": [
+        "requestPayerName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentoptions-requestpayeremail",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentoptions-requestpayeremail",
+      "linkingText": [
+        "requestPayerEmail"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentoptions-requestpayerphone",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentoptions-requestpayerphone",
+      "linkingText": [
+        "requestPayerPhone"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentoptions-requestshipping",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentoptions-requestshipping",
+      "linkingText": [
+        "requestShipping"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentoptions-shippingtype",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentoptions-shippingtype",
+      "linkingText": [
+        "shippingType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentitem",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentitem",
+      "linkingText": [
+        "PaymentItem"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentitem-label",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentitem-label",
+      "linkingText": [
+        "label"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentitem-amount",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentitem-amount",
+      "linkingText": [
+        "amount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentitem-pending",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentitem-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentItem"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-physical-address",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-physical-address",
+      "linkingText": [
+        "physical address"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-address-line",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-address-line",
+      "linkingText": [
+        "Address line"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-city",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-city",
+      "linkingText": [
+        "City"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-country",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-country",
+      "linkingText": [
+        "Country"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dependent-locality",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-dependent-locality",
+      "linkingText": [
+        "Dependent locality"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-organization",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-organization",
+      "linkingText": [
+        "Organization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-phone-number",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-phone-number",
+      "linkingText": [
+        "Phone number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-postal-code",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-postal-code",
+      "linkingText": [
+        "Postal code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-recipient",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-recipient",
+      "linkingText": [
+        "Recipient"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-region",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-region",
+      "linkingText": [
+        "Region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sorting-code",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-sorting-code",
+      "linkingText": [
+        "Sorting code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentaddress",
+      "linkingText": [
+        "PaymentAddress"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-paymentaddress-paymentaddress",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-paymentaddress-paymentaddress",
+      "linkingText": [
+        "PaymentAddress.PaymentAddress()",
+        "internally construct a PaymentAddress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-tojson",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentaddress-tojson",
+      "linkingText": [
+        "PaymentAddress.toJSON()",
+        "PaymentAddress.toJSON",
+        "toJSON()",
+        "toJSON"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-country",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentaddress-country",
+      "linkingText": [
+        "PaymentAddress.country",
+        "country"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-addressline",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentaddress-addressline",
+      "linkingText": [
+        "PaymentAddress.addressLine",
+        "addressLine"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-region",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentaddress-region",
+      "linkingText": [
+        "PaymentAddress.region",
+        "region"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-city",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentaddress-city",
+      "linkingText": [
+        "PaymentAddress.city",
+        "city"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-dependentlocality",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentaddress-dependentlocality",
+      "linkingText": [
+        "PaymentAddress.dependentLocality",
+        "dependentLocality"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-postalcode",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentaddress-postalcode",
+      "linkingText": [
+        "PaymentAddress.postalCode",
+        "postalCode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-sortingcode",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentaddress-sortingcode",
+      "linkingText": [
+        "PaymentAddress.sortingCode",
+        "sortingCode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-organization",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentaddress-organization",
+      "linkingText": [
+        "PaymentAddress.organization",
+        "organization"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-recipient",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentaddress-recipient",
+      "linkingText": [
+        "PaymentAddress.recipient",
+        "recipient"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentaddress-phone",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentaddress-phone",
+      "linkingText": [
+        "PaymentAddress.phone",
+        "phone"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentAddress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-paymentaddress-slots",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-paymentaddress-slots",
+      "linkingText": [
+        "PaymentAddress slots"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-country-0",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-country-0",
+      "linkingText": [
+        "[[country]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-addressline",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-addressline",
+      "linkingText": [
+        "[[addressLine]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-region-0",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-region-0",
+      "linkingText": [
+        "[[region]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-city-0",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-city-0",
+      "linkingText": [
+        "[[city]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dependentlocality",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-dependentlocality",
+      "linkingText": [
+        "[[dependentLocality]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-postalcode",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-postalcode",
+      "linkingText": [
+        "[[postalCode]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sortingcode",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-sortingcode",
+      "linkingText": [
+        "[[sortingCode]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-organization-0",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-organization-0",
+      "linkingText": [
+        "[[organization]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-recipient-0",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-recipient-0",
+      "linkingText": [
+        "[[recipient]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-phone",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-phone",
+      "linkingText": [
+        "[[phone]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addressinit",
+      "linkingText": [
+        "AddressInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-addressline",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addressinit-addressline",
+      "linkingText": [
+        "addressLine"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-city",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addressinit-city",
+      "linkingText": [
+        "city"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-country",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addressinit-country",
+      "linkingText": [
+        "country"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-dependentlocality",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addressinit-dependentlocality",
+      "linkingText": [
+        "dependentLocality"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-organization",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addressinit-organization",
+      "linkingText": [
+        "organization"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-phone",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addressinit-phone",
+      "linkingText": [
+        "phone"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-postalcode",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addressinit-postalcode",
+      "linkingText": [
+        "postalCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-recipient",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addressinit-recipient",
+      "linkingText": [
+        "recipient"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-region",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addressinit-region",
+      "linkingText": [
+        "region"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addressinit-sortingcode",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addressinit-sortingcode",
+      "linkingText": [
+        "sortingCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addresserrors",
+      "linkingText": [
+        "AddressErrors"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-addressline",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addresserrors-addressline",
+      "linkingText": [
+        "addressLine"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-city",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addresserrors-city",
+      "linkingText": [
+        "city"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-country",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addresserrors-country",
+      "linkingText": [
+        "country"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-dependentlocality",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addresserrors-dependentlocality",
+      "linkingText": [
+        "dependentLocality"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-organization",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addresserrors-organization",
+      "linkingText": [
+        "organization"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-phone",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addresserrors-phone",
+      "linkingText": [
+        "phone"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-postalcode",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addresserrors-postalcode",
+      "linkingText": [
+        "postalCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-recipient",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addresserrors-recipient",
+      "linkingText": [
+        "recipient"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-region",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addresserrors-region",
+      "linkingText": [
+        "region"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-addresserrors-sortingcode",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-addresserrors-sortingcode",
+      "linkingText": [
+        "sortingCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AddressErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-create-a-paymentaddress-from-user-provided-input",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-create-a-paymentaddress-from-user-provided-input",
+      "linkingText": [
+        "create a PaymentAddress from\n          user-provided input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingoption",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentshippingoption",
+      "linkingText": [
+        "PaymentShippingOption"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingoption-id",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentshippingoption-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentShippingOption"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingoption-label",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentshippingoption-label",
+      "linkingText": [
+        "label"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentShippingOption"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingoption-amount",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentshippingoption-amount",
+      "linkingText": [
+        "amount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentShippingOption"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentshippingoption-selected",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentshippingoption-selected",
+      "linkingText": [
+        "selected"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentShippingOption"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentcomplete",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentcomplete",
+      "linkingText": [
+        "PaymentComplete"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentcomplete-fail",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentcomplete-fail",
+      "linkingText": [
+        "fail"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PaymentComplete"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentcomplete-success",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentcomplete-success",
+      "linkingText": [
+        "success"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PaymentComplete"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentcomplete-unknown",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentcomplete-unknown",
+      "linkingText": [
+        "unknown"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PaymentComplete"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentresponse",
+      "linkingText": [
+        "PaymentResponse"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-retry",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentresponse-retry",
+      "linkingText": [
+        "PaymentResponse.retry()",
+        "PaymentResponse.retry",
+        "retry()",
+        "retry"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentvalidationerrors",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentvalidationerrors",
+      "linkingText": [
+        "PaymentValidationErrors"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentvalidationerrors-payer",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentvalidationerrors-payer",
+      "linkingText": [
+        "payer"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentValidationErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentvalidationerrors-shippingaddress",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentvalidationerrors-shippingaddress",
+      "linkingText": [
+        "shippingAddress"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentValidationErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentvalidationerrors-error",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentvalidationerrors-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentValidationErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentvalidationerrors-paymentmethod",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentvalidationerrors-paymentmethod",
+      "linkingText": [
+        "paymentMethod"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentValidationErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-payererrors",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-payererrors",
+      "linkingText": [
+        "PayerErrors"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-payer-details",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-payer-details",
+      "linkingText": [
+        "Payer details"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-payererrors-email",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-payererrors-email",
+      "linkingText": [
+        "email"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PayerErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-payererrors-name",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-payererrors-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PayerErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-payererrors-phone",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-payererrors-phone",
+      "linkingText": [
+        "phone"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PayerErrors"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-tojson",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentresponse-tojson",
+      "linkingText": [
+        "PaymentResponse.toJSON()",
+        "PaymentResponse.toJSON",
+        "toJSON()",
+        "toJSON"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-methodname",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentresponse-methodname",
+      "linkingText": [
+        "PaymentResponse.methodName",
+        "methodName"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-details",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentresponse-details",
+      "linkingText": [
+        "PaymentResponse.details",
+        "details"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-shippingaddress",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentresponse-shippingaddress",
+      "linkingText": [
+        "PaymentResponse.shippingAddress",
+        "shippingAddress"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-shippingoption",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentresponse-shippingoption",
+      "linkingText": [
+        "PaymentResponse.shippingOption",
+        "shippingOption"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-payername",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentresponse-payername",
+      "linkingText": [
+        "PaymentResponse.payerName",
+        "payerName"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-payeremail",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentresponse-payeremail",
+      "linkingText": [
+        "PaymentResponse.payerEmail",
+        "payerEmail"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-payerphone",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentresponse-payerphone",
+      "linkingText": [
+        "PaymentResponse.payerPhone",
+        "payerPhone"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-requestid",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentresponse-requestid",
+      "linkingText": [
+        "PaymentResponse.requestId",
+        "requestId"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-complete",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentresponse-complete",
+      "linkingText": [
+        "complete(result)",
+        "complete()",
+        "PaymentResponse.complete()",
+        "PaymentResponse.complete",
+        "complete"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentresponse-onpayerdetailchange",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentresponse-onpayerdetailchange",
+      "linkingText": [
+        "PaymentResponse.onpayerdetailchange",
+        "onpayerdetailchange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-complete",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-complete",
+      "linkingText": [
+        "[[complete]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-request",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-request",
+      "linkingText": [
+        "[[request]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-retrypromise",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-retrypromise",
+      "linkingText": [
+        "[[retryPromise]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-payment-feature",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-payment-feature",
+      "linkingText": [
+        "payment-feature",
+        "payment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-merchantvalidation",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-merchantvalidation",
+      "linkingText": [
+        "merchantvalidation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-shippingaddresschange",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-shippingaddresschange",
+      "linkingText": [
+        "shippingaddresschange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-shippingoptionchange",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-shippingoptionchange",
+      "linkingText": [
+        "shippingoptionchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-payerdetailchange",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-payerdetailchange",
+      "linkingText": [
+        "payerdetailchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-paymentmethodchange",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-paymentmethodchange",
+      "linkingText": [
+        "paymentmethodchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-merchantvalidationevent",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-merchantvalidationevent",
+      "linkingText": [
+        "MerchantValidationEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-merchantvalidationevent-constructor",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-merchantvalidationevent-constructor",
+      "linkingText": [
+        "MerchantValidationEvent.constructor()",
+        "MerchantValidationEvent.constructor",
+        "constructor()",
+        "constructor"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "MerchantValidationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-merchantvalidationevent-methodname",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-merchantvalidationevent-methodname",
+      "linkingText": [
+        "MerchantValidationEvent.methodName",
+        "methodName"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MerchantValidationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-merchantvalidationevent-merchantvalidationevent",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-merchantvalidationevent-merchantvalidationevent",
+      "linkingText": [
+        "MerchantValidationEvent.MerchantValidationEvent()",
+        "MerchantValidationEvent constructor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-merchantvalidationevent-validationurl",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-merchantvalidationevent-validationurl",
+      "linkingText": [
+        "MerchantValidationEvent.validationURL",
+        "validationURL"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MerchantValidationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-merchantvalidationevent-complete",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-merchantvalidationevent-complete",
+      "linkingText": [
+        "MerchantValidationEvent.complete()",
+        "MerchantValidationEvent.complete",
+        "complete()",
+        "complete"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MerchantValidationEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-mechvalidation-waitforupdate",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-mechvalidation-waitforupdate",
+      "linkingText": [
+        "mechvalidation.waitForUpdate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-merchantvalidationeventinit",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-merchantvalidationeventinit",
+      "linkingText": [
+        "MerchantValidationEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-merchantvalidationeventinit-methodname",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-merchantvalidationeventinit-methodname",
+      "linkingText": [
+        "methodName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MerchantValidationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-merchantvalidationeventinit-validationurl",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-merchantvalidationeventinit-validationurl",
+      "linkingText": [
+        "validationURL"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MerchantValidationEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeevent",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentmethodchangeevent",
+      "linkingText": [
+        "PaymentMethodChangeEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeevent-constructor",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentmethodchangeevent-constructor",
+      "linkingText": [
+        "PaymentMethodChangeEvent.constructor()",
+        "PaymentMethodChangeEvent.constructor",
+        "constructor()",
+        "constructor"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "PaymentMethodChangeEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeevent-methoddetails",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentmethodchangeevent-methoddetails",
+      "linkingText": [
+        "PaymentMethodChangeEvent.methodDetails",
+        "methodDetails"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentMethodChangeEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeevent-methodname",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentmethodchangeevent-methodname",
+      "linkingText": [
+        "PaymentMethodChangeEvent.methodName",
+        "methodName"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentMethodChangeEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeeventinit",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentmethodchangeeventinit",
+      "linkingText": [
+        "PaymentMethodChangeEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeeventinit-methodname",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentmethodchangeeventinit-methodname",
+      "linkingText": [
+        "methodName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentMethodChangeEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeeventinit-methoddetails",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentmethodchangeeventinit-methoddetails",
+      "linkingText": [
+        "methodDetails"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentMethodChangeEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestupdateevent",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentrequestupdateevent",
+      "linkingText": [
+        "PaymentRequestUpdateEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestupdateevent-constructor",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentrequestupdateevent-constructor",
+      "linkingText": [
+        "PaymentRequestUpdateEvent.PaymentRequestUpdateEvent()",
+        "Constructor",
+        "PaymentRequestUpdateEvent.constructor()",
+        "PaymentRequestUpdateEvent.constructor",
+        "constructor()",
+        "constructor"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "PaymentRequestUpdateEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestupdateevent-updatewith",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentrequestupdateevent-updatewith",
+      "linkingText": [
+        "updateWith(detailsPromise)",
+        "updateWith()",
+        "PaymentRequestUpdateEvent.updateWith()",
+        "PaymentRequestUpdateEvent.updateWith",
+        "updateWith"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PaymentRequestUpdateEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-waitforupdate",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-waitforupdate",
+      "linkingText": [
+        "[[waitForUpdate]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestupdateeventinit",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dom-paymentrequestupdateeventinit",
+      "linkingText": [
+        "PaymentRequestUpdateEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-validate-the-merchant",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-validate-the-merchant",
+      "linkingText": [
+        "Validate the merchant",
+        "Merchant validation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-request-merchant-validation-algorithm",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-request-merchant-validation-algorithm",
+      "linkingText": [
+        "request merchant validation\n          algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-shipping-address-changed-algorithm",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-shipping-address-changed-algorithm",
+      "linkingText": [
+        "shipping address changed algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-shipping-option-changed-algorithm",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-shipping-option-changed-algorithm",
+      "linkingText": [
+        "shipping option changed algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-payment-method-changed-algorithm",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-payment-method-changed-algorithm",
+      "linkingText": [
+        "payment method changed\n          algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-paymentrequest-updated-algorithm",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-paymentrequest-updated-algorithm",
+      "linkingText": [
+        "PaymentRequest updated algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-payer-detail-changed-algorithm",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-payer-detail-changed-algorithm",
+      "linkingText": [
+        "payer detail changed algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-user-accepts-the-payment-request",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-user-accepts-the-payment-request",
+      "linkingText": [
+        "user accepts the payment request",
+        "user accepts the payment request algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-user-aborts-the-payment-request",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-user-aborts-the-payment-request",
+      "linkingText": [
+        "user aborts the payment request",
+        "user aborts the payment request algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-update-a-paymentrequest-s-details-algorithm",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-update-a-paymentrequest-s-details-algorithm",
+      "linkingText": [
+        "update a PaymentRequest's details\n          algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-abort-the-update",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-abort-the-update",
+      "linkingText": [
+        "abort the update"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-validate-merchant-s-details-algorithm",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-validate-merchant-s-details-algorithm",
+      "linkingText": [
+        "validate merchant's details algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-internal-slot",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-internal-slot",
+      "linkingText": [
+        "internal\n          slot"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-json-stringify",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-json-stringify",
+      "linkingText": [
+        "JSON.stringify"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-json-serialized",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-json-serialized",
+      "linkingText": [
+        "JSON-serialized",
+        "JSON-serializing",
+        "JSON-serialize"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-country-subdivision-names",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-country-subdivision-names",
+      "linkingText": [
+        "country subdivision names",
+        "Country subdivision name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-country-subdivision-code-element",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-country-subdivision-code-element",
+      "linkingText": [
+        "country subdivision code element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-user-agent",
+      "href": "https://www.w3.org/TR/2019/CR-payment-request-20191212/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}
