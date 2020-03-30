@@ -1,0 +1,2697 @@
+{
+  "spec": {
+    "title": "CSS Object Model (CSSOM)",
+    "url": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/"
+  },
+  "dfns": [
+    {
+      "id": "set",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#set",
+      "linkingText": [
+        "set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "unset",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#unset",
+      "linkingText": [
+        "unset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "supported-styling-language",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#supported-styling-language",
+      "linkingText": [
+        "supported styling language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "supported-css-property",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#supported-css-property",
+      "linkingText": [
+        "supported CSS property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "escape-a-character",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#escape-a-character",
+      "linkingText": [
+        "escape a character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "escape-a-character-as-code-point",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#escape-a-character-as-code-point",
+      "linkingText": [
+        "escape a character as code point",
+        "escaped as code point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "serialize-an-identifier",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#serialize-an-identifier",
+      "linkingText": [
+        "serialize an identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-string",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#serialize-a-string",
+      "linkingText": [
+        "serialize a string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-url",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#serialize-a-url",
+      "linkingText": [
+        "serialize a URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-comma-separated-list",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#serialize-a-comma-separated-list",
+      "linkingText": [
+        "serialize a comma-separated list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-whitespace-separated-list",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#serialize-a-whitespace-separated-list",
+      "linkingText": [
+        "serialize a whitespace-separated list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-media-query-list",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#parse-a-media-query-list",
+      "linkingText": [
+        "parse a media query list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-media-query",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#parse-a-media-query",
+      "linkingText": [
+        "parse a media query"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-media-query-list",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#serialize-a-media-query-list",
+      "linkingText": [
+        "serialize a media query list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-media-query",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#serialize-a-media-query",
+      "linkingText": [
+        "serialize a media query"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-media-feature-value",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#serialize-a-media-feature-value",
+      "linkingText": [
+        "serialize a media feature value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "compare-media-queries",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#compare-media-queries",
+      "linkingText": [
+        "compare media queries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "medialist-collection-of-media-queries",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#medialist-collection-of-media-queries",
+      "linkingText": [
+        "collection of media queries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "medialist",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#medialist",
+      "linkingText": [
+        "MediaList"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MediaList-stringification-behavior",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#MediaList-stringification-behavior",
+      "linkingText": [
+        "stringification behavior"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaList"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-medialist-item-index-index",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-medialist-item-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaList/item(index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-medialist-appendmedium-medium-medium",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-medialist-appendmedium-medium-medium",
+      "linkingText": [
+        "medium"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaList/appendMedium(medium)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-medialist-deletemedium-medium-medium",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-medialist-deletemedium-medium-medium",
+      "linkingText": [
+        "medium"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaList/deleteMedium(medium)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-a-medialist-object",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#create-a-medialist-object",
+      "linkingText": [
+        "create a MediaList object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-medialist-mediatext",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-medialist-mediatext",
+      "linkingText": [
+        "mediaText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-medialist-item",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-medialist-item",
+      "linkingText": [
+        "item(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-medialist-length",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-medialist-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-medialist-appendmedium",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-medialist-appendmedium",
+      "linkingText": [
+        "appendMedium(medium)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-medialist-deletemedium",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-medialist-deletemedium",
+      "linkingText": [
+        "deleteMedium(medium)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-group-of-selectors",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#parse-a-group-of-selectors",
+      "linkingText": [
+        "parse a group of selectors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-group-of-selectors",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#serialize-a-group-of-selectors",
+      "linkingText": [
+        "serialize a group of selectors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-selector",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#serialize-a-selector",
+      "linkingText": [
+        "serialize a selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-simple-selector",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#serialize-a-simple-selector",
+      "linkingText": [
+        "serialize a simple selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-style-sheet",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#css-style-sheet",
+      "linkingText": [
+        "CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-type",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-css-style-sheet-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-location",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-css-style-sheet-location",
+      "linkingText": [
+        "location"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-parent-css-style-sheet",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-css-style-sheet-parent-css-style-sheet",
+      "linkingText": [
+        "parent CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-owner-node",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-css-style-sheet-owner-node",
+      "linkingText": [
+        "owner node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-owner-css-rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-css-style-sheet-owner-css-rule",
+      "linkingText": [
+        "owner CSS rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-media",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-css-style-sheet-media",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-title",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-css-style-sheet-title",
+      "linkingText": [
+        "title"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-alternate-flag",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-css-style-sheet-alternate-flag",
+      "linkingText": [
+        "alternate flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-disabled-flag",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-css-style-sheet-disabled-flag",
+      "linkingText": [
+        "disabled flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-css-rules",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-css-style-sheet-css-rules",
+      "linkingText": [
+        "CSS rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-style-sheet-origin-clean-flag",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-css-style-sheet-origin-clean-flag",
+      "linkingText": [
+        "origin-clean flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "stylesheet",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#stylesheet",
+      "linkingText": [
+        "StyleSheet"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheet-type",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-stylesheet-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheet-href",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-stylesheet-href",
+      "linkingText": [
+        "href"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheet-ownernode",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-stylesheet-ownernode",
+      "linkingText": [
+        "ownerNode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheet-parentstylesheet",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-stylesheet-parentstylesheet",
+      "linkingText": [
+        "parentStyleSheet"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheet-title",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-stylesheet-title",
+      "linkingText": [
+        "title"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheet-media",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-stylesheet-media",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheet-disabled",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-stylesheet-disabled",
+      "linkingText": [
+        "disabled"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssstylesheet",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#cssstylesheet",
+      "linkingText": [
+        "CSSStyleSheet"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-insertrule-rule-index-rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstylesheet-insertrule-rule-index-rule",
+      "linkingText": [
+        "rule"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleSheet/insertRule(rule, index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-insertrule-rule-index-index",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstylesheet-insertrule-rule-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleSheet/insertRule(rule, index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-deleterule-index-index",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstylesheet-deleterule-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleSheet/deleteRule(index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-ownerrule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstylesheet-ownerrule",
+      "linkingText": [
+        "ownerRule"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-cssrules",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstylesheet-cssrules",
+      "linkingText": [
+        "cssRules"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-insertrule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstylesheet-insertrule",
+      "linkingText": [
+        "insertRule(rule, index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylesheet-deleterule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstylesheet-deleterule",
+      "linkingText": [
+        "deleteRule(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "document-css-style-sheets",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#document-css-style-sheets",
+      "linkingText": [
+        "document CSS style sheets"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-a-css-style-sheet",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#create-a-css-style-sheet",
+      "linkingText": [
+        "create a CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "add-a-css-style-sheet",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#add-a-css-style-sheet",
+      "linkingText": [
+        "add a CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "remove-a-css-style-sheet",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#remove-a-css-style-sheet",
+      "linkingText": [
+        "remove a CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "persistent-css-style-sheet",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#persistent-css-style-sheet",
+      "linkingText": [
+        "persistent CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-style-sheet-set",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#css-style-sheet-set",
+      "linkingText": [
+        "CSS style sheet set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-style-sheet-set-name",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#css-style-sheet-set-name",
+      "linkingText": [
+        "CSS style sheet set name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enabled-css-style-sheet-set",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#enabled-css-style-sheet-set",
+      "linkingText": [
+        "enabled CSS style sheet set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enable-a-css-style-sheet-set",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#enable-a-css-style-sheet-set",
+      "linkingText": [
+        "enable a CSS style sheet set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "select-a-css-style-sheet-set",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#select-a-css-style-sheet-set",
+      "linkingText": [
+        "select a CSS style sheet set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "last-css-style-sheet-set-name",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#last-css-style-sheet-set-name",
+      "linkingText": [
+        "last CSS style sheet set name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "preferred-css-style-sheet-set-name",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#preferred-css-style-sheet-set-name",
+      "linkingText": [
+        "preferred CSS style sheet set name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "change-the-preferred-css-style-sheet-set-name",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#change-the-preferred-css-style-sheet-set-name",
+      "linkingText": [
+        "change the preferred CSS style sheet set name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "stylesheetlist",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#stylesheetlist",
+      "linkingText": [
+        "StyleSheetList"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheetlist-item-index-index",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-stylesheetlist-item-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "StyleSheetList/item(index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheetlist-item",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-stylesheetlist-item",
+      "linkingText": [
+        "item(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StyleSheetList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-stylesheetlist-length",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-stylesheetlist-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "StyleSheetList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-stylesheets",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-document-stylesheets",
+      "linkingText": [
+        "styleSheets"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fetch-a-css-style-sheet",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#fetch-a-css-style-sheet",
+      "linkingText": [
+        "fetch a CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "associated-css-style-sheet",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#associated-css-style-sheet",
+      "linkingText": [
+        "associated CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "linkstyle",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#linkstyle",
+      "linkingText": [
+        "LinkStyle"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-linkstyle-sheet",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-linkstyle-sheet",
+      "linkingText": [
+        "sheet"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "LinkStyle"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "prolog",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#prolog",
+      "linkingText": [
+        "prolog"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#css-rule",
+      "linkingText": [
+        "CSS rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-rule-type",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-css-rule-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-rule-text",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-css-rule-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-rule-parent-css-rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-css-rule-parent-css-rule",
+      "linkingText": [
+        "parent CSS rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-rule-parent-css-style-sheet",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-css-rule-parent-css-style-sheet",
+      "linkingText": [
+        "parent CSS style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-css-rule-child-css-rules",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-css-rule-child-css-rules",
+      "linkingText": [
+        "child CSS rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parse-a-css-rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#parse-a-css-rule",
+      "linkingText": [
+        "parse a CSS rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-css-rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#serialize-a-css-rule",
+      "linkingText": [
+        "serialize a CSS rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "insert-a-css-rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#insert-a-css-rule",
+      "linkingText": [
+        "insert a CSS rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "remove-a-css-rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#remove-a-css-rule",
+      "linkingText": [
+        "remove a CSS rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cssrulelist",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#cssrulelist",
+      "linkingText": [
+        "CSSRuleList"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrulelist-item-index-index",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssrulelist-item-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSRuleList/item(index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrulelist-item",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssrulelist-item",
+      "linkingText": [
+        "item(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSRuleList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrulelist-length",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssrulelist-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSRuleList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssrule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#cssrule",
+      "linkingText": [
+        "CSSRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-charset_rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssrule-charset_rule",
+      "linkingText": [
+        "CHARSET_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-type",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssrule-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-style_rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssrule-style_rule",
+      "linkingText": [
+        "STYLE_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-import_rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssrule-import_rule",
+      "linkingText": [
+        "IMPORT_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-media_rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssrule-media_rule",
+      "linkingText": [
+        "MEDIA_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-font_face_rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssrule-font_face_rule",
+      "linkingText": [
+        "FONT_FACE_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-page_rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssrule-page_rule",
+      "linkingText": [
+        "PAGE_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-margin_rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssrule-margin_rule",
+      "linkingText": [
+        "MARGIN_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-namespace_rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssrule-namespace_rule",
+      "linkingText": [
+        "NAMESPACE_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-csstext",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssrule-csstext",
+      "linkingText": [
+        "cssText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-parentrule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssrule-parentrule",
+      "linkingText": [
+        "parentRule"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssrule-parentstylesheet",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssrule-parentstylesheet",
+      "linkingText": [
+        "parentStyleSheet"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssstylerule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#cssstylerule",
+      "linkingText": [
+        "CSSStyleRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylerule-selectortext",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstylerule-selectortext",
+      "linkingText": [
+        "selectorText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstylerule-style",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstylerule-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-declarations-specified-order",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-declarations-specified-order",
+      "linkingText": [
+        "specified order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cssimportrule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#cssimportrule",
+      "linkingText": [
+        "CSSImportRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssimportrule-href",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssimportrule-href",
+      "linkingText": [
+        "href"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSImportRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssimportrule-media",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssimportrule-media",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSImportRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssimportrule-stylesheet",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssimportrule-stylesheet",
+      "linkingText": [
+        "styleSheet"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSImportRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssgroupingrule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#cssgroupingrule",
+      "linkingText": [
+        "CSSGroupingRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssgroupingrule-insertrule-rule-index-rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssgroupingrule-insertrule-rule-index-rule",
+      "linkingText": [
+        "rule"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSGroupingRule/insertRule(rule, index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssgroupingrule-insertrule-rule-index-index",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssgroupingrule-insertrule-rule-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSGroupingRule/insertRule(rule, index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssgroupingrule-deleterule-index-index",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssgroupingrule-deleterule-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSGroupingRule/deleteRule(index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssgroupingrule-cssrules",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssgroupingrule-cssrules",
+      "linkingText": [
+        "cssRules"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSGroupingRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssgroupingrule-insertrule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssgroupingrule-insertrule",
+      "linkingText": [
+        "insertRule(rule, index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSGroupingRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssgroupingrule-deleterule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssgroupingrule-deleterule",
+      "linkingText": [
+        "deleteRule(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSGroupingRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssmediarule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#cssmediarule",
+      "linkingText": [
+        "CSSMediaRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssmediarule-media",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssmediarule-media",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSMediaRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssgroupingrule-media",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssgroupingrule-media",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSGroupingRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-list-of-css-page-selectors",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#parse-a-list-of-css-page-selectors",
+      "linkingText": [
+        "parse a list of CSS page selectors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "serialize-a-list-of-css-page-selectors",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#serialize-a-list-of-css-page-selectors",
+      "linkingText": [
+        "serialize a list of CSS page selectors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "csspagerule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#csspagerule",
+      "linkingText": [
+        "CSSPageRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-csspagerule-selectortext",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-csspagerule-selectortext",
+      "linkingText": [
+        "selectorText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSPageRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-csspagerule-style",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-csspagerule-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSPageRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssgroupingrule-selectortext",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssgroupingrule-selectortext",
+      "linkingText": [
+        "selectorText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSGroupingRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssgroupingrule-style",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssgroupingrule-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSGroupingRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssmarginrule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#cssmarginrule",
+      "linkingText": [
+        "CSSMarginRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssmarginrule-name",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssmarginrule-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSMarginRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssmarginrule-style",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssmarginrule-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSMarginRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cssnamespacerule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#cssnamespacerule",
+      "linkingText": [
+        "CSSNamespaceRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssnamespacerule-namespaceuri",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssnamespacerule-namespaceuri",
+      "linkingText": [
+        "namespaceURI"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSNamespaceRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssnamespacerule-prefix",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssnamespacerule-prefix",
+      "linkingText": [
+        "prefix"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSNamespaceRule"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-declaration",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#css-declaration",
+      "linkingText": [
+        "CSS declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-declaration-property-name",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#css-declaration-property-name",
+      "linkingText": [
+        "property name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS declaration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-declaration-value",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#css-declaration-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS declaration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-declaration-important-flag",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#css-declaration-important-flag",
+      "linkingText": [
+        "important flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS declaration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-declaration-case-sensitive-flag",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#css-declaration-case-sensitive-flag",
+      "linkingText": [
+        "case-sensitive flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS declaration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-declaration-block",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#css-declaration-block",
+      "linkingText": [
+        "CSS declaration block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cssstyledeclaration-readonly-flag",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#cssstyledeclaration-readonly-flag",
+      "linkingText": [
+        "readonly flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cssstyledeclaration-declarations",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#cssstyledeclaration-declarations",
+      "linkingText": [
+        "declarations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cssstyledeclaration-parent-css-rule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#cssstyledeclaration-parent-css-rule",
+      "linkingText": [
+        "parent CSS rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cssstyledeclaration-owner-node",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#cssstyledeclaration-owner-node",
+      "linkingText": [
+        "owner node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parse-a-css-declaration-block",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#parse-a-css-declaration-block",
+      "linkingText": [
+        "parse a CSS declaration block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-css-declaration",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#serialize-a-css-declaration",
+      "linkingText": [
+        "serialize a CSS declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-css-declaration-block",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#serialize-a-css-declaration-block",
+      "linkingText": [
+        "serialize a CSS declaration block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-shorthands-preferred-order",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#concept-shorthands-preferred-order",
+      "linkingText": [
+        "preferred order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cssstyledeclaration",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#cssstyledeclaration",
+      "linkingText": [
+        "CSSStyleDeclaration"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-item-index-index",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-item-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/item(index)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-getpropertyvalue-property-property",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-getpropertyvalue-property-property",
+      "linkingText": [
+        "property"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/getPropertyValue(property)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-getpropertypriority-property-property",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-getpropertypriority-property-property",
+      "linkingText": [
+        "property"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/getPropertyPriority(property)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-setproperty-property-value-priority-property",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-setproperty-property-value-priority-property",
+      "linkingText": [
+        "property"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/setProperty(property, value, priority)",
+        "CSSStyleDeclaration/setProperty(property, value)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-setproperty-property-value-priority-value",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-setproperty-property-value-priority-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/setProperty(property, value, priority)",
+        "CSSStyleDeclaration/setProperty(property, value)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-setproperty-property-value-priority-priority",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-setproperty-property-value-priority-priority",
+      "linkingText": [
+        "priority"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/setProperty(property, value, priority)",
+        "CSSStyleDeclaration/setProperty(property, value)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-setpropertyvalue-property-value-property",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-setpropertyvalue-property-value-property",
+      "linkingText": [
+        "property"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/setPropertyValue(property, value)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-setpropertyvalue-property-value-value",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-setpropertyvalue-property-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/setPropertyValue(property, value)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-setpropertypriority-property-priority-property",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-setpropertypriority-property-priority-property",
+      "linkingText": [
+        "property"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/setPropertyPriority(property, priority)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-setpropertypriority-property-priority-priority",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-setpropertypriority-property-priority-priority",
+      "linkingText": [
+        "priority"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/setPropertyPriority(property, priority)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-removeproperty-property-property",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-removeproperty-property-property",
+      "linkingText": [
+        "property"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleDeclaration/removeProperty(property)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-csstext",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-csstext",
+      "linkingText": [
+        "cssText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-length",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-item",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-item",
+      "linkingText": [
+        "item(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-getpropertyvalue",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-getpropertyvalue",
+      "linkingText": [
+        "getPropertyValue(property)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-getpropertypriority",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-getpropertypriority",
+      "linkingText": [
+        "getPropertyPriority(property)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-setproperty",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-setproperty",
+      "linkingText": [
+        "setProperty(property, value, priority)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-a-css-declaration",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#set-a-css-declaration",
+      "linkingText": [
+        "set a CSS declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-setpropertyvalue",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-setpropertyvalue",
+      "linkingText": [
+        "setPropertyValue(property, value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-a-css-declaration-value",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#set-a-css-declaration-value",
+      "linkingText": [
+        "set a CSS declaration value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-setpropertypriority",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-setpropertypriority",
+      "linkingText": [
+        "setPropertyPriority(property, priority)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-a-css-declaration-priority",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#set-a-css-declaration-priority",
+      "linkingText": [
+        "set a CSS declaration priority"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-removeproperty",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-removeproperty",
+      "linkingText": [
+        "removeProperty(property)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-parentrule",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-parentrule",
+      "linkingText": [
+        "parentRule"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-cssfloat",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-cssfloat",
+      "linkingText": [
+        "cssFloat"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-_camel_cased_attribute",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-_camel_cased_attribute",
+      "linkingText": [
+        "_camel_cased_attribute"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-camel-cased-attribute",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-camel-cased-attribute",
+      "linkingText": [
+        "camel-cased attribute"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-_webkit_cased_attribute",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-_webkit_cased_attribute",
+      "linkingText": [
+        "_webkit_cased_attribute"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-webkit-cased-attribute",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-webkit-cased-attribute",
+      "linkingText": [
+        "webkit-cased attribute"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-_dashed_attribute",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-_dashed_attribute",
+      "linkingText": [
+        "_dashed_attribute"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssstyledeclaration-dashed-attribute",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-cssstyledeclaration-dashed-attribute",
+      "linkingText": [
+        "dashed attribute"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSStyleDeclaration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-property-to-idl-attribute",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#css-property-to-idl-attribute",
+      "linkingText": [
+        "CSS property to IDL attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "idl-attribute-to-css-property",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#idl-attribute-to-css-property",
+      "linkingText": [
+        "IDL attribute to CSS property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parse-a-css-value",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#parse-a-css-value",
+      "linkingText": [
+        "parse a CSS value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-css-value",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#serialize-a-css-value",
+      "linkingText": [
+        "serialize a CSS value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-css-component-value",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#serialize-a-css-component-value",
+      "linkingText": [
+        "serialize a CSS component value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "elementcssinlinestyle",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#elementcssinlinestyle",
+      "linkingText": [
+        "ElementCSSInlineStyle"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-elementcssinlinestyle-style",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-elementcssinlinestyle-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ElementCSSInlineStyle"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-getcomputedstyle-elt-pseudoelt-elt",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-window-getcomputedstyle-elt-pseudoelt-elt",
+      "linkingText": [
+        "elt"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/getComputedStyle(elt, pseudoElt)",
+        "Window/getComputedStyle(elt)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-getcomputedstyle-elt-pseudoelt-pseudoelt",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-window-getcomputedstyle-elt-pseudoelt-pseudoelt",
+      "linkingText": [
+        "pseudoElt"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/getComputedStyle(elt, pseudoElt)",
+        "Window/getComputedStyle(elt)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-getcomputedstyle",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-window-getcomputedstyle",
+      "linkingText": [
+        "getComputedStyle(elt, pseudoElt)",
+        "getComputedStyle(elt)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#css",
+      "linkingText": [
+        "CSS"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-css-escape-ident-ident",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-css-escape-ident-ident",
+      "linkingText": [
+        "ident"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/escape(ident)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-css-escape",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#dom-css-escape",
+      "linkingText": [
+        "escape(ident)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "resolved-value",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#resolved-value",
+      "linkingText": [
+        "resolved value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "http-default-style",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-1-20160317/#http-default-style",
+      "linkingText": [
+        "http-default-style"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

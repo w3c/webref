@@ -1,0 +1,1190 @@
+{
+  "spec": {
+    "title": "CSS Basic User Interface Module Level 4",
+    "url": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
+  },
+  "dfns": [
+    {
+      "id": "propdef-outline",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#propdef-outline",
+      "linkingText": [
+        "outline"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-outline-width",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#propdef-outline-width",
+      "linkingText": [
+        "outline-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-outline-style",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#propdef-outline-style",
+      "linkingText": [
+        "outline-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-outline-color",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#propdef-outline-color",
+      "linkingText": [
+        "outline-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-outline-line-style",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#typedef-outline-line-style",
+      "linkingText": [
+        "<outline-line-style>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-outline-color-invert",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-outline-color-invert",
+      "linkingText": [
+        "invert"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "outline-color"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-outline-offset",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#propdef-outline-offset",
+      "linkingText": [
+        "outline-offset"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-resize",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#propdef-resize",
+      "linkingText": [
+        "resize"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-cursor",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#propdef-cursor",
+      "linkingText": [
+        "cursor"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-auto",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-default",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-default",
+      "linkingText": [
+        "default"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-none",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-context-menu",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-context-menu",
+      "linkingText": [
+        "context-menu"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-help",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-help",
+      "linkingText": [
+        "help"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-pointer",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-pointer",
+      "linkingText": [
+        "pointer"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-progress",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-progress",
+      "linkingText": [
+        "progress"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-wait",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-wait",
+      "linkingText": [
+        "wait"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-cell",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-cell",
+      "linkingText": [
+        "cell"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-crosshair",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-crosshair",
+      "linkingText": [
+        "crosshair"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-text",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-vertical-text",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-vertical-text",
+      "linkingText": [
+        "vertical-text"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-alias",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-alias",
+      "linkingText": [
+        "alias"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-copy",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-copy",
+      "linkingText": [
+        "copy"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-move",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-move",
+      "linkingText": [
+        "move"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-no-drop",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-no-drop",
+      "linkingText": [
+        "no-drop"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-not-allowed",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-not-allowed",
+      "linkingText": [
+        "not-allowed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-grab",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-grab",
+      "linkingText": [
+        "grab"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-grabbing",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-grabbing",
+      "linkingText": [
+        "grabbing"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-e-resize",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-e-resize",
+      "linkingText": [
+        "e-resize"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-n-resize",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-n-resize",
+      "linkingText": [
+        "n-resize"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-ne-resize",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-ne-resize",
+      "linkingText": [
+        "ne-resize"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-nw-resize",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-nw-resize",
+      "linkingText": [
+        "nw-resize"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-s-resize",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-s-resize",
+      "linkingText": [
+        "s-resize"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-se-resize",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-se-resize",
+      "linkingText": [
+        "se-resize"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-sw-resize",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-sw-resize",
+      "linkingText": [
+        "sw-resize"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-w-resize",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-w-resize",
+      "linkingText": [
+        "w-resize"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-ew-resize",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-ew-resize",
+      "linkingText": [
+        "ew-resize"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-ns-resize",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-ns-resize",
+      "linkingText": [
+        "ns-resize"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-nesw-resize",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-nesw-resize",
+      "linkingText": [
+        "nesw-resize"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-nwse-resize",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-nwse-resize",
+      "linkingText": [
+        "nwse-resize"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-col-resize",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-col-resize",
+      "linkingText": [
+        "col-resize"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-row-resize",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-row-resize",
+      "linkingText": [
+        "row-resize"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-all-scroll",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-all-scroll",
+      "linkingText": [
+        "all-scroll"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-zoom-in",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-zoom-in",
+      "linkingText": [
+        "zoom-in"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cursor-zoom-out",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-cursor-zoom-out",
+      "linkingText": [
+        "zoom-out"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cursor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-caret-color",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#propdef-caret-color",
+      "linkingText": [
+        "caret-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-caret-shape",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#propdef-caret-shape",
+      "linkingText": [
+        "caret-shape"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "character",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#character",
+      "linkingText": [
+        "character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "visible-character",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#visible-character",
+      "linkingText": [
+        "visible character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-caret-shape-auto",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-caret-shape-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "caret-shape"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-caret-shape-bar",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-caret-shape-bar",
+      "linkingText": [
+        "bar"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "caret-shape"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-caret-shape-block",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-caret-shape-block",
+      "linkingText": [
+        "block"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "caret-shape"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-caret-shape-underscore",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-caret-shape-underscore",
+      "linkingText": [
+        "underscore"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "caret-shape"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-caret",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#propdef-caret",
+      "linkingText": [
+        "caret"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-nav-up",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#propdef-nav-up",
+      "linkingText": [
+        "nav-up"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-nav-right",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#propdef-nav-right",
+      "linkingText": [
+        "nav-right"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-nav-down",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#propdef-nav-down",
+      "linkingText": [
+        "nav-down"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-nav-left",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#propdef-nav-left",
+      "linkingText": [
+        "nav-left"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-id",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#typedef-id",
+      "linkingText": [
+        "<id>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedef-target-name",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#typedef-target-name",
+      "linkingText": [
+        "<target-name>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-user-select",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#propdef-user-select",
+      "linkingText": [
+        "user-select"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "editable-element",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#editable-element",
+      "linkingText": [
+        "editable element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-user-select-auto",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-user-select-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "user-select"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-user-select-text",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-user-select-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "user-select"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-user-select-none",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-user-select-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "user-select"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-user-select-contain",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-user-select-contain",
+      "linkingText": [
+        "contain"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "user-select"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-user-select-all",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-user-select-all",
+      "linkingText": [
+        "all"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "user-select"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-appearance",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#propdef-appearance",
+      "linkingText": [
+        "appearance"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "widget",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#widget",
+      "linkingText": [
+        "widget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "native-appearance",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#native-appearance",
+      "linkingText": [
+        "native appearance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-appearance-none",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-appearance-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-appearance-auto",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-appearance-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-appearance-button",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-appearance-button",
+      "linkingText": [
+        "button"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-appearance-textfield",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-appearance-textfield",
+      "linkingText": [
+        "textfield"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-appearance-menulist-button",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-appearance-menulist-button",
+      "linkingText": [
+        "menulist-button"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-appearance-compat-auto",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#typedef-appearance-compat-auto",
+      "linkingText": [
+        "<compat-auto>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-appearance-searchfield",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-appearance-searchfield",
+      "linkingText": [
+        "searchfield"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-appearance-textarea",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-appearance-textarea",
+      "linkingText": [
+        "textarea"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-appearance-push-button",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-appearance-push-button",
+      "linkingText": [
+        "push-button"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-appearance-slider-horizontal",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-appearance-slider-horizontal",
+      "linkingText": [
+        "slider-horizontal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-appearance-checkbox",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-appearance-checkbox",
+      "linkingText": [
+        "checkbox"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-appearance-radio",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-appearance-radio",
+      "linkingText": [
+        "radio"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-appearance-square-button",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-appearance-square-button",
+      "linkingText": [
+        "square-button"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-appearance-menulist",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-appearance-menulist",
+      "linkingText": [
+        "menulist"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-appearance-listbox",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-appearance-listbox",
+      "linkingText": [
+        "listbox"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-appearance-meter",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-appearance-meter",
+      "linkingText": [
+        "meter"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-appearance-progress-bar",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#valdef-appearance-progress-bar",
+      "linkingText": [
+        "progress-bar"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "appearance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef--webkit-appearance",
+      "href": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/#propdef--webkit-appearance",
+      "linkingText": [
+        "-webkit-appearance"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

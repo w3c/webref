@@ -1,0 +1,936 @@
+{
+  "spec": {
+    "title": "Resource Timing Level 2",
+    "url": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-dom",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-dom",
+      "linkingText": [
+        "DOM"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-getting",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-getting",
+      "linkingText": [
+        "getting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-setting",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-setting",
+      "linkingText": [
+        "setting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-javascript",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-javascript",
+      "linkingText": [
+        "JavaScript"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-resource",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-resource",
+      "linkingText": [
+        "resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-cross-origin",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-cross-origin",
+      "linkingText": [
+        "cross-origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-current-document",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-current-document",
+      "linkingText": [
+        "current document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-current-time",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-current-time",
+      "linkingText": [
+        "current time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-request",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-request",
+      "linkingText": [
+        "Request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-client",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-client",
+      "linkingText": [
+        "client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-global-object",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-global-object",
+      "linkingText": [
+        "global object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming",
+      "linkingText": [
+        "PerformanceResourceTiming"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-performanceentry",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-performanceentry",
+      "linkingText": [
+        "PerformanceEntry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-name",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-entrytype",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-entrytype",
+      "linkingText": [
+        "entryType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-starttime",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-starttime",
+      "linkingText": [
+        "startTime"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-duration",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-domhighrestimestamp",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-domhighrestimestamp",
+      "linkingText": [
+        "DOMHighResTimeStamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming-tojson",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.toJSON",
+        "PerformanceResourceTiming.toJSON()",
+        "toJSON"
+      ],
+      "type": "method",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming-initiatortype",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-initiatortype",
+      "linkingText": [
+        "initiatorType"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.initiatorType"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-css",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-css",
+      "linkingText": [
+        "\"css\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-navigation",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-navigation",
+      "linkingText": [
+        "\"navigation\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-xmlhttprequest",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-xmlhttprequest",
+      "linkingText": [
+        "\"xmlhttprequest\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fetch",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-fetch",
+      "linkingText": [
+        "\"fetch\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-beacon",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-beacon",
+      "linkingText": [
+        "\"beacon\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-other",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-other",
+      "linkingText": [
+        "\"other\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming-nexthopprotocol",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-nexthopprotocol",
+      "linkingText": [
+        "nextHopProtocol"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.nextHopProtocol"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming-workerstart",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-workerstart",
+      "linkingText": [
+        "workerStart"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.workerStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming-redirectstart",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-redirectstart",
+      "linkingText": [
+        "redirectStart"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.redirectStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming-redirectend",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-redirectend",
+      "linkingText": [
+        "redirectEnd"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.redirectEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming-fetchstart",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-fetchstart",
+      "linkingText": [
+        "fetchStart"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.fetchStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming-domainlookupstart",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-domainlookupstart",
+      "linkingText": [
+        "domainLookupStart"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.domainLookupStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming-domainlookupend",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-domainlookupend",
+      "linkingText": [
+        "domainLookupEnd"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.domainLookupEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming-connectstart",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-connectstart",
+      "linkingText": [
+        "connectStart"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.connectStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming-connectend",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-connectend",
+      "linkingText": [
+        "connectEnd"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.connectEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming-secureconnectionstart",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-secureconnectionstart",
+      "linkingText": [
+        "secureConnectionStart"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.secureConnectionStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming-requeststart",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-requeststart",
+      "linkingText": [
+        "requestStart"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.requestStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-requestend",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-requestend",
+      "linkingText": [
+        "requestEnd"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-performanceresourcetiming-responsestart",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-responsestart",
+      "linkingText": [
+        "responseStart"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.responseStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming-responseend",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-responseend",
+      "linkingText": [
+        "responseEnd"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.responseEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-get-response-end-time",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-get-response-end-time",
+      "linkingText": [
+        "get response end time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming-transfersize",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-transfersize",
+      "linkingText": [
+        "transferSize"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.transferSize"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming-encodedbodysize",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-encodedbodysize",
+      "linkingText": [
+        "encodedBodySize"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.encodedBodySize"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performanceresourcetiming-decodedbodysize",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performanceresourcetiming-decodedbodysize",
+      "linkingText": [
+        "decodedBodySize"
+      ],
+      "localLinkingText": [
+        "PerformanceResourceTiming.decodedBodySize"
+      ],
+      "type": "attribute",
+      "for": [
+        "PerformanceResourceTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-resource-timing-buffer-size-limit",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-resource-timing-buffer-size-limit",
+      "linkingText": [
+        "resource timing buffer size limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-resource-timing-buffer-current-size",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-resource-timing-buffer-current-size",
+      "linkingText": [
+        "resource timing buffer current size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-resource-timing-buffer-full-event-pending-flag",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-resource-timing-buffer-full-event-pending-flag",
+      "linkingText": [
+        "resource timing buffer full event pending flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-resource-timing-secondary-buffer-current-size",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-resource-timing-secondary-buffer-current-size",
+      "linkingText": [
+        "resource timing secondary buffer current size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-resource-timing-secondary-buffer",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-resource-timing-secondary-buffer",
+      "linkingText": [
+        "resource timing secondary buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performance",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performance",
+      "linkingText": [
+        "Performance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-performance-clearresourcetimings",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performance-clearresourcetimings",
+      "linkingText": [
+        "clearResourceTimings()"
+      ],
+      "localLinkingText": [
+        "Performance.clearResourceTimings",
+        "Performance.clearResourceTimings()",
+        "clearResourceTimings"
+      ],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performance-setresourcetimingbuffersize",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performance-setresourcetimingbuffersize",
+      "linkingText": [
+        "setResourceTimingBufferSize()",
+        "setResourceTimingBufferSize(maxSize)"
+      ],
+      "localLinkingText": [
+        "Performance.setResourceTimingBufferSize",
+        "Performance.setResourceTimingBufferSize()",
+        "setResourceTimingBufferSize"
+      ],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performance-onresourcetimingbufferfull",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dom-performance-onresourcetimingbufferfull",
+      "linkingText": [
+        "onresourcetimingbufferfull"
+      ],
+      "localLinkingText": [
+        "Performance.onresourcetimingbufferfull"
+      ],
+      "type": "attribute",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-resourcetimingbufferfull",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-resourcetimingbufferfull",
+      "linkingText": [
+        "resourcetimingbufferfull"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-can-add-resource-timing-entry",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-can-add-resource-timing-entry",
+      "linkingText": [
+        "can add resource timing entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-add-a-performanceresourcetiming-entry",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-add-a-performanceresourcetiming-entry",
+      "linkingText": [
+        "add a PerformanceResourceTiming entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-copy-secondary-buffer",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-copy-secondary-buffer",
+      "linkingText": [
+        "copy secondary buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fire-a-buffer-full-event",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-fire-a-buffer-full-event",
+      "linkingText": [
+        "fire a buffer full event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-timing-allow-origin",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-timing-allow-origin",
+      "linkingText": [
+        "Timing-Allow-Origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-timing-allow-check",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-timing-allow-check",
+      "linkingText": [
+        "timing allow check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-step-create-object",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-step-create-object",
+      "linkingText": [
+        "step-create-object",
+        "Create a new PerformanceResourceTiming object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-step-fetch-start",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-step-fetch-start",
+      "linkingText": [
+        "step-fetch-start",
+        "Immediately before a user agent starts the fetching process"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-step-collection-start",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-step-collection-start",
+      "linkingText": [
+        "step-collection-start",
+        "If the user agent is to reuse the data from another existing or completed fetch initiated from the current document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-step-connect-start",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-step-connect-start",
+      "linkingText": [
+        "step-connect-start",
+        "If a persistent transport connection is used to fetch the resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-step-request-start",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-step-request-start",
+      "linkingText": [
+        "step-request-start",
+        "Immediately before a user agent starts sending the request for the resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-step-response-start",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-step-response-start",
+      "linkingText": [
+        "step-response-start",
+        "immediately after the user agent receives the first byte of the response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-step-response-end",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-step-response-end",
+      "linkingText": [
+        "step-response-end",
+        "immediately after receiving the last byte of the response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-step-final-record",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-step-final-record",
+      "linkingText": [
+        "step-final-record",
+        "Record the difference between responseEnd and startTime in duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-step-final-queue",
+      "href": "https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/#dfn-step-final-queue",
+      "linkingText": [
+        "step-final-queue",
+        "Queue the PerformanceResourceTiming object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

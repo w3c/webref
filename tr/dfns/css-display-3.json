@@ -1,0 +1,1134 @@
+{
+  "spec": {
+    "title": "CSS Display Module Level 3",
+    "url": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+  },
+  "dfns": [
+    {
+      "id": "element-tree",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#element-tree",
+      "linkingText": [
+        "element tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elements",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#elements",
+      "linkingText": [
+        "element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "text-nodes",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#text-nodes",
+      "linkingText": [
+        "text node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "box-tree",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#box-tree",
+      "linkingText": [
+        "box tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "box",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#box",
+      "linkingText": [
+        "box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "text-run",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#text-run",
+      "linkingText": [
+        "text run"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-parent-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#css-parent-box",
+      "linkingText": [
+        "parent box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "anonymous",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#anonymous",
+      "linkingText": [
+        "anonymous",
+        "anonymous box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-display",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#propdef-display",
+      "linkingText": [
+        "display"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "display-type",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#display-type",
+      "linkingText": [
+        "display type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inner-display-type",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#inner-display-type",
+      "linkingText": [
+        "inner display type"
+      ],
+      "localLinkingText": [
+        "inner"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "outer-display-type",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#outer-display-type",
+      "linkingText": [
+        "outer display type"
+      ],
+      "localLinkingText": [
+        "outer"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-display-outside",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#typedef-display-outside",
+      "linkingText": [
+        "<display-outside>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-display-inside",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#typedef-display-inside",
+      "linkingText": [
+        "<display-inside>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-display-listitem",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#typedef-display-listitem",
+      "linkingText": [
+        "<display-listitem>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-display-internal",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#typedef-display-internal",
+      "linkingText": [
+        "<display-internal>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-display-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#typedef-display-box",
+      "linkingText": [
+        "<display-box>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-display-legacy",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#typedef-display-legacy",
+      "linkingText": [
+        "<display-legacy>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-block",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-block",
+      "linkingText": [
+        "block"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-outside>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "block-level-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#block-level-box",
+      "linkingText": [
+        "block-level box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-inline",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-inline",
+      "linkingText": [
+        "inline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-outside>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inline-level-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#inline-level-box",
+      "linkingText": [
+        "inline-level box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-run-in",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-run-in",
+      "linkingText": [
+        "run-in"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-outside>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-flow",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-flow",
+      "linkingText": [
+        "flow"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-inside>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "flow-layout",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#flow-layout",
+      "linkingText": [
+        "flow layout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-flow-root",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-flow-root",
+      "linkingText": [
+        "flow-root"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-inside>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-table",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-table",
+      "linkingText": [
+        "table"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-inside>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-flex",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-flex",
+      "linkingText": [
+        "flex"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-inside>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-grid",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-grid",
+      "linkingText": [
+        "grid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-inside>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-ruby",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-ruby",
+      "linkingText": [
+        "ruby"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-inside>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-list-item",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-list-item",
+      "linkingText": [
+        "list-item"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-list-item>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "layout-internal",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#layout-internal",
+      "linkingText": [
+        "layout-internal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-table-row-group",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-table-row-group",
+      "linkingText": [
+        "table-row-group"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-internal>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-table-header-group",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-table-header-group",
+      "linkingText": [
+        "table-header-group"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-internal>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-table-footer-group",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-table-footer-group",
+      "linkingText": [
+        "table-footer-group"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-internal>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-table-row",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-table-row",
+      "linkingText": [
+        "table-row"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-internal>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-table-cell",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-table-cell",
+      "linkingText": [
+        "table-cell"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-internal>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-table-column-group",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-table-column-group",
+      "linkingText": [
+        "table-column-group"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-internal>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-table-column",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-table-column",
+      "linkingText": [
+        "table-column"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-internal>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "internal-table-element",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#internal-table-element",
+      "linkingText": [
+        "internal table element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "internal-table-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#internal-table-box",
+      "linkingText": [
+        "internal table box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-table-caption",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-table-caption",
+      "linkingText": [
+        "table-caption"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-internal>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "table-caption-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#table-caption-box",
+      "linkingText": [
+        "table caption box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-ruby-base",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-ruby-base",
+      "linkingText": [
+        "ruby-base"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-internal>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-ruby-text",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-ruby-text",
+      "linkingText": [
+        "ruby-text"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-internal>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-ruby-base-container",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-ruby-base-container",
+      "linkingText": [
+        "ruby-base-container"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-internal>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-ruby-text-container",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-ruby-text-container",
+      "linkingText": [
+        "ruby-text-container"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-internal>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "internal-ruby-element",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#internal-ruby-element",
+      "linkingText": [
+        "internal ruby element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "internal-ruby-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#internal-ruby-box",
+      "linkingText": [
+        "internal ruby box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-contents",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-contents",
+      "linkingText": [
+        "contents"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-box>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-none",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-box>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-inline-block",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-inline-block",
+      "linkingText": [
+        "inline-block"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-legacy>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-inline-table",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-inline-table",
+      "linkingText": [
+        "inline-table"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-legacy>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-inline-flex",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-inline-flex",
+      "linkingText": [
+        "inline-flex"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-legacy>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-inline-grid",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#valdef-display-inline-grid",
+      "linkingText": [
+        "inline-grid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display",
+        "<display-legacy>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "blockify",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#blockify",
+      "linkingText": [
+        "blockify",
+        "blockification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inlinify",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#inlinify",
+      "linkingText": [
+        "inlinify",
+        "inlinification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "run-in",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#run-in",
+      "linkingText": [
+        "run-in",
+        "run-in box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "run-in-sequence",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#run-in-sequence",
+      "linkingText": [
+        "run-in sequence"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "principal-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#principal-box",
+      "linkingText": [
+        "principal box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inline-level",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#inline-level",
+      "linkingText": [
+        "inline-level",
+        "inline-level content"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "block-level",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#block-level",
+      "linkingText": [
+        "block-level",
+        "block-level content"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inline-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#inline-box",
+      "linkingText": [
+        "inline box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inline",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#inline",
+      "linkingText": [
+        "inline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "atomic-inline",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#atomic-inline",
+      "linkingText": [
+        "atomic inline",
+        "atomic inline box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "block-container",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#block-container",
+      "linkingText": [
+        "block container",
+        "block container box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "block-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#block-box",
+      "linkingText": [
+        "block box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "block",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#block",
+      "linkingText": [
+        "block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "replaced-element",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#replaced-element",
+      "linkingText": [
+        "replaced element",
+        "replaced"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "non-replaced",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#non-replaced",
+      "linkingText": [
+        "non-replaced"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "containing-block",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#containing-block",
+      "linkingText": [
+        "containing block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "containing-block-chain",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#containing-block-chain",
+      "linkingText": [
+        "containing block chain"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "initial-containing-block",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#initial-containing-block",
+      "linkingText": [
+        "initial containing block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "formatting-context",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#formatting-context",
+      "linkingText": [
+        "formatting context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "independent-formatting-context",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#independent-formatting-context",
+      "linkingText": [
+        "independent formatting context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "establish-an-independent-formatting-context",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#establish-an-independent-formatting-context",
+      "linkingText": [
+        "establish an independent formatting context",
+        "establishes an independent formatting context",
+        "establishing an independent formatting context",
+        "established an independent formatting context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "block-formatting-context",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#block-formatting-context",
+      "linkingText": [
+        "block formatting context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inline-formatting-context",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#inline-formatting-context",
+      "linkingText": [
+        "inline formatting context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "block-formatting-context-root",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#block-formatting-context-root",
+      "linkingText": [
+        "block formatting context root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "bfc",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#bfc",
+      "linkingText": [
+        "BFC"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "out-of-flow",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#out-of-flow",
+      "linkingText": [
+        "out-of-flow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "in-flow",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#in-flow",
+      "linkingText": [
+        "in-flow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "absolutely-positioned",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#absolutely-positioned",
+      "linkingText": [
+        "absolutely positioned",
+        "absolutely positioned element",
+        "absolutely positioned box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "document-order",
+      "href": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/#document-order",
+      "linkingText": [
+        "document order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

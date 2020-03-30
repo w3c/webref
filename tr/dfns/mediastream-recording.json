@@ -1,0 +1,789 @@
+{
+  "spec": {
+    "title": "MediaStream Recording",
+    "url": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/"
+  },
+  "dfns": [
+    {
+      "id": "dom-mediarecorder-mediarecorder-stream-options-stream",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-mediarecorder-stream-options-stream",
+      "linkingText": [
+        "stream"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaRecorder/MediaRecorder(stream, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-mediarecorder-stream-options-options",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-mediarecorder-stream-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaRecorder/MediaRecorder(stream, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mediarecorder",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#mediarecorder",
+      "linkingText": [
+        "MediaRecorder"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-start-timeslice-timeslice",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-start-timeslice-timeslice",
+      "linkingText": [
+        "timeslice"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaRecorder/start(timeslice)",
+        "MediaRecorder/start()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-istypesupported-type-type",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-istypesupported-type-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaRecorder/isTypeSupported(type)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-mediarecorder",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-mediarecorder",
+      "linkingText": [
+        "MediaRecorder(stream, options)",
+        "MediaRecorder(stream)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-stream",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-stream",
+      "linkingText": [
+        "stream"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-mimetype",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-mimetype",
+      "linkingText": [
+        "mimeType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-state",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-onstart",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-onstart",
+      "linkingText": [
+        "onstart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-onstop",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-onstop",
+      "linkingText": [
+        "onstop"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-ondataavailable",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-ondataavailable",
+      "linkingText": [
+        "ondataavailable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-onpause",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-onpause",
+      "linkingText": [
+        "onpause"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-onresume",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-onresume",
+      "linkingText": [
+        "onresume"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-onerror",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-videobitspersecond",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-videobitspersecond",
+      "linkingText": [
+        "videoBitsPerSecond"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-audiobitspersecond",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-audiobitspersecond",
+      "linkingText": [
+        "audioBitsPerSecond"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-start",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-start",
+      "linkingText": [
+        "start(timeslice)",
+        "start()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-stop",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-stop",
+      "linkingText": [
+        "stop()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-pause",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-pause",
+      "linkingText": [
+        "pause()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-resume",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-resume",
+      "linkingText": [
+        "resume()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-requestdata",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-requestdata",
+      "linkingText": [
+        "requestData()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorder-istypesupported",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorder-istypesupported",
+      "linkingText": [
+        "isTypeSupported(type)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "to-fire-a-blob-event",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#to-fire-a-blob-event",
+      "linkingText": [
+        "To fire a blob event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediarecorderoptions",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dictdef-mediarecorderoptions",
+      "linkingText": [
+        "MediaRecorderOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorderoptions-mimetype",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorderoptions-mimetype",
+      "linkingText": [
+        "mimeType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaRecorderOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorderoptions-audiobitspersecond",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorderoptions-audiobitspersecond",
+      "linkingText": [
+        "audioBitsPerSecond"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaRecorderOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorderoptions-videobitspersecond",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorderoptions-videobitspersecond",
+      "linkingText": [
+        "videoBitsPerSecond"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaRecorderOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecorderoptions-bitspersecond",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecorderoptions-bitspersecond",
+      "linkingText": [
+        "bitsPerSecond"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaRecorderOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-recordingstate",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#enumdef-recordingstate",
+      "linkingText": [
+        "RecordingState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-recordingstate-inactive",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-recordingstate-inactive",
+      "linkingText": [
+        "inactive"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RecordingState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-recordingstate-recording",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-recordingstate-recording",
+      "linkingText": [
+        "recording"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RecordingState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-recordingstate-paused",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-recordingstate-paused",
+      "linkingText": [
+        "paused"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RecordingState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blobevent-blobevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-blobevent-blobevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BlobEvent/BlobEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blobevent-blobevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-blobevent-blobevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BlobEvent/BlobEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "blobevent",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#blobevent",
+      "linkingText": [
+        "BlobEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blobevent-blobevent",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-blobevent-blobevent",
+      "linkingText": [
+        "BlobEvent(type, eventInitDict)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "BlobEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blobevent-data",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-blobevent-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BlobEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blobevent-timecode",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-blobevent-timecode",
+      "linkingText": [
+        "timecode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BlobEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-blobeventinit",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dictdef-blobeventinit",
+      "linkingText": [
+        "BlobEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blobeventinit-data",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-blobeventinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BlobEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-blobeventinit-timecode",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-blobeventinit-timecode",
+      "linkingText": [
+        "timecode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BlobEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fire-an-error-event",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#fire-an-error-event",
+      "linkingText": [
+        "fire an error event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediarecordererroreventinit",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dictdef-mediarecordererroreventinit",
+      "linkingText": [
+        "MediaRecorderErrorEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecordererrorevent-mediarecordererrorevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecordererrorevent-mediarecordererrorevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaRecorderErrorEvent/MediaRecorderErrorEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecordererrorevent-mediarecordererrorevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecordererrorevent-mediarecordererrorevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaRecorderErrorEvent/MediaRecorderErrorEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mediarecordererrorevent",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#mediarecordererrorevent",
+      "linkingText": [
+        "MediaRecorderErrorEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecordererrorevent-mediarecordererrorevent",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecordererrorevent-mediarecordererrorevent",
+      "linkingText": [
+        "MediaRecorderErrorEvent(type, eventInitDict)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "MediaRecorderErrorEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecordererrorevent-error",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecordererrorevent-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorderErrorEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediarecordererroreventinit-error",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dom-mediarecordererroreventinit-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaRecorderErrorEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "start",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "stop",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#stop",
+      "linkingText": [
+        "stop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dataavailable",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#dataavailable",
+      "linkingText": [
+        "dataavailable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pause",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#pause",
+      "linkingText": [
+        "pause"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "resume",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#resume",
+      "linkingText": [
+        "resume"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "error",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "conformant-user-agent",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#conformant-user-agent",
+      "linkingText": [
+        "conformant user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "conformant-server",
+      "href": "https://www.w3.org/TR/2017/WD-mediastream-recording-20170621/#conformant-server",
+      "linkingText": [
+        "conformant server"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

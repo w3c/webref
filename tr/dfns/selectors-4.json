@@ -1,0 +1,1586 @@
+{
+  "spec": {
+    "title": "Selectors Level 4",
+    "url": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/"
+  },
+  "dfns": [
+    {
+      "id": "live-profile",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#live-profile",
+      "linkingText": [
+        "live profile"
+      ],
+      "localLinkingText": [
+        "live"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "snapshot-profile",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#snapshot-profile",
+      "linkingText": [
+        "snapshot profile"
+      ],
+      "localLinkingText": [
+        "snapshot"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#selector",
+      "linkingText": [
+        "selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selector-subject",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#selector-subject",
+      "linkingText": [
+        "subject",
+        "subject of a selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "selector"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "match",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#match",
+      "linkingText": [
+        "match"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "simple",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#simple",
+      "linkingText": [
+        "simple selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "compound",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#compound",
+      "linkingText": [
+        "compound selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selector-combinator",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#selector-combinator",
+      "linkingText": [
+        "combinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "selector"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "complex",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#complex",
+      "linkingText": [
+        "complex selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-of-simple-selectors",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#list-of-simple-selectors",
+      "linkingText": [
+        "list of simple selectors",
+        "list of compound selectors",
+        "list of complex selectors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selector-list",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#selector-list",
+      "linkingText": [
+        "selector list",
+        "list of selectors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "featureless",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#featureless",
+      "linkingText": [
+        "featureless"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "document-language",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#document-language",
+      "linkingText": [
+        "document language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "host-language",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#host-language",
+      "linkingText": [
+        "host language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "scoped-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#scoped-selector",
+      "linkingText": [
+        "scoped selector"
+      ],
+      "localLinkingText": [
+        "scope"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scoping-root",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#scoping-root",
+      "linkingText": [
+        "scoping root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scoping-element",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#scoping-element",
+      "linkingText": [
+        "scoping element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "virtual-scoping-root",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#virtual-scoping-root",
+      "linkingText": [
+        "virtual scoping root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "relative-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#relative-selector",
+      "linkingText": [
+        "relative selector",
+        "relative",
+        "scope-relative"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "absolutize",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#absolutize",
+      "linkingText": [
+        "absolutize a relative selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "absolutize-list",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#absolutize-list",
+      "linkingText": [
+        "absolutize a relative selector list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "pseudo-class",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#pseudo-class",
+      "linkingText": [
+        "pseudo-class"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "functional-pseudo-class",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#functional-pseudo-class",
+      "linkingText": [
+        "functional pseudo-class"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "pseudo-element",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#pseudo-element",
+      "linkingText": [
+        "pseudo-element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "originating-element",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#originating-element",
+      "linkingText": [
+        "originating element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "whitespace",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#whitespace",
+      "linkingText": [
+        "White space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "nsdecl",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#nsdecl",
+      "linkingText": [
+        "declared"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "invalid-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#invalid-selector",
+      "linkingText": [
+        "invalid selector"
+      ],
+      "localLinkingText": [
+        "invalid"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "matches-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#matches-pseudo",
+      "linkingText": [
+        ":is()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selectordef-matches",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#selectordef-matches",
+      "linkingText": [
+        ":matches()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "negation-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#negation-pseudo",
+      "linkingText": [
+        ":not()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "where-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#where-pseudo",
+      "linkingText": [
+        ":where()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "has-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#has-pseudo",
+      "linkingText": [
+        ":has()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "type-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#type-selector",
+      "linkingText": [
+        "type selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "universal-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#universal-selector",
+      "linkingText": [
+        "universal selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "attribute-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#attribute-selector",
+      "linkingText": [
+        "attribute selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "class-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#class-selector",
+      "linkingText": [
+        "class selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "id-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#id-selector",
+      "linkingText": [
+        "ID selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dir-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#dir-pseudo",
+      "linkingText": [
+        ":dir()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "lang-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#lang-pseudo",
+      "linkingText": [
+        ":lang()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "language-range",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#language-range",
+      "linkingText": [
+        "language range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "any-link-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#any-link-pseudo",
+      "linkingText": [
+        ":any-link"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "link-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#link-pseudo",
+      "linkingText": [
+        ":link"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "visited-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#visited-pseudo",
+      "linkingText": [
+        ":visited"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "local-link-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#local-link-pseudo",
+      "linkingText": [
+        ":local-link"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "target-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#target-pseudo",
+      "linkingText": [
+        ":target"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "target-within-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#target-within-pseudo",
+      "linkingText": [
+        ":target-within"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scope-element",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#scope-element",
+      "linkingText": [
+        ":scope element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scope-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#scope-pseudo",
+      "linkingText": [
+        ":scope"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "user-action-pseudo-class",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#user-action-pseudo-class",
+      "linkingText": [
+        "user action pseudo-class"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "hover-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#hover-pseudo",
+      "linkingText": [
+        ":hover"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "active-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#active-pseudo",
+      "linkingText": [
+        ":active"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "focus-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#focus-pseudo",
+      "linkingText": [
+        ":focus"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "focus-visible-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#focus-visible-pseudo",
+      "linkingText": [
+        ":focus-visible"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "focus-within-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#focus-within-pseudo",
+      "linkingText": [
+        ":focus-within"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "current-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#current-pseudo",
+      "linkingText": [
+        ":current"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selectordef-current",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#selectordef-current",
+      "linkingText": [
+        ":current()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "past-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#past-pseudo",
+      "linkingText": [
+        ":past"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "future-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#future-pseudo",
+      "linkingText": [
+        ":future"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selectordef-playing",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#selectordef-playing",
+      "linkingText": [
+        ":playing"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selectordef-paused",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#selectordef-paused",
+      "linkingText": [
+        ":paused"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enabled-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#enabled-pseudo",
+      "linkingText": [
+        ":enabled"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "disabled-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#disabled-pseudo",
+      "linkingText": [
+        ":disabled"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "read-write-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#read-write-pseudo",
+      "linkingText": [
+        ":read-write"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "read-only-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#read-only-pseudo",
+      "linkingText": [
+        ":read-only"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "placeholder-shown-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#placeholder-shown-pseudo",
+      "linkingText": [
+        ":placeholder-shown"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "default-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#default-pseudo",
+      "linkingText": [
+        ":default"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "checked-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#checked-pseudo",
+      "linkingText": [
+        ":checked"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "indetermine-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#indetermine-pseudo",
+      "linkingText": [
+        ":indeterminate"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "blank-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#blank-pseudo",
+      "linkingText": [
+        ":blank"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valid-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#valid-pseudo",
+      "linkingText": [
+        ":valid"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "invalid-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#invalid-pseudo",
+      "linkingText": [
+        ":invalid"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "in-range-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#in-range-pseudo",
+      "linkingText": [
+        ":in-range"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "out-of-range-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#out-of-range-pseudo",
+      "linkingText": [
+        ":out-of-range"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "required-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#required-pseudo",
+      "linkingText": [
+        ":required"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "optional-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#optional-pseudo",
+      "linkingText": [
+        ":optional"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "user-invalid-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#user-invalid-pseudo",
+      "linkingText": [
+        ":user-invalid"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "structural-pseudo-classes",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#structural-pseudo-classes",
+      "linkingText": [
+        "structural pseudo-classes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "root-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#root-pseudo",
+      "linkingText": [
+        ":root"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "empty-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#empty-pseudo",
+      "linkingText": [
+        ":empty"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "nth-child-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#nth-child-pseudo",
+      "linkingText": [
+        ":nth-child()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "nth-last-child-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#nth-last-child-pseudo",
+      "linkingText": [
+        ":nth-last-child()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "first-child-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#first-child-pseudo",
+      "linkingText": [
+        ":first-child"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "last-child-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#last-child-pseudo",
+      "linkingText": [
+        ":last-child"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "only-child-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#only-child-pseudo",
+      "linkingText": [
+        ":only-child"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "nth-of-type-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#nth-of-type-pseudo",
+      "linkingText": [
+        ":nth-of-type()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "nth-last-of-type-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#nth-last-of-type-pseudo",
+      "linkingText": [
+        ":nth-last-of-type()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "first-of-type-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#first-of-type-pseudo",
+      "linkingText": [
+        ":first-of-type"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "last-of-type-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#last-of-type-pseudo",
+      "linkingText": [
+        ":last-of-type"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "only-of-type-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#only-of-type-pseudo",
+      "linkingText": [
+        ":only-of-type"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descendant-combinator",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#descendant-combinator",
+      "linkingText": [
+        "descendant combinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "child-combinator",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#child-combinator",
+      "linkingText": [
+        "child combinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selectordef-child",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#selectordef-child",
+      "linkingText": [
+        ">"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "next-sibling-combinator",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#next-sibling-combinator",
+      "linkingText": [
+        "next-sibling combinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selectordef-adjacent",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#selectordef-adjacent",
+      "linkingText": [
+        "+"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "subsequent-sibling-combinator",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#subsequent-sibling-combinator",
+      "linkingText": [
+        "subsequent-sibling combinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selectordef-sibling",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#selectordef-sibling",
+      "linkingText": [
+        "~"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "column-combinator",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#column-combinator",
+      "linkingText": [
+        "column combinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "selectordef-column",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#selectordef-column",
+      "linkingText": [
+        "||"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "nth-col-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#nth-col-pseudo",
+      "linkingText": [
+        ":nth-col()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "nth-last-col-pseudo",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#nth-last-col-pseudo",
+      "linkingText": [
+        ":nth-last-col()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "specificity",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#specificity",
+      "linkingText": [
+        "specificity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-selector-list",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-selector-list",
+      "linkingText": [
+        "<selector-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-complex-selector-list",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-complex-selector-list",
+      "linkingText": [
+        "<complex-selector-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-compound-selector-list",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-compound-selector-list",
+      "linkingText": [
+        "<compound-selector-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-simple-selector-list",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-simple-selector-list",
+      "linkingText": [
+        "<simple-selector-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-relative-selector-list",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-relative-selector-list",
+      "linkingText": [
+        "<relative-selector-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-complex-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-complex-selector",
+      "linkingText": [
+        "<complex-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-relative-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-relative-selector",
+      "linkingText": [
+        "<relative-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-compound-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-compound-selector",
+      "linkingText": [
+        "<compound-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-simple-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-simple-selector",
+      "linkingText": [
+        "<simple-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-combinator",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-combinator",
+      "linkingText": [
+        "<combinator>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-type-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-type-selector",
+      "linkingText": [
+        "<type-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-ns-prefix",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-ns-prefix",
+      "linkingText": [
+        "<ns-prefix>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedef-wq-name",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-wq-name",
+      "linkingText": [
+        "<wq-name>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedef-subclass-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-subclass-selector",
+      "linkingText": [
+        "<subclass-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedef-id-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-id-selector",
+      "linkingText": [
+        "<id-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-class-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-class-selector",
+      "linkingText": [
+        "<class-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-attribute-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-attribute-selector",
+      "linkingText": [
+        "<attribute-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-attr-matcher",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-attr-matcher",
+      "linkingText": [
+        "<attr-matcher>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedef-attr-modifier",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-attr-modifier",
+      "linkingText": [
+        "<attr-modifier>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedef-pseudo-class-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-pseudo-class-selector",
+      "linkingText": [
+        "<pseudo-class-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-pseudo-element-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#typedef-pseudo-element-selector",
+      "linkingText": [
+        "<pseudo-element-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#parse-a-selector",
+      "linkingText": [
+        "parse a selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-relative-selector",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#parse-a-relative-selector",
+      "linkingText": [
+        "parse a relative selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "match-a-selector-against-an-element",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#match-a-selector-against-an-element",
+      "linkingText": [
+        "match a selector against an element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "match-a-complex-selector-against-an-element",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#match-a-complex-selector-against-an-element",
+      "linkingText": [
+        "match a complex selector against an element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "match-a-selector-against-a-pseudo-element",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#match-a-selector-against-a-pseudo-element",
+      "linkingText": [
+        "match a selector against a pseudo-element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "match-a-selector-against-a-tree",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#match-a-selector-against-a-tree",
+      "linkingText": [
+        "match a selector against a tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "evaluating-selectors",
+      "href": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/#evaluating-selectors",
+      "linkingText": [
+        "evaluating a selector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

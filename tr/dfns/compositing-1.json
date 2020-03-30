@@ -1,0 +1,316 @@
+{
+  "spec": {
+    "title": "Compositing and Blending Level 1",
+    "url": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/"
+  },
+  "dfns": [
+    {
+      "id": "propdef-mix-blend-mode",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#propdef-mix-blend-mode",
+      "linkingText": [
+        "mix-blend-mode"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ltblendmodegt",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#ltblendmodegt",
+      "linkingText": [
+        "<blend-mode>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-isolation",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#propdef-isolation",
+      "linkingText": [
+        "isolation"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "isolated-propid",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#isolated-propid",
+      "linkingText": [
+        "<isolation-mode>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-background-blend-mode",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#propdef-background-blend-mode",
+      "linkingText": [
+        "background-blend-mode"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "compositemode",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#compositemode",
+      "linkingText": [
+        "<composite-mode>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "backdrop",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#backdrop",
+      "linkingText": [
+        "backdrop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-normal",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#valdef-blend-mode-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-multiply",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#valdef-blend-mode-multiply",
+      "linkingText": [
+        "multiply"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-screen",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#valdef-blend-mode-screen",
+      "linkingText": [
+        "screen"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-overlay",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#valdef-blend-mode-overlay",
+      "linkingText": [
+        "overlay"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-darken",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#valdef-blend-mode-darken",
+      "linkingText": [
+        "darken"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-lighten",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#valdef-blend-mode-lighten",
+      "linkingText": [
+        "lighten"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-color-dodge",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#valdef-blend-mode-color-dodge",
+      "linkingText": [
+        "color-dodge"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-color-burn",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#valdef-blend-mode-color-burn",
+      "linkingText": [
+        "color-burn"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-hard-light",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#valdef-blend-mode-hard-light",
+      "linkingText": [
+        "hard-light"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-soft-light",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#valdef-blend-mode-soft-light",
+      "linkingText": [
+        "soft-light"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-difference",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#valdef-blend-mode-difference",
+      "linkingText": [
+        "difference"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-exclusion",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#valdef-blend-mode-exclusion",
+      "linkingText": [
+        "exclusion"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-hue",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#valdef-blend-mode-hue",
+      "linkingText": [
+        "hue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-saturation",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#valdef-blend-mode-saturation",
+      "linkingText": [
+        "saturation"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-color",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#valdef-blend-mode-color",
+      "linkingText": [
+        "color"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-blend-mode-luminosity",
+      "href": "http://www.w3.org/TR/2015/CR-compositing-1-20150113/#valdef-blend-mode-luminosity",
+      "linkingText": [
+        "luminosity"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<blend-mode>"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

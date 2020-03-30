@@ -1,0 +1,385 @@
+{
+  "spec": {
+    "title": "Gamepad",
+    "url": "https://www.w3.org/TR/2020/WD-gamepad-20200225/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-performancetiming",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dfn-performancetiming",
+      "linkingText": [
+        "PerformanceTiming"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepad",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepad",
+      "linkingText": [
+        "Gamepad"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepad-id",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepad-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [
+        "Gamepad.id"
+      ],
+      "type": "attribute",
+      "for": [
+        "Gamepad"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepad-index",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepad-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [
+        "Gamepad.index"
+      ],
+      "type": "attribute",
+      "for": [
+        "Gamepad"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepad-connected",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepad-connected",
+      "linkingText": [
+        "connected"
+      ],
+      "localLinkingText": [
+        "Gamepad.connected"
+      ],
+      "type": "attribute",
+      "for": [
+        "Gamepad"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepad-timestamp",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepad-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [
+        "Gamepad.timestamp"
+      ],
+      "type": "attribute",
+      "for": [
+        "Gamepad"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepad-mapping",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepad-mapping",
+      "linkingText": [
+        "mapping"
+      ],
+      "localLinkingText": [
+        "Gamepad.mapping"
+      ],
+      "type": "attribute",
+      "for": [
+        "Gamepad"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepad-axes",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepad-axes",
+      "linkingText": [
+        "axes"
+      ],
+      "localLinkingText": [
+        "Gamepad.axes"
+      ],
+      "type": "attribute",
+      "for": [
+        "Gamepad"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepad-buttons",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepad-buttons",
+      "linkingText": [
+        "buttons"
+      ],
+      "localLinkingText": [
+        "Gamepad.buttons"
+      ],
+      "type": "attribute",
+      "for": [
+        "Gamepad"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepadbutton",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepadbutton",
+      "linkingText": [
+        "GamepadButton"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepadbutton-pressed",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepadbutton-pressed",
+      "linkingText": [
+        "pressed"
+      ],
+      "localLinkingText": [
+        "GamepadButton.pressed"
+      ],
+      "type": "attribute",
+      "for": [
+        "GamepadButton"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepadbutton-touched",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepadbutton-touched",
+      "linkingText": [
+        "touched"
+      ],
+      "localLinkingText": [
+        "GamepadButton.touched"
+      ],
+      "type": "attribute",
+      "for": [
+        "GamepadButton"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepadbutton-value",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepadbutton-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [
+        "GamepadButton.value"
+      ],
+      "type": "attribute",
+      "for": [
+        "GamepadButton"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepadmappingtype",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepadmappingtype",
+      "linkingText": [
+        "GamepadMappingType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepadmappingtype-the-empty-string",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepadmappingtype-the-empty-string",
+      "linkingText": [
+        "the-empty-string",
+        "\"\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GamepadMappingType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepadmappingtype-standard",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepadmappingtype-standard",
+      "linkingText": [
+        "standard"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GamepadMappingType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator-getgamepads",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-navigator-getgamepads",
+      "linkingText": [
+        "getGamepads()"
+      ],
+      "localLinkingText": [
+        "Navigator.getGamepads",
+        "Navigator.getGamepads()",
+        "getGamepads"
+      ],
+      "type": "method",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepadevent",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepadevent",
+      "linkingText": [
+        "GamepadEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepadevent-constructor",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepadevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "GamepadEvent.constructor",
+        "GamepadEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "GamepadEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepadevent-gamepad",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepadevent-gamepad",
+      "linkingText": [
+        "gamepad"
+      ],
+      "localLinkingText": [
+        "GamepadEvent.gamepad"
+      ],
+      "type": "attribute",
+      "for": [
+        "GamepadEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepadeventinit",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepadeventinit",
+      "linkingText": [
+        "GamepadEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gamepadeventinit-gamepad",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dom-gamepadeventinit-gamepad",
+      "linkingText": [
+        "gamepad"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GamepadEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-standard-gamepad-layout",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dfn-standard-gamepad-layout",
+      "linkingText": [
+        "Standard Gamepad layout",
+        "Remapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-gamepadconnected",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dfn-gamepadconnected",
+      "linkingText": [
+        "gamepadconnected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-gamepaddisconnected",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dfn-gamepaddisconnected",
+      "linkingText": [
+        "gamepaddisconnected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-user-agent",
+      "href": "https://www.w3.org/TR/2020/WD-gamepad-20200225/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

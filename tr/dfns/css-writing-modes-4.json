@@ -1,0 +1,1183 @@
+{
+  "spec": {
+    "title": "CSS Writing Modes Level 4",
+    "url": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/"
+  },
+  "dfns": [
+    {
+      "id": "writing-mode",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#writing-mode",
+      "linkingText": [
+        "writing mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inline-base-direction",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#inline-base-direction",
+      "linkingText": [
+        "inline base direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "block-flow-direction",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#block-flow-direction",
+      "linkingText": [
+        "block flow direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typographic-mode",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#typographic-mode",
+      "linkingText": [
+        "typographic mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "horizontal-writing-mode",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#horizontal-writing-mode",
+      "linkingText": [
+        "horizontal writing mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "vertical-writing-mode",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#vertical-writing-mode",
+      "linkingText": [
+        "vertical writing mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "vertical-block-flow",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#vertical-block-flow",
+      "linkingText": [
+        "vertical block flow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "horizontal-block-flow",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#horizontal-block-flow",
+      "linkingText": [
+        "horizontal block flow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "bidirectionality",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#bidirectionality",
+      "linkingText": [
+        "bidirectionality"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-direction",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#propdef-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-direction-ltr",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-direction-ltr",
+      "linkingText": [
+        "ltr"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "direction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-direction-rtl",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-direction-rtl",
+      "linkingText": [
+        "rtl"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "direction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-unicode-bidi",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#propdef-unicode-bidi",
+      "linkingText": [
+        "unicode-bidi"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-unicode-bidi-normal",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-unicode-bidi-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "unicode-bidi"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-unicode-bidi-embed",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-unicode-bidi-embed",
+      "linkingText": [
+        "embed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "unicode-bidi"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "directional-embedding",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#directional-embedding",
+      "linkingText": [
+        "directional embedding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-unicode-bidi-isolate",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-unicode-bidi-isolate",
+      "linkingText": [
+        "isolate"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "unicode-bidi"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "bidi-isolate",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#bidi-isolate",
+      "linkingText": [
+        "bidi-isolate",
+        "bidi-isolated",
+        "bidi isolation",
+        "isolation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "isolated-sequence",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#isolated-sequence",
+      "linkingText": [
+        "isolated sequence"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-unicode-bidi-bidi-override",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-unicode-bidi-bidi-override",
+      "linkingText": [
+        "bidi-override"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "unicode-bidi"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "directional-override",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#directional-override",
+      "linkingText": [
+        "directional override"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-unicode-bidi-isolate-override",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-unicode-bidi-isolate-override",
+      "linkingText": [
+        "isolate-override"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "unicode-bidi"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-unicode-bidi-plaintext",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-unicode-bidi-plaintext",
+      "linkingText": [
+        "plaintext"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "unicode-bidi"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "forced-paragraph-break",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#forced-paragraph-break",
+      "linkingText": [
+        "forced paragraph break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "bidi-paragraph",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#bidi-paragraph",
+      "linkingText": [
+        "bidi paragraph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-writing-mode",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#propdef-writing-mode",
+      "linkingText": [
+        "writing-mode"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-writing-mode-horizontal-tb",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-writing-mode-horizontal-tb",
+      "linkingText": [
+        "horizontal-tb"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "writing-mode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-writing-mode-vertical-rl",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-writing-mode-vertical-rl",
+      "linkingText": [
+        "vertical-rl"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "writing-mode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-writing-mode-vertical-lr",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-writing-mode-vertical-lr",
+      "linkingText": [
+        "vertical-lr"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "writing-mode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-writing-mode-sideways-rl",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-writing-mode-sideways-rl",
+      "linkingText": [
+        "sideways-rl"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "writing-mode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-writing-mode-sideways-lr",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-writing-mode-sideways-lr",
+      "linkingText": [
+        "sideways-lr"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "writing-mode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "baseline",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#baseline",
+      "linkingText": [
+        "baseline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "baseline-table",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#baseline-table",
+      "linkingText": [
+        "baseline table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "alphabetic-baseline",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#alphabetic-baseline",
+      "linkingText": [
+        "alphabetic baseline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "central-baseline",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#central-baseline",
+      "linkingText": [
+        "central baseline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dominant-baseline",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#dominant-baseline",
+      "linkingText": [
+        "dominant baseline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "horizontal-only",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#horizontal-only",
+      "linkingText": [
+        "horizontal-only"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "vertical-only",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#vertical-only",
+      "linkingText": [
+        "vertical-only"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "bi-orientational",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#bi-orientational",
+      "linkingText": [
+        "bi-orientational"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "vertical-script",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#vertical-script",
+      "linkingText": [
+        "vertical script"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "horizontal-script",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#horizontal-script",
+      "linkingText": [
+        "horizontal script"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "bi-orientational-transform",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#bi-orientational-transform",
+      "linkingText": [
+        "bi-orientational transform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-orientation",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#propdef-text-orientation",
+      "linkingText": [
+        "text-orientation"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-orientation-mixed",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-text-orientation-mixed",
+      "linkingText": [
+        "mixed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-orientation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-orientation-upright",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-text-orientation-upright",
+      "linkingText": [
+        "upright"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-orientation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-orientation-sideways",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-text-orientation-sideways",
+      "linkingText": [
+        "sideways"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-orientation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-orientation-sideways-right",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-text-orientation-sideways-right",
+      "linkingText": [
+        "sideways-right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-orientation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-glyph-orientation-vertical",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#propdef-glyph-orientation-vertical",
+      "linkingText": [
+        "glyph-orientation-vertical"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "physical",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#physical",
+      "linkingText": [
+        "physical"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "physical-direction",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#physical-direction",
+      "linkingText": [
+        "physical direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "physical-left",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#physical-left",
+      "linkingText": [
+        "physical left",
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "physical-right",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#physical-right",
+      "linkingText": [
+        "physical right",
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "physical-top",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#physical-top",
+      "linkingText": [
+        "physical top",
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "physical-bottom",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#physical-bottom",
+      "linkingText": [
+        "physical bottom",
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "flow-relative",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#flow-relative",
+      "linkingText": [
+        "flow-relative"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "line-relative",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#line-relative",
+      "linkingText": [
+        "line-relative"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "physical-dimensions",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#physical-dimensions",
+      "linkingText": [
+        "physical dimensions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "width",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "height",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "x-axis",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#x-axis",
+      "linkingText": [
+        "x-axis",
+        "horizontal axis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "horizontal-dimension",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#horizontal-dimension",
+      "linkingText": [
+        "horizontal dimension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "y-axis",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#y-axis",
+      "linkingText": [
+        "y-axis",
+        "vertical axis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "vertical-dimension",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#vertical-dimension",
+      "linkingText": [
+        "vertical dimension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-dimensions",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#abstract-dimensions",
+      "linkingText": [
+        "abstract dimensions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "block-dimension",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#block-dimension",
+      "linkingText": [
+        "block dimension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inline-dimension",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#inline-dimension",
+      "linkingText": [
+        "inline dimension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "block-axis",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#block-axis",
+      "linkingText": [
+        "block axis",
+        "block-axis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inline-axis",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#inline-axis",
+      "linkingText": [
+        "inline axis",
+        "inline-axis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "block-size",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#block-size",
+      "linkingText": [
+        "block size",
+        "block-size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "logical-height",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#logical-height",
+      "linkingText": [
+        "logical height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inline-size",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#inline-size",
+      "linkingText": [
+        "inline size",
+        "inline-size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "logical-width",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#logical-width",
+      "linkingText": [
+        "logical width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "flow-relative-direction",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#flow-relative-direction",
+      "linkingText": [
+        "flow-relative direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "block-start",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#block-start",
+      "linkingText": [
+        "block start",
+        "block-start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "block-end",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#block-end",
+      "linkingText": [
+        "block end",
+        "block-end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inline-start",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#inline-start",
+      "linkingText": [
+        "inline start",
+        "inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inline-end",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#inline-end",
+      "linkingText": [
+        "inline end",
+        "inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "start",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "end",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#end",
+      "linkingText": [
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "line-orientation",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#line-orientation",
+      "linkingText": [
+        "line orientation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "line-relative-direction",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#line-relative-direction",
+      "linkingText": [
+        "line-relative direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "over",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#over",
+      "linkingText": [
+        "over"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "line-over",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#line-over",
+      "linkingText": [
+        "line-over"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "under",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#under",
+      "linkingText": [
+        "under"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "line-under",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#line-under",
+      "linkingText": [
+        "line-under"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "line-left",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#line-left",
+      "linkingText": [
+        "line-left"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "line-right",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#line-right",
+      "linkingText": [
+        "line-right"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "establish-an-orthogonal-flow",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#establish-an-orthogonal-flow",
+      "linkingText": [
+        "establish an orthogonal flow",
+        "orthogonal flow",
+        "orthogonal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "principal-writing-mode",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#principal-writing-mode",
+      "linkingText": [
+        "principal writing mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-combine-upright",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#propdef-text-combine-upright",
+      "linkingText": [
+        "text-combine-upright"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-combine-upright-none",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-text-combine-upright-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-combine-upright"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-combine-upright-all",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-text-combine-upright-all",
+      "linkingText": [
+        "all"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-combine-upright"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-combine-upright-digits-integer",
+      "href": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/#valdef-text-combine-upright-digits-integer",
+      "linkingText": [
+        "digits <integer>?"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-combine-upright"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,489 @@
+{
+  "spec": {
+    "title": "CSS Lists Module Level 3",
+    "url": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/"
+  },
+  "dfns": [
+    {
+      "id": "list-item",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#list-item",
+      "linkingText": [
+        "list item"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "marker",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#marker",
+      "linkingText": [
+        "marker",
+        "marker box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-list-style-image",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#propdef-list-style-image",
+      "linkingText": [
+        "list-style-image"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "marker-image",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#marker-image",
+      "linkingText": [
+        "marker image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-list-style-image-image",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#valdef-list-style-image-image",
+      "linkingText": [
+        "<image>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "list-style-image"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-list-style-image-none",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#valdef-list-style-image-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "list-style-image"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-list-style-type",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#propdef-list-style-type",
+      "linkingText": [
+        "list-style-type"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "marker-string",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#marker-string",
+      "linkingText": [
+        "marker string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-list-style-type-counter-style",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#valdef-list-style-type-counter-style",
+      "linkingText": [
+        "<counter-style>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "list-style-type"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-list-style-type-string",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#valdef-list-style-type-string",
+      "linkingText": [
+        "<string>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "list-style-type"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-list-style-type-none",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#valdef-list-style-type-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "list-style-type"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-list-style-position",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#propdef-list-style-position",
+      "linkingText": [
+        "list-style-position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-list-style-position-inside",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#valdef-list-style-position-inside",
+      "linkingText": [
+        "inside"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "list-style-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-style-position-outside",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#list-style-position-outside",
+      "linkingText": [
+        "outside"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "list-style-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-list-style",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#propdef-list-style",
+      "linkingText": [
+        "list-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-marker-side",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#propdef-marker-side",
+      "linkingText": [
+        "marker-side"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-marker-side-match-self",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#valdef-marker-side-match-self",
+      "linkingText": [
+        "match-self"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "marker-side"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-marker-side-match-parent",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#valdef-marker-side-match-parent",
+      "linkingText": [
+        "match-parent"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "marker-side"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "counter",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#counter",
+      "linkingText": [
+        "counter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "counter-properties",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#counter-properties",
+      "linkingText": [
+        "counter properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-counter-name",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#typedef-counter-name",
+      "linkingText": [
+        "<counter-name>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-counter-reset",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#propdef-counter-reset",
+      "linkingText": [
+        "counter-reset"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-counter-reset-none",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#valdef-counter-reset-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "counter-reset"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-counter-reset-counter-name-integer",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#valdef-counter-reset-counter-name-integer",
+      "linkingText": [
+        "<counter-name> <integer>?"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "counter-reset"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-counter-increment",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#propdef-counter-increment",
+      "linkingText": [
+        "counter-increment"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-counter-set",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#propdef-counter-set",
+      "linkingText": [
+        "counter-set"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-counter-set-counter-increment-none",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#valdef-counter-set-counter-increment-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "counter-set counter-increment"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-counter-set-counter-increment-counter-name-integer",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#valdef-counter-set-counter-increment-counter-name-integer",
+      "linkingText": [
+        "<counter-name> <integer>?"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "counter-set counter-increment"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "counter-scope",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#counter-scope",
+      "linkingText": [
+        "counter scope"
+      ],
+      "localLinkingText": [
+        "scope"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-counters-set",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#css-counters-set",
+      "linkingText": [
+        "CSS counters set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "innermost",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#innermost",
+      "linkingText": [
+        "innermost"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "inherit-counters",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#inherit-counters",
+      "linkingText": [
+        "inherit counters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "instantiate-counter",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#instantiate-counter",
+      "linkingText": [
+        "instantiate counter"
+      ],
+      "localLinkingText": [
+        "instantiate"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-counter-increment-list-item",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#valdef-counter-increment-list-item",
+      "linkingText": [
+        "list-item"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "counter-increment",
+        "counter-set",
+        "counter-reset",
+        "counter()",
+        "counters()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-counter",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#typedef-counter",
+      "linkingText": [
+        "<counter>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-counter",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#funcdef-counter",
+      "linkingText": [
+        "counter()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-counters",
+      "href": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/#funcdef-counters",
+      "linkingText": [
+        "counters()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

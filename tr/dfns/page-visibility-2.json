@@ -1,0 +1,304 @@
+{
+  "spec": {
+    "title": "Page Visibility Level 2",
+    "url": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-visibility-states",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-visibility-states",
+      "linkingText": [
+        "visibility\n        states"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-visibilitystate-hidden",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dom-visibilitystate-hidden",
+      "linkingText": [
+        "hidden"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "visibilitystate"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-visibilitystate-visible",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dom-visibilitystate-visible",
+      "linkingText": [
+        "visible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "visibilitystate"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-document-hidden",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dom-document-hidden",
+      "linkingText": [
+        "hidden"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "document"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-steps-to-determine-if-the-document-is-hidden",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-steps-to-determine-if-the-document-is-hidden",
+      "linkingText": [
+        "steps\n          to determine if the document is hidden"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-visibilitystate",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dom-visibilitystate",
+      "linkingText": [
+        "visibilityState"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-steps-to-determine-the-visibility-state",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-steps-to-determine-the-visibility-state",
+      "linkingText": [
+        "steps to determine the visibility state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-document-onvisibilitychange",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dom-document-onvisibilitychange",
+      "linkingText": [
+        "onvisibilitychange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "document"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-visibilitychange",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-visibilitychange",
+      "linkingText": [
+        "visibilitychange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-now-visible-algorithm",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-now-visible-algorithm",
+      "linkingText": [
+        "now visible algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-now-hidden-algorithm",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-now-hidden-algorithm",
+      "linkingText": [
+        "now hidden algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-defaultview",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-defaultview",
+      "linkingText": [
+        "defaultView"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pageshow",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-pageshow",
+      "linkingText": [
+        "pageshow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-session-history-entry",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-session-history-entry",
+      "linkingText": [
+        "session\n          history entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-top-level-browsing-context",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-top-level-browsing-context",
+      "linkingText": [
+        "top level browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-unloading-document-visibility-change-steps",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-unloading-document-visibility-change-steps",
+      "linkingText": [
+        "unloading document visibility change steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-unload",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-unload",
+      "linkingText": [
+        "unload"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-document",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dom-document",
+      "linkingText": [
+        "Document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-blur",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-blur",
+      "linkingText": [
+        "blur"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-focus",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-focus",
+      "linkingText": [
+        "focus"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-queue-a-task",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-queue-a-task",
+      "linkingText": [
+        "queue a task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-task-source",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-task-source",
+      "linkingText": [
+        "task\n          source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-task",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-task",
+      "linkingText": [
+        "task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fire-a-simple-event",
+      "href": "https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/#dfn-fire-a-simple-event",
+      "linkingText": [
+        "fire a simple\n        event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

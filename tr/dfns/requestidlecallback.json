@@ -1,0 +1,489 @@
+{
+  "spec": {
+    "title": "Cooperative Scheduling of Background Tasks",
+    "url": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-browsing-context",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-browsing-context",
+      "linkingText": [
+        "browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-loop",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-event-loop",
+      "linkingText": [
+        "event loop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-loop-processing-model",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-event-loop-processing-model",
+      "linkingText": [
+        "event loop processing\n    model"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-spin-the-event-loop",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-spin-the-event-loop",
+      "linkingText": [
+        "spin the event\n    loop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fully-active",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-fully-active",
+      "linkingText": [
+        "fully active"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-tasks",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-tasks",
+      "linkingText": [
+        "tasks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-task-source",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-task-source",
+      "linkingText": [
+        "task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-task-queues",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-task-queues",
+      "linkingText": [
+        "task queues"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-queue-a-task",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-queue-a-task",
+      "linkingText": [
+        "queue a task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-microtask-queue",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-microtask-queue",
+      "linkingText": [
+        "microtask queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-list-of-active-timers",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-list-of-active-timers",
+      "linkingText": [
+        "list of active timers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-settimeout",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-settimeout",
+      "linkingText": [
+        "setTimeout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-setinterval",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-setinterval",
+      "linkingText": [
+        "setInterval"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-requestanimationframe",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-requestanimationframe",
+      "linkingText": [
+        "requestAnimationFrame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-report-the-error",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-report-the-error",
+      "linkingText": [
+        "report the error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-current-high-resolution-time",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-current-high-resolution-time",
+      "linkingText": [
+        "current high resolution time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-domhighrestimestamp",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-domhighrestimestamp",
+      "linkingText": [
+        "DOMHighResTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-conforming-implementation",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-conforming-implementation",
+      "linkingText": [
+        "conforming implementation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-hidden",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-hidden",
+      "linkingText": [
+        "hidden"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-window",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dom-window",
+      "linkingText": [
+        "Window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-list-of-idle-request-callbacks",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-list-of-idle-request-callbacks",
+      "linkingText": [
+        "list of idle request callbacks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-list-of-runnable-idle-callbacks",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-list-of-runnable-idle-callbacks",
+      "linkingText": [
+        "list of runnable idle callbacks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idle-callback-identifier",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-idle-callback-identifier",
+      "linkingText": [
+        "idle callback identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-last-idle-period-deadline",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-last-idle-period-deadline",
+      "linkingText": [
+        "last idle period deadline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-window-requestidlecallback",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dom-window-requestidlecallback",
+      "linkingText": [
+        "requestidlecallback()",
+        "requestIdleCallback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "window"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-idlerequestcallback",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dom-idlerequestcallback",
+      "linkingText": [
+        "IdleRequestCallback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-idlerequestoptions",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dom-idlerequestoptions",
+      "linkingText": [
+        "IdleRequestOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-idlerequestoptions-timeout",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dom-idlerequestoptions-timeout",
+      "linkingText": [
+        "timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "idlerequestoptions"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-window-cancelidlecallback",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dom-window-cancelidlecallback",
+      "linkingText": [
+        "cancelidlecallback()",
+        "cancelIdleCallback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "window"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-idledeadline",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dom-idledeadline",
+      "linkingText": [
+        "IdleDeadline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-time",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-time",
+      "linkingText": [
+        "time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-idledeadline-timeremaining",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dom-idledeadline-timeremaining",
+      "linkingText": [
+        "timeremaining()",
+        "timeRemaining"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "idledeadline"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-timeout",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-timeout",
+      "linkingText": [
+        "timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-idledeadline-didtimeout",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dom-idledeadline-didtimeout",
+      "linkingText": [
+        "didTimeout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "idledeadline"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-start-an-idle-period-algorithm",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-start-an-idle-period-algorithm",
+      "linkingText": [
+        "start an idle period algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idle-task-task-source",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-idle-task-task-source",
+      "linkingText": [
+        "idle-task\n      task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idle-period",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-idle-period",
+      "linkingText": [
+        "idle period"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-invoke-idle-callbacks-algorithm",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-invoke-idle-callbacks-algorithm",
+      "linkingText": [
+        "invoke idle callbacks algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-invoke-idle-callback-timeout-algorithm",
+      "href": "https://www.w3.org/TR/2017/PR-requestidlecallback-20171010/#dfn-invoke-idle-callback-timeout-algorithm",
+      "linkingText": [
+        "invoke idle callback timeout algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

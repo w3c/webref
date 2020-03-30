@@ -1,0 +1,1952 @@
+{
+  "spec": {
+    "title": "Payment Handler API",
+    "url": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-payee",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-payee",
+      "linkingText": [
+        "payee"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-payer",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-payer",
+      "linkingText": [
+        "payer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-payment-handler",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-payment-handler",
+      "linkingText": [
+        "payment handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-serviceworkerregistration-paymentmanager",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-serviceworkerregistration-paymentmanager",
+      "linkingText": [
+        "ServiceWorkerRegistration.paymentManager",
+        "paymentManager"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmanager",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentmanager",
+      "linkingText": [
+        "PaymentManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmanager-instruments",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentmanager-instruments",
+      "linkingText": [
+        "PaymentManager.instruments",
+        "instruments"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmanager-userhint",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentmanager-userhint",
+      "linkingText": [
+        "PaymentManager.userHint",
+        "userHint"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentinstruments",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentinstruments",
+      "linkingText": [
+        "PaymentInstruments"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-instrumentkey",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-instrumentkey",
+      "linkingText": [
+        "instrumentKey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentinstruments-delete",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentinstruments-delete",
+      "linkingText": [
+        "PaymentInstruments.delete()",
+        "PaymentInstruments.delete",
+        "delete()",
+        "delete"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PaymentInstruments"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentinstruments-get",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentinstruments-get",
+      "linkingText": [
+        "PaymentInstruments.get()",
+        "PaymentInstruments.get",
+        "get()",
+        "get"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PaymentInstruments"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentinstruments-keys",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentinstruments-keys",
+      "linkingText": [
+        "PaymentInstruments.keys()",
+        "PaymentInstruments.keys",
+        "keys()",
+        "keys"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PaymentInstruments"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-sequence",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-sequence",
+      "linkingText": [
+        "Sequence"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentinstruments-has",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentinstruments-has",
+      "linkingText": [
+        "PaymentInstruments.has()",
+        "PaymentInstruments.has",
+        "has()",
+        "has"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PaymentInstruments"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentinstruments-set",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentinstruments-set",
+      "linkingText": [
+        "PaymentInstruments.set()",
+        "PaymentInstruments.set",
+        "set()",
+        "set"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PaymentInstruments"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentinstruments-clear",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentinstruments-clear",
+      "linkingText": [
+        "PaymentInstruments.clear()",
+        "PaymentInstruments.clear",
+        "clear()",
+        "clear"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PaymentInstruments"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentinstrument",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentinstrument",
+      "linkingText": [
+        "PaymentInstrument"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentinstrument-name",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentinstrument-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentInstrument"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentinstrument-icons",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentinstrument-icons",
+      "linkingText": [
+        "icons"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentInstrument"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentinstrument-method",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentinstrument-method",
+      "linkingText": [
+        "method"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentInstrument"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentinstrument-capabilities",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentinstrument-capabilities",
+      "linkingText": [
+        "capabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentInstrument"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-imageobject",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-imageobject",
+      "linkingText": [
+        "ImageObject"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-imageobject-src",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-imageobject-src",
+      "linkingText": [
+        "src"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageObject"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-imageobject-sizes",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-imageobject-sizes",
+      "linkingText": [
+        "sizes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageObject"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-imageobject-type",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-imageobject-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageObject"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-convert-image-objects",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-convert-image-objects",
+      "linkingText": [
+        "Convert image objects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-oncanmakepayment",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-serviceworkerglobalscope-oncanmakepayment",
+      "linkingText": [
+        "ServiceWorkerGlobalScope.oncanmakepayment",
+        "oncanmakepayment"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-canmakepaymentevent",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-canmakepaymentevent",
+      "linkingText": [
+        "CanMakePaymentEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-canmakepaymentevent-constructor",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-canmakepaymentevent-constructor",
+      "linkingText": [
+        "CanMakePaymentEvent.constructor()",
+        "CanMakePaymentEvent.constructor",
+        "constructor()",
+        "constructor"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CanMakePaymentEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-canmakepaymentevent-toporigin",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-canmakepaymentevent-toporigin",
+      "linkingText": [
+        "CanMakePaymentEvent.topOrigin",
+        "topOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CanMakePaymentEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-canmakepaymentevent-paymentrequestorigin",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-canmakepaymentevent-paymentrequestorigin",
+      "linkingText": [
+        "CanMakePaymentEvent.paymentRequestOrigin",
+        "paymentRequestOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CanMakePaymentEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-canmakepaymentevent-methoddata",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-canmakepaymentevent-methoddata",
+      "linkingText": [
+        "CanMakePaymentEvent.methodData",
+        "methodData"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CanMakePaymentEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-modifiers",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-modifiers",
+      "linkingText": [
+        "modifiers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-canmakepaymentevent-respondwith",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-canmakepaymentevent-respondwith",
+      "linkingText": [
+        "CanMakePaymentEvent.respondWith()",
+        "CanMakePaymentEvent.respondWith",
+        "respondWith()",
+        "respondWith"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CanMakePaymentEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-canmakepaymenteventinit",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-canmakepaymenteventinit",
+      "linkingText": [
+        "CanMakePaymentEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-canmakepaymenteventinit-toporigin",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-canmakepaymenteventinit-toporigin",
+      "linkingText": [
+        "topOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CanMakePaymentEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-canmakepaymenteventinit-paymentrequestorigin",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-canmakepaymenteventinit-paymentrequestorigin",
+      "linkingText": [
+        "paymentRequestOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CanMakePaymentEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-canmakepaymenteventinit-methoddata",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-canmakepaymenteventinit-methoddata",
+      "linkingText": [
+        "methodData"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CanMakePaymentEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-handling-a-canmakepaymentevent",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-handling-a-canmakepaymentevent",
+      "linkingText": [
+        "Handling a CanMakePaymentEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-onpaymentrequest",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-serviceworkerglobalscope-onpaymentrequest",
+      "linkingText": [
+        "ServiceWorkerGlobalScope.onpaymentrequest",
+        "onpaymentrequest"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeresponse",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentmethodchangeresponse",
+      "linkingText": [
+        "PaymentMethodChangeResponse"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeresponse-error",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentmethodchangeresponse-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentMethodChangeResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeresponse-total",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentmethodchangeresponse-total",
+      "linkingText": [
+        "total"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentMethodChangeResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeresponse-modifiers",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentmethodchangeresponse-modifiers",
+      "linkingText": [
+        "modifiers"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentMethodChangeResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentmethodchangeresponse-paymentmethoderrors",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentmethodchangeresponse-paymentmethoderrors",
+      "linkingText": [
+        "paymentMethodErrors"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentMethodChangeResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestevent",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequestevent",
+      "linkingText": [
+        "PaymentRequestEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestevent-constructor",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequestevent-constructor",
+      "linkingText": [
+        "PaymentRequestEvent.constructor()",
+        "PaymentRequestEvent.constructor",
+        "constructor()",
+        "constructor"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "PaymentRequestEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestevent-toporigin",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequestevent-toporigin",
+      "linkingText": [
+        "PaymentRequestEvent.topOrigin",
+        "topOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequestEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestevent-paymentrequestorigin",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequestevent-paymentrequestorigin",
+      "linkingText": [
+        "PaymentRequestEvent.paymentRequestOrigin",
+        "paymentRequestOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequestEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestevent-paymentrequestid",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequestevent-paymentrequestid",
+      "linkingText": [
+        "PaymentRequestEvent.paymentRequestId",
+        "paymentRequestId"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequestEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestevent-methoddata",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequestevent-methoddata",
+      "linkingText": [
+        "PaymentRequestEvent.methodData",
+        "methodData"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequestEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestevent-total",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequestevent-total",
+      "linkingText": [
+        "PaymentRequestEvent.total",
+        "total"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequestEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestevent-modifiers",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequestevent-modifiers",
+      "linkingText": [
+        "PaymentRequestEvent.modifiers",
+        "modifiers"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequestEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestevent-instrumentkey",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequestevent-instrumentkey",
+      "linkingText": [
+        "PaymentRequestEvent.instrumentKey",
+        "instrumentKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequestEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestevent-requestbillingaddress",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequestevent-requestbillingaddress",
+      "linkingText": [
+        "PaymentRequestEvent.requestBillingAddress",
+        "requestBillingAddress"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequestEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestevent-openwindow",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequestevent-openwindow",
+      "linkingText": [
+        "PaymentRequestEvent.openWindow()",
+        "PaymentRequestEvent.openWindow",
+        "openWindow()",
+        "openWindow"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PaymentRequestEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestevent-changepaymentmethod",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequestevent-changepaymentmethod",
+      "linkingText": [
+        "changePaymentMethod(methodName, methodDetails)",
+        "changePaymentMethod()",
+        "PaymentRequestEvent.changePaymentMethod()",
+        "PaymentRequestEvent.changePaymentMethod",
+        "changePaymentMethod"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PaymentRequestEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequestevent-respondwith",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequestevent-respondwith",
+      "linkingText": [
+        "respondWith(handlerResponsePromise)",
+        "respondWith()",
+        "PaymentRequestEvent.respondWith()",
+        "PaymentRequestEvent.respondWith",
+        "respondWith"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PaymentRequestEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequesteventinit",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequesteventinit",
+      "linkingText": [
+        "PaymentRequestEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequesteventinit-toporigin",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequesteventinit-toporigin",
+      "linkingText": [
+        "topOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentRequestEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequesteventinit-paymentrequestorigin",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequesteventinit-paymentrequestorigin",
+      "linkingText": [
+        "paymentRequestOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentRequestEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequesteventinit-paymentrequestid",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequesteventinit-paymentrequestid",
+      "linkingText": [
+        "paymentRequestId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentRequestEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequesteventinit-methoddata",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequesteventinit-methoddata",
+      "linkingText": [
+        "methodData"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentRequestEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequesteventinit-total",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequesteventinit-total",
+      "linkingText": [
+        "total"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentRequestEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequesteventinit-modifiers",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequesteventinit-modifiers",
+      "linkingText": [
+        "modifiers"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentRequestEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymentrequesteventinit-instrumentkey",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymentrequesteventinit-instrumentkey",
+      "linkingText": [
+        "instrumentKey"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentRequestEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-methoddata-population-algorithm",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-methoddata-population-algorithm",
+      "linkingText": [
+        "MethodData Population Algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-modifiers-population-algorithm",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-modifiers-population-algorithm",
+      "linkingText": [
+        "Modifiers Population Algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-windowclient",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-windowclient",
+      "linkingText": [
+        "[[windowClient]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-windowclient-0",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-windowclient-0",
+      "linkingText": [
+        "WindowClient"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fetchedimage",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-fetchedimage",
+      "linkingText": [
+        "[[fetchedImage]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-respondwithcalled",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-respondwithcalled",
+      "linkingText": [
+        "[[respondWithCalled]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-handling-a-paymentrequestevent",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-handling-a-paymentrequestevent",
+      "linkingText": [
+        "Handling a PaymentRequestEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-payment-handler-window",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-payment-handler-window",
+      "linkingText": [
+        "payment handler window",
+        "Windows"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-open-window-algorithm",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-open-window-algorithm",
+      "linkingText": [
+        "Open Window Algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-paymenthandlerresponse",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymenthandlerresponse",
+      "linkingText": [
+        "PaymentHandlerResponse"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymenthandlerresponse-methodname",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymenthandlerresponse-methodname",
+      "linkingText": [
+        "methodName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentHandlerResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paymenthandlerresponse-details",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-paymenthandlerresponse-details",
+      "linkingText": [
+        "details"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentHandlerResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-payment-app-failure-algorithm",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-payment-app-failure-algorithm",
+      "linkingText": [
+        "payment app failure algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-change-payment-method-algorithm",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-change-payment-method-algorithm",
+      "linkingText": [
+        "Change Payment Method Algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-respond-to-paymentrequest-algorithm",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-respond-to-paymentrequest-algorithm",
+      "linkingText": [
+        "Respond to PaymentRequest Algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-payment-methods",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-payment-methods",
+      "linkingText": [
+        "payment methods",
+        "payment method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-paymentrequest",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-paymentrequest",
+      "linkingText": [
+        "PaymentRequest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-paymentresponse",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-paymentresponse",
+      "linkingText": [
+        "PaymentResponse"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-supportedmethods",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-supportedmethods",
+      "linkingText": [
+        "supportedMethods"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-paymentcurrencyamount",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-paymentcurrencyamount",
+      "linkingText": [
+        "PaymentCurrencyAmount"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-paymentdetailsmodifier",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-paymentdetailsmodifier",
+      "linkingText": [
+        "paymentDetailsModifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-paymentdetailsinit",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-paymentdetailsinit",
+      "linkingText": [
+        "paymentDetailsInit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-paymentmethoddata",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-paymentmethoddata",
+      "linkingText": [
+        "PaymentMethodData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-paymentoptions",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-paymentoptions",
+      "linkingText": [
+        "PaymentOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-paymentmethodchangeevent",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-paymentmethodchangeevent",
+      "linkingText": [
+        "PaymentMethodChangeEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-id",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-id",
+      "linkingText": [
+        "ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-canmakepayment",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-canmakepayment",
+      "linkingText": [
+        "canMakePayment()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-show",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-show",
+      "linkingText": [
+        "show()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-updatewith-detailspromise",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-updatewith-detailspromise",
+      "linkingText": [
+        "updateWith(detailsPromise)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-user-accepts-the-payment-request-algorithm",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-user-accepts-the-payment-request-algorithm",
+      "linkingText": [
+        "user\n          accepts the payment request algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-payment-method-changed-algorithm",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-payment-method-changed-algorithm",
+      "linkingText": [
+        "payment method\n          changed algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-json-serializable",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-json-serializable",
+      "linkingText": [
+        "JSON-serializable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-promise",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-promise",
+      "linkingText": [
+        "Promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-internal-slot",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-internal-slot",
+      "linkingText": [
+        "internal\n          slot"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-typeerror",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-typeerror",
+      "linkingText": [
+        "TypeError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-json-stringify",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-json-stringify",
+      "linkingText": [
+        "JSON.stringify"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-payment-method-identifiers",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-payment-method-identifiers",
+      "linkingText": [
+        "payment method identifiers",
+        "payment method identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-standardized-payment-method-identifiers",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-standardized-payment-method-identifiers",
+      "linkingText": [
+        "standardized payment method identifiers",
+        "standardized payment method identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-url-based-payment-method-identifiers",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-url-based-payment-method-identifiers",
+      "linkingText": [
+        "URL-based payment method identifiers",
+        "URL-based payment method identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-payment-method-manifests",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-payment-method-manifests",
+      "linkingText": [
+        "payment method manifests",
+        "payment method manifest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ingested",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-ingested",
+      "linkingText": [
+        "ingested",
+        "ingest payment method manifest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-parsed",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-parsed",
+      "linkingText": [
+        "parsed",
+        "parsed payment method manifest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-supported-origins",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-supported-origins",
+      "linkingText": [
+        "supported origins"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-basic-card",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-basic-card",
+      "linkingText": [
+        "basic-card"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-supportednetworks",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-supportednetworks",
+      "linkingText": [
+        "supportedNetworks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-supportedtypes",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-supportedtypes",
+      "linkingText": [
+        "supportedTypes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-global-object",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-global-object",
+      "linkingText": [
+        "global object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-top-level-browsing-context",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-top-level-browsing-context",
+      "linkingText": [
+        "top-level browsing\n          context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-structured-clone",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-structured-clone",
+      "linkingText": [
+        "structured\n          clone"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handler",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-event-handler",
+      "linkingText": [
+        "event\n          handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handler-event-type",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-event-handler-event-type",
+      "linkingText": [
+        "event\n          handler event type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-trusted-event",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-trusted-event",
+      "linkingText": [
+        "trusted event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-user-interaction-task-source",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-user-interaction-task-source",
+      "linkingText": [
+        "user interaction\n          task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-origins",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-origins",
+      "linkingText": [
+        "origins",
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fulfillment",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-fulfillment",
+      "linkingText": [
+        "fulfillment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rejection",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-rejection",
+      "linkingText": [
+        "rejection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fires",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-fires",
+      "linkingText": [
+        "fires"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dispatch-flag",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-dispatch-flag",
+      "linkingText": [
+        "dispatch flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-stop-propagation-flag",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-stop-propagation-flag",
+      "linkingText": [
+        "stop propagation\n          flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-istrusted",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-istrusted",
+      "linkingText": [
+        "isTrusted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-stop-immediate-propagation-flag",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-stop-immediate-propagation-flag",
+      "linkingText": [
+        "stop immediate\n          propagation flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-throws",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-throws",
+      "linkingText": [
+        "throws",
+        "throw"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-converting",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-converting",
+      "linkingText": [
+        "converting",
+        "converting an ECMAScript value to a dictionary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-domexception",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-domexception",
+      "linkingText": [
+        "DOMException"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-invalidstateerror",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-invalidstateerror",
+      "linkingText": [
+        "InvalidStateError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-notallowederror",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-notallowederror",
+      "linkingText": [
+        "NotAllowedError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-operationerror",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-operationerror",
+      "linkingText": [
+        "OperationError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-service-worker",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-service-worker",
+      "linkingText": [
+        "service worker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-service-worker-registration",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-service-worker-registration",
+      "linkingText": [
+        "service worker registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-active-worker",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-active-worker",
+      "linkingText": [
+        "active worker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-service-worker-client",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-service-worker-client",
+      "linkingText": [
+        "service\n          worker client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerregistration",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-serviceworkerregistration",
+      "linkingText": [
+        "ServiceWorkerRegistration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dom-serviceworkerglobalscope",
+      "linkingText": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fire-functional-event",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-fire-functional-event",
+      "linkingText": [
+        "fire functional\n          event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-extend-lifetime-promises",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-extend-lifetime-promises",
+      "linkingText": [
+        "extend lifetime\n          promises"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pending-promises-count",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-pending-promises-count",
+      "linkingText": [
+        "pending promises\n          count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-containing-service-worker-registration",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-containing-service-worker-registration",
+      "linkingText": [
+        "containing\n          service worker registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-uninstalling-flag",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-uninstalling-flag",
+      "linkingText": [
+        "uninstalling flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-try-clear-registration",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-try-clear-registration",
+      "linkingText": [
+        "Try Clear\n          Registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-try-activate",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-try-activate",
+      "linkingText": [
+        "Try Activate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-scope-url",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-scope-url",
+      "linkingText": [
+        "scope URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-user-agents",
+      "href": "https://www.w3.org/TR/2019/WD-payment-handler-20191021/#dfn-user-agents",
+      "linkingText": [
+        "user agents",
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

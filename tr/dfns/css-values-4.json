@@ -1,0 +1,1564 @@
+{
+  "spec": {
+    "title": "CSS Values and Units Module Level 4",
+    "url": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/"
+  },
+  "dfns": [
+    {
+      "id": "comb-comma",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#comb-comma",
+      "linkingText": [
+        ","
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "comb-all",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#comb-all",
+      "linkingText": [
+        "&&"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "comb-any",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#comb-any",
+      "linkingText": [
+        "||"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "comb-one",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#comb-one",
+      "linkingText": [
+        "|"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mult-zero-plus",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#mult-zero-plus",
+      "linkingText": [
+        "*"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mult-one-plus",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#mult-one-plus",
+      "linkingText": [
+        "+"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mult-opt",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#mult-opt",
+      "linkingText": [
+        "?"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mult-num",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#mult-num",
+      "linkingText": [
+        "{A}"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mult-num-range",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#mult-num-range",
+      "linkingText": [
+        "{A,B}"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mult-comma",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#mult-comma",
+      "linkingText": [
+        "#"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mult-req",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#mult-req",
+      "linkingText": [
+        "!"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "interpolation",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#interpolation",
+      "linkingText": [
+        "interpolation",
+        "interpolate",
+        "value interpolation",
+        "interpolation procedure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "addition",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#addition",
+      "linkingText": [
+        "value addition",
+        "addition procedure"
+      ],
+      "localLinkingText": [
+        "add",
+        "addition"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "accumulation",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#accumulation",
+      "linkingText": [
+        "value accumulation",
+        "accumulation procedure"
+      ],
+      "localLinkingText": [
+        "accumulate",
+        "accumulation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "not-additive",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#not-additive",
+      "linkingText": [
+        "not additive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-identifier",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#css-identifier",
+      "linkingText": [
+        "CSS identifier",
+        "CSS ident",
+        "identifier",
+        "ident"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-ident",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#typedef-ident",
+      "linkingText": [
+        "<ident>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "keyword",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#keyword",
+      "linkingText": [
+        "keyword"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-wide-keywords",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#css-wide-keywords",
+      "linkingText": [
+        "CSS-wide keywords"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "identifier-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#identifier-value",
+      "linkingText": [
+        "<custom-ident>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "string",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#string",
+      "linkingText": [
+        "string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "string-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#string-value",
+      "linkingText": [
+        "<string>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-url",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#funcdef-url",
+      "linkingText": [
+        "url()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "url-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#url-value",
+      "linkingText": [
+        "<url>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "url-local-url-flag",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#url-local-url-flag",
+      "linkingText": [
+        "local url flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "url()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-url-modifier",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#typedef-url-modifier",
+      "linkingText": [
+        "<url-modifier>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "integer-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#integer-value",
+      "linkingText": [
+        "<integer>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "integer",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#integer",
+      "linkingText": [
+        "integer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "number-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#number-value",
+      "linkingText": [
+        "<number>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "number",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#number",
+      "linkingText": [
+        "number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "zero-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#zero-value",
+      "linkingText": [
+        "<zero>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dimension",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#dimension",
+      "linkingText": [
+        "dimension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-dimension",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#typedef-dimension",
+      "linkingText": [
+        "<dimension>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "compatible-units",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#compatible-units",
+      "linkingText": [
+        "compatible units"
+      ],
+      "localLinkingText": [
+        "compatible"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "canonical-unit",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#canonical-unit",
+      "linkingText": [
+        "canonical unit"
+      ],
+      "localLinkingText": [
+        "canonical"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "percentage-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#percentage-value",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "percentage",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#percentage",
+      "linkingText": [
+        "percentage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-length-percentage",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#typedef-length-percentage",
+      "linkingText": [
+        "<length-percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-frequency-percentage",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#typedef-frequency-percentage",
+      "linkingText": [
+        "<frequency-percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-angle-percentage",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#typedef-angle-percentage",
+      "linkingText": [
+        "<angle-percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-time-percentage",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#typedef-time-percentage",
+      "linkingText": [
+        "<time-percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "length-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#length-value",
+      "linkingText": [
+        "<length>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "relative-length",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#relative-length",
+      "linkingText": [
+        "relative length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "font-relative-length",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#font-relative-length",
+      "linkingText": [
+        "font-relative lengths"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "em",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#em",
+      "linkingText": [
+        "em"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ex",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#ex",
+      "linkingText": [
+        "ex"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cap",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#cap",
+      "linkingText": [
+        "cap"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ch",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#ch",
+      "linkingText": [
+        "ch"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "length-advance-measure",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#length-advance-measure",
+      "linkingText": [
+        "advance measure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ic",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#ic",
+      "linkingText": [
+        "ic"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rem",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#rem",
+      "linkingText": [
+        "rem"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "lh",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#lh",
+      "linkingText": [
+        "lh"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rlh",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#rlh",
+      "linkingText": [
+        "rlh"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "viewport-percentage-lengths",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#viewport-percentage-lengths",
+      "linkingText": [
+        "viewport-percentage lengths"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "vw",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#vw",
+      "linkingText": [
+        "vw"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "vh",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#vh",
+      "linkingText": [
+        "vh"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-length-vi",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#valdef-length-vi",
+      "linkingText": [
+        "vi"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-length-vb",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#valdef-length-vb",
+      "linkingText": [
+        "vb"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "vmin",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#vmin",
+      "linkingText": [
+        "vmin"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "vmax",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#vmax",
+      "linkingText": [
+        "vmax"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "absolute-length",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#absolute-length",
+      "linkingText": [
+        "absolute length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "physical-unit",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#physical-unit",
+      "linkingText": [
+        "physical unit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "pixel-unit",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#pixel-unit",
+      "linkingText": [
+        "pixel unit",
+        "visual angle unit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cm",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#cm",
+      "linkingText": [
+        "cm"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mm",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#mm",
+      "linkingText": [
+        "mm"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "Q",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#Q",
+      "linkingText": [
+        "Q"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "in",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#in",
+      "linkingText": [
+        "in"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "pc",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#pc",
+      "linkingText": [
+        "pc"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "pt",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#pt",
+      "linkingText": [
+        "pt"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "px",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#px",
+      "linkingText": [
+        "px"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<length>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "anchor-unit",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#anchor-unit",
+      "linkingText": [
+        "anchor unit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "reference-pixel",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#reference-pixel",
+      "linkingText": [
+        "reference pixel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "angle-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#angle-value",
+      "linkingText": [
+        "<angle>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "deg",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#deg",
+      "linkingText": [
+        "deg"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<angle>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "grad",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#grad",
+      "linkingText": [
+        "grad"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<angle>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rad",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#rad",
+      "linkingText": [
+        "rad"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<angle>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "turn",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#turn",
+      "linkingText": [
+        "turn"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<angle>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "bearing-angle",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#bearing-angle",
+      "linkingText": [
+        "bearing angle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": true
+    },
+    {
+      "id": "time-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#time-value",
+      "linkingText": [
+        "<time>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "s",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#s",
+      "linkingText": [
+        "s"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<time>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ms",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#ms",
+      "linkingText": [
+        "ms"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<time>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "frequency-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#frequency-value",
+      "linkingText": [
+        "<frequency>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "Hz",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#Hz",
+      "linkingText": [
+        "Hz"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<frequency>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "kHz",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#kHz",
+      "linkingText": [
+        "kHz"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<frequency>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "resolution-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#resolution-value",
+      "linkingText": [
+        "<resolution>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dpi",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#dpi",
+      "linkingText": [
+        "dpi"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<resolution>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dpcm",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#dpcm",
+      "linkingText": [
+        "dpcm"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<resolution>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dppx",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#dppx",
+      "linkingText": [
+        "dppx"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<resolution>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "x",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<resolution>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-position",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#typedef-position",
+      "linkingText": [
+        "<position>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "functional-notation",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#functional-notation",
+      "linkingText": [
+        "functional notation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "math-function",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#math-function",
+      "linkingText": [
+        "math function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-calc",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#funcdef-calc",
+      "linkingText": [
+        "calc()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-min",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#funcdef-min",
+      "linkingText": [
+        "min()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-max",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#funcdef-max",
+      "linkingText": [
+        "max()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-clamp",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#funcdef-clamp",
+      "linkingText": [
+        "clamp()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-calc-sum",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#typedef-calc-sum",
+      "linkingText": [
+        "<calc-sum>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-calc-product",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#typedef-calc-product",
+      "linkingText": [
+        "<calc-product>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-calc-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#typedef-calc-value",
+      "linkingText": [
+        "<calc-value>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "top-level-calculation",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#top-level-calculation",
+      "linkingText": [
+        "top-level calculation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-calc-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#serialize-a-calc-value",
+      "linkingText": [
+        "serialize a calc() value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-a-min-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#serialize-a-min-value",
+      "linkingText": [
+        "serialize a min() value",
+        "serialize a max() value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "math-function-simplify-an-expression",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#math-function-simplify-an-expression",
+      "linkingText": [
+        "simplify an expression",
+        "simplify the expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "math function"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "math-function-serialize-a-summation",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#math-function-serialize-a-summation",
+      "linkingText": [
+        "serialize a summation",
+        "serialize the summation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "math function"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-toggle",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#funcdef-toggle",
+      "linkingText": [
+        "toggle()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-toggle-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#typedef-toggle-value",
+      "linkingText": [
+        "<toggle-value>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-attr",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#funcdef-attr",
+      "linkingText": [
+        "attr()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-attr-name",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#typedef-attr-name",
+      "linkingText": [
+        "<attr-name>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-type-or-unit",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#typedef-type-or-unit",
+      "linkingText": [
+        "<type-or-unit>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-attr-fallback",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#typedef-attr-fallback",
+      "linkingText": [
+        "<attr-fallback>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-type-or-value-string",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#valdef-type-or-value-string",
+      "linkingText": [
+        "string"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<type-or-value>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-type-or-value-color",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#valdef-type-or-value-color",
+      "linkingText": [
+        "color"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<type-or-value>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-type-or-value-url",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#valdef-type-or-value-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<type-or-value>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-type-or-value-integer",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#valdef-type-or-value-integer",
+      "linkingText": [
+        "integer"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<type-or-value>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-type-or-value-number",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#valdef-type-or-value-number",
+      "linkingText": [
+        "number"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<type-or-value>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-type-or-value-length",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#valdef-type-or-value-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<type-or-value>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-type-or-value-angle",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#valdef-type-or-value-angle",
+      "linkingText": [
+        "angle"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<type-or-value>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-type-or-value-time",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#valdef-type-or-value-time",
+      "linkingText": [
+        "time"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<type-or-value>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-type-or-value-frequency",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#valdef-type-or-value-frequency",
+      "linkingText": [
+        "frequency"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<type-or-value>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-type-or-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/#valdef-type-or-value",
+      "linkingText": [
+        "%"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<type-or-value>"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

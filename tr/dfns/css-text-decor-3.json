@@ -1,0 +1,484 @@
+{
+  "spec": {
+    "title": "CSS Text Decoration Module Level 3",
+    "url": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/"
+  },
+  "dfns": [
+    {
+      "id": "character",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#character",
+      "linkingText": [
+        "character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "letter",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#letter",
+      "linkingText": [
+        "letter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "content-language",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#content-language",
+      "linkingText": [
+        "content language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "decorating-box",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#decorating-box",
+      "linkingText": [
+        "decorating box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-decoration-line",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#propdef-text-decoration-line",
+      "linkingText": [
+        "text-decoration-line"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-line-none",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-decoration-line-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-line-underline",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-decoration-line-underline",
+      "linkingText": [
+        "underline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-line-overline",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-decoration-line-overline",
+      "linkingText": [
+        "overline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-line-line-through",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-decoration-line-line-through",
+      "linkingText": [
+        "line-through"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-line-blink",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-decoration-line-blink",
+      "linkingText": [
+        "blink"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-decoration-style",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#propdef-text-decoration-style",
+      "linkingText": [
+        "text-decoration-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-decoration-color",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#propdef-text-decoration-color",
+      "linkingText": [
+        "text-decoration-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-decoration",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#propdef-text-decoration",
+      "linkingText": [
+        "text-decoration"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-underline-position",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#propdef-text-underline-position",
+      "linkingText": [
+        "text-underline-position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "underline-auto",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#underline-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-underline-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "underline-under",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#underline-under",
+      "linkingText": [
+        "under"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-underline-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "underline-left",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#underline-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-underline-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "underline-right",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#underline-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-underline-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-emphasis-style",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#propdef-text-emphasis-style",
+      "linkingText": [
+        "text-emphasis-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-text-emphasis-style-none",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-text-emphasis-style-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-text-emphasis-style-filled",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-text-emphasis-style-filled",
+      "linkingText": [
+        "filled"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-text-emphasis-open",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-text-emphasis-open",
+      "linkingText": [
+        "open"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-text-emphasis"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-text-emphasis-style-dot",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-text-emphasis-style-dot",
+      "linkingText": [
+        "dot"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-text-emphasis-style-circle",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-text-emphasis-style-circle",
+      "linkingText": [
+        "circle"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-text-emphasis-style-double-circle",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-text-emphasis-style-double-circle",
+      "linkingText": [
+        "double-circle"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-text-emphasis-style-triangle",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-text-emphasis-style-triangle",
+      "linkingText": [
+        "triangle"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-text-emphasis-style-sesame",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-text-emphasis-style-sesame",
+      "linkingText": [
+        "sesame"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-text-emphasis-style-string",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-text-emphasis-style-string",
+      "linkingText": [
+        "<string>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-emphasis-color",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#propdef-text-emphasis-color",
+      "linkingText": [
+        "text-emphasis-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-emphasis",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#propdef-text-emphasis",
+      "linkingText": [
+        "text-emphasis"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-emphasis-position",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#propdef-text-emphasis-position",
+      "linkingText": [
+        "text-emphasis-position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-text-emphasis-position-over",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-text-emphasis-position-over",
+      "linkingText": [
+        "over"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-text-emphasis-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-text-emphasis-position-under",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-text-emphasis-position-under",
+      "linkingText": [
+        "under"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-text-emphasis-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-text-emphasis-position-right",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-text-emphasis-position-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-text-emphasis-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-text-emphasis-position-left",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#valdef-text-text-emphasis-position-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-text-emphasis-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-shadow",
+      "href": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/#propdef-text-shadow",
+      "linkingText": [
+        "text-shadow"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

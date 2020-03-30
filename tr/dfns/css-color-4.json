@@ -1,0 +1,3168 @@
+{
+  "spec": {
+    "title": "CSS Color Module Level 4",
+    "url": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/"
+  },
+  "dfns": [
+    {
+      "id": "propdef-color",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#propdef-color",
+      "linkingText": [
+        "color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "alpha-channel",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#alpha-channel",
+      "linkingText": [
+        "alpha channel",
+        "alpha component"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-color",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#typedef-color",
+      "linkingText": [
+        "<color>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "opaque-black",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#opaque-black",
+      "linkingText": [
+        "opaque black"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "transparent-black",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#transparent-black",
+      "linkingText": [
+        "transparent black"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "untagged-image",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#untagged-image",
+      "linkingText": [
+        "untagged image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "computed-color",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#computed-color",
+      "linkingText": [
+        "computed color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "used-color",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#used-color",
+      "linkingText": [
+        "used color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "sRGB",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#sRGB",
+      "linkingText": [
+        "sRGB"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-rgb",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#funcdef-rgb",
+      "linkingText": [
+        "rgb()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-alpha-value",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#typedef-alpha-value",
+      "linkingText": [
+        "<alpha-value>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-rgba",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#funcdef-rgba",
+      "linkingText": [
+        "rgba()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "hex-color",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#hex-color",
+      "linkingText": [
+        "hex color",
+        "hex color notation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-hex-color",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#typedef-hex-color",
+      "linkingText": [
+        "<hex-color>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "named-color",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#named-color",
+      "linkingText": [
+        "named color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-named-color",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#typedef-named-color",
+      "linkingText": [
+        "<named-color>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-aliceblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-aliceblue",
+      "linkingText": [
+        "aliceblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-antiquewhite",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-antiquewhite",
+      "linkingText": [
+        "antiquewhite"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-aqua",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-aqua",
+      "linkingText": [
+        "aqua"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-aquamarine",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-aquamarine",
+      "linkingText": [
+        "aquamarine"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-azure",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-azure",
+      "linkingText": [
+        "azure"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-beige",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-beige",
+      "linkingText": [
+        "beige"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-bisque",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-bisque",
+      "linkingText": [
+        "bisque"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-black",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-black",
+      "linkingText": [
+        "black"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-blanchedalmond",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-blanchedalmond",
+      "linkingText": [
+        "blanchedalmond"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-blue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-blue",
+      "linkingText": [
+        "blue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-blueviolet",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-blueviolet",
+      "linkingText": [
+        "blueviolet"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-brown",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-brown",
+      "linkingText": [
+        "brown"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-burlywood",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-burlywood",
+      "linkingText": [
+        "burlywood"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-cadetblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-cadetblue",
+      "linkingText": [
+        "cadetblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-chartreuse",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-chartreuse",
+      "linkingText": [
+        "chartreuse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-chocolate",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-chocolate",
+      "linkingText": [
+        "chocolate"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-coral",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-coral",
+      "linkingText": [
+        "coral"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-cornflowerblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-cornflowerblue",
+      "linkingText": [
+        "cornflowerblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-cornsilk",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-cornsilk",
+      "linkingText": [
+        "cornsilk"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-crimson",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-crimson",
+      "linkingText": [
+        "crimson"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-cyan",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-cyan",
+      "linkingText": [
+        "cyan"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkblue",
+      "linkingText": [
+        "darkblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkcyan",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkcyan",
+      "linkingText": [
+        "darkcyan"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkgoldenrod",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkgoldenrod",
+      "linkingText": [
+        "darkgoldenrod"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkgray",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkgray",
+      "linkingText": [
+        "darkgray"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkgreen",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkgreen",
+      "linkingText": [
+        "darkgreen"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkgrey",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkgrey",
+      "linkingText": [
+        "darkgrey"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkkhaki",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkkhaki",
+      "linkingText": [
+        "darkkhaki"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkmagenta",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkmagenta",
+      "linkingText": [
+        "darkmagenta"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkolivegreen",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkolivegreen",
+      "linkingText": [
+        "darkolivegreen"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkorange",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkorange",
+      "linkingText": [
+        "darkorange"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkorchid",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkorchid",
+      "linkingText": [
+        "darkorchid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkred",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkred",
+      "linkingText": [
+        "darkred"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darksalmon",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darksalmon",
+      "linkingText": [
+        "darksalmon"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkseagreen",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkseagreen",
+      "linkingText": [
+        "darkseagreen"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkslateblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkslateblue",
+      "linkingText": [
+        "darkslateblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkslategray",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkslategray",
+      "linkingText": [
+        "darkslategray"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkslategrey",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkslategrey",
+      "linkingText": [
+        "darkslategrey"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkturquoise",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkturquoise",
+      "linkingText": [
+        "darkturquoise"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-darkviolet",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-darkviolet",
+      "linkingText": [
+        "darkviolet"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-deeppink",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-deeppink",
+      "linkingText": [
+        "deeppink"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-deepskyblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-deepskyblue",
+      "linkingText": [
+        "deepskyblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-dimgray",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-dimgray",
+      "linkingText": [
+        "dimgray"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-dimgrey",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-dimgrey",
+      "linkingText": [
+        "dimgrey"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-dodgerblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-dodgerblue",
+      "linkingText": [
+        "dodgerblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-firebrick",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-firebrick",
+      "linkingText": [
+        "firebrick"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-floralwhite",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-floralwhite",
+      "linkingText": [
+        "floralwhite"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-forestgreen",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-forestgreen",
+      "linkingText": [
+        "forestgreen"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-fuchsia",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-fuchsia",
+      "linkingText": [
+        "fuchsia"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-gainsboro",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-gainsboro",
+      "linkingText": [
+        "gainsboro"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-ghostwhite",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-ghostwhite",
+      "linkingText": [
+        "ghostwhite"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-gold",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-gold",
+      "linkingText": [
+        "gold"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-goldenrod",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-goldenrod",
+      "linkingText": [
+        "goldenrod"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-gray",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-gray",
+      "linkingText": [
+        "gray"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-green",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-green",
+      "linkingText": [
+        "green"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-greenyellow",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-greenyellow",
+      "linkingText": [
+        "greenyellow"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-grey",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-grey",
+      "linkingText": [
+        "grey"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-honeydew",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-honeydew",
+      "linkingText": [
+        "honeydew"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-hotpink",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-hotpink",
+      "linkingText": [
+        "hotpink"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-indianred",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-indianred",
+      "linkingText": [
+        "indianred"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-indigo",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-indigo",
+      "linkingText": [
+        "indigo"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-ivory",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-ivory",
+      "linkingText": [
+        "ivory"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-khaki",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-khaki",
+      "linkingText": [
+        "khaki"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lavender",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lavender",
+      "linkingText": [
+        "lavender"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lavenderblush",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lavenderblush",
+      "linkingText": [
+        "lavenderblush"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lawngreen",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lawngreen",
+      "linkingText": [
+        "lawngreen"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lemonchiffon",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lemonchiffon",
+      "linkingText": [
+        "lemonchiffon"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lightblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lightblue",
+      "linkingText": [
+        "lightblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lightcoral",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lightcoral",
+      "linkingText": [
+        "lightcoral"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lightcyan",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lightcyan",
+      "linkingText": [
+        "lightcyan"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lightgoldenrodyellow",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lightgoldenrodyellow",
+      "linkingText": [
+        "lightgoldenrodyellow"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lightgray",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lightgray",
+      "linkingText": [
+        "lightgray"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lightgreen",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lightgreen",
+      "linkingText": [
+        "lightgreen"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lightgrey",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lightgrey",
+      "linkingText": [
+        "lightgrey"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lightpink",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lightpink",
+      "linkingText": [
+        "lightpink"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lightsalmon",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lightsalmon",
+      "linkingText": [
+        "lightsalmon"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lightseagreen",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lightseagreen",
+      "linkingText": [
+        "lightseagreen"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lightskyblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lightskyblue",
+      "linkingText": [
+        "lightskyblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lightslategray",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lightslategray",
+      "linkingText": [
+        "lightslategray"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lightslategrey",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lightslategrey",
+      "linkingText": [
+        "lightslategrey"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lightsteelblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lightsteelblue",
+      "linkingText": [
+        "lightsteelblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lightyellow",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lightyellow",
+      "linkingText": [
+        "lightyellow"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-lime",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-lime",
+      "linkingText": [
+        "lime"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-limegreen",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-limegreen",
+      "linkingText": [
+        "limegreen"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-linen",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-linen",
+      "linkingText": [
+        "linen"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-magenta",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-magenta",
+      "linkingText": [
+        "magenta"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-maroon",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-maroon",
+      "linkingText": [
+        "maroon"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-mediumaquamarine",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-mediumaquamarine",
+      "linkingText": [
+        "mediumaquamarine"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-mediumblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-mediumblue",
+      "linkingText": [
+        "mediumblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-mediumorchid",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-mediumorchid",
+      "linkingText": [
+        "mediumorchid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-mediumpurple",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-mediumpurple",
+      "linkingText": [
+        "mediumpurple"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-mediumseagreen",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-mediumseagreen",
+      "linkingText": [
+        "mediumseagreen"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-mediumslateblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-mediumslateblue",
+      "linkingText": [
+        "mediumslateblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-mediumspringgreen",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-mediumspringgreen",
+      "linkingText": [
+        "mediumspringgreen"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-mediumturquoise",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-mediumturquoise",
+      "linkingText": [
+        "mediumturquoise"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-mediumvioletred",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-mediumvioletred",
+      "linkingText": [
+        "mediumvioletred"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-midnightblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-midnightblue",
+      "linkingText": [
+        "midnightblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-mintcream",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-mintcream",
+      "linkingText": [
+        "mintcream"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-mistyrose",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-mistyrose",
+      "linkingText": [
+        "mistyrose"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-moccasin",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-moccasin",
+      "linkingText": [
+        "moccasin"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-navajowhite",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-navajowhite",
+      "linkingText": [
+        "navajowhite"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-navy",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-navy",
+      "linkingText": [
+        "navy"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-oldlace",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-oldlace",
+      "linkingText": [
+        "oldlace"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-olive",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-olive",
+      "linkingText": [
+        "olive"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-olivedrab",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-olivedrab",
+      "linkingText": [
+        "olivedrab"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-orange",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-orange",
+      "linkingText": [
+        "orange"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-orangered",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-orangered",
+      "linkingText": [
+        "orangered"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-orchid",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-orchid",
+      "linkingText": [
+        "orchid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-palegoldenrod",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-palegoldenrod",
+      "linkingText": [
+        "palegoldenrod"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-palegreen",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-palegreen",
+      "linkingText": [
+        "palegreen"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-paleturquoise",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-paleturquoise",
+      "linkingText": [
+        "paleturquoise"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-palevioletred",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-palevioletred",
+      "linkingText": [
+        "palevioletred"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-papayawhip",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-papayawhip",
+      "linkingText": [
+        "papayawhip"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-peachpuff",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-peachpuff",
+      "linkingText": [
+        "peachpuff"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-peru",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-peru",
+      "linkingText": [
+        "peru"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-pink",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-pink",
+      "linkingText": [
+        "pink"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-plum",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-plum",
+      "linkingText": [
+        "plum"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-powderblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-powderblue",
+      "linkingText": [
+        "powderblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-purple",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-purple",
+      "linkingText": [
+        "purple"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-rebeccapurple",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-rebeccapurple",
+      "linkingText": [
+        "rebeccapurple"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-red",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-red",
+      "linkingText": [
+        "red"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-rosybrown",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-rosybrown",
+      "linkingText": [
+        "rosybrown"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-royalblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-royalblue",
+      "linkingText": [
+        "royalblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-saddlebrown",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-saddlebrown",
+      "linkingText": [
+        "saddlebrown"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-salmon",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-salmon",
+      "linkingText": [
+        "salmon"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-sandybrown",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-sandybrown",
+      "linkingText": [
+        "sandybrown"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-seagreen",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-seagreen",
+      "linkingText": [
+        "seagreen"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-seashell",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-seashell",
+      "linkingText": [
+        "seashell"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-sienna",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-sienna",
+      "linkingText": [
+        "sienna"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-silver",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-silver",
+      "linkingText": [
+        "silver"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-skyblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-skyblue",
+      "linkingText": [
+        "skyblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-slateblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-slateblue",
+      "linkingText": [
+        "slateblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-slategray",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-slategray",
+      "linkingText": [
+        "slategray"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-slategrey",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-slategrey",
+      "linkingText": [
+        "slategrey"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-snow",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-snow",
+      "linkingText": [
+        "snow"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-springgreen",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-springgreen",
+      "linkingText": [
+        "springgreen"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-steelblue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-steelblue",
+      "linkingText": [
+        "steelblue"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-tan",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-tan",
+      "linkingText": [
+        "tan"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-teal",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-teal",
+      "linkingText": [
+        "teal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-thistle",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-thistle",
+      "linkingText": [
+        "thistle"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-tomato",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-tomato",
+      "linkingText": [
+        "tomato"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-turquoise",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-turquoise",
+      "linkingText": [
+        "turquoise"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-violet",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-violet",
+      "linkingText": [
+        "violet"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-wheat",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-wheat",
+      "linkingText": [
+        "wheat"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-white",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-white",
+      "linkingText": [
+        "white"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-whitesmoke",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-whitesmoke",
+      "linkingText": [
+        "whitesmoke"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-yellow",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-yellow",
+      "linkingText": [
+        "yellow"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-yellowgreen",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-yellowgreen",
+      "linkingText": [
+        "yellowgreen"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-system-colors",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#css-system-colors",
+      "linkingText": [
+        "system colors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedef-system-color",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#typedef-system-color",
+      "linkingText": [
+        "<system-color>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-system-color-canvas",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-system-color-canvas",
+      "linkingText": [
+        "Canvas"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<system-color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-system-color-canvastext",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-system-color-canvastext",
+      "linkingText": [
+        "CanvasText"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<system-color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-system-color-linktext",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-system-color-linktext",
+      "linkingText": [
+        "LinkText"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<system-color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-system-color-visitedtext",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-system-color-visitedtext",
+      "linkingText": [
+        "VisitedText"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<system-color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-system-color-activetext",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-system-color-activetext",
+      "linkingText": [
+        "ActiveText"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<system-color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-system-color-buttonface",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-system-color-buttonface",
+      "linkingText": [
+        "ButtonFace"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<system-color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-system-color-buttontext",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-system-color-buttontext",
+      "linkingText": [
+        "ButtonText"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<system-color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-system-color-field",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-system-color-field",
+      "linkingText": [
+        "Field"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<system-color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-system-color-fieldtext",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-system-color-fieldtext",
+      "linkingText": [
+        "FieldText"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<system-color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-system-color-highlight",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-system-color-highlight",
+      "linkingText": [
+        "Highlight"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<system-color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-system-color-highlighttext",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-system-color-highlighttext",
+      "linkingText": [
+        "HighlightText"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<system-color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-system-color-graytext",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-system-color-graytext",
+      "linkingText": [
+        "GrayText"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<system-color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-transparent",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-transparent",
+      "linkingText": [
+        "transparent"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-currentcolor",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-currentcolor",
+      "linkingText": [
+        "currentcolor"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<color>"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-hsl",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#funcdef-hsl",
+      "linkingText": [
+        "hsl()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-hue",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#typedef-hue",
+      "linkingText": [
+        "<hue>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-hsla",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#funcdef-hsla",
+      "linkingText": [
+        "hsla()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-hwb",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#funcdef-hwb",
+      "linkingText": [
+        "hwb()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "chromatic-adaptation-transform",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#chromatic-adaptation-transform",
+      "linkingText": [
+        "chromatic adaptation transform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-lab",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#funcdef-lab",
+      "linkingText": [
+        "lab()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-lch",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#funcdef-lch",
+      "linkingText": [
+        "lch()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "linear-light-sRGB",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#linear-light-sRGB",
+      "linkingText": [
+        "linear-light sRGB"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-gray",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#funcdef-gray",
+      "linkingText": [
+        "gray()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-color",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#funcdef-color",
+      "linkingText": [
+        "color()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valid-color",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valid-color",
+      "linkingText": [
+        "valid color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "invalid-color",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#invalid-color",
+      "linkingText": [
+        "invalid color"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-srgb",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-srgb",
+      "linkingText": [
+        "srgb"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-display-p3",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-display-p3",
+      "linkingText": [
+        "display-p3"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-a98-rgb",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-a98-rgb",
+      "linkingText": [
+        "a98-rgb"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-prophoto-rgb",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-prophoto-rgb",
+      "linkingText": [
+        "prophoto-rgb"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-rec-2020",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-rec-2020",
+      "linkingText": [
+        "rec-2020"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-profile",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#at-ruledef-profile",
+      "linkingText": [
+        "@color-profile"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-color-profile",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#css-color-profile",
+      "linkingText": [
+        "CSS color profile"
+      ],
+      "localLinkingText": [
+        "color profile"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "descdef-color-profile-src",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#descdef-color-profile-src",
+      "linkingText": [
+        "src"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@color-profile"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "descdef-color-profile-rendering-intent",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#descdef-color-profile-rendering-intent",
+      "linkingText": [
+        "rendering-intent"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@color-profile"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-profile-rendering-intent-relative-colorimetric",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-profile-rendering-intent-relative-colorimetric",
+      "linkingText": [
+        "relative-colorimetric"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@color-profile/rendering-intent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-profile-rendering-intent-absolute-colorimetric",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-profile-rendering-intent-absolute-colorimetric",
+      "linkingText": [
+        "absolute-colorimetric"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@color-profile/rendering-intent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-profile-rendering-intent-perceptual",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-profile-rendering-intent-perceptual",
+      "linkingText": [
+        "perceptual"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@color-profile/rendering-intent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-color-profile-rendering-intent-saturation",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#valdef-color-profile-rendering-intent-saturation",
+      "linkingText": [
+        "saturation"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@color-profile/rendering-intent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-device-cmyk",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#funcdef-device-cmyk",
+      "linkingText": [
+        "device-cmyk()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-cmyk-component",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#typedef-cmyk-component",
+      "linkingText": [
+        "<cmyk-component>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "naively-convert-from-cmyk-to-rgba",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#naively-convert-from-cmyk-to-rgba",
+      "linkingText": [
+        "naively convert from CMYK to RGBA",
+        "naively converted to RGBA"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "naively-convert-from-rgba-to-cmyk",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#naively-convert-from-rgba-to-cmyk",
+      "linkingText": [
+        "naively convert from RGBA to CMYK",
+        "naively converted to CMYK"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-opacity",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#propdef-opacity",
+      "linkingText": [
+        "opacity"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-deprecated-colors",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#typedef-deprecated-colors",
+      "linkingText": [
+        "<deprecated-colors>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "activeborder",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#activeborder",
+      "linkingText": [
+        "ActiveBorder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "activecaption",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#activecaption",
+      "linkingText": [
+        "ActiveCaption"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "appworkspace",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#appworkspace",
+      "linkingText": [
+        "AppWorkspace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "background",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#background",
+      "linkingText": [
+        "Background"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "buttonhighlight",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#buttonhighlight",
+      "linkingText": [
+        "ButtonHighlight"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "buttonshadow",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#buttonshadow",
+      "linkingText": [
+        "ButtonShadow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "captiontext",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#captiontext",
+      "linkingText": [
+        "CaptionText"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "inactiveborder",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#inactiveborder",
+      "linkingText": [
+        "InactiveBorder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "inactivecaption",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#inactivecaption",
+      "linkingText": [
+        "InactiveCaption"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "inactivecaptiontext",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#inactivecaptiontext",
+      "linkingText": [
+        "InactiveCaptionText"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "infobackground",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#infobackground",
+      "linkingText": [
+        "InfoBackground"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "infotext",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#infotext",
+      "linkingText": [
+        "InfoText"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "menu",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#menu",
+      "linkingText": [
+        "Menu"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "menutext",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#menutext",
+      "linkingText": [
+        "MenuText"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "scrollbar",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#scrollbar",
+      "linkingText": [
+        "Scrollbar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "threeddarkshadow",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#threeddarkshadow",
+      "linkingText": [
+        "ThreeDDarkShadow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "threedface",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#threedface",
+      "linkingText": [
+        "ThreeDFace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "threedhighlight",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#threedhighlight",
+      "linkingText": [
+        "ThreeDHighlight"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "threedlightshadow",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#threedlightshadow",
+      "linkingText": [
+        "ThreeDLightShadow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "threedshadow",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#threedshadow",
+      "linkingText": [
+        "ThreeDShadow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "window",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#window",
+      "linkingText": [
+        "Window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "windowframe",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#windowframe",
+      "linkingText": [
+        "WindowFrame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "windowtext",
+      "href": "https://www.w3.org/TR/2019/WD-css-color-4-20191105/#windowtext",
+      "linkingText": [
+        "WindowText"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

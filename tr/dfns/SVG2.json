@@ -1,0 +1,3042 @@
+{
+  "spec": {
+    "title": "Scalable Vector Graphics (SVG) 2",
+    "url": "https://www.w3.org/TR/2018/CR-SVG2-20181004/"
+  },
+  "dfns": [
+    {
+      "id": "processing-mode",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/conform.html#processing-mode",
+      "linkingText": [
+        "processing modes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermRenderingTree",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/render.html#TermRenderingTree",
+      "linkingText": [
+        "rendering tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermRenderedElement",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/render.html#TermRenderedElement",
+      "linkingText": [
+        "rendered element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermNonRenderedElement",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/render.html#TermNonRenderedElement",
+      "linkingText": [
+        "non-rendered element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermReusedGraphics",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/render.html#TermReusedGraphics",
+      "linkingText": [
+        "re-used graphics"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermNeverRenderedElement",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/render.html#TermNeverRenderedElement",
+      "linkingText": [
+        "never-rendered element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermRenderableElement",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/render.html#TermRenderableElement",
+      "linkingText": [
+        "renderable element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermStackingContext",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/render.html#TermStackingContext",
+      "linkingText": [
+        "stacking contexts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermInitialValue",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/types.html#TermInitialValue",
+      "linkingText": [
+        "initial value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermInvalidValue",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/types.html#TermInvalidValue",
+      "linkingText": [
+        "invalid value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermReflect",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/types.html#TermReflect",
+      "linkingText": [
+        "reflect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermSynchronize",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/types.html#TermSynchronize",
+      "linkingText": [
+        "synchronized"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermReserialize",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/types.html#TermReserialize",
+      "linkingText": [
+        "reserialized"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "NumberValue",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/types.html#NumberValue",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "LengthValue",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/types.html#LengthValue",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "AngleValue",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/types.html#AngleValue",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermListInterface",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/types.html#TermListInterface",
+      "linkingText": [
+        "list interfaces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermSynchronizeList",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/types.html#TermSynchronizeList",
+      "linkingText": [
+        "synchronized"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermDetach",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/types.html#TermDetach",
+      "linkingText": [
+        "detached"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermAttach",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/types.html#TermAttach",
+      "linkingText": [
+        "attached"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermNumericTypeValue",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/types.html#TermNumericTypeValue",
+      "linkingText": [
+        "numeric type value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "InterfaceSVGTests",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/types.html#InterfaceSVGTests",
+      "linkingText": [
+        "SVGTests"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "InterfaceSVGFitToViewBox",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/types.html#InterfaceSVGFitToViewBox",
+      "linkingText": [
+        "SVGFitToViewBox"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "InterfaceSVGZoomAndPan",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/types.html#InterfaceSVGZoomAndPan",
+      "linkingText": [
+        "SVGZoomAndPan"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "InterfaceSVGURIReference",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/types.html#InterfaceSVGURIReference",
+      "linkingText": [
+        "SVGURIReference"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermStructuralElement",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#TermStructuralElement",
+      "linkingText": [
+        "structural element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermStructurallyExternalElement",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#TermStructurallyExternalElement",
+      "linkingText": [
+        "structurally external element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermCurrentSVGDocumentFragment",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#TermCurrentSVGDocumentFragment",
+      "linkingText": [
+        "current SVG document fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermOutermostSVGElement",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#TermOutermostSVGElement",
+      "linkingText": [
+        "outermost svg element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermSVGDocumentFragment",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#TermSVGDocumentFragment",
+      "linkingText": [
+        "SVG document fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermSVGElements",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#TermSVGElements",
+      "linkingText": [
+        "SVG elements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "graphics-element",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#graphics-element",
+      "linkingText": [
+        "graphics element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "graphics-referencing-element",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#graphics-referencing-element",
+      "linkingText": [
+        "graphics referencing element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-svg",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#elementdef-svg",
+      "linkingText": [
+        "svg"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "SVGElementZoomAndPanAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#SVGElementZoomAndPanAttribute",
+      "linkingText": [
+        "zoomAndPan"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "svg"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "container-element",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#container-element",
+      "linkingText": [
+        "container element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-g",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#elementdef-g",
+      "linkingText": [
+        "g"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-unknown",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#elementdef-unknown",
+      "linkingText": [
+        "unknown"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-defs",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#elementdef-defs",
+      "linkingText": [
+        "defs"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-symbol",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#elementdef-symbol",
+      "linkingText": [
+        "symbol"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "SymbolElementRefXAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#SymbolElementRefXAttribute",
+      "linkingText": [
+        "refX"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "symbol"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "SymbolElementRefYAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#SymbolElementRefYAttribute",
+      "linkingText": [
+        "refY"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "symbol"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-use",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#elementdef-use",
+      "linkingText": [
+        "use"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "UseElementHrefAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#UseElementHrefAttribute",
+      "linkingText": [
+        "href"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermConditionalProcessingAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#TermConditionalProcessingAttribute",
+      "linkingText": [
+        "conditional processing attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-switch",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#elementdef-switch",
+      "linkingText": [
+        "switch"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "RequiredExtensionsAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#RequiredExtensionsAttribute",
+      "linkingText": [
+        "requiredExtensions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "SystemLanguageAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#SystemLanguageAttribute",
+      "linkingText": [
+        "systemLanguage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermDescriptiveElement",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#TermDescriptiveElement",
+      "linkingText": [
+        "descriptive element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-title",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#elementdef-title",
+      "linkingText": [
+        "title"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-desc",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#elementdef-desc",
+      "linkingText": [
+        "desc"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-metadata",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#elementdef-metadata",
+      "linkingText": [
+        "metadata"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermCoreAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#TermCoreAttribute",
+      "linkingText": [
+        "core attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "IDAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#IDAttribute",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "core-attributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "LangAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#LangAttribute",
+      "linkingText": [
+        "lang"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "core-attributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "XMLSpaceAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#XMLSpaceAttribute",
+      "linkingText": [
+        "xml:space"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "core-attributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "SVGElementTabindexAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#SVGElementTabindexAttribute",
+      "linkingText": [
+        "tabindex"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "core-attributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermARIAAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#TermARIAAttribute",
+      "linkingText": [
+        "ARIA attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "RoleAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#RoleAttribute",
+      "linkingText": [
+        "role"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermInclusionCriteria",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#TermInclusionCriteria",
+      "linkingText": [
+        "inclusion criteria"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "CurrentTranslatePointObject",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#CurrentTranslatePointObject",
+      "linkingText": [
+        "current translate point object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermFindIntersectingOrEnclosedDescendants",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#TermFindIntersectingOrEnclosedDescendants",
+      "linkingText": [
+        "find the intersecting\nor enclosed descendants"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermFindNonContainerGraphicsElements",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#TermFindNonContainerGraphicsElements",
+      "linkingText": [
+        "find the non-container\ngraphics elements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "InterfaceSVGElementInstance",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#InterfaceSVGElementInstance",
+      "linkingText": [
+        "SVGElementInstance"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "InterfaceGetSVGDocument",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/struct.html#InterfaceGetSVGDocument",
+      "linkingText": [
+        "GetSVGDocument"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/styling.html#TermProperty",
+      "linkingText": [
+        "properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "elementdef-style",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/styling.html#elementdef-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StyleElementTypeAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/styling.html#StyleElementTypeAttribute",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StyleElementMediaAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/styling.html#StyleElementMediaAttribute",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StyleElementTitleAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/styling.html#StyleElementTitleAttribute",
+      "linkingText": [
+        "title"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ClassAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/styling.html#ClassAttribute",
+      "linkingText": [
+        "class"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "core-attributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StyleAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/styling.html#StyleAttribute",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "core-attributes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermPresentationAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/styling.html#TermPresentationAttribute",
+      "linkingText": [
+        "presentation attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "geometry-properties",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/geometry.html#geometry-properties",
+      "linkingText": [
+        "geometry properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "CxProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/geometry.html#CxProperty",
+      "linkingText": [
+        "cx"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "CyProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/geometry.html#CyProperty",
+      "linkingText": [
+        "cy"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "RProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/geometry.html#RProperty",
+      "linkingText": [
+        "r"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "RxProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/geometry.html#RxProperty",
+      "linkingText": [
+        "rx"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "RyProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/geometry.html#RyProperty",
+      "linkingText": [
+        "ry"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "XProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/geometry.html#XProperty",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "YProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/geometry.html#YProperty",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermSVGViewport",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html#TermSVGViewport",
+      "linkingText": [
+        "SVG viewports"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermUserUnits",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html#TermUserUnits",
+      "linkingText": [
+        "user units"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermInitialViewport",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html#TermInitialViewport",
+      "linkingText": [
+        "initial viewport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermViewportCoordinateSystem",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html#TermViewportCoordinateSystem",
+      "linkingText": [
+        "viewport coordinate system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermUserCoordinateSystem",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html#TermUserCoordinateSystem",
+      "linkingText": [
+        "user coordinate system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermCanvas",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html#TermCanvas",
+      "linkingText": [
+        "canvas"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermViewBox",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html#TermViewBox",
+      "linkingText": [
+        "viewBox"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "svg"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermPreserveAspectRatio",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html#TermPreserveAspectRatio",
+      "linkingText": [
+        "preserveAspectRatio"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "svg"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "bounding-box",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html#bounding-box",
+      "linkingText": [
+        "bounding box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermObjectBoundingBox",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html#TermObjectBoundingBox",
+      "linkingText": [
+        "object bounding box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermStrokeBoundingBox",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html#TermStrokeBoundingBox",
+      "linkingText": [
+        "stroke bounding box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermDecoratedBoundingBox",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html#TermDecoratedBoundingBox",
+      "linkingText": [
+        "decorated bounding box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermFullGlyphCell",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html#TermFullGlyphCell",
+      "linkingText": [
+        "full glyph cell"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "VectorEffectProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html#VectorEffectProperty",
+      "linkingText": [
+        "vector-effect"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TransformValue",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html#TransformValue",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TransformMatrixObject",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/coords.html#TransformMatrixObject",
+      "linkingText": [
+        "matrix object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermEquivalentPath",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/paths.html#TermEquivalentPath",
+      "linkingText": [
+        "equivalent path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "elementdef-path",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/paths.html#elementdef-path",
+      "linkingText": [
+        "path"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "DProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/paths.html#DProperty",
+      "linkingText": [
+        "d"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermPathSegment",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/paths.html#TermPathSegment",
+      "linkingText": [
+        "path segment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermInitialPoint",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/paths.html#TermInitialPoint",
+      "linkingText": [
+        "initial point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermClosedSubpath",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/paths.html#TermClosedSubpath",
+      "linkingText": [
+        "closed subpath"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermOpenSubpath",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/paths.html#TermOpenSubpath",
+      "linkingText": [
+        "open subpath"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermSegment-CompletingClosePath",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/paths.html#TermSegment-CompletingClosePath",
+      "linkingText": [
+        "segment-completing close path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermPathDirection",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/paths.html#TermPathDirection",
+      "linkingText": [
+        "direction of a path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermPathSegmentStartDirection",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/paths.html#TermPathSegmentStartDirection",
+      "linkingText": [
+        "direction at the start\nof a path segment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "TermPathSegmentEndDirection",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/paths.html#TermPathSegmentEndDirection",
+      "linkingText": [
+        "direction at the end of a path\nsegment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "basic-shape",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/shapes.html#basic-shape",
+      "linkingText": [
+        "basic shape"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermShapeElement",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/shapes.html#TermShapeElement",
+      "linkingText": [
+        "shape elements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-rect",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/shapes.html#elementdef-rect",
+      "linkingText": [
+        "rect"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-circle",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/shapes.html#elementdef-circle",
+      "linkingText": [
+        "circle"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-ellipse",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/shapes.html#elementdef-ellipse",
+      "linkingText": [
+        "ellipse"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-line",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/shapes.html#elementdef-line",
+      "linkingText": [
+        "line"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "LineElementX1Attribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/shapes.html#LineElementX1Attribute",
+      "linkingText": [
+        "x1"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "LineElementY1Attribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/shapes.html#LineElementY1Attribute",
+      "linkingText": [
+        "y1"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "LineElementX2Attribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/shapes.html#LineElementX2Attribute",
+      "linkingText": [
+        "x2"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "LineElementY2Attribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/shapes.html#LineElementY2Attribute",
+      "linkingText": [
+        "y2"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-polyline",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/shapes.html#elementdef-polyline",
+      "linkingText": [
+        "polyline"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "PolylineElementPointsAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/shapes.html#PolylineElementPointsAttribute",
+      "linkingText": [
+        "points"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "polyline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "DataTypePoints",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/shapes.html#DataTypePoints",
+      "linkingText": [
+        "<points>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-polygon",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/shapes.html#elementdef-polygon",
+      "linkingText": [
+        "polygon"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "PolygonElementPointsAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/shapes.html#PolygonElementPointsAttribute",
+      "linkingText": [
+        "points"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "polygon"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "InterfaceSVGAnimatedPoints",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/shapes.html#InterfaceSVGAnimatedPoints",
+      "linkingText": [
+        "SVGAnimatedPoints"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermCharacter",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TermCharacter",
+      "linkingText": [
+        "character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermAddressableCharacter",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TermAddressableCharacter",
+      "linkingText": [
+        "addressable character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermTextContentElement",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TermTextContentElement",
+      "linkingText": [
+        "text content element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermBaseline",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TermBaseline",
+      "linkingText": [
+        "baseline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermBaselineTable",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TermBaselineTable",
+      "linkingText": [
+        "baseline-table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermDominantBaseline",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TermDominantBaseline",
+      "linkingText": [
+        "dominant baseline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermAlignmentBaseline",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TermAlignmentBaseline",
+      "linkingText": [
+        "alignment baseline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-text",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#elementdef-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-tspan",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#elementdef-tspan",
+      "linkingText": [
+        "tspan"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextElementXAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TextElementXAttribute",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextElementYAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TextElementYAttribute",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextElementDXAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TextElementDXAttribute",
+      "linkingText": [
+        "dx"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextElementDYAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TextElementDYAttribute",
+      "linkingText": [
+        "dy"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextElementRotateAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TextElementRotateAttribute",
+      "linkingText": [
+        "rotate"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextElementTextLengthAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TextElementTextLengthAttribute",
+      "linkingText": [
+        "textLength"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextElementLengthAdjustAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TextElementLengthAdjustAttribute",
+      "linkingText": [
+        "lengthAdjust"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "text"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "InlineSizeProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#InlineSizeProperty",
+      "linkingText": [
+        "inline-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ShapeInsideProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#ShapeInsideProperty",
+      "linkingText": [
+        "shape-inside"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ShapesubtractProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#ShapesubtractProperty",
+      "linkingText": [
+        "shape-subtract"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ShapeMarginProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#ShapeMarginProperty",
+      "linkingText": [
+        "shape-margin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermResolvedDescendantNode",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TermResolvedDescendantNode",
+      "linkingText": [
+        "resolved descendant node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-textPath",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#elementdef-textPath",
+      "linkingText": [
+        "textPath"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "CharWidth",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#CharWidth",
+      "linkingText": [
+        "charwidth"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StartPointOnPath",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#StartPointOnPath",
+      "linkingText": [
+        "startpoint-on-the-path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "EndPointOnPath",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#EndPointOnPath",
+      "linkingText": [
+        "endpoint-on-the-path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MidPointOnPath",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#MidPointOnPath",
+      "linkingText": [
+        "midpoint-on-the-path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "GlyphMidline",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#GlyphMidline",
+      "linkingText": [
+        "glyph-midline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextAnchorProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TextAnchorProperty",
+      "linkingText": [
+        "text-anchor"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextDecorationFillProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TextDecorationFillProperty",
+      "linkingText": [
+        "text-decoration-fill"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextDecorationStrokeProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TextDecorationStrokeProperty",
+      "linkingText": [
+        "text-decoration-stroke"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermFindTypographicCharacterForCharacter",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/text.html#TermFindTypographicCharacterForCharacter",
+      "linkingText": [
+        "find the typographic\ncharacter for a character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermPositioningRectangle",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/embedded.html#TermPositioningRectangle",
+      "linkingText": [
+        "positioning rectangle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-image",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/embedded.html#elementdef-image",
+      "linkingText": [
+        "image"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermImageRenderingRectangle",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/embedded.html#TermImageRenderingRectangle",
+      "linkingText": [
+        "image-rendering rectangle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ImageElementCrossoriginAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/embedded.html#ImageElementCrossoriginAttribute",
+      "linkingText": [
+        "crossorigin"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "image"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ImageElementHrefAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/embedded.html#ImageElementHrefAttribute",
+      "linkingText": [
+        "href"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "image"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-foreignObject",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/embedded.html#elementdef-foreignObject",
+      "linkingText": [
+        "foreignObject"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermFill",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#TermFill",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermStroke",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#TermStroke",
+      "linkingText": [
+        "stroke"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermPaint",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#TermPaint",
+      "linkingText": [
+        "paint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "DataTypePaint",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#DataTypePaint",
+      "linkingText": [
+        "<paint>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermPaintServerElement",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#TermPaintServerElement",
+      "linkingText": [
+        "paint server element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermContextElement",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#TermContextElement",
+      "linkingText": [
+        "context element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "FillProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#FillProperty",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "FillRuleProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#FillRuleProperty",
+      "linkingText": [
+        "fill-rule"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "FillOpacityProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#FillOpacityProperty",
+      "linkingText": [
+        "fill-opacity"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StrokeProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#StrokeProperty",
+      "linkingText": [
+        "stroke"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StrokeOpacityProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#StrokeOpacityProperty",
+      "linkingText": [
+        "stroke-opacity"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StrokeWidthProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#StrokeWidthProperty",
+      "linkingText": [
+        "stroke-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StrokeLinecapProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#StrokeLinecapProperty",
+      "linkingText": [
+        "stroke-linecap"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StrokeLinejoinProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#StrokeLinejoinProperty",
+      "linkingText": [
+        "stroke-linejoin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StrokeMiterlimitProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#StrokeMiterlimitProperty",
+      "linkingText": [
+        "stroke-miterlimit"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StrokeDasharrayProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#StrokeDasharrayProperty",
+      "linkingText": [
+        "stroke-dasharray"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "DataTypeDasharray",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#DataTypeDasharray",
+      "linkingText": [
+        "<dasharray>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "StrokeDashoffsetProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#StrokeDashoffsetProperty",
+      "linkingText": [
+        "stroke-dashoffset"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermStrokeShape",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#TermStrokeShape",
+      "linkingText": [
+        "stroke shape"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermDashPositions",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#TermDashPositions",
+      "linkingText": [
+        "dash positions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermCapShape",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#TermCapShape",
+      "linkingText": [
+        "cap shapes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermLineJoinShape",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#TermLineJoinShape",
+      "linkingText": [
+        "line join shape"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermVertexMarker",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#TermVertexMarker",
+      "linkingText": [
+        "vertex markers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermMarkerProperties",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#TermMarkerProperties",
+      "linkingText": [
+        "marker properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-marker",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#elementdef-marker",
+      "linkingText": [
+        "marker"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerUnitsAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#MarkerUnitsAttribute",
+      "linkingText": [
+        "markerUnits"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerWidthAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#MarkerWidthAttribute",
+      "linkingText": [
+        "markerWidth"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerHeightAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#MarkerHeightAttribute",
+      "linkingText": [
+        "markerHeight"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerElementRefXAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#MarkerElementRefXAttribute",
+      "linkingText": [
+        "refX"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerElementRefYAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#MarkerElementRefYAttribute",
+      "linkingText": [
+        "refY"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "OrientAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#OrientAttribute",
+      "linkingText": [
+        "orient"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "marker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerStartProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#MarkerStartProperty",
+      "linkingText": [
+        "marker-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerMidProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#MarkerMidProperty",
+      "linkingText": [
+        "marker-mid"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerEndProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#MarkerEndProperty",
+      "linkingText": [
+        "marker-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "DataTypeMarkerRef",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#DataTypeMarkerRef",
+      "linkingText": [
+        "<marker-ref>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "MarkerProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#MarkerProperty",
+      "linkingText": [
+        "marker"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "PaintOrderProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#PaintOrderProperty",
+      "linkingText": [
+        "paint-order"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ColorInterpolationProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#ColorInterpolationProperty",
+      "linkingText": [
+        "color-interpolation"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ColorRenderingProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#ColorRenderingProperty",
+      "linkingText": [
+        "color-rendering"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ShapeRenderingProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#ShapeRenderingProperty",
+      "linkingText": [
+        "shape-rendering"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TextRenderingProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#TextRenderingProperty",
+      "linkingText": [
+        "text-rendering"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ImageRenderingProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/painting.html#ImageRenderingProperty",
+      "linkingText": [
+        "image-rendering"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermGradientElement",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/pservers.html#TermGradientElement",
+      "linkingText": [
+        "gradient element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-linearGradient",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/pservers.html#elementdef-linearGradient",
+      "linkingText": [
+        "linearGradient"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-radialGradient",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/pservers.html#elementdef-radialGradient",
+      "linkingText": [
+        "radialGradient"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-stop",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/pservers.html#elementdef-stop",
+      "linkingText": [
+        "stop"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-pattern",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/pservers.html#elementdef-pattern",
+      "linkingText": [
+        "pattern"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermHitTesting",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/interact.html#TermHitTesting",
+      "linkingText": [
+        "hit-testing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "PointerEventsProperty",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/interact.html#PointerEventsProperty",
+      "linkingText": [
+        "pointer-events"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ZoomAndPanAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/interact.html#ZoomAndPanAttribute",
+      "linkingText": [
+        "zoomAndPan"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "svg"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermFocusable",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/interact.html#TermFocusable",
+      "linkingText": [
+        "focusable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermEventAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/interact.html#TermEventAttribute",
+      "linkingText": [
+        "event attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "OnBeginEventAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/interact.html#OnBeginEventAttribute",
+      "linkingText": [
+        "onbegin"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate",
+        "animateMotion",
+        "animateTransform",
+        "discard",
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "OnEndEventAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/interact.html#OnEndEventAttribute",
+      "linkingText": [
+        "onend"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate",
+        "animateMotion",
+        "animateTransform",
+        "discard",
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "OnRepeatEventAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/interact.html#OnRepeatEventAttribute",
+      "linkingText": [
+        "onrepeat"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "animate",
+        "animateMotion",
+        "animateTransform",
+        "discard",
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-script",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/interact.html#elementdef-script",
+      "linkingText": [
+        "script"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ScriptElementCrossoriginAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/interact.html#ScriptElementCrossoriginAttribute",
+      "linkingText": [
+        "crossorigin"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "script"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ScriptElementTypeAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/interact.html#ScriptElementTypeAttribute",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "script"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ScriptElementHrefAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/interact.html#ScriptElementHrefAttribute",
+      "linkingText": [
+        "href"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "script"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermURLReference",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#TermURLReference",
+      "linkingText": [
+        "URL reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermURLReferenceWithFragmentIdentifier",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#TermURLReferenceWithFragmentIdentifier",
+      "linkingText": [
+        "URL reference with fragment identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermExternalReference",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#TermExternalReference",
+      "linkingText": [
+        "external file reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermSameDocumentURL",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#TermSameDocumentURL",
+      "linkingText": [
+        "same-document URL reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermDataURL",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#TermDataURL",
+      "linkingText": [
+        "data URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermCircularReference",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#TermCircularReference",
+      "linkingText": [
+        "circular reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermUnresolvedReference",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#TermUnresolvedReference",
+      "linkingText": [
+        "unresolved reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "TermInvalidReference",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#TermInvalidReference",
+      "linkingText": [
+        "invalid reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "XLinkHrefAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#XLinkHrefAttribute",
+      "linkingText": [
+        "xlink:href"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a",
+        "image",
+        "linearGradient",
+        "pattern",
+        "radialGradient",
+        "script",
+        "textPath",
+        "use"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "XLinkTitleAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#XLinkTitleAttribute",
+      "linkingText": [
+        "xlink:title"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a",
+        "image",
+        "linearGradient",
+        "pattern",
+        "radialGradient",
+        "script",
+        "textPath",
+        "use"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-a",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#elementdef-a",
+      "linkingText": [
+        "a"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AElementHrefAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#AElementHrefAttribute",
+      "linkingText": [
+        "href"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AElementTargetAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#AElementTargetAttribute",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AElementDownloadAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#AElementDownloadAttribute",
+      "linkingText": [
+        "download"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AElementPingAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#AElementPingAttribute",
+      "linkingText": [
+        "ping"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AElementRelAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#AElementRelAttribute",
+      "linkingText": [
+        "rel"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AElementHreflangAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#AElementHreflangAttribute",
+      "linkingText": [
+        "hreflang"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AElementTypeAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#AElementTypeAttribute",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "AElementReferrerpolicyAttribute",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#AElementReferrerpolicyAttribute",
+      "linkingText": [
+        "referrerPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "a"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "svg-fragment-identifier",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#svg-fragment-identifier",
+      "linkingText": [
+        "SVG\nfragment identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "SVGViewSpecification",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#SVGViewSpecification",
+      "linkingText": [
+        "SVG view specification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "elementdef-view",
+      "href": "https://www.w3.org/TR/2018/CR-SVG2-20181004/linking.html#elementdef-view",
+      "linkingText": [
+        "view"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

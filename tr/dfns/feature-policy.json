@@ -1,0 +1,804 @@
+{
+  "spec": {
+    "title": "Feature Policy",
+    "url": "https://w3c.github.io/webappsec-feature-policy/"
+  },
+  "dfns": [
+    {
+      "id": "policy-controlled-feature",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#policy-controlled-feature",
+      "linkingText": [
+        "policy-controlled feature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "supported-features",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#supported-features",
+      "linkingText": [
+        "supported features"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "feature-policy",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#feature-policy",
+      "linkingText": [
+        "feature policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "empty-feature-policy",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#empty-feature-policy",
+      "linkingText": [
+        "empty feature policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inherited-policy",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#inherited-policy",
+      "linkingText": [
+        "inherited policy",
+        "inherited policies"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "inherited-policy-for-a-feature",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#inherited-policy-for-a-feature",
+      "linkingText": [
+        "inherited policy for a feature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "declared-policy",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#declared-policy",
+      "linkingText": [
+        "declared policy",
+        "declared feature policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "header-policy",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#header-policy",
+      "linkingText": [
+        "header policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "container-policy",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#container-policy",
+      "linkingText": [
+        "container policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "policy-directive",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#policy-directive",
+      "linkingText": [
+        "policy directive",
+        "policy directives"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "allowlist",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#allowlist",
+      "linkingText": [
+        "allowlist",
+        "allowlists"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "the-special-value",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#the-special-value",
+      "linkingText": [
+        "The special value *"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matches",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#matches",
+      "linkingText": [
+        "matches"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "default-allowlist",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#default-allowlist",
+      "linkingText": [
+        "default allowlist",
+        "default allowlists"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialized-feature-policy",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#serialized-feature-policy",
+      "linkingText": [
+        "serialized-feature-policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "serialized-policy-directive",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#serialized-policy-directive",
+      "linkingText": [
+        "serialized-policy-directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "feature-identifier",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#feature-identifier",
+      "linkingText": [
+        "feature-identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "allow-list",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#allow-list",
+      "linkingText": [
+        "allow-list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "allow-list-value",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#allow-list-value",
+      "linkingText": [
+        "allow-list-value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "serialized-origin",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#serialized-origin",
+      "linkingText": [
+        "serialized-origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "feature-policy-header",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#feature-policy-header",
+      "linkingText": [
+        "Feature-Policy"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "featurepolicy",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#featurepolicy",
+      "linkingText": [
+        "FeaturePolicy"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-featurepolicy-allowsfeature",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#dom-featurepolicy-allowsfeature",
+      "linkingText": [
+        "allowsFeature(feature, origin)",
+        "allowsFeature(feature)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FeaturePolicy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-featurepolicy-allowsfeature-feature-origin-feature",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#dom-featurepolicy-allowsfeature-feature-origin-feature",
+      "linkingText": [
+        "feature"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FeaturePolicy/allowsFeature(feature, origin)",
+        "FeaturePolicy/allowsFeature(feature)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-featurepolicy-allowsfeature-feature-origin-origin",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#dom-featurepolicy-allowsfeature-feature-origin-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FeaturePolicy/allowsFeature(feature, origin)",
+        "FeaturePolicy/allowsFeature(feature)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-featurepolicy-features",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#dom-featurepolicy-features",
+      "linkingText": [
+        "features()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FeaturePolicy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-featurepolicy-allowedfeatures",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#dom-featurepolicy-allowedfeatures",
+      "linkingText": [
+        "allowedFeatures()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FeaturePolicy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-featurepolicy-getallowlistforfeature",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#dom-featurepolicy-getallowlistforfeature",
+      "linkingText": [
+        "getAllowlistForFeature(feature)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FeaturePolicy"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-featurepolicy-getallowlistforfeature-feature-feature",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#dom-featurepolicy-getallowlistforfeature-feature-feature",
+      "linkingText": [
+        "feature"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FeaturePolicy/getAllowlistForFeature(feature)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-featurepolicy",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#dom-document-featurepolicy",
+      "linkingText": [
+        "featurePolicy"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-htmliframeelement-featurepolicy",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#dom-htmliframeelement-featurepolicy",
+      "linkingText": [
+        "featurePolicy"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLIFrameElement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "associated-node",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#associated-node",
+      "linkingText": [
+        "associated node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "default-origin",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#default-origin",
+      "linkingText": [
+        "default origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "document-policy-object",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#document-policy-object",
+      "linkingText": [
+        "policy object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Document"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iframe-policy-object",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#iframe-policy-object",
+      "linkingText": [
+        "policy object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "iframe"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "observable-policy",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#observable-policy",
+      "linkingText": [
+        "observable policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "declared-origin",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#declared-origin",
+      "linkingText": [
+        "declared origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "feature-policy-violation-reports",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#feature-policy-violation-reports",
+      "linkingText": [
+        "Feature policy violation reports"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "violate",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#violate",
+      "linkingText": [
+        "violate",
+        "violation",
+        "violated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "featurepolicyviolationreportbody",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#featurepolicyviolationreportbody",
+      "linkingText": [
+        "FeaturePolicyViolationReportBody"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-featurepolicyviolationreportbody-featureid",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#dom-featurepolicyviolationreportbody-featureid",
+      "linkingText": [
+        "featureId"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FeaturePolicyViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-featurepolicyviolationreportbody-sourcefile",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#dom-featurepolicyviolationreportbody-sourcefile",
+      "linkingText": [
+        "sourceFile"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FeaturePolicyViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-featurepolicyviolationreportbody-linenumber",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#dom-featurepolicyviolationreportbody-linenumber",
+      "linkingText": [
+        "lineNumber"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FeaturePolicyViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-featurepolicyviolationreportbody-columnnumber",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#dom-featurepolicyviolationreportbody-columnnumber",
+      "linkingText": [
+        "columnNumber"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FeaturePolicyViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-featurepolicyviolationreportbody-disposition",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#dom-featurepolicyviolationreportbody-disposition",
+      "linkingText": [
+        "disposition"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FeaturePolicyViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "featurepolicyviolationreportbody-featureid",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#featurepolicyviolationreportbody-featureid",
+      "linkingText": [
+        "featureId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FeaturePolicyViolationReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "featurepolicyviolationreportbody-sourcefile",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#featurepolicyviolationreportbody-sourcefile",
+      "linkingText": [
+        "sourceFile"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FeaturePolicyViolationReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "featurepolicyviolationreportbody-linenumber",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#featurepolicyviolationreportbody-linenumber",
+      "linkingText": [
+        "lineNumber"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FeaturePolicyViolationReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "featurepolicyviolationreportbody-columnnumber",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#featurepolicyviolationreportbody-columnnumber",
+      "linkingText": [
+        "columnNumber"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FeaturePolicyViolationReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "featurepolicyviolationreportbody-disposition",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#featurepolicyviolationreportbody-disposition",
+      "linkingText": [
+        "disposition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FeaturePolicyViolationReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "process-response-policy",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#process-response-policy",
+      "linkingText": [
+        "Process response policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parse-header-from-value-and-origin",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#parse-header-from-value-and-origin",
+      "linkingText": [
+        "Parse header from value and origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parse-policy-directive",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#parse-policy-directive",
+      "linkingText": [
+        "Parse policy directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "merge-directive-with-declared-policy",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#merge-directive-with-declared-policy",
+      "linkingText": [
+        "Merge directive with declared policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "process-feature-policy-attributes",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#process-feature-policy-attributes",
+      "linkingText": [
+        "Process feature policy attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-for-browsingcontext",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#create-for-browsingcontext",
+      "linkingText": [
+        "Create a Feature Policy for a browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-from-response",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#create-from-response",
+      "linkingText": [
+        "Create a Feature Policy for a browsing context from response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "define-inherited-policy",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#define-inherited-policy",
+      "linkingText": [
+        "Define an inherited policy for feature in browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "define-an-inherited-policy-for-feature-in-container-at-origin",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#define-an-inherited-policy-for-feature-in-container-at-origin",
+      "linkingText": [
+        "Define an inherited policy for feature in container at origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "is-feature-enabled",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#is-feature-enabled",
+      "linkingText": [
+        "Is feature enabled in document for origin?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "report-feature-policy-violation",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#report-feature-policy-violation",
+      "linkingText": [
+        "Generate report for violation of feature policy on settings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "should-request-be-allowed-to-use-feature",
+      "href": "https://w3c.github.io/webappsec-feature-policy/#should-request-be-allowed-to-use-feature",
+      "linkingText": [
+        "Should request be allowed to use feature?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

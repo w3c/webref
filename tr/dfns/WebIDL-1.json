@@ -1,0 +1,2564 @@
+{
+  "spec": {
+    "title": "WebIDL Level 1",
+    "url": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-example-term",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-example-term",
+      "linkingText": [
+        "example term"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-conforming-set-of-idl-fragments",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-conforming-set-of-idl-fragments",
+      "linkingText": [
+        "conforming set of IDL fragments"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-conforming-implementation",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-conforming-implementation",
+      "linkingText": [
+        "conforming implementation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-conforming-ecmascript-implementation",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-conforming-ecmascript-implementation",
+      "linkingText": [
+        "conforming ECMAScript implementation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-idl-fragment",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-idl-fragment",
+      "linkingText": [
+        "IDL fragments"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-definition",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-definition",
+      "linkingText": [
+        "definitions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-named-definition",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-named-definition",
+      "linkingText": [
+        "named definitions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-identifier",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-identifier",
+      "linkingText": [
+        "identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-reserved-identifier",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-reserved-identifier",
+      "linkingText": [
+        "reserved identifiers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-interface",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-interface",
+      "linkingText": [
+        "interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-interface-member",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-interface-member",
+      "linkingText": [
+        "interface members"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-inherit",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-inherit",
+      "linkingText": [
+        "inherit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-inherited-interfaces",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-inherited-interfaces",
+      "linkingText": [
+        "inherited interfaces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-callback-interface",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-callback-interface",
+      "linkingText": [
+        "callback interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-partial-interface",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-partial-interface",
+      "linkingText": [
+        "partial interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-constant",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-constant",
+      "linkingText": [
+        "constant"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-attribute",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-attribute",
+      "linkingText": [
+        "attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-regular-attribute",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-regular-attribute",
+      "linkingText": [
+        "regular attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-read-only",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-read-only",
+      "linkingText": [
+        "read only"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-inherit-getter",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-inherit-getter",
+      "linkingText": [
+        "inherit its getter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-operation",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-operation",
+      "linkingText": [
+        "operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-regular-operation",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-regular-operation",
+      "linkingText": [
+        "regular operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-return-type",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-return-type",
+      "linkingText": [
+        "return type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-variadic",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-variadic",
+      "linkingText": [
+        "variadic"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-optional-argument",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-optional-argument",
+      "linkingText": [
+        "optional argument"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-optional-argument-default-value",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-optional-argument-default-value",
+      "linkingText": [
+        "default value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-code-unit",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-code-unit",
+      "linkingText": [
+        "code units"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-special-operation",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-special-operation",
+      "linkingText": [
+        "special operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-special-keyword",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-special-keyword",
+      "linkingText": [
+        "special keywords"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-getter",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-getter",
+      "linkingText": [
+        "Getters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-setter",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-setter",
+      "linkingText": [
+        "Setters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-deleter",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-deleter",
+      "linkingText": [
+        "Deleters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-legacy-caller",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-legacy-caller",
+      "linkingText": [
+        "Legacy callers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-stringifier",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-stringifier",
+      "linkingText": [
+        "Stringifiers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-serializer",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-serializer",
+      "linkingText": [
+        "Serializers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-named-property-getter",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-named-property-getter",
+      "linkingText": [
+        "named property getters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-named-property-setter",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-named-property-setter",
+      "linkingText": [
+        "named property setters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-indexed-property-getter",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-indexed-property-getter",
+      "linkingText": [
+        "indexed property getters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-indexed-property-setter",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-indexed-property-setter",
+      "linkingText": [
+        "indexed property setters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-named-property-deleter",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-named-property-deleter",
+      "linkingText": [
+        "named property deleters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-stringification-behavior",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-stringification-behavior",
+      "linkingText": [
+        "stringification behavior"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-serialization-behavior",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-serialization-behavior",
+      "linkingText": [
+        "serialization behavior"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-serialized-value",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-serialized-value",
+      "linkingText": [
+        "serialized value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-serialization-pattern",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-serialization-pattern",
+      "linkingText": [
+        "serialization pattern"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-serializable-type",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-serializable-type",
+      "linkingText": [
+        "serializable types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-convert-to-serialized-value",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-convert-to-serialized-value",
+      "linkingText": [
+        "converted to serialized values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-support-indexed-properties",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-support-indexed-properties",
+      "linkingText": [
+        "support indexed properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-supported-property-indices",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-supported-property-indices",
+      "linkingText": [
+        "supported property indices"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-determine-the-value-of-an-indexed-property",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-determine-the-value-of-an-indexed-property",
+      "linkingText": [
+        "determine the value of an indexed property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-set-the-value-of-an-existing-indexed-property",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-set-the-value-of-an-existing-indexed-property",
+      "linkingText": [
+        "set the value of an existing indexed property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-set-the-value-of-a-new-indexed-property",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-set-the-value-of-a-new-indexed-property",
+      "linkingText": [
+        "set the value of a new indexed property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-support-named-properties",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-support-named-properties",
+      "linkingText": [
+        "support named properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-supported-property-names",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-supported-property-names",
+      "linkingText": [
+        "supported property names"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-determine-the-value-of-a-named-property",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-determine-the-value-of-a-named-property",
+      "linkingText": [
+        "determine the value of a named property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-set-the-value-of-an-existing-named-property",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-set-the-value-of-an-existing-named-property",
+      "linkingText": [
+        "set the value of an existing named property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-set-the-value-of-a-new-named-property",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-set-the-value-of-a-new-named-property",
+      "linkingText": [
+        "set the value of a new named property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-delete-an-existing-named-property",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-delete-an-existing-named-property",
+      "linkingText": [
+        "delete an existing named property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-static-attribute",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-static-attribute",
+      "linkingText": [
+        "Static attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-static-operation",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-static-operation",
+      "linkingText": [
+        "static operations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-overloaded",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-overloaded",
+      "linkingText": [
+        "overloaded"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-effective-overload-set",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-effective-overload-set",
+      "linkingText": [
+        "effective overload set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-optionality-value",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-optionality-value",
+      "linkingText": [
+        "optionality values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-distinguishable",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-distinguishable",
+      "linkingText": [
+        "distinguishable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-distinguishing-argument-index",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-distinguishing-argument-index",
+      "linkingText": [
+        "distinguishing argument index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-iterable",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-iterable",
+      "linkingText": [
+        "iterable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-iterable-declaration",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-iterable-declaration",
+      "linkingText": [
+        "iterable declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-value-iterator",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-value-iterator",
+      "linkingText": [
+        "value iterator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pair-iterator",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-pair-iterator",
+      "linkingText": [
+        "pair iterator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-value-pairs-to-iterate-over",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-value-pairs-to-iterate-over",
+      "linkingText": [
+        "value pairs to iterate over"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dictionary",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-dictionary",
+      "linkingText": [
+        "dictionary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dictionary-member",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-dictionary-member",
+      "linkingText": [
+        "dictionary members"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-inherit-dictionary",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-inherit-dictionary",
+      "linkingText": [
+        "inherit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-inherited-dictionaries",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-inherited-dictionaries",
+      "linkingText": [
+        "inherited dictionaries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-present",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-present",
+      "linkingText": [
+        "present"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dictionary-member-default-value",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-dictionary-member-default-value",
+      "linkingText": [
+        "default value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "required-dictionary-member",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#required-dictionary-member",
+      "linkingText": [
+        "required dictionary member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-partial-dictionary",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-partial-dictionary",
+      "linkingText": [
+        "partial dictionary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-exception",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-exception",
+      "linkingText": [
+        "exception"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-exception-error-name",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-exception-error-name",
+      "linkingText": [
+        "error name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-exception-message",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-exception-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-simple-exception",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-simple-exception",
+      "linkingText": [
+        "simple exception"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-DOMException",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-DOMException",
+      "linkingText": [
+        "DOMException"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-create-exception",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-create-exception",
+      "linkingText": [
+        "created"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-throw",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-throw",
+      "linkingText": [
+        "thrown"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-error-names-table",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-error-names-table",
+      "linkingText": [
+        "error names table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "indexsizeerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#indexsizeerror",
+      "linkingText": [
+        "IndexSizeError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-index_size_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-index_size_err",
+      "linkingText": [
+        "INDEX_SIZE_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "hierarchyrequesterror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#hierarchyrequesterror",
+      "linkingText": [
+        "HierarchyRequestError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-hierarchy_request_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-hierarchy_request_err",
+      "linkingText": [
+        "HIERARCHY_REQUEST_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "wrongdocumenterror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#wrongdocumenterror",
+      "linkingText": [
+        "WrongDocumentError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-wrong_document_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-wrong_document_err",
+      "linkingText": [
+        "WRONG_DOCUMENT_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "invalidcharactererror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#invalidcharactererror",
+      "linkingText": [
+        "InvalidCharacterError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-invalid_character_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-invalid_character_err",
+      "linkingText": [
+        "INVALID_CHARACTER_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "nomodificationallowederror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#nomodificationallowederror",
+      "linkingText": [
+        "NoModificationAllowedError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-no_modification_allowed_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-no_modification_allowed_err",
+      "linkingText": [
+        "NO_MODIFICATION_ALLOWED_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "notfounderror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#notfounderror",
+      "linkingText": [
+        "NotFoundError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-not_found_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-not_found_err",
+      "linkingText": [
+        "NOT_FOUND_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "notsupportederror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#notsupportederror",
+      "linkingText": [
+        "NotSupportedError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-not_supported_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-not_supported_err",
+      "linkingText": [
+        "NOT_SUPPORTED_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "inuseattributeerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#inuseattributeerror",
+      "linkingText": [
+        "InUseAttributeError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-inuse_attribute_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-inuse_attribute_err",
+      "linkingText": [
+        "INUSE_ATTRIBUTE_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "invalidstateerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#invalidstateerror",
+      "linkingText": [
+        "InvalidStateError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-invalid_state_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-invalid_state_err",
+      "linkingText": [
+        "INVALID_STATE_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "syntaxerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#syntaxerror",
+      "linkingText": [
+        "SyntaxError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-syntax_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-syntax_err",
+      "linkingText": [
+        "SYNTAX_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "invalidmodificationerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#invalidmodificationerror",
+      "linkingText": [
+        "InvalidModificationError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-invalid_modification_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-invalid_modification_err",
+      "linkingText": [
+        "INVALID_MODIFICATION_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "namespaceerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#namespaceerror",
+      "linkingText": [
+        "NamespaceError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-namespace_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-namespace_err",
+      "linkingText": [
+        "NAMESPACE_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "invalidaccesserror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#invalidaccesserror",
+      "linkingText": [
+        "InvalidAccessError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-invalid_access_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-invalid_access_err",
+      "linkingText": [
+        "INVALID_ACCESS_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "securityerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#securityerror",
+      "linkingText": [
+        "SecurityError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-security_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-security_err",
+      "linkingText": [
+        "SECURITY_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "networkerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#networkerror",
+      "linkingText": [
+        "NetworkError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-network_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-network_err",
+      "linkingText": [
+        "NETWORK_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "aborterror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#aborterror",
+      "linkingText": [
+        "AbortError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-abort_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-abort_err",
+      "linkingText": [
+        "ABORT_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "urlmismatcherror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#urlmismatcherror",
+      "linkingText": [
+        "URLMismatchError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-url_mismatch_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-url_mismatch_err",
+      "linkingText": [
+        "URL_MISMATCH_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "quotaexceedederror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#quotaexceedederror",
+      "linkingText": [
+        "QuotaExceededError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-quota_exceeded_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-quota_exceeded_err",
+      "linkingText": [
+        "QUOTA_EXCEEDED_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "timeouterror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#timeouterror",
+      "linkingText": [
+        "TimeoutError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-timeout_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-timeout_err",
+      "linkingText": [
+        "TIMEOUT_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "invalidnodetypeerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#invalidnodetypeerror",
+      "linkingText": [
+        "InvalidNodeTypeError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-invalid_node_type_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-invalid_node_type_err",
+      "linkingText": [
+        "INVALID_NODE_TYPE_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "datacloneerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#datacloneerror",
+      "linkingText": [
+        "DataCloneError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-domexception-data_clone_err",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dom-domexception-data_clone_err",
+      "linkingText": [
+        "DATA_CLONE_ERR"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "encodingerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#encodingerror",
+      "linkingText": [
+        "EncodingError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "notreadableerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#notreadableerror",
+      "linkingText": [
+        "NotReadableError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "unknownerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#unknownerror",
+      "linkingText": [
+        "UnknownError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "constrainterror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#constrainterror",
+      "linkingText": [
+        "ConstraintError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dataerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dataerror",
+      "linkingText": [
+        "DataError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "transactioninactiveerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#transactioninactiveerror",
+      "linkingText": [
+        "TransactionInactiveError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "readonlyerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#readonlyerror",
+      "linkingText": [
+        "ReadOnlyError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "versionerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#versionerror",
+      "linkingText": [
+        "VersionError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "operationerror",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#operationerror",
+      "linkingText": [
+        "OperationError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-enumeration",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-enumeration",
+      "linkingText": [
+        "enumeration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-enumeration-value",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-enumeration-value",
+      "linkingText": [
+        "enumeration values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-callback-function",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-callback-function",
+      "linkingText": [
+        "callback function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-typedef",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-typedef",
+      "linkingText": [
+        "typedef"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-implements-statement",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-implements-statement",
+      "linkingText": [
+        "implements statement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-supplemental-interface",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-supplemental-interface",
+      "linkingText": [
+        "supplemental interfaces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-consequential-interfaces",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-consequential-interfaces",
+      "linkingText": [
+        "consequential interfaces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-platform-object",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-platform-object",
+      "linkingText": [
+        "platform object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-user-object",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-user-object",
+      "linkingText": [
+        "user object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-integer-type",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-integer-type",
+      "linkingText": [
+        "integer types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-numeric-type",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-numeric-type",
+      "linkingText": [
+        "numeric types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-primitive-type",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-primitive-type",
+      "linkingText": [
+        "primitive types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-string-type",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-string-type",
+      "linkingText": [
+        "string types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-exception-type",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-exception-type",
+      "linkingText": [
+        "exception types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-typed-array-type",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-typed-array-type",
+      "linkingText": [
+        "typed array types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-buffer-source-type",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-buffer-source-type",
+      "linkingText": [
+        "buffer source types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-object-type",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-object-type",
+      "linkingText": [
+        "object types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-type-name",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-type-name",
+      "linkingText": [
+        "type name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-specific-type",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-specific-type",
+      "linkingText": [
+        "specific type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-obtain-unicode",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-obtain-unicode",
+      "linkingText": [
+        "convert a DOMString to a sequence of Unicode scalar values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-callback-context",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-callback-context",
+      "linkingText": [
+        "callback context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-nullable-type",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-nullable-type",
+      "linkingText": [
+        "nullable type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-inner-type",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-inner-type",
+      "linkingText": [
+        "inner type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-promise-type",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-promise-type",
+      "linkingText": [
+        "promise type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-union-type",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-union-type",
+      "linkingText": [
+        "union type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-union-member-type",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-union-member-type",
+      "linkingText": [
+        "member types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-flattened-union-member-types",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-flattened-union-member-types",
+      "linkingText": [
+        "flattened member types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-number-of-nullable-member-types",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-number-of-nullable-member-types",
+      "linkingText": [
+        "number of nullable member types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-includes-a-nullable-type",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-includes-a-nullable-type",
+      "linkingText": [
+        "includes a nullable type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-detach",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-detach",
+      "linkingText": [
+        "detach"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-get-buffer-source-reference",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-get-buffer-source-reference",
+      "linkingText": [
+        "get a reference to the bytes held by the buffer source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-get-buffer-source-copy",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-get-buffer-source-copy",
+      "linkingText": [
+        "get a copy of the bytes held by the buffer source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-extended-attribute",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-extended-attribute",
+      "linkingText": [
+        "extended attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-xattr-no-arguments",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-xattr-no-arguments",
+      "linkingText": [
+        "takes no arguments"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-xattr-argument-list",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-xattr-argument-list",
+      "linkingText": [
+        "takes an argument list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-xattr-named-argument-list",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-xattr-named-argument-list",
+      "linkingText": [
+        "takes a named argument list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-xattr-identifier",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-xattr-identifier",
+      "linkingText": [
+        "takes an identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-xattr-identifier-list",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-xattr-identifier-list",
+      "linkingText": [
+        "takes an identifier list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-class-string",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-class-string",
+      "linkingText": [
+        "class string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-function-object",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-function-object",
+      "linkingText": [
+        "function object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-initial-object",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-initial-object",
+      "linkingText": [
+        "initial objects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-expose",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-expose",
+      "linkingText": [
+        "exposes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-convert-ecmascript-to-idl-value",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-convert-ecmascript-to-idl-value",
+      "linkingText": [
+        "converted to an IDL value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-convert-idl-to-ecmascript-value",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-convert-idl-to-ecmascript-value",
+      "linkingText": [
+        "converted to ECMAScript values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-perform-steps-once-promise-is-settled",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-perform-steps-once-promise-is-settled",
+      "linkingText": [
+        "perform some steps once a promise is settled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-exposure-set",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-exposure-set",
+      "linkingText": [
+        "exposure set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-exposed",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-exposed",
+      "linkingText": [
+        "exposed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-global-name",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-global-name",
+      "linkingText": [
+        "global names"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-primary-global-interface",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-primary-global-interface",
+      "linkingText": [
+        "primary global interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-unforgeable-on-an-interface",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-unforgeable-on-an-interface",
+      "linkingText": [
+        "unforgeable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-perform-a-security-check",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-perform-a-security-check",
+      "linkingText": [
+        "perform a security check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-overload-resolution-algorithm",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-overload-resolution-algorithm",
+      "linkingText": [
+        "overload resolution algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-interface-object",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-interface-object",
+      "linkingText": [
+        "interface object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-named-constructor",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-named-constructor",
+      "linkingText": [
+        "named constructor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-interface-prototype-object",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-interface-prototype-object",
+      "linkingText": [
+        "interface prototype object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dictionary-constructor",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-dictionary-constructor",
+      "linkingText": [
+        "dictionary constructor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-named-properties-object",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-named-properties-object",
+      "linkingText": [
+        "named properties object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-attribute-getter",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-attribute-getter",
+      "linkingText": [
+        "attribute getter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-attribute-setter",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-attribute-setter",
+      "linkingText": [
+        "attribute setter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-convert-serialized-value-to-ecmascript-value",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-convert-serialized-value-to-ecmascript-value",
+      "linkingText": [
+        "convert a serialized value to an ECMAScript value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-default-iterator-object",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-default-iterator-object",
+      "linkingText": [
+        "default iterator object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-iterator-prototype-object",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-iterator-prototype-object",
+      "linkingText": [
+        "iterator prototype object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "add-map-elements-from-iterable",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#add-map-elements-from-iterable",
+      "linkingText": [
+        "add map elements from an iterable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-primary-interface",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-primary-interface",
+      "linkingText": [
+        "primary interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-change-global-environment",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-change-global-environment",
+      "linkingText": [
+        "change"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-default-unforgeable-valueOf-function",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-default-unforgeable-valueOf-function",
+      "linkingText": [
+        "default unforgeable valueOf function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-array-index-property-name",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-array-index-property-name",
+      "linkingText": [
+        "array index property name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-unforgeable-property-name",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-unforgeable-property-name",
+      "linkingText": [
+        "unforgeable property name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-named-property-visibility",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-named-property-visibility",
+      "linkingText": [
+        "named property visibility algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "invoke-indexed-setter",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#invoke-indexed-setter",
+      "linkingText": [
+        "invoke an indexed property\n              setter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "invoke-named-setter",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#invoke-named-setter",
+      "linkingText": [
+        "invoke a named property\n              setter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-unenumerable",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-unenumerable",
+      "linkingText": [
+        "unenumerable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-single-operation-callback-interface",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-single-operation-callback-interface",
+      "linkingText": [
+        "single operation callback interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-callback-this-value",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-callback-this-value",
+      "linkingText": [
+        "callback this value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-DOMException-constructor-object",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-DOMException-constructor-object",
+      "linkingText": [
+        "DOMException constructor object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-DOMException-prototype-object",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-DOMException-prototype-object",
+      "linkingText": [
+        "DOMException prototype object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-current-global-environment",
+      "href": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/#dfn-current-global-environment",
+      "linkingText": [
+        "current global environment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

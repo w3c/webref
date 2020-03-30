@@ -1,84 +1,74 @@
 {
   "spec": {
-    "title": "Media Queries Level 4",
-    "url": "https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/"
+    "title": "Media Queries Level 5",
+    "url": "https://www.w3.org/TR/2020/WD-mediaqueries-5-20200318/"
   },
   "properties": {},
   "descriptors": {
-    "width": {
-      "name": "width",
+    "light-level": {
+      "name": "light-level",
       "for": "@media",
-      "value": "<length>",
-      "type": "range"
-    },
-    "height": {
-      "name": "height",
-      "for": "@media",
-      "value": "<length>",
-      "type": "range"
-    },
-    "aspect-ratio": {
-      "name": "aspect-ratio",
-      "for": "@media",
-      "value": "<ratio>",
-      "type": "range"
-    },
-    "orientation": {
-      "name": "orientation",
-      "for": "@media",
-      "value": "portrait | landscape",
+      "value": "dim | normal | washed",
       "type": "discrete"
     },
-    "resolution": {
-      "name": "resolution",
+    "environment-blending": {
+      "name": "environment-blending",
       "for": "@media",
-      "value": "<resolution> | infinite",
-      "type": "range"
-    },
-    "scan": {
-      "name": "scan",
-      "for": "@media",
-      "value": "interlace | progressive",
+      "value": "opaque | additive | subtractive",
       "type": "discrete"
     },
-    "grid": {
-      "name": "grid",
+    "scripting": {
+      "name": "scripting",
       "for": "@media",
-      "value": "<mq-boolean>",
+      "value": "none | initial-only | enabled",
       "type": "discrete"
     },
-    "update": {
-      "name": "update",
+    "inverted-colors": {
+      "name": "inverted-colors",
       "for": "@media",
-      "value": "none | slow | fast",
+      "value": "none | inverted",
       "type": "discrete"
     },
-    "overflow-block": {
-      "name": "overflow-block",
+    "prefers-reduced-motion": {
+      "name": "prefers-reduced-motion",
       "for": "@media",
-      "value": "none | scroll | optional-paged | paged",
+      "value": "no-preference | reduce",
       "type": "discrete"
     },
-    "overflow-inline": {
-      "name": "overflow-inline",
+    "prefers-reduced-transparency": {
+      "name": "prefers-reduced-transparency",
       "for": "@media",
-      "value": "none | scroll",
+      "value": "no-preference | reduce",
       "type": "discrete"
     },
-    "color": {
-      "name": "color",
+    "prefers-contrast": {
+      "name": "prefers-contrast",
       "for": "@media",
-      "value": "<integer>",
-      "type": "range"
+      "value": "no-preference | high | low",
+      "type": "discrete"
     },
-    "color-index": {
-      "name": "color-index",
+    "prefers-color-scheme": {
+      "name": "prefers-color-scheme",
       "for": "@media",
-      "value": "<integer>",
-      "type": "range"
+      "value": "no-preference | light | dark",
+      "type": "discrete"
     },
-    "monochrome": {
-      "name": "monochrome",
+    "forced-colors": {
+      "name": "forced-colors",
+      "for": "@media",
+      "value": "none | active",
+      "type": "discrete"
+    },
+    "prefers-reduced-data": {
+      "name": "prefers-reduced-data",
+      "for": "@media",
+      "value": "no-preference | reduce",
+      "type": "discrete"
+    }
+  },
+  "valuespaces": {}
+}
+   "name": "monochrome",
       "for": "@media",
       "value": "<integer>",
       "type": "range"

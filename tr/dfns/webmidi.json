@@ -1,0 +1,296 @@
+{
+  "spec": {
+    "title": "Web MIDI API",
+    "url": "http://www.w3.org/TR/2015/WD-webmidi-20150317/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-user-agent",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-queue-a-task",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-queue-a-task",
+      "linkingText": [
+        "queue a task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fires-a-simple-event",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-fires-a-simple-event",
+      "linkingText": [
+        "fires a simple event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handlers",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-event-handlers",
+      "linkingText": [
+        "event handlers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handler-event-types",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-event-handler-event-types",
+      "linkingText": [
+        "event handler event types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-uint8array",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-uint8array",
+      "linkingText": [
+        "Uint8Array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "OctetDfn",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#OctetDfn",
+      "linkingText": [
+        "octet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "WebAudio",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#WebAudio",
+      "linkingText": [
+        "Web Audio API"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-event",
+      "linkingText": [
+        "Event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-domerror",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-domerror",
+      "linkingText": [
+        "DOMError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "DomHighResTimeStampDfn",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#DomHighResTimeStampDfn",
+      "linkingText": [
+        "DOMHighResTimeStamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-midi",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-midi",
+      "linkingText": [
+        "MIDI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-midi-device",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-midi-device",
+      "linkingText": [
+        "MIDI device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-midi-input-port",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-midi-input-port",
+      "linkingText": [
+        "MIDI input port"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-midi-output-port",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-midi-output-port",
+      "linkingText": [
+        "MIDI output port"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-midi-interface",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-midi-interface",
+      "linkingText": [
+        "MIDI interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-midi-message",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-midi-message",
+      "linkingText": [
+        "MIDI message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-midi-system-real-time-message",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-midi-system-real-time-message",
+      "linkingText": [
+        "MIDI System Real-Time message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-system-exclusive",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-system-exclusive",
+      "linkingText": [
+        "system exclusive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-promise",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-promise",
+      "linkingText": [
+        "Promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator-requestmidiaccess",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dom-navigator-requestmidiaccess",
+      "linkingText": [
+        "requestMIDIAccess"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-algorithm-to-request-midi-access",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-algorithm-to-request-midi-access",
+      "linkingText": [
+        "algorithm to request MIDI Access"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-algorithm-to-close-a-midiport",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-algorithm-to-close-a-midiport",
+      "linkingText": [
+        "algorithm to close a MIDIPort"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-algorithm-to-open-a-midiport",
+      "href": "http://www.w3.org/TR/2015/WD-webmidi-20150317/#dfn-algorithm-to-open-a-midiport",
+      "linkingText": [
+        "algorithm to open a MIDIPort"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

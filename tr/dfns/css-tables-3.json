@@ -1,0 +1,1058 @@
+{
+  "spec": {
+    "title": "CSS Table Module Level 3",
+    "url": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/"
+  },
+  "dfns": [
+    {
+      "id": "table",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table",
+      "linkingText": [
+        "table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "inline-table",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#inline-table",
+      "linkingText": [
+        "inline-table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "table-row",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-row",
+      "linkingText": [
+        "table-row"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "table-row-group",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-row-group",
+      "linkingText": [
+        "table-row-group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "table-header-group",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-header-group",
+      "linkingText": [
+        "table-header-group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "table-footer-group",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-footer-group",
+      "linkingText": [
+        "table-footer-group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "table-column",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-column",
+      "linkingText": [
+        "table-column"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "table-column-group",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-column-group",
+      "linkingText": [
+        "table-column-group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "table-cell",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-cell",
+      "linkingText": [
+        "table-cell"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "table-caption",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-caption",
+      "linkingText": [
+        "table-caption"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "table-wrapper-box",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-wrapper-box",
+      "linkingText": [
+        "table wrapper box",
+        "table-wrapper box"
+      ],
+      "localLinkingText": [
+        "table-wrapper"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "table-grid-box",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-grid-box",
+      "linkingText": [
+        "table grid box",
+        "table-grid box"
+      ],
+      "localLinkingText": [
+        "table-grid"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "table-root-element",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-root-element",
+      "linkingText": [
+        "table-root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "table-non-root-element",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-non-root-element",
+      "linkingText": [
+        "table-non-root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "table-track",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-track",
+      "linkingText": [
+        "table-track"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "table-track-group-element",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-track-group-element",
+      "linkingText": [
+        "table-track-group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "proper-table-child-element",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#proper-table-child-element",
+      "linkingText": [
+        "proper table child"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "proper-table-row-parent-element",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#proper-table-row-parent-element",
+      "linkingText": [
+        "proper table-row parent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "table-internal-element",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-internal-element",
+      "linkingText": [
+        "table-internal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "tabular-container",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#tabular-container",
+      "linkingText": [
+        "tabular container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "consecutive-boxes",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#consecutive-boxes",
+      "linkingText": [
+        "consecutive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "table-grid",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-grid",
+      "linkingText": [
+        "table grid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "row",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#row",
+      "linkingText": [
+        "rows"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "column",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#column",
+      "linkingText": [
+        "columns"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "slot",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#slot",
+      "linkingText": [
+        "slot"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "originate",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#originate",
+      "linkingText": [
+        "originate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "span",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#span",
+      "linkingText": [
+        "span"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "min-content-width-of-a-table",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#min-content-width-of-a-table",
+      "linkingText": [
+        "min-content width of a table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "max-content-width-of-a-table",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#max-content-width-of-a-table",
+      "linkingText": [
+        "max-content width of a table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "empty-table",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#empty-table",
+      "linkingText": [
+        "empty table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "eligible-track",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#eligible-track",
+      "linkingText": [
+        "eligible track"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-table-layout",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#propdef-table-layout",
+      "linkingText": [
+        "table-layout"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "in-fixed-mode",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#in-fixed-mode",
+      "linkingText": [
+        "in fixed mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "in-auto-mode",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#in-auto-mode",
+      "linkingText": [
+        "in auto mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-collapse",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#propdef-border-collapse",
+      "linkingText": [
+        "border-collapse"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "in-collapsed-borders-mode",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#in-collapsed-borders-mode",
+      "linkingText": [
+        "in collapsed-borders mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "in-separated-borders-mode",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#in-separated-borders-mode",
+      "linkingText": [
+        "in separated-borders mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-border-spacing",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#propdef-border-spacing",
+      "linkingText": [
+        "border-spacing"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-caption-side",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#propdef-caption-side",
+      "linkingText": [
+        "caption-side"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "caption-side-top",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#caption-side-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "caption-side-bottom",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#caption-side-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "undistributable-space",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#undistributable-space",
+      "linkingText": [
+        "undistributable space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cell-intrinsic-offsets",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#cell-intrinsic-offsets",
+      "linkingText": [
+        "cell intrinsic offsets"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "table-intrinsic-offsets",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-intrinsic-offsets",
+      "linkingText": [
+        "table intrinsic offsets"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "total-horizontal-border-spacing",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#total-horizontal-border-spacing",
+      "linkingText": [
+        "total horizontal border spacing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "offsets-adjusted-width",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#offsets-adjusted-width",
+      "linkingText": [
+        "offsets-adjusted min-width, width, and max-width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "outer-min-content",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#outer-min-content",
+      "linkingText": [
+        "outer min-content"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "outer-max-content",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#outer-max-content",
+      "linkingText": [
+        "outer max-content"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "percentage-contribution",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#percentage-contribution",
+      "linkingText": [
+        "percentage contribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "min-content-width-of-a-column-based-on-cells-of-span-up-to-1",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#min-content-width-of-a-column-based-on-cells-of-span-up-to-1",
+      "linkingText": [
+        "min-content width of a column based on cells of span up to 1"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "max-content-width-of-a-column-based-on-cells-of-span-up-to-1",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#max-content-width-of-a-column-based-on-cells-of-span-up-to-1",
+      "linkingText": [
+        "max-content width of a column based on cells of span up to 1"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "intrinsic-percentage-width-of-a-column-based-on-cells-of-span-up-to-1",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#intrinsic-percentage-width-of-a-column-based-on-cells-of-span-up-to-1",
+      "linkingText": [
+        "intrinsic percentage width of a column based on cells of span up to 1"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "min-content-width-of-a-column-based-on-cells-of-span-up-to-n-n--1",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#min-content-width-of-a-column-based-on-cells-of-span-up-to-n-n--1",
+      "linkingText": [
+        "min-content width of a column based on cells of span up to N (N > 1)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "max-content-width-of-a-column-based-on-cells-of-span-up-to-n-n--1",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#max-content-width-of-a-column-based-on-cells-of-span-up-to-n-n--1",
+      "linkingText": [
+        "max-content width of a column based on cells of span up to N (N > 1)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "intrinsic-percentage-width-of-a-column-based-on-cells-of-span-up-to-n-n--1",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#intrinsic-percentage-width-of-a-column-based-on-cells-of-span-up-to-n-n--1",
+      "linkingText": [
+        "intrinsic percentage width of a column based on cells of span up to N (N > 1)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "min-content-width-of-a-column",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#min-content-width-of-a-column",
+      "linkingText": [
+        "min-content width of a column"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "max-content-width-of-a-column",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#max-content-width-of-a-column",
+      "linkingText": [
+        "max-content width of a column"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "intrinsic-percentage-width-of-a-column",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#intrinsic-percentage-width-of-a-column",
+      "linkingText": [
+        "intrinsic percentage width of a column"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "constrainedness",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#constrainedness",
+      "linkingText": [
+        "constrainedness"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "capmin",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#capmin",
+      "linkingText": [
+        "caption width minimum (CAPMIN)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "gridmin",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#gridmin",
+      "linkingText": [
+        "row/column-grid width minimum (GRIDMIN)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "gridmax",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#gridmax",
+      "linkingText": [
+        "row/column-grid width maximum (GRIDMAX)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "used-min-width-of-table",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#used-min-width-of-table",
+      "linkingText": [
+        "used min-width of a table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "used-width-of-table",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#used-width-of-table",
+      "linkingText": [
+        "used width of a table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "resolved-table-width",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#resolved-table-width",
+      "linkingText": [
+        "resolved-table-width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "assignable-table-width",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#assignable-table-width",
+      "linkingText": [
+        "assignable table width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sizing-type",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#sizing-type",
+      "linkingText": [
+        "sizing type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "percent-column",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#percent-column",
+      "linkingText": [
+        "percent-column"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pixel-column",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#pixel-column",
+      "linkingText": [
+        "pixel-column"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "auto-column",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#auto-column",
+      "linkingText": [
+        "auto-column"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "min-content-sizing-guess",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#min-content-sizing-guess",
+      "linkingText": [
+        "min-content sizing-guess"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "min-content-percentage-sizing-guess",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#min-content-percentage-sizing-guess",
+      "linkingText": [
+        "min-content-percentage sizing-guess"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "min-content-specified-sizing-guess",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#min-content-specified-sizing-guess",
+      "linkingText": [
+        "min-content-specified sizing-guess"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "max-content-sizing-guess",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#max-content-sizing-guess",
+      "linkingText": [
+        "max-content sizing-guess"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "distributing-excess-width-to-columns",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#distributing-excess-width-to-columns",
+      "linkingText": [
+        "distributing excess width to columns"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "distributed-width",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#distributed-width",
+      "linkingText": [
+        "distributed width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "excess-width",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#excess-width",
+      "linkingText": [
+        "excess width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ROWMIN",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#ROWMIN",
+      "linkingText": [
+        "ROWMIN"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "table-cell-baseline",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-cell-baseline",
+      "linkingText": [
+        "baseline of a cell"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "table-row-baseline",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-row-baseline",
+      "linkingText": [
+        "baseline of the row"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "table-root-baseline",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#table-root-baseline",
+      "linkingText": [
+        "baseline of a table-root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "resolving-percentages-heights-in-table-cell-content",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#resolving-percentages-heights-in-table-cell-content",
+      "linkingText": [
+        "Resolve percentage heights in table-cell content:"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "appropriateness-of-child-percentage-resolution",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#appropriateness-of-child-percentage-resolution",
+      "linkingText": [
+        "It is appropriate to resolve percentage heights on direct children of a table-cell"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "visible-track",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#visible-track",
+      "linkingText": [
+        "visible track"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-empty-cells",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#propdef-empty-cells",
+      "linkingText": [
+        "empty-cells"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "empty-cell",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#empty-cell",
+      "linkingText": [
+        "empty cell"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "freely-fragmentable",
+      "href": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/#freely-fragmentable",
+      "linkingText": [
+        "freely fragmentable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

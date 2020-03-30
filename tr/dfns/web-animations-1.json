@@ -1,0 +1,3451 @@
+{
+  "spec": {
+    "title": "Web Animations",
+    "url": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/"
+  },
+  "dfns": [
+    {
+      "id": "time-value",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#time-value",
+      "linkingText": [
+        "time value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "unresolved",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#unresolved",
+      "linkingText": [
+        "unresolved"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "timeline",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#timeline",
+      "linkingText": [
+        "timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "timeline-current-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#timeline-current-time",
+      "linkingText": [
+        "timeline current time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "inactive-timeline",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#inactive-timeline",
+      "linkingText": [
+        "inactive timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "timeline-time-to-origin-relative-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#timeline-time-to-origin-relative-time",
+      "linkingText": [
+        "timeline time\nto origin-relative time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "timeline-associated-with-a-document",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#timeline-associated-with-a-document",
+      "linkingText": [
+        "timeline associated with\na document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "update-animations-and-send-events",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#update-animations-and-send-events",
+      "linkingText": [
+        "update animations and send events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animation-frame",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#animation-frame",
+      "linkingText": [
+        "animation frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "document-timeline",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#document-timeline",
+      "linkingText": [
+        "document timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "origin-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#origin-time",
+      "linkingText": [
+        "origin time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "default-document-timeline",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#default-document-timeline",
+      "linkingText": [
+        "default document timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-animation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#concept-animation",
+      "linkingText": [
+        "animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "target-effect",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#target-effect",
+      "linkingText": [
+        "target effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "document-for-timing",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#document-for-timing",
+      "linkingText": [
+        "document for timing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "start-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#start-time",
+      "linkingText": [
+        "start time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "hold-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#hold-time",
+      "linkingText": [
+        "hold time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "global-animation-list",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#global-animation-list",
+      "linkingText": [
+        "global animation list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "set-the-timeline-of-an-animation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#set-the-timeline-of-an-animation",
+      "linkingText": [
+        "set the timeline of an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "set-the-target-effect-of-an-animation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#set-the-target-effect-of-an-animation",
+      "linkingText": [
+        "set the target effect of an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reset-an-animations-pending-tasks",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#reset-an-animations-pending-tasks",
+      "linkingText": [
+        "reset an animation’s pending tasks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "current-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#current-time",
+      "linkingText": [
+        "current time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "silently-set-the-current-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#silently-set-the-current-time",
+      "linkingText": [
+        "silently set the current time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "set-the-current-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#set-the-current-time",
+      "linkingText": [
+        "set the current time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "set-the-start-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#set-the-start-time",
+      "linkingText": [
+        "set the start time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ready",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#ready",
+      "linkingText": [
+        "ready"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "resolve-a-promise",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#resolve-a-promise",
+      "linkingText": [
+        "resolve a Promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reject-a-promise",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#reject-a-promise",
+      "linkingText": [
+        "reject a Promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-a-new-resolved-promise",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#create-a-new-resolved-promise",
+      "linkingText": [
+        "create a new resolved Promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "current-ready-promise",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#current-ready-promise",
+      "linkingText": [
+        "current ready promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "play-an-animation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#play-an-animation",
+      "linkingText": [
+        "play an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pending-play-task",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#pending-play-task",
+      "linkingText": [
+        "pending play task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pause-an-animation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#pause-an-animation",
+      "linkingText": [
+        "pause an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pending-pause-task",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#pending-pause-task",
+      "linkingText": [
+        "pending pause task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "current-finished-promise",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#current-finished-promise",
+      "linkingText": [
+        "current finished promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "target-effect-end",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#target-effect-end",
+      "linkingText": [
+        "target effect end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "previous-current-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#previous-current-time",
+      "linkingText": [
+        "previous current time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "update-an-animations-finished-state",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#update-an-animations-finished-state",
+      "linkingText": [
+        "update an animation’s finished state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "finish-notification-steps",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#finish-notification-steps",
+      "linkingText": [
+        "finish notification steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "finish-an-animation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#finish-an-animation",
+      "linkingText": [
+        "finish an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cancel-an-animation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#cancel-an-animation",
+      "linkingText": [
+        "cancel an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "playback-rate",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#playback-rate",
+      "linkingText": [
+        "playback rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "set-the-playback-rate",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#set-the-playback-rate",
+      "linkingText": [
+        "set the playback rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pending-playback-rate",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#pending-playback-rate",
+      "linkingText": [
+        "pending playback rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "effective-playback-rate",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#effective-playback-rate",
+      "linkingText": [
+        "effective playback rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "apply-any-pending-playback-rate",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#apply-any-pending-playback-rate",
+      "linkingText": [
+        "apply any pending playback rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "seamlessly-update-the-playback-rate",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#seamlessly-update-the-playback-rate",
+      "linkingText": [
+        "seamlessly update the playback rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reverse-an-animation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#reverse-an-animation",
+      "linkingText": [
+        "reverse an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "play-state",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#play-state",
+      "linkingText": [
+        "play state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "idle-play-state",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#idle-play-state",
+      "linkingText": [
+        "idle play state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "paused-play-state",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#paused-play-state",
+      "linkingText": [
+        "paused play state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "finished-play-state",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#finished-play-state",
+      "linkingText": [
+        "finished play state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "running-play-state",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#running-play-state",
+      "linkingText": [
+        "running play state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-events",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#animation-events",
+      "linkingText": [
+        "Animation events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pending-animation-event-queue",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#pending-animation-event-queue",
+      "linkingText": [
+        "pending animation event queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "scheduled-event-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#scheduled-event-time",
+      "linkingText": [
+        "scheduled event time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-time-to-timeline-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#animation-time-to-timeline-time",
+      "linkingText": [
+        "animation time to timeline time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-time-to-origin-relative-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#animation-time-to-origin-relative-time",
+      "linkingText": [
+        "animation time to origin-relative time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-playback-events",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#animation-playback-events",
+      "linkingText": [
+        "animation playback events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "finish-event",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#finish-event",
+      "linkingText": [
+        "finish event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "cancel-event",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#cancel-event",
+      "linkingText": [
+        "cancel event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-effect",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#animation-effect",
+      "linkingText": [
+        "animation effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "associated-with-an-animation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#associated-with-an-animation",
+      "linkingText": [
+        "associated with an animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "associated-with-a-timeline",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#associated-with-a-timeline",
+      "linkingText": [
+        "associated with a timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "active-interval",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#active-interval",
+      "linkingText": [
+        "active interval"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "start-delay",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#start-delay",
+      "linkingText": [
+        "start delay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "end-delay",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#end-delay",
+      "linkingText": [
+        "end delay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "end-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#end-time",
+      "linkingText": [
+        "end time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "local-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#local-time",
+      "linkingText": [
+        "local time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-direction",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#animation-direction",
+      "linkingText": [
+        "animation direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "before-active-boundary-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#before-active-boundary-time",
+      "linkingText": [
+        "before-active boundary time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "active-after-boundary-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#active-after-boundary-time",
+      "linkingText": [
+        "active-after boundary time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "before-phase",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#before-phase",
+      "linkingText": [
+        "before phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "after-phase",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#after-phase",
+      "linkingText": [
+        "after phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "active-phase",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#active-phase",
+      "linkingText": [
+        "active phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "idle-phase",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#idle-phase",
+      "linkingText": [
+        "idle phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "in-play",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#in-play",
+      "linkingText": [
+        "in play"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "current",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#current",
+      "linkingText": [
+        "current"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "in-effect",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#in-effect",
+      "linkingText": [
+        "in effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fill-mode",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#fill-mode",
+      "linkingText": [
+        "fill mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iteration-interval",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#iteration-interval",
+      "linkingText": [
+        "iteration interval"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iteration-duration",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#iteration-duration",
+      "linkingText": [
+        "iteration duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iteration-count",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#iteration-count",
+      "linkingText": [
+        "iteration count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iteration-start",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#iteration-start",
+      "linkingText": [
+        "iteration start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "active-duration",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#active-duration",
+      "linkingText": [
+        "active duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "active-time",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#active-time",
+      "linkingText": [
+        "active time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "overall-progress",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#overall-progress",
+      "linkingText": [
+        "overall progress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "simple-iteration-progress",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#simple-iteration-progress",
+      "linkingText": [
+        "simple iteration progress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "current-iteration",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#current-iteration",
+      "linkingText": [
+        "current iteration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "playback-direction",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#playback-direction",
+      "linkingText": [
+        "playback direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "directed-progress",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#directed-progress",
+      "linkingText": [
+        "directed progress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "transformed-progress",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#transformed-progress",
+      "linkingText": [
+        "transformed progress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iteration-progress",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#iteration-progress",
+      "linkingText": [
+        "iteration progress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "target-property",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#target-property",
+      "linkingText": [
+        "target property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "effect-value",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#effect-value",
+      "linkingText": [
+        "effect value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-animatable",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#concept-animatable",
+      "linkingText": [
+        "animatable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-type",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#animation-type",
+      "linkingText": [
+        "Animation type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "not-animatable",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#not-animatable",
+      "linkingText": [
+        "not animatable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "discrete",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#discrete",
+      "linkingText": [
+        "discrete"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "by-computed-value",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#by-computed-value",
+      "linkingText": [
+        "by computed value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "repeatable-list",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#repeatable-list",
+      "linkingText": [
+        "repeatable list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "keyframe-effect",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#keyframe-effect",
+      "linkingText": [
+        "keyframe effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "target-element",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#target-element",
+      "linkingText": [
+        "target element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "keyframe",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#keyframe",
+      "linkingText": [
+        "keyframe"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "keyframe-offset",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#keyframe-offset",
+      "linkingText": [
+        "keyframe offset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "loosely-sorted-by-offset",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#loosely-sorted-by-offset",
+      "linkingText": [
+        "loosely sorted by offset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "keyframe-specific-composite-operation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#keyframe-specific-composite-operation",
+      "linkingText": [
+        "keyframe-specific composite operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "computed-keyframes",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#computed-keyframes",
+      "linkingText": [
+        "computed keyframes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "computed-keyframe-offset",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#computed-keyframe-offset",
+      "linkingText": [
+        "computed keyframe offset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "compute-missing-keyframe-offsets",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#compute-missing-keyframe-offsets",
+      "linkingText": [
+        "compute missing keyframe offsets"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "offsetk",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#offsetk",
+      "linkingText": [
+        "offsetk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "neutral-value-for-composition",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#neutral-value-for-composition",
+      "linkingText": [
+        "neutral value for composition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "composite",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#composite",
+      "linkingText": [
+        "composite",
+        "composition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-class",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#animation-class",
+      "linkingText": [
+        "animation class"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "effect-stack",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#effect-stack",
+      "linkingText": [
+        "effect stack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-composite-order",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#animation-composite-order",
+      "linkingText": [
+        "animation composite order"
+      ],
+      "localLinkingText": [
+        "composite order"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "associated-animation-of-an-animation-effect",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#associated-animation-of-an-animation-effect",
+      "linkingText": [
+        "associated animation of an animation effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "underlying-value",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#underlying-value",
+      "linkingText": [
+        "underlying value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "composited-value",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#composited-value",
+      "linkingText": [
+        "composited value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "composite-operation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#composite-operation",
+      "linkingText": [
+        "composite operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "composite-operation-replace",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#composite-operation-replace",
+      "linkingText": [
+        "composite operation replace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "composite-operation-add",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#composite-operation-add",
+      "linkingText": [
+        "composite operation add"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "composite-operation-accumulate",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#composite-operation-accumulate",
+      "linkingText": [
+        "composite operation accumulate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iteration-composite-operation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#iteration-composite-operation",
+      "linkingText": [
+        "iteration composite operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iteration-composite-operation-replace",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#iteration-composite-operation-replace",
+      "linkingText": [
+        "iteration composite operation replace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "iteration-composite-operation-accumulate",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#iteration-composite-operation-accumulate",
+      "linkingText": [
+        "iteration composite operation accumulate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animationtimeline",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#animationtimeline",
+      "linkingText": [
+        "AnimationTimeline"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationtimeline-currenttime",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animationtimeline-currenttime",
+      "linkingText": [
+        "currentTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationTimeline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-documenttimelineoptions",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dictdef-documenttimelineoptions",
+      "linkingText": [
+        "DocumentTimelineOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "documenttimeline",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#documenttimeline",
+      "linkingText": [
+        "DocumentTimeline"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-documenttimelineoptions-origintime",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-documenttimelineoptions-origintime",
+      "linkingText": [
+        "originTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DocumentTimelineOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-documenttimeline-documenttimeline",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-documenttimeline-documenttimeline",
+      "linkingText": [
+        "DocumentTimeline(options)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "DocumentTimeline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-documenttimeline-documenttimeline-options-options",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-documenttimeline-documenttimeline-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DocumentTimeline/DocumentTimeline(options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#animation",
+      "linkingText": [
+        "Animation"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-animation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-animation",
+      "linkingText": [
+        "Animation(effect, timeline)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-animation-effect-timeline-effect",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-animation-effect-timeline-effect",
+      "linkingText": [
+        "effect"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Animation/Animation(effect, timeline)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-animation-effect-timeline-timeline",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-animation-effect-timeline-timeline",
+      "linkingText": [
+        "timeline"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Animation/Animation(effect, timeline)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-id",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-effect",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-effect",
+      "linkingText": [
+        "effect"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-timeline",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-timeline",
+      "linkingText": [
+        "timeline"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-starttime",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-starttime",
+      "linkingText": [
+        "startTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-currenttime",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-currenttime",
+      "linkingText": [
+        "currentTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-playbackrate",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-playbackrate",
+      "linkingText": [
+        "playbackRate"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-playstate",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-playstate",
+      "linkingText": [
+        "playState"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-pending",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-ready",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-ready",
+      "linkingText": [
+        "ready"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-finished",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-finished",
+      "linkingText": [
+        "finished"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-onfinish",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-onfinish",
+      "linkingText": [
+        "onfinish"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-oncancel",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-oncancel",
+      "linkingText": [
+        "oncancel"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-cancel",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-cancel",
+      "linkingText": [
+        "cancel()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-finish",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-finish",
+      "linkingText": [
+        "finish()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-play",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-play",
+      "linkingText": [
+        "play()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-pause",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-pause",
+      "linkingText": [
+        "pause()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-updateplaybackrate",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-updateplaybackrate",
+      "linkingText": [
+        "updatePlaybackRate(playbackRate)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-updateplaybackrate-playbackrate-playbackrate",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-updateplaybackrate-playbackrate-playbackrate",
+      "linkingText": [
+        "playbackRate"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Animation/updatePlaybackRate(playbackRate)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animation-reverse",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animation-reverse",
+      "linkingText": [
+        "reverse()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-animationplaystate",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#enumdef-animationplaystate",
+      "linkingText": [
+        "AnimationPlayState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaystate-idle",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animationplaystate-idle",
+      "linkingText": [
+        "\"idle\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AnimationPlayState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaystate-running",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animationplaystate-running",
+      "linkingText": [
+        "\"running\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AnimationPlayState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaystate-paused",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animationplaystate-paused",
+      "linkingText": [
+        "\"paused\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AnimationPlayState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaystate-finished",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animationplaystate-finished",
+      "linkingText": [
+        "\"finished\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AnimationPlayState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animationeffect",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#animationeffect",
+      "linkingText": [
+        "AnimationEffect"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationeffect-gettiming",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animationeffect-gettiming",
+      "linkingText": [
+        "getTiming()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AnimationEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationeffect-getcomputedtiming",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animationeffect-getcomputedtiming",
+      "linkingText": [
+        "getComputedTiming()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AnimationEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationeffect-updatetiming",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animationeffect-updatetiming",
+      "linkingText": [
+        "updateTiming(timing)",
+        "updateTiming()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AnimationEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationeffect-updatetiming-timing-timing",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animationeffect-updatetiming-timing-timing",
+      "linkingText": [
+        "timing"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationEffect/updateTiming(timing)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-effecttiming",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dictdef-effecttiming",
+      "linkingText": [
+        "EffectTiming"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-optionaleffecttiming",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dictdef-optionaleffecttiming",
+      "linkingText": [
+        "OptionalEffectTiming"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-effecttiming-delay",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-effecttiming-delay",
+      "linkingText": [
+        "delay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-optionaleffecttiming-delay",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-optionaleffecttiming-delay",
+      "linkingText": [
+        "delay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-effecttiming-enddelay",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-effecttiming-enddelay",
+      "linkingText": [
+        "endDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-optionaleffecttiming-enddelay",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-optionaleffecttiming-enddelay",
+      "linkingText": [
+        "endDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-effecttiming-fill",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-effecttiming-fill",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-optionaleffecttiming-fill",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-optionaleffecttiming-fill",
+      "linkingText": [
+        "fill"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-effecttiming-iterationstart",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-effecttiming-iterationstart",
+      "linkingText": [
+        "iterationStart"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-optionaleffecttiming-iterationstart",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-optionaleffecttiming-iterationstart",
+      "linkingText": [
+        "iterationStart"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-effecttiming-iterations",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-effecttiming-iterations",
+      "linkingText": [
+        "iterations"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-optionaleffecttiming-iterations",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-optionaleffecttiming-iterations",
+      "linkingText": [
+        "iterations"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-effecttiming-duration",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-effecttiming-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-optionaleffecttiming-duration",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-optionaleffecttiming-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-effecttiming-direction",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-effecttiming-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-optionaleffecttiming-direction",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-optionaleffecttiming-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-effecttiming-easing",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-effecttiming-easing",
+      "linkingText": [
+        "easing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-optionaleffecttiming-easing",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-optionaleffecttiming-easing",
+      "linkingText": [
+        "easing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OptionalEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-fillmode",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#enumdef-fillmode",
+      "linkingText": [
+        "FillMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fillmode-none",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-fillmode-none",
+      "linkingText": [
+        "\"none\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fillmode-forwards",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-fillmode-forwards",
+      "linkingText": [
+        "\"forwards\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fillmode-backwards",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-fillmode-backwards",
+      "linkingText": [
+        "\"backwards\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fillmode-both",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-fillmode-both",
+      "linkingText": [
+        "\"both\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fillmode-auto",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-fillmode-auto",
+      "linkingText": [
+        "\"auto\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-playbackdirection",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#enumdef-playbackdirection",
+      "linkingText": [
+        "PlaybackDirection"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-playbackdirection-normal",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-playbackdirection-normal",
+      "linkingText": [
+        "\"normal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PlaybackDirection"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-playbackdirection-reverse",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-playbackdirection-reverse",
+      "linkingText": [
+        "\"reverse\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PlaybackDirection"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-playbackdirection-alternate",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-playbackdirection-alternate",
+      "linkingText": [
+        "\"alternate\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PlaybackDirection"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-playbackdirection-alternate-reverse",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-playbackdirection-alternate-reverse",
+      "linkingText": [
+        "\"alternate-reverse\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PlaybackDirection"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "update-the-timing-properties-of-an-animation-effect",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#update-the-timing-properties-of-an-animation-effect",
+      "linkingText": [
+        "update the timing properties of an animation effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-computedeffecttiming",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dictdef-computedeffecttiming",
+      "linkingText": [
+        "ComputedEffectTiming"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-computedeffecttiming-endtime",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-computedeffecttiming-endtime",
+      "linkingText": [
+        "endTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputedEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-computedeffecttiming-activeduration",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-computedeffecttiming-activeduration",
+      "linkingText": [
+        "activeDuration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputedEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-computedeffecttiming-localtime",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-computedeffecttiming-localtime",
+      "linkingText": [
+        "localTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputedEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-computedeffecttiming-progress",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-computedeffecttiming-progress",
+      "linkingText": [
+        "progress"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputedEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-computedeffecttiming-currentiteration",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-computedeffecttiming-currentiteration",
+      "linkingText": [
+        "currentIteration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputedEffectTiming"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "keyframeeffect",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#keyframeeffect",
+      "linkingText": [
+        "KeyframeEffect"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-setkeyframes-keyframes-keyframes",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-keyframeeffect-setkeyframes-keyframes-keyframes",
+      "linkingText": [
+        "keyframes"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyframeEffect/setKeyframes(keyframes)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-keyframeeffect",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-keyframeeffect-keyframeeffect",
+      "linkingText": [
+        "KeyframeEffect(target, keyframes, options)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-keyframeeffect-target-keyframes-options-target",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-keyframeeffect-keyframeeffect-target-keyframes-options-target",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyframeEffect/KeyframeEffect(target, keyframes, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-keyframeeffect-target-keyframes-options-keyframes",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-keyframeeffect-keyframeeffect-target-keyframes-options-keyframes",
+      "linkingText": [
+        "keyframes"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyframeEffect/KeyframeEffect(target, keyframes, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-keyframeeffect-target-keyframes-options-options",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-keyframeeffect-keyframeeffect-target-keyframes-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyframeEffect/KeyframeEffect(target, keyframes, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-keyframeeffect-source",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-keyframeeffect-keyframeeffect-source",
+      "linkingText": [
+        "KeyframeEffect(source)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-keyframeeffect-source-source",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-keyframeeffect-keyframeeffect-source-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyframeEffect/KeyframeEffect(source)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-target",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-keyframeeffect-target",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-iterationcomposite",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-keyframeeffect-iterationcomposite",
+      "linkingText": [
+        "iterationComposite"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-composite",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-keyframeeffect-composite",
+      "linkingText": [
+        "composite"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-getkeyframes",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-keyframeeffect-getkeyframes",
+      "linkingText": [
+        "getKeyframes()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-basecomputedkeyframe",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dictdef-basecomputedkeyframe",
+      "linkingText": [
+        "BaseComputedKeyframe"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basecomputedkeyframe-offset",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-basecomputedkeyframe-offset",
+      "linkingText": [
+        "offset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BaseComputedKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basecomputedkeyframe-computedoffset",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-basecomputedkeyframe-computedoffset",
+      "linkingText": [
+        "computedOffset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BaseComputedKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basecomputedkeyframe-easing",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-basecomputedkeyframe-easing",
+      "linkingText": [
+        "easing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BaseComputedKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basecomputedkeyframe-composite",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-basecomputedkeyframe-composite",
+      "linkingText": [
+        "composite"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BaseComputedKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-setkeyframes",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-keyframeeffect-setkeyframes",
+      "linkingText": [
+        "setKeyframes(keyframes)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "KeyframeEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffect-setkeyframes-keyframes",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-keyframeeffect-setkeyframes-keyframes",
+      "linkingText": [
+        "keyframes"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "KeyframeEffect/setKeyframes"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animation-property-name-to-idl-attribute-name",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#animation-property-name-to-idl-attribute-name",
+      "linkingText": [
+        "animation property name to IDL attribute name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "idl-attribute-name-to-animation-property-name",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#idl-attribute-name-to-animation-property-name",
+      "linkingText": [
+        "IDL attribute name to animation property name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "check-the-completion-record",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#check-the-completion-record",
+      "linkingText": [
+        "check the completion record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "process-a-keyframe-like-object",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#process-a-keyframe-like-object",
+      "linkingText": [
+        "process a keyframe-like object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-basepropertyindexedkeyframe",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dictdef-basepropertyindexedkeyframe",
+      "linkingText": [
+        "BasePropertyIndexedKeyframe"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basepropertyindexedkeyframe-offset",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-basepropertyindexedkeyframe-offset",
+      "linkingText": [
+        "offset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasePropertyIndexedKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basepropertyindexedkeyframe-easing",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-basepropertyindexedkeyframe-easing",
+      "linkingText": [
+        "easing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasePropertyIndexedKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basepropertyindexedkeyframe-composite",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-basepropertyindexedkeyframe-composite",
+      "linkingText": [
+        "composite"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BasePropertyIndexedKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-basekeyframe",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dictdef-basekeyframe",
+      "linkingText": [
+        "BaseKeyframe"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basekeyframe-offset",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-basekeyframe-offset",
+      "linkingText": [
+        "offset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BaseKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basekeyframe-easing",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-basekeyframe-easing",
+      "linkingText": [
+        "easing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BaseKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-basekeyframe-composite",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-basekeyframe-composite",
+      "linkingText": [
+        "composite"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BaseKeyframe"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "process-a-keyframes-argument",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#process-a-keyframes-argument",
+      "linkingText": [
+        "process a keyframes argument"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-keyframeeffectoptions",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dictdef-keyframeeffectoptions",
+      "linkingText": [
+        "KeyframeEffectOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffectoptions-iterationcomposite",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-keyframeeffectoptions-iterationcomposite",
+      "linkingText": [
+        "iterationComposite"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyframeEffectOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeeffectoptions-composite",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-keyframeeffectoptions-composite",
+      "linkingText": [
+        "composite"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyframeEffectOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iterationcompositeoperation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#iterationcompositeoperation",
+      "linkingText": [
+        "IterationCompositeOperation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enumdef-iterationcompositeoperation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#enumdef-iterationcompositeoperation",
+      "linkingText": [
+        "IterationCompositeOperation"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-iterationcompositeoperation-replace",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-iterationcompositeoperation-replace",
+      "linkingText": [
+        "\"replace\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IterationCompositeOperation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-iterationcompositeoperation-accumulate",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-iterationcompositeoperation-accumulate",
+      "linkingText": [
+        "\"accumulate\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IterationCompositeOperation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "compositeoperation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#compositeoperation",
+      "linkingText": [
+        "CompositeOperation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enumdef-compositeoperation",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#enumdef-compositeoperation",
+      "linkingText": [
+        "CompositeOperation"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositeoperation-replace",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-compositeoperation-replace",
+      "linkingText": [
+        "replace"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CompositeOperation",
+        "CompositeOperationOrAuto"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositeoperation-add",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-compositeoperation-add",
+      "linkingText": [
+        "add"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CompositeOperation",
+        "CompositeOperationOrAuto"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositeoperation-accumulate",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-compositeoperation-accumulate",
+      "linkingText": [
+        "accumulate"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CompositeOperation",
+        "CompositeOperationOrAuto"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-compositeoperationorauto",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#enumdef-compositeoperationorauto",
+      "linkingText": [
+        "CompositeOperationOrAuto"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-compositeoperationorauto-auto",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-compositeoperationorauto-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CompositeOperationOrAuto"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animatable",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#animatable",
+      "linkingText": [
+        "Animatable"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-keyframeanimationoptions",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dictdef-keyframeanimationoptions",
+      "linkingText": [
+        "KeyframeAnimationOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animatable-animate",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animatable-animate",
+      "linkingText": [
+        "animate(keyframes, options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animatable"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animatable-animate-keyframes-options-keyframes",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animatable-animate-keyframes-options-keyframes",
+      "linkingText": [
+        "keyframes"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Animatable/animate(keyframes, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animatable-animate-keyframes-options-options",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animatable-animate-keyframes-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Animatable/animate(keyframes, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animatable-getanimations",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animatable-getanimations",
+      "linkingText": [
+        "getAnimations()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animatable"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-keyframeanimationoptions-id",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-keyframeanimationoptions-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyframeAnimationOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-timeline",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-document-timeline",
+      "linkingText": [
+        "timeline"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-getanimations",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-document-getanimations",
+      "linkingText": [
+        "getAnimations()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animationplaybackevent",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#animationplaybackevent",
+      "linkingText": [
+        "AnimationPlaybackEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-animationplaybackeventinit",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dictdef-animationplaybackeventinit",
+      "linkingText": [
+        "AnimationPlaybackEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaybackevent-animationplaybackevent",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animationplaybackevent-animationplaybackevent",
+      "linkingText": [
+        "AnimationPlaybackEvent(type, eventInitDict)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "AnimationPlaybackEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaybackevent-currenttime",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animationplaybackevent-currenttime",
+      "linkingText": [
+        "currentTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationPlaybackEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaybackevent-timelinetime",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animationplaybackevent-timelinetime",
+      "linkingText": [
+        "timelineTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationPlaybackEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaybackeventinit-currenttime",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animationplaybackeventinit-currenttime",
+      "linkingText": [
+        "currentTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AnimationPlaybackEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationplaybackeventinit-timelinetime",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#dom-animationplaybackeventinit-timelinetime",
+      "linkingText": [
+        "timelineTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AnimationPlaybackEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "conforming-scripted-web-animations-user-agent",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#conforming-scripted-web-animations-user-agent",
+      "linkingText": [
+        "conforming scripted Web Animations user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "combining-shadow-lists",
+      "href": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/#combining-shadow-lists",
+      "linkingText": [
+        "combining shadow lists"
+      ],
+      "localLinkingText": [
+        "shadow lists"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

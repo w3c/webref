@@ -1,0 +1,699 @@
+{
+  "spec": {
+    "title": "CSS Animation Worklet API",
+    "url": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/"
+  },
+  "dfns": [
+    {
+      "id": "animation-worklet",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#animation-worklet",
+      "linkingText": [
+        "Animation Worklet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-css-animationworklet",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-css-animationworklet",
+      "linkingText": [
+        "animationWorklet"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animator",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#animator",
+      "linkingText": [
+        "Animator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-statelessanimator-statelessanimator",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-statelessanimator-statelessanimator",
+      "linkingText": [
+        "StatelessAnimator(options)",
+        "StatelessAnimator()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "StatelessAnimator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-statelessanimator-statelessanimator-options-options",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-statelessanimator-statelessanimator-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "StatelessAnimator/StatelessAnimator(options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "statelessanimator",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#statelessanimator",
+      "linkingText": [
+        "StatelessAnimator"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-statefulanimator-statefulanimator",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-statefulanimator-statefulanimator",
+      "linkingText": [
+        "StatefulAnimator(options, state)",
+        "StatefulAnimator(options)",
+        "StatefulAnimator()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "StatefulAnimator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-statefulanimator-statefulanimator-options-state-options",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-statefulanimator-statefulanimator-options-state-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "StatefulAnimator/StatefulAnimator(options, state)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-statefulanimator-statefulanimator-options-state-state",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-statefulanimator-statefulanimator-options-state-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "StatefulAnimator/StatefulAnimator(options, state)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "statefulanimator",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#statefulanimator",
+      "linkingText": [
+        "StatefulAnimator"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-statefulanimator-state",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-statefulanimator-state",
+      "linkingText": [
+        "state()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StatefulAnimator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animator-definition",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#animator-definition",
+      "linkingText": [
+        "animator definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animator-name",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#animator-name",
+      "linkingText": [
+        "animator name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "class-constructor",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#class-constructor",
+      "linkingText": [
+        "class constructor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animate-function",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#animate-function",
+      "linkingText": [
+        "animate function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "stateful-flag",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#stateful-flag",
+      "linkingText": [
+        "stateful flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animator-name-to-animator-definition-map",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#animator-name-to-animator-definition-map",
+      "linkingText": [
+        "animator name to animator definition map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animationworkletglobalscope",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#animationworkletglobalscope",
+      "linkingText": [
+        "AnimationWorkletGlobalScope"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationworkletglobalscope-registeranimator-name-animatorctor-name",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-animationworkletglobalscope-registeranimator-name-animatorctor-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationWorkletGlobalScope/registerAnimator(name, animatorCtor)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationworkletglobalscope-registeranimator-name-animatorctor-animatorctor",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-animationworkletglobalscope-registeranimator-name-animatorctor-animatorctor",
+      "linkingText": [
+        "animatorCtor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationWorkletGlobalScope/registerAnimator(name, animatorCtor)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "callbackdef-animatorinstanceconstructor",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#callbackdef-animatorinstanceconstructor",
+      "linkingText": [
+        "AnimatorInstanceConstructor"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animatorinstanceconstructor-options",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-animatorinstanceconstructor-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimatorInstanceConstructor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animatorinstanceconstructor-state",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-animatorinstanceconstructor-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimatorInstanceConstructor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationworkletglobalscope-registeranimator",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-animationworkletglobalscope-registeranimator",
+      "linkingText": [
+        "registerAnimator(name, animatorCtor)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AnimationWorkletGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "animator-instance",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#animator-instance",
+      "linkingText": [
+        "animator instance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animator-effect",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#animator-effect",
+      "linkingText": [
+        "animator effect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animator-current-time",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#animator-current-time",
+      "linkingText": [
+        "animator current time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animator-timeline",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#animator-timeline",
+      "linkingText": [
+        "animator timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animator-serialized-options",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#animator-serialized-options",
+      "linkingText": [
+        "animator serialized options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "stateful-animator-instance",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#stateful-animator-instance",
+      "linkingText": [
+        "stateful animator instance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animator-instance-set",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#animator-instance-set",
+      "linkingText": [
+        "animator instance set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-a-new-animator-instance",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#create-a-new-animator-instance",
+      "linkingText": [
+        "create a new animator instance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "run-animators",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#run-animators",
+      "linkingText": [
+        "run animators"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "remove-an-animator-instance",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#remove-an-animator-instance",
+      "linkingText": [
+        "remove an animator instance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "migrate-an-animator-instance",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#migrate-an-animator-instance",
+      "linkingText": [
+        "migrate an animator instance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-requested-flag",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#animation-requested-flag",
+      "linkingText": [
+        "animation requested flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "frame-requested",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#frame-requested",
+      "linkingText": [
+        "frame-requested"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "frame-current",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#frame-current",
+      "linkingText": [
+        "frame-current"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "worklet-animation",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#worklet-animation",
+      "linkingText": [
+        "Worklet animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "animation-animator-name",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#animation-animator-name",
+      "linkingText": [
+        "animation animator name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "serialized-options",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#serialized-options",
+      "linkingText": [
+        "serialized options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-workletanimation-workletanimation-animatorname-effects-timeline-options-animatorname",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-workletanimation-workletanimation-animatorname-effects-timeline-options-animatorname",
+      "linkingText": [
+        "animatorName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WorkletAnimation/WorkletAnimation(animatorName, effects, timeline, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-workletanimation-workletanimation-animatorname-effects-timeline-options-effects",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-workletanimation-workletanimation-animatorname-effects-timeline-options-effects",
+      "linkingText": [
+        "effects"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WorkletAnimation/WorkletAnimation(animatorName, effects, timeline, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-workletanimation-workletanimation-animatorname-effects-timeline-options-timeline",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-workletanimation-workletanimation-animatorname-effects-timeline-options-timeline",
+      "linkingText": [
+        "timeline"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WorkletAnimation/WorkletAnimation(animatorName, effects, timeline, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-workletanimation-workletanimation-animatorname-effects-timeline-options-options",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-workletanimation-workletanimation-animatorname-effects-timeline-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WorkletAnimation/WorkletAnimation(animatorName, effects, timeline, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "workletanimation",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#workletanimation",
+      "linkingText": [
+        "WorkletAnimation"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-workletanimation-animatorname",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-workletanimation-animatorname",
+      "linkingText": [
+        "animatorName"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WorkletAnimation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-workletanimation-workletanimation",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-workletanimation-workletanimation",
+      "linkingText": [
+        "WorkletAnimation(animatorName, effects, timeline, options)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "WorkletAnimation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "associate-animator-instance-of-worklet-animation",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#associate-animator-instance-of-worklet-animation",
+      "linkingText": [
+        "associate animator instance of worklet animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "disassociate-animator-instance-of-worklet-animation",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#disassociate-animator-instance-of-worklet-animation",
+      "linkingText": [
+        "disassociate animator instance of worklet animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "set-animator-instance-of-worklet-animation",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#set-animator-instance-of-worklet-animation",
+      "linkingText": [
+        "set animator instance of worklet animation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "workletgroupeffect",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#workletgroupeffect",
+      "linkingText": [
+        "WorkletGroupEffect"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-workletgroupeffect-getchildren",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-workletgroupeffect-getchildren",
+      "linkingText": [
+        "getChildren()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WorkletGroupEffect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-animationeffect-localtime",
+      "href": "https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/#dom-animationeffect-localtime",
+      "linkingText": [
+        "localTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationEffect"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

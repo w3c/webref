@@ -1,0 +1,5005 @@
+{
+  "spec": {
+    "title": "Identifiers for WebRTC's Statistics API",
+    "url": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-mediastream",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-mediastream",
+      "linkingText": [
+        "MediaStream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediastreamtrack",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-mediastreamtrack",
+      "linkingText": [
+        "MediaStreamTrack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-consumer",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-consumer",
+      "linkingText": [
+        "Consumer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcpeerconnection",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-rtcpeerconnection",
+      "linkingText": [
+        "RTCPeerConnection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcdatachannel",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-rtcdatachannel",
+      "linkingText": [
+        "RTCDataChannel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcdtlstransport",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-rtcdtlstransport",
+      "linkingText": [
+        "RTCDtlsTransport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcdtlstransportstate",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-rtcdtlstransportstate",
+      "linkingText": [
+        "RTCDtlsTransportState"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcicetransport",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-rtcicetransport",
+      "linkingText": [
+        "RTCIceTransport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcicerole",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-rtcicerole",
+      "linkingText": [
+        "RTCIceRole"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcsctptransport",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-rtcsctptransport",
+      "linkingText": [
+        "RTCSctpTransport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcdatachannelstate",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-rtcdatachannelstate",
+      "linkingText": [
+        "RTCDataChannelState"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcicecandidatetype",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-rtcicecandidatetype",
+      "linkingText": [
+        "RTCIceCandidateType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcprioritytype",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-rtcprioritytype",
+      "linkingText": [
+        "RTCPriorityType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtp-stream",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-rtp-stream",
+      "linkingText": [
+        "RTP stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstats",
+      "linkingText": [
+        "RTCStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstats-timestamp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstats-timestamp",
+      "linkingText": [
+        "timestamp",
+        "RTCStats.timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstats-type",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstats-type",
+      "linkingText": [
+        "type",
+        "RTCStats.type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstats-id",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstats-id",
+      "linkingText": [
+        "id",
+        "RTCStats.id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtccertificate",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-rtccertificate",
+      "linkingText": [
+        "RTCCertificate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-domhighrestimestamp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-domhighrestimestamp",
+      "linkingText": [
+        "DOMHighResTimeStamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-performance-timeorigin",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-performance-timeorigin",
+      "linkingText": [
+        "performance.timeOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-performance-now",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-performance-now",
+      "linkingText": [
+        "performance.now()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-monitored-object",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-monitored-object",
+      "linkingText": [
+        "Monitored object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-stats-object",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-stats-object",
+      "linkingText": [
+        "Stats object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-stats-object-reference",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-stats-object-reference",
+      "linkingText": [
+        "Stats object reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-stats-value",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-stats-value",
+      "linkingText": [
+        "Stats value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-deleted",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dfn-deleted",
+      "linkingText": [
+        "deleted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-rtcstatstype",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype",
+      "linkingText": [
+        "RTCStatsType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-codec",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-codec",
+      "linkingText": [
+        "codec"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-inbound-rtp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-inbound-rtp",
+      "linkingText": [
+        "inbound-rtp"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-outbound-rtp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-outbound-rtp",
+      "linkingText": [
+        "outbound-rtp"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-remote-inbound-rtp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-remote-inbound-rtp",
+      "linkingText": [
+        "remote-inbound-rtp"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-remote-outbound-rtp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-remote-outbound-rtp",
+      "linkingText": [
+        "remote-outbound-rtp"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-media-source",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-media-source",
+      "linkingText": [
+        "media-source"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-csrc",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-csrc",
+      "linkingText": [
+        "csrc"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-peer-connection",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-peer-connection",
+      "linkingText": [
+        "peer-connection"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-data-channel",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-data-channel",
+      "linkingText": [
+        "data-channel"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-stream",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-stream",
+      "linkingText": [
+        "stream"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-track",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-track",
+      "linkingText": [
+        "track"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-transceiver",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-transceiver",
+      "linkingText": [
+        "transceiver"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-sender",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-sender",
+      "linkingText": [
+        "sender"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-receiver",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-receiver",
+      "linkingText": [
+        "receiver"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-transport",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-transport",
+      "linkingText": [
+        "transport"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-sctp-transport",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-sctp-transport",
+      "linkingText": [
+        "sctp-transport"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-candidate-pair",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-candidate-pair",
+      "linkingText": [
+        "candidate-pair"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-local-candidate",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-local-candidate",
+      "linkingText": [
+        "local-candidate"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-remote-candidate",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-remote-candidate",
+      "linkingText": [
+        "remote-candidate"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-certificate",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-certificate",
+      "linkingText": [
+        "certificate"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatstype-ice-server",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatstype-ice-server",
+      "linkingText": [
+        "ice-server"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpstreamstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcrtpstreamstats",
+      "linkingText": [
+        "RTCRtpStreamStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpstreamstats-ssrc",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcrtpstreamstats-ssrc",
+      "linkingText": [
+        "ssrc"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpstreamstats-kind",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcrtpstreamstats-kind",
+      "linkingText": [
+        "kind"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpstreamstats-transportid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcrtpstreamstats-transportid",
+      "linkingText": [
+        "transportId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpstreamstats-codecid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcrtpstreamstats-codecid",
+      "linkingText": [
+        "codecId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtccodecstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtccodecstats",
+      "linkingText": [
+        "RTCCodecStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtccodecstats-payloadtype",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtccodecstats-payloadtype",
+      "linkingText": [
+        "payloadType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCCodecStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtccodecstats-codectype",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtccodecstats-codectype",
+      "linkingText": [
+        "codecType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCCodecStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtccodecstats-transportid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtccodecstats-transportid",
+      "linkingText": [
+        "transportId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCCodecStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtccodecstats-mimetype",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtccodecstats-mimetype",
+      "linkingText": [
+        "mimeType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCCodecStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtccodecstats-clockrate",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtccodecstats-clockrate",
+      "linkingText": [
+        "clockRate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCCodecStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtccodecstats-channels",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtccodecstats-channels",
+      "linkingText": [
+        "channels"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCCodecStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtccodecstats-sdpfmtpline",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtccodecstats-sdpfmtpline",
+      "linkingText": [
+        "sdpFmtpLine"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCCodecStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtccodectype",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtccodectype",
+      "linkingText": [
+        "RTCCodecType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtccodectype-encode",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtccodectype-encode",
+      "linkingText": [
+        "encode"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCCodecType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtccodectype-decode",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtccodectype-decode",
+      "linkingText": [
+        "decode"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCCodecType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivedrtpstreamstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivedrtpstreamstats",
+      "linkingText": [
+        "RTCReceivedRtpStreamStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivedrtpstreamstats-packetsreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivedrtpstreamstats-packetsreceived",
+      "linkingText": [
+        "packetsReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCReceivedRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivedrtpstreamstats-packetslost",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivedrtpstreamstats-packetslost",
+      "linkingText": [
+        "packetsLost"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCReceivedRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivedrtpstreamstats-jitter",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivedrtpstreamstats-jitter",
+      "linkingText": [
+        "jitter"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCReceivedRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivedrtpstreamstats-packetsdiscarded",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivedrtpstreamstats-packetsdiscarded",
+      "linkingText": [
+        "packetsDiscarded"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCReceivedRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivedrtpstreamstats-packetsrepaired",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivedrtpstreamstats-packetsrepaired",
+      "linkingText": [
+        "packetsRepaired"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCReceivedRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivedrtpstreamstats-burstpacketslost",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivedrtpstreamstats-burstpacketslost",
+      "linkingText": [
+        "burstPacketsLost"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCReceivedRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivedrtpstreamstats-burstpacketsdiscarded",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivedrtpstreamstats-burstpacketsdiscarded",
+      "linkingText": [
+        "burstPacketsDiscarded"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCReceivedRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivedrtpstreamstats-burstlosscount",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivedrtpstreamstats-burstlosscount",
+      "linkingText": [
+        "burstLossCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCReceivedRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivedrtpstreamstats-burstdiscardcount",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivedrtpstreamstats-burstdiscardcount",
+      "linkingText": [
+        "burstDiscardCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCReceivedRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivedrtpstreamstats-burstlossrate",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivedrtpstreamstats-burstlossrate",
+      "linkingText": [
+        "burstLossRate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCReceivedRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivedrtpstreamstats-burstdiscardrate",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivedrtpstreamstats-burstdiscardrate",
+      "linkingText": [
+        "burstDiscardRate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCReceivedRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivedrtpstreamstats-gaplossrate",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivedrtpstreamstats-gaplossrate",
+      "linkingText": [
+        "gapLossRate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCReceivedRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivedrtpstreamstats-gapdiscardrate",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivedrtpstreamstats-gapdiscardrate",
+      "linkingText": [
+        "gapDiscardRate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCReceivedRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivedrtpstreamstats-framesdropped",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivedrtpstreamstats-framesdropped",
+      "linkingText": [
+        "framesDropped"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCReceivedRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivedrtpstreamstats-partialframeslost",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivedrtpstreamstats-partialframeslost",
+      "linkingText": [
+        "partialFramesLost"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCReceivedRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivedrtpstreamstats-fullframeslost",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivedrtpstreamstats-fullframeslost",
+      "linkingText": [
+        "fullFramesLost"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCReceivedRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats",
+      "linkingText": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-trackid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-trackid",
+      "linkingText": [
+        "trackId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-receiverid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-receiverid",
+      "linkingText": [
+        "receiverId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-remoteid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-remoteid",
+      "linkingText": [
+        "remoteId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-framesdecoded",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-framesdecoded",
+      "linkingText": [
+        "framesDecoded"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-keyframesdecoded",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-keyframesdecoded",
+      "linkingText": [
+        "keyFramesDecoded"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-framewidth",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-framewidth",
+      "linkingText": [
+        "frameWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-frameheight",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-frameheight",
+      "linkingText": [
+        "frameHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-framebitdepth",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-framebitdepth",
+      "linkingText": [
+        "frameBitDepth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-framespersecond",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-framespersecond",
+      "linkingText": [
+        "framesPerSecond"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-qpsum",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-qpsum",
+      "linkingText": [
+        "qpSum"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-totaldecodetime",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-totaldecodetime",
+      "linkingText": [
+        "totalDecodeTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-totalinterframedelay",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-totalinterframedelay",
+      "linkingText": [
+        "totalInterFrameDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-totalsquaredinterframedelay",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-totalsquaredinterframedelay",
+      "linkingText": [
+        "totalSquaredInterFrameDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-voiceactivityflag",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-voiceactivityflag",
+      "linkingText": [
+        "voiceActivityFlag"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-lastpacketreceivedtimestamp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-lastpacketreceivedtimestamp",
+      "linkingText": [
+        "lastPacketReceivedTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-averagertcpinterval",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-averagertcpinterval",
+      "linkingText": [
+        "averageRtcpInterval"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-headerbytesreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-headerbytesreceived",
+      "linkingText": [
+        "headerBytesReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-fecpacketsreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-fecpacketsreceived",
+      "linkingText": [
+        "fecPacketsReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-fecpacketsdiscarded",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-fecpacketsdiscarded",
+      "linkingText": [
+        "fecPacketsDiscarded"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-bytesreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-bytesreceived",
+      "linkingText": [
+        "bytesReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-packetsfaileddecryption",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-packetsfaileddecryption",
+      "linkingText": [
+        "packetsFailedDecryption"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-packetsduplicated",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-packetsduplicated",
+      "linkingText": [
+        "packetsDuplicated"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-perdscppacketsreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-perdscppacketsreceived",
+      "linkingText": [
+        "perDscpPacketsReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-fircount",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-fircount",
+      "linkingText": [
+        "firCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-plicount",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-plicount",
+      "linkingText": [
+        "pliCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-nackcount",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-nackcount",
+      "linkingText": [
+        "nackCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-slicount",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-slicount",
+      "linkingText": [
+        "sliCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-estimatedplayouttimestamp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-estimatedplayouttimestamp",
+      "linkingText": [
+        "estimatedPlayoutTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-jitterbufferdelay",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-jitterbufferdelay",
+      "linkingText": [
+        "jitterBufferDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-jitterbufferemittedcount",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-jitterbufferemittedcount",
+      "linkingText": [
+        "jitterBufferEmittedCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-totalsamplesreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-totalsamplesreceived",
+      "linkingText": [
+        "totalSamplesReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-samplesdecodedwithsilk",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-samplesdecodedwithsilk",
+      "linkingText": [
+        "samplesDecodedWithSilk"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-samplesdecodedwithcelt",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-samplesdecodedwithcelt",
+      "linkingText": [
+        "samplesDecodedWithCelt"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-concealedsamples",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-concealedsamples",
+      "linkingText": [
+        "concealedSamples"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-silentconcealedsamples",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-silentconcealedsamples",
+      "linkingText": [
+        "silentConcealedSamples"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-concealmentevents",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-concealmentevents",
+      "linkingText": [
+        "concealmentEvents"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-insertedsamplesfordeceleration",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-insertedsamplesfordeceleration",
+      "linkingText": [
+        "insertedSamplesForDeceleration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-removedsamplesforacceleration",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-removedsamplesforacceleration",
+      "linkingText": [
+        "removedSamplesForAcceleration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-audiolevel",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-audiolevel",
+      "linkingText": [
+        "audioLevel"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-totalaudioenergy",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-totalaudioenergy",
+      "linkingText": [
+        "totalAudioEnergy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-totalsamplesduration",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-totalsamplesduration",
+      "linkingText": [
+        "totalSamplesDuration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-framesreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-framesreceived",
+      "linkingText": [
+        "framesReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-decoderimplementation",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-decoderimplementation",
+      "linkingText": [
+        "decoderImplementation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcremoteinboundrtpstreamstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcremoteinboundrtpstreamstats",
+      "linkingText": [
+        "RTCRemoteInboundRtpStreamStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcremoteinboundrtpstreamstats-localid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcremoteinboundrtpstreamstats-localid",
+      "linkingText": [
+        "localId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRemoteInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcremoteinboundrtpstreamstats-roundtriptime",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcremoteinboundrtpstreamstats-roundtriptime",
+      "linkingText": [
+        "roundTripTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRemoteInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcremoteinboundrtpstreamstats-totalroundtriptime",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcremoteinboundrtpstreamstats-totalroundtriptime",
+      "linkingText": [
+        "totalRoundTripTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRemoteInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcremoteinboundrtpstreamstats-fractionlost",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcremoteinboundrtpstreamstats-fractionlost",
+      "linkingText": [
+        "fractionLost"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRemoteInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcremoteinboundrtpstreamstats-reportsreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcremoteinboundrtpstreamstats-reportsreceived",
+      "linkingText": [
+        "reportsReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRemoteInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcremoteinboundrtpstreamstats-roundtriptimemeasurements",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcremoteinboundrtpstreamstats-roundtriptimemeasurements",
+      "linkingText": [
+        "roundTripTimeMeasurements"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRemoteInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcsentrtpstreamstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcsentrtpstreamstats",
+      "linkingText": [
+        "RTCSentRtpStreamStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcsentrtpstreamstats-packetssent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcsentrtpstreamstats-packetssent",
+      "linkingText": [
+        "packetsSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCSentRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcsentrtpstreamstats-bytessent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcsentrtpstreamstats-bytessent",
+      "linkingText": [
+        "bytesSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCSentRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats",
+      "linkingText": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-trackid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-trackid",
+      "linkingText": [
+        "trackId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-mediasourceid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-mediasourceid",
+      "linkingText": [
+        "mediaSourceId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-senderid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-senderid",
+      "linkingText": [
+        "senderId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-remoteid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-remoteid",
+      "linkingText": [
+        "remoteId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-rid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-rid",
+      "linkingText": [
+        "rid"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-lastpacketsenttimestamp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-lastpacketsenttimestamp",
+      "linkingText": [
+        "lastPacketSentTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-headerbytessent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-headerbytessent",
+      "linkingText": [
+        "headerBytesSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-packetsdiscardedonsend",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-packetsdiscardedonsend",
+      "linkingText": [
+        "packetsDiscardedOnSend"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-bytesdiscardedonsend",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-bytesdiscardedonsend",
+      "linkingText": [
+        "bytesDiscardedOnSend"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-fecpacketssent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-fecpacketssent",
+      "linkingText": [
+        "fecPacketsSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-retransmittedpacketssent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-retransmittedpacketssent",
+      "linkingText": [
+        "retransmittedPacketsSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-retransmittedbytessent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-retransmittedbytessent",
+      "linkingText": [
+        "retransmittedBytesSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-targetbitrate",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-targetbitrate",
+      "linkingText": [
+        "targetBitrate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-totalencodedbytestarget",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-totalencodedbytestarget",
+      "linkingText": [
+        "totalEncodedBytesTarget"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-framewidth",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-framewidth",
+      "linkingText": [
+        "frameWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-frameheight",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-frameheight",
+      "linkingText": [
+        "frameHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-framebitdepth",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-framebitdepth",
+      "linkingText": [
+        "frameBitDepth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-framespersecond",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-framespersecond",
+      "linkingText": [
+        "framesPerSecond"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-framessent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-framessent",
+      "linkingText": [
+        "framesSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-hugeframessent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-hugeframessent",
+      "linkingText": [
+        "hugeFramesSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-framesencoded",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-framesencoded",
+      "linkingText": [
+        "framesEncoded"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-keyframesencoded",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-keyframesencoded",
+      "linkingText": [
+        "keyFramesEncoded"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-framesdiscardedonsend",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-framesdiscardedonsend",
+      "linkingText": [
+        "framesDiscardedOnSend"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-qpsum",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-qpsum",
+      "linkingText": [
+        "qpSum"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-totalsamplessent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-totalsamplessent",
+      "linkingText": [
+        "totalSamplesSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-samplesencodedwithsilk",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-samplesencodedwithsilk",
+      "linkingText": [
+        "samplesEncodedWithSilk"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-samplesencodedwithcelt",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-samplesencodedwithcelt",
+      "linkingText": [
+        "samplesEncodedWithCelt"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-voiceactivityflag",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-voiceactivityflag",
+      "linkingText": [
+        "voiceActivityFlag"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-totalencodetime",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-totalencodetime",
+      "linkingText": [
+        "totalEncodeTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-totalpacketsenddelay",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-totalpacketsenddelay",
+      "linkingText": [
+        "totalPacketSendDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-averagertcpinterval",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-averagertcpinterval",
+      "linkingText": [
+        "averageRtcpInterval"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-qualitylimitationreason",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-qualitylimitationreason",
+      "linkingText": [
+        "qualityLimitationReason"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-qualitylimitationdurations",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-qualitylimitationdurations",
+      "linkingText": [
+        "qualityLimitationDurations"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-qualitylimitationresolutionchanges",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-qualitylimitationresolutionchanges",
+      "linkingText": [
+        "qualityLimitationResolutionChanges"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-perdscppacketssent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-perdscppacketssent",
+      "linkingText": [
+        "perDscpPacketsSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-nackcount",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-nackcount",
+      "linkingText": [
+        "nackCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-fircount",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-fircount",
+      "linkingText": [
+        "firCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-plicount",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-plicount",
+      "linkingText": [
+        "pliCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-slicount",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-slicount",
+      "linkingText": [
+        "sliCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcoutboundrtpstreamstats-encoderimplementation",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcoutboundrtpstreamstats-encoderimplementation",
+      "linkingText": [
+        "encoderImplementation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcqualitylimitationreason",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcqualitylimitationreason",
+      "linkingText": [
+        "RTCQualityLimitationReason"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcqualitylimitationreason-none",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcqualitylimitationreason-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCQualityLimitationReason"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcqualitylimitationreason-cpu",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcqualitylimitationreason-cpu",
+      "linkingText": [
+        "cpu"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCQualityLimitationReason"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcqualitylimitationreason-bandwidth",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcqualitylimitationreason-bandwidth",
+      "linkingText": [
+        "bandwidth"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCQualityLimitationReason"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcqualitylimitationreason-other",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcqualitylimitationreason-other",
+      "linkingText": [
+        "other"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCQualityLimitationReason"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcremoteoutboundrtpstreamstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcremoteoutboundrtpstreamstats",
+      "linkingText": [
+        "RTCRemoteOutboundRtpStreamStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcremoteoutboundrtpstreamstats-localid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcremoteoutboundrtpstreamstats-localid",
+      "linkingText": [
+        "localId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRemoteOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcremoteoutboundrtpstreamstats-remotetimestamp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcremoteoutboundrtpstreamstats-remotetimestamp",
+      "linkingText": [
+        "remoteTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRemoteOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcremoteoutboundrtpstreamstats-reportssent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcremoteoutboundrtpstreamstats-reportssent",
+      "linkingText": [
+        "reportsSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRemoteOutboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcmediasourcestats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcmediasourcestats",
+      "linkingText": [
+        "RTCMediaSourceStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcmediasourcestats-trackidentifier",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcmediasourcestats-trackidentifier",
+      "linkingText": [
+        "trackIdentifier"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCMediaSourceStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcmediasourcestats-kind",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcmediasourcestats-kind",
+      "linkingText": [
+        "kind"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCMediaSourceStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudiosourcestats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudiosourcestats",
+      "linkingText": [
+        "RTCAudioSourceStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudiosourcestats-audiolevel",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudiosourcestats-audiolevel",
+      "linkingText": [
+        "audioLevel"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioSourceStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudiosourcestats-totalaudioenergy",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudiosourcestats-totalaudioenergy",
+      "linkingText": [
+        "totalAudioEnergy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioSourceStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudiosourcestats-totalsamplesduration",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudiosourcestats-totalsamplesduration",
+      "linkingText": [
+        "totalSamplesDuration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioSourceStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudiosourcestats-echoreturnloss",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudiosourcestats-echoreturnloss",
+      "linkingText": [
+        "echoReturnLoss"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioSourceStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudiosourcestats-echoreturnlossenhancement",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudiosourcestats-echoreturnlossenhancement",
+      "linkingText": [
+        "echoReturnLossEnhancement"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioSourceStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideosourcestats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideosourcestats",
+      "linkingText": [
+        "RTCVideoSourceStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideosourcestats-width",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideosourcestats-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoSourceStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideosourcestats-height",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideosourcestats-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoSourceStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideosourcestats-bitdepth",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideosourcestats-bitdepth",
+      "linkingText": [
+        "bitDepth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoSourceStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideosourcestats-frames",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideosourcestats-frames",
+      "linkingText": [
+        "frames"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoSourceStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideosourcestats-framespersecond",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideosourcestats-framespersecond",
+      "linkingText": [
+        "framesPerSecond"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoSourceStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpcontributingsourcestats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcrtpcontributingsourcestats",
+      "linkingText": [
+        "RTCRtpContributingSourceStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpcontributingsourcestats-contributorssrc",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcrtpcontributingsourcestats-contributorssrc",
+      "linkingText": [
+        "contributorSsrc"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpContributingSourceStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpcontributingsourcestats-inboundrtpstreamid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcrtpcontributingsourcestats-inboundrtpstreamid",
+      "linkingText": [
+        "inboundRtpStreamId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpContributingSourceStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpcontributingsourcestats-packetscontributedto",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcrtpcontributingsourcestats-packetscontributedto",
+      "linkingText": [
+        "packetsContributedTo"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpContributingSourceStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpcontributingsourcestats-audiolevel",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcrtpcontributingsourcestats-audiolevel",
+      "linkingText": [
+        "audioLevel"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpContributingSourceStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcpeerconnectionstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcpeerconnectionstats",
+      "linkingText": [
+        "RTCPeerConnectionStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcpeerconnectionstats-datachannelsopened",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcpeerconnectionstats-datachannelsopened",
+      "linkingText": [
+        "dataChannelsOpened"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCPeerConnectionStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcpeerconnectionstats-datachannelsclosed",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcpeerconnectionstats-datachannelsclosed",
+      "linkingText": [
+        "dataChannelsClosed"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCPeerConnectionStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcpeerconnectionstats-datachannelsrequested",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcpeerconnectionstats-datachannelsrequested",
+      "linkingText": [
+        "dataChannelsRequested"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCPeerConnectionStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcpeerconnectionstats-datachannelsaccepted",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcpeerconnectionstats-datachannelsaccepted",
+      "linkingText": [
+        "dataChannelsAccepted"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCPeerConnectionStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtptransceiverstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcrtptransceiverstats",
+      "linkingText": [
+        "RTCRtpTransceiverStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtptransceiverstats-senderid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcrtptransceiverstats-senderid",
+      "linkingText": [
+        "senderId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpTransceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtptransceiverstats-receiverid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcrtptransceiverstats-receiverid",
+      "linkingText": [
+        "receiverId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpTransceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtptransceiverstats-mid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcrtptransceiverstats-mid",
+      "linkingText": [
+        "mid"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpTransceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcmediahandlerstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcmediahandlerstats",
+      "linkingText": [
+        "RTCMediaHandlerStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcmediahandlerstats-trackidentifier",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcmediahandlerstats-trackidentifier",
+      "linkingText": [
+        "trackIdentifier"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCMediaHandlerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcmediahandlerstats-remotesource",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcmediahandlerstats-remotesource",
+      "linkingText": [
+        "remoteSource"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCMediaHandlerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcmediahandlerstats-ended",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcmediahandlerstats-ended",
+      "linkingText": [
+        "ended"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCMediaHandlerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcmediahandlerstats-kind",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcmediahandlerstats-kind",
+      "linkingText": [
+        "kind"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCMediaHandlerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcmediahandlerstats-priority",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcmediahandlerstats-priority",
+      "linkingText": [
+        "priority"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCMediaHandlerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideohandlerstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideohandlerstats",
+      "linkingText": [
+        "RTCVideoHandlerStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideosenderstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideosenderstats",
+      "linkingText": [
+        "RTCVideoSenderStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideosenderstats-mediasourceid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideosenderstats-mediasourceid",
+      "linkingText": [
+        "mediaSourceId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoSenderStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcsendervideotrackattachmentstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcsendervideotrackattachmentstats",
+      "linkingText": [
+        "RTCSenderVideoTrackAttachmentStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideoreceiverstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideoreceiverstats",
+      "linkingText": [
+        "RTCVideoReceiverStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudiohandlerstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudiohandlerstats",
+      "linkingText": [
+        "RTCAudioHandlerStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudiosenderstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudiosenderstats",
+      "linkingText": [
+        "RTCAudioSenderStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudiosenderstats-mediasourceid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudiosenderstats-mediasourceid",
+      "linkingText": [
+        "mediaSourceId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioSenderStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcsenderaudiotrackattachmentstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcsenderaudiotrackattachmentstats",
+      "linkingText": [
+        "RTCSenderAudioTrackAttachmentStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudioreceiverstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudioreceiverstats",
+      "linkingText": [
+        "RTCAudioReceiverStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdatachannelstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcdatachannelstats",
+      "linkingText": [
+        "RTCDataChannelStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdatachannelstats-label",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcdatachannelstats-label",
+      "linkingText": [
+        "label"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCDataChannelStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdatachannelstats-protocol",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcdatachannelstats-protocol",
+      "linkingText": [
+        "protocol"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCDataChannelStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdatachannelstats-datachannelidentifier",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcdatachannelstats-datachannelidentifier",
+      "linkingText": [
+        "dataChannelIdentifier"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCDataChannelStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdatachannelstats-transportid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcdatachannelstats-transportid",
+      "linkingText": [
+        "transportId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCDataChannelStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdatachannelstats-state",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcdatachannelstats-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCDataChannelStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdatachannelstats-messagessent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcdatachannelstats-messagessent",
+      "linkingText": [
+        "messagesSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCDataChannelStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdatachannelstats-bytessent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcdatachannelstats-bytessent",
+      "linkingText": [
+        "bytesSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCDataChannelStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdatachannelstats-messagesreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcdatachannelstats-messagesreceived",
+      "linkingText": [
+        "messagesReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCDataChannelStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcdatachannelstats-bytesreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcdatachannelstats-bytesreceived",
+      "linkingText": [
+        "bytesReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCDataChannelStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtctransportstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtctransportstats",
+      "linkingText": [
+        "RTCTransportStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtctransportstats-packetssent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtctransportstats-packetssent",
+      "linkingText": [
+        "packetsSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCTransportStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtctransportstats-packetsreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtctransportstats-packetsreceived",
+      "linkingText": [
+        "packetsReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCTransportStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtctransportstats-bytessent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtctransportstats-bytessent",
+      "linkingText": [
+        "bytesSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCTransportStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtctransportstats-bytesreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtctransportstats-bytesreceived",
+      "linkingText": [
+        "bytesReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCTransportStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtctransportstats-rtcptransportstatsid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtctransportstats-rtcptransportstatsid",
+      "linkingText": [
+        "rtcpTransportStatsId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCTransportStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtctransportstats-icerole",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtctransportstats-icerole",
+      "linkingText": [
+        "iceRole"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCTransportStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtctransportstats-dtlsstate",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtctransportstats-dtlsstate",
+      "linkingText": [
+        "dtlsState"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCTransportStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtctransportstats-selectedcandidatepairid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtctransportstats-selectedcandidatepairid",
+      "linkingText": [
+        "selectedCandidatePairId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCTransportStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtctransportstats-localcertificateid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtctransportstats-localcertificateid",
+      "linkingText": [
+        "localCertificateId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCTransportStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtctransportstats-remotecertificateid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtctransportstats-remotecertificateid",
+      "linkingText": [
+        "remoteCertificateId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCTransportStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtctransportstats-tlsversion",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtctransportstats-tlsversion",
+      "linkingText": [
+        "tlsVersion"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCTransportStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtctransportstats-dtlscipher",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtctransportstats-dtlscipher",
+      "linkingText": [
+        "dtlsCipher"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCTransportStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtctransportstats-srtpcipher",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtctransportstats-srtpcipher",
+      "linkingText": [
+        "srtpCipher"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCTransportStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtctransportstats-tlsgroup",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtctransportstats-tlsgroup",
+      "linkingText": [
+        "tlsGroup"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCTransportStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtctransportstats-selectedcandidatepairchanges",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtctransportstats-selectedcandidatepairchanges",
+      "linkingText": [
+        "selectedCandidatePairChanges"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCTransportStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcsctptransportstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcsctptransportstats",
+      "linkingText": [
+        "RTCSctpTransportStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcsctptransportstats-smoothedroundtriptime",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcsctptransportstats-smoothedroundtriptime",
+      "linkingText": [
+        "smoothedRoundTripTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCSctpTransportStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatestats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatestats",
+      "linkingText": [
+        "RTCIceCandidateStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatestats-transportid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatestats-transportid",
+      "linkingText": [
+        "transportId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidateStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatestats-address",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatestats-address",
+      "linkingText": [
+        "address"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidateStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatestats-port",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatestats-port",
+      "linkingText": [
+        "port"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidateStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatestats-protocol",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatestats-protocol",
+      "linkingText": [
+        "protocol"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidateStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatestats-relayprotocol",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatestats-relayprotocol",
+      "linkingText": [
+        "relayProtocol"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidateStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatestats-candidatetype",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatestats-candidatetype",
+      "linkingText": [
+        "candidateType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidateStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatestats-priority",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatestats-priority",
+      "linkingText": [
+        "priority"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidateStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatestats-url",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatestats-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidateStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats",
+      "linkingText": [
+        "RTCIceCandidatePairStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-transportid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-transportid",
+      "linkingText": [
+        "transportId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-localcandidateid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-localcandidateid",
+      "linkingText": [
+        "localCandidateId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-remotecandidateid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-remotecandidateid",
+      "linkingText": [
+        "remoteCandidateId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-state",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-nominated",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-nominated",
+      "linkingText": [
+        "nominated"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-packetssent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-packetssent",
+      "linkingText": [
+        "packetsSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-packetsreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-packetsreceived",
+      "linkingText": [
+        "packetsReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-bytessent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-bytessent",
+      "linkingText": [
+        "bytesSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-bytesreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-bytesreceived",
+      "linkingText": [
+        "bytesReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-lastpacketsenttimestamp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-lastpacketsenttimestamp",
+      "linkingText": [
+        "lastPacketSentTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-lastpacketreceivedtimestamp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-lastpacketreceivedtimestamp",
+      "linkingText": [
+        "lastPacketReceivedTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-firstrequesttimestamp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-firstrequesttimestamp",
+      "linkingText": [
+        "firstRequestTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-lastrequesttimestamp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-lastrequesttimestamp",
+      "linkingText": [
+        "lastRequestTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-lastresponsetimestamp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-lastresponsetimestamp",
+      "linkingText": [
+        "lastResponseTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-totalroundtriptime",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-totalroundtriptime",
+      "linkingText": [
+        "totalRoundTripTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-currentroundtriptime",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-currentroundtriptime",
+      "linkingText": [
+        "currentRoundTripTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-availableoutgoingbitrate",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-availableoutgoingbitrate",
+      "linkingText": [
+        "availableOutgoingBitrate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-availableincomingbitrate",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-availableincomingbitrate",
+      "linkingText": [
+        "availableIncomingBitrate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-circuitbreakertriggercount",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-circuitbreakertriggercount",
+      "linkingText": [
+        "circuitBreakerTriggerCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-requestsreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-requestsreceived",
+      "linkingText": [
+        "requestsReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-requestssent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-requestssent",
+      "linkingText": [
+        "requestsSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-responsesreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-responsesreceived",
+      "linkingText": [
+        "responsesReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-responsessent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-responsessent",
+      "linkingText": [
+        "responsesSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-retransmissionsreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-retransmissionsreceived",
+      "linkingText": [
+        "retransmissionsReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-retransmissionssent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-retransmissionssent",
+      "linkingText": [
+        "retransmissionsSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-consentrequestssent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-consentrequestssent",
+      "linkingText": [
+        "consentRequestsSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-consentexpiredtimestamp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-consentexpiredtimestamp",
+      "linkingText": [
+        "consentExpiredTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-packetsdiscardedonsend",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-packetsdiscardedonsend",
+      "linkingText": [
+        "packetsDiscardedOnSend"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-bytesdiscardedonsend",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-bytesdiscardedonsend",
+      "linkingText": [
+        "bytesDiscardedOnSend"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatsicecandidatepairstate",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatsicecandidatepairstate",
+      "linkingText": [
+        "RTCStatsIceCandidatePairState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatsicecandidatepairstate-frozen",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatsicecandidatepairstate-frozen",
+      "linkingText": [
+        "frozen"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsIceCandidatePairState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatsicecandidatepairstate-waiting",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatsicecandidatepairstate-waiting",
+      "linkingText": [
+        "waiting"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsIceCandidatePairState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatsicecandidatepairstate-in-progress",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatsicecandidatepairstate-in-progress",
+      "linkingText": [
+        "in-progress"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsIceCandidatePairState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatsicecandidatepairstate-failed",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatsicecandidatepairstate-failed",
+      "linkingText": [
+        "failed"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsIceCandidatePairState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcstatsicecandidatepairstate-succeeded",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcstatsicecandidatepairstate-succeeded",
+      "linkingText": [
+        "succeeded"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCStatsIceCandidatePairState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtccertificatestats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtccertificatestats",
+      "linkingText": [
+        "RTCCertificateStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtccertificatestats-fingerprint",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtccertificatestats-fingerprint",
+      "linkingText": [
+        "fingerprint"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCCertificateStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtccertificatestats-fingerprintalgorithm",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtccertificatestats-fingerprintalgorithm",
+      "linkingText": [
+        "fingerprintAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCCertificateStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtccertificatestats-base64certificate",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtccertificatestats-base64certificate",
+      "linkingText": [
+        "base64Certificate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCCertificateStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtccertificatestats-issuercertificateid",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtccertificatestats-issuercertificateid",
+      "linkingText": [
+        "issuerCertificateId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCCertificateStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtciceserverstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtciceserverstats",
+      "linkingText": [
+        "RTCIceServerStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtciceserverstats-url",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtciceserverstats-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceServerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtciceserverstats-port",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtciceserverstats-port",
+      "linkingText": [
+        "port"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceServerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtciceserverstats-protocol",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtciceserverstats-protocol",
+      "linkingText": [
+        "protocol"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceServerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtciceserverstats-totalrequestssent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtciceserverstats-totalrequestssent",
+      "linkingText": [
+        "totalRequestsSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceServerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtciceserverstats-totalresponsesreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtciceserverstats-totalresponsesreceived",
+      "linkingText": [
+        "totalResponsesReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceServerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtciceserverstats-totalroundtriptime",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtciceserverstats-totalroundtriptime",
+      "linkingText": [
+        "totalRoundTripTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceServerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcmediastreamstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcmediastreamstats",
+      "linkingText": [
+        "RTCMediaStreamStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [
+        "RTCMediaStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcmediastreamstats-streamidentifier",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcmediastreamstats-streamidentifier",
+      "linkingText": [
+        "streamIdentifier"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCMediaStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcmediastreamstats-trackids",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcmediastreamstats-trackids",
+      "linkingText": [
+        "trackIds"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCMediaStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceivervideotrackattachmentstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceivervideotrackattachmentstats",
+      "linkingText": [
+        "RTCReceiverVideoTrackAttachmentStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [
+        "RTCReceiverVideoTrackAttachmentStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcreceiveraudiotrackattachmentstats",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcreceiveraudiotrackattachmentstats",
+      "linkingText": [
+        "RTCReceiverAudioTrackAttachmentStats"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [
+        "RTCReceiverAudioTrackAttachmentStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtccodecstats-implementation",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtccodecstats-implementation",
+      "linkingText": [
+        "implementation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCCodecStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatestats-deleted",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatestats-deleted",
+      "linkingText": [
+        "deleted"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidateStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatestats-isremote",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatestats-isremote",
+      "linkingText": [
+        "isRemote"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidateStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-totalrtt",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-totalrtt",
+      "linkingText": [
+        "totalRtt"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-currentrtt",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-currentrtt",
+      "linkingText": [
+        "currentRtt"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicecandidatepairstats-priority",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcicecandidatepairstats-priority",
+      "linkingText": [
+        "priority"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceCandidatePairStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpstreamstats-mediatype",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcrtpstreamstats-mediatype",
+      "linkingText": [
+        "mediaType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpstreamstats-averagertcpinterval",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcrtpstreamstats-averagertcpinterval",
+      "linkingText": [
+        "averageRTCPInterval"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-fractionlost",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcinboundrtpstreamstats-fractionlost",
+      "linkingText": [
+        "fractionLost"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudiohandlerstats-audiolevel",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudiohandlerstats-audiolevel",
+      "linkingText": [
+        "audioLevel"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioHandlerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudiohandlerstats-totalaudioenergy",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudiohandlerstats-totalaudioenergy",
+      "linkingText": [
+        "totalAudioEnergy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioHandlerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudiohandlerstats-totalsamplesduration",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudiohandlerstats-totalsamplesduration",
+      "linkingText": [
+        "totalSamplesDuration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioHandlerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudiohandlerstats-voiceactivityflag",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudiohandlerstats-voiceactivityflag",
+      "linkingText": [
+        "voiceActivityFlag"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioHandlerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudiosenderstats-totalsamplessent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudiosenderstats-totalsamplessent",
+      "linkingText": [
+        "totalSamplesSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioSenderStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudiosenderstats-echoreturnloss",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudiosenderstats-echoreturnloss",
+      "linkingText": [
+        "echoReturnLoss"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioSenderStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudiosenderstats-echoreturnlossenhancement",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudiosenderstats-echoreturnlossenhancement",
+      "linkingText": [
+        "echoReturnLossEnhancement"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioSenderStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudioreceiverstats-estimatedplayouttimestamp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudioreceiverstats-estimatedplayouttimestamp",
+      "linkingText": [
+        "estimatedPlayoutTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudioreceiverstats-jitterbufferdelay",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudioreceiverstats-jitterbufferdelay",
+      "linkingText": [
+        "jitterBufferDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudioreceiverstats-jitterbufferemittedcount",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudioreceiverstats-jitterbufferemittedcount",
+      "linkingText": [
+        "jitterBufferEmittedCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudioreceiverstats-totalsamplesreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudioreceiverstats-totalsamplesreceived",
+      "linkingText": [
+        "totalSamplesReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudioreceiverstats-concealedsamples",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudioreceiverstats-concealedsamples",
+      "linkingText": [
+        "concealedSamples"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudioreceiverstats-silentconcealedsamples",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudioreceiverstats-silentconcealedsamples",
+      "linkingText": [
+        "silentConcealedSamples"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudioreceiverstats-concealmentevents",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudioreceiverstats-concealmentevents",
+      "linkingText": [
+        "concealmentEvents"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudioreceiverstats-insertedsamplesfordeceleration",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudioreceiverstats-insertedsamplesfordeceleration",
+      "linkingText": [
+        "insertedSamplesForDeceleration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudioreceiverstats-removedsamplesforacceleration",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudioreceiverstats-removedsamplesforacceleration",
+      "linkingText": [
+        "removedSamplesForAcceleration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudioreceiverstats-audiolevel",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudioreceiverstats-audiolevel",
+      "linkingText": [
+        "audioLevel"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudioreceiverstats-totalaudioenergy",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudioreceiverstats-totalaudioenergy",
+      "linkingText": [
+        "totalAudioEnergy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcaudioreceiverstats-totalsamplesduration",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcaudioreceiverstats-totalsamplesduration",
+      "linkingText": [
+        "totalSamplesDuration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCAudioReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideohandlerstats-framewidth",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideohandlerstats-framewidth",
+      "linkingText": [
+        "frameWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoHandlerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideohandlerstats-frameheight",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideohandlerstats-frameheight",
+      "linkingText": [
+        "frameHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoHandlerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideohandlerstats-framespersecond",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideohandlerstats-framespersecond",
+      "linkingText": [
+        "framesPerSecond"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoHandlerStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideosenderstats-keyframessent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideosenderstats-keyframessent",
+      "linkingText": [
+        "keyFramesSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoSenderStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideosenderstats-framescaptured",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideosenderstats-framescaptured",
+      "linkingText": [
+        "framesCaptured"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoSenderStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideosenderstats-framessent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideosenderstats-framessent",
+      "linkingText": [
+        "framesSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoSenderStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideosenderstats-hugeframessent",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideosenderstats-hugeframessent",
+      "linkingText": [
+        "hugeFramesSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoSenderStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideoreceiverstats-keyframesreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideoreceiverstats-keyframesreceived",
+      "linkingText": [
+        "keyFramesReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideoreceiverstats-estimatedplayouttimestamp",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideoreceiverstats-estimatedplayouttimestamp",
+      "linkingText": [
+        "estimatedPlayoutTimestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideoreceiverstats-jitterbufferdelay",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideoreceiverstats-jitterbufferdelay",
+      "linkingText": [
+        "jitterBufferDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideoreceiverstats-jitterbufferemittedcount",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideoreceiverstats-jitterbufferemittedcount",
+      "linkingText": [
+        "jitterBufferEmittedCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideoreceiverstats-framesreceived",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideoreceiverstats-framesreceived",
+      "linkingText": [
+        "framesReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideoreceiverstats-framesdecoded",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideoreceiverstats-framesdecoded",
+      "linkingText": [
+        "framesDecoded"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideoreceiverstats-framesdropped",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideoreceiverstats-framesdropped",
+      "linkingText": [
+        "framesDropped"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideoreceiverstats-partialframeslost",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideoreceiverstats-partialframeslost",
+      "linkingText": [
+        "partialFramesLost"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcvideoreceiverstats-fullframeslost",
+      "href": "https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/#dom-rtcvideoreceiverstats-fullframeslost",
+      "linkingText": [
+        "fullFramesLost"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCVideoReceiverStats"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

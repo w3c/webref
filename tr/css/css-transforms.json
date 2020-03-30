@@ -1,84 +1,70 @@
 {
   "spec": {
-    "title": "CSS Transforms Module Level 1",
-    "url": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/"
+    "title": "CSS Transforms Module Level 2",
+    "url": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/"
   },
   "properties": {
-    "transform": {
-      "name": "transform",
-      "value": "none | <transform-list>",
+    "translate": {
+      "name": "translate",
+      "value": "none | <length-percentage> [ <length-percentage> <length>? ]?",
       "initial": "none",
       "appliesTo": "transformable elements",
       "inherited": "no",
-      "percentages": "refer to the size of reference box",
-      "computedValue": "as specified, but with lengths made absolute",
+      "percentages": "relative to the width of the reference box (for the first value) or the height (for the second value)",
+      "computedValue": "the keyword none or a pair of computed <length-percentage> values and optionally an absolute length",
       "canonicalOrder": "per grammar",
-      "animationType": "transform list, see interpolation rules"
+      "animationType": "by computed value, adding a third 0 value if needed to match components, but see below for none"
     },
-    "transform-origin": {
-      "name": "transform-origin",
-      "value": "[ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] <length>? | [[ center | left | right ] && [ center | top | bottom ]] <length>?",
-      "initial": "50% 50%",
+    "rotate": {
+      "name": "rotate",
+      "value": "none | <angle> | [ x | y | z | <number>{3} ] && <angle>",
+      "initial": "none",
       "appliesTo": "transformable elements",
       "inherited": "no",
-      "percentages": "refer to the size of reference box",
-      "computedValue": "see background-position",
+      "percentages": "n/a",
+      "computedValue": "the keyword none, or an <angle> with an optional axis consisting of a list of three <number>s",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value"
+      "animationType": "as SLERP, but see below for none"
     },
-    "transform-box": {
-      "name": "transform-box",
-      "value": "content-box | border-box | fill-box | stroke-box | view-box",
-      "initial": "view-box",
+    "scale": {
+      "name": "scale",
+      "value": "none | <number>{1,3}",
+      "initial": "none",
+      "appliesTo": "transformable elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the keyword none, or a list of 2 or 3 <number>s",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value, but see below for none"
+    },
+    "transform-style": {
+      "name": "transform-style",
+      "value": "flat | preserve-3d",
+      "initial": "flat",
       "appliesTo": "transformable elements",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
-    }
-  },
-  "descriptors": {},
-  "valuespaces": {
-    "<transform-list>": {
-      "value": "<transform-function>+"
+      "animationType": "discrete",
+      "usedValue": "flat if a grouping property is present, specified keyword otherwise"
     },
-    "<matrix()>": {
-      "value": "matrix( <number> [, <number> ]{5,5} )"
+    "perspective": {
+      "name": "perspective",
+      "value": "none | <length [0,∞]>",
+      "initial": "none",
+      "appliesTo": "transformable elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "the keyword none or an absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value"
     },
-    "<translate()>": {
-      "value": "translate( <length-percentage> [, <length-percentage> ]? )"
-    },
-    "<translateX()>": {
-      "value": "translateX( <length-percentage> )"
-    },
-    "<translateY()>": {
-      "value": "translateY( <length-percentage> )"
-    },
-    "<scale()>": {
-      "value": "scale( <number> [, <number> ]? )"
-    },
-    "<scaleX()>": {
-      "value": "scaleX( <number> )"
-    },
-    "<scaleY()>": {
-      "value": "scaleY( <number> )"
-    },
-    "<rotate()>": {
-      "value": "rotate( [ <angle> | <zero> ] )"
-    },
-    "<skew()>": {
-      "value": "skew( [ <angle> | <zero> ] [, [ <angle> | <zero> ] ]? )"
-    },
-    "<skewX()>": {
-      "value": "skewX( [ <angle> | <zero> ] )"
-    },
-    "<skewY()>": {
-      "value": "skewY( [ <angle> | <zero> ] )"
-    }
-  }
-}
-"transformable elements",
+    "perspective-origin": {
+      "name": "perspective-origin",
+      "value": "<position>",
+      "initial": "50% 50%",
+      "appliesTo": "transformable elements",
       "inherited": "no",
       "percentages": "refer to the size of the reference box",
       "computedValue": "see background-position",

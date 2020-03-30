@@ -1,0 +1,1289 @@
+{
+  "spec": {
+    "title": "Encrypted Media Extensions",
+    "url": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/"
+  },
+  "dfns": [
+    {
+      "id": "initialization-data-type",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#initialization-data-type",
+      "linkingText": [
+        "Initialization Data Type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "associable",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#associable",
+      "linkingText": [
+        "associable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "non-associable",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#non-associable",
+      "linkingText": [
+        "non-associable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "associable-by-entity",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#associable-by-entity",
+      "linkingText": [
+        "associable by an entity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "non-associable-by-entity",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#non-associable-by-entity",
+      "linkingText": [
+        "non-associable by an entity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "non-associable-by-application",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#non-associable-by-application",
+      "linkingText": [
+        "non-associable by the application"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "associable-by-application",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#associable-by-application",
+      "linkingText": [
+        "associable by the application"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "permanent-identifier",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#permanent-identifier",
+      "linkingText": [
+        "Permanent Identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "distinctive-permanent-identifier",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#distinctive-permanent-identifier",
+      "linkingText": [
+        "Distinctive Permanent Identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "uses-distinctive-identifiers",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#uses-distinctive-identifiers",
+      "linkingText": [
+        "uses Distinctive Identifier(s)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "uses-distinctive-permanent-identifiers",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#uses-distinctive-permanent-identifiers",
+      "linkingText": [
+        "uses Distinctive Permanent Identifier(s)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "uses-distinctive-identifiers-or-distinctive-permanent-identifiers",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#uses-distinctive-identifiers-or-distinctive-permanent-identifiers",
+      "linkingText": [
+        "uses Distinctive Identifier(s) or Distinctive Permanent Identifier(s)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-navigator",
+      "linkingText": [
+        "Navigator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-navigator-requestmediakeysystemaccess",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-navigator-requestmediakeysystemaccess",
+      "linkingText": [
+        "requestmediakeysystemaccess()",
+        "requestMediaKeySystemAccess"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "navigator"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysrequirement",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysrequirement",
+      "linkingText": [
+        "MediaKeysRequirement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysrequirement-required",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysrequirement-required",
+      "linkingText": [
+        "required"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysrequirement"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysrequirement-optional",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysrequirement-optional",
+      "linkingText": [
+        "optional"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysrequirement"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysrequirement-not-allowed",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysrequirement-not-allowed",
+      "linkingText": [
+        "not-allowed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysrequirement"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysystemconfiguration",
+      "linkingText": [
+        "MediaKeySystemConfiguration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-label",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysystemconfiguration-label",
+      "linkingText": [
+        "label"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysystemconfiguration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-initdatatypes",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysystemconfiguration-initdatatypes",
+      "linkingText": [
+        "initDataTypes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysystemconfiguration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-audiocapabilities",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysystemconfiguration-audiocapabilities",
+      "linkingText": [
+        "audioCapabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysystemconfiguration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-videocapabilities",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysystemconfiguration-videocapabilities",
+      "linkingText": [
+        "videoCapabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysystemconfiguration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-distinctiveidentifier",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysystemconfiguration-distinctiveidentifier",
+      "linkingText": [
+        "distinctiveIdentifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysystemconfiguration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-persistentstate",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysystemconfiguration-persistentstate",
+      "linkingText": [
+        "persistentState"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysystemconfiguration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemconfiguration-sessiontypes",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysystemconfiguration-sessiontypes",
+      "linkingText": [
+        "sessionTypes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysystemconfiguration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemmediacapability",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysystemmediacapability",
+      "linkingText": [
+        "MediaKeySystemMediaCapability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemmediacapability-contenttype",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysystemmediacapability-contenttype",
+      "linkingText": [
+        "contentType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysystemmediacapability"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemmediacapability-robustness",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysystemmediacapability-robustness",
+      "linkingText": [
+        "robustness"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysystemmediacapability"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemaccess",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysystemaccess",
+      "linkingText": [
+        "MediaKeySystemAccess"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemaccess-keysystem",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysystemaccess-keysystem",
+      "linkingText": [
+        "keySystem"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysystemaccess"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemaccess-getconfiguration",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysystemaccess-getconfiguration",
+      "linkingText": [
+        "getconfiguration()",
+        "getConfiguration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysystemaccess"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysystemaccess-createmediakeys",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysystemaccess-createmediakeys",
+      "linkingText": [
+        "createmediakeys()",
+        "createMediaKeys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysystemaccess"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeys",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeys",
+      "linkingText": [
+        "MediaKeys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysessiontype",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysessiontype",
+      "linkingText": [
+        "MediaKeySessionType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysessiontype-temporary",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysessiontype-temporary",
+      "linkingText": [
+        "temporary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysessiontype"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysessiontype-persistent-license",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysessiontype-persistent-license",
+      "linkingText": [
+        "persistent-license"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysessiontype"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "record-of-license-destruction",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#record-of-license-destruction",
+      "linkingText": [
+        "record of license destruction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeys-createsession",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeys-createsession",
+      "linkingText": [
+        "createsession()",
+        "createSession"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeys"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeys-setservercertificate",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeys-setservercertificate",
+      "linkingText": [
+        "setservercertificate()",
+        "setServerCertificate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeys"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysession",
+      "linkingText": [
+        "MediaKeySession"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "media-key-session-closed",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#media-key-session-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-sessionid",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysession-sessionid",
+      "linkingText": [
+        "sessionId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysession"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-expiration",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysession-expiration",
+      "linkingText": [
+        "expiration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysession"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-closed",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysession-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysession"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-keystatuses",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysession-keystatuses",
+      "linkingText": [
+        "keyStatuses"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysession"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-onkeystatuseschange",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysession-onkeystatuseschange",
+      "linkingText": [
+        "onkeystatuseschange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysession"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-onmessage",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysession-onmessage",
+      "linkingText": [
+        "onmessage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysession"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-generaterequest",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysession-generaterequest",
+      "linkingText": [
+        "generaterequest()",
+        "generateRequest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysession"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-load",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysession-load",
+      "linkingText": [
+        "load()",
+        "load"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysession"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-update",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysession-update",
+      "linkingText": [
+        "update()",
+        "update"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysession"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-close",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysession-close",
+      "linkingText": [
+        "close()",
+        "close"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysession"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeysession-remove",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeysession-remove",
+      "linkingText": [
+        "remove()",
+        "remove"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeysession"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatusmap",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeystatusmap",
+      "linkingText": [
+        "MediaKeyStatusMap"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatusmap-size",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeystatusmap-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeystatusmap"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatusmap-has",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeystatusmap-has",
+      "linkingText": [
+        "has()",
+        "has"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeystatusmap"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatusmap-get",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeystatusmap-get",
+      "linkingText": [
+        "get()",
+        "get"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeystatusmap"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatusmap-iterable",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeystatusmap-iterable",
+      "linkingText": [
+        "iterable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeystatusmap"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatus",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeystatus",
+      "linkingText": [
+        "MediaKeyStatus"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatus-usable",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeystatus-usable",
+      "linkingText": [
+        "usable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeystatus"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatus-expired",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeystatus-expired",
+      "linkingText": [
+        "expired"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeystatus"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatus-released",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeystatus-released",
+      "linkingText": [
+        "released"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeystatus"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatus-output-restricted",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeystatus-output-restricted",
+      "linkingText": [
+        "output-restricted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeystatus"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatus-output-downscaled",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeystatus-output-downscaled",
+      "linkingText": [
+        "output-downscaled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeystatus"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatus-status-pending",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeystatus-status-pending",
+      "linkingText": [
+        "status-pending"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeystatus"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeystatus-internal-error",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeystatus-internal-error",
+      "linkingText": [
+        "internal-error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeystatus"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessagetype",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeymessagetype",
+      "linkingText": [
+        "MediaKeyMessageType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessagetype-license-request",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeymessagetype-license-request",
+      "linkingText": [
+        "license-request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeymessagetype"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessagetype-license-renewal",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeymessagetype-license-renewal",
+      "linkingText": [
+        "license-renewal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeymessagetype"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessagetype-license-release",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeymessagetype-license-release",
+      "linkingText": [
+        "license-release"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeymessagetype"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessagetype-individualization-request",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeymessagetype-individualization-request",
+      "linkingText": [
+        "individualization-request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeymessagetype"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessageevent",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeymessageevent",
+      "linkingText": [
+        "MediaKeyMessageEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessageevent-messagetype",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeymessageevent-messagetype",
+      "linkingText": [
+        "messageType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeymessageevent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessageevent-message",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeymessageevent-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeymessageevent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessageeventinit",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeymessageeventinit",
+      "linkingText": [
+        "MediaKeyMessageEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessageeventinit-messagetype",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeymessageeventinit-messagetype",
+      "linkingText": [
+        "messageType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeymessageeventinit"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediakeymessageeventinit-message",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediakeymessageeventinit-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediakeymessageeventinit"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-evt-keystatuseschange",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-evt-keystatuseschange",
+      "linkingText": [
+        "keystatuseschange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-evt-message",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-evt-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-TypeError",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dfn-TypeError",
+      "linkingText": [
+        "TypeError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-NotSupportedError",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dfn-NotSupportedError",
+      "linkingText": [
+        "NotSupportedError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-InvalidStateError",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dfn-InvalidStateError",
+      "linkingText": [
+        "InvalidStateError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-QuotaExceededError",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dfn-QuotaExceededError",
+      "linkingText": [
+        "QuotaExceededError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlmediaelement",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-htmlmediaelement",
+      "linkingText": [
+        "HTMLMediaElement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlmediaelement-mediakeys",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-htmlmediaelement-mediakeys",
+      "linkingText": [
+        "mediaKeys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "htmlmediaelement"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlmediaelement-onencrypted",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-htmlmediaelement-onencrypted",
+      "linkingText": [
+        "onencrypted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "htmlmediaelement"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlmediaelement-onwaitingforkey",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-htmlmediaelement-onwaitingforkey",
+      "linkingText": [
+        "onwaitingforkey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "htmlmediaelement"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlmediaelement-setmediakeys",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-htmlmediaelement-setmediakeys",
+      "linkingText": [
+        "setmediakeys()",
+        "setMediaKeys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "htmlmediaelement"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaencryptedevent",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediaencryptedevent",
+      "linkingText": [
+        "MediaEncryptedEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaencryptedevent-initdatatype",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediaencryptedevent-initdatatype",
+      "linkingText": [
+        "initDataType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediaencryptedevent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaencryptedevent-initdata",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediaencryptedevent-initdata",
+      "linkingText": [
+        "initData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediaencryptedevent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaencryptedeventinit",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediaencryptedeventinit",
+      "linkingText": [
+        "MediaEncryptedEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaencryptedeventinit-initdatatype",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediaencryptedeventinit-initdatatype",
+      "linkingText": [
+        "initDataType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediaencryptedeventinit"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaencryptedeventinit-initdata",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-mediaencryptedeventinit-initdata",
+      "linkingText": [
+        "initData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediaencryptedeventinit"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-evt-encrypted",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-evt-encrypted",
+      "linkingText": [
+        "encrypted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-evt-waitingforkey",
+      "href": "https://www.w3.org/TR/2017/REC-encrypted-media-20170918/#dom-evt-waitingforkey",
+      "linkingText": [
+        "waitingforkey"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    }
+  ]
+}

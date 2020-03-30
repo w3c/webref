@@ -1,0 +1,1437 @@
+{
+  "spec": {
+    "title": "Generic Sensor API",
+    "url": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/"
+  },
+  "dfns": [
+    {
+      "id": "limit-max-frequency",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#limit-max-frequency",
+      "linkingText": [
+        "Limit maximum sampling frequency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "stop-sensor",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#stop-sensor",
+      "linkingText": [
+        "Stop the sensor altogether"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "limit-number-of-delivered-readings",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#limit-number-of-delivered-readings",
+      "linkingText": [
+        "Limit number of delivered readings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reduce-accuracy",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#reduce-accuracy",
+      "linkingText": [
+        "Reduce accuracy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-device-sensor",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#concept-device-sensor",
+      "linkingText": [
+        "device sensor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sensor-reading",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#sensor-reading",
+      "linkingText": [
+        "sensor reading"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reading-value",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#reading-value",
+      "linkingText": [
+        "reading value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reading-timestamp",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#reading-timestamp",
+      "linkingText": [
+        "reading timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "local-coordinate-system",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#local-coordinate-system",
+      "linkingText": [
+        "local coordinate system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "spatial-sensor",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#spatial-sensor",
+      "linkingText": [
+        "spatial sensor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "uniaxial",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#uniaxial",
+      "linkingText": [
+        "uniaxial"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "biaxial",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#biaxial",
+      "linkingText": [
+        "biaxial"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "triaxial",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#triaxial",
+      "linkingText": [
+        "triaxial"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-platform-sensor",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#concept-platform-sensor",
+      "linkingText": [
+        "platform sensor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "calibration",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#calibration",
+      "linkingText": [
+        "calibration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "low-level",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#low-level",
+      "linkingText": [
+        "low-level"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "high-level",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#high-level",
+      "linkingText": [
+        "high-level"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sensor-fusion",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#sensor-fusion",
+      "linkingText": [
+        "sensor fusion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "smart-sensors",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#smart-sensors",
+      "linkingText": [
+        "Smart sensors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sensor-hubs",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#sensor-hubs",
+      "linkingText": [
+        "sensor hubs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "default-sensor",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#default-sensor",
+      "linkingText": [
+        "default sensor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "reading-change-threshold",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#reading-change-threshold",
+      "linkingText": [
+        "reading change threshold"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sampling-frequency",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#sampling-frequency",
+      "linkingText": [
+        "sampling frequency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "requested-sampling-frequency",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#requested-sampling-frequency",
+      "linkingText": [
+        "requested sampling frequency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reporting-frequency",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#reporting-frequency",
+      "linkingText": [
+        "reporting frequency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "can-expose-sensor-readings",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#can-expose-sensor-readings",
+      "linkingText": [
+        "can expose sensor readings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mandatory-conditions",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#mandatory-conditions",
+      "linkingText": [
+        "mandatory conditions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "specific-conditions",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#specific-conditions",
+      "linkingText": [
+        "Specific conditions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sensor-type",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#sensor-type",
+      "linkingText": [
+        "sensor type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "associated-sensors",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#associated-sensors",
+      "linkingText": [
+        "associated sensors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "sensor-permission-names",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#sensor-permission-names",
+      "linkingText": [
+        "sensor permission names"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "generic-sensor-permission-revocation-algorithm",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#generic-sensor-permission-revocation-algorithm",
+      "linkingText": [
+        "generic sensor permission revocation algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sensor-feature-names",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#sensor-feature-names",
+      "linkingText": [
+        "sensor feature names"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "activated-sensor-objects",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#activated-sensor-objects",
+      "linkingText": [
+        "activated sensor objects"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "latest-reading",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#latest-reading",
+      "linkingText": [
+        "latest reading"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "optimal-sampling-frequency",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#optimal-sampling-frequency",
+      "linkingText": [
+        "optimal sampling frequency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "sensor",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#sensor",
+      "linkingText": [
+        "Sensor"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-sensor-activated",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensor-activated",
+      "linkingText": [
+        "activated"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Sensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-sensor-hasreading",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensor-hasreading",
+      "linkingText": [
+        "hasReading"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Sensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-sensor-timestamp",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensor-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Sensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-sensor-start",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensor-start",
+      "linkingText": [
+        "start()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Sensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-sensor-stop",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensor-stop",
+      "linkingText": [
+        "stop()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Sensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-sensor-onreading",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensor-onreading",
+      "linkingText": [
+        "onreading"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Sensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-sensor-onactivate",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensor-onactivate",
+      "linkingText": [
+        "onactivate"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Sensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-sensor-onerror",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensor-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Sensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-sensoroptions",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dictdef-sensoroptions",
+      "linkingText": [
+        "SensorOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-sensoroptions-frequency",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensoroptions-frequency",
+      "linkingText": [
+        "frequency"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SensorOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "sensor-task-source",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#sensor-task-source",
+      "linkingText": [
+        "sensor task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-sensor-state-slot",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensor-state-slot",
+      "linkingText": [
+        "[[state]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Sensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-sensor-frequency-slot",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensor-frequency-slot",
+      "linkingText": [
+        "[[frequency]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Sensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-sensor-lasteventfiredat-slot",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensor-lasteventfiredat-slot",
+      "linkingText": [
+        "[[lastEventFiredAt]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Sensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-sensor-pendingreadingnotification-slot",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensor-pendingreadingnotification-slot",
+      "linkingText": [
+        "[[pendingReadingNotification]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Sensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "sensorerrorevent",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#sensorerrorevent",
+      "linkingText": [
+        "SensorErrorEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-sensorerrorevent-sensorerrorevent",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensorerrorevent-sensorerrorevent",
+      "linkingText": [
+        "SensorErrorEvent(type, errorEventInitDict)",
+        "constructor(type, errorEventInitDict)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "SensorErrorEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-sensorerrorevent-constructor-type-erroreventinitdict-type",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensorerrorevent-constructor-type-erroreventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SensorErrorEvent/constructor(type, errorEventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-sensorerrorevent-constructor-type-erroreventinitdict-erroreventinitdict",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensorerrorevent-constructor-type-erroreventinitdict-erroreventinitdict",
+      "linkingText": [
+        "errorEventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SensorErrorEvent/constructor(type, errorEventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-sensorerrorevent-error",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensorerrorevent-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SensorErrorEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-sensorerroreventinit",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dictdef-sensorerroreventinit",
+      "linkingText": [
+        "SensorErrorEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-sensorerroreventinit-error",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-sensorerroreventinit-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SensorErrorEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "initialize-a-sensor-object",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#initialize-a-sensor-object",
+      "linkingText": [
+        "Initialize a sensor object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "check-sensor-policy-controlled-features",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#check-sensor-policy-controlled-features",
+      "linkingText": [
+        "Check sensor policy-controlled features"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "connect-to-sensor",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#connect-to-sensor",
+      "linkingText": [
+        "Connect to sensor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "activate-a-sensor-object",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#activate-a-sensor-object",
+      "linkingText": [
+        "Activate a sensor object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "deactivate-a-sensor-object",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#deactivate-a-sensor-object",
+      "linkingText": [
+        "Deactivate a sensor object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "revoke-sensor-permission",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#revoke-sensor-permission",
+      "linkingText": [
+        "Revoke sensor permission"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "set-sensor-settings",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#set-sensor-settings",
+      "linkingText": [
+        "Set sensor settings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "update-latest-reading",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#update-latest-reading",
+      "linkingText": [
+        "Update latest reading"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "find-the-reporting-frequency-of-a-sensor-object",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#find-the-reporting-frequency-of-a-sensor-object",
+      "linkingText": [
+        "Find the reporting frequency of a sensor object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "report-latest-reading-updated",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#report-latest-reading-updated",
+      "linkingText": [
+        "Report latest reading updated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "notify-new-reading",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#notify-new-reading",
+      "linkingText": [
+        "Notify new reading"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "notify-activated-state",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#notify-activated-state",
+      "linkingText": [
+        "Notify activated state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "notify-error",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#notify-error",
+      "linkingText": [
+        "Notify error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "get-value-from-latest-reading",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#get-value-from-latest-reading",
+      "linkingText": [
+        "Get value from latest reading"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "request-sensor-access",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#request-sensor-access",
+      "linkingText": [
+        "Request sensor access"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mock-sensor",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#mock-sensor",
+      "linkingText": [
+        "mock sensor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mock-sensor-reading",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#mock-sensor-reading",
+      "linkingText": [
+        "mock sensor reading"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mocksensorconfiguration",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dictdef-mocksensorconfiguration",
+      "linkingText": [
+        "MockSensorConfiguration"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensorconfiguration-mocksensortype",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensorconfiguration-mocksensortype",
+      "linkingText": [
+        "mockSensorType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MockSensorConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensorconfiguration-connected",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensorconfiguration-connected",
+      "linkingText": [
+        "connected"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MockSensorConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensorconfiguration-maxsamplingfrequency",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensorconfiguration-maxsamplingfrequency",
+      "linkingText": [
+        "maxSamplingFrequency"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MockSensorConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensorconfiguration-minsamplingfrequency",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensorconfiguration-minsamplingfrequency",
+      "linkingText": [
+        "minSamplingFrequency"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MockSensorConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "connection-flag",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#connection-flag",
+      "linkingText": [
+        "connection flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mocksensor",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dictdef-mocksensor",
+      "linkingText": [
+        "MockSensor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensor-maxsamplingfrequency",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensor-maxsamplingfrequency",
+      "linkingText": [
+        "maxSamplingFrequency"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MockSensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensor-minsamplingfrequency",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensor-minsamplingfrequency",
+      "linkingText": [
+        "minSamplingFrequency"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MockSensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensor-requestedsamplingfrequency",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensor-requestedsamplingfrequency",
+      "linkingText": [
+        "requestedSamplingFrequency"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MockSensor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialized-mock-sensor",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#serialized-mock-sensor",
+      "linkingText": [
+        "serialized mock sensor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mock-sensor-type",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#mock-sensor-type",
+      "linkingText": [
+        "mock sensor type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enumdef-mocksensortype",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#enumdef-mocksensortype",
+      "linkingText": [
+        "MockSensorType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensortype-ambient-light",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensortype-ambient-light",
+      "linkingText": [
+        "\"ambient-light\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MockSensorType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensortype-accelerometer",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensortype-accelerometer",
+      "linkingText": [
+        "\"accelerometer\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MockSensorType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensortype-linear-acceleration",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensortype-linear-acceleration",
+      "linkingText": [
+        "\"linear-acceleration\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MockSensorType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensortype-gravity",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensortype-gravity",
+      "linkingText": [
+        "\"gravity\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MockSensorType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensortype-gyroscope",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensortype-gyroscope",
+      "linkingText": [
+        "\"gyroscope\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MockSensorType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensortype-magnetometer",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensortype-magnetometer",
+      "linkingText": [
+        "\"magnetometer\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MockSensorType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensortype-uncalibrated-magnetometer",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensortype-uncalibrated-magnetometer",
+      "linkingText": [
+        "\"uncalibrated-magnetometer\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MockSensorType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensortype-absolute-orientation",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensortype-absolute-orientation",
+      "linkingText": [
+        "\"absolute-orientation\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MockSensorType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensortype-relative-orientation",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensortype-relative-orientation",
+      "linkingText": [
+        "\"relative-orientation\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MockSensorType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensortype-geolocation",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensortype-geolocation",
+      "linkingText": [
+        "\"geolocation\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MockSensorType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mocksensortype-proximity",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dom-mocksensortype-proximity",
+      "linkingText": [
+        "\"proximity\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MockSensorType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mock-sensor-reading-values",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#mock-sensor-reading-values",
+      "linkingText": [
+        "Mock Sensor Reading Values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mocksensorreadingvalues",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#dictdef-mocksensorreadingvalues",
+      "linkingText": [
+        "MockSensorReadingValues"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-mock-sensor",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#create-mock-sensor",
+      "linkingText": [
+        "create mock sensor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "get-mock-sensor",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#get-mock-sensor",
+      "linkingText": [
+        "get mock sensor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "update-mock-sensor-reading",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#update-mock-sensor-reading",
+      "linkingText": [
+        "update mock sensor reading"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "delete-mock-sensor",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#delete-mock-sensor",
+      "linkingText": [
+        "delete mock sensor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "no-such-mock-sensor",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#no-such-mock-sensor",
+      "linkingText": [
+        "no such mock sensor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mock-sensor-already-created",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#mock-sensor-already-created",
+      "linkingText": [
+        "mock sensor already created"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "extension-specification",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#extension-specification",
+      "linkingText": [
+        "extension specification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "extension-sensor-interface",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#extension-sensor-interface",
+      "linkingText": [
+        "extension sensor interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "supported-sensor-options",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#supported-sensor-options",
+      "linkingText": [
+        "supported sensor options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "equivalent",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#equivalent",
+      "linkingText": [
+        "equivalent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "conformant-user-agent",
+      "href": "https://www.w3.org/TR/2019/CR-generic-sensor-20191212/#conformant-user-agent",
+      "linkingText": [
+        "conformant user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

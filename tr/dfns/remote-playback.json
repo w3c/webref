@@ -1,0 +1,942 @@
+{
+  "spec": {
+    "title": "Remote Playback API",
+    "url": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-user-agent",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-media-mirroring",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-media-mirroring",
+      "linkingText": [
+        "media\n        mirroring"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-media-remoting",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-media-remoting",
+      "linkingText": [
+        "media\n        remoting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-media-flinging",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-media-flinging",
+      "linkingText": [
+        "media flinging"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-htmlmediaelement",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dom-htmlmediaelement",
+      "linkingText": [
+        "HTMLMediaElement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-media-element",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-media-element",
+      "linkingText": [
+        "media element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-resource-selection-algorithm",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-resource-selection-algorithm",
+      "linkingText": [
+        "resource selection algorithm",
+        "selecting media resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-currentsrc",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-currentsrc",
+      "linkingText": [
+        "currentsrc",
+        "current source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fastseek",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-fastseek",
+      "linkingText": [
+        "fastSeek"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-seeking",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-seeking",
+      "linkingText": [
+        "seeking"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-media-resources",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-media-resources",
+      "linkingText": [
+        "media resources",
+        "media resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-exposing-a-user-interface-to-the-user",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-exposing-a-user-interface-to-the-user",
+      "linkingText": [
+        "exposing a user interface to the user",
+        "expose a user interface to the user"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-track",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-track",
+      "linkingText": [
+        "track"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-srclang",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-srclang",
+      "linkingText": [
+        "srclang"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-browsing-context",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-browsing-context",
+      "linkingText": [
+        "browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-nested-browsing-context",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-nested-browsing-context",
+      "linkingText": [
+        "nested\n          browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-allowed-to-show-a-popup",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-allowed-to-show-a-popup",
+      "linkingText": [
+        "allowed to show a popup"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handler",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-event-handler",
+      "linkingText": [
+        "event handler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handler-event-type",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-event-handler-event-type",
+      "linkingText": [
+        "event handler event type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fire-a-simple-event",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-fire-a-simple-event",
+      "linkingText": [
+        "fire a simple event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-queue-a-task",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-queue-a-task",
+      "linkingText": [
+        "queue a task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fire",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-fire",
+      "linkingText": [
+        "fire",
+        "fires",
+        "firing an event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-in-parallel",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-in-parallel",
+      "linkingText": [
+        "in parallel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-reflect",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-reflect",
+      "linkingText": [
+        "reflect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-cereactions",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-cereactions",
+      "linkingText": [
+        "[CEReactions]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-url",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-url",
+      "linkingText": [
+        "URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-throw",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-throw",
+      "linkingText": [
+        "throw"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-presentationrequest",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-presentationrequest",
+      "linkingText": [
+        "PresentationRequest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-potentially-trustworthy-origin",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-potentially-trustworthy-origin",
+      "linkingText": [
+        "potentially trustworthy origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-invalidaccesserror",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-invalidaccesserror",
+      "linkingText": [
+        "InvalidAccessError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-invalidstateerror",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-invalidstateerror",
+      "linkingText": [
+        "InvalidStateError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-notallowederror",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-notallowederror",
+      "linkingText": [
+        "NotAllowedError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-notfounderror",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-notfounderror",
+      "linkingText": [
+        "NotFoundError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-notsupportederror",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-notsupportederror",
+      "linkingText": [
+        "NotSupportedError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-operationerror",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-operationerror",
+      "linkingText": [
+        "OperationError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-local-playback-device",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-local-playback-device",
+      "linkingText": [
+        "local playback device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-remote-playback-devices",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-remote-playback-devices",
+      "linkingText": [
+        "remote playback devices",
+        "remote playback device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-media-element-state",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-media-element-state",
+      "linkingText": [
+        "media element state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-local-playback-state",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-local-playback-state",
+      "linkingText": [
+        "local playback state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-remote-playback-state",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-remote-playback-state",
+      "linkingText": [
+        "remote playback state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-remoteplayback",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dom-remoteplayback",
+      "linkingText": [
+        "RemotePlayback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-remoteplaybackstate",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dom-remoteplaybackstate",
+      "linkingText": [
+        "RemotePlaybackState"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-remoteplaybackavailabilitycallback",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dom-remoteplaybackavailabilitycallback",
+      "linkingText": [
+        "RemotePlaybackAvailabilityCallback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-remote-playback-device-availability",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-remote-playback-device-availability",
+      "linkingText": [
+        "remote playback device\n            availability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-set-of-availability-callbacks",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-set-of-availability-callbacks",
+      "linkingText": [
+        "set of\n              availability callbacks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-global-set-of-availability-callbacks",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-global-set-of-availability-callbacks",
+      "linkingText": [
+        "global set of\n              availability callbacks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-list-of-available-remote-playback-devices",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-list-of-available-remote-playback-devices",
+      "linkingText": [
+        "list of available remote\n              playback devices"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-compatible-remote-playback-device",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-compatible-remote-playback-device",
+      "linkingText": [
+        "compatible remote playback device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-availability-sources-set",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-availability-sources-set",
+      "linkingText": [
+        "availability sources\n              set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-remote-playback-source",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-remote-playback-source",
+      "linkingText": [
+        "remote playback source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-unavailable",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-unavailable",
+      "linkingText": [
+        "unavailable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-available",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-available",
+      "linkingText": [
+        "available"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-availability",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-availability",
+      "linkingText": [
+        "availability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-remoteplayback-watchavailability",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dom-remoteplayback-watchavailability",
+      "linkingText": [
+        "watchAvailability",
+        "watchavailability()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "remoteplayback"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-monitor-the-list-of-available-remote-playback-devices",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-monitor-the-list-of-available-remote-playback-devices",
+      "linkingText": [
+        "monitor the list of available remote playback\n              devices"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-remoteplayback-cancelwatchavailability",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dom-remoteplayback-cancelwatchavailability",
+      "linkingText": [
+        "cancelWatchAvailability",
+        "cancelwatchavailability()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "remoteplayback"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-remoteplayback-prompt",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dom-remoteplayback-prompt",
+      "linkingText": [
+        "prompt",
+        "prompt()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "remoteplayback"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-change-remote-playback-state",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-change-remote-playback-state",
+      "linkingText": [
+        "change remote playback\n            state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-initiate-remote-playback",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-initiate-remote-playback",
+      "linkingText": [
+        "initiate remote playback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-remoteplayback-state",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dom-remoteplayback-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "remoteplayback"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-remoteplaybackstate-connecting",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dom-remoteplaybackstate-connecting",
+      "linkingText": [
+        "connecting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "remoteplaybackstate"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-remoteplaybackstate-connected",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dom-remoteplaybackstate-connected",
+      "linkingText": [
+        "connected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "remoteplaybackstate"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-remoteplaybackstate-disconnected",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dom-remoteplaybackstate-disconnected",
+      "linkingText": [
+        "disconnected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "remoteplaybackstate"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-establish-a-connection-with-the-remote-playback-device",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-establish-a-connection-with-the-remote-playback-device",
+      "linkingText": [
+        "establish a connection with\n            the remote playback device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-browser-initiated-remote-playback",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-browser-initiated-remote-playback",
+      "linkingText": [
+        "browser\n            initiated remote playback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-disconnect-from-a-remote-playback-device",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-disconnect-from-a-remote-playback-device",
+      "linkingText": [
+        "disconnect from a remote\n            playback device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-remoteplayback-onconnecting",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dom-remoteplayback-onconnecting",
+      "linkingText": [
+        "onconnecting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "remoteplayback"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-connecting",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-connecting",
+      "linkingText": [
+        "connecting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-remoteplayback-onconnect",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dom-remoteplayback-onconnect",
+      "linkingText": [
+        "onconnect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "remoteplayback"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-connect",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-connect",
+      "linkingText": [
+        "connect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-remoteplayback-ondisconnect",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dom-remoteplayback-ondisconnect",
+      "linkingText": [
+        "ondisconnect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "remoteplayback"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-disconnect",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-disconnect",
+      "linkingText": [
+        "disconnect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlmediaelement-remote",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dom-htmlmediaelement-remote",
+      "linkingText": [
+        "remote"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "htmlmediaelement"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlmediaelement-disableremoteplayback",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dom-htmlmediaelement-disableremoteplayback",
+      "linkingText": [
+        "disableRemotePlayback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "htmlmediaelement"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-disable-remote-playback",
+      "href": "https://www.w3.org/TR/2017/CR-remote-playback-20171019/#dfn-disable-remote-playback",
+      "linkingText": [
+        "disable remote playback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,1152 @@
+{
+  "spec": {
+    "title": "CSS Text Module Level 4",
+    "url": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/"
+  },
+  "dfns": [
+    {
+      "id": "propdef-word-boundary-detection",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#propdef-word-boundary-detection",
+      "linkingText": [
+        "word-boundary-detection"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "virtual-word-boundary",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#virtual-word-boundary",
+      "linkingText": [
+        "virtual word boundary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-word-boundary-detection-manual",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-word-boundary-detection-manual",
+      "linkingText": [
+        "manual"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-boundary-detection"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-word-boundary-detection-normal",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-word-boundary-detection-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-boundary-detection"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-word-boundary-detection-auto-lang",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-word-boundary-detection-auto-lang",
+      "linkingText": [
+        "auto(<lang>)"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-boundary-detection"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-word-boundary-detection-lang",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#typedef-word-boundary-detection-lang",
+      "linkingText": [
+        "<lang>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "word-boundary-detection"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-word-boundary-expansion",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#propdef-word-boundary-expansion",
+      "linkingText": [
+        "word-boundary-expansion"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-word-boundary-expansion-none",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-word-boundary-expansion-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-boundary-expansion"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-word-boundary-expansion-space",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-word-boundary-expansion-space",
+      "linkingText": [
+        "space"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-boundary-expansion"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-word-boundary-expansion-ideographic-space",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-word-boundary-expansion-ideographic-space",
+      "linkingText": [
+        "ideographic-space"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "word-boundary-expansion"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-space-collapse",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#propdef-text-space-collapse",
+      "linkingText": [
+        "text-space-collapse"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-space-collapse-collapse",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-space-collapse-collapse",
+      "linkingText": [
+        "collapse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-space-collapse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-space-collapse-preserve",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-space-collapse-preserve",
+      "linkingText": [
+        "preserve"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-space-collapse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-space-collapse-preserve-breaks",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-space-collapse-preserve-breaks",
+      "linkingText": [
+        "preserve-breaks"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-space-collapse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-space-collapse-preserve-spaces",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-space-collapse-preserve-spaces",
+      "linkingText": [
+        "preserve-spaces"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-space-collapse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-space-collapse-discard",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-space-collapse-discard",
+      "linkingText": [
+        "discard"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-space-collapse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-space-trim",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#propdef-text-space-trim",
+      "linkingText": [
+        "text-space-trim"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-space-trim-trim-inner",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-space-trim-trim-inner",
+      "linkingText": [
+        "trim-inner"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-space-trim"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-space-trim-discard-before",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-space-trim-discard-before",
+      "linkingText": [
+        "discard-before"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-space-trim"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-space-trim-discard-after",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-space-trim-discard-after",
+      "linkingText": [
+        "discard-after"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-space-trim"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-wrap",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#propdef-text-wrap",
+      "linkingText": [
+        "text-wrap"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-wrap-wrap",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-wrap-wrap",
+      "linkingText": [
+        "wrap"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-wrap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-wrap-nowrap",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-wrap-nowrap",
+      "linkingText": [
+        "nowrap"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-wrap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-wrap-balance",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-wrap-balance",
+      "linkingText": [
+        "balance"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-wrap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-wrap-stable",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-wrap-stable",
+      "linkingText": [
+        "stable"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-wrap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-wrap-pretty",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-wrap-pretty",
+      "linkingText": [
+        "pretty"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-wrap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-wrap-before",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#propdef-wrap-before",
+      "linkingText": [
+        "wrap-before"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-wrap-after",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#propdef-wrap-after",
+      "linkingText": [
+        "wrap-after"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-wrap-before-auto",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-wrap-before-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "wrap-before",
+        "wrap-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-wrap-before-avoid",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-wrap-before-avoid",
+      "linkingText": [
+        "avoid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "wrap-before",
+        "wrap-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-wrap-before-avoid-line",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-wrap-before-avoid-line",
+      "linkingText": [
+        "avoid-line"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "wrap-before",
+        "wrap-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-wrap-before-avoid-flex",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-wrap-before-avoid-flex",
+      "linkingText": [
+        "avoid-flex"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "wrap-before",
+        "wrap-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-wrap-before-line",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-wrap-before-line",
+      "linkingText": [
+        "line"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "wrap-before",
+        "wrap-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-wrap-before-flex",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-wrap-before-flex",
+      "linkingText": [
+        "flex"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "wrap-before",
+        "wrap-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-wrap-inside",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#propdef-wrap-inside",
+      "linkingText": [
+        "wrap-inside"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-wrap-inside-auto",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-wrap-inside-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "wrap-inside"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-wrap-inside-avoid",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-wrap-inside-avoid",
+      "linkingText": [
+        "avoid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "wrap-inside"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-white-space",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#propdef-white-space",
+      "linkingText": [
+        "white-space"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-hyphenate-character",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#propdef-hyphenate-character",
+      "linkingText": [
+        "hyphenate-character"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-hyphenate-character-auto",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-hyphenate-character-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hyphenate-character"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-hyphenate-character-string",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-hyphenate-character-string",
+      "linkingText": [
+        "<string>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hyphenate-character"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-hyphenate-limit-zone",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#propdef-hyphenate-limit-zone",
+      "linkingText": [
+        "hyphenate-limit-zone"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-hyphenate-limit-chars",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#propdef-hyphenate-limit-chars",
+      "linkingText": [
+        "hyphenate-limit-chars"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-hyphenate-limit-chars-auto",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-hyphenate-limit-chars-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hyphenate-limit-chars"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-hyphenate-limit-lines",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#propdef-hyphenate-limit-lines",
+      "linkingText": [
+        "hyphenate-limit-lines"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-hyphenate-limit-last",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#propdef-hyphenate-limit-last",
+      "linkingText": [
+        "hyphenate-limit-last"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-hyphenate-limit-lines-none",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-hyphenate-limit-lines-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hyphenate-limit-lines"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-hyphenate-limit-lines-always",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-hyphenate-limit-lines-always",
+      "linkingText": [
+        "always"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hyphenate-limit-lines"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-hyphenate-limit-lines-column",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-hyphenate-limit-lines-column",
+      "linkingText": [
+        "column"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hyphenate-limit-lines"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-hyphenate-limit-lines-page",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-hyphenate-limit-lines-page",
+      "linkingText": [
+        "page"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hyphenate-limit-lines"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-hyphenate-limit-lines-spread",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-hyphenate-limit-lines-spread",
+      "linkingText": [
+        "spread"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "hyphenate-limit-lines"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-align-string",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-align-string",
+      "linkingText": [
+        "<string>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-align-alignment-character",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-align-alignment-character",
+      "linkingText": [
+        "alignment character"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-group-align",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#propdef-text-group-align",
+      "linkingText": [
+        "text-group-align"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "group-alignment",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#group-alignment",
+      "linkingText": [
+        "group alignment",
+        "group-align",
+        "group-aligned"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-group-align-none",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-group-align-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-group-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-group-align-start",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-group-align-start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-group-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-group-align-end",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-group-align-end",
+      "linkingText": [
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-group-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-group-align-left",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-group-align-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-group-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-group-align-right",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-group-align-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-group-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-group-align-center",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-group-align-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-group-align"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-line-padding",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#propdef-line-padding",
+      "linkingText": [
+        "line-padding"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-spacing",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#propdef-text-spacing",
+      "linkingText": [
+        "text-spacing"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-spacing-normal",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-spacing-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-spacing-none",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-spacing-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-spacing-ideograph-alpha",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-spacing-ideograph-alpha",
+      "linkingText": [
+        "ideograph-alpha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-spacing-ideograph-numeric",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-spacing-ideograph-numeric",
+      "linkingText": [
+        "ideograph-numeric"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-spacing-punctuation",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-spacing-punctuation",
+      "linkingText": [
+        "punctuation"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-spacing-space-start",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-spacing-space-start",
+      "linkingText": [
+        "space-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-spacing-trim-start",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-spacing-trim-start",
+      "linkingText": [
+        "trim-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-spacing-space-first",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-spacing-space-first",
+      "linkingText": [
+        "space-first"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-spacing-allow-end",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-spacing-allow-end",
+      "linkingText": [
+        "allow-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-spacing-space-end",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-spacing-space-end",
+      "linkingText": [
+        "space-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-spacing-trim-end",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-spacing-trim-end",
+      "linkingText": [
+        "trim-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-spacing-space-adjacent",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-spacing-space-adjacent",
+      "linkingText": [
+        "space-adjacent"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-spacing-trim-adjacent",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-spacing-trim-adjacent",
+      "linkingText": [
+        "trim-adjacent"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-spacing-no-compress",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#valdef-text-spacing-no-compress",
+      "linkingText": [
+        "no-compress"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-spacing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ideographs",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#ideographs",
+      "linkingText": [
+        "ideographs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "non-ideographic-letters",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#non-ideographic-letters",
+      "linkingText": [
+        "non-ideographic letters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "non-ideographic-numerals",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#non-ideographic-numerals",
+      "linkingText": [
+        "non-ideographic numerals"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fullwidth-opening-punctuation",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#fullwidth-opening-punctuation",
+      "linkingText": [
+        "fullwidth opening punctuation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fullwidth-closing-punctuation",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#fullwidth-closing-punctuation",
+      "linkingText": [
+        "fullwidth closing punctuation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fullwidth-middle-dot-punctuation",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#fullwidth-middle-dot-punctuation",
+      "linkingText": [
+        "fullwidth middle dot punctuation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fullwidth-colon-punctuation",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#fullwidth-colon-punctuation",
+      "linkingText": [
+        "fullwidth colon punctuation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fullwidth-dot-punctuation",
+      "href": "https://www.w3.org/TR/2019/WD-css-text-4-20191113/#fullwidth-dot-punctuation",
+      "linkingText": [
+        "fullwidth dot punctuation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

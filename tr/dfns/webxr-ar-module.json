@@ -1,0 +1,241 @@
+{
+  "spec": {
+    "title": "WebXR Augmented Reality Module - Level 1",
+    "url": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/"
+  },
+  "dfns": [
+    {
+      "id": "real-world-environment",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#real-world-environment",
+      "linkingText": [
+        "real-world environment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "display-technology",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#display-technology",
+      "linkingText": [
+        "display technology"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "additive-light",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#additive-light",
+      "linkingText": [
+        "additive light"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pass-through",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#pass-through",
+      "linkingText": [
+        "pass-through"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "opaque",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#opaque",
+      "linkingText": [
+        "opaque"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enumdef-xrsessionmode",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#enumdef-xrsessionmode",
+      "linkingText": [
+        "XRSessionMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrsessionmode-inline",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#dom-xrsessionmode-inline",
+      "linkingText": [
+        "\"inline\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRSessionMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrsessionmode-immersive-vr",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#dom-xrsessionmode-immersive-vr",
+      "linkingText": [
+        "\"immersive-vr\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRSessionMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrsessionmode-immersive-ar",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#dom-xrsessionmode-immersive-ar",
+      "linkingText": [
+        "\"immersive-ar\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRSessionMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-xrenvironmentblendmode",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#enumdef-xrenvironmentblendmode",
+      "linkingText": [
+        "XREnvironmentBlendMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrsession-environmentblendmode",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#dom-xrsession-environmentblendmode",
+      "linkingText": [
+        "environmentBlendMode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrenvironmentblendmode-opaque",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#dom-xrenvironmentblendmode-opaque",
+      "linkingText": [
+        "\"opaque\"",
+        "opaque"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XREnvironmentBlendMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrenvironmentblendmode-alpha-blend",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#dom-xrenvironmentblendmode-alpha-blend",
+      "linkingText": [
+        "\"alpha-blend\"",
+        "alpha-blend"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XREnvironmentBlendMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrenvironmentblendmode-additive",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#dom-xrenvironmentblendmode-additive",
+      "linkingText": [
+        "\"additive\"",
+        "additive"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XREnvironmentBlendMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "blend-technique",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#blend-technique",
+      "linkingText": [
+        "blend technique"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "opaque-environment-blending",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#opaque-environment-blending",
+      "linkingText": [
+        "opaque environment blending"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "alpha-blend-environment-blending",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#alpha-blend-environment-blending",
+      "linkingText": [
+        "alpha-blend environment blending"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "additive-environment-blending",
+      "href": "https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/#additive-environment-blending",
+      "linkingText": [
+        "additive environment blending"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,356 @@
+{
+  "spec": {
+    "title": "Geolocation API Specification 2nd Edition",
+    "url": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/"
+  },
+  "dfns": [
+    {
+      "id": "navi-geo",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#navi-geo",
+      "linkingText": [
+        "Navigator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "geolocation",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#geolocation",
+      "linkingText": [
+        "Geolocation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "position-callback",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#position-callback",
+      "linkingText": [
+        "PositionCallback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "error-callback",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#error-callback",
+      "linkingText": [
+        "PositionErrorCallback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "get-current-position",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#get-current-position",
+      "linkingText": [
+        "getCurrentPosition()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "watch-position",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#watch-position",
+      "linkingText": [
+        "watchPosition()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "clear-watch",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#clear-watch",
+      "linkingText": [
+        "clearWatch()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "watchId",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#watchId",
+      "linkingText": [
+        "watchId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "position-options",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#position-options",
+      "linkingText": [
+        "PositionOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "high-accuracy",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#high-accuracy",
+      "linkingText": [
+        "enableHighAccuracy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "timeout",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#timeout",
+      "linkingText": [
+        "timeout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "max-age",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#max-age",
+      "linkingText": [
+        "maximumAge"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "position",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#position",
+      "linkingText": [
+        "Position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "coords",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#coords",
+      "linkingText": [
+        "coords"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "timestamp",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "coordinates",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#coordinates",
+      "linkingText": [
+        "Coordinates"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lat",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#lat",
+      "linkingText": [
+        "latitude"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "lon",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#lon",
+      "linkingText": [
+        "longitude"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "altitude",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#altitude",
+      "linkingText": [
+        "altitude"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "accuracy",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#accuracy",
+      "linkingText": [
+        "accuracy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "altitude-accuracy",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#altitude-accuracy",
+      "linkingText": [
+        "altitudeAccuracy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "heading",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#heading",
+      "linkingText": [
+        "heading"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "speed",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#speed",
+      "linkingText": [
+        "speed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "position-error",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#position-error",
+      "linkingText": [
+        "PositionError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "code",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#code",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "permission_denied_error",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#permission_denied_error",
+      "linkingText": [
+        "PERMISSION_DENIED"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "position_unavailable_error",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#position_unavailable_error",
+      "linkingText": [
+        "POSITION_UNAVAILABLE"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "timeout_error",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#timeout_error",
+      "linkingText": [
+        "TIMEOUT"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "message",
+      "href": "https://www.w3.org/TR/2016/REC-geolocation-API-20161108/#message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,1417 @@
+{
+  "spec": {
+    "title": "CSS Syntax Module Level 3",
+    "url": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/"
+  },
+  "dfns": [
+    {
+      "id": "escape-codepoint",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#escape-codepoint",
+      "linkingText": [
+        "escaping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-invalid",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#css-invalid",
+      "linkingText": [
+        "invalid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "css"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "css-ignored",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#css-ignored",
+      "linkingText": [
+        "ignored"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "css"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-error",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#parse-error",
+      "linkingText": [
+        "parse error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "decode",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#decode",
+      "linkingText": [
+        "decode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "determine-the-fallback-encoding",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#determine-the-fallback-encoding",
+      "linkingText": [
+        "determine the fallback encoding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "get-an-encoding",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#get-an-encoding",
+      "linkingText": [
+        "get an encoding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "environment-encoding",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#environment-encoding",
+      "linkingText": [
+        "environment encoding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "input-stream",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#input-stream",
+      "linkingText": [
+        "input stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedef-ident-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-ident-token",
+      "linkingText": [
+        "<ident-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-function-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-function-token",
+      "linkingText": [
+        "<function-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-at-keyword-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-at-keyword-token",
+      "linkingText": [
+        "<at-keyword-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-hash-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-hash-token",
+      "linkingText": [
+        "<hash-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-string-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-string-token",
+      "linkingText": [
+        "<string-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-bad-string-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-bad-string-token",
+      "linkingText": [
+        "<bad-string-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-url-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-url-token",
+      "linkingText": [
+        "<url-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-bad-url-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-bad-url-token",
+      "linkingText": [
+        "<bad-url-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-delim-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-delim-token",
+      "linkingText": [
+        "<delim-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-number-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-number-token",
+      "linkingText": [
+        "<number-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-percentage-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-percentage-token",
+      "linkingText": [
+        "<percentage-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-dimension-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-dimension-token",
+      "linkingText": [
+        "<dimension-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-whitespace-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-whitespace-token",
+      "linkingText": [
+        "<whitespace-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-cdo-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-cdo-token",
+      "linkingText": [
+        "<CDO-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-cdc-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-cdc-token",
+      "linkingText": [
+        "<CDC-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-colon-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-colon-token",
+      "linkingText": [
+        "<colon-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-semicolon-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-semicolon-token",
+      "linkingText": [
+        "<semicolon-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-comma-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-comma-token",
+      "linkingText": [
+        "<comma-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "tokendef-open-square",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#tokendef-open-square",
+      "linkingText": [
+        "<[-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "tokendef-close-square",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#tokendef-close-square",
+      "linkingText": [
+        "<]-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "tokendef-open-paren",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#tokendef-open-paren",
+      "linkingText": [
+        "<(-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "tokendef-close-paren",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#tokendef-close-paren",
+      "linkingText": [
+        "<)-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "tokendef-open-curly",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#tokendef-open-curly",
+      "linkingText": [
+        "<{-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "tokendef-close-curly",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#tokendef-close-curly",
+      "linkingText": [
+        "<}-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "next-input-code-point",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#next-input-code-point",
+      "linkingText": [
+        "next input code point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "current-input-code-point",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#current-input-code-point",
+      "linkingText": [
+        "current input code point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "reconsume-the-current-input-code-point",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#reconsume-the-current-input-code-point",
+      "linkingText": [
+        "reconsume the current input code point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eof-code-point",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#eof-code-point",
+      "linkingText": [
+        "EOF code point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "digit",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#digit",
+      "linkingText": [
+        "digit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "hex-digit",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#hex-digit",
+      "linkingText": [
+        "hex digit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "uppercase-letter",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#uppercase-letter",
+      "linkingText": [
+        "uppercase letter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "lowercase-letter",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#lowercase-letter",
+      "linkingText": [
+        "lowercase letter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "letter",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#letter",
+      "linkingText": [
+        "letter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "non-ascii-code-point",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#non-ascii-code-point",
+      "linkingText": [
+        "non-ASCII code point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "name-start-code-point",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#name-start-code-point",
+      "linkingText": [
+        "name-start code point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "name-code-point",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#name-code-point",
+      "linkingText": [
+        "name code point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "non-printable-code-point",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#non-printable-code-point",
+      "linkingText": [
+        "non-printable code point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "newline",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#newline",
+      "linkingText": [
+        "newline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "whitespace",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#whitespace",
+      "linkingText": [
+        "whitespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "maximum-allowed-code-point",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#maximum-allowed-code-point",
+      "linkingText": [
+        "maximum allowed code point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "identifier",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#identifier",
+      "linkingText": [
+        "identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "representation",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#representation",
+      "linkingText": [
+        "representation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "consume-a-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-a-token",
+      "linkingText": [
+        "consume a token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consume-comments",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-comments",
+      "linkingText": [
+        "consume comments"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consume-a-numeric-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-a-numeric-token",
+      "linkingText": [
+        "consume a numeric token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consume-an-ident-like-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-an-ident-like-token",
+      "linkingText": [
+        "consume an ident-like token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consume-a-string-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-a-string-token",
+      "linkingText": [
+        "consume a string token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consume-a-url-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-a-url-token",
+      "linkingText": [
+        "consume a url token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consume-an-escaped-code-point",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-an-escaped-code-point",
+      "linkingText": [
+        "consume an escaped code point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "check-if-two-code-points-are-a-valid-escape",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#check-if-two-code-points-are-a-valid-escape",
+      "linkingText": [
+        "check if two code points are a valid escape",
+        "are a valid escape",
+        "starts with a valid escape"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "check-if-three-code-points-would-start-an-identifier",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#check-if-three-code-points-would-start-an-identifier",
+      "linkingText": [
+        "check if three code points would start an identifier",
+        "starts with an identifier",
+        "start with an identifier",
+        "would start an identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "check-if-three-code-points-would-start-a-number",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#check-if-three-code-points-would-start-a-number",
+      "linkingText": [
+        "check if three code points would start a number",
+        "starts with a number",
+        "start with a number",
+        "would start a number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consume-a-name",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-a-name",
+      "linkingText": [
+        "consume a name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consume-a-number",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-a-number",
+      "linkingText": [
+        "consume a number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "convert-a-string-to-a-number",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#convert-a-string-to-a-number",
+      "linkingText": [
+        "convert a string to a number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consume-the-remnants-of-a-bad-url",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-the-remnants-of-a-bad-url",
+      "linkingText": [
+        "consume the remnants of a bad url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "at-rule",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#at-rule",
+      "linkingText": [
+        "at-rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "qualified-rule",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#qualified-rule",
+      "linkingText": [
+        "qualified rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "declaration",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#declaration",
+      "linkingText": [
+        "declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "component-value",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#component-value",
+      "linkingText": [
+        "component value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "preserved-tokens",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#preserved-tokens",
+      "linkingText": [
+        "preserved tokens"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "function",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#function",
+      "linkingText": [
+        "function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "simple-block",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#simple-block",
+      "linkingText": [
+        "simple block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "current-input-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#current-input-token",
+      "linkingText": [
+        "current input token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "next-input-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#next-input-token",
+      "linkingText": [
+        "next input token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "typedef-eof-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-eof-token",
+      "linkingText": [
+        "<EOF-token>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "consume-the-next-input-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-the-next-input-token",
+      "linkingText": [
+        "consume the next input token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reconsume-the-current-input-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#reconsume-the-current-input-token",
+      "linkingText": [
+        "reconsume the current input token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-parse-something-according-to-a-css-grammar",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#css-parse-something-according-to-a-css-grammar",
+      "linkingText": [
+        "parse something according to a CSS grammar",
+        "parse"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-stylesheet",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#parse-a-stylesheet",
+      "linkingText": [
+        "parse a stylesheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-list-of-rules",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#parse-a-list-of-rules",
+      "linkingText": [
+        "parse a list of rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-rule",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#parse-a-rule",
+      "linkingText": [
+        "parse a rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-declaration",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#parse-a-declaration",
+      "linkingText": [
+        "parse a declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-list-of-declarations",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#parse-a-list-of-declarations",
+      "linkingText": [
+        "parse a list of declarations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-component-value",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#parse-a-component-value",
+      "linkingText": [
+        "parse a component value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-list-of-component-values",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#parse-a-list-of-component-values",
+      "linkingText": [
+        "parse a list of component values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-comma-separated-list-of-component-values",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#parse-a-comma-separated-list-of-component-values",
+      "linkingText": [
+        "parse a comma-separated list of component values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "consume-a-list-of-rules",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-a-list-of-rules",
+      "linkingText": [
+        "consume a list of rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consume-an-at-rule",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-an-at-rule",
+      "linkingText": [
+        "consume an at-rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consume-a-qualified-rule",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-a-qualified-rule",
+      "linkingText": [
+        "consume a qualified rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consume-a-list-of-declarations",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-a-list-of-declarations",
+      "linkingText": [
+        "consume a list of declarations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consume-a-declaration",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-a-declaration",
+      "linkingText": [
+        "consume a declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consume-a-component-value",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-a-component-value",
+      "linkingText": [
+        "consume a component value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consume-a-simple-block",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-a-simple-block",
+      "linkingText": [
+        "consume a simple block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ending-token",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#ending-token",
+      "linkingText": [
+        "ending token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "consume-a-function",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#consume-a-function",
+      "linkingText": [
+        "consume a function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "anb",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#anb",
+      "linkingText": [
+        "An+B"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "anb-production",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#anb-production",
+      "linkingText": [
+        "<an+b>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-n-dimension",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-n-dimension",
+      "linkingText": [
+        "<n-dimension>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-ndash-dimension",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-ndash-dimension",
+      "linkingText": [
+        "<ndash-dimension>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-ndashdigit-dimension",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-ndashdigit-dimension",
+      "linkingText": [
+        "<ndashdigit-dimension>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-ndashdigit-ident",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-ndashdigit-ident",
+      "linkingText": [
+        "<ndashdigit-ident>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-dashndashdigit-ident",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-dashndashdigit-ident",
+      "linkingText": [
+        "<dashndashdigit-ident>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-integer",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-integer",
+      "linkingText": [
+        "<integer>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-signed-integer",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-signed-integer",
+      "linkingText": [
+        "<signed-integer>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-signless-integer",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-signless-integer",
+      "linkingText": [
+        "<signless-integer>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-urange",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-urange",
+      "linkingText": [
+        "<urange>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-declaration-list",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-declaration-list",
+      "linkingText": [
+        "<declaration-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-rule-list",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-rule-list",
+      "linkingText": [
+        "<rule-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-stylesheet",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-stylesheet",
+      "linkingText": [
+        "<stylesheet>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-declaration-value",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-declaration-value",
+      "linkingText": [
+        "<declaration-value>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-any-value",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#typedef-any-value",
+      "linkingText": [
+        "<any-value>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-a-css-stylesheet",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#parse-a-css-stylesheet",
+      "linkingText": [
+        "parse a CSS stylesheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "style-rule",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#style-rule",
+      "linkingText": [
+        "style rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "at-ruledef-charset",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#at-ruledef-charset",
+      "linkingText": [
+        "@charset"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-an-anb-value",
+      "href": "https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/#serialize-an-anb-value",
+      "linkingText": [
+        "serialize an <an+b> value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,1030 @@
+{
+  "spec": {
+    "title": "Push API",
+    "url": "https://www.w3.org/TR/2020/WD-push-api-20200204/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-json-parse",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-json-parse",
+      "linkingText": [
+        "JSON.parse"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-json-stringify",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-json-stringify",
+      "linkingText": [
+        "JSON.stringify"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-web-push-protocol",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-web-push-protocol",
+      "linkingText": [
+        "web push protocol"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-content-encoding",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-content-encoding",
+      "linkingText": [
+        "Content-Encoding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-application-server",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-application-server",
+      "linkingText": [
+        "application server"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-push-message",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-push-message",
+      "linkingText": [
+        "push message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-push-subscription",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-push-subscription",
+      "linkingText": [
+        "push subscription"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-push-endpoint",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-push-endpoint",
+      "linkingText": [
+        "push endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-subscription-expiration-time",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-subscription-expiration-time",
+      "linkingText": [
+        "subscription expiration\n          time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-create-a-push-subscription",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-create-a-push-subscription",
+      "linkingText": [
+        "create a push subscription"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-refresh",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-refresh",
+      "linkingText": [
+        "refresh"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-deactivate",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-deactivate",
+      "linkingText": [
+        "deactivate",
+        "deactivated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-push-service",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-push-service",
+      "linkingText": [
+        "push service"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-express-permission",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-express-permission",
+      "linkingText": [
+        "express permission"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-ecdh",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-ecdh",
+      "linkingText": [
+        "ECDH",
+        "elliptic curve Diffie-Hellman"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-serviceworkerregistration",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-serviceworkerregistration",
+      "linkingText": [
+        "ServiceWorkerRegistration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerregistration-pushmanager",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-serviceworkerregistration-pushmanager",
+      "linkingText": [
+        "pushManager"
+      ],
+      "localLinkingText": [
+        "ServiceWorkerRegistration.pushManager"
+      ],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushmanager",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushmanager",
+      "linkingText": [
+        "PushManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushmanager-supportedcontentencodings",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushmanager-supportedcontentencodings",
+      "linkingText": [
+        "supportedContentEncodings"
+      ],
+      "localLinkingText": [
+        "PushManager.supportedContentEncodings"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushmanager-subscribe",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushmanager-subscribe",
+      "linkingText": [
+        "subscribe()",
+        "subscribe(, options)"
+      ],
+      "localLinkingText": [
+        "PushManager.subscribe",
+        "PushManager.subscribe()",
+        "subscribe"
+      ],
+      "type": "method",
+      "for": [
+        "PushManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushmanager-getsubscription",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushmanager-getsubscription",
+      "linkingText": [
+        "getSubscription()"
+      ],
+      "localLinkingText": [
+        "PushManager.getSubscription",
+        "PushManager.getSubscription()",
+        "getSubscription"
+      ],
+      "type": "method",
+      "for": [
+        "PushManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushmanager-permissionstate",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushmanager-permissionstate",
+      "linkingText": [
+        "permissionState()",
+        "permissionState(, options)"
+      ],
+      "localLinkingText": [
+        "PushManager.permissionState",
+        "PushManager.permissionState()",
+        "permissionState"
+      ],
+      "type": "method",
+      "for": [
+        "PushManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscriptionoptions",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscriptionoptions",
+      "linkingText": [
+        "PushSubscriptionOptions"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscriptionoptions-uservisibleonly",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscriptionoptions-uservisibleonly",
+      "linkingText": [
+        "userVisibleOnly"
+      ],
+      "localLinkingText": [
+        "PushSubscriptionOptions.userVisibleOnly"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushSubscriptionOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscriptionoptions-applicationserverkey",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscriptionoptions-applicationserverkey",
+      "linkingText": [
+        "applicationServerKey"
+      ],
+      "localLinkingText": [
+        "PushSubscriptionOptions.applicationServerKey"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushSubscriptionOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscriptionoptionsinit",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscriptionoptionsinit",
+      "linkingText": [
+        "PushSubscriptionOptionsInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscriptionoptionsinit-uservisibleonly",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscriptionoptionsinit-uservisibleonly",
+      "linkingText": [
+        "userVisibleOnly"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushSubscriptionOptionsInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscriptionoptionsinit-applicationserverkey",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscriptionoptionsinit-applicationserverkey",
+      "linkingText": [
+        "applicationServerKey"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushSubscriptionOptionsInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscription",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscription",
+      "linkingText": [
+        "PushSubscription"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscription-endpoint",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscription-endpoint",
+      "linkingText": [
+        "endpoint"
+      ],
+      "localLinkingText": [
+        "PushSubscription.endpoint"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushSubscription"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscription-expirationtime",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscription-expirationtime",
+      "linkingText": [
+        "expirationTime"
+      ],
+      "localLinkingText": [
+        "PushSubscription.expirationTime"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushSubscription"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscription-options",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscription-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [
+        "PushSubscription.options"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushSubscription"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscription-getkey",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscription-getkey",
+      "linkingText": [
+        "getKey()",
+        "getKey(name)"
+      ],
+      "localLinkingText": [
+        "PushSubscription.getKey",
+        "PushSubscription.getKey()",
+        "getKey"
+      ],
+      "type": "method",
+      "for": [
+        "PushSubscription"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscription-unsubscribe",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscription-unsubscribe",
+      "linkingText": [
+        "unsubscribed",
+        "unsubscribe()"
+      ],
+      "localLinkingText": [
+        "PushSubscription.unsubscribe",
+        "PushSubscription.unsubscribe()",
+        "unsubscribe"
+      ],
+      "type": "method",
+      "for": [
+        "PushSubscription"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscription-tojson",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscription-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [
+        "PushSubscription.toJSON",
+        "PushSubscription.toJSON()",
+        "toJSON"
+      ],
+      "type": "method",
+      "for": [
+        "PushSubscription"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscriptionjson",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscriptionjson",
+      "linkingText": [
+        "PushSubscriptionJSON"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscriptionjson-endpoint",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscriptionjson-endpoint",
+      "linkingText": [
+        "endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushSubscriptionJSON"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscriptionjson-expirationtime",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscriptionjson-expirationtime",
+      "linkingText": [
+        "expirationTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushSubscriptionJSON"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscriptionjson-keys",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscriptionjson-keys",
+      "linkingText": [
+        "keys"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushSubscriptionJSON"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushencryptionkeyname",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushencryptionkeyname",
+      "linkingText": [
+        "PushEncryptionKeyName"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushencryptionkeyname-p256dh",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushencryptionkeyname-p256dh",
+      "linkingText": [
+        "p256dh"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PushEncryptionKeyName"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushencryptionkeyname-auth",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushencryptionkeyname-auth",
+      "linkingText": [
+        "auth"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PushEncryptionKeyName"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushmessagedata",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushmessagedata",
+      "linkingText": [
+        "PushMessageData"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-bytes",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-bytes",
+      "linkingText": [
+        "bytes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-pushmessagedata-arraybuffer",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushmessagedata-arraybuffer",
+      "linkingText": [
+        "arrayBuffer()"
+      ],
+      "localLinkingText": [
+        "PushMessageData.arrayBuffer",
+        "PushMessageData.arrayBuffer()",
+        "arrayBuffer"
+      ],
+      "type": "method",
+      "for": [
+        "PushMessageData"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushmessagedata-blob",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushmessagedata-blob",
+      "linkingText": [
+        "blob()"
+      ],
+      "localLinkingText": [
+        "PushMessageData.blob",
+        "PushMessageData.blob()",
+        "blob"
+      ],
+      "type": "method",
+      "for": [
+        "PushMessageData"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushmessagedata-json",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushmessagedata-json",
+      "linkingText": [
+        "json()"
+      ],
+      "localLinkingText": [
+        "PushMessageData.json",
+        "PushMessageData.json()",
+        "json"
+      ],
+      "type": "method",
+      "for": [
+        "PushMessageData"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushmessagedata-text",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushmessagedata-text",
+      "linkingText": [
+        "text()"
+      ],
+      "localLinkingText": [
+        "PushMessageData.text",
+        "PushMessageData.text()",
+        "text"
+      ],
+      "type": "method",
+      "for": [
+        "PushMessageData"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-extract-a-byte-sequence",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-extract-a-byte-sequence",
+      "linkingText": [
+        "extract a byte sequence"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-serviceworkerglobalscope",
+      "linkingText": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-onpush",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-serviceworkerglobalscope-onpush",
+      "linkingText": [
+        "onpush"
+      ],
+      "localLinkingText": [
+        "ServiceWorkerGlobalScope.onpush"
+      ],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-onpushsubscriptionchange",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-serviceworkerglobalscope-onpushsubscriptionchange",
+      "linkingText": [
+        "onpushsubscriptionchange"
+      ],
+      "localLinkingText": [
+        "ServiceWorkerGlobalScope.onpushsubscriptionchange"
+      ],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushevent",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushevent",
+      "linkingText": [
+        "PushEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushevent-constructor",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(type)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "PushEvent.constructor",
+        "PushEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "PushEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushevent-data",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushevent-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [
+        "PushEvent.data"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pusheventinit",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pusheventinit",
+      "linkingText": [
+        "PushEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushmessagedatainit",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushmessagedatainit",
+      "linkingText": [
+        "PushMessageDataInit"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [
+        "PushMessageDataInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pusheventinit-data",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pusheventinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-pushsubscriptionchange",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-pushsubscriptionchange",
+      "linkingText": [
+        "pushsubscriptionchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fire-the-pushsubscriptionchange-event",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-fire-the-pushsubscriptionchange-event",
+      "linkingText": [
+        "fire the \"pushsubscriptionchange\" event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscriptionchangeevent",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscriptionchangeevent",
+      "linkingText": [
+        "PushSubscriptionChangeEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscriptionchangeevent-constructor",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscriptionchangeevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(type)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "PushSubscriptionChangeEvent.constructor",
+        "PushSubscriptionChangeEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "PushSubscriptionChangeEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscriptionchangeevent-newsubscription",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscriptionchangeevent-newsubscription",
+      "linkingText": [
+        "newSubscription"
+      ],
+      "localLinkingText": [
+        "PushSubscriptionChangeEvent.newSubscription"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushSubscriptionChangeEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscriptionchangeevent-oldsubscription",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscriptionchangeevent-oldsubscription",
+      "linkingText": [
+        "oldSubscription"
+      ],
+      "localLinkingText": [
+        "PushSubscriptionChangeEvent.oldSubscription"
+      ],
+      "type": "attribute",
+      "for": [
+        "PushSubscriptionChangeEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscriptionchangeeventinit",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscriptionchangeeventinit",
+      "linkingText": [
+        "PushSubscriptionChangeEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscriptionchangeeventinit-newsubscription",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscriptionchangeeventinit-newsubscription",
+      "linkingText": [
+        "newSubscription"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushSubscriptionChangeEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushsubscriptionchangeeventinit-oldsubscription",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushsubscriptionchangeeventinit-oldsubscription",
+      "linkingText": [
+        "oldSubscription"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushSubscriptionChangeEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushpermissionstate",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushpermissionstate",
+      "linkingText": [
+        "PushPermissionState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushpermissionstate-granted",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushpermissionstate-granted",
+      "linkingText": [
+        "granted"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PushPermissionState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushpermissionstate-denied",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushpermissionstate-denied",
+      "linkingText": [
+        "denied"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PushPermissionState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pushpermissionstate-prompt",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dom-pushpermissionstate-prompt",
+      "linkingText": [
+        "prompt"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PushPermissionState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-user-agent",
+      "href": "https://www.w3.org/TR/2020/WD-push-api-20200204/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

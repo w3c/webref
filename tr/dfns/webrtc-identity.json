@@ -1,0 +1,954 @@
+{
+  "spec": {
+    "title": "Identity for WebRTC 1.0",
+    "url": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-user-agent",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-errorevent",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-errorevent",
+      "linkingText": [
+        "ErrorEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-queue-a-task",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-queue-a-task",
+      "linkingText": [
+        "queue a\n    task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fire-a-simple-event",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-fire-a-simple-event",
+      "linkingText": [
+        "fire a\n    simple event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-networking-task-source",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-networking-task-source",
+      "linkingText": [
+        "networking\n    task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-event",
+      "linkingText": [
+        "event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handlers",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-event-handlers",
+      "linkingText": [
+        "event\n    handlers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handler-event-types",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-event-handler-event-types",
+      "linkingText": [
+        "event\n    handler event types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-performance-timeorigin",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-performance-timeorigin",
+      "linkingText": [
+        "performance.timeOrigin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-performance-now",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-performance-now",
+      "linkingText": [
+        "performance.now()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediastream",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-mediastream",
+      "linkingText": [
+        "MediaStream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediastreamtrack",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-mediastreamtrack",
+      "linkingText": [
+        "MediaStreamTrack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediastreamconstraints",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-mediastreamconstraints",
+      "linkingText": [
+        "MediaStreamConstraints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-blob",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-blob",
+      "linkingText": [
+        "Blob"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-media-description",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-media-description",
+      "linkingText": [
+        "media description"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-media-transport",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-media-transport",
+      "linkingText": [
+        "media transport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-generation",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-generation",
+      "linkingText": [
+        "generation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcstatstype",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-rtcstatstype",
+      "linkingText": [
+        "RTCStatsType"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-stats-object",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-stats-object",
+      "linkingText": [
+        "stats object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-monitored-object",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-monitored-object",
+      "linkingText": [
+        "monitored object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-throw",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-throw",
+      "linkingText": [
+        "throw"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-create",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-create",
+      "linkingText": [
+        "create"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fulfill",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-fulfill",
+      "linkingText": [
+        "fulfill",
+        "fulfillment",
+        "fulfilled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-reject",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-reject",
+      "linkingText": [
+        "reject",
+        "rejection",
+        "rejecting",
+        "rejected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-resolve",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-resolve",
+      "linkingText": [
+        "resolve",
+        "resolves",
+        "resolved"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pending",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-settled",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-settled",
+      "linkingText": [
+        "settled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-bundle",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-bundle",
+      "linkingText": [
+        "bundle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-bundle-only",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-bundle-only",
+      "linkingText": [
+        "bundle-only"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-bundle-policy",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-bundle-policy",
+      "linkingText": [
+        "bundle-policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-oauth-client",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-oauth-client",
+      "linkingText": [
+        "OAuth Client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-authorization-server",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-authorization-server",
+      "linkingText": [
+        "Authorization Server"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcpeerconnection",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcpeerconnection",
+      "linkingText": [
+        "rtcpeerconnection",
+        "rtcpeerconnection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-target-peer-identity",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-target-peer-identity",
+      "linkingText": [
+        "target peer identity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-setremotedescription",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-setremotedescription",
+      "linkingText": [
+        "setRemoteDescription"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-createoffer",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-createoffer",
+      "linkingText": [
+        "createOffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-createanswer",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-createanswer",
+      "linkingText": [
+        "createAnswer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-addtrack",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-addtrack",
+      "linkingText": [
+        "addTrack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcerror",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-rtcerror",
+      "linkingText": [
+        "rtcerror",
+        "rtcerror"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-realm",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-realm",
+      "linkingText": [
+        "realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityproviderglobalscope",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityproviderglobalscope",
+      "linkingText": [
+        "RTCIdentityProviderGlobalScope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityproviderglobalscope-rtcidentityprovider",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityproviderglobalscope-rtcidentityprovider",
+      "linkingText": [
+        "rtcIdentityProvider"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityproviderglobalscope"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityproviderregistrar",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityproviderregistrar",
+      "linkingText": [
+        "RTCIdentityProviderRegistrar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityproviderregistrar-register",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityproviderregistrar-register",
+      "linkingText": [
+        "register",
+        "register()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityproviderregistrar"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityprovider",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityprovider",
+      "linkingText": [
+        "RTCIdentityProvider"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityprovider-generateassertion",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityprovider-generateassertion",
+      "linkingText": [
+        "generateAssertion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityprovider"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityprovider-validateassertion",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityprovider-validateassertion",
+      "linkingText": [
+        "validateAssertion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityprovider"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-generateassertioncallback",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-generateassertioncallback",
+      "linkingText": [
+        "GenerateAssertionCallback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-validateassertioncallback",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-validateassertioncallback",
+      "linkingText": [
+        "ValidateAssertionCallback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityassertionresult",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityassertionresult",
+      "linkingText": [
+        "RTCIdentityAssertionResult"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityassertionresult-idp",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityassertionresult-idp",
+      "linkingText": [
+        "idp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityassertionresult"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityassertionresult-assertion",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityassertionresult-assertion",
+      "linkingText": [
+        "assertion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityassertionresult"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityproviderdetails",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityproviderdetails",
+      "linkingText": [
+        "RTCIdentityProviderDetails"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityproviderdetails-domain",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityproviderdetails-domain",
+      "linkingText": [
+        "domain"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityproviderdetails"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityproviderdetails-protocol",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityproviderdetails-protocol",
+      "linkingText": [
+        "protocol"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityproviderdetails"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityvalidationresult",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityvalidationresult",
+      "linkingText": [
+        "RTCIdentityValidationResult"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityvalidationresult-identity",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityvalidationresult-identity",
+      "linkingText": [
+        "identity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityvalidationresult"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityvalidationresult-contents",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityvalidationresult-contents",
+      "linkingText": [
+        "contents"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityvalidationresult"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcpeerconnection-peeridentity",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcpeerconnection-peeridentity",
+      "linkingText": [
+        "peerIdentity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcpeerconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcpeerconnection-idploginurl",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcpeerconnection-idploginurl",
+      "linkingText": [
+        "idpLoginUrl"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcpeerconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcpeerconnection-idperrorinfo",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcpeerconnection-idperrorinfo",
+      "linkingText": [
+        "idpErrorInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcpeerconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcpeerconnection-setidentityprovider",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcpeerconnection-setidentityprovider",
+      "linkingText": [
+        "setIdentityProvider",
+        "setidentityprovider()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcpeerconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcpeerconnection-getidentityassertion",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcpeerconnection-getidentityassertion",
+      "linkingText": [
+        "getIdentityAssertion",
+        "getidentityassertion()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcpeerconnection"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityprovideroptions",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityprovideroptions",
+      "linkingText": [
+        "RTCIdentityProviderOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityprovideroptions-protocol",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityprovideroptions-protocol",
+      "linkingText": [
+        "protocol"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityprovideroptions"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityprovideroptions-usernamehint",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityprovideroptions-usernamehint",
+      "linkingText": [
+        "usernameHint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityprovideroptions"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityprovideroptions-peeridentity",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityprovideroptions-peeridentity",
+      "linkingText": [
+        "peerIdentity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityprovideroptions"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityassertion",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityassertion",
+      "linkingText": [
+        "RTCIdentityAssertion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityassertion-idp",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityassertion-idp",
+      "linkingText": [
+        "idp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityassertion"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcidentityassertion-name",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-rtcidentityassertion-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "rtcidentityassertion"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediastreamconstraints-peeridentity",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-mediastreamconstraints-peeridentity",
+      "linkingText": [
+        "peerIdentity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediastreamconstraints"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-peeridentity",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dfn-peeridentity",
+      "linkingText": [
+        "peerIdentity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediastreamtrack-isolated",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-mediastreamtrack-isolated",
+      "linkingText": [
+        "isolated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediastreamtrack"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-mediastreamtrack-onisolationchange",
+      "href": "https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/#dom-mediastreamtrack-onisolationchange",
+      "linkingText": [
+        "onisolationchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "mediastreamtrack"
+      ],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

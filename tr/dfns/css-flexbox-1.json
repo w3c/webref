@@ -1,0 +1,1346 @@
+{
+  "spec": {
+    "title": "CSS Flexible Box Layout Module Level 1",
+    "url": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/"
+  },
+  "dfns": [
+    {
+      "id": "flex-layout",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#flex-layout",
+      "linkingText": [
+        "flex layout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "flex-container",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#flex-container",
+      "linkingText": [
+        "flex container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "flex-item",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#flex-item",
+      "linkingText": [
+        "flex item"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "flex-direction",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#flex-direction",
+      "linkingText": [
+        "flex direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "main-axis",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#main-axis",
+      "linkingText": [
+        "main axis",
+        "main-axis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "main-dimension",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#main-dimension",
+      "linkingText": [
+        "main dimension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "main-start",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#main-start",
+      "linkingText": [
+        "main-start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "main-end",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#main-end",
+      "linkingText": [
+        "main-end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "main-size",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#main-size",
+      "linkingText": [
+        "main size",
+        "main-size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "main-size-property",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#main-size-property",
+      "linkingText": [
+        "main size property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "min-main-size-property",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#min-main-size-property",
+      "linkingText": [
+        "min main size property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "max-main-size-property",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#max-main-size-property",
+      "linkingText": [
+        "max main size property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "min-main-size",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#min-main-size",
+      "linkingText": [
+        "min main size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "max-main-size",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#max-main-size",
+      "linkingText": [
+        "max main size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cross-axis",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#cross-axis",
+      "linkingText": [
+        "cross axis",
+        "cross-axis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cross-dimension",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#cross-dimension",
+      "linkingText": [
+        "cross dimension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cross-start",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#cross-start",
+      "linkingText": [
+        "cross-start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cross-end",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#cross-end",
+      "linkingText": [
+        "cross-end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cross-size",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#cross-size",
+      "linkingText": [
+        "cross size",
+        "cross-size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cross-size-property",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#cross-size-property",
+      "linkingText": [
+        "cross size property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "min-cross-size-property",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#min-cross-size-property",
+      "linkingText": [
+        "min cross size property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "max-cross-size-property",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#max-cross-size-property",
+      "linkingText": [
+        "max cross size property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "min-cross-size",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#min-cross-size",
+      "linkingText": [
+        "min cross size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "max-cross-size",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#max-cross-size",
+      "linkingText": [
+        "max cross size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-flex",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-display-flex",
+      "linkingText": [
+        "flex"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-display-inline-flex",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-display-inline-flex",
+      "linkingText": [
+        "inline-flex"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "flex-formatting-context",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#flex-formatting-context",
+      "linkingText": [
+        "flex formatting context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "flex-level",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#flex-level",
+      "linkingText": [
+        "flex-level"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "static-position-rectangle",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#static-position-rectangle",
+      "linkingText": [
+        "static-position rectangle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "collapsed-flex-item",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#collapsed-flex-item",
+      "linkingText": [
+        "collapsed flex item"
+      ],
+      "localLinkingText": [
+        "collapsed"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "content-based-minimum-size",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#content-based-minimum-size",
+      "linkingText": [
+        "content-based minimum size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "specified-size-suggestion",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#specified-size-suggestion",
+      "linkingText": [
+        "specified size suggestion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "transferred-size-suggestion",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#transferred-size-suggestion",
+      "linkingText": [
+        "transferred size suggestion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "content-size-suggestion",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#content-size-suggestion",
+      "linkingText": [
+        "content size suggestion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-flex-direction",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#propdef-flex-direction",
+      "linkingText": [
+        "flex-direction"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-flex-direction-row",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-flex-direction-row",
+      "linkingText": [
+        "row"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-direction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-flex-direction-row-reverse",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-flex-direction-row-reverse",
+      "linkingText": [
+        "row-reverse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-direction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-flex-direction-column",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-flex-direction-column",
+      "linkingText": [
+        "column"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-direction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-flex-direction-column-reverse",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-flex-direction-column-reverse",
+      "linkingText": [
+        "column-reverse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-direction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-flex-wrap",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#propdef-flex-wrap",
+      "linkingText": [
+        "flex-wrap"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-flex-wrap-nowrap",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-flex-wrap-nowrap",
+      "linkingText": [
+        "nowrap"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-wrap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-flex-wrap-wrap",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-flex-wrap-wrap",
+      "linkingText": [
+        "wrap"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-wrap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-flex-wrap-wrap-reverse",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-flex-wrap-wrap-reverse",
+      "linkingText": [
+        "wrap-reverse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-wrap"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-flex-flow",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#propdef-flex-flow",
+      "linkingText": [
+        "flex-flow"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-order",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#propdef-order",
+      "linkingText": [
+        "order"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-order-integer",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-order-integer",
+      "linkingText": [
+        "<integer>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "order"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "order-modified-document-order",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#order-modified-document-order",
+      "linkingText": [
+        "order-modified document order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "flex-line",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#flex-line",
+      "linkingText": [
+        "flex line"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "single-line-flex-container",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#single-line-flex-container",
+      "linkingText": [
+        "single-line flex container"
+      ],
+      "localLinkingText": [
+        "single-line"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "multi-line-flex-container",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#multi-line-flex-container",
+      "linkingText": [
+        "multi-line flex container"
+      ],
+      "localLinkingText": [
+        "multi-line"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fully-inflexible",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#fully-inflexible",
+      "linkingText": [
+        "fully inflexible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "flexible",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#flexible",
+      "linkingText": [
+        "flexible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-flex",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#propdef-flex",
+      "linkingText": [
+        "flex"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "flexible-length",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#flexible-length",
+      "linkingText": [
+        "flexible length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "flex-factor",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#flex-factor",
+      "linkingText": [
+        "flex factor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-flex-flex-grow",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-flex-flex-grow",
+      "linkingText": [
+        "<‘flex-grow’>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "flex-flex-grow-factor",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#flex-flex-grow-factor",
+      "linkingText": [
+        "flex grow factor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "flex"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-flex-flex-shrink",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-flex-flex-shrink",
+      "linkingText": [
+        "<‘flex-shrink’>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "flex-flex-shrink-factor",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#flex-flex-shrink-factor",
+      "linkingText": [
+        "flex shrink factor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "flex"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-flex-flex-basis",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-flex-flex-basis",
+      "linkingText": [
+        "<‘flex-basis’>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "flex-flex-basis",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#flex-flex-basis",
+      "linkingText": [
+        "flex basis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "flex"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-flex-basis-auto",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-flex-basis-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-basis"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-flex-basis-content",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-flex-basis-content",
+      "linkingText": [
+        "content"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-basis"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-flex-none",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-flex-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-flex-grow",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#propdef-flex-grow",
+      "linkingText": [
+        "flex-grow"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-flex-grow-number",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-flex-grow-number",
+      "linkingText": [
+        "<number>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-grow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-flex-shrink",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#propdef-flex-shrink",
+      "linkingText": [
+        "flex-shrink"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-flex-shrink-number",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-flex-shrink-number",
+      "linkingText": [
+        "<number>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-shrink"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-flex-basis",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#propdef-flex-basis",
+      "linkingText": [
+        "flex-basis"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-justify-content",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#propdef-justify-content",
+      "linkingText": [
+        "justify-content"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-justify-content-flex-start",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-justify-content-flex-start",
+      "linkingText": [
+        "flex-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-content"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-justify-content-flex-end",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-justify-content-flex-end",
+      "linkingText": [
+        "flex-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-content"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-justify-content-center",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-justify-content-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-content"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-justify-content-space-between",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-justify-content-space-between",
+      "linkingText": [
+        "space-between"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-content"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-justify-content-space-around",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-justify-content-space-around",
+      "linkingText": [
+        "space-around"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-content"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-align-items",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#propdef-align-items",
+      "linkingText": [
+        "align-items"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-align-self",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#propdef-align-self",
+      "linkingText": [
+        "align-self"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-items-auto",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-align-items-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-items",
+        "align-self"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-items-flex-start",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-align-items-flex-start",
+      "linkingText": [
+        "flex-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-items",
+        "align-self"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-items-flex-end",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-align-items-flex-end",
+      "linkingText": [
+        "flex-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-items",
+        "align-self"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-items-center",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-align-items-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-items",
+        "align-self"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-items-baseline",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-align-items-baseline",
+      "linkingText": [
+        "baseline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-items",
+        "align-self"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "baseline-participation",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#baseline-participation",
+      "linkingText": [
+        "participates in baseline alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "align-items",
+        "align-self"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-items-stretch",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-align-items-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-items",
+        "align-self"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stretched",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#stretched",
+      "linkingText": [
+        "stretched"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-align-content",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#propdef-align-content",
+      "linkingText": [
+        "align-content"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-content-flex-start",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-align-content-flex-start",
+      "linkingText": [
+        "flex-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-content"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-content-flex-end",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-align-content-flex-end",
+      "linkingText": [
+        "flex-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-content"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-content-center",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-align-content-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-content"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-content-space-between",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-align-content-space-between",
+      "linkingText": [
+        "space-between"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-content"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-content-space-around",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-align-content-space-around",
+      "linkingText": [
+        "space-around"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-content"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-align-content-stretch",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#valdef-align-content-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-content"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "main-axis-baseline",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#main-axis-baseline",
+      "linkingText": [
+        "main-axis baseline set",
+        "first main-axis baseline set",
+        "last main-axis baseline set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cross-axis-baseline",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#cross-axis-baseline",
+      "linkingText": [
+        "cross-axis baseline set",
+        "first cross-axis baseline set",
+        "last cross-axis baseline set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "flex-base-size",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#flex-base-size",
+      "linkingText": [
+        "flex base size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "hypothetical-main-size",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#hypothetical-main-size",
+      "linkingText": [
+        "hypothetical main size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "hypothetical-cross-size",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#hypothetical-cross-size",
+      "linkingText": [
+        "hypothetical cross size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "strut-size",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#strut-size",
+      "linkingText": [
+        "strut size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "target-main-size",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#target-main-size",
+      "linkingText": [
+        "target main size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "initial-free-space",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#initial-free-space",
+      "linkingText": [
+        "initial free space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "remaining-free-space",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#remaining-free-space",
+      "linkingText": [
+        "remaining free space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "scaled-flex-shrink-factor",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#scaled-flex-shrink-factor",
+      "linkingText": [
+        "scaled flex shrink factor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "definite",
+      "href": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/#definite",
+      "linkingText": [
+        "definite",
+        "definite size",
+        "indefinite",
+        "indefinite size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

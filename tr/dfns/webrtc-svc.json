@@ -1,0 +1,573 @@
+{
+  "spec": {
+    "title": "Scalable Video Coding (SVC) Extension for WebRTC",
+    "url": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-user-agent",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-errorevent",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-errorevent",
+      "linkingText": [
+        "ErrorEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-queue-a-task",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-queue-a-task",
+      "linkingText": [
+        "queue a task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fires-a-simple-event",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-fires-a-simple-event",
+      "linkingText": [
+        "fires a simple\n      event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-networking-task-source",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-networking-task-source",
+      "linkingText": [
+        "networking\n      task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-event",
+      "linkingText": [
+        "event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handlers",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-event-handlers",
+      "linkingText": [
+        "event\n      handlers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handler-event-types",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-event-handler-event-types",
+      "linkingText": [
+        "event\n      handler event types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-throw",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-throw",
+      "linkingText": [
+        "throw"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-create",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-create",
+      "linkingText": [
+        "create"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exception"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-simulcast-envelope",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-simulcast-envelope",
+      "linkingText": [
+        "simulcast envelope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fulfill",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-fulfill",
+      "linkingText": [
+        "fulfill",
+        "fulfillment",
+        "fulfilled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-reject",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-reject",
+      "linkingText": [
+        "reject",
+        "rejection",
+        "rejecting",
+        "rejected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-resolve",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-resolve",
+      "linkingText": [
+        "resolve",
+        "resolves",
+        "resolved"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pending",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-settled",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-settled",
+      "linkingText": [
+        "settled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediastream",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-mediastream",
+      "linkingText": [
+        "MediaStream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediastreamtrack",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-mediastreamtrack",
+      "linkingText": [
+        "MediaStreamTrack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediastreamconstraints",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-mediastreamconstraints",
+      "linkingText": [
+        "MediaStreamConstraints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sst",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-sst",
+      "linkingText": [
+        "SST"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mst",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-mst",
+      "linkingText": [
+        "MST"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-srst",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-srst",
+      "linkingText": [
+        "SRST"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-svc",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-svc",
+      "linkingText": [
+        "SVC"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mrst",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-mrst",
+      "linkingText": [
+        "MRST"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcpeerconnection",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-rtcpeerconnection",
+      "linkingText": [
+        "RTCPeerConnection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcerror",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-rtcerror",
+      "linkingText": [
+        "RTCError"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-addtrack",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-addtrack",
+      "linkingText": [
+        "addTrack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-addtransceiver",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-addtransceiver",
+      "linkingText": [
+        "addTransceiver"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-setcodecpreferences",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-setcodecpreferences",
+      "linkingText": [
+        "setCodecPreferences"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-getparameters",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-getparameters",
+      "linkingText": [
+        "getParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-setparameters",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-setparameters",
+      "linkingText": [
+        "setParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcrtpparameters",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-rtcrtpparameters",
+      "linkingText": [
+        "RTCRtpParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcrtpsendparameters",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-rtcrtpsendparameters",
+      "linkingText": [
+        "RTCRtpSendParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcrtpreceiveparameters",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-rtcrtpreceiveparameters",
+      "linkingText": [
+        "RTCRtpReceiveParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcrtpcodingparameters",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-rtcrtpcodingparameters",
+      "linkingText": [
+        "RTCRtpCodingParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpencodingparameters",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dom-rtcrtpencodingparameters",
+      "linkingText": [
+        "RTCRtpEncodingParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpcodeccapability",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dom-rtcrtpcodeccapability",
+      "linkingText": [
+        "RTCRtpCodecCapability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcrtptransceiver",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-rtcrtptransceiver",
+      "linkingText": [
+        "RTCRtpTransceiver"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sender",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-sender",
+      "linkingText": [
+        "[[Sender]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-receiver",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-receiver",
+      "linkingText": [
+        "[[Receiver]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcrtpsender",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-rtcrtpsender",
+      "linkingText": [
+        "RTCRtpSender"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-sendencodings",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-sendencodings",
+      "linkingText": [
+        "[[SendEncodings]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-lastreturnedparameters",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-lastreturnedparameters",
+      "linkingText": [
+        "[[LastReturnedParameters]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcrtpreceiver",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dfn-rtcrtpreceiver",
+      "linkingText": [
+        "RTCRtpReceiver"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpencodingparameters-scalabilitymode",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dom-rtcrtpencodingparameters-scalabilitymode",
+      "linkingText": [
+        "scalabilityMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpEncodingParameters"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpcodeccapability-scalabilitymodes",
+      "href": "https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/#dom-rtcrtpcodeccapability-scalabilitymodes",
+      "linkingText": [
+        "scalabilityModes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCRtpCodecCapability"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,504 @@
+{
+  "spec": {
+    "title": "CSS Transforms Module Level 2",
+    "url": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/"
+  },
+  "dfns": [
+    {
+      "id": "3d-transformed-element",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#3d-transformed-element",
+      "linkingText": [
+        "3D transformed element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "3d-matrix",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#3d-matrix",
+      "linkingText": [
+        "3D matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "identity-transform-function",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#identity-transform-function",
+      "linkingText": [
+        "identity transform function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "perspective-matrix",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#perspective-matrix",
+      "linkingText": [
+        "perspective matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "accumulated-3d-transformation-matrix",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#accumulated-3d-transformation-matrix",
+      "linkingText": [
+        "accumulated 3D transformation matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "3d-rendering-context",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#3d-rendering-context",
+      "linkingText": [
+        "3D rendering context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-translate",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#propdef-translate",
+      "linkingText": [
+        "translate"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-rotate",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#propdef-rotate",
+      "linkingText": [
+        "rotate"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-rotate-x",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#valdef-rotate-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "rotate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-rotate-y",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#valdef-rotate-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "rotate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-rotate-z",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#valdef-rotate-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "rotate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-scale",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#propdef-scale",
+      "linkingText": [
+        "scale"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-translate-none",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#valdef-translate-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "translate",
+        "rotate",
+        "scale"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-transform-style",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#propdef-transform-style",
+      "linkingText": [
+        "transform-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-perspective",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#propdef-perspective",
+      "linkingText": [
+        "perspective"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-length-0",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#valdef-perspective-length-0",
+      "linkingText": [
+        "<length [0,∞]>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-none",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#valdef-perspective-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-perspective-origin",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#propdef-perspective-origin",
+      "linkingText": [
+        "perspective-origin"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-origin-percentage",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#valdef-perspective-origin-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-origin-length",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#valdef-perspective-origin-length",
+      "linkingText": [
+        "<length>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-origin-top",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#valdef-perspective-origin-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-origin-right",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#valdef-perspective-origin-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-origin-bottom",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#valdef-perspective-origin-bottom",
+      "linkingText": [
+        "bottom"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-origin-left",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#valdef-perspective-origin-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-perspective-origin-center",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#valdef-perspective-origin-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "perspective-origin"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-backface-visibility",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#propdef-backface-visibility",
+      "linkingText": [
+        "backface-visibility"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-transform-function",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#typedef-transform-function",
+      "linkingText": [
+        "<transform-function>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "3d-transform-functions",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#3d-transform-functions",
+      "linkingText": [
+        "3d transform functions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-matrix3d",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#funcdef-matrix3d",
+      "linkingText": [
+        "matrix3d()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-translate3d",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#funcdef-translate3d",
+      "linkingText": [
+        "translate3d()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-translatez",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#funcdef-translatez",
+      "linkingText": [
+        "translateZ()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-scale3d",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#funcdef-scale3d",
+      "linkingText": [
+        "scale3d()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-scalez",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#funcdef-scalez",
+      "linkingText": [
+        "scaleZ()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-rotate3d",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#funcdef-rotate3d",
+      "linkingText": [
+        "rotate3d()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-rotatex",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#funcdef-rotatex",
+      "linkingText": [
+        "rotateX()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-rotatey",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#funcdef-rotatey",
+      "linkingText": [
+        "rotateY()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-rotatez",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#funcdef-rotatez",
+      "linkingText": [
+        "rotateZ()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "funcdef-perspective",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#funcdef-perspective",
+      "linkingText": [
+        "perspective()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "accumulation-for-one-based-values",
+      "href": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/#accumulation-for-one-based-values",
+      "linkingText": [
+        "accumulation for one-based values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

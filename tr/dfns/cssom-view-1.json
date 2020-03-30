@@ -1,0 +1,3004 @@
+{
+  "spec": {
+    "title": "CSSOM View Module",
+    "url": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/"
+  },
+  "dfns": [
+    {
+      "id": "the-html-body-element",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#the-html-body-element",
+      "linkingText": [
+        "The HTML body element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "content-edge",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#content-edge",
+      "linkingText": [
+        "Content edge"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "padding-edge",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#padding-edge",
+      "linkingText": [
+        "padding edge"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "border-edge",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#border-edge",
+      "linkingText": [
+        "border edge"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "margin-edge",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#margin-edge",
+      "linkingText": [
+        "margin edge"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "viewport",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#viewport",
+      "linkingText": [
+        "viewport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "scrolling-box",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#scrolling-box",
+      "linkingText": [
+        "scrolling box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "potentially-scrollable",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#potentially-scrollable",
+      "linkingText": [
+        "potentially scrollable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "overflow-directions",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#overflow-directions",
+      "linkingText": [
+        "overflow directions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "scrolling-area",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#scrolling-area",
+      "linkingText": [
+        "scrolling area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "scrolling-area-origin",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#scrolling-area-origin",
+      "linkingText": [
+        "scrolling area origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "beginning-edges",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#beginning-edges",
+      "linkingText": [
+        "beginning edges"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ending-edges",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#ending-edges",
+      "linkingText": [
+        "ending edges"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "css-layout-box",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#css-layout-box",
+      "linkingText": [
+        "CSS layout box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "svg-layout-box",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#svg-layout-box",
+      "linkingText": [
+        "SVG layout box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "layout-box",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#layout-box",
+      "linkingText": [
+        "layout box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "transforms",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#transforms",
+      "linkingText": [
+        "transforms"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "page-zoom",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#page-zoom",
+      "linkingText": [
+        "page zoom"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pinch-zoom",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#pinch-zoom",
+      "linkingText": [
+        "pinch zoom"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "perform-a-scroll",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#perform-a-scroll",
+      "linkingText": [
+        "perform a scroll"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-smooth-scroll",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#concept-smooth-scroll",
+      "linkingText": [
+        "smooth scroll"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "smooth-scroll-completed",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#smooth-scroll-completed",
+      "linkingText": [
+        "smooth scroll completed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "smooth-scroll-aborted",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#smooth-scroll-aborted",
+      "linkingText": [
+        "smooth scroll aborted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-instant-scroll",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#concept-instant-scroll",
+      "linkingText": [
+        "instant scroll"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "scroll-to-the-beginning-of-the-document",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#scroll-to-the-beginning-of-the-document",
+      "linkingText": [
+        "scroll to the beginning of the document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "normalize-non-finite-values",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#normalize-non-finite-values",
+      "linkingText": [
+        "normalize non-finite values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enumdef-scrollbehavior",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#enumdef-scrollbehavior",
+      "linkingText": [
+        "ScrollBehavior"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrollbehavior-auto",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-scrollbehavior-auto",
+      "linkingText": [
+        "\"auto\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScrollBehavior"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrollbehavior-instant",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-scrollbehavior-instant",
+      "linkingText": [
+        "\"instant\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScrollBehavior"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrollbehavior-smooth",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-scrollbehavior-smooth",
+      "linkingText": [
+        "\"smooth\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScrollBehavior"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-scrolloptions",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dictdef-scrolloptions",
+      "linkingText": [
+        "ScrollOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolloptions-behavior",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-scrolloptions-behavior",
+      "linkingText": [
+        "behavior"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ScrollOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-scrolltooptions",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dictdef-scrolltooptions",
+      "linkingText": [
+        "ScrollToOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolltooptions-left",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-scrolltooptions-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ScrollToOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolltooptions-top",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-scrolltooptions-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ScrollToOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-matchmedia-query-query",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-matchmedia-query-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/matchMedia(query)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-moveto-x-y-x",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-moveto-x-y-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/moveTo(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-moveto-x-y-y",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-moveto-x-y-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/moveTo(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-moveby-x-y-x",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-moveby-x-y-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/moveBy(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-moveby-x-y-y",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-moveby-x-y-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/moveBy(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-resizeto-x-y-x",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-resizeto-x-y-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/resizeTo(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-resizeto-x-y-y",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-resizeto-x-y-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/resizeTo(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-resizeby-x-y-x",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-resizeby-x-y-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/resizeBy(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-resizeby-x-y-y",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-resizeby-x-y-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/resizeBy(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-scroll-options-options",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-scroll-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/scroll(options)",
+        "Window/scroll()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-scroll-x-y-x",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-scroll-x-y-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/scroll(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-scroll-x-y-y",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-scroll-x-y-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/scroll(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-scrollto-options-options",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-scrollto-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/scrollTo(options)",
+        "Window/scrollTo()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-scrollto-x-y-x",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-scrollto-x-y-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/scrollTo(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-scrollto-x-y-y",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-scrollto-x-y-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/scrollTo(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-scrollby-options-options",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-scrollby-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/scrollBy(options)",
+        "Window/scrollBy()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-scrollby-x-y-x",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-scrollby-x-y-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/scrollBy(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-scrollby-x-y-y",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-scrollby-x-y-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Window/scrollBy(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-matchmedia",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-matchmedia",
+      "linkingText": [
+        "matchMedia(query)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-screen",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-screen",
+      "linkingText": [
+        "screen"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-moveto",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-moveto",
+      "linkingText": [
+        "moveTo(x, y)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-moveby",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-moveby",
+      "linkingText": [
+        "moveBy(x, y)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-resizeto",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-resizeto",
+      "linkingText": [
+        "resizeTo(x, y)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-resizeby",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-resizeby",
+      "linkingText": [
+        "resizeBy(x, y)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "allowed-to-resize-and-move",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#allowed-to-resize-and-move",
+      "linkingText": [
+        "allowed to resize and move"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-window-innerwidth",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-innerwidth",
+      "linkingText": [
+        "innerWidth"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-innerheight",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-innerheight",
+      "linkingText": [
+        "innerHeight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-scrollx",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-scrollx",
+      "linkingText": [
+        "scrollX"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-pagexoffset",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-pagexoffset",
+      "linkingText": [
+        "pageXOffset"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-scrolly",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-scrolly",
+      "linkingText": [
+        "scrollY"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-pageyoffset",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-pageyoffset",
+      "linkingText": [
+        "pageYOffset"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-scroll",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-scroll",
+      "linkingText": [
+        "scroll(options)",
+        "scroll(x, y)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-scrollto",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-scrollto",
+      "linkingText": [
+        "scrollTo(options)",
+        "scrollTo(x, y)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-scrollby",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-scrollby",
+      "linkingText": [
+        "scrollBy(options)",
+        "scrollBy(x, y)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-screenx",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-screenx",
+      "linkingText": [
+        "screenX"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-screeny",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-screeny",
+      "linkingText": [
+        "screenY"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-outerwidth",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-outerwidth",
+      "linkingText": [
+        "outerWidth"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-outerheight",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-outerheight",
+      "linkingText": [
+        "outerHeight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-window-devicepixelratio",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-window-devicepixelratio",
+      "linkingText": [
+        "devicePixelRatio"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "supported-open-feature-name",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#supported-open-feature-name",
+      "linkingText": [
+        "supported open() feature name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "supported-open-feature-name-width",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#supported-open-feature-name-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "supported open() feature name"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "supported-open-feature-name-height",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#supported-open-feature-name-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "supported open() feature name"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "supported-open-feature-name-left",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#supported-open-feature-name-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "supported open() feature name"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "supported-open-feature-name-top",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#supported-open-feature-name-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "supported open() feature name"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "media-query-list",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#media-query-list",
+      "linkingText": [
+        "media query list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mediaquerylist-document",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#mediaquerylist-document",
+      "linkingText": [
+        "document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaQueryList"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mediaquerylist-media",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#mediaquerylist-media",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaQueryList"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mediaquerylist-matches-state",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#mediaquerylist-matches-state",
+      "linkingText": [
+        "matches state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "MediaQueryList"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "evaluate-media-queries-and-report-changes",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#evaluate-media-queries-and-report-changes",
+      "linkingText": [
+        "evaluate media queries and report changes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mediaquerylist",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#mediaquerylist",
+      "linkingText": [
+        "MediaQueryList"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaquerylist-addlistener-listener-listener",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mediaquerylist-addlistener-listener-listener",
+      "linkingText": [
+        "listener"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaQueryList/addListener(listener)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaquerylist-removelistener-listener-listener",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mediaquerylist-removelistener-listener-listener",
+      "linkingText": [
+        "listener"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaQueryList/removeListener(listener)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaquerylist-media",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mediaquerylist-media",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaQueryList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaquerylist-matches",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mediaquerylist-matches",
+      "linkingText": [
+        "matches"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaQueryList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaquerylist-addlistener",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mediaquerylist-addlistener",
+      "linkingText": [
+        "addListener(listener)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaQueryList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaquerylist-removelistener",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mediaquerylist-removelistener",
+      "linkingText": [
+        "removeListener(listener)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "MediaQueryList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaquerylist-onchange",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mediaquerylist-onchange",
+      "linkingText": [
+        "onchange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaQueryList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaquerylistevent-mediaquerylistevent",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mediaquerylistevent-mediaquerylistevent",
+      "linkingText": [
+        "MediaQueryListEvent(type, eventInitDict)",
+        "MediaQueryListEvent(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "MediaQueryListEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaquerylistevent-mediaquerylistevent-type-eventinitdict-type",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mediaquerylistevent-mediaquerylistevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaQueryListEvent/MediaQueryListEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaquerylistevent-mediaquerylistevent-type-eventinitdict-eventinitdict",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mediaquerylistevent-mediaquerylistevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "MediaQueryListEvent/MediaQueryListEvent(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mediaquerylistevent",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#mediaquerylistevent",
+      "linkingText": [
+        "MediaQueryListEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mediaquerylisteventinit",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dictdef-mediaquerylisteventinit",
+      "linkingText": [
+        "MediaQueryListEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaquerylisteventinit-media",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mediaquerylisteventinit-media",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaQueryListEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaquerylisteventinit-matches",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mediaquerylisteventinit-matches",
+      "linkingText": [
+        "matches"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaQueryListEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaquerylistevent-media",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mediaquerylistevent-media",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaQueryListEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediaquerylistevent-matches",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mediaquerylistevent-matches",
+      "linkingText": [
+        "matches"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaQueryListEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eventdef-mediaquerylist-change",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#eventdef-mediaquerylist-change",
+      "linkingText": [
+        "change"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "MediaQueryList"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "screen",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#screen",
+      "linkingText": [
+        "Screen"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-screen-availwidth",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-screen-availwidth",
+      "linkingText": [
+        "availWidth"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Screen"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-screen-availheight",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-screen-availheight",
+      "linkingText": [
+        "availHeight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Screen"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-screen-width",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-screen-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Screen"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-screen-height",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-screen-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Screen"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-screen-colordepth",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-screen-colordepth",
+      "linkingText": [
+        "colorDepth"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Screen"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-screen-pixeldepth",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-screen-pixeldepth",
+      "linkingText": [
+        "pixelDepth"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Screen"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-elementfrompoint-x-y-x",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-document-elementfrompoint-x-y-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Document/elementFromPoint(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-elementfrompoint-x-y-y",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-document-elementfrompoint-x-y-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Document/elementFromPoint(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-elementsfrompoint-x-y-x",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-document-elementsfrompoint-x-y-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Document/elementsFromPoint(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-elementsfrompoint-x-y-y",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-document-elementsfrompoint-x-y-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Document/elementsFromPoint(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-caretpositionfrompoint-x-y-x",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-document-caretpositionfrompoint-x-y-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Document/caretPositionFromPoint(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-caretpositionfrompoint-x-y-y",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-document-caretpositionfrompoint-x-y-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Document/caretPositionFromPoint(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-elementfrompoint",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-document-elementfrompoint",
+      "linkingText": [
+        "elementFromPoint(x, y)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-elementsfrompoint",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-document-elementsfrompoint",
+      "linkingText": [
+        "elementsFromPoint(x, y)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-caretpositionfrompoint",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-document-caretpositionfrompoint",
+      "linkingText": [
+        "caretPositionFromPoint(x, y)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-document-scrollingelement",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-document-scrollingelement",
+      "linkingText": [
+        "scrollingElement"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "caret-position",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#caret-position",
+      "linkingText": [
+        "caret position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "caret-node",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#caret-node",
+      "linkingText": [
+        "caret node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "caret-offset",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#caret-offset",
+      "linkingText": [
+        "caret offset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "caret-range",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#caret-range",
+      "linkingText": [
+        "caret range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "caretposition",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#caretposition",
+      "linkingText": [
+        "CaretPosition"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-caretposition-offsetnode",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-caretposition-offsetnode",
+      "linkingText": [
+        "offsetNode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CaretPosition"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-caretposition-offset",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-caretposition-offset",
+      "linkingText": [
+        "offset"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CaretPosition"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-caretposition-getclientrect",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-caretposition-getclientrect",
+      "linkingText": [
+        "getClientRect()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CaretPosition"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-scrolllogicalposition",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#enumdef-scrolllogicalposition",
+      "linkingText": [
+        "ScrollLogicalPosition"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolllogicalposition-start",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-scrolllogicalposition-start",
+      "linkingText": [
+        "\"start\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScrollLogicalPosition"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolllogicalposition-center",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-scrolllogicalposition-center",
+      "linkingText": [
+        "\"center\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScrollLogicalPosition"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolllogicalposition-end",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-scrolllogicalposition-end",
+      "linkingText": [
+        "\"end\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScrollLogicalPosition"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrolllogicalposition-nearest",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-scrolllogicalposition-nearest",
+      "linkingText": [
+        "\"nearest\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ScrollLogicalPosition"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-scrollintoviewoptions",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dictdef-scrollintoviewoptions",
+      "linkingText": [
+        "ScrollIntoViewOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrollintoviewoptions-block",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-scrollintoviewoptions-block",
+      "linkingText": [
+        "block"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ScrollIntoViewOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scrollintoviewoptions-inline",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-scrollintoviewoptions-inline",
+      "linkingText": [
+        "inline"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ScrollIntoViewOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scrollintoview-arg-arg",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scrollintoview-arg-arg",
+      "linkingText": [
+        "arg"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Element/scrollIntoView(arg)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scroll-options-options",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scroll-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Element/scroll(options)",
+        "Element/scroll()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scroll-x-y-x",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scroll-x-y-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Element/scroll(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scroll-x-y-y",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scroll-x-y-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Element/scroll(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scrollto-options-options",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scrollto-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Element/scrollTo(options)",
+        "Element/scrollTo()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scrollto-x-y-x",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scrollto-x-y-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Element/scrollTo(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scrollto-x-y-y",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scrollto-x-y-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Element/scrollTo(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scrollby-options-options",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scrollby-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Element/scrollBy(options)",
+        "Element/scrollBy()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scrollby-x-y-x",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scrollby-x-y-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Element/scrollBy(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scrollby-x-y-y",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scrollby-x-y-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Element/scrollBy(x, y)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-getclientrects",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-getclientrects",
+      "linkingText": [
+        "getClientRects()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-getboundingclientrect",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-getboundingclientrect",
+      "linkingText": [
+        "getBoundingClientRect()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scrollintoview",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scrollintoview",
+      "linkingText": [
+        "scrollIntoView(arg)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scroll",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scroll",
+      "linkingText": [
+        "scroll(options)",
+        "scroll(x, y)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scrollto",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scrollto",
+      "linkingText": [
+        "scrollTo(options)",
+        "scrollTo(x, y)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scrollby",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scrollby",
+      "linkingText": [
+        "scrollBy(options)",
+        "scrollBy(x, y)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scrolltop",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scrolltop",
+      "linkingText": [
+        "scrollTop"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scrollleft",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scrollleft",
+      "linkingText": [
+        "scrollLeft"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scrollwidth",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scrollwidth",
+      "linkingText": [
+        "scrollWidth"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-scrollheight",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-scrollheight",
+      "linkingText": [
+        "scrollHeight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-clienttop",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-clienttop",
+      "linkingText": [
+        "clientTop"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-clientleft",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-clientleft",
+      "linkingText": [
+        "clientLeft"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-clientwidth",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-clientwidth",
+      "linkingText": [
+        "clientWidth"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-element-clientheight",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-element-clientheight",
+      "linkingText": [
+        "clientHeight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scroll-an-element-into-view",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#scroll-an-element-into-view",
+      "linkingText": [
+        "scroll an element into view"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "scroll-an-element",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#scroll-an-element",
+      "linkingText": [
+        "scroll an element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlelement-offsetparent",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-htmlelement-offsetparent",
+      "linkingText": [
+        "offsetParent"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLElement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlelement-offsettop",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-htmlelement-offsettop",
+      "linkingText": [
+        "offsetTop"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLElement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlelement-offsetleft",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-htmlelement-offsetleft",
+      "linkingText": [
+        "offsetLeft"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLElement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlelement-offsetwidth",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-htmlelement-offsetwidth",
+      "linkingText": [
+        "offsetWidth"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLElement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlelement-offsetheight",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-htmlelement-offsetheight",
+      "linkingText": [
+        "offsetHeight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLElement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlimageelement-x",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-htmlimageelement-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLImageElement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-htmlimageelement-y",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-htmlimageelement-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLImageElement"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-range-getclientrects",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-range-getclientrects",
+      "linkingText": [
+        "getClientRects()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Range"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-range-getboundingclientrect",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-range-getboundingclientrect",
+      "linkingText": [
+        "getBoundingClientRect()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Range"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-mouseeventinit",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dictdef-mouseeventinit",
+      "linkingText": [
+        "MouseEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-screenx",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mouseeventinit-screenx",
+      "linkingText": [
+        "screenX"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-screeny",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mouseeventinit-screeny",
+      "linkingText": [
+        "screenY"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-clientx",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mouseeventinit-clientx",
+      "linkingText": [
+        "clientX"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseeventinit-clienty",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mouseeventinit-clienty",
+      "linkingText": [
+        "clientY"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MouseEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-screenx",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mouseevent-screenx",
+      "linkingText": [
+        "screenX"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-screeny",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mouseevent-screeny",
+      "linkingText": [
+        "screenY"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-pagex",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mouseevent-pagex",
+      "linkingText": [
+        "pageX"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-pagey",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mouseevent-pagey",
+      "linkingText": [
+        "pageY"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-clientx",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mouseevent-clientx",
+      "linkingText": [
+        "clientX"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-clienty",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mouseevent-clienty",
+      "linkingText": [
+        "clientY"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-x",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mouseevent-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-y",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mouseevent-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-offsetx",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mouseevent-offsetx",
+      "linkingText": [
+        "offsetX"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mouseevent-offsety",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-mouseevent-offsety",
+      "linkingText": [
+        "offsetY"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MouseEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-cssboxtype",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#enumdef-cssboxtype",
+      "linkingText": [
+        "CSSBoxType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssboxtype-margin",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-cssboxtype-margin",
+      "linkingText": [
+        "\"margin\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CSSBoxType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssboxtype-border",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-cssboxtype-border",
+      "linkingText": [
+        "\"border\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CSSBoxType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssboxtype-padding",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-cssboxtype-padding",
+      "linkingText": [
+        "\"padding\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CSSBoxType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cssboxtype-content",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-cssboxtype-content",
+      "linkingText": [
+        "\"content\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CSSBoxType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-boxquadoptions",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dictdef-boxquadoptions",
+      "linkingText": [
+        "BoxQuadOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-boxquadoptions-box",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-boxquadoptions-box",
+      "linkingText": [
+        "box"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BoxQuadOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-boxquadoptions-relativeto",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-boxquadoptions-relativeto",
+      "linkingText": [
+        "relativeTo"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BoxQuadOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-convertcoordinateoptions",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dictdef-convertcoordinateoptions",
+      "linkingText": [
+        "ConvertCoordinateOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-convertcoordinateoptions-frombox",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-convertcoordinateoptions-frombox",
+      "linkingText": [
+        "fromBox"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ConvertCoordinateOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-convertcoordinateoptions-tobox",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-convertcoordinateoptions-tobox",
+      "linkingText": [
+        "toBox"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ConvertCoordinateOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "geometryutils",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#geometryutils",
+      "linkingText": [
+        "GeometryUtils"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geometryutils-getboxquads-options-options",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-geometryutils-getboxquads-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GeometryUtils/getBoxQuads(options)",
+        "GeometryUtils/getBoxQuads()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geometryutils-convertquadfromnode-quad-from-options-quad",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-geometryutils-convertquadfromnode-quad-from-options-quad",
+      "linkingText": [
+        "quad"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GeometryUtils/convertQuadFromNode(quad, from, options)",
+        "GeometryUtils/convertQuadFromNode(quad, from)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geometryutils-convertquadfromnode-quad-from-options-from",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-geometryutils-convertquadfromnode-quad-from-options-from",
+      "linkingText": [
+        "from"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GeometryUtils/convertQuadFromNode(quad, from, options)",
+        "GeometryUtils/convertQuadFromNode(quad, from)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geometryutils-convertquadfromnode-quad-from-options-options",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-geometryutils-convertquadfromnode-quad-from-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GeometryUtils/convertQuadFromNode(quad, from, options)",
+        "GeometryUtils/convertQuadFromNode(quad, from)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geometryutils-convertrectfromnode-rect-from-options-rect",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-geometryutils-convertrectfromnode-rect-from-options-rect",
+      "linkingText": [
+        "rect"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GeometryUtils/convertRectFromNode(rect, from, options)",
+        "GeometryUtils/convertRectFromNode(rect, from)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geometryutils-convertrectfromnode-rect-from-options-from",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-geometryutils-convertrectfromnode-rect-from-options-from",
+      "linkingText": [
+        "from"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GeometryUtils/convertRectFromNode(rect, from, options)",
+        "GeometryUtils/convertRectFromNode(rect, from)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geometryutils-convertrectfromnode-rect-from-options-options",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-geometryutils-convertrectfromnode-rect-from-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GeometryUtils/convertRectFromNode(rect, from, options)",
+        "GeometryUtils/convertRectFromNode(rect, from)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geometryutils-convertpointfromnode-point-from-options-point",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-geometryutils-convertpointfromnode-point-from-options-point",
+      "linkingText": [
+        "point"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GeometryUtils/convertPointFromNode(point, from, options)",
+        "GeometryUtils/convertPointFromNode(point, from)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geometryutils-convertpointfromnode-point-from-options-from",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-geometryutils-convertpointfromnode-point-from-options-from",
+      "linkingText": [
+        "from"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GeometryUtils/convertPointFromNode(point, from, options)",
+        "GeometryUtils/convertPointFromNode(point, from)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geometryutils-convertpointfromnode-point-from-options-options",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-geometryutils-convertpointfromnode-point-from-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GeometryUtils/convertPointFromNode(point, from, options)",
+        "GeometryUtils/convertPointFromNode(point, from)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-geometrynode",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#typedefdef-geometrynode",
+      "linkingText": [
+        "GeometryNode"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geometryutils-getboxquads",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-geometryutils-getboxquads",
+      "linkingText": [
+        "getBoxQuads(options)",
+        "getBoxQuads()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GeometryUtils"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geometryutils-convertquadfromnode",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-geometryutils-convertquadfromnode",
+      "linkingText": [
+        "convertQuadFromNode(quad, from, options)",
+        "convertQuadFromNode(quad, from)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GeometryUtils"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geometryutils-convertrectfromnode",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-geometryutils-convertrectfromnode",
+      "linkingText": [
+        "convertRectFromNode(rect, from, options)",
+        "convertRectFromNode(rect, from)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GeometryUtils"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-geometryutils-convertpointfromnode",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#dom-geometryutils-convertpointfromnode",
+      "linkingText": [
+        "convertPointFromNode(point, from, options)",
+        "convertPointFromNode(point, from)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GeometryUtils"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "run-the-resize-steps",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#run-the-resize-steps",
+      "linkingText": [
+        "run the resize steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pending-scroll-event-targets",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#pending-scroll-event-targets",
+      "linkingText": [
+        "pending scroll event targets"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "run-the-scroll-steps",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#run-the-scroll-steps",
+      "linkingText": [
+        "run the scroll steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "eventdef-window-resize",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#eventdef-window-resize",
+      "linkingText": [
+        "resize"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eventdef-document-scroll",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#eventdef-document-scroll",
+      "linkingText": [
+        "scroll"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "Document",
+        "Element"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-scroll-behavior",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#propdef-scroll-behavior",
+      "linkingText": [
+        "scroll-behavior"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-scroll-behavior-auto",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#valdef-scroll-behavior-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-behavior"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-scroll-behavior-smooth",
+      "href": "http://www.w3.org/TR/2016/WD-cssom-view-1-20160317/#valdef-scroll-behavior-smooth",
+      "linkingText": [
+        "smooth"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "scroll-behavior"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

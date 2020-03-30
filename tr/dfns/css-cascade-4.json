@@ -1,0 +1,471 @@
+{
+  "spec": {
+    "title": "CSS Cascading and Inheritance Level 4",
+    "url": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/"
+  },
+  "dfns": [
+    {
+      "id": "at-ruledef-import",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#at-ruledef-import",
+      "linkingText": [
+        "@import"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "import-conditions",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#import-conditions",
+      "linkingText": [
+        "import conditions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-media-query",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#typedef-media-query",
+      "linkingText": [
+        "<media-query>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-supports-condition",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#typedef-supports-condition",
+      "linkingText": [
+        "<supports-condition>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-declaration",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#typedef-declaration",
+      "linkingText": [
+        "<declaration>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "shorthand-property",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#shorthand-property",
+      "linkingText": [
+        "shorthand property",
+        "shorthand"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "longhand",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#longhand",
+      "linkingText": [
+        "longhand",
+        "longhand property",
+        "sub-property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "reset-only-sub-property",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#reset-only-sub-property",
+      "linkingText": [
+        "reset-only sub-property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "legacy-name-alias",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#legacy-name-alias",
+      "linkingText": [
+        "legacy name alias"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "legacy-shorthand",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#legacy-shorthand",
+      "linkingText": [
+        "legacy shorthand"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-all",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#propdef-all",
+      "linkingText": [
+        "all"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "declared-value",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#declared-value",
+      "linkingText": [
+        "declared value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cascaded-value",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#cascaded-value",
+      "linkingText": [
+        "cascaded value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "specified-value",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#specified-value",
+      "linkingText": [
+        "specified value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "computed-value",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#computed-value",
+      "linkingText": [
+        "computed value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "used-value",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#used-value",
+      "linkingText": [
+        "used value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "actual-value",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#actual-value",
+      "linkingText": [
+        "actual value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cascade",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#cascade",
+      "linkingText": [
+        "cascade"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scoped",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#scoped",
+      "linkingText": [
+        "scoped"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scoping-element",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#scoping-element",
+      "linkingText": [
+        "scoping element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "output-of-the-cascade",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#output-of-the-cascade",
+      "linkingText": [
+        "output of the cascade"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "origin",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#origin",
+      "linkingText": [
+        "cascade origin"
+      ],
+      "localLinkingText": [
+        "origin"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cascade-origin-author",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#cascade-origin-author",
+      "linkingText": [
+        "author origin",
+        "author style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cascade-origin-user",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#cascade-origin-user",
+      "linkingText": [
+        "user origin",
+        "user style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cascade-origin-ua",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#cascade-origin-ua",
+      "linkingText": [
+        "user agent origin",
+        "ua origin",
+        "user agent style sheet",
+        "ua style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cascade-origin-animation",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#cascade-origin-animation",
+      "linkingText": [
+        "Animation Origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cascade-origin-transition",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#cascade-origin-transition",
+      "linkingText": [
+        "Transition Origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "important",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#important",
+      "linkingText": [
+        "important"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "bang-important",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#bang-important",
+      "linkingText": [
+        "!important"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "initial-value",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#initial-value",
+      "linkingText": [
+        "initial value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inheritance",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#inheritance",
+      "linkingText": [
+        "inheritance",
+        "inherit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inherited-value",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#inherited-value",
+      "linkingText": [
+        "inherited value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inherited-property",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#inherited-property",
+      "linkingText": [
+        "inherited property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-all-initial",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#valdef-all-initial",
+      "linkingText": [
+        "initial"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "all"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-all-inherit",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#valdef-all-inherit",
+      "linkingText": [
+        "inherit"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "all"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-all-unset",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#valdef-all-unset",
+      "linkingText": [
+        "unset"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "all"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-all-revert",
+      "href": "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/#valdef-all-revert",
+      "linkingText": [
+        "revert"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "all"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}
