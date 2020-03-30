@@ -2,6 +2,14 @@
 % Reffy
 % March 30, 2020
 
+## MediaStream Image Capture
+
+- Initial URL: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
+- Crawled URL: [https://w3c.github.io/mediacapture-image/](https://w3c.github.io/mediacapture-image/)
+- Repository: [GitHub w3c/mediacapture-image](https://github.com/w3c/mediacapture-image)
+- Inconsistent references for links: *INS* https://w3c.github.io/permissions/
+
+
 ## Wake Lock API
 
 - Initial URL: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
@@ -12,13 +20,12 @@
     at process._tickCallback (internal/process/next_tick.js:68:7)
   -- ASYNC --
     at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
-    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:112:20)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
+    at DOMWorld.addScriptTag (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:245:29)
   -- ASYNC --
     at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
-    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:860:43)
+    at Page.addScriptTag (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:421:29)
     at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23)
-    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:302:36)
+    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:297:20)
     at process._tickCallback (internal/process/next_tick.js:68:7) / *DEL* Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation.
     at rewriteError (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:167:15)
     at process._tickCallback (internal/process/next_tick.js:68:7)
@@ -30,17 +37,7 @@
     at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
     at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:860:43)
     at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23)
-    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:225:37)
+    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:302:36)
     at process._tickCallback (internal/process/next_tick.js:68:7)
-
-
-## WebXR Augmented Reality Module - Level 1
-
-- Initial URL: [https://www.w3.org/TR/webxr-ar-module/](https://www.w3.org/TR/webxr-ar-module/)
-- Crawled URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
-- Repository: [GitHub immersive-web/webxr-ar-module](https://github.com/immersive-web/webxr-ar-module)
-- Spec title: *INS* WebXR Augmented Reality Module - Level 1 / *DEL* [No title found for https://immersive-web.github.io/webxr-ar-module/]
-- No normative references found: *INS* false / *DEL* true
-- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
 
 

@@ -25,7 +25,7 @@
   <h2>Specifications that could not be rendered</h2>
   <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
   <ul>
-  <li><a href="https://w3c.github.io/wake-lock/">Wake Lock API</a>: <code>Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation. at rewriteError (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:167:15) at process._tickCallback (internal/process/next_tick.js:68:7)   -- ASYNC -- at ExecutionContext.&lt;anonymous&gt; (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15) at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:112:20) at process._tickCallback (internal/process/next_tick.js:68:7)   -- ASYNC -- at Frame.&lt;anonymous&gt; (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15) at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:860:43) at Page.&lt;anonymous&gt; (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23) at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:302:36) at process._tickCallback (internal/process/next_tick.js:68:7)</code></li>
+  <li><a href="https://w3c.github.io/wake-lock/">Wake Lock API</a>: <code>Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation. at rewriteError (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:167:15) at process._tickCallback (internal/process/next_tick.js:68:7)   -- ASYNC -- at ExecutionContext.&lt;anonymous&gt; (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15) at DOMWorld.addScriptTag (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:245:29)   -- ASYNC -- at Frame.&lt;anonymous&gt; (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15) at Page.addScriptTag (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:421:29) at Page.&lt;anonymous&gt; (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23) at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:297:20) at process._tickCallback (internal/process/next_tick.js:68:7)</code></li>
   </ul>
   <p>=&gt; 1 specification found</p>
   </section>
@@ -1045,6 +1045,7 @@
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a> but related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
+  <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a> links to:
   <ul>
@@ -1193,7 +1194,7 @@
   <li><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a> links to <a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
   <li><a href="https://immersive-web.github.io/webxr-gamepads-module/">WebXR Gamepads Module - Level 1</a> links to <a href="https://w3c.github.io/gamepad/"><code>https://w3c.github.io/gamepad/</code></a> but related reference &quot;GAMEPAD&quot; uses URL <a href="https://www.w3.org/TR/gamepad/"><code>https://www.w3.org/TR/gamepad/</code></a></li>
   </ul>
-  <p>=&gt; 217 inconsistent references for links found in 110 specifications</p>
+  <p>=&gt; 218 inconsistent references for links found in 110 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>
