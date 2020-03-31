@@ -5283,6 +5283,18 @@
       "informative": false
     },
     {
+      "id": "atomics",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#atomics",
+      "linkingText": [
+        "Atomics"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "date",
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#date",
       "linkingText": [
@@ -40765,6 +40777,42 @@
       "informative": false
     },
     {
+      "id": "scheme-and-registrable-domain",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#scheme-and-registrable-domain",
+      "linkingText": [
+        "scheme-and-registrable-domain"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "site",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#site",
+      "linkingText": [
+        "site"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "obtain-a-site",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#obtain-a-site",
+      "linkingText": [
+        "obtain a site"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "schemelessly-same-site",
       "href": "https://html.spec.whatwg.org/multipage/origin.html#schemelessly-same-site",
       "linkingText": [
@@ -43592,20 +43640,6 @@
       "informative": false
     },
     {
-      "id": "responsible-event-loop",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop",
-      "linkingText": [
-        "responsible event\n   loop"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "environment settings object"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "responsible-document",
       "href": "https://html.spec.whatwg.org/multipage/webappapis.html#responsible-document",
       "linkingText": [
@@ -43720,6 +43754,18 @@
       "href": "https://html.spec.whatwg.org/multipage/webappapis.html#about-to-be-notified-rejected-promises-list",
       "linkingText": [
         "about-to-be-notified rejected promises list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "responsible-event-loop",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop",
+      "linkingText": [
+        "responsible event loop"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -44213,12 +44259,12 @@
       "id": "creating-a-new-javascript-realm",
       "href": "https://html.spec.whatwg.org/multipage/webappapis.html#creating-a-new-javascript-realm",
       "linkingText": [
-        "create a new JavaScript realm"
+        "create a new JavaScript\n  realm"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -44513,7 +44559,7 @@
       "id": "similar-origin-window-agent",
       "href": "https://html.spec.whatwg.org/multipage/webappapis.html#similar-origin-window-agent",
       "linkingText": [
-        "similar-origin window agent"
+        "Similar-origin window agent"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -44570,46 +44616,22 @@
       "informative": false
     },
     {
+      "id": "create-an-agent",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#create-an-agent",
+      "linkingText": [
+        "create an agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "relevant-agent",
       "href": "https://html.spec.whatwg.org/multipage/webappapis.html#relevant-agent",
       "linkingText": [
         "relevant agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "scheme-and-registrable-domain",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#scheme-and-registrable-domain",
-      "linkingText": [
-        "scheme-and-registrable-domain"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "site",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#site",
-      "linkingText": [
-        "site"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "obtain-a-site",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtain-a-site",
-      "linkingText": [
-        "obtain a site"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -44666,15 +44688,51 @@
       "informative": false
     },
     {
-      "id": "can-share-memory-with",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#can-share-memory-with",
+      "id": "obtaining-a-worker/worklet-agent",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtaining-a-worker/worklet-agent",
       "linkingText": [
-        "can\n  share memory with"
+        "obtain a worker/worklet agent"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
+      "informative": false
+    },
+    {
+      "id": "obtain-a-dedicated/shared-worker-agent",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtain-a-dedicated/shared-worker-agent",
+      "linkingText": [
+        "obtain a dedicated/shared worker agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "obtain-a-worklet-agent",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtain-a-worklet-agent",
+      "linkingText": [
+        "obtain a worklet agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "obtain-a-service-worker-agent",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtain-a-service-worker-agent",
+      "linkingText": [
+        "obtain a service worker agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
       "informative": false
     },
     {
@@ -44919,6 +44977,20 @@
       "informative": false
     },
     {
+      "id": "concept-agent-event-loop",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop",
+      "linkingText": [
+        "event loop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "agent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "window-event-loop",
       "href": "https://html.spec.whatwg.org/multipage/webappapis.html#window-event-loop",
       "linkingText": [
@@ -44934,7 +45006,7 @@
       "id": "worker-event-loop-2",
       "href": "https://html.spec.whatwg.org/multipage/webappapis.html#worker-event-loop-2",
       "linkingText": [
-        "worker event loop"
+        "worker\n  event loop"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -50309,7 +50381,7 @@
       "id": "official-moment-of-creation",
       "href": "https://html.spec.whatwg.org/multipage/workers.html#official-moment-of-creation",
       "linkingText": [
-        "official moment of\n    creation"
+        "official moment of creation"
       ],
       "localLinkingText": [],
       "type": "dfn",
