@@ -556,7 +556,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
 - Crawled URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
-- Crawled version: 18 June 2019
+- Crawled version: 1 April 2020
 - Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
 - Shortname: no shortname
 
@@ -734,6 +734,7 @@ Informative references to this spec from:
 - [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Preload](https://w3c.github.io/preload/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 
 
@@ -5212,7 +5213,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Crawled URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Crawled version: 14 March 2020
+- Crawled version: 1 April 2020
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
@@ -5398,7 +5399,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Crawled URL: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
-- Crawled version: 24 March 2020
+- Crawled version: 1 April 2020
 - Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
 - Latest published version: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2018/CR-encoding-20180327/)
@@ -5795,7 +5796,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
 - Crawled URL: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
-- Crawled version: 29 January 2020
+- Crawled version: 1 April 2020
 - Repository: [GitHub whatwg/fullscreen](https://github.com/whatwg/fullscreen)
 - Shortname: no shortname
 
@@ -7179,7 +7180,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://mimesniff.spec.whatwg.org/](https://mimesniff.spec.whatwg.org/)
 - Crawled URL: [https://mimesniff.spec.whatwg.org/](https://mimesniff.spec.whatwg.org/)
-- Crawled version: 29 January 2020
+- Crawled version: 1 April 2020
 - Repository: [GitHub whatwg/mimesniff](https://github.com/whatwg/mimesniff)
 - Shortname: no shortname
 
@@ -7424,7 +7425,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
 - Crawled URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
-- Crawled version: 29 January 2020
+- Crawled version: 1 April 2020
 - Repository: [GitHub whatwg/notifications](https://github.com/whatwg/notifications)
 - Shortname: no shortname
 
@@ -8600,7 +8601,6 @@ Normative references to this spec from:
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -8840,7 +8840,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
 - Crawled URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
-- Crawled version: 26 February 2020
+- Crawled version: 1 April 2020
 - Repository: [GitHub whatwg/storage](https://github.com/whatwg/storage)
 - Shortname: no shortname
 
@@ -9278,7 +9278,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
 - Crawled URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
-- Crawled version: 26 March 2020
+- Crawled version: 1 April 2020
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -9469,7 +9469,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled URL: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
-- Crawled version: 31 March 2020
+- Crawled version: 01 April 2020
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-appmanifest-20200330/)
@@ -10430,7 +10430,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
 - Crawled URL: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
-- Crawled version: 17 February 2020
+- Crawled version: 1 April 2020
 - Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
 - Shortname: no shortname
 
