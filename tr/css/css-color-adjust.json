@@ -1,17 +1,17 @@
 {
   "spec": {
     "title": "CSS Color Adjustment Module Level 1",
-    "url": "https://www.w3.org/TR/2019/WD-css-color-adjust-1-20190523/"
+    "url": "https://www.w3.org/TR/2020/WD-css-color-adjust-1-20200402/"
   },
   "properties": {
     "color-scheme": {
       "name": "color-scheme",
-      "value": "auto | [ light | dark | <custom-ident> ]+ | only && light",
-      "initial": "auto",
+      "value": "normal | [ light | dark | <custom-ident> ]+ | only && light",
+      "initial": "normal",
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "the keyword auto, or optional only keyword and ordered list of specified color scheme keywords, with any <custom-ident>s or repeated keywords dropped",
+      "computedValue": "the keyword normal, or optional only keyword and ordered list of specified color scheme keywords",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
