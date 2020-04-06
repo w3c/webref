@@ -17,16 +17,53 @@
       "media": "interactive"
     }
   },
-  "descriptors": {},
+  "descriptors": {
+    "timeline-type": {
+      "name": "timeline-type",
+      "for": "@timeline",
+      "value": "scroll | time",
+      "initial": "time"
+    },
+    "scroll-source": {
+      "name": "scroll-source",
+      "for": "@timeline",
+      "value": "selector(<id-selector>) | none",
+      "initial": "none"
+    },
+    "scroll-orientation": {
+      "name": "scroll-orientation",
+      "for": "@timeline",
+      "value": "auto | block | inline | horizontal | vertical",
+      "initial": "auto"
+    },
+    "scroll-start": {
+      "name": "scroll-start",
+      "for": "@timeline",
+      "value": "auto | <length> | <percentage>",
+      "initial": "auto"
+    },
+    "scroll-end": {
+      "name": "scroll-end",
+      "for": "@timeline",
+      "value": "auto | <length> | <percentage>",
+      "initial": "auto"
+    },
+    "scroll-time-range": {
+      "name": "scroll-time-range",
+      "for": "@timeline",
+      "value": "auto | <time>",
+      "initial": "auto"
+    }
+  },
   "valuespaces": {
     "<single-animation-timeline>": {
-      "value": "auto | scroll([element(<id-selector>)[, <scroll-direction>[, <scroll-offset>[, <scroll-offset>[, <time>]]]]])"
+      "value": "auto | none | <timeline-name>"
     },
-    "<scroll-direction>": {
-      "value": "auto | block | inline | horizontal | vertical"
+    "<timeline-name>": {
+      "value": "<custom-ident> | <string>"
     },
-    "<scroll-offset>": {
-      "value": "<length> | <percentage> | auto"
+    "<single-animation>": {
+      "value": "<time> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || [ none | <timeline-name> ]"
     }
   }
 }
