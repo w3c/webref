@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% April 08, 2020
+% April 09, 2020
 
 ## [No title found for https://w3c.github.io/wake-lock/] {data-spec=true data-anomaly=true data-noNormativeRefs=true}
 
@@ -119,7 +119,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
-- Crawled version: 08 April 2020
+- Crawled version: 09 April 2020
 - Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/)
@@ -4757,7 +4757,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
-- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
+- [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-raf/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
@@ -5289,7 +5289,7 @@ Normative references to this spec from:
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [High Resolution Time](https://w3c.github.io/hr-time/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
+- [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-raf/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Input Events Level 2](https://w3c.github.io/input-events/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
@@ -6086,7 +6086,7 @@ Normative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
+- [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-raf/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
@@ -6245,7 +6245,7 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [High Resolution Time](https://w3c.github.io/hr-time/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
-- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
+- [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-raf/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
@@ -6380,13 +6380,13 @@ Informative references to this spec from:
 - [Web Share Target API](https://wicg.github.io/web-share-target/)
 
 
-## HTMLVideoElement.requestAnimationFrame() {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## HTMLVideoElement.requestVideoFrameCallback() {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
 - Crawled URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
-- Crawled version: 2 April 2020
+- Crawled version: 8 April 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6427,7 +6427,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
+- [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-raf/)
 
 
 ## Identity for WebRTC 1.0 {data-spec=true data-unknownExposedNames=true data-ok=true}
@@ -6781,7 +6781,7 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
+- [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-raf/)
 
 No informative reference to this spec from other specs.
 
@@ -9753,7 +9753,7 @@ Normative references to this spec from:
 - [High Resolution Time](https://w3c.github.io/hr-time/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
+- [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-raf/)
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
