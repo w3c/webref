@@ -2,13 +2,13 @@
 % Reffy
 % April 11, 2020
 
-## [No title found for https://w3c.github.io/wake-lock/]
+## Wake Lock API
 
 - Initial URL: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
 - Crawled URL: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
 - Repository: [GitHub w3c/wake-lock](https://github.com/w3c/wake-lock)
-- Spec title: *INS* [No title found for https://w3c.github.io/wake-lock/] / *DEL* Wake Lock API
-- Spec could not be rendered: *DEL* Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation.
+- Spec title: *INS* Wake Lock API / *DEL* [No title found for https://w3c.github.io/wake-lock/]
+- Spec could not be rendered: *INS* Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation.
     at rewriteError (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:167:15)
     at process._tickCallback (internal/process/next_tick.js:68:7)
   -- ASYNC --
@@ -21,26 +21,5 @@
     at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23)
     at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:302:36)
     at process._tickCallback (internal/process/next_tick.js:68:7)
-
-
-## Box Tree API Level 1
-
-- Initial URL: [https://drafts.css-houdini.org/box-tree-api/](https://drafts.css-houdini.org/box-tree-api/)
-- Crawled URL: [https://drafts.css-houdini.org/box-tree-api/](https://drafts.css-houdini.org/box-tree-api/)
-- This specification is not in the new crawl report.
-
-
-## HTMLVideoElement.requestVideoFrameCallback()
-
-- Initial URL: [https://wicg.github.io/video-rvfc/](https://wicg.github.io/video-rvfc/)
-- Crawled URL: [https://wicg.github.io/video-rvfc/](https://wicg.github.io/video-rvfc/)
-- This specification was not in the reference crawl report.
-
-
-## https://wicg.github.io/video-raf/
-
-- Initial URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
-- Crawled URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
-- This specification is not in the new crawl report.
 
 
