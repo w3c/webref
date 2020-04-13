@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% April 06, 2020
+% April 13, 2020
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -257,7 +257,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/badging/](https://wicg.github.io/badging/)
 - Crawled URL: [https://wicg.github.io/badging/](https://wicg.github.io/badging/)
-- Crawled version: 11 November 2019
+- Crawled version: 09 April 2020
 - Repository: [GitHub wicg/badging](https://github.com/wicg/badging)
 - Shortname: no shortname
 
@@ -329,26 +329,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
-
-
-## Box Tree API Level 1 {data-spec=true data-ok=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://drafts.css-houdini.org/box-tree-api/](https://drafts.css-houdini.org/box-tree-api/)
-- Crawled URL: [https://drafts.css-houdini.org/box-tree-api/](https://drafts.css-houdini.org/box-tree-api/)
-- Crawled version: 14 August 2018
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-This specification looks good!
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
 
 
 ## Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -574,7 +554,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
 - Crawled URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
-- Crawled version: 1 April 2020
+- Crawled version: 6 April 2020
 - Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
 - Shortname: no shortname
 
@@ -663,7 +643,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
 - Crawled URL: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
-- Crawled version: 1 April 2020
+- Crawled version: 6 April 2020
 - Repository: [GitHub whatwg/console](https://github.com/whatwg/console)
 - Shortname: no shortname
 
@@ -798,7 +778,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Crawled URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
-- Crawled version: 3 April 2020
+- Crawled version: 9 April 2020
 - Repository: [GitHub wicg/cookie-store](https://github.com/wicg/cookie-store)
 - Shortname: no shortname
 
@@ -851,7 +831,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/core-aam/](https://w3c.github.io/core-aam/)
 - Crawled URL: [https://w3c.github.io/core-aam/](https://w3c.github.io/core-aam/)
-- Crawled version: 30 March 2020
+- Crawled version: 06 April 2020
 - Repository: [GitHub w3c/aria](https://github.com/w3c/aria)
 - Shortname: no shortname
 
@@ -1936,7 +1916,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
@@ -4837,7 +4816,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/2018/CR-geometry-1-20181204/)
-- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
+- [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
 - [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
@@ -5290,7 +5269,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Crawled URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Crawled version: 1 April 2020
+- Crawled version: 6 April 2020
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
@@ -5310,7 +5289,6 @@ Normative references to this spec from:
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Badging API](https://wicg.github.io/badging/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
-- [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Clipboard API and events](https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
@@ -5353,7 +5331,7 @@ Normative references to this spec from:
 - [Generic Sensor API](https://www.w3.org/TR/2019/CR-generic-sensor-20191212/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
+- [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Intersection Observer](https://www.w3.org/TR/2019/WD-intersection-observer-20190531/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
@@ -5459,6 +5437,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Event Timing API](https://wicg.github.io/event-timing/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
@@ -5500,6 +5479,7 @@ Normative references to this spec from:
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Payment Method Manifest](https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/)
 - [Push API](https://www.w3.org/TR/2020/WD-push-api-20200204/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [Web App Manifest](https://www.w3.org/TR/2020/WD-appmanifest-20200330/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://www.w3.org/TR/2019/WD-webauthn-2-20191126/)
@@ -5550,7 +5530,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
 - Crawled URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
-- Crawled version: 1 April 2020
+- Crawled version: 9 April 2020
 - Repository: [GitHub wicg/event-timing](https://github.com/wicg/event-timing)
 - Shortname: no shortname
 
@@ -5615,7 +5595,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 1 April 2020
+- Crawled version: 6 April 2020
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -5830,7 +5810,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://drafts.css-houdini.org/font-metrics-api/](https://drafts.css-houdini.org/font-metrics-api/)
 - Crawled URL: [https://drafts.css-houdini.org/font-metrics-api/](https://drafts.css-houdini.org/font-metrics-api/)
-- Crawled version: 11 February 2019
+- Crawled version: 7 April 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6148,7 +6128,7 @@ Normative references to this spec from:
 - [Generic Sensor API](https://www.w3.org/TR/2019/CR-generic-sensor-20191212/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
+- [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
@@ -6203,7 +6183,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 2 April 2020
+- Crawled version: 9 April 2020
 - Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
 - Shortname: no shortname
 
@@ -6293,7 +6273,7 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/2018/CR-geometry-1-20181204/)
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
-- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
+- [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)
@@ -6342,7 +6322,7 @@ Normative references to this spec from:
 - [Resource Hints](https://www.w3.org/TR/2019/WD-resource-hints-20190702/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
-- [Scalable Video Coding (SVC) Extension for WebRTC](https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/)
+- [Scalable Video Coding (SVC) Extension for WebRTC](https://www.w3.org/TR/2020/WD-webrtc-svc-20200408/)
 - [Screen Capture](https://www.w3.org/TR/2019/WD-screen-capture-20191119/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
@@ -6431,13 +6411,13 @@ Informative references to this spec from:
 - [WebIDL Level 1](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
 
-## HTMLVideoElement.requestAnimationFrame() {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## HTMLVideoElement.requestVideoFrameCallback() {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Initial URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
-- Crawled URL: [https://wicg.github.io/video-raf/](https://wicg.github.io/video-raf/)
-- Crawled version: 2 April 2020
+- Initial URL: [https://wicg.github.io/video-rvfc/](https://wicg.github.io/video-rvfc/)
+- Crawled URL: [https://wicg.github.io/video-rvfc/](https://wicg.github.io/video-rvfc/)
+- Crawled version: 10 April 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -6483,7 +6463,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
+- [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
 
 
 ## Identity for WebRTC 1.0 {data-spec=true data-anomaly=true data-unknownExposedNames=true data-inconsistentRef=true}
@@ -6849,7 +6829,7 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
+- [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
 
 No informative reference to this spec from other specs.
 
@@ -6883,7 +6863,7 @@ Normative references to this spec from:
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/2017/WD-mediacapture-depth-20170418/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/2017/WD-mediacapture-fromelement-20170906/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/)
-- [Scalable Video Coding (SVC) Extension for WebRTC](https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/)
+- [Scalable Video Coding (SVC) Extension for WebRTC](https://www.w3.org/TR/2020/WD-webrtc-svc-20200408/)
 - [Screen Capture](https://www.w3.org/TR/2019/WD-screen-capture-20191119/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/2019/CR-webrtc-20191213/)
@@ -7221,7 +7201,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://mimesniff.spec.whatwg.org/](https://mimesniff.spec.whatwg.org/)
 - Crawled URL: [https://mimesniff.spec.whatwg.org/](https://mimesniff.spec.whatwg.org/)
-- Crawled version: 1 April 2020
+- Crawled version: 6 April 2020
 - Repository: [GitHub whatwg/mimesniff](https://github.com/whatwg/mimesniff)
 - Shortname: no shortname
 
@@ -7473,7 +7453,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
 - Crawled URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
-- Crawled version: 1 April 2020
+- Crawled version: 6 April 2020
 - Repository: [GitHub whatwg/notifications](https://github.com/whatwg/notifications)
 - Shortname: no shortname
 
@@ -8142,7 +8122,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://quirks.spec.whatwg.org/](https://quirks.spec.whatwg.org/)
 - Crawled URL: [https://quirks.spec.whatwg.org/](https://quirks.spec.whatwg.org/)
-- Crawled version: 2 April 2020
+- Crawled version: 6 April 2020
 - Repository: [GitHub whatwg/quirks](https://github.com/whatwg/quirks)
 - Shortname: no shortname
 
@@ -8539,11 +8519,11 @@ Informative references to this spec from:
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/webrtc-svc/](https://www.w3.org/TR/webrtc-svc/)
-- Crawled URL: [https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/](https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/)
-- Crawled version: 22 October 2019
+- Crawled URL: [https://www.w3.org/TR/2020/WD-webrtc-svc-20200408/](https://www.w3.org/TR/2020/WD-webrtc-svc-20200408/)
+- Crawled version: 08 April 2020
 - Editor's Draft: [https://w3c.github.io/webrtc-svc/](https://w3c.github.io/webrtc-svc/)
 - Latest published version: [https://www.w3.org/TR/webrtc-svc/](https://www.w3.org/TR/webrtc-svc/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-webrtc-svc-20200408/)
 - Repository: [GitHub w3c/webrtc-svc](https://github.com/w3c/webrtc-svc)
 - Shortname: webrtc-svc
 
@@ -8825,7 +8805,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
 - Crawled URL: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
-- Crawled version: 24 February 2020
+- Crawled version: 7 April 2020
 - Repository: [GitHub w3c/ServiceWorker](https://github.com/w3c/ServiceWorker)
 - Shortname: no shortname
 
@@ -8872,7 +8852,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
 - Crawled URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
-- Crawled version: 1 April 2020
+- Crawled version: 6 April 2020
 - Repository: [GitHub whatwg/storage](https://github.com/whatwg/storage)
 - Shortname: no shortname
 
@@ -8899,7 +8879,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 2 March 2020
+- Crawled version: 6 April 2020
 - Repository: [GitHub whatwg/streams](https://github.com/whatwg/streams)
 - Shortname: no shortname
 
@@ -9315,7 +9295,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
 - Crawled URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
-- Crawled version: 1 April 2020
+- Crawled version: 6 April 2020
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -9977,7 +9957,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- Crawled version: 5 February 2020
+- Crawled version: 9 April 2020
 - Repository: [GitHub KhronosGroup/WebGL](https://github.com/KhronosGroup/WebGL)
 - Shortname: no shortname
 
@@ -10038,7 +10018,6 @@ Normative references to this spec from:
 - [Badging API](https://wicg.github.io/badging/)
 - [Battery Status API](http://www.w3.org/TR/2016/CR-battery-status-20160707/)
 - [Beacon](https://www.w3.org/TR/2017/CR-beacon-20170413/)
-- [Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)
 - [Clipboard API and events](https://www.w3.org/TR/2019/WD-clipboard-apis-20190605/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Console Standard](https://console.spec.whatwg.org/)
@@ -10088,7 +10067,7 @@ Normative references to this spec from:
 - [High Resolution Time Level 3](https://www.w3.org/TR/2017/NOTE-hr-time-3-20170803/)
 - [HTML Media Capture](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [HTMLVideoElement.requestAnimationFrame()](https://wicg.github.io/video-raf/)
+- [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/2020/CR-webrtc-stats-20200114/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
@@ -10136,7 +10115,7 @@ Normative references to this spec from:
 - [Resize Observer](https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
-- [Scalable Video Coding (SVC) Extension for WebRTC](https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/)
+- [Scalable Video Coding (SVC) Extension for WebRTC](https://www.w3.org/TR/2020/WD-webrtc-svc-20200408/)
 - [Screen Capture](https://www.w3.org/TR/2019/WD-screen-capture-20191119/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selection API](https://www.w3.org/TR/2020/WD-selection-api-20200226/)
@@ -10217,7 +10196,7 @@ Normative references to this spec from:
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/2018/CR-webrtc-identity-20180927/)
 - [Media Capture and Streams](https://www.w3.org/TR/2019/CR-mediacapture-streams-20190702/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/2020/WD-mst-content-hint-20200214/)
-- [Scalable Video Coding (SVC) Extension for WebRTC](https://www.w3.org/TR/2019/WD-webrtc-svc-20191022/)
+- [Scalable Video Coding (SVC) Extension for WebRTC](https://www.w3.org/TR/2020/WD-webrtc-svc-20200408/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [WebRTC Priority Control API](https://www.w3.org/TR/2020/WD-webrtc-priority-20200123/)
 
@@ -10287,7 +10266,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 5 April 2020
+- Crawled version: 12 April 2020
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
@@ -10448,7 +10427,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
 - Crawled URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
-- Crawled version: 27 February 2020
+- Crawled version: 10 April 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -10499,7 +10478,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
 - Crawled URL: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
-- Crawled version: 1 April 2020
+- Crawled version: 6 April 2020
 - Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
 - Shortname: no shortname
 
