@@ -1,25 +1,12 @@
-% Diff between report from "April 16, 2020" and reference report from "April 16, 2020"
+% Diff between report from "April 17, 2020" and reference report from "April 16, 2020"
 % Reffy
-% April 16, 2020
+% April 17, 2020
 
-## [No title found for https://w3c.github.io/wake-lock/]
+## CSS Positioned Layout Module Level 3
 
-- Initial URL: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
-- Crawled URL: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
-- Repository: [GitHub w3c/wake-lock](https://github.com/w3c/wake-lock)
-- Spec title: *INS* [No title found for https://w3c.github.io/wake-lock/] / *DEL* Wake Lock API
-- Spec could not be rendered: *DEL* Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation.
-    at rewriteError (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:167:15)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-  -- ASYNC --
-    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
-    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:112:20)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-  -- ASYNC --
-    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
-    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:860:43)
-    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23)
-    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:302:36)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
+- Initial URL: [https://www.w3.org/TR/css-position-3/](https://www.w3.org/TR/css-position-3/)
+- Crawled URL: [https://drafts.csswg.org/css-position/](https://drafts.csswg.org/css-position/)
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
+- Missing references for links: *INS* https://www.w3.org/TR/css-grid-1/
 
 

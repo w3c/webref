@@ -103,18 +103,6 @@
       "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "length or percentage by computed value type"
-    },
-    "z-index": {
-      "name": "z-index",
-      "value": "auto | <integer>",
-      "initial": "auto",
-      "appliesTo": "positioned elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "the keyword auto or an integer",
-      "canonicalOrder": "per grammar",
-      "animatable": "<integer>",
-      "animationType": "by computed value"
     }
   },
   "descriptors": {},
@@ -123,10 +111,7 @@
       "prose": "The offset is a fixed distance from the reference edge. Negative values are allowed."
     },
     "<percentage>": {
-      "prose": "The offset is a percentage of the containing block’s width (for left or right) or height (for top and bottom). For stickily positioned elements, the offset is a percentage of the flow root’s width (for left or right) or height (for top or bottom). Negative values are allowed."
-    },
-    "<integer>": {
-      "prose": "This integer is the stack level of the generated box in the current stacking context. The box also establishes a new stacking context."
+      "prose": "The offset is a percentage of the containing block’s width (for left or right) or height (for top and bottom). For sticky positioned elements, the offset is a percentage of the flow root’s width (for left or right) or height (for top or bottom). Negative values are allowed."
     }
   }
 }
