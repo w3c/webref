@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% April 16, 2020
+% April 17, 2020
 
 ## [No title found for https://w3c.github.io/wake-lock/] {data-spec=true data-anomaly=true data-noNormativeRefs=true}
 
@@ -119,7 +119,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
-- Crawled version: 16 April 2020
+- Crawled version: 17 April 2020
 - Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/)
@@ -1270,7 +1270,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-box-3/](https://www.w3.org/TR/css-box-3/)
 - Crawled URL: [https://drafts.csswg.org/css-box-3/](https://drafts.csswg.org/css-box-3/)
-- Crawled version: 15 April 2020
+- Crawled version: 16 April 2020
 - Editor's Draft: [https://drafts.csswg.org/css-box-3/](https://drafts.csswg.org/css-box-3/)
 - Latest published version: [https://www.w3.org/TR/css-box-3/](https://www.w3.org/TR/css-box-3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
@@ -1345,7 +1345,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
 - Crawled URL: [https://drafts.csswg.org/css-sizing-3/](https://drafts.csswg.org/css-sizing-3/)
-- Crawled version: 10 March 2020
+- Crawled version: 16 April 2020
 - Editor's Draft: [https://drafts.csswg.org/css-sizing-3/](https://drafts.csswg.org/css-sizing-3/)
 - Latest published version: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/)
@@ -1702,7 +1702,6 @@ Normative references to this spec from:
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
@@ -1979,7 +1978,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
 - Crawled URL: [https://drafts.csswg.org/css-display/](https://drafts.csswg.org/css-display/)
-- Crawled version: 11 March 2020
+- Crawled version: 16 April 2020
 - Editor's Draft: [https://drafts.csswg.org/css-display/](https://drafts.csswg.org/css-display/)
 - Latest published version: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
@@ -2525,6 +2524,7 @@ Normative references to this spec from:
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
 - [CSS Page Floats](https://drafts.csswg.org/css-page-floats/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
+- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
@@ -2639,7 +2639,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-grid-1/](https://www.w3.org/TR/css-grid-1/)
 - Crawled URL: [https://drafts.csswg.org/css-grid/](https://drafts.csswg.org/css-grid/)
-- Crawled version: 18 February 2020
+- Crawled version: 16 April 2020
 - Editor's Draft: [https://drafts.csswg.org/css-grid/](https://drafts.csswg.org/css-grid/)
 - Latest published version: [https://www.w3.org/TR/css-grid-1/](https://www.w3.org/TR/css-grid-1/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
@@ -3467,6 +3467,7 @@ Normative references to this spec from:
 - [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
@@ -3540,7 +3541,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-position-3/](https://www.w3.org/TR/css-position-3/)
 - Crawled URL: [https://drafts.csswg.org/css-position/](https://drafts.csswg.org/css-position/)
-- Crawled version: 16 January 2020
+- Crawled version: 16 April 2020
 - Editor's Draft: [https://drafts.csswg.org/css-position/](https://drafts.csswg.org/css-position/)
 - Latest published version: [http://www.w3.org/TR/css-position-3/](http://www.w3.org/TR/css-position-3/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-css-position-3-20160517/)
@@ -3550,6 +3551,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
+     * [`https://www.w3.org/TR/css-grid-1/`](https://www.w3.org/TR/css-grid-1/)
      * [`https://www.w3.org/TR/2015/WD-css3-positioning-20150203/`](https://www.w3.org/TR/2015/WD-css3-positioning-20150203/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -4423,7 +4425,6 @@ Normative references to this spec from:
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
-- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
@@ -7273,7 +7274,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Crawled URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
-- Crawled version: 15 April 2020
+- Crawled version: 16 April 2020
 - Repository: [GitHub wicg/native-file-system](https://github.com/wicg/native-file-system)
 - Shortname: no shortname
 
