@@ -97,15 +97,7 @@ partial interface Window {
         chooseFileSystemEntries(optional ChooseFileSystemEntriesOptions options = {});
 };
 
-enum SystemDirectoryType {
-  "sandbox"
-};
-
-dictionary GetSystemDirectoryOptions {
-  required SystemDirectoryType type;
-};
-
 [SecureContext]
-partial interface FileSystemDirectoryHandle {
-  static Promise<FileSystemDirectoryHandle> getSystemDirectory(GetSystemDirectoryOptions options);
+partial interface Window {
+  Promise<FileSystemDirectoryHandle> getOriginPrivateDirectory();
 };
