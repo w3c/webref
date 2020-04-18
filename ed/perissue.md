@@ -5,6 +5,27 @@
 274 specifications were crawled in this report.
 
 
+## Specifications that could not be rendered
+
+Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
+
+- [Wake Lock API](https://w3c.github.io/wake-lock/): `Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation.
+    at rewriteError (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:167:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
+    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:112:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:860:43)
+    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23)
+    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:302:36)
+    at process._tickCallback (internal/process/next_tick.js:68:7)`
+
+=> 1 specification found
+
+
 ## Specifications that do not link to an Editor's Draft
 
 
@@ -13,10 +34,9 @@
 
 ## Specifications without normative dependencies
 
-- [[No title found for https://w3c.github.io/wake-lock/]](https://w3c.github.io/wake-lock/)
 - [ContentEditable](https://w3c.github.io/contentEditable/)
 
-=> 2 specifications found
+=> 1 specification found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -515,6 +535,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/) but does not list it in its references
     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but does not list it in its references
     * [`https://w3c.github.io/webdriver/webdriver-spec.html`](https://w3c.github.io/webdriver/webdriver-spec.html) but does not list it in its references
+- [Pointer Events](https://w3c.github.io/pointerevents/) links to [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but does not list it in its references
 - [Preload](https://w3c.github.io/preload/) links to [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/) but does not list it in its references
 - [Reporting API 1](https://w3c.github.io/reporting/) links to [`https://w3c.github.io/webdriver/webdriver-spec.html`](https://w3c.github.io/webdriver/webdriver-spec.html) but does not list it in its references
 - [Resize Observer](https://drafts.csswg.org/resize-observer/) links to:
@@ -634,7 +655,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 406 missing references for links found in 136 specifications
+=> 407 missing references for links found in 137 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -651,8 +672,8 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/) but related reference "XML-NAMES" uses URL [`https://www.w3.org/TR/xml-names/`](https://www.w3.org/TR/xml-names/)
 - [Background Fetch](https://wicg.github.io/background-fetch/) links to [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
-- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/) links to [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but related reference "CSS3COLOR" uses URL [`https://www.w3.org/TR/2010/PR-css3-color-20101028/`](https://www.w3.org/TR/2010/PR-css3-color-20101028/)
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/) links to [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but related reference "CSS3COLOR" uses URL [`https://www.w3.org/TR/2010/PR-css3-color-20101028/`](https://www.w3.org/TR/2010/PR-css3-color-20101028/)
+- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/) links to [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but related reference "CSS3COLOR" uses URL [`https://www.w3.org/TR/2010/PR-css3-color-20101028/`](https://www.w3.org/TR/2010/PR-css3-color-20101028/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/) links to:
     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
     * [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/) but related reference "INDEXEDDB" uses URL [`https://www.w3.org/TR/IndexedDB/`](https://www.w3.org/TR/IndexedDB/)
