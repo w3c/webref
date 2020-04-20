@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% April 13, 2020
+% April 20, 2020
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -1237,7 +1237,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
@@ -1318,21 +1317,19 @@ Informative references to this spec from:
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 
 
-## CSS Box Sizing Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Box Sizing Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
 - Crawled URL: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
-- Crawled version: 16 January 2020
+- Crawled version: 16 April 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
      * [`https://www.w3.org/TR/2012/WD-css3-sizing-20120927/`](https://www.w3.org/TR/2012/WD-css3-sizing-20120927/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-images/`](https://www.w3.org/TR/css3-images/), related reference "CSS3-IMAGES" uses URL [`https://www.w3.org/TR/css-images-3/`](https://www.w3.org/TR/css-images-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1428,7 +1425,6 @@ Normative references to this spec from:
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
 - [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
-- [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/2020/WD-css-color-adjust-1-20200402/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20191105/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/)
@@ -1762,6 +1758,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Generated Content Module Level 3](https://www.w3.org/TR/2019/WD-css-content-3-20190802/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
@@ -1883,7 +1880,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
-- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200330/)
+- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200417/)
 
 
 ## CSS Display Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -2377,7 +2374,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
@@ -5150,7 +5146,7 @@ Normative references to this spec from:
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
 - [Resize Observer](https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
-- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200330/)
+- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200417/)
 - [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web App Manifest](https://www.w3.org/TR/2020/WD-appmanifest-20200330/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
@@ -5366,7 +5362,7 @@ Normative references to this spec from:
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
-- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200330/)
+- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200417/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - [UI Events](https://www.w3.org/TR/2019/WD-uievents-20190530/)
 - [Upgrade Insecure Requests](http://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/)
@@ -5530,7 +5526,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
 - Crawled URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
-- Crawled version: 9 April 2020
+- Crawled version: 16 April 2020
 - Repository: [GitHub wicg/event-timing](https://github.com/wicg/event-timing)
 - Shortname: no shortname
 
@@ -5562,7 +5558,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
 - Crawled URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
-- Crawled version: 30 March 2020
+- Crawled version: 17 April 2020
 - Repository: [GitHub w3c/webappsec-feature-policy](https://github.com/w3c/webappsec-feature-policy)
 - Shortname: no shortname
 
@@ -5868,7 +5864,7 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/2019/WD-pointerlock-2-20190828/)
-- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200330/)
+- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200417/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 
 Informative references to this spec from:
@@ -6183,7 +6179,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 9 April 2020
+- Crawled version: 15 April 2020
 - Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
 - Shortname: no shortname
 
@@ -6333,7 +6329,7 @@ Normative references to this spec from:
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
-- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200330/)
+- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200417/)
 - [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - [UI Events](https://www.w3.org/TR/2019/WD-uievents-20190530/)
 - [Upgrade Insecure Requests](http://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/)
@@ -7022,7 +7018,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20191105/)
@@ -7219,6 +7214,7 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Media Capabilities](https://www.w3.org/TR/2020/WD-media-capabilities-20200130/)
 - [Media Session Standard](https://www.w3.org/TR/2020/WD-mediasession-20200130/)
+- [Native File System](https://wicg.github.io/native-file-system/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Payment Handler API](https://www.w3.org/TR/2019/WD-payment-handler-20191021/)
 - [Preload](https://www.w3.org/TR/2019/CR-preload-20190626/)
@@ -7320,7 +7316,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Crawled URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
-- Crawled version: 31 March 2020
+- Crawled version: 17 April 2020
 - Repository: [GitHub wicg/native-file-system](https://github.com/wicg/native-file-system)
 - Shortname: no shortname
 
@@ -7404,7 +7400,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/netinfo/](https://wicg.github.io/netinfo/)
 - Crawled URL: [https://wicg.github.io/netinfo/](https://wicg.github.io/netinfo/)
-- Crawled version: 27 September 2019
+- Crawled version: 16 April 2020
 - Repository: [GitHub wicg/netinfo](https://github.com/wicg/netinfo)
 - Shortname: no shortname
 
@@ -7585,7 +7581,7 @@ Normative references to this spec from:
 - [Picture-in-Picture](https://www.w3.org/TR/2020/WD-picture-in-picture-20200130/)
 - [Resource Hints](https://www.w3.org/TR/2019/WD-resource-hints-20190702/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200330/)
+- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200417/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/2016/REC-vibration-20161018/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://www.w3.org/TR/2019/WD-webauthn-2-20191126/)
@@ -8852,7 +8848,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
 - Crawled URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
-- Crawled version: 6 April 2020
+- Crawled version: 17 April 2020
 - Repository: [GitHub whatwg/storage](https://github.com/whatwg/storage)
 - Shortname: no shortname
 
@@ -9043,11 +9039,11 @@ No informative reference to this spec from other specs.
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Crawled URL: [https://www.w3.org/TR/2020/WD-screen-orientation-20200330/](https://www.w3.org/TR/2020/WD-screen-orientation-20200330/)
-- Crawled version: 30 March 2020
+- Crawled URL: [https://www.w3.org/TR/2020/WD-screen-orientation-20200417/](https://www.w3.org/TR/2020/WD-screen-orientation-20200417/)
+- Crawled version: 17 April 2020
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-screen-orientation-20200330/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-screen-orientation-20200417/)
 - Repository: [GitHub w3c/screen-orientation](https://github.com/w3c/screen-orientation)
 - Shortname: screen-orientation
 
@@ -9534,7 +9530,7 @@ Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [Media Session Standard](https://www.w3.org/TR/2020/WD-mediasession-20200130/)
-- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200330/)
+- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200417/)
 - [Web Share Target API](https://wicg.github.io/web-share-target/)
 
 
@@ -10123,7 +10119,7 @@ Normative references to this spec from:
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200330/)
+- [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200417/)
 - [UI Events](https://www.w3.org/TR/2019/WD-uievents-20190530/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
@@ -10266,7 +10262,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 12 April 2020
+- Crawled version: 19 April 2020
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 

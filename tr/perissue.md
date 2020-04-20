@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% April 13, 2020
+% April 20, 2020
 
 274 specifications were crawled in this report.
 
@@ -111,7 +111,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `Performance` used in [Event Timing API](https://wicg.github.io/event-timing/), [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/), [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/), [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/), [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/), [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 - `PermissionName` used in [Permissions](https://www.w3.org/TR/2017/WD-permissions-20170925/)
 - `ReadableStream` used in [CSS Parser API](https://wicg.github.io/CSS-Parser-API/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://www.w3.org/TR/2019/WD-FileAPI-20190911/), [WebTransport](https://wicg.github.io/web-transport/)
-- `Screen` used in [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200330/)
+- `Screen` used in [The Screen Orientation API](https://www.w3.org/TR/2020/WD-screen-orientation-20200417/)
 - `SupportedType` used in [DOM Parsing and Serialization](http://www.w3.org/TR/2016/WD-DOM-Parsing-20160517/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Touch Events](http://www.w3.org/TR/2013/REC-touch-events-20131010/)
 - `WritableStream` used in [Native File System](https://wicg.github.io/native-file-system/), [WebTransport](https://wicg.github.io/web-transport/)
@@ -1057,7 +1057,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/) links to [`https://www.w3.org/TR/css3-images/`](https://www.w3.org/TR/css3-images/) but related reference "CSS-IMAGES-3" uses URL [`https://www.w3.org/TR/css-images-3/`](https://www.w3.org/TR/css-images-3/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/) links to [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS-WRITING-MODES-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/) links to [`https://www.w3.org/TR/css3-images/`](https://www.w3.org/TR/css3-images/) but related reference "CSS3-IMAGES" uses URL [`https://www.w3.org/TR/css-images-3/`](https://www.w3.org/TR/css-images-3/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/) links to:
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS-WRITING-MODES-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
@@ -1367,6 +1366,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM-20151119" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/2019/WD-webxr-gamepads-module-1-20191010/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 284 inconsistent references for links found in 143 specifications
+=> 283 inconsistent references for links found in 142 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
