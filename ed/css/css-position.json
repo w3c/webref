@@ -22,10 +22,10 @@
       "initial": "auto",
       "appliesTo": "positioned elements",
       "inherited": "no",
-      "percentages": "refer to height of containing block",
+      "percentages": "refer to size of containing block; see prose",
       "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animationType": "length or percentage by computed value type"
+      "animationType": "by computed value type"
     },
     "right": {
       "name": "right",
@@ -33,10 +33,10 @@
       "initial": "auto",
       "appliesTo": "positioned elements",
       "inherited": "no",
-      "percentages": "refer to height of containing block",
+      "percentages": "refer to size of containing block; see prose",
       "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animationType": "length or percentage by computed value type"
+      "animationType": "by computed value type"
     },
     "bottom": {
       "name": "bottom",
@@ -44,10 +44,10 @@
       "initial": "auto",
       "appliesTo": "positioned elements",
       "inherited": "no",
-      "percentages": "refer to height of containing block",
+      "percentages": "refer to size of containing block; see prose",
       "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animationType": "length or percentage by computed value type"
+      "animationType": "by computed value type"
     },
     "left": {
       "name": "left",
@@ -55,63 +55,96 @@
       "initial": "auto",
       "appliesTo": "positioned elements",
       "inherited": "no",
-      "percentages": "refer to height of containing block",
+      "percentages": "refer to size of containing block; see prose",
       "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animationType": "length or percentage by computed value type"
+      "animationType": "by computed value type"
     },
-    "inset-before": {
-      "name": "inset-before",
+    "inset-block-start": {
+      "name": "inset-block-start",
       "value": "auto | <length-percentage>",
       "initial": "auto",
       "appliesTo": "positioned elements",
       "inherited": "no",
-      "percentages": "refer to height of containing block",
+      "percentages": "refer to size of containing block; see prose",
       "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animationType": "length or percentage by computed value type"
+      "animationType": "by computed value type"
     },
-    "inset-after": {
-      "name": "inset-after",
+    "inset-inline-start": {
+      "name": "inset-inline-start",
       "value": "auto | <length-percentage>",
       "initial": "auto",
       "appliesTo": "positioned elements",
       "inherited": "no",
-      "percentages": "refer to height of containing block",
+      "percentages": "refer to size of containing block; see prose",
       "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animationType": "length or percentage by computed value type"
+      "animationType": "by computed value type"
     },
-    "inset-start": {
-      "name": "inset-start",
+    "inset-block-end": {
+      "name": "inset-block-end",
       "value": "auto | <length-percentage>",
       "initial": "auto",
       "appliesTo": "positioned elements",
       "inherited": "no",
-      "percentages": "refer to height of containing block",
+      "percentages": "refer to size of containing block; see prose",
       "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animationType": "length or percentage by computed value type"
+      "animationType": "by computed value type"
     },
-    "inset-end": {
-      "name": "inset-end",
+    "inset-inline-end": {
+      "name": "inset-inline-end",
       "value": "auto | <length-percentage>",
       "initial": "auto",
       "appliesTo": "positioned elements",
       "inherited": "no",
-      "percentages": "refer to height of containing block",
+      "percentages": "refer to size of containing block; see prose",
       "computedValue": "the keyword auto or a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animationType": "length or percentage by computed value type"
+      "animationType": "by computed value type"
+    },
+    "inset-block": {
+      "name": "inset-block",
+      "value": "<top>{1,2}",
+      "initial": "auto",
+      "appliesTo": "positioned elements",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type"
+    },
+    "inset-inline": {
+      "name": "inset-inline",
+      "value": "<top>{1,2}",
+      "initial": "auto",
+      "appliesTo": "positioned elements",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type"
+    },
+    "inset": {
+      "name": "inset",
+      "value": "<top>{1,4}",
+      "initial": "auto",
+      "appliesTo": "positioned elements",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type"
     }
   },
   "descriptors": {},
   "valuespaces": {
     "<length>": {
-      "prose": "The offset is a fixed distance from the reference edge. Negative values are allowed."
+      "prose": "The inset is a fixed distance from the reference edge. Negative values are allowed."
     },
     "<percentage>": {
-      "prose": "The offset is a percentage of the containing block’s width (for left or right) or height (for top and bottom). For sticky positioned elements, the offset is a percentage of the flow root’s width (for left or right) or height (for top or bottom). Negative values are allowed."
+      "prose": "The inset is a percentage relative to the containing block’s size in the corresponding axis (e.g. width for left or right, height for top and bottom). For sticky positioned boxes, the inset is instead relative to the relevant scrollport’s size. Negative values are allowed."
     }
   }
 }

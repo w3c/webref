@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% April 21, 2020
+% April 22, 2020
 
 ## [No title found for https://w3c.github.io/wake-lock/] {data-spec=true data-anomaly=true data-noNormativeRefs=true}
 
@@ -119,7 +119,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
-- Crawled version: 21 April 2020
+- Crawled version: 22 April 2020
 - Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/)
@@ -1251,6 +1251,7 @@ Normative references to this spec from:
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
+- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -1296,48 +1297,19 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
-- [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
-- [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
-- [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
-- [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
-- [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
-- [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
-- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
-- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
-- [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
-- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
-- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
-- [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
-- [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
-- [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
-- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
-- [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
-- [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
-- [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
-- [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
-- [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 
 Informative references to this spec from:
 
-- [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
-- [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
-- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
+- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 
 
 ## CSS Box Sizing Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -1535,6 +1507,7 @@ Normative references to this spec from:
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
+- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
@@ -2240,6 +2213,7 @@ Normative references to this spec from:
 - [CSS Lists Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
+- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 
@@ -3547,7 +3521,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-position-3/](https://www.w3.org/TR/css-position-3/)
 - Crawled URL: [https://drafts.csswg.org/css-position/](https://drafts.csswg.org/css-position/)
-- Crawled version: 16 April 2020
+- Crawled version: 21 April 2020
 - Editor's Draft: [https://drafts.csswg.org/css-position/](https://drafts.csswg.org/css-position/)
 - Latest published version: [http://www.w3.org/TR/css-position-3/](http://www.w3.org/TR/css-position-3/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-css-position-3-20160517/)
@@ -5084,7 +5058,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
-- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
@@ -6125,7 +6098,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 20 April 2020
+- Crawled version: 21 April 2020
 - Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
 - Shortname: no shortname
 
@@ -7278,7 +7251,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Crawled URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
-- Crawled version: 17 April 2020
+- Crawled version: 21 April 2020
 - Repository: [GitHub wicg/native-file-system](https://github.com/wicg/native-file-system)
 - Shortname: no shortname
 
