@@ -17,6 +17,18 @@
       "informative": false
     },
     {
+      "id": "positioning-scheme",
+      "href": "https://drafts.csswg.org/css-position/#positioning-scheme",
+      "linkingText": [
+        "positioning scheme"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "positioned-box",
       "href": "https://drafts.csswg.org/css-position/#positioned-box",
       "linkingText": [
@@ -58,6 +70,26 @@
       "informative": false
     },
     {
+      "id": "position-relative-position",
+      "href": "https://drafts.csswg.org/css-position/#position-relative-position",
+      "linkingText": [
+        "relative position",
+        "relatively position",
+        "relatively-positioned",
+        "sticky-positioned box"
+      ],
+      "localLinkingText": [
+        "relative",
+        "relatively"
+      ],
+      "type": "dfn",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "valdef-position-sticky",
       "href": "https://drafts.csswg.org/css-position/#valdef-position-sticky",
       "linkingText": [
@@ -65,6 +97,23 @@
       ],
       "localLinkingText": [],
       "type": "value",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "position-sticky-position",
+      "href": "https://drafts.csswg.org/css-position/#position-sticky-position",
+      "linkingText": [
+        "sticky position",
+        "sticky-positioned"
+      ],
+      "localLinkingText": [
+        "sticky"
+      ],
+      "type": "dfn",
       "for": [
         "position"
       ],
@@ -86,6 +135,26 @@
       "informative": false
     },
     {
+      "id": "position-absolute-position",
+      "href": "https://drafts.csswg.org/css-position/#position-absolute-position",
+      "linkingText": [
+        "absolute position",
+        "absolutely position",
+        "absolutely-positioned",
+        "absolutely positioned box"
+      ],
+      "localLinkingText": [
+        "absolute",
+        "absolutely"
+      ],
+      "type": "dfn",
+      "for": [
+        "position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "valdef-position-fixed",
       "href": "https://drafts.csswg.org/css-position/#valdef-position-fixed",
       "linkingText": [
@@ -100,43 +169,33 @@
       "informative": false
     },
     {
-      "id": "relative-position",
-      "href": "https://drafts.csswg.org/css-position/#relative-position",
+      "id": "position-fixed-position",
+      "href": "https://drafts.csswg.org/css-position/#position-fixed-position",
       "linkingText": [
-        "relative position",
-        "relatively position",
-        "relpos"
+        "fixed position",
+        "fixed-positioned",
+        "fixed-positioned box"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "fixed"
+      ],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "position"
+      ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "sticky-position",
-      "href": "https://drafts.csswg.org/css-position/#sticky-position",
+      "id": "inset-properties",
+      "href": "https://drafts.csswg.org/css-position/#inset-properties",
       "linkingText": [
-        "sticky position",
-        "sticky position",
-        "stickypos"
+        "inset properties"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "sticky-constraint-rectangle",
-      "href": "https://drafts.csswg.org/css-position/#sticky-constraint-rectangle",
-      "linkingText": [
-        "sticky-constraint rectangle"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false
     },
     {
@@ -188,6 +247,54 @@
       "informative": false
     },
     {
+      "id": "propdef-inset-block-start",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset-block-start",
+      "linkingText": [
+        "inset-block-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-inset-inline-start",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset-inline-start",
+      "linkingText": [
+        "inset-inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-inset-block-end",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset-block-end",
+      "linkingText": [
+        "inset-block-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-inset-inline-end",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset-inline-end",
+      "linkingText": [
+        "inset-inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "valdef-top-length",
       "href": "https://drafts.csswg.org/css-position/#valdef-top-length",
       "linkingText": [
@@ -200,10 +307,12 @@
         "right",
         "bottom",
         "left",
-        "offset-start",
-        "offset-end",
-        "offset-before",
-        "offset-after"
+        "inset-block-start",
+        "inset-inline-start",
+        "inset-block-end",
+        "inset-inline-end inset-block",
+        "inset-inline",
+        "inset"
       ],
       "access": "public",
       "informative": false
@@ -221,10 +330,12 @@
         "right",
         "bottom",
         "left",
-        "offset-start",
-        "offset-end",
-        "offset-before",
-        "offset-after"
+        "inset-block-start",
+        "inset-inline-start",
+        "inset-block-end",
+        "inset-inline-end inset-block",
+        "inset-inline",
+        "inset"
       ],
       "access": "public",
       "informative": false
@@ -242,19 +353,21 @@
         "right",
         "bottom",
         "left",
-        "offset-start",
-        "offset-end",
-        "offset-before",
-        "offset-after"
+        "inset-block-start",
+        "inset-inline-start",
+        "inset-block-end",
+        "inset-inline-end inset-block",
+        "inset-inline",
+        "inset"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "propdef-inset-before",
-      "href": "https://drafts.csswg.org/css-position/#propdef-inset-before",
+      "id": "propdef-inset-block",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset-block",
       "linkingText": [
-        "inset-before"
+        "inset-block"
       ],
       "localLinkingText": [],
       "type": "property",
@@ -263,10 +376,10 @@
       "informative": false
     },
     {
-      "id": "propdef-inset-after",
-      "href": "https://drafts.csswg.org/css-position/#propdef-inset-after",
+      "id": "propdef-inset-inline",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset-inline",
       "linkingText": [
-        "inset-after"
+        "inset-inline"
       ],
       "localLinkingText": [],
       "type": "property",
@@ -275,10 +388,10 @@
       "informative": false
     },
     {
-      "id": "propdef-inset-start",
-      "href": "https://drafts.csswg.org/css-position/#propdef-inset-start",
+      "id": "propdef-inset",
+      "href": "https://drafts.csswg.org/css-position/#propdef-inset",
       "linkingText": [
-        "inset-start"
+        "inset"
       ],
       "localLinkingText": [],
       "type": "property",
@@ -287,15 +400,39 @@
       "informative": false
     },
     {
-      "id": "propdef-inset-end",
-      "href": "https://drafts.csswg.org/css-position/#propdef-inset-end",
+      "id": "sticky-view-rectangle",
+      "href": "https://drafts.csswg.org/css-position/#sticky-view-rectangle",
       "linkingText": [
-        "inset-end"
+        "sticky view rectangle"
       ],
       "localLinkingText": [],
-      "type": "property",
+      "type": "dfn",
       "for": [],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "position-box",
+      "href": "https://drafts.csswg.org/css-position/#position-box",
+      "linkingText": [
+        "position box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "inset-modified-containing-block",
+      "href": "https://drafts.csswg.org/css-position/#inset-modified-containing-block",
+      "linkingText": [
+        "inset-modified containing block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     }
   ]
