@@ -1,22 +1,14 @@
-% Diff between report from "April 24, 2020" and reference report from "April 23, 2020"
+% Diff between report from "April 24, 2020" and reference report from "April 24, 2020"
 % Reffy
 % April 24, 2020
 
-## Pointer Events
-
-- Initial URL: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
-- Crawled URL: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
-- Repository: [GitHub w3c/pointerevents](https://github.com/w3c/pointerevents)
-- Inconsistent references for links: *INS* https://w3c.github.io/touch-events/
-
-
-## Wake Lock API
+## [No title found for https://w3c.github.io/wake-lock/]
 
 - Initial URL: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
 - Crawled URL: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
 - Repository: [GitHub w3c/wake-lock](https://github.com/w3c/wake-lock)
-- Spec title: *INS* Wake Lock API / *DEL* [No title found for https://w3c.github.io/wake-lock/]
-- Spec could not be rendered: *INS* Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation.
+- Spec title: *INS* [No title found for https://w3c.github.io/wake-lock/] / *DEL* Wake Lock API
+- Spec could not be rendered: *DEL* Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation.
     at rewriteError (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:167:15)
     at process._tickCallback (internal/process/next_tick.js:68:7)
   -- ASYNC --
