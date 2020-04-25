@@ -9373,7 +9373,7 @@ The following network or parsing error occurred:
     at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
     at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:860:43)
     at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23)
-    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:225:37)
+    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:302:36)
     at process._tickCallback (internal/process/next_tick.js:68:7)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
