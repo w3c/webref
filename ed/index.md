@@ -5562,7 +5562,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
 - Crawled URL: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
-- Crawled version: 3 April 2020
+- Crawled version: 27 April 2020
 - Repository: [GitHub wicg/entries-api](https://github.com/wicg/entries-api)
 - Shortname: no shortname
 
@@ -6071,7 +6071,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 22 April 2020
+- Crawled version: 27 April 2020
 - Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
 - Shortname: no shortname
 
@@ -6388,7 +6388,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
 - Crawled URL: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
-- Crawled version: 14 April 2020
+- Crawled version: 27 April 2020
 - Editor's Draft: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
 - Latest published version: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
@@ -7537,7 +7537,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Crawled URL: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
-- Crawled version: 17 April 2020
+- Crawled version: 27 April 2020
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-payment-handler-20191021/)
@@ -9203,7 +9203,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
 - Crawled URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
-- Crawled version: 26 April 2020
+- Crawled version: 27 April 2020
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -9366,13 +9366,12 @@ The following network or parsing error occurred:
     at process._tickCallback (internal/process/next_tick.js:68:7)
   -- ASYNC --
     at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
-    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:112:20)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
+    at DOMWorld.addScriptTag (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:245:29)
   -- ASYNC --
     at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
-    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:860:43)
+    at Page.addScriptTag (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:421:29)
     at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23)
-    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:268:20)
+    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:297:20)
     at process._tickCallback (internal/process/next_tick.js:68:7)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
@@ -9563,7 +9562,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
 - Crawled URL: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
-- Crawled version: 20 March 2020
+- Crawled version: 27 April 2020
 - Repository: [GitHub webbluetoothcg/web-bluetooth](https://github.com/webbluetoothcg/web-bluetooth)
 - Shortname: no shortname
 
@@ -9812,7 +9811,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
 - Crawled URL: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
-- Crawled version: 30 March 2020
+- Crawled version: 27 April 2020
 - Repository: [GitHub wicg/web-locks](https://github.com/wicg/web-locks)
 - Shortname: no shortname
 
