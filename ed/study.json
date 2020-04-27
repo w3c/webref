@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define CSS and WebIDL content",
   "description": "The crawl includes specifications published by W3C Working Groups, W3C Community Groups and WHATWG, that define CSS and/or WebIDL content. The specifications are at various stages of maturity.",
-  "date": "2020-04-27T06:37:01.040Z",
+  "date": "2020-04-27T12:37:56.907Z",
   "stats": {
     "crawled": 274,
-    "errors": 2,
+    "errors": 1,
     "studied": 274
   },
   "results": [
@@ -14038,6 +14038,11 @@
               "crawled": "https://mimesniff.spec.whatwg.org/"
             },
             {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "Native File System",
+              "crawled": "https://wicg.github.io/native-file-system/"
+            },
+            {
               "url": "https://wicg.github.io/origin-policy/",
               "title": "Origin Policy",
               "crawled": "https://wicg.github.io/origin-policy/"
@@ -14601,6 +14606,11 @@
           ],
           "informative": [
             {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "Native File System",
+              "crawled": "https://wicg.github.io/native-file-system/"
+            },
+            {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/"
@@ -14658,7 +14668,13 @@
         ],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "Native File System",
+              "crawled": "https://wicg.github.io/native-file-system/"
+            }
+          ]
         },
         "noEdDraft": null,
         "ok": false
@@ -14747,6 +14763,11 @@
               "url": "https://www.w3.org/TR/mediastream-recording/",
               "title": "MediaStream Recording",
               "crawled": "https://w3c.github.io/mediacapture-record/"
+            },
+            {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "Native File System",
+              "crawled": "https://wicg.github.io/native-file-system/"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -16231,6 +16252,11 @@
               "url": "https://www.w3.org/TR/mixed-content/",
               "title": "Mixed Content",
               "crawled": "https://w3c.github.io/webappsec-mixed-content/"
+            },
+            {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "Native File System",
+              "crawled": "https://wicg.github.io/native-file-system/"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -18314,6 +18340,11 @@
               "crawled": "https://w3c.github.io/mediasession/"
             },
             {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "Native File System",
+              "crawled": "https://wicg.github.io/native-file-system/"
+            },
+            {
               "url": "https://wicg.github.io/origin-policy/",
               "title": "Origin Policy",
               "crawled": "https://wicg.github.io/origin-policy/"
@@ -18546,21 +18577,38 @@
     },
     {
       "title": "Native File System",
-      "date": "",
+      "date": "21 April 2020",
       "url": "https://wicg.github.io/native-file-system/",
       "crawled": "https://wicg.github.io/native-file-system/",
       "repository": "https://github.com/wicg/native-file-system",
       "report": {
-        "error": "Error: Failed to launch the browser process!\nInconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!\n\n\nTROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch the browser process!\nInconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!\n\n\nTROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:750:14)\n    at ChildProcess.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:740:61)\n    at ChildProcess.emit (events.js:203:15)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "WritableStream"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/permissions/",
+            "ref": {
+              "name": "PERMISSIONS",
+              "url": "https://www.w3.org/TR/permissions/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/FileAPI/",
+            "ref": {
+              "name": "FILE-API",
+              "url": "https://www.w3.org/TR/FileAPI/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -19317,7 +19365,7 @@
     {
       "title": "Payment Request API",
       "shortname": "payment-request",
-      "date": "22 April 2020",
+      "date": "27 April 2020",
       "url": "https://www.w3.org/TR/payment-request/",
       "latest": "https://www.w3.org/TR/payment-request/",
       "datedUrl": "https://www.w3.org/TR/2019/CR-payment-request-20191212/",
@@ -19575,6 +19623,11 @@
               "url": "https://www.w3.org/TR/image-capture/",
               "title": "MediaStream Image Capture",
               "crawled": "https://w3c.github.io/mediacapture-image/"
+            },
+            {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "Native File System",
+              "crawled": "https://wicg.github.io/native-file-system/"
             },
             {
               "url": "https://www.w3.org/TR/presentation-api/",
@@ -21830,6 +21883,11 @@
               "crawled": "https://w3c.github.io/IndexedDB/"
             },
             {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "Native File System",
+              "crawled": "https://wicg.github.io/native-file-system/"
+            },
+            {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/"
@@ -21890,6 +21948,11 @@
               "url": "https://www.w3.org/TR/FileAPI/",
               "title": "File API",
               "crawled": "https://w3c.github.io/FileAPI/"
+            },
+            {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "Native File System",
+              "crawled": "https://wicg.github.io/native-file-system/"
             },
             {
               "url": "https://w3c.github.io/ServiceWorker/",
@@ -23040,7 +23103,7 @@
       "crawled": "https://w3c.github.io/wake-lock/",
       "repository": "https://github.com/w3c/wake-lock",
       "report": {
-        "error": "Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation.\n    at rewriteError (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:167:15)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:112:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:860:43)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:302:36)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "error": "Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation.\n    at rewriteError (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:167:15)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:112:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:860:43)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:268:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
         "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
@@ -24035,6 +24098,11 @@
               "url": "https://www.w3.org/TR/mst-content-hint/",
               "title": "MediaStreamTrack Content Hints",
               "crawled": "https://w3c.github.io/mst-content-hint/"
+            },
+            {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "Native File System",
+              "crawled": "https://wicg.github.io/native-file-system/"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
