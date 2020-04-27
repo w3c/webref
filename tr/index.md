@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% April 20, 2020
+% April 27, 2020
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -366,8 +366,8 @@ Normative references to this spec from:
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
-- [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
+- [CSS Box Model Module Level 3](https://www.w3.org/TR/2020/WD-css-box-3-20200421/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
@@ -554,7 +554,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
 - Crawled URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
-- Crawled version: 6 April 2020
+- Crawled version: 23 April 2020
 - Repository: [GitHub whatwg/compat](https://github.com/whatwg/compat)
 - Shortname: no shortname
 
@@ -831,7 +831,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/core-aam/](https://w3c.github.io/core-aam/)
 - Crawled URL: [https://w3c.github.io/core-aam/](https://w3c.github.io/core-aam/)
-- Crawled version: 06 April 2020
+- Crawled version: 21 April 2020
 - Repository: [GitHub w3c/aria](https://github.com/w3c/aria)
 - Shortname: no shortname
 
@@ -1044,7 +1044,7 @@ Normative references to this spec from:
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
-- [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
+- [CSS Box Model Module Level 3](https://www.w3.org/TR/2020/WD-css-box-3-20200421/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
@@ -1210,11 +1210,11 @@ Informative references to this spec from:
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/css-align-3/](https://www.w3.org/TR/css-align-3/)
-- Crawled URL: [https://www.w3.org/TR/2018/WD-css-align-3-20181206/](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
-- Crawled version: 6 December 2018
+- Crawled URL: [https://www.w3.org/TR/2020/WD-css-align-3-20200421/](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
+- Crawled version: 21 April 2020
 - Editor's Draft: [https://drafts.csswg.org/css-align/](https://drafts.csswg.org/css-align/)
 - Latest published version: [https://www.w3.org/TR/css-align-3/](https://www.w3.org/TR/css-align-3/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-align-3
 
@@ -1254,16 +1254,16 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Box Model Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Box Model Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/css-box-3/](https://www.w3.org/TR/css-box-3/)
-- Crawled URL: [https://www.w3.org/TR/2018/WD-css-box-3-20181218/](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
-- Crawled version: 18 December 2018
+- Crawled URL: [https://www.w3.org/TR/2020/WD-css-box-3-20200421/](https://www.w3.org/TR/2020/WD-css-box-3-20200421/)
+- Crawled version: 21 April 2020
 - Editor's Draft: [https://drafts.csswg.org/css-box-3/](https://drafts.csswg.org/css-box-3/)
 - Latest published version: [https://www.w3.org/TR/css-box-3/](https://www.w3.org/TR/css-box-3/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-css-box-3-20200421/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-box-3
 
@@ -1279,20 +1279,14 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css-grid/`](https://www.w3.org/TR/css-grid/)
      * [`https://www.w3.org/TR/css-position/`](https://www.w3.org/TR/css-position/)
      * [`https://www.w3.org/TR/css-tables/`](https://www.w3.org/TR/css-tables/)
-     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/)
      * [`https://www.w3.org/TR/css-logical-1/`](https://www.w3.org/TR/css-logical-1/)
-     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
-- [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/2018/WD-css-break-4-20181218/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/)
@@ -1300,7 +1294,6 @@ Normative references to this spec from:
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/2018/WD-css-page-3-20181018/)
 - [CSS Scroll Anchoring Module Level 1](https://www.w3.org/TR/2020/WD-css-scroll-anchoring-1-20200211/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
@@ -1423,8 +1416,8 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
-- [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
+- [CSS Box Model Module Level 3](https://www.w3.org/TR/2020/WD-css-box-3-20200421/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/2020/WD-css-color-adjust-1-20200402/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20191105/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/)
@@ -1916,8 +1909,8 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
-- [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
+- [CSS Box Model Module Level 3](https://www.w3.org/TR/2020/WD-css-box-3-20200421/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Containment Module Level 1](https://www.w3.org/TR/2019/REC-css-contain-1-20191121/)
@@ -2128,8 +2121,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
-- [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/)
@@ -2220,7 +2212,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/)
@@ -2282,7 +2274,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Conditional Rules Module Level 3](http://www.w3.org/TR/2013/CR-css3-conditional-20130404/)
@@ -2349,7 +2341,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/)
-- [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Containment Module Level 1](https://www.w3.org/TR/2019/REC-css-contain-1-20191121/)
@@ -2374,6 +2365,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Box Model Module Level 3](https://www.w3.org/TR/2020/WD-css-box-3-20200421/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
@@ -2413,6 +2405,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [CSS Box Model Module Level 3](https://www.w3.org/TR/2020/WD-css-box-3-20200421/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/)
 - [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
@@ -2422,7 +2415,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2019/REC-css-writing-modes-3-20191210/)
 
 
@@ -2566,8 +2558,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
-- [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
@@ -2751,7 +2742,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/2017/CR-css-grid-1-20171214/)
@@ -2804,8 +2795,8 @@ Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
-- [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
+- [CSS Box Model Module Level 3](https://www.w3.org/TR/2020/WD-css-box-3-20200421/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
@@ -2969,7 +2960,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
@@ -3109,8 +3100,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
-- [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/2020/WD-css-color-adjust-1-20200402/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
@@ -3321,7 +3311,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Containment Module Level 1](https://www.w3.org/TR/2019/REC-css-contain-1-20191121/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
@@ -3591,7 +3581,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20191105/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
@@ -3684,7 +3674,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
-- [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
+- [CSS Box Model Module Level 3](https://www.w3.org/TR/2020/WD-css-box-3-20200421/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/2020/WD-css-color-adjust-1-20200402/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
@@ -4387,7 +4377,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/)
@@ -4492,6 +4482,7 @@ Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
+- [CSS Box Model Module Level 3](https://www.w3.org/TR/2020/WD-css-box-3-20200421/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/2018/WD-css-break-4-20181218/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/2017/WD-css-images-4-20170413/)
@@ -4754,8 +4745,8 @@ Normative references to this spec from:
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
-- [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
+- [CSS Box Model Module Level 3](https://www.w3.org/TR/2020/WD-css-box-3-20200421/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
@@ -4875,8 +4866,8 @@ Normative references to this spec from:
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
-- [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
+- [CSS Box Model Module Level 3](https://www.w3.org/TR/2020/WD-css-box-3-20200421/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/2020/WD-css-color-adjust-1-20200402/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20191105/)
@@ -5000,7 +4991,7 @@ Normative references to this spec from:
 
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/)
@@ -5067,8 +5058,8 @@ Normative references to this spec from:
 
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
-- [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
+- [CSS Box Model Module Level 3](https://www.w3.org/TR/2020/WD-css-box-3-20200421/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
@@ -5265,7 +5256,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Crawled URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Crawled version: 6 April 2020
+- Crawled version: 23 April 2020
 - Repository: [GitHub whatwg/dom](https://github.com/whatwg/dom)
 - Shortname: no shortname
 
@@ -5295,7 +5286,7 @@ Normative references to this spec from:
 - [CSS Animation Worklet API](https://www.w3.org/TR/2019/WD-css-animation-worklet-1-20190625/)
 - [CSS Animations Level 1](https://www.w3.org/TR/2018/WD-css-animations-1-20181011/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
-- [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
+- [CSS Box Model Module Level 3](https://www.w3.org/TR/2020/WD-css-box-3-20200421/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/2020/WD-css-color-adjust-1-20200402/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](http://www.w3.org/TR/2015/CR-css-variables-1-20151203/)
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
@@ -5526,7 +5517,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
 - Crawled URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
-- Crawled version: 16 April 2020
+- Crawled version: 24 April 2020
 - Repository: [GitHub wicg/event-timing](https://github.com/wicg/event-timing)
 - Shortname: no shortname
 
@@ -5591,7 +5582,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 6 April 2020
+- Crawled version: 23 April 2020
 - Repository: [GitHub whatwg/fetch](https://github.com/whatwg/fetch)
 - Shortname: no shortname
 
@@ -5636,7 +5627,7 @@ Normative references to this spec from:
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
-- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
 - [Trace Context](https://www.w3.org/TR/2020/REC-trace-context-1-20200206/)
@@ -5847,7 +5838,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
 - Crawled URL: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
-- Crawled version: 1 April 2020
+- Crawled version: 20 April 2020
 - Repository: [GitHub whatwg/fullscreen](https://github.com/whatwg/fullscreen)
 - Shortname: no shortname
 
@@ -6136,6 +6127,7 @@ Normative references to this spec from:
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
 - [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
@@ -6179,7 +6171,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 15 April 2020
+- Crawled version: 22 April 2020
 - Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
 - Shortname: no shortname
 
@@ -6324,7 +6316,7 @@ Normative references to this spec from:
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2020/WD-selection-api-20200226/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
-- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -6400,7 +6392,7 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/)
 - [Selectors Level 3](https://www.w3.org/TR/2018/REC-selectors-3-20181106/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
-- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Share Target API](https://wicg.github.io/web-share-target/)
@@ -7196,7 +7188,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://mimesniff.spec.whatwg.org/](https://mimesniff.spec.whatwg.org/)
 - Crawled URL: [https://mimesniff.spec.whatwg.org/](https://mimesniff.spec.whatwg.org/)
-- Crawled version: 6 April 2020
+- Crawled version: 23 April 2020
 - Repository: [GitHub whatwg/mimesniff](https://github.com/whatwg/mimesniff)
 - Shortname: no shortname
 
@@ -7316,7 +7308,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Crawled URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
-- Crawled version: 17 April 2020
+- Crawled version: 21 April 2020
 - Repository: [GitHub wicg/native-file-system](https://github.com/wicg/native-file-system)
 - Shortname: no shortname
 
@@ -7358,7 +7350,7 @@ Normative references to this spec from:
 - [Gamepad](https://www.w3.org/TR/2020/WD-gamepad-20200225/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/)
-- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
 - [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 
@@ -7449,7 +7441,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
 - Crawled URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
-- Crawled version: 6 April 2020
+- Crawled version: 23 April 2020
 - Repository: [GitHub whatwg/notifications](https://github.com/whatwg/notifications)
 - Shortname: no shortname
 
@@ -7813,7 +7805,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/)
-- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
 
 
 ## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -8370,7 +8362,7 @@ Normative references to this spec from:
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/)
 - [Network Error Logging](https://www.w3.org/TR/2018/WD-network-error-logging-1-20180925/)
-- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
 - [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
 
 Informative references to this spec from:
@@ -8459,7 +8451,7 @@ Normative references to this spec from:
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/2018/REC-css-ui-3-20180621/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/2020/WD-css-ui-4-20200124/)
-- [CSS Box Model Module Level 3](https://www.w3.org/TR/2018/WD-css-box-3-20181218/)
+- [CSS Box Model Module Level 3](https://www.w3.org/TR/2020/WD-css-box-3-20200421/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/2020/WD-css-color-adjust-1-20200402/)
 - [CSS Color Module Level 3](https://www.w3.org/TR/2018/REC-css-color-3-20180619/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20191105/)
@@ -8568,7 +8560,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
 - Crawled URL: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
-- Crawled version: 3 April 2020
+- Crawled version: 24 April 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -8689,7 +8681,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2018/WD-css-align-3-20181206/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/2018/WD-css-page-3-20181018/)
@@ -8772,11 +8764,11 @@ Informative references to this spec from:
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
-- Crawled URL: [https://www.w3.org/TR/2020/WD-server-timing-20200120/](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
-- Crawled version: 20 January 2020
+- Crawled URL: [https://www.w3.org/TR/2020/WD-server-timing-20200420/](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
+- Crawled version: 20 April 2020
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
 - Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
 - Shortname: server-timing
 
@@ -8848,7 +8840,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
 - Crawled URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
-- Crawled version: 17 April 2020
+- Crawled version: 23 April 2020
 - Repository: [GitHub whatwg/storage](https://github.com/whatwg/storage)
 - Shortname: no shortname
 
@@ -9291,7 +9283,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
 - Crawled URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
-- Crawled version: 6 April 2020
+- Crawled version: 26 April 2020
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -10115,7 +10107,7 @@ Normative references to this spec from:
 - [Screen Capture](https://www.w3.org/TR/2019/WD-screen-capture-20191119/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selection API](https://www.w3.org/TR/2020/WD-selection-api-20200226/)
-- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200120/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -10262,7 +10254,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 19 April 2020
+- Crawled version: 26 April 2020
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
@@ -10474,7 +10466,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
 - Crawled URL: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
-- Crawled version: 6 April 2020
+- Crawled version: 23 April 2020
 - Repository: [GitHub whatwg/xhr](https://github.com/whatwg/xhr)
 - Shortname: no shortname
 
