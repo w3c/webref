@@ -1,23 +1,34 @@
 {
   "spec": {
-    "title": "CSS Grid Layout Module Level 1",
-    "url": "https://drafts.csswg.org/css-grid/"
+    "title": "CSS Grid Layout Module Level 2",
+    "url": "https://drafts.csswg.org/css-grid-2/"
   },
   "properties": {
-    "display": {
-      "name": "display",
-      "newValues": "grid | inline-grid"
+    "grid-template-rows": {
+      "name": "grid-template-rows",
+      "newValues": "subgrid <line-name-list>?",
+      "newComputedValues": "The subgrid keyword followed by a <line-name-list>."
     },
     "grid-template-columns": {
       "name": "grid-template-columns",
-      "value": "none | <track-list> | <auto-track-list>",
-      "initial": "none",
-      "appliesTo": "grid containers",
-      "inherited": "no",
-      "percentages": "refer to corresponding dimension of the content area",
-      "computedValue": "the keyword none or a computed track list",
-      "canonicalOrder": "per grammar",
-      "animationType": "if the list lengths match, by computed value type per item in the computed track list (see § 7.2.5 Computed Value of a Track Listing and § 7.2.3.3 Interpolation/Combination of repeat()); discrete otherwise"
+      "newValues": "subgrid <line-name-list>?",
+      "newComputedValues": "The subgrid keyword followed by a <line-name-list>."
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<line-name-list>": {
+      "value": "[ <line-names> | <name-repeat> ]+"
+    },
+    "<line-names>": {
+      "value": "'[' <custom-ident>* ']'"
+    },
+    "<name-repeat>": {
+      "value": "repeat( [ <integer [1,∞]> | auto-fill ], <line-names>+)"
+    }
+  }
+}
+wise"
     },
     "grid-template-rows": {
       "name": "grid-template-rows",
