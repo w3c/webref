@@ -4253,7 +4253,7 @@ Informative references to this spec from:
 - Crawled version: 22 April 2020
 - Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-text-3
 
