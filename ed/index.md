@@ -2,30 +2,6 @@
 % Reffy
 % April 30, 2020
 
-## [No title found for https://w3c.github.io/wake-lock/] {data-spec=true data-anomaly=true data-noNormativeRefs=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
-- Crawled URL: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
-- Crawled version: 1 April 2020
-- Editor's Draft: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
-- Latest published version: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
-- Repository: [GitHub w3c/wake-lock](https://github.com/w3c/wake-lock)
-- Shortname: wake-lock
-
-### Potential issue(s) {.anomalies}
-
-- No normative references found
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -231,7 +207,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 
 Informative references to this spec from:
 
@@ -1218,7 +1196,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-align-3/](https://www.w3.org/TR/css-align-3/)
 - Crawled URL: [https://drafts.csswg.org/css-align/](https://drafts.csswg.org/css-align/)
-- Crawled version: 28 April 2020
+- Crawled version: 30 April 2020
 - Editor's Draft: [https://drafts.csswg.org/css-align/](https://drafts.csswg.org/css-align/)
 - Latest published version: [https://www.w3.org/TR/css-align-3/](https://www.w3.org/TR/css-align-3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-css-align-3-20200421/)
@@ -1806,7 +1784,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-contain-1/](https://www.w3.org/TR/css-contain-1/)
 - Crawled URL: [https://drafts.csswg.org/css-contain/](https://drafts.csswg.org/css-contain/)
-- Crawled version: 22 April 2020
+- Crawled version: 29 April 2020
 - Editor's Draft: [https://drafts.csswg.org/css-contain/](https://drafts.csswg.org/css-contain/)
 - Latest published version: [https://www.w3.org/TR/css-contain-1/](https://www.w3.org/TR/css-contain-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2019/REC-css-contain-1-20191121/)
@@ -3244,7 +3222,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-overflow-3/](https://www.w3.org/TR/css-overflow-3/)
 - Crawled URL: [https://drafts.csswg.org/css-overflow-3/](https://drafts.csswg.org/css-overflow-3/)
-- Crawled version: 28 April 2020
+- Crawled version: 30 April 2020
 - Editor's Draft: [https://drafts.csswg.org/css-overflow-3/](https://drafts.csswg.org/css-overflow-3/)
 - Latest published version: [https://www.w3.org/TR/css-overflow-3/](https://www.w3.org/TR/css-overflow-3/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
@@ -3518,7 +3496,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-position-3/](https://www.w3.org/TR/css-position-3/)
 - Crawled URL: [https://drafts.csswg.org/css-position/](https://drafts.csswg.org/css-position/)
-- Crawled version: 29 April 2020
+- Crawled version: 30 April 2020
 - Editor's Draft: [https://drafts.csswg.org/css-position/](https://drafts.csswg.org/css-position/)
 - Latest published version: [http://www.w3.org/TR/css-position-3/](http://www.w3.org/TR/css-position-3/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-css-position-3-20160517/)
@@ -3538,6 +3516,7 @@ Normative references to this spec from:
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
@@ -5301,6 +5280,7 @@ Normative references to this spec from:
 - [Web Locks API](https://wicg.github.io/web-locks/)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
+- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -6279,6 +6259,7 @@ Normative references to this spec from:
 - [Web Locks API](https://wicg.github.io/web-locks/)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
+- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Share API](https://w3c.github.io/web-share/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
@@ -6323,7 +6304,6 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
-- [Server Timing](https://w3c.github.io/server-timing/)
 - [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Share Target API](https://wicg.github.io/web-share-target/)
@@ -7790,6 +7770,7 @@ Normative references to this spec from:
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
+- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 
@@ -8548,6 +8529,7 @@ Normative references to this spec from:
 - [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
@@ -8555,6 +8537,7 @@ Normative references to this spec from:
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
+- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 
 Informative references to this spec from:
 
@@ -8707,25 +8690,22 @@ Informative references to this spec from:
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
 
 
-## Server Timing {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Server Timing {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
 - Crawled URL: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
-- Crawled version: 20 April 2020
+- Crawled version: 30 April 2020
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-server-timing-20200430/)
 - Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
 - Shortname: server-timing
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/), related reference "RESOURCE-TIMING-2" uses URL [`https://www.w3.org/TR/resource-timing-2/`](https://www.w3.org/TR/resource-timing-2/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8774,6 +8754,7 @@ Although they do not, the following specs should also normatively reference this
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
+- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 
 Informative references to this spec from:
 
@@ -9369,6 +9350,44 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
+## Wake Lock API {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
+- Crawled URL: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
+- Editor's Draft: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
+- Latest published version: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
+- Repository: [GitHub w3c/wake-lock](https://github.com/w3c/wake-lock)
+- Shortname: wake-lock
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation.
+    at rewriteError (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:167:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
+    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:112:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:111:15)
+    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:860:43)
+    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23)
+    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:302:36)
+    at process._tickCallback (internal/process/next_tick.js:68:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Web Animations {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -9534,7 +9553,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 
 Informative references to this spec from:
 
@@ -9768,6 +9789,7 @@ Normative references to this spec from:
 - [Web Locks API](https://wicg.github.io/web-locks/)
 - [Web MIDI API](http://webaudio.github.io/web-midi-api/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
+- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Share API](https://w3c.github.io/web-share/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
@@ -9863,6 +9885,35 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
+
+
+## Web Periodic Background Synchronization {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/periodic-background-sync/](https://wicg.github.io/periodic-background-sync/)
+- Crawled URL: [https://wicg.github.io/periodic-background-sync/](https://wicg.github.io/periodic-background-sync/)
+- Crawled version: 21 January 2020
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for WebIDL names: 
+     * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- Missing references for links: 
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Web Share API {data-spec=true data-anomaly=true data-missingLinkRef=true}
