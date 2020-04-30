@@ -2,21 +2,13 @@
 % Reffy
 % April 30, 2020
 
-## Server Timing
-
-- Initial URL: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
-- Crawled URL: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
-- Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
-- Spec is OK: *INS* true / *DEL* false
-
-
-## Wake Lock API
+## [No title found for https://w3c.github.io/wake-lock/]
 
 - Initial URL: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
 - Crawled URL: [https://w3c.github.io/wake-lock/](https://w3c.github.io/wake-lock/)
 - Repository: [GitHub w3c/wake-lock](https://github.com/w3c/wake-lock)
-- Spec title: *INS* Wake Lock API / *DEL* [No title found for https://w3c.github.io/wake-lock/]
-- Spec could not be rendered: *INS* Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation.
+- Spec title: *INS* [No title found for https://w3c.github.io/wake-lock/] / *DEL* Wake Lock API
+- Spec could not be rendered: *DEL* Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation.
     at rewriteError (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:167:15)
     at process._tickCallback (internal/process/next_tick.js:68:7)
   -- ASYNC --
@@ -29,12 +21,5 @@
     at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:112:23)
     at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:302:36)
     at process._tickCallback (internal/process/next_tick.js:68:7)
-
-
-## Web Periodic Background Synchronization
-
-- Initial URL: [https://wicg.github.io/periodic-background-sync/](https://wicg.github.io/periodic-background-sync/)
-- Crawled URL: [https://wicg.github.io/periodic-background-sync/](https://wicg.github.io/periodic-background-sync/)
-- This specification was not in the reference crawl report.
 
 
