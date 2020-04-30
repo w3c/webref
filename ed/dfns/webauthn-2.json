@@ -1997,6 +1997,21 @@
       "informative": false
     },
     {
+      "id": "dom-attestationconveyancepreference-enterprise",
+      "href": "https://w3c.github.io/webauthn/#dom-attestationconveyancepreference-enterprise",
+      "linkingText": [
+        "\"enterprise\"",
+        "enterprise"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AttestationConveyancePreference"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dictdef-publickeycredentialrequestoptions",
       "href": "https://w3c.github.io/webauthn/#dictdef-publickeycredentialrequestoptions",
       "linkingText": [
@@ -2305,10 +2320,10 @@
       "informative": false
     },
     {
-      "id": "collectedclientdata-json-serialized-client-data",
-      "href": "https://w3c.github.io/webauthn/#collectedclientdata-json-serialized-client-data",
+      "id": "collectedclientdata-json-compatible-serialization-of-client-data",
+      "href": "https://w3c.github.io/webauthn/#collectedclientdata-json-compatible-serialization-of-client-data",
       "linkingText": [
-        "JSON-serialized client data"
+        "JSON-compatible serialization of client data"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2329,6 +2344,18 @@
       "for": [
         "CollectedClientData"
       ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ccdtostring",
+      "href": "https://w3c.github.io/webauthn/#ccdtostring",
+      "linkingText": [
+        "CCDToString"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
       "access": "private",
       "informative": false
     },
