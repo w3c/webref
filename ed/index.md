@@ -3520,7 +3520,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-position-3/](https://www.w3.org/TR/css-position-3/)
 - Crawled URL: [https://drafts.csswg.org/css-position/](https://drafts.csswg.org/css-position/)
-- Crawled version: 30 April 2020
+- Crawled version: 1 May 2020
 - Editor's Draft: [https://drafts.csswg.org/css-position/](https://drafts.csswg.org/css-position/)
 - Latest published version: [http://www.w3.org/TR/css-position-3/](http://www.w3.org/TR/css-position-3/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2016/WD-css-position-3-20160517/)
@@ -6099,7 +6099,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 30 April 2020
+- Crawled version: 1 May 2020
 - Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
 - Shortname: no shortname
 
@@ -10288,7 +10288,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled URL: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Crawled version: 21 April 2020
+- Crawled version: 1 May 2020
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-20191010/)
