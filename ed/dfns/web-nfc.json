@@ -1173,14 +1173,20 @@
       "informative": false
     },
     {
-      "id": "dom-ndefreader",
-      "href": "https://w3c.github.io/web-nfc/#dom-ndefreader",
+      "id": "dom-ndefwriter-constructor",
+      "href": "https://w3c.github.io/web-nfc/#dom-ndefwriter-constructor",
       "linkingText": [
-        "NDEFReader"
+        "constructor()"
       ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
+      "localLinkingText": [
+        "NDEFWriter.constructor",
+        "NDEFWriter.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "NDEFWriter"
+      ],
       "access": "public",
       "informative": false
     },
@@ -1318,27 +1324,15 @@
       "informative": false
     },
     {
-      "id": "dfn-scanoptions",
-      "href": "https://w3c.github.io/web-nfc/#dfn-scanoptions",
+      "id": "dom-ndefwriter",
+      "href": "https://w3c.github.io/web-nfc/#dom-ndefwriter",
       "linkingText": [
-        "[[ScanOptions]]"
+        "NDEFWriter"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "interface",
       "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-readmessage",
-      "href": "https://w3c.github.io/web-nfc/#dfn-readmessage",
-      "linkingText": [
-        "[[ReadMessage]]"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -1358,6 +1352,66 @@
       "href": "https://w3c.github.io/web-nfc/#dfn-writemessage",
       "linkingText": [
         "[[WriteMessage]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-ndefreader",
+      "href": "https://w3c.github.io/web-nfc/#dom-ndefreader",
+      "linkingText": [
+        "NDEFReader"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-id",
+      "href": "https://w3c.github.io/web-nfc/#dfn-id",
+      "linkingText": [
+        "[[Id]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-recordtype",
+      "href": "https://w3c.github.io/web-nfc/#dfn-recordtype",
+      "linkingText": [
+        "[[RecordType]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mediatype",
+      "href": "https://w3c.github.io/web-nfc/#dfn-mediatype",
+      "linkingText": [
+        "[[MediaType]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-signal",
+      "href": "https://w3c.github.io/web-nfc/#dfn-signal",
+      "linkingText": [
+        "[[Signal]]"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1658,6 +1712,48 @@
       "informative": false
     },
     {
+      "id": "dom-ndefscanoptions-id",
+      "href": "https://w3c.github.io/web-nfc/#dom-ndefscanoptions-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "NDEFScanOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ndefscanoptions-recordtype",
+      "href": "https://w3c.github.io/web-nfc/#dom-ndefscanoptions-recordtype",
+      "linkingText": [
+        "recordType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "NDEFScanOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-ndefscanoptions-mediatype",
+      "href": "https://w3c.github.io/web-nfc/#dom-ndefscanoptions-mediatype",
+      "linkingText": [
+        "mediaType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "NDEFScanOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dfn-writing-content",
       "href": "https://w3c.github.io/web-nfc/#dfn-writing-content",
       "linkingText": [
@@ -1670,21 +1766,21 @@
       "informative": false
     },
     {
-      "id": "dom-ndefreader-write",
-      "href": "https://w3c.github.io/web-nfc/#dom-ndefreader-write",
+      "id": "dom-ndefwriter-write",
+      "href": "https://w3c.github.io/web-nfc/#dom-ndefwriter-write",
       "linkingText": [
         "write()",
         "write(message)",
         "write(message, options)"
       ],
       "localLinkingText": [
-        "NDEFReader.write",
-        "NDEFReader.write()",
+        "NDEFWriter.write",
+        "NDEFWriter.write()",
         "write"
       ],
       "type": "method",
       "for": [
-        "NDEFReader"
+        "NDEFWriter"
       ],
       "access": "public",
       "informative": false
@@ -1862,6 +1958,18 @@
       "href": "https://w3c.github.io/web-nfc/#dfn-map-absolute-url-to-ndef",
       "linkingText": [
         "map absolute-URL to NDEF"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-match-pattern",
+      "href": "https://w3c.github.io/web-nfc/#dfn-match-pattern",
+      "linkingText": [
+        "match pattern"
       ],
       "localLinkingText": [],
       "type": "dfn",
