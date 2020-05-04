@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% April 27, 2020
+% May 04, 2020
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -246,7 +246,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 
 No informative reference to this spec from other specs.
 
@@ -406,6 +408,7 @@ Normative references to this spec from:
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
 - [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Round Display Level 1](https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/)
+- [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/)
 - [CSS Scroll Anchoring Module Level 1](https://www.w3.org/TR/2020/WD-css-scroll-anchoring-1-20200211/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Scrollbars Module Level 1](https://www.w3.org/TR/2018/WD-css-scrollbars-1-20180925/)
@@ -414,7 +417,7 @@ Normative references to this spec from:
 - [CSS Style Attributes](http://www.w3.org/TR/2013/REC-css-style-attr-20131107/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
@@ -1061,10 +1064,11 @@ Normative references to this spec from:
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/2018/WD-css-page-3-20181018/)
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/)
+- [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/)
@@ -1243,7 +1247,6 @@ Normative references to this spec from:
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/2018/WD-css-inline-3-20180808/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/)
-- [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
@@ -1251,7 +1254,9 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/)
 
 
 ## CSS Box Model Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -1295,7 +1300,6 @@ Normative references to this spec from:
 - [CSS Scroll Anchoring Module Level 1](https://www.w3.org/TR/2020/WD-css-scroll-anchoring-1-20200211/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2019/REC-css-writing-modes-3-20191210/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/)
@@ -1448,7 +1452,7 @@ Normative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/)
@@ -1792,7 +1796,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 
 
 ## CSS Custom Properties for Cascading Variables Module Level 1 {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -1933,13 +1937,14 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Positioned Layout Module Level 3](http://www.w3.org/TR/2016/WD-css-position-3-20160517/)
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/)
+- [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/)
 - [CSS Scroll Anchoring Module Level 1](https://www.w3.org/TR/2020/WD-css-scroll-anchoring-1-20200211/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
@@ -2141,6 +2146,7 @@ Informative references to this spec from:
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/2018/CR-css-break-3-20181204/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/2018/WD-css-break-4-20181218/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/)
+- [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2019/REC-css-writing-modes-3-20191210/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/)
 
@@ -2222,7 +2228,7 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2019/WD-css-properties-values-api-1-20191025/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
@@ -2285,7 +2291,7 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2019/WD-css-properties-values-api-1-20191025/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
@@ -2749,10 +2755,11 @@ Normative references to this spec from:
 - [CSS Layout API Level 1](https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/2018/WD-css-page-3-20181018/)
+- [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2019/REC-css-writing-modes-3-20191210/)
@@ -2810,7 +2817,7 @@ Normative references to this spec from:
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/2018/WD-css-page-3-20181018/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
@@ -3254,7 +3261,7 @@ Normative references to this spec from:
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2019/WD-css-properties-values-api-1-20191025/)
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/)
 - [CSS Transitions](https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/)
@@ -3331,7 +3338,7 @@ Normative references to this spec from:
 - [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
@@ -3595,7 +3602,7 @@ Normative references to this spec from:
 - [CSS Scroll Anchoring Module Level 1](https://www.w3.org/TR/2020/WD-css-scroll-anchoring-1-20200211/)
 - [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
@@ -3685,6 +3692,7 @@ Normative references to this spec from:
 - [CSS Lists Module Level 3](https://www.w3.org/TR/2019/WD-css-lists-3-20190817/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/)
+- [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
@@ -3803,37 +3811,26 @@ Informative references to this spec from:
 - [Motion Path Module Level 1](https://www.w3.org/TR/2018/WD-motion-1-20181218/)
 
 
-## CSS Ruby Layout Module Level 1 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingLinkRef=true}
+## CSS Ruby Layout Module Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/css-ruby-1/](https://www.w3.org/TR/css-ruby-1/)
-- Crawled URL: [http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/](http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/)
-- Crawled version: 5 August 2014
+- Crawled URL: [https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/](https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/)
+- Crawled version: 29 April 2020
 - Editor's Draft: [https://drafts.csswg.org/css-ruby-1/](https://drafts.csswg.org/css-ruby-1/)
-- Latest published version: [http://www.w3.org/TR/css-ruby-1/](http://www.w3.org/TR/css-ruby-1/)
-- Latest published status: [Working Draft](http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/)
+- Latest published version: [https://www.w3.org/TR/css-ruby-1/](https://www.w3.org/TR/css-ruby-1/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-ruby-1
 
 ### Potential issue(s) {.anomalies}
 
-- No normative references found
 - Missing references for links: 
-     * [`https://www.w3.org/TR/ruby/`](https://www.w3.org/TR/ruby/)
-     * [`https://www.w3.org/TR/css-display/`](https://www.w3.org/TR/css-display/)
      * [`https://www.w3.org/TR/css3-text/`](https://www.w3.org/TR/css3-text/)
-     * [`https://www.w3.org/TR/css-text-3/`](https://www.w3.org/TR/css-text-3/)
-     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/)
-     * [`https://www.w3.org/TR/2011/REC-CSS2-20110607`](https://www.w3.org/TR/2011/REC-CSS2-20110607)
-     * [`https://www.w3.org/TR/2014/WD-css-display-3-20140220/`](https://www.w3.org/TR/2014/WD-css-display-3-20140220/)
-     * [`https://www.w3.org/TR/2012/WD-css3-text-20121113/`](https://www.w3.org/TR/2012/WD-css3-text-20121113/)
-     * [`https://www.w3.org/TR/2013/WD-css3-fonts-20130212/`](https://www.w3.org/TR/2013/WD-css3-fonts-20130212/)
-     * [`https://www.w3.org/TR/2013/CR-css-text-decor-3-20130801/`](https://www.w3.org/TR/2013/CR-css-text-decor-3-20130801/)
-     * [`https://www.w3.org/TR/2012/WD-css3-writing-modes-20121115/`](https://www.w3.org/TR/2012/WD-css3-writing-modes-20121115/)
-     * [`https://www.w3.org/TR/2013/CR-css3-values-20130730/`](https://www.w3.org/TR/2013/CR-css3-values-20130730/)
-     * [`https://www.w3.org/TR/2012/NOTE-jlreq-20120403/`](https://www.w3.org/TR/2012/NOTE-jlreq-20120403/)
-     * [`https://www.w3.org/TR/2001/REC-ruby-20010531`](https://www.w3.org/TR/2001/REC-ruby-20010531)
+     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3849,7 +3846,7 @@ Normative references to this spec from:
 - [CSS Scroll Anchoring Module Level 1](https://www.w3.org/TR/2020/WD-css-scroll-anchoring-1-20200211/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/2019/REC-css-writing-modes-3-20191210/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/2019/CR-webvtt1-20190404/)
@@ -4259,6 +4256,7 @@ Normative references to this spec from:
 
 - [CSS Display Module Level 3](https://www.w3.org/TR/2019/CR-css-display-3-20190711/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/)
+- [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
@@ -4296,6 +4294,7 @@ Normative references to this spec from:
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/2017/WD-fill-stroke-3-20170413/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/)
+- [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
@@ -4311,7 +4310,7 @@ Informative references to this spec from:
 - [CSS Color Module Level 4](https://www.w3.org/TR/2019/WD-css-color-4-20191105/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/)
 - [CSS Syntax Module Level 3](https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 
 
@@ -4347,16 +4346,16 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Text Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Text Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
-- Crawled URL: [https://www.w3.org/TR/2019/WD-css-text-3-20191113/](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
-- Crawled version: 13 November 2019
+- Crawled URL: [https://www.w3.org/TR/2020/WD-css-text-3-20200429/](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
+- Crawled version: 29 April 2020
 - Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: css-text-3
 
@@ -4370,8 +4369,6 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css-fonts/`](https://www.w3.org/TR/css-fonts/)
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
      * [`https://www.w3.org/TR/css-text-decoration/`](https://www.w3.org/TR/css-text-decoration/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4393,6 +4390,7 @@ Normative references to this spec from:
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/)
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/2018/WD-css-page-3-20181018/)
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/)
+- [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
@@ -4786,13 +4784,14 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2019/WD-css-properties-values-api-1-20191025/)
 - [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
 - [CSS Round Display Level 1](https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/)
+- [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/)
 - [CSS Scroll Anchoring Module Level 1](https://www.w3.org/TR/2020/WD-css-scroll-anchoring-1-20200211/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Scrollbars Module Level 1](https://www.w3.org/TR/2018/WD-css-scrollbars-1-20180925/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/)
@@ -4894,6 +4893,7 @@ Normative references to this spec from:
 - [CSS Overscroll Behavior Module Level 1](https://www.w3.org/TR/2019/WD-css-overscroll-1-20190606/)
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/2018/WD-css-page-3-20181018/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2019/WD-css-properties-values-api-1-20191025/)
+- [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/)
 - [CSS Scroll Anchoring Module Level 1](https://www.w3.org/TR/2020/WD-css-scroll-anchoring-1-20200211/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Scrollbars Module Level 1](https://www.w3.org/TR/2018/WD-css-scrollbars-1-20180925/)
@@ -4903,7 +4903,7 @@ Normative references to this spec from:
 - [CSS Syntax Module Level 3](https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/2019/WD-css-tables-3-20190727/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Transforms Module Level 2](https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/)
@@ -5007,8 +5007,9 @@ Normative references to this spec from:
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/2018/WD-css-page-3-20181018/)
 - [CSS Positioned Layout Module Level 3](http://www.w3.org/TR/2016/WD-css-position-3-20160517/)
 - [CSS Regions Module Level 1](http://www.w3.org/TR/2014/WD-css-regions-1-20141009/)
+- [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/)
 - [Media Queries Level 4](https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/)
@@ -5076,10 +5077,11 @@ Normative references to this spec from:
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/2018/WD-css-page-3-20181018/)
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/)
 - [CSS Rhythmic Sizing](https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/)
+- [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/)
 - [CSS Scroll Anchoring Module Level 1](https://www.w3.org/TR/2020/WD-css-scroll-anchoring-1-20200211/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
@@ -5369,6 +5371,7 @@ Normative references to this spec from:
 - [Web Locks API](https://wicg.github.io/web-locks/)
 - [Web MIDI API](http://www.w3.org/TR/2015/WD-webmidi-20150317/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
+- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
 - [WebDriver](https://www.w3.org/TR/2018/REC-webdriver1-20180605/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -5549,7 +5552,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
 - Crawled URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
-- Crawled version: 17 April 2020
+- Crawled version: 30 April 2020
 - Repository: [GitHub w3c/webappsec-feature-policy](https://github.com/w3c/webappsec-feature-policy)
 - Shortname: no shortname
 
@@ -5627,10 +5630,9 @@ Normative references to this spec from:
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/2018/CR-SVG2-20181004/)
-- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200430/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Subresource Integrity](http://www.w3.org/TR/2016/REC-SRI-20160623/)
-- [Trace Context](https://www.w3.org/TR/2020/REC-trace-context-1-20200206/)
 - [Upgrade Insecure Requests](http://www.w3.org/TR/2015/CR-upgrade-insecure-requests-20151008/)
 - [Web App Manifest](https://www.w3.org/TR/2020/WD-appmanifest-20200330/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
@@ -5655,7 +5657,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
 - Crawled URL: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
-- Crawled version: 3 April 2020
+- Crawled version: 27 April 2020
 - Repository: [GitHub wicg/entries-api](https://github.com/wicg/entries-api)
 - Shortname: no shortname
 
@@ -6127,7 +6129,7 @@ Normative references to this spec from:
 - [Paint Timing 1](https://www.w3.org/TR/2017/WD-paint-timing-20170907/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/)
-- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200430/)
 - [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 - [Web Animations](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
@@ -6171,7 +6173,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 22 April 2020
+- Crawled version: 2 May 2020
 - Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
 - Shortname: no shortname
 
@@ -6231,6 +6233,7 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/)
 - [CSS Parser API](https://wicg.github.io/CSS-Parser-API/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/2019/WD-css-properties-values-api-1-20191025/)
+- [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/)
 - [CSS Spatial Navigation Level 1](https://www.w3.org/TR/2019/WD-css-nav-1-20191126/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
 - [CSS Transforms Module Level 2](https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/)
@@ -6316,7 +6319,7 @@ Normative references to this spec from:
 - [Secure Contexts](https://www.w3.org/TR/2016/CR-secure-contexts-20160915/)
 - [Selection API](https://www.w3.org/TR/2020/WD-selection-api-20200226/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
-- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200430/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -6340,6 +6343,7 @@ Normative references to this spec from:
 - [Web Locks API](https://wicg.github.io/web-locks/)
 - [Web MIDI API](http://www.w3.org/TR/2015/WD-webmidi-20150317/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
+- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Share API](https://www.w3.org/TR/2019/WD-web-share-20191217/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://www.w3.org/TR/2019/REC-wasm-js-api-1-20191205/)
@@ -6373,7 +6377,7 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
@@ -6392,7 +6396,6 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/)
 - [Selectors Level 3](https://www.w3.org/TR/2018/REC-selectors-3-20181106/)
 - [Selectors Level 4](https://www.w3.org/TR/2018/WD-selectors-4-20181121/)
-- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
 - [Wake Lock API](https://www.w3.org/TR/2017/CR-wake-lock-20171214/)
 - [Web Audio API](https://www.w3.org/TR/2018/CR-webaudio-20180918/)
 - [Web Share Target API](https://wicg.github.io/web-share-target/)
@@ -6405,7 +6408,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/video-rvfc/](https://wicg.github.io/video-rvfc/)
 - Crawled URL: [https://wicg.github.io/video-rvfc/](https://wicg.github.io/video-rvfc/)
-- Crawled version: 10 April 2020
+- Crawled version: 27 April 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -7350,7 +7353,7 @@ Normative references to this spec from:
 - [Gamepad](https://www.w3.org/TR/2020/WD-gamepad-20200225/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/)
 - [Resource Timing Level 2](https://www.w3.org/TR/2020/WD-resource-timing-2-20200218/)
-- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200430/)
 - [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
 - [User Timing Level 2](https://www.w3.org/TR/2019/REC-user-timing-2-20190226/)
 
@@ -7805,7 +7808,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Performance Timeline Level 2](https://www.w3.org/TR/2019/WD-performance-timeline-2-20191024/)
-- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200430/)
 
 
 ## Permissions {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -7857,6 +7860,7 @@ Normative references to this spec from:
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
+- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 
 No informative reference to this spec from other specs.
@@ -8362,7 +8366,7 @@ Normative references to this spec from:
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/2020/WD-navigation-timing-2-20200121/)
 - [Network Error Logging](https://www.w3.org/TR/2018/WD-network-error-logging-1-20180925/)
-- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200430/)
 - [Timing Entry Names Registry](https://www.w3.org/TR/2019/WD-timing-entrytypes-registry-20190723/)
 
 Informative references to this spec from:
@@ -8615,12 +8619,14 @@ Normative references to this spec from:
 - [Referrer Policy](https://www.w3.org/TR/2017/CR-referrer-policy-20170126/)
 - [Remote Playback API](https://www.w3.org/TR/2017/CR-remote-playback-20171019/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200430/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Web App Manifest](https://www.w3.org/TR/2020/WD-appmanifest-20200330/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://www.w3.org/TR/2019/WD-webauthn-2-20191126/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
+- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 
 Informative references to this spec from:
 
@@ -8740,7 +8746,7 @@ Normative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/)
 - [CSS Shadow Parts](https://www.w3.org/TR/2018/WD-css-shadow-parts-1-20181115/)
 - [CSS Syntax Module Level 3](https://www.w3.org/TR/2019/CR-css-syntax-3-20190716/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/2019/WD-css-text-3-20191113/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/2020/WD-css-text-3-20200429/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/2019/WD-css-text-4-20191113/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/2019/CR-css-values-3-20190606/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/2019/WD-css-values-4-20190131/)
@@ -8759,26 +8765,22 @@ Informative references to this spec from:
 - [CSS Images Module Level 3](https://www.w3.org/TR/2019/CR-css-images-3-20191010/)
 
 
-## Server Timing {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Server Timing {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
-- Crawled URL: [https://www.w3.org/TR/2020/WD-server-timing-20200420/](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
-- Crawled version: 20 April 2020
+- Crawled URL: [https://www.w3.org/TR/2020/WD-server-timing-20200430/](https://www.w3.org/TR/2020/WD-server-timing-20200430/)
+- Crawled version: 30 April 2020
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-server-timing-20200430/)
 - Repository: [GitHub w3c/server-timing](https://github.com/w3c/server-timing)
 - Shortname: server-timing
 
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `DOMHighResTimeStamp`
-- Missing references for links: 
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/), related reference "RESOURCE-TIMING-2" uses URL [`https://www.w3.org/TR/resource-timing-2/`](https://www.w3.org/TR/resource-timing-2/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8827,6 +8829,7 @@ Although they do not, the following specs should also normatively reference this
 - [Payment Handler API](https://www.w3.org/TR/2019/WD-payment-handler-20191021/)
 - [Push API](https://www.w3.org/TR/2020/WD-push-api-20200204/)
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)
+- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 
 Informative references to this spec from:
 
@@ -9112,13 +9115,12 @@ Informative references to this spec from:
 - [Pointer Events](https://www.w3.org/TR/2019/WD-pointerevents3-20191212/)
 
 
-## Trace Context {data-spec=true data-ok=true}
+## Trace Context - Level 1 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/trace-context/](https://www.w3.org/TR/trace-context/)
 - Crawled URL: [https://www.w3.org/TR/2020/REC-trace-context-1-20200206/](https://www.w3.org/TR/2020/REC-trace-context-1-20200206/)
-- Crawled version: 06 February 2020
 - Editor's Draft: [https://w3c.github.io/trace-context/](https://w3c.github.io/trace-context/)
 - Latest published version: [https://www.w3.org/TR/trace-context-1/](https://www.w3.org/TR/trace-context-1/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2020/REC-trace-context-1-20200206/)
@@ -9127,7 +9129,10 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+The following network or parsing error occurred:
+`[object Object]`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -9283,7 +9288,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
 - Crawled URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
-- Crawled version: 26 April 2020
+- Crawled version: 28 April 2020
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -9613,7 +9618,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 
 Informative references to this spec from:
 
@@ -9627,7 +9634,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
 - Crawled URL: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
-- Crawled version: 20 March 2020
+- Crawled version: 30 April 2020
 - Repository: [GitHub webbluetoothcg/web-bluetooth](https://github.com/webbluetoothcg/web-bluetooth)
 - Shortname: no shortname
 
@@ -9684,7 +9691,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
 - Crawled URL: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
-- Crawled version: 30 March 2020
+- Crawled version: 27 April 2020
 - Repository: [GitHub wicg/web-locks](https://github.com/wicg/web-locks)
 - Shortname: no shortname
 
@@ -9736,13 +9743,42 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
 - Crawled URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
-- Crawled version: 30 March 2020
+- Crawled version: 01 May 2020
 - Repository: [GitHub w3c/web-nfc](https://github.com/w3c/web-nfc)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
 This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Web Periodic Background Synchronization {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/periodic-background-sync/](https://wicg.github.io/periodic-background-sync/)
+- Crawled URL: [https://wicg.github.io/periodic-background-sync/](https://wicg.github.io/periodic-background-sync/)
+- Crawled version: 21 January 2020
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for WebIDL names: 
+     * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- Missing references for links: 
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -10107,7 +10143,7 @@ Normative references to this spec from:
 - [Screen Capture](https://www.w3.org/TR/2019/WD-screen-capture-20191119/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selection API](https://www.w3.org/TR/2020/WD-selection-api-20200226/)
-- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200420/)
+- [Server Timing](https://www.w3.org/TR/2020/WD-server-timing-20200430/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -10127,6 +10163,7 @@ Normative references to this spec from:
 - [Web Cryptography API](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/)
 - [Web Locks API](https://wicg.github.io/web-locks/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
+- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Share API](https://www.w3.org/TR/2019/WD-web-share-20191217/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://www.w3.org/TR/2019/REC-wasm-js-api-1-20191205/)
@@ -10254,7 +10291,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 26 April 2020
+- Crawled version: 2 May 2020
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
@@ -10415,7 +10452,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
 - Crawled URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
-- Crawled version: 10 April 2020
+- Crawled version: 27 April 2020
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
