@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "CSS Ruby Layout Module Level 1",
-    "url": "http://www.w3.org/TR/2014/WD-css-ruby-1-20140805/"
+    "url": "https://www.w3.org/TR/2020/WD-css-ruby-1-20200429/"
   },
   "properties": {
     "display": {
@@ -10,15 +10,14 @@
     },
     "ruby-position": {
       "name": "ruby-position",
-      "value": "[ over | under | inter-character ] && [ right | left ]",
-      "initial": "over right",
+      "value": "over | under | inter-character",
+      "initial": "over",
       "appliesTo": "ruby annotation containers",
       "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "specified value",
-      "animatable": "no",
-      "canonicalOrder": "per grammar"
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
     },
     "ruby-merge": {
       "name": "ruby-merge",
@@ -26,11 +25,10 @@
       "initial": "separate",
       "appliesTo": "ruby annotation containers",
       "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "specified value",
-      "animatable": "no",
-      "canonicalOrder": "per grammar"
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type"
     },
     "ruby-align": {
       "name": "ruby-align",
@@ -38,9 +36,21 @@
       "initial": "space-around",
       "appliesTo": "ruby bases, ruby annotations, ruby base containers, ruby annotation containers",
       "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "specified value (except for initial and inherit)"
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type"
+    },
+    "ruby-overhang": {
+      "name": "ruby-overhang",
+      "value": "auto | none",
+      "initial": "auto",
+      "appliesTo": "ruby annotation containers",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type"
     }
   },
   "descriptors": {},
