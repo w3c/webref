@@ -59,24 +59,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -103,24 +97,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -144,24 +132,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -232,24 +214,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -276,24 +252,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -352,18 +322,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -390,24 +366,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -434,24 +404,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -478,18 +442,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -560,18 +530,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -598,24 +574,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -683,18 +653,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -729,13 +705,9 @@ TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/trouble
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -757,6 +729,50 @@ No informative reference to this spec from other specs.
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-CSP3-20181015/)
 - Repository: [GitHub w3c/webappsec-csp](https://github.com/w3c/webappsec-csp)
 - Shortname: CSP3
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Content Security Policy: Embedded Enforcement {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/csp-embedded-enforcement/](https://www.w3.org/TR/csp-embedded-enforcement/)
+- Crawled URL: [https://w3c.github.io/webappsec-cspee/](https://w3c.github.io/webappsec-cspee/)
+- Editor's Draft: [https://w3c.github.io/webappsec-cspee/](https://w3c.github.io/webappsec-cspee/)
+- Latest published version: [https://www.w3.org/TR/csp-embedded-enforcement/](https://www.w3.org/TR/csp-embedded-enforcement/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
+- Repository: [GitHub w3c/webappsec-csp](https://github.com/w3c/webappsec-csp)
+- Shortname: csp-embedded-enforcement
 
 ### Potential issue(s) {.anomalies}
 
@@ -784,50 +800,6 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Content Security Policy: Embedded Enforcement {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/csp-embedded-enforcement/](https://www.w3.org/TR/csp-embedded-enforcement/)
-- Crawled URL: [https://w3c.github.io/webappsec-cspee/](https://w3c.github.io/webappsec-cspee/)
-- Editor's Draft: [https://w3c.github.io/webappsec-cspee/](https://w3c.github.io/webappsec-cspee/)
-- Latest published version: [https://www.w3.org/TR/csp-embedded-enforcement/](https://www.w3.org/TR/csp-embedded-enforcement/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2016/WD-csp-embedded-enforcement-20160909/)
-- Repository: [GitHub w3c/webappsec-csp](https://github.com/w3c/webappsec-csp)
-- Shortname: csp-embedded-enforcement
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## Cookie Store API {data-spec=true data-error=true}
 
 ### Spec info {.info}
@@ -841,24 +813,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -1011,24 +977,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -1054,18 +1014,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -1130,18 +1096,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -1168,18 +1140,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -1250,18 +1228,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -1288,18 +1272,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -1326,18 +1316,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -1364,24 +1360,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -1408,24 +1398,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -1540,24 +1524,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -1584,24 +1562,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -1716,24 +1688,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -1760,18 +1726,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -1930,18 +1902,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -2012,18 +1990,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -2220,18 +2204,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -2390,24 +2380,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -2478,18 +2462,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -2647,24 +2637,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -2823,24 +2807,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -2911,24 +2889,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -2999,24 +2971,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -3043,24 +3009,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -3087,24 +3047,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -3253,18 +3207,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -3290,18 +3250,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -3416,18 +3382,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -3580,24 +3552,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -3800,18 +3766,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -3926,24 +3898,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -4014,24 +3980,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -4146,18 +4106,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -4228,24 +4194,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -4271,24 +4231,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -4359,24 +4313,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -4535,18 +4483,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -4702,24 +4656,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -4754,9 +4702,13 @@ TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/trouble
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -4826,41 +4778,6 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch the browser process!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## Event Timing API {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
-- Crawled URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
-- Repository: [GitHub wicg/event-timing](https://github.com/wicg/event-timing)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Failed to launch the browser process!
 /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
@@ -4889,13 +4806,13 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Feature Policy {data-spec=true data-error=true}
+## Event Timing API {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Initial URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
-- Crawled URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
-- Repository: [GitHub w3c/webappsec-feature-policy](https://github.com/w3c/webappsec-feature-policy)
+- Initial URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
+- Crawled URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
+- Repository: [GitHub wicg/event-timing](https://github.com/wicg/event-timing)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -4914,6 +4831,47 @@ TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/trouble
     at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
     at ChildProcess.emit (events.js:203:15)
     at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Feature Policy {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
+- Crawled URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
+- Repository: [GitHub w3c/webappsec-feature-policy](https://github.com/w3c/webappsec-feature-policy)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -4978,24 +4936,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -5107,24 +5059,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -5148,18 +5094,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -5230,18 +5182,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -5435,44 +5393,6 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch the browser process!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## HTML Media Capture {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
-- Crawled URL: [https://w3c.github.io/html-media-capture/](https://w3c.github.io/html-media-capture/)
-- Editor's Draft: [https://w3c.github.io/html-media-capture/](https://w3c.github.io/html-media-capture/)
-- Latest published version: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
-- Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
-- Repository: [GitHub w3c/html-media-capture](https://github.com/w3c/html-media-capture)
-- Shortname: html-media-capture
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Failed to launch the browser process!
 /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
@@ -5501,14 +5421,17 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## HTML Standard {data-spec=true data-error=true}
+## HTML Media Capture {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
-- Shortname: no shortname
+- Initial URL: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
+- Crawled URL: [https://w3c.github.io/html-media-capture/](https://w3c.github.io/html-media-capture/)
+- Editor's Draft: [https://w3c.github.io/html-media-capture/](https://w3c.github.io/html-media-capture/)
+- Latest published version: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
+- Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-html-media-capture-20180201/)
+- Repository: [GitHub w3c/html-media-capture](https://github.com/w3c/html-media-capture)
+- Shortname: html-media-capture
 
 ### Potential issue(s) {.anomalies}
 
@@ -5526,6 +5449,47 @@ TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/trouble
     at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
     at ChildProcess.emit (events.js:203:15)
     at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## HTML Standard {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
+- Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
+- Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
+- Shortname: no shortname
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -6050,18 +6014,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -6084,18 +6054,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -6118,18 +6094,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -6334,18 +6316,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -6402,24 +6390,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -6442,24 +6424,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -6530,18 +6506,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -6563,41 +6545,6 @@ No informative reference to this spec from other specs.
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - Repository: [GitHub w3c/IndexedDB](https://github.com/w3c/IndexedDB)
 - Shortname: IndexedDB-2
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Failed to launch the browser process!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch the browser process!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## Input Device Capabilities {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://wicg.github.io/InputDeviceCapabilities/](https://wicg.github.io/InputDeviceCapabilities/)
-- Crawled URL: [https://wicg.github.io/InputDeviceCapabilities/](https://wicg.github.io/InputDeviceCapabilities/)
-- Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
-- Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
@@ -6631,17 +6578,14 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Input Events Level 2 {data-spec=true data-error=true}
+## Input Device Capabilities {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Initial URL: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
-- Crawled URL: [https://w3c.github.io/input-events/](https://w3c.github.io/input-events/)
-- Editor's Draft: [https://w3c.github.io/input-events/](https://w3c.github.io/input-events/)
-- Latest published version: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
-- Repository: [GitHub w3c/input-events](https://github.com/w3c/input-events)
-- Shortname: input-events-2
+- Initial URL: [https://wicg.github.io/InputDeviceCapabilities/](https://wicg.github.io/InputDeviceCapabilities/)
+- Crawled URL: [https://wicg.github.io/InputDeviceCapabilities/](https://wicg.github.io/InputDeviceCapabilities/)
+- Repository: [GitHub wicg/InputDeviceCapabilities](https://github.com/wicg/InputDeviceCapabilities)
+- Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
@@ -6659,6 +6603,50 @@ TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/trouble
     at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
     at ChildProcess.emit (events.js:203:15)
     at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Input Events Level 2 {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
+- Crawled URL: [https://w3c.github.io/input-events/](https://w3c.github.io/input-events/)
+- Editor's Draft: [https://w3c.github.io/input-events/](https://w3c.github.io/input-events/)
+- Latest published version: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-input-events-2-20190530/)
+- Repository: [GitHub w3c/input-events](https://github.com/w3c/input-events)
+- Shortname: input-events-2
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -6726,24 +6714,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -6802,24 +6784,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -6843,24 +6819,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -6966,18 +6936,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -7042,12 +7018,10 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
@@ -7167,18 +7141,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -7548,18 +7528,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -7665,18 +7651,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -7703,24 +7695,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -7744,24 +7730,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -7829,24 +7809,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -7914,24 +7888,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -7993,18 +7961,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -8031,18 +8005,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -8201,6 +8181,44 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch the browser process!
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Payment Request API {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
+- Crawled URL: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
+- Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
+- Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
+- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-payment-request-20191212/)
+- Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
+- Shortname: payment-request
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: Failed to launch the browser process!
 /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
@@ -8229,44 +8247,6 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Payment Request API {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
-- Crawled URL: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
-- Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
-- Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
-- Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2019/CR-payment-request-20191212/)
-- Repository: [GitHub w3c/payment-request](https://github.com/w3c/payment-request)
-- Shortname: payment-request
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Failed to launch the browser process!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch the browser process!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## Performance Timeline Level 2 {data-spec=true data-error=true}
 
 ### Spec info {.info}
@@ -8283,18 +8263,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -8365,6 +8351,44 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch the browser process!
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Pointer Events Level 3 {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
+- Crawled URL: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
+- Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
+- Latest published version: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
+- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-pointerevents3-20191212/)
+- Repository: [GitHub w3c/pointerevents](https://github.com/w3c/pointerevents)
+- Shortname: pointerevents3
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: Failed to launch the browser process!
 /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
@@ -8393,44 +8417,6 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Pointer Events Level 3 {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
-- Crawled URL: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
-- Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
-- Latest published version: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
-- Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-pointerevents3-20191212/)
-- Repository: [GitHub w3c/pointerevents](https://github.com/w3c/pointerevents)
-- Shortname: pointerevents3
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Failed to launch the browser process!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch the browser process!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## Pointer Lock 2.0 {data-spec=true data-error=true}
 
 ### Spec info {.info}
@@ -8447,18 +8433,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -8529,24 +8521,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -8699,18 +8685,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -8778,24 +8770,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -8822,24 +8808,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -8863,18 +8843,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -8898,24 +8884,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -8942,18 +8922,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -9200,18 +9186,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -9238,24 +9230,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -9282,24 +9268,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -9411,18 +9391,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -9877,24 +9863,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -9965,18 +9945,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -10000,18 +9986,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -10123,24 +10115,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -10167,24 +10153,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -10255,24 +10235,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -10384,18 +10358,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -10419,18 +10399,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -10498,24 +10484,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -10583,18 +10563,24 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -10656,41 +10642,6 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch the browser process!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## Web Speech API {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://wicg.github.io/speech-api/](https://wicg.github.io/speech-api/)
-- Crawled URL: [https://wicg.github.io/speech-api/](https://wicg.github.io/speech-api/)
-- Repository: [GitHub wicg/speech-api](https://github.com/wicg/speech-api)
-- Shortname: no shortname
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Failed to launch the browser process!
 /home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
@@ -10719,17 +10670,14 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebAssembly JavaScript Interface {data-spec=true data-error=true}
+## Web Speech API {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
-- Initial URL: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
-- Crawled URL: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
-- Editor's Draft: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
-- Latest published version: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
-- Latest published status: [Recommendation](https://www.w3.org/TR/2019/REC-wasm-js-api-1-20191205/)
-- Repository: [GitHub webassembly/spec](https://github.com/webassembly/spec)
-- Shortname: wasm-js-api-1
+- Initial URL: [https://wicg.github.io/speech-api/](https://wicg.github.io/speech-api/)
+- Crawled URL: [https://wicg.github.io/speech-api/](https://wicg.github.io/speech-api/)
+- Repository: [GitHub wicg/speech-api](https://github.com/wicg/speech-api)
+- Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
@@ -10747,6 +10695,50 @@ TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/trouble
     at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
     at ChildProcess.emit (events.js:203:15)
     at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## WebAssembly JavaScript Interface {data-spec=true data-error=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
+- Crawled URL: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
+- Editor's Draft: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
+- Latest published version: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
+- Latest published status: [Recommendation](https://www.w3.org/TR/2019/REC-wasm-js-api-1-20191205/)
+- Repository: [GitHub webassembly/spec](https://github.com/webassembly/spec)
+- Shortname: wasm-js-api-1
+
+### Potential issue(s) {.anomalies}
+
+The following network or parsing error occurred:
+`Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch the browser process!
+/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
+    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
+    at Interface.emit (events.js:203:15)
+    at Interface.close (readline.js:397:8)
+    at Socket.onend (readline.js:173:10)
+    at Socket.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -10852,24 +10844,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -11053,24 +11039,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
@@ -11229,24 +11209,18 @@ No informative reference to this spec from other specs.
 
 The following network or parsing error occurred:
 `Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
  Error: Failed to launch the browser process!
-/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/.local-chromium/linux-737027/chrome-linux/chrome: error while loading shared libraries: libgbm.so.1: cannot open shared object file: No such file or directory
 
 
 TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
 
     at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at Interface.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:537:65)
-    at Interface.emit (events.js:203:15)
-    at Interface.close (readline.js:397:8)
-    at Socket.onend (readline.js:173:10)
-    at Socket.emit (events.js:203:15)
-    at endReadableNT (_stream_readable.js:1145:12)
-    at process._tickCallback (internal/process/next_tick.js:63:19)`
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
 
 Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
