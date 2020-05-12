@@ -92,23 +92,27 @@
       "id": "percent-encode",
       "href": "https://url.spec.whatwg.org/#percent-encode",
       "linkingText": [
-        "percent encode"
+        "percent-encode"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "public",
+      "for": [
+        "byte"
+      ],
+      "access": "private",
       "informative": false
     },
     {
       "id": "percent-decode",
       "href": "https://url.spec.whatwg.org/#percent-decode",
       "linkingText": [
-        "percent decode"
+        "percent-decode"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "byte sequence"
+      ],
       "access": "public",
       "informative": false
     },
@@ -116,11 +120,13 @@
       "id": "string-percent-decode",
       "href": "https://url.spec.whatwg.org/#string-percent-decode",
       "linkingText": [
-        "string percent decode"
+        "percent-decode"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "string"
+      ],
       "access": "public",
       "informative": false
     },
@@ -176,12 +182,28 @@
       "id": "utf-8-percent-encode",
       "href": "https://url.spec.whatwg.org/#utf-8-percent-encode",
       "linkingText": [
-        "UTF-8 percent encode"
+        "UTF-8 percent-encode"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "code point"
+      ],
       "access": "private",
+      "informative": false
+    },
+    {
+      "id": "string-utf-8-percent-encode",
+      "href": "https://url.spec.whatwg.org/#string-utf-8-percent-encode",
+      "linkingText": [
+        "UTF-8 percent-encode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "string"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -1548,7 +1570,7 @@
       "id": "concept-url-url",
       "href": "https://url.spec.whatwg.org/#concept-url-url",
       "linkingText": [
-        "url"
+        "URL"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1930,7 +1952,7 @@
       "id": "concept-urlsearchparams-url-object",
       "href": "https://url.spec.whatwg.org/#concept-urlsearchparams-url-object",
       "linkingText": [
-        "url object"
+        "URL object"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1941,24 +1963,24 @@
       "informative": false
     },
     {
-      "id": "concept-urlsearchparams-new",
-      "href": "https://url.spec.whatwg.org/#concept-urlsearchparams-new",
+      "id": "urlsearchparams-initialize",
+      "href": "https://url.spec.whatwg.org/#urlsearchparams-initialize",
       "linkingText": [
-        "new"
+        "initialize"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
         "URLSearchParams"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false
     },
     {
       "id": "concept-urlsearchparams-update",
       "href": "https://url.spec.whatwg.org/#concept-urlsearchparams-update",
       "linkingText": [
-        "update steps"
+        "update"
       ],
       "localLinkingText": [],
       "type": "dfn",
