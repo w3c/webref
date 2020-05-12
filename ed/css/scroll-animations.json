@@ -18,39 +18,33 @@
     }
   },
   "descriptors": {
-    "timeline-type": {
-      "name": "timeline-type",
-      "for": "@timeline",
-      "value": "scroll | time",
-      "initial": "time"
-    },
-    "scroll-source": {
-      "name": "scroll-source",
-      "for": "@timeline",
+    "source": {
+      "name": "source",
+      "for": "@scroll-timeline",
       "value": "selector(<id-selector>) | none",
       "initial": "none"
     },
-    "scroll-orientation": {
-      "name": "scroll-orientation",
-      "for": "@timeline",
+    "orientation": {
+      "name": "orientation",
+      "for": "@scroll-timeline",
       "value": "auto | block | inline | horizontal | vertical",
       "initial": "auto"
     },
-    "scroll-start": {
-      "name": "scroll-start",
-      "for": "@timeline",
+    "start": {
+      "name": "start",
+      "for": "@scroll-timeline",
       "value": "auto | <length> | <percentage>",
       "initial": "auto"
     },
-    "scroll-end": {
-      "name": "scroll-end",
-      "for": "@timeline",
+    "end": {
+      "name": "end",
+      "for": "@scroll-timeline",
       "value": "auto | <length> | <percentage>",
       "initial": "auto"
     },
     "scroll-time-range": {
       "name": "scroll-time-range",
-      "for": "@timeline",
+      "for": "@scroll-timeline",
       "value": "auto | <time>",
       "initial": "auto"
     }
