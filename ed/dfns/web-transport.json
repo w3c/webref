@@ -545,10 +545,75 @@
       "informative": false
     },
     {
+      "id": "dictdef-quictransportconfiguration",
+      "href": "https://wicg.github.io/web-transport/#dictdef-quictransportconfiguration",
+      "linkingText": [
+        "QuicTransportConfiguration"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-quictransportconfiguration-server_certificate_fingerprints",
+      "href": "https://wicg.github.io/web-transport/#dom-quictransportconfiguration-server_certificate_fingerprints",
+      "linkingText": [
+        "server_certificate_fingerprints"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "QuicTransportConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "compute-a-certificate-fingerprint",
+      "href": "https://wicg.github.io/web-transport/#compute-a-certificate-fingerprint",
+      "linkingText": [
+        "compute a certificate fingerprint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "verify-a-certificate-fingerprint",
+      "href": "https://wicg.github.io/web-transport/#verify-a-certificate-fingerprint",
+      "linkingText": [
+        "verify a certificate fingerprint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "custom-certificate-requirements",
+      "href": "https://wicg.github.io/web-transport/#custom-certificate-requirements",
+      "linkingText": [
+        "custom certificate requirements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "dom-quictransport-quictransport",
       "href": "https://wicg.github.io/web-transport/#dom-quictransport-quictransport",
       "linkingText": [
-        "QuicTransport(url)"
+        "QuicTransport(url, config)",
+        "constructor(url, config)",
+        "QuicTransport(url)",
+        "constructor(url)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -559,15 +624,31 @@
       "informative": false
     },
     {
-      "id": "dom-quictransport-quictransport-url-url",
-      "href": "https://wicg.github.io/web-transport/#dom-quictransport-quictransport-url-url",
+      "id": "dom-quictransport-constructor-url-config-url",
+      "href": "https://wicg.github.io/web-transport/#dom-quictransport-constructor-url-config-url",
       "linkingText": [
         "url"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "QuicTransport/QuicTransport(url)"
+        "QuicTransport/constructor(url, config)",
+        "QuicTransport/constructor(url)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-quictransport-constructor-url-config-config",
+      "href": "https://wicg.github.io/web-transport/#dom-quictransport-constructor-url-config-config",
+      "linkingText": [
+        "config"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "QuicTransport/constructor(url, config)",
+        "QuicTransport/constructor(url)"
       ],
       "access": "public",
       "informative": false
@@ -930,7 +1011,8 @@
       "id": "dom-http3transport-http3transport",
       "href": "https://wicg.github.io/web-transport/#dom-http3transport-http3transport",
       "linkingText": [
-        "Http3Transport(url)"
+        "Http3Transport(url)",
+        "constructor(url)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -941,15 +1023,15 @@
       "informative": false
     },
     {
-      "id": "dom-http3transport-http3transport-url-url",
-      "href": "https://wicg.github.io/web-transport/#dom-http3transport-http3transport-url-url",
+      "id": "dom-http3transport-constructor-url-url",
+      "href": "https://wicg.github.io/web-transport/#dom-http3transport-constructor-url-url",
       "linkingText": [
         "url"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "Http3Transport/Http3Transport(url)"
+        "Http3Transport/constructor(url)"
       ],
       "access": "public",
       "informative": false
