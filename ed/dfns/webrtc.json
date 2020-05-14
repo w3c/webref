@@ -1755,7 +1755,7 @@
       "href": "https://w3c.github.io/webrtc-pc/#dom-peerconnection-setremotedescription",
       "linkingText": [
         "setRemoteDescription()",
-        "setRemoteDescription(, description)"
+        "setRemoteDescription(description)"
       ],
       "localLinkingText": [
         "RTCPeerConnection.setRemoteDescription",
@@ -1925,8 +1925,7 @@
       "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-setremotedescription!overload-1",
       "linkingText": [
         "setRemoteDescription!overload-1()",
-        "setRemoteDescription!overload-1(successCallback, failureCallback)",
-        "setRemoteDescription!overload-1(successCallback, failureCallback, description)"
+        "setRemoteDescription!overload-1(description, successCallback, failureCallback)"
       ],
       "localLinkingText": [
         "RTCPeerConnection.setRemoteDescription!overload-1",
@@ -2096,7 +2095,7 @@
       "href": "https://w3c.github.io/webrtc-pc/#dom-rtcsessiondescription-constructor",
       "linkingText": [
         "constructor()",
-        "constructor(, descriptionInitDict)"
+        "constructor(descriptionInitDict)"
       ],
       "localLinkingText": [
         "RTCSessionDescription.constructor",
@@ -2208,6 +2207,46 @@
       "type": "dict-member",
       "for": [
         "RTCSessionDescriptionInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtclocalsessiondescriptioninit",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtclocalsessiondescriptioninit",
+      "linkingText": [
+        "RTCLocalSessionDescriptionInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtclocalsessiondescriptioninit-type",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtclocalsessiondescriptioninit-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCLocalSessionDescriptionInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtclocalsessiondescriptioninit-sdp",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtclocalsessiondescriptioninit-sdp",
+      "linkingText": [
+        "sdp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCLocalSessionDescriptionInit"
       ],
       "access": "public",
       "informative": false
