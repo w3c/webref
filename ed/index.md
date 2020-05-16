@@ -6134,7 +6134,6 @@ Normative references to this spec from:
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
-- [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
@@ -6161,7 +6160,6 @@ Normative references to this spec from:
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
@@ -6307,6 +6305,7 @@ Informative references to this spec from:
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
+- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [File API](https://w3c.github.io/FileAPI/)
@@ -8209,7 +8208,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/resize-observer-1/](https://www.w3.org/TR/resize-observer-1/)
 - Crawled URL: [https://drafts.csswg.org/resize-observer/](https://drafts.csswg.org/resize-observer/)
-- Crawled version: 27 March 2020
+- Crawled version: 14 May 2020
 - Editor's Draft: [https://drafts.csswg.org/resize-observer/](https://drafts.csswg.org/resize-observer/)
 - Latest published version: [https://www.w3.org/TR/resize-observer-1/](https://www.w3.org/TR/resize-observer-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/)
