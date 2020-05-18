@@ -216,35 +216,19 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Badging API {data-spec=true data-error=true}
+## Badging API {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/badging/](https://wicg.github.io/badging/)
-- Crawled URL: [https://wicg.github.io/badging/](https://wicg.github.io/badging/)
+- Crawled URL: [https://w3c.github.io/badging/](https://w3c.github.io/badging/)
+- Crawled version: 09 April 2020
 - Repository: [GitHub wicg/badging](https://github.com/wicg/badging)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined
-    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined
-    at __puppeteer_evaluation_script__:4:37
-    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:93:19)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-  -- ASYNC --
-    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)
-    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:88:24)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-  -- ASYNC --
-    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)
-    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:548:47)
-    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:83:27)
-    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:302:36)
-    at process._tickCallback (internal/process/next_tick.js:68:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -764,7 +748,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Crawled URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
-- Crawled version: 9 April 2020
+- Crawled version: 18 May 2020
 - Repository: [GitHub wicg/cookie-store](https://github.com/wicg/cookie-store)
 - Shortname: no shortname
 
@@ -5196,6 +5180,7 @@ Normative references to this spec from:
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Badging API](https://w3c.github.io/badging/)
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
@@ -6100,7 +6085,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 15 May 2020
+- Crawled version: 18 May 2020
 - Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
 - Shortname: no shortname
 
@@ -6122,6 +6107,7 @@ Normative references to this spec from:
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Badging API](https://w3c.github.io/badging/)
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
@@ -9262,7 +9248,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
 - Crawled URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
-- Crawled version: 14 May 2020
+- Crawled version: 18 May 2020
 - Repository: [GitHub whatwg/url](https://github.com/whatwg/url)
 - Shortname: no shortname
 
@@ -9470,6 +9456,7 @@ This specification looks good!
 Normative references to this spec from:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Badging API](https://w3c.github.io/badging/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
 
@@ -9665,6 +9652,7 @@ Normative references to this spec from:
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Badging API](https://w3c.github.io/badging/)
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
@@ -10247,7 +10235,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 16 May 2020
+- Crawled version: 18 May 2020
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
