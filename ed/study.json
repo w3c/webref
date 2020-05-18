@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define CSS and WebIDL content",
   "description": "The crawl includes specifications published by W3C Working Groups, W3C Community Groups and WHATWG, that define CSS and/or WebIDL content. The specifications are at various stages of maturity.",
-  "date": "2020-05-18T00:36:58.357Z",
+  "date": "2020-05-18T06:38:00.759Z",
   "stats": {
     "crawled": 275,
-    "errors": 0,
+    "errors": 2,
     "studied": 275
   },
   "results": [
@@ -410,15 +410,15 @@
     },
     {
       "title": "Badging API",
-      "date": "09 April 2020",
+      "date": "",
       "url": "https://wicg.github.io/badging/",
       "crawled": "https://wicg.github.io/badging/",
       "repository": "https://github.com/wicg/badging",
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:93:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:88:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:548:47)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:83:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:302:36)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -430,7 +430,7 @@
           "informative": []
         },
         "noEdDraft": null,
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -691,11 +691,6 @@
               "url": "https://www.w3.org/TR/css3-conditional/",
               "title": "CSS Conditional Rules Module Level 3",
               "crawled": "https://drafts.csswg.org/css-conditional-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-conditional-4/",
-              "title": "CSS Conditional Rules Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-conditional-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-contain-1/",
@@ -3126,7 +3121,7 @@
     },
     {
       "title": "CSS Box Sizing Module Level 4",
-      "date": "12 May 2020",
+      "date": "17 May 2020",
       "url": "https://drafts.csswg.org/css-sizing-4/",
       "crawled": "https://drafts.csswg.org/css-sizing-4/",
       "report": {
@@ -4254,11 +4249,6 @@
               "crawled": "https://drafts.csswg.org/css-cascade/"
             },
             {
-              "url": "https://www.w3.org/TR/css-conditional-4/",
-              "title": "CSS Conditional Rules Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-conditional-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-variables-1/",
               "title": "CSS Custom Properties for Cascading Variables Module Level 1",
               "crawled": "https://drafts.csswg.org/css-variables/"
@@ -4339,7 +4329,7 @@
     {
       "title": "CSS Conditional Rules Module Level 4",
       "shortname": "css-conditional-4",
-      "date": "4 March 2020",
+      "date": "",
       "url": "https://www.w3.org/TR/css-conditional-4/",
       "latest": "https://www.w3.org/TR/css-conditional-4/",
       "datedUrl": "https://www.w3.org/TR/2020/WD-css-conditional-4-20200303/",
@@ -4348,10 +4338,10 @@
       "crawled": "https://drafts.csswg.org/css-conditional-4/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
-        "noNormativeRefs": false,
+        "error": "[object Object]",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -4363,7 +4353,7 @@
           "informative": []
         },
         "noEdDraft": false,
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -11873,7 +11863,7 @@
     {
       "title": "CSS Values and Units Module Level 4",
       "shortname": "css-values-4",
-      "date": "15 April 2020",
+      "date": "17 May 2020",
       "url": "https://www.w3.org/TR/css-values-4/",
       "latest": "https://www.w3.org/TR/css-values-4/",
       "datedUrl": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/",
@@ -12021,11 +12011,6 @@
               "url": "https://www.w3.org/TR/css3-conditional/",
               "title": "CSS Conditional Rules Module Level 3",
               "crawled": "https://drafts.csswg.org/css-conditional-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-conditional-4/",
-              "title": "CSS Conditional Rules Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-conditional-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-contain-1/",
@@ -13300,11 +13285,6 @@
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
-            },
-            {
-              "url": "https://wicg.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://wicg.github.io/badging/"
             },
             {
               "url": "https://www.w3.org/TR/battery-status/",
@@ -15815,11 +15795,6 @@
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
-            },
-            {
-              "url": "https://wicg.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://wicg.github.io/badging/"
             },
             {
               "url": "https://www.w3.org/TR/battery-status/",
@@ -21685,11 +21660,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-conditional-4/",
-              "title": "CSS Conditional Rules Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-conditional-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-variables-1/",
               "title": "CSS Custom Properties for Cascading Variables Module Level 1",
               "crawled": "https://drafts.csswg.org/css-variables/"
@@ -23361,11 +23331,6 @@
               "crawled": "https://wicg.github.io/background-fetch/"
             },
             {
-              "url": "https://wicg.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://wicg.github.io/badging/"
-            },
-            {
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/"
@@ -23729,7 +23694,7 @@
     {
       "title": "Web IDL",
       "shortname": "WebIDL-1",
-      "date": "15 May 2020",
+      "date": "17 May 2020",
       "url": "https://www.w3.org/TR/WebIDL-1/",
       "latest": "https://www.w3.org/TR/WebIDL-1/",
       "datedUrl": "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/",
@@ -23778,11 +23743,6 @@
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
-            },
-            {
-              "url": "https://wicg.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://wicg.github.io/badging/"
             },
             {
               "url": "https://www.w3.org/TR/battery-status/",
@@ -24575,11 +24535,6 @@
               "url": "https://www.w3.org/TR/webrtc-identity/",
               "title": "Identity for WebRTC 1.0",
               "crawled": "https://w3c.github.io/webrtc-identity/identity.html"
-            },
-            {
-              "url": "https://www.w3.org/TR/WebIDL-1/",
-              "title": "Web IDL",
-              "crawled": "https://heycam.github.io/webidl/"
             },
             {
               "url": "https://wicg.github.io/web-share-target/",
