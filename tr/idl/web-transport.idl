@@ -4,13 +4,14 @@
 // Source: WebTransport (https://wicg.github.io/web-transport/)
 
 interface mixin UnidirectionalStreamsTransport {
-  Promise<SendStream> createSendStream(optional SendStreamParameters parameters);
+  Promise<SendStream> createSendStream(optional SendStreamParameters parameters = {});
   ReadableStream receiveStreams();
 };
+
 dictionary SendStreamParameters {
 };
 
-interface BidirectionalStreamsTransport {
+interface mixin BidirectionalStreamsTransport {
     Promise<BidirectionalStream> createBidirectionalStream();
     ReadableStream receiveBidirectionalStreams();
 };
@@ -24,7 +25,7 @@ interface mixin DatagramTransport {
 interface mixin WebTransport {
   readonly attribute WebTransportState state;
   readonly attribute Promise<WebTransportCloseInfo> closed;
-  void close(optional WebTransportCloseInfo closeInfo);
+  void close(optional WebTransportCloseInfo closeInfo = {});
   attribute EventHandler onstatechange;
 };
 
@@ -52,8 +53,13 @@ dictionary QuicTransportStats {
   unsigned long numReceivedDatagramsDropped;
 };
 
-[Constructor(USVString url), Exposed=(Window,Worker)]
+dictionary QuicTransportConfiguration {
+  sequence<RTCDtlsFingerprint> server_certificate_fingerprints;
+};
+
+[Exposed=(Window,Worker)]
 interface QuicTransport {
+  constructor(USVString url, optional QuicTransportConfiguration config = {});
   Promise<QuicTransportStats> getStats();
 };
 
@@ -66,7 +72,7 @@ QuicTransport includes WebTransport;
 interface mixin OutgoingStream {
   readonly attribute WritableStream writable;
   readonly attribute Promise<StreamAbortInfo> writingAborted;
-  void abortWriting(optional StreamAbortInfo abortInfo);
+  void abortWriting(optional StreamAbortInfo abortInfo = {});
 };
 
 dictionary StreamAbortInfo {
@@ -77,7 +83,7 @@ dictionary StreamAbortInfo {
 interface mixin IncomingStream {
   readonly attribute ReadableStream readable;
   readonly attribute Promise<StreamAbortInfo> readingAborted;
-  void abortReading(optional StreamAbortInfo abortInfo);
+  void abortReading(optional StreamAbortInfo abortInfo = {});
   Promise<ArrayBuffer> arrayBuffer();
 };
 
@@ -97,8 +103,9 @@ interface ReceiveStream {
 };
 ReceiveStream includes IncomingStream;
 
-[Constructor (DOMString url), Exposed=(Window,Worker)]
+[Exposed=(Window,Worker)]
 interface Http3Transport {
+  constructor(DOMString url);
 };
 
 Http3Transport includes UnidirectionalStreamsTransport;

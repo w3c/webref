@@ -43,11 +43,10 @@ dictionary FileSystemRemoveOptions {
 
 [Exposed=(Window,Worker), SecureContext, Serializable]
 interface FileSystemDirectoryHandle : FileSystemHandle {
+  async iterable<USVString, FileSystemHandle>;
+
   Promise<FileSystemFileHandle> getFile(USVString name, optional FileSystemGetFileOptions options = {});
   Promise<FileSystemDirectoryHandle> getDirectory(USVString name, optional FileSystemGetDirectoryOptions options = {});
-
-  // This really returns an async iterable, but that is not yet expressable in WebIDL.
-  object getEntries();
 
   Promise<void> removeEntry(USVString name, optional FileSystemRemoveOptions options = {});
 

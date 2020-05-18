@@ -1,14 +1,38 @@
 {
   "spec": {
     "title": "CSS Text Decoration Module Level 4",
-    "url": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/"
+    "url": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/"
   },
   "dfns": [
     {
-      "id": "propdef-text-decoration-width",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#propdef-text-decoration-width",
+      "id": "character",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#character",
       "linkingText": [
-        "text-decoration-width"
+        "character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "decorating-box",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#decorating-box",
+      "linkingText": [
+        "decorating box"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-decoration-line",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-decoration-line",
+      "linkingText": [
+        "text-decoration-line"
       ],
       "localLinkingText": [],
       "type": "property",
@@ -17,36 +41,212 @@
       "informative": false
     },
     {
-      "id": "valdef-text-decoration-width-auto",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#valdef-text-decoration-width-auto",
+      "id": "valdef-text-decoration-line-none",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-line-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-line-underline",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-line-underline",
+      "linkingText": [
+        "underline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-line-overline",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-line-overline",
+      "linkingText": [
+        "overline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-line-line-through",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-line-line-through",
+      "linkingText": [
+        "line-through"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-line-blink",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-line-blink",
+      "linkingText": [
+        "blink"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-line-spelling-error",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-line-spelling-error",
+      "linkingText": [
+        "spelling-error"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-line-grammar-error",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-line-grammar-error",
+      "linkingText": [
+        "grammar-error"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-line"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-decoration-style",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-decoration-style",
+      "linkingText": [
+        "text-decoration-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-style-wavy",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-style-wavy",
+      "linkingText": [
+        "wavy"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-decoration-color",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-decoration-color",
+      "linkingText": [
+        "text-decoration-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-decoration-thickness",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-decoration-thickness",
+      "linkingText": [
+        "text-decoration-thickness"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-thickness-auto",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-thickness-auto",
       "linkingText": [
         "auto"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "text-decoration-width"
+        "text-decoration-thickness"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "valdef-text-decoration-width-length",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#valdef-text-decoration-width-length",
+      "id": "valdef-text-decoration-thickness-from-font",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-thickness-from-font",
+      "linkingText": [
+        "from-font"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-thickness"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-thickness-length",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-thickness-length",
       "linkingText": [
         "<length>"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "text-decoration-width"
+        "text-decoration-thickness"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-thickness-percentage",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-thickness-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-thickness"
       ],
       "access": "public",
       "informative": false
     },
     {
       "id": "considered-text",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#considered-text",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#considered-text",
       "linkingText": [
         "considered text"
       ],
@@ -57,8 +257,102 @@
       "informative": false
     },
     {
+      "id": "propdef-text-decoration",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-decoration",
+      "linkingText": [
+        "text-decoration"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-underline-position",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-underline-position",
+      "linkingText": [
+        "text-underline-position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "underline-auto",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#underline-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-underline-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-underline-position-from-font",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-underline-position-from-font",
+      "linkingText": [
+        "from-font"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-underline-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "underline-under",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#underline-under",
+      "linkingText": [
+        "under"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-underline-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "underline-left",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#underline-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-underline-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "underline-right",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#underline-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-underline-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "propdef-text-underline-offset",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#propdef-text-underline-offset",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-underline-offset",
       "linkingText": [
         "text-underline-offset"
       ],
@@ -70,7 +364,7 @@
     },
     {
       "id": "valdef-text-underline-offset-auto",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#valdef-text-underline-offset-auto",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-underline-offset-auto",
       "linkingText": [
         "auto"
       ],
@@ -84,7 +378,7 @@
     },
     {
       "id": "valdef-text-underline-offset-length",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#valdef-text-underline-offset-length",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-underline-offset-length",
       "linkingText": [
         "<length>"
       ],
@@ -97,8 +391,36 @@
       "informative": false
     },
     {
+      "id": "valdef-text-underline-offset-percentage",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-underline-offset-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-underline-offset"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "underline-zero-position",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#underline-zero-position",
+      "linkingText": [
+        "underline zero position"
+      ],
+      "localLinkingText": [
+        "zero position"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "propdef-text-decoration-skip",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#propdef-text-decoration-skip",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-decoration-skip",
       "linkingText": [
         "text-decoration-skip"
       ],
@@ -110,7 +432,7 @@
     },
     {
       "id": "valdef-text-decoration-skip-none",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#valdef-text-decoration-skip-none",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-skip-none",
       "linkingText": [
         "none"
       ],
@@ -123,78 +445,212 @@
       "informative": false
     },
     {
-      "id": "valdef-text-decoration-skip-objects",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#valdef-text-decoration-skip-objects",
+      "id": "valdef-text-decoration-skip-auto",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-skip-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-skip"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-decoration-skip-self",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-decoration-skip-self",
+      "linkingText": [
+        "text-decoration-skip-self"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-skip-self-none",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-skip-self-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-skip-self"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-skip-self-objects",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-skip-self-objects",
       "linkingText": [
         "objects"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "text-decoration-skip"
+        "text-decoration-skip-self"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "valdef-text-decoration-skip-spaces",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#valdef-text-decoration-skip-spaces",
+      "id": "propdef-text-decoration-skip-box",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-decoration-skip-box",
       "linkingText": [
-        "spaces"
+        "text-decoration-skip-box"
       ],
       "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "text-decoration-skip"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-text-decoration-skip-edges",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#valdef-text-decoration-skip-edges",
-      "linkingText": [
-        "edges"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "text-decoration-skip"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-text-decoration-skip-box-decoration",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#valdef-text-decoration-skip-box-decoration",
-      "linkingText": [
-        "box-decoration"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "text-decoration-skip"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "leading-spaces",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#leading-spaces",
-      "linkingText": [
-        "leading-spaces"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
+      "type": "property",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
-      "id": "trailing-spaces",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#trailing-spaces",
+      "id": "valdef-text-decoration-skip-box-none",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-skip-box-none",
       "linkingText": [
-        "trailing-spaces"
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-skip-box"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-skip-box-all",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-skip-box-all",
+      "linkingText": [
+        "all"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-skip-box"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-decoration-skip-inset",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-decoration-skip-inset",
+      "linkingText": [
+        "text-decoration-skip-inset"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-skip-inset-none",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-skip-inset-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-skip-inset"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-skip-inset-auto",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-skip-inset-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-skip-inset"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-decoration-skip-spaces",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-decoration-skip-spaces",
+      "linkingText": [
+        "text-decoration-skip-spaces"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-skip-spaces-none",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-skip-spaces-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-skip-spaces"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-skip-spaces-all",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-skip-spaces-all",
+      "linkingText": [
+        "all"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-skip-spaces"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-skip-spaces-start",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-skip-spaces-start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-skip-spaces"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-decoration-skip-spaces-end",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-skip-spaces-end",
+      "linkingText": [
+        "end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-skip-spaces"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "spacer",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#spacer",
+      "linkingText": [
+        "spacer"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -204,7 +660,7 @@
     },
     {
       "id": "propdef-text-decoration-skip-ink",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#propdef-text-decoration-skip-ink",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-decoration-skip-ink",
       "linkingText": [
         "text-decoration-skip-ink"
       ],
@@ -216,7 +672,7 @@
     },
     {
       "id": "valdef-text-decoration-skip-ink-auto",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#valdef-text-decoration-skip-ink-auto",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-skip-ink-auto",
       "linkingText": [
         "auto"
       ],
@@ -229,8 +685,22 @@
       "informative": false
     },
     {
+      "id": "valdef-text-decoration-skip-ink-all",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-skip-ink-all",
+      "linkingText": [
+        "all"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-decoration-skip-ink"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "valdef-text-decoration-skip-ink-none",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#valdef-text-decoration-skip-ink-none",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-decoration-skip-ink-none",
       "linkingText": [
         "none"
       ],
@@ -243,8 +713,238 @@
       "informative": false
     },
     {
+      "id": "propdef-text-emphasis-style",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-emphasis-style",
+      "linkingText": [
+        "text-emphasis-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-style-none",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-emphasis-style-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-style-filled",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-emphasis-style-filled",
+      "linkingText": [
+        "filled"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-text-emphasis-open",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-text-emphasis-open",
+      "linkingText": [
+        "open"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-text-emphasis"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-style-dot",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-emphasis-style-dot",
+      "linkingText": [
+        "dot"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-style-circle",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-emphasis-style-circle",
+      "linkingText": [
+        "circle"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-style-double-circle",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-emphasis-style-double-circle",
+      "linkingText": [
+        "double-circle"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-style-triangle",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-emphasis-style-triangle",
+      "linkingText": [
+        "triangle"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-style-sesame",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-emphasis-style-sesame",
+      "linkingText": [
+        "sesame"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-style-string",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-emphasis-style-string",
+      "linkingText": [
+        "<string>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-style"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-emphasis-color",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-emphasis-color",
+      "linkingText": [
+        "text-emphasis-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-emphasis",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-emphasis",
+      "linkingText": [
+        "text-emphasis"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-emphasis-position",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-emphasis-position",
+      "linkingText": [
+        "text-emphasis-position"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-position-over",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-emphasis-position-over",
+      "linkingText": [
+        "over"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-position-under",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-emphasis-position-under",
+      "linkingText": [
+        "under"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-position-right",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-emphasis-position-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-text-emphasis-position-left",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-emphasis-position-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-emphasis-position"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "propdef-text-emphasis-skip",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#propdef-text-emphasis-skip",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-emphasis-skip",
       "linkingText": [
         "text-emphasis-skip"
       ],
@@ -255,51 +955,71 @@
       "informative": false
     },
     {
-      "id": "spaces",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#spaces",
+      "id": "valdef-text-emphasis-skip-spaces",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-emphasis-skip-spaces",
       "linkingText": [
         "spaces"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "text-emphasis-skip"
+      ],
+      "access": "public",
       "informative": false
     },
     {
-      "id": "punctuation",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#punctuation",
+      "id": "valdef-text-emphasis-skip-punctuation",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-emphasis-skip-punctuation",
       "linkingText": [
         "punctuation"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "text-emphasis-skip"
+      ],
+      "access": "public",
       "informative": false
     },
     {
-      "id": "symbols",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#symbols",
+      "id": "valdef-text-emphasis-skip-symbols",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-emphasis-skip-symbols",
       "linkingText": [
         "symbols"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "value",
+      "for": [
+        "text-emphasis-skip"
+      ],
+      "access": "public",
       "informative": false
     },
     {
-      "id": "narrow",
-      "href": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/#narrow",
+      "id": "valdef-text-emphasis-skip-narrow",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#valdef-text-emphasis-skip-narrow",
       "linkingText": [
         "narrow"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "value",
+      "for": [
+        "text-emphasis-skip"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-text-shadow",
+      "href": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/#propdef-text-shadow",
+      "linkingText": [
+        "text-shadow"
+      ],
+      "localLinkingText": [],
+      "type": "property",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     }
   ]
