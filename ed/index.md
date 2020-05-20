@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% May 19, 2020
+% May 20, 2020
 
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -95,7 +95,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
-- Crawled version: 19 May 2020
+- Crawled version: 20 May 2020
 - Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/)
@@ -3706,6 +3706,7 @@ Normative references to this spec from:
 - [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/)
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Lists Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
@@ -3717,9 +3718,11 @@ Normative references to this spec from:
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -4367,6 +4370,7 @@ Normative references to this spec from:
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
@@ -6667,7 +6671,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
 - Crawled URL: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
-- Crawled version: 27 April 2020
+- Crawled version: 19 May 2020
 - Editor's Draft: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
 - Latest published version: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
@@ -9778,7 +9782,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
 - Crawled URL: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
-- Crawled version: 14 May 2020
+- Crawled version: 19 May 2020
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webauthn-2-20191126/)
@@ -10553,7 +10557,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxr-ar-module/](https://www.w3.org/TR/webxr-ar-module/)
 - Crawled URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
-- Crawled version: 30 March 2020
+- Crawled version: 19 May 2020
 - Editor's Draft: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
 - Latest published version: [https://www.w3.org/TR/webxr-ar-module-1/](https://www.w3.org/TR/webxr-ar-module-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-ar-module-1-20191010/)
@@ -10577,7 +10581,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled URL: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Crawled version: 18 May 2020
+- Crawled version: 19 May 2020
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-20191010/)
@@ -10615,7 +10619,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxr-gamepads-module/](https://www.w3.org/TR/webxr-gamepads-module/)
 - Crawled URL: [https://immersive-web.github.io/webxr-gamepads-module/](https://immersive-web.github.io/webxr-gamepads-module/)
-- Crawled version: 21 November 2019
+- Crawled version: 19 May 2020
 - Editor's Draft: [https://immersive-web.github.io/webxr-gamepads-module/](https://immersive-web.github.io/webxr-gamepads-module/)
 - Latest published version: [https://www.w3.org/TR/webxr-gamepads-module-1/](https://www.w3.org/TR/webxr-gamepads-module-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-gamepads-module-1-20191010/)
