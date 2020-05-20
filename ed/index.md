@@ -5839,7 +5839,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
 - Crawled URL: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
-- Crawled version: 27 April 2020
+- Crawled version: 20 May 2020
 - Repository: [GitHub wicg/entries-api](https://github.com/wicg/entries-api)
 - Shortname: no shortname
 
@@ -7747,7 +7747,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Crawled URL: [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)
-- Crawled version: 08 October 2019
+- Crawled version: 20 May 2020
 - Editor's Draft: [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)
 - Latest published version: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Latest published status: [Proposed Recommendation](https://www.w3.org/TR/2017/PR-page-visibility-2-20171017/)
