@@ -7883,7 +7883,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/payment-method-manifest/](https://www.w3.org/TR/payment-method-manifest/)
 - Crawled URL: [https://w3c.github.io/payment-method-manifest/](https://w3c.github.io/payment-method-manifest/)
-- Crawled version: 9 September 2019
+- Crawled version: 20 May 2020
 - Editor's Draft: [https://w3c.github.io/payment-method-manifest/](https://w3c.github.io/payment-method-manifest/)
 - Latest published version: [https://www.w3.org/TR/payment-method-manifest/](https://www.w3.org/TR/payment-method-manifest/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2017/WD-payment-method-manifest-20171212/)
@@ -10508,7 +10508,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 19 May 2020
+- Crawled version: 20 May 2020
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
