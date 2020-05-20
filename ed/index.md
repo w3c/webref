@@ -9085,7 +9085,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
 - Crawled URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
-- Crawled version: 15 May 2020
+- Crawled version: 20 May 2020
 - Repository: [GitHub whatwg/storage](https://github.com/whatwg/storage)
 - Shortname: no shortname
 
