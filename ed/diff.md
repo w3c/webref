@@ -1,4 +1,4 @@
-% Diff between report from "May 21, 2020" and reference report from "May 20, 2020"
+% Diff between report from "May 21, 2020" and reference report from "May 21, 2020"
 % Reffy
 % May 21, 2020
 
@@ -7,7 +7,7 @@
 - Initial URL: [https://www.w3.org/TR/mixed-content/](https://www.w3.org/TR/mixed-content/)
 - Crawled URL: [https://w3c.github.io/webappsec-mixed-content/](https://w3c.github.io/webappsec-mixed-content/)
 - Repository: [GitHub w3c/webappsec-mixed-content](https://github.com/w3c/webappsec-mixed-content)
-- Spec could not be rendered: *INS* Error: Failed to launch the browser process!
+- Spec could not be rendered: *DEL* Error: Failed to launch the browser process!
 Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!
 
 

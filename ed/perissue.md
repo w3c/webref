@@ -5,29 +5,6 @@
 275 specifications were crawled in this report.
 
 
-## Specifications that could not be rendered
-
-Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
-
-- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/): `Error: Failed to launch the browser process!
-Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch the browser process!
-Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
-
-=> 1 specification found
-
-
 ## Specifications that do not link to an Editor's Draft
 
 
@@ -1092,6 +1069,10 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/) links to:
+    * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/) but related reference "XML" uses URL [`https://www.w3.org/TR/xml/`](https://www.w3.org/TR/xml/)
+    * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+    * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/) links to:
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/css3-images/`](https://www.w3.org/TR/css3-images/) but related reference "CSS-IMAGES-3" uses URL [`https://www.w3.org/TR/css-images-3/`](https://www.w3.org/TR/css-images-3/)
@@ -1202,6 +1183,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 282 inconsistent references for links found in 149 specifications
+=> 285 inconsistent references for links found in 150 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
