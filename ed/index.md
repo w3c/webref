@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% May 20, 2020
+% May 21, 2020
 
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -95,7 +95,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
-- Crawled version: 20 May 2020
+- Crawled version: 21 May 2020
 - Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/)
@@ -683,7 +683,6 @@ Normative references to this spec from:
 - [Feature Policy](https://w3c.github.io/webappsec-feature-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Resource Hints](https://w3c.github.io/resource-hints/)
@@ -751,7 +750,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Crawled URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
-- Crawled version: 18 May 2020
+- Crawled version: 21 May 2020
 - Repository: [GitHub wicg/cookie-store](https://github.com/wicg/cookie-store)
 - Shortname: no shortname
 
@@ -1088,7 +1087,6 @@ Informative references to this spec from:
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
-- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 
 
 ## CSS Backgrounds and Borders Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -5504,7 +5502,6 @@ Normative references to this spec from:
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
-- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
@@ -5795,7 +5792,6 @@ Normative references to this spec from:
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
-- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
@@ -6352,7 +6348,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 19 May 2020
+- Crawled version: 20 May 2020
 - Repository: [GitHub whatwg/html](https://github.com/whatwg/html)
 - Shortname: no shortname
 
@@ -6474,7 +6470,6 @@ Normative references to this spec from:
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
-- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Native File System](https://wicg.github.io/native-file-system/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Network Error Logging](https://w3c.github.io/network-error-logging/)
@@ -7427,13 +7422,12 @@ Informative references to this spec from:
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 
-## Mixed Content {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Mixed Content {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/mixed-content/](https://www.w3.org/TR/mixed-content/)
 - Crawled URL: [https://w3c.github.io/webappsec-mixed-content/](https://w3c.github.io/webappsec-mixed-content/)
-- Crawled version: 25 November 2019
 - Editor's Draft: [https://w3c.github.io/webappsec-mixed-content/](https://w3c.github.io/webappsec-mixed-content/)
 - Latest published version: [https://www.w3.org/TR/mixed-content/](https://www.w3.org/TR/mixed-content/)
 - Latest published status: [Candidate Recommendation](https://www.w3.org/TR/2016/CR-mixed-content-20160802/)
@@ -7442,10 +7436,24 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/), related reference "XML" uses URL [`https://www.w3.org/TR/xml/`](https://www.w3.org/TR/xml/)
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
-     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+The following network or parsing error occurred:
+`Error: Failed to launch the browser process!
+Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
+ Error: Failed to launch the browser process!
+Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
+
+    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
+    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8838,7 +8846,6 @@ Normative references to this spec from:
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
-- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Permissions](https://w3c.github.io/permissions/)
@@ -9165,7 +9172,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 
 
 ## SVG Animations {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -9554,7 +9560,6 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
-- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
@@ -9672,7 +9677,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
 - Crawled URL: [https://drafts.csswg.org/web-animations-1/](https://drafts.csswg.org/web-animations-1/)
-- Crawled version: 8 May 2020
+- Crawled version: 20 May 2020
 - Editor's Draft: [https://drafts.csswg.org/web-animations-1/](https://drafts.csswg.org/web-animations-1/)
 - Latest published version: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-web-animations-1-20181011/)
@@ -10581,7 +10586,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled URL: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Crawled version: 19 May 2020
+- Crawled version: 20 May 2020
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webxr-20191010/)
@@ -10717,7 +10722,6 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 
 Informative references to this spec from:

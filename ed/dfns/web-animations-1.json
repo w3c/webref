@@ -53,18 +53,6 @@
       "informative": false
     },
     {
-      "id": "inactive-timeline",
-      "href": "https://drafts.csswg.org/web-animations-1/#inactive-timeline",
-      "linkingText": [
-        "inactive timeline"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "monotonically-increasing-timeline",
       "href": "https://drafts.csswg.org/web-animations-1/#monotonically-increasing-timeline",
       "linkingText": [
@@ -124,6 +112,78 @@
       "type": "dfn",
       "for": [],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "timeline-phase",
+      "href": "https://drafts.csswg.org/web-animations-1/#timeline-phase",
+      "linkingText": [
+        "timeline phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "timeline-inactive-phase",
+      "href": "https://drafts.csswg.org/web-animations-1/#timeline-inactive-phase",
+      "linkingText": [
+        "timeline inactive phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "timeline-before-phase",
+      "href": "https://drafts.csswg.org/web-animations-1/#timeline-before-phase",
+      "linkingText": [
+        "timeline before phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "timeline-active-phase",
+      "href": "https://drafts.csswg.org/web-animations-1/#timeline-active-phase",
+      "linkingText": [
+        "timeline active phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "timeline-after-phase",
+      "href": "https://drafts.csswg.org/web-animations-1/#timeline-after-phase",
+      "linkingText": [
+        "timeline after phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "inactive-timeline",
+      "href": "https://drafts.csswg.org/web-animations-1/#inactive-timeline",
+      "linkingText": [
+        "inactive timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
@@ -1598,6 +1658,20 @@
       "informative": false
     },
     {
+      "id": "dom-animationtimeline-phase",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-animationtimeline-phase",
+      "linkingText": [
+        "phase"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationTimeline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dictdef-documenttimelineoptions",
       "href": "https://drafts.csswg.org/web-animations-1/#dictdef-documenttimelineoptions",
       "linkingText": [
@@ -2177,6 +2251,74 @@
       "type": "enum-value",
       "for": [
         "AnimationReplaceState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-timelinephase",
+      "href": "https://drafts.csswg.org/web-animations-1/#enumdef-timelinephase",
+      "linkingText": [
+        "TimelinePhase"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-timelinephase-inactive",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-timelinephase-inactive",
+      "linkingText": [
+        "\"inactive\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TimelinePhase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-timelinephase-before",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-timelinephase-before",
+      "linkingText": [
+        "\"before\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TimelinePhase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-timelinephase-active",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-timelinephase-active",
+      "linkingText": [
+        "\"active\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TimelinePhase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-timelinephase-after",
+      "href": "https://drafts.csswg.org/web-animations-1/#dom-timelinephase-after",
+      "linkingText": [
+        "\"after\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TimelinePhase"
       ],
       "access": "public",
       "informative": false
