@@ -14,7 +14,7 @@ window.onload = function () {
   let totalOk = 0;
   let totalError = 0;
   let totalWarning = 0;
-  $(document, '[data-spec]').forEach(spec => {
+  $(document, 'section[data-spec]').forEach(spec => {
     total += 1;
     const title = spec.querySelector('h2');
 
@@ -138,7 +138,7 @@ window.onload = function () {
   document.getElementById('submit').onclick = () => {
     const filter = document.getElementById('filter').value;
     let count = 0;
-    $(document, '[data-spec]').forEach(spec => {
+    $(document, 'section[data-spec]').forEach(spec => {
       const hide = (filter !== 'all') &&
         !filter.split('|').find(anomaly => spec.hasAttribute('data-' + anomaly));
       if (hide) {
