@@ -835,6 +835,7 @@
   <li><a href="https://w3c.github.io/webappsec-feature-policy/">Feature Policy</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
+  <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   <li><a href="https://w3c.github.io/network-error-logging/">Network Error Logging</a></li>
   <li><a href="https://wicg.github.io/origin-policy/">Origin Policy</a></li>
   <li><a href="https://w3c.github.io/resource-hints/">Resource Hints</a></li>
@@ -1306,6 +1307,7 @@
   <li><a href="https://drafts.csswg.org/css-round-display/">CSS Round Display Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-transitions/">CSS Transitions</a></li>
   <li><a href="https://drafts.csswg.org/css-will-change/">CSS Will Change Module Level 1</a></li>
+  <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   </ul>
   </section>
   </section>
@@ -6435,6 +6437,7 @@
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
+  <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   <li><a href="https://wicg.github.io/netinfo/">Network Information API</a></li>
   <li><a href="https://notifications.spec.whatwg.org/">Notifications API Standard</a></li>
   <li><a href="https://wicg.github.io/page-lifecycle/">Page Lifecycle</a></li>
@@ -6766,6 +6769,7 @@
   <li><a href="https://wicg.github.io/largest-contentful-paint/">Largest Contentful Paint</a></li>
   <li><a href="https://w3c.github.io/mediasession/">Media Session Standard</a></li>
   <li><a href="https://mimesniff.spec.whatwg.org/">MIME Sniffing Standard</a></li>
+  <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
   <li><a href="https://w3c.github.io/network-error-logging/">Network Error Logging</a></li>
   <li><a href="https://notifications.spec.whatwg.org/">Notifications API Standard</a></li>
@@ -7530,6 +7534,7 @@
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
+  <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   <li><a href="https://wicg.github.io/native-file-system/">Native File System</a></li>
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
   <li><a href="https://w3c.github.io/network-error-logging/">Network Error Logging</a></li>
@@ -8625,13 +8630,14 @@
   </ul>
   </section>
   </section>
-  <section id="mixed-content" class="level2" data-spec="true" data-error="true">
+  <section id="mixed-content" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Mixed Content</h2>
   <section id="spec-info-177" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/mixed-content/" class="uri">https://www.w3.org/TR/mixed-content/</a></li>
   <li>Crawled URL: <a href="https://w3c.github.io/webappsec-mixed-content/" class="uri">https://w3c.github.io/webappsec-mixed-content/</a></li>
+  <li>Crawled version: 25 November 2019</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webappsec-mixed-content/" class="uri">https://w3c.github.io/webappsec-mixed-content/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/mixed-content/" class="uri">https://www.w3.org/TR/mixed-content/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2016/CR-mixed-content-20160802/">Candidate Recommendation</a></li>
@@ -8641,14 +8647,14 @@
   </section>
   <section id="potential-issues-177" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>Error: Failed to launch the browser process! Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion</code>listp-&gt;slotinfo[cnt].gen &lt;= GL(dl_tls_generation)' failed!</p>
-  <p>TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md Error: Failed to launch the browser process! Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp-&gt;slotinfo[cnt].gen &lt;= GL(dl_tls_generation)' failed!</p>
-  <p>TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md</p>
-  <pre><code>at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:547:20)
-  at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Launcher.js:538:76)
-  at ChildProcess.emit (events.js:203:15)
-  at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`</code></pre>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2008/REC-xml-20081126/"><code>https://www.w3.org/TR/2008/REC-xml-20081126/</code></a>, related reference &quot;XML&quot; uses URL <a href="https://www.w3.org/TR/xml/"><code>https://www.w3.org/TR/xml/</code></a></li>
+  <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a>, related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
+  <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a>, related reference &quot;CSP3&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-177" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -9222,7 +9228,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/payment-request/" class="uri">https://www.w3.org/TR/payment-request/</a></li>
   <li>Crawled URL: <a href="https://w3c.github.io/payment-request/" class="uri">https://w3c.github.io/payment-request/</a></li>
-  <li>Crawled version: 11 May 2020</li>
+  <li>Crawled version: 21 May 2020</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/payment-request/" class="uri">https://w3c.github.io/payment-request/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/payment-request/" class="uri">https://www.w3.org/TR/payment-request/</a></li>
   <li>Latest published status: <a href="https://www.w3.org/TR/2019/CR-payment-request-20191212/">Candidate Recommendation</a></li>
@@ -10264,6 +10270,7 @@
   <li><a href="https://wicg.github.io/keyboard-map/">Keyboard Map</a></li>
   <li><a href="https://w3c.github.io/media-capabilities/">Media Capabilities</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
+  <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   <li><a href="https://w3c.github.io/network-error-logging/">Network Error Logging</a></li>
   <li><a href="https://wicg.github.io/origin-policy/">Origin Policy</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
@@ -10630,6 +10637,7 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
+  <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   </ul>
   </section>
   </section>
@@ -11073,6 +11081,7 @@
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/mediasession/">Media Session Standard</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
+  <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
   <li><a href="https://w3c.github.io/network-error-logging/">Network Error Logging</a></li>
   <li><a href="https://notifications.spec.whatwg.org/">Notifications API Standard</a></li>
@@ -11681,7 +11690,7 @@
   <ul>
   <li>Initial URL: <a href="https://wicg.github.io/web-locks/" class="uri">https://wicg.github.io/web-locks/</a></li>
   <li>Crawled URL: <a href="https://wicg.github.io/web-locks/" class="uri">https://wicg.github.io/web-locks/</a></li>
-  <li>Crawled version: 27 April 2020</li>
+  <li>Crawled version: 21 May 2020</li>
   <li>Repository: <a href="https://github.com/wicg/web-locks">GitHub wicg/web-locks</a></li>
   <li>Shortname: no shortname</li>
   </ul>
@@ -12413,6 +12422,7 @@
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
+  <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 2</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
