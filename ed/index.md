@@ -5489,7 +5489,6 @@ Normative references to this spec from:
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-- [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [High Resolution Time](https://w3c.github.io/hr-time/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
@@ -6142,7 +6141,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Crawled URL: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
-- Crawled version: 24 November 2019
+- Crawled version: 22 May 2020
 - Editor's Draft: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
 - Latest published version: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
@@ -9713,7 +9712,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled URL: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
-- Crawled version: 21 May 2020
+- Crawled version: 22 May 2020
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-appmanifest-20200330/)
