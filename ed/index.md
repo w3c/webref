@@ -1750,7 +1750,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Crawled URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
-- Crawled version: 6 April 2020
+- Crawled version: 24 May 2020
 - Editor's Draft: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
 - Latest published version: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-css-color-5-20200303/)
@@ -10507,7 +10507,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 23 May 2020
+- Crawled version: 24 May 2020
 - Repository: [GitHub wicg/webusb](https://github.com/wicg/webusb)
 - Shortname: no shortname
 
