@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Specifications that define CSS and WebIDL content",
   "description": "The crawl includes specifications published by W3C Working Groups, W3C Community Groups and WHATWG, that define CSS and/or WebIDL content. The specifications are at various stages of maturity.",
-  "date": "2020-05-18T11:17:36.545Z",
+  "date": "2020-05-25T11:18:05.415Z",
   "stats": {
     "crawled": 275,
-    "errors": 1,
+    "errors": 0,
     "studied": 275
   },
   "results": [
@@ -528,15 +528,15 @@
     },
     {
       "title": "Badging API",
-      "date": "",
+      "date": "09 April 2020",
       "url": "https://wicg.github.io/badging/",
-      "crawled": "https://wicg.github.io/badging/",
+      "crawled": "https://w3c.github.io/badging/",
       "repository": "https://github.com/wicg/badging",
       "report": {
-        "error": "Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:93:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:88:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:548:47)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:83:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:302:36)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -548,7 +548,7 @@
           "informative": []
         },
         "noEdDraft": null,
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -821,7 +821,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -926,7 +926,7 @@
             {
               "url": "https://www.w3.org/TR/css-position-3/",
               "title": "CSS Positioned Layout Module Level 3",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -1698,7 +1698,7 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/"
+              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/"
             },
             {
               "url": "https://www.w3.org/TR/webdriver1/",
@@ -1726,6 +1726,11 @@
               "url": "https://w3c.github.io/reporting/",
               "title": "Reporting API 1",
               "crawled": "https://w3c.github.io/reporting/"
+            },
+            {
+              "url": "https://www.w3.org/TR/appmanifest/",
+              "title": "Web App Manifest",
+              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/"
             },
             {
               "url": "https://webbluetoothcg.github.io/web-bluetooth/",
@@ -1802,7 +1807,7 @@
     },
     {
       "title": "Cookie Store API",
-      "date": "9 April 2020",
+      "date": "21 May 2020",
       "url": "https://wicg.github.io/cookie-store/",
       "crawled": "https://wicg.github.io/cookie-store/",
       "repository": "https://github.com/wicg/cookie-store",
@@ -2219,7 +2224,11 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://www.w3.org/TR/css3-animations/"
+          "https://www.w3.org/TR/css3-animations/",
+          "https://www.w3.org/TR/css-values/",
+          "https://www.w3.org/TR/css-cascade/",
+          "https://www.w3.org/TR/css-pseudo/",
+          "https://www.w3.org/TR/web-animations/"
         ],
         "inconsistentRef": [],
         "referencedBy": {
@@ -2339,7 +2348,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -2385,6 +2394,11 @@
               "url": "https://www.w3.org/TR/css-paint-api-1/",
               "title": "CSS Painting API Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-position-3/",
+              "title": "CSS Positioned Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-pseudo-4/",
@@ -2540,6 +2554,10 @@
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/css3-background/",
+          "https://www.w3.org/TR/css-values/",
+          "https://www.w3.org/TR/css-cascade/",
+          "https://www.w3.org/TR/web-animations/",
+          "https://www.w3.org/TR/css-pseudo/",
           "https://www.w3.org/TR/css3-transitions/"
         ],
         "inconsistentRef": [],
@@ -2801,9 +2819,14 @@
               "crawled": "https://compat.spec.whatwg.org/"
             },
             {
+              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "title": "CSS Box Sizing Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-sizing-4/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -2831,9 +2854,19 @@
               "crawled": "https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/"
             },
             {
+              "url": "https://drafts.csswg.org/css-multicol-2/",
+              "title": "CSS Multi-column Layout Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-multicol-2/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-overflow-3/",
               "title": "CSS Overflow Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-position-3/",
+              "title": "CSS Positioned Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-rhythm-1/",
@@ -2862,11 +2895,6 @@
             }
           ],
           "informative": [
-            {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
-              "title": "CSS Box Sizing Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-sizing-4/"
-            },
             {
               "url": "https://www.w3.org/TR/css-ruby-1/",
               "title": "CSS Ruby Layout Module Level 1",
@@ -3031,9 +3059,19 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
+          "https://www.w3.org/TR/css-cascade/",
+          "https://www.w3.org/TR/web-animations/",
           "https://www.w3.org/TR/css3-align/"
         ],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -3102,7 +3140,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-logical-1/",
@@ -3268,7 +3306,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://drafts.csswg.org/css-env-1/",
@@ -3364,6 +3402,11 @@
               "url": "https://www.w3.org/TR/css-paint-api-1/",
               "title": "CSS Painting API Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-position-3/",
+              "title": "CSS Positioned Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -4166,7 +4209,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-content-3/",
@@ -4194,7 +4237,13 @@
               "crawled": "https://www.w3.org/TR/2018/WD-motion-1-20181218/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-position-3/",
+              "title": "CSS Positioned Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": false
@@ -4453,13 +4502,13 @@
     {
       "title": "CSS Display Module Level 3",
       "shortname": "css-display-3",
-      "date": "11 July 2019",
+      "date": "19 May 2020",
       "url": "https://www.w3.org/TR/css-display-3/",
       "latest": "https://www.w3.org/TR/css-display-3/",
-      "datedUrl": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/",
+      "datedUrl": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/",
       "datedStatus": "Candidate Recommendation",
       "edDraft": "https://drafts.csswg.org/css-display/",
-      "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/",
+      "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
         "noNormativeRefs": false,
@@ -4474,14 +4523,24 @@
           "https://www.w3.org/TR/selectors4/",
           "https://www.w3.org/TR/css-cascade/",
           "https://www.w3.org/TR/css3-background/",
-          "https://www.w3.org/TR/css3-break/",
           "https://www.w3.org/TR/css-writing-modes-3/",
           "https://www.w3.org/TR/css-multicol-1/",
+          "https://www.w3.org/TR/css3-speech/",
+          "https://www.w3.org/TR/css-pseudo/",
+          "https://www.w3.org/TR/web-animations/",
           "https://www.w3.org/TR/css3-positioning/",
           "https://www.w3.org/TR/css3-align/",
           "https://www.w3.org/TR/svg2/"
         ],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -4612,7 +4671,7 @@
             {
               "url": "https://www.w3.org/TR/css-position-3/",
               "title": "CSS Positioned Layout Module Level 3",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-pseudo-4/",
@@ -4917,7 +4976,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-regions-1/",
@@ -5064,7 +5123,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-grid-1/",
@@ -5095,6 +5154,11 @@
               "url": "https://www.w3.org/TR/css-overflow-4/",
               "title": "CSS Overflow Module Level 4",
               "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-position-3/",
+              "title": "CSS Positioned Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-text-4/",
@@ -5687,7 +5751,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/fill-stroke-3/",
@@ -5787,6 +5851,11 @@
               "crawled": "https://www.w3.org/TR/2020/WD-css-box-3-20200421/"
             },
             {
+              "url": "https://www.w3.org/TR/css-position-3/",
+              "title": "CSS Positioned Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-values-3/",
               "title": "CSS Values and Units Module Level 3",
               "crawled": "https://www.w3.org/TR/2019/CR-css-values-3-20190606/"
@@ -5871,12 +5940,17 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-multicol-1/",
               "title": "CSS Multi-column Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-position-3/",
+              "title": "CSS Positioned Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-nav-1/",
@@ -5993,8 +6067,19 @@
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css-cascade/",
+          "https://www.w3.org/TR/web-animations/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -6006,7 +6091,7 @@
           "informative": []
         },
         "noEdDraft": null,
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -6162,7 +6247,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-grid-2/",
@@ -6188,6 +6273,11 @@
               "url": "https://www.w3.org/TR/css-overflow-4/",
               "title": "CSS Overflow Module Level 4",
               "crawled": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-position-3/",
+              "title": "CSS Positioned Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-tables-3/",
@@ -6280,7 +6370,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-grid-1/",
@@ -6626,7 +6716,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -6652,6 +6742,11 @@
               "url": "https://www.w3.org/TR/css-page-3/",
               "title": "CSS Paged Media Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-position-3/",
+              "title": "CSS Positioned Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-ruby-1/",
@@ -6838,6 +6933,11 @@
               "url": "https://www.w3.org/TR/css-page-3/",
               "title": "CSS Paged Media Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-position-3/",
+              "title": "CSS Positioned Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-tables-3/",
@@ -7143,6 +7243,11 @@
               "crawled": "https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/"
             },
             {
+              "url": "https://www.w3.org/TR/css-position-3/",
+              "title": "CSS Positioned Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-scroll-snap-1/",
               "title": "CSS Scroll Snap Module Level 1",
               "crawled": "https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/"
@@ -7323,8 +7428,20 @@
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css-cascade/",
+          "https://www.w3.org/TR/css-pseudo/",
+          "https://www.w3.org/TR/web-animations/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -7341,7 +7458,7 @@
           "informative": []
         },
         "noEdDraft": null,
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -7496,9 +7613,19 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://www.w3.org/TR/css3-multicol/"
+          "https://www.w3.org/TR/css3-multicol/",
+          "https://www.w3.org/TR/css-cascade/",
+          "https://www.w3.org/TR/web-animations/"
         ],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -7676,7 +7803,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -7727,6 +7854,11 @@
               "url": "https://wicg.github.io/CSS-Parser-API/",
               "title": "CSS Parser API",
               "crawled": "https://wicg.github.io/CSS-Parser-API/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-position-3/",
+              "title": "CSS Positioned Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -7914,7 +8046,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -7964,7 +8096,7 @@
             {
               "url": "https://www.w3.org/TR/css-position-3/",
               "title": "CSS Positioned Layout Module Level 3",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-scroll-anchoring-1/",
@@ -8237,6 +8369,11 @@
               "crawled": "https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/"
             },
             {
+              "url": "https://www.w3.org/TR/css-position-3/",
+              "title": "CSS Positioned Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/2018/WD-css-typed-om-1-20180410/"
@@ -8328,7 +8465,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-break-3/",
@@ -8344,6 +8481,11 @@
               "url": "https://www.w3.org/TR/css-sizing-3/",
               "title": "CSS Intrinsic & Extrinsic Sizing Module Level 3",
               "crawled": "https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-position-3/",
+              "title": "CSS Positioned Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-syntax-3/",
@@ -8485,13 +8627,13 @@
     {
       "title": "CSS Positioned Layout Module Level 3",
       "shortname": "css-position-3",
-      "date": "17 May 2016",
+      "date": "19 May 2020",
       "url": "https://www.w3.org/TR/css-position-3/",
-      "latest": "http://www.w3.org/TR/css-position-3/",
-      "datedUrl": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/",
+      "latest": "https://www.w3.org/TR/css-position-3/",
+      "datedUrl": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/",
       "datedStatus": "Working Draft",
       "edDraft": "https://drafts.csswg.org/css-position/",
-      "crawled": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/",
+      "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/",
       "repository": "https://github.com/w3c/csswg-drafts",
       "report": {
         "noNormativeRefs": false,
@@ -8503,14 +8645,18 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://www.w3.org/TR/2015/WD-css3-positioning-20150203/"
+          "https://www.w3.org/TR/css-cascade/",
+          "https://www.w3.org/TR/web-animations/",
+          "https://www.w3.org/TR/css3-page/",
+          "https://www.w3.org/TR/css3-background/",
+          "https://www.w3.org/TR/css3-align/"
         ],
         "inconsistentRef": [
           {
-            "link": "https://www.w3.org/TR/css3-values/",
+            "link": "https://www.w3.org/TR/css-values/",
             "ref": {
-              "name": "CSS3VAL",
-              "url": "http://www.w3.org/TR/css-values/"
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
             }
           }
         ],
@@ -8534,7 +8680,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -8785,7 +8931,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -9108,7 +9254,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-content-3/",
@@ -9560,9 +9706,19 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://www.w3.org/TR/css-shapes/"
+          "https://www.w3.org/TR/css-shapes/",
+          "https://www.w3.org/TR/css-cascade/",
+          "https://www.w3.org/TR/web-animations/"
         ],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -9895,7 +10051,7 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/"
+              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -9956,7 +10112,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -10241,7 +10397,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -10550,7 +10706,7 @@
             {
               "url": "https://www.w3.org/TR/css-position-3/",
               "title": "CSS Positioned Layout Module Level 3",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -11155,7 +11311,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-easing-1/",
@@ -11290,7 +11446,7 @@
             {
               "url": "https://www.w3.org/TR/css-position-3/",
               "title": "CSS Positioned Layout Module Level 3",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -11602,7 +11758,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-easing-1/",
@@ -11693,6 +11849,11 @@
               "url": "https://www.w3.org/TR/css-page-3/",
               "title": "CSS Paged Media Module Level 3",
               "crawled": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-position-3/",
+              "title": "CSS Positioned Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -11923,7 +12084,13 @@
               "crawled": "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-position-3/",
+              "title": "CSS Positioned Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
+            }
+          ]
         },
         "noEdDraft": false,
         "ok": false
@@ -12057,7 +12224,7 @@
             {
               "url": "https://www.w3.org/TR/css-position-3/",
               "title": "CSS Positioned Layout Module Level 3",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/"
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-regions-1/",
@@ -12265,6 +12432,11 @@
               "crawled": "https://www.w3.org/TR/2018/WD-css-page-3-20181018/"
             },
             {
+              "url": "https://www.w3.org/TR/css-position-3/",
+              "title": "CSS Positioned Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/2020/WD-css-position-3-20200519/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-pseudo-4/",
               "title": "CSS Pseudo-Elements Module Level 4",
               "crawled": "https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/"
@@ -12467,7 +12639,7 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/"
+              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/"
             },
             {
               "url": "https://www.w3.org/TR/webdriver1/",
@@ -12770,6 +12942,11 @@
               "crawled": "https://wicg.github.io/background-fetch/"
             },
             {
+              "url": "https://wicg.github.io/badging/",
+              "title": "Badging API",
+              "crawled": "https://w3c.github.io/badging/"
+            },
+            {
               "url": "https://www.w3.org/TR/beacon/",
               "title": "Beacon",
               "crawled": "https://www.w3.org/TR/2017/CR-beacon-20170413/"
@@ -12863,11 +13040,6 @@
               "url": "https://www.w3.org/TR/css-paint-api-1/",
               "title": "CSS Painting API Level 1",
               "crawled": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-position-3/",
-              "title": "CSS Positioned Layout Module Level 3",
-              "crawled": "http://www.w3.org/TR/2016/WD-css-position-3-20160517/"
             },
             {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -13197,7 +13369,7 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/"
+              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -13530,7 +13702,7 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/"
+              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/"
             },
             {
               "url": "https://www.w3.org/TR/webauthn-2/",
@@ -13711,7 +13883,7 @@
     },
     {
       "title": "Feature Policy",
-      "date": "12 May 2020",
+      "date": "21 May 2020",
       "url": "https://w3c.github.io/webappsec-feature-policy/",
       "crawled": "https://w3c.github.io/webappsec-feature-policy/",
       "repository": "https://github.com/w3c/webappsec-feature-policy",
@@ -14002,7 +14174,7 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/"
+              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -14074,7 +14246,7 @@
     },
     {
       "title": "File and Directory Entries API",
-      "date": "27 April 2020",
+      "date": "20 May 2020",
       "url": "https://wicg.github.io/entries-api/",
       "crawled": "https://wicg.github.io/entries-api/",
       "repository": "https://github.com/wicg/entries-api",
@@ -14368,6 +14540,9 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
+          "https://www.w3.org/TR/css-values/",
+          "https://www.w3.org/TR/css-cascade/",
+          "https://www.w3.org/TR/web-animations/",
           "https://www.w3.org/TR/compositing-1/"
         ],
         "inconsistentRef": [],
@@ -14505,7 +14680,7 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/"
+              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/"
             }
           ]
         },
@@ -15164,7 +15339,7 @@
     },
     {
       "title": "HTML Standard",
-      "date": "15 May 2020",
+      "date": "21 May 2020",
       "url": "https://html.spec.whatwg.org/multipage/",
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "repository": "https://github.com/whatwg/html",
@@ -15244,6 +15419,11 @@
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
+            },
+            {
+              "url": "https://wicg.github.io/badging/",
+              "title": "Badging API",
+              "crawled": "https://w3c.github.io/badging/"
             },
             {
               "url": "https://www.w3.org/TR/battery-status/",
@@ -15358,7 +15538,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -15918,7 +16098,7 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/"
+              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -17391,7 +17571,7 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/"
+              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/"
             }
           ],
           "informative": [
@@ -17772,7 +17952,7 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/"
+              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/"
             },
             {
               "url": "https://w3c.github.io/web-nfc/",
@@ -20320,7 +20500,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/fill-stroke-3/",
@@ -20618,10 +20798,20 @@
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://w3c.github.io/web-animations/",
+          "https://www.w3.org/TR/css-cascade/",
+          "https://www.w3.org/TR/web-animations/",
           "https://www.w3.org/TR/css3-animations/",
           "https://www.w3.org/TR/security-privacy-questionnaire/"
         ],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -20746,11 +20936,6 @@
               "url": "https://w3c.github.io/ServiceWorker/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
-            },
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/"
             },
             {
               "url": "https://www.w3.org/TR/webauthn-2/",
@@ -21003,7 +21188,7 @@
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/2019/CR-css-display-3-20190711/"
+              "crawled": "https://www.w3.org/TR/2020/CR-css-display-3-20200519/"
             },
             {
               "url": "https://www.w3.org/TR/css-content-3/",
@@ -21262,7 +21447,7 @@
     },
     {
       "title": "Storage Standard",
-      "date": "15 May 2020",
+      "date": "20 May 2020",
       "url": "https://storage.spec.whatwg.org/",
       "crawled": "https://storage.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/storage",
@@ -21659,7 +21844,7 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/"
+              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/"
             }
           ],
           "informative": []
@@ -22085,7 +22270,7 @@
     },
     {
       "title": "URL Standard",
-      "date": "14 May 2020",
+      "date": "18 May 2020",
       "url": "https://url.spec.whatwg.org/",
       "crawled": "https://url.spec.whatwg.org/",
       "repository": "https://github.com/whatwg/url",
@@ -22270,7 +22455,7 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/"
+              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/"
             },
             {
               "url": "https://www.w3.org/TR/webauthn-2/",
@@ -22580,13 +22765,13 @@
     {
       "title": "Web App Manifest",
       "shortname": "appmanifest",
-      "date": "30 March 2020",
+      "date": "25 May 2020",
       "url": "https://www.w3.org/TR/appmanifest/",
       "latest": "https://www.w3.org/TR/appmanifest/",
-      "datedUrl": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/",
+      "datedUrl": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/",
       "datedStatus": "Working Draft",
       "edDraft": "https://w3c.github.io/manifest/",
-      "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/",
+      "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/",
       "repository": "https://github.com/w3c/manifest",
       "report": {
         "noNormativeRefs": false,
@@ -22605,6 +22790,11 @@
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
+            },
+            {
+              "url": "https://wicg.github.io/badging/",
+              "title": "Badging API",
+              "crawled": "https://w3c.github.io/badging/"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -22952,7 +23142,7 @@
     },
     {
       "title": "Web Locks API",
-      "date": "27 April 2020",
+      "date": "21 May 2020",
       "url": "https://wicg.github.io/web-locks/",
       "crawled": "https://wicg.github.io/web-locks/",
       "repository": "https://github.com/wicg/web-locks",
@@ -23032,7 +23222,7 @@
     },
     {
       "title": "Web NFC",
-      "date": "04 May 2020",
+      "date": "19 May 2020",
       "url": "https://w3c.github.io/web-nfc/",
       "crawled": "https://w3c.github.io/web-nfc/",
       "repository": "https://github.com/w3c/web-nfc",
@@ -23545,6 +23735,11 @@
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
+            },
+            {
+              "url": "https://wicg.github.io/badging/",
+              "title": "Badging API",
+              "crawled": "https://w3c.github.io/badging/"
             },
             {
               "url": "https://www.w3.org/TR/battery-status/",
@@ -24124,7 +24319,7 @@
             {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
-              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/"
+              "crawled": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -24473,7 +24668,7 @@
     },
     {
       "title": "WebUSB API",
-      "date": "16 May 2020",
+      "date": "24 May 2020",
       "url": "https://wicg.github.io/webusb/",
       "crawled": "https://wicg.github.io/webusb/",
       "repository": "https://github.com/wicg/webusb",
