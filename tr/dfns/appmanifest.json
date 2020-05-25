@@ -1,17 +1,32 @@
 {
   "spec": {
     "title": "Web App Manifest",
-    "url": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/"
+    "url": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/"
   },
   "dfns": [
     {
-      "id": "dfn-installing",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-installing",
+      "id": "dfn-installed",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-installed",
       "linkingText": [
-        "installing",
         "installed",
-        "installation",
-        "install"
+        "install",
+        "installing",
+        "installation"
+      ],
+      "localLinkingText": [
+        "installing",
+        "installation"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-installed-web-application",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-installed-web-application",
+      "linkingText": [
+        "installed web application"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -21,7 +36,7 @@
     },
     {
       "id": "dfn-installable",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-installable",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-installable",
       "linkingText": [
         "installable"
       ],
@@ -33,7 +48,7 @@
     },
     {
       "id": "dfn-steps-to-determine-installability-of-the-document",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-steps-to-determine-installability-of-the-document",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-steps-to-determine-installability-of-the-document",
       "linkingText": [
         "steps to determine\n        installability of the document"
       ],
@@ -45,7 +60,7 @@
     },
     {
       "id": "dfn-authoritative",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-authoritative",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-authoritative",
       "linkingText": [
         "authoritative"
       ],
@@ -57,7 +72,7 @@
     },
     {
       "id": "dfn-application-s-name",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-application-s-name",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-application-s-name",
       "linkingText": [
         "application's name"
       ],
@@ -68,83 +83,8 @@
       "informative": false
     },
     {
-      "id": "dfn-steps-to-install-the-web-application",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-steps-to-install-the-web-application",
-      "linkingText": [
-        "steps to install the web application"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-manual-installation",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-manual-installation",
-      "linkingText": [
-        "manual installation",
-        "manually"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-automated-install-prompt",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-automated-install-prompt",
-      "linkingText": [
-        "automated\n          install prompt"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-site-triggered-install-prompt",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-site-triggered-install-prompt",
-      "linkingText": [
-        "site-triggered\n          install prompt"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-presenting-an-install-prompt",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-presenting-an-install-prompt",
-      "linkingText": [
-        "presenting an install prompt",
-        "presentation of the install prompt",
-        "present an install prompt"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-steps-to-notify-that-an-install-prompt-is-available",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-steps-to-notify-that-an-install-prompt-is-available",
-      "linkingText": [
-        "steps to notify that an install prompt is available"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "dfn-installability-signal",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-installability-signal",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-installability-signal",
       "linkingText": [
         "installability signal"
       ],
@@ -155,252 +95,20 @@
       "informative": true
     },
     {
-      "id": "dfn-application-life-cycle-task-source",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-application-life-cycle-task-source",
-      "linkingText": [
-        "application\n        life-cycle task source"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dom-beforeinstallpromptevent",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-beforeinstallpromptevent",
-      "linkingText": [
-        "BeforeInstallPromptEvent"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-beforeinstallpromptevent-constructor",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-beforeinstallpromptevent-constructor",
-      "linkingText": [
-        "constructor()",
-        "constructor(type)",
-        "constructor(type, eventInitDict)"
-      ],
-      "localLinkingText": [
-        "BeforeInstallPromptEvent.constructor",
-        "BeforeInstallPromptEvent.constructor()",
-        "constructor"
-      ],
-      "type": "constructor",
-      "for": [
-        "BeforeInstallPromptEvent"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-promptresponseobject",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-promptresponseobject",
-      "linkingText": [
-        "PromptResponseObject"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-promptresponseobject-userchoice",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-promptresponseobject-userchoice",
-      "linkingText": [
-        "userChoice"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PromptResponseObject"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dfn-didprompt",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-didprompt",
-      "linkingText": [
-        "[[didPrompt]]"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-userresponsepromise",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-userresponsepromise",
-      "linkingText": [
-        "[[userResponsePromise]]"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dom-beforeinstallpromptevent-prompt",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-beforeinstallpromptevent-prompt",
-      "linkingText": [
-        "prompt()"
-      ],
-      "localLinkingText": [
-        "BeforeInstallPromptEvent.prompt",
-        "BeforeInstallPromptEvent.prompt()",
-        "prompt"
-      ],
-      "type": "method",
-      "for": [
-        "BeforeInstallPromptEvent"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dfn-request-to-present-an-install-prompt",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-request-to-present-an-install-prompt",
-      "linkingText": [
-        "request to present an install prompt"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dom-appbannerpromptoutcome",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-appbannerpromptoutcome",
-      "linkingText": [
-        "AppBannerPromptOutcome"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-appbannerpromptoutcome-accepted",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-appbannerpromptoutcome-accepted",
-      "linkingText": [
-        "accepted"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "AppBannerPromptOutcome"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-appbannerpromptoutcome-dismissed",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-appbannerpromptoutcome-dismissed",
-      "linkingText": [
-        "dismissed"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "AppBannerPromptOutcome"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-window",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-window",
-      "linkingText": [
-        "Window"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dom-window-onappinstalled",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-window-onappinstalled",
-      "linkingText": [
-        "onappinstalled"
-      ],
-      "localLinkingText": [
-        "Window.onappinstalled"
-      ],
-      "type": "attribute",
-      "for": [
-        "Window"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dfn-appinstalled",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-appinstalled",
-      "linkingText": [
-        "appinstalled"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dom-window-onbeforeinstallprompt",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-window-onbeforeinstallprompt",
-      "linkingText": [
-        "onbeforeinstallprompt"
-      ],
-      "localLinkingText": [
-        "Window.onbeforeinstallprompt"
-      ],
-      "type": "attribute",
-      "for": [
-        "Window"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dfn-beforeinstallprompt",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-beforeinstallprompt",
-      "linkingText": [
-        "beforeinstallprompt"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "dfn-navigation-scope",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-navigation-scope",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-navigation-scope",
       "linkingText": [
         "navigation scope"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
       "id": "dfn-within-scope",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-within-scope",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-within-scope",
       "linkingText": [
         "within scope"
       ],
@@ -412,7 +120,7 @@
     },
     {
       "id": "dfn-within-scope-manifest",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-within-scope-manifest",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-within-scope-manifest",
       "linkingText": [
         "within-scope-manifest",
         "within scope of a manifest"
@@ -425,7 +133,7 @@
     },
     {
       "id": "dfn-deep-link",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-deep-link",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-deep-link",
       "linkingText": [
         "deep link"
       ],
@@ -437,7 +145,7 @@
     },
     {
       "id": "dfn-display-mode",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-display-mode",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-display-mode",
       "linkingText": [
         "display mode"
       ],
@@ -449,7 +157,7 @@
     },
     {
       "id": "dfn-default-display-mode",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-default-display-mode",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-default-display-mode",
       "linkingText": [
         "default display\n        mode"
       ],
@@ -461,7 +169,7 @@
     },
     {
       "id": "dfn-fallback-display-mode",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-fallback-display-mode",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-fallback-display-mode",
       "linkingText": [
         "fallback display mode"
       ],
@@ -473,7 +181,7 @@
     },
     {
       "id": "dfn-display-modes-values",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-display-modes-values",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-display-modes-values",
       "linkingText": [
         "display modes values"
       ],
@@ -485,7 +193,7 @@
     },
     {
       "id": "dom-displaymodetype",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-displaymodetype",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-displaymodetype",
       "linkingText": [
         "DisplayModeType"
       ],
@@ -497,7 +205,7 @@
     },
     {
       "id": "dom-displaymodetype-fullscreen",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-displaymodetype-fullscreen",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-displaymodetype-fullscreen",
       "linkingText": [
         "fullscreen"
       ],
@@ -511,7 +219,7 @@
     },
     {
       "id": "dom-displaymodetype-standalone",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-displaymodetype-standalone",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-displaymodetype-standalone",
       "linkingText": [
         "standalone"
       ],
@@ -525,7 +233,7 @@
     },
     {
       "id": "dom-displaymodetype-minimal-ui",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-displaymodetype-minimal-ui",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-displaymodetype-minimal-ui",
       "linkingText": [
         "minimal-ui"
       ],
@@ -539,7 +247,7 @@
     },
     {
       "id": "dom-displaymodetype-browser",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-displaymodetype-browser",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-displaymodetype-browser",
       "linkingText": [
         "browser"
       ],
@@ -553,7 +261,7 @@
     },
     {
       "id": "dfn-display-mode-0",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-display-mode-0",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-display-mode-0",
       "linkingText": [
         "display-mode"
       ],
@@ -565,7 +273,7 @@
     },
     {
       "id": "dfn-associated-with-a-manifest",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-associated-with-a-manifest",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-associated-with-a-manifest",
       "linkingText": [
         "associated with a manifest"
       ],
@@ -577,7 +285,7 @@
     },
     {
       "id": "dfn-obtaining-the-manifest",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-obtaining-the-manifest",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-obtaining-the-manifest",
       "linkingText": [
         "obtaining the manifest",
         "obtaining a manifest",
@@ -591,7 +299,7 @@
     },
     {
       "id": "dfn-issue-a-developer-warning",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-issue-a-developer-warning",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-issue-a-developer-warning",
       "linkingText": [
         "issue a developer warning"
       ],
@@ -603,7 +311,7 @@
     },
     {
       "id": "dfn-ignore",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-ignore",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-ignore",
       "linkingText": [
         "ignore"
       ],
@@ -615,7 +323,7 @@
     },
     {
       "id": "dfn-extension-point",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-extension-point",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-extension-point",
       "linkingText": [
         "extension point"
       ],
@@ -627,7 +335,7 @@
     },
     {
       "id": "dfn-processing-a-manifest",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-processing-a-manifest",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-processing-a-manifest",
       "linkingText": [
         "processing a manifest"
       ],
@@ -639,7 +347,7 @@
     },
     {
       "id": "dfn-processed-manifest",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-processed-manifest",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-processed-manifest",
       "linkingText": [
         "processed manifest"
       ],
@@ -651,7 +359,7 @@
     },
     {
       "id": "dfn-apply",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-apply",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-apply",
       "linkingText": [
         "apply",
         "applying",
@@ -665,7 +373,7 @@
     },
     {
       "id": "dfn-application-context",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-application-context",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-application-context",
       "linkingText": [
         "application context"
       ],
@@ -677,7 +385,7 @@
     },
     {
       "id": "dom-webappmanifest",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest",
       "linkingText": [
         "WebAppManifest"
       ],
@@ -689,7 +397,7 @@
     },
     {
       "id": "dfn-manifest",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-manifest",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-manifest",
       "linkingText": [
         "manifest"
       ],
@@ -701,7 +409,7 @@
     },
     {
       "id": "dfn-manifest-url",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-manifest-url",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-manifest-url",
       "linkingText": [
         "manifest URL"
       ],
@@ -713,7 +421,7 @@
     },
     {
       "id": "dom-webappmanifest-dir",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-dir",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-dir",
       "linkingText": [
         "dir"
       ],
@@ -727,7 +435,7 @@
     },
     {
       "id": "dfn-base-direction",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-base-direction",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-base-direction",
       "linkingText": [
         "base direction"
       ],
@@ -739,7 +447,7 @@
     },
     {
       "id": "dfn-directionality-capable-members",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-directionality-capable-members",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-directionality-capable-members",
       "linkingText": [
         "directionality-capable members"
       ],
@@ -751,7 +459,7 @@
     },
     {
       "id": "dfn-text-direction-value",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-text-direction-value",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-text-direction-value",
       "linkingText": [
         "text-direction value",
         "text-direction values"
@@ -764,7 +472,7 @@
     },
     {
       "id": "dom-textdirectiontype",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-textdirectiontype",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-textdirectiontype",
       "linkingText": [
         "TextDirectionType"
       ],
@@ -776,7 +484,7 @@
     },
     {
       "id": "dom-textdirectiontype-ltr",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-textdirectiontype-ltr",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-textdirectiontype-ltr",
       "linkingText": [
         "ltr"
       ],
@@ -790,7 +498,7 @@
     },
     {
       "id": "dom-textdirectiontype-rtl",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-textdirectiontype-rtl",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-textdirectiontype-rtl",
       "linkingText": [
         "rtl"
       ],
@@ -804,7 +512,7 @@
     },
     {
       "id": "dom-textdirectiontype-auto",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-textdirectiontype-auto",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-textdirectiontype-auto",
       "linkingText": [
         "auto"
       ],
@@ -818,7 +526,7 @@
     },
     {
       "id": "dom-webappmanifest-lang",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-lang",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-lang",
       "linkingText": [
         "lang"
       ],
@@ -832,7 +540,7 @@
     },
     {
       "id": "dfn-language-tag",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-language-tag",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-language-tag",
       "linkingText": [
         "language tag"
       ],
@@ -844,7 +552,7 @@
     },
     {
       "id": "dfn-subtags",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-subtags",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-subtags",
       "linkingText": [
         "subtags"
       ],
@@ -856,7 +564,7 @@
     },
     {
       "id": "dfn-processing-the-lang-member",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-processing-the-lang-member",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-processing-the-lang-member",
       "linkingText": [
         "processing the lang member"
       ],
@@ -868,7 +576,7 @@
     },
     {
       "id": "dom-webappmanifest-name",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-name",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-name",
       "linkingText": [
         "name"
       ],
@@ -882,7 +590,7 @@
     },
     {
       "id": "dom-webappmanifest-short_name",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-short_name",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-short_name",
       "linkingText": [
         "short_name"
       ],
@@ -896,7 +604,7 @@
     },
     {
       "id": "dom-webappmanifest-description",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-description",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-description",
       "linkingText": [
         "description"
       ],
@@ -910,7 +618,7 @@
     },
     {
       "id": "dom-webappmanifest-scope",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-scope",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-scope",
       "linkingText": [
         "scope"
       ],
@@ -924,7 +632,7 @@
     },
     {
       "id": "dfn-processing-the-scope-member",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-processing-the-scope-member",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-processing-the-scope-member",
       "linkingText": [
         "processing the scope member"
       ],
@@ -936,7 +644,7 @@
     },
     {
       "id": "dom-webappmanifest-icons",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-icons",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-icons",
       "linkingText": [
         "icons"
       ],
@@ -950,7 +658,7 @@
     },
     {
       "id": "dom-webappmanifest-display",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-display",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-display",
       "linkingText": [
         "display"
       ],
@@ -964,7 +672,7 @@
     },
     {
       "id": "dom-webappmanifest-orientation",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-orientation",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-orientation",
       "linkingText": [
         "orientation"
       ],
@@ -978,7 +686,7 @@
     },
     {
       "id": "dfn-cannot-be-used-together",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-cannot-be-used-together",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-cannot-be-used-together",
       "linkingText": [
         "cannot be used\n          together"
       ],
@@ -990,7 +698,7 @@
     },
     {
       "id": "dom-webappmanifest-start_url",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-start_url",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-start_url",
       "linkingText": [
         "start_url"
       ],
@@ -1004,7 +712,7 @@
     },
     {
       "id": "dfn-start-url",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-start-url",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-start-url",
       "linkingText": [
         "start URL"
       ],
@@ -1016,7 +724,7 @@
     },
     {
       "id": "dfn-processing-the-start_url-member",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-processing-the-start_url-member",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-processing-the-start_url-member",
       "linkingText": [
         "processing the start_url member"
       ],
@@ -1028,7 +736,7 @@
     },
     {
       "id": "dom-webappmanifest-theme_color",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-theme_color",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-theme_color",
       "linkingText": [
         "theme_color"
       ],
@@ -1042,7 +750,7 @@
     },
     {
       "id": "dfn-default-theme-color",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-default-theme-color",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-default-theme-color",
       "linkingText": [
         "default theme\n          color"
       ],
@@ -1054,7 +762,7 @@
     },
     {
       "id": "dfn-theme-color",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-theme-color",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-theme-color",
       "linkingText": [
         "theme\n          color"
       ],
@@ -1066,7 +774,7 @@
     },
     {
       "id": "dfn-processing-the-theme_color-member",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-processing-the-theme_color-member",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-processing-the-theme_color-member",
       "linkingText": [
         "processing the theme_color\n          member"
       ],
@@ -1078,7 +786,7 @@
     },
     {
       "id": "dfn-related-application",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-related-application",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-related-application",
       "linkingText": [
         "related application"
       ],
@@ -1090,7 +798,7 @@
     },
     {
       "id": "dom-webappmanifest-related_applications",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-related_applications",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-related_applications",
       "linkingText": [
         "related_applications"
       ],
@@ -1104,7 +812,7 @@
     },
     {
       "id": "dfn-processing-the-related_applications-member",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-processing-the-related_applications-member",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-processing-the-related_applications-member",
       "linkingText": [
         "processing the related_applications\n          member"
       ],
@@ -1116,7 +824,7 @@
     },
     {
       "id": "dom-webappmanifest-prefer_related_applications",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-prefer_related_applications",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-prefer_related_applications",
       "linkingText": [
         "prefer_related_applications"
       ],
@@ -1130,7 +838,7 @@
     },
     {
       "id": "dom-webappmanifest-background_color",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-background_color",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-background_color",
       "linkingText": [
         "background_color"
       ],
@@ -1144,7 +852,7 @@
     },
     {
       "id": "dfn-processing-the-background_color-member",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-processing-the-background_color-member",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-processing-the-background_color-member",
       "linkingText": [
         "processing the background_color\n          member"
       ],
@@ -1156,7 +864,7 @@
     },
     {
       "id": "dom-webappmanifest-categories",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-categories",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-categories",
       "linkingText": [
         "categories"
       ],
@@ -1170,7 +878,7 @@
     },
     {
       "id": "dfn-processing-the-categories-member",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-processing-the-categories-member",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-processing-the-categories-member",
       "linkingText": [
         "processing the categories\n          member"
       ],
@@ -1182,7 +890,7 @@
     },
     {
       "id": "dfn-usvstring",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-usvstring",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-usvstring",
       "linkingText": [
         "USVString"
       ],
@@ -1194,7 +902,7 @@
     },
     {
       "id": "dom-webappmanifest-screenshots",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-screenshots",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-screenshots",
       "linkingText": [
         "screenshots"
       ],
@@ -1208,7 +916,7 @@
     },
     {
       "id": "dom-webappmanifest-iarc_rating_id",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-iarc_rating_id",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-iarc_rating_id",
       "linkingText": [
         "iarc_rating_id"
       ],
@@ -1222,7 +930,7 @@
     },
     {
       "id": "dom-webappmanifest-shortcuts",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-webappmanifest-shortcuts",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-webappmanifest-shortcuts",
       "linkingText": [
         "shortcuts"
       ],
@@ -1236,7 +944,7 @@
     },
     {
       "id": "dfn-processing-the-shortcuts-member",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-processing-the-shortcuts-member",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-processing-the-shortcuts-member",
       "linkingText": [
         "processing the shortcuts member"
       ],
@@ -1248,7 +956,7 @@
     },
     {
       "id": "dom-imageresource",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-imageresource",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-imageresource",
       "linkingText": [
         "ImageResource"
       ],
@@ -1260,7 +968,7 @@
     },
     {
       "id": "dfn-steps-to-fetch-an-image-resource",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-steps-to-fetch-an-image-resource",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-steps-to-fetch-an-image-resource",
       "linkingText": [
         "steps to fetch an image\n          resource"
       ],
@@ -1272,7 +980,7 @@
     },
     {
       "id": "dom-imageresource-purpose",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-imageresource-purpose",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-imageresource-purpose",
       "linkingText": [
         "purpose"
       ],
@@ -1286,7 +994,7 @@
     },
     {
       "id": "dfn-icon",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-icon",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-icon",
       "linkingText": [
         "icon"
       ],
@@ -1298,7 +1006,7 @@
     },
     {
       "id": "dfn-icon-purposes",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-icon-purposes",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-icon-purposes",
       "linkingText": [
         "icon purposes"
       ],
@@ -1310,7 +1018,7 @@
     },
     {
       "id": "dfn-badge-purpose",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-badge-purpose",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-badge-purpose",
       "linkingText": [
         "badge purpose",
         "badge"
@@ -1323,7 +1031,7 @@
     },
     {
       "id": "dfn-badge-maskable",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-badge-maskable",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-badge-maskable",
       "linkingText": [
         "badge maskable",
         "maskable"
@@ -1336,7 +1044,7 @@
     },
     {
       "id": "dfn-any-purpose",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-any-purpose",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-any-purpose",
       "linkingText": [
         "any purpose",
         "any"
@@ -1349,7 +1057,7 @@
     },
     {
       "id": "dfn-processing-the-purpose-member-of-an-image",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-processing-the-purpose-member-of-an-image",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-processing-the-purpose-member-of-an-image",
       "linkingText": [
         "processing the purpose member of an image"
       ],
@@ -1361,7 +1069,7 @@
     },
     {
       "id": "dfn-safe-zone",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-safe-zone",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-safe-zone",
       "linkingText": [
         "safe zone"
       ],
@@ -1373,7 +1081,7 @@
     },
     {
       "id": "dom-imageresource-sizes",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-imageresource-sizes",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-imageresource-sizes",
       "linkingText": [
         "sizes"
       ],
@@ -1387,7 +1095,7 @@
     },
     {
       "id": "dfn-processing-the-sizes-member-of-an-image",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-processing-the-sizes-member-of-an-image",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-processing-the-sizes-member-of-an-image",
       "linkingText": [
         "processing the sizes member of an\n          image"
       ],
@@ -1399,7 +1107,7 @@
     },
     {
       "id": "dom-imageresource-src",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-imageresource-src",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-imageresource-src",
       "linkingText": [
         "src"
       ],
@@ -1413,7 +1121,7 @@
     },
     {
       "id": "dom-imageresource-type",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-imageresource-type",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-imageresource-type",
       "linkingText": [
         "type"
       ],
@@ -1427,7 +1135,7 @@
     },
     {
       "id": "dfn-processing-the-type-member-of-an-image",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-processing-the-type-member-of-an-image",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-processing-the-type-member-of-an-image",
       "linkingText": [
         "processing the type member of an\n          image"
       ],
@@ -1439,7 +1147,7 @@
     },
     {
       "id": "dom-imageresource-platform",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-imageresource-platform",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-imageresource-platform",
       "linkingText": [
         "platform"
       ],
@@ -1453,7 +1161,7 @@
     },
     {
       "id": "dfn-processing-imageresource-members",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-processing-imageresource-members",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-processing-imageresource-members",
       "linkingText": [
         "processing ImageResource members"
       ],
@@ -1465,7 +1173,7 @@
     },
     {
       "id": "dom-shortcutitem",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-shortcutitem",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-shortcutitem",
       "linkingText": [
         "ShortcutItem"
       ],
@@ -1477,7 +1185,7 @@
     },
     {
       "id": "dom-shortcutitem-name",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-shortcutitem-name",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-shortcutitem-name",
       "linkingText": [
         "name"
       ],
@@ -1491,7 +1199,7 @@
     },
     {
       "id": "dom-shortcutitem-short_name",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-shortcutitem-short_name",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-shortcutitem-short_name",
       "linkingText": [
         "short_name"
       ],
@@ -1505,7 +1213,7 @@
     },
     {
       "id": "dom-shortcutitem-description",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-shortcutitem-description",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-shortcutitem-description",
       "linkingText": [
         "description"
       ],
@@ -1519,7 +1227,7 @@
     },
     {
       "id": "dom-shortcutitem-url",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-shortcutitem-url",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-shortcutitem-url",
       "linkingText": [
         "url"
       ],
@@ -1533,7 +1241,7 @@
     },
     {
       "id": "dom-shortcutitem-icons",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-shortcutitem-icons",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-shortcutitem-icons",
       "linkingText": [
         "icons"
       ],
@@ -1547,7 +1255,7 @@
     },
     {
       "id": "dfn-launching-a-shortcut",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-launching-a-shortcut",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-launching-a-shortcut",
       "linkingText": [
         "Launching a shortcut"
       ],
@@ -1559,7 +1267,7 @@
     },
     {
       "id": "dom-externalapplicationresource-platform",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-externalapplicationresource-platform",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-externalapplicationresource-platform",
       "linkingText": [
         "platform"
       ],
@@ -1573,7 +1281,7 @@
     },
     {
       "id": "dom-externalapplicationresource",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-externalapplicationresource",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-externalapplicationresource",
       "linkingText": [
         "ExternalApplicationResource"
       ],
@@ -1585,7 +1293,7 @@
     },
     {
       "id": "dom-externalapplicationresource-url",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-externalapplicationresource-url",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-externalapplicationresource-url",
       "linkingText": [
         "url"
       ],
@@ -1599,7 +1307,7 @@
     },
     {
       "id": "dfn-processing-the-url-member-of-an-application",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-processing-the-url-member-of-an-application",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-processing-the-url-member-of-an-application",
       "linkingText": [
         "processing the url member of an\n          application"
       ],
@@ -1611,7 +1319,7 @@
     },
     {
       "id": "dom-externalapplicationresource-id",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-externalapplicationresource-id",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-externalapplicationresource-id",
       "linkingText": [
         "id"
       ],
@@ -1625,7 +1333,7 @@
     },
     {
       "id": "dom-externalapplicationresource-min_version",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-externalapplicationresource-min_version",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-externalapplicationresource-min_version",
       "linkingText": [
         "min_version"
       ],
@@ -1639,7 +1347,7 @@
     },
     {
       "id": "dom-externalapplicationresource-fingerprints",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-externalapplicationresource-fingerprints",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-externalapplicationresource-fingerprints",
       "linkingText": [
         "fingerprints"
       ],
@@ -1653,7 +1361,7 @@
     },
     {
       "id": "dom-fingerprint",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-fingerprint",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-fingerprint",
       "linkingText": [
         "Fingerprint"
       ],
@@ -1665,7 +1373,7 @@
     },
     {
       "id": "dom-fingerprint-type",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-fingerprint-type",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-fingerprint-type",
       "linkingText": [
         "type"
       ],
@@ -1679,7 +1387,7 @@
     },
     {
       "id": "dom-fingerprint-value",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dom-fingerprint-value",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dom-fingerprint-value",
       "linkingText": [
         "value"
       ],
@@ -1693,7 +1401,7 @@
     },
     {
       "id": "dfn-mime-type-for-a-manifest",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-mime-type-for-a-manifest",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-mime-type-for-a-manifest",
       "linkingText": [
         "MIME type for a manifest"
       ],
@@ -1705,7 +1413,7 @@
     },
     {
       "id": "dfn-user-agent",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-user-agent",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-user-agent",
       "linkingText": [
         "user agent"
       ],
@@ -1717,7 +1425,7 @@
     },
     {
       "id": "dfn-object",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-object",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-object",
       "linkingText": [
         "object"
       ],
@@ -1729,7 +1437,7 @@
     },
     {
       "id": "dfn-array",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-array",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-array",
       "linkingText": [
         "array"
       ],
@@ -1741,7 +1449,7 @@
     },
     {
       "id": "dfn-number",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-number",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-number",
       "linkingText": [
         "number"
       ],
@@ -1753,7 +1461,7 @@
     },
     {
       "id": "dfn-string",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-string",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-string",
       "linkingText": [
         "string"
       ],
@@ -1764,32 +1472,8 @@
       "informative": false
     },
     {
-      "id": "dfn-manifest-src",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-manifest-src",
-      "linkingText": [
-        "manifest-src"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-default-src",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-default-src",
-      "linkingText": [
-        "default-src"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "dfn-parse-a-component-value",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-parse-a-component-value",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-parse-a-component-value",
       "linkingText": [
         "parse a\n              component value"
       ],
@@ -1800,35 +1484,8 @@
       "informative": false
     },
     {
-      "id": "dfn-event-interface",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-event-interface",
-      "linkingText": [
-        "Event\n              interface"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-fire",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-fire",
-      "linkingText": [
-        "fire",
-        "fired",
-        "firing",
-        "Fire an event"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "dfn-isstructurallyvalidlanguagetag",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-isstructurallyvalidlanguagetag",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-isstructurallyvalidlanguagetag",
       "linkingText": [
         "IsStructurallyValidLanguageTag"
       ],
@@ -1840,7 +1497,7 @@
     },
     {
       "id": "dfn-canonicalizelanguagetag",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-canonicalizelanguagetag",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-canonicalizelanguagetag",
       "linkingText": [
         "CanonicalizeLanguageTag"
       ],
@@ -1852,7 +1509,7 @@
     },
     {
       "id": "dfn-type",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-type",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-type",
       "linkingText": [
         "Type"
       ],
@@ -1863,20 +1520,8 @@
       "informative": false
     },
     {
-      "id": "dfn-completely-loaded",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-completely-loaded",
-      "linkingText": [
-        "completely\n              loaded"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "dfn-unordered-set-of-unique-space-separated-tokens",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-unordered-set-of-unique-space-separated-tokens",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-unordered-set-of-unique-space-separated-tokens",
       "linkingText": [
         "unordered\n              set of unique space-separated tokens"
       ],
@@ -1887,23 +1532,8 @@
       "informative": false
     },
     {
-      "id": "dfn-navigated",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-navigated",
-      "linkingText": [
-        "navigated",
-        "navigate",
-        "navigation",
-        "navigate algorithm"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "dfn-link-type",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-link-type",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-link-type",
       "linkingText": [
         "link type"
       ],
@@ -1915,7 +1545,7 @@
     },
     {
       "id": "dfn-delay-the-load-event",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-delay-the-load-event",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-delay-the-load-event",
       "linkingText": [
         "delay the load\n              event"
       ],
@@ -1926,20 +1556,8 @@
       "informative": false
     },
     {
-      "id": "dfn-any-link-size",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-any-link-size",
-      "linkingText": [
-        "any link\n              size"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "dfn-valid-non-negative-integer",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-valid-non-negative-integer",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-valid-non-negative-integer",
       "linkingText": [
         "valid\n              non-negative integer"
       ],
@@ -1951,7 +1569,7 @@
     },
     {
       "id": "dfn-determining-the-type-of-the-resource",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-determining-the-type-of-the-resource",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-determining-the-type-of-the-resource",
       "linkingText": [
         "determining\n              the type of the resource"
       ],
@@ -1963,109 +1581,9 @@
     },
     {
       "id": "dfn-the-element-s-base-url",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-the-element-s-base-url",
+      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200525/#dfn-the-element-s-base-url",
       "linkingText": [
         "the element's\n              base URL"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-queue-a-post-load-task",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-queue-a-post-load-task",
-      "linkingText": [
-        "queue a post-load\n              task"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-contains",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-contains",
-      "linkingText": [
-        "contains"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-continue",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-continue",
-      "linkingText": [
-        "continue"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-default-orientation",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-default-orientation",
-      "linkingText": [
-        "default\n              orientation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-orientationlocktype",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-orientationlocktype",
-      "linkingText": [
-        "OrientationLockType"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-is-origin-potentially-trustworthy",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-is-origin-potentially-trustworthy",
-      "linkingText": [
-        "Is\n              origin potentially trustworthy"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-parse",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-parse",
-      "linkingText": [
-        "parse",
-        "parsing",
-        "URL parsing",
-        "URL parser"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-to-idl-dictionary-value",
-      "href": "https://www.w3.org/TR/2020/WD-appmanifest-20200330/#dfn-to-idl-dictionary-value",
-      "linkingText": [
-        "to idl dictionary value",
-        "converted to IDL dictionary value"
       ],
       "localLinkingText": [],
       "type": "dfn",

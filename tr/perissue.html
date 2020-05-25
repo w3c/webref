@@ -21,14 +21,6 @@
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>275 specifications were crawled in this report.</p>
-  <section id="specifications-that-could-not-be-rendered" class="level2">
-  <h2>Specifications that could not be rendered</h2>
-  <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
-  <ul>
-  <li><a href="https://wicg.github.io/badging/">Badging API</a>: <code>Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined at __puppeteer_evaluation_script__:4:37 at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:93:19) at process._tickCallback (internal/process/next_tick.js:68:7)   -- ASYNC -- at ExecutionContext.&lt;anonymous&gt; (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19) at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:88:24) at process._tickCallback (internal/process/next_tick.js:68:7)   -- ASYNC -- at Frame.&lt;anonymous&gt; (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19) at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:548:47) at Page.&lt;anonymous&gt; (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:83:27) at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:302:36) at process._tickCallback (internal/process/next_tick.js:68:7)</code></li>
-  </ul>
-  <p>=&gt; 1 specification found</p>
-  </section>
   <section id="specifications-that-do-not-link-to-an-editors-draft" class="level2">
   <h2>Specifications that do not link to an Editor's Draft</h2>
   <p>=&gt; 0 specification found</p>
@@ -310,7 +302,14 @@
   <li><a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://drafts.csswg.org/css-animations-2/">CSS Animations Level 2</a> links to <a href="https://www.w3.org/TR/css3-animations/"><code>https://www.w3.org/TR/css3-animations/</code></a> but does not list it in its references</li>
+  <li><a href="https://drafts.csswg.org/css-animations-2/">CSS Animations Level 2</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/css3-animations/"><code>https://www.w3.org/TR/css3-animations/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-pseudo/"><code>https://www.w3.org/TR/css-pseudo/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/">CSS Backgrounds and Borders Module Level 3</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-break/"><code>https://www.w3.org/TR/css3-break/</code></a> but does not list it in its references</li>
@@ -327,6 +326,10 @@
   <li><a href="https://drafts.csswg.org/css-backgrounds-4/">CSS Backgrounds and Borders Module Level 4</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-pseudo/"><code>https://www.w3.org/TR/css-pseudo/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-transitions/"><code>https://www.w3.org/TR/css3-transitions/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/2018/REC-css-ui-3-20180621/">CSS Basic User Interface Module Level 3 (CSS3 UI)</a> links to:
@@ -375,7 +378,12 @@
   <li><a href="https://www.w3.org/TR/css-tables/"><code>https://www.w3.org/TR/css-tables/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-logical-1/"><code>https://www.w3.org/TR/css-logical-1/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://drafts.csswg.org/css-sizing-4/">CSS Box Sizing Module Level 4</a> links to <a href="https://www.w3.org/TR/css3-align/"><code>https://www.w3.org/TR/css3-align/</code></a> but does not list it in its references</li>
+  <li><a href="https://drafts.csswg.org/css-sizing-4/">CSS Box Sizing Module Level 4</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-align/"><code>https://www.w3.org/TR/css3-align/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/">CSS Cascading and Inheritance Level 3</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-mediaqueries/"><code>https://www.w3.org/TR/css3-mediaqueries/</code></a> but does not list it in its references</li>
@@ -447,14 +455,16 @@
   <li><a href="https://www.w3.org/TR/mediaqueries-4/"><code>https://www.w3.org/TR/mediaqueries-4/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/"><code>https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/2019/CR-css-display-3-20190711/">CSS Display Module Level 3</a> links to:
+  <li><a href="https://www.w3.org/TR/2020/CR-css-display-3-20200519/">CSS Display Module Level 3</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/selectors4/"><code>https://www.w3.org/TR/selectors4/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-break/"><code>https://www.w3.org/TR/css3-break/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-writing-modes-3/"><code>https://www.w3.org/TR/css-writing-modes-3/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-multicol-1/"><code>https://www.w3.org/TR/css-multicol-1/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-speech/"><code>https://www.w3.org/TR/css3-speech/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-pseudo/"><code>https://www.w3.org/TR/css-pseudo/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-align/"><code>https://www.w3.org/TR/css3-align/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/svg2/"><code>https://www.w3.org/TR/svg2/</code></a> but does not list it in its references</li>
@@ -537,6 +547,11 @@
   <li><a href="https://www.w3.org/TR/2013/WD-css3-page-20130314/"><code>https://www.w3.org/TR/2013/WD-css3-page-20130314/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2013/WD-css-syntax-3-20131105/"><code>https://www.w3.org/TR/2013/WD-css-syntax-3-20131105/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2013/CR-css3-values-20130730/"><code>https://www.w3.org/TR/2013/CR-css3-values-20130730/</code></a> but does not list it in its references</li>
+  </ul></li>
+  <li><a href="https://drafts.csswg.org/css-gcpm-4/">CSS Generated Content for Paged Media Module Level 4</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/2019/WD-css-content-3-20190802/">CSS Generated Content Module Level 3</a> links to:
   <ul>
@@ -660,6 +675,12 @@
   <li><a href="https://www.w3.org/TR/2011/REC-css3-color-20110607"><code>https://www.w3.org/TR/2011/REC-css3-color-20110607</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2013/WD-filter-effects-20130523/"><code>https://www.w3.org/TR/2013/WD-filter-effects-20130523/</code></a> but does not list it in its references</li>
   </ul></li>
+  <li><a href="https://drafts.csswg.org/css-size-adjust-1/">CSS Mobile Text Size Adjustment Module Level 1</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-pseudo/"><code>https://www.w3.org/TR/css-pseudo/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/">CSS Multi-column Layout Module Level 1</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
@@ -669,7 +690,12 @@
   <li><a href="https://www.w3.org/TR/css3-break/"><code>https://www.w3.org/TR/css3-break/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2011/CR-css3-multicol-20110412/"><code>https://www.w3.org/TR/2011/CR-css3-multicol-20110412/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://drafts.csswg.org/css-multicol-2/">CSS Multi-column Layout Module Level 2</a> links to <a href="https://www.w3.org/TR/css3-multicol/"><code>https://www.w3.org/TR/css3-multicol/</code></a> but does not list it in its references</li>
+  <li><a href="https://drafts.csswg.org/css-multicol-2/">CSS Multi-column Layout Module Level 2</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/css3-multicol/"><code>https://www.w3.org/TR/css3-multicol/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="http://www.w3.org/TR/2014/REC-css-namespaces-3-20140320/">CSS Namespaces Module Level 3</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/selectors4/"><code>https://www.w3.org/TR/selectors4/</code></a> but does not list it in its references</li>
@@ -731,7 +757,14 @@
   <li><a href="https://www.w3.org/TR/css4-images/"><code>https://www.w3.org/TR/css4-images/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="http://www.w3.org/TR/2016/WD-css-position-3-20160517/">CSS Positioned Layout Module Level 3</a> links to <a href="https://www.w3.org/TR/2015/WD-css3-positioning-20150203/"><code>https://www.w3.org/TR/2015/WD-css3-positioning-20150203/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2020/WD-css-position-3-20200519/">CSS Positioned Layout Module Level 3</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-page/"><code>https://www.w3.org/TR/css3-page/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-align/"><code>https://www.w3.org/TR/css3-align/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://www.w3.org/TR/2019/WD-css-properties-values-api-1-20191025/">CSS Properties and Values API Level 1</a> links to <a href="https://www.w3.org/TR/css3-color/"><code>https://www.w3.org/TR/css3-color/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/">CSS Pseudo-Elements Module Level 4</a> links to:
   <ul>
@@ -816,7 +849,12 @@
   <li><a href="https://www.w3.org/TR/2013/WD-css3-exclusions-20130528/"><code>https://www.w3.org/TR/2013/WD-css3-exclusions-20130528/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2013/WD-css3-transitions-20130212/"><code>https://www.w3.org/TR/2013/WD-css3-transitions-20130212/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://drafts.csswg.org/css-shapes-2/">CSS Shapes Module Level 2</a> links to <a href="https://www.w3.org/TR/css-shapes/"><code>https://www.w3.org/TR/css-shapes/</code></a> but does not list it in its references</li>
+  <li><a href="https://drafts.csswg.org/css-shapes-2/">CSS Shapes Module Level 2</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/css-shapes/"><code>https://www.w3.org/TR/css-shapes/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://www.w3.org/TR/2019/WD-css-nav-1-20191126/">CSS Spatial Navigation Level 1</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/webappsec-feature-policy/"><code>https://w3c.github.io/webappsec-feature-policy/</code></a> but does not list it in its references</li>
@@ -989,7 +1027,13 @@
   <li><a href="https://fetch.spec.whatwg.org/"><code>https://fetch.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2012/WD-filter-effects-20121025/"><code>https://www.w3.org/TR/2012/WD-filter-effects-20121025/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://drafts.fxtf.org/filter-effects-2/">Filter Effects Module Level 2</a> links to <a href="https://www.w3.org/TR/compositing-1/"><code>https://www.w3.org/TR/compositing-1/</code></a> but does not list it in its references</li>
+  <li><a href="https://drafts.fxtf.org/filter-effects-2/">Filter Effects Module Level 2</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/compositing-1/"><code>https://www.w3.org/TR/compositing-1/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a> links to <a href="https://w3c.github.io/screen-orientation/"><code>https://w3c.github.io/screen-orientation/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/gamepad/extensions.html">Gamepad Extensions</a> links to <a href="https://w3c.github.io/gamepad/"><code>https://w3c.github.io/gamepad/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2019/CR-gyroscope-20191212/">Gyroscope</a> links to <a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a> but does not list it in its references</li>
@@ -1127,6 +1171,8 @@
   <li><a href="https://drafts.csswg.org/scroll-animations-1/">Scroll-linked Animations</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/web-animations/"><code>https://w3c.github.io/web-animations/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-animations/"><code>https://www.w3.org/TR/css3-animations/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/security-privacy-questionnaire/"><code>https://www.w3.org/TR/security-privacy-questionnaire/</code></a> but does not list it in its references</li>
   </ul></li>
@@ -1248,7 +1294,7 @@
   <li><a href="https://www.w3.org/TR/2019/WD-webxr-gamepads-module-1-20191010/">WebXR Gamepads Module - Level 1</a> links to <a href="https://www.w3.org/TR/webxr/"><code>https://www.w3.org/TR/webxr/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 671 missing references for links found in 164 specifications</p>
+  <p>=&gt; 701 missing references for links found in 166 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -1315,6 +1361,7 @@
   <li><a href="https://www.w3.org/TR/2018/REC-css-ui-3-20180621/">CSS Basic User Interface Module Level 3 (CSS3 UI)</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2020/WD-css-ui-4-20200124/">CSS Basic User Interface Module Level 4</a> links to <a href="https://www.w3.org/TR/css3-images/"><code>https://www.w3.org/TR/css3-images/</code></a> but related reference &quot;CSS-IMAGES-3&quot; uses URL <a href="https://www.w3.org/TR/css-images-3/"><code>https://www.w3.org/TR/css-images-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2020/WD-css-align-3-20200421/">CSS Box Alignment Module Level 3</a> links to <a href="https://www.w3.org/TR/css3-writing-modes/"><code>https://www.w3.org/TR/css3-writing-modes/</code></a> but related reference &quot;CSS-WRITING-MODES-3&quot; uses URL <a href="https://www.w3.org/TR/css-writing-modes-3/"><code>https://www.w3.org/TR/css-writing-modes-3/</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-sizing-4/">CSS Box Sizing Module Level 4</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2018/CR-css-cascade-3-20180828/">CSS Cascading and Inheritance Level 3</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
@@ -1344,6 +1391,7 @@
   <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES&quot; uses URL <a href="http://www.w3.org/TR/css-values/"><code>http://www.w3.org/TR/css-values/</code></a></li>
   </ul></li>
   <li><a href="http://www.w3.org/TR/2016/WD-css-device-adapt-1-20160329/">CSS Device Adaptation Module Level 1</a> links to <a href="https://www.w3.org/TR/cssom-1/"><code>https://www.w3.org/TR/cssom-1/</code></a> but related reference &quot;CSSOM-1&quot; uses URL <a href="https://drafts.csswg.org/cssom/"><code>https://drafts.csswg.org/cssom/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2020/CR-css-display-3-20200519/">CSS Display Module Level 3</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2019/CR-css-easing-1-20190430/">CSS Easing Functions Level 1</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS3VAL&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="http://www.w3.org/TR/2015/WD-css3-exclusions-20150115/">CSS Exclusions Module Level 1</a> links to:
   <ul>
@@ -1377,6 +1425,7 @@
   <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2011/REC-CSS2-20110607/"><code>https://www.w3.org/TR/2011/REC-CSS2-20110607/</code></a> but related reference &quot;CSS2&quot; uses URL <a href="https://www.w3.org/TR/CSS2/"><code>https://www.w3.org/TR/CSS2/</code></a></li>
   </ul></li>
+  <li><a href="https://drafts.csswg.org/css-gcpm-4/">CSS Generated Content for Paged Media Module Level 4</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2019/WD-css-content-3-20190802/">CSS Generated Content Module Level 3</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2017/CR-css-grid-1-20171214/">CSS Grid Layout Module Level 1</a> links to:
   <ul>
@@ -1394,7 +1443,9 @@
   <li><a href="https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/">CSS Intrinsic &amp; Extrinsic Sizing Module Level 3</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/">CSS Layout API Level 1</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2019/WD-css-lists-3-20190817/">CSS Lists Module Level 3</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-size-adjust-1/">CSS Mobile Text Size Adjustment Module Level 1</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/">CSS Multi-column Layout Module Level 1</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-multicol-2/">CSS Multi-column Layout Module Level 2</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="http://www.w3.org/TR/2016/WD-cssom-1-20160317/">CSS Object Model (CSSOM)</a> links to <a href="https://www.w3.org/TR/mediaqueries-4/"><code>https://www.w3.org/TR/mediaqueries-4/</code></a> but related reference &quot;MEDIAQUERIES-4&quot; uses URL <a href="http://www.w3.org/TR/2016/WD-mediaqueries-4-20160126/"><code>http://www.w3.org/TR/2016/WD-mediaqueries-4-20160126/</code></a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-overflow-3-20180731/">CSS Overflow Module Level 3</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/">CSS Overflow Module Level 4</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
@@ -1410,7 +1461,7 @@
   <li><a href="https://www.w3.org/TR/cssom-view/"><code>https://www.w3.org/TR/cssom-view/</code></a> but related reference &quot;CSSOM-VIEW-1&quot; uses URL <a href="https://www.w3.org/TR/cssom-view-1/"><code>https://www.w3.org/TR/cssom-view-1/</code></a></li>
   <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   </ul></li>
-  <li><a href="http://www.w3.org/TR/2016/WD-css-position-3-20160517/">CSS Positioned Layout Module Level 3</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS3VAL&quot; uses URL <a href="http://www.w3.org/TR/css-values/"><code>http://www.w3.org/TR/css-values/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2020/WD-css-position-3-20200519/">CSS Positioned Layout Module Level 3</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2019/WD-css-properties-values-api-1-20191025/">CSS Properties and Values API Level 1</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS3-VALUES&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="http://www.w3.org/TR/2014/WD-css-regions-1-20141009/">CSS Regions Module Level 1</a> links to:
   <ul>
@@ -1428,6 +1479,7 @@
   <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-scrollbars-1-20180925/">CSS Scrollbars Module Level 1</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-shapes-2/">CSS Shapes Module Level 2</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2019/WD-css-nav-1-20191126/">CSS Spatial Navigation Level 1</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a> but related reference &quot;UIEVENTS&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
@@ -1677,6 +1729,7 @@
   <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a> but related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/getusermedia.html"><code>https://w3c.github.io/mediacapture-main/getusermedia.html</code></a> but related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
   </ul></li>
+  <li><a href="https://drafts.csswg.org/scroll-animations-1/">Scroll-linked Animations</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2016/CR-secure-contexts-20160915/">Secure Contexts</a> links to <a href="https://w3c.github.io/webappsec-mixed-content/"><code>https://w3c.github.io/webappsec-mixed-content/</code></a> but related reference &quot;MIX&quot; uses URL <a href="https://www.w3.org/TR/mixed-content/"><code>https://www.w3.org/TR/mixed-content/</code></a></li>
   <li><a href="https://www.w3.org/TR/2020/WD-selection-api-20200226/">Selection API</a> links to <a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-selectors-4-20181121/">Selectors Level 4</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
@@ -1752,7 +1805,7 @@
   </ul></li>
   <li><a href="https://www.w3.org/TR/2019/WD-webxr-gamepads-module-1-20191010/">WebXR Gamepads Module - Level 1</a> links to <a href="https://w3c.github.io/gamepad/"><code>https://w3c.github.io/gamepad/</code></a> but related reference &quot;GAMEPAD&quot; uses URL <a href="https://www.w3.org/TR/gamepad/"><code>https://www.w3.org/TR/gamepad/</code></a></li>
   </ul>
-  <p>=&gt; 283 inconsistent references for links found in 141 specifications</p>
+  <p>=&gt; 290 inconsistent references for links found in 148 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>

@@ -1,27 +1,7 @@
 // GENERATED CONTENT - DO NOT EDIT
 // Content was automatically extracted by Reffy into reffy-reports
 // (https://github.com/tidoust/reffy-reports)
-// Source: Web App Manifest (https://www.w3.org/TR/2020/WD-appmanifest-20200330/)
-
-[Exposed=Window]
-interface BeforeInstallPromptEvent : Event {
-  constructor(DOMString type, optional EventInit eventInitDict = {});
-  Promise<PromptResponseObject> prompt();
-};
-
-dictionary PromptResponseObject {
-  AppBannerPromptOutcome userChoice;
-};
-
-enum AppBannerPromptOutcome {
-  "accepted",
-  "dismissed"
-};
-
-partial interface Window {
-  attribute EventHandler onappinstalled;
-  attribute EventHandler onbeforeinstallprompt;
-};
+// Source: Web App Manifest (https://www.w3.org/TR/2020/WD-appmanifest-20200525/)
 
 dictionary WebAppManifest {
    TextDirectionType dir = "auto";
