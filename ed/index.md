@@ -1397,6 +1397,7 @@ Informative references to this spec from:
 - Initial URL: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
 - Crawled URL: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
 - Crawled version: 17 May 2020
+- Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
 - Shortname: no shortname
 
 ### Potential issue(s) {.anomalies}
@@ -5648,14 +5649,13 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
+- [Web Share Target API](https://wicg.github.io/web-share-target/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-Informative references to this spec from:
-
-- [Web Share Target API](https://wicg.github.io/web-share-target/)
+No informative reference to this spec from other specs.
 
 
 ## Encrypted Media Extensions {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -5815,6 +5815,7 @@ Normative references to this spec from:
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Share Target API](https://wicg.github.io/web-share-target/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
@@ -5829,7 +5830,6 @@ Informative references to this spec from:
 - [Push API](https://w3c.github.io/push-api/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Web IDL](https://heycam.github.io/webidl/)
-- [Web Share Target API](https://wicg.github.io/web-share-target/)
 
 
 ## File and Directory Entries API {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -6172,7 +6172,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/geolocation-sensor/](https://wicg.github.io/geolocation-sensor/)
 - Crawled URL: [https://w3c.github.io/geolocation-sensor/](https://w3c.github.io/geolocation-sensor/)
-- Crawled version: 23 March 2020
+- Crawled version: 26 May 2020
 - Repository: [GitHub wicg/geolocation-sensor](https://github.com/wicg/geolocation-sensor)
 - Shortname: no shortname
 
@@ -6539,6 +6539,7 @@ Normative references to this spec from:
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Share API](https://w3c.github.io/web-share/)
+- [Web Share Target API](https://wicg.github.io/web-share-target/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
@@ -6585,7 +6586,6 @@ Informative references to this spec from:
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web Share Target API](https://wicg.github.io/web-share-target/)
 
 
 ## HTMLVideoElement.requestVideoFrameCallback() {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -8854,13 +8854,13 @@ Normative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
+- [Web Share Target API](https://wicg.github.io/web-share-target/)
 
 Informative references to this spec from:
 
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
-- [Web Share Target API](https://wicg.github.io/web-share-target/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 
 
@@ -9575,6 +9575,7 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Share API](https://w3c.github.io/web-share/)
+- [Web Share Target API](https://wicg.github.io/web-share-target/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebTransport](https://wicg.github.io/web-transport/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -9584,7 +9585,6 @@ Informative references to this spec from:
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
-- [Web Share Target API](https://wicg.github.io/web-share-target/)
 
 
 ## User Timing Level 3 {data-spec=true data-ok=true}
@@ -9732,13 +9732,13 @@ Normative references to this spec from:
 - [Badging API](https://w3c.github.io/badging/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
+- [Web Share Target API](https://wicg.github.io/web-share-target/)
 
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
-- [Web Share Target API](https://wicg.github.io/web-share-target/)
 
 
 ## Web Audio API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -10068,6 +10068,7 @@ Normative references to this spec from:
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Share API](https://w3c.github.io/web-share/)
+- [Web Share Target API](https://wicg.github.io/web-share-target/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
@@ -10087,7 +10088,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
-- [Web Share Target API](https://wicg.github.io/web-share-target/)
 
 
 ## Web Locks API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -10214,7 +10214,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Web Share Target API](https://wicg.github.io/web-share-target/)
 
 No informative reference to this spec from other specs.
 
@@ -10225,7 +10227,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/web-share-target/](https://wicg.github.io/web-share-target/)
 - Crawled URL: [https://wicg.github.io/web-share-target/](https://wicg.github.io/web-share-target/)
-- Crawled version: 27 September 2019
+- Crawled version: 26 May 2020
 - Repository: [GitHub wicg/web-share-target](https://github.com/wicg/web-share-target)
 - Shortname: no shortname
 
