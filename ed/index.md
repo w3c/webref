@@ -94,9 +94,9 @@ No informative reference to this spec from other specs.
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
-- Crawled URL: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
-- Crawled version: 27 May 2020
-- Editor's Draft: [https://rawgit.com/w3c/aria/master/](https://rawgit.com/w3c/aria/master/)
+- Crawled URL: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
+- Crawled version: 19 May 2020
+- Editor's Draft: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-wai-aria-1.2-20191218/)
 - Repository: [GitHub w3c/aria](https://github.com/w3c/aria)
@@ -105,7 +105,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
-     * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/)
      * [`https://w3c.github.io/aria-practices/`](https://w3c.github.io/aria-practices/)
      * [`https://w3c.github.io/core-aam/`](https://w3c.github.io/core-aam/)
      * [`https://w3c.github.io/accname/`](https://w3c.github.io/accname/)
@@ -122,6 +121,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Core Accessibility API Mappings 1.2](https://w3c.github.io/core-aam/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 No informative reference to this spec from other specs.
 
@@ -297,9 +297,9 @@ Informative references to this spec from:
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/CSS2/](https://www.w3.org/TR/CSS2/)
-- Crawled URL: [http://dev.w3.org/csswg/css2/](http://dev.w3.org/csswg/css2/)
+- Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
 - Crawled version: 03 May 2020
-- Editor's Draft: [http://dev.w3.org/csswg/css2/](http://dev.w3.org/csswg/css2/)
+- Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
 - Latest published version: [http://www.w3.org/TR/CSS2/](http://www.w3.org/TR/CSS2/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2011/REC-CSS2-20110607/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
@@ -315,7 +315,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Accessible Name and Description Computation 1.2](https://w3c.github.io/accname/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
@@ -396,25 +395,24 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
-- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
-- [Media Queries Level 3](http://dev.w3.org/csswg/css3-mediaqueries/)
+- [Media Queries Level 3](https://drafts.csswg.org/mediaqueries-3/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
-- [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Proposals for the future of CSS Paged Media](https://drafts.csswg.org/css-page-4/)
-- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebDriver](https://w3c.github.io/webdriver/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
 
-- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
+- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
@@ -798,7 +796,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Core Accessibility API Mappings 1.2 {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## Core Accessibility API Mappings 1.2 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -811,11 +809,12 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
-     * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/)
      * [`https://www.w3.org/TR/wai-aria-practices/`](https://www.w3.org/TR/wai-aria-practices/)
      * [`https://www.w3.org/TR/wai-aria-implementation/`](https://www.w3.org/TR/wai-aria-implementation/)
      * [`https://w3c.github.io/accname/`](https://w3c.github.io/accname/)
      * [`https://www.w3.org/TR/wai-aria-1.1/`](https://www.w3.org/TR/wai-aria-1.1/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/), related reference "WAI-ARIA-1.2" uses URL [`https://www.w3.org/TR/wai-aria-1.2/`](https://www.w3.org/TR/wai-aria-1.2/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1938,7 +1937,7 @@ Normative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
-- [CSS Shadow Parts](http://drafts.csswg.org/css-shadow-parts/)
+- [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -4083,9 +4082,9 @@ No informative reference to this spec from other specs.
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/css-shadow-parts-1/](https://www.w3.org/TR/css-shadow-parts-1/)
-- Crawled URL: [http://drafts.csswg.org/css-shadow-parts/](http://drafts.csswg.org/css-shadow-parts/)
+- Crawled URL: [https://drafts.csswg.org/css-shadow-parts/](https://drafts.csswg.org/css-shadow-parts/)
 - Crawled version: 15 October 2019
-- Editor's Draft: [http://drafts.csswg.org/css-shadow-parts/](http://drafts.csswg.org/css-shadow-parts/)
+- Editor's Draft: [https://drafts.csswg.org/css-shadow-parts/](https://drafts.csswg.org/css-shadow-parts/)
 - Latest published version: [https://www.w3.org/TR/css-shadow-parts-1/](https://www.w3.org/TR/css-shadow-parts-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2018/WD-css-shadow-parts-1-20181115/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
@@ -5030,7 +5029,7 @@ Normative references to this spec from:
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars/)
-- [CSS Shadow Parts](http://drafts.csswg.org/css-shadow-parts/)
+- [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
@@ -5415,7 +5414,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Badging API](https://w3c.github.io/badging/)
 - [Battery Status API](https://w3c.github.io/battery/)
@@ -5443,7 +5442,7 @@ Normative references to this spec from:
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
-- [CSS Shadow Parts](http://drafts.csswg.org/css-shadow-parts/)
+- [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
@@ -5521,7 +5520,7 @@ Normative references to this spec from:
 - [Web Cryptography API](http://w3c.github.io/webcrypto/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web Locks API](https://wicg.github.io/web-locks/)
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+- [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
@@ -5541,7 +5540,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Accessible Name and Description Computation 1.2](https://w3c.github.io/accname/)
-- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
+- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
@@ -6248,7 +6247,7 @@ Normative references to this spec from:
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+- [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebTransport](https://wicg.github.io/web-transport/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
@@ -6309,7 +6308,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Badging API](https://w3c.github.io/badging/)
@@ -6474,7 +6473,7 @@ Normative references to this spec from:
 - [Web Cryptography API](http://w3c.github.io/webcrypto/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web Locks API](https://wicg.github.io/web-locks/)
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+- [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Share API](https://w3c.github.io/web-share/)
@@ -7066,9 +7065,9 @@ Informative references to this spec from:
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/css3-mediaqueries/](https://www.w3.org/TR/css3-mediaqueries/)
-- Crawled URL: [http://dev.w3.org/csswg/css3-mediaqueries/](http://dev.w3.org/csswg/css3-mediaqueries/)
+- Crawled URL: [https://drafts.csswg.org/mediaqueries-3/](https://drafts.csswg.org/mediaqueries-3/)
 - Crawled version: 13 April 2012
-- Editor's Draft: [http://dev.w3.org/csswg/css3-mediaqueries/](http://dev.w3.org/csswg/css3-mediaqueries/)
+- Editor's Draft: [https://drafts.csswg.org/mediaqueries-3/](https://drafts.csswg.org/mediaqueries-3/)
 - Latest published version: [http://www.w3.org/TR/css3-mediaqueries/](http://www.w3.org/TR/css3-mediaqueries/)
 - Latest published status: [Recommendation](http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
 - Repository: [GitHub w3c/csswg-drafts](https://github.com/w3c/csswg-drafts)
@@ -7089,7 +7088,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
+- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
 
 
@@ -8619,7 +8618,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
@@ -8659,7 +8658,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](http://dev.w3.org/csswg/css2/)
+- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
@@ -8886,7 +8885,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
@@ -8951,7 +8950,7 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
-- [CSS Shadow Parts](http://drafts.csswg.org/css-shadow-parts/)
+- [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
@@ -9446,7 +9445,7 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
@@ -9739,7 +9738,7 @@ Normative references to this spec from:
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+- [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 
 Informative references to this spec from:
 
@@ -9891,7 +9890,7 @@ Normative references to this spec from:
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Accelerometer](https://w3c.github.io/accelerometer/)
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://rawgit.com/w3c/aria/master/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
@@ -9925,7 +9924,7 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
-- [CSS Shadow Parts](http://drafts.csswg.org/css-shadow-parts/)
+- [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
@@ -10034,7 +10033,7 @@ Normative references to this spec from:
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](http://w3c.github.io/webcrypto/)
 - [Web Locks API](https://wicg.github.io/web-locks/)
-- [Web MIDI API](http://webaudio.github.io/web-midi-api/)
+- [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Share API](https://w3c.github.io/web-share/)
@@ -10090,9 +10089,9 @@ No informative reference to this spec from other specs.
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/webmidi/](https://www.w3.org/TR/webmidi/)
-- Crawled URL: [http://webaudio.github.io/web-midi-api/](http://webaudio.github.io/web-midi-api/)
+- Crawled URL: [https://webaudio.github.io/web-midi-api/](https://webaudio.github.io/web-midi-api/)
 - Crawled version: 16 September 2019
-- Editor's Draft: [http://webaudio.github.io/web-midi-api/](http://webaudio.github.io/web-midi-api/)
+- Editor's Draft: [https://webaudio.github.io/web-midi-api/](https://webaudio.github.io/web-midi-api/)
 - Latest published version: [http://www.w3.org/TR/webmidi/](http://www.w3.org/TR/webmidi/)
 - Latest published status: [Working Draft](http://www.w3.org/TR/2015/WD-webmidi-20150317/)
 - Repository: [GitHub webaudio/web-midi-api](https://github.com/webaudio/web-midi-api)
@@ -10418,7 +10417,7 @@ Normative references to this spec from:
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Scalable Video Coding (SVC) Extension for WebRTC](https://w3c.github.io/webrtc-svc/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [WebRTC DSCP Control API](http://w3c.github.io/webrtc-priority/)
+- [WebRTC DSCP Control API](https://w3c.github.io/webrtc-priority/)
 - [WebTransport](https://wicg.github.io/web-transport/)
 
 Informative references to this spec from:
@@ -10433,9 +10432,9 @@ Informative references to this spec from:
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/webrtc-priority/](https://www.w3.org/TR/webrtc-priority/)
-- Crawled URL: [http://w3c.github.io/webrtc-priority/](http://w3c.github.io/webrtc-priority/)
+- Crawled URL: [https://w3c.github.io/webrtc-priority/](https://w3c.github.io/webrtc-priority/)
 - Crawled version: 12 February 2020
-- Editor's Draft: [http://w3c.github.io/webrtc-priority/](http://w3c.github.io/webrtc-priority/)
+- Editor's Draft: [https://w3c.github.io/webrtc-priority/](https://w3c.github.io/webrtc-priority/)
 - Latest published version: [https://www.w3.org/TR/webrtc-priority/](https://www.w3.org/TR/webrtc-priority/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-webrtc-priority-20200123/)
 - Repository: [GitHub w3c/webrtc-priority](https://github.com/w3c/webrtc-priority)
