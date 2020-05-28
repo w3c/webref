@@ -1,0 +1,22 @@
+// GENERATED CONTENT - DO NOT EDIT
+// Content was automatically extracted by Reffy into reffy-reports
+// (https://github.com/tidoust/reffy-reports)
+// Source: CSS Custom Highlight API Module Level 1 (https://drafts.csswg.org/css-highlight-api-1/)
+
+[Exposed=Window]
+interface Highlight {
+  constructor(CSSOMString name, AbstractRange... initialRanges);
+  setlike<AbstractRange>;
+  attribute double priority;
+  readonly attribute CSSOMString name;
+};
+
+partial namespace CSS {
+  readonly attribute HighlightsRegister highlights;
+};
+
+[Exposed=Window]
+interface HighlightsRegister {
+  setlike<Highlight>;
+  HighlightsRegister add(Highlight value);
+};

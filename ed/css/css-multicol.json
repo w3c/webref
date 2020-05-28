@@ -1,17 +1,116 @@
 {
   "spec": {
-    "title": "CSS Multi-column Layout Module Level 2",
-    "url": "https://drafts.csswg.org/css-multicol-2/"
+    "title": "CSS Multi-column Layout Module Level 1",
+    "url": "https://drafts.csswg.org/css-multicol/"
   },
   "properties": {
+    "column-width": {
+      "name": "column-width",
+      "value": "auto | <length [0,∞]>",
+      "initial": "auto",
+      "appliesTo": "block containers except table wrapper boxes",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "the keyword auto or an absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type"
+    },
+    "column-count": {
+      "name": "column-count",
+      "value": "auto | <integer [1,∞]>",
+      "initial": "auto",
+      "appliesTo": "block containers except table wrapper boxes",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animatable": "by computed value"
+    },
+    "columns": {
+      "name": "columns",
+      "value": "<'column-width'> || <'column-count'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar"
+    },
+    "column-gap": {
+      "name": "column-gap",
+      "value": "<length-percentage [0,∞]> | normal",
+      "initial": "normal",
+      "appliesTo": "multicol containers",
+      "inherited": "no",
+      "percentages": "refer to the content width of the multi-column container",
+      "computedValue": "the keyword normal or a computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type"
+    },
+    "column-rule-color": {
+      "name": "column-rule-color",
+      "value": "<color>",
+      "initial": "currentcolor",
+      "appliesTo": "multicol containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "computed color",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type"
+    },
+    "column-rule-style": {
+      "name": "column-rule-style",
+      "value": "<line-style>",
+      "initial": "none",
+      "appliesTo": "multicol containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "column-rule-width": {
+      "name": "column-rule-width",
+      "value": "<line-width>",
+      "initial": "medium",
+      "appliesTo": "multicol containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "absolute length; 0 if the column rule style is none or hidden",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type"
+    },
+    "column-rule": {
+      "name": "column-rule",
+      "value": "<'column-rule-width'> || <'column-rule-style'> || <'column-rule-color'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar"
+    },
     "column-span": {
       "name": "column-span",
-      "value": "none | <integer [1,∞]> | all | auto",
+      "value": "none | all",
       "initial": "none",
       "appliesTo": "in-flow block-level elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "specified value",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "column-fill": {
+      "name": "column-fill",
+      "value": "auto | balance | balance-all",
+      "initial": "balance",
+      "appliesTo": "multicol containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     }

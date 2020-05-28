@@ -1,0 +1,55 @@
+// GENERATED CONTENT - DO NOT EDIT
+// Content was automatically extracted by Reffy into reffy-reports
+// (https://github.com/tidoust/reffy-reports)
+// Source: Serial API (https://wicg.github.io/serial/)
+
+[Exposed=Window, SecureContext]
+partial interface Navigator {
+  [SameObject] readonly attribute Serial serial;
+};
+
+[Exposed=DedicatedWorker, SecureContext]
+partial interface WorkerNavigator {
+  [SameObject] readonly attribute Serial serial;
+};
+
+[Exposed=(DedicatedWorker, Window), SecureContext]
+interface Serial : EventTarget {
+  attribute EventHandler onconnect;
+  attribute EventHandler ondisconnect;
+  Promise<sequence<SerialPort>> getPorts();
+  [Exposed=Window] Promise<SerialPort> requestPort(optional SerialOptions options = {});
+};
+
+[Exposed=(DedicatedWorker,Window), SecureContext]
+interface SerialPort {
+  Promise<void> open(optional SerialOptions options = {});
+  readonly attribute ReadableStream in;
+  readonly attribute WritableStream out;
+  SerialPortInfo getInfo();
+};
+
+[Exposed=(DedicatedWorker,Window), SecureContext]
+interface SerialPortInfo {
+  maplike<DOMString, DOMString?>;
+};
+
+dictionary SerialOptions {
+  long baudrate = 9600;
+  octet databits = 8;
+  octet stopbits = 1;
+  ParityType parity = "none";
+  long buffersize = 255;
+  boolean rtscts = false;
+  boolean xon = false;
+  boolean xoff = false;
+  boolean xany = false;
+};
+
+enum ParityType {
+  "none",
+  "even",
+  "odd",
+  "mark",
+  "space"
+};

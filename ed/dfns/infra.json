@@ -1,0 +1,1774 @@
+{
+  "spec": {
+    "title": "Infra Standard",
+    "url": "https://infra.spec.whatwg.org/"
+  },
+  "dfns": [
+    {
+      "id": "willful-violation",
+      "href": "https://infra.spec.whatwg.org/#willful-violation",
+      "linkingText": [
+        "willful violation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "user-agent",
+      "href": "https://infra.spec.whatwg.org/#user-agent",
+      "linkingText": [
+        "user agent",
+        "implementation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "implementation-defined",
+      "href": "https://infra.spec.whatwg.org/#implementation-defined",
+      "linkingText": [
+        "implementation-defined"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "tracking-vector",
+      "href": "https://infra.spec.whatwg.org/#tracking-vector",
+      "linkingText": [
+        "tracking vector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abort-when",
+      "href": "https://infra.spec.whatwg.org/#abort-when",
+      "linkingText": [
+        "abort when"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "if-aborted",
+      "href": "https://infra.spec.whatwg.org/#if-aborted",
+      "linkingText": [
+        "if aborted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iteration-while",
+      "href": "https://infra.spec.whatwg.org/#iteration-while",
+      "linkingText": [
+        "while"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "iteration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iteration-continue",
+      "href": "https://infra.spec.whatwg.org/#iteration-continue",
+      "linkingText": [
+        "continue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "iteration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "iteration-break",
+      "href": "https://infra.spec.whatwg.org/#iteration-break",
+      "linkingText": [
+        "break"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "iteration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "assert",
+      "href": "https://infra.spec.whatwg.org/#assert",
+      "linkingText": [
+        "Assert"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "boolean",
+      "href": "https://infra.spec.whatwg.org/#boolean",
+      "linkingText": [
+        "boolean"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "byte",
+      "href": "https://infra.spec.whatwg.org/#byte",
+      "linkingText": [
+        "byte"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "byte-value",
+      "href": "https://infra.spec.whatwg.org/#byte-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "byte"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-byte",
+      "href": "https://infra.spec.whatwg.org/#ascii-byte",
+      "linkingText": [
+        "ASCII byte"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "byte-sequence",
+      "href": "https://infra.spec.whatwg.org/#byte-sequence",
+      "linkingText": [
+        "byte sequence"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "byte-sequence-length",
+      "href": "https://infra.spec.whatwg.org/#byte-sequence-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "byte sequence"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "byte-lowercase",
+      "href": "https://infra.spec.whatwg.org/#byte-lowercase",
+      "linkingText": [
+        "byte-lowercase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "byte-uppercase",
+      "href": "https://infra.spec.whatwg.org/#byte-uppercase",
+      "linkingText": [
+        "byte-uppercase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "byte-case-insensitive",
+      "href": "https://infra.spec.whatwg.org/#byte-case-insensitive",
+      "linkingText": [
+        "byte-case-insensitive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "byte-sequence-starts-with",
+      "href": "https://infra.spec.whatwg.org/#byte-sequence-starts-with",
+      "linkingText": [
+        "starts with"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "byte sequence"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "byte-less-than",
+      "href": "https://infra.spec.whatwg.org/#byte-less-than",
+      "linkingText": [
+        "byte less than"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "isomorphic-decode",
+      "href": "https://infra.spec.whatwg.org/#isomorphic-decode",
+      "linkingText": [
+        "isomorphic decode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "code-point",
+      "href": "https://infra.spec.whatwg.org/#code-point",
+      "linkingText": [
+        "code point",
+        "character"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "code-point-value",
+      "href": "https://infra.spec.whatwg.org/#code-point-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "code point"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "surrogate",
+      "href": "https://infra.spec.whatwg.org/#surrogate",
+      "linkingText": [
+        "surrogate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scalar-value",
+      "href": "https://infra.spec.whatwg.org/#scalar-value",
+      "linkingText": [
+        "scalar value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "noncharacter",
+      "href": "https://infra.spec.whatwg.org/#noncharacter",
+      "linkingText": [
+        "noncharacter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-code-point",
+      "href": "https://infra.spec.whatwg.org/#ascii-code-point",
+      "linkingText": [
+        "ASCII code point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-tab-or-newline",
+      "href": "https://infra.spec.whatwg.org/#ascii-tab-or-newline",
+      "linkingText": [
+        "ASCII tab or newline",
+        "ASCII tabs or newlines"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-whitespace",
+      "href": "https://infra.spec.whatwg.org/#ascii-whitespace",
+      "linkingText": [
+        "ASCII whitespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "c0-control",
+      "href": "https://infra.spec.whatwg.org/#c0-control",
+      "linkingText": [
+        "C0 control"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "c0-control-or-space",
+      "href": "https://infra.spec.whatwg.org/#c0-control-or-space",
+      "linkingText": [
+        "C0 control or space",
+        "C0 controls or spaces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "control",
+      "href": "https://infra.spec.whatwg.org/#control",
+      "linkingText": [
+        "control"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-digit",
+      "href": "https://infra.spec.whatwg.org/#ascii-digit",
+      "linkingText": [
+        "ASCII digit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-upper-hex-digit",
+      "href": "https://infra.spec.whatwg.org/#ascii-upper-hex-digit",
+      "linkingText": [
+        "ASCII upper hex digit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-lower-hex-digit",
+      "href": "https://infra.spec.whatwg.org/#ascii-lower-hex-digit",
+      "linkingText": [
+        "ASCII lower hex digit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-hex-digit",
+      "href": "https://infra.spec.whatwg.org/#ascii-hex-digit",
+      "linkingText": [
+        "ASCII hex digit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-upper-alpha",
+      "href": "https://infra.spec.whatwg.org/#ascii-upper-alpha",
+      "linkingText": [
+        "ASCII upper alpha"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-lower-alpha",
+      "href": "https://infra.spec.whatwg.org/#ascii-lower-alpha",
+      "linkingText": [
+        "ASCII lower alpha"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-alpha",
+      "href": "https://infra.spec.whatwg.org/#ascii-alpha",
+      "linkingText": [
+        "ASCII alpha"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-alphanumeric",
+      "href": "https://infra.spec.whatwg.org/#ascii-alphanumeric",
+      "linkingText": [
+        "ASCII alphanumeric"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "string",
+      "href": "https://infra.spec.whatwg.org/#string",
+      "linkingText": [
+        "string",
+        "JavaScript string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "code-unit",
+      "href": "https://infra.spec.whatwg.org/#code-unit",
+      "linkingText": [
+        "code unit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "string-length",
+      "href": "https://infra.spec.whatwg.org/#string-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "string",
+        "JavaScript string",
+        "scalar value string"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "string-code-point-length",
+      "href": "https://infra.spec.whatwg.org/#string-code-point-length",
+      "linkingText": [
+        "code point length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "string",
+        "JavaScript string",
+        "scalar value string"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "scalar-value-string",
+      "href": "https://infra.spec.whatwg.org/#scalar-value-string",
+      "linkingText": [
+        "scalar value string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "javascript-string-convert",
+      "href": "https://infra.spec.whatwg.org/#javascript-string-convert",
+      "linkingText": [
+        "convert"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "string",
+        "JavaScript string"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "string-is",
+      "href": "https://infra.spec.whatwg.org/#string-is",
+      "linkingText": [
+        "is",
+        "identical to"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "string"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "code-unit-prefix",
+      "href": "https://infra.spec.whatwg.org/#code-unit-prefix",
+      "linkingText": [
+        "code unit prefix",
+        "starts with"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "code-unit-less-than",
+      "href": "https://infra.spec.whatwg.org/#code-unit-less-than",
+      "linkingText": [
+        "code unit less than"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "isomorphic-encode",
+      "href": "https://infra.spec.whatwg.org/#isomorphic-encode",
+      "linkingText": [
+        "isomorphic encode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-string",
+      "href": "https://infra.spec.whatwg.org/#ascii-string",
+      "linkingText": [
+        "ASCII string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-lowercase",
+      "href": "https://infra.spec.whatwg.org/#ascii-lowercase",
+      "linkingText": [
+        "ASCII lowercase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-uppercase",
+      "href": "https://infra.spec.whatwg.org/#ascii-uppercase",
+      "linkingText": [
+        "ASCII uppercase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-case-insensitive",
+      "href": "https://infra.spec.whatwg.org/#ascii-case-insensitive",
+      "linkingText": [
+        "ASCII case-insensitive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-encode",
+      "href": "https://infra.spec.whatwg.org/#ascii-encode",
+      "linkingText": [
+        "ASCII encode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ascii-decode",
+      "href": "https://infra.spec.whatwg.org/#ascii-decode",
+      "linkingText": [
+        "ASCII decode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "strip-newlines",
+      "href": "https://infra.spec.whatwg.org/#strip-newlines",
+      "linkingText": [
+        "strip newlines"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "normalize-newlines",
+      "href": "https://infra.spec.whatwg.org/#normalize-newlines",
+      "linkingText": [
+        "normalize newlines"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "strip-leading-and-trailing-ascii-whitespace",
+      "href": "https://infra.spec.whatwg.org/#strip-leading-and-trailing-ascii-whitespace",
+      "linkingText": [
+        "strip leading and trailing ASCII whitespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "strip-and-collapse-ascii-whitespace",
+      "href": "https://infra.spec.whatwg.org/#strip-and-collapse-ascii-whitespace",
+      "linkingText": [
+        "strip and collapse ASCII whitespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "collect-a-sequence-of-code-points",
+      "href": "https://infra.spec.whatwg.org/#collect-a-sequence-of-code-points",
+      "linkingText": [
+        "collect a sequence of code points",
+        "collecting a sequence of code\npoints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "string-position-variable",
+      "href": "https://infra.spec.whatwg.org/#string-position-variable",
+      "linkingText": [
+        "position variable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "string"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "skip-ascii-whitespace",
+      "href": "https://infra.spec.whatwg.org/#skip-ascii-whitespace",
+      "linkingText": [
+        "skip ASCII whitespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "strictly-split",
+      "href": "https://infra.spec.whatwg.org/#strictly-split",
+      "linkingText": [
+        "strictly split",
+        "strictly split a string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "split-on-ascii-whitespace",
+      "href": "https://infra.spec.whatwg.org/#split-on-ascii-whitespace",
+      "linkingText": [
+        "split on ASCII whitespace",
+        "split a string on ASCII whitespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "split-on-commas",
+      "href": "https://infra.spec.whatwg.org/#split-on-commas",
+      "linkingText": [
+        "split on commas",
+        "split a string on commas"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "string-concatenate",
+      "href": "https://infra.spec.whatwg.org/#string-concatenate",
+      "linkingText": [
+        "concatenate",
+        "concatenation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "string"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list",
+      "href": "https://infra.spec.whatwg.org/#list",
+      "linkingText": [
+        "list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-item",
+      "href": "https://infra.spec.whatwg.org/#list-item",
+      "linkingText": [
+        "item"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "list",
+        "stack",
+        "queue",
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-append",
+      "href": "https://infra.spec.whatwg.org/#list-append",
+      "linkingText": [
+        "append"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "list"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-extend",
+      "href": "https://infra.spec.whatwg.org/#list-extend",
+      "linkingText": [
+        "extend"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "list"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-prepend",
+      "href": "https://infra.spec.whatwg.org/#list-prepend",
+      "linkingText": [
+        "prepend"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "list"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-replace",
+      "href": "https://infra.spec.whatwg.org/#list-replace",
+      "linkingText": [
+        "replace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "list"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-insert",
+      "href": "https://infra.spec.whatwg.org/#list-insert",
+      "linkingText": [
+        "insert"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "list",
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-remove",
+      "href": "https://infra.spec.whatwg.org/#list-remove",
+      "linkingText": [
+        "remove"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "list",
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-empty",
+      "href": "https://infra.spec.whatwg.org/#list-empty",
+      "linkingText": [
+        "empty"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "list",
+        "stack",
+        "queue",
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-contain",
+      "href": "https://infra.spec.whatwg.org/#list-contain",
+      "linkingText": [
+        "contain",
+        "exist"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "list",
+        "stack",
+        "queue",
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-size",
+      "href": "https://infra.spec.whatwg.org/#list-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "list",
+        "stack",
+        "queue",
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-is-empty",
+      "href": "https://infra.spec.whatwg.org/#list-is-empty",
+      "linkingText": [
+        "is empty",
+        "is not empty"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "list",
+        "stack",
+        "queue",
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-iterate",
+      "href": "https://infra.spec.whatwg.org/#list-iterate",
+      "linkingText": [
+        "iterate",
+        "for each"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "list",
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-clone",
+      "href": "https://infra.spec.whatwg.org/#list-clone",
+      "linkingText": [
+        "clone"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "list",
+        "stack",
+        "queue",
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-sort-in-ascending-order",
+      "href": "https://infra.spec.whatwg.org/#list-sort-in-ascending-order",
+      "linkingText": [
+        "sort in ascending order",
+        "sorting in ascending order",
+        "sort",
+        "sorting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "list",
+        "stack",
+        "queue",
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "list-sort-in-descending-order",
+      "href": "https://infra.spec.whatwg.org/#list-sort-in-descending-order",
+      "linkingText": [
+        "sort in descending order",
+        "sorting in descending order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "list",
+        "stack",
+        "queue",
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stack",
+      "href": "https://infra.spec.whatwg.org/#stack",
+      "linkingText": [
+        "stack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stack-push",
+      "href": "https://infra.spec.whatwg.org/#stack-push",
+      "linkingText": [
+        "push"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stack"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "stack-pop",
+      "href": "https://infra.spec.whatwg.org/#stack-pop",
+      "linkingText": [
+        "pop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stack"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "queue",
+      "href": "https://infra.spec.whatwg.org/#queue",
+      "linkingText": [
+        "queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "queue-enqueue",
+      "href": "https://infra.spec.whatwg.org/#queue-enqueue",
+      "linkingText": [
+        "enqueue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "queue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "queue-dequeue",
+      "href": "https://infra.spec.whatwg.org/#queue-dequeue",
+      "linkingText": [
+        "dequeue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "queue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ordered-set",
+      "href": "https://infra.spec.whatwg.org/#ordered-set",
+      "linkingText": [
+        "ordered set",
+        "set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-append",
+      "href": "https://infra.spec.whatwg.org/#set-append",
+      "linkingText": [
+        "append"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-prepend",
+      "href": "https://infra.spec.whatwg.org/#set-prepend",
+      "linkingText": [
+        "prepend"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-replace",
+      "href": "https://infra.spec.whatwg.org/#set-replace",
+      "linkingText": [
+        "replace",
+        "replacing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-subset",
+      "href": "https://infra.spec.whatwg.org/#set-subset",
+      "linkingText": [
+        "subset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-superset",
+      "href": "https://infra.spec.whatwg.org/#set-superset",
+      "linkingText": [
+        "superset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-intersection",
+      "href": "https://infra.spec.whatwg.org/#set-intersection",
+      "linkingText": [
+        "intersection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "set-union",
+      "href": "https://infra.spec.whatwg.org/#set-union",
+      "linkingText": [
+        "union"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "set"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "the-range",
+      "href": "https://infra.spec.whatwg.org/#the-range",
+      "linkingText": [
+        "the range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ordered-map",
+      "href": "https://infra.spec.whatwg.org/#ordered-map",
+      "linkingText": [
+        "ordered map",
+        "map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "map-key",
+      "href": "https://infra.spec.whatwg.org/#map-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "map"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "map-value",
+      "href": "https://infra.spec.whatwg.org/#map-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "map"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "map-entry",
+      "href": "https://infra.spec.whatwg.org/#map-entry",
+      "linkingText": [
+        "entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "map"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "map-get",
+      "href": "https://infra.spec.whatwg.org/#map-get",
+      "linkingText": [
+        "get",
+        "get the value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "map"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "map-set",
+      "href": "https://infra.spec.whatwg.org/#map-set",
+      "linkingText": [
+        "set",
+        "set the value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "map"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "map-remove",
+      "href": "https://infra.spec.whatwg.org/#map-remove",
+      "linkingText": [
+        "remove"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "map"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "map-exists",
+      "href": "https://infra.spec.whatwg.org/#map-exists",
+      "linkingText": [
+        "exist",
+        "contain"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "map"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "map-getting-the-keys",
+      "href": "https://infra.spec.whatwg.org/#map-getting-the-keys",
+      "linkingText": [
+        "getting the keys",
+        "get the keys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "map"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "map-getting-the-values",
+      "href": "https://infra.spec.whatwg.org/#map-getting-the-values",
+      "linkingText": [
+        "getting the values",
+        "get the values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "map"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "map-size",
+      "href": "https://infra.spec.whatwg.org/#map-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "map"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "map-is-empty",
+      "href": "https://infra.spec.whatwg.org/#map-is-empty",
+      "linkingText": [
+        "is empty",
+        "is not empty"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "map"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "map-iterate",
+      "href": "https://infra.spec.whatwg.org/#map-iterate",
+      "linkingText": [
+        "iterate",
+        "for each"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "map"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "map-clone",
+      "href": "https://infra.spec.whatwg.org/#map-clone",
+      "linkingText": [
+        "clone"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "map"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "map-sort-in-ascending-order",
+      "href": "https://infra.spec.whatwg.org/#map-sort-in-ascending-order",
+      "linkingText": [
+        "sort in ascending order",
+        "sorting in ascending order",
+        "sort",
+        "sorting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "map"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "map-sort-in-descending-order",
+      "href": "https://infra.spec.whatwg.org/#map-sort-in-descending-order",
+      "linkingText": [
+        "sort in descending order",
+        "sorting in descending order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "map"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "struct",
+      "href": "https://infra.spec.whatwg.org/#struct",
+      "linkingText": [
+        "struct"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "struct-item",
+      "href": "https://infra.spec.whatwg.org/#struct-item",
+      "linkingText": [
+        "item"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "struct",
+        "tuple",
+        "pair"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "struct-name",
+      "href": "https://infra.spec.whatwg.org/#struct-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "struct",
+        "tuple",
+        "pair"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "tuple",
+      "href": "https://infra.spec.whatwg.org/#tuple",
+      "linkingText": [
+        "tuple"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "pair",
+      "href": "https://infra.spec.whatwg.org/#pair",
+      "linkingText": [
+        "pair"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-json-from-bytes",
+      "href": "https://infra.spec.whatwg.org/#parse-json-from-bytes",
+      "linkingText": [
+        "parse JSON from bytes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serialize-json-to-bytes",
+      "href": "https://infra.spec.whatwg.org/#serialize-json-to-bytes",
+      "linkingText": [
+        "serialize JSON to bytes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "parse-json-into-infra-values",
+      "href": "https://infra.spec.whatwg.org/#parse-json-into-infra-values",
+      "linkingText": [
+        "parse JSON into Infra values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "convert-a-json-derived-javascript-value-to-an-infra-value",
+      "href": "https://infra.spec.whatwg.org/#convert-a-json-derived-javascript-value-to-an-infra-value",
+      "linkingText": [
+        "convert a JSON-derived JavaScript value to an Infra value",
+        "converting a JSON-derived JavaScript value to an Infra value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "forgiving-base64-encode",
+      "href": "https://infra.spec.whatwg.org/#forgiving-base64-encode",
+      "linkingText": [
+        "forgiving-base64 encode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "forgiving-base64-decode",
+      "href": "https://infra.spec.whatwg.org/#forgiving-base64-decode",
+      "linkingText": [
+        "forgiving-base64 decode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "html-namespace",
+      "href": "https://infra.spec.whatwg.org/#html-namespace",
+      "linkingText": [
+        "HTML namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "mathml-namespace",
+      "href": "https://infra.spec.whatwg.org/#mathml-namespace",
+      "linkingText": [
+        "MathML namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "svg-namespace",
+      "href": "https://infra.spec.whatwg.org/#svg-namespace",
+      "linkingText": [
+        "SVG namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "xlink-namespace",
+      "href": "https://infra.spec.whatwg.org/#xlink-namespace",
+      "linkingText": [
+        "XLink namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "xml-namespace",
+      "href": "https://infra.spec.whatwg.org/#xml-namespace",
+      "linkingText": [
+        "XML namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "xmlns-namespace",
+      "href": "https://infra.spec.whatwg.org/#xmlns-namespace",
+      "linkingText": [
+        "XMLNS namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}
