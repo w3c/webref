@@ -1,6 +1,6 @@
 % Specifications that define CSS and WebIDL content
 % Reffy
-% May 27, 2020
+% May 28, 2020
 
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -1567,7 +1567,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-adjust-1/](https://www.w3.org/TR/css-color-adjust-1/)
 - Crawled URL: [https://drafts.csswg.org/css-color-adjust-1/](https://drafts.csswg.org/css-color-adjust-1/)
-- Crawled version: 19 May 2020
+- Crawled version: 27 May 2020
 - Editor's Draft: [https://drafts.csswg.org/css-color-adjust-1/](https://drafts.csswg.org/css-color-adjust-1/)
 - Latest published version: [https://www.w3.org/TR/css-color-adjust-1/](https://www.w3.org/TR/css-color-adjust-1/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2020/WD-css-color-adjust-1-20200402/)
@@ -1803,6 +1803,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
@@ -6079,7 +6080,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Crawled URL: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
-- Crawled version: 25 May 2020
+- Crawled version: 27 May 2020
 - Editor's Draft: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
 - Latest published version: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Latest published status: [Recommendation](https://www.w3.org/TR/2016/REC-geolocation-API-20161108/)
@@ -6745,7 +6746,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/keyboard-lock/](https://wicg.github.io/keyboard-lock/)
 - Crawled URL: [https://wicg.github.io/keyboard-lock/](https://wicg.github.io/keyboard-lock/)
-- Crawled version: 7 September 2018
+- Crawled version: 27 May 2020
 - Repository: [GitHub wicg/keyboard-lock](https://github.com/wicg/keyboard-lock)
 - Shortname: no shortname
 
@@ -9751,7 +9752,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
 - Crawled URL: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
-- Crawled version: 22 May 2020
+- Crawled version: 27 May 2020
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
 - Latest published status: [Working Draft](https://www.w3.org/TR/2019/WD-webauthn-2-20191126/)
