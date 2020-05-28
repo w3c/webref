@@ -1,63 +1,48 @@
 {
   "spec": {
-    "title": "CSS Overflow Module Level 4",
-    "url": "https://drafts.csswg.org/css-overflow-4/"
+    "title": "CSS Overflow Module Level 3",
+    "url": "https://drafts.csswg.org/css-overflow-3/"
   },
   "properties": {
-    "scrollbar-gutter": {
-      "name": "scrollbar-gutter",
-      "value": "auto | [ stable | always ] && both? && force?",
-      "initial": "auto",
-      "appliesTo": "all elements",
-      "inherited": "yes",
-      "percentages": "n/a",
-      "computedValue": "specified keyword(s)",
+    "overflow-x": {
+      "name": "overflow-x",
+      "value": "visible | hidden | clip | scroll | auto",
+      "initial": "visible",
+      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified, except with visible/clip computing to auto/hidden (respectively) if one of overflow-x or overflow-y is neither visible nor clip",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
-    "text-overflow": {
-      "name": "text-overflow",
-      "value": "[ clip | ellipsis | <string> | fade | <fade()> ]{1,2}",
-      "initial": "clip",
-      "appliesTo": "block containers",
-      "inherited": "no",
-      "percentages": "refer to the width of the line box",
-      "computedValue": "as specified, with lengths made absolute",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value type"
-    },
-    "continue": {
-      "name": "continue",
-      "value": "auto | overflow | paginate | fragments | discard",
-      "initial": "auto",
-      "appliesTo": "block containers [CSS21], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
+    "overflow-y": {
+      "name": "overflow-y",
+      "value": "visible | hidden | clip | scroll | auto",
+      "initial": "visible",
+      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "see below",
+      "computedValue": "as specified, except with visible/clip computing to auto/hidden (respectively) if one of overflow-x or overflow-y is neither visible nor clip",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
-    "max-lines": {
-      "name": "max-lines",
-      "value": "none | <integer>",
-      "initial": "none",
-      "appliesTo": "fragment boxes",
+    "overflow": {
+      "name": "overflow",
+      "value": "[ visible | hidden | clip | scroll | auto ]{1,2}",
+      "initial": "visible",
+      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "the keyword none or an integer",
-      "canonicalOrder": "per grammar",
-      "animatable": "as integer",
-      "animationType": "by computed value type"
-    }
-  },
-  "descriptors": {},
-  "valuespaces": {
-    "<fade()>": {
-      "value": "fade( <length> | <percentage> )"
-    }
-  }
-}
-inherited": "no",
+      "computedValue": "see individual properties",
+      "animationType": "discrete",
+      "canonicalOrder": "per grammar"
+    },
+    "overflow-inline": {
+      "name": "overflow-inline",
+      "value": "<'overflow'>",
+      "initial": "visible",
+      "appliesTo": "Same as overflow-x and overflow-y",
+      "inherited": "no",
       "percentages": "N/A",
       "computedValue": "Same as overflow-x and overflow-y",
       "canonicalOrder": "per grammar",

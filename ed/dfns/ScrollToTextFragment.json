@@ -1,0 +1,522 @@
+{
+  "spec": {
+    "title": "Text Fragments",
+    "url": "https://wicg.github.io/ScrollToTextFragment/"
+  },
+  "dfns": [
+    {
+      "id": "fragment-directive",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#fragment-directive",
+      "linkingText": [
+        "fragment directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fragment-directive-delimiter",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#fragment-directive-delimiter",
+      "linkingText": [
+        "fragment directive delimiter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parse-a-text-directive",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#parse-a-text-directive",
+      "linkingText": [
+        "parse a text directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parsedtextdirective",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#parsedtextdirective",
+      "linkingText": [
+        "ParsedTextDirective"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parsedtextdirective-textstart",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#parsedtextdirective-textstart",
+      "linkingText": [
+        "textStart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ParsedTextDirective"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parsedtextdirective-textend",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#parsedtextdirective-textend",
+      "linkingText": [
+        "textEnd"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ParsedTextDirective"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parsedtextdirective-prefix",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#parsedtextdirective-prefix",
+      "linkingText": [
+        "prefix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ParsedTextDirective"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parsedtextdirective-suffix",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#parsedtextdirective-suffix",
+      "linkingText": [
+        "suffix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ParsedTextDirective"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valid-fragment-directive",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#valid-fragment-directive",
+      "linkingText": [
+        "valid fragment directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fragmentdirectiveproduction",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#fragmentdirectiveproduction",
+      "linkingText": [
+        "FragmentDirective"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "unknowndirective",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#unknowndirective",
+      "linkingText": [
+        "UnknownDirective"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "characterstring",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#characterstring",
+      "linkingText": [
+        "CharacterString"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "explicitchar",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#explicitchar",
+      "linkingText": [
+        "ExplicitChar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "text-fragment-directive",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#text-fragment-directive",
+      "linkingText": [
+        "text fragment directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textdirective",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#textdirective",
+      "linkingText": [
+        "TextDirective"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textdirectiveparameters",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#textdirectiveparameters",
+      "linkingText": [
+        "TextDirectiveParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textdirectiveprefix",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#textdirectiveprefix",
+      "linkingText": [
+        "TextDirectivePrefix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textdirectivesuffix",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#textdirectivesuffix",
+      "linkingText": [
+        "TextDirectiveSuffix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textdirectivestring",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#textdirectivestring",
+      "linkingText": [
+        "TextDirectiveString"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textdirectiveexplicitchar",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#textdirectiveexplicitchar",
+      "linkingText": [
+        "TextDirectiveExplicitChar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "percentencodedchar",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#percentencodedchar",
+      "linkingText": [
+        "PercentEncodedChar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "should-allow-a-text-fragment",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#should-allow-a-text-fragment",
+      "linkingText": [
+        "should allow a text fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "allowtextfragmentdirective",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#allowtextfragmentdirective",
+      "linkingText": [
+        "allowTextFragmentDirective"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "first-common-ancestor",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#first-common-ancestor",
+      "linkingText": [
+        "first common ancestor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "shadow-including-parent",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#shadow-including-parent",
+      "linkingText": [
+        "shadow-including parent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "scroll-a-domrect-into-view",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#scroll-a-domrect-into-view",
+      "linkingText": [
+        "scroll a DOMRect into view"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "scroll-a-range-into-view",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#scroll-a-range-into-view",
+      "linkingText": [
+        "scroll a Range into view"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "process-a-fragment-directive",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#process-a-fragment-directive",
+      "linkingText": [
+        "process a fragment directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "find-a-range-from-a-text-directive",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#find-a-range-from-a-text-directive",
+      "linkingText": [
+        "find a range from a text directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "next-non-whitespace-position",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#next-non-whitespace-position",
+      "linkingText": [
+        "next non-whitespace position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "find-a-string-in-range",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#find-a-string-in-range",
+      "linkingText": [
+        "find a string in range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "search-invisible",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#search-invisible",
+      "linkingText": [
+        "search invisible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "non-searchable-subtree",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#non-searchable-subtree",
+      "linkingText": [
+        "non-searchable subtree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "visible-text-node",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#visible-text-node",
+      "linkingText": [
+        "visible text node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "has-block-level-display",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#has-block-level-display",
+      "linkingText": [
+        "has block-level display"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "nearest-block-ancestor",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#nearest-block-ancestor",
+      "linkingText": [
+        "nearest block ancestor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "find-a-range-from-a-node-list",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#find-a-range-from-a-node-list",
+      "linkingText": [
+        "find a range from a node list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "get-boundary-point-at-index",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#get-boundary-point-at-index",
+      "linkingText": [
+        "get boundary point at index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "word-bounded",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#word-bounded",
+      "linkingText": [
+        "word bounded"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fragmentdirective",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#fragmentdirective",
+      "linkingText": [
+        "FragmentDirective"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "location",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#location",
+      "linkingText": [
+        "Location"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-location-fragmentdirective",
+      "href": "https://wicg.github.io/ScrollToTextFragment/#dom-location-fragmentdirective",
+      "linkingText": [
+        "fragmentDirective"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Location"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

@@ -1,0 +1,1457 @@
+{
+  "spec": {
+    "title": "CSS Speech Module Level 1",
+    "url": "https://drafts.csswg.org/css-speech-1/"
+  },
+  "dfns": [
+    {
+      "id": "aural-box-model",
+      "href": "https://drafts.csswg.org/css-speech-1/#aural-box-model",
+      "linkingText": [
+        "aural box model"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-voice-volume",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-voice-volume",
+      "linkingText": [
+        "voice-volume"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-volume-silent",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-volume-silent",
+      "linkingText": [
+        "silent"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-volume"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-volume-x-soft",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-volume-x-soft",
+      "linkingText": [
+        "x-soft"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-volume"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-volume-soft",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-volume-soft",
+      "linkingText": [
+        "soft"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-volume"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-volume-medium",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-volume-medium",
+      "linkingText": [
+        "medium"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-volume"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-volume-loud",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-volume-loud",
+      "linkingText": [
+        "loud"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-volume"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-volume-x-loud",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-volume-x-loud",
+      "linkingText": [
+        "x-loud"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-volume"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-volume-decibel",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-volume-decibel",
+      "linkingText": [
+        "<decibel>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-volume"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-voice-volume-decibel",
+      "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-volume-decibel",
+      "linkingText": [
+        "<decibel>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "voice-volume"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-voice-balance",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-voice-balance",
+      "linkingText": [
+        "voice-balance"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-balance-number",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-balance-number",
+      "linkingText": [
+        "<number>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-balance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-balance-left",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-balance-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-balance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-balance-center",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-balance-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-balance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-balance-right",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-balance-right",
+      "linkingText": [
+        "right"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-balance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-balance-leftwards",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-balance-leftwards",
+      "linkingText": [
+        "leftwards"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-balance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-balance-rightwards",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-balance-rightwards",
+      "linkingText": [
+        "rightwards"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-balance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-speak",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-speak",
+      "linkingText": [
+        "speak"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-speak-auto",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-speak-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "speak"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-speak-never",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-speak-never",
+      "linkingText": [
+        "never"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "speak"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-speak-always",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-speak-always",
+      "linkingText": [
+        "always"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "speak"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-speak-as",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-speak-as",
+      "linkingText": [
+        "speak-as"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-speak-as-normal",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-speak-as-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "speak-as"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-speak-as-spell-out",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-speak-as-spell-out",
+      "linkingText": [
+        "spell-out"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "speak-as"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-speak-as-digits",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-speak-as-digits",
+      "linkingText": [
+        "digits"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "speak-as"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-speak-as-literal-punctuation",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-speak-as-literal-punctuation",
+      "linkingText": [
+        "literal-punctuation"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "speak-as"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-speak-as-no-punctuation",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-speak-as-no-punctuation",
+      "linkingText": [
+        "no-punctuation"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "speak-as"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-pause-before",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-pause-before",
+      "linkingText": [
+        "pause-before"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-pause-after",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-pause-after",
+      "linkingText": [
+        "pause-after"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-pause-before-time",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-pause-before-time",
+      "linkingText": [
+        "<time>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "pause-before",
+        "pause-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-pause-before-none",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-pause-before-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "pause-before",
+        "pause-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-pause-before-x-weak",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-pause-before-x-weak",
+      "linkingText": [
+        "x-weak"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "pause-before",
+        "pause-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-pause-before-weak",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-pause-before-weak",
+      "linkingText": [
+        "weak"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "pause-before",
+        "pause-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-pause-before-medium",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-pause-before-medium",
+      "linkingText": [
+        "medium"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "pause-before",
+        "pause-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-pause-before-strong",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-pause-before-strong",
+      "linkingText": [
+        "strong"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "pause-before",
+        "pause-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-pause-before-x-strong",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-pause-before-x-strong",
+      "linkingText": [
+        "x-strong"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "pause-before",
+        "pause-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-pause",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-pause",
+      "linkingText": [
+        "pause"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-rest-before",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-rest-before",
+      "linkingText": [
+        "rest-before"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-rest-after",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-rest-after",
+      "linkingText": [
+        "rest-after"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-rest-before-time",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-rest-before-time",
+      "linkingText": [
+        "<time>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "rest-before",
+        "rest-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-rest-before-none",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-rest-before-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "rest-before",
+        "rest-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-rest-before-x-weak",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-rest-before-x-weak",
+      "linkingText": [
+        "x-weak"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "rest-before",
+        "rest-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-rest-before-weak",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-rest-before-weak",
+      "linkingText": [
+        "weak"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "rest-before",
+        "rest-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-rest-before-medium",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-rest-before-medium",
+      "linkingText": [
+        "medium"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "rest-before",
+        "rest-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-rest-before-strong",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-rest-before-strong",
+      "linkingText": [
+        "strong"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "rest-before",
+        "rest-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-rest-before-x-strong",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-rest-before-x-strong",
+      "linkingText": [
+        "x-strong"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "rest-before",
+        "rest-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-rest",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-rest",
+      "linkingText": [
+        "rest"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-cue-before",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-cue-before",
+      "linkingText": [
+        "cue-before"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-cue-after",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-cue-after",
+      "linkingText": [
+        "cue-after"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-cue-before-uri",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-cue-before-uri",
+      "linkingText": [
+        "<uri>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "cue-before",
+        "cue-after"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-cue",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-cue",
+      "linkingText": [
+        "cue"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-voice-family",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-voice-family",
+      "linkingText": [
+        "voice-family"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-generic-voice",
+      "href": "https://drafts.csswg.org/css-speech-1/#typedef-generic-voice",
+      "linkingText": [
+        "<generic-voice>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-family-family-name",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-family-family-name",
+      "linkingText": [
+        "<family-name>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-family"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-voice-family-age",
+      "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-family-age",
+      "linkingText": [
+        "<age>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "voice-family"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-family-child",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-family-child",
+      "linkingText": [
+        "child"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-family"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-family-young",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-family-young",
+      "linkingText": [
+        "young"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-family"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-family-old",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-family-old",
+      "linkingText": [
+        "old"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-family"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-voice-family-gender",
+      "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-family-gender",
+      "linkingText": [
+        "<gender>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "voice-family"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-family-male",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-family-male",
+      "linkingText": [
+        "male"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-family"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-family-female",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-family-female",
+      "linkingText": [
+        "female"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-family"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-family-neutral",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-family-neutral",
+      "linkingText": [
+        "neutral"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-family"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-family-integer",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-family-integer",
+      "linkingText": [
+        "<integer>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-family"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-family-preserve",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-family-preserve",
+      "linkingText": [
+        "preserve"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-family"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-voice-rate",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-voice-rate",
+      "linkingText": [
+        "voice-rate"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-rate-normal",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-rate-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-rate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-rate-x-slow",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-rate-x-slow",
+      "linkingText": [
+        "x-slow"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-rate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-rate-slow",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-rate-slow",
+      "linkingText": [
+        "slow"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-rate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-rate-medium",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-rate-medium",
+      "linkingText": [
+        "medium"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-rate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-rate-fast",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-rate-fast",
+      "linkingText": [
+        "fast"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-rate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-rate-x-fast",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-rate-x-fast",
+      "linkingText": [
+        "x-fast"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-rate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-rate-percentage",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-rate-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-rate"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-voice-pitch",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-voice-pitch",
+      "linkingText": [
+        "voice-pitch"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-pitche-frequency",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-pitche-frequency",
+      "linkingText": [
+        "<frequency>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-pitche"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-pitche-absolute",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-pitche-absolute",
+      "linkingText": [
+        "absolute"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-pitche"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-pitche-semitones",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-pitche-semitones",
+      "linkingText": [
+        "<semitones>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-pitche"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-voice-pitche-semitones",
+      "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-pitche-semitones",
+      "linkingText": [
+        "<semitones>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "voice-pitche"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "voice-pitche-semitone",
+      "href": "https://drafts.csswg.org/css-speech-1/#voice-pitche-semitone",
+      "linkingText": [
+        "semitone"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "voice-pitche"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-pitche-percentage",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-pitche-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-pitche"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-pitche-x-low",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-pitche-x-low",
+      "linkingText": [
+        "x-low"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-pitche"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-pitche-low",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-pitche-low",
+      "linkingText": [
+        "low"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-pitche"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-pitche-medium",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-pitche-medium",
+      "linkingText": [
+        "medium"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-pitche"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-pitche-high",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-pitche-high",
+      "linkingText": [
+        "high"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-pitche"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-pitche-x-high",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-pitche-x-high",
+      "linkingText": [
+        "x-high"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-pitche"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-voice-range",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-voice-range",
+      "linkingText": [
+        "voice-range"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-range-absolute",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-range-absolute",
+      "linkingText": [
+        "absolute"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-range"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-range-semitones",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-range-semitones",
+      "linkingText": [
+        "<semitones>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-range"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-range-percentage",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-range-percentage",
+      "linkingText": [
+        "<percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-range"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-range-x-low",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-range-x-low",
+      "linkingText": [
+        "x-low"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-range"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-range-low",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-range-low",
+      "linkingText": [
+        "low"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-range"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-range-medium",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-range-medium",
+      "linkingText": [
+        "medium"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-range"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-range-high",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-range-high",
+      "linkingText": [
+        "high"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-range"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-range-x-high",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-range-x-high",
+      "linkingText": [
+        "x-high"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-range"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-voice-stress",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-voice-stress",
+      "linkingText": [
+        "voice-stress"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-stress-normal",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-stress-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-stress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-stress-none",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-stress-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-stress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-stress-moderate",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-stress-moderate",
+      "linkingText": [
+        "moderate"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-stress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-stress-strong",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-stress-strong",
+      "linkingText": [
+        "strong"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-stress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-stress-reduced",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-stress-reduced",
+      "linkingText": [
+        "reduced"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-stress"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "propdef-voice-duration",
+      "href": "https://drafts.csswg.org/css-speech-1/#propdef-voice-duration",
+      "linkingText": [
+        "voice-duration"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-duration-auto",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-duration-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-duration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-voice-duration-time",
+      "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-duration-time",
+      "linkingText": [
+        "<time>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "voice-duration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ua",
+      "href": "https://drafts.csswg.org/css-speech-1/#ua",
+      "linkingText": [
+        "UA"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "user-agent",
+      "href": "https://drafts.csswg.org/css-speech-1/#user-agent",
+      "linkingText": [
+        "User Agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "document",
+      "href": "https://drafts.csswg.org/css-speech-1/#document",
+      "linkingText": [
+        "document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "style-sheet",
+      "href": "https://drafts.csswg.org/css-speech-1/#style-sheet",
+      "linkingText": [
+        "style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

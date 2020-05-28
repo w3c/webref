@@ -1,0 +1,470 @@
+{
+  "spec": {
+    "title": "Serial API",
+    "url": "https://wicg.github.io/serial/"
+  },
+  "dfns": [
+    {
+      "id": "dom-navigator-serial",
+      "href": "https://wicg.github.io/serial/#dom-navigator-serial",
+      "linkingText": [
+        "serial"
+      ],
+      "localLinkingText": [
+        "Navigator.serial"
+      ],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-workernavigator-serial",
+      "href": "https://wicg.github.io/serial/#dom-workernavigator-serial",
+      "linkingText": [
+        "serial"
+      ],
+      "localLinkingText": [
+        "WorkerNavigator.serial"
+      ],
+      "type": "attribute",
+      "for": [
+        "WorkerNavigator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serial",
+      "href": "https://wicg.github.io/serial/#dom-serial",
+      "linkingText": [
+        "Serial"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serial-onconnect",
+      "href": "https://wicg.github.io/serial/#dom-serial-onconnect",
+      "linkingText": [
+        "onconnect"
+      ],
+      "localLinkingText": [
+        "Serial.onconnect"
+      ],
+      "type": "attribute",
+      "for": [
+        "Serial"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serial-ondisconnect",
+      "href": "https://wicg.github.io/serial/#dom-serial-ondisconnect",
+      "linkingText": [
+        "ondisconnect"
+      ],
+      "localLinkingText": [
+        "Serial.ondisconnect"
+      ],
+      "type": "attribute",
+      "for": [
+        "Serial"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serial-getports",
+      "href": "https://wicg.github.io/serial/#dom-serial-getports",
+      "linkingText": [
+        "getPorts()"
+      ],
+      "localLinkingText": [
+        "Serial.getPorts",
+        "Serial.getPorts()",
+        "getPorts"
+      ],
+      "type": "method",
+      "for": [
+        "Serial"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serial-requestport",
+      "href": "https://wicg.github.io/serial/#dom-serial-requestport",
+      "linkingText": [
+        "requestPort()",
+        "requestPort(, options)"
+      ],
+      "localLinkingText": [
+        "Serial.requestPort",
+        "Serial.requestPort()",
+        "requestPort"
+      ],
+      "type": "method",
+      "for": [
+        "Serial"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serialport",
+      "href": "https://wicg.github.io/serial/#dom-serialport",
+      "linkingText": [
+        "SerialPort"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serialport-open",
+      "href": "https://wicg.github.io/serial/#dom-serialport-open",
+      "linkingText": [
+        "open()",
+        "open(, options)"
+      ],
+      "localLinkingText": [
+        "SerialPort.open",
+        "SerialPort.open()",
+        "open"
+      ],
+      "type": "method",
+      "for": [
+        "SerialPort"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serialport-in",
+      "href": "https://wicg.github.io/serial/#dom-serialport-in",
+      "linkingText": [
+        "in"
+      ],
+      "localLinkingText": [
+        "SerialPort.in"
+      ],
+      "type": "attribute",
+      "for": [
+        "SerialPort"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serialport-out",
+      "href": "https://wicg.github.io/serial/#dom-serialport-out",
+      "linkingText": [
+        "out"
+      ],
+      "localLinkingText": [
+        "SerialPort.out"
+      ],
+      "type": "attribute",
+      "for": [
+        "SerialPort"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serialport-getinfo",
+      "href": "https://wicg.github.io/serial/#dom-serialport-getinfo",
+      "linkingText": [
+        "getInfo()"
+      ],
+      "localLinkingText": [
+        "SerialPort.getInfo",
+        "SerialPort.getInfo()",
+        "getInfo"
+      ],
+      "type": "method",
+      "for": [
+        "SerialPort"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serialportinfo",
+      "href": "https://wicg.github.io/serial/#dom-serialportinfo",
+      "linkingText": [
+        "SerialPortInfo"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-table-of-recommended-metadata",
+      "href": "https://wicg.github.io/serial/#dfn-table-of-recommended-metadata",
+      "linkingText": [
+        "Table of recommended metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-steps-for-getting-metadata-of-a-serial-port",
+      "href": "https://wicg.github.io/serial/#dfn-steps-for-getting-metadata-of-a-serial-port",
+      "linkingText": [
+        "steps for getting metadata of a serial port"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-serialoptions",
+      "href": "https://wicg.github.io/serial/#dom-serialoptions",
+      "linkingText": [
+        "SerialOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serialoptions-buffersize",
+      "href": "https://wicg.github.io/serial/#dom-serialoptions-buffersize",
+      "linkingText": [
+        "buffersize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serialoptions-rtscts",
+      "href": "https://wicg.github.io/serial/#dom-serialoptions-rtscts",
+      "linkingText": [
+        "rtscts"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serialoptions-xon",
+      "href": "https://wicg.github.io/serial/#dom-serialoptions-xon",
+      "linkingText": [
+        "xon"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serialoptions-xoff",
+      "href": "https://wicg.github.io/serial/#dom-serialoptions-xoff",
+      "linkingText": [
+        "xoff"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serialoptions-xany",
+      "href": "https://wicg.github.io/serial/#dom-serialoptions-xany",
+      "linkingText": [
+        "xany"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serialoptions-baudrate",
+      "href": "https://wicg.github.io/serial/#dom-serialoptions-baudrate",
+      "linkingText": [
+        "baudrate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serialoptions-databits",
+      "href": "https://wicg.github.io/serial/#dom-serialoptions-databits",
+      "linkingText": [
+        "databits"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serialoptions-stopbits",
+      "href": "https://wicg.github.io/serial/#dom-serialoptions-stopbits",
+      "linkingText": [
+        "stopbits"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serialoptions-parity",
+      "href": "https://wicg.github.io/serial/#dom-serialoptions-parity",
+      "linkingText": [
+        "parity"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paritytype",
+      "href": "https://wicg.github.io/serial/#dom-paritytype",
+      "linkingText": [
+        "ParityType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paritytype-none",
+      "href": "https://wicg.github.io/serial/#dom-paritytype-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ParityType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paritytype-even",
+      "href": "https://wicg.github.io/serial/#dom-paritytype-even",
+      "linkingText": [
+        "even"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ParityType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paritytype-odd",
+      "href": "https://wicg.github.io/serial/#dom-paritytype-odd",
+      "linkingText": [
+        "odd"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ParityType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paritytype-mark",
+      "href": "https://wicg.github.io/serial/#dom-paritytype-mark",
+      "linkingText": [
+        "mark"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ParityType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-paritytype-space",
+      "href": "https://wicg.github.io/serial/#dom-paritytype-space",
+      "linkingText": [
+        "space"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ParityType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-security-considerations",
+      "href": "https://wicg.github.io/serial/#dfn-security-considerations",
+      "linkingText": [
+        "Security considerations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}
