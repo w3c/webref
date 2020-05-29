@@ -1,0 +1,362 @@
+{
+  "spec": {
+    "title": "Client Hints Infrastructure",
+    "url": "https://wicg.github.io/client-hints-infrastructure/"
+  },
+  "dfns": [
+    {
+      "id": "client-hints-set",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#client-hints-set",
+      "linkingText": [
+        "client hints set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "accept-ch-cache",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#accept-ch-cache",
+      "linkingText": [
+        "Accept-CH cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "accept-ch-cache-origin",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#accept-ch-cache-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "accept-ch-cache"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "accept-ch-cache-client-hints-set",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#accept-ch-cache-client-hints-set",
+      "linkingText": [
+        "client hints set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "accept-ch-cache"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "add-a-new-accept-ch-cache-entry",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#add-a-new-accept-ch-cache-entry",
+      "linkingText": [
+        "add a new Accept-CH cache entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "retrieve-the-client-hints-set",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#retrieve-the-client-hints-set",
+      "linkingText": [
+        "retrieve the client hints set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-initialize-the-client-hints-set",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-initialize-the-client-hints-set",
+      "linkingText": [
+        "initialize the Client Hints set"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "accept-ch-state",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#accept-ch-state",
+      "linkingText": [
+        "Accept-CH state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "accept-ch",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#accept-ch",
+      "linkingText": [
+        "accept-ch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "environment-settings-object-client-hints-set",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#environment-settings-object-client-hints-set",
+      "linkingText": [
+        "client hints set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "environment settings object"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-append-client-hints-to-request",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-append-client-hints-to-request",
+      "linkingText": [
+        "append client hints to request"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-remove-client-hints-from-redirect-if-needed",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-remove-client-hints-from-redirect-if-needed",
+      "linkingText": [
+        "remove client hints from redirect if needed"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "client-hints-token",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#client-hints-token",
+      "linkingText": [
+        "client hints token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ch-save-data",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-save-data",
+      "linkingText": [
+        "ch-save-data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ch-dpr",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-dpr",
+      "linkingText": [
+        "ch-dpr"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ch-width",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-width",
+      "linkingText": [
+        "ch-width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ch-viewport-width",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-viewport-width",
+      "linkingText": [
+        "ch-viewport-width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ch-device-memory",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-device-memory",
+      "linkingText": [
+        "ch-device-memory"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ch-rtt",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-rtt",
+      "linkingText": [
+        "ch-rtt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ch-downlink",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-downlink",
+      "linkingText": [
+        "ch-downlink"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ch-ect",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-ect",
+      "linkingText": [
+        "ch-ect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ch-ua-arch",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-ua-arch",
+      "linkingText": [
+        "ch-ua-arch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ch-ua-model",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-ua-model",
+      "linkingText": [
+        "ch-ua-model"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ch-ua-platform",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-ua-platform",
+      "linkingText": [
+        "ch-ua-platform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ch-ua",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-ua",
+      "linkingText": [
+        "ch-ua"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ch-ua-mobile",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#ch-ua-mobile",
+      "linkingText": [
+        "ch-ua-mobile"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "low-entropy-hint-table",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#low-entropy-hint-table",
+      "linkingText": [
+        "low entropy hint table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "find-client-hint-value",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#find-client-hint-value",
+      "linkingText": [
+        "find client hint value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "field-name",
+      "href": "https://wicg.github.io/client-hints-infrastructure/#field-name",
+      "linkingText": [
+        "field-name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}
