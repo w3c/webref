@@ -26,9 +26,8 @@
   <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
   <ul>
   <li><a href="https://mathml-refresh.github.io/mathml-core/">MathML Core</a>: <code>Error: Navigation failed because browser has disconnected! Error: Navigation failed because browser has disconnected! at CDPSession.LifecycleWatcher._eventListeners.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/LifecycleWatcher.js:44:131) at CDPSession.emit (events.js:198:13) at CDPSession._onClosed (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Connection.js:175:14) at Connection._onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Connection.js:109:21) at WebSocketTransport._ws.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/WebSocketTransport.js:28:30) at WebSocket.onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/ws/lib/event-target.js:124:16) at WebSocket.emit (events.js:198:13) at WebSocket.emitClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/ws/lib/websocket.js:194:10) at Socket.socketOnClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/ws/lib/websocket.js:861:15) at Socket.emit (events.js:198:13)   -- ASYNC -- at Frame.&lt;anonymous&gt; (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19) at Page.goto (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:440:53) at Page.&lt;anonymous&gt; (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:83:27) at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:220:24) at process._tickCallback (internal/process/next_tick.js:68:7)</code></li>
-  <li><a href="https://wicg.github.io/BackgroundSync/spec/">Web Background Synchronization</a>: <code>Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined at __puppeteer_evaluation_script__:4:37 at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:93:19) at process._tickCallback (internal/process/next_tick.js:68:7)   -- ASYNC -- at ExecutionContext.&lt;anonymous&gt; (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19) at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:88:24) at process._tickCallback (internal/process/next_tick.js:68:7)   -- ASYNC -- at Frame.&lt;anonymous&gt; (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19) at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:548:47) at Page.&lt;anonymous&gt; (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:83:27) at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:301:36) at process._tickCallback (internal/process/next_tick.js:68:7)</code></li>
   </ul>
-  <p>=&gt; 2 specifications found</p>
+  <p>=&gt; 1 specification found</p>
   </section>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
@@ -151,6 +150,13 @@
   <li><code>DOMPoint</code> but does not reference <a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><code>DOMPointReadOnly</code> but does not reference <a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   </ul></li>
+  <li><a href="https://wicg.github.io/background-sync/spec/">Web Background Synchronization</a> uses:
+  <ul>
+  <li><code>ServiceWorkerRegistration</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  <li><code>ServiceWorkerGlobalScope</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  <li><code>ExtendableEvent</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  <li><code>ExtendableEventInit</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  </ul></li>
   <li><a href="https://wicg.github.io/periodic-background-sync/">Web Periodic Background Synchronization</a> uses:
   <ul>
   <li><code>ServiceWorkerGlobalScope</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
@@ -166,7 +172,7 @@
   <li><code>WebGLRenderingContextBase</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 38 missing references for IDL definitions found in 16 specifications</p>
+  <p>=&gt; 42 missing references for IDL definitions found in 17 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -1031,6 +1037,12 @@
   <li><a href="https://www.w3.org/TR/html50/"><code>https://www.w3.org/TR/html50/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 2</a> links to <a href="https://w3c.github.io/webdriver/webdriver-spec.html"><code>https://w3c.github.io/webdriver/webdriver-spec.html</code></a> but does not list it in its references</li>
+  <li><a href="https://wicg.github.io/background-sync/spec/">Web Background Synchronization</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/webappsec/specs/powerfulfeatures/"><code>https://w3c.github.io/webappsec/specs/powerfulfeatures/</code></a> but does not list it in its references</li>
+  <li><a href="https://notifications.spec.whatwg.org/"><code>https://notifications.spec.whatwg.org/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a> links to <a href="https://w3c.github.io/fingerprinting-guidance/"><code>https://w3c.github.io/fingerprinting-guidance/</code></a> but does not list it in its references</li>
   <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a> links to:
   <ul>
@@ -1065,7 +1077,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 551 missing references for links found in 153 specifications</p>
+  <p>=&gt; 554 missing references for links found in 154 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>

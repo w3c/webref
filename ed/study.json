@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-05-29T06:37:34.773Z",
+  "date": "2020-05-29T12:37:03.959Z",
   "stats": {
     "crawled": 292,
-    "errors": 2,
+    "errors": 1,
     "studied": 292
   },
   "results": [
@@ -18149,6 +18149,11 @@
               "crawled": "https://w3c.github.io/webauthn/"
             },
             {
+              "url": "https://wicg.github.io/BackgroundSync/spec/",
+              "title": "Web Background Synchronization",
+              "crawled": "https://wicg.github.io/background-sync/spec/"
+            },
+            {
               "url": "https://webbluetoothcg.github.io/web-bluetooth/",
               "title": "Web Bluetooth",
               "crawled": "https://webbluetoothcg.github.io/web-bluetooth/"
@@ -23859,6 +23864,11 @@
               "crawled": "https://w3c.github.io/webauthn/"
             },
             {
+              "url": "https://wicg.github.io/BackgroundSync/spec/",
+              "title": "Web Background Synchronization",
+              "crawled": "https://wicg.github.io/background-sync/spec/"
+            },
+            {
               "url": "https://webbluetoothcg.github.io/web-bluetooth/",
               "title": "Web Bluetooth",
               "crawled": "https://webbluetoothcg.github.io/web-bluetooth/"
@@ -26176,22 +26186,67 @@
     {
       "title": "Web Background Synchronization",
       "shortname": "BackgroundSync",
-      "date": "",
+      "date": "28 May 2020",
       "url": "https://wicg.github.io/BackgroundSync/spec/",
       "nightly": {
         "url": "https://wicg.github.io/BackgroundSync/spec/"
       },
-      "crawled": "https://wicg.github.io/BackgroundSync/spec/",
+      "crawled": "https://wicg.github.io/background-sync/spec/",
       "report": {
-        "error": "Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:93:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:88:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:548:47)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:83:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:301:36)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "ServiceWorkerRegistration",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/"
+              }
+            ]
+          },
+          {
+            "name": "ServiceWorkerGlobalScope",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/"
+              }
+            ]
+          },
+          {
+            "name": "ExtendableEvent",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/"
+              }
+            ]
+          },
+          {
+            "name": "ExtendableEventInit",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/"
+              }
+            ]
+          }
+        ],
+        "missingLinkRef": [
+          "https://w3c.github.io/webappsec/specs/powerfulfeatures/",
+          "https://notifications.spec.whatwg.org/",
+          "https://w3c.github.io/ServiceWorker/"
+        ],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -26206,11 +26261,6 @@
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/"
-            },
-            {
-              "url": "https://www.w3.org/TR/push-api/",
-              "title": "Push API",
-              "crawled": "https://w3c.github.io/push-api/"
             }
           ]
         },
@@ -27109,6 +27159,11 @@
               "crawled": "https://w3c.github.io/webauthn/"
             },
             {
+              "url": "https://wicg.github.io/BackgroundSync/spec/",
+              "title": "Web Background Synchronization",
+              "crawled": "https://wicg.github.io/background-sync/spec/"
+            },
+            {
               "url": "https://webbluetoothcg.github.io/web-bluetooth/",
               "title": "Web Bluetooth",
               "crawled": "https://webbluetoothcg.github.io/web-bluetooth/"
@@ -27607,7 +27662,7 @@
     {
       "title": "WebDriver",
       "shortname": "webdriver1",
-      "date": "28 May 2020",
+      "date": "29 May 2020",
       "url": "https://www.w3.org/TR/webdriver1/",
       "release": {
         "url": "https://www.w3.org/TR/webdriver1/"

@@ -7675,6 +7675,7 @@
   <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 2</a></li>
+  <li><a href="https://wicg.github.io/background-sync/spec/">Web Background Synchronization</a></li>
   <li><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a></li>
   <li><a href="http://w3c.github.io/webcrypto/">Web Cryptography API</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
@@ -10543,6 +10544,7 @@
   <li><a href="https://w3c.github.io/webappsec-subresource-integrity/">Subresource Integrity</a></li>
   <li><a href="https://w3c.github.io/webappsec-trusted-types/dist/spec/">Trusted Types</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 2</a></li>
+  <li><a href="https://wicg.github.io/background-sync/spec/">Web Background Synchronization</a></li>
   <li><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   <li><a href="https://w3c.github.io/web-nfc/">Web NFC</a></li>
@@ -10813,6 +10815,7 @@
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
   <li><a href="https://wicg.github.io/portals/">Portals</a></li>
   <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
+  <li><a href="https://wicg.github.io/background-sync/spec/">Web Background Synchronization</a></li>
   <li><a href="https://wicg.github.io/periodic-background-sync/">Web Periodic Background Synchronization</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -11697,21 +11700,35 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="web-background-synchronization" class="level2" data-spec="true" data-error="true">
+  <section id="web-background-synchronization" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
   <h2>Web Background Synchronization</h2>
   <section id="spec-info-263" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://wicg.github.io/BackgroundSync/spec/" class="uri">https://wicg.github.io/BackgroundSync/spec/</a></li>
-  <li>Crawled URL: <a href="https://wicg.github.io/BackgroundSync/spec/" class="uri">https://wicg.github.io/BackgroundSync/spec/</a></li>
+  <li>Crawled URL: <a href="https://wicg.github.io/background-sync/spec/" class="uri">https://wicg.github.io/background-sync/spec/</a></li>
+  <li>Crawled version: 28 May 2020</li>
   <li>Editor's Draft: <a href="https://wicg.github.io/BackgroundSync/spec/" class="uri">https://wicg.github.io/BackgroundSync/spec/</a></li>
   <li>Shortname: BackgroundSync</li>
   </ul>
   </section>
   <section id="potential-issues-263" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined     at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined     at __puppeteer_evaluation_script__:4:37     at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:93:19)     at process._tickCallback (internal/process/next_tick.js:68:7)   -- ASYNC --     at ExecutionContext.&lt;anonymous&gt; (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)     at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:88:24)     at process._tickCallback (internal/process/next_tick.js:68:7)   -- ASYNC --     at Frame.&lt;anonymous&gt; (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)     at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:548:47)     at Page.&lt;anonymous&gt; (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:83:27)     at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:301:36)     at process._tickCallback (internal/process/next_tick.js:68:7)</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>ServiceWorkerRegistration</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  <li><code>ServiceWorkerGlobalScope</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  <li><code>ExtendableEvent</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  <li><code>ExtendableEventInit</code> defined in <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
+  </ul></li>
+  <li>Missing references for links:
+  <ul>
+  <li><a href="https://w3c.github.io/webappsec/specs/powerfulfeatures/"><code>https://w3c.github.io/webappsec/specs/powerfulfeatures/</code></a></li>
+  <li><a href="https://notifications.spec.whatwg.org/"><code>https://notifications.spec.whatwg.org/</code></a></li>
+  <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-263" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -11722,7 +11739,6 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
-  <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
   </ul>
   </section>
   </section>
@@ -11971,6 +11987,7 @@
   <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 2</a></li>
+  <li><a href="https://wicg.github.io/background-sync/spec/">Web Background Synchronization</a></li>
   <li><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a></li>
   <li><a href="http://w3c.github.io/webcrypto/">Web Cryptography API</a></li>
   <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a></li>
@@ -12272,7 +12289,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/webdriver1/" class="uri">https://www.w3.org/TR/webdriver1/</a></li>
   <li>Crawled URL: <a href="https://w3c.github.io/webdriver/" class="uri">https://w3c.github.io/webdriver/</a></li>
-  <li>Crawled version: 28 May 2020</li>
+  <li>Crawled version: 29 May 2020</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webdriver/" class="uri">https://w3c.github.io/webdriver/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webdriver1/" class="uri">https://www.w3.org/TR/webdriver1/</a></li>
   <li>Shortname: webdriver1</li>
