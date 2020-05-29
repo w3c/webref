@@ -6586,6 +6586,7 @@ Normative references to this spec from:
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](http://w3c.github.io/webcrypto/)
 - [Web IDL](https://heycam.github.io/webidl/)
@@ -9070,6 +9071,7 @@ Normative references to this spec from:
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
@@ -9305,6 +9307,7 @@ Although they do not, the following specs should also normatively reference this
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Portals](https://wicg.github.io/portals/)
 - [Push API](https://w3c.github.io/push-api/)
+- [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 
 Informative references to this spec from:
@@ -10074,35 +10077,27 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Web Background Synchronization {data-spec=true data-error=true}
+## Web Background Synchronization {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/BackgroundSync/spec/](https://wicg.github.io/BackgroundSync/spec/)
-- Crawled URL: [https://wicg.github.io/BackgroundSync/spec/](https://wicg.github.io/BackgroundSync/spec/)
+- Crawled URL: [https://wicg.github.io/background-sync/spec/](https://wicg.github.io/background-sync/spec/)
+- Crawled version: 28 May 2020
 - Editor's Draft: [https://wicg.github.io/BackgroundSync/spec/](https://wicg.github.io/BackgroundSync/spec/)
 - Shortname: BackgroundSync
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined
-    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined
-    at __puppeteer_evaluation_script__:4:37
-    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:93:19)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-  -- ASYNC --
-    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)
-    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:88:24)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-  -- ASYNC --
-    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)
-    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:548:47)
-    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:83:27)
-    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:301:36)
-    at process._tickCallback (internal/process/next_tick.js:68:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for WebIDL names: 
+     * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+     * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- Missing references for links: 
+     * [`https://w3c.github.io/webappsec/specs/powerfulfeatures/`](https://w3c.github.io/webappsec/specs/powerfulfeatures/)
+     * [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/)
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -10113,7 +10108,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
-- [Push API](https://w3c.github.io/push-api/)
 
 
 ## Web Bluetooth {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -10343,6 +10337,7 @@ Normative references to this spec from:
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](http://w3c.github.io/webcrypto/)
 - [Web Locks API](https://wicg.github.io/web-locks/)
@@ -10602,7 +10597,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
 - Crawled URL: [https://w3c.github.io/webdriver/](https://w3c.github.io/webdriver/)
-- Crawled version: 28 May 2020
+- Crawled version: 29 May 2020
 - Editor's Draft: [https://w3c.github.io/webdriver/](https://w3c.github.io/webdriver/)
 - Latest published version: [https://www.w3.org/TR/webdriver1/](https://www.w3.org/TR/webdriver1/)
 - Shortname: webdriver1
