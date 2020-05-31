@@ -632,6 +632,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -1863,7 +1864,6 @@ Normative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
-- [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
@@ -4307,7 +4307,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-speech-1/](https://www.w3.org/TR/css-speech-1/)
 - Crawled URL: [https://drafts.csswg.org/css-speech-1/](https://drafts.csswg.org/css-speech-1/)
-- Crawled version: 27 May 2020
+- Crawled version: 30 May 2020
 - Editor's Draft: [https://drafts.csswg.org/css-speech-1/](https://drafts.csswg.org/css-speech-1/)
 - Latest published version: [https://www.w3.org/TR/css-speech-1/](https://www.w3.org/TR/css-speech-1/)
 - Shortname: css-speech-1
@@ -6507,7 +6507,6 @@ Normative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
-- [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
@@ -6667,6 +6666,7 @@ Informative references to this spec from:
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
+- [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
