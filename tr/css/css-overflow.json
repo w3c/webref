@@ -1,50 +1,35 @@
 {
   "spec": {
-    "title": "CSS Overflow Module Level 4",
-    "url": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/"
+    "title": "CSS Overflow Module Level 3",
+    "url": "https://www.w3.org/TR/css-overflow-3/"
   },
   "properties": {
-    "scrollbar-gutter": {
-      "name": "scrollbar-gutter",
-      "value": "auto | [ stable | always ] && both? && force?",
-      "initial": "auto",
-      "appliesTo": "all elements",
-      "inherited": "yes",
-      "percentages": "n/a",
-      "media": "visual",
-      "computedValue": "specified value",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete"
-    },
-    "continue": {
-      "name": "continue",
-      "value": "auto | overflow | paginate | fragments | discard",
-      "initial": "auto",
+    "overflow-x": {
+      "name": "overflow-x",
+      "value": "visible | hidden | clip | scroll | auto",
+      "initial": "visible",
       "appliesTo": "block containers [CSS21], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "see below",
+      "computedValue": "as specified, except with visible/clip computing to auto/hidden (respectively) if one of overflow-x or overflow-y is neither visible nor clip",
       "canonicalOrder": "per grammar",
       "animatable": "no"
     },
-    "max-lines": {
-      "name": "max-lines",
-      "value": "none | <integer>",
-      "initial": "none",
-      "appliesTo": "fragment boxes",
+    "overflow-y": {
+      "name": "overflow-y",
+      "value": "visible | hidden | clip | scroll | auto",
+      "initial": "visible",
+      "appliesTo": "block containers [CSS21], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "specified value",
+      "computedValue": "as specified, except with visible/clip computing to auto/hidden (respectively) if one of overflow-x or overflow-y is neither visible nor clip",
       "canonicalOrder": "per grammar",
-      "animatable": "as integer"
-    }
-  },
-  "descriptors": {},
-  "valuespaces": {}
-}
-l": "see individual properties",
+      "animatable": "no"
+    },
+    "overflow": {
+      "name": "overflow",
+      "value": "[ visible | hidden | clip | scroll | auto ]{1,2}",
+      "initial": "see individual properties",
       "appliesTo": "block containers [CSS21], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
       "inherited": "no",
       "percentages": "N/A",

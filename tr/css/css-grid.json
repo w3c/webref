@@ -1,34 +1,26 @@
 {
   "spec": {
-    "title": "CSS Grid Layout Module Level 2",
-    "url": "https://www.w3.org/TR/2019/WD-css-grid-2-20191203/"
+    "title": "CSS Grid Layout Module Level 1",
+    "url": "https://www.w3.org/TR/css-grid-1/"
   },
   "properties": {
-    "grid-template-rows": {
-      "name": "grid-template-rows",
-      "newValues": "subgrid <line-name-list>?",
-      "newComputedValues": "The subgrid keyword followed by a <line-name-list>."
+    "display": {
+      "name": "display",
+      "newValues": "grid | inline-grid"
     },
     "grid-template-columns": {
       "name": "grid-template-columns",
-      "newValues": "subgrid <line-name-list>?",
-      "newComputedValues": "The subgrid keyword followed by a <line-name-list>."
-    }
-  },
-  "descriptors": {},
-  "valuespaces": {
-    "<line-name-list>": {
-      "value": "[ <line-names> | <name-repeat> ]+"
+      "value": "none | <track-list> | <auto-track-list>",
+      "initial": "none",
+      "appliesTo": "grid containers",
+      "inherited": "no",
+      "percentages": "refer to corresponding dimension of the content area",
+      "media": "visual",
+      "computedValue": "As specified, with lengths made absolute",
+      "canonicalOrder": "per grammar",
+      "animatable": "as a simple list of length, percentage, or calc, provided the only differences are the values of the length, percentage, or calc components in the list"
     },
-    "<line-names>": {
-      "value": "'[' <custom-ident>* ']'"
-    },
-    "<name-repeat>": {
-      "value": "repeat( [ <integer [1,∞]> | auto-fill ], <line-names>+)"
-    }
-  }
-}
-ows": {
+    "grid-template-rows": {
       "name": "grid-template-rows",
       "value": "none | <track-list> | <auto-track-list>",
       "initial": "none",

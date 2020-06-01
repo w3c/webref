@@ -5,10 +5,10 @@
 
 interface TimeEvent : Event {
 
-  readonly attribute @@ unknown term "AbstractView" view;
+  readonly attribute WindowProxy? view;
   readonly attribute long detail;
 
-  void initTimeEvent(DOMString typeArg, @@ unknown term "AbstractView" viewArg, long detailArg);
+  void initTimeEvent(DOMString typeArg, Window? viewArg, long detailArg);
 };
 
 interface SVGAnimationElement : SVGElement {

@@ -1,80 +1,35 @@
 {
   "spec": {
-    "title": "CSS Transforms Module Level 2",
-    "url": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/"
+    "title": "CSS Transforms Module Level 1",
+    "url": "https://www.w3.org/TR/css-transforms-1/"
   },
   "properties": {
-    "translate": {
-      "name": "translate",
-      "value": "none | <length-percentage> [ <length-percentage> <length>? ]?",
+    "transform": {
+      "name": "transform",
+      "value": "none | <transform-list>",
       "initial": "none",
       "appliesTo": "transformable elements",
       "inherited": "no",
-      "percentages": "relative to the width of the reference box (for the first value) or the height (for the second value)",
-      "computedValue": "the keyword none or a pair of computed <length-percentage> values and optionally an absolute length",
+      "percentages": "refer to the size of reference box",
+      "computedValue": "as specified, but with lengths made absolute",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value, adding a third 0 value if needed to match components, but see below for none"
+      "animationType": "transform list, see interpolation rules"
     },
-    "rotate": {
-      "name": "rotate",
-      "value": "none | <angle> | [ x | y | z | <number>{3} ] && <angle>",
-      "initial": "none",
-      "appliesTo": "transformable elements",
-      "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "the keyword none, or an <angle> with an optional axis consisting of a list of three <number>s",
-      "canonicalOrder": "per grammar",
-      "animationType": "as SLERP, but see below for none"
-    },
-    "scale": {
-      "name": "scale",
-      "value": "none | <number>{1,3}",
-      "initial": "none",
-      "appliesTo": "transformable elements",
-      "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "the keyword none, or a list of 2 or 3 <number>s",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value, but see below for none"
-    },
-    "transform-style": {
-      "name": "transform-style",
-      "value": "flat | preserve-3d",
-      "initial": "flat",
-      "appliesTo": "transformable elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "specified keyword",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete",
-      "usedValue": "flat if a grouping property is present, specified keyword otherwise"
-    },
-    "perspective": {
-      "name": "perspective",
-      "value": "none | <length [0,∞]>",
-      "initial": "none",
-      "appliesTo": "transformable elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "the keyword none or an absolute length",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value"
-    },
-    "perspective-origin": {
-      "name": "perspective-origin",
-      "value": "<position>",
+    "transform-origin": {
+      "name": "transform-origin",
+      "value": "[ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] <length>? | [[ center | left | right ] && [ center | top | bottom ]] <length>?",
       "initial": "50% 50%",
       "appliesTo": "transformable elements",
       "inherited": "no",
-      "percentages": "refer to the size of the reference box",
+      "percentages": "refer to the size of reference box",
       "computedValue": "see background-position",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value"
     },
-    "backface-visibility": {
-      "name": "backface-visibility",
-      "value": "visible | hidden",
-      "initial": "visible",
+    "transform-box": {
+      "name": "transform-box",
+      "value": "content-box | border-box | fill-box | stroke-box | view-box",
+      "initial": "view-box",
       "appliesTo": "transformable elements",
       "inherited": "no",
       "percentages": "N/A",
@@ -85,35 +40,41 @@
   },
   "descriptors": {},
   "valuespaces": {
-    "<matrix3d()>": {
-      "value": "matrix3d( <number>#{16} )"
+    "<transform-list>": {
+      "value": "<transform-function>+"
     },
-    "<translate3d()>": {
-      "value": "translate3d( <length-percentage> , <length-percentage> , <length> )"
+    "<matrix()>": {
+      "value": "matrix( <number> [, <number> ]{5,5} )"
     },
-    "<translateZ()>": {
-      "value": "translateZ( <length> )"
+    "<translate()>": {
+      "value": "translate( <length-percentage> [, <length-percentage> ]? )"
     },
-    "<scale3d()>": {
-      "value": "scale3d( <number> , <number>, <number> )"
+    "<translateX()>": {
+      "value": "translateX( <length-percentage> )"
     },
-    "<scaleZ()>": {
-      "value": "scaleZ( <number> )"
+    "<translateY()>": {
+      "value": "translateY( <length-percentage> )"
     },
-    "<rotate3d()>": {
-      "value": "rotate3d( <number> , <number> , <number> , [ <angle> | <zero> ] )"
+    "<scale()>": {
+      "value": "scale( <number> [, <number> ]? )"
     },
-    "<rotateX()>": {
-      "value": "rotateX( [ <angle> | <zero> ] )"
+    "<scaleX()>": {
+      "value": "scaleX( <number> )"
     },
-    "<rotateY()>": {
-      "value": "rotateY( [ <angle> | <zero> ] )"
+    "<scaleY()>": {
+      "value": "scaleY( <number> )"
     },
-    "<rotateZ()>": {
-      "value": "rotateZ( [ <angle> | <zero> ] )"
+    "<rotate()>": {
+      "value": "rotate( [ <angle> | <zero> ] )"
     },
-    "<perspective()>": {
-      "value": "perspective( <length [0,∞]> )"
+    "<skew()>": {
+      "value": "skew( [ <angle> | <zero> ] [, [ <angle> | <zero> ] ]? )"
+    },
+    "<skewX()>": {
+      "value": "skewX( [ <angle> | <zero> ] )"
+    },
+    "<skewY()>": {
+      "value": "skewY( [ <angle> | <zero> ] )"
     }
   }
 }
