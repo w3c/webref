@@ -97,6 +97,6 @@ partial interface Window {
 };
 
 [SecureContext]
-partial interface Window {
+partial interface mixin WindowOrWorkerGlobalScope {
   Promise<FileSystemDirectoryHandle> getOriginPrivateDirectory();
 };

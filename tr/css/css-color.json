@@ -1,44 +1,49 @@
 {
   "spec": {
-    "title": "CSS Color Module Level 5",
-    "url": "https://www.w3.org/TR/2020/WD-css-color-5-20200303/"
+    "title": "CSS Color Module Level 4",
+    "url": "https://www.w3.org/TR/css-color-4/"
   },
-  "properties": {},
-  "descriptors": {},
-  "valuespaces": {
-    "<color-mix()>": {
-      "value": "color-mix( <color> <color> [ <number> | <percentage> | [ <color-function> <colorspace>? ]?] )"
+  "properties": {
+    "color": {
+      "name": "color",
+      "value": "<color>",
+      "initial": "black",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "computed color, see resolving color values",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type"
     },
-    "<color-contrast()>": {
-      "value": "color-contrast( <color> <color># )"
-    },
-    "<color-adjust()>": {
-      "value": "color-adjust( <color> [ color-function <colorspace>? ]?] )"
-    },
-    "<rgb()>": {
-      "value": "rgb([from <color>]? <percentage>{3} [ / <alpha-value> ]? ) | rgb([from <color>]? <number>{3} [ / <alpha-value> ]? )"
-    },
-    "<alpha-value>": {
-      "value": "<number> | <percentage>"
-    },
-    "<hsl()>": {
-      "value": "hsl([from <color>]? <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
-    },
-    "<hue>": {
-      "value": "<number> | <angle>"
-    },
-    "<hwb()>": {
-      "value": "hwb([from <color>]? <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
-    },
-    "<lab()>": {
-      "value": "lab([from <color>]? <percentage> <number> <number> [ / <alpha-value> ]? )"
-    },
-    "<lch()>": {
-      "value": "lch([from <color>]? <percentage> <number> <hue> [ / <alpha-value> ]? )"
+    "opacity": {
+      "name": "opacity",
+      "value": "<alpha-value>",
+      "initial": "1",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "map to the range [0,1]",
+      "computedValue": "specified number, clamped to the range [0,1]",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type"
     }
-  }
-}
-alue": "<hex-color> | <named-color> | currentcolor | transparent <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <gray()> | <color()> | <device-cmyk()> | <system-color>"
+  },
+  "descriptors": {
+    "src": {
+      "name": "src",
+      "for": "@color-profile",
+      "value": "<url>",
+      "initial": "n/a"
+    },
+    "rendering-intent": {
+      "name": "rendering-intent",
+      "for": "@color-profile",
+      "value": "relative-colorimetric | absolute-colorimetric | perceptual | saturation",
+      "initial": "relative-colorimetric"
+    }
+  },
+  "valuespaces": {
+    "<color>": {
+      "value": "<hex-color> | <named-color> | currentcolor | transparent <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <gray()> | <color()> | <device-cmyk()> | <system-color>"
     },
     "<rgb()>": {
       "value": "rgb( <percentage>{3} [ / <alpha-value> ]? ) | rgb( <number>{3} [ / <alpha-value> ]? )"

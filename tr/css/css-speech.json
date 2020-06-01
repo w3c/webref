@@ -1,0 +1,181 @@
+{
+  "spec": {
+    "title": "CSS Speech Module",
+    "url": "https://www.w3.org/TR/css-speech-1/"
+  },
+  "properties": {
+    "voice-volume": {
+      "name": "voice-volume",
+      "value": "silent | [[x-soft | soft | medium | loud | x-loud] || <decibel>]",
+      "initial": "medium",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "‘silent’, or a keyword value and optionally also a decibel offset (if not zero)"
+    },
+    "voice-balance": {
+      "name": "voice-balance",
+      "value": "<number> | left | center | right | leftwards | rightwards",
+      "initial": "center",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "the specified value resolved to a <number> between ‘-100’ and ‘100’ (inclusive)"
+    },
+    "speak": {
+      "name": "speak",
+      "value": "auto | never | always",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified value"
+    },
+    "speak-as": {
+      "name": "speak-as",
+      "value": "normal | spell-out || digits || [ literal-punctuation | no-punctuation ]",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified value"
+    },
+    "pause-before": {
+      "name": "pause-before",
+      "value": "<time> | none | x-weak | weak | medium | strong | x-strong",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value"
+    },
+    "pause-after": {
+      "name": "pause-after",
+      "value": "<time> | none | x-weak | weak | medium | strong | x-strong",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value"
+    },
+    "pause": {
+      "name": "pause",
+      "value": "<‘pause-before’> <‘pause-after’>?",
+      "initial": "N/A (see individual properties)",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "N/A (see individual properties)"
+    },
+    "rest-before": {
+      "name": "rest-before",
+      "value": "<time> | none | x-weak | weak | medium | strong | x-strong",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value"
+    },
+    "rest-after": {
+      "name": "rest-after",
+      "value": "<time> | none | x-weak | weak | medium | strong | x-strong",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value"
+    },
+    "rest": {
+      "name": "rest",
+      "value": "<‘rest-before’> <‘rest-after’>?",
+      "initial": "N/A (see individual properties)",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "N/A (see individual properties)"
+    },
+    "cue-before": {
+      "name": "cue-before",
+      "value": "<uri> <decibel>? | none",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value"
+    },
+    "cue-after": {
+      "name": "cue-after",
+      "value": "<uri> <decibel>? | none",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value"
+    },
+    "cue": {
+      "name": "cue",
+      "value": "<‘cue-before’> <‘cue-after’>?",
+      "initial": "N/A (see individual properties)",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "N/A (see individual properties)"
+    },
+    "voice-family": {
+      "name": "voice-family",
+      "value": "[[<name> | <generic-voice>],]* [<name> | <generic-voice>] | preserve",
+      "initial": "implementation-dependent",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified value"
+    },
+    "voice-rate": {
+      "name": "voice-rate",
+      "value": "[normal | x-slow | slow | medium | fast | x-fast] || <percentage>",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "refer to default value",
+      "computedValue": "a keyword value, and optionally also a percentage relative to the keyword (if not 100%)"
+    },
+    "voice-pitch": {
+      "name": "voice-pitch",
+      "value": "<frequency> && absolute | [[x-low | low | medium | high | x-high] || [<frequency> | <semitones> | <percentage>]]",
+      "initial": "medium",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "refer to inherited value",
+      "computedValue": "one of the predefined pitch keywords if only the keyword is specified by itself, otherwise an absolute frequency calculated by converting the keyword value (if any) to a fixed frequency based on the current voice-family and by applying the specified relative offset (if any)"
+    },
+    "voice-range": {
+      "name": "voice-range",
+      "value": "<frequency> && absolute | [[x-low | low | medium | high | x-high] || [<frequency> | <semitones> | <percentage>]]",
+      "initial": "medium",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "refer to inherited value",
+      "computedValue": "one of the predefined pitch keywords if only the keyword is specified by itself, otherwise an absolute frequency calculated by converting the keyword value (if any) to a fixed frequency based on the current voice-family and by applying the specified relative offset (if any)"
+    },
+    "voice-stress": {
+      "name": "voice-stress",
+      "value": "normal | strong | moderate | none | reduced",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified value"
+    },
+    "voice-duration": {
+      "name": "voice-duration",
+      "value": "auto | <time>",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {}
+}
