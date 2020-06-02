@@ -856,6 +856,20 @@
       "informative": false
     },
     {
+      "id": "dom-gpulimits-maxuniformbufferbindingsize",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpulimits-maxuniformbufferbindingsize",
+      "linkingText": [
+        "maxUniformBufferBindingSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPULimits"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "gpudevice",
       "href": "https://gpuweb.github.io/gpuweb/#gpudevice",
       "linkingText": [
@@ -8142,90 +8156,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpuprogrammablepassencoder-beginpipelinestatisticsquery",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-beginpipelinestatisticsquery",
-      "linkingText": [
-        "beginPipelineStatisticsQuery(querySet, queryIndex)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUProgrammablePassEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuprogrammablepassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryset",
-      "linkingText": [
-        "querySet"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUProgrammablePassEncoder/beginPipelineStatisticsQuery(querySet, queryIndex)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuprogrammablepassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryindex",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryindex",
-      "linkingText": [
-        "queryIndex"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUProgrammablePassEncoder/beginPipelineStatisticsQuery(querySet, queryIndex)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuprogrammablepassencoder-endpipelinestatisticsquery",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-endpipelinestatisticsquery",
-      "linkingText": [
-        "endPipelineStatisticsQuery(querySet, queryIndex)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUProgrammablePassEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuprogrammablepassencoder-endpipelinestatisticsquery-queryset-queryindex-queryset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-endpipelinestatisticsquery-queryset-queryindex-queryset",
-      "linkingText": [
-        "querySet"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUProgrammablePassEncoder/endPipelineStatisticsQuery(querySet, queryIndex)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuprogrammablepassencoder-endpipelinestatisticsquery-queryset-queryindex-queryindex",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-endpipelinestatisticsquery-queryset-queryindex-queryindex",
-      "linkingText": [
-        "queryIndex"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUProgrammablePassEncoder/endPipelineStatisticsQuery(querySet, queryIndex)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpuprogrammablepassencoder-debug_group_stack-slot",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-debug_group_stack-slot",
       "linkingText": [
@@ -8437,6 +8367,62 @@
       "type": "argument",
       "for": [
         "GPUComputePassEncoder/dispatchIndirect(indirectBuffer, indirectOffset)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucomputepassencoder-beginpipelinestatisticsquery",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-beginpipelinestatisticsquery",
+      "linkingText": [
+        "beginPipelineStatisticsQuery(querySet, queryIndex)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUComputePassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucomputepassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryset",
+      "linkingText": [
+        "querySet"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUComputePassEncoder/beginPipelineStatisticsQuery(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucomputepassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryindex",
+      "linkingText": [
+        "queryIndex"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUComputePassEncoder/beginPipelineStatisticsQuery(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucomputepassencoder-endpipelinestatisticsquery",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-endpipelinestatisticsquery",
+      "linkingText": [
+        "endPipelineStatisticsQuery()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUComputePassEncoder"
       ],
       "access": "public",
       "informative": false
@@ -9230,6 +9216,62 @@
       "type": "argument",
       "for": [
         "GPURenderPassEncoder/endOcclusionQuery(queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-beginpipelinestatisticsquery",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-beginpipelinestatisticsquery",
+      "linkingText": [
+        "beginPipelineStatisticsQuery(querySet, queryIndex)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderPassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryset",
+      "linkingText": [
+        "querySet"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/beginPipelineStatisticsQuery(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryindex",
+      "linkingText": [
+        "queryIndex"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/beginPipelineStatisticsQuery(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-endpipelinestatisticsquery",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-endpipelinestatisticsquery",
+      "linkingText": [
+        "endPipelineStatisticsQuery()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderPassEncoder"
       ],
       "access": "public",
       "informative": false
