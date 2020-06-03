@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-06-03T00:37:13.562Z",
+  "date": "2020-06-03T06:36:25.896Z",
   "stats": {
     "crawled": 298,
-    "errors": 4,
+    "errors": 5,
     "studied": 298
   },
   "results": [
@@ -1918,7 +1918,7 @@
     {
       "title": "Cookie Store API",
       "shortname": "cookie-store",
-      "date": "21 May 2020",
+      "date": "3 June 2020",
       "url": "https://wicg.github.io/cookie-store/",
       "nightly": {
         "url": "https://wicg.github.io/cookie-store/"
@@ -21927,7 +21927,7 @@
     {
       "title": "Permissions",
       "shortname": "permissions",
-      "date": "27 April 2020",
+      "date": "2 June 2020",
       "url": "https://www.w3.org/TR/permissions/",
       "release": {
         "url": "https://www.w3.org/TR/permissions/"
@@ -21960,8 +21960,7 @@
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://w3c.github.io/manifest/",
-          "https://w3c.github.io/sensors/",
-          "https://w3c.github.io/webdriver/webdriver-spec.html"
+          "https://w3c.github.io/sensors/"
         ],
         "inconsistentRef": [
           {
@@ -21976,6 +21975,13 @@
             "ref": {
               "name": "GETUSERMEDIA",
               "url": "https://www.w3.org/TR/mediacapture-streams/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webdriver/",
+            "ref": {
+              "name": "WebDriver",
+              "url": "https://www.w3.org/TR/webdriver1/"
             }
           }
         ],
@@ -23571,11 +23577,6 @@
               "crawled": "https://svgwg.org/specs/paths/"
             },
             {
-              "url": "https://www.w3.org/TR/svg-strokes/",
-              "title": "SVG Strokes",
-              "crawled": "https://svgwg.org/specs/strokes/"
-            },
-            {
               "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
               "title": "Trusted Types",
               "crawled": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
@@ -25025,7 +25026,7 @@
     {
       "title": "SVG Strokes",
       "shortname": "svg-strokes",
-      "date": "26 May 2020",
+      "date": "",
       "url": "https://www.w3.org/TR/svg-strokes/",
       "release": {
         "url": "https://www.w3.org/TR/svg-strokes/"
@@ -25035,17 +25036,15 @@
       },
       "crawled": "https://svgwg.org/specs/strokes/",
       "report": {
-        "noNormativeRefs": false,
+        "error": "[object Object]",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/css3-values/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
@@ -26418,6 +26417,11 @@
         "referencedBy": {
           "normative": [],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/permissions/",
+              "title": "Permissions",
+              "crawled": "https://w3c.github.io/permissions/"
+            },
             {
               "url": "https://www.w3.org/TR/push-api/",
               "title": "Push API",
