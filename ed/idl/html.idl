@@ -2222,7 +2222,7 @@ interface mixin AbstractWorker {
   attribute EventHandler onerror;
 };
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker,SharedWorker)]
 interface Worker : EventTarget {
   constructor(USVString scriptURL, optional WorkerOptions options = {});
 
@@ -2244,7 +2244,7 @@ enum WorkerType { "classic", "module" };
 
 Worker includes AbstractWorker;
 
-[Exposed=(Window,Worker)]
+[Exposed=Window]
 interface SharedWorker : EventTarget {
   constructor(USVString scriptURL, optional (DOMString or WorkerOptions) options = {});
 
