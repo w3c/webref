@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-06-03T12:37:19.112Z",
+  "date": "2020-06-03T18:37:53.428Z",
   "stats": {
     "crawled": 298,
-    "errors": 3,
+    "errors": 2,
     "studied": 298
   },
   "results": [
@@ -375,7 +375,7 @@
     {
       "title": "Background Fetch",
       "shortname": "background-fetch",
-      "date": "27 September 2019",
+      "date": "3 June 2020",
       "url": "https://wicg.github.io/background-fetch/",
       "nightly": {
         "url": "https://wicg.github.io/background-fetch/"
@@ -443,15 +443,28 @@
         ],
         "missingLinkRef": [
           "https://w3c.github.io/ServiceWorker/",
-          "https://storage.spec.whatwg.org/",
-          "https://w3c.github.io/webdriver/webdriver-spec.html"
+          "https://storage.spec.whatwg.org/"
         ],
         "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/image-resource/",
+            "ref": {
+              "name": "IMAGE-RESOURCE",
+              "url": "https://www.w3.org/TR/image-resource/"
+            }
+          },
           {
             "link": "https://w3c.github.io/permissions/",
             "ref": {
               "name": "PERMISSIONS",
               "url": "https://www.w3.org/TR/permissions/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webdriver/",
+            "ref": {
+              "name": "WebDriver",
+              "url": "https://www.w3.org/TR/webdriver1/"
             }
           }
         ],
@@ -1088,7 +1101,7 @@
               "crawled": "https://drafts.csswg.org/selectors/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
@@ -1282,7 +1295,7 @@
     {
       "title": "Clipboard API and events",
       "shortname": "clipboard-apis",
-      "date": "5 May 2020",
+      "date": "3 June 2020",
       "url": "https://www.w3.org/TR/clipboard-apis/",
       "release": {
         "url": "https://www.w3.org/TR/clipboard-apis/"
@@ -1927,53 +1940,11 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
+        "hasInvalidIdl": true,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "ServiceWorkerRegistration",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ExtendableEvent",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ExtendableEventInit",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ServiceWorkerGlobalScope",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          }
-        ],
+        "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://w3c.github.io/ServiceWorker/"
         ],
@@ -4047,7 +4018,7 @@
               "crawled": "https://svgwg.org/svg2-draft/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
@@ -4831,7 +4802,7 @@
     {
       "title": "CSS Containment Module Level 2",
       "shortname": "css-contain-2",
-      "date": "29 May 2020",
+      "date": "3 June 2020",
       "url": "https://www.w3.org/TR/css-contain-2/",
       "release": {
         "url": "https://www.w3.org/TR/css-contain-2/"
@@ -4953,7 +4924,7 @@
     {
       "title": "CSS Containment Module Level 2",
       "shortname": "css-contain-1",
-      "date": "29 May 2020",
+      "date": "3 June 2020",
       "url": "https://www.w3.org/TR/css-contain-1/",
       "release": {
         "url": "https://www.w3.org/TR/css-contain-1/"
@@ -4975,7 +4946,8 @@
           "https://www.w3.org/TR/css-cascade/",
           "https://www.w3.org/TR/web-animations/",
           "https://www.w3.org/TR/css-pseudo-4/",
-          "https://www.w3.org/TR/security-privacy-questionnaire/"
+          "https://www.w3.org/TR/security-privacy-questionnaire/",
+          "https://www.w3.org/TR/2019/WD-css-contain-2-20191111/"
         ],
         "inconsistentRef": [
           {
@@ -5021,7 +4993,13 @@
               "crawled": "https://drafts.csswg.org/css-regions/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-overflow-3/",
+              "title": "CSS Overflow Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-overflow-3/"
+            }
+          ]
         },
         "ok": false
       }
@@ -5668,7 +5646,7 @@
               "crawled": "https://drafts.csswg.org/selectors/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
@@ -9041,7 +9019,7 @@
     {
       "title": "CSS Overflow Module Level 3",
       "shortname": "css-overflow-3",
-      "date": "29 May 2020",
+      "date": "3 June 2020",
       "url": "https://www.w3.org/TR/css-overflow-3/",
       "release": {
         "url": "https://www.w3.org/TR/css-overflow-3/"
@@ -9741,9 +9719,9 @@
     },
     {
       "title": "CSS Parser API",
-      "shortname": "CSS-Parser-API",
+      "shortname": "css-parser-api",
       "date": "",
-      "url": "https://wicg.github.io/CSS-Parser-API/",
+      "url": "https://wicg.github.io/css-parser-api/",
       "nightly": {
         "url": "https://wicg.github.io/CSS-Parser-API/"
       },
@@ -14404,7 +14382,7 @@
               "crawled": "https://drafts.csswg.org/scroll-animations-1/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
@@ -15161,7 +15139,7 @@
               "crawled": "https://svgwg.org/specs/animations/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
@@ -16043,7 +16021,7 @@
               "crawled": "https://w3c.github.io/webappsec-subresource-integrity/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
@@ -16956,7 +16934,7 @@
               "crawled": "https://svgwg.org/svg2-draft/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
@@ -17296,7 +17274,7 @@
             "name": "Location",
             "refs": [
               {
-                "url": "https://wicg.github.io/ScrollToTextFragment/",
+                "url": "https://wicg.github.io/scroll-to-text-fragment/",
                 "title": "Text Fragments",
                 "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
               }
@@ -17799,6 +17777,11 @@
               "crawled": "https://w3c.github.io/IndexedDB/"
             },
             {
+              "url": "https://wicg.github.io/input-device-capabilities/",
+              "title": "Input Device Capabilities",
+              "crawled": "https://wicg.github.io/input-device-capabilities/"
+            },
+            {
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 2",
               "crawled": "https://w3c.github.io/input-events/"
@@ -18129,7 +18112,7 @@
               "crawled": "https://svgwg.org/specs/animations/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
@@ -18528,7 +18511,7 @@
     {
       "title": "Identifiers for WebRTC's Statistics API",
       "shortname": "webrtc-stats",
-      "date": "06 May 2020",
+      "date": "03 June 2020",
       "url": "https://www.w3.org/TR/webrtc-stats/",
       "release": {
         "url": "https://www.w3.org/TR/webrtc-stats/"
@@ -18653,7 +18636,13 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://wicg.github.io/background-fetch/",
+              "title": "Background Fetch",
+              "crawled": "https://wicg.github.io/background-fetch/"
+            }
+          ],
           "informative": []
         },
         "ok": false
@@ -18769,7 +18758,7 @@
     {
       "title": "Infra Standard",
       "shortname": "infra",
-      "date": "29 May 2020",
+      "date": "3 June 2020",
       "url": "https://infra.spec.whatwg.org/",
       "nightly": {
         "url": "https://infra.spec.whatwg.org/"
@@ -19204,7 +19193,7 @@
               "crawled": "https://w3c.github.io/webappsec-subresource-integrity/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
@@ -19337,18 +19326,18 @@
     },
     {
       "title": "Input Device Capabilities",
-      "shortname": "InputDeviceCapabilities",
-      "date": "",
-      "url": "https://wicg.github.io/InputDeviceCapabilities/",
+      "shortname": "input-device-capabilities",
+      "date": "03 June 2020",
+      "url": "https://wicg.github.io/input-device-capabilities/",
       "nightly": {
-        "url": "https://wicg.github.io/InputDeviceCapabilities/"
+        "url": "https://wicg.github.io/input-device-capabilities/"
       },
-      "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
+      "crawled": "https://wicg.github.io/input-device-capabilities/",
       "report": {
-        "error": "Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:93:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:88:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:548:47)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:83:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:301:36)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -19359,7 +19348,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -20359,7 +20348,7 @@
     {
       "title": "Media Queries Level 5",
       "shortname": "mediaqueries-5",
-      "date": "28 May 2020",
+      "date": "2 June 2020",
       "url": "https://www.w3.org/TR/mediaqueries-5/",
       "release": {
         "url": "https://www.w3.org/TR/mediaqueries-5/"
@@ -23834,7 +23823,7 @@
     {
       "title": "Scroll-linked Animations",
       "shortname": "scroll-animations-1",
-      "date": "25 May 2020",
+      "date": "2 June 2020",
       "url": "https://drafts.csswg.org/scroll-animations-1/",
       "nightly": {
         "url": "https://drafts.csswg.org/scroll-animations-1/"
@@ -25122,11 +25111,11 @@
     },
     {
       "title": "Text Fragments",
-      "shortname": "ScrollToTextFragment",
+      "shortname": "scroll-to-text-fragment",
       "date": "25 May 2020",
-      "url": "https://wicg.github.io/ScrollToTextFragment/",
+      "url": "https://wicg.github.io/scroll-to-text-fragment/",
       "nightly": {
-        "url": "https://wicg.github.io/ScrollToTextFragment/"
+        "url": "https://wicg.github.io/scroll-to-text-fragment/"
       },
       "crawled": "https://wicg.github.io/scroll-to-text-fragment/",
       "report": {
@@ -25283,6 +25272,11 @@
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
+            },
+            {
+              "url": "https://wicg.github.io/input-device-capabilities/",
+              "title": "Input Device Capabilities",
+              "crawled": "https://wicg.github.io/input-device-capabilities/"
             }
           ],
           "informative": [
@@ -25329,7 +25323,7 @@
     {
       "title": "Trusted Types",
       "shortname": "trusted-types",
-      "date": "20 May 2020",
+      "date": "3 June 2020",
       "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
       "nightly": {
         "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
@@ -25449,6 +25443,11 @@
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
+            },
+            {
+              "url": "https://wicg.github.io/input-device-capabilities/",
+              "title": "Input Device Capabilities",
+              "crawled": "https://wicg.github.io/input-device-capabilities/"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -25916,7 +25915,7 @@
               "crawled": "https://w3c.github.io/ServiceWorker/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
@@ -26261,11 +26260,6 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://wicg.github.io/background-fetch/",
-              "title": "Background Fetch",
-              "crawled": "https://wicg.github.io/background-fetch/"
-            },
             {
               "url": "https://wicg.github.io/badging/",
               "title": "Badging API",
@@ -27043,6 +27037,11 @@
               "url": "https://infra.spec.whatwg.org/",
               "title": "Infra Standard",
               "crawled": "https://infra.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/input-device-capabilities/",
+              "title": "Input Device Capabilities",
+              "crawled": "https://wicg.github.io/input-device-capabilities/"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -28140,7 +28139,7 @@
     {
       "title": "WebGPU",
       "shortname": "gpuweb",
-      "date": "2 June 2020",
+      "date": "3 June 2020",
       "url": "https://gpuweb.github.io/gpuweb/",
       "nightly": {
         "url": "https://gpuweb.github.io/gpuweb/"
