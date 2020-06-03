@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-06-02T18:36:58.680Z",
+  "date": "2020-06-03T00:37:13.562Z",
   "stats": {
     "crawled": 298,
-    "errors": 1,
+    "errors": 4,
     "studied": 298
   },
   "results": [
@@ -1086,11 +1086,6 @@
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://drafts.csswg.org/selectors/"
-            },
-            {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
-              "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -4052,11 +4047,6 @@
               "crawled": "https://svgwg.org/svg2-draft/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
-              "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
-            },
-            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://drafts.csswg.org/web-animations-1/"
@@ -5666,11 +5656,6 @@
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://drafts.csswg.org/selectors/"
-            },
-            {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
-              "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
             },
             {
               "url": "https://wicg.github.io/visual-viewport/",
@@ -8892,11 +8877,6 @@
               "crawled": "https://drafts.css-houdini.org/css-paint-api-1/"
             },
             {
-              "url": "https://wicg.github.io/CSS-Parser-API/",
-              "title": "CSS Parser API",
-              "crawled": "https://wicg.github.io/CSS-Parser-API/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-position-3/",
               "title": "CSS Positioned Layout Module Level 3",
               "crawled": "https://drafts.csswg.org/css-position/"
@@ -9747,21 +9727,19 @@
     {
       "title": "CSS Parser API",
       "shortname": "CSS-Parser-API",
-      "date": "27 July 2018",
+      "date": "",
       "url": "https://wicg.github.io/CSS-Parser-API/",
       "nightly": {
         "url": "https://wicg.github.io/CSS-Parser-API/"
       },
       "crawled": "https://wicg.github.io/CSS-Parser-API/",
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:93:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:88:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:548:47)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:83:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:301:36)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "ReadableStream"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -11331,11 +11309,6 @@
               "crawled": "https://drafts.css-houdini.org/css-paint-api-1/"
             },
             {
-              "url": "https://wicg.github.io/CSS-Parser-API/",
-              "title": "CSS Parser API",
-              "crawled": "https://wicg.github.io/CSS-Parser-API/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/"
@@ -11424,11 +11397,6 @@
               "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
               "title": "Trusted Types",
               "crawled": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
-            },
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -12605,11 +12573,6 @@
               "url": "https://www.w3.org/TR/css-paint-api-1/",
               "title": "CSS Painting API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-paint-api-1/"
-            },
-            {
-              "url": "https://wicg.github.io/CSS-Parser-API/",
-              "title": "CSS Parser API",
-              "crawled": "https://wicg.github.io/CSS-Parser-API/"
             },
             {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -14421,11 +14384,6 @@
               "crawled": "https://drafts.csswg.org/scroll-animations-1/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
-              "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
-            },
-            {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
               "crawled": "https://w3c.github.io/screen-orientation/"
@@ -15176,11 +15134,6 @@
               "url": "https://svgwg.org/specs/animations/",
               "title": "SVG Animations",
               "crawled": "https://svgwg.org/specs/animations/"
-            },
-            {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
-              "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
             },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
@@ -16058,11 +16011,6 @@
               "url": "https://www.w3.org/TR/SRI/",
               "title": "Subresource Integrity",
               "crawled": "https://w3c.github.io/webappsec-subresource-integrity/"
-            },
-            {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
-              "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
             },
             {
               "url": "https://www.w3.org/TR/trace-context-1/",
@@ -16973,11 +16921,6 @@
               "crawled": "https://svgwg.org/svg2-draft/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
-              "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
-            },
-            {
               "url": "https://www.w3.org/TR/webdriver1/",
               "title": "WebDriver",
               "crawled": "https://w3c.github.io/webdriver/"
@@ -17310,16 +17253,6 @@
         ],
         "redefinedIdlNames": [
           {
-            "name": "Location",
-            "refs": [
-              {
-                "url": "https://wicg.github.io/ScrollToTextFragment/",
-                "title": "Text Fragments",
-                "crawled": "https://wicg.github.io/ScrollToTextFragment/"
-              }
-            ]
-          },
-          {
             "name": "MessageEventSource",
             "refs": [
               {
@@ -17596,11 +17529,6 @@
               "crawled": "https://drafts.css-houdini.org/css-paint-api-1/"
             },
             {
-              "url": "https://wicg.github.io/CSS-Parser-API/",
-              "title": "CSS Parser API",
-              "crawled": "https://wicg.github.io/CSS-Parser-API/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/"
@@ -17819,11 +17747,6 @@
               "url": "https://www.w3.org/TR/IndexedDB-2/",
               "title": "Indexed Database API 3.0",
               "crawled": "https://w3c.github.io/IndexedDB/"
-            },
-            {
-              "url": "https://wicg.github.io/InputDeviceCapabilities/",
-              "title": "Input Device Capabilities",
-              "crawled": "https://wicg.github.io/InputDeviceCapabilities/"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -18154,11 +18077,6 @@
               "url": "https://svgwg.org/specs/animations/",
               "title": "SVG Animations",
               "crawled": "https://svgwg.org/specs/animations/"
-            },
-            {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
-              "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
             },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
@@ -19231,11 +19149,6 @@
               "crawled": "https://w3c.github.io/webappsec-subresource-integrity/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
-              "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
-            },
-            {
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
               "crawled": "https://w3c.github.io/screen-orientation/"
@@ -19365,17 +19278,17 @@
     {
       "title": "Input Device Capabilities",
       "shortname": "InputDeviceCapabilities",
-      "date": "25 December 2019",
+      "date": "",
       "url": "https://wicg.github.io/InputDeviceCapabilities/",
       "nightly": {
         "url": "https://wicg.github.io/InputDeviceCapabilities/"
       },
       "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:93:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:88:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:548:47)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:83:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:301:36)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -19386,7 +19299,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -24760,11 +24673,6 @@
               "crawled": "https://wicg.github.io/compression/"
             },
             {
-              "url": "https://wicg.github.io/CSS-Parser-API/",
-              "title": "CSS Parser API",
-              "crawled": "https://wicg.github.io/CSS-Parser-API/"
-            },
-            {
               "url": "https://www.w3.org/TR/encoding/",
               "title": "Encoding Standard",
               "crawled": "https://encoding.spec.whatwg.org/"
@@ -25149,36 +25057,22 @@
     {
       "title": "Text Fragments",
       "shortname": "ScrollToTextFragment",
-      "date": "25 May 2020",
+      "date": "",
       "url": "https://wicg.github.io/ScrollToTextFragment/",
       "nightly": {
         "url": "https://wicg.github.io/ScrollToTextFragment/"
       },
       "crawled": "https://wicg.github.io/ScrollToTextFragment/",
       "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": true,
+        "error": "Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:93:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:88:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:548:47)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:83:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:301:36)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
+        "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
-        "redefinedIdlNames": [
-          {
-            "name": "Location",
-            "refs": [
-              {
-                "url": "https://html.spec.whatwg.org/multipage/",
-                "title": "HTML Standard",
-                "crawled": "https://html.spec.whatwg.org/multipage/"
-              }
-            ]
-          }
-        ],
+        "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/webappsec-fetch-metadata/",
-          "https://w3c.github.io/selection-api/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
@@ -25309,11 +25203,6 @@
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
-            },
-            {
-              "url": "https://wicg.github.io/InputDeviceCapabilities/",
-              "title": "Input Device Capabilities",
-              "crawled": "https://wicg.github.io/InputDeviceCapabilities/"
             }
           ],
           "informative": [
@@ -25480,11 +25369,6 @@
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
-            },
-            {
-              "url": "https://wicg.github.io/InputDeviceCapabilities/",
-              "title": "Input Device Capabilities",
-              "crawled": "https://wicg.github.io/InputDeviceCapabilities/"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -25950,11 +25834,6 @@
               "url": "https://w3c.github.io/ServiceWorker/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
-            },
-            {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
-              "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
             },
             {
               "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
@@ -26871,11 +26750,6 @@
               "crawled": "https://drafts.css-houdini.org/css-paint-api-1/"
             },
             {
-              "url": "https://wicg.github.io/CSS-Parser-API/",
-              "title": "CSS Parser API",
-              "crawled": "https://wicg.github.io/CSS-Parser-API/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-properties-values-api-1/"
@@ -27079,11 +26953,6 @@
               "url": "https://infra.spec.whatwg.org/",
               "title": "Infra Standard",
               "crawled": "https://infra.spec.whatwg.org/"
-            },
-            {
-              "url": "https://wicg.github.io/InputDeviceCapabilities/",
-              "title": "Input Device Capabilities",
-              "crawled": "https://wicg.github.io/InputDeviceCapabilities/"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -28181,7 +28050,7 @@
     {
       "title": "WebGPU",
       "shortname": "gpuweb",
-      "date": "1 June 2020",
+      "date": "2 June 2020",
       "url": "https://gpuweb.github.io/gpuweb/",
       "nightly": {
         "url": "https://gpuweb.github.io/gpuweb/"
