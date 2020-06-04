@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% June 03, 2020
+% June 04, 2020
 
 ## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
@@ -1809,7 +1809,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Crawled URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
-- Crawled version: 28 May 2020
+- Crawled version: 3 June 2020
 - Editor's Draft: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
 - Latest published version: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Shortname: css-color-5
@@ -5917,7 +5917,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
 - Crawled URL: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
-- Crawled version: 20 May 2020
+- Crawled version: 3 June 2020
 - Editor's Draft: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
 - Shortname: entries-api
 
@@ -10213,24 +10213,23 @@ Informative references to this spec from:
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 
-## Web Authentication: An API for accessing Public Key Credentials - Level 2 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Web Authentication: An API for accessing Public Key Credentials - Level 2 {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
 - Crawled URL: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
-- Crawled version: 1 June 2020
+- Crawled version: 3 June 2020
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
 - Shortname: webauthn-2
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://w3c.github.io/webdriver/webdriver-spec.html`](https://w3c.github.io/webdriver/webdriver-spec.html)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/), related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+     * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/), related reference "WebDriver" uses URL [`https://www.w3.org/TR/webdriver1/`](https://www.w3.org/TR/webdriver1/)
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 
 ### Known dependencies on this specification {.dependencies}
