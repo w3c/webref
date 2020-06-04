@@ -1,13 +1,26 @@
-% Diff between report from "June 04, 2020" and reference report from "June 03, 2020"
+% Diff between report from "June 04, 2020" and reference report from "June 04, 2020"
 % Reffy
 % June 04, 2020
 
-## Web Authentication: An API for accessing Public Key Credentials - Level 2
+## CSS Parser API
 
-- Initial URL: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
+- Initial URL: [https://wicg.github.io/css-parser-api/](https://wicg.github.io/css-parser-api/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
-- Missing references for links: *DEL* https://w3c.github.io/webdriver/webdriver-spec.html
-- Inconsistent references for links: *INS* https://w3c.github.io/webdriver/
+- Editor's Draft: [https://wicg.github.io/css-parser-api/](https://wicg.github.io/css-parser-api/)
+- Spec could not be rendered: *DEL* Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined
+    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined
+    at __puppeteer_evaluation_script__:4:37
+    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:93:19)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)
+    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:88:24)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  -- ASYNC --
+    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)
+    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:548:47)
+    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:83:27)
+    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:301:36)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
 
 
