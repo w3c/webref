@@ -10663,7 +10663,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/web-share-target/](https://wicg.github.io/web-share-target/)
 - Crawled URL: [https://wicg.github.io/web-share-target/](https://wicg.github.io/web-share-target/)
-- Crawled version: 26 May 2020
+- Crawled version: 05 June 2020
 - Editor's Draft: [https://wicg.github.io/web-share-target/](https://wicg.github.io/web-share-target/)
 - Shortname: web-share-target
 
