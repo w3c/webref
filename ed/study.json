@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-06-05T18:36:49.131Z",
+  "date": "2020-06-06T00:36:26.170Z",
   "stats": {
     "crawled": 298,
     "errors": 1,
@@ -1931,7 +1931,7 @@
     {
       "title": "Cookie Store API",
       "shortname": "cookie-store",
-      "date": "3 June 2020",
+      "date": "5 June 2020",
       "url": "https://wicg.github.io/cookie-store/",
       "nightly": {
         "url": "https://wicg.github.io/cookie-store/"
@@ -2325,7 +2325,7 @@
     {
       "title": "CSS Animations Level 2",
       "shortname": "css-animations-2",
-      "date": "4 March 2020",
+      "date": "3 June 2020",
       "url": "https://drafts.csswg.org/css-animations-2/",
       "nightly": {
         "url": "https://drafts.csswg.org/css-animations-2/"
@@ -2343,18 +2343,30 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://www.w3.org/TR/css-values/",
           "https://www.w3.org/TR/css-cascade/",
           "https://www.w3.org/TR/css-pseudo/",
           "https://www.w3.org/TR/web-animations/"
         ],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
+            },
+            {
+              "url": "https://drafts.csswg.org/scroll-animations-1/",
+              "title": "Scroll-linked Animations",
+              "crawled": "https://drafts.csswg.org/scroll-animations-1/"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -3273,7 +3285,7 @@
     {
       "title": "CSS Box Sizing Module Level 3",
       "shortname": "css-sizing-3",
-      "date": "28 May 2020",
+      "date": "5 June 2020",
       "url": "https://www.w3.org/TR/css-sizing-3/",
       "release": {
         "url": "https://www.w3.org/TR/css-sizing-3/"
@@ -3479,7 +3491,7 @@
     {
       "title": "CSS Box Sizing Module Level 4",
       "shortname": "css-sizing-4",
-      "date": "17 May 2020",
+      "date": "5 June 2020",
       "url": "https://drafts.csswg.org/css-sizing-4/",
       "nightly": {
         "url": "https://drafts.csswg.org/css-sizing-4/"
@@ -5750,11 +5762,6 @@
               "crawled": "https://drafts.csswg.org/css-values-4/"
             },
             {
-              "url": "https://drafts.csswg.org/scroll-animations-1/",
-              "title": "Scroll-linked Animations",
-              "crawled": "https://drafts.csswg.org/scroll-animations-1/"
-            },
-            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://drafts.csswg.org/web-animations-1/"
@@ -7794,7 +7801,7 @@
     {
       "title": "CSS Inline Layout Module Level 3",
       "shortname": "css-inline-3",
-      "date": "3 June 2020",
+      "date": "4 June 2020",
       "url": "https://www.w3.org/TR/css-inline-3/",
       "release": {
         "url": "https://www.w3.org/TR/css-inline-3/"
@@ -7813,7 +7820,7 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://www.w3.org/TR/2002/WD-css3-linebox-20020515/",
+          "https://www.w3.org/TR/css-text/",
           "https://www.w3.org/TR/css-cascade/",
           "https://www.w3.org/TR/web-animations/"
         ],
@@ -11755,7 +11762,7 @@
     {
       "title": "CSS Text Module Level 3",
       "shortname": "css-text-3",
-      "date": "3 June 2020",
+      "date": "4 June 2020",
       "url": "https://www.w3.org/TR/css-text-3/",
       "release": {
         "url": "https://www.w3.org/TR/css-text-3/"
@@ -12700,6 +12707,11 @@
               "url": "https://www.w3.org/TR/css-animations-1/",
               "title": "CSS Animations Level 1",
               "crawled": "https://drafts.csswg.org/css-animations/"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-animations-2/",
+              "title": "CSS Animations Level 2",
+              "crawled": "https://drafts.csswg.org/css-animations-2/"
             },
             {
               "url": "https://www.w3.org/TR/css-backgrounds-3/",
@@ -23890,7 +23902,7 @@
     {
       "title": "Scroll-linked Animations",
       "shortname": "scroll-animations-1",
-      "date": "2 June 2020",
+      "date": "3 June 2020",
       "url": "https://drafts.csswg.org/scroll-animations-1/",
       "nightly": {
         "url": "https://drafts.csswg.org/scroll-animations-1/"
@@ -23907,19 +23919,9 @@
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://w3c.github.io/web-animations/",
-          "https://www.w3.org/TR/css-cascade/",
-          "https://www.w3.org/TR/web-animations/",
           "https://www.w3.org/TR/security-privacy-questionnaire/"
         ],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/css-values/",
-            "ref": {
-              "name": "CSS-VALUES-3",
-              "url": "https://www.w3.org/TR/css-values-3/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -26185,7 +26187,7 @@
     {
       "title": "Web Animations",
       "shortname": "web-animations-1",
-      "date": "28 May 2020",
+      "date": "3 June 2020",
       "url": "https://www.w3.org/TR/web-animations-1/",
       "release": {
         "url": "https://www.w3.org/TR/web-animations-1/"
@@ -28216,7 +28218,7 @@
     {
       "title": "WebGPU",
       "shortname": "gpuweb",
-      "date": "3 June 2020",
+      "date": "5 June 2020",
       "url": "https://gpuweb.github.io/gpuweb/",
       "nightly": {
         "url": "https://gpuweb.github.io/gpuweb/"
