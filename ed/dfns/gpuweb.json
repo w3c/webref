@@ -2280,6 +2280,34 @@
       "informative": false
     },
     {
+      "id": "dom-gputextureview-texture-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureview-texture-slot",
+      "linkingText": [
+        "[[texture]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUTextureView"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gputextureview-descriptor-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureview-descriptor-slot",
+      "linkingText": [
+        "[[descriptor]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUTextureView"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dictdef-gputextureviewdescriptor",
       "href": "https://gpuweb.github.io/gpuweb/#dictdef-gputextureviewdescriptor",
       "linkingText": [
@@ -7006,20 +7034,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpucommandencoder-beginrenderpass",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-beginrenderpass",
-      "linkingText": [
-        "beginRenderPass(descriptor)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUCommandEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpucommandencoder-beginrenderpass-descriptor-descriptor",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-beginrenderpass-descriptor-descriptor",
       "linkingText": [
@@ -7491,6 +7505,34 @@
       "localLinkingText": [],
       "type": "dictionary",
       "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-beginrenderpass",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-beginrenderpass",
+      "linkingText": [
+        "beginRenderPass(descriptor)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUCommandEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-gpucommandencoderbeginrenderpass-valid-usage",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpucommandencoderbeginrenderpass-valid-usage",
+      "linkingText": [
+        "Valid Usage"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "GPUCommandEncoder.beginRenderPass"
+      ],
       "access": "public",
       "informative": false
     },
@@ -9196,26 +9238,12 @@
       "id": "dom-gpurenderpassencoder-endocclusionquery",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-endocclusionquery",
       "linkingText": [
-        "endOcclusionQuery(queryIndex)"
+        "endOcclusionQuery()"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
         "GPURenderPassEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-endocclusionquery-queryindex-queryindex",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-endocclusionquery-queryindex-queryindex",
-      "linkingText": [
-        "queryIndex"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/endOcclusionQuery(queryIndex)"
       ],
       "access": "public",
       "informative": false
@@ -9359,6 +9387,34 @@
       "informative": false
     },
     {
+      "id": "abstract-opdef-gpurenderpassdescriptor-valid-usage",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpurenderpassdescriptor-valid-usage",
+      "linkingText": [
+        "Valid Usage"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "GPURenderPassDescriptor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "gpurenderpassdescriptor-maximum-color-attachments",
+      "href": "https://gpuweb.github.io/gpuweb/#gpurenderpassdescriptor-maximum-color-attachments",
+      "linkingText": [
+        "maximum color attachments"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "GPURenderPassDescriptor"
+      ],
+      "access": "private",
+      "informative": true
+    },
+    {
       "id": "dictdef-gpurenderpasscolorattachmentdescriptor",
       "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpasscolorattachmentdescriptor",
       "linkingText": [
@@ -9420,6 +9476,20 @@
       ],
       "localLinkingText": [],
       "type": "dict-member",
+      "for": [
+        "GPURenderPassColorAttachmentDescriptor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-gpurenderpasscolorattachmentdescriptor-valid-usage",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpurenderpasscolorattachmentdescriptor-valid-usage",
+      "linkingText": [
+        "Valid Usage"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
       "for": [
         "GPURenderPassColorAttachmentDescriptor"
       ],
@@ -9530,6 +9600,20 @@
       ],
       "localLinkingText": [],
       "type": "dict-member",
+      "for": [
+        "GPURenderPassDepthStencilAttachmentDescriptor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-gpurenderpassdepthstencilattachmentdescriptor-valid-usage",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpurenderpassdepthstencilattachmentdescriptor-valid-usage",
+      "linkingText": [
+        "Valid Usage"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
       "for": [
         "GPURenderPassDepthStencilAttachmentDescriptor"
       ],

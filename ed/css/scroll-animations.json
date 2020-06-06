@@ -3,20 +3,7 @@
     "title": "Scroll-linked Animations",
     "url": "https://drafts.csswg.org/scroll-animations-1/"
   },
-  "properties": {
-    "animation-timeline": {
-      "name": "animation-timeline",
-      "value": "<single-animation-timeline>#",
-      "initial": "auto",
-      "appliesTo": "all elements, ::before and ::after pseudo-elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "As specified",
-      "canonicalOrder": "per grammar",
-      "animatable": "no",
-      "media": "interactive"
-    }
-  },
+  "properties": {},
   "descriptors": {
     "source": {
       "name": "source",
@@ -49,15 +36,5 @@
       "initial": "auto"
     }
   },
-  "valuespaces": {
-    "<single-animation-timeline>": {
-      "value": "auto | none | <timeline-name>"
-    },
-    "<timeline-name>": {
-      "value": "<custom-ident> | <string>"
-    },
-    "<single-animation>": {
-      "value": "<time> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || [ none | <timeline-name> ]"
-    }
-  }
+  "valuespaces": {}
 }
