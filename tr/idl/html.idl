@@ -663,9 +663,10 @@ interface TimeRanges {
   double end(unsigned long index);
 };
 
-[Exposed=Window,
- Constructor(DOMString type, optional TrackEventInit eventInitDict = {})]
+[Exposed=Window]
 interface TrackEvent : Event {
+  constructor(DOMString type, optional TrackEventInit eventInitDict = {});
+
   readonly attribute (VideoTrack or AudioTrack or TextTrack)? track;
 };
 
@@ -1579,9 +1580,10 @@ interface DataTransferItem {
 
 callback FunctionStringCallback = void (DOMString data);
 
-[Exposed=Window,
- Constructor(DOMString type, optional DragEventInit eventInitDict = {})]
+[Exposed=Window]
 interface DragEvent : MouseEvent {
+  constructor(DOMString type, optional DragEventInit eventInitDict = {});
+
   readonly attribute DataTransfer? dataTransfer;
 };
 
@@ -1686,9 +1688,10 @@ interface Location { // but see also additional creation steps and overridden in
   [LegacyUnforgeable, SameObject] readonly attribute DOMStringList ancestorOrigins;
 };
 
-[Exposed=Window,
- Constructor(DOMString type, optional PopStateEventInit eventInitDict = {})]
+[Exposed=Window]
 interface PopStateEvent : Event {
+  constructor(DOMString type, optional PopStateEventInit eventInitDict = {});
+
   readonly attribute any state;
 };
 
@@ -1696,9 +1699,10 @@ dictionary PopStateEventInit : EventInit {
   any state = null;
 };
 
-[Exposed=Window,
- Constructor(DOMString type, optional HashChangeEventInit eventInitDict = {})]
+[Exposed=Window]
 interface HashChangeEvent : Event {
+  constructor(DOMString type, optional HashChangeEventInit eventInitDict = {});
+
   readonly attribute USVString oldURL;
   readonly attribute USVString newURL;
 };
@@ -1708,9 +1712,10 @@ dictionary HashChangeEventInit : EventInit {
   USVString newURL = "";
 };
 
-[Exposed=Window,
- Constructor(DOMString type, optional PageTransitionEventInit eventInitDict = {})]
+[Exposed=Window]
 interface PageTransitionEvent : Event {
+  constructor(DOMString type, optional PageTransitionEventInit eventInitDict = {});
+
   readonly attribute boolean persisted;
 };
 
@@ -2148,8 +2153,10 @@ dictionary CloseEventInit : EventInit {
   USVString reason = "";
 };
 
-[Constructor, Exposed=(Window,Worker)]
+[Exposed=(Window,Worker)]
 interface MessageChannel {
+  constructor();
+
   readonly attribute MessagePort port1;
   readonly attribute MessagePort port2;
 };
@@ -2222,7 +2229,7 @@ interface mixin AbstractWorker {
   attribute EventHandler onerror;
 };
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker,SharedWorker)]
 interface Worker : EventTarget {
   constructor(USVString scriptURL, optional WorkerOptions options = {});
 
@@ -2244,7 +2251,7 @@ enum WorkerType { "classic", "module" };
 
 Worker includes AbstractWorker;
 
-[Exposed=(Window,Worker)]
+[Exposed=Window]
 interface SharedWorker : EventTarget {
   constructor(USVString scriptURL, optional (DOMString or WorkerOptions) options = {});
 
@@ -2296,9 +2303,10 @@ interface mixin WindowLocalStorage {
 };
 Window includes WindowLocalStorage;
 
-[Exposed=Window,
- Constructor(DOMString type, optional StorageEventInit eventInitDict = {})]
+[Exposed=Window]
 interface StorageEvent : Event {
+  constructor(DOMString type, optional StorageEventInit eventInitDict = {});
+
   readonly attribute DOMString? key;
   readonly attribute DOMString? oldValue;
   readonly attribute DOMString? newValue;

@@ -62,6 +62,7 @@ dictionary GPULimits {
     GPUSize32 maxStorageBuffersPerShaderStage = 4;
     GPUSize32 maxStorageTexturesPerShaderStage = 4;
     GPUSize32 maxUniformBuffersPerShaderStage = 12;
+    GPUSize32 maxUniformBufferBindingSize = 16384;
 };
 
 [Exposed=(Window, DedicatedWorker), Serializable]
@@ -676,15 +677,15 @@ interface mixin GPUProgrammablePassEncoder {
     void pushDebugGroup(USVString groupLabel);
     void popDebugGroup();
     void insertDebugMarker(USVString markerLabel);
-
-    void beginPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);
-    void endPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);
 };
 
 interface GPUComputePassEncoder {
     void setPipeline(GPUComputePipeline pipeline);
     void dispatch(GPUSize32 x, optional GPUSize32 y = 1, optional GPUSize32 z = 1);
     void dispatchIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);
+
+    void beginPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);
+    void endPipelineStatisticsQuery();
 
     void endPass();
 };
@@ -723,7 +724,10 @@ interface GPURenderPassEncoder {
     void setStencilReference(GPUStencilValue reference);
 
     void beginOcclusionQuery(GPUSize32 queryIndex);
-    void endOcclusionQuery(GPUSize32 queryIndex);
+    void endOcclusionQuery();
+
+    void beginPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);
+    void endPipelineStatisticsQuery();
 
     void executeBundles(sequence<GPURenderBundle> bundles);
     void endPass();
@@ -796,13 +800,13 @@ interface GPUQueue {
     void writeBuffer(
         GPUBuffer buffer,
         GPUSize64 bufferOffset,
-        ArrayBuffer data,
+        [AllowShared] ArrayBuffer data,
         optional GPUSize64 dataOffset = 0,
         optional GPUSize64 size);
 
     void writeTexture(
       GPUTextureCopyView destination,
-      ArrayBuffer data,
+      [AllowShared] ArrayBuffer data,
       GPUTextureDataLayout dataLayout,
       GPUExtent3D size);
 
