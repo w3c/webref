@@ -8,41 +8,52 @@
       "name": "overflow-x",
       "value": "visible | hidden | clip | scroll | auto",
       "initial": "visible",
-      "appliesTo": "block containers [CSS21], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
+      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "as specified, except with visible/clip computing to auto/hidden (respectively) if one of overflow-x or overflow-y is neither visible nor clip",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "overflow-y": {
       "name": "overflow-y",
       "value": "visible | hidden | clip | scroll | auto",
       "initial": "visible",
-      "appliesTo": "block containers [CSS21], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
+      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "as specified, except with visible/clip computing to auto/hidden (respectively) if one of overflow-x or overflow-y is neither visible nor clip",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "overflow": {
       "name": "overflow",
       "value": "[ visible | hidden | clip | scroll | auto ]{1,2}",
-      "initial": "see individual properties",
-      "appliesTo": "block containers [CSS21], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
+      "initial": "visible",
+      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "see individual properties",
+      "animationType": "discrete",
+      "canonicalOrder": "per grammar"
+    },
+    "overflow-clip-margin": {
+      "name": "overflow-clip-margin",
+      "value": "<length [0,∞]>",
+      "initial": "0px",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the computed <length>",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
     },
     "overflow-inline": {
       "name": "overflow-inline",
-      "value": "<‘overflow’>",
-      "initial": "auto",
+      "value": "<'overflow'>",
+      "initial": "visible",
       "appliesTo": "Same as overflow-x and overflow-y",
-      "inherited": "No",
+      "inherited": "no",
       "percentages": "N/A",
       "computedValue": "Same as overflow-x and overflow-y",
       "canonicalOrder": "per grammar",
@@ -50,10 +61,10 @@
     },
     "overflow-block": {
       "name": "overflow-block",
-      "value": "<‘overflow’>",
-      "initial": "auto",
+      "value": "<'overflow'>",
+      "initial": "visible",
       "appliesTo": "Same as overflow-x and overflow-y",
-      "inherited": "No",
+      "inherited": "no",
       "percentages": "N/A",
       "computedValue": "Same as overflow-x and overflow-y",
       "canonicalOrder": "per grammar",
@@ -66,14 +77,14 @@
       "appliesTo": "block containers",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
-    "block-overflow": {
-      "name": "block-overflow",
-      "value": "clip | ellipsis | <string>",
-      "initial": "clip",
+    "block-ellipsis": {
+      "name": "block-ellipsis",
+      "value": "none | auto | <string>",
+      "initial": "none",
       "appliesTo": "block containers",
       "inherited": "yes",
       "percentages": "N/A",
@@ -83,14 +94,14 @@
     },
     "line-clamp": {
       "name": "line-clamp",
-      "value": "none | <integer> <block-overflow>?",
+      "value": "none | <integer> <'block-ellipsis'>?",
       "initial": "none",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
       "percentages": "N/A",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "animatable": "see individual properties"
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar"
     },
     "max-lines": {
       "name": "max-lines",
@@ -99,9 +110,9 @@
       "appliesTo": "block containers which are also fragmentation containers that capture region breaks",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "specified value",
+      "computedValue": "the keyword none or an integer",
       "canonicalOrder": "per grammar",
-      "animatable": "as integer"
+      "animationType": "by computed value type"
     },
     "continue": {
       "name": "continue",
@@ -110,7 +121,7 @@
       "appliesTo": "block containers and multicol containers",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "specified value",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     }

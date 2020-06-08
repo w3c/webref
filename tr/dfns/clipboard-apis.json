@@ -77,7 +77,19 @@
       "for": [
         "ClipboardEventInit"
       ],
-      "access": "private",
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "clipboardevent",
+      "href": "https://www.w3.org/TR/clipboard-apis/#clipboardevent",
+      "linkingText": [
+        "ClipboardEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
       "informative": false
     },
     {
@@ -85,7 +97,9 @@
       "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboardevent-clipboardevent",
       "linkingText": [
         "ClipboardEvent(type, eventInitDict)",
-        "ClipboardEvent(type)"
+        "constructor(type, eventInitDict)",
+        "ClipboardEvent(type)",
+        "constructor(type)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -104,7 +118,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "ClipboardEvent/ClipboardEvent(type, eventInitDict)"
+        "ClipboardEvent/ClipboardEvent(type, eventInitDict)",
+        "ClipboardEvent/constructor(type, eventInitDict)",
+        "ClipboardEvent/ClipboardEvent(type)",
+        "ClipboardEvent/constructor(type)"
       ],
       "access": "public",
       "informative": false
@@ -118,20 +135,11 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "ClipboardEvent/ClipboardEvent(type, eventInitDict)"
+        "ClipboardEvent/ClipboardEvent(type, eventInitDict)",
+        "ClipboardEvent/constructor(type, eventInitDict)",
+        "ClipboardEvent/ClipboardEvent(type)",
+        "ClipboardEvent/constructor(type)"
       ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "clipboardevent",
-      "href": "https://www.w3.org/TR/clipboard-apis/#clipboardevent",
-      "linkingText": [
-        "ClipboardEvent"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false
     },
@@ -160,19 +168,7 @@
       "for": [
         "ClipboardEvent"
       ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "clipboard-events",
-      "href": "https://www.w3.org/TR/clipboard-apis/#clipboard-events",
-      "linkingText": [
-        "Clipboard events"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -232,7 +228,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -376,11 +372,25 @@
       "informative": false
     },
     {
+      "id": "clipboarditem",
+      "href": "https://www.w3.org/TR/clipboard-apis/#clipboarditem",
+      "linkingText": [
+        "ClipboardItem"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-clipboarditem-clipboarditem",
       "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboarditem-clipboarditem",
       "linkingText": [
         "ClipboardItem(items, options)",
-        "ClipboardItem(items)"
+        "constructor(items, options)",
+        "ClipboardItem(items)",
+        "constructor(items)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -399,7 +409,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "ClipboardItem/ClipboardItem(items, options)"
+        "ClipboardItem/ClipboardItem(items, options)",
+        "ClipboardItem/constructor(items, options)",
+        "ClipboardItem/ClipboardItem(items)",
+        "ClipboardItem/constructor(items)"
       ],
       "access": "public",
       "informative": false
@@ -413,20 +426,11 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "ClipboardItem/ClipboardItem(items, options)"
+        "ClipboardItem/ClipboardItem(items, options)",
+        "ClipboardItem/constructor(items, options)",
+        "ClipboardItem/ClipboardItem(items)",
+        "ClipboardItem/constructor(items)"
       ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "clipboarditem",
-      "href": "https://www.w3.org/TR/clipboard-apis/#clipboarditem",
-      "linkingText": [
-        "ClipboardItem"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false
     },

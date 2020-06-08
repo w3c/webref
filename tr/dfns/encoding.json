@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Encoding",
+    "title": "Encoding Standard",
     "url": "https://www.w3.org/TR/encoding/"
   },
   "dfns": [
@@ -500,6 +500,168 @@
       "informative": false
     },
     {
+      "id": "bom-sniff",
+      "href": "https://www.w3.org/TR/encoding/#bom-sniff",
+      "linkingText": [
+        "BOM sniff"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "textdecodercommon",
+      "href": "https://www.w3.org/TR/encoding/#textdecodercommon",
+      "linkingText": [
+        "TextDecoderCommon"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "textdecoder-encoding",
+      "href": "https://www.w3.org/TR/encoding/#textdecoder-encoding",
+      "linkingText": [
+        "encoding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextDecoderCommon"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textdecodercommon-decoder",
+      "href": "https://www.w3.org/TR/encoding/#textdecodercommon-decoder",
+      "linkingText": [
+        "decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextDecoderCommon"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textdecodercommon-stream",
+      "href": "https://www.w3.org/TR/encoding/#textdecodercommon-stream",
+      "linkingText": [
+        "stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextDecoderCommon"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textdecoder-ignore-bom-flag",
+      "href": "https://www.w3.org/TR/encoding/#textdecoder-ignore-bom-flag",
+      "linkingText": [
+        "ignore BOM"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextDecoderCommon"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textdecoder-bom-seen-flag",
+      "href": "https://www.w3.org/TR/encoding/#textdecoder-bom-seen-flag",
+      "linkingText": [
+        "BOM seen"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextDecoderCommon"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textdecoder-error-mode",
+      "href": "https://www.w3.org/TR/encoding/#textdecoder-error-mode",
+      "linkingText": [
+        "error mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextDecoderCommon"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-td-serialize",
+      "href": "https://www.w3.org/TR/encoding/#concept-td-serialize",
+      "linkingText": [
+        "serialize stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoder-encoding",
+      "href": "https://www.w3.org/TR/encoding/#dom-textdecoder-encoding",
+      "linkingText": [
+        "encoding"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "TextDecoderCommon"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoder-fatal",
+      "href": "https://www.w3.org/TR/encoding/#dom-textdecoder-fatal",
+      "linkingText": [
+        "fatal"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "TextDecoderCommon"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoder-ignorebom",
+      "href": "https://www.w3.org/TR/encoding/#dom-textdecoder-ignorebom",
+      "linkingText": [
+        "ignoreBOM"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "TextDecoderCommon"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "textdecoderoptions",
       "href": "https://www.w3.org/TR/encoding/#textdecoderoptions",
       "linkingText": [
@@ -566,6 +728,18 @@
       "informative": false
     },
     {
+      "id": "textdecoder",
+      "href": "https://www.w3.org/TR/encoding/#textdecoder",
+      "linkingText": [
+        "TextDecoder"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-textdecoder-textdecoder-label-options-label",
       "href": "https://www.w3.org/TR/encoding/#dom-textdecoder-textdecoder-label-options-label",
       "linkingText": [
@@ -574,7 +748,12 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "TextDecoder/TextDecoder(label, options)"
+        "TextDecoder/TextDecoder(label, options)",
+        "TextDecoder/constructor(label, options)",
+        "TextDecoder/TextDecoder(label)",
+        "TextDecoder/constructor(label)",
+        "TextDecoder/TextDecoder()",
+        "TextDecoder/constructor()"
       ],
       "access": "public",
       "informative": false
@@ -588,20 +767,13 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "TextDecoder/TextDecoder(label, options)"
+        "TextDecoder/TextDecoder(label, options)",
+        "TextDecoder/constructor(label, options)",
+        "TextDecoder/TextDecoder(label)",
+        "TextDecoder/constructor(label)",
+        "TextDecoder/TextDecoder()",
+        "TextDecoder/constructor()"
       ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "textdecoder",
-      "href": "https://www.w3.org/TR/encoding/#textdecoder",
-      "linkingText": [
-        "TextDecoder"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false
     },
@@ -638,108 +810,10 @@
       "informative": false
     },
     {
-      "id": "textdecoder-encoding",
-      "href": "https://www.w3.org/TR/encoding/#textdecoder-encoding",
-      "linkingText": [
-        "encoding"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "TextDecoder"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "textdecoder-decoder",
-      "href": "https://www.w3.org/TR/encoding/#textdecoder-decoder",
-      "linkingText": [
-        "decoder"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "TextDecoder"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "textdecoder-stream",
-      "href": "https://www.w3.org/TR/encoding/#textdecoder-stream",
-      "linkingText": [
-        "stream"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "TextDecoder"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "textdecoder-ignore-bom-flag",
-      "href": "https://www.w3.org/TR/encoding/#textdecoder-ignore-bom-flag",
-      "linkingText": [
-        "ignore BOM flag"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "TextDecoder"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "textdecoder-bom-seen-flag",
-      "href": "https://www.w3.org/TR/encoding/#textdecoder-bom-seen-flag",
-      "linkingText": [
-        "BOM seen flag"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "TextDecoder"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "textdecoder-error-mode",
-      "href": "https://www.w3.org/TR/encoding/#textdecoder-error-mode",
-      "linkingText": [
-        "error mode"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "TextDecoder"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "textdecoder-do-not-flush-flag",
       "href": "https://www.w3.org/TR/encoding/#textdecoder-do-not-flush-flag",
       "linkingText": [
-        "do not flush flag"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "TextDecoder"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "concept-td-serialize",
-      "href": "https://www.w3.org/TR/encoding/#concept-td-serialize",
-      "linkingText": [
-        "serialize stream"
+        "do not flush"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -753,52 +827,15 @@
       "id": "dom-textdecoder",
       "href": "https://www.w3.org/TR/encoding/#dom-textdecoder",
       "linkingText": [
-        "TextDecoder(label, options)"
+        "TextDecoder(label, options)",
+        "constructor(label, options)",
+        "TextDecoder(label)",
+        "constructor(label)",
+        "TextDecoder()",
+        "constructor()"
       ],
       "localLinkingText": [],
       "type": "constructor",
-      "for": [
-        "TextDecoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-textdecoder-encoding",
-      "href": "https://www.w3.org/TR/encoding/#dom-textdecoder-encoding",
-      "linkingText": [
-        "encoding"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "TextDecoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-textdecoder-fatal",
-      "href": "https://www.w3.org/TR/encoding/#dom-textdecoder-fatal",
-      "linkingText": [
-        "fatal"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "TextDecoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-textdecoder-ignorebom",
-      "href": "https://www.w3.org/TR/encoding/#dom-textdecoder-ignorebom",
-      "linkingText": [
-        "ignoreBOM"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
       "for": [
         "TextDecoder"
       ],
@@ -817,6 +854,72 @@
       "type": "method",
       "for": [
         "TextDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "textencodercommon",
+      "href": "https://www.w3.org/TR/encoding/#textencodercommon",
+      "linkingText": [
+        "TextEncoderCommon"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textencoder-encoding",
+      "href": "https://www.w3.org/TR/encoding/#dom-textencoder-encoding",
+      "linkingText": [
+        "encoding"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "TextEncoderCommon"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-textencoderencodeintoresult",
+      "href": "https://www.w3.org/TR/encoding/#dictdef-textencoderencodeintoresult",
+      "linkingText": [
+        "TextEncoderEncodeIntoResult"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textencoderencodeintoresult-read",
+      "href": "https://www.w3.org/TR/encoding/#dom-textencoderencodeintoresult-read",
+      "linkingText": [
+        "read"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextEncoderEncodeIntoResult"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textencoderencodeintoresult-written",
+      "href": "https://www.w3.org/TR/encoding/#dom-textencoderencodeintoresult-written",
+      "linkingText": [
+        "written"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextEncoderEncodeIntoResult"
       ],
       "access": "public",
       "informative": false
@@ -849,41 +952,42 @@
       "informative": false
     },
     {
-      "id": "textencoder-encoder",
-      "href": "https://www.w3.org/TR/encoding/#textencoder-encoder",
+      "id": "dom-textencoder-encodeinto-source-destination-source",
+      "href": "https://www.w3.org/TR/encoding/#dom-textencoder-encodeinto-source-destination-source",
       "linkingText": [
-        "encoder"
+        "source"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "argument",
       "for": [
-        "TextEncoder"
+        "TextEncoder/encodeInto(source, destination)"
       ],
-      "access": "private",
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textencoder-encodeinto-source-destination-destination",
+      "href": "https://www.w3.org/TR/encoding/#dom-textencoder-encodeinto-source-destination-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "TextEncoder/encodeInto(source, destination)"
+      ],
+      "access": "public",
       "informative": false
     },
     {
       "id": "dom-textencoder",
       "href": "https://www.w3.org/TR/encoding/#dom-textencoder",
       "linkingText": [
-        "TextEncoder()"
+        "TextEncoder()",
+        "constructor()"
       ],
       "localLinkingText": [],
       "type": "constructor",
-      "for": [
-        "TextEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-textencoder-encoding",
-      "href": "https://www.w3.org/TR/encoding/#dom-textencoder-encoding",
-      "linkingText": [
-        "encoding"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
       "for": [
         "TextEncoder"
       ],
@@ -903,6 +1007,258 @@
         "TextEncoder"
       ],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textencoder-encodeinto",
+      "href": "https://www.w3.org/TR/encoding/#dom-textencoder-encodeinto",
+      "linkingText": [
+        "encodeInto(source, destination)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "TextEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "generictransformstream",
+      "href": "https://www.w3.org/TR/encoding/#generictransformstream",
+      "linkingText": [
+        "GenericTransformStream"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "generictransformstream-transform",
+      "href": "https://www.w3.org/TR/encoding/#generictransformstream-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "GenericTransformStream"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-generictransformstream-readable",
+      "href": "https://www.w3.org/TR/encoding/#dom-generictransformstream-readable",
+      "linkingText": [
+        "readable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GenericTransformStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-generictransformstream-writable",
+      "href": "https://www.w3.org/TR/encoding/#dom-generictransformstream-writable",
+      "linkingText": [
+        "writable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GenericTransformStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "textdecoderstream",
+      "href": "https://www.w3.org/TR/encoding/#textdecoderstream",
+      "linkingText": [
+        "TextDecoderStream"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoderstream-textdecoderstream-label-options-label",
+      "href": "https://www.w3.org/TR/encoding/#dom-textdecoderstream-textdecoderstream-label-options-label",
+      "linkingText": [
+        "label"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "TextDecoderStream/TextDecoderStream(label, options)",
+        "TextDecoderStream/constructor(label, options)",
+        "TextDecoderStream/TextDecoderStream(label)",
+        "TextDecoderStream/constructor(label)",
+        "TextDecoderStream/TextDecoderStream()",
+        "TextDecoderStream/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoderstream-textdecoderstream-label-options-options",
+      "href": "https://www.w3.org/TR/encoding/#dom-textdecoderstream-textdecoderstream-label-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "TextDecoderStream/TextDecoderStream(label, options)",
+        "TextDecoderStream/constructor(label, options)",
+        "TextDecoderStream/TextDecoderStream(label)",
+        "TextDecoderStream/constructor(label)",
+        "TextDecoderStream/TextDecoderStream()",
+        "TextDecoderStream/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-textdecoderstream",
+      "href": "https://www.w3.org/TR/encoding/#dom-textdecoderstream",
+      "linkingText": [
+        "TextDecoderStream(label, options)",
+        "constructor(label, options)",
+        "TextDecoderStream(label)",
+        "constructor(label)",
+        "TextDecoderStream()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "TextDecoderStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "decode-and-enqueue-a-chunk",
+      "href": "https://www.w3.org/TR/encoding/#decode-and-enqueue-a-chunk",
+      "linkingText": [
+        "decode and enqueue a chunk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "flush-and-enqueue",
+      "href": "https://www.w3.org/TR/encoding/#flush-and-enqueue",
+      "linkingText": [
+        "flush and enqueue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textencoderstream",
+      "href": "https://www.w3.org/TR/encoding/#textencoderstream",
+      "linkingText": [
+        "TextEncoderStream"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "textencoderstream-encoder",
+      "href": "https://www.w3.org/TR/encoding/#textencoderstream-encoder",
+      "linkingText": [
+        "encoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextEncoderStream"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "textencoderstream-pending-high-surrogate",
+      "href": "https://www.w3.org/TR/encoding/#textencoderstream-pending-high-surrogate",
+      "linkingText": [
+        "pending high surrogate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "TextEncoderStream"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-textencoderstream",
+      "href": "https://www.w3.org/TR/encoding/#dom-textencoderstream",
+      "linkingText": [
+        "TextEncoderStream()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "TextEncoderStream"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "encode-and-enqueue-a-chunk",
+      "href": "https://www.w3.org/TR/encoding/#encode-and-enqueue-a-chunk",
+      "linkingText": [
+        "encode and enqueue a chunk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "convert-code-unit-to-scalar-value",
+      "href": "https://www.w3.org/TR/encoding/#convert-code-unit-to-scalar-value",
+      "linkingText": [
+        "convert code unit to scalar value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "encode-and-flush",
+      "href": "https://www.w3.org/TR/encoding/#encode-and-flush",
+      "linkingText": [
+        "encode and flush"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
@@ -1497,7 +1853,7 @@
       "id": "gbk-flag",
       "href": "https://www.w3.org/TR/encoding/#gbk-flag",
       "linkingText": [
-        "GBK flag"
+        "is GBK"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1581,7 +1937,7 @@
       "id": "euc-jp-jis0212-flag",
       "href": "https://www.w3.org/TR/encoding/#euc-jp-jis0212-flag",
       "linkingText": [
-        "EUC-JP jis0212 flag"
+        "EUC-JP jis0212"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1677,7 +2033,7 @@
       "id": "iso-2022-jp-output-flag",
       "href": "https://www.w3.org/TR/encoding/#iso-2022-jp-output-flag",
       "linkingText": [
-        "ISO-2022-JP output flag"
+        "ISO-2022-JP output"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1953,7 +2309,7 @@
       "id": "replacement-error-returned-flag",
       "href": "https://www.w3.org/TR/encoding/#replacement-error-returned-flag",
       "linkingText": [
-        "replacement error returned flag"
+        "replacement error returned"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2001,7 +2357,7 @@
       "id": "utf-16be-decoder-flag",
       "href": "https://www.w3.org/TR/encoding/#utf-16be-decoder-flag",
       "linkingText": [
-        "UTF-16BE decoder flag"
+        "is UTF-16BE decoder"
       ],
       "localLinkingText": [],
       "type": "dfn",

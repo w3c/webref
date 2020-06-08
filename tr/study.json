@@ -2,11 +2,11 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-06-01T11:17:34.174Z",
+  "date": "2020-06-08T11:18:55.075Z",
   "stats": {
-    "crawled": 299,
+    "crawled": 298,
     "errors": 1,
-    "studied": 299
+    "studied": 298
   },
   "results": [
     {
@@ -494,7 +494,7 @@
     {
       "title": "Background Fetch",
       "shortname": "background-fetch",
-      "date": "27 September 2019",
+      "date": "3 June 2020",
       "url": "https://wicg.github.io/background-fetch/",
       "nightly": {
         "url": "https://wicg.github.io/background-fetch/"
@@ -562,15 +562,28 @@
         ],
         "missingLinkRef": [
           "https://w3c.github.io/ServiceWorker/",
-          "https://storage.spec.whatwg.org/",
-          "https://w3c.github.io/webdriver/webdriver-spec.html"
+          "https://storage.spec.whatwg.org/"
         ],
         "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/image-resource/",
+            "ref": {
+              "name": "IMAGE-RESOURCE",
+              "url": "https://www.w3.org/TR/image-resource/"
+            }
+          },
           {
             "link": "https://w3c.github.io/permissions/",
             "ref": {
               "name": "PERMISSIONS",
               "url": "https://www.w3.org/TR/permissions/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webdriver/",
+            "ref": {
+              "name": "WebDriver",
+              "url": "https://www.w3.org/TR/webdriver1/"
             }
           }
         ],
@@ -1148,6 +1161,11 @@
               "crawled": "https://www.w3.org/TR/mediaqueries-4/"
             },
             {
+              "url": "https://www.w3.org/TR/mediaqueries-5/",
+              "title": "Media Queries Level 5",
+              "crawled": "https://www.w3.org/TR/mediaqueries-5/"
+            },
+            {
               "url": "https://www.w3.org/TR/motion-1/",
               "title": "Motion Path Module Level 1",
               "crawled": "https://www.w3.org/TR/motion-1/"
@@ -1183,9 +1201,9 @@
               "crawled": "https://www.w3.org/TR/selectors-4/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -1404,7 +1422,7 @@
     {
       "title": "Clipboard API and events",
       "shortname": "clipboard-apis",
-      "date": "5 June 2019",
+      "date": "3 June 2020",
       "url": "https://www.w3.org/TR/clipboard-apis/",
       "release": {
         "url": "https://www.w3.org/TR/clipboard-apis/"
@@ -1677,7 +1695,18 @@
           "ReadableStream",
           "WritableStream"
         ],
-        "redefinedIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "GenericTransformStream",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/encoding/",
+                "title": "Encoding Standard",
+                "crawled": "https://www.w3.org/TR/encoding/"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -2017,7 +2046,7 @@
     {
       "title": "Cookie Store API",
       "shortname": "cookie-store",
-      "date": "21 May 2020",
+      "date": "5 June 2020",
       "url": "https://wicg.github.io/cookie-store/",
       "nightly": {
         "url": "https://wicg.github.io/cookie-store/"
@@ -2026,53 +2055,11 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
+        "hasInvalidIdl": true,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "ServiceWorkerRegistration",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ExtendableEvent",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ExtendableEventInit",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ServiceWorkerGlobalScope",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          }
-        ],
+        "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://w3c.github.io/ServiceWorker/"
         ],
@@ -2433,7 +2420,7 @@
     {
       "title": "CSS Animations Level 2",
       "shortname": "css-animations-2",
-      "date": "4 March 2020",
+      "date": "3 June 2020",
       "url": "https://drafts.csswg.org/css-animations-2/",
       "nightly": {
         "url": "https://drafts.csswg.org/css-animations-2/"
@@ -2451,18 +2438,30 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://www.w3.org/TR/css-values/",
           "https://www.w3.org/TR/css-cascade/",
           "https://www.w3.org/TR/css-pseudo/",
           "https://www.w3.org/TR/web-animations/"
         ],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/css-typed-om-1/"
+            },
+            {
+              "url": "https://drafts.csswg.org/scroll-animations-1/",
+              "title": "Scroll-linked Animations",
+              "crawled": "https://drafts.csswg.org/scroll-animations-1/"
             }
           ],
           "informative": []
@@ -3261,6 +3260,11 @@
               "crawled": "https://www.w3.org/TR/css-multicol-1/"
             },
             {
+              "url": "https://www.w3.org/TR/css-overflow-3/",
+              "title": "CSS Overflow Module Level 3",
+              "crawled": "https://www.w3.org/TR/css-overflow-3/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-values-3/",
               "title": "CSS Values and Units Module Level 3",
               "crawled": "https://www.w3.org/TR/css-values-3/"
@@ -3278,7 +3282,7 @@
     {
       "title": "CSS Box Sizing Module Level 4",
       "shortname": "css-sizing-4",
-      "date": "17 May 2020",
+      "date": "5 June 2020",
       "url": "https://drafts.csswg.org/css-sizing-4/",
       "nightly": {
         "url": "https://drafts.csswg.org/css-sizing-4/"
@@ -3768,9 +3772,9 @@
               "crawled": "https://www.w3.org/TR/SVG2/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -4505,7 +4509,7 @@
     {
       "title": "CSS Containment Module Level 2",
       "shortname": "css-contain-2",
-      "date": "11 November 2019",
+      "date": "3 June 2020",
       "url": "https://www.w3.org/TR/css-contain-2/",
       "release": {
         "url": "https://www.w3.org/TR/css-contain-2/"
@@ -4524,14 +4528,27 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
+          "https://www.w3.org/TR/css-cascade/",
+          "https://www.w3.org/TR/web-animations/",
           "https://www.w3.org/TR/css-pseudo-4/",
-          "https://www.w3.org/TR/svg2/",
-          "https://www.w3.org/TR/css3-multicol/",
-          "https://www.w3.org/TR/css3-break/",
-          "https://www.w3.org/TR/css3-ui/",
           "https://www.w3.org/TR/security-privacy-questionnaire/"
         ],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/cssom-view/",
+            "ref": {
+              "name": "CSSOM-VIEW-1",
+              "url": "https://www.w3.org/TR/cssom-view-1/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -4550,7 +4567,13 @@
               "crawled": "https://drafts.csswg.org/css-highlight-api-1/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-overflow-3/",
+              "title": "CSS Overflow Module Level 3",
+              "crawled": "https://www.w3.org/TR/css-overflow-3/"
+            }
+          ]
         },
         "ok": false
       }
@@ -5128,9 +5151,9 @@
               "crawled": "https://www.w3.org/TR/selectors-4/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
               "url": "https://wicg.github.io/visual-viewport/",
@@ -5225,11 +5248,6 @@
               "crawled": "https://www.w3.org/TR/css-values-4/"
             },
             {
-              "url": "https://drafts.csswg.org/scroll-animations-1/",
-              "title": "Scroll-linked Animations",
-              "crawled": "https://drafts.csswg.org/scroll-animations-1/"
-            },
-            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/web-animations-1/"
@@ -5313,11 +5331,6 @@
         ],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://www.w3.org/TR/css-inline-3/",
-              "title": "CSS Inline Layout Module Level 3",
-              "crawled": "https://www.w3.org/TR/css-inline-3/"
-            },
             {
               "url": "https://www.w3.org/TR/css-page-floats-3/",
               "title": "CSS Page Floats",
@@ -6342,9 +6355,19 @@
               "crawled": "https://www.w3.org/TR/css-display-3/"
             },
             {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/css-inline-3/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-multicol-1/",
               "title": "CSS Multi-column Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/css-multicol-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-overflow-3/",
+              "title": "CSS Overflow Module Level 3",
+              "crawled": "https://www.w3.org/TR/css-overflow-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-position-3/",
@@ -6976,7 +6999,7 @@
     {
       "title": "CSS Inline Layout Module Level 3",
       "shortname": "css-inline-3",
-      "date": "8 August 2018",
+      "date": "4 June 2020",
       "url": "https://www.w3.org/TR/css-inline-3/",
       "release": {
         "url": "https://www.w3.org/TR/css-inline-3/"
@@ -6995,20 +7018,12 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://www.w3.org/TR/css3-break/",
-          "https://www.w3.org/TR/2002/WD-css3-linebox-20020515/",
+          "https://www.w3.org/TR/css3-multicol/",
           "https://www.w3.org/TR/css3-align/",
-          "https://www.w3.org/TR/css3-positioning/"
+          "https://www.w3.org/TR/css3-positioning/",
+          "https://www.w3.org/TR/2002/WD-css3-linebox-20020515/"
         ],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/css3-values/",
-            "ref": {
-              "name": "CSS-VALUES-3",
-              "url": "https://www.w3.org/TR/css-values-3/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -7183,6 +7198,11 @@
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
             {
+              "url": "https://www.w3.org/TR/css-contain-2/",
+              "title": "CSS Containment Module Level 2",
+              "crawled": "https://www.w3.org/TR/css-contain-2/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
               "title": "CSS Flexible Box Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/css-flexbox-1/"
@@ -7298,11 +7318,6 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 1",
               "crawled": "https://www.w3.org/TR/css-contain-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-contain-2/",
-              "title": "CSS Containment Module Level 2",
-              "crawled": "https://www.w3.org/TR/css-contain-2/"
             },
             {
               "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -7843,6 +7858,11 @@
               "crawled": "https://www.w3.org/TR/css-break-4/"
             },
             {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/css-inline-3/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-sizing-3/",
               "title": "CSS Intrinsic & Extrinsic Sizing Module Level 3",
               "crawled": "https://www.w3.org/TR/css-sizing-3/"
@@ -7903,11 +7923,6 @@
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://www.w3.org/TR/css-grid-2/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-inline-3/",
-              "title": "CSS Inline Layout Module Level 3",
-              "crawled": "https://www.w3.org/TR/css-inline-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-layout-api-1/",
@@ -8184,9 +8199,9 @@
               "crawled": "https://www.w3.org/TR/css-paint-api-1/"
             },
             {
-              "url": "https://wicg.github.io/CSS-Parser-API/",
+              "url": "https://wicg.github.io/css-parser-api/",
               "title": "CSS Parser API",
-              "crawled": "https://wicg.github.io/CSS-Parser-API/"
+              "crawled": "https://wicg.github.io/css-parser-api/"
             },
             {
               "url": "https://www.w3.org/TR/css-position-3/",
@@ -8318,7 +8333,7 @@
     {
       "title": "CSS Overflow Module Level 3",
       "shortname": "css-overflow-3",
-      "date": "31 July 2018",
+      "date": "3 June 2020",
       "url": "https://www.w3.org/TR/css-overflow-3/",
       "release": {
         "url": "https://www.w3.org/TR/css-overflow-3/"
@@ -8338,22 +8353,10 @@
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://www.w3.org/TR/css-backgrounds/",
-          "https://www.w3.org/TR/css3-background/",
-          "https://www.w3.org/TR/css3-align/",
           "https://www.w3.org/TR/css-logical-1/",
-          "https://www.w3.org/TR/css3-break/",
-          "https://www.w3.org/TR/css3-multicol/",
           "https://www.w3.org/TR/css-overflow-4/"
         ],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/css3-values/",
-            "ref": {
-              "name": "CSS-VALUES-3",
-              "url": "https://www.w3.org/TR/css-values-3/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -8707,6 +8710,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/css-inline-3/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-layout-api-1/",
               "title": "CSS Layout API Level 1",
               "crawled": "https://www.w3.org/TR/css-layout-api-1/"
@@ -8727,13 +8735,7 @@
               "crawled": "https://quirks.spec.whatwg.org/"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/css-inline-3/",
-              "title": "CSS Inline Layout Module Level 3",
-              "crawled": "https://www.w3.org/TR/css-inline-3/"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -8876,6 +8878,11 @@
               "url": "https://www.w3.org/TR/css-images-3/",
               "title": "CSS Images Module Level 3",
               "crawled": "https://www.w3.org/TR/css-images-3/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-overflow-3/",
+              "title": "CSS Overflow Module Level 3",
+              "crawled": "https://www.w3.org/TR/css-overflow-3/"
             }
           ]
         },
@@ -8946,13 +8953,13 @@
     },
     {
       "title": "CSS Parser API",
-      "shortname": "CSS-Parser-API",
+      "shortname": "css-parser-api",
       "date": "27 July 2018",
-      "url": "https://wicg.github.io/CSS-Parser-API/",
+      "url": "https://wicg.github.io/css-parser-api/",
       "nightly": {
-        "url": "https://wicg.github.io/CSS-Parser-API/"
+        "url": "https://wicg.github.io/css-parser-api/"
       },
-      "crawled": "https://wicg.github.io/CSS-Parser-API/",
+      "crawled": "https://wicg.github.io/css-parser-api/",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
@@ -9029,6 +9036,11 @@
               "crawled": "https://www.w3.org/TR/css-color-4/"
             },
             {
+              "url": "https://www.w3.org/TR/css-contain-2/",
+              "title": "CSS Containment Module Level 2",
+              "crawled": "https://www.w3.org/TR/css-contain-2/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
               "crawled": "https://www.w3.org/TR/css-display-3/"
@@ -9042,6 +9054,11 @@
               "url": "https://www.w3.org/TR/css-grid-1/",
               "title": "CSS Grid Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/css-grid-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/css-inline-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-layout-api-1/",
@@ -9159,11 +9176,6 @@
               "url": "https://www.w3.org/TR/css-break-4/",
               "title": "CSS Fragmentation Module Level 4",
               "crawled": "https://www.w3.org/TR/css-break-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-inline-3/",
-              "title": "CSS Inline Layout Module Level 3",
-              "crawled": "https://www.w3.org/TR/css-inline-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-round-display-1/",
@@ -9737,6 +9749,11 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://www.w3.org/TR/css-contain-2/",
+              "title": "CSS Containment Module Level 2",
+              "crawled": "https://www.w3.org/TR/css-contain-2/"
+            },
             {
               "url": "https://www.w3.org/TR/css-shadow-parts-1/",
               "title": "CSS Shadow Parts",
@@ -10406,9 +10423,9 @@
               "crawled": "https://www.w3.org/TR/css-paint-api-1/"
             },
             {
-              "url": "https://wicg.github.io/CSS-Parser-API/",
+              "url": "https://wicg.github.io/css-parser-api/",
               "title": "CSS Parser API",
-              "crawled": "https://wicg.github.io/CSS-Parser-API/"
+              "crawled": "https://wicg.github.io/css-parser-api/"
             },
             {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -11540,9 +11557,9 @@
               "crawled": "https://www.w3.org/TR/css-paint-api-1/"
             },
             {
-              "url": "https://wicg.github.io/CSS-Parser-API/",
+              "url": "https://wicg.github.io/css-parser-api/",
               "title": "CSS Parser API",
-              "crawled": "https://wicg.github.io/CSS-Parser-API/"
+              "crawled": "https://wicg.github.io/css-parser-api/"
             },
             {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -11657,6 +11674,11 @@
               "url": "https://www.w3.org/TR/css-animations-1/",
               "title": "CSS Animations Level 1",
               "crawled": "https://www.w3.org/TR/css-animations-1/"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-animations-2/",
+              "title": "CSS Animations Level 2",
+              "crawled": "https://drafts.csswg.org/css-animations-2/"
             },
             {
               "url": "https://www.w3.org/TR/css-backgrounds-3/",
@@ -11999,6 +12021,11 @@
               "crawled": "https://www.w3.org/TR/mediaqueries-4/"
             },
             {
+              "url": "https://www.w3.org/TR/mediaqueries-5/",
+              "title": "Media Queries Level 5",
+              "crawled": "https://www.w3.org/TR/mediaqueries-5/"
+            },
+            {
               "url": "https://www.w3.org/TR/motion-1/",
               "title": "Motion Path Module Level 1",
               "crawled": "https://www.w3.org/TR/motion-1/"
@@ -12251,6 +12278,11 @@
               "crawled": "https://www.w3.org/TR/css-images-3/"
             },
             {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/css-inline-3/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-sizing-3/",
               "title": "CSS Intrinsic & Extrinsic Sizing Module Level 3",
               "crawled": "https://www.w3.org/TR/css-sizing-3/"
@@ -12279,6 +12311,11 @@
               "url": "https://drafts.csswg.org/css-multicol-2/",
               "title": "CSS Multi-column Layout Module Level 2",
               "crawled": "https://drafts.csswg.org/css-multicol-2/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-overflow-3/",
+              "title": "CSS Overflow Module Level 3",
+              "crawled": "https://www.w3.org/TR/css-overflow-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-overscroll-1/",
@@ -13001,6 +13038,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/css-contain-2/",
+              "title": "CSS Containment Module Level 2",
+              "crawled": "https://www.w3.org/TR/css-contain-2/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-paint-api-1/",
               "title": "CSS Painting API Level 1",
               "crawled": "https://www.w3.org/TR/css-paint-api-1/"
@@ -13051,6 +13093,11 @@
               "crawled": "https://www.w3.org/TR/mediaqueries-4/"
             },
             {
+              "url": "https://www.w3.org/TR/mediaqueries-5/",
+              "title": "Media Queries Level 5",
+              "crawled": "https://www.w3.org/TR/mediaqueries-5/"
+            },
+            {
               "url": "https://www.w3.org/TR/resize-observer-1/",
               "title": "Resize Observer",
               "crawled": "https://www.w3.org/TR/resize-observer-1/"
@@ -13061,9 +13108,9 @@
               "crawled": "https://drafts.csswg.org/scroll-animations-1/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
@@ -13346,7 +13393,7 @@
     {
       "title": "DOM Standard",
       "shortname": "dom",
-      "date": "23 April 2020",
+      "date": "8 June 2020",
       "url": "https://dom.spec.whatwg.org/",
       "nightly": {
         "url": "https://dom.spec.whatwg.org/"
@@ -13808,9 +13855,9 @@
               "crawled": "https://svgwg.org/specs/animations/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
@@ -14000,11 +14047,6 @@
               "crawled": "https://www.w3.org/TR/selectors-3/"
             },
             {
-              "url": "https://storage.spec.whatwg.org/",
-              "title": "Storage Standard",
-              "crawled": "https://storage.spec.whatwg.org/"
-            },
-            {
               "url": "https://www.w3.org/TR/WebIDL-1/",
               "title": "WebIDL Level 1",
               "crawled": "https://www.w3.org/TR/WebIDL-1/"
@@ -14094,9 +14136,9 @@
       }
     },
     {
-      "title": "Encoding",
+      "title": "Encoding Standard",
       "shortname": "encoding",
-      "date": "27 March 2018",
+      "date": "29 May 2020",
       "url": "https://www.w3.org/TR/encoding/",
       "release": {
         "url": "https://www.w3.org/TR/encoding/"
@@ -14111,8 +14153,22 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "unknownIdlNames": [
+          "ReadableStream",
+          "WritableStream"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "GenericTransformStream",
+            "refs": [
+              {
+                "url": "https://wicg.github.io/compression/",
+                "title": "Compression Streams",
+                "crawled": "https://wicg.github.io/compression/"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -14231,7 +14287,7 @@
             {
               "url": "https://wicg.github.io/web-share-target/",
               "title": "Web Share Target API",
-              "crawled": "https://wicg.github.io/web-share-target/"
+              "crawled": "https://w3c.github.io/web-share-target/"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -14251,7 +14307,7 @@
           ],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -14437,7 +14493,7 @@
     {
       "title": "Fetch Standard",
       "shortname": "fetch",
-      "date": "13 May 2020",
+      "date": "5 June 2020",
       "url": "https://fetch.spec.whatwg.org/",
       "nightly": {
         "url": "https://fetch.spec.whatwg.org/"
@@ -14664,9 +14720,9 @@
               "crawled": "https://www.w3.org/TR/SRI/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
               "url": "https://www.w3.org/TR/trace-context-1/",
@@ -14701,7 +14757,7 @@
             {
               "url": "https://wicg.github.io/web-share-target/",
               "title": "Web Share Target API",
-              "crawled": "https://wicg.github.io/web-share-target/"
+              "crawled": "https://w3c.github.io/web-share-target/"
             },
             {
               "url": "https://www.w3.org/TR/wasm-web-api-1/",
@@ -14758,7 +14814,7 @@
     {
       "title": "File and Directory Entries API",
       "shortname": "entries-api",
-      "date": "20 May 2020",
+      "date": "3 June 2020",
       "url": "https://wicg.github.io/entries-api/",
       "nightly": {
         "url": "https://wicg.github.io/entries-api/"
@@ -14934,6 +14990,11 @@
               "url": "https://www.w3.org/TR/webauthn-2/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
               "crawled": "https://www.w3.org/TR/webauthn-2/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-share/",
+              "title": "Web Share API",
+              "crawled": "https://www.w3.org/TR/web-share/"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -15457,11 +15518,6 @@
               "url": "https://www.w3.org/TR/secure-contexts/",
               "title": "Secure Contexts",
               "crawled": "https://www.w3.org/TR/secure-contexts/"
-            },
-            {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/"
             }
           ]
         },
@@ -15604,9 +15660,9 @@
               "crawled": "https://www.w3.org/TR/SVG2/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
               "url": "https://www.w3.org/TR/webdriver1/",
@@ -15921,7 +15977,7 @@
     {
       "title": "HTML Standard",
       "shortname": "html",
-      "date": "29 May 2020",
+      "date": "5 June 2020",
       "url": "https://html.spec.whatwg.org/multipage/",
       "nightly": {
         "url": "https://html.spec.whatwg.org/multipage/"
@@ -15942,9 +15998,9 @@
             "name": "Location",
             "refs": [
               {
-                "url": "https://wicg.github.io/ScrollToTextFragment/",
+                "url": "https://wicg.github.io/scroll-to-text-fragment/",
                 "title": "Text Fragments",
-                "crawled": "https://wicg.github.io/ScrollToTextFragment/"
+                "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
               }
             ]
           },
@@ -16155,6 +16211,11 @@
               "crawled": "https://www.w3.org/TR/css-color-adjust-1/"
             },
             {
+              "url": "https://www.w3.org/TR/css-contain-2/",
+              "title": "CSS Containment Module Level 2",
+              "crawled": "https://www.w3.org/TR/css-contain-2/"
+            },
+            {
               "url": "https://drafts.csswg.org/css-highlight-api-1/",
               "title": "CSS Custom Highlight API Module Level 1",
               "crawled": "https://drafts.csswg.org/css-highlight-api-1/"
@@ -16205,9 +16266,9 @@
               "crawled": "https://www.w3.org/TR/css-paint-api-1/"
             },
             {
-              "url": "https://wicg.github.io/CSS-Parser-API/",
+              "url": "https://wicg.github.io/css-parser-api/",
               "title": "CSS Parser API",
-              "crawled": "https://wicg.github.io/CSS-Parser-API/"
+              "crawled": "https://wicg.github.io/css-parser-api/"
             },
             {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -16400,9 +16461,9 @@
               "crawled": "https://www.w3.org/TR/IndexedDB-2/"
             },
             {
-              "url": "https://wicg.github.io/InputDeviceCapabilities/",
+              "url": "https://wicg.github.io/input-device-capabilities/",
               "title": "Input Device Capabilities",
-              "crawled": "https://wicg.github.io/InputDeviceCapabilities/"
+              "crawled": "https://wicg.github.io/input-device-capabilities/"
             },
             {
               "url": "https://wicg.github.io/js-self-profiling/",
@@ -16705,9 +16766,9 @@
               "crawled": "https://svgwg.org/specs/animations/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
@@ -16790,11 +16851,6 @@
               "crawled": "https://webbluetoothcg.github.io/web-bluetooth/"
             },
             {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/"
-            },
-            {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
               "title": "Web Cryptography API",
               "crawled": "https://www.w3.org/TR/WebCryptoAPI/"
@@ -16827,7 +16883,7 @@
             {
               "url": "https://wicg.github.io/web-share-target/",
               "title": "Web Share Target API",
-              "crawled": "https://wicg.github.io/web-share-target/"
+              "crawled": "https://w3c.github.io/web-share-target/"
             },
             {
               "url": "https://wicg.github.io/speech-api/",
@@ -16988,7 +17044,7 @@
             },
             {
               "url": "https://www.w3.org/TR/encoding/",
-              "title": "Encoding",
+              "title": "Encoding Standard",
               "crawled": "https://www.w3.org/TR/encoding/"
             },
             {
@@ -17273,7 +17329,13 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://wicg.github.io/background-fetch/",
+              "title": "Background Fetch",
+              "crawled": "https://wicg.github.io/background-fetch/"
+            }
+          ],
           "informative": []
         },
         "ok": false
@@ -17378,6 +17440,11 @@
           ],
           "informative": [
             {
+              "url": "https://dom.spec.whatwg.org/",
+              "title": "DOM Standard",
+              "crawled": "https://dom.spec.whatwg.org/"
+            },
+            {
               "url": "https://www.w3.org/TR/webrtc-identity/",
               "title": "Identity for WebRTC 1.0",
               "crawled": "https://www.w3.org/TR/webrtc-identity/"
@@ -17410,7 +17477,7 @@
     {
       "title": "Infra Standard",
       "shortname": "infra",
-      "date": "29 May 2020",
+      "date": "3 June 2020",
       "url": "https://infra.spec.whatwg.org/",
       "nightly": {
         "url": "https://infra.spec.whatwg.org/"
@@ -17571,7 +17638,7 @@
             },
             {
               "url": "https://www.w3.org/TR/encoding/",
-              "title": "Encoding",
+              "title": "Encoding Standard",
               "crawled": "https://www.w3.org/TR/encoding/"
             },
             {
@@ -17765,9 +17832,9 @@
               "crawled": "https://streams.spec.whatwg.org/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
               "url": "https://www.w3.org/TR/screen-orientation/",
@@ -17817,7 +17884,7 @@
             {
               "url": "https://wicg.github.io/web-share-target/",
               "title": "Web Share Target API",
-              "crawled": "https://wicg.github.io/web-share-target/"
+              "crawled": "https://w3c.github.io/web-share-target/"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -17863,13 +17930,13 @@
     },
     {
       "title": "Input Device Capabilities",
-      "shortname": "InputDeviceCapabilities",
-      "date": "25 December 2019",
-      "url": "https://wicg.github.io/InputDeviceCapabilities/",
+      "shortname": "input-device-capabilities",
+      "date": "03 June 2020",
+      "url": "https://wicg.github.io/input-device-capabilities/",
       "nightly": {
-        "url": "https://wicg.github.io/InputDeviceCapabilities/"
+        "url": "https://wicg.github.io/input-device-capabilities/"
       },
-      "crawled": "https://wicg.github.io/InputDeviceCapabilities/",
+      "crawled": "https://wicg.github.io/input-device-capabilities/",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
@@ -17983,6 +18050,11 @@
         ],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://www.w3.org/TR/css-contain-2/",
+              "title": "CSS Containment Module Level 2",
+              "crawled": "https://www.w3.org/TR/css-contain-2/"
+            },
             {
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
@@ -18859,7 +18931,7 @@
     {
       "title": "Media Queries Level 5",
       "shortname": "mediaqueries-5",
-      "date": "18 March 2020",
+      "date": "3 June 2020",
       "url": "https://www.w3.org/TR/mediaqueries-5/",
       "release": {
         "url": "https://www.w3.org/TR/mediaqueries-5/"
@@ -18878,7 +18950,15 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/cssom-view/",
+            "ref": {
+              "name": "CSSOM-VIEW-1",
+              "url": "https://www.w3.org/TR/cssom-view-1/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -18905,7 +18985,7 @@
             }
           ]
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -19710,11 +19790,6 @@
               "url": "https://www.w3.org/TR/vibration/",
               "title": "Vibration API (Second Edition)",
               "crawled": "https://www.w3.org/TR/vibration/"
-            },
-            {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/"
             }
           ]
         },
@@ -20641,13 +20716,7 @@
               "crawled": "https://wicg.github.io/webusb/"
             }
           ],
-          "informative": [
-            {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -21214,13 +21283,7 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/"
-            }
-          ],
+          "normative": [],
           "informative": [
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -21261,7 +21324,13 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/css-inline-3/",
+              "title": "CSS Inline Layout Module Level 3",
+              "crawled": "https://www.w3.org/TR/css-inline-3/"
+            }
+          ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/selectors-4/",
@@ -21581,7 +21650,13 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/css-contain-2/",
+              "title": "CSS Containment Module Level 2",
+              "crawled": "https://www.w3.org/TR/css-contain-2/"
+            }
+          ],
           "informative": []
         },
         "ok": false
@@ -22311,7 +22386,7 @@
     {
       "title": "Scroll-linked Animations",
       "shortname": "scroll-animations-1",
-      "date": "25 May 2020",
+      "date": "29 May 2020",
       "url": "https://drafts.csswg.org/scroll-animations-1/",
       "nightly": {
         "url": "https://drafts.csswg.org/scroll-animations-1/"
@@ -22328,19 +22403,9 @@
         "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://w3c.github.io/web-animations/",
-          "https://www.w3.org/TR/css-cascade/",
-          "https://www.w3.org/TR/web-animations/",
           "https://www.w3.org/TR/security-privacy-questionnaire/"
         ],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/css-values/",
-            "ref": {
-              "name": "CSS-VALUES-3",
-              "url": "https://www.w3.org/TR/css-values-3/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -22502,11 +22567,6 @@
               "crawled": "https://webbluetoothcg.github.io/web-bluetooth/"
             },
             {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/"
-            },
-            {
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC",
               "crawled": "https://w3c.github.io/web-nfc/"
@@ -22519,7 +22579,7 @@
             {
               "url": "https://wicg.github.io/web-share-target/",
               "title": "Web Share Target API",
-              "crawled": "https://wicg.github.io/web-share-target/"
+              "crawled": "https://w3c.github.io/web-share-target/"
             }
           ],
           "informative": [
@@ -23048,7 +23108,7 @@
     {
       "title": "Storage Standard",
       "shortname": "storage",
-      "date": "20 May 2020",
+      "date": "5 June 2020",
       "url": "https://storage.spec.whatwg.org/",
       "nightly": {
         "url": "https://storage.spec.whatwg.org/"
@@ -23122,9 +23182,14 @@
               "crawled": "https://wicg.github.io/compression/"
             },
             {
-              "url": "https://wicg.github.io/CSS-Parser-API/",
+              "url": "https://wicg.github.io/css-parser-api/",
               "title": "CSS Parser API",
-              "crawled": "https://wicg.github.io/CSS-Parser-API/"
+              "crawled": "https://wicg.github.io/css-parser-api/"
+            },
+            {
+              "url": "https://www.w3.org/TR/encoding/",
+              "title": "Encoding Standard",
+              "crawled": "https://www.w3.org/TR/encoding/"
             },
             {
               "url": "https://fetch.spec.whatwg.org/",
@@ -23499,13 +23564,13 @@
     },
     {
       "title": "Text Fragments",
-      "shortname": "ScrollToTextFragment",
+      "shortname": "scroll-to-text-fragment",
       "date": "25 May 2020",
-      "url": "https://wicg.github.io/ScrollToTextFragment/",
+      "url": "https://wicg.github.io/scroll-to-text-fragment/",
       "nightly": {
-        "url": "https://wicg.github.io/ScrollToTextFragment/"
+        "url": "https://wicg.github.io/scroll-to-text-fragment/"
       },
-      "crawled": "https://wicg.github.io/ScrollToTextFragment/",
+      "crawled": "https://wicg.github.io/scroll-to-text-fragment/",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": true,
@@ -23675,9 +23740,9 @@
               "crawled": "https://html.spec.whatwg.org/multipage/"
             },
             {
-              "url": "https://wicg.github.io/InputDeviceCapabilities/",
+              "url": "https://wicg.github.io/input-device-capabilities/",
               "title": "Input Device Capabilities",
-              "crawled": "https://wicg.github.io/InputDeviceCapabilities/"
+              "crawled": "https://wicg.github.io/input-device-capabilities/"
             }
           ],
           "informative": [
@@ -23724,7 +23789,7 @@
     {
       "title": "Trusted Types",
       "shortname": "trusted-types",
-      "date": "20 May 2020",
+      "date": "3 June 2020",
       "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
       "nightly": {
         "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
@@ -23839,9 +23904,9 @@
               "crawled": "https://html.spec.whatwg.org/multipage/"
             },
             {
-              "url": "https://wicg.github.io/InputDeviceCapabilities/",
+              "url": "https://wicg.github.io/input-device-capabilities/",
               "title": "Input Device Capabilities",
-              "crawled": "https://wicg.github.io/InputDeviceCapabilities/"
+              "crawled": "https://wicg.github.io/input-device-capabilities/"
             },
             {
               "url": "https://wicg.github.io/keyboard-lock/",
@@ -24285,9 +24350,9 @@
               "crawled": "https://w3c.github.io/ServiceWorker/"
             },
             {
-              "url": "https://wicg.github.io/ScrollToTextFragment/",
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
-              "crawled": "https://wicg.github.io/ScrollToTextFragment/"
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
               "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
@@ -24317,7 +24382,7 @@
             {
               "url": "https://wicg.github.io/web-share-target/",
               "title": "Web Share Target API",
-              "crawled": "https://wicg.github.io/web-share-target/"
+              "crawled": "https://w3c.github.io/web-share-target/"
             },
             {
               "url": "https://www.w3.org/TR/webdriver1/",
@@ -24338,13 +24403,8 @@
           "informative": [
             {
               "url": "https://www.w3.org/TR/encoding/",
-              "title": "Encoding",
+              "title": "Encoding Standard",
               "crawled": "https://www.w3.org/TR/encoding/"
-            },
-            {
-              "url": "https://storage.spec.whatwg.org/",
-              "title": "Storage Standard",
-              "crawled": "https://storage.spec.whatwg.org/"
             }
           ]
         },
@@ -24642,11 +24702,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://wicg.github.io/background-fetch/",
-              "title": "Background Fetch",
-              "crawled": "https://wicg.github.io/background-fetch/"
-            },
-            {
               "url": "https://wicg.github.io/badging/",
               "title": "Badging API",
               "crawled": "https://w3c.github.io/badging/"
@@ -24669,7 +24724,7 @@
             {
               "url": "https://wicg.github.io/web-share-target/",
               "title": "Web Share Target API",
-              "crawled": "https://wicg.github.io/web-share-target/"
+              "crawled": "https://w3c.github.io/web-share-target/"
             }
           ],
           "informative": [
@@ -24936,48 +24991,6 @@
       }
     },
     {
-      "title": "Web Budget API",
-      "shortname": "budget-api",
-      "date": "15 August 2018",
-      "url": "https://wicg.github.io/budget-api/",
-      "nightly": {
-        "url": "https://wicg.github.io/budget-api/"
-      },
-      "crawled": "https://wicg.github.io/budget-api/",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownExposedNames": [],
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/webappsec-secure-contexts/",
-            "ref": {
-              "name": "SECURE-CONTEXTS",
-              "url": "https://www.w3.org/TR/secure-contexts/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/push-api/",
-            "ref": {
-              "name": "PUSH-API",
-              "url": "https://www.w3.org/TR/push-api/"
-            }
-          }
-        ],
-        "referencedBy": {
-          "normative": [],
-          "informative": []
-        },
-        "ok": false
-      }
-    },
-    {
       "title": "Web Cryptography API",
       "shortname": "WebCryptoAPI",
       "date": "26 January 2017",
@@ -25031,7 +25044,7 @@
     {
       "title": "Web Locks API",
       "shortname": "web-locks",
-      "date": "21 May 2020",
+      "date": "4 June 2020",
       "url": "https://wicg.github.io/web-locks/",
       "nightly": {
         "url": "https://wicg.github.io/web-locks/"
@@ -25225,7 +25238,7 @@
     {
       "title": "Web Share API",
       "shortname": "web-share",
-      "date": "17 December 2019",
+      "date": "06 June 2020",
       "url": "https://www.w3.org/TR/web-share/",
       "release": {
         "url": "https://www.w3.org/TR/web-share/"
@@ -25252,7 +25265,7 @@
             {
               "url": "https://wicg.github.io/web-share-target/",
               "title": "Web Share Target API",
-              "crawled": "https://wicg.github.io/web-share-target/"
+              "crawled": "https://w3c.github.io/web-share-target/"
             }
           ],
           "informative": []
@@ -25263,12 +25276,12 @@
     {
       "title": "Web Share Target API",
       "shortname": "web-share-target",
-      "date": "26 May 2020",
+      "date": "05 June 2020",
       "url": "https://wicg.github.io/web-share-target/",
       "nightly": {
         "url": "https://wicg.github.io/web-share-target/"
       },
-      "crawled": "https://wicg.github.io/web-share-target/",
+      "crawled": "https://w3c.github.io/web-share-target/",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
@@ -25595,7 +25608,7 @@
     {
       "title": "WebGPU",
       "shortname": "gpuweb",
-      "date": "28 May 2020",
+      "date": "5 June 2020",
       "url": "https://gpuweb.github.io/gpuweb/",
       "nightly": {
         "url": "https://gpuweb.github.io/gpuweb/"
@@ -25830,9 +25843,9 @@
               "crawled": "https://www.w3.org/TR/css-paint-api-1/"
             },
             {
-              "url": "https://wicg.github.io/CSS-Parser-API/",
+              "url": "https://wicg.github.io/css-parser-api/",
               "title": "CSS Parser API",
-              "crawled": "https://wicg.github.io/CSS-Parser-API/"
+              "crawled": "https://wicg.github.io/css-parser-api/"
             },
             {
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -25901,7 +25914,7 @@
             },
             {
               "url": "https://www.w3.org/TR/encoding/",
-              "title": "Encoding",
+              "title": "Encoding Standard",
               "crawled": "https://www.w3.org/TR/encoding/"
             },
             {
@@ -26030,9 +26043,9 @@
               "crawled": "https://infra.spec.whatwg.org/"
             },
             {
-              "url": "https://wicg.github.io/InputDeviceCapabilities/",
+              "url": "https://wicg.github.io/input-device-capabilities/",
               "title": "Input Device Capabilities",
-              "crawled": "https://wicg.github.io/InputDeviceCapabilities/"
+              "crawled": "https://wicg.github.io/input-device-capabilities/"
             },
             {
               "url": "https://www.w3.org/TR/intersection-observer/",
@@ -26375,11 +26388,6 @@
               "crawled": "https://webbluetoothcg.github.io/web-bluetooth/"
             },
             {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/"
-            },
-            {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
               "title": "Web Cryptography API",
               "crawled": "https://www.w3.org/TR/WebCryptoAPI/"
@@ -26407,7 +26415,7 @@
             {
               "url": "https://wicg.github.io/web-share-target/",
               "title": "Web Share Target API",
-              "crawled": "https://wicg.github.io/web-share-target/"
+              "crawled": "https://w3c.github.io/web-share-target/"
             },
             {
               "url": "https://wicg.github.io/speech-api/",
@@ -26634,11 +26642,6 @@
               "url": "https://www.w3.org/TR/screen-capture/",
               "title": "Screen Capture",
               "crawled": "https://www.w3.org/TR/screen-capture/"
-            },
-            {
-              "url": "https://wicg.github.io/budget-api/",
-              "title": "Web Budget API",
-              "crawled": "https://wicg.github.io/budget-api/"
             }
           ]
         },
@@ -26719,7 +26722,7 @@
     {
       "title": "WebUSB API",
       "shortname": "webusb",
-      "date": "31 May 2020",
+      "date": "7 June 2020",
       "url": "https://wicg.github.io/webusb/",
       "nightly": {
         "url": "https://wicg.github.io/webusb/"
@@ -27022,7 +27025,7 @@
     {
       "title": "WebXR Hit Test Module",
       "shortname": "hit-test",
-      "date": "27 April 2020",
+      "date": "4 June 2020",
       "url": "https://immersive-web.github.io/hit-test/",
       "nightly": {
         "url": "https://immersive-web.github.io/hit-test/"
@@ -27147,7 +27150,7 @@
     {
       "title": "XMLHttpRequest Standard",
       "shortname": "xhr",
-      "date": "23 April 2020",
+      "date": "4 June 2020",
       "url": "https://xhr.spec.whatwg.org/",
       "nightly": {
         "url": "https://xhr.spec.whatwg.org/"
