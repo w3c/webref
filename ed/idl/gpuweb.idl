@@ -95,7 +95,7 @@ GPUDevice includes GPUObjectBase;
 
 [Serializable]
 interface GPUBuffer {
-    Promise<void> mapAsync(optional GPUSize64 offset = 0, optional GPUSize64 size = 0);
+    Promise<void> mapAsync(GPUMapMode mode, optional GPUSize64 offset = 0, optional GPUSize64 size = 0);
     ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size = 0);
     void unmap();
 
@@ -121,6 +121,12 @@ interface GPUBufferUsage {
     const GPUBufferUsageFlags STORAGE       = 0x0080;
     const GPUBufferUsageFlags INDIRECT      = 0x0100;
     const GPUBufferUsageFlags QUERY_RESOLVE = 0x0200;
+};
+
+typedef [EnforceRange] unsigned long GPUMapModeFlags;
+interface GPUMapMode {
+    const GPUMapModeFlags READ  = 0x0001;
+    const GPUMapModeFlags WRITE = 0x0002;
 };
 
 [Serializable]

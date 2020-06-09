@@ -1269,33 +1269,65 @@
       "informative": true
     },
     {
-      "id": "dom-gpubuffer-mapasync-offset-size-offset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-offset-size-offset",
+      "id": "dom-gpubuffer-mapasync",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync",
+      "linkingText": [
+        "mapAsync(mode, offset, size)",
+        "mapAsync(mode, offset)",
+        "mapAsync(mode)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUBuffer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpubuffer-mapasync-mode-offset-size-mode",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-mode-offset-size-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUBuffer/mapAsync(mode, offset, size)",
+        "GPUBuffer/mapAsync(mode, offset)",
+        "GPUBuffer/mapAsync(mode)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpubuffer-mapasync-mode-offset-size-offset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-mode-offset-size-offset",
       "linkingText": [
         "offset"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUBuffer/mapAsync(offset, size)",
-        "GPUBuffer/mapAsync(offset)",
-        "GPUBuffer/mapAsync()"
+        "GPUBuffer/mapAsync(mode, offset, size)",
+        "GPUBuffer/mapAsync(mode, offset)",
+        "GPUBuffer/mapAsync(mode)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-gpubuffer-mapasync-offset-size-size",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-offset-size-size",
+      "id": "dom-gpubuffer-mapasync-mode-offset-size-size",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-mode-offset-size-size",
       "linkingText": [
         "size"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUBuffer/mapAsync(offset, size)",
-        "GPUBuffer/mapAsync(offset)",
-        "GPUBuffer/mapAsync()"
+        "GPUBuffer/mapAsync(mode, offset, size)",
+        "GPUBuffer/mapAsync(mode, offset)",
+        "GPUBuffer/mapAsync(mode)"
       ],
       "access": "public",
       "informative": false
@@ -1407,6 +1439,20 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapped_ranges-slot",
       "linkingText": [
         "[[mapped_ranges]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUBuffer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpubuffer-map_mode-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-map_mode-slot",
+      "linkingText": [
+        "[[map_mode]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1769,17 +1815,67 @@
       "informative": false
     },
     {
-      "id": "dom-gpubuffer-mapasync",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync",
+      "id": "dom-gpubuffer-mapasync-offset-size",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-offset-size",
       "linkingText": [
-        "mapAsync(offset, size)",
-        "mapAsync(offset)",
-        "mapAsync()"
+        "mapAsync(offset, size)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
         "GPUBuffer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-gpumapmodeflags",
+      "href": "https://gpuweb.github.io/gpuweb/#typedefdef-gpumapmodeflags",
+      "linkingText": [
+        "GPUMapModeFlags"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "gpumapmode",
+      "href": "https://gpuweb.github.io/gpuweb/#gpumapmode",
+      "linkingText": [
+        "GPUMapMode"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpumapmode-read",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpumapmode-read",
+      "linkingText": [
+        "READ"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "GPUMapMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpumapmode-write",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpumapmode-write",
+      "linkingText": [
+        "WRITE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "GPUMapMode"
       ],
       "access": "public",
       "informative": false
