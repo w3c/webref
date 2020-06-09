@@ -943,10 +943,10 @@
       "informative": false
     },
     {
-      "id": "dom-imageresource",
-      "href": "https://w3c.github.io/manifest/#dom-imageresource",
+      "id": "dom-manifestimageresource",
+      "href": "https://w3c.github.io/manifest/#dom-manifestimageresource",
       "linkingText": [
-        "ImageResource"
+        "ManifestImageResource"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -955,27 +955,29 @@
       "informative": false
     },
     {
-      "id": "dfn-steps-to-fetch-an-image-resource",
-      "href": "https://w3c.github.io/manifest/#dfn-steps-to-fetch-an-image-resource",
+      "id": "dom-manifestimageresource-platform",
+      "href": "https://w3c.github.io/manifest/#dom-manifestimageresource-platform",
       "linkingText": [
-        "steps to fetch an image\n          resource"
+        "platform"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "dict-member",
+      "for": [
+        "ManifestImageResource"
+      ],
+      "access": "public",
       "informative": false
     },
     {
-      "id": "dom-imageresource-purpose",
-      "href": "https://w3c.github.io/manifest/#dom-imageresource-purpose",
+      "id": "dom-manifestimageresource-purpose",
+      "href": "https://w3c.github.io/manifest/#dom-manifestimageresource-purpose",
       "linkingText": [
         "purpose"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "ImageResource"
+        "ManifestImageResource"
       ],
       "access": "public",
       "informative": false
@@ -1068,90 +1070,10 @@
       "informative": false
     },
     {
-      "id": "dom-imageresource-sizes",
-      "href": "https://w3c.github.io/manifest/#dom-imageresource-sizes",
+      "id": "dfn-processing-manifestimageresource-members",
+      "href": "https://w3c.github.io/manifest/#dfn-processing-manifestimageresource-members",
       "linkingText": [
-        "sizes"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ImageResource"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dfn-processing-the-sizes-member-of-an-image",
-      "href": "https://w3c.github.io/manifest/#dfn-processing-the-sizes-member-of-an-image",
-      "linkingText": [
-        "processing the sizes member of an\n          image"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dom-imageresource-src",
-      "href": "https://w3c.github.io/manifest/#dom-imageresource-src",
-      "linkingText": [
-        "src"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ImageResource"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-imageresource-type",
-      "href": "https://w3c.github.io/manifest/#dom-imageresource-type",
-      "linkingText": [
-        "type"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ImageResource"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dfn-processing-the-type-member-of-an-image",
-      "href": "https://w3c.github.io/manifest/#dfn-processing-the-type-member-of-an-image",
-      "linkingText": [
-        "processing the type member of an\n          image"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dom-imageresource-platform",
-      "href": "https://w3c.github.io/manifest/#dom-imageresource-platform",
-      "linkingText": [
-        "platform"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ImageResource"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dfn-processing-imageresource-members",
-      "href": "https://w3c.github.io/manifest/#dfn-processing-imageresource-members",
-      "linkingText": [
-        "processing ImageResource members"
+        "processing ManifestImageResource members"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1265,6 +1187,18 @@
         "ExternalApplicationResource"
       ],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-platform",
+      "href": "https://w3c.github.io/manifest/#dfn-platform",
+      "linkingText": [
+        "platform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
