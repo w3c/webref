@@ -6762,7 +6762,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Image Resource {data-spec=true data-anomaly=true data-redefinedIdlNames=true}
+## Image Resource {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -6775,14 +6775,14 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- WebIDL names also defined elsewhere: 
-    * `ImageResource` also defined in [Web App Manifest](https://w3c.github.io/manifest/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 
 No informative reference to this spec from other specs.
 
@@ -10144,21 +10144,20 @@ Informative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 
 
-## Web App Manifest {data-spec=true data-anomaly=true data-redefinedIdlNames=true}
+## Web App Manifest {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled URL: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
-- Crawled version: 03 June 2020
+- Crawled version: 09 June 2020
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Shortname: appmanifest
 
 ### Potential issue(s) {.anomalies}
 
-- WebIDL names also defined elsewhere: 
-    * `ImageResource` also defined in [Image Resource](https://w3c.github.io/image-resource/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
