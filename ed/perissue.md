@@ -5,31 +5,6 @@
 298 specifications were crawled in this report.
 
 
-## Specifications that could not be rendered
-
-Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
-
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/): `Error: Navigation failed because browser has disconnected! Error: Navigation failed because browser has disconnected!
-    at CDPSession.LifecycleWatcher._eventListeners.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/LifecycleWatcher.js:44:131)
-    at CDPSession.emit (events.js:198:13)
-    at CDPSession._onClosed (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Connection.js:175:14)
-    at Connection._onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Connection.js:109:21)
-    at WebSocketTransport._ws.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/WebSocketTransport.js:28:30)
-    at WebSocket.onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/ws/lib/event-target.js:124:16)
-    at WebSocket.emit (events.js:198:13)
-    at WebSocket.emitClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/ws/lib/websocket.js:194:10)
-    at Socket.socketOnClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/ws/lib/websocket.js:861:15)
-    at Socket.emit (events.js:198:13)
-  -- ASYNC --
-    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)
-    at Page.goto (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:440:53)
-    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:83:27)
-    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:220:24)
-    at process._tickCallback (internal/process/next_tick.js:68:7)`
-
-=> 1 specification found
-
-
 ## Specifications without normative dependencies
 
 - [ContentEditable](https://w3c.github.io/contentEditable/)

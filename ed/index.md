@@ -439,6 +439,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Media Queries Level 3](https://drafts.csswg.org/mediaqueries-3/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
@@ -1149,6 +1150,7 @@ Normative references to this spec from:
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
@@ -1340,6 +1342,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -1384,6 +1387,7 @@ Normative references to this spec from:
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 
@@ -1448,6 +1452,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -1721,6 +1726,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -1905,7 +1911,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
 - Crawled URL: [https://drafts.csswg.org/css-contain-2/](https://drafts.csswg.org/css-contain-2/)
-- Crawled version: 3 June 2020
+- Crawled version: 9 June 2020
 - Editor's Draft: [https://drafts.csswg.org/css-contain-2/](https://drafts.csswg.org/css-contain-2/)
 - Latest published version: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
 - Shortname: css-contain-2
@@ -1950,7 +1956,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-contain-1/](https://www.w3.org/TR/css-contain-1/)
 - Crawled URL: [https://drafts.csswg.org/css-contain/](https://drafts.csswg.org/css-contain/)
-- Crawled version: 3 June 2020
+- Crawled version: 9 June 2020
 - Editor's Draft: [https://drafts.csswg.org/css-contain/](https://drafts.csswg.org/css-contain/)
 - Latest published version: [https://www.w3.org/TR/css-contain-1/](https://www.w3.org/TR/css-contain-1/)
 - Shortname: css-contain-1
@@ -2201,6 +2207,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
@@ -2507,6 +2514,7 @@ Normative references to this spec from:
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -3082,6 +3090,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 
 
 ## CSS Line Grid Module Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3462,6 +3471,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Input Events Level 2](https://w3c.github.io/input-events/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -3814,6 +3824,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -4574,7 +4585,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Crawled URL: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
-- Crawled version: 4 June 2020
+- Crawled version: 8 June 2020
 - Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Shortname: css-text-3
@@ -4621,6 +4632,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -5011,6 +5023,7 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
@@ -5246,6 +5259,7 @@ Normative references to this spec from:
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
@@ -5562,6 +5576,7 @@ Normative references to this spec from:
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
@@ -6553,6 +6568,7 @@ Normative references to this spec from:
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
@@ -6917,6 +6933,7 @@ Normative references to this spec from:
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
 - [Native File System](https://wicg.github.io/native-file-system/)
@@ -7236,37 +7253,19 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## MathML Core {data-spec=true data-error=true}
+## MathML Core {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
 - Crawled URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
+- Crawled version: 06 June 2020
 - Editor's Draft: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
 - Shortname: mathml-core
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Navigation failed because browser has disconnected! Error: Navigation failed because browser has disconnected!
-    at CDPSession.LifecycleWatcher._eventListeners.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/LifecycleWatcher.js:44:131)
-    at CDPSession.emit (events.js:198:13)
-    at CDPSession._onClosed (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Connection.js:175:14)
-    at Connection._onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Connection.js:109:21)
-    at WebSocketTransport._ws.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/WebSocketTransport.js:28:30)
-    at WebSocket.onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/ws/lib/event-target.js:124:16)
-    at WebSocket.emit (events.js:198:13)
-    at WebSocket.emitClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/ws/lib/websocket.js:194:10)
-    at Socket.socketOnClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/ws/lib/websocket.js:861:15)
-    at Socket.emit (events.js:198:13)
-  -- ASYNC --
-    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:82:19)
-    at Page.goto (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:440:53)
-    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:83:27)
-    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:220:24)
-    at process._tickCallback (internal/process/next_tick.js:68:7)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7632,7 +7631,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mediastream-recording/](https://www.w3.org/TR/mediastream-recording/)
 - Crawled URL: [https://w3c.github.io/mediacapture-record/](https://w3c.github.io/mediacapture-record/)
-- Crawled version: 20 March 2020
+- Crawled version: 9 June 2020
 - Editor's Draft: [https://w3c.github.io/mediacapture-record/](https://w3c.github.io/mediacapture-record/)
 - Latest published version: [https://www.w3.org/TR/mediastream-recording/](https://www.w3.org/TR/mediastream-recording/)
 - Shortname: mediastream-recording
@@ -9007,6 +9006,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
@@ -9249,6 +9249,7 @@ Normative references to this spec from:
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -10432,6 +10433,7 @@ Normative references to this spec from:
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
