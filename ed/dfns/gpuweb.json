@@ -706,6 +706,20 @@
       "informative": false
     },
     {
+      "id": "dom-gpuextensionname-timestamp-query",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-timestamp-query",
+      "linkingText": [
+        "\"timestamp-query\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUExtensionName"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpuextensionname-texture-compression-bc",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-texture-compression-bc",
       "linkingText": [
@@ -3337,6 +3351,20 @@
       "informative": false
     },
     {
+      "id": "dom-gpusampler-descriptor-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpusampler-descriptor-slot",
+      "linkingText": [
+        "[[descriptor]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUSampler"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpusampler-compareenable-slot",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpusampler-compareenable-slot",
       "linkingText": [
@@ -3484,35 +3512,6 @@
       "type": "dict-member",
       "for": [
         "GPUSamplerDescriptor"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createsampler",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createsampler",
-      "linkingText": [
-        "createSampler(descriptor)",
-        "createSampler()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUDevice"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "abstract-opdef-gpudevicecreatesampler-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpudevicecreatesampler-valid-usage",
-      "linkingText": [
-        "Valid Usage"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [
-        "GPUDevice.createSampler"
       ],
       "access": "public",
       "informative": false
@@ -3731,6 +3730,47 @@
       "type": "enum-value",
       "for": [
         "GPUCompareFunction"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-validating-gpusamplerdescriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validating-gpusamplerdescriptor",
+      "linkingText": [
+        "validating GPUSamplerDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createsampler",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createsampler",
+      "linkingText": [
+        "createSampler(descriptor)",
+        "createSampler()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-gpudevicecreatesampler-valid-usage",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpudevicecreatesampler-valid-usage",
+      "linkingText": [
+        "Valid Usage"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "GPUDevice.createSampler"
       ],
       "access": "public",
       "informative": false
@@ -7398,6 +7438,48 @@
       "informative": false
     },
     {
+      "id": "dom-gpucommandencoder-writetimestamp",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-writetimestamp",
+      "linkingText": [
+        "writeTimestamp(querySet, queryIndex)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUCommandEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-writetimestamp-queryset-queryindex-queryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-writetimestamp-queryset-queryindex-queryset",
+      "linkingText": [
+        "querySet"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/writeTimestamp(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-writetimestamp-queryset-queryindex-queryindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-writetimestamp-queryset-queryindex-queryindex",
+      "linkingText": [
+        "queryIndex"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/writeTimestamp(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpucommandencoder-resolvequeryset",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-resolvequeryset",
       "linkingText": [
@@ -8566,6 +8648,48 @@
       "informative": false
     },
     {
+      "id": "dom-gpucomputepassencoder-writetimestamp",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-writetimestamp",
+      "linkingText": [
+        "writeTimestamp(querySet, queryIndex)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUComputePassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucomputepassencoder-writetimestamp-queryset-queryindex-queryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-writetimestamp-queryset-queryindex-queryset",
+      "linkingText": [
+        "querySet"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUComputePassEncoder/writeTimestamp(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucomputepassencoder-writetimestamp-queryset-queryindex-queryindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-writetimestamp-queryset-queryindex-queryindex",
+      "linkingText": [
+        "queryIndex"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUComputePassEncoder/writeTimestamp(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dictdef-gpucomputepassdescriptor",
       "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucomputepassdescriptor",
       "linkingText": [
@@ -9396,6 +9520,48 @@
       "type": "method",
       "for": [
         "GPURenderPassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-writetimestamp",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-writetimestamp",
+      "linkingText": [
+        "writeTimestamp(querySet, queryIndex)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderPassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-writetimestamp-queryset-queryindex-queryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-writetimestamp-queryset-queryindex-queryset",
+      "linkingText": [
+        "querySet"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/writeTimestamp(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-writetimestamp-queryset-queryindex-queryindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-writetimestamp-queryset-queryindex-queryindex",
+      "linkingText": [
+        "queryIndex"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/writeTimestamp(querySet, queryIndex)"
       ],
       "access": "public",
       "informative": false
@@ -10469,6 +10635,20 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuquerytype-pipeline-statistics",
       "linkingText": [
         "\"pipeline-statistics\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUQueryType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuquerytype-timestamp",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuquerytype-timestamp",
+      "linkingText": [
+        "\"timestamp\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
