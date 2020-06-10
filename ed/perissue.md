@@ -40,11 +40,10 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [SVG Animations](https://svgwg.org/specs/animations/)
 - [SVG Markers](https://svgwg.org/specs/markers/)
 - [SVG Paths](https://svgwg.org/specs/paths/)
-- [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
 - [WebRTC DSCP Control API](https://w3c.github.io/webrtc-priority/)
 - [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
 
-=> 9 specifications found
+=> 8 specifications found
 
 
 
@@ -77,12 +76,11 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `GamepadMappingType` defined in [Gamepad](https://w3c.github.io/gamepad/) and [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
 - `GenericTransformStream` defined in [Compression Streams](https://wicg.github.io/compression/) and [Encoding Standard](https://encoding.spec.whatwg.org/)
 - `Keyboard` defined in [Keyboard Lock](https://wicg.github.io/keyboard-lock/) and [Keyboard Map](https://wicg.github.io/keyboard-map/)
-- `Location` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/) and [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
 - `MessageEventSource` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/) and [Portals](https://wicg.github.io/portals/)
 - `PermissionState` defined in [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/) and [Permissions](https://w3c.github.io/permissions/)
 - `SVGMarkerElement` defined in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) and [SVG Markers](https://svgwg.org/specs/markers/)
 
-=> 7 WebIDL names found
+=> 6 WebIDL names found
 
 "There can be only one"...
 
