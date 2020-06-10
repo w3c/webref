@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-06-10T12:37:18.284Z",
+  "date": "2020-06-10T18:37:06.576Z",
   "stats": {
     "crawled": 298,
     "errors": 0,
@@ -1936,7 +1936,7 @@
     {
       "title": "Cookie Store API",
       "shortname": "cookie-store",
-      "date": "5 June 2020",
+      "date": "10 June 2020",
       "url": "https://wicg.github.io/cookie-store/",
       "nightly": {
         "url": "https://wicg.github.io/cookie-store/"
@@ -1945,11 +1945,53 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "hasInvalidIdl": true,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "ServiceWorkerRegistration",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/"
+              }
+            ]
+          },
+          {
+            "name": "ExtendableEvent",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/"
+              }
+            ]
+          },
+          {
+            "name": "ExtendableEventInit",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/"
+              }
+            ]
+          },
+          {
+            "name": "ServiceWorkerGlobalScope",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/ServiceWorker/",
+                "title": "Service Workers Nightly",
+                "crawled": "https://w3c.github.io/ServiceWorker/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://w3c.github.io/ServiceWorker/"
         ],
@@ -17353,7 +17395,7 @@
     {
       "title": "HTML Standard",
       "shortname": "html",
-      "date": "8 June 2020",
+      "date": "10 June 2020",
       "url": "https://html.spec.whatwg.org/multipage/",
       "nightly": {
         "url": "https://html.spec.whatwg.org/multipage/"
@@ -20803,7 +20845,7 @@
     {
       "title": "MediaStreamTrack Content Hints",
       "shortname": "mst-content-hint",
-      "date": "06 June 2020",
+      "date": "10 June 2020",
       "url": "https://www.w3.org/TR/mst-content-hint/",
       "release": {
         "url": "https://www.w3.org/TR/mst-content-hint/"
@@ -28495,7 +28537,7 @@
     {
       "title": "WebUSB API",
       "shortname": "webusb",
-      "date": "9 June 2020",
+      "date": "10 June 2020",
       "url": "https://wicg.github.io/webusb/",
       "nightly": {
         "url": "https://wicg.github.io/webusb/"
