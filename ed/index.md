@@ -643,7 +643,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Compression Streams {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true}
+## Compression Streams {data-spec=true data-anomaly=true data-redefinedIdlNames=true}
 
 ### Spec info {.info}
 
@@ -655,7 +655,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `ReadableStream`, `WritableStream`
 - WebIDL names also defined elsewhere: 
     * `GenericTransformStream` also defined in [Encoding Standard](https://encoding.spec.whatwg.org/)
 
@@ -837,7 +836,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Crawled URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
-- Crawled version: 10 June 2020
+- Crawled version: 11 June 2020
 - Editor's Draft: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Shortname: cookie-store
 
@@ -3755,7 +3754,7 @@ Informative references to this spec from:
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 
-## CSS Parser API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## CSS Parser API {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -3767,7 +3766,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `ReadableStream`
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5693,7 +5692,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Encoding Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true}
+## Encoding Standard {data-spec=true data-anomaly=true data-redefinedIdlNames=true}
 
 ### Spec info {.info}
 
@@ -5706,7 +5705,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `ReadableStream`, `WritableStream`
 - WebIDL names also defined elsewhere: 
     * `GenericTransformStream` also defined in [Compression Streams](https://wicg.github.io/compression/)
 
@@ -5833,7 +5831,7 @@ Informative references to this spec from:
 - [Portals](https://wicg.github.io/portals/)
 
 
-## Fetch Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Fetch Standard {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -5845,7 +5843,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `ReadableStream`
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5941,7 +5939,7 @@ Informative references to this spec from:
 - [Native File System](https://wicg.github.io/native-file-system/)
 
 
-## File API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## File API {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -5954,7 +5952,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `ReadableStream`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/media-source/`](https://w3c.github.io/media-source/), related reference "MEDIA-SOURCE" uses URL [`https://www.w3.org/TR/media-source/`](https://www.w3.org/TR/media-source/)
 
@@ -7795,7 +7792,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Native File System {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## Native File System {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -7807,7 +7804,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `WritableStream`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FILE-API" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
@@ -8356,7 +8352,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
 - Crawled URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
-- Crawled version: 27 May 2020
+- Crawled version: 11 June 2020
 - Editor's Draft: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
 - Shortname: feature-policy
 
@@ -9331,7 +9327,7 @@ Informative references to this spec from:
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
 
 
-## Serial API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Serial API {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -9343,7 +9339,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `ReadableStream`, `WritableStream`
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -9458,7 +9454,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 6 April 2020
+- Crawled version: 11 June 2020
 - Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Shortname: streams
 
@@ -10274,7 +10270,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
 - Crawled URL: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
-- Crawled version: 13 May 2020
+- Crawled version: 11 June 2020
 - Editor's Draft: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
 - Shortname: web-bluetooth
 
@@ -10332,7 +10328,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Crawled URL: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
-- Crawled version: 28 May 2020
+- Crawled version: 11 June 2020
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Shortname: WebIDL-1
@@ -10905,7 +10901,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Crawled URL: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
-- Crawled version: 14 May 2020
+- Crawled version: 11 June 2020
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Shortname: webrtc
@@ -10960,7 +10956,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebTransport {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## WebTransport {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -10972,7 +10968,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `ReadableStream`, `WritableStream`
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -10987,7 +10983,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 10 June 2020
+- Crawled version: 11 June 2020
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
