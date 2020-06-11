@@ -1,14 +1,12 @@
-% Diff between report from "June 10, 2020" and reference report from "June 10, 2020"
+% Diff between report from "June 11, 2020" and reference report from "June 10, 2020"
 % Reffy
-% June 10, 2020
+% June 11, 2020
 
-## Cookie Store API
+## Core Accessibility API Mappings 1.2
 
-- Initial URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
+- Initial URL: [https://w3c.github.io/core-aam/](https://w3c.github.io/core-aam/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
-- Invalid WebIDL content found: *INS* false / *DEL* true
-- Obsolete WebIDL constructs found: *INS* false
-- Missing references for WebIDL names: *INS* ServiceWorkerRegistration, ExtendableEvent, ExtendableEventInit, ServiceWorkerGlobalScope
+- Editor's Draft: [https://w3c.github.io/core-aam/](https://w3c.github.io/core-aam/)
+- Missing references for links: *DEL* https://www.w3.org/TR/wai-aria-1.1/
 
 
