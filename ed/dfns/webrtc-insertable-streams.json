@@ -1,0 +1,430 @@
+{
+  "spec": {
+    "title": "WebRTC Insertable Media using Streams",
+    "url": "https://w3c.github.io/webrtc-insertable-streams/"
+  },
+  "dfns": [
+    {
+      "id": "dictdef-rtcinsertablestreams",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dictdef-rtcinsertablestreams",
+      "linkingText": [
+        "RTCInsertableStreams"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinsertablestreams-readablestream",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcinsertablestreams-readablestream",
+      "linkingText": [
+        "readableStream"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInsertableStreams"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinsertablestreams-writablestream",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcinsertablestreams-writablestream",
+      "linkingText": [
+        "writableStream"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInsertableStreams"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-rtcencodedvideoframetype",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#enumdef-rtcencodedvideoframetype",
+      "linkingText": [
+        "RTCEncodedVideoFrameType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedvideoframetype-empty",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedvideoframetype-empty",
+      "linkingText": [
+        "\"empty\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCEncodedVideoFrameType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedvideoframetype-key",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedvideoframetype-key",
+      "linkingText": [
+        "\"key\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCEncodedVideoFrameType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedvideoframetype-delta",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedvideoframetype-delta",
+      "linkingText": [
+        "\"delta\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RTCEncodedVideoFrameType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-rtcencodedvideoframemetadata",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dictdef-rtcencodedvideoframemetadata",
+      "linkingText": [
+        "RTCEncodedVideoFrameMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedvideoframemetadata-frameid",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedvideoframemetadata-frameid",
+      "linkingText": [
+        "frameId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCEncodedVideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedvideoframemetadata-dependencies",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedvideoframemetadata-dependencies",
+      "linkingText": [
+        "dependencies"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCEncodedVideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedvideoframemetadata-width",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedvideoframemetadata-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCEncodedVideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedvideoframemetadata-height",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedvideoframemetadata-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCEncodedVideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedvideoframemetadata-spatialindex",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedvideoframemetadata-spatialindex",
+      "linkingText": [
+        "spatialIndex"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCEncodedVideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedvideoframemetadata-temporalindex",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedvideoframemetadata-temporalindex",
+      "linkingText": [
+        "temporalIndex"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCEncodedVideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedvideoframemetadata-synchronizationsource",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedvideoframemetadata-synchronizationsource",
+      "linkingText": [
+        "synchronizationSource"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCEncodedVideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedvideoframemetadata-contributingsources",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedvideoframemetadata-contributingsources",
+      "linkingText": [
+        "contributingSources"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCEncodedVideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rtcencodedvideoframe",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#rtcencodedvideoframe",
+      "linkingText": [
+        "RTCEncodedVideoFrame"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedvideoframe-type",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedvideoframe-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RTCEncodedVideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedvideoframe-timestamp",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedvideoframe-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RTCEncodedVideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedvideoframe-data",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedvideoframe-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RTCEncodedVideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedvideoframe-getmetadata",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedvideoframe-getmetadata",
+      "linkingText": [
+        "getMetadata()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "RTCEncodedVideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-rtcencodedaudioframemetadata",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dictdef-rtcencodedaudioframemetadata",
+      "linkingText": [
+        "RTCEncodedAudioFrameMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedaudioframemetadata-synchronizationsource",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedaudioframemetadata-synchronizationsource",
+      "linkingText": [
+        "synchronizationSource"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCEncodedAudioFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedaudioframemetadata-contributingsources",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedaudioframemetadata-contributingsources",
+      "linkingText": [
+        "contributingSources"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCEncodedAudioFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "rtcencodedaudioframe",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#rtcencodedaudioframe",
+      "linkingText": [
+        "RTCEncodedAudioFrame"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedaudioframe-timestamp",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedaudioframe-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RTCEncodedAudioFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedaudioframe-data",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedaudioframe-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RTCEncodedAudioFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcencodedaudioframe-getmetadata",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcencodedaudioframe-getmetadata",
+      "linkingText": [
+        "getMetadata()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "RTCEncodedAudioFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcconfiguration-encodedinsertablestreams",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcconfiguration-encodedinsertablestreams",
+      "linkingText": [
+        "encodedInsertableStreams"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCConfiguration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpsender-createencodedstreams",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcrtpsender-createencodedstreams",
+      "linkingText": [
+        "createEncodedStreams()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "RTCRtpSender"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcrtpreceiver-createencodedstreams",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcrtpreceiver-createencodedstreams",
+      "linkingText": [
+        "createEncodedStreams()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "RTCRtpReceiver"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}
