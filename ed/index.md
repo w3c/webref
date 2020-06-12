@@ -8050,7 +8050,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Crawled URL: [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)
-- Crawled version: 20 May 2020
+- Crawled version: 12 June 2020
 - Editor's Draft: [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)
 - Latest published version: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Shortname: page-visibility-2
@@ -10661,7 +10661,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/web-share-target/](https://wicg.github.io/web-share-target/)
 - Crawled URL: [https://w3c.github.io/web-share-target/](https://w3c.github.io/web-share-target/)
-- Crawled version: 05 June 2020
+- Crawled version: 12 June 2020
 - Editor's Draft: [https://wicg.github.io/web-share-target/](https://wicg.github.io/web-share-target/)
 - Shortname: web-share-target
 
