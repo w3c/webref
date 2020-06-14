@@ -25,8 +25,8 @@ interface ScrollTimeline : AnimationTimeline {
   constructor(optional ScrollTimelineOptions options = {});
   readonly attribute Element source;
   readonly attribute ScrollDirection orientation;
-  readonly attribute DOMString start;
-  readonly attribute DOMString end;
+  readonly attribute (DOMString or ElementBasedOffset) start;
+  readonly attribute (DOMString or ElementBasedOffset) end;
   readonly attribute (double or ScrollTimelineAutoKeyword) timeRange;
 };
 
@@ -36,4 +36,14 @@ dictionary ElementBasedOffset {
   Element target;
   Edge edge = "start";
   double threshold = 0.0;
+};
+
+[Exposed=Window]
+interface CSSScrollTimelineRule : CSSRule {
+    readonly attribute CSSOMString name;
+    readonly attribute CSSOMString source;
+    readonly attribute CSSOMString orientation;
+    readonly attribute CSSOMString start;
+    readonly attribute CSSOMString end;
+    readonly attribute CSSOMString timeRange;
 };
