@@ -53,6 +53,20 @@
       "informative": false
     },
     {
+      "id": "dom-baseaudiocontext-pending-promises-slot",
+      "href": "https://www.w3.org/TR/webaudio/#dom-baseaudiocontext-pending-promises-slot",
+      "linkingText": [
+        "[[pending promises]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BaseAudioContext"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "enumdef-audiocontextstate",
       "href": "https://www.w3.org/TR/webaudio/#enumdef-audiocontextstate",
       "linkingText": [
@@ -68,6 +82,7 @@
       "id": "dom-audiocontextstate-suspended",
       "href": "https://www.w3.org/TR/webaudio/#dom-audiocontextstate-suspended",
       "linkingText": [
+        "\"suspended\"",
         "suspended"
       ],
       "localLinkingText": [],
@@ -82,6 +97,7 @@
       "id": "dom-audiocontextstate-running",
       "href": "https://www.w3.org/TR/webaudio/#dom-audiocontextstate-running",
       "linkingText": [
+        "\"running\"",
         "running"
       ],
       "localLinkingText": [],
@@ -96,6 +112,7 @@
       "id": "dom-audiocontextstate-closed",
       "href": "https://www.w3.org/TR/webaudio/#dom-audiocontextstate-closed",
       "linkingText": [
+        "\"closed\"",
         "closed"
       ],
       "localLinkingText": [],
@@ -893,6 +910,20 @@
       "informative": false
     },
     {
+      "id": "dom-baseaudiocontext-decoding-thread",
+      "href": "https://www.w3.org/TR/webaudio/#dom-baseaudiocontext-decoding-thread",
+      "linkingText": [
+        "decoding thread"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BaseAudioContext"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-baseaudiocontext-decodeaudiodata-audiodata",
       "href": "https://www.w3.org/TR/webaudio/#dom-baseaudiocontext-decodeaudiodata-audiodata",
       "linkingText": [
@@ -935,23 +966,10 @@
       "informative": false
     },
     {
-      "id": "dom-baseaudiocontext-resume",
-      "href": "https://www.w3.org/TR/webaudio/#dom-baseaudiocontext-resume",
-      "linkingText": [
-        "resume()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "BaseAudioContext"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "callback-decodesuccesscallback-parameters",
       "href": "https://www.w3.org/TR/webaudio/#callback-decodesuccesscallback-parameters",
       "linkingText": [
+        "DecodeSuccessCallback",
         "DecodeSuccessCallback()"
       ],
       "localLinkingText": [],
@@ -978,6 +996,7 @@
       "id": "callback-decodeerrorcallback-parameters",
       "href": "https://www.w3.org/TR/webaudio/#callback-decodeerrorcallback-parameters",
       "linkingText": [
+        "DecodeErrorCallback",
         "DecodeErrorCallback()"
       ],
       "localLinkingText": [],
@@ -1025,18 +1044,6 @@
       "informative": false
     },
     {
-      "id": "allowed-to-start",
-      "href": "https://www.w3.org/TR/webaudio/#allowed-to-start",
-      "linkingText": [
-        "allowed to start"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "enumdef-audiocontextlatencycategory",
       "href": "https://www.w3.org/TR/webaudio/#enumdef-audiocontextlatencycategory",
       "linkingText": [
@@ -1052,6 +1059,7 @@
       "id": "dom-audiocontextlatencycategory-balanced",
       "href": "https://www.w3.org/TR/webaudio/#dom-audiocontextlatencycategory-balanced",
       "linkingText": [
+        "\"balanced\"",
         "balanced"
       ],
       "localLinkingText": [],
@@ -1066,6 +1074,7 @@
       "id": "dom-audiocontextlatencycategory-interactive",
       "href": "https://www.w3.org/TR/webaudio/#dom-audiocontextlatencycategory-interactive",
       "linkingText": [
+        "\"interactive\"",
         "interactive"
       ],
       "localLinkingText": [],
@@ -1080,26 +1089,13 @@
       "id": "dom-audiocontextlatencycategory-playback",
       "href": "https://www.w3.org/TR/webaudio/#dom-audiocontextlatencycategory-playback",
       "linkingText": [
+        "\"playback\"",
         "playback"
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
         "AudioContextLatencyCategory"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-audiocontext-audiocontext-contextoptions-contextoptions",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-audiocontext-contextoptions-contextoptions",
-      "linkingText": [
-        "contextOptions"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "AudioContext/AudioContext(contextOptions)"
       ],
       "access": "public",
       "informative": false
@@ -1159,10 +1155,39 @@
       "informative": false
     },
     {
+      "id": "allowed-to-start",
+      "href": "https://www.w3.org/TR/webaudio/#allowed-to-start",
+      "linkingText": [
+        "allowed to start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-audiocontext-suspended-by-user-slot",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-suspended-by-user-slot",
+      "linkingText": [
+        "[[suspended by user]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-audiocontext-audiocontext",
       "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-audiocontext",
       "linkingText": [
-        "AudioContext(contextOptions)"
+        "AudioContext(contextOptions)",
+        "constructor(contextOptions)",
+        "AudioContext()",
+        "constructor()"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -1173,39 +1198,29 @@
       "informative": false
     },
     {
-      "id": "rendering-thread-state",
-      "href": "https://www.w3.org/TR/webaudio/#rendering-thread-state",
+      "id": "dom-audiocontext-pending-resume-promises-slot",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-pending-resume-promises-slot",
       "linkingText": [
-        "rendering thread state"
+        "[[pending resume promises]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
       "informative": false
     },
     {
-      "id": "pendingresumepromises",
-      "href": "https://www.w3.org/TR/webaudio/#pendingresumepromises",
-      "linkingText": [
-        "pendingResumePromises"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dom-audiocontext-audiocontext-contextoptions",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-audiocontext-contextoptions",
+      "id": "dom-audiocontext-constructor-contextoptions-contextoptions",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-constructor-contextoptions-contextoptions",
       "linkingText": [
         "contextOptions"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioContext/AudioContext()"
+        "AudioContext/constructor(contextOptions)"
       ],
       "access": "public",
       "informative": false
@@ -1365,6 +1380,20 @@
       "informative": false
     },
     {
+      "id": "dom-audiocontext-resume",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-resume",
+      "linkingText": [
+        "resume()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-audiocontext-suspend",
       "href": "https://www.w3.org/TR/webaudio/#dom-audiocontext-suspend",
       "linkingText": [
@@ -1488,7 +1517,8 @@
       "id": "dom-offlineaudiocontext-offlineaudiocontext",
       "href": "https://www.w3.org/TR/webaudio/#dom-offlineaudiocontext-offlineaudiocontext",
       "linkingText": [
-        "OfflineAudioContext(contextOptions)"
+        "OfflineAudioContext(contextOptions)",
+        "constructor(contextOptions)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -1499,15 +1529,15 @@
       "informative": false
     },
     {
-      "id": "dom-offlineaudiocontext-offlineaudiocontext-contextoptions-contextoptions",
-      "href": "https://www.w3.org/TR/webaudio/#dom-offlineaudiocontext-offlineaudiocontext-contextoptions-contextoptions",
+      "id": "dom-offlineaudiocontext-constructor-contextoptions-contextoptions",
+      "href": "https://www.w3.org/TR/webaudio/#dom-offlineaudiocontext-constructor-contextoptions-contextoptions",
       "linkingText": [
         "contextOptions"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "OfflineAudioContext/OfflineAudioContext(contextOptions)"
+        "OfflineAudioContext/constructor(contextOptions)"
       ],
       "access": "public",
       "informative": false
@@ -1516,7 +1546,8 @@
       "id": "dom-offlineaudiocontext-offlineaudiocontext-numberofchannels-length-samplerate",
       "href": "https://www.w3.org/TR/webaudio/#dom-offlineaudiocontext-offlineaudiocontext-numberofchannels-length-samplerate",
       "linkingText": [
-        "OfflineAudioContext(numberOfChannels, length, sampleRate)"
+        "OfflineAudioContext(numberOfChannels, length, sampleRate)",
+        "constructor(numberOfChannels, length, sampleRate)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -1527,43 +1558,43 @@
       "informative": false
     },
     {
-      "id": "dom-offlineaudiocontext-offlineaudiocontext-numberofchannels-length-samplerate-numberofchannels",
-      "href": "https://www.w3.org/TR/webaudio/#dom-offlineaudiocontext-offlineaudiocontext-numberofchannels-length-samplerate-numberofchannels",
+      "id": "dom-offlineaudiocontext-constructor-numberofchannels-length-samplerate-numberofchannels",
+      "href": "https://www.w3.org/TR/webaudio/#dom-offlineaudiocontext-constructor-numberofchannels-length-samplerate-numberofchannels",
       "linkingText": [
         "numberOfChannels"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "OfflineAudioContext/OfflineAudioContext(numberOfChannels, length, sampleRate)"
+        "OfflineAudioContext/constructor(numberOfChannels, length, sampleRate)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-offlineaudiocontext-offlineaudiocontext-numberofchannels-length-samplerate-length",
-      "href": "https://www.w3.org/TR/webaudio/#dom-offlineaudiocontext-offlineaudiocontext-numberofchannels-length-samplerate-length",
+      "id": "dom-offlineaudiocontext-constructor-numberofchannels-length-samplerate-length",
+      "href": "https://www.w3.org/TR/webaudio/#dom-offlineaudiocontext-constructor-numberofchannels-length-samplerate-length",
       "linkingText": [
         "length"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "OfflineAudioContext/OfflineAudioContext(numberOfChannels, length, sampleRate)"
+        "OfflineAudioContext/constructor(numberOfChannels, length, sampleRate)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-offlineaudiocontext-offlineaudiocontext-numberofchannels-length-samplerate-samplerate",
-      "href": "https://www.w3.org/TR/webaudio/#dom-offlineaudiocontext-offlineaudiocontext-numberofchannels-length-samplerate-samplerate",
+      "id": "dom-offlineaudiocontext-constructor-numberofchannels-length-samplerate-samplerate",
+      "href": "https://www.w3.org/TR/webaudio/#dom-offlineaudiocontext-constructor-numberofchannels-length-samplerate-samplerate",
       "linkingText": [
         "sampleRate"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "OfflineAudioContext/OfflineAudioContext(numberOfChannels, length, sampleRate)"
+        "OfflineAudioContext/constructor(numberOfChannels, length, sampleRate)"
       ],
       "access": "public",
       "informative": false
@@ -1651,6 +1682,20 @@
       "informative": false
     },
     {
+      "id": "dom-offlineaudiocontext-resume",
+      "href": "https://www.w3.org/TR/webaudio/#dom-offlineaudiocontext-resume",
+      "linkingText": [
+        "resume()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "OfflineAudioContext"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-offlineaudiocontext-suspend",
       "href": "https://www.w3.org/TR/webaudio/#dom-offlineaudiocontext-suspend",
       "linkingText": [
@@ -1733,10 +1778,23 @@
       "informative": false
     },
     {
+      "id": "offlineaudiocompletionevent",
+      "href": "https://www.w3.org/TR/webaudio/#offlineaudiocompletionevent",
+      "linkingText": [
+        "OfflineAudioCompletionEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-offlineaudiocompletionevent-offlineaudiocompletionevent",
       "href": "https://www.w3.org/TR/webaudio/#dom-offlineaudiocompletionevent-offlineaudiocompletionevent",
       "linkingText": [
-        "OfflineAudioCompletionEvent(type, eventInitDict)"
+        "OfflineAudioCompletionEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -1755,7 +1813,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "OfflineAudioCompletionEvent/OfflineAudioCompletionEvent(type, eventInitDict)"
+        "OfflineAudioCompletionEvent/OfflineAudioCompletionEvent(type, eventInitDict)",
+        "OfflineAudioCompletionEvent/constructor(type, eventInitDict)"
       ],
       "access": "public",
       "informative": false
@@ -1769,20 +1828,9 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "OfflineAudioCompletionEvent/OfflineAudioCompletionEvent(type, eventInitDict)"
+        "OfflineAudioCompletionEvent/OfflineAudioCompletionEvent(type, eventInitDict)",
+        "OfflineAudioCompletionEvent/constructor(type, eventInitDict)"
       ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "offlineaudiocompletionevent",
-      "href": "https://www.w3.org/TR/webaudio/#offlineaudiocompletionevent",
-      "linkingText": [
-        "OfflineAudioCompletionEvent"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false
     },
@@ -1883,20 +1931,6 @@
       "informative": false
     },
     {
-      "id": "dom-audiobuffer-audiobuffer-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-audiobuffer-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "AudioBuffer/AudioBuffer(options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "audiobuffer",
       "href": "https://www.w3.org/TR/webaudio/#audiobuffer",
       "linkingText": [
@@ -1923,90 +1957,90 @@
       "informative": false
     },
     {
-      "id": "dom-audiobuffer-copyfromchannel-destination-channelnumber-startinchannel-destination",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copyfromchannel-destination-channelnumber-startinchannel-destination",
+      "id": "dom-audiobuffer-copyfromchannel-destination-channelnumber-bufferoffset-destination",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copyfromchannel-destination-channelnumber-bufferoffset-destination",
       "linkingText": [
         "destination"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioBuffer/copyFromChannel(destination, channelNumber, startInChannel)",
+        "AudioBuffer/copyFromChannel(destination, channelNumber, bufferOffset)",
         "AudioBuffer/copyFromChannel(destination, channelNumber)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-audiobuffer-copyfromchannel-destination-channelnumber-startinchannel-channelnumber",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copyfromchannel-destination-channelnumber-startinchannel-channelnumber",
+      "id": "dom-audiobuffer-copyfromchannel-destination-channelnumber-bufferoffset-channelnumber",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copyfromchannel-destination-channelnumber-bufferoffset-channelnumber",
       "linkingText": [
         "channelNumber"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioBuffer/copyFromChannel(destination, channelNumber, startInChannel)",
+        "AudioBuffer/copyFromChannel(destination, channelNumber, bufferOffset)",
         "AudioBuffer/copyFromChannel(destination, channelNumber)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-audiobuffer-copyfromchannel-destination-channelnumber-startinchannel-startinchannel",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copyfromchannel-destination-channelnumber-startinchannel-startinchannel",
+      "id": "dom-audiobuffer-copyfromchannel-destination-channelnumber-bufferoffset-bufferoffset",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copyfromchannel-destination-channelnumber-bufferoffset-bufferoffset",
       "linkingText": [
-        "startInChannel"
+        "bufferOffset"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioBuffer/copyFromChannel(destination, channelNumber, startInChannel)",
+        "AudioBuffer/copyFromChannel(destination, channelNumber, bufferOffset)",
         "AudioBuffer/copyFromChannel(destination, channelNumber)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-audiobuffer-copytochannel-source-channelnumber-startinchannel-source",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copytochannel-source-channelnumber-startinchannel-source",
+      "id": "dom-audiobuffer-copytochannel-source-channelnumber-bufferoffset-source",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copytochannel-source-channelnumber-bufferoffset-source",
       "linkingText": [
         "source"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioBuffer/copyToChannel(source, channelNumber, startInChannel)",
+        "AudioBuffer/copyToChannel(source, channelNumber, bufferOffset)",
         "AudioBuffer/copyToChannel(source, channelNumber)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-audiobuffer-copytochannel-source-channelnumber-startinchannel-channelnumber",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copytochannel-source-channelnumber-startinchannel-channelnumber",
+      "id": "dom-audiobuffer-copytochannel-source-channelnumber-bufferoffset-channelnumber",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copytochannel-source-channelnumber-bufferoffset-channelnumber",
       "linkingText": [
         "channelNumber"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioBuffer/copyToChannel(source, channelNumber, startInChannel)",
+        "AudioBuffer/copyToChannel(source, channelNumber, bufferOffset)",
         "AudioBuffer/copyToChannel(source, channelNumber)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-audiobuffer-copytochannel-source-channelnumber-startinchannel-startinchannel",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copytochannel-source-channelnumber-startinchannel-startinchannel",
+      "id": "dom-audiobuffer-copytochannel-source-channelnumber-bufferoffset-bufferoffset",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copytochannel-source-channelnumber-bufferoffset-bufferoffset",
       "linkingText": [
-        "startInChannel"
+        "bufferOffset"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioBuffer/copyToChannel(source, channelNumber, startInChannel)",
+        "AudioBuffer/copyToChannel(source, channelNumber, bufferOffset)",
         "AudioBuffer/copyToChannel(source, channelNumber)"
       ],
       "access": "public",
@@ -2016,7 +2050,8 @@
       "id": "dom-audiobuffer-audiobuffer",
       "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-audiobuffer",
       "linkingText": [
-        "AudioBuffer(options)"
+        "AudioBuffer(options)",
+        "constructor(options)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -2027,15 +2062,15 @@
       "informative": false
     },
     {
-      "id": "dom-audiobuffer-audiobuffer-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-audiobuffer-options",
+      "id": "dom-audiobuffer-constructor-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-constructor-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioBuffer/AudioBuffer()"
+        "AudioBuffer/constructor(options)"
       ],
       "access": "public",
       "informative": false
@@ -2100,7 +2135,7 @@
       "id": "dom-audiobuffer-copyfromchannel",
       "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copyfromchannel",
       "linkingText": [
-        "copyFromChannel(destination, channelNumber, startInChannel)",
+        "copyFromChannel(destination, channelNumber, bufferOffset)",
         "copyFromChannel(destination, channelNumber)"
       ],
       "localLinkingText": [],
@@ -2140,10 +2175,10 @@
       "informative": false
     },
     {
-      "id": "dom-audiobuffer-copyfromchannel-startinchannel",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copyfromchannel-startinchannel",
+      "id": "dom-audiobuffer-copyfromchannel-bufferoffset",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copyfromchannel-bufferoffset",
       "linkingText": [
-        "startInChannel"
+        "bufferOffset"
       ],
       "localLinkingText": [],
       "type": "argument",
@@ -2157,7 +2192,7 @@
       "id": "dom-audiobuffer-copytochannel",
       "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copytochannel",
       "linkingText": [
-        "copyToChannel(source, channelNumber, startInChannel)",
+        "copyToChannel(source, channelNumber, bufferOffset)",
         "copyToChannel(source, channelNumber)"
       ],
       "localLinkingText": [],
@@ -2197,10 +2232,10 @@
       "informative": false
     },
     {
-      "id": "dom-audiobuffer-copytochannel-startinchannel",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copytochannel-startinchannel",
+      "id": "dom-audiobuffer-copytochannel-bufferoffset",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffer-copytochannel-bufferoffset",
       "linkingText": [
-        "startInChannel"
+        "bufferOffset"
       ],
       "localLinkingText": [],
       "type": "argument",
@@ -2429,6 +2464,7 @@
       "id": "dom-channelcountmode-max",
       "href": "https://www.w3.org/TR/webaudio/#dom-channelcountmode-max",
       "linkingText": [
+        "\"max\"",
         "max"
       ],
       "localLinkingText": [],
@@ -2443,6 +2479,7 @@
       "id": "dom-channelcountmode-clamped-max",
       "href": "https://www.w3.org/TR/webaudio/#dom-channelcountmode-clamped-max",
       "linkingText": [
+        "\"clamped-max\"",
         "clamped-max"
       ],
       "localLinkingText": [],
@@ -2457,6 +2494,7 @@
       "id": "dom-channelcountmode-explicit",
       "href": "https://www.w3.org/TR/webaudio/#dom-channelcountmode-explicit",
       "linkingText": [
+        "\"explicit\"",
         "explicit"
       ],
       "localLinkingText": [],
@@ -2483,6 +2521,7 @@
       "id": "dom-channelinterpretation-speakers",
       "href": "https://www.w3.org/TR/webaudio/#dom-channelinterpretation-speakers",
       "linkingText": [
+        "\"speakers\"",
         "speakers"
       ],
       "localLinkingText": [],
@@ -2497,6 +2536,7 @@
       "id": "dom-channelinterpretation-discrete",
       "href": "https://www.w3.org/TR/webaudio/#dom-channelinterpretation-discrete",
       "linkingText": [
+        "\"discrete\"",
         "discrete"
       ],
       "localLinkingText": [],
@@ -2505,6 +2545,30 @@
         "ChannelInterpretation"
       ],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "tail-time",
+      "href": "https://www.w3.org/TR/webaudio/#tail-time",
+      "linkingText": [
+        "tail-time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "actively-processing",
+      "href": "https://www.w3.org/TR/webaudio/#actively-processing",
+      "linkingText": [
+        "actively processing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
@@ -3053,18 +3117,6 @@
       "informative": false
     },
     {
-      "id": "tail-time",
-      "href": "https://www.w3.org/TR/webaudio/#tail-time",
-      "linkingText": [
-        "tail-time"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "AudioParam",
       "href": "https://www.w3.org/TR/webaudio/#AudioParam",
       "linkingText": [
@@ -3188,6 +3240,7 @@
       "id": "dom-automationrate-a-rate",
       "href": "https://www.w3.org/TR/webaudio/#dom-automationrate-a-rate",
       "linkingText": [
+        "\"a-rate\"",
         "a-rate"
       ],
       "localLinkingText": [],
@@ -3202,6 +3255,7 @@
       "id": "dom-automationrate-k-rate",
       "href": "https://www.w3.org/TR/webaudio/#dom-automationrate-k-rate",
       "linkingText": [
+        "\"k-rate\"",
         "k-rate"
       ],
       "localLinkingText": [],
@@ -3861,6 +3915,32 @@
       "informative": false
     },
     {
+      "id": "playing",
+      "href": "https://www.w3.org/TR/webaudio/#playing",
+      "linkingText": [
+        "playing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-audioscheduledsourcenode-source-started-slot",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audioscheduledsourcenode-source-started-slot",
+      "linkingText": [
+        "[[source started]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioScheduledSourceNode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-audioscheduledsourcenode-onended",
       "href": "https://www.w3.org/TR/webaudio/#dom-audioscheduledsourcenode-onended",
       "linkingText": [
@@ -3945,34 +4025,6 @@
       "informative": false
     },
     {
-      "id": "dom-analysernode-analysernode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-analysernode-analysernode-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "AnalyserNode/AnalyserNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-analysernode-analysernode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-analysernode-analysernode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "AnalyserNode/AnalyserNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-analysernode-getfloatfrequencydata-array-array",
       "href": "https://www.w3.org/TR/webaudio/#dom-analysernode-getfloatfrequencydata-array-array",
       "linkingText": [
@@ -4032,7 +4084,10 @@
       "id": "dom-analysernode-analysernode",
       "href": "https://www.w3.org/TR/webaudio/#dom-analysernode-analysernode",
       "linkingText": [
-        "AnalyserNode(context, options)"
+        "AnalyserNode(context, options)",
+        "constructor(context, options)",
+        "AnalyserNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -4043,29 +4098,29 @@
       "informative": false
     },
     {
-      "id": "dom-analysernode-analysernode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-analysernode-analysernode-context",
+      "id": "dom-analysernode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-analysernode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AnalyserNode/AnalyserNode()"
+        "AnalyserNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-analysernode-analysernode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-analysernode-analysernode-options",
+      "id": "dom-analysernode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-analysernode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AnalyserNode/AnalyserNode()"
+        "AnalyserNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -4455,38 +4510,13 @@
       "informative": false
     },
     {
-      "id": "dom-audiobuffersourcenode-audiobuffersourcenode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffersourcenode-audiobuffersourcenode-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "AudioBufferSourceNode/AudioBufferSourceNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-audiobuffersourcenode-audiobuffersourcenode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffersourcenode-audiobuffersourcenode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "AudioBufferSourceNode/AudioBufferSourceNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-audiobuffersourcenode-audiobuffersourcenode",
       "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffersourcenode-audiobuffersourcenode",
       "linkingText": [
-        "AudioBufferSourceNode(context, options)"
+        "AudioBufferSourceNode(context, options)",
+        "constructor(context, options)",
+        "AudioBufferSourceNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -4497,29 +4527,43 @@
       "informative": false
     },
     {
-      "id": "dom-audiobuffersourcenode-audiobuffersourcenode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffersourcenode-audiobuffersourcenode-context",
+      "id": "dom-audiobuffersourcenode-constructor-audiobuffersourcenode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffersourcenode-constructor-audiobuffersourcenode",
+      "linkingText": [
+        "AudioBufferSourceNode(context, options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioBufferSourceNode/constructor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audiobuffersourcenode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffersourcenode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioBufferSourceNode/AudioBufferSourceNode()"
+        "AudioBufferSourceNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-audiobuffersourcenode-audiobuffersourcenode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffersourcenode-audiobuffersourcenode-options",
+      "id": "dom-audiobuffersourcenode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audiobuffersourcenode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioBufferSourceNode/AudioBufferSourceNode()"
+        "AudioBufferSourceNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -5068,6 +5112,34 @@
       "informative": false
     },
     {
+      "id": "audiolistener-forward",
+      "href": "https://www.w3.org/TR/webaudio/#audiolistener-forward",
+      "linkingText": [
+        "forward"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AudioListener"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "audiolistener-up",
+      "href": "https://www.w3.org/TR/webaudio/#audiolistener-up",
+      "linkingText": [
+        "up"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AudioListener"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "dom-audiolistener-setorientation-x",
       "href": "https://www.w3.org/TR/webaudio/#dom-audiolistener-setorientation-x",
       "linkingText": [
@@ -5223,7 +5295,8 @@
       "id": "dom-audioprocessingevent-audioprocessingevent",
       "href": "https://www.w3.org/TR/webaudio/#dom-audioprocessingevent-audioprocessingevent",
       "linkingText": [
-        "AudioProcessingEvent(type, eventInitDict)"
+        "AudioProcessingEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -5242,7 +5315,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioProcessingEvent/AudioProcessingEvent(type, eventInitDict)"
+        "AudioProcessingEvent/AudioProcessingEvent(type, eventInitDict)",
+        "AudioProcessingEvent/constructor(type, eventInitDict)"
       ],
       "access": "public",
       "informative": false
@@ -5256,7 +5330,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioProcessingEvent/AudioProcessingEvent(type, eventInitDict)"
+        "AudioProcessingEvent/AudioProcessingEvent(type, eventInitDict)",
+        "AudioProcessingEvent/constructor(type, eventInitDict)"
       ],
       "access": "public",
       "informative": false
@@ -5397,6 +5472,7 @@
       "id": "dom-biquadfiltertype-lowpass",
       "href": "https://www.w3.org/TR/webaudio/#dom-biquadfiltertype-lowpass",
       "linkingText": [
+        "\"lowpass\"",
         "lowpass"
       ],
       "localLinkingText": [],
@@ -5411,6 +5487,7 @@
       "id": "dom-biquadfiltertype-highpass",
       "href": "https://www.w3.org/TR/webaudio/#dom-biquadfiltertype-highpass",
       "linkingText": [
+        "\"highpass\"",
         "highpass"
       ],
       "localLinkingText": [],
@@ -5425,6 +5502,7 @@
       "id": "dom-biquadfiltertype-bandpass",
       "href": "https://www.w3.org/TR/webaudio/#dom-biquadfiltertype-bandpass",
       "linkingText": [
+        "\"bandpass\"",
         "bandpass"
       ],
       "localLinkingText": [],
@@ -5439,6 +5517,7 @@
       "id": "dom-biquadfiltertype-lowshelf",
       "href": "https://www.w3.org/TR/webaudio/#dom-biquadfiltertype-lowshelf",
       "linkingText": [
+        "\"lowshelf\"",
         "lowshelf"
       ],
       "localLinkingText": [],
@@ -5453,6 +5532,7 @@
       "id": "dom-biquadfiltertype-highshelf",
       "href": "https://www.w3.org/TR/webaudio/#dom-biquadfiltertype-highshelf",
       "linkingText": [
+        "\"highshelf\"",
         "highshelf"
       ],
       "localLinkingText": [],
@@ -5467,6 +5547,7 @@
       "id": "dom-biquadfiltertype-peaking",
       "href": "https://www.w3.org/TR/webaudio/#dom-biquadfiltertype-peaking",
       "linkingText": [
+        "\"peaking\"",
         "peaking"
       ],
       "localLinkingText": [],
@@ -5481,6 +5562,7 @@
       "id": "dom-biquadfiltertype-notch",
       "href": "https://www.w3.org/TR/webaudio/#dom-biquadfiltertype-notch",
       "linkingText": [
+        "\"notch\"",
         "notch"
       ],
       "localLinkingText": [],
@@ -5495,6 +5577,7 @@
       "id": "dom-biquadfiltertype-allpass",
       "href": "https://www.w3.org/TR/webaudio/#dom-biquadfiltertype-allpass",
       "linkingText": [
+        "\"allpass\"",
         "allpass"
       ],
       "localLinkingText": [],
@@ -5506,29 +5589,18 @@
       "informative": false
     },
     {
-      "id": "dom-biquadfilternode-biquadfilternode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-biquadfilternode-biquadfilternode-context-options-context",
+      "id": "dom-biquadfilternode-biquadfilternode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-biquadfilternode-biquadfilternode",
       "linkingText": [
-        "context"
+        "BiquadFilterNode(context, options)",
+        "constructor(context, options)",
+        "BiquadFilterNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "constructor",
       "for": [
-        "BiquadFilterNode/BiquadFilterNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-biquadfilternode-biquadfilternode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-biquadfilternode-biquadfilternode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "BiquadFilterNode/BiquadFilterNode(context, options)"
+        "BiquadFilterNode"
       ],
       "access": "public",
       "informative": false
@@ -5576,13 +5648,13 @@
       "informative": false
     },
     {
-      "id": "dom-biquadfilternode-biquadfilternode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-biquadfilternode-biquadfilternode",
+      "id": "dom-biquadfilternode-biquadfilternode-context-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-biquadfilternode-biquadfilternode-context-options",
       "linkingText": [
         "BiquadFilterNode(context, options)"
       ],
       "localLinkingText": [],
-      "type": "constructor",
+      "type": "method",
       "for": [
         "BiquadFilterNode"
       ],
@@ -5590,29 +5662,29 @@
       "informative": false
     },
     {
-      "id": "dom-biquadfilternode-biquadfilternode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-biquadfilternode-biquadfilternode-context",
+      "id": "dom-biquadfilternode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-biquadfilternode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "BiquadFilterNode/BiquadFilterNode()"
+        "BiquadFilterNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-biquadfilternode-biquadfilternode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-biquadfilternode-biquadfilternode-options",
+      "id": "dom-biquadfilternode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-biquadfilternode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "BiquadFilterNode/BiquadFilterNode()"
+        "BiquadFilterNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -5838,38 +5910,13 @@
       "informative": false
     },
     {
-      "id": "dom-channelmergernode-channelmergernode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-channelmergernode-channelmergernode-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "ChannelMergerNode/ChannelMergerNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-channelmergernode-channelmergernode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-channelmergernode-channelmergernode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "ChannelMergerNode/ChannelMergerNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-channelmergernode-channelmergernode",
       "href": "https://www.w3.org/TR/webaudio/#dom-channelmergernode-channelmergernode",
       "linkingText": [
-        "ChannelMergerNode(context, options)"
+        "ChannelMergerNode(context, options)",
+        "constructor(context, options)",
+        "ChannelMergerNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -5880,29 +5927,43 @@
       "informative": false
     },
     {
-      "id": "dom-channelmergernode-channelmergernode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-channelmergernode-channelmergernode-context",
+      "id": "dom-channelmergernode-constructor-channelmergernode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-channelmergernode-constructor-channelmergernode",
+      "linkingText": [
+        "ChannelMergerNode(context, options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ChannelMergerNode/constructor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-channelmergernode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-channelmergernode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "ChannelMergerNode/ChannelMergerNode()"
+        "ChannelMergerNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-channelmergernode-channelmergernode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-channelmergernode-channelmergernode-options",
+      "id": "dom-channelmergernode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-channelmergernode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "ChannelMergerNode/ChannelMergerNode()"
+        "ChannelMergerNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -5946,38 +6007,13 @@
       "informative": false
     },
     {
-      "id": "dom-channelsplitternode-channelsplitternode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-channelsplitternode-channelsplitternode-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "ChannelSplitterNode/ChannelSplitterNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-channelsplitternode-channelsplitternode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-channelsplitternode-channelsplitternode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "ChannelSplitterNode/ChannelSplitterNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-channelsplitternode-channelsplitternode",
       "href": "https://www.w3.org/TR/webaudio/#dom-channelsplitternode-channelsplitternode",
       "linkingText": [
-        "ChannelSplitterNode(context, options)"
+        "ChannelSplitterNode(context, options)",
+        "constructor(context, options)",
+        "ChannelSplitterNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -5988,29 +6024,43 @@
       "informative": false
     },
     {
-      "id": "dom-channelsplitternode-channelsplitternode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-channelsplitternode-channelsplitternode-context",
+      "id": "dom-channelsplitternode-constructor-channelsplitternode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-channelsplitternode-constructor-channelsplitternode",
+      "linkingText": [
+        "ChannelSplitterNode(context, options)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ChannelSplitterNode/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-channelsplitternode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-channelsplitternode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "ChannelSplitterNode/ChannelSplitterNode()"
+        "ChannelSplitterNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-channelsplitternode-channelsplitternode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-channelsplitternode-channelsplitternode-options",
+      "id": "dom-channelsplitternode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-channelsplitternode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "ChannelSplitterNode/ChannelSplitterNode()"
+        "ChannelSplitterNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -6054,38 +6104,13 @@
       "informative": false
     },
     {
-      "id": "dom-constantsourcenode-constantsourcenode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-constantsourcenode-constantsourcenode-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "ConstantSourceNode/ConstantSourceNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-constantsourcenode-constantsourcenode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-constantsourcenode-constantsourcenode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "ConstantSourceNode/ConstantSourceNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-constantsourcenode-constantsourcenode",
       "href": "https://www.w3.org/TR/webaudio/#dom-constantsourcenode-constantsourcenode",
       "linkingText": [
-        "ConstantSourceNode(context, options)"
+        "ConstantSourceNode(context, options)",
+        "constructor(context, options)",
+        "ConstantSourceNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -6096,29 +6121,43 @@
       "informative": false
     },
     {
-      "id": "dom-constantsourcenode-constantsourcenode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-constantsourcenode-constantsourcenode-context",
+      "id": "dom-constantsourcenode-constructor-constantsourcenode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-constantsourcenode-constructor-constantsourcenode",
+      "linkingText": [
+        "ConstantSourceNode(context, options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ConstantSourceNode/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-constantsourcenode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-constantsourcenode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "ConstantSourceNode/ConstantSourceNode()"
+        "ConstantSourceNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-constantsourcenode-constantsourcenode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-constantsourcenode-constantsourcenode-options",
+      "id": "dom-constantsourcenode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-constantsourcenode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "ConstantSourceNode/ConstantSourceNode()"
+        "ConstantSourceNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -6176,38 +6215,13 @@
       "informative": false
     },
     {
-      "id": "dom-convolvernode-convolvernode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-convolvernode-convolvernode-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "ConvolverNode/ConvolverNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-convolvernode-convolvernode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-convolvernode-convolvernode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "ConvolverNode/ConvolverNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-convolvernode-convolvernode",
       "href": "https://www.w3.org/TR/webaudio/#dom-convolvernode-convolvernode",
       "linkingText": [
-        "ConvolverNode(context, options)"
+        "ConvolverNode(context, options)",
+        "constructor(context, options)",
+        "ConvolverNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -6218,10 +6232,52 @@
       "informative": false
     },
     {
-      "id": "dom-convolvernode-buffer-set-slot",
-      "href": "https://www.w3.org/TR/webaudio/#dom-convolvernode-buffer-set-slot",
+      "id": "dom-convolvernode-constructor-convolvernode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-convolvernode-constructor-convolvernode",
       "linkingText": [
-        "[[buffer set]]"
+        "ConvolverNode(context, options)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ConvolverNode/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-convolvernode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-convolvernode-constructor-context-options-context",
+      "linkingText": [
+        "context"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ConvolverNode/constructor(context, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-convolvernode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-convolvernode-constructor-context-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ConvolverNode/constructor(context, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-convolvernode-buffer",
+      "href": "https://www.w3.org/TR/webaudio/#dom-convolvernode-buffer",
+      "linkingText": [
+        "buffer"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -6232,38 +6288,10 @@
       "informative": false
     },
     {
-      "id": "dom-convolvernode-convolvernode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-convolvernode-convolvernode-context",
+      "id": "dom-convolvernode-buffer-attribute",
+      "href": "https://www.w3.org/TR/webaudio/#dom-convolvernode-buffer-attribute",
       "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "ConvolverNode/ConvolverNode()"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-convolvernode-convolvernode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-convolvernode-convolvernode-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "ConvolverNode/ConvolverNode()"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-convolvernode-buffer",
-      "href": "https://www.w3.org/TR/webaudio/#dom-convolvernode-buffer",
-      "linkingText": [
-        "buffer"
+        "buffer attribute"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -6340,38 +6368,13 @@
       "informative": false
     },
     {
-      "id": "dom-delaynode-delaynode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-delaynode-delaynode-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "DelayNode/DelayNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-delaynode-delaynode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-delaynode-delaynode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "DelayNode/DelayNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-delaynode-delaynode",
       "href": "https://www.w3.org/TR/webaudio/#dom-delaynode-delaynode",
       "linkingText": [
-        "DelayNode(context, options)"
+        "DelayNode(context, options)",
+        "constructor(context, options)",
+        "DelayNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -6382,29 +6385,43 @@
       "informative": false
     },
     {
-      "id": "dom-delaynode-delaynode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-delaynode-delaynode-context",
+      "id": "dom-delaynode-constructor-delaynode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-delaynode-constructor-delaynode",
+      "linkingText": [
+        "DelayNode(context, options)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "DelayNode/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-delaynode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-delaynode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "DelayNode/DelayNode()"
+        "DelayNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-delaynode-delaynode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-delaynode-delaynode-options",
+      "id": "dom-delaynode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-delaynode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "DelayNode/DelayNode()"
+        "DelayNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -6464,6 +6481,30 @@
       "informative": false
     },
     {
+      "id": "delaywriter",
+      "href": "https://www.w3.org/TR/webaudio/#delaywriter",
+      "linkingText": [
+        "DelayWriter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "delayreader",
+      "href": "https://www.w3.org/TR/webaudio/#delayreader",
+      "linkingText": [
+        "DelayReader"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "dynamicscompressornode",
       "href": "https://www.w3.org/TR/webaudio/#dynamicscompressornode",
       "linkingText": [
@@ -6476,43 +6517,32 @@
       "informative": false
     },
     {
-      "id": "dom-dynamicscompressornode-dynamicscompressornode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-dynamicscompressornode-dynamicscompressornode-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "DynamicsCompressorNode/DynamicsCompressorNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-dynamicscompressornode-dynamicscompressornode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-dynamicscompressornode-dynamicscompressornode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "DynamicsCompressorNode/DynamicsCompressorNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-dynamicscompressornode-dynamicscompressornode",
       "href": "https://www.w3.org/TR/webaudio/#dom-dynamicscompressornode-dynamicscompressornode",
       "linkingText": [
-        "DynamicsCompressorNode(context, options)"
+        "DynamicsCompressorNode(context, options)",
+        "constructor(context, options)",
+        "DynamicsCompressorNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
       "for": [
         "DynamicsCompressorNode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-dynamicscompressornode-constructor-dynamicscompressornode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-dynamicscompressornode-constructor-dynamicscompressornode",
+      "linkingText": [
+        "DynamicsCompressorNode(context, options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "DynamicsCompressorNode/constructor()"
       ],
       "access": "public",
       "informative": false
@@ -6532,29 +6562,29 @@
       "informative": false
     },
     {
-      "id": "dom-dynamicscompressornode-dynamicscompressornode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-dynamicscompressornode-dynamicscompressornode-context",
+      "id": "dom-dynamicscompressornode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-dynamicscompressornode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "DynamicsCompressorNode/DynamicsCompressorNode()"
+        "DynamicsCompressorNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-dynamicscompressornode-dynamicscompressornode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-dynamicscompressornode-dynamicscompressornode-options",
+      "id": "dom-dynamicscompressornode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-dynamicscompressornode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "DynamicsCompressorNode/DynamicsCompressorNode()"
+        "DynamicsCompressorNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -6850,38 +6880,13 @@
       "informative": false
     },
     {
-      "id": "dom-gainnode-gainnode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-gainnode-gainnode-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GainNode/GainNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gainnode-gainnode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-gainnode-gainnode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GainNode/GainNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gainnode-gainnode",
       "href": "https://www.w3.org/TR/webaudio/#dom-gainnode-gainnode",
       "linkingText": [
-        "GainNode(context, options)"
+        "GainNode(context, options)",
+        "constructor(context, options)",
+        "GainNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -6892,29 +6897,43 @@
       "informative": false
     },
     {
-      "id": "dom-gainnode-gainnode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-gainnode-gainnode-context",
+      "id": "dom-gainnode-constructor-gainnode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-gainnode-constructor-gainnode",
+      "linkingText": [
+        "GainNode(context, options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GainNode/constructor()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gainnode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-gainnode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GainNode/GainNode()"
+        "GainNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-gainnode-gainnode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-gainnode-gainnode-options",
+      "id": "dom-gainnode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-gainnode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GainNode/GainNode()"
+        "GainNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -6972,29 +6991,16 @@
       "informative": false
     },
     {
-      "id": "dom-iirfilternode-iirfilternode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-iirfilternode-iirfilternode-context-options-context",
+      "id": "dom-iirfilternode-iirfilternode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-iirfilternode-iirfilternode",
       "linkingText": [
-        "context"
+        "IIRFilterNode(context, options)",
+        "constructor(context, options)"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "constructor",
       "for": [
-        "IIRFilterNode/IIRFilterNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-iirfilternode-iirfilternode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-iirfilternode-iirfilternode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "IIRFilterNode/IIRFilterNode(context, options)"
+        "IIRFilterNode"
       ],
       "access": "public",
       "informative": false
@@ -7042,43 +7048,43 @@
       "informative": false
     },
     {
-      "id": "dom-iirfilternode-iirfilternode",
-      "href": "https://www.w3.org/TR/webaudio/#dom-iirfilternode-iirfilternode",
+      "id": "dom-iirfilternode-constructor-iirfilternode",
+      "href": "https://www.w3.org/TR/webaudio/#dom-iirfilternode-constructor-iirfilternode",
       "linkingText": [
         "IIRFilterNode(context, options)"
       ],
       "localLinkingText": [],
       "type": "constructor",
       "for": [
-        "IIRFilterNode"
+        "IIRFilterNode/constructor()"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-iirfilternode-iirfilternode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-iirfilternode-iirfilternode-context",
+      "id": "dom-iirfilternode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-iirfilternode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "IIRFilterNode/IIRFilterNode()"
+        "IIRFilterNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-iirfilternode-iirfilternode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-iirfilternode-iirfilternode-options",
+      "id": "dom-iirfilternode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-iirfilternode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "IIRFilterNode/IIRFilterNode()"
+        "IIRFilterNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -7192,38 +7198,11 @@
       "informative": false
     },
     {
-      "id": "dom-mediaelementaudiosourcenode-mediaelementaudiosourcenode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-mediaelementaudiosourcenode-mediaelementaudiosourcenode-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "MediaElementAudioSourceNode/MediaElementAudioSourceNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-mediaelementaudiosourcenode-mediaelementaudiosourcenode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-mediaelementaudiosourcenode-mediaelementaudiosourcenode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "MediaElementAudioSourceNode/MediaElementAudioSourceNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-mediaelementaudiosourcenode-mediaelementaudiosourcenode",
       "href": "https://www.w3.org/TR/webaudio/#dom-mediaelementaudiosourcenode-mediaelementaudiosourcenode",
       "linkingText": [
-        "MediaElementAudioSourceNode(context, options)"
+        "MediaElementAudioSourceNode(context, options)",
+        "constructor(context, options)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -7234,29 +7213,29 @@
       "informative": false
     },
     {
-      "id": "dom-mediaelementaudiosourcenode-mediaelementaudiosourcenode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-mediaelementaudiosourcenode-mediaelementaudiosourcenode-context",
+      "id": "dom-mediaelementaudiosourcenode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-mediaelementaudiosourcenode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MediaElementAudioSourceNode/MediaElementAudioSourceNode()"
+        "MediaElementAudioSourceNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-mediaelementaudiosourcenode-mediaelementaudiosourcenode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-mediaelementaudiosourcenode-mediaelementaudiosourcenode-options",
+      "id": "dom-mediaelementaudiosourcenode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-mediaelementaudiosourcenode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MediaElementAudioSourceNode/MediaElementAudioSourceNode()"
+        "MediaElementAudioSourceNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -7314,38 +7293,13 @@
       "informative": false
     },
     {
-      "id": "dom-mediastreamaudiodestinationnode-mediastreamaudiodestinationnode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamaudiodestinationnode-mediastreamaudiodestinationnode-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "MediaStreamAudioDestinationNode/MediaStreamAudioDestinationNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-mediastreamaudiodestinationnode-mediastreamaudiodestinationnode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamaudiodestinationnode-mediastreamaudiodestinationnode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "MediaStreamAudioDestinationNode/MediaStreamAudioDestinationNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-mediastreamaudiodestinationnode-mediastreamaudiodestinationnode",
       "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamaudiodestinationnode-mediastreamaudiodestinationnode",
       "linkingText": [
-        "MediaStreamAudioDestinationNode(context, options)"
+        "MediaStreamAudioDestinationNode(context, options)",
+        "constructor(context, options)",
+        "MediaStreamAudioDestinationNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -7356,29 +7310,29 @@
       "informative": false
     },
     {
-      "id": "dom-mediastreamaudiodestinationnode-mediastreamaudiodestinationnode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamaudiodestinationnode-mediastreamaudiodestinationnode-context",
+      "id": "dom-mediastreamaudiodestinationnode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamaudiodestinationnode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MediaStreamAudioDestinationNode/MediaStreamAudioDestinationNode()"
+        "MediaStreamAudioDestinationNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-mediastreamaudiodestinationnode-mediastreamaudiodestinationnode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamaudiodestinationnode-mediastreamaudiodestinationnode-options",
+      "id": "dom-mediastreamaudiodestinationnode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamaudiodestinationnode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MediaStreamAudioDestinationNode/MediaStreamAudioDestinationNode()"
+        "MediaStreamAudioDestinationNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -7410,38 +7364,11 @@
       "informative": false
     },
     {
-      "id": "dom-mediastreamaudiosourcenode-mediastreamaudiosourcenode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamaudiosourcenode-mediastreamaudiosourcenode-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "MediaStreamAudioSourceNode/MediaStreamAudioSourceNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-mediastreamaudiosourcenode-mediastreamaudiosourcenode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamaudiosourcenode-mediastreamaudiosourcenode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "MediaStreamAudioSourceNode/MediaStreamAudioSourceNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-mediastreamaudiosourcenode-mediastreamaudiosourcenode",
       "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamaudiosourcenode-mediastreamaudiosourcenode",
       "linkingText": [
-        "MediaStreamAudioSourceNode(context, options)"
+        "MediaStreamAudioSourceNode(context, options)",
+        "constructor(context, options)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -7452,29 +7379,43 @@
       "informative": false
     },
     {
-      "id": "dom-mediastreamaudiosourcenode-mediastreamaudiosourcenode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamaudiosourcenode-mediastreamaudiosourcenode-context",
+      "id": "dom-mediastreamaudiosourcenode-input-track-slot",
+      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamaudiosourcenode-input-track-slot",
+      "linkingText": [
+        "[[input track]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamAudioSourceNode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-mediastreamaudiosourcenode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamaudiosourcenode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MediaStreamAudioSourceNode/MediaStreamAudioSourceNode()"
+        "MediaStreamAudioSourceNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-mediastreamaudiosourcenode-mediastreamaudiosourcenode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamaudiosourcenode-mediastreamaudiosourcenode-options",
+      "id": "dom-mediastreamaudiosourcenode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamaudiosourcenode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MediaStreamAudioSourceNode/MediaStreamAudioSourceNode()"
+        "MediaStreamAudioSourceNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -7532,38 +7473,11 @@
       "informative": false
     },
     {
-      "id": "dom-mediastreamtrackaudiosourcenode-mediastreamtrackaudiosourcenode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamtrackaudiosourcenode-mediastreamtrackaudiosourcenode-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "MediaStreamTrackAudioSourceNode/MediaStreamTrackAudioSourceNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-mediastreamtrackaudiosourcenode-mediastreamtrackaudiosourcenode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamtrackaudiosourcenode-mediastreamtrackaudiosourcenode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "MediaStreamTrackAudioSourceNode/MediaStreamTrackAudioSourceNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-mediastreamtrackaudiosourcenode-mediastreamtrackaudiosourcenode",
       "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamtrackaudiosourcenode-mediastreamtrackaudiosourcenode",
       "linkingText": [
-        "MediaStreamTrackAudioSourceNode(context, options)"
+        "MediaStreamTrackAudioSourceNode(context, options)",
+        "constructor(context, options)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -7574,29 +7488,29 @@
       "informative": false
     },
     {
-      "id": "dom-mediastreamtrackaudiosourcenode-mediastreamtrackaudiosourcenode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamtrackaudiosourcenode-mediastreamtrackaudiosourcenode-context",
+      "id": "dom-mediastreamtrackaudiosourcenode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamtrackaudiosourcenode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MediaStreamTrackAudioSourceNode/MediaStreamTrackAudioSourceNode()"
+        "MediaStreamTrackAudioSourceNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-mediastreamtrackaudiosourcenode-mediastreamtrackaudiosourcenode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamtrackaudiosourcenode-mediastreamtrackaudiosourcenode-options",
+      "id": "dom-mediastreamtrackaudiosourcenode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-mediastreamtrackaudiosourcenode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MediaStreamTrackAudioSourceNode/MediaStreamTrackAudioSourceNode()"
+        "MediaStreamTrackAudioSourceNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -7667,6 +7581,7 @@
       "id": "dom-oscillatortype-sine",
       "href": "https://www.w3.org/TR/webaudio/#dom-oscillatortype-sine",
       "linkingText": [
+        "\"sine\"",
         "sine"
       ],
       "localLinkingText": [],
@@ -7681,6 +7596,7 @@
       "id": "dom-oscillatortype-square",
       "href": "https://www.w3.org/TR/webaudio/#dom-oscillatortype-square",
       "linkingText": [
+        "\"square\"",
         "square"
       ],
       "localLinkingText": [],
@@ -7695,6 +7611,7 @@
       "id": "dom-oscillatortype-sawtooth",
       "href": "https://www.w3.org/TR/webaudio/#dom-oscillatortype-sawtooth",
       "linkingText": [
+        "\"sawtooth\"",
         "sawtooth"
       ],
       "localLinkingText": [],
@@ -7709,6 +7626,7 @@
       "id": "dom-oscillatortype-triangle",
       "href": "https://www.w3.org/TR/webaudio/#dom-oscillatortype-triangle",
       "linkingText": [
+        "\"triangle\"",
         "triangle"
       ],
       "localLinkingText": [],
@@ -7723,40 +7641,13 @@
       "id": "dom-oscillatortype-custom",
       "href": "https://www.w3.org/TR/webaudio/#dom-oscillatortype-custom",
       "linkingText": [
+        "\"custom\"",
         "custom"
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
         "OscillatorType"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-oscillatornode-oscillatornode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-oscillatornode-oscillatornode-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "OscillatorNode/OscillatorNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-oscillatornode-oscillatornode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-oscillatornode-oscillatornode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "OscillatorNode/OscillatorNode(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -7779,7 +7670,10 @@
       "id": "dom-oscillatornode-oscillatornode",
       "href": "https://www.w3.org/TR/webaudio/#dom-oscillatornode-oscillatornode",
       "linkingText": [
-        "OscillatorNode(context, options)"
+        "OscillatorNode(context, options)",
+        "constructor(context, options)",
+        "OscillatorNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -7790,29 +7684,29 @@
       "informative": false
     },
     {
-      "id": "dom-oscillatornode-oscillatornode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-oscillatornode-oscillatornode-context",
+      "id": "dom-oscillatornode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-oscillatornode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "OscillatorNode/OscillatorNode()"
+        "OscillatorNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-oscillatornode-oscillatornode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-oscillatornode-oscillatornode-options",
+      "id": "dom-oscillatornode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-oscillatornode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "OscillatorNode/OscillatorNode()"
+        "OscillatorNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -7983,6 +7877,7 @@
       "id": "dom-panningmodeltype-equalpower",
       "href": "https://www.w3.org/TR/webaudio/#dom-panningmodeltype-equalpower",
       "linkingText": [
+        "\"equalpower\"",
         "equalpower"
       ],
       "localLinkingText": [],
@@ -7997,6 +7892,7 @@
       "id": "dom-panningmodeltype-hrtf",
       "href": "https://www.w3.org/TR/webaudio/#dom-panningmodeltype-hrtf",
       "linkingText": [
+        "\"HRTF\"",
         "HRTF"
       ],
       "localLinkingText": [],
@@ -8035,6 +7931,7 @@
       "id": "dom-distancemodeltype-linear",
       "href": "https://www.w3.org/TR/webaudio/#dom-distancemodeltype-linear",
       "linkingText": [
+        "\"linear\"",
         "linear"
       ],
       "localLinkingText": [],
@@ -8049,6 +7946,7 @@
       "id": "dom-distancemodeltype-inverse",
       "href": "https://www.w3.org/TR/webaudio/#dom-distancemodeltype-inverse",
       "linkingText": [
+        "\"inverse\"",
         "inverse"
       ],
       "localLinkingText": [],
@@ -8063,40 +7961,13 @@
       "id": "dom-distancemodeltype-exponential",
       "href": "https://www.w3.org/TR/webaudio/#dom-distancemodeltype-exponential",
       "linkingText": [
+        "\"exponential\"",
         "exponential"
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
         "DistanceModelType"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-pannernode-pannernode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-pannernode-pannernode-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "PannerNode/PannerNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-pannernode-pannernode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-pannernode-pannernode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "PannerNode/PannerNode(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -8189,7 +8060,10 @@
       "id": "dom-pannernode-pannernode",
       "href": "https://www.w3.org/TR/webaudio/#dom-pannernode-pannernode",
       "linkingText": [
-        "PannerNode(context, options)"
+        "PannerNode(context, options)",
+        "constructor(context, options)",
+        "PannerNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -8200,29 +8074,29 @@
       "informative": false
     },
     {
-      "id": "dom-pannernode-pannernode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-pannernode-pannernode-context",
+      "id": "dom-pannernode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-pannernode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "PannerNode/PannerNode()"
+        "PannerNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-pannernode-pannernode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-pannernode-pannernode-options",
+      "id": "dom-pannernode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-pannernode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "PannerNode/PannerNode()"
+        "PannerNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -8756,55 +8630,16 @@
       "informative": false
     },
     {
-      "id": "dom-periodicwave-periodicwave-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-periodicwave-periodicwave-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "PeriodicWave/PeriodicWave(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-periodicwave-periodicwave-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-periodicwave-periodicwave-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "PeriodicWave/PeriodicWave(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-periodicwave-periodicwave",
       "href": "https://www.w3.org/TR/webaudio/#dom-periodicwave-periodicwave",
       "linkingText": [
-        "PeriodicWave(context, options)"
+        "PeriodicWave(context, options)",
+        "constructor(context, options)",
+        "PeriodicWave(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
-      "for": [
-        "PeriodicWave"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-periodicwave-associated-context-slot",
-      "href": "https://www.w3.org/TR/webaudio/#dom-periodicwave-associated-context-slot",
-      "linkingText": [
-        "[[associated context]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
       "for": [
         "PeriodicWave"
       ],
@@ -8854,29 +8689,29 @@
       "informative": false
     },
     {
-      "id": "dom-periodicwave-periodicwave-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-periodicwave-periodicwave-context",
+      "id": "dom-periodicwave-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-periodicwave-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "PeriodicWave/PeriodicWave()"
+        "PeriodicWave/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-periodicwave-periodicwave-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-periodicwave-periodicwave-options",
+      "id": "dom-periodicwave-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-periodicwave-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "PeriodicWave/PeriodicWave()"
+        "PeriodicWave/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -9000,38 +8835,13 @@
       "informative": false
     },
     {
-      "id": "dom-stereopannernode-stereopannernode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-stereopannernode-stereopannernode-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "StereoPannerNode/StereoPannerNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-stereopannernode-stereopannernode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-stereopannernode-stereopannernode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "StereoPannerNode/StereoPannerNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-stereopannernode-stereopannernode",
       "href": "https://www.w3.org/TR/webaudio/#dom-stereopannernode-stereopannernode",
       "linkingText": [
-        "StereoPannerNode(context, options)"
+        "StereoPannerNode(context, options)",
+        "constructor(context, options)",
+        "StereoPannerNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -9042,29 +8852,29 @@
       "informative": false
     },
     {
-      "id": "dom-stereopannernode-stereopannernode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-stereopannernode-stereopannernode-context",
+      "id": "dom-stereopannernode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-stereopannernode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "StereoPannerNode/StereoPannerNode()"
+        "StereoPannerNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-stereopannernode-stereopannernode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-stereopannernode-stereopannernode-options",
+      "id": "dom-stereopannernode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-stereopannernode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "StereoPannerNode/StereoPannerNode()"
+        "StereoPannerNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -9137,6 +8947,7 @@
       "id": "dom-oversampletype-none",
       "href": "https://www.w3.org/TR/webaudio/#dom-oversampletype-none",
       "linkingText": [
+        "\"none\"",
         "none"
       ],
       "localLinkingText": [],
@@ -9151,6 +8962,7 @@
       "id": "dom-oversampletype-2x",
       "href": "https://www.w3.org/TR/webaudio/#dom-oversampletype-2x",
       "linkingText": [
+        "\"2x\"",
         "2x"
       ],
       "localLinkingText": [],
@@ -9165,6 +8977,7 @@
       "id": "dom-oversampletype-4x",
       "href": "https://www.w3.org/TR/webaudio/#dom-oversampletype-4x",
       "linkingText": [
+        "\"4x\"",
         "4x"
       ],
       "localLinkingText": [],
@@ -9176,38 +8989,13 @@
       "informative": false
     },
     {
-      "id": "dom-waveshapernode-waveshapernode-context-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-waveshapernode-waveshapernode-context-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "WaveShaperNode/WaveShaperNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-waveshapernode-waveshapernode-context-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-waveshapernode-waveshapernode-context-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "WaveShaperNode/WaveShaperNode(context, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-waveshapernode-waveshapernode",
       "href": "https://www.w3.org/TR/webaudio/#dom-waveshapernode-waveshapernode",
       "linkingText": [
-        "WaveShaperNode(context, options)"
+        "WaveShaperNode(context, options)",
+        "constructor(context, options)",
+        "WaveShaperNode(context)",
+        "constructor(context)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -9218,43 +9006,29 @@
       "informative": false
     },
     {
-      "id": "dom-waveshapernode-curve-set-slot",
-      "href": "https://www.w3.org/TR/webaudio/#dom-waveshapernode-curve-set-slot",
-      "linkingText": [
-        "[[curve set]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "WaveShaperNode"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-waveshapernode-waveshapernode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-waveshapernode-waveshapernode-context",
+      "id": "dom-waveshapernode-constructor-context-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-waveshapernode-constructor-context-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "WaveShaperNode/WaveShaperNode()"
+        "WaveShaperNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-waveshapernode-waveshapernode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-waveshapernode-waveshapernode-options",
+      "id": "dom-waveshapernode-constructor-context-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-waveshapernode-constructor-context-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "WaveShaperNode/WaveShaperNode()"
+        "WaveShaperNode/constructor(context, options)"
       ],
       "access": "public",
       "informative": false
@@ -9340,18 +9114,6 @@
       "informative": false
     },
     {
-      "id": "node-name-to-processor-definition-map",
-      "href": "https://www.w3.org/TR/webaudio/#node-name-to-processor-definition-map",
-      "linkingText": [
-        "node name to processor definition map"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "node-name-to-parameter-descriptor-map",
       "href": "https://www.w3.org/TR/webaudio/#node-name-to-parameter-descriptor-map",
       "linkingText": [
@@ -9372,6 +9134,84 @@
       "localLinkingText": [],
       "type": "interface",
       "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "node-name-to-processor-constructor-map",
+      "href": "https://www.w3.org/TR/webaudio/#node-name-to-processor-constructor-map",
+      "linkingText": [
+        "node name to processor constructor map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pending-processor-construction-data",
+      "href": "https://www.w3.org/TR/webaudio/#pending-processor-construction-data",
+      "linkingText": [
+        "pending processor construction data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pending-processor-construction-data-node-reference",
+      "href": "https://www.w3.org/TR/webaudio/#pending-processor-construction-data-node-reference",
+      "linkingText": [
+        "node reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pending processor construction data"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pending-processor-construction-data-transferred-port",
+      "href": "https://www.w3.org/TR/webaudio/#pending-processor-construction-data-transferred-port",
+      "linkingText": [
+        "transferred port"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pending processor construction data"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "callbackdef-audioworkletprocessorconstructor",
+      "href": "https://www.w3.org/TR/webaudio/#callbackdef-audioworkletprocessorconstructor",
+      "linkingText": [
+        "AudioWorkletProcessorConstructor"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioworkletprocessorconstructor-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletprocessorconstructor-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AudioWorkletProcessorConstructor"
+      ],
       "access": "public",
       "informative": false
     },
@@ -9460,6 +9300,74 @@
       "informative": false
     },
     {
+      "id": "processor-construction-data",
+      "href": "https://www.w3.org/TR/webaudio/#processor-construction-data",
+      "linkingText": [
+        "processor construction data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "processor-construction-data-name",
+      "href": "https://www.w3.org/TR/webaudio/#processor-construction-data-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "processor construction data"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "processor-construction-data-node",
+      "href": "https://www.w3.org/TR/webaudio/#processor-construction-data-node",
+      "linkingText": [
+        "node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "processor construction data"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "processor-construction-data-options",
+      "href": "https://www.w3.org/TR/webaudio/#processor-construction-data-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "processor construction data"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "processor-construction-data-port",
+      "href": "https://www.w3.org/TR/webaudio/#processor-construction-data-port",
+      "linkingText": [
+        "port"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "processor construction data"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "audioworkletnode",
       "href": "https://www.w3.org/TR/webaudio/#audioworkletnode",
       "linkingText": [
@@ -9469,18 +9377,6 @@
       "type": "interface",
       "for": [],
       "access": "public",
-      "informative": false
-    },
-    {
-      "id": "processor-reference",
-      "href": "https://www.w3.org/TR/webaudio/#processor-reference",
-      "linkingText": [
-        "processor reference"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
       "informative": false
     },
     {
@@ -9508,52 +9404,13 @@
       "informative": false
     },
     {
-      "id": "dom-audioworkletnode-audioworkletnode-context-name-options-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletnode-audioworkletnode-context-name-options-context",
-      "linkingText": [
-        "context"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "AudioWorkletNode/AudioWorkletNode(context, name, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-audioworkletnode-audioworkletnode-context-name-options-name",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletnode-audioworkletnode-context-name-options-name",
-      "linkingText": [
-        "name"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "AudioWorkletNode/AudioWorkletNode(context, name, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-audioworkletnode-audioworkletnode-context-name-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletnode-audioworkletnode-context-name-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "AudioWorkletNode/AudioWorkletNode(context, name, options)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-audioworkletnode-audioworkletnode",
       "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletnode-audioworkletnode",
       "linkingText": [
-        "AudioWorkletNode(context, name, options)"
+        "AudioWorkletNode(context, name, options)",
+        "constructor(context, name, options)",
+        "AudioWorkletNode(context, name)",
+        "constructor(context, name)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -9564,43 +9421,43 @@
       "informative": false
     },
     {
-      "id": "dom-audioworkletnode-audioworkletnode-context",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletnode-audioworkletnode-context",
+      "id": "dom-audioworkletnode-constructor-context-name-options-context",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletnode-constructor-context-name-options-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioWorkletNode/AudioWorkletNode()"
+        "AudioWorkletNode/constructor(context, name, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-audioworkletnode-audioworkletnode-name",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletnode-audioworkletnode-name",
+      "id": "dom-audioworkletnode-constructor-context-name-options-name",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletnode-constructor-context-name-options-name",
       "linkingText": [
         "name"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioWorkletNode/AudioWorkletNode()"
+        "AudioWorkletNode/constructor(context, name, options)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-audioworkletnode-audioworkletnode-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletnode-audioworkletnode-options",
+      "id": "dom-audioworkletnode-constructor-context-name-options-options",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletnode-constructor-context-name-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioWorkletNode/AudioWorkletNode()"
+        "AudioWorkletNode/constructor(context, name, options)"
       ],
       "access": "public",
       "informative": false
@@ -9742,27 +9599,29 @@
       "informative": false
     },
     {
-      "id": "node-reference",
-      "href": "https://www.w3.org/TR/webaudio/#node-reference",
+      "id": "dom-audioworkletprocessor-node-reference-slot",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletprocessor-node-reference-slot",
       "linkingText": [
-        "node reference"
+        "[[node reference]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attribute",
+      "for": [
+        "AudioWorkletProcessor"
+      ],
+      "access": "public",
       "informative": false
     },
     {
-      "id": "dom-audioworkletprocessor-audioworkletprocessor-options-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletprocessor-audioworkletprocessor-options-options",
+      "id": "dom-audioworkletprocessor-callable-process-slot",
+      "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletprocessor-callable-process-slot",
       "linkingText": [
-        "options"
+        "[[callable process]]"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "attribute",
       "for": [
-        "AudioWorkletProcessor/AudioWorkletProcessor(options)"
+        "AudioWorkletProcessor"
       ],
       "access": "public",
       "informative": false
@@ -9771,26 +9630,13 @@
       "id": "dom-audioworkletprocessor-audioworkletprocessor",
       "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletprocessor-audioworkletprocessor",
       "linkingText": [
-        "AudioWorkletProcessor(options)"
+        "AudioWorkletProcessor()",
+        "constructor()"
       ],
       "localLinkingText": [],
       "type": "constructor",
       "for": [
         "AudioWorkletProcessor"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-audioworkletprocessor-audioworkletprocessor-options",
-      "href": "https://www.w3.org/TR/webaudio/#dom-audioworkletprocessor-audioworkletprocessor-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "AudioWorkletProcessor/AudioWorkletProcessor()"
       ],
       "access": "public",
       "informative": false
@@ -9833,20 +9679,6 @@
         "AudioWorkletProcessor"
       ],
       "access": "public",
-      "informative": false
-    },
-    {
-      "id": "audioworkletprocessor-active-processing-conditions",
-      "href": "https://www.w3.org/TR/webaudio/#audioworkletprocessor-active-processing-conditions",
-      "linkingText": [
-        "active processing conditions"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "AudioWorkletProcessor"
-      ],
-      "access": "private",
       "informative": false
     },
     {
@@ -9990,6 +9822,30 @@
       "href": "https://www.w3.org/TR/webaudio/#rendering-thread",
       "linkingText": [
         "rendering thread"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "control-thread-state",
+      "href": "https://www.w3.org/TR/webaudio/#control-thread-state",
+      "linkingText": [
+        "control thread state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "rendering-thread-state",
+      "href": "https://www.w3.org/TR/webaudio/#rendering-thread-state",
+      "linkingText": [
+        "rendering thread state"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -10196,6 +10052,54 @@
       "href": "https://www.w3.org/TR/webaudio/#process",
       "linkingText": [
         "process"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "mixing-rules",
+      "href": "https://www.w3.org/TR/webaudio/#mixing-rules",
+      "linkingText": [
+        "mixing rules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "up-mixing",
+      "href": "https://www.w3.org/TR/webaudio/#up-mixing",
+      "linkingText": [
+        "up-mixing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "down-mixing",
+      "href": "https://www.w3.org/TR/webaudio/#down-mixing",
+      "linkingText": [
+        "down-mixing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "linear-pcm",
+      "href": "https://www.w3.org/TR/webaudio/#linear-pcm",
+      "linkingText": [
+        "linear PCM"
       ],
       "localLinkingText": [],
       "type": "dfn",
