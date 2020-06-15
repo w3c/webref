@@ -1,0 +1,1340 @@
+{
+  "spec": {
+    "title": "Reporting API",
+    "url": "https://www.w3.org/TR/reporting-1/"
+  },
+  "dfns": [
+    {
+      "id": "client",
+      "href": "https://www.w3.org/TR/reporting-1/#client",
+      "linkingText": [
+        "client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-client-origin",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-client-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "client"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-client-endpoint-groups",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-client-endpoint-groups",
+      "linkingText": [
+        "endpoint-groups"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "client"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "endpoint-group",
+      "href": "https://www.w3.org/TR/reporting-1/#endpoint-group",
+      "linkingText": [
+        "endpoint group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-endpoint-group-name",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-endpoint-group-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "endpoint group"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-endpoint-group-endpoints",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-endpoint-group-endpoints",
+      "linkingText": [
+        "endpoints"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "endpoint group"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-endpoint-group-subdomains",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-endpoint-group-subdomains",
+      "linkingText": [
+        "subdomains"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "endpoint group"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-endpoint-group-ttl",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-endpoint-group-ttl",
+      "linkingText": [
+        "ttl"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "endpoint group"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-endpoint-group-creation",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-endpoint-group-creation",
+      "linkingText": [
+        "creation"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "endpoint group"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "endpoint-group-expired",
+      "href": "https://www.w3.org/TR/reporting-1/#endpoint-group-expired",
+      "linkingText": [
+        "expired"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "endpoint group"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "endpoint",
+      "href": "https://www.w3.org/TR/reporting-1/#endpoint",
+      "linkingText": [
+        "endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-endpoint-url",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-endpoint-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "endpoint"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-endpoint-priority",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-endpoint-priority",
+      "linkingText": [
+        "priority"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "endpoint"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-endpoint-weight",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-endpoint-weight",
+      "linkingText": [
+        "weight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "endpoint"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-endpoint-failures",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-endpoint-failures",
+      "linkingText": [
+        "failures"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "endpoint"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-endpoint-retry_after",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-endpoint-retry_after",
+      "linkingText": [
+        "retry_after"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "endpoint"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "endpoint-pending",
+      "href": "https://www.w3.org/TR/reporting-1/#endpoint-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "endpoint"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "report-type",
+      "href": "https://www.w3.org/TR/reporting-1/#report-type",
+      "linkingText": [
+        "report type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "visible-to-reportingobservers",
+      "href": "https://www.w3.org/TR/reporting-1/#visible-to-reportingobservers",
+      "linkingText": [
+        "visible to ReportingObservers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "report",
+      "href": "https://www.w3.org/TR/reporting-1/#report",
+      "linkingText": [
+        "report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "report-body",
+      "href": "https://www.w3.org/TR/reporting-1/#report-body",
+      "linkingText": [
+        "body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "report"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "report-url",
+      "href": "https://www.w3.org/TR/reporting-1/#report-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "report"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "report-user-agent",
+      "href": "https://www.w3.org/TR/reporting-1/#report-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "report"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "report-group",
+      "href": "https://www.w3.org/TR/reporting-1/#report-group",
+      "linkingText": [
+        "group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "report"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "report-reporttype",
+      "href": "https://www.w3.org/TR/reporting-1/#report-reporttype",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "report"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "report-timestamp",
+      "href": "https://www.w3.org/TR/reporting-1/#report-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "report"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "report-attempts",
+      "href": "https://www.w3.org/TR/reporting-1/#report-attempts",
+      "linkingText": [
+        "attempts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "report"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "reporting-cache",
+      "href": "https://www.w3.org/TR/reporting-1/#reporting-cache",
+      "linkingText": [
+        "reporting cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "failover-class",
+      "href": "https://www.w3.org/TR/reporting-1/#failover-class",
+      "linkingText": [
+        "failover class"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "report-to",
+      "href": "https://www.w3.org/TR/reporting-1/#report-to",
+      "linkingText": [
+        "Report-To"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "reportto-group",
+      "href": "https://www.w3.org/TR/reporting-1/#reportto-group",
+      "linkingText": [
+        "group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReportTo"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reportto-include_subdomains",
+      "href": "https://www.w3.org/TR/reporting-1/#reportto-include_subdomains",
+      "linkingText": [
+        "include_subdomains"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReportTo"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reportto-max_age",
+      "href": "https://www.w3.org/TR/reporting-1/#reportto-max_age",
+      "linkingText": [
+        "max_age"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReportTo"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "reportto-endpoints",
+      "href": "https://www.w3.org/TR/reporting-1/#reportto-endpoints",
+      "linkingText": [
+        "endpoints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReportTo"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "reportto-url",
+      "href": "https://www.w3.org/TR/reporting-1/#reportto-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReportTo"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reportto-priority",
+      "href": "https://www.w3.org/TR/reporting-1/#reportto-priority",
+      "linkingText": [
+        "priority"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReportTo"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reportto-weight",
+      "href": "https://www.w3.org/TR/reporting-1/#reportto-weight",
+      "linkingText": [
+        "weight"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReportTo"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reporting-observer",
+      "href": "https://www.w3.org/TR/reporting-1/#reporting-observer",
+      "linkingText": [
+        "reporting observer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "registered-reporting-observer-list",
+      "href": "https://www.w3.org/TR/reporting-1/#registered-reporting-observer-list",
+      "linkingText": [
+        "registered reporting observer list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "registered",
+      "href": "https://www.w3.org/TR/reporting-1/#registered",
+      "linkingText": [
+        "registered"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "report-buffer",
+      "href": "https://www.w3.org/TR/reporting-1/#report-buffer",
+      "linkingText": [
+        "report buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reportbody",
+      "href": "https://www.w3.org/TR/reporting-1/#reportbody",
+      "linkingText": [
+        "ReportBody"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-reportingobserver-reportingobserver-callback-options-callback",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-reportingobserver-reportingobserver-callback-options-callback",
+      "linkingText": [
+        "callback"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ReportingObserver/ReportingObserver(callback, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-reportingobserver-reportingobserver-callback-options-options",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-reportingobserver-reportingobserver-callback-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ReportingObserver/ReportingObserver(callback, options)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "reportingobserver",
+      "href": "https://www.w3.org/TR/reporting-1/#reportingobserver",
+      "linkingText": [
+        "ReportingObserver"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "callbackdef-reportingobservercallback",
+      "href": "https://www.w3.org/TR/reporting-1/#callbackdef-reportingobservercallback",
+      "linkingText": [
+        "ReportingObserverCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-reportingobservercallback-reports",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-reportingobservercallback-reports",
+      "linkingText": [
+        "reports"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ReportingObserverCallback"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-reportingobservercallback-observer",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-reportingobservercallback-observer",
+      "linkingText": [
+        "observer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ReportingObserverCallback"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-reportingobserveroptions",
+      "href": "https://www.w3.org/TR/reporting-1/#dictdef-reportingobserveroptions",
+      "linkingText": [
+        "ReportingObserverOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-reportingobserveroptions-types",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-reportingobserveroptions-types",
+      "linkingText": [
+        "types"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportingObserverOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-reportingobserveroptions-buffered",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-reportingobserveroptions-buffered",
+      "linkingText": [
+        "buffered"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReportingObserverOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-reportlist",
+      "href": "https://www.w3.org/TR/reporting-1/#typedefdef-reportlist",
+      "linkingText": [
+        "ReportList"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-report",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-report",
+      "linkingText": [
+        "Report"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-report-type",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-report-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Report"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-report-url",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-report-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Report"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-report-body",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-report-body",
+      "linkingText": [
+        "body"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Report"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "reportingobserver-callback",
+      "href": "https://www.w3.org/TR/reporting-1/#reportingobserver-callback",
+      "linkingText": [
+        "callback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReportingObserver"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reportingobserver-options",
+      "href": "https://www.w3.org/TR/reporting-1/#reportingobserver-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReportingObserver"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reportingobserver-report-queue",
+      "href": "https://www.w3.org/TR/reporting-1/#reportingobserver-report-queue",
+      "linkingText": [
+        "report queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReportingObserver"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-reportingobserver-reportingobserver",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-reportingobserver-reportingobserver",
+      "linkingText": [
+        "ReportingObserver(callback, options)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ReportingObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-reportingobserver-observe",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-reportingobserver-observe",
+      "linkingText": [
+        "observe()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReportingObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-reportingobserver-disconnect",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-reportingobserver-disconnect",
+      "linkingText": [
+        "disconnect()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReportingObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-reportingobserver-takerecords",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-reportingobserver-takerecords",
+      "linkingText": [
+        "takeRecords()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ReportingObserver"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "deprecation-reports",
+      "href": "https://www.w3.org/TR/reporting-1/#deprecation-reports",
+      "linkingText": [
+        "Deprecation reports"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "deprecationreportbody",
+      "href": "https://www.w3.org/TR/reporting-1/#deprecationreportbody",
+      "linkingText": [
+        "DeprecationReportBody"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-deprecationreportbody-id",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-deprecationreportbody-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DeprecationReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-deprecationreportbody-anticipatedremoval",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-deprecationreportbody-anticipatedremoval",
+      "linkingText": [
+        "anticipatedRemoval"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DeprecationReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-deprecationreportbody-message",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-deprecationreportbody-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DeprecationReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-deprecationreportbody-sourcefile",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-deprecationreportbody-sourcefile",
+      "linkingText": [
+        "sourceFile"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DeprecationReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-deprecationreportbody-linenumber",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-deprecationreportbody-linenumber",
+      "linkingText": [
+        "lineNumber"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DeprecationReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-deprecationreportbody-columnnumber",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-deprecationreportbody-columnnumber",
+      "linkingText": [
+        "columnNumber"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DeprecationReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "deprecationreportbody-id",
+      "href": "https://www.w3.org/TR/reporting-1/#deprecationreportbody-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DeprecationReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "deprecationreportbody-anticipatedremoval",
+      "href": "https://www.w3.org/TR/reporting-1/#deprecationreportbody-anticipatedremoval",
+      "linkingText": [
+        "anticipatedRemoval"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DeprecationReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "deprecationreportbody-message",
+      "href": "https://www.w3.org/TR/reporting-1/#deprecationreportbody-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DeprecationReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "deprecationreportbody-sourcefile",
+      "href": "https://www.w3.org/TR/reporting-1/#deprecationreportbody-sourcefile",
+      "linkingText": [
+        "sourceFile"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DeprecationReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "deprecationreportbody-linenumber",
+      "href": "https://www.w3.org/TR/reporting-1/#deprecationreportbody-linenumber",
+      "linkingText": [
+        "lineNumber"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DeprecationReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "deprecationreportbody-columnnumber",
+      "href": "https://www.w3.org/TR/reporting-1/#deprecationreportbody-columnnumber",
+      "linkingText": [
+        "columnNumber"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DeprecationReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "intervention-reports",
+      "href": "https://www.w3.org/TR/reporting-1/#intervention-reports",
+      "linkingText": [
+        "Intervention reports"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "interventionreportbody",
+      "href": "https://www.w3.org/TR/reporting-1/#interventionreportbody",
+      "linkingText": [
+        "InterventionReportBody"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-interventionreportbody-id",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-interventionreportbody-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InterventionReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-interventionreportbody-message",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-interventionreportbody-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InterventionReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-interventionreportbody-sourcefile",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-interventionreportbody-sourcefile",
+      "linkingText": [
+        "sourceFile"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InterventionReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-interventionreportbody-linenumber",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-interventionreportbody-linenumber",
+      "linkingText": [
+        "lineNumber"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InterventionReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-interventionreportbody-columnnumber",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-interventionreportbody-columnnumber",
+      "linkingText": [
+        "columnNumber"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InterventionReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "interventionreportbody-id",
+      "href": "https://www.w3.org/TR/reporting-1/#interventionreportbody-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InterventionReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "interventionreportbody-message",
+      "href": "https://www.w3.org/TR/reporting-1/#interventionreportbody-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InterventionReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "interventionreportbody-sourcefile",
+      "href": "https://www.w3.org/TR/reporting-1/#interventionreportbody-sourcefile",
+      "linkingText": [
+        "sourceFile"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InterventionReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "interventionreportbody-linenumber",
+      "href": "https://www.w3.org/TR/reporting-1/#interventionreportbody-linenumber",
+      "linkingText": [
+        "lineNumber"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InterventionReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "interventionreportbody-columnnumber",
+      "href": "https://www.w3.org/TR/reporting-1/#interventionreportbody-columnnumber",
+      "linkingText": [
+        "columnNumber"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InterventionReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "crash-reports",
+      "href": "https://www.w3.org/TR/reporting-1/#crash-reports",
+      "linkingText": [
+        "Crash reports"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "crashreportbody",
+      "href": "https://www.w3.org/TR/reporting-1/#crashreportbody",
+      "linkingText": [
+        "CrashReportBody"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-crashreportbody-crashid",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-crashreportbody-crashid",
+      "linkingText": [
+        "crashId"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CrashReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-crashreportbody-reason",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-crashreportbody-reason",
+      "linkingText": [
+        "reason"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CrashReportBody"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "crashreportbody-crashid",
+      "href": "https://www.w3.org/TR/reporting-1/#crashreportbody-crashid",
+      "linkingText": [
+        "crashId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CrashReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "crashreportbody-reason",
+      "href": "https://www.w3.org/TR/reporting-1/#crashreportbody-reason",
+      "linkingText": [
+        "reason"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CrashReportBody"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "generate-test-report",
+      "href": "https://www.w3.org/TR/reporting-1/#generate-test-report",
+      "linkingText": [
+        "Generate Test Report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-generatetestreportparameters",
+      "href": "https://www.w3.org/TR/reporting-1/#dictdef-generatetestreportparameters",
+      "linkingText": [
+        "GenerateTestReportParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-generatetestreportparameters-message",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-generatetestreportparameters-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GenerateTestReportParameters"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-generatetestreportparameters-group",
+      "href": "https://www.w3.org/TR/reporting-1/#dom-generatetestreportparameters-group",
+      "linkingText": [
+        "group"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GenerateTestReportParameters"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

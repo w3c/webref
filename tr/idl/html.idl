@@ -155,6 +155,8 @@ interface DOMStringMap {
 [Exposed=Window]
 interface HTMLHtmlElement : HTMLElement {
   [HTMLConstructor] constructor();
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
@@ -195,6 +197,8 @@ interface HTMLLinkElement : HTMLElement {
   [CEReactions] attribute DOMString imageSizes;
   [CEReactions] attribute DOMString referrerPolicy;
   [CEReactions] attribute boolean disabled;
+
+  // also has obsolete members
 };
 HTMLLinkElement includes LinkStyle;
 
@@ -205,6 +209,8 @@ interface HTMLMetaElement : HTMLElement {
   [CEReactions] attribute DOMString name;
   [CEReactions] attribute DOMString httpEquiv;
   [CEReactions] attribute DOMString content;
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
@@ -212,12 +218,16 @@ interface HTMLStyleElement : HTMLElement {
   [HTMLConstructor] constructor();
 
   [CEReactions] attribute DOMString media;
+
+  // also has obsolete members
 };
 HTMLStyleElement includes LinkStyle;
 
 [Exposed=Window]
 interface HTMLBodyElement : HTMLElement {
   [HTMLConstructor] constructor();
+
+  // also has obsolete members
 };
 
 HTMLBodyElement includes WindowEventHandlers;
@@ -225,21 +235,29 @@ HTMLBodyElement includes WindowEventHandlers;
 [Exposed=Window]
 interface HTMLHeadingElement : HTMLElement {
   [HTMLConstructor] constructor();
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
 interface HTMLParagraphElement : HTMLElement {
   [HTMLConstructor] constructor();
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
 interface HTMLHRElement : HTMLElement {
   [HTMLConstructor] constructor();
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
 interface HTMLPreElement : HTMLElement {
   [HTMLConstructor] constructor();
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
@@ -256,16 +274,22 @@ interface HTMLOListElement : HTMLElement {
   [CEReactions] attribute boolean reversed;
   [CEReactions] attribute long start;
   [CEReactions] attribute DOMString type;
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
 interface HTMLUListElement : HTMLElement {
   [HTMLConstructor] constructor();
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
 interface HTMLMenuElement : HTMLElement {
   [HTMLConstructor] constructor();
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
@@ -273,16 +297,22 @@ interface HTMLLIElement : HTMLElement {
   [HTMLConstructor] constructor();
 
   [CEReactions] attribute long value;
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
 interface HTMLDListElement : HTMLElement {
   [HTMLConstructor] constructor();
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
 interface HTMLDivElement : HTMLElement {
   [HTMLConstructor] constructor();
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
@@ -300,6 +330,8 @@ interface HTMLAnchorElement : HTMLElement {
   [CEReactions] attribute DOMString text;
 
   [CEReactions] attribute DOMString referrerPolicy;
+
+  // also has obsolete members
 };
 HTMLAnchorElement includes HTMLHyperlinkElementUtils;
 
@@ -325,6 +357,8 @@ interface HTMLSpanElement : HTMLElement {
 [Exposed=Window]
 interface HTMLBRElement : HTMLElement {
   [HTMLConstructor] constructor();
+
+  // also has obsolete members
 };
 
 interface mixin HTMLHyperlinkElementUtils {
@@ -388,6 +422,8 @@ interface HTMLImageElement : HTMLElement {
   [CEReactions] attribute DOMString loading;
 
   Promise<void> decode();
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
@@ -407,6 +443,8 @@ interface HTMLIFrameElement : HTMLElement {
   readonly attribute Document? contentDocument;
   readonly attribute WindowProxy? contentWindow;
   Document? getSVGDocument();
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
@@ -418,6 +456,8 @@ interface HTMLEmbedElement : HTMLElement {
   [CEReactions] attribute DOMString width;
   [CEReactions] attribute DOMString height;
   Document? getSVGDocument();
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
@@ -441,6 +481,8 @@ interface HTMLObjectElement : HTMLElement {
   boolean checkValidity();
   boolean reportValidity();
   void setCustomValidity(DOMString error);
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
@@ -449,6 +491,8 @@ interface HTMLParamElement : HTMLElement {
 
   [CEReactions] attribute DOMString name;
   [CEReactions] attribute DOMString value;
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
@@ -695,6 +739,8 @@ interface HTMLAreaElement : HTMLElement {
   [CEReactions] attribute DOMString rel;
   [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;
   [CEReactions] attribute DOMString referrerPolicy;
+
+  // also has obsolete members
 };
 HTMLAreaElement includes HTMLHyperlinkElementUtils;
 
@@ -720,11 +766,15 @@ interface HTMLTableElement : HTMLElement {
   [SameObject] readonly attribute HTMLCollection rows;
   HTMLTableRowElement insertRow(optional long index = -1);
   [CEReactions] void deleteRow(long index);
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
 interface HTMLTableCaptionElement : HTMLElement {
   [HTMLConstructor] constructor();
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
@@ -732,6 +782,8 @@ interface HTMLTableColElement : HTMLElement {
   [HTMLConstructor] constructor();
 
   [CEReactions] attribute unsigned long span;
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
@@ -741,6 +793,8 @@ interface HTMLTableSectionElement : HTMLElement {
   [SameObject] readonly attribute HTMLCollection rows;
   HTMLTableRowElement insertRow(optional long index = -1);
   [CEReactions] void deleteRow(long index);
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
@@ -752,6 +806,8 @@ interface HTMLTableRowElement : HTMLElement {
   [SameObject] readonly attribute HTMLCollection cells;
   HTMLTableCellElement insertCell(optional long index = -1);
   [CEReactions] void deleteCell(long index);
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
@@ -765,6 +821,8 @@ interface HTMLTableCellElement : HTMLElement {
 
   [CEReactions] attribute DOMString scope; // only conforming for th elements
   [CEReactions] attribute DOMString abbr;  // only conforming for th elements
+
+  // also has obsolete members
 };
 
 [Exposed=Window,
@@ -866,6 +924,8 @@ interface HTMLInputElement : HTMLElement {
   void setRangeText(DOMString replacement);
   void setRangeText(DOMString replacement, unsigned long start, unsigned long end, optional SelectionMode selectionMode = "preserve");
   void setSelectionRange(unsigned long start, unsigned long end, optional DOMString direction);
+
+  // also has obsolete members
 };
 
 [Exposed=Window]
@@ -1072,6 +1132,8 @@ interface HTMLLegendElement : HTMLElement {
   [HTMLConstructor] constructor();
 
   readonly attribute HTMLFormElement? form;
+
+  // also has obsolete members
 };
 
 enum SelectionMode {
@@ -1150,6 +1212,7 @@ interface HTMLScriptElement : HTMLElement {
   [CEReactions] attribute DOMString integrity;
   [CEReactions] attribute DOMString referrerPolicy;
 
+  // also has obsolete members
 };
 
 [Exposed=Window]
@@ -1642,6 +1705,8 @@ interface Window : EventTarget {
 
   void postMessage(any message, USVString targetOrigin, optional sequence<object> transfer = []);
   void postMessage(any message, optional WindowPostMessageOptions options = {});
+
+  // also has obsolete members
 };
 Window includes GlobalEventHandlers;
 Window includes WindowEventHandlers;

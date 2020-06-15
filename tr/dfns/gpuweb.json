@@ -53,30 +53,6 @@
       "informative": false
     },
     {
-      "id": "valid",
-      "href": "https://gpuweb.github.io/gpuweb/#valid",
-      "linkingText": [
-        "valid"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "invalid",
-      "href": "https://gpuweb.github.io/gpuweb/#invalid",
-      "linkingText": [
-        "invalid"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "webgpu-interface",
       "href": "https://gpuweb.github.io/gpuweb/#webgpu-interface",
       "linkingText": [
@@ -164,6 +140,30 @@
         "GPUObjectDescriptorBase"
       ],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valid",
+      "href": "https://gpuweb.github.io/gpuweb/#valid",
+      "linkingText": [
+        "valid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "invalid",
+      "href": "https://gpuweb.github.io/gpuweb/#invalid",
+      "linkingText": [
+        "invalid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
@@ -696,6 +696,20 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-pipeline-statistics-query",
       "linkingText": [
         "\"pipeline-statistics-query\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUExtensionName"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuextensionname-timestamp-query",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-timestamp-query",
+      "linkingText": [
+        "\"timestamp-query\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -1269,33 +1283,65 @@
       "informative": true
     },
     {
-      "id": "dom-gpubuffer-mapasync-offset-size-offset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-offset-size-offset",
+      "id": "dom-gpubuffer-mapasync",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync",
+      "linkingText": [
+        "mapAsync(mode, offset, size)",
+        "mapAsync(mode, offset)",
+        "mapAsync(mode)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUBuffer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpubuffer-mapasync-mode-offset-size-mode",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-mode-offset-size-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUBuffer/mapAsync(mode, offset, size)",
+        "GPUBuffer/mapAsync(mode, offset)",
+        "GPUBuffer/mapAsync(mode)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpubuffer-mapasync-mode-offset-size-offset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-mode-offset-size-offset",
       "linkingText": [
         "offset"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUBuffer/mapAsync(offset, size)",
-        "GPUBuffer/mapAsync(offset)",
-        "GPUBuffer/mapAsync()"
+        "GPUBuffer/mapAsync(mode, offset, size)",
+        "GPUBuffer/mapAsync(mode, offset)",
+        "GPUBuffer/mapAsync(mode)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-gpubuffer-mapasync-offset-size-size",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-offset-size-size",
+      "id": "dom-gpubuffer-mapasync-mode-offset-size-size",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-mode-offset-size-size",
       "linkingText": [
         "size"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUBuffer/mapAsync(offset, size)",
-        "GPUBuffer/mapAsync(offset)",
-        "GPUBuffer/mapAsync()"
+        "GPUBuffer/mapAsync(mode, offset, size)",
+        "GPUBuffer/mapAsync(mode, offset)",
+        "GPUBuffer/mapAsync(mode)"
       ],
       "access": "public",
       "informative": false
@@ -1407,6 +1453,20 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapped_ranges-slot",
       "linkingText": [
         "[[mapped_ranges]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUBuffer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpubuffer-map_mode-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-map_mode-slot",
+      "linkingText": [
+        "[[map_mode]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1769,17 +1829,67 @@
       "informative": false
     },
     {
-      "id": "dom-gpubuffer-mapasync",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync",
+      "id": "dom-gpubuffer-mapasync-offset-size",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-offset-size",
       "linkingText": [
-        "mapAsync(offset, size)",
-        "mapAsync(offset)",
-        "mapAsync()"
+        "mapAsync(offset, size)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
         "GPUBuffer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-gpumapmodeflags",
+      "href": "https://gpuweb.github.io/gpuweb/#typedefdef-gpumapmodeflags",
+      "linkingText": [
+        "GPUMapModeFlags"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "gpumapmode",
+      "href": "https://gpuweb.github.io/gpuweb/#gpumapmode",
+      "linkingText": [
+        "GPUMapMode"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpumapmode-read",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpumapmode-read",
+      "linkingText": [
+        "READ"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "GPUMapMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpumapmode-write",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpumapmode-write",
+      "linkingText": [
+        "WRITE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "GPUMapMode"
       ],
       "access": "public",
       "informative": false
@@ -3241,6 +3351,20 @@
       "informative": false
     },
     {
+      "id": "dom-gpusampler-descriptor-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpusampler-descriptor-slot",
+      "linkingText": [
+        "[[descriptor]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUSampler"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpusampler-compareenable-slot",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpusampler-compareenable-slot",
       "linkingText": [
@@ -3388,35 +3512,6 @@
       "type": "dict-member",
       "for": [
         "GPUSamplerDescriptor"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createsampler",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createsampler",
-      "linkingText": [
-        "createSampler(descriptor)",
-        "createSampler()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUDevice"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "abstract-opdef-gpudevicecreatesampler-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpudevicecreatesampler-valid-usage",
-      "linkingText": [
-        "Valid Usage"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [
-        "GPUDevice.createSampler"
       ],
       "access": "public",
       "informative": false
@@ -3640,6 +3735,47 @@
       "informative": false
     },
     {
+      "id": "abstract-opdef-validating-gpusamplerdescriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validating-gpusamplerdescriptor",
+      "linkingText": [
+        "validating GPUSamplerDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createsampler",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createsampler",
+      "linkingText": [
+        "createSampler(descriptor)",
+        "createSampler()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-gpudevicecreatesampler-valid-usage",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpudevicecreatesampler-valid-usage",
+      "linkingText": [
+        "Valid Usage"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "GPUDevice.createSampler"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "gpubindgrouplayout",
       "href": "https://gpuweb.github.io/gpuweb/#gpubindgrouplayout",
       "linkingText": [
@@ -3732,6 +3868,20 @@
       "informative": false
     },
     {
+      "id": "dom-gpubindgrouplayoutentry-hasdynamicoffset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-hasdynamicoffset",
+      "linkingText": [
+        "hasDynamicOffset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUBindGroupLayoutEntry"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpubindgrouplayoutentry-viewdimension",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-viewdimension",
       "linkingText": [
@@ -3760,20 +3910,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpubindgrouplayoutentry-storagetextureformat",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-storagetextureformat",
-      "linkingText": [
-        "storageTextureFormat"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPUBindGroupLayoutEntry"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpubindgrouplayoutentry-multisampled",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-multisampled",
       "linkingText": [
@@ -3788,10 +3924,10 @@
       "informative": false
     },
     {
-      "id": "dom-gpubindgrouplayoutentry-hasdynamicoffset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-hasdynamicoffset",
+      "id": "dom-gpubindgrouplayoutentry-storagetextureformat",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-storagetextureformat",
       "linkingText": [
-        "hasDynamicOffset"
+        "storageTextureFormat"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -7302,6 +7438,48 @@
       "informative": false
     },
     {
+      "id": "dom-gpucommandencoder-writetimestamp",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-writetimestamp",
+      "linkingText": [
+        "writeTimestamp(querySet, queryIndex)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUCommandEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-writetimestamp-queryset-queryindex-queryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-writetimestamp-queryset-queryindex-queryset",
+      "linkingText": [
+        "querySet"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/writeTimestamp(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-writetimestamp-queryset-queryindex-queryindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-writetimestamp-queryset-queryindex-queryindex",
+      "linkingText": [
+        "queryIndex"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/writeTimestamp(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpucommandencoder-resolvequeryset",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-resolvequeryset",
       "linkingText": [
@@ -8470,6 +8648,48 @@
       "informative": false
     },
     {
+      "id": "dom-gpucomputepassencoder-writetimestamp",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-writetimestamp",
+      "linkingText": [
+        "writeTimestamp(querySet, queryIndex)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUComputePassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucomputepassencoder-writetimestamp-queryset-queryindex-queryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-writetimestamp-queryset-queryindex-queryset",
+      "linkingText": [
+        "querySet"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUComputePassEncoder/writeTimestamp(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucomputepassencoder-writetimestamp-queryset-queryindex-queryindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-writetimestamp-queryset-queryindex-queryindex",
+      "linkingText": [
+        "queryIndex"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUComputePassEncoder/writeTimestamp(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dictdef-gpucomputepassdescriptor",
       "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucomputepassdescriptor",
       "linkingText": [
@@ -9300,6 +9520,48 @@
       "type": "method",
       "for": [
         "GPURenderPassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-writetimestamp",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-writetimestamp",
+      "linkingText": [
+        "writeTimestamp(querySet, queryIndex)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderPassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-writetimestamp-queryset-queryindex-queryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-writetimestamp-queryset-queryindex-queryset",
+      "linkingText": [
+        "querySet"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/writeTimestamp(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-writetimestamp-queryset-queryindex-queryindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-writetimestamp-queryset-queryindex-queryindex",
+      "linkingText": [
+        "queryIndex"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/writeTimestamp(querySet, queryIndex)"
       ],
       "access": "public",
       "informative": false
@@ -10373,6 +10635,20 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuquerytype-pipeline-statistics",
       "linkingText": [
         "\"pipeline-statistics\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUQueryType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuquerytype-timestamp",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuquerytype-timestamp",
+      "linkingText": [
+        "\"timestamp\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
