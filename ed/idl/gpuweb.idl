@@ -305,6 +305,9 @@ dictionary GPUBindGroupLayoutEntry {
     // Used for uniform buffer and storage buffer bindings.
     boolean hasDynamicOffset = false;
 
+    // Used for uniform buffer and storage buffer bindings.
+    GPUSize64 minBufferBindingSize = 0;
+
     // Used for sampled texture and storage texture bindings.
     GPUTextureViewDimension viewDimension;
 
