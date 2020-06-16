@@ -8120,7 +8120,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/sms-one-time-codes/](https://wicg.github.io/sms-one-time-codes/)
 - Crawled URL: [https://wicg.github.io/sms-one-time-codes/](https://wicg.github.io/sms-one-time-codes/)
-- Crawled version: 2 April 2020
+- Crawled version: 15 June 2020
 - Editor's Draft: [https://wicg.github.io/sms-one-time-codes/](https://wicg.github.io/sms-one-time-codes/)
 - Shortname: sms-one-time-codes
 
@@ -8471,7 +8471,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/feature-policy-1/](https://www.w3.org/TR/feature-policy-1/)
 - Crawled URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
-- Crawled version: 11 June 2020
+- Crawled version: 16 June 2020
 - Editor's Draft: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
 - Latest published version: [https://www.w3.org/TR/feature-policy-1/](https://www.w3.org/TR/feature-policy-1/)
 - Shortname: feature-policy-1
@@ -9240,7 +9240,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
 - Crawled URL: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
-- Crawled version: 14 June 2020
+- Crawled version: 16 June 2020
 - Editor's Draft: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
 - Shortname: scroll-animations-1
 
@@ -9464,7 +9464,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
 - Crawled URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
-- Crawled version: 27 May 2020
+- Crawled version: 16 June 2020
 - Editor's Draft: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
 - Shortname: serial
 
@@ -11160,7 +11160,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 15 June 2020
+- Crawled version: 16 June 2020
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
@@ -11291,7 +11291,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
 - Crawled URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
-- Crawled version: 4 June 2020
+- Crawled version: 16 June 2020
 - Editor's Draft: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
 - Shortname: hit-test
 
