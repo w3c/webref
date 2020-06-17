@@ -2,20 +2,14 @@
 % Reffy
 % June 17, 2020
 
-## A Well-Known URL for Changing Passwords
+## Background Fetch
 
-- Initial URL: [https://wicg.github.io/change-password-url/](https://wicg.github.io/change-password-url/)
+- Initial URL: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/change-password-url/](https://wicg.github.io/change-password-url/)
-- This specification was not in the reference crawl report.
-
-
-## ARIA in HTML
-
-- Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
-- This specification was not in the reference crawl report.
+- Editor's Draft: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
+- Missing references for WebIDL names: *DEL* ServiceWorkerGlobalScope, ServiceWorkerRegistration, CacheQueryOptions, ExtendableEvent, ExtendableEventInit
+- Missing references for links: *DEL* https://w3c.github.io/ServiceWorker/
+- Inconsistent references for links: *INS* https://w3c.github.io/ServiceWorker/
 
 
 ## Beacon
@@ -23,7 +17,7 @@
 - Initial URL: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/beacon/](https://w3c.github.io/beacon/)
-- Spec could not be rendered: *INS* Error: Failed to launch the browser process!
+- Spec could not be rendered: *DEL* Error: Failed to launch the browser process!
 Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!
 
 
@@ -40,140 +34,215 @@ TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/trouble
     at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)
 
 
-## Crash Reporting
+## Clear Site Data
 
-- Initial URL: [https://wicg.github.io/crash-reporting/](https://wicg.github.io/crash-reporting/)
+- Initial URL: [https://www.w3.org/TR/clear-site-data/](https://www.w3.org/TR/clear-site-data/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/crash-reporting/](https://wicg.github.io/crash-reporting/)
+- Editor's Draft: [https://w3c.github.io/webappsec-clear-site-data/](https://w3c.github.io/webappsec-clear-site-data/)
+- Missing references for links: *DEL* https://w3c.github.io/ServiceWorker/
+- Inconsistent references for links: *INS* https://w3c.github.io/ServiceWorker/
+
+
+## Content Index
+
+- Initial URL: [https://wicg.github.io/content-index/spec/](https://wicg.github.io/content-index/spec/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://wicg.github.io/content-index/spec/](https://wicg.github.io/content-index/spec/)
 - This specification was not in the reference crawl report.
 
 
-## Deprecation Reporting
+## Content Security Policy Level 3
 
-- Initial URL: [https://wicg.github.io/deprecation-reporting/](https://wicg.github.io/deprecation-reporting/)
+- Initial URL: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/deprecation-reporting/](https://wicg.github.io/deprecation-reporting/)
+- Editor's Draft: [https://w3c.github.io/webappsec-csp/](https://w3c.github.io/webappsec-csp/)
+- Missing references for links: *DEL* https://w3c.github.io/ServiceWorker/
+- Inconsistent references for links: *INS* https://w3c.github.io/ServiceWorker/
+
+
+## Cookie Store API
+
+- Initial URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
+- Missing references for WebIDL names: *DEL* ServiceWorkerRegistration, ExtendableEvent, ExtendableEventInit, ServiceWorkerGlobalScope
+- Missing references for links: *DEL* https://w3c.github.io/ServiceWorker/
+- Inconsistent references for links: *INS* https://w3c.github.io/ServiceWorker/
+
+
+## CSS Box Sizing Module Level 4
+
+- Initial URL: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
+- Crawled URL: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
+- This specification is not in the new crawl report.
+
+
+## CSS Box Sizing Module Level 4
+
+- Initial URL: [https://www.w3.org/TR/css-sizing-4/](https://www.w3.org/TR/css-sizing-4/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
 - This specification was not in the reference crawl report.
 
 
-## Graphics Accessibility API Mappings
+## Custom State Pseudo Class
 
-- Initial URL: [https://www.w3.org/TR/graphics-aam-1.0/](https://www.w3.org/TR/graphics-aam-1.0/)
+- Initial URL: [https://wicg.github.io/custom-state-pseudo-class/](https://wicg.github.io/custom-state-pseudo-class/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/graphics-aam/](https://w3c.github.io/graphics-aam/)
+- Editor's Draft: [https://wicg.github.io/custom-state-pseudo-class/](https://wicg.github.io/custom-state-pseudo-class/)
 - This specification was not in the reference crawl report.
 
 
-## HTML Accessibility API Mappings 1.0
+## Early detection of input events
 
-- Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
+- Initial URL: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
+- Editor's Draft: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
 - This specification was not in the reference crawl report.
 
 
-## IceTransport Extensions for WebRTC
+## Loading Signed Exchanges
 
-- Initial URL: [https://w3c.github.io/webrtc-ice/](https://w3c.github.io/webrtc-ice/)
+- Initial URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webrtc-ice/](https://w3c.github.io/webrtc-ice/)
+- Editor's Draft: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - This specification was not in the reference crawl report.
 
 
-## Intervention Reporting
+## Local Font Access API
 
-- Initial URL: [https://wicg.github.io/intervention-reporting/](https://wicg.github.io/intervention-reporting/)
+- Initial URL: [https://wicg.github.io/local-font-access/](https://wicg.github.io/local-font-access/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/intervention-reporting/](https://wicg.github.io/intervention-reporting/)
+- Editor's Draft: [https://wicg.github.io/local-font-access/](https://wicg.github.io/local-font-access/)
 - This specification was not in the reference crawl report.
 
 
-## Private Click Measurement
+## MathML Accessiblity API Mappings 1.0
 
-- Initial URL: [https://privacycg.github.io/private-click-measurement/](https://privacycg.github.io/private-click-measurement/)
+- Initial URL: [https://w3c.github.io/mathml-aam/](https://w3c.github.io/mathml-aam/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://privacycg.github.io/private-click-measurement/](https://privacycg.github.io/private-click-measurement/)
+- Editor's Draft: [https://w3c.github.io/mathml-aam/](https://w3c.github.io/mathml-aam/)
 - This specification was not in the reference crawl report.
 
 
-## Scalable Vector Graphics (SVG) 2
+## Media Feeds
 
-- Initial URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
+- Initial URL: [https://wicg.github.io/media-feeds/](https://wicg.github.io/media-feeds/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
-- Missing references for links: *DEL* https://w3c.github.io/svg-aam/, https://w3c.github.io/graphics-aria/
-- Inconsistent references for links: *INS* https://w3c.github.io/svg-aam/, https://w3c.github.io/graphics-aria/
-
-
-## SVG Accessibility API Mappings
-
-- Initial URL: [https://www.w3.org/TR/svg-aam-1.0/](https://www.w3.org/TR/svg-aam-1.0/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/svg-aam/](https://w3c.github.io/svg-aam/)
+- Editor's Draft: [https://wicg.github.io/media-feeds/](https://wicg.github.io/media-feeds/)
 - This specification was not in the reference crawl report.
 
 
-## The Storage Access API
+## overscroll and scrollend events
 
-- Initial URL: [https://privacycg.github.io/storage-access/](https://privacycg.github.io/storage-access/)
+- Initial URL: [https://wicg.github.io/overscroll-scrollend-events/](https://wicg.github.io/overscroll-scrollend-events/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://privacycg.github.io/storage-access/](https://privacycg.github.io/storage-access/)
+- Editor's Draft: [https://wicg.github.io/overscroll-scrollend-events/](https://wicg.github.io/overscroll-scrollend-events/)
 - This specification was not in the reference crawl report.
 
 
-## User-Agent Client Hints
+## Payment Handler API
 
-- Initial URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
+- Initial URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
+- Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
+- Spec is OK: *INS* true / *DEL* false
+- Missing references for WebIDL names: *DEL* ServiceWorkerRegistration, ServiceWorkerGlobalScope, ExtendableEvent, ExtendableEventInit, WindowClient
+
+
+## Portals
+
+- Initial URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
+- Missing references for WebIDL names: *DEL* ServiceWorker
+- Missing references for links: *DEL* https://w3c.github.io/ServiceWorker/
+- Inconsistent references for links: *INS* https://w3c.github.io/ServiceWorker/
+
+
+## Push API
+
+- Initial URL: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/push-api/](https://w3c.github.io/push-api/)
+- Spec is OK: *INS* true / *DEL* false
+- Missing references for WebIDL names: *DEL* ServiceWorkerRegistration, ServiceWorkerGlobalScope, ExtendableEvent, ExtendableEventInit
+
+
+## Save Data API
+
+- Initial URL: [https://wicg.github.io/savedata/](https://wicg.github.io/savedata/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://wicg.github.io/savedata/](https://wicg.github.io/savedata/)
 - This specification was not in the reference crawl report.
 
 
-## WAI-ARIA Graphics Module
+## Service Workers Nightly
 
-- Initial URL: [https://www.w3.org/TR/graphics-aria-1.0/](https://www.w3.org/TR/graphics-aria-1.0/)
+- Initial URL: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
+- Crawled URL: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
+- This specification is not in the new crawl report.
+
+
+## Service Workers Nightly
+
+- Initial URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/graphics-aria/](https://w3c.github.io/graphics-aria/)
+- Editor's Draft: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
 - This specification was not in the reference crawl report.
 
 
-## Web OTP API
+## Trusted Types
 
-- Initial URL: [https://wicg.github.io/web-otp/](https://wicg.github.io/web-otp/)
+- Initial URL: [https://w3c.github.io/webappsec-trusted-types/dist/spec/](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/web-otp/](https://wicg.github.io/web-otp/)
+- Editor's Draft: [https://w3c.github.io/webappsec-trusted-types/dist/spec/](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
+- Missing references for links: *DEL* https://w3c.github.io/ServiceWorker/
+- Inconsistent references for links: *INS* https://w3c.github.io/ServiceWorker/
+
+
+## Web Background Synchronization
+
+- Initial URL: [https://wicg.github.io/background-sync/spec/](https://wicg.github.io/background-sync/spec/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://wicg.github.io/background-sync/spec/](https://wicg.github.io/background-sync/spec/)
+- Missing references for WebIDL names: *DEL* ServiceWorkerRegistration, ServiceWorkerGlobalScope, ExtendableEvent, ExtendableEventInit
+- Missing references for links: *DEL* https://w3c.github.io/ServiceWorker/
+- Inconsistent references for links: *INS* https://w3c.github.io/ServiceWorker/
+
+
+## Web Locks API
+
+- Initial URL: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
+- Missing references for links: *DEL* https://w3c.github.io/ServiceWorker/
+- Inconsistent references for links: *INS* https://w3c.github.io/ServiceWorker/
+
+
+## Web Periodic Background Synchronization
+
+- Initial URL: [https://wicg.github.io/periodic-background-sync/](https://wicg.github.io/periodic-background-sync/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://wicg.github.io/periodic-background-sync/](https://wicg.github.io/periodic-background-sync/)
+- Missing references for WebIDL names: *DEL* ServiceWorkerGlobalScope, ServiceWorkerRegistration, ExtendableEventInit, ExtendableEvent
+- Missing references for links: *DEL* https://w3c.github.io/ServiceWorker/
+- Inconsistent references for links: *INS* https://w3c.github.io/ServiceWorker/
+
+
+## WebDriver BiDi
+
+- Initial URL: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
 - This specification was not in the reference crawl report.
 
 
-## WebRTC 1.0: Real-time Communication Between Browsers
+## WebHID API
 
-- Initial URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
+- Initial URL: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
-- WebIDL names also defined elsewhere: *INS* RTCIceParameters
-
-
-## WebXR Anchors Module
-
-- Initial URL: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
-- This specification was not in the reference crawl report.
-
-
-## WebXR DOM Overlays Module
-
-- Initial URL: [https://immersive-web.github.io/dom-overlays/](https://immersive-web.github.io/dom-overlays/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://immersive-web.github.io/dom-overlays/](https://immersive-web.github.io/dom-overlays/)
-- This specification was not in the reference crawl report.
-
-
-## WebXR Layers API Level 1
-
-- Initial URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
+- Editor's Draft: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
 - This specification was not in the reference crawl report.
 
 

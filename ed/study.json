@@ -2,11 +2,11 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-06-17T12:36:57.845Z",
+  "date": "2020-06-17T18:38:24.921Z",
   "stats": {
-    "crawled": 318,
-    "errors": 1,
-    "studied": 318
+    "crawled": 329,
+    "errors": 0,
+    "studied": 329
   },
   "results": [
     {
@@ -500,64 +500,19 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "ServiceWorkerGlobalScope",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ServiceWorkerRegistration",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "CacheQueryOptions",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ExtendableEvent",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ExtendableEventInit",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          }
-        ],
+        "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://w3c.github.io/ServiceWorker/",
           "https://storage.spec.whatwg.org/",
           "https://w3c.github.io/webdriver/"
         ],
         "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/ServiceWorker/",
+            "ref": {
+              "name": "SERVICE-WORKERS-1",
+              "url": "https://www.w3.org/TR/service-workers-1/"
+            }
+          },
           {
             "link": "https://w3c.github.io/image-resource/",
             "ref": {
@@ -663,7 +618,7 @@
     {
       "title": "Beacon",
       "shortname": "beacon",
-      "date": "",
+      "date": "30 January 2020",
       "url": "https://www.w3.org/TR/beacon/",
       "release": {
         "url": "https://www.w3.org/TR/beacon/"
@@ -673,10 +628,10 @@
       },
       "crawled": "https://w3c.github.io/beacon/",
       "report": {
-        "error": "Error: Failed to launch the browser process!\nInconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!\n\n\nTROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch the browser process!\nInconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!\n\n\nTROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/launcher/BrowserRunner.js:159:20)\n    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/launcher/BrowserRunner.js:150:76)\n    at ChildProcess.emit (events.js:203:15)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -698,6 +653,70 @@
               "crawled": "https://w3c.github.io/webappsec-csp/"
             }
           ]
+        },
+        "ok": true
+      }
+    },
+    {
+      "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
+      "shortname": "CSS22",
+      "date": "03 May 2020",
+      "url": "https://www.w3.org/TR/CSS22/",
+      "release": {
+        "url": "https://www.w3.org/TR/CSS22/"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css2/"
+      },
+      "crawled": "https://drafts.csswg.org/css2/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css3-color/",
+            "ref": {
+              "name": "CSS3COLOR",
+              "url": "https://www.w3.org/TR/2010/PR-css3-color-20101028/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://compat.spec.whatwg.org/",
+              "title": "Compatibility Standard",
+              "crawled": "https://compat.spec.whatwg.org/"
+            },
+            {
+              "url": "https://fullscreen.spec.whatwg.org/",
+              "title": "Fullscreen API Standard",
+              "crawled": "https://fullscreen.spec.whatwg.org/"
+            },
+            {
+              "url": "https://html.spec.whatwg.org/multipage/",
+              "title": "HTML Standard",
+              "crawled": "https://html.spec.whatwg.org/multipage/"
+            },
+            {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webvtt1/",
+              "title": "WebVTT: The Web Video Text Tracks Format",
+              "crawled": "https://w3c.github.io/webvtt/"
+            }
+          ],
+          "informative": []
         },
         "ok": false
       }
@@ -771,14 +790,14 @@
               "crawled": "https://drafts.csswg.org/css-backgrounds-4/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -801,7 +820,7 @@
               "crawled": "https://drafts.csswg.org/css-sizing-3/"
             },
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -1253,12 +1272,12 @@
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/CSS2/",
+              "url": "https://www.w3.org/TR/CSS22/",
               "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
               "crawled": "https://drafts.csswg.org/css2/"
             },
             {
-              "url": "https://www.w3.org/TR/CSS22/",
+              "url": "https://www.w3.org/TR/CSS2/",
               "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
               "crawled": "https://drafts.csswg.org/css2/"
             },
@@ -1278,70 +1297,6 @@
               "crawled": "https://w3c.github.io/uievents/"
             }
           ]
-        },
-        "ok": false
-      }
-    },
-    {
-      "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
-      "shortname": "CSS22",
-      "date": "03 May 2020",
-      "url": "https://www.w3.org/TR/CSS22/",
-      "release": {
-        "url": "https://www.w3.org/TR/CSS22/"
-      },
-      "nightly": {
-        "url": "https://drafts.csswg.org/css2/"
-      },
-      "crawled": "https://drafts.csswg.org/css2/",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownExposedNames": [],
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/css3-color/",
-            "ref": {
-              "name": "CSS3COLOR",
-              "url": "https://www.w3.org/TR/2010/PR-css3-color-20101028/"
-            }
-          }
-        ],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://compat.spec.whatwg.org/",
-              "title": "Compatibility Standard",
-              "crawled": "https://compat.spec.whatwg.org/"
-            },
-            {
-              "url": "https://fullscreen.spec.whatwg.org/",
-              "title": "Fullscreen API Standard",
-              "crawled": "https://fullscreen.spec.whatwg.org/"
-            },
-            {
-              "url": "https://html.spec.whatwg.org/multipage/",
-              "title": "HTML Standard",
-              "crawled": "https://html.spec.whatwg.org/multipage/"
-            },
-            {
-              "url": "https://quirks.spec.whatwg.org/",
-              "title": "Quirks Mode Standard",
-              "crawled": "https://quirks.spec.whatwg.org/"
-            },
-            {
-              "url": "https://www.w3.org/TR/webvtt1/",
-              "title": "WebVTT: The Web Video Text Tracks Format",
-              "crawled": "https://w3c.github.io/webvtt/"
-            }
-          ],
-          "informative": []
         },
         "ok": false
       }
@@ -1367,10 +1322,15 @@
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/ServiceWorker/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/ServiceWorker/",
+            "ref": {
+              "name": "SERVICE-WORKERS",
+              "url": "https://www.w3.org/TR/service-workers-1/"
+            }
+          },
           {
             "link": "https://w3c.github.io/webappsec-mixed-content/",
             "ref": {
@@ -1854,6 +1814,61 @@
       }
     },
     {
+      "title": "Content Index",
+      "shortname": "content-index",
+      "date": "13 May 2020",
+      "url": "https://wicg.github.io/content-index/spec/",
+      "nightly": {
+        "url": "https://wicg.github.io/content-index/spec/"
+      },
+      "crawled": "https://wicg.github.io/content-index/spec/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [
+          {
+            "name": "ImageResource",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/image-resource/",
+                "title": "Image Resource",
+                "crawled": "https://w3c.github.io/image-resource/"
+              }
+            ]
+          }
+        ],
+        "missingLinkRef": [
+          "https://w3c.github.io/image-resource/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/ServiceWorker/",
+            "ref": {
+              "name": "SERVICE-WORKERS-1",
+              "url": "https://www.w3.org/TR/service-workers-1/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/service-workers/",
+            "ref": {
+              "name": "SERVICE-WORKERS-1",
+              "url": "https://www.w3.org/TR/service-workers-1/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "Content Security Policy Level 3",
       "shortname": "CSP3",
       "date": "28 February 2019",
@@ -1874,10 +1889,15 @@
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/ServiceWorker/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/ServiceWorker/",
+            "ref": {
+              "name": "SERVICE-WORKERS-1",
+              "url": "https://www.w3.org/TR/service-workers-1/"
+            }
+          },
           {
             "link": "https://w3c.github.io/reporting/",
             "ref": {
@@ -1961,7 +1981,7 @@
               "crawled": "https://w3c.github.io/resource-hints/"
             },
             {
-              "url": "https://w3c.github.io/ServiceWorker/",
+              "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
             },
@@ -2094,52 +2114,17 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
           {
-            "name": "ServiceWorkerRegistration",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ExtendableEvent",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ExtendableEventInit",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ServiceWorkerGlobalScope",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
+            "link": "https://w3c.github.io/ServiceWorker/",
+            "ref": {
+              "name": "Service-Workers",
+              "url": "https://www.w3.org/TR/service-workers-1/"
+            }
           }
         ],
-        "missingLinkRef": [
-          "https://w3c.github.io/ServiceWorker/"
-        ],
-        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -2239,6 +2224,11 @@
               "url": "https://www.w3.org/TR/html-aam-1.0/",
               "title": "HTML Accessibility API Mappings 1.0",
               "crawled": "https://w3c.github.io/html-aam/"
+            },
+            {
+              "url": "https://w3c.github.io/mathml-aam/",
+              "title": "MathML Accessiblity API Mappings 1.0",
+              "crawled": "https://w3c.github.io/mathml-aam/"
             }
           ],
           "informative": []
@@ -2395,7 +2385,7 @@
     {
       "title": "CSS Animation Worklet API",
       "shortname": "css-animation-worklet-1",
-      "date": "25 October 2019",
+      "date": "17 June 2020",
       "url": "https://www.w3.org/TR/css-animation-worklet-1/",
       "release": {
         "url": "https://www.w3.org/TR/css-animation-worklet-1/"
@@ -2696,14 +2686,14 @@
               "crawled": "https://drafts.csswg.org/css-backgrounds-4/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-box-3/",
@@ -2716,7 +2706,7 @@
               "crawled": "https://drafts.csswg.org/css-box-4/"
             },
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -3049,111 +3039,6 @@
     },
     {
       "title": "CSS Basic User Interface Module Level 4",
-      "shortname": "css-ui-3",
-      "date": "25 January 2020",
-      "url": "https://www.w3.org/TR/css-ui-3/",
-      "release": {
-        "url": "https://www.w3.org/TR/css-ui-3/"
-      },
-      "nightly": {
-        "url": "https://drafts.csswg.org/css-ui/"
-      },
-      "crawled": "https://drafts.csswg.org/css-ui/",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownExposedNames": [],
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/2000/WD-css3-userint-20000216",
-          "https://www.w3.org/TR/css-cascade/",
-          "https://www.w3.org/TR/css-pseudo/",
-          "https://www.w3.org/TR/web-animations/",
-          "https://www.w3.org/TR/css-style-attr/",
-          "https://w3c.github.io/contentEditable/",
-          "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/",
-          "https://www.w3.org/TR/2017/WD-css-ui-4-20171222/",
-          "https://www.w3.org/TR/2015/WD-css-ui-4-20150922/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/css-values/",
-            "ref": {
-              "name": "CSS-VALUES-3",
-              "url": "https://www.w3.org/TR/css-values-3/"
-            }
-          }
-        ],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
-              "url": "https://html.spec.whatwg.org/multipage/",
-              "title": "HTML Standard",
-              "crawled": "https://html.spec.whatwg.org/multipage/"
-            },
-            {
-              "url": "https://www.w3.org/TR/SVG2/",
-              "title": "Scalable Vector Graphics (SVG) 2",
-              "crawled": "https://svgwg.org/svg2-draft/"
-            }
-          ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/css-sizing-3/",
-              "title": "CSS Box Sizing Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-sizing-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-contain-2/",
-              "title": "CSS Containment Module Level 2",
-              "crawled": "https://drafts.csswg.org/css-contain-2/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-contain-1/",
-              "title": "CSS Containment Module Level 2",
-              "crawled": "https://drafts.csswg.org/css-contain/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-flexbox-1/",
-              "title": "CSS Flexible Box Layout Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-flexbox-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-overflow-3/",
-              "title": "CSS Overflow Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-overflow-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-overflow-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/selectors-4/",
-              "title": "Selectors Level 4",
-              "crawled": "https://drafts.csswg.org/selectors/"
-            }
-          ]
-        },
-        "ok": false
-      }
-    },
-    {
-      "title": "CSS Basic User Interface Module Level 4",
       "shortname": "css-ui-4",
       "date": "25 January 2020",
       "url": "https://www.w3.org/TR/css-ui-4/",
@@ -3280,6 +3165,111 @@
       }
     },
     {
+      "title": "CSS Basic User Interface Module Level 4",
+      "shortname": "css-ui-3",
+      "date": "25 January 2020",
+      "url": "https://www.w3.org/TR/css-ui-3/",
+      "release": {
+        "url": "https://www.w3.org/TR/css-ui-3/"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-ui/"
+      },
+      "crawled": "https://drafts.csswg.org/css-ui/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/2000/WD-css3-userint-20000216",
+          "https://www.w3.org/TR/css-cascade/",
+          "https://www.w3.org/TR/css-pseudo/",
+          "https://www.w3.org/TR/web-animations/",
+          "https://www.w3.org/TR/css-style-attr/",
+          "https://w3c.github.io/contentEditable/",
+          "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/",
+          "https://www.w3.org/TR/2017/WD-css-ui-4-20171222/",
+          "https://www.w3.org/TR/2015/WD-css-ui-4-20150922/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://html.spec.whatwg.org/multipage/",
+              "title": "HTML Standard",
+              "crawled": "https://html.spec.whatwg.org/multipage/"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://svgwg.org/svg2-draft/"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-sizing-3/",
+              "title": "CSS Box Sizing Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-sizing-3/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-contain-2/",
+              "title": "CSS Containment Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-contain-2/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-contain-1/",
+              "title": "CSS Containment Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-contain/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://drafts.csswg.org/css-flexbox-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-overflow-3/",
+              "title": "CSS Overflow Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-overflow-3/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-overflow-4/",
+              "title": "CSS Overflow Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-overflow-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/selectors-4/",
+              "title": "Selectors Level 4",
+              "crawled": "https://drafts.csswg.org/selectors/"
+            }
+          ]
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "CSS Box Alignment Module Level 3",
       "shortname": "css-align-3",
       "date": "28 May 2020",
@@ -3340,7 +3330,7 @@
               "crawled": "https://drafts.csswg.org/css-sizing-3/"
             },
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -3601,14 +3591,14 @@
               "crawled": "https://drafts.csswg.org/css-backgrounds/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -3621,7 +3611,7 @@
               "crawled": "https://drafts.csswg.org/css-sizing-3/"
             },
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -3842,14 +3832,14 @@
               "crawled": "https://compat.spec.whatwg.org/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -3867,7 +3857,7 @@
               "crawled": "https://drafts.csswg.org/css-box-4/"
             },
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -4017,7 +4007,10 @@
       "title": "CSS Box Sizing Module Level 4",
       "shortname": "css-sizing-4",
       "date": "5 June 2020",
-      "url": "https://drafts.csswg.org/css-sizing-4/",
+      "url": "https://www.w3.org/TR/css-sizing-4/",
+      "release": {
+        "url": "https://www.w3.org/TR/css-sizing-4/"
+      },
       "nightly": {
         "url": "https://drafts.csswg.org/css-sizing-4/"
       },
@@ -4046,7 +4039,23 @@
         ],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-contain-2/",
+              "title": "CSS Containment Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-contain-2/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-contain-1/",
+              "title": "CSS Containment Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-contain/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-grid-1/",
+              "title": "CSS Grid Layout Module Level 1",
+              "crawled": "https://drafts.csswg.org/css-grid/"
+            }
+          ]
         },
         "ok": false
       }
@@ -4250,14 +4259,14 @@
               "crawled": "https://drafts.csswg.org/css-animations-2/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -4280,7 +4289,7 @@
               "crawled": "https://drafts.csswg.org/css-sizing-3/"
             },
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -4734,14 +4743,14 @@
               "crawled": "https://drafts.csswg.org/css-backgrounds-4/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-color-5/",
@@ -4893,7 +4902,7 @@
     {
       "title": "CSS Color Module Level 4",
       "shortname": "css-color-4",
-      "date": "28 May 2020",
+      "date": "17 June 2020",
       "url": "https://www.w3.org/TR/css-color-4/",
       "release": {
         "url": "https://www.w3.org/TR/css-color-4/"
@@ -4947,14 +4956,14 @@
               "crawled": "https://drafts.csswg.org/css-backgrounds/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-color-adjust-1/",
@@ -5397,17 +5406,17 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -5520,7 +5529,7 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -5903,14 +5912,14 @@
               "crawled": "https://drafts.csswg.org/css-animations/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -5933,7 +5942,7 @@
               "crawled": "https://drafts.csswg.org/css-sizing-3/"
             },
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -6647,7 +6656,7 @@
           ],
           "informative": [
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -6745,6 +6754,11 @@
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
+            },
+            {
+              "url": "https://wicg.github.io/local-font-access/",
+              "title": "Local Font Access API",
+              "crawled": "https://wicg.github.io/local-font-access/"
             }
           ],
           "informative": [
@@ -8144,17 +8158,17 @@
               "crawled": "https://drafts.csswg.org/css-backgrounds/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -8302,7 +8316,7 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -8359,14 +8373,14 @@
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             }
           ]
         },
@@ -8811,7 +8825,7 @@
               "crawled": "https://drafts.csswg.org/css-sizing-3/"
             },
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -9093,7 +9107,7 @@
               "crawled": "https://drafts.csswg.org/css-sizing-3/"
             },
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -9665,14 +9679,14 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -9680,7 +9694,7 @@
               "crawled": "https://drafts.csswg.org/css-align/"
             },
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -9936,14 +9950,14 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-regions-1/",
@@ -10152,14 +10166,14 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-sizing-3/",
@@ -10388,14 +10402,14 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -10555,7 +10569,7 @@
               "crawled": "https://drafts.csswg.org/css-animations/"
             },
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -10652,14 +10666,14 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-box-3/",
@@ -12764,14 +12778,14 @@
               "crawled": "https://compat.spec.whatwg.org/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-box-3/",
@@ -13343,14 +13357,14 @@
               "crawled": "https://drafts.csswg.org/css-backgrounds/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -13373,7 +13387,7 @@
               "crawled": "https://drafts.csswg.org/css-sizing-3/"
             },
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -13896,14 +13910,14 @@
               "crawled": "https://drafts.csswg.org/css-backgrounds-4/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -13926,7 +13940,7 @@
               "crawled": "https://drafts.csswg.org/css-sizing-3/"
             },
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -14311,6 +14325,11 @@
               "crawled": "https://drafts.csswg.org/cssom-view/"
             },
             {
+              "url": "https://wicg.github.io/custom-state-pseudo-class/",
+              "title": "Custom State Pseudo Class",
+              "crawled": "https://wicg.github.io/custom-state-pseudo-class/"
+            },
+            {
               "url": "https://www.w3.org/TR/filter-effects-1/",
               "title": "Filter Effects Module Level 1",
               "crawled": "https://drafts.fxtf.org/filter-effects-1/"
@@ -14486,14 +14505,14 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -14696,14 +14715,14 @@
               "crawled": "https://drafts.csswg.org/css-animations-2/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -14726,7 +14745,7 @@
               "crawled": "https://drafts.csswg.org/css-sizing-3/"
             },
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -15127,6 +15146,33 @@
       }
     },
     {
+      "title": "Custom State Pseudo Class",
+      "shortname": "custom-state-pseudo-class",
+      "date": "11 May 2020",
+      "url": "https://wicg.github.io/custom-state-pseudo-class/",
+      "nightly": {
+        "url": "https://wicg.github.io/custom-state-pseudo-class/"
+      },
+      "crawled": "https://wicg.github.io/custom-state-pseudo-class/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": true
+      }
+    },
+    {
       "title": "Deprecation Reporting",
       "shortname": "deprecation-reporting",
       "date": "6 March 2020",
@@ -15379,6 +15425,11 @@
               "crawled": "https://w3c.github.io/battery/"
             },
             {
+              "url": "https://www.w3.org/TR/beacon/",
+              "title": "Beacon",
+              "crawled": "https://w3c.github.io/beacon/"
+            },
+            {
               "url": "https://www.w3.org/TR/clipboard-apis/",
               "title": "Clipboard API and events",
               "crawled": "https://w3c.github.io/clipboard-apis/"
@@ -15397,6 +15448,11 @@
               "url": "https://wicg.github.io/contact-api/spec/",
               "title": "Contact Picker API",
               "crawled": "https://wicg.github.io/contact-api/spec/"
+            },
+            {
+              "url": "https://wicg.github.io/content-index/spec/",
+              "title": "Content Index",
+              "crawled": "https://wicg.github.io/content-index/spec/"
             },
             {
               "url": "https://www.w3.org/TR/CSP3/",
@@ -15544,6 +15600,11 @@
               "crawled": "https://drafts.csswg.org/cssom-view/"
             },
             {
+              "url": "https://wicg.github.io/custom-state-pseudo-class/",
+              "title": "Custom State Pseudo Class",
+              "crawled": "https://wicg.github.io/custom-state-pseudo-class/"
+            },
+            {
               "url": "https://www.w3.org/TR/orientation-event/",
               "title": "DeviceOrientation Event Specification",
               "crawled": "https://w3c.github.io/deviceorientation/"
@@ -15552,6 +15613,11 @@
               "url": "https://www.w3.org/TR/DOM-Parsing/",
               "title": "DOM Parsing and Serialization",
               "crawled": "https://w3c.github.io/DOM-Parsing/"
+            },
+            {
+              "url": "https://wicg.github.io/is-input-pending/",
+              "title": "Early detection of input events",
+              "crawled": "https://wicg.github.io/is-input-pending/"
             },
             {
               "url": "https://wicg.github.io/element-timing/",
@@ -15814,6 +15880,11 @@
               "crawled": "https://w3c.github.io/resource-timing/"
             },
             {
+              "url": "https://wicg.github.io/savedata/",
+              "title": "Save Data API",
+              "crawled": "https://wicg.github.io/savedata/"
+            },
+            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/"
@@ -15849,7 +15920,7 @@
               "crawled": "https://wicg.github.io/serial/"
             },
             {
-              "url": "https://w3c.github.io/ServiceWorker/",
+              "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
             },
@@ -15994,6 +16065,11 @@
               "crawled": "https://gpuweb.github.io/gpuweb/"
             },
             {
+              "url": "https://wicg.github.io/webhid/",
+              "title": "WebHID API",
+              "crawled": "https://wicg.github.io/webhid/"
+            },
+            {
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/"
@@ -16041,12 +16117,12 @@
               "crawled": "https://w3c.github.io/accname/"
             },
             {
-              "url": "https://www.w3.org/TR/CSS2/",
+              "url": "https://www.w3.org/TR/CSS22/",
               "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
               "crawled": "https://drafts.csswg.org/css2/"
             },
             {
-              "url": "https://www.w3.org/TR/CSS22/",
+              "url": "https://www.w3.org/TR/CSS2/",
               "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
               "crawled": "https://drafts.csswg.org/css2/"
             },
@@ -16073,6 +16149,33 @@
           ]
         },
         "ok": false
+      }
+    },
+    {
+      "title": "Early detection of input events",
+      "shortname": "is-input-pending",
+      "date": "16 April 2020",
+      "url": "https://wicg.github.io/is-input-pending/",
+      "nightly": {
+        "url": "https://wicg.github.io/is-input-pending/"
+      },
+      "crawled": "https://wicg.github.io/is-input-pending/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": true
       }
     },
     {
@@ -16249,6 +16352,11 @@
               "crawled": "https://infra.spec.whatwg.org/"
             },
             {
+              "url": "https://wicg.github.io/webpackage/loading.html",
+              "title": "Loading Signed Exchanges",
+              "crawled": "https://wicg.github.io/webpackage/loading.html"
+            },
+            {
               "url": "https://mimesniff.spec.whatwg.org/",
               "title": "MIME Sniffing Standard",
               "crawled": "https://mimesniff.spec.whatwg.org/"
@@ -16274,7 +16382,7 @@
               "crawled": "https://w3c.github.io/push-api/"
             },
             {
-              "url": "https://w3c.github.io/ServiceWorker/",
+              "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
             },
@@ -16561,6 +16669,11 @@
               "crawled": "https://wicg.github.io/background-fetch/"
             },
             {
+              "url": "https://www.w3.org/TR/beacon/",
+              "title": "Beacon",
+              "crawled": "https://w3c.github.io/beacon/"
+            },
+            {
               "url": "https://www.w3.org/TR/clear-site-data/",
               "title": "Clear Site Data",
               "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
@@ -16574,6 +16687,11 @@
               "url": "https://wicg.github.io/construct-stylesheets/",
               "title": "Constructable Stylesheet Objects",
               "crawled": "https://wicg.github.io/construct-stylesheets/"
+            },
+            {
+              "url": "https://wicg.github.io/content-index/spec/",
+              "title": "Content Index",
+              "crawled": "https://wicg.github.io/content-index/spec/"
             },
             {
               "url": "https://www.w3.org/TR/CSP3/",
@@ -16659,6 +16777,16 @@
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/"
+            },
+            {
+              "url": "https://wicg.github.io/webpackage/loading.html",
+              "title": "Loading Signed Exchanges",
+              "crawled": "https://wicg.github.io/webpackage/loading.html"
+            },
+            {
+              "url": "https://wicg.github.io/media-feeds/",
+              "title": "Media Feeds",
+              "crawled": "https://wicg.github.io/media-feeds/"
             },
             {
               "url": "https://www.w3.org/TR/mediasession/",
@@ -16751,7 +16879,7 @@
               "crawled": "https://w3c.github.io/server-timing/"
             },
             {
-              "url": "https://w3c.github.io/ServiceWorker/",
+              "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
             },
@@ -16814,6 +16942,11 @@
               "url": "https://www.w3.org/TR/webdriver2/",
               "title": "WebDriver",
               "crawled": "https://w3c.github.io/webdriver/"
+            },
+            {
+              "url": "https://w3c.github.io/webdriver-bidi/",
+              "title": "WebDriver BiDi",
+              "crawled": "https://w3c.github.io/webdriver-bidi/"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -16982,6 +17115,11 @@
               "crawled": "https://w3c.github.io/IndexedDB/"
             },
             {
+              "url": "https://wicg.github.io/local-font-access/",
+              "title": "Local Font Access API",
+              "crawled": "https://wicg.github.io/local-font-access/"
+            },
+            {
               "url": "https://www.w3.org/TR/media-source/",
               "title": "Media Source Extensions™",
               "crawled": "https://w3c.github.io/media-source/"
@@ -17017,7 +17155,7 @@
               "crawled": "https://w3c.github.io/reporting/"
             },
             {
-              "url": "https://w3c.github.io/ServiceWorker/",
+              "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
             },
@@ -18225,6 +18363,11 @@
               "crawled": "https://w3c.github.io/battery/"
             },
             {
+              "url": "https://www.w3.org/TR/beacon/",
+              "title": "Beacon",
+              "crawled": "https://w3c.github.io/beacon/"
+            },
+            {
               "url": "https://www.w3.org/TR/clear-site-data/",
               "title": "Clear Site Data",
               "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
@@ -18263,6 +18406,11 @@
               "url": "https://wicg.github.io/contact-api/spec/",
               "title": "Contact Picker API",
               "crawled": "https://wicg.github.io/contact-api/spec/"
+            },
+            {
+              "url": "https://wicg.github.io/content-index/spec/",
+              "title": "Content Index",
+              "crawled": "https://wicg.github.io/content-index/spec/"
             },
             {
               "url": "https://www.w3.org/TR/CSP3/",
@@ -18310,14 +18458,14 @@
               "crawled": "https://drafts.csswg.org/css-backgrounds/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-sizing-3/",
@@ -18515,6 +18663,11 @@
               "crawled": "https://drafts.csswg.org/cssom-view/"
             },
             {
+              "url": "https://wicg.github.io/custom-state-pseudo-class/",
+              "title": "Custom State Pseudo Class",
+              "crawled": "https://wicg.github.io/custom-state-pseudo-class/"
+            },
+            {
               "url": "https://www.w3.org/TR/device-memory-1/",
               "title": "Device Memory 1",
               "crawled": "https://w3c.github.io/device-memory/"
@@ -18533,6 +18686,11 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/is-input-pending/",
+              "title": "Early detection of input events",
+              "crawled": "https://wicg.github.io/is-input-pending/"
             },
             {
               "url": "https://wicg.github.io/element-timing/",
@@ -18705,6 +18863,16 @@
               "crawled": "https://wicg.github.io/layout-instability/"
             },
             {
+              "url": "https://wicg.github.io/webpackage/loading.html",
+              "title": "Loading Signed Exchanges",
+              "crawled": "https://wicg.github.io/webpackage/loading.html"
+            },
+            {
+              "url": "https://wicg.github.io/local-font-access/",
+              "title": "Local Font Access API",
+              "crawled": "https://wicg.github.io/local-font-access/"
+            },
+            {
               "url": "https://www.w3.org/TR/longtasks-1/",
               "title": "Long Tasks API 1",
               "crawled": "https://w3c.github.io/longtasks/"
@@ -18733,6 +18901,11 @@
               "url": "https://www.w3.org/TR/mediacapture-fromelement/",
               "title": "Media Capture from DOM Elements",
               "crawled": "https://w3c.github.io/mediacapture-fromelement/"
+            },
+            {
+              "url": "https://wicg.github.io/media-feeds/",
+              "title": "Media Feeds",
+              "crawled": "https://wicg.github.io/media-feeds/"
             },
             {
               "url": "https://w3c.github.io/media-playback-quality/",
@@ -18798,6 +18971,11 @@
               "url": "https://wicg.github.io/sms-one-time-codes/",
               "title": "Origin-bound one-time codes delivered via SMS",
               "crawled": "https://wicg.github.io/sms-one-time-codes/"
+            },
+            {
+              "url": "https://wicg.github.io/overscroll-scrollend-events/",
+              "title": "overscroll and scrollend events",
+              "crawled": "https://wicg.github.io/overscroll-scrollend-events/"
             },
             {
               "url": "https://wicg.github.io/page-lifecycle/",
@@ -18940,6 +19118,11 @@
               "crawled": "https://w3c.github.io/resource-timing/"
             },
             {
+              "url": "https://wicg.github.io/savedata/",
+              "title": "Save Data API",
+              "crawled": "https://wicg.github.io/savedata/"
+            },
+            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/"
@@ -18985,7 +19168,7 @@
               "crawled": "https://w3c.github.io/server-timing/"
             },
             {
-              "url": "https://w3c.github.io/ServiceWorker/",
+              "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
             },
@@ -19185,6 +19368,11 @@
               "crawled": "https://gpuweb.github.io/gpuweb/"
             },
             {
+              "url": "https://wicg.github.io/webhid/",
+              "title": "WebHID API",
+              "crawled": "https://wicg.github.io/webhid/"
+            },
+            {
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/"
@@ -19257,17 +19445,17 @@
               "crawled": "https://w3c.github.io/webappsec-credential-management/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
-              "url": "https://drafts.csswg.org/css-sizing-4/",
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
@@ -19804,6 +19992,11 @@
               "crawled": "https://wicg.github.io/contact-api/spec/"
             },
             {
+              "url": "https://wicg.github.io/content-index/spec/",
+              "title": "Content Index",
+              "crawled": "https://wicg.github.io/content-index/spec/"
+            },
+            {
               "url": "https://www.w3.org/TR/CSP3/",
               "title": "Content Security Policy Level 3",
               "crawled": "https://w3c.github.io/webappsec-csp/"
@@ -19949,6 +20142,11 @@
               "crawled": "https://drafts.csswg.org/cssom-view/"
             },
             {
+              "url": "https://wicg.github.io/custom-state-pseudo-class/",
+              "title": "Custom State Pseudo Class",
+              "crawled": "https://wicg.github.io/custom-state-pseudo-class/"
+            },
+            {
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/"
@@ -20047,6 +20245,16 @@
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/"
+            },
+            {
+              "url": "https://wicg.github.io/webpackage/loading.html",
+              "title": "Loading Signed Exchanges",
+              "crawled": "https://wicg.github.io/webpackage/loading.html"
+            },
+            {
+              "url": "https://wicg.github.io/local-font-access/",
+              "title": "Local Font Access API",
+              "crawled": "https://wicg.github.io/local-font-access/"
             },
             {
               "url": "https://www.w3.org/TR/magnetometer/",
@@ -20174,7 +20382,7 @@
               "crawled": "https://drafts.csswg.org/selectors/"
             },
             {
-              "url": "https://w3c.github.io/ServiceWorker/",
+              "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
             },
@@ -20292,6 +20500,11 @@
               "url": "https://www.w3.org/TR/webdriver2/",
               "title": "WebDriver",
               "crawled": "https://w3c.github.io/webdriver/"
+            },
+            {
+              "url": "https://w3c.github.io/webdriver-bidi/",
+              "title": "WebDriver BiDi",
+              "crawled": "https://w3c.github.io/webdriver-bidi/"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -20749,6 +20962,97 @@
       }
     },
     {
+      "title": "Loading Signed Exchanges",
+      "shortname": "webpackage",
+      "date": "8 May 2020",
+      "url": "https://wicg.github.io/webpackage/loading.html",
+      "nightly": {
+        "url": "https://wicg.github.io/webpackage/loading.html"
+      },
+      "crawled": "https://wicg.github.io/webpackage/loading.html",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/ServiceWorker/",
+            "ref": {
+              "name": "SERVICE-WORKERS-1",
+              "url": "https://www.w3.org/TR/service-workers-1/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webappsec-secure-contexts/",
+            "ref": {
+              "name": "SECURE-CONTEXTS",
+              "url": "https://www.w3.org/TR/secure-contexts/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/network-error-logging/",
+            "ref": {
+              "name": "NETWORK-ERROR-LOGGING-1",
+              "url": "https://www.w3.org/TR/network-error-logging-1/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "Local Font Access API",
+      "shortname": "local-font-access",
+      "date": "9 June 2020",
+      "url": "https://wicg.github.io/local-font-access/",
+      "nightly": {
+        "url": "https://wicg.github.io/local-font-access/"
+      },
+      "crawled": "https://wicg.github.io/local-font-access/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/permissions/",
+            "ref": {
+              "name": "PERMISSIONS",
+              "url": "https://www.w3.org/TR/permissions/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/FileAPI/",
+            "ref": {
+              "name": "FileAPI",
+              "url": "https://www.w3.org/TR/FileAPI/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "Long Tasks API 1",
       "shortname": "longtasks-1",
       "date": "17 April 2020",
@@ -20876,6 +21180,35 @@
       }
     },
     {
+      "title": "MathML Accessiblity API Mappings 1.0",
+      "shortname": "mathml-aam",
+      "date": "10 June 2020",
+      "url": "https://w3c.github.io/mathml-aam/",
+      "nightly": {
+        "url": "https://w3c.github.io/mathml-aam/"
+      },
+      "crawled": "https://w3c.github.io/mathml-aam/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/aria/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "MathML Core",
       "shortname": "mathml-core",
       "date": "16 June 2020",
@@ -20897,7 +21230,13 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://w3c.github.io/mathml-aam/",
+              "title": "MathML Accessiblity API Mappings 1.0",
+              "crawled": "https://w3c.github.io/mathml-aam/"
+            }
+          ]
         },
         "ok": true
       }
@@ -21167,6 +21506,33 @@
       }
     },
     {
+      "title": "Media Feeds",
+      "shortname": "media-feeds",
+      "date": "10 June 2020",
+      "url": "https://wicg.github.io/media-feeds/",
+      "nightly": {
+        "url": "https://wicg.github.io/media-feeds/"
+      },
+      "crawled": "https://wicg.github.io/media-feeds/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": true
+      }
+    },
+    {
       "title": "Media Playback Quality",
       "shortname": "media-playback-quality",
       "date": "18 January 2020",
@@ -21232,12 +21598,12 @@
           "normative": [],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/CSS2/",
+              "url": "https://www.w3.org/TR/CSS22/",
               "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
               "crawled": "https://drafts.csswg.org/css2/"
             },
             {
-              "url": "https://www.w3.org/TR/CSS22/",
+              "url": "https://www.w3.org/TR/CSS2/",
               "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
               "crawled": "https://drafts.csswg.org/css2/"
             }
@@ -21826,6 +22192,11 @@
               "crawled": "https://w3c.github.io/image-resource/"
             },
             {
+              "url": "https://wicg.github.io/webpackage/loading.html",
+              "title": "Loading Signed Exchanges",
+              "crawled": "https://wicg.github.io/webpackage/loading.html"
+            },
+            {
               "url": "https://www.w3.org/TR/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/"
@@ -21856,7 +22227,7 @@
               "crawled": "https://w3c.github.io/preload/"
             },
             {
-              "url": "https://w3c.github.io/ServiceWorker/",
+              "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
             },
@@ -22225,7 +22596,13 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://wicg.github.io/webpackage/loading.html",
+              "title": "Loading Signed Exchanges",
+              "crawled": "https://wicg.github.io/webpackage/loading.html"
+            }
+          ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/reporting-1/",
@@ -22261,7 +22638,13 @@
         ],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://wicg.github.io/savedata/",
+              "title": "Save Data API",
+              "crawled": "https://wicg.github.io/savedata/"
+            }
+          ],
           "informative": []
         },
         "ok": false
@@ -22485,6 +22868,36 @@
       }
     },
     {
+      "title": "overscroll and scrollend events",
+      "shortname": "overscroll-scrollend-events",
+      "date": "15 April 2020",
+      "url": "https://wicg.github.io/overscroll-scrollend-events/",
+      "nightly": {
+        "url": "https://wicg.github.io/overscroll-scrollend-events/"
+      },
+      "crawled": "https://wicg.github.io/overscroll-scrollend-events/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://dom.spec.whatwg.org/",
+          "https://www.w3.org/TR/cssom-view/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "Page Lifecycle",
       "shortname": "page-lifecycle",
       "date": "9 September 2019",
@@ -22547,6 +22960,16 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/beacon/",
+              "title": "Beacon",
+              "crawled": "https://w3c.github.io/beacon/"
+            },
+            {
+              "url": "https://wicg.github.io/content-index/spec/",
+              "title": "Content Index",
+              "crawled": "https://wicg.github.io/content-index/spec/"
+            },
+            {
               "url": "https://www.w3.org/TR/requestidlecallback/",
               "title": "Cooperative Scheduling of Background Tasks",
               "crawled": "https://w3c.github.io/requestidlecallback/"
@@ -22577,7 +23000,7 @@
               "crawled": "https://w3c.github.io/screen-wake-lock/"
             },
             {
-              "url": "https://w3c.github.io/ServiceWorker/",
+              "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
             },
@@ -22712,58 +23135,7 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "ServiceWorkerRegistration",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ServiceWorkerGlobalScope",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ExtendableEvent",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ExtendableEventInit",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "WindowClient",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          }
-        ],
+        "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -22776,7 +23148,7 @@
             }
           ]
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -23181,6 +23553,11 @@
               "crawled": "https://w3c.github.io/gyroscope/"
             },
             {
+              "url": "https://wicg.github.io/local-font-access/",
+              "title": "Local Font Access API",
+              "crawled": "https://wicg.github.io/local-font-access/"
+            },
+            {
               "url": "https://www.w3.org/TR/magnetometer/",
               "title": "Magnetometer",
               "crawled": "https://w3c.github.io/magnetometer/"
@@ -23339,19 +23716,9 @@
               "crawled": "https://w3c.github.io/sensors/"
             },
             {
-              "url": "https://www.w3.org/TR/geolocation-API/",
-              "title": "Geolocation API Specification",
-              "crawled": "https://w3c.github.io/geolocation-api/"
-            },
-            {
               "url": "https://wicg.github.io/js-self-profiling/",
               "title": "JS Self-Profiling API",
               "crawled": "https://wicg.github.io/js-self-profiling/"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-streams/",
-              "title": "Media Capture and Streams",
-              "crawled": "https://w3c.github.io/mediacapture-main/"
             },
             {
               "url": "https://wicg.github.io/origin-policy/",
@@ -23364,11 +23731,6 @@
               "crawled": "https://wicg.github.io/page-lifecycle/"
             },
             {
-              "url": "https://www.w3.org/TR/payment-request/",
-              "title": "Payment Request API",
-              "crawled": "https://w3c.github.io/payment-request/"
-            },
-            {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/"
@@ -23377,11 +23739,6 @@
               "url": "https://www.w3.org/TR/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://w3c.github.io/picture-in-picture/"
-            },
-            {
-              "url": "https://www.w3.org/TR/wake-lock/",
-              "title": "Screen Wake Lock API",
-              "crawled": "https://w3c.github.io/screen-wake-lock/"
             },
             {
               "url": "https://www.w3.org/TR/webauthn-2/",
@@ -23394,6 +23751,11 @@
               "crawled": "https://webaudio.github.io/web-midi-api/"
             },
             {
+              "url": "https://wicg.github.io/webhid/",
+              "title": "WebHID API",
+              "crawled": "https://wicg.github.io/webhid/"
+            },
+            {
               "url": "https://www.w3.org/TR/webxr/",
               "title": "WebXR Device API",
               "crawled": "https://immersive-web.github.io/webxr/"
@@ -23404,7 +23766,23 @@
               "crawled": "https://xhr.spec.whatwg.org/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/geolocation-API/",
+              "title": "Geolocation API Specification",
+              "crawled": "https://w3c.github.io/geolocation-api/"
+            },
+            {
+              "url": "https://www.w3.org/TR/payment-request/",
+              "title": "Payment Request API",
+              "crawled": "https://w3c.github.io/payment-request/"
+            },
+            {
+              "url": "https://www.w3.org/TR/wake-lock/",
+              "title": "Screen Wake Lock API",
+              "crawled": "https://w3c.github.io/screen-wake-lock/"
+            }
+          ]
         },
         "ok": false
       }
@@ -23412,7 +23790,7 @@
     {
       "title": "Picture-in-Picture",
       "shortname": "picture-in-picture",
-      "date": "16 June 2020",
+      "date": "17 June 2020",
       "url": "https://www.w3.org/TR/picture-in-picture/",
       "release": {
         "url": "https://www.w3.org/TR/picture-in-picture/"
@@ -23495,6 +23873,11 @@
               "crawled": "https://compat.spec.whatwg.org/"
             },
             {
+              "url": "https://wicg.github.io/is-input-pending/",
+              "title": "Early detection of input events",
+              "crawled": "https://wicg.github.io/is-input-pending/"
+            },
+            {
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
@@ -23573,7 +23956,7 @@
     {
       "title": "Portals",
       "shortname": "portals",
-      "date": "16 June 2020",
+      "date": "17 June 2020",
       "url": "https://wicg.github.io/portals/",
       "nightly": {
         "url": "https://wicg.github.io/portals/"
@@ -23600,27 +23983,21 @@
             ]
           }
         ],
-        "missingWebIdlRef": [
-          {
-            "name": "ServiceWorker",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          }
-        ],
-        "missingLinkRef": [
-          "https://w3c.github.io/ServiceWorker/"
-        ],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
         "inconsistentRef": [
           {
             "link": "https://w3c.github.io/webappsec-referrer-policy/",
             "ref": {
               "name": "REFERRER-POLICY",
               "url": "https://www.w3.org/TR/referrer-policy/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/ServiceWorker/",
+            "ref": {
+              "name": "SERVICE-WORKERS-1",
+              "url": "https://www.w3.org/TR/service-workers-1/"
             }
           },
           {
@@ -23880,48 +24257,7 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "ServiceWorkerRegistration",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ServiceWorkerGlobalScope",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ExtendableEvent",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ExtendableEventInit",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          }
-        ],
+        "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -23934,7 +24270,7 @@
             }
           ]
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -24048,7 +24384,7 @@
               "crawled": "https://svgwg.org/svg2-draft/"
             },
             {
-              "url": "https://w3c.github.io/ServiceWorker/",
+              "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
             }
@@ -24467,6 +24803,35 @@
       }
     },
     {
+      "title": "Save Data API",
+      "shortname": "savedata",
+      "date": "06 September 2019",
+      "url": "https://wicg.github.io/savedata/",
+      "nightly": {
+        "url": "https://wicg.github.io/savedata/"
+      },
+      "crawled": "https://wicg.github.io/savedata/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/netinfo/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "Scalable Vector Graphics (SVG) 2",
       "shortname": "SVG2",
       "date": "26 May 2020",
@@ -24711,14 +25076,14 @@
               "crawled": "https://drafts.fxtf.org/compositing-2/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-box-3/",
@@ -24928,12 +25293,12 @@
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/CSS2/",
+              "url": "https://www.w3.org/TR/CSS22/",
               "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
               "crawled": "https://drafts.csswg.org/css2/"
             },
             {
-              "url": "https://www.w3.org/TR/CSS22/",
+              "url": "https://www.w3.org/TR/CSS2/",
               "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
               "crawled": "https://drafts.csswg.org/css2/"
             },
@@ -25241,9 +25606,19 @@
               "crawled": "https://wicg.github.io/keyboard-map/"
             },
             {
+              "url": "https://wicg.github.io/webpackage/loading.html",
+              "title": "Loading Signed Exchanges",
+              "crawled": "https://wicg.github.io/webpackage/loading.html"
+            },
+            {
               "url": "https://www.w3.org/TR/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/"
+            },
+            {
+              "url": "https://wicg.github.io/media-feeds/",
+              "title": "Media Feeds",
+              "crawled": "https://wicg.github.io/media-feeds/"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -25291,7 +25666,7 @@
               "crawled": "https://w3c.github.io/server-timing/"
             },
             {
-              "url": "https://w3c.github.io/ServiceWorker/",
+              "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
             },
@@ -25356,6 +25731,11 @@
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/"
+            },
+            {
+              "url": "https://www.w3.org/TR/picture-in-picture/",
+              "title": "Picture-in-Picture",
+              "crawled": "https://w3c.github.io/picture-in-picture/"
             },
             {
               "url": "https://www.w3.org/TR/remote-playback/",
@@ -25524,14 +25904,14 @@
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-inline-3/",
@@ -25705,6 +26085,11 @@
               "crawled": "https://drafts.csswg.org/css-values-4/"
             },
             {
+              "url": "https://wicg.github.io/custom-state-pseudo-class/",
+              "title": "Custom State Pseudo Class",
+              "crawled": "https://wicg.github.io/custom-state-pseudo-class/"
+            },
+            {
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/"
@@ -25757,14 +26142,14 @@
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-4/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
             },
             {
               "url": "https://www.w3.org/TR/css-images-3/",
@@ -25840,9 +26225,12 @@
     },
     {
       "title": "Service Workers Nightly",
-      "shortname": "service-workers",
+      "shortname": "service-workers-1",
       "date": "7 April 2020",
-      "url": "https://w3c.github.io/ServiceWorker/",
+      "url": "https://www.w3.org/TR/service-workers-1/",
+      "release": {
+        "url": "https://www.w3.org/TR/service-workers-1/"
+      },
       "nightly": {
         "url": "https://w3c.github.io/ServiceWorker/"
       },
@@ -25894,6 +26282,36 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://wicg.github.io/background-fetch/",
+              "title": "Background Fetch",
+              "crawled": "https://wicg.github.io/background-fetch/"
+            },
+            {
+              "url": "https://w3c.github.io/badging/",
+              "title": "Badging API",
+              "crawled": "https://w3c.github.io/badging/"
+            },
+            {
+              "url": "https://www.w3.org/TR/clear-site-data/",
+              "title": "Clear Site Data",
+              "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
+            },
+            {
+              "url": "https://wicg.github.io/content-index/spec/",
+              "title": "Content Index",
+              "crawled": "https://wicg.github.io/content-index/spec/"
+            },
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://w3c.github.io/webappsec-csp/"
+            },
+            {
+              "url": "https://wicg.github.io/cookie-store/",
+              "title": "Cookie Store API",
+              "crawled": "https://wicg.github.io/cookie-store/"
+            },
+            {
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/"
@@ -25909,6 +26327,11 @@
               "crawled": "https://html.spec.whatwg.org/multipage/"
             },
             {
+              "url": "https://www.w3.org/TR/navigation-timing-2/",
+              "title": "Navigation Timing Level 2",
+              "crawled": "https://w3c.github.io/navigation-timing/"
+            },
+            {
               "url": "https://notifications.spec.whatwg.org/",
               "title": "Notifications API Standard",
               "crawled": "https://notifications.spec.whatwg.org/"
@@ -25922,13 +26345,68 @@
               "url": "https://wicg.github.io/page-lifecycle/",
               "title": "Page Lifecycle",
               "crawled": "https://wicg.github.io/page-lifecycle/"
-            }
-          ],
-          "informative": [
+            },
+            {
+              "url": "https://www.w3.org/TR/payment-handler/",
+              "title": "Payment Handler API",
+              "crawled": "https://w3c.github.io/payment-handler/"
+            },
+            {
+              "url": "https://wicg.github.io/portals/",
+              "title": "Portals",
+              "crawled": "https://wicg.github.io/portals/"
+            },
+            {
+              "url": "https://www.w3.org/TR/presentation-api/",
+              "title": "Presentation API",
+              "crawled": "https://w3c.github.io/presentation-api/"
+            },
+            {
+              "url": "https://www.w3.org/TR/push-api/",
+              "title": "Push API",
+              "crawled": "https://w3c.github.io/push-api/"
+            },
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
               "crawled": "https://w3c.github.io/resource-timing/"
+            },
+            {
+              "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
+              "title": "Trusted Types",
+              "crawled": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
+            },
+            {
+              "url": "https://wicg.github.io/background-sync/spec/",
+              "title": "Web Background Synchronization",
+              "crawled": "https://wicg.github.io/background-sync/spec/"
+            },
+            {
+              "url": "https://wicg.github.io/periodic-background-sync/",
+              "title": "Web Periodic Background Synchronization",
+              "crawled": "https://wicg.github.io/periodic-background-sync/"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/beacon/",
+              "title": "Beacon",
+              "crawled": "https://w3c.github.io/beacon/"
+            },
+            {
+              "url": "https://wicg.github.io/webpackage/loading.html",
+              "title": "Loading Signed Exchanges",
+              "crawled": "https://wicg.github.io/webpackage/loading.html"
+            },
+            {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 2",
+              "crawled": "https://w3c.github.io/resource-timing/"
+            },
+            {
+              "url": "https://www.w3.org/TR/secure-contexts/",
+              "title": "Secure Contexts",
+              "crawled": "https://w3c.github.io/webappsec-secure-contexts/"
             },
             {
               "url": "https://streams.spec.whatwg.org/",
@@ -25936,9 +26414,24 @@
               "crawled": "https://streams.spec.whatwg.org/"
             },
             {
+              "url": "https://www.w3.org/TR/appmanifest/",
+              "title": "Web App Manifest",
+              "crawled": "https://w3c.github.io/manifest/"
+            },
+            {
               "url": "https://www.w3.org/TR/WebIDL-1/",
               "title": "Web IDL",
               "crawled": "https://heycam.github.io/webidl/"
+            },
+            {
+              "url": "https://wicg.github.io/web-locks/",
+              "title": "Web Locks API",
+              "crawled": "https://wicg.github.io/web-locks/"
+            },
+            {
+              "url": "https://w3c.github.io/web-share-target/",
+              "title": "Web Share Target API",
+              "crawled": "https://w3c.github.io/web-share-target/"
             }
           ]
         },
@@ -26047,6 +26540,11 @@
               "crawled": "https://w3c.github.io/FileAPI/"
             },
             {
+              "url": "https://wicg.github.io/webpackage/loading.html",
+              "title": "Loading Signed Exchanges",
+              "crawled": "https://wicg.github.io/webpackage/loading.html"
+            },
+            {
               "url": "https://wicg.github.io/native-file-system/",
               "title": "Native File System",
               "crawled": "https://wicg.github.io/native-file-system/"
@@ -26057,7 +26555,7 @@
               "crawled": "https://wicg.github.io/serial/"
             },
             {
-              "url": "https://w3c.github.io/ServiceWorker/",
+              "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
             },
@@ -26673,6 +27171,11 @@
               "crawled": "https://dom.spec.whatwg.org/"
             },
             {
+              "url": "https://wicg.github.io/is-input-pending/",
+              "title": "Early detection of input events",
+              "crawled": "https://wicg.github.io/is-input-pending/"
+            },
+            {
               "url": "https://wicg.github.io/event-timing/",
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/"
@@ -26750,7 +27253,6 @@
           "https://mimesniff.spec.whatwg.org/",
           "https://xhr.spec.whatwg.org/",
           "https://encoding.spec.whatwg.org/",
-          "https://w3c.github.io/ServiceWorker/",
           "https://w3c.github.io/webcomponents/spec/imports/"
         ],
         "inconsistentRef": [
@@ -26773,6 +27275,13 @@
             "ref": {
               "name": "DOM-Parsing",
               "url": "https://www.w3.org/TR/DOM-Parsing/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/ServiceWorker/",
+            "ref": {
+              "name": "SERVICE-WORKERS-1",
+              "url": "https://www.w3.org/TR/service-workers-1/"
             }
           },
           {
@@ -26842,6 +27351,11 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/is-input-pending/",
+              "title": "Early detection of input events",
+              "crawled": "https://wicg.github.io/is-input-pending/"
             },
             {
               "url": "https://wicg.github.io/event-timing/",
@@ -27134,9 +27648,19 @@
               "crawled": "https://wicg.github.io/background-fetch/"
             },
             {
+              "url": "https://www.w3.org/TR/beacon/",
+              "title": "Beacon",
+              "crawled": "https://w3c.github.io/beacon/"
+            },
+            {
               "url": "https://www.w3.org/TR/clear-site-data/",
               "title": "Clear Site Data",
               "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
+            },
+            {
+              "url": "https://wicg.github.io/content-index/spec/",
+              "title": "Content Index",
+              "crawled": "https://wicg.github.io/content-index/spec/"
             },
             {
               "url": "https://www.w3.org/TR/CSP3/",
@@ -27222,6 +27746,16 @@
               "url": "https://wicg.github.io/import-maps/",
               "title": "Import Maps",
               "crawled": "https://wicg.github.io/import-maps/"
+            },
+            {
+              "url": "https://wicg.github.io/webpackage/loading.html",
+              "title": "Loading Signed Exchanges",
+              "crawled": "https://wicg.github.io/webpackage/loading.html"
+            },
+            {
+              "url": "https://wicg.github.io/media-feeds/",
+              "title": "Media Feeds",
+              "crawled": "https://wicg.github.io/media-feeds/"
             },
             {
               "url": "https://www.w3.org/TR/mediasession/",
@@ -27329,7 +27863,7 @@
               "crawled": "https://drafts.csswg.org/selectors/"
             },
             {
-              "url": "https://w3c.github.io/ServiceWorker/",
+              "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
             },
@@ -27970,54 +28504,20 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "ServiceWorkerRegistration",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ServiceWorkerGlobalScope",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ExtendableEvent",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ExtendableEventInit",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          }
-        ],
+        "missingWebIdlRef": [],
         "missingLinkRef": [
           "https://w3c.github.io/webappsec/specs/powerfulfeatures/",
-          "https://notifications.spec.whatwg.org/",
-          "https://w3c.github.io/ServiceWorker/"
+          "https://notifications.spec.whatwg.org/"
         ],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/ServiceWorker/",
+            "ref": {
+              "name": "SERVICE-WORKERS-1",
+              "url": "https://www.w3.org/TR/service-workers-1/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": [
@@ -28223,6 +28723,11 @@
               "crawled": "https://w3c.github.io/battery/"
             },
             {
+              "url": "https://www.w3.org/TR/beacon/",
+              "title": "Beacon",
+              "crawled": "https://w3c.github.io/beacon/"
+            },
+            {
               "url": "https://www.w3.org/TR/clipboard-apis/",
               "title": "Clipboard API and events",
               "crawled": "https://w3c.github.io/clipboard-apis/"
@@ -28251,6 +28756,11 @@
               "url": "https://wicg.github.io/contact-api/spec/",
               "title": "Contact Picker API",
               "crawled": "https://wicg.github.io/contact-api/spec/"
+            },
+            {
+              "url": "https://wicg.github.io/content-index/spec/",
+              "title": "Content Index",
+              "crawled": "https://wicg.github.io/content-index/spec/"
             },
             {
               "url": "https://www.w3.org/TR/CSP3/",
@@ -28408,6 +28918,11 @@
               "crawled": "https://drafts.csswg.org/cssom-view/"
             },
             {
+              "url": "https://wicg.github.io/custom-state-pseudo-class/",
+              "title": "Custom State Pseudo Class",
+              "crawled": "https://wicg.github.io/custom-state-pseudo-class/"
+            },
+            {
               "url": "https://wicg.github.io/deprecation-reporting/",
               "title": "Deprecation Reporting",
               "crawled": "https://wicg.github.io/deprecation-reporting/"
@@ -28431,6 +28946,11 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/is-input-pending/",
+              "title": "Early detection of input events",
+              "crawled": "https://wicg.github.io/is-input-pending/"
             },
             {
               "url": "https://wicg.github.io/element-timing/",
@@ -28621,6 +29141,16 @@
               "url": "https://wicg.github.io/layout-instability/",
               "title": "Layout Instability API",
               "crawled": "https://wicg.github.io/layout-instability/"
+            },
+            {
+              "url": "https://wicg.github.io/webpackage/loading.html",
+              "title": "Loading Signed Exchanges",
+              "crawled": "https://wicg.github.io/webpackage/loading.html"
+            },
+            {
+              "url": "https://wicg.github.io/local-font-access/",
+              "title": "Local Font Access API",
+              "crawled": "https://wicg.github.io/local-font-access/"
             },
             {
               "url": "https://www.w3.org/TR/longtasks-1/",
@@ -28838,6 +29368,11 @@
               "crawled": "https://w3c.github.io/resource-timing/"
             },
             {
+              "url": "https://wicg.github.io/savedata/",
+              "title": "Save Data API",
+              "crawled": "https://wicg.github.io/savedata/"
+            },
+            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/"
@@ -28883,7 +29418,7 @@
               "crawled": "https://w3c.github.io/server-timing/"
             },
             {
-              "url": "https://w3c.github.io/ServiceWorker/",
+              "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
             },
@@ -29068,6 +29603,11 @@
               "crawled": "https://gpuweb.github.io/gpuweb/"
             },
             {
+              "url": "https://wicg.github.io/webhid/",
+              "title": "WebHID API",
+              "crawled": "https://wicg.github.io/webhid/"
+            },
+            {
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/"
@@ -29138,6 +29678,11 @@
               "url": "https://www.w3.org/TR/webrtc-identity/",
               "title": "Identity for WebRTC 1.0",
               "crawled": "https://w3c.github.io/webrtc-identity/identity.html"
+            },
+            {
+              "url": "https://wicg.github.io/overscroll-scrollend-events/",
+              "title": "overscroll and scrollend events",
+              "crawled": "https://wicg.github.io/overscroll-scrollend-events/"
             }
           ]
         },
@@ -29163,7 +29708,6 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://w3c.github.io/ServiceWorker/",
           "https://www.w3.org/TR/security-privacy-questionnaire/"
         ],
         "inconsistentRef": [
@@ -29172,6 +29716,13 @@
             "ref": {
               "name": "IndexedDB-2",
               "url": "https://www.w3.org/TR/IndexedDB-2/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/ServiceWorker/",
+            "ref": {
+              "name": "Service-Workers",
+              "url": "https://www.w3.org/TR/service-workers-1/"
             }
           }
         ],
@@ -29303,57 +29854,21 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "ServiceWorkerGlobalScope",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ServiceWorkerRegistration",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ExtendableEventInit",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          },
-          {
-            "name": "ExtendableEvent",
-            "refs": [
-              {
-                "url": "https://w3c.github.io/ServiceWorker/",
-                "title": "Service Workers Nightly",
-                "crawled": "https://w3c.github.io/ServiceWorker/"
-              }
-            ]
-          }
-        ],
-        "missingLinkRef": [
-          "https://w3c.github.io/ServiceWorker/"
-        ],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
         "inconsistentRef": [
           {
             "link": "https://w3c.github.io/webappsec-secure-contexts/",
             "ref": {
               "name": "SECURE-CONTEXTS",
               "url": "https://www.w3.org/TR/secure-contexts/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/ServiceWorker/",
+            "ref": {
+              "name": "SERVICE-WORKERS-1",
+              "url": "https://www.w3.org/TR/service-workers-1/"
             }
           },
           {
@@ -29645,11 +30160,43 @@
               "url": "https://www.w3.org/TR/generic-sensor/",
               "title": "Generic Sensor API",
               "crawled": "https://w3c.github.io/sensors/"
+            },
+            {
+              "url": "https://w3c.github.io/webdriver-bidi/",
+              "title": "WebDriver BiDi",
+              "crawled": "https://w3c.github.io/webdriver-bidi/"
             }
           ],
           "informative": []
         },
         "ok": false
+      }
+    },
+    {
+      "title": "WebDriver BiDi",
+      "shortname": "webdriver-bidi",
+      "date": "11 June 2020",
+      "url": "https://w3c.github.io/webdriver-bidi/",
+      "nightly": {
+        "url": "https://w3c.github.io/webdriver-bidi/"
+      },
+      "crawled": "https://w3c.github.io/webdriver-bidi/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": true
       }
     },
     {
@@ -29763,7 +30310,7 @@
     {
       "title": "WebGPU",
       "shortname": "gpuweb",
-      "date": "15 June 2020",
+      "date": "17 June 2020",
       "url": "https://gpuweb.github.io/gpuweb/",
       "nightly": {
         "url": "https://gpuweb.github.io/gpuweb/"
@@ -29792,6 +30339,33 @@
           "informative": []
         },
         "ok": false
+      }
+    },
+    {
+      "title": "WebHID API",
+      "shortname": "webhid",
+      "date": "3 May 2019",
+      "url": "https://wicg.github.io/webhid/",
+      "nightly": {
+        "url": "https://wicg.github.io/webhid/"
+      },
+      "crawled": "https://wicg.github.io/webhid/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": true
       }
     },
     {
@@ -30016,7 +30590,7 @@
     {
       "title": "WebUSB API",
       "shortname": "webusb",
-      "date": "16 June 2020",
+      "date": "17 June 2020",
       "url": "https://wicg.github.io/webusb/",
       "nightly": {
         "url": "https://wicg.github.io/webusb/"
@@ -30466,7 +31040,13 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://wicg.github.io/local-font-access/",
+              "title": "Local Font Access API",
+              "crawled": "https://wicg.github.io/local-font-access/"
+            }
+          ]
         },
         "ok": true
       }

@@ -1,0 +1,344 @@
+{
+  "spec": {
+    "title": "Early detection of input events",
+    "url": "https://wicg.github.io/is-input-pending/"
+  },
+  "dfns": [
+    {
+      "id": "dom-isinputpendingoptionsinit",
+      "href": "https://wicg.github.io/is-input-pending/#dom-isinputpendingoptionsinit",
+      "linkingText": [
+        "IsInputPendingOptionsInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-isinputpendingoptionsinit-includecontinuous",
+      "href": "https://wicg.github.io/is-input-pending/#dom-isinputpendingoptionsinit-includecontinuous",
+      "linkingText": [
+        "includeContinuous"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IsInputPendingOptionsInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-isinputpendingoptions",
+      "href": "https://wicg.github.io/is-input-pending/#dom-isinputpendingoptions",
+      "linkingText": [
+        "IsInputPendingOptions"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-isinputpendingoptions-constructor",
+      "href": "https://wicg.github.io/is-input-pending/#dom-isinputpendingoptions-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(, isInputPendingOptionsInit)"
+      ],
+      "localLinkingText": [
+        "IsInputPendingOptions.constructor",
+        "IsInputPendingOptions.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "IsInputPendingOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-isinputpendingoptions-includecontinuous",
+      "href": "https://wicg.github.io/is-input-pending/#dom-isinputpendingoptions-includecontinuous",
+      "linkingText": [
+        "includeContinuous"
+      ],
+      "localLinkingText": [
+        "IsInputPendingOptions.includeContinuous"
+      ],
+      "type": "attribute",
+      "for": [
+        "IsInputPendingOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scheduling",
+      "href": "https://wicg.github.io/is-input-pending/#dom-scheduling",
+      "linkingText": [
+        "Scheduling"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-scheduling-isinputpending",
+      "href": "https://wicg.github.io/is-input-pending/#dom-scheduling-isinputpending",
+      "linkingText": [
+        "isInputPending()",
+        "isInputPending(, isInputPendingOptions)"
+      ],
+      "localLinkingText": [
+        "Scheduling.isInputPending",
+        "Scheduling.isInputPending()",
+        "isInputPending"
+      ],
+      "type": "method",
+      "for": [
+        "Scheduling"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-surrounding-agent",
+      "href": "https://wicg.github.io/is-input-pending/#dfn-surrounding-agent",
+      "linkingText": [
+        "surrounding agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-loop",
+      "href": "https://wicg.github.io/is-input-pending/#dfn-event-loop",
+      "linkingText": [
+        "event loop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-task-queues",
+      "href": "https://wicg.github.io/is-input-pending/#dfn-task-queues",
+      "linkingText": [
+        "task queues"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-task",
+      "href": "https://wicg.github.io/is-input-pending/#dfn-task",
+      "linkingText": [
+        "task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-dispatch",
+      "href": "https://wicg.github.io/is-input-pending/#dfn-dispatch",
+      "linkingText": [
+        "dispatch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-uievent",
+      "href": "https://wicg.github.io/is-input-pending/#dfn-uievent",
+      "linkingText": [
+        "UIEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-touchevent",
+      "href": "https://wicg.github.io/is-input-pending/#dfn-touchevent",
+      "linkingText": [
+        "TouchEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-browsing-context",
+      "href": "https://wicg.github.io/is-input-pending/#dfn-browsing-context",
+      "linkingText": [
+        "browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-window",
+      "href": "https://wicg.github.io/is-input-pending/#dom-window",
+      "linkingText": [
+        "Window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-window-scheduling",
+      "href": "https://wicg.github.io/is-input-pending/#dom-window-scheduling",
+      "linkingText": [
+        "scheduling"
+      ],
+      "localLinkingText": [
+        "Window.scheduling"
+      ],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-continuous-event",
+      "href": "https://wicg.github.io/is-input-pending/#dfn-continuous-event",
+      "linkingText": [
+        "continuous event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-trusted-event",
+      "href": "https://wicg.github.io/is-input-pending/#dfn-trusted-event",
+      "linkingText": [
+        "trusted event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-mousemove",
+      "href": "https://wicg.github.io/is-input-pending/#dfn-mousemove",
+      "linkingText": [
+        "mousemove"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-wheel",
+      "href": "https://wicg.github.io/is-input-pending/#dfn-wheel",
+      "linkingText": [
+        "wheel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-touchmove",
+      "href": "https://wicg.github.io/is-input-pending/#dfn-touchmove",
+      "linkingText": [
+        "touchmove"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-drag",
+      "href": "https://wicg.github.io/is-input-pending/#dfn-drag",
+      "linkingText": [
+        "drag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointermove",
+      "href": "https://wicg.github.io/is-input-pending/#dfn-pointermove",
+      "linkingText": [
+        "pointermove"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pointerrawupdate",
+      "href": "https://wicg.github.io/is-input-pending/#dfn-pointerrawupdate",
+      "linkingText": [
+        "pointerrawupdate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-continuous-event-task",
+      "href": "https://wicg.github.io/is-input-pending/#dfn-continuous-event-task",
+      "linkingText": [
+        "continuous event task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}
