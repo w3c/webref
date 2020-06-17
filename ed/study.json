@@ -2,13 +2,54 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-06-17T06:36:43.925Z",
+  "date": "2020-06-17T12:36:57.845Z",
   "stats": {
-    "crawled": 301,
-    "errors": 0,
-    "studied": 301
+    "crawled": 318,
+    "errors": 1,
+    "studied": 318
   },
   "results": [
+    {
+      "title": "A Well-Known URL for Changing Passwords",
+      "shortname": "change-password-url",
+      "date": "12 June 2020",
+      "url": "https://wicg.github.io/change-password-url/",
+      "nightly": {
+        "url": "https://wicg.github.io/change-password-url/"
+      },
+      "crawled": "https://wicg.github.io/change-password-url/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webappsec-secure-contexts/",
+            "ref": {
+              "name": "SECURE-CONTEXTS",
+              "url": "https://www.w3.org/TR/secure-contexts/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://wicg.github.io/change-password-url/",
+              "title": "A Well-Known URL for Changing Passwords",
+              "crawled": "https://wicg.github.io/change-password-url/"
+            }
+          ],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
     {
       "title": "Accelerated Shape Detection in Images",
       "shortname": "shape-detection-api",
@@ -365,6 +406,48 @@
       }
     },
     {
+      "title": "ARIA in HTML",
+      "shortname": "html-aria",
+      "date": "20 May 2020",
+      "url": "https://www.w3.org/TR/html-aria/",
+      "release": {
+        "url": "https://www.w3.org/TR/html-aria/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/html-aria/"
+      },
+      "crawled": "https://w3c.github.io/html-aria/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://html.spec.whatwg.org/multipage/",
+              "title": "HTML Standard",
+              "crawled": "https://html.spec.whatwg.org/multipage/"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/wai-aria-1.2/",
+              "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
+              "crawled": "https://w3c.github.io/aria/"
+            }
+          ]
+        },
+        "ok": true
+      }
+    },
+    {
       "title": "Audio Output Devices API",
       "shortname": "audio-output",
       "date": "15 June 2020",
@@ -580,7 +663,7 @@
     {
       "title": "Beacon",
       "shortname": "beacon",
-      "date": "30 January 2020",
+      "date": "",
       "url": "https://www.w3.org/TR/beacon/",
       "release": {
         "url": "https://www.w3.org/TR/beacon/"
@@ -590,10 +673,10 @@
       },
       "crawled": "https://w3c.github.io/beacon/",
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Failed to launch the browser process!\nInconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!\n\n\nTROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md\n Error: Failed to launch the browser process!\nInconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!\n\n\nTROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/launcher/BrowserRunner.js:159:20)\n    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/launcher/BrowserRunner.js:150:76)\n    at ChildProcess.emit (events.js:203:15)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -615,70 +698,6 @@
               "crawled": "https://w3c.github.io/webappsec-csp/"
             }
           ]
-        },
-        "ok": true
-      }
-    },
-    {
-      "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
-      "shortname": "CSS22",
-      "date": "03 May 2020",
-      "url": "https://www.w3.org/TR/CSS22/",
-      "release": {
-        "url": "https://www.w3.org/TR/CSS22/"
-      },
-      "nightly": {
-        "url": "https://drafts.csswg.org/css2/"
-      },
-      "crawled": "https://drafts.csswg.org/css2/",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownExposedNames": [],
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/css3-color/",
-            "ref": {
-              "name": "CSS3COLOR",
-              "url": "https://www.w3.org/TR/2010/PR-css3-color-20101028/"
-            }
-          }
-        ],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://compat.spec.whatwg.org/",
-              "title": "Compatibility Standard",
-              "crawled": "https://compat.spec.whatwg.org/"
-            },
-            {
-              "url": "https://fullscreen.spec.whatwg.org/",
-              "title": "Fullscreen API Standard",
-              "crawled": "https://fullscreen.spec.whatwg.org/"
-            },
-            {
-              "url": "https://html.spec.whatwg.org/multipage/",
-              "title": "HTML Standard",
-              "crawled": "https://html.spec.whatwg.org/multipage/"
-            },
-            {
-              "url": "https://quirks.spec.whatwg.org/",
-              "title": "Quirks Mode Standard",
-              "crawled": "https://quirks.spec.whatwg.org/"
-            },
-            {
-              "url": "https://www.w3.org/TR/webvtt1/",
-              "title": "WebVTT: The Web Video Text Tracks Format",
-              "crawled": "https://w3c.github.io/webvtt/"
-            }
-          ],
-          "informative": []
         },
         "ok": false
       }
@@ -749,17 +768,17 @@
             {
               "url": "https://drafts.csswg.org/css-backgrounds-4/",
               "title": "CSS Backgrounds and Borders Module Level 4",
-              "crawled": "https://drafts.csswg.org/css4-background/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
+              "crawled": "https://drafts.csswg.org/css-backgrounds-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -1234,12 +1253,12 @@
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/CSS22/",
+              "url": "https://www.w3.org/TR/CSS2/",
               "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
               "crawled": "https://drafts.csswg.org/css2/"
             },
             {
-              "url": "https://www.w3.org/TR/CSS2/",
+              "url": "https://www.w3.org/TR/CSS22/",
               "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
               "crawled": "https://drafts.csswg.org/css2/"
             },
@@ -1259,6 +1278,70 @@
               "crawled": "https://w3c.github.io/uievents/"
             }
           ]
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
+      "shortname": "CSS22",
+      "date": "03 May 2020",
+      "url": "https://www.w3.org/TR/CSS22/",
+      "release": {
+        "url": "https://www.w3.org/TR/CSS22/"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css2/"
+      },
+      "crawled": "https://drafts.csswg.org/css2/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css3-color/",
+            "ref": {
+              "name": "CSS3COLOR",
+              "url": "https://www.w3.org/TR/2010/PR-css3-color-20101028/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://compat.spec.whatwg.org/",
+              "title": "Compatibility Standard",
+              "crawled": "https://compat.spec.whatwg.org/"
+            },
+            {
+              "url": "https://fullscreen.spec.whatwg.org/",
+              "title": "Fullscreen API Standard",
+              "crawled": "https://fullscreen.spec.whatwg.org/"
+            },
+            {
+              "url": "https://html.spec.whatwg.org/multipage/",
+              "title": "HTML Standard",
+              "crawled": "https://html.spec.whatwg.org/multipage/"
+            },
+            {
+              "url": "https://quirks.spec.whatwg.org/",
+              "title": "Quirks Mode Standard",
+              "crawled": "https://quirks.spec.whatwg.org/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webvtt1/",
+              "title": "WebVTT: The Web Video Text Tracks Format",
+              "crawled": "https://w3c.github.io/webvtt/"
+            }
+          ],
+          "informative": []
         },
         "ok": false
       }
@@ -2151,6 +2234,11 @@
               "url": "https://www.w3.org/TR/wai-aria-1.2/",
               "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
               "crawled": "https://w3c.github.io/aria/"
+            },
+            {
+              "url": "https://www.w3.org/TR/html-aam-1.0/",
+              "title": "HTML Accessibility API Mappings 1.0",
+              "crawled": "https://w3c.github.io/html-aam/"
             }
           ],
           "informative": []
@@ -2194,6 +2282,41 @@
             "ref": {
               "name": "CSP3",
               "url": "https://www.w3.org/TR/CSP3/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "Crash Reporting",
+      "shortname": "crash-reporting",
+      "date": "6 March 2020",
+      "url": "https://wicg.github.io/crash-reporting/",
+      "nightly": {
+        "url": "https://wicg.github.io/crash-reporting/"
+      },
+      "crawled": "https://wicg.github.io/crash-reporting/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/reporting/",
+            "ref": {
+              "name": "REPORTING",
+              "url": "https://www.w3.org/TR/reporting-1/"
             }
           }
         ],
@@ -2251,6 +2374,11 @@
               "url": "https://www.w3.org/TR/webauthn-2/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
               "crawled": "https://w3c.github.io/webauthn/"
+            },
+            {
+              "url": "https://wicg.github.io/web-otp/",
+              "title": "Web OTP API",
+              "crawled": "https://wicg.github.io/web-otp/"
             }
           ],
           "informative": [
@@ -2565,17 +2693,17 @@
             {
               "url": "https://drafts.csswg.org/css-backgrounds-4/",
               "title": "CSS Backgrounds and Borders Module Level 4",
-              "crawled": "https://drafts.csswg.org/css4-background/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
+              "crawled": "https://drafts.csswg.org/css-backgrounds-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-box-3/",
@@ -2885,9 +3013,9 @@
       "date": "10 March 2020",
       "url": "https://drafts.csswg.org/css-backgrounds-4/",
       "nightly": {
-        "url": "https://drafts.csswg.org/css4-background/"
+        "url": "https://drafts.csswg.org/css-backgrounds-4/"
       },
-      "crawled": "https://drafts.csswg.org/css4-background/",
+      "crawled": "https://drafts.csswg.org/css-backgrounds-4/",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
@@ -2915,6 +3043,111 @@
             }
           ],
           "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "CSS Basic User Interface Module Level 4",
+      "shortname": "css-ui-3",
+      "date": "25 January 2020",
+      "url": "https://www.w3.org/TR/css-ui-3/",
+      "release": {
+        "url": "https://www.w3.org/TR/css-ui-3/"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-ui/"
+      },
+      "crawled": "https://drafts.csswg.org/css-ui/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/2000/WD-css3-userint-20000216",
+          "https://www.w3.org/TR/css-cascade/",
+          "https://www.w3.org/TR/css-pseudo/",
+          "https://www.w3.org/TR/web-animations/",
+          "https://www.w3.org/TR/css-style-attr/",
+          "https://w3c.github.io/contentEditable/",
+          "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/",
+          "https://www.w3.org/TR/2017/WD-css-ui-4-20171222/",
+          "https://www.w3.org/TR/2015/WD-css-ui-4-20150922/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/css-ui-3/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
+            },
+            {
+              "url": "https://html.spec.whatwg.org/multipage/",
+              "title": "HTML Standard",
+              "crawled": "https://html.spec.whatwg.org/multipage/"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://svgwg.org/svg2-draft/"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-sizing-3/",
+              "title": "CSS Box Sizing Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-sizing-3/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-contain-2/",
+              "title": "CSS Containment Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-contain-2/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-contain-1/",
+              "title": "CSS Containment Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-contain/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://drafts.csswg.org/css-flexbox-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-overflow-3/",
+              "title": "CSS Overflow Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-overflow-3/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-overflow-4/",
+              "title": "CSS Overflow Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-overflow-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/selectors-4/",
+              "title": "Selectors Level 4",
+              "crawled": "https://drafts.csswg.org/selectors/"
+            }
+          ]
         },
         "ok": false
       }
@@ -3040,111 +3273,6 @@
               "url": "https://www.w3.org/TR/css-contain-1/",
               "title": "CSS Containment Module Level 2",
               "crawled": "https://drafts.csswg.org/css-contain/"
-            }
-          ]
-        },
-        "ok": false
-      }
-    },
-    {
-      "title": "CSS Basic User Interface Module Level 4",
-      "shortname": "css-ui-3",
-      "date": "25 January 2020",
-      "url": "https://www.w3.org/TR/css-ui-3/",
-      "release": {
-        "url": "https://www.w3.org/TR/css-ui-3/"
-      },
-      "nightly": {
-        "url": "https://drafts.csswg.org/css-ui/"
-      },
-      "crawled": "https://drafts.csswg.org/css-ui/",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownExposedNames": [],
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/2000/WD-css3-userint-20000216",
-          "https://www.w3.org/TR/css-cascade/",
-          "https://www.w3.org/TR/css-pseudo/",
-          "https://www.w3.org/TR/web-animations/",
-          "https://www.w3.org/TR/css-style-attr/",
-          "https://w3c.github.io/contentEditable/",
-          "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/",
-          "https://www.w3.org/TR/2017/WD-css-ui-4-20171222/",
-          "https://www.w3.org/TR/2015/WD-css-ui-4-20150922/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/css-values/",
-            "ref": {
-              "name": "CSS-VALUES-3",
-              "url": "https://www.w3.org/TR/css-values-3/"
-            }
-          }
-        ],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-ui-3/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui/"
-            },
-            {
-              "url": "https://html.spec.whatwg.org/multipage/",
-              "title": "HTML Standard",
-              "crawled": "https://html.spec.whatwg.org/multipage/"
-            },
-            {
-              "url": "https://www.w3.org/TR/SVG2/",
-              "title": "Scalable Vector Graphics (SVG) 2",
-              "crawled": "https://svgwg.org/svg2-draft/"
-            }
-          ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/css-sizing-3/",
-              "title": "CSS Box Sizing Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-sizing-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-contain-2/",
-              "title": "CSS Containment Module Level 2",
-              "crawled": "https://drafts.csswg.org/css-contain-2/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-contain-1/",
-              "title": "CSS Containment Module Level 2",
-              "crawled": "https://drafts.csswg.org/css-contain/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-flexbox-1/",
-              "title": "CSS Flexible Box Layout Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-flexbox-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-overflow-3/",
-              "title": "CSS Overflow Module Level 3",
-              "crawled": "https://drafts.csswg.org/css-overflow-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-overflow-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/selectors-4/",
-              "title": "Selectors Level 4",
-              "crawled": "https://drafts.csswg.org/selectors/"
             }
           ]
         },
@@ -3473,14 +3601,14 @@
               "crawled": "https://drafts.csswg.org/css-backgrounds/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -3714,14 +3842,14 @@
               "crawled": "https://compat.spec.whatwg.org/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -4039,6 +4167,11 @@
               "url": "https://www.w3.org/TR/css-syntax-3/",
               "title": "CSS Syntax Module Level 3",
               "crawled": "https://drafts.csswg.org/css-syntax/"
+            },
+            {
+              "url": "https://www.w3.org/TR/svg-aam-1.0/",
+              "title": "SVG Accessibility API Mappings",
+              "crawled": "https://w3c.github.io/svg-aam/"
             }
           ]
         },
@@ -4117,14 +4250,14 @@
               "crawled": "https://drafts.csswg.org/css-animations-2/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -4598,17 +4731,17 @@
             {
               "url": "https://drafts.csswg.org/css-backgrounds-4/",
               "title": "CSS Backgrounds and Borders Module Level 4",
-              "crawled": "https://drafts.csswg.org/css4-background/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
+              "crawled": "https://drafts.csswg.org/css-backgrounds-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-color-5/",
@@ -4814,14 +4947,14 @@
               "crawled": "https://drafts.csswg.org/css-backgrounds/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-color-adjust-1/",
@@ -5264,14 +5397,14 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://drafts.csswg.org/css-sizing-4/",
@@ -5770,14 +5903,14 @@
               "crawled": "https://drafts.csswg.org/css-animations/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -6161,7 +6294,7 @@
             {
               "url": "https://drafts.csswg.org/css-backgrounds-4/",
               "title": "CSS Backgrounds and Borders Module Level 4",
-              "crawled": "https://drafts.csswg.org/css4-background/"
+              "crawled": "https://drafts.csswg.org/css-backgrounds-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-transitions-1/",
@@ -7810,7 +7943,7 @@
             {
               "url": "https://drafts.csswg.org/css-backgrounds-4/",
               "title": "CSS Backgrounds and Borders Module Level 4",
-              "crawled": "https://drafts.csswg.org/css4-background/"
+              "crawled": "https://drafts.csswg.org/css-backgrounds-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -8011,14 +8144,14 @@
               "crawled": "https://drafts.csswg.org/css-backgrounds/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://drafts.csswg.org/css-sizing-4/",
@@ -8226,14 +8359,14 @@
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             }
           ]
         },
@@ -9532,14 +9665,14 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -9803,14 +9936,14 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-regions-1/",
@@ -10019,14 +10152,14 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-sizing-3/",
@@ -10255,14 +10388,14 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -10519,14 +10652,14 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-box-3/",
@@ -11428,7 +11561,7 @@
             {
               "url": "https://drafts.csswg.org/css-backgrounds-4/",
               "title": "CSS Backgrounds and Borders Module Level 4",
-              "crawled": "https://drafts.csswg.org/css4-background/"
+              "crawled": "https://drafts.csswg.org/css-backgrounds-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-typed-om-1/",
@@ -12513,7 +12646,7 @@
             {
               "url": "https://drafts.csswg.org/css-backgrounds-4/",
               "title": "CSS Backgrounds and Borders Module Level 4",
-              "crawled": "https://drafts.csswg.org/css4-background/"
+              "crawled": "https://drafts.csswg.org/css-backgrounds-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -12631,14 +12764,14 @@
               "crawled": "https://compat.spec.whatwg.org/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-box-3/",
@@ -13210,14 +13343,14 @@
               "crawled": "https://drafts.csswg.org/css-backgrounds/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -13760,17 +13893,17 @@
             {
               "url": "https://drafts.csswg.org/css-backgrounds-4/",
               "title": "CSS Backgrounds and Borders Module Level 4",
-              "crawled": "https://drafts.csswg.org/css4-background/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
+              "crawled": "https://drafts.csswg.org/css-backgrounds-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -14353,14 +14486,14 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -14563,14 +14696,14 @@
               "crawled": "https://drafts.csswg.org/css-animations-2/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-align-3/",
@@ -14994,6 +15127,43 @@
       }
     },
     {
+      "title": "Deprecation Reporting",
+      "shortname": "deprecation-reporting",
+      "date": "6 March 2020",
+      "url": "https://wicg.github.io/deprecation-reporting/",
+      "nightly": {
+        "url": "https://wicg.github.io/deprecation-reporting/"
+      },
+      "crawled": "https://wicg.github.io/deprecation-reporting/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [
+          "Date"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/reporting/",
+            "ref": {
+              "name": "REPORTING-1",
+              "url": "https://www.w3.org/TR/reporting-1/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "Device Memory 1",
       "shortname": "device-memory-1",
       "date": "14 April 2020",
@@ -15207,11 +15377,6 @@
               "url": "https://www.w3.org/TR/battery-status/",
               "title": "Battery Status API",
               "crawled": "https://w3c.github.io/battery/"
-            },
-            {
-              "url": "https://www.w3.org/TR/beacon/",
-              "title": "Beacon",
-              "crawled": "https://w3c.github.io/beacon/"
             },
             {
               "url": "https://www.w3.org/TR/clipboard-apis/",
@@ -15609,6 +15774,11 @@
               "crawled": "https://w3c.github.io/presentation-api/"
             },
             {
+              "url": "https://privacycg.github.io/private-click-measurement/",
+              "title": "Private Click Measurement",
+              "crawled": "https://privacycg.github.io/private-click-measurement/"
+            },
+            {
               "url": "https://www.w3.org/TR/push-api/",
               "title": "Push API",
               "crawled": "https://w3c.github.io/push-api/"
@@ -15689,6 +15859,11 @@
               "crawled": "https://streams.spec.whatwg.org/"
             },
             {
+              "url": "https://www.w3.org/TR/svg-aam-1.0/",
+              "title": "SVG Accessibility API Mappings",
+              "crawled": "https://w3c.github.io/svg-aam/"
+            },
+            {
               "url": "https://svgwg.org/specs/animations/",
               "title": "SVG Animations",
               "crawled": "https://svgwg.org/specs/animations/"
@@ -15702,6 +15877,11 @@
               "url": "https://www.w3.org/TR/screen-orientation/",
               "title": "The Screen Orientation API",
               "crawled": "https://w3c.github.io/screen-orientation/"
+            },
+            {
+              "url": "https://privacycg.github.io/storage-access/",
+              "title": "The Storage Access API",
+              "crawled": "https://privacycg.github.io/storage-access/"
             },
             {
               "url": "https://www.w3.org/TR/touch-events/",
@@ -15784,6 +15964,11 @@
               "crawled": "https://w3c.github.io/web-nfc/"
             },
             {
+              "url": "https://wicg.github.io/web-otp/",
+              "title": "Web OTP API",
+              "crawled": "https://wicg.github.io/web-otp/"
+            },
+            {
               "url": "https://wicg.github.io/periodic-background-sync/",
               "title": "Web Periodic Background Synchronization",
               "crawled": "https://wicg.github.io/periodic-background-sync/"
@@ -15834,6 +16019,16 @@
               "crawled": "https://immersive-web.github.io/webxr/"
             },
             {
+              "url": "https://immersive-web.github.io/dom-overlays/",
+              "title": "WebXR DOM Overlays Module",
+              "crawled": "https://immersive-web.github.io/dom-overlays/"
+            },
+            {
+              "url": "https://immersive-web.github.io/layers/",
+              "title": "WebXR Layers API Level 1",
+              "crawled": "https://immersive-web.github.io/layers/"
+            },
+            {
               "url": "https://xhr.spec.whatwg.org/",
               "title": "XMLHttpRequest Standard",
               "crawled": "https://xhr.spec.whatwg.org/"
@@ -15846,12 +16041,12 @@
               "crawled": "https://w3c.github.io/accname/"
             },
             {
-              "url": "https://www.w3.org/TR/CSS22/",
+              "url": "https://www.w3.org/TR/CSS2/",
               "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
               "crawled": "https://drafts.csswg.org/css2/"
             },
             {
-              "url": "https://www.w3.org/TR/CSS2/",
+              "url": "https://www.w3.org/TR/CSS22/",
               "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
               "crawled": "https://drafts.csswg.org/css2/"
             },
@@ -16356,14 +16551,14 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://wicg.github.io/change-password-url/",
+              "title": "A Well-Known URL for Changing Passwords",
+              "crawled": "https://wicg.github.io/change-password-url/"
+            },
+            {
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
-            },
-            {
-              "url": "https://www.w3.org/TR/beacon/",
-              "title": "Beacon",
-              "crawled": "https://w3c.github.io/beacon/"
             },
             {
               "url": "https://www.w3.org/TR/clear-site-data/",
@@ -16599,6 +16794,11 @@
               "url": "https://www.w3.org/TR/webauthn-2/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
               "crawled": "https://w3c.github.io/webauthn/"
+            },
+            {
+              "url": "https://wicg.github.io/web-otp/",
+              "title": "Web OTP API",
+              "crawled": "https://wicg.github.io/web-otp/"
             },
             {
               "url": "https://w3c.github.io/web-share-target/",
@@ -16972,6 +17172,11 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
+            },
+            {
+              "url": "https://immersive-web.github.io/dom-overlays/",
+              "title": "WebXR DOM Overlays Module",
+              "crawled": "https://immersive-web.github.io/dom-overlays/"
             }
           ],
           "informative": []
@@ -17091,6 +17296,11 @@
               "url": "https://www.w3.org/TR/webdriver2/",
               "title": "WebDriver",
               "crawled": "https://w3c.github.io/webdriver/"
+            },
+            {
+              "url": "https://immersive-web.github.io/dom-overlays/",
+              "title": "WebXR DOM Overlays Module",
+              "crawled": "https://immersive-web.github.io/dom-overlays/"
             }
           ],
           "informative": [
@@ -17498,6 +17708,11 @@
               "url": "https://immersive-web.github.io/hit-test/",
               "title": "WebXR Hit Test Module",
               "crawled": "https://immersive-web.github.io/hit-test/"
+            },
+            {
+              "url": "https://immersive-web.github.io/layers/",
+              "title": "WebXR Layers API Level 1",
+              "crawled": "https://immersive-web.github.io/layers/"
             }
           ],
           "informative": []
@@ -17530,6 +17745,55 @@
           "informative": []
         },
         "ok": true
+      }
+    },
+    {
+      "title": "Graphics Accessibility API Mappings",
+      "shortname": "graphics-aam-1.0",
+      "date": "10 June 2020",
+      "url": "https://www.w3.org/TR/graphics-aam-1.0/",
+      "release": {
+        "url": "https://www.w3.org/TR/graphics-aam-1.0/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/graphics-aam/"
+      },
+      "crawled": "https://w3c.github.io/graphics-aam/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/core-aam/",
+          "https://w3c.github.io/aria/",
+          "https://www.w3.org/TR/accname-aam-1.1/",
+          "https://www.w3.org/TR/wai-aria-practices/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/graphics-aria/",
+            "ref": {
+              "name": "GRAPHICS-ARIA-1.0",
+              "url": "https://www.w3.org/TR/graphics-aria-1.0/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/svg-aam-1.0/",
+              "title": "SVG Accessibility API Mappings",
+              "crawled": "https://w3c.github.io/svg-aam/"
+            }
+          ],
+          "informative": []
+        },
+        "ok": false
       }
     },
     {
@@ -17773,6 +18037,69 @@
       }
     },
     {
+      "title": "HTML Accessibility API Mappings 1.0",
+      "shortname": "html-aam-1.0",
+      "date": "01 June 2020",
+      "url": "https://www.w3.org/TR/html-aam-1.0/",
+      "release": {
+        "url": "https://www.w3.org/TR/html-aam-1.0/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/html-aam/"
+      },
+      "crawled": "https://w3c.github.io/html-aam/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/aria/",
+          "https://www.w3.org/TR/core-aam-1.1/",
+          "https://www.w3.org/TR/graphics-aam-1.0/",
+          "https://w3c.github.io/accname/",
+          "https://www.w3.org/TR/html4/present/",
+          "https://w3c.github.io/html/interactive-elements.html",
+          "https://dom.spec.whatwg.org/",
+          "https://w3c.github.io/aria/core-aam/core-aam.html"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/html/",
+            "ref": {
+              "name": "HTML",
+              "url": "https://html.spec.whatwg.org/multipage/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/html-aria/",
+              "title": "ARIA in HTML",
+              "crawled": "https://w3c.github.io/html-aria/"
+            },
+            {
+              "url": "https://html.spec.whatwg.org/multipage/",
+              "title": "HTML Standard",
+              "crawled": "https://html.spec.whatwg.org/multipage/"
+            },
+            {
+              "url": "https://www.w3.org/TR/svg-aam-1.0/",
+              "title": "SVG Accessibility API Mappings",
+              "crawled": "https://w3c.github.io/svg-aam/"
+            }
+          ],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "HTML Media Capture",
       "shortname": "html-media-capture",
       "date": "01 February 2018",
@@ -17853,6 +18180,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://wicg.github.io/change-password-url/",
+              "title": "A Well-Known URL for Changing Passwords",
+              "crawled": "https://wicg.github.io/change-password-url/"
+            },
+            {
               "url": "https://wicg.github.io/shape-detection-api/",
               "title": "Accelerated Shape Detection in Images",
               "crawled": "https://wicg.github.io/shape-detection-api/"
@@ -17866,6 +18198,11 @@
               "url": "https://www.w3.org/TR/wai-aria-1.2/",
               "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
               "crawled": "https://w3c.github.io/aria/"
+            },
+            {
+              "url": "https://www.w3.org/TR/html-aria/",
+              "title": "ARIA in HTML",
+              "crawled": "https://w3c.github.io/html-aria/"
             },
             {
               "url": "https://www.w3.org/TR/audio-output/",
@@ -17886,11 +18223,6 @@
               "url": "https://www.w3.org/TR/battery-status/",
               "title": "Battery Status API",
               "crawled": "https://w3c.github.io/battery/"
-            },
-            {
-              "url": "https://www.w3.org/TR/beacon/",
-              "title": "Beacon",
-              "crawled": "https://w3c.github.io/beacon/"
             },
             {
               "url": "https://www.w3.org/TR/clear-site-data/",
@@ -17978,14 +18310,14 @@
               "crawled": "https://drafts.csswg.org/css-backgrounds/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-sizing-3/",
@@ -18293,6 +18625,11 @@
               "crawled": "https://w3c.github.io/hr-time/"
             },
             {
+              "url": "https://www.w3.org/TR/html-aam-1.0/",
+              "title": "HTML Accessibility API Mappings 1.0",
+              "crawled": "https://w3c.github.io/html-aam/"
+            },
+            {
               "url": "https://www.w3.org/TR/html-media-capture/",
               "title": "HTML Media Capture",
               "crawled": "https://w3c.github.io/html-media-capture/"
@@ -18301,6 +18638,11 @@
               "url": "https://wicg.github.io/video-rvfc/",
               "title": "HTMLVideoElement.requestVideoFrameCallback()",
               "crawled": "https://wicg.github.io/video-rvfc/"
+            },
+            {
+              "url": "https://w3c.github.io/webrtc-ice/",
+              "title": "IceTransport Extensions for WebRTC",
+              "crawled": "https://w3c.github.io/webrtc-ice/"
             },
             {
               "url": "https://www.w3.org/TR/webrtc-identity/",
@@ -18543,6 +18885,11 @@
               "crawled": "https://wicg.github.io/priority-hints/"
             },
             {
+              "url": "https://privacycg.github.io/private-click-measurement/",
+              "title": "Private Click Measurement",
+              "crawled": "https://privacycg.github.io/private-click-measurement/"
+            },
+            {
               "url": "https://www.w3.org/TR/push-api/",
               "title": "Push API",
               "crawled": "https://w3c.github.io/push-api/"
@@ -18673,6 +19020,11 @@
               "crawled": "https://w3c.github.io/screen-orientation/"
             },
             {
+              "url": "https://privacycg.github.io/storage-access/",
+              "title": "The Storage Access API",
+              "crawled": "https://privacycg.github.io/storage-access/"
+            },
+            {
               "url": "https://www.w3.org/TR/touch-events/",
               "title": "Touch Events - Level 2",
               "crawled": "https://w3c.github.io/touch-events/"
@@ -18706,6 +19058,11 @@
               "url": "https://www.w3.org/TR/user-timing-3/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
+            },
+            {
+              "url": "https://wicg.github.io/ua-client-hints/",
+              "title": "User-Agent Client Hints",
+              "crawled": "https://wicg.github.io/ua-client-hints/"
             },
             {
               "url": "https://www.w3.org/TR/vibration/",
@@ -18771,6 +19128,11 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC",
               "crawled": "https://w3c.github.io/web-nfc/"
+            },
+            {
+              "url": "https://wicg.github.io/web-otp/",
+              "title": "Web OTP API",
+              "crawled": "https://wicg.github.io/web-otp/"
             },
             {
               "url": "https://wicg.github.io/periodic-background-sync/",
@@ -18853,6 +19215,16 @@
               "crawled": "https://immersive-web.github.io/webxr/"
             },
             {
+              "url": "https://immersive-web.github.io/dom-overlays/",
+              "title": "WebXR DOM Overlays Module",
+              "crawled": "https://immersive-web.github.io/dom-overlays/"
+            },
+            {
+              "url": "https://immersive-web.github.io/layers/",
+              "title": "WebXR Layers API Level 1",
+              "crawled": "https://immersive-web.github.io/layers/"
+            },
+            {
               "url": "https://www.w3.org/TR/worklets-1/",
               "title": "Worklets Level 1",
               "crawled": "https://drafts.css-houdini.org/worklets/"
@@ -18885,14 +19257,14 @@
               "crawled": "https://w3c.github.io/webappsec-credential-management/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://drafts.csswg.org/css-sizing-4/",
@@ -18965,6 +19337,16 @@
               "crawled": "https://w3c.github.io/FileAPI/"
             },
             {
+              "url": "https://www.w3.org/TR/graphics-aam-1.0/",
+              "title": "Graphics Accessibility API Mappings",
+              "crawled": "https://w3c.github.io/graphics-aam/"
+            },
+            {
+              "url": "https://www.w3.org/TR/html-aam-1.0/",
+              "title": "HTML Accessibility API Mappings 1.0",
+              "crawled": "https://w3c.github.io/html-aam/"
+            },
+            {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
               "title": "Indexed Database API 3.0",
               "crawled": "https://w3c.github.io/IndexedDB/"
@@ -19020,6 +19402,11 @@
               "crawled": "https://w3c.github.io/webappsec-upgrade-insecure-requests/"
             },
             {
+              "url": "https://www.w3.org/TR/graphics-aria-1.0/",
+              "title": "WAI-ARIA Graphics Module",
+              "crawled": "https://w3c.github.io/graphics-aria/"
+            },
+            {
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/"
@@ -19057,6 +19444,44 @@
             }
           }
         ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "IceTransport Extensions for WebRTC",
+      "shortname": "webrtc-ice",
+      "date": "30 January 2020",
+      "url": "https://w3c.github.io/webrtc-ice/",
+      "nightly": {
+        "url": "https://w3c.github.io/webrtc-ice/"
+      },
+      "crawled": "https://w3c.github.io/webrtc-ice/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "RTCIceParameters",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/webrtc/",
+                "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+                "crawled": "https://w3c.github.io/webrtc-pc/"
+              }
+            ]
+          }
+        ],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -19338,6 +19763,11 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://wicg.github.io/change-password-url/",
+              "title": "A Well-Known URL for Changing Passwords",
+              "crawled": "https://wicg.github.io/change-password-url/"
+            },
             {
               "url": "https://www.w3.org/TR/accelerometer/",
               "title": "Accelerometer",
@@ -19709,6 +20139,11 @@
               "crawled": "https://wicg.github.io/portals/"
             },
             {
+              "url": "https://privacycg.github.io/private-click-measurement/",
+              "title": "Private Click Measurement",
+              "crawled": "https://privacycg.github.io/private-click-measurement/"
+            },
+            {
               "url": "https://www.w3.org/TR/proximity/",
               "title": "Proximity Sensor",
               "crawled": "https://w3c.github.io/proximity/"
@@ -19769,6 +20204,11 @@
               "crawled": "https://w3c.github.io/screen-orientation/"
             },
             {
+              "url": "https://privacycg.github.io/storage-access/",
+              "title": "The Storage Access API",
+              "crawled": "https://privacycg.github.io/storage-access/"
+            },
+            {
               "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
               "title": "Trusted Types",
               "crawled": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
@@ -19787,6 +20227,11 @@
               "url": "https://www.w3.org/TR/user-timing-3/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
+            },
+            {
+              "url": "https://wicg.github.io/ua-client-hints/",
+              "title": "User-Agent Client Hints",
+              "crawled": "https://wicg.github.io/ua-client-hints/"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -20031,6 +20476,41 @@
               "crawled": "https://html.spec.whatwg.org/multipage/"
             }
           ],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "Intervention Reporting",
+      "shortname": "intervention-reporting",
+      "date": "6 March 2020",
+      "url": "https://wicg.github.io/intervention-reporting/",
+      "nightly": {
+        "url": "https://wicg.github.io/intervention-reporting/"
+      },
+      "crawled": "https://wicg.github.io/intervention-reporting/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/reporting/",
+            "ref": {
+              "name": "REPORTING-1",
+              "url": "https://www.w3.org/TR/reporting-1/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
           "informative": []
         },
         "ok": false
@@ -20752,12 +21232,12 @@
           "normative": [],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/CSS22/",
+              "url": "https://www.w3.org/TR/CSS2/",
               "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
               "crawled": "https://drafts.csswg.org/css2/"
             },
             {
-              "url": "https://www.w3.org/TR/CSS2/",
+              "url": "https://www.w3.org/TR/CSS22/",
               "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
               "crawled": "https://drafts.csswg.org/css2/"
             }
@@ -21993,7 +22473,13 @@
         ],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://wicg.github.io/web-otp/",
+              "title": "Web OTP API",
+              "crawled": "https://wicg.github.io/web-otp/"
+            }
+          ]
         },
         "ok": false
       }
@@ -22060,11 +22546,6 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://www.w3.org/TR/beacon/",
-              "title": "Beacon",
-              "crawled": "https://w3c.github.io/beacon/"
-            },
             {
               "url": "https://www.w3.org/TR/requestidlecallback/",
               "title": "Cooperative Scheduling of Background Tasks",
@@ -22750,6 +23231,16 @@
               "crawled": "https://storage.spec.whatwg.org/"
             },
             {
+              "url": "https://privacycg.github.io/storage-access/",
+              "title": "The Storage Access API",
+              "crawled": "https://privacycg.github.io/storage-access/"
+            },
+            {
+              "url": "https://wicg.github.io/ua-client-hints/",
+              "title": "User-Agent Client Hints",
+              "crawled": "https://wicg.github.io/ua-client-hints/"
+            },
+            {
               "url": "https://webbluetoothcg.github.io/web-bluetooth/",
               "title": "Web Bluetooth",
               "crawled": "https://webbluetoothcg.github.io/web-bluetooth/"
@@ -23280,6 +23771,33 @@
       }
     },
     {
+      "title": "Private Click Measurement",
+      "shortname": "private-click-measurement",
+      "date": "8 June 2020",
+      "url": "https://privacycg.github.io/private-click-measurement/",
+      "nightly": {
+        "url": "https://privacycg.github.io/private-click-measurement/"
+      },
+      "crawled": "https://privacycg.github.io/private-click-measurement/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": true
+      }
+    },
+    {
       "title": "Proposals for the future of CSS Paged Media",
       "shortname": "css-page-4",
       "date": "7 March 2013",
@@ -23665,6 +24183,21 @@
               "crawled": "https://w3c.github.io/webappsec-csp/"
             },
             {
+              "url": "https://wicg.github.io/crash-reporting/",
+              "title": "Crash Reporting",
+              "crawled": "https://wicg.github.io/crash-reporting/"
+            },
+            {
+              "url": "https://wicg.github.io/deprecation-reporting/",
+              "title": "Deprecation Reporting",
+              "crawled": "https://wicg.github.io/deprecation-reporting/"
+            },
+            {
+              "url": "https://wicg.github.io/intervention-reporting/",
+              "title": "Intervention Reporting",
+              "crawled": "https://wicg.github.io/intervention-reporting/"
+            },
+            {
               "url": "https://www.w3.org/TR/network-error-logging-1/",
               "title": "Network Error Logging",
               "crawled": "https://w3c.github.io/network-error-logging/"
@@ -23736,7 +24269,13 @@
               "crawled": "https://immersive-web.github.io/webxr/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://immersive-web.github.io/layers/",
+              "title": "WebXR Layers API Level 1",
+              "crawled": "https://immersive-web.github.io/layers/"
+            }
+          ]
         },
         "ok": false
       }
@@ -23966,7 +24505,6 @@
           "https://www.w3.org/TR/css3-background/",
           "https://www.w3.org/TR/css-cascade-3/",
           "https://www.w3.org/TR/wai-aria/",
-          "https://w3c.github.io/svg-aam/",
           "https://w3c.github.io/selection-api/",
           "https://www.w3.org/TR/css3-mediaqueries/",
           "https://www.w3.org/TR/2013/REC-css-style-attr-20131107/",
@@ -23986,7 +24524,6 @@
           "https://www.w3.org/TR/cssom/",
           "https://www.w3.org/TR/core-aam-1.1/",
           "https://www.w3.org/TR/accname-aam-1.1/",
-          "https://w3c.github.io/graphics-aria/",
           "https://www.w3.org/TR/smil/",
           "https://w3c.github.io/web-animations/",
           "https://www.w3.org/TR/security-privacy-questionnaire/",
@@ -24079,6 +24616,13 @@
             }
           },
           {
+            "link": "https://w3c.github.io/svg-aam/",
+            "ref": {
+              "name": "svg-aam-1.0",
+              "url": "https://www.w3.org/TR/svg-aam-1.0/"
+            }
+          },
+          {
             "link": "https://www.w3.org/TR/2014/WD-dom-20140204/",
             "ref": {
               "name": "dom",
@@ -24111,6 +24655,13 @@
             "ref": {
               "name": "clipboard-apis",
               "url": "https://www.w3.org/TR/clipboard-apis/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/graphics-aria/",
+            "ref": {
+              "name": "graphics-aria-1.0",
+              "url": "https://www.w3.org/TR/graphics-aria-1.0/"
             }
           },
           {
@@ -24160,14 +24711,14 @@
               "crawled": "https://drafts.fxtf.org/compositing-2/"
             },
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-box-3/",
@@ -24325,6 +24876,11 @@
               "crawled": "https://w3c.github.io/resource-timing/"
             },
             {
+              "url": "https://www.w3.org/TR/svg-aam-1.0/",
+              "title": "SVG Accessibility API Mappings",
+              "crawled": "https://w3c.github.io/svg-aam/"
+            },
+            {
               "url": "https://svgwg.org/specs/animations/",
               "title": "SVG Animations",
               "crawled": "https://svgwg.org/specs/animations/"
@@ -24363,16 +24919,21 @@
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
+              "url": "https://immersive-web.github.io/dom-overlays/",
+              "title": "WebXR DOM Overlays Module",
+              "crawled": "https://immersive-web.github.io/dom-overlays/"
             }
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/CSS22/",
+              "url": "https://www.w3.org/TR/CSS2/",
               "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
               "crawled": "https://drafts.csswg.org/css2/"
             },
             {
-              "url": "https://www.w3.org/TR/CSS2/",
+              "url": "https://www.w3.org/TR/CSS22/",
               "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
               "crawled": "https://drafts.csswg.org/css2/"
             },
@@ -24427,6 +24988,11 @@
               "crawled": "https://drafts.fxtf.org/geometry/"
             },
             {
+              "url": "https://www.w3.org/TR/graphics-aam-1.0/",
+              "title": "Graphics Accessibility API Mappings",
+              "crawled": "https://w3c.github.io/graphics-aam/"
+            },
+            {
               "url": "https://www.w3.org/TR/selectors-3/",
               "title": "Selectors Level 3",
               "crawled": "https://drafts.csswg.org/selectors-3/"
@@ -24435,6 +25001,16 @@
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://drafts.csswg.org/selectors/"
+            },
+            {
+              "url": "https://www.w3.org/TR/svg-aam-1.0/",
+              "title": "SVG Accessibility API Mappings",
+              "crawled": "https://w3c.github.io/svg-aam/"
+            },
+            {
+              "url": "https://www.w3.org/TR/graphics-aria-1.0/",
+              "title": "WAI-ARIA Graphics Module",
+              "crawled": "https://w3c.github.io/graphics-aria/"
             }
           ]
         },
@@ -24604,6 +25180,11 @@
         ],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://wicg.github.io/change-password-url/",
+              "title": "A Well-Known URL for Changing Passwords",
+              "crawled": "https://wicg.github.io/change-password-url/"
+            },
             {
               "url": "https://www.w3.org/TR/battery-status/",
               "title": "Battery Status API",
@@ -24943,14 +25524,14 @@
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-inline-3/",
@@ -25167,18 +25748,23 @@
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
+              "url": "https://immersive-web.github.io/dom-overlays/",
+              "title": "WebXR DOM Overlays Module",
+              "crawled": "https://immersive-web.github.io/dom-overlays/"
             }
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/css-ui-4/",
-              "title": "CSS Basic User Interface Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-ui-4/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-ui-3/",
               "title": "CSS Basic User Interface Module Level 4",
               "crawled": "https://drafts.csswg.org/css-ui/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://drafts.csswg.org/css-ui-4/"
             },
             {
               "url": "https://www.w3.org/TR/css-images-3/",
@@ -25554,6 +26140,80 @@
       }
     },
     {
+      "title": "SVG Accessibility API Mappings",
+      "shortname": "svg-aam-1.0",
+      "date": "10 June 2020",
+      "url": "https://www.w3.org/TR/svg-aam-1.0/",
+      "release": {
+        "url": "https://www.w3.org/TR/svg-aam-1.0/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/svg-aam/"
+      },
+      "crawled": "https://w3c.github.io/svg-aam/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/core-aam/",
+          "https://w3c.github.io/accname/",
+          "https://w3c.github.io/aria/",
+          "https://www.w3.org/TR/html5/",
+          "https://www.w3.org/TR/2012/WD-css-masking-20121115/",
+          "https://www.w3.org/TR/2012/WD-filter-effects-20121025/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/graphics-aam/",
+            "ref": {
+              "name": "GRAPHICS-AAM",
+              "url": "https://www.w3.org/TR/graphics-aam-1.0/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/html-aam/",
+            "ref": {
+              "name": "HTML-AAM",
+              "url": "https://www.w3.org/TR/html-aam-1.0/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://svgwg.org/svg2-draft/"
+            },
+            {
+              "url": "https://www.w3.org/TR/graphics-aria-1.0/",
+              "title": "WAI-ARIA Graphics Module",
+              "crawled": "https://w3c.github.io/graphics-aria/"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/graphics-aam-1.0/",
+              "title": "Graphics Accessibility API Mappings",
+              "crawled": "https://w3c.github.io/graphics-aam/"
+            },
+            {
+              "url": "https://www.w3.org/TR/html-aam-1.0/",
+              "title": "HTML Accessibility API Mappings 1.0",
+              "crawled": "https://w3c.github.io/html-aam/"
+            }
+          ]
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "SVG Animations",
       "shortname": "svg-animations",
       "date": "26 May 2020",
@@ -25914,6 +26574,43 @@
       }
     },
     {
+      "title": "The Storage Access API",
+      "shortname": "storage-access",
+      "date": "9 June 2020",
+      "url": "https://privacycg.github.io/storage-access/",
+      "nightly": {
+        "url": "https://privacycg.github.io/storage-access/"
+      },
+      "crawled": "https://privacycg.github.io/storage-access/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/webdriver/webdriver-spec.html"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/permissions/",
+            "ref": {
+              "name": "PERMISSIONS",
+              "url": "https://www.w3.org/TR/permissions/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "Timing Entry Names Registry",
       "shortname": "timing-entrytypes-registry",
       "date": "24 April 2020",
@@ -26215,6 +26912,11 @@
               "url": "https://www.w3.org/TR/webdriver2/",
               "title": "WebDriver",
               "crawled": "https://w3c.github.io/webdriver/"
+            },
+            {
+              "url": "https://immersive-web.github.io/dom-overlays/",
+              "title": "WebXR DOM Overlays Module",
+              "crawled": "https://immersive-web.github.io/dom-overlays/"
             }
           ],
           "informative": [
@@ -26422,14 +27124,14 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://wicg.github.io/change-password-url/",
+              "title": "A Well-Known URL for Changing Passwords",
+              "crawled": "https://wicg.github.io/change-password-url/"
+            },
+            {
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
-            },
-            {
-              "url": "https://www.w3.org/TR/beacon/",
-              "title": "Beacon",
-              "crawled": "https://w3c.github.io/beacon/"
             },
             {
               "url": "https://www.w3.org/TR/clear-site-data/",
@@ -26597,6 +27299,11 @@
               "crawled": "https://w3c.github.io/presentation-api/"
             },
             {
+              "url": "https://privacycg.github.io/private-click-measurement/",
+              "title": "Private Click Measurement",
+              "crawled": "https://privacycg.github.io/private-click-measurement/"
+            },
+            {
               "url": "https://www.w3.org/TR/referrer-policy/",
               "title": "Referrer Policy",
               "crawled": "https://w3c.github.io/webappsec-referrer-policy/"
@@ -26630,6 +27337,11 @@
               "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
+            },
+            {
+              "url": "https://privacycg.github.io/storage-access/",
+              "title": "The Storage Access API",
+              "crawled": "https://privacycg.github.io/storage-access/"
             },
             {
               "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
@@ -26692,6 +27404,11 @@
               "url": "https://www.w3.org/TR/remote-playback/",
               "title": "Remote Playback API",
               "crawled": "https://w3c.github.io/remote-playback/"
+            },
+            {
+              "url": "https://wicg.github.io/web-otp/",
+              "title": "Web OTP API",
+              "crawled": "https://wicg.github.io/web-otp/"
             }
           ]
         },
@@ -26762,6 +27479,33 @@
         "url": "https://w3c.github.io/user-timing/"
       },
       "crawled": "https://w3c.github.io/user-timing/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": true
+      }
+    },
+    {
+      "title": "User-Agent Client Hints",
+      "shortname": "ua-client-hints",
+      "date": "27 May 2020",
+      "url": "https://wicg.github.io/ua-client-hints/",
+      "nightly": {
+        "url": "https://wicg.github.io/ua-client-hints/"
+      },
+      "crawled": "https://wicg.github.io/ua-client-hints/",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
@@ -26855,6 +27599,55 @@
           "informative": []
         },
         "ok": true
+      }
+    },
+    {
+      "title": "WAI-ARIA Graphics Module",
+      "shortname": "graphics-aria-1.0",
+      "date": "10 June 2020",
+      "url": "https://www.w3.org/TR/graphics-aria-1.0/",
+      "release": {
+        "url": "https://www.w3.org/TR/graphics-aria-1.0/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/graphics-aria/"
+      },
+      "crawled": "https://w3c.github.io/graphics-aria/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/aria/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/graphics-aam-1.0/",
+              "title": "Graphics Accessibility API Mappings",
+              "crawled": "https://w3c.github.io/graphics-aam/"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG2/",
+              "title": "Scalable Vector Graphics (SVG) 2",
+              "crawled": "https://svgwg.org/svg2-draft/"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/svg-aam-1.0/",
+              "title": "SVG Accessibility API Mappings",
+              "crawled": "https://w3c.github.io/svg-aam/"
+            }
+          ]
+        },
+        "ok": false
       }
     },
     {
@@ -27430,11 +28223,6 @@
               "crawled": "https://w3c.github.io/battery/"
             },
             {
-              "url": "https://www.w3.org/TR/beacon/",
-              "title": "Beacon",
-              "crawled": "https://w3c.github.io/beacon/"
-            },
-            {
               "url": "https://www.w3.org/TR/clipboard-apis/",
               "title": "Clipboard API and events",
               "crawled": "https://w3c.github.io/clipboard-apis/"
@@ -27483,6 +28271,11 @@
               "url": "https://www.w3.org/TR/requestidlecallback/",
               "title": "Cooperative Scheduling of Background Tasks",
               "crawled": "https://w3c.github.io/requestidlecallback/"
+            },
+            {
+              "url": "https://wicg.github.io/crash-reporting/",
+              "title": "Crash Reporting",
+              "crawled": "https://wicg.github.io/crash-reporting/"
             },
             {
               "url": "https://www.w3.org/TR/credential-management-1/",
@@ -27615,6 +28408,11 @@
               "crawled": "https://drafts.csswg.org/cssom-view/"
             },
             {
+              "url": "https://wicg.github.io/deprecation-reporting/",
+              "title": "Deprecation Reporting",
+              "crawled": "https://wicg.github.io/deprecation-reporting/"
+            },
+            {
               "url": "https://www.w3.org/TR/device-memory-1/",
               "title": "Device Memory 1",
               "crawled": "https://w3c.github.io/device-memory/"
@@ -27745,6 +28543,11 @@
               "crawled": "https://wicg.github.io/video-rvfc/"
             },
             {
+              "url": "https://w3c.github.io/webrtc-ice/",
+              "title": "IceTransport Extensions for WebRTC",
+              "crawled": "https://w3c.github.io/webrtc-ice/"
+            },
+            {
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
               "crawled": "https://w3c.github.io/webrtc-stats/"
@@ -27788,6 +28591,11 @@
               "url": "https://www.w3.org/TR/intersection-observer/",
               "title": "Intersection Observer",
               "crawled": "https://w3c.github.io/IntersectionObserver/"
+            },
+            {
+              "url": "https://wicg.github.io/intervention-reporting/",
+              "title": "Intervention Reporting",
+              "crawled": "https://wicg.github.io/intervention-reporting/"
             },
             {
               "url": "https://wicg.github.io/js-self-profiling/",
@@ -27985,6 +28793,11 @@
               "crawled": "https://w3c.github.io/presentation-api/"
             },
             {
+              "url": "https://privacycg.github.io/private-click-measurement/",
+              "title": "Private Click Measurement",
+              "crawled": "https://privacycg.github.io/private-click-measurement/"
+            },
+            {
               "url": "https://www.w3.org/TR/proximity/",
               "title": "Proximity Sensor",
               "crawled": "https://w3c.github.io/proximity/"
@@ -28100,6 +28913,11 @@
               "crawled": "https://w3c.github.io/screen-orientation/"
             },
             {
+              "url": "https://privacycg.github.io/storage-access/",
+              "title": "The Storage Access API",
+              "crawled": "https://privacycg.github.io/storage-access/"
+            },
+            {
               "url": "https://www.w3.org/TR/touch-events/",
               "title": "Touch Events - Level 2",
               "crawled": "https://w3c.github.io/touch-events/"
@@ -28128,6 +28946,11 @@
               "url": "https://www.w3.org/TR/user-timing-3/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
+            },
+            {
+              "url": "https://wicg.github.io/ua-client-hints/",
+              "title": "User-Agent Client Hints",
+              "crawled": "https://wicg.github.io/ua-client-hints/"
             },
             {
               "url": "https://www.w3.org/TR/vibration/",
@@ -28188,6 +29011,11 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC",
               "crawled": "https://w3c.github.io/web-nfc/"
+            },
+            {
+              "url": "https://wicg.github.io/web-otp/",
+              "title": "Web OTP API",
+              "crawled": "https://wicg.github.io/web-otp/"
             },
             {
               "url": "https://wicg.github.io/periodic-background-sync/",
@@ -28265,9 +29093,19 @@
               "crawled": "https://w3c.github.io/webvtt/"
             },
             {
+              "url": "https://immersive-web.github.io/anchors/",
+              "title": "WebXR Anchors Module",
+              "crawled": "https://immersive-web.github.io/anchors/"
+            },
+            {
               "url": "https://www.w3.org/TR/webxr/",
               "title": "WebXR Device API",
               "crawled": "https://immersive-web.github.io/webxr/"
+            },
+            {
+              "url": "https://immersive-web.github.io/dom-overlays/",
+              "title": "WebXR DOM Overlays Module",
+              "crawled": "https://immersive-web.github.io/dom-overlays/"
             },
             {
               "url": "https://www.w3.org/TR/webxr-gamepads-module-1/",
@@ -28278,6 +29116,11 @@
               "url": "https://immersive-web.github.io/hit-test/",
               "title": "WebXR Hit Test Module",
               "crawled": "https://immersive-web.github.io/hit-test/"
+            },
+            {
+              "url": "https://immersive-web.github.io/layers/",
+              "title": "WebXR Layers API Level 1",
+              "crawled": "https://immersive-web.github.io/layers/"
             },
             {
               "url": "https://www.w3.org/TR/worklets-1/",
@@ -28409,6 +29252,41 @@
       }
     },
     {
+      "title": "Web OTP API",
+      "shortname": "web-otp",
+      "date": "6 April 2020",
+      "url": "https://wicg.github.io/web-otp/",
+      "nightly": {
+        "url": "https://wicg.github.io/web-otp/"
+      },
+      "crawled": "https://wicg.github.io/web-otp/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webappsec-credential-management/",
+            "ref": {
+              "name": "CREDENTIAL-MANAGEMENT-1",
+              "url": "https://www.w3.org/TR/credential-management-1/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "Web Periodic Background Synchronization",
       "shortname": "periodic-background-sync",
       "date": "21 January 2020",
@@ -28496,7 +29374,7 @@
     {
       "title": "Web Share API",
       "shortname": "web-share",
-      "date": "04 June 2020",
+      "date": "17 June 2020",
       "url": "https://www.w3.org/TR/web-share/",
       "release": {
         "url": "https://www.w3.org/TR/web-share/"
@@ -28800,6 +29678,11 @@
               "url": "https://www.w3.org/TR/webxr/",
               "title": "WebXR Device API",
               "crawled": "https://immersive-web.github.io/webxr/"
+            },
+            {
+              "url": "https://immersive-web.github.io/layers/",
+              "title": "WebXR Layers API Level 1",
+              "crawled": "https://immersive-web.github.io/layers/"
             }
           ],
           "informative": [
@@ -28854,6 +29737,11 @@
               "url": "https://www.w3.org/TR/webxr/",
               "title": "WebXR Device API",
               "crawled": "https://immersive-web.github.io/webxr/"
+            },
+            {
+              "url": "https://immersive-web.github.io/layers/",
+              "title": "WebXR Layers API Level 1",
+              "crawled": "https://immersive-web.github.io/layers/"
             }
           ],
           "informative": [
@@ -28925,7 +29813,18 @@
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "RTCIceParameters",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/webrtc-ice/",
+                "title": "IceTransport Extensions for WebRTC",
+                "crawled": "https://w3c.github.io/webrtc-ice/"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [
@@ -28939,6 +29838,11 @@
         ],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://w3c.github.io/webrtc-ice/",
+              "title": "IceTransport Extensions for WebRTC",
+              "crawled": "https://w3c.github.io/webrtc-ice/"
+            },
             {
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
@@ -29183,6 +30087,44 @@
       }
     },
     {
+      "title": "WebXR Anchors Module",
+      "shortname": "anchors",
+      "date": "5 June 2020",
+      "url": "https://immersive-web.github.io/anchors/",
+      "nightly": {
+        "url": "https://immersive-web.github.io/anchors/"
+      },
+      "crawled": "https://immersive-web.github.io/anchors/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [
+          {
+            "name": "XRHitTestResult",
+            "refs": [
+              {
+                "url": "https://immersive-web.github.io/hit-test/",
+                "title": "WebXR Hit Test Module",
+                "crawled": "https://immersive-web.github.io/hit-test/"
+              }
+            ]
+          }
+        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "WebXR Augmented Reality Module - Level 1",
       "shortname": "webxr-ar-module-1",
       "date": "2 June 2020",
@@ -29206,7 +30148,18 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://immersive-web.github.io/anchors/",
+              "title": "WebXR Anchors Module",
+              "crawled": "https://immersive-web.github.io/anchors/"
+            },
+            {
+              "url": "https://immersive-web.github.io/layers/",
+              "title": "WebXR Layers API Level 1",
+              "crawled": "https://immersive-web.github.io/layers/"
+            }
+          ],
           "informative": []
         },
         "ok": false
@@ -29304,9 +30257,19 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://immersive-web.github.io/anchors/",
+              "title": "WebXR Anchors Module",
+              "crawled": "https://immersive-web.github.io/anchors/"
+            },
+            {
               "url": "https://www.w3.org/TR/webxr-ar-module-1/",
               "title": "WebXR Augmented Reality Module - Level 1",
               "crawled": "https://immersive-web.github.io/webxr-ar-module/"
+            },
+            {
+              "url": "https://immersive-web.github.io/dom-overlays/",
+              "title": "WebXR DOM Overlays Module",
+              "crawled": "https://immersive-web.github.io/dom-overlays/"
             },
             {
               "url": "https://www.w3.org/TR/webxr-gamepads-module-1/",
@@ -29317,8 +30280,48 @@
               "url": "https://immersive-web.github.io/hit-test/",
               "title": "WebXR Hit Test Module",
               "crawled": "https://immersive-web.github.io/hit-test/"
+            },
+            {
+              "url": "https://immersive-web.github.io/layers/",
+              "title": "WebXR Layers API Level 1",
+              "crawled": "https://immersive-web.github.io/layers/"
             }
           ],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "WebXR DOM Overlays Module",
+      "shortname": "dom-overlays",
+      "date": "4 June 2020",
+      "url": "https://immersive-web.github.io/dom-overlays/",
+      "nightly": {
+        "url": "https://immersive-web.github.io/dom-overlays/"
+      },
+      "crawled": "https://immersive-web.github.io/dom-overlays/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/uievents/",
+            "ref": {
+              "name": "UIEVENTS",
+              "url": "https://www.w3.org/TR/uievents/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
           "informative": []
         },
         "ok": false
@@ -29398,6 +30401,44 @@
           "informative": []
         },
         "ok": true
+      }
+    },
+    {
+      "title": "WebXR Layers API Level 1",
+      "shortname": "layers",
+      "date": "16 June 2020",
+      "url": "https://immersive-web.github.io/layers/",
+      "nightly": {
+        "url": "https://immersive-web.github.io/layers/"
+      },
+      "crawled": "https://immersive-web.github.io/layers/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [
+          {
+            "name": "WebGLTexture",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          }
+        ],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
       }
     },
     {

@@ -20,7 +20,21 @@
 <body>
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
-  <p>301 specifications were crawled in this report.</p>
+  <p>318 specifications were crawled in this report.</p>
+  <section id="specifications-that-could-not-be-rendered" class="level2">
+  <h2>Specifications that could not be rendered</h2>
+  <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
+  <ul>
+  <li><a href="https://w3c.github.io/beacon/">Beacon</a>: <code>Error: Failed to launch the browser process! Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion</code>listp-&gt;slotinfo[cnt].gen &lt;= GL(dl_tls_generation)' failed!</li>
+  </ul>
+  <p>TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md Error: Failed to launch the browser process! Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp-&gt;slotinfo[cnt].gen &lt;= GL(dl_tls_generation)' failed!</p>
+  <p>TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md</p>
+  <pre><code>at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/launcher/BrowserRunner.js:159:20)
+  at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/launcher/BrowserRunner.js:150:76)
+  at ChildProcess.emit (events.js:203:15)
+  at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`</code></pre>
+  <p>=&gt; 1 specification found</p>
+  </section>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <ul>
@@ -70,10 +84,11 @@
   <h2>List of WebIDL names not defined in the specifications crawled</h2>
   <ul>
   <li><code>CSSOMString</code> used in <a href="https://drafts.csswg.org/css-animations/">CSS Animations Level 1</a>, <a href="https://drafts.csswg.org/css-animations-2/">CSS Animations Level 2</a>, <a href="https://drafts.csswg.org/css-conditional-3/">CSS Conditional Rules Module Level 3</a>, <a href="https://drafts.csswg.org/css-counter-styles/">CSS Counter Styles Level 3</a>, <a href="https://drafts.csswg.org/css-highlight-api-1/">CSS Custom Highlight API Module Level 1</a>, <a href="https://drafts.csswg.org/css-font-loading/">CSS Font Loading Module Level 3</a>, <a href="https://drafts.csswg.org/css-fonts/">CSS Fonts Module Level 4</a>, <a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a>, <a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a>, <a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a>, <a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a>, <a href="https://drafts.csswg.org/css-regions/">CSS Regions Module Level 1</a>, <a href="https://drafts.csswg.org/css-transitions/">CSS Transitions</a>, <a href="https://drafts.csswg.org/css-transitions-2/">CSS Transitions Level 2</a>, <a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a>, <a href="https://drafts.csswg.org/scroll-animations-1/">Scroll-linked Animations</a>, <a href="https://drafts.csswg.org/web-animations-1/">Web Animations</a></li>
+  <li><code>Date</code> used in <a href="https://wicg.github.io/deprecation-reporting/">Deprecation Reporting</a></li>
   <li><code>PermissionName</code> used in <a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>, <a href="https://wicg.github.io/portals/">Portals</a>, <a href="https://svgwg.org/specs/animations/">SVG Animations</a></li>
   </ul>
-  <p>=&gt; 3 WebIDL names found</p>
+  <p>=&gt; 4 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -84,9 +99,10 @@
   <li><code>Keyboard</code> defined in <a href="https://wicg.github.io/keyboard-lock/">Keyboard Lock</a> and <a href="https://wicg.github.io/keyboard-map/">Keyboard Map</a></li>
   <li><code>MessageEventSource</code> defined in <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a> and <a href="https://wicg.github.io/portals/">Portals</a></li>
   <li><code>PermissionState</code> defined in <a href="https://w3c.github.io/deviceorientation/">DeviceOrientation Event Specification</a> and <a href="https://w3c.github.io/permissions/">Permissions</a></li>
+  <li><code>RTCIceParameters</code> defined in <a href="https://w3c.github.io/webrtc-ice/">IceTransport Extensions for WebRTC</a> and <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   <li><code>SVGMarkerElement</code> defined in <a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a> and <a href="https://svgwg.org/specs/markers/">SVG Markers</a></li>
   </ul>
-  <p>=&gt; 6 WebIDL names found</p>
+  <p>=&gt; 7 WebIDL names found</p>
   <p>&quot;There can be only one&quot;...</p>
   </section>
   <section id="missing-references-for-webidl-names" class="level2">
@@ -153,6 +169,7 @@
   <li><code>ExtendableEventInit</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><code>ExtendableEvent</code> but does not reference <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   </ul></li>
+  <li><a href="https://immersive-web.github.io/anchors/">WebXR Anchors Module</a> uses <code>XRHitTestResult</code> but does not reference <a href="https://immersive-web.github.io/hit-test/">WebXR Hit Test Module</a></li>
   <li><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a> uses:
   <ul>
   <li><code>WebGLRenderingContext</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
@@ -160,8 +177,9 @@
   <li><code>WebGLContextAttributes</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   <li><code>WebGLRenderingContextBase</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul></li>
+  <li><a href="https://immersive-web.github.io/layers/">WebXR Layers API Level 1</a> uses <code>WebGLTexture</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul>
-  <p>=&gt; 41 missing references for IDL definitions found in 16 specifications</p>
+  <p>=&gt; 43 missing references for IDL definitions found in 18 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -265,7 +283,7 @@
   <li><a href="https://www.w3.org/TR/2011/CR-css3-background-20110215/"><code>https://www.w3.org/TR/2011/CR-css3-background-20110215/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2009/CR-css3-background-20091217/"><code>https://www.w3.org/TR/2009/CR-css3-background-20091217/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://drafts.csswg.org/css4-background/">CSS Backgrounds and Borders Module Level 4</a> links to:
+  <li><a href="https://drafts.csswg.org/css-backgrounds-4/">CSS Backgrounds and Borders Module Level 4</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but does not list it in its references</li>
@@ -273,15 +291,6 @@
   <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-pseudo/"><code>https://www.w3.org/TR/css-pseudo/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-transitions/"><code>https://www.w3.org/TR/css3-transitions/</code></a> but does not list it in its references</li>
-  </ul></li>
-  <li><a href="https://drafts.csswg.org/css-ui-4/">CSS Basic User Interface Module Level 4</a> links to:
-  <ul>
-  <li><a href="https://www.w3.org/TR/2000/WD-css3-userint-20000216"><code>https://www.w3.org/TR/2000/WD-css3-userint-20000216</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css-pseudo/"><code>https://www.w3.org/TR/css-pseudo/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css-style-attr/"><code>https://www.w3.org/TR/css-style-attr/</code></a> but does not list it in its references</li>
-  <li><a href="https://w3c.github.io/contentEditable/"><code>https://w3c.github.io/contentEditable/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-ui/">CSS Basic User Interface Module Level 4</a> links to:
   <ul>
@@ -294,6 +303,15 @@
   <li><a href="https://www.w3.org/TR/2020/WD-css-ui-4-20200102/"><code>https://www.w3.org/TR/2020/WD-css-ui-4-20200102/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2017/WD-css-ui-4-20171222/"><code>https://www.w3.org/TR/2017/WD-css-ui-4-20171222/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2015/WD-css-ui-4-20150922/"><code>https://www.w3.org/TR/2015/WD-css-ui-4-20150922/</code></a> but does not list it in its references</li>
+  </ul></li>
+  <li><a href="https://drafts.csswg.org/css-ui-4/">CSS Basic User Interface Module Level 4</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2000/WD-css3-userint-20000216"><code>https://www.w3.org/TR/2000/WD-css3-userint-20000216</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-pseudo/"><code>https://www.w3.org/TR/css-pseudo/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-style-attr/"><code>https://www.w3.org/TR/css-style-attr/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/contentEditable/"><code>https://w3c.github.io/contentEditable/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-align/">CSS Box Alignment Module Level 3</a> links to:
   <ul>
@@ -850,7 +868,25 @@
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a> links to <a href="https://w3c.github.io/screen-orientation/"><code>https://w3c.github.io/screen-orientation/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/gamepad/extensions.html">Gamepad Extensions</a> links to <a href="https://w3c.github.io/gamepad/"><code>https://w3c.github.io/gamepad/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/geolocation-api/">Geolocation API Specification</a> links to <a href="https://w3c.github.io/geolocation-sensor/"><code>https://w3c.github.io/geolocation-sensor/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/graphics-aam/">Graphics Accessibility API Mappings</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/core-aam/"><code>https://w3c.github.io/core-aam/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/aria/"><code>https://w3c.github.io/aria/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/accname-aam-1.1/"><code>https://www.w3.org/TR/accname-aam-1.1/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/wai-aria-practices/"><code>https://www.w3.org/TR/wai-aria-practices/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://w3c.github.io/gyroscope/">Gyroscope</a> links to <a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/html-aam/">HTML Accessibility API Mappings 1.0</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/aria/"><code>https://w3c.github.io/aria/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/core-aam-1.1/"><code>https://www.w3.org/TR/core-aam-1.1/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/graphics-aam-1.0/"><code>https://www.w3.org/TR/graphics-aam-1.0/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/accname/"><code>https://w3c.github.io/accname/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/html4/present/"><code>https://www.w3.org/TR/html4/present/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/html/interactive-elements.html"><code>https://w3c.github.io/html/interactive-elements.html</code></a> but does not list it in its references</li>
+  <li><a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/aria/core-aam/core-aam.html"><code>https://w3c.github.io/aria/core-aam/core-aam.html</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a> links to:
   <ul>
   <li><a href="https://spec.whatwg.org/"><code>https://spec.whatwg.org/</code></a> but does not list it in its references</li>
@@ -947,7 +983,6 @@
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-cascade-3/"><code>https://www.w3.org/TR/css-cascade-3/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/wai-aria/"><code>https://www.w3.org/TR/wai-aria/</code></a> but does not list it in its references</li>
-  <li><a href="https://w3c.github.io/svg-aam/"><code>https://w3c.github.io/svg-aam/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/selection-api/"><code>https://w3c.github.io/selection-api/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-mediaqueries/"><code>https://www.w3.org/TR/css3-mediaqueries/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2013/REC-css-style-attr-20131107/"><code>https://www.w3.org/TR/2013/REC-css-style-attr-20131107/</code></a> but does not list it in its references</li>
@@ -967,7 +1002,6 @@
   <li><a href="https://www.w3.org/TR/cssom/"><code>https://www.w3.org/TR/cssom/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/core-aam-1.1/"><code>https://www.w3.org/TR/core-aam-1.1/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/accname-aam-1.1/"><code>https://www.w3.org/TR/accname-aam-1.1/</code></a> but does not list it in its references</li>
-  <li><a href="https://w3c.github.io/graphics-aria/"><code>https://w3c.github.io/graphics-aria/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/smil/"><code>https://www.w3.org/TR/smil/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/web-animations/"><code>https://w3c.github.io/web-animations/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/security-privacy-questionnaire/"><code>https://www.w3.org/TR/security-privacy-questionnaire/</code></a> but does not list it in its references</li>
@@ -999,6 +1033,15 @@
   <li><a href="https://w3c.github.io/push-api/"><code>https://w3c.github.io/push-api/</code></a> but does not list it in its references</li>
   <li><a href="https://notifications.spec.whatwg.org/"><code>https://notifications.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/payment-handler/"><code>https://w3c.github.io/payment-handler/</code></a> but does not list it in its references</li>
+  </ul></li>
+  <li><a href="https://w3c.github.io/svg-aam/">SVG Accessibility API Mappings</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/core-aam/"><code>https://w3c.github.io/core-aam/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/accname/"><code>https://w3c.github.io/accname/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/aria/"><code>https://w3c.github.io/aria/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2012/WD-css-masking-20121115/"><code>https://www.w3.org/TR/2012/WD-css-masking-20121115/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2012/WD-filter-effects-20121025/"><code>https://www.w3.org/TR/2012/WD-filter-effects-20121025/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://svgwg.org/specs/animations/">SVG Animations</a> links to:
   <ul>
@@ -1041,6 +1084,7 @@
   <li><a href="https://w3c.github.io/webappsec-fetch-metadata/"><code>https://w3c.github.io/webappsec-fetch-metadata/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/selection-api/"><code>https://w3c.github.io/selection-api/</code></a> but does not list it in its references</li>
   </ul></li>
+  <li><a href="https://privacycg.github.io/storage-access/">The Storage Access API</a> links to <a href="https://w3c.github.io/webdriver/webdriver-spec.html"><code>https://w3c.github.io/webdriver/webdriver-spec.html</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a> links to <a href="https://www.w3.org/TR/touch-events-extensions/"><code>https://www.w3.org/TR/touch-events-extensions/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/webappsec-trusted-types/dist/spec/">Trusted Types</a> links to:
   <ul>
@@ -1051,6 +1095,7 @@
   <li><a href="https://w3c.github.io/webcomponents/spec/imports/"><code>https://w3c.github.io/webcomponents/spec/imports/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://w3c.github.io/webappsec-upgrade-insecure-requests/">Upgrade Insecure Requests</a> links to <a href="https://www.w3.org/TR/url/"><code>https://www.w3.org/TR/url/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/graphics-aria/">WAI-ARIA Graphics Module</a> links to <a href="https://w3c.github.io/aria/"><code>https://w3c.github.io/aria/</code></a> but does not list it in its references</li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/"><code>https://w3c.github.io/mediacapture-fromelement/</code></a> but does not list it in its references</li>
@@ -1103,13 +1148,14 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 576 missing references for links found in 160 specifications</p>
+  <p>=&gt; 594 missing references for links found in 165 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
   <section id="reference-url-is-inconsistent-with-url-used-in-document-links" class="level2">
   <h2>Reference URL is inconsistent with URL used in document links</h2>
   <ul>
+  <li><a href="https://wicg.github.io/change-password-url/">A Well-Known URL for Changing Passwords</a> links to <a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
   <li><a href="https://wicg.github.io/shape-detection-api/">Accelerated Shape Detection in Images</a> links to <a href="https://www.w3.org/TR/2dcontext/"><code>https://www.w3.org/TR/2dcontext/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a> links to <a href="https://www.w3.org/TR/screen-orientation/"><code>https://www.w3.org/TR/screen-orientation/</code></a> but related reference &quot;SCREEN-ORIENTATION&quot; uses URL <a href="https://w3c.github.io/screen-orientation/"><code>https://w3c.github.io/screen-orientation/</code></a></li>
   <li><a href="https://w3c.github.io/accname/">Accessible Name and Description Computation 1.2</a> links to <a href="https://w3c.github.io/core-aam/"><code>https://w3c.github.io/core-aam/</code></a> but related reference &quot;CORE-AAM-1.2&quot; uses URL <a href="https://www.w3.org/TR/core-aam-1.2/"><code>https://www.w3.org/TR/core-aam-1.2/</code></a></li>
@@ -1166,6 +1212,7 @@
   <li><a href="https://w3c.github.io/webappsec-cspee/">Content Security Policy: Embedded Enforcement</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but related reference &quot;CSP&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
   <li><a href="https://w3c.github.io/core-aam/">Core Accessibility API Mappings 1.2</a> links to <a href="https://w3c.github.io/aria/"><code>https://w3c.github.io/aria/</code></a> but related reference &quot;WAI-ARIA-1.2&quot; uses URL <a href="https://www.w3.org/TR/wai-aria-1.2/"><code>https://www.w3.org/TR/wai-aria-1.2/</code></a></li>
   <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but related reference &quot;CSP3&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
+  <li><a href="https://wicg.github.io/crash-reporting/">Crash Reporting</a> links to <a href="https://w3c.github.io/reporting/"><code>https://w3c.github.io/reporting/</code></a> but related reference &quot;REPORTING&quot; uses URL <a href="https://www.w3.org/TR/reporting-1/"><code>https://www.w3.org/TR/reporting-1/</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/"><code>https://w3c.github.io/webappsec-mixed-content/</code></a> but related reference &quot;MIXED-CONTENT&quot; uses URL <a href="https://www.w3.org/TR/mixed-content/"><code>https://www.w3.org/TR/mixed-content/</code></a></li>
@@ -1174,8 +1221,8 @@
   <li><a href="https://drafts.csswg.org/css-animations/">CSS Animations Level 1</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://drafts.csswg.org/css-animations-2/">CSS Animations Level 2</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://drafts.csswg.org/css-backgrounds/">CSS Backgrounds and Borders Module Level 3</a> links to <a href="https://www.w3.org/TR/2011/REC-CSS2-20110607/"><code>https://www.w3.org/TR/2011/REC-CSS2-20110607/</code></a> but related reference &quot;CSS2&quot; uses URL <a href="https://www.w3.org/TR/CSS2/"><code>https://www.w3.org/TR/CSS2/</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-ui-4/">CSS Basic User Interface Module Level 4</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://drafts.csswg.org/css-ui/">CSS Basic User Interface Module Level 4</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-ui-4/">CSS Basic User Interface Module Level 4</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://drafts.csswg.org/css-align/">CSS Box Alignment Module Level 3</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-writing-modes/"><code>https://www.w3.org/TR/css3-writing-modes/</code></a> but related reference &quot;CSS-WRITING-MODES-3&quot; uses URL <a href="https://www.w3.org/TR/css-writing-modes-3/"><code>https://www.w3.org/TR/css-writing-modes-3/</code></a></li>
@@ -1371,6 +1418,7 @@
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-4/">CSS Writing Modes Level 4</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  <li><a href="https://wicg.github.io/deprecation-reporting/">Deprecation Reporting</a> links to <a href="https://w3c.github.io/reporting/"><code>https://w3c.github.io/reporting/</code></a> but related reference &quot;REPORTING-1&quot; uses URL <a href="https://www.w3.org/TR/reporting-1/"><code>https://www.w3.org/TR/reporting-1/</code></a></li>
   <li><a href="https://w3c.github.io/deviceorientation/">DeviceOrientation Event Specification</a> links to <a href="https://www.w3.org/TR/page-visibility-2/"><code>https://www.w3.org/TR/page-visibility-2/</code></a> but related reference &quot;PAGE-VISIBILITY&quot; uses URL <a href="https://www.w3.org/TR/page-visibility/"><code>https://www.w3.org/TR/page-visibility/</code></a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a> links to <a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a> but related reference &quot;DOM4&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a> links to <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a> but related reference &quot;UIEVENTS&quot; uses URL <a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a></li>
@@ -1405,10 +1453,13 @@
   <li><a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a></li>
   <li><a href="https://www.w3.org/TR/hr-time-2/"><code>https://www.w3.org/TR/hr-time-2/</code></a> but related reference &quot;HR-TIME-2&quot; uses URL <a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a></li>
   </ul></li>
+  <li><a href="https://w3c.github.io/graphics-aam/">Graphics Accessibility API Mappings</a> links to <a href="https://w3c.github.io/graphics-aria/"><code>https://w3c.github.io/graphics-aria/</code></a> but related reference &quot;GRAPHICS-ARIA-1.0&quot; uses URL <a href="https://www.w3.org/TR/graphics-aria-1.0/"><code>https://www.w3.org/TR/graphics-aria-1.0/</code></a></li>
+  <li><a href="https://w3c.github.io/html-aam/">HTML Accessibility API Mappings 1.0</a> links to <a href="https://www.w3.org/TR/html/"><code>https://www.w3.org/TR/html/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   <li><a href="https://wicg.github.io/video-rvfc/">HTMLVideoElement.requestVideoFrameCallback()</a> links to <a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a> but related reference &quot;HR-TIME-2&quot; uses URL <a href="https://www.w3.org/TR/hr-time-2/"><code>https://www.w3.org/TR/hr-time-2/</code></a></li>
   <li><a href="https://w3c.github.io/webrtc-identity/identity.html">Identity for WebRTC 1.0</a> links to <a href="https://w3c.github.io/webrtc-pc/"><code>https://w3c.github.io/webrtc-pc/</code></a> but related reference &quot;WEBRTC&quot; uses URL <a href="https://www.w3.org/TR/webrtc/"><code>https://www.w3.org/TR/webrtc/</code></a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 3.0</a> links to <a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
   <li><a href="https://w3c.github.io/input-events/">Input Events Level 2</a> links to <a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a> but related reference &quot;UI-EVENTS&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
+  <li><a href="https://wicg.github.io/intervention-reporting/">Intervention Reporting</a> links to <a href="https://w3c.github.io/reporting/"><code>https://w3c.github.io/reporting/</code></a> but related reference &quot;REPORTING-1&quot; uses URL <a href="https://www.w3.org/TR/reporting-1/"><code>https://www.w3.org/TR/reporting-1/</code></a></li>
   <li><a href="https://wicg.github.io/keyboard-map/">Keyboard Map</a> links to <a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
   <li><a href="https://wicg.github.io/largest-contentful-paint/">Largest Contentful Paint</a> links to:
   <ul>
@@ -1541,11 +1592,13 @@
   <li><a href="https://www.w3.org/TR/2014/CR-geometry-1-20141125/"><code>https://www.w3.org/TR/2014/CR-geometry-1-20141125/</code></a> but related reference &quot;geometry-1&quot; uses URL <a href="https://www.w3.org/TR/geometry-1/"><code>https://www.w3.org/TR/geometry-1/</code></a></li>
   <li><a href="https://www.w3.org/TR/2014/WD-geometry-1-20140522/"><code>https://www.w3.org/TR/2014/WD-geometry-1-20140522/</code></a> but related reference &quot;geometry-1&quot; uses URL <a href="https://www.w3.org/TR/geometry-1/"><code>https://www.w3.org/TR/geometry-1/</code></a></li>
   <li><a href="https://www.w3.org/TR/2014/CR-html5-20140204/"><code>https://www.w3.org/TR/2014/CR-html5-20140204/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
+  <li><a href="https://w3c.github.io/svg-aam/"><code>https://w3c.github.io/svg-aam/</code></a> but related reference &quot;svg-aam-1.0&quot; uses URL <a href="https://www.w3.org/TR/svg-aam-1.0/"><code>https://www.w3.org/TR/svg-aam-1.0/</code></a></li>
   <li><a href="https://www.w3.org/TR/2014/WD-dom-20140204/"><code>https://www.w3.org/TR/2014/WD-dom-20140204/</code></a> but related reference &quot;dom&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
   <li><a href="https://www.w3.org/TR/css3-writing-modes/"><code>https://www.w3.org/TR/css3-writing-modes/</code></a> but related reference &quot;css-writing-modes-3&quot; uses URL <a href="https://www.w3.org/TR/css-writing-modes-3/"><code>https://www.w3.org/TR/css-writing-modes-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2011/WD-css3-fonts-20111004/"><code>https://www.w3.org/TR/2011/WD-css3-fonts-20111004/</code></a> but related reference &quot;css-fonts-3&quot; uses URL <a href="https://www.w3.org/TR/css-fonts-3/"><code>https://www.w3.org/TR/css-fonts-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2001/REC-smil-animation-20010904/"><code>https://www.w3.org/TR/2001/REC-smil-animation-20010904/</code></a> but related reference &quot;smil-animation&quot; uses URL <a href="https://www.w3.org/TR/smil-animation/"><code>https://www.w3.org/TR/smil-animation/</code></a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/"><code>https://w3c.github.io/clipboard-apis/</code></a> but related reference &quot;clipboard-apis&quot; uses URL <a href="https://www.w3.org/TR/clipboard-apis/"><code>https://www.w3.org/TR/clipboard-apis/</code></a></li>
+  <li><a href="https://w3c.github.io/graphics-aria/"><code>https://w3c.github.io/graphics-aria/</code></a> but related reference &quot;graphics-aria-1.0&quot; uses URL <a href="https://www.w3.org/TR/graphics-aria-1.0/"><code>https://www.w3.org/TR/graphics-aria-1.0/</code></a></li>
   <li><a href="https://www.w3.org/TR/referrer-policy/"><code>https://www.w3.org/TR/referrer-policy/</code></a> but related reference &quot;ReferrerPolicy&quot; uses URL <a href="https://w3c.github.io/webappsec-referrer-policy/"><code>https://w3c.github.io/webappsec-referrer-policy/</code></a></li>
   <li><a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a> but related reference &quot;uievents&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
   <li><a href="https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/"><code>https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/</code></a> but related reference &quot;UAAG20&quot; uses URL <a href="https://www.w3.org/TR/UAAG20/"><code>https://www.w3.org/TR/UAAG20/</code></a></li>
@@ -1560,6 +1613,11 @@
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but related reference &quot;CSP3&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
   </ul></li>
+  <li><a href="https://w3c.github.io/svg-aam/">SVG Accessibility API Mappings</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/graphics-aam/"><code>https://w3c.github.io/graphics-aam/</code></a> but related reference &quot;GRAPHICS-AAM&quot; uses URL <a href="https://www.w3.org/TR/graphics-aam-1.0/"><code>https://www.w3.org/TR/graphics-aam-1.0/</code></a></li>
+  <li><a href="https://w3c.github.io/html-aam/"><code>https://w3c.github.io/html-aam/</code></a> but related reference &quot;HTML-AAM&quot; uses URL <a href="https://www.w3.org/TR/html-aam-1.0/"><code>https://www.w3.org/TR/html-aam-1.0/</code></a></li>
+  </ul></li>
   <li><a href="https://svgwg.org/specs/animations/">SVG Animations</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/xml/"><code>https://www.w3.org/TR/xml/</code></a> but related reference &quot;XML10&quot; uses URL <a href="http://www.w3.org/TR/2008/REC-xml-20081126/"><code>http://www.w3.org/TR/2008/REC-xml-20081126/</code></a></li>
@@ -1572,6 +1630,7 @@
   <li><a href="https://www.w3.org/TR/html/"><code>https://www.w3.org/TR/html/</code></a> but related reference &quot;HTML&quot; uses URL <a href="http://www.w3.org/TR/html5/"><code>http://www.w3.org/TR/html5/</code></a></li>
   <li><a href="https://www.w3.org/TR/smil-animation/"><code>https://www.w3.org/TR/smil-animation/</code></a> but related reference &quot;SMILANIM&quot; uses URL <a href="http://www.w3.org/TR/2001/REC-smil-animation-20010904/"><code>http://www.w3.org/TR/2001/REC-smil-animation-20010904/</code></a></li>
   </ul></li>
+  <li><a href="https://privacycg.github.io/storage-access/">The Storage Access API</a> links to <a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-trusted-types/dist/spec/">Trusted Types</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but related reference &quot;CSP3&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
@@ -1605,6 +1664,7 @@
   </ul></li>
   <li><a href="http://w3c.github.io/webcrypto/">Web Cryptography API</a> links to <a href="https://www.w3.org/TR/html/"><code>https://www.w3.org/TR/html/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
   <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a> links to <a href="https://w3c.github.io/IndexedDB/"><code>https://w3c.github.io/IndexedDB/</code></a> but related reference &quot;IndexedDB-2&quot; uses URL <a href="https://www.w3.org/TR/IndexedDB-2/"><code>https://www.w3.org/TR/IndexedDB-2/</code></a></li>
+  <li><a href="https://wicg.github.io/web-otp/">Web OTP API</a> links to <a href="https://w3c.github.io/webappsec-credential-management/"><code>https://w3c.github.io/webappsec-credential-management/</code></a> but related reference &quot;CREDENTIAL-MANAGEMENT-1&quot; uses URL <a href="https://www.w3.org/TR/credential-management-1/"><code>https://www.w3.org/TR/credential-management-1/</code></a></li>
   <li><a href="https://wicg.github.io/periodic-background-sync/">Web Periodic Background Synchronization</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
@@ -1628,9 +1688,10 @@
   <li><a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a> but related reference &quot;HR-TIME-2&quot; uses URL <a href="https://www.w3.org/TR/hr-time-2/"><code>https://www.w3.org/TR/hr-time-2/</code></a></li>
   <li><a href="https://w3c.github.io/requestidlecallback/"><code>https://w3c.github.io/requestidlecallback/</code></a> but related reference &quot;REQUESTIDLECALLBACK&quot; uses URL <a href="https://www.w3.org/TR/requestidlecallback/"><code>https://www.w3.org/TR/requestidlecallback/</code></a></li>
   </ul></li>
+  <li><a href="https://immersive-web.github.io/dom-overlays/">WebXR DOM Overlays Module</a> links to <a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a> but related reference &quot;UIEVENTS&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
   <li><a href="https://immersive-web.github.io/webxr-gamepads-module/">WebXR Gamepads Module - Level 1</a> links to <a href="https://w3c.github.io/gamepad/"><code>https://w3c.github.io/gamepad/</code></a> but related reference &quot;GAMEPAD&quot; uses URL <a href="https://www.w3.org/TR/gamepad/"><code>https://www.w3.org/TR/gamepad/</code></a></li>
   </ul>
-  <p>=&gt; 309 inconsistent references for links found in 164 specifications</p>
+  <p>=&gt; 322 inconsistent references for links found in 174 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>
