@@ -254,7 +254,7 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Background Fetch {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+## Background Fetch {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -266,17 +266,11 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for WebIDL names: 
-     * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `CacheQueryOptions` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - Missing references for links: 
-     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
      * [`https://storage.spec.whatwg.org/`](https://storage.spec.whatwg.org/)
      * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/)
 - Inconsistent references for links: 
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
      * [`https://w3c.github.io/image-resource/`](https://w3c.github.io/image-resource/), related reference "IMAGE-RESOURCE" uses URL [`https://www.w3.org/TR/image-resource/`](https://www.w3.org/TR/image-resource/)
      * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
 
@@ -337,36 +331,20 @@ Informative references to this spec from:
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 
 
-## Beacon {data-spec=true data-error=true}
+## Beacon {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
 - Crawled URL: [https://w3c.github.io/beacon/](https://w3c.github.io/beacon/)
+- Crawled version: 30 January 2020
 - Editor's Draft: [https://w3c.github.io/beacon/](https://w3c.github.io/beacon/)
 - Latest published version: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
 - Shortname: beacon
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Failed to launch the browser process!
-Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
- Error: Failed to launch the browser process!
-Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!
-
-
-TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md
-
-    at onClose (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/launcher/BrowserRunner.js:159:20)
-    at ChildProcess.helper_1.helper.addEventListener (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/launcher/BrowserRunner.js:150:76)
-    at ChildProcess.emit (events.js:203:15)
-    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -406,8 +384,8 @@ Normative references to this spec from:
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
@@ -541,7 +519,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Clear Site Data {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Clear Site Data {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -554,9 +532,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
 - Inconsistent references for links: 
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
      * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/), related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
      * [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/), related reference "INDEXEDDB" uses URL [`https://www.w3.org/TR/IndexedDB/`](https://www.w3.org/TR/IndexedDB/)
 
@@ -816,7 +793,34 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Content Security Policy Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Content Index {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/content-index/spec/](https://wicg.github.io/content-index/spec/)
+- Crawled URL: [https://wicg.github.io/content-index/spec/](https://wicg.github.io/content-index/spec/)
+- Crawled version: 13 May 2020
+- Editor's Draft: [https://wicg.github.io/content-index/spec/](https://wicg.github.io/content-index/spec/)
+- Shortname: content-index
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for WebIDL names: 
+     * `ImageResource` defined in [Image Resource](https://w3c.github.io/image-resource/)
+- Missing references for links: 
+     * [`https://w3c.github.io/image-resource/`](https://w3c.github.io/image-resource/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
+     * [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Content Security Policy Level 3 {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -829,9 +833,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
 - Inconsistent references for links: 
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
      * [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/), related reference "REPORTING-1" uses URL [`https://www.w3.org/TR/reporting-1/`](https://www.w3.org/TR/reporting-1/)
      * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
 
@@ -910,7 +913,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Cookie Store API {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## Cookie Store API {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -922,13 +925,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for WebIDL names: 
-     * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-- Missing references for links: 
-     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "Service-Workers" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -989,6 +987,7 @@ Normative references to this spec from:
 - [Accessible Name and Description Computation 1.2](https://w3c.github.io/accname/)
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
 - [HTML Accessibility API Mappings 1.0](https://w3c.github.io/html-aam/)
+- [MathML Accessiblity API Mappings 1.0](https://w3c.github.io/mathml-aam/)
 
 No informative reference to this spec from other specs.
 
@@ -1078,7 +1077,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-animation-worklet-1/](https://www.w3.org/TR/css-animation-worklet-1/)
 - Crawled URL: [https://drafts.css-houdini.org/css-animationworklet-1/](https://drafts.css-houdini.org/css-animationworklet-1/)
-- Crawled version: 25 October 2019
+- Crawled version: 17 June 2020
 - Editor's Draft: [https://drafts.css-houdini.org/css-animationworklet-1/](https://drafts.css-houdini.org/css-animationworklet-1/)
 - Latest published version: [https://www.w3.org/TR/css-animation-worklet-1/](https://www.w3.org/TR/css-animation-worklet-1/)
 - Shortname: css-animation-worklet-1
@@ -1215,8 +1214,8 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
@@ -1314,52 +1313,6 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Initial URL: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
-- Crawled URL: [https://drafts.csswg.org/css-ui/](https://drafts.csswg.org/css-ui/)
-- Crawled version: 25 January 2020
-- Editor's Draft: [https://drafts.csswg.org/css-ui/](https://drafts.csswg.org/css-ui/)
-- Latest published version: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
-- Shortname: css-ui-3
-
-### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/2000/WD-css3-userint-20000216`](https://www.w3.org/TR/2000/WD-css3-userint-20000216)
-     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
-     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/)
-     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-     * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/)
-     * [`https://w3c.github.io/contentEditable/`](https://w3c.github.io/contentEditable/)
-     * [`https://www.w3.org/TR/2020/WD-css-ui-4-20200102/`](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
-     * [`https://www.w3.org/TR/2017/WD-css-ui-4-20171222/`](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
-     * [`https://www.w3.org/TR/2015/WD-css-ui-4-20150922/`](https://www.w3.org/TR/2015/WD-css-ui-4-20150922/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
-- [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-
-Informative references to this spec from:
-
-- [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
-- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
-- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
-- [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
-- [Selectors Level 4](https://drafts.csswg.org/selectors/)
-
-
-## CSS Basic User Interface Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
 - Initial URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Crawled URL: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
 - Crawled version: 25 January 2020
@@ -1402,6 +1355,52 @@ Informative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+
+
+## CSS Basic User Interface Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
+- Crawled URL: [https://drafts.csswg.org/css-ui/](https://drafts.csswg.org/css-ui/)
+- Crawled version: 25 January 2020
+- Editor's Draft: [https://drafts.csswg.org/css-ui/](https://drafts.csswg.org/css-ui/)
+- Latest published version: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
+- Shortname: css-ui-3
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2000/WD-css3-userint-20000216`](https://www.w3.org/TR/2000/WD-css3-userint-20000216)
+     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
+     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/)
+     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
+     * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/)
+     * [`https://w3c.github.io/contentEditable/`](https://w3c.github.io/contentEditable/)
+     * [`https://www.w3.org/TR/2020/WD-css-ui-4-20200102/`](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+     * [`https://www.w3.org/TR/2017/WD-css-ui-4-20171222/`](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
+     * [`https://www.w3.org/TR/2015/WD-css-ui-4-20150922/`](https://www.w3.org/TR/2015/WD-css-ui-4-20150922/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+
+Informative references to this spec from:
+
+- [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
+- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
+- [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
+- [Selectors Level 4](https://drafts.csswg.org/selectors/)
 
 
 ## CSS Box Alignment Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1540,8 +1539,8 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
@@ -1610,8 +1609,8 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
@@ -1652,10 +1651,11 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Initial URL: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
+- Initial URL: [https://www.w3.org/TR/css-sizing-4/](https://www.w3.org/TR/css-sizing-4/)
 - Crawled URL: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
 - Crawled version: 5 June 2020
 - Editor's Draft: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
+- Latest published version: [https://www.w3.org/TR/css-sizing-4/](https://www.w3.org/TR/css-sizing-4/)
 - Shortname: css-sizing-4
 
 ### Potential issue(s) {.anomalies}
@@ -1670,7 +1670,11 @@ Informative references to this spec from:
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
 
 
 ## CSS Cascading and Inheritance Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1755,8 +1759,8 @@ Normative references to this spec from:
 - [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
@@ -1893,8 +1897,8 @@ Normative references to this spec from:
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
 - [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
@@ -1934,7 +1938,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Crawled URL: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
-- Crawled version: 28 May 2020
+- Crawled version: 17 June 2020
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Shortname: css-color-4
@@ -1957,8 +1961,8 @@ Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
@@ -2158,8 +2162,8 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
@@ -2340,8 +2344,8 @@ Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
@@ -2642,6 +2646,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Local Font Access API](https://wicg.github.io/local-font-access/)
 
 Informative references to this spec from:
 
@@ -3135,8 +3140,8 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
@@ -3204,8 +3209,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 
 
 ## CSS Inline Layout Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3714,8 +3719,8 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
@@ -3790,8 +3795,8 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Visual Viewport API](https://wicg.github.io/visual-viewport/)
@@ -3893,8 +3898,8 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
@@ -3992,8 +3997,8 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
@@ -4080,8 +4085,8 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
@@ -4916,8 +4921,8 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
@@ -5144,8 +5149,8 @@ Normative references to this spec from:
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
@@ -5276,8 +5281,8 @@ Normative references to this spec from:
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
@@ -5359,6 +5364,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
@@ -5436,8 +5442,8 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -5503,8 +5509,8 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
@@ -5610,6 +5616,27 @@ Informative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
+
+
+## Custom State Pseudo Class {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/custom-state-pseudo-class/](https://wicg.github.io/custom-state-pseudo-class/)
+- Crawled URL: [https://wicg.github.io/custom-state-pseudo-class/](https://wicg.github.io/custom-state-pseudo-class/)
+- Crawled version: 11 May 2020
+- Editor's Draft: [https://wicg.github.io/custom-state-pseudo-class/](https://wicg.github.io/custom-state-pseudo-class/)
+- Shortname: custom-state-pseudo-class
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Deprecation Reporting {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
@@ -5744,10 +5771,12 @@ Normative references to this spec from:
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Badging API](https://w3c.github.io/badging/)
 - [Battery Status API](https://w3c.github.io/battery/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
+- [Content Index](https://wicg.github.io/content-index/spec/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
@@ -5777,8 +5806,10 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
+- [Early detection of input events](https://wicg.github.io/is-input-pending/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
@@ -5831,6 +5862,7 @@ Normative references to this spec from:
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Save Data API](https://wicg.github.io/savedata/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
@@ -5867,6 +5899,7 @@ Normative references to this spec from:
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
+- [WebHID API](https://wicg.github.io/webhid/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebTransport](https://wicg.github.io/web-transport/)
 - [WebUSB API](https://wicg.github.io/webusb/)
@@ -5889,6 +5922,27 @@ Informative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
+
+
+## Early detection of input events {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
+- Crawled URL: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
+- Crawled version: 16 April 2020
+- Editor's Draft: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
+- Shortname: is-input-pending
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Element Timing API {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -5953,6 +6007,7 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Import Maps](https://wicg.github.io/import-maps/)
 - [Infra Standard](https://infra.spec.whatwg.org/)
+- [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
 - [Native File System](https://wicg.github.io/native-file-system/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
@@ -6080,9 +6135,11 @@ Normative references to this spec from:
 
 - [A Well-Known URL for Changing Passwords](https://wicg.github.io/change-password-url/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
 - [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
+- [Content Index](https://wicg.github.io/content-index/spec/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
@@ -6100,6 +6157,8 @@ Normative references to this spec from:
 - [Image Resource](https://w3c.github.io/image-resource/)
 - [Import Maps](https://wicg.github.io/import-maps/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
+- [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
+- [Media Feeds](https://wicg.github.io/media-feeds/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
@@ -6131,6 +6190,7 @@ Normative references to this spec from:
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
+- [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebTransport](https://wicg.github.io/web-transport/)
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
@@ -6197,6 +6257,7 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Local Font Access API](https://wicg.github.io/local-font-access/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
@@ -6774,6 +6835,7 @@ Normative references to this spec from:
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Badging API](https://w3c.github.io/badging/)
 - [Battery Status API](https://w3c.github.io/battery/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
@@ -6782,6 +6844,7 @@ Normative references to this spec from:
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
+- [Content Index](https://wicg.github.io/content-index/spec/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
@@ -6791,8 +6854,8 @@ Normative references to this spec from:
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -6832,10 +6895,12 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
 - [Device Memory 1](https://w3c.github.io/device-memory/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [Early detection of input events](https://wicg.github.io/is-input-pending/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
@@ -6870,12 +6935,15 @@ Normative references to this spec from:
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
+- [Local Font Access API](https://wicg.github.io/local-font-access/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
+- [Media Feeds](https://wicg.github.io/media-feeds/)
 - [Media Playback Quality](https://w3c.github.io/media-playback-quality/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
@@ -6889,6 +6957,7 @@ Normative references to this spec from:
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Origin-bound one-time codes delivered via SMS](https://wicg.github.io/sms-one-time-codes/)
+- [overscroll and scrollend events](https://wicg.github.io/overscroll-scrollend-events/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
@@ -6917,6 +6986,7 @@ Normative references to this spec from:
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Hints](https://w3c.github.io/resource-hints/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Save Data API](https://wicg.github.io/savedata/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
@@ -6966,6 +7036,7 @@ Normative references to this spec from:
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
+- [WebHID API](https://wicg.github.io/webhid/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebTransport](https://wicg.github.io/web-transport/)
 - [WebUSB API](https://wicg.github.io/webusb/)
@@ -6983,8 +7054,8 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [ContentEditable](https://w3c.github.io/contentEditable/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
@@ -7137,6 +7208,10 @@ Normative references to this spec from:
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Content Index](https://wicg.github.io/content-index/spec/)
+
 No informative reference to this spec from other specs.
 
 
@@ -7221,6 +7296,7 @@ Normative references to this spec from:
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
+- [Content Index](https://wicg.github.io/content-index/spec/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
@@ -7250,6 +7326,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
@@ -7270,6 +7347,8 @@ Normative references to this spec from:
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
+- [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
+- [Local Font Access API](https://wicg.github.io/local-font-access/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
@@ -7319,6 +7398,7 @@ Normative references to this spec from:
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
+- [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
@@ -7558,6 +7638,53 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
+## Loading Signed Exchanges {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
+- Crawled URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
+- Crawled version: 8 May 2020
+- Editor's Draft: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
+- Shortname: webpackage
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+     * [`https://w3c.github.io/network-error-logging/`](https://w3c.github.io/network-error-logging/), related reference "NETWORK-ERROR-LOGGING-1" uses URL [`https://www.w3.org/TR/network-error-logging-1/`](https://www.w3.org/TR/network-error-logging-1/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Local Font Access API {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/local-font-access/](https://wicg.github.io/local-font-access/)
+- Crawled URL: [https://wicg.github.io/local-font-access/](https://wicg.github.io/local-font-access/)
+- Crawled version: 9 June 2020
+- Editor's Draft: [https://wicg.github.io/local-font-access/](https://wicg.github.io/local-font-access/)
+- Shortname: local-font-access
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Long Tasks API 1 {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -7617,6 +7744,28 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
+## MathML Accessiblity API Mappings 1.0 {data-spec=true data-anomaly=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://w3c.github.io/mathml-aam/](https://w3c.github.io/mathml-aam/)
+- Crawled URL: [https://w3c.github.io/mathml-aam/](https://w3c.github.io/mathml-aam/)
+- Crawled version: 10 June 2020
+- Editor's Draft: [https://w3c.github.io/mathml-aam/](https://w3c.github.io/mathml-aam/)
+- Shortname: mathml-aam
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## MathML Core {data-spec=true data-ok=true}
 
 ### Spec info {.info}
@@ -7635,7 +7784,9 @@ This specification looks good!
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [MathML Accessiblity API Mappings 1.0](https://w3c.github.io/mathml-aam/)
 
 
 ## Media Capabilities {data-spec=true data-ok=true}
@@ -7758,6 +7909,27 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+
+
+## Media Feeds {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/media-feeds/](https://wicg.github.io/media-feeds/)
+- Crawled URL: [https://wicg.github.io/media-feeds/](https://wicg.github.io/media-feeds/)
+- Crawled version: 10 June 2020
+- Editor's Draft: [https://wicg.github.io/media-feeds/](https://wicg.github.io/media-feeds/)
+- Shortname: media-feeds
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Media Playback Quality {data-spec=true data-ok=true}
@@ -8067,6 +8239,7 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Image Resource](https://w3c.github.io/image-resource/)
+- [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [Native File System](https://wicg.github.io/native-file-system/)
@@ -8231,7 +8404,9 @@ This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 
 Informative references to this spec from:
 
@@ -8256,7 +8431,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Save Data API](https://wicg.github.io/savedata/)
 
 No informative reference to this spec from other specs.
 
@@ -8387,6 +8564,29 @@ Informative references to this spec from:
 - [Web OTP API](https://wicg.github.io/web-otp/)
 
 
+## overscroll and scrollend events {data-spec=true data-anomaly=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/overscroll-scrollend-events/](https://wicg.github.io/overscroll-scrollend-events/)
+- Crawled URL: [https://wicg.github.io/overscroll-scrollend-events/](https://wicg.github.io/overscroll-scrollend-events/)
+- Crawled version: 15 April 2020
+- Editor's Draft: [https://wicg.github.io/overscroll-scrollend-events/](https://wicg.github.io/overscroll-scrollend-events/)
+- Shortname: overscroll-scrollend-events
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Page Lifecycle {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -8430,6 +8630,8 @@ This specification looks good!
 
 Normative references to this spec from:
 
+- [Beacon](https://w3c.github.io/beacon/)
+- [Content Index](https://wicg.github.io/content-index/spec/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
@@ -8483,7 +8685,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Payment Handler API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
+## Payment Handler API {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -8496,12 +8698,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for WebIDL names: 
-     * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `WindowClient` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8696,6 +8893,7 @@ Normative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
+- [Local Font Access API](https://wicg.github.io/local-font-access/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
@@ -8743,21 +8941,22 @@ Normative references to this spec from:
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-- [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
-- [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web MIDI API](https://webaudio.github.io/web-midi-api/)
+- [WebHID API](https://wicg.github.io/webhid/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 
 
 ## Picture-in-Picture {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -8766,7 +8965,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/picture-in-picture/](https://www.w3.org/TR/picture-in-picture/)
 - Crawled URL: [https://w3c.github.io/picture-in-picture/](https://w3c.github.io/picture-in-picture/)
-- Crawled version: 16 June 2020
+- Crawled version: 17 June 2020
 - Editor's Draft: [https://w3c.github.io/picture-in-picture/](https://w3c.github.io/picture-in-picture/)
 - Latest published version: [https://www.w3.org/TR/picture-in-picture/](https://www.w3.org/TR/picture-in-picture/)
 - Shortname: picture-in-picture
@@ -8807,6 +9006,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Early detection of input events](https://wicg.github.io/is-input-pending/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [UI Events](https://w3c.github.io/uievents/)
 
@@ -8842,13 +9042,13 @@ Informative references to this spec from:
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 
 
-## Portals {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+## Portals {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Crawled URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
-- Crawled version: 16 June 2020
+- Crawled version: 17 June 2020
 - Editor's Draft: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Shortname: portals
 
@@ -8857,12 +9057,9 @@ Informative references to this spec from:
 - Unknown WebIDL names used: `WindowProxy`
 - WebIDL names also defined elsewhere: 
     * `MessageEventSource` also defined in [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- Missing references for WebIDL names: 
-     * `ServiceWorker` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-- Missing references for links: 
-     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/), related reference "REFERRER-POLICY" uses URL [`https://www.w3.org/TR/referrer-policy/`](https://www.w3.org/TR/referrer-policy/)
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
      * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -9014,7 +9211,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Push API {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
+## Push API {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -9027,11 +9224,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for WebIDL names: 
-     * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -9305,6 +9498,28 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 
 
+## Save Data API {data-spec=true data-anomaly=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/savedata/](https://wicg.github.io/savedata/)
+- Crawled URL: [https://wicg.github.io/savedata/](https://wicg.github.io/savedata/)
+- Crawled version: 06 September 2019
+- Editor's Draft: [https://wicg.github.io/savedata/](https://wicg.github.io/savedata/)
+- Shortname: savedata
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/netinfo/`](https://www.w3.org/TR/netinfo/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -9383,8 +9598,8 @@ Normative references to this spec from:
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Color Module Level 3](https://drafts.csswg.org/css-color-3/)
@@ -9573,7 +9788,9 @@ Normative references to this spec from:
 - [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
+- [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
+- [Media Feeds](https://wicg.github.io/media-feeds/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Network Error Logging](https://w3c.github.io/network-error-logging/)
@@ -9599,6 +9816,7 @@ Informative references to this spec from:
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Origin-bound one-time codes delivered via SMS](https://wicg.github.io/sms-one-time-codes/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
+- [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 
@@ -9669,8 +9887,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
@@ -9724,6 +9942,7 @@ Normative references to this spec from:
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
+- [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
@@ -9737,8 +9956,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
 
@@ -9790,11 +10009,12 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Initial URL: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
+- Initial URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
 - Crawled URL: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
 - Crawled version: 7 April 2020
 - Editor's Draft: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
-- Shortname: service-workers
+- Latest published version: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
+- Shortname: service-workers-1
 
 ### Potential issue(s) {.anomalies}
 
@@ -9812,28 +10032,39 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Badging API](https://w3c.github.io/badging/)
+- [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
+- [Content Index](https://wicg.github.io/content-index/spec/)
+- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Background Fetch](https://wicg.github.io/background-fetch/)
-- [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Portals](https://wicg.github.io/portals/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Push API](https://w3c.github.io/push-api/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 
 Informative references to this spec from:
 
+- [Beacon](https://w3c.github.io/beacon/)
+- [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web IDL](https://heycam.github.io/webidl/)
+- [Web Locks API](https://wicg.github.io/web-locks/)
+- [Web Share Target API](https://w3c.github.io/web-share-target/)
 
 
 ## Storage Standard {data-spec=true data-ok=true}
@@ -9887,6 +10118,7 @@ Normative references to this spec from:
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
+- [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Native File System](https://wicg.github.io/native-file-system/)
 - [Serial API](https://wicg.github.io/serial/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
@@ -10235,6 +10467,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [Early detection of input events](https://wicg.github.io/is-input-pending/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Input Device Capabilities](https://wicg.github.io/input-device-capabilities/)
@@ -10283,12 +10516,12 @@ No informative reference to this spec from other specs.
      * [`https://mimesniff.spec.whatwg.org/`](https://mimesniff.spec.whatwg.org/)
      * [`https://xhr.spec.whatwg.org/`](https://xhr.spec.whatwg.org/)
      * [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
-     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
      * [`https://w3c.github.io/webcomponents/spec/imports/`](https://w3c.github.io/webcomponents/spec/imports/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
      * [`https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/`](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/), related reference "WebIDL" uses URL [`https://heycam.github.io/webidl/`](https://heycam.github.io/webidl/)
      * [`https://w3c.github.io/DOM-Parsing/`](https://w3c.github.io/DOM-Parsing/), related reference "DOM-Parsing" uses URL [`https://www.w3.org/TR/DOM-Parsing/`](https://www.w3.org/TR/DOM-Parsing/)
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -10322,6 +10555,7 @@ Normative references to this spec from:
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [Early detection of input events](https://wicg.github.io/is-input-pending/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Input Device Capabilities](https://wicg.github.io/input-device-capabilities/)
@@ -10449,7 +10683,9 @@ Normative references to this spec from:
 
 - [A Well-Known URL for Changing Passwords](https://wicg.github.io/change-password-url/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
+- [Content Index](https://wicg.github.io/content-index/spec/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
@@ -10467,6 +10703,8 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Image Resource](https://w3c.github.io/image-resource/)
 - [Import Maps](https://wicg.github.io/import-maps/)
+- [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
+- [Media Feeds](https://wicg.github.io/media-feeds/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
@@ -10787,7 +11025,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Web Background Synchronization {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## Web Background Synchronization {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -10799,15 +11037,11 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for WebIDL names: 
-     * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec/specs/powerfulfeatures/`](https://w3c.github.io/webappsec/specs/powerfulfeatures/)
      * [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/)
-     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -10905,12 +11139,14 @@ Normative references to this spec from:
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Badging API](https://w3c.github.io/badging/)
 - [Battery Status API](https://w3c.github.io/battery/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compression Streams](https://wicg.github.io/compression/)
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
+- [Content Index](https://wicg.github.io/content-index/spec/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
@@ -10942,11 +11178,13 @@ Normative references to this spec from:
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
 - [Deprecation Reporting](https://wicg.github.io/deprecation-reporting/)
 - [Device Memory 1](https://w3c.github.io/device-memory/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [Early detection of input events](https://wicg.github.io/is-input-pending/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
@@ -10985,6 +11223,8 @@ Normative references to this spec from:
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
+- [Local Font Access API](https://wicg.github.io/local-font-access/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/)
@@ -11028,6 +11268,7 @@ Normative references to this spec from:
 - [Requesting Permissions](https://wicg.github.io/permissions-request/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Save Data API](https://wicg.github.io/savedata/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Video Coding (SVC) Extension for WebRTC](https://w3c.github.io/webrtc-svc/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
@@ -11074,6 +11315,7 @@ Normative references to this spec from:
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
+- [WebHID API](https://wicg.github.io/webhid/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 - [WebTransport](https://wicg.github.io/web-transport/)
@@ -11091,6 +11333,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
+- [overscroll and scrollend events](https://wicg.github.io/overscroll-scrollend-events/)
 
 
 ## Web Locks API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -11106,10 +11349,10 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
-     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
      * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/), related reference "IndexedDB-2" uses URL [`https://www.w3.org/TR/IndexedDB-2/`](https://www.w3.org/TR/IndexedDB-2/)
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "Service-Workers" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -11187,7 +11430,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Web Periodic Background Synchronization {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+## Web Periodic Background Synchronization {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -11199,15 +11442,9 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for WebIDL names: 
-     * `ServiceWorkerGlobalScope` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ServiceWorkerRegistration` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ExtendableEventInit` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-     * `ExtendableEvent` defined in [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-- Missing references for links: 
-     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
      * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -11391,6 +11628,28 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
+
+No informative reference to this spec from other specs.
+
+
+## WebDriver BiDi {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
+- Crawled URL: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
+- Crawled version: 11 June 2020
+- Editor's Draft: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
+- Shortname: webdriver-bidi
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -11466,7 +11725,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 15 June 2020
+- Crawled version: 17 June 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -11475,6 +11734,27 @@ Informative references to this spec from:
 - Invalid WebIDL content found
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## WebHID API {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
+- Crawled URL: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
+- Crawled version: 3 May 2019
+- Editor's Draft: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
+- Shortname: webhid
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -11597,7 +11877,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 16 June 2020
+- Crawled version: 17 June 2020
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
@@ -11838,7 +12118,9 @@ This specification looks good!
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Local Font Access API](https://wicg.github.io/local-font-access/)
 
 
 ## Worklets Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true}
