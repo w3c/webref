@@ -70,10 +70,10 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
-    "line-sizing": {
-      "name": "line-sizing",
-      "value": "legacy | normal",
-      "initial": "legacy",
+    "text-edge": {
+      "name": "text-edge",
+      "value": "<text-edge-over> <text-edge-under>?",
+      "initial": "normal",
       "appliesTo": "inline boxes",
       "inherited": "yes",
       "percentages": "N/A",
@@ -81,22 +81,22 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
-    "leading-trim-over": {
-      "name": "leading-trim-over",
-      "value": "normal | text | cap | ex | ideographic | ideographic-ink",
-      "initial": "normal",
-      "appliesTo": "block containers and inline boxes",
-      "inherited": "no",
+    "text-edge-over": {
+      "name": "text-edge-over",
+      "value": "leading | text | cap | ex | ideographic | ideographic-ink",
+      "initial": "leading",
+      "appliesTo": "inline boxes",
+      "inherited": "yes",
       "percentages": "N/A",
       "computedValue": "the specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
-    "leading-trim-under": {
-      "name": "leading-trim-under",
+    "text-edge-under": {
+      "name": "text-edge-under",
       "value": "normal | text | alphabetic | ideographic | ideographic-ink",
       "initial": "normal",
-      "appliesTo": "block containers and inline boxes",
+      "appliesTo": "inline boxes",
       "inherited": "yes",
       "percentages": "N/A",
       "computedValue": "the specified keyword",
@@ -105,7 +105,7 @@
     },
     "leading-trim": {
       "name": "leading-trim",
-      "value": "normal | text | cap | ex | ideographic | ideographic-ink",
+      "value": "normal | start | end | both",
       "initial": "normal",
       "appliesTo": "block containers",
       "inherited": "no",
