@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% June 17, 2020
+% June 18, 2020
 
 329 specifications were crawled in this report.
 
