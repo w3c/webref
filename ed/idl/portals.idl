@@ -9,8 +9,7 @@ interface HTMLPortalElement : HTMLElement {
     [CEReactions] attribute DOMString referrerPolicy;
 
     [NewObject] Promise<void> activate(optional PortalActivateOptions options);
-    void postMessage(any message, USVString targetOrigin, optional sequence<object> transfer = []);
-    void postMessage(any message, optional WindowPostMessageOptions options);
+    void postMessage(any message, optional PostMessageOptions options = {});
 
     attribute EventHandler onmessage;
     attribute EventHandler onmessageerror;
@@ -26,8 +25,7 @@ partial interface Window {
 
 [Exposed=Window]
 interface PortalHost : EventTarget {
-    void postMessage(any message, USVString targetOrigin, optional sequence<object> transfer = []);
-    void postMessage(any message, optional WindowPostMessageOptions options);
+    void postMessage(any message, optional PostMessageOptions options);
 
     attribute EventHandler onmessage;
     attribute EventHandler onmessageerror;
