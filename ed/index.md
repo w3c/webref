@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% June 18, 2020
+% June 19, 2020
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
@@ -4742,7 +4742,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-text-decor-4/](https://www.w3.org/TR/css-text-decor-4/)
 - Crawled URL: [https://drafts.csswg.org/css-text-decor-4/](https://drafts.csswg.org/css-text-decor-4/)
-- Crawled version: 6 May 2020
+- Crawled version: 10 May 2020
 - Editor's Draft: [https://drafts.csswg.org/css-text-decor-4/](https://drafts.csswg.org/css-text-decor-4/)
 - Latest published version: [https://www.w3.org/TR/css-text-decor-4/](https://www.w3.org/TR/css-text-decor-4/)
 - Shortname: css-text-decor-4
@@ -5421,7 +5421,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
 - Crawled URL: [https://drafts.csswg.org/css-writing-modes-3/](https://drafts.csswg.org/css-writing-modes-3/)
-- Crawled version: 16 June 2020
+- Crawled version: 18 June 2020
 - Editor's Draft: [https://drafts.csswg.org/css-writing-modes-3/](https://drafts.csswg.org/css-writing-modes-3/)
 - Latest published version: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
 - Shortname: css-writing-modes-3
@@ -5484,7 +5484,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-writing-modes-4/](https://www.w3.org/TR/css-writing-modes-4/)
 - Crawled URL: [https://drafts.csswg.org/css-writing-modes-4/](https://drafts.csswg.org/css-writing-modes-4/)
-- Crawled version: 16 June 2020
+- Crawled version: 18 June 2020
 - Editor's Draft: [https://drafts.csswg.org/css-writing-modes-4/](https://drafts.csswg.org/css-writing-modes-4/)
 - Latest published version: [https://www.w3.org/TR/css-writing-modes-4/](https://www.w3.org/TR/css-writing-modes-4/)
 - Shortname: css-writing-modes-4
@@ -6235,7 +6235,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
 - Crawled URL: [https://w3c.github.io/FileAPI/](https://w3c.github.io/FileAPI/)
-- Crawled version: 14 April 2020
+- Crawled version: 18 June 2020
 - Editor's Draft: [https://w3c.github.io/FileAPI/](https://w3c.github.io/FileAPI/)
 - Latest published version: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
 - Shortname: FileAPI
@@ -6424,7 +6424,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Crawled URL: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
-- Crawled version: 25 February 2020
+- Crawled version: 18 June 2020
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Shortname: gamepad
@@ -6453,7 +6453,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
 - Crawled URL: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
-- Crawled version: 25 February 2020
+- Crawled version: 18 June 2020
 - Editor's Draft: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
 - Shortname: gamepad-extensions
 
@@ -7276,7 +7276,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://infra.spec.whatwg.org/](https://infra.spec.whatwg.org/)
 - Crawled URL: [https://infra.spec.whatwg.org/](https://infra.spec.whatwg.org/)
-- Crawled version: 14 June 2020
+- Crawled version: 18 June 2020
 - Editor's Draft: [https://infra.spec.whatwg.org/](https://infra.spec.whatwg.org/)
 - Shortname: infra
 
@@ -7718,7 +7718,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
 - Crawled URL: [https://w3c.github.io/magnetometer/](https://w3c.github.io/magnetometer/)
-- Crawled version: 20 March 2020
+- Crawled version: 18 June 2020
 - Editor's Draft: [https://w3c.github.io/magnetometer/](https://w3c.github.io/magnetometer/)
 - Latest published version: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
 - Shortname: magnetometer
@@ -9739,7 +9739,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
 - Crawled URL: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
-- Crawled version: 16 June 2020
+- Crawled version: 18 June 2020
 - Editor's Draft: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
 - Shortname: scroll-animations-1
 
@@ -11118,7 +11118,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Crawled URL: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
-- Crawled version: 11 June 2020
+- Crawled version: 18 June 2020
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Shortname: WebIDL-1
@@ -11323,6 +11323,7 @@ Normative references to this spec from:
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Anchors Module](https://immersive-web.github.io/anchors/)
+- [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
@@ -11941,20 +11942,20 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebXR Augmented Reality Module - Level 1 {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
+## WebXR Augmented Reality Module - Level 1 {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/webxr-ar-module-1/](https://www.w3.org/TR/webxr-ar-module-1/)
 - Crawled URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
-- Crawled version: 2 June 2020
+- Crawled version: 18 June 2020
 - Editor's Draft: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
 - Latest published version: [https://www.w3.org/TR/webxr-ar-module-1/](https://www.w3.org/TR/webxr-ar-module-1/)
 - Shortname: webxr-ar-module-1
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -11972,7 +11973,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled URL: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Crawled version: 12 June 2020
+- Crawled version: 18 June 2020
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Shortname: webxr
@@ -11991,6 +11992,7 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
      * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
      * [`https://w3c.github.io/requestidlecallback/`](https://w3c.github.io/requestidlecallback/), related reference "REQUESTIDLECALLBACK" uses URL [`https://www.w3.org/TR/requestidlecallback/`](https://www.w3.org/TR/requestidlecallback/)
+     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/), related reference "FEATURE-POLICY-1" uses URL [`https://www.w3.org/TR/feature-policy-1/`](https://www.w3.org/TR/feature-policy-1/)
 
 ### Known dependencies on this specification {.dependencies}
 

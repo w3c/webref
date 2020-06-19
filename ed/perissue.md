@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% June 18, 2020
+% June 19, 2020
 
 329 specifications were crawled in this report.
 
@@ -40,9 +40,8 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [SVG Markers](https://svgwg.org/specs/markers/)
 - [SVG Paths](https://svgwg.org/specs/paths/)
 - [WebRTC DSCP Control API](https://w3c.github.io/webrtc-priority/)
-- [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
 
-=> 8 specifications found
+=> 7 specifications found
 
 
 
@@ -1248,9 +1247,10 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
     * [`https://w3c.github.io/requestidlecallback/`](https://w3c.github.io/requestidlecallback/) but related reference "REQUESTIDLECALLBACK" uses URL [`https://www.w3.org/TR/requestidlecallback/`](https://www.w3.org/TR/requestidlecallback/)
+    * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/) but related reference "FEATURE-POLICY-1" uses URL [`https://www.w3.org/TR/feature-policy-1/`](https://www.w3.org/TR/feature-policy-1/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/) links to [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 339 inconsistent references for links found in 179 specifications
+=> 340 inconsistent references for links found in 179 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
