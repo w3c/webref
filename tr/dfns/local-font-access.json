@@ -1,0 +1,357 @@
+{
+  "spec": {
+    "title": "Local Font Access API",
+    "url": "https://wicg.github.io/local-font-access/"
+  },
+  "dfns": [
+    {
+      "id": "font-representation",
+      "href": "https://wicg.github.io/local-font-access/#font-representation",
+      "linkingText": [
+        "font representation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "font-representation-table-list",
+      "href": "https://wicg.github.io/local-font-access/#font-representation-table-list",
+      "linkingText": [
+        "table list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "font representation"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "font-table",
+      "href": "https://wicg.github.io/local-font-access/#font-table",
+      "linkingText": [
+        "font table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "font-table-tag",
+      "href": "https://wicg.github.io/local-font-access/#font-table-tag",
+      "linkingText": [
+        "tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "font table"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "font-table-data-bytes",
+      "href": "https://wicg.github.io/local-font-access/#font-table-data-bytes",
+      "linkingText": [
+        "data bytes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "font table"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "font-representation-name-table",
+      "href": "https://wicg.github.io/local-font-access/#font-representation-name-table",
+      "linkingText": [
+        "name table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "font representation"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "name-table-names",
+      "href": "https://wicg.github.io/local-font-access/#name-table-names",
+      "linkingText": [
+        "names"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "name table"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "localized-string-table",
+      "href": "https://wicg.github.io/local-font-access/#localized-string-table",
+      "linkingText": [
+        "localized string table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "font-representation-name-string",
+      "href": "https://wicg.github.io/local-font-access/#font-representation-name-string",
+      "linkingText": [
+        "name string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "font representation"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "current-language",
+      "href": "https://wicg.github.io/local-font-access/#current-language",
+      "linkingText": [
+        "current language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-permissionname-local-fonts",
+      "href": "https://wicg.github.io/local-font-access/#dom-permissionname-local-fonts",
+      "linkingText": [
+        "\"local-fonts\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "navigatorfonts",
+      "href": "https://wicg.github.io/local-font-access/#navigatorfonts",
+      "linkingText": [
+        "NavigatorFonts"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-navigatorfonts-fonts",
+      "href": "https://wicg.github.io/local-font-access/#dom-navigatorfonts-fonts",
+      "linkingText": [
+        "fonts"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NavigatorFonts"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fontmanager",
+      "href": "https://wicg.github.io/local-font-access/#fontmanager",
+      "linkingText": [
+        "FontManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontmanager-query",
+      "href": "https://wicg.github.io/local-font-access/#dom-fontmanager-query",
+      "linkingText": [
+        "query()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FontManager"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fontiterator",
+      "href": "https://wicg.github.io/local-font-access/#fontiterator",
+      "linkingText": [
+        "FontIterator"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontiterator-fontlist-slot",
+      "href": "https://wicg.github.io/local-font-access/#dom-fontiterator-fontlist-slot",
+      "linkingText": [
+        "[[FontList]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontIterator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontiterator-asynchronous-iterator-initialization-steps",
+      "href": "https://wicg.github.io/local-font-access/#dom-fontiterator-asynchronous-iterator-initialization-steps",
+      "linkingText": [
+        "asynchronous iterator initialization steps"
+      ],
+      "localLinkingText": [],
+      "type": "iterator",
+      "for": [
+        "FontIterator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontiterator-get-the-next-iteration-result",
+      "href": "https://wicg.github.io/local-font-access/#dom-fontiterator-get-the-next-iteration-result",
+      "linkingText": [
+        "get the next iteration result"
+      ],
+      "localLinkingText": [],
+      "type": "iterator",
+      "for": [
+        "FontIterator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fontmetadata",
+      "href": "https://wicg.github.io/local-font-access/#fontmetadata",
+      "linkingText": [
+        "FontMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontmetadata-gettables-tables-tables",
+      "href": "https://wicg.github.io/local-font-access/#dom-fontmetadata-gettables-tables-tables",
+      "linkingText": [
+        "tables"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FontMetadata/getTables(tables)",
+        "FontMetadata/getTables()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontmetadata-postscriptname",
+      "href": "https://wicg.github.io/local-font-access/#dom-fontmetadata-postscriptname",
+      "linkingText": [
+        "postscriptName"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontmetadata-fullname",
+      "href": "https://wicg.github.io/local-font-access/#dom-fontmetadata-fullname",
+      "linkingText": [
+        "fullName"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontmetadata-family",
+      "href": "https://wicg.github.io/local-font-access/#dom-fontmetadata-family",
+      "linkingText": [
+        "family"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fonttablemap",
+      "href": "https://wicg.github.io/local-font-access/#fonttablemap",
+      "linkingText": [
+        "FontTableMap"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fontmetadata-gettables",
+      "href": "https://wicg.github.io/local-font-access/#dom-fontmetadata-gettables",
+      "linkingText": [
+        "getTables(tables)",
+        "getTables()",
+        "getTables(tableNames)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FontMetadata"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

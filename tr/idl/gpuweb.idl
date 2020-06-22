@@ -23,7 +23,7 @@ partial interface WorkerNavigator {
 
 [Exposed=(Window, DedicatedWorker)]
 interface GPU {
-    Promise<GPUAdapter> requestAdapter(optional GPURequestAdapterOptions options = {});
+    Promise<GPUAdapter?> requestAdapter(optional GPURequestAdapterOptions options = {});
 };
 
 dictionary GPURequestAdapterOptions {
@@ -40,7 +40,7 @@ interface GPUAdapter {
     readonly attribute FrozenArray<GPUExtensionName> extensions;
     //readonly attribute GPULimits limits; Don’t expose higher limits for now.
 
-    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});
+    Promise<GPUDevice?> requestDevice(optional GPUDeviceDescriptor descriptor = {});
 };
 
 dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {
@@ -241,7 +241,24 @@ enum GPUTextureFormat {
     // Depth and stencil formats
     "depth32float",
     "depth24plus",
-    "depth24plus-stencil8"
+    "depth24plus-stencil8",
+
+    // BC compressed formats usable if "texture-compression-bc" is both
+    // supported by the device/user agent and enabled in createDevice.
+    "bc1-rgba-unorm",
+    "bc1-rgba-unorm-srgb",
+    "bc2-rgba-unorm",
+    "bc2-rgba-unorm-srgb",
+    "bc3-rgba-unorm",
+    "bc3-rgba-unorm-srgb",
+    "bc4-r-unorm",
+    "bc4-r-snorm",
+    "bc5-rg-unorm",
+    "bc5-rg-snorm",
+    "bc6h-rgb-ufloat",
+    "bc6h-rgb-sfloat",
+    "bc7-rgba-unorm",
+    "bc7-rgba-unorm-srgb"
 };
 
 enum GPUTextureComponentType {
@@ -304,6 +321,9 @@ dictionary GPUBindGroupLayoutEntry {
 
     // Used for uniform buffer and storage buffer bindings.
     boolean hasDynamicOffset = false;
+
+    // Used for uniform buffer and storage buffer bindings.
+    GPUSize64 minBufferBindingSize = 0;
 
     // Used for sampled texture and storage texture bindings.
     GPUTextureViewDimension viewDimension;

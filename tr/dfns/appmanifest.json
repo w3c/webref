@@ -384,6 +384,18 @@
       "informative": false
     },
     {
+      "id": "dfn-processing-a-color-member",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-processing-a-color-member",
+      "linkingText": [
+        "processing a color member"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "dom-webappmanifest",
       "href": "https://www.w3.org/TR/appmanifest/#dom-webappmanifest",
       "linkingText": [
@@ -446,10 +458,10 @@
       "informative": false
     },
     {
-      "id": "dfn-directionality-capable-members",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-directionality-capable-members",
+      "id": "dfn-localizable-members",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-localizable-members",
       "linkingText": [
-        "directionality-capable members"
+        "localizable members"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -773,18 +785,6 @@
       "informative": false
     },
     {
-      "id": "dfn-processing-the-theme_color-member",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-processing-the-theme_color-member",
-      "linkingText": [
-        "processing the theme_color\n          member"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "dfn-related-application",
       "href": "https://www.w3.org/TR/appmanifest/#dfn-related-application",
       "linkingText": [
@@ -848,18 +848,6 @@
         "WebAppManifest"
       ],
       "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dfn-processing-the-background_color-member",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-processing-the-background_color-member",
-      "linkingText": [
-        "processing the background_color\n          member"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
       "informative": false
     },
     {
@@ -955,10 +943,10 @@
       "informative": false
     },
     {
-      "id": "dom-imageresource",
-      "href": "https://www.w3.org/TR/appmanifest/#dom-imageresource",
+      "id": "dom-manifestimageresource",
+      "href": "https://www.w3.org/TR/appmanifest/#dom-manifestimageresource",
       "linkingText": [
-        "ImageResource"
+        "ManifestImageResource"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -967,27 +955,29 @@
       "informative": false
     },
     {
-      "id": "dfn-steps-to-fetch-an-image-resource",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-steps-to-fetch-an-image-resource",
+      "id": "dom-manifestimageresource-platform",
+      "href": "https://www.w3.org/TR/appmanifest/#dom-manifestimageresource-platform",
       "linkingText": [
-        "steps to fetch an image\n          resource"
+        "platform"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "dict-member",
+      "for": [
+        "ManifestImageResource"
+      ],
+      "access": "public",
       "informative": false
     },
     {
-      "id": "dom-imageresource-purpose",
-      "href": "https://www.w3.org/TR/appmanifest/#dom-imageresource-purpose",
+      "id": "dom-manifestimageresource-purpose",
+      "href": "https://www.w3.org/TR/appmanifest/#dom-manifestimageresource-purpose",
       "linkingText": [
         "purpose"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "ImageResource"
+        "ManifestImageResource"
       ],
       "access": "public",
       "informative": false
@@ -1017,11 +1007,11 @@
       "informative": false
     },
     {
-      "id": "dfn-badge-purpose",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-badge-purpose",
+      "id": "dfn-monochrome-purpose",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-monochrome-purpose",
       "linkingText": [
-        "badge purpose",
-        "badge"
+        "monochrome purpose",
+        "monochrome"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1030,10 +1020,10 @@
       "informative": false
     },
     {
-      "id": "dfn-badge-maskable",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-badge-maskable",
+      "id": "dfn-maskable-purpose",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-maskable-purpose",
       "linkingText": [
-        "badge maskable",
+        "maskable purpose",
         "maskable"
       ],
       "localLinkingText": [],
@@ -1080,24 +1070,10 @@
       "informative": false
     },
     {
-      "id": "dom-imageresource-sizes",
-      "href": "https://www.w3.org/TR/appmanifest/#dom-imageresource-sizes",
+      "id": "dfn-solid-fill",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-solid-fill",
       "linkingText": [
-        "sizes"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ImageResource"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dfn-processing-the-sizes-member-of-an-image",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-processing-the-sizes-member-of-an-image",
-      "linkingText": [
-        "processing the sizes member of an\n          image"
+        "solid\n          fill"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1106,64 +1082,10 @@
       "informative": false
     },
     {
-      "id": "dom-imageresource-src",
-      "href": "https://www.w3.org/TR/appmanifest/#dom-imageresource-src",
+      "id": "dfn-processing-manifestimageresource-members",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-processing-manifestimageresource-members",
       "linkingText": [
-        "src"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ImageResource"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-imageresource-type",
-      "href": "https://www.w3.org/TR/appmanifest/#dom-imageresource-type",
-      "linkingText": [
-        "type"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ImageResource"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dfn-processing-the-type-member-of-an-image",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-processing-the-type-member-of-an-image",
-      "linkingText": [
-        "processing the type member of an\n          image"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dom-imageresource-platform",
-      "href": "https://www.w3.org/TR/appmanifest/#dom-imageresource-platform",
-      "linkingText": [
-        "platform"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ImageResource"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dfn-processing-imageresource-members",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-processing-imageresource-members",
-      "linkingText": [
-        "processing ImageResource members"
+        "processing ManifestImageResource members"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1277,6 +1199,18 @@
         "ExternalApplicationResource"
       ],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-platform",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-platform",
+      "linkingText": [
+        "platform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
@@ -1400,27 +1334,27 @@
       "informative": false
     },
     {
-      "id": "dfn-mime-type-for-a-manifest",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-mime-type-for-a-manifest",
+      "id": "dfn-application-manifest-mime-type",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-application-manifest-mime-type",
       "linkingText": [
-        "MIME type for a manifest"
+        "application manifest MIME type"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
-      "id": "dfn-user-agent",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-user-agent",
+      "id": "dfn-application-manifest-json",
+      "href": "https://www.w3.org/TR/appmanifest/#dfn-application-manifest-json",
       "linkingText": [
-        "user agent"
+        "application/manifest+json"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -1472,42 +1406,6 @@
       "informative": false
     },
     {
-      "id": "dfn-parse-a-component-value",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-parse-a-component-value",
-      "linkingText": [
-        "parse a\n              component value"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-isstructurallyvalidlanguagetag",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-isstructurallyvalidlanguagetag",
-      "linkingText": [
-        "IsStructurallyValidLanguageTag"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-canonicalizelanguagetag",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-canonicalizelanguagetag",
-      "linkingText": [
-        "CanonicalizeLanguageTag"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "dfn-type",
       "href": "https://www.w3.org/TR/appmanifest/#dfn-type",
       "linkingText": [
@@ -1520,70 +1418,10 @@
       "informative": false
     },
     {
-      "id": "dfn-unordered-set-of-unique-space-separated-tokens",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-unordered-set-of-unique-space-separated-tokens",
-      "linkingText": [
-        "unordered\n              set of unique space-separated tokens"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-link-type",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-link-type",
-      "linkingText": [
-        "link type"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "dfn-delay-the-load-event",
       "href": "https://www.w3.org/TR/appmanifest/#dfn-delay-the-load-event",
       "linkingText": [
         "delay the load\n              event"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-valid-non-negative-integer",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-valid-non-negative-integer",
-      "linkingText": [
-        "valid\n              non-negative integer"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-determining-the-type-of-the-resource",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-determining-the-type-of-the-resource",
-      "linkingText": [
-        "determining\n              the type of the resource"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-the-element-s-base-url",
-      "href": "https://www.w3.org/TR/appmanifest/#dfn-the-element-s-base-url",
-      "linkingText": [
-        "the element's\n              base URL"
       ],
       "localLinkingText": [],
       "type": "dfn",

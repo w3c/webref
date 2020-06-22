@@ -1,0 +1,171 @@
+{
+  "spec": {
+    "title": "Web OTP API",
+    "url": "https://wicg.github.io/web-otp/"
+  },
+  "dfns": [
+    {
+      "id": "otpcredential",
+      "href": "https://wicg.github.io/web-otp/#otpcredential",
+      "linkingText": [
+        "OTPCredential"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-otpcredential-type-slot",
+      "href": "https://wicg.github.io/web-otp/#dom-otpcredential-type-slot",
+      "linkingText": [
+        "[[type]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "OTPCredential"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-otpcredential-code",
+      "href": "https://wicg.github.io/web-otp/#dom-otpcredential-code",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "OTPCredential"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-otpcredential-discoverfromexternalsource-slot",
+      "href": "https://wicg.github.io/web-otp/#dom-otpcredential-discoverfromexternalsource-slot",
+      "linkingText": [
+        "[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "OTPCredential"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-origin",
+      "href": "https://wicg.github.io/web-otp/#dom-publickeycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PublicKeyCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-options",
+      "href": "https://wicg.github.io/web-otp/#dom-publickeycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PublicKeyCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-publickeycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-sameoriginwithancestors",
+      "href": "https://wicg.github.io/web-otp/#dom-publickeycredential-discoverfromexternalsource-origin-options-sameoriginwithancestors-sameoriginwithancestors",
+      "linkingText": [
+        "sameOriginWithAncestors"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PublicKeyCredential/[[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-credentialrequestoptions-otp",
+      "href": "https://wicg.github.io/web-otp/#dom-credentialrequestoptions-otp",
+      "linkingText": [
+        "otp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-otpcredentialrequestoptions",
+      "href": "https://wicg.github.io/web-otp/#dictdef-otpcredentialrequestoptions",
+      "linkingText": [
+        "OTPCredentialRequestOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-otpcredentialrequestoptions-transport",
+      "href": "https://wicg.github.io/web-otp/#dom-otpcredentialrequestoptions-transport",
+      "linkingText": [
+        "transport"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "OTPCredentialRequestOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-otpcredentialtransporttype",
+      "href": "https://wicg.github.io/web-otp/#enumdef-otpcredentialtransporttype",
+      "linkingText": [
+        "OTPCredentialTransportType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-otpcredentialtransporttype-sms",
+      "href": "https://wicg.github.io/web-otp/#dom-otpcredentialtransporttype-sms",
+      "linkingText": [
+        "\"sms\"",
+        "sms"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "OTPCredentialTransportType"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}

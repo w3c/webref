@@ -1,0 +1,657 @@
+{
+  "spec": {
+    "title": "IceTransport Extensions for WebRTC",
+    "url": "https://w3c.github.io/webrtc-ice/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-user-agent",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-eventhandler",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-eventhandler",
+      "linkingText": [
+        "EventHandler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-errorevent",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-errorevent",
+      "linkingText": [
+        "ErrorEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-queue-a-task",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-queue-a-task",
+      "linkingText": [
+        "queue a task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fires-a-simple-event",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-fires-a-simple-event",
+      "linkingText": [
+        "fires a simple\n      event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-networking-task-source",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-networking-task-source",
+      "linkingText": [
+        "networking\n      task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-event",
+      "linkingText": [
+        "event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handlers",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-event-handlers",
+      "linkingText": [
+        "event\n      handlers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-event-handler-event-types",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-event-handler-event-types",
+      "linkingText": [
+        "event\n      handler event types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-throw",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-throw",
+      "linkingText": [
+        "throw"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-create",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-create",
+      "linkingText": [
+        "create"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exception"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-fulfill",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-fulfill",
+      "linkingText": [
+        "fulfill",
+        "fulfillment",
+        "fulfilled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-reject",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-reject",
+      "linkingText": [
+        "reject",
+        "rejection",
+        "rejecting",
+        "rejected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-resolve",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-resolve",
+      "linkingText": [
+        "resolve",
+        "resolves",
+        "resolved"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-pending",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-pending",
+      "linkingText": [
+        "pending"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-settled",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-settled",
+      "linkingText": [
+        "settled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcdtlstransport",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-rtcdtlstransport",
+      "linkingText": [
+        "RTCDtlsTransport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicetransport",
+      "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport",
+      "linkingText": [
+        "RTCIceTransport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-getlocalparameters",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-getlocalparameters",
+      "linkingText": [
+        "getLocalParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-icecandidate",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-icecandidate",
+      "linkingText": [
+        "icecandidate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-icecandidateerror",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-icecandidateerror",
+      "linkingText": [
+        "icecandidateerror"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcpeerconnectioniceevent",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-rtcpeerconnectioniceevent",
+      "linkingText": [
+        "RTCPeerConnectionIceEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcpeerconnectioniceerrorevent",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-rtcpeerconnectioniceerrorevent",
+      "linkingText": [
+        "RTCPeerConnectionIceErrorEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcicecandidate",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-rtcicecandidate",
+      "linkingText": [
+        "RTCIceCandidate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcicecandidateinit",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-rtcicecandidateinit",
+      "linkingText": [
+        "RTCIceCandidateInit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcicecandidatepair",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-rtcicecandidatepair",
+      "linkingText": [
+        "RTCIceCandidatePair"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtciceserver",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-rtciceserver",
+      "linkingText": [
+        "RTCIceServer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcicetransportpolicy",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-rtcicetransportpolicy",
+      "linkingText": [
+        "RTCIceTransportPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcicetransportstate",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-rtcicetransportstate",
+      "linkingText": [
+        "RTCIceTransportState"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-rtcicerole",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-rtcicerole",
+      "linkingText": [
+        "RTCIceRole"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-icerole",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-icerole",
+      "linkingText": [
+        "[[IceRole]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-icetransportstate",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-icetransportstate",
+      "linkingText": [
+        "[[IceTransportState]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-icegathererstate",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-icegathererstate",
+      "linkingText": [
+        "[[IceGathererState]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-selectedcandidatepair",
+      "href": "https://w3c.github.io/webrtc-ice/#dfn-selectedcandidatepair",
+      "linkingText": [
+        "[[SelectedCandidatePair]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtciceparameters",
+      "href": "https://w3c.github.io/webrtc-ice/#dom-rtciceparameters",
+      "linkingText": [
+        "RTCIceParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtciceparameters-usernamefragment",
+      "href": "https://w3c.github.io/webrtc-ice/#dom-rtciceparameters-usernamefragment",
+      "linkingText": [
+        "usernameFragment"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceParameters"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtciceparameters-password",
+      "href": "https://w3c.github.io/webrtc-ice/#dom-rtciceparameters-password",
+      "linkingText": [
+        "password"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceParameters"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtciceparameters-icelite",
+      "href": "https://w3c.github.io/webrtc-ice/#dom-rtciceparameters-icelite",
+      "linkingText": [
+        "iceLite"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceParameters"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicegatheroptions",
+      "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicegatheroptions",
+      "linkingText": [
+        "RTCIceGatherOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicegatheroptions-gatherpolicy",
+      "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicegatheroptions-gatherpolicy",
+      "linkingText": [
+        "gatherPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceGatherOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicegatheroptions-iceservers",
+      "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicegatheroptions-iceservers",
+      "linkingText": [
+        "iceServers"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCIceGatherOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicetransport-constructor",
+      "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport-constructor",
+      "linkingText": [
+        "constructor()"
+      ],
+      "localLinkingText": [
+        "RTCIceTransport.constructor",
+        "RTCIceTransport.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicetransport-onerror",
+      "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [
+        "RTCIceTransport.onerror"
+      ],
+      "type": "attribute",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicetransport-onicecandidate",
+      "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport-onicecandidate",
+      "linkingText": [
+        "onicecandidate"
+      ],
+      "localLinkingText": [
+        "RTCIceTransport.onicecandidate"
+      ],
+      "type": "attribute",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicetransport-gather",
+      "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport-gather",
+      "linkingText": [
+        "gather()",
+        "gather(, options)"
+      ],
+      "localLinkingText": [
+        "RTCIceTransport.gather",
+        "RTCIceTransport.gather()",
+        "gather"
+      ],
+      "type": "method",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "ice-servers-list",
+      "href": "https://w3c.github.io/webrtc-ice/#ice-servers-list",
+      "linkingText": [
+        "ICE servers list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicetransport-start",
+      "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport-start",
+      "linkingText": [
+        "start()",
+        "start(remoteParameters)",
+        "start(remoteParameters, role)"
+      ],
+      "localLinkingText": [
+        "RTCIceTransport.start",
+        "RTCIceTransport.start()",
+        "start"
+      ],
+      "type": "method",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicetransport-stop",
+      "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport-stop",
+      "linkingText": [
+        "stop()"
+      ],
+      "localLinkingText": [
+        "RTCIceTransport.stop",
+        "RTCIceTransport.stop()",
+        "stop"
+      ],
+      "type": "method",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcicetransport-addremotecandidate",
+      "href": "https://w3c.github.io/webrtc-ice/#dom-rtcicetransport-addremotecandidate",
+      "linkingText": [
+        "addRemoteCandidate()",
+        "addRemoteCandidate(remoteCandidate)"
+      ],
+      "localLinkingText": [
+        "RTCIceTransport.addRemoteCandidate",
+        "RTCIceTransport.addRemoteCandidate()",
+        "addRemoteCandidate"
+      ],
+      "type": "method",
+      "for": [
+        "RTCIceTransport"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}
