@@ -1,0 +1,4106 @@
+{
+  "spec": {
+    "title": "Service Workers 1",
+    "url": "https://www.w3.org/TR/service-workers-1/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-service-worker",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-service-worker",
+      "linkingText": [
+        "service worker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-state",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-script-url",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-script-url",
+      "linkingText": [
+        "script url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-type",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-containing-service-worker-registration",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-containing-service-worker-registration",
+      "linkingText": [
+        "registration",
+        "containing service worker registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-service-worker-global-object",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-service-worker-global-object",
+      "linkingText": [
+        "global object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-script-resource",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-script-resource",
+      "linkingText": [
+        "script resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-has-ever-been-evaluated-flag",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-has-ever-been-evaluated-flag",
+      "linkingText": [
+        "has ever been evaluated flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script resource"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-https-state",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-https-state",
+      "linkingText": [
+        "HTTPS state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script resource"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-referrer-policy",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-referrer-policy",
+      "linkingText": [
+        "referrer policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script resource"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-script-resource-map",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-script-resource-map",
+      "linkingText": [
+        "script resource map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-skip-waiting-flag",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-skip-waiting-flag",
+      "linkingText": [
+        "skip waiting flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-classic-scripts-imported-flag",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-classic-scripts-imported-flag",
+      "linkingText": [
+        "classic scripts imported flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-set-of-event-types-to-handle",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-set-of-event-types-to-handle",
+      "linkingText": [
+        "set of event types to handle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-set-of-extended-events",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-set-of-extended-events",
+      "linkingText": [
+        "set of extended events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "service-worker-start-status",
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-start-status",
+      "linkingText": [
+        "start status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "service-worker-running",
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-running",
+      "linkingText": [
+        "running"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-service-worker-events",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-service-worker-events",
+      "linkingText": [
+        "service worker events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-lifecycle-events",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-lifecycle-events",
+      "linkingText": [
+        "Lifecycle events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-functional-events",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-functional-events",
+      "linkingText": [
+        "Functional events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-service-worker-registration",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-service-worker-registration",
+      "linkingText": [
+        "service worker registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-scope-url",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-scope-url",
+      "linkingText": [
+        "scope url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker registration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-installing-worker",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-installing-worker",
+      "linkingText": [
+        "installing worker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker registration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-waiting-worker",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-waiting-worker",
+      "linkingText": [
+        "waiting worker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker registration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-active-worker",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-active-worker",
+      "linkingText": [
+        "active worker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker registration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-last-update-check-time",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-last-update-check-time",
+      "linkingText": [
+        "last update check time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker registration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "service-worker-registration-stale",
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-registration-stale",
+      "linkingText": [
+        "stale"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker registration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-update-via-cache",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-update-via-cache",
+      "linkingText": [
+        "update via cache mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker registration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-service-worker-registration-task-queue",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-service-worker-registration-task-queue",
+      "linkingText": [
+        "task queues"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker registration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-service-worker-registration-unregistered",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-service-worker-registration-unregistered",
+      "linkingText": [
+        "unregistered"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker registration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-service-worker-client",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-service-worker-client",
+      "linkingText": [
+        "service worker client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "service-worker-client-discarded-flag",
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-client-discarded-flag",
+      "linkingText": [
+        "discarded flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker client"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "service-worker-client-origin",
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-client-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker client"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-window-client",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-window-client",
+      "linkingText": [
+        "window client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker client"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-dedicatedworker-client",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-dedicatedworker-client",
+      "linkingText": [
+        "dedicated worker client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker client"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-sharedworker-client",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-sharedworker-client",
+      "linkingText": [
+        "shared worker client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker client"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-worker-client",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-worker-client",
+      "linkingText": [
+        "worker client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker client"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-control",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-control",
+      "linkingText": [
+        "controlling",
+        "controls",
+        "controlled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-use",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-use",
+      "linkingText": [
+        "using",
+        "uses",
+        "used"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-handle-fetch-task-source",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-handle-fetch-task-source",
+      "linkingText": [
+        "handle fetch task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-handle-functional-event-task-source",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-handle-functional-event-task-source",
+      "linkingText": [
+        "handle functional event task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serviceworker",
+      "href": "https://www.w3.org/TR/service-workers-1/#serviceworker",
+      "linkingText": [
+        "ServiceWorker"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworker-postmessage-message-transfer-message",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworker-postmessage-message-transfer-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ServiceWorker/postMessage(message, transfer)",
+        "ServiceWorker/postMessage(message)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworker-postmessage-message-transfer-transfer",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworker-postmessage-message-transfer-transfer",
+      "linkingText": [
+        "transfer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ServiceWorker/postMessage(message, transfer)",
+        "ServiceWorker/postMessage(message)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-serviceworkerstate",
+      "href": "https://www.w3.org/TR/service-workers-1/#enumdef-serviceworkerstate",
+      "linkingText": [
+        "ServiceWorkerState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerstate-installing",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerstate-installing",
+      "linkingText": [
+        "\"installing\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ServiceWorkerState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerstate-installed",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerstate-installed",
+      "linkingText": [
+        "\"installed\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ServiceWorkerState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerstate-activating",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerstate-activating",
+      "linkingText": [
+        "\"activating\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ServiceWorkerState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerstate-activated",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerstate-activated",
+      "linkingText": [
+        "\"activated\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ServiceWorkerState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerstate-redundant",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerstate-redundant",
+      "linkingText": [
+        "\"redundant\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ServiceWorkerState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "environment-settings-object-service-worker-object-map",
+      "href": "https://www.w3.org/TR/service-workers-1/#environment-settings-object-service-worker-object-map",
+      "linkingText": [
+        "service worker object map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "environment settings object"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "get-the-service-worker-object",
+      "href": "https://www.w3.org/TR/service-workers-1/#get-the-service-worker-object",
+      "linkingText": [
+        "get the service worker object",
+        "getting the service worker object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworker-scripturl",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworker-scripturl",
+      "linkingText": [
+        "scriptURL"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworker-state",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworker-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworker-postmessage",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworker-postmessage",
+      "linkingText": [
+        "postMessage(message, transfer)",
+        "postMessage(message)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ServiceWorker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworker-onstatechange",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworker-onstatechange",
+      "linkingText": [
+        "onstatechange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serviceworkerregistration",
+      "href": "https://www.w3.org/TR/service-workers-1/#serviceworkerregistration",
+      "linkingText": [
+        "ServiceWorkerRegistration"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-serviceworkerupdateviacache",
+      "href": "https://www.w3.org/TR/service-workers-1/#enumdef-serviceworkerupdateviacache",
+      "linkingText": [
+        "ServiceWorkerUpdateViaCache"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerupdateviacache-imports",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerupdateviacache-imports",
+      "linkingText": [
+        "\"imports\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ServiceWorkerUpdateViaCache"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerupdateviacache-all",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerupdateviacache-all",
+      "linkingText": [
+        "\"all\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ServiceWorkerUpdateViaCache"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerupdateviacache-none",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerupdateviacache-none",
+      "linkingText": [
+        "\"none\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ServiceWorkerUpdateViaCache"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serviceworkerregistration-service-worker-registration",
+      "href": "https://www.w3.org/TR/service-workers-1/#serviceworkerregistration-service-worker-registration",
+      "linkingText": [
+        "service worker registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "environment-settings-object-service-worker-registration-object-map",
+      "href": "https://www.w3.org/TR/service-workers-1/#environment-settings-object-service-worker-registration-object-map",
+      "linkingText": [
+        "service worker registration object map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "environment settings object"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "get-the-service-worker-registration-object",
+      "href": "https://www.w3.org/TR/service-workers-1/#get-the-service-worker-registration-object",
+      "linkingText": [
+        "get the service worker registration object",
+        "getting the service worker registration object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerregistration-installing",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerregistration-installing",
+      "linkingText": [
+        "installing"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerregistration-waiting",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerregistration-waiting",
+      "linkingText": [
+        "waiting"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerregistration-active",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerregistration-active",
+      "linkingText": [
+        "active"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerregistration-scope",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerregistration-scope",
+      "linkingText": [
+        "scope"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerregistration-updateviacache",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerregistration-updateviacache",
+      "linkingText": [
+        "updateViaCache"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerregistration-update",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerregistration-update",
+      "linkingText": [
+        "update()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerregistration-unregister",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerregistration-unregister",
+      "linkingText": [
+        "unregister()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerregistration-onupdatefound",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerregistration-onupdatefound",
+      "linkingText": [
+        "onupdatefound"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "navigator-service-worker-attribute",
+      "href": "https://www.w3.org/TR/service-workers-1/#navigator-service-worker-attribute",
+      "linkingText": [
+        "serviceWorker"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Navigator",
+        "WorkerNavigator"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serviceworkercontainer",
+      "href": "https://www.w3.org/TR/service-workers-1/#serviceworkercontainer",
+      "linkingText": [
+        "ServiceWorkerContainer"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkercontainer-register-scripturl-options-scripturl",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkercontainer-register-scripturl-options-scripturl",
+      "linkingText": [
+        "scriptURL"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ServiceWorkerContainer/register(scriptURL, options)",
+        "ServiceWorkerContainer/register(scriptURL)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkercontainer-register-scripturl-options-options",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkercontainer-register-scripturl-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ServiceWorkerContainer/register(scriptURL, options)",
+        "ServiceWorkerContainer/register(scriptURL)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkercontainer-getregistration-clienturl-clienturl",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkercontainer-getregistration-clienturl-clienturl",
+      "linkingText": [
+        "clientURL"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ServiceWorkerContainer/getRegistration(clientURL)",
+        "ServiceWorkerContainer/getRegistration()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-registrationoptions",
+      "href": "https://www.w3.org/TR/service-workers-1/#dictdef-registrationoptions",
+      "linkingText": [
+        "RegistrationOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-registrationoptions-scope",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-registrationoptions-scope",
+      "linkingText": [
+        "scope"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RegistrationOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-registrationoptions-type",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-registrationoptions-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RegistrationOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-registrationoptions-updateviacache",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-registrationoptions-updateviacache",
+      "linkingText": [
+        "updateViaCache"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RegistrationOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serviceworkercontainer-service-worker-client",
+      "href": "https://www.w3.org/TR/service-workers-1/#serviceworkercontainer-service-worker-client",
+      "linkingText": [
+        "service worker client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ServiceWorkerContainer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "serviceworkercontainer-ready-promise",
+      "href": "https://www.w3.org/TR/service-workers-1/#serviceworkercontainer-ready-promise",
+      "linkingText": [
+        "ready promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ServiceWorkerContainer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-client-message-queue",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-client-message-queue",
+      "linkingText": [
+        "client message queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ServiceWorkerContainer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkercontainer-controller",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkercontainer-controller",
+      "linkingText": [
+        "controller"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerContainer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkercontainer-ready",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkercontainer-ready",
+      "linkingText": [
+        "ready"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerContainer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkercontainer-register",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkercontainer-register",
+      "linkingText": [
+        "register(scriptURL, options)",
+        "register(scriptURL)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ServiceWorkerContainer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkercontainer-getregistration",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkercontainer-getregistration",
+      "linkingText": [
+        "getRegistration(clientURL)",
+        "getRegistration()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ServiceWorkerContainer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkercontainer-getregistrations",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkercontainer-getregistrations",
+      "linkingText": [
+        "getRegistrations()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ServiceWorkerContainer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkercontainer-startmessages",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkercontainer-startmessages",
+      "linkingText": [
+        "startMessages()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ServiceWorkerContainer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkercontainer-oncontrollerchange",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkercontainer-oncontrollerchange",
+      "linkingText": [
+        "oncontrollerchange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerContainer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkercontainer-onmessage",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkercontainer-onmessage",
+      "linkingText": [
+        "onmessage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerContainer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkercontainer-onmessageerror",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkercontainer-onmessageerror",
+      "linkingText": [
+        "onmessageerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerContainer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eventdef-serviceworker-statechange",
+      "href": "https://www.w3.org/TR/service-workers-1/#eventdef-serviceworker-statechange",
+      "linkingText": [
+        "statechange"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "ServiceWorker"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "service-worker-registration-updatefound-event",
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-registration-updatefound-event",
+      "linkingText": [
+        "updatefound"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "ServiceWorkerRegistration"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "service-worker-container-controllerchange-event",
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-container-controllerchange-event",
+      "linkingText": [
+        "controllerchange"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "ServiceWorkerContainer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serviceworkerglobalscope",
+      "href": "https://www.w3.org/TR/service-workers-1/#serviceworkerglobalscope",
+      "linkingText": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "serviceworkerglobalscope-service-worker",
+      "href": "https://www.w3.org/TR/service-workers-1/#serviceworkerglobalscope-service-worker",
+      "linkingText": [
+        "service worker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "serviceworkerglobalscope-force-bypass-cache-for-import-scripts-flag",
+      "href": "https://www.w3.org/TR/service-workers-1/#serviceworkerglobalscope-force-bypass-cache-for-import-scripts-flag",
+      "linkingText": [
+        "force bypass cache for import scripts flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-clients",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerglobalscope-clients",
+      "linkingText": [
+        "clients"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-registration",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerglobalscope-registration",
+      "linkingText": [
+        "registration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-skipwaiting",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerglobalscope-skipwaiting",
+      "linkingText": [
+        "skipWaiting()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-oninstall",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerglobalscope-oninstall",
+      "linkingText": [
+        "oninstall"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-onactivate",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerglobalscope-onactivate",
+      "linkingText": [
+        "onactivate"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-onfetch",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerglobalscope-onfetch",
+      "linkingText": [
+        "onfetch"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-onmessage",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerglobalscope-onmessage",
+      "linkingText": [
+        "onmessage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serviceworkerglobalscope-onmessageerror",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-serviceworkerglobalscope-onmessageerror",
+      "linkingText": [
+        "onmessageerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "client",
+      "href": "https://www.w3.org/TR/service-workers-1/#client",
+      "linkingText": [
+        "Client"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-client-postmessage-message-transfer-message",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-client-postmessage-message-transfer-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Client/postMessage(message, transfer)",
+        "Client/postMessage(message)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-client-postmessage-message-transfer-transfer",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-client-postmessage-message-transfer-transfer",
+      "linkingText": [
+        "transfer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Client/postMessage(message, transfer)",
+        "Client/postMessage(message)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "windowclient",
+      "href": "https://www.w3.org/TR/service-workers-1/#windowclient",
+      "linkingText": [
+        "WindowClient"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-windowclient-navigate-url-url",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-windowclient-navigate-url-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WindowClient/navigate(url)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-frametype",
+      "href": "https://www.w3.org/TR/service-workers-1/#enumdef-frametype",
+      "linkingText": [
+        "FrameType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-frametype-auxiliary",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-frametype-auxiliary",
+      "linkingText": [
+        "\"auxiliary\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FrameType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-frametype-top-level",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-frametype-top-level",
+      "linkingText": [
+        "\"top-level\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FrameType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-frametype-nested",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-frametype-nested",
+      "linkingText": [
+        "\"nested\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FrameType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-frametype-none",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-frametype-none",
+      "linkingText": [
+        "\"none\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FrameType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-service-worker-client-service-worker-client",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-service-worker-client-service-worker-client",
+      "linkingText": [
+        "service worker client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Client"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-service-worker-client-frame-type",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-service-worker-client-frame-type",
+      "linkingText": [
+        "frame type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Client"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-service-worker-client-browsing-context",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-service-worker-client-browsing-context",
+      "linkingText": [
+        "browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WindowClient"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-service-worker-client-visibilitystate",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-service-worker-client-visibilitystate",
+      "linkingText": [
+        "visibility state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-service-worker-client-focusstate",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-service-worker-client-focusstate",
+      "linkingText": [
+        "focus state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "windowclient-ancestor-origins-array",
+      "href": "https://www.w3.org/TR/service-workers-1/#windowclient-ancestor-origins-array",
+      "linkingText": [
+        "ancestor origins array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WindowClient"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-client-url",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-client-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Client"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-client-frametype",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-client-frametype",
+      "linkingText": [
+        "frameType"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Client"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-client-id",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-client-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Client"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-client-type",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-client-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Client"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-client-postmessage",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-client-postmessage",
+      "linkingText": [
+        "postMessage(message, transfer)",
+        "postMessage(message)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Client"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-windowclient-visibilitystate",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-windowclient-visibilitystate",
+      "linkingText": [
+        "visibilityState"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WindowClient"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-windowclient-focused",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-windowclient-focused",
+      "linkingText": [
+        "focused"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WindowClient"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-windowclient-ancestororigins",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-windowclient-ancestororigins",
+      "linkingText": [
+        "ancestorOrigins"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WindowClient"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-windowclient-focus",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-windowclient-focus",
+      "linkingText": [
+        "focus()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WindowClient"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-windowclient-navigate",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-windowclient-navigate",
+      "linkingText": [
+        "navigate(url)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WindowClient"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "clients",
+      "href": "https://www.w3.org/TR/service-workers-1/#clients",
+      "linkingText": [
+        "Clients"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clients-get-id-id",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-clients-get-id-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Clients/get(id)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clients-matchall-options-options",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-clients-matchall-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Clients/matchAll(options)",
+        "Clients/matchAll()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clients-openwindow-url-url",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-clients-openwindow-url-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Clients/openWindow(url)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-clientqueryoptions",
+      "href": "https://www.w3.org/TR/service-workers-1/#dictdef-clientqueryoptions",
+      "linkingText": [
+        "ClientQueryOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clientqueryoptions-includeuncontrolled",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-clientqueryoptions-includeuncontrolled",
+      "linkingText": [
+        "includeUncontrolled"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ClientQueryOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clientqueryoptions-type",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-clientqueryoptions-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ClientQueryOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-clienttype",
+      "href": "https://www.w3.org/TR/service-workers-1/#enumdef-clienttype",
+      "linkingText": [
+        "ClientType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clienttype-window",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-clienttype-window",
+      "linkingText": [
+        "\"window\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ClientType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clienttype-worker",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-clienttype-worker",
+      "linkingText": [
+        "\"worker\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ClientType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clienttype-sharedworker",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-clienttype-sharedworker",
+      "linkingText": [
+        "\"sharedworker\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ClientType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clienttype-all",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-clienttype-all",
+      "linkingText": [
+        "\"all\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ClientType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clients-get",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-clients-get",
+      "linkingText": [
+        "get(id)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Clients"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clients-matchall",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-clients-matchall",
+      "linkingText": [
+        "matchAll(options)",
+        "matchAll()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Clients"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clients-openwindow",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-clients-openwindow",
+      "linkingText": [
+        "openWindow(url)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Clients"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-clients-claim",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-clients-claim",
+      "linkingText": [
+        "claim()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Clients"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "extendableevent",
+      "href": "https://www.w3.org/TR/service-workers-1/#extendableevent",
+      "linkingText": [
+        "ExtendableEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendableevent-extendableevent",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendableevent-extendableevent",
+      "linkingText": [
+        "ExtendableEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "ExtendableEvent(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ExtendableEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendableevent-constructor-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendableevent-constructor-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ExtendableEvent/constructor(type, eventInitDict)",
+        "ExtendableEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendableevent-constructor-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendableevent-constructor-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ExtendableEvent/constructor(type, eventInitDict)",
+        "ExtendableEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendableevent-waituntil-f-f",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendableevent-waituntil-f-f",
+      "linkingText": [
+        "f"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ExtendableEvent/waitUntil(f)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-extendableeventinit",
+      "href": "https://www.w3.org/TR/service-workers-1/#dictdef-extendableeventinit",
+      "linkingText": [
+        "ExtendableEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "extendableevent-extend-lifetime-promises",
+      "href": "https://www.w3.org/TR/service-workers-1/#extendableevent-extend-lifetime-promises",
+      "linkingText": [
+        "extend lifetime promises"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ExtendableEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "extendableevent-pending-promises-count",
+      "href": "https://www.w3.org/TR/service-workers-1/#extendableevent-pending-promises-count",
+      "linkingText": [
+        "pending promises count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ExtendableEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "extendableevent-timed-out-flag",
+      "href": "https://www.w3.org/TR/service-workers-1/#extendableevent-timed-out-flag",
+      "linkingText": [
+        "timed out flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ExtendableEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "extendableevent-active",
+      "href": "https://www.w3.org/TR/service-workers-1/#extendableevent-active",
+      "linkingText": [
+        "active"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ExtendableEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendableevent-waituntil",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendableevent-waituntil",
+      "linkingText": [
+        "waitUntil(f)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ExtendableEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "extendableevent-add-lifetime-promise",
+      "href": "https://www.w3.org/TR/service-workers-1/#extendableevent-add-lifetime-promise",
+      "linkingText": [
+        "add lifetime promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ExtendableEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fetchevent",
+      "href": "https://www.w3.org/TR/service-workers-1/#fetchevent",
+      "linkingText": [
+        "FetchEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fetchevent-fetchevent",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-fetchevent-fetchevent",
+      "linkingText": [
+        "FetchEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "FetchEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fetchevent-constructor-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-fetchevent-constructor-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FetchEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fetchevent-constructor-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-fetchevent-constructor-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FetchEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fetchevent-respondwith-r-r",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-fetchevent-respondwith-r-r",
+      "linkingText": [
+        "r"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "FetchEvent/respondWith(r)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-fetcheventinit",
+      "href": "https://www.w3.org/TR/service-workers-1/#dictdef-fetcheventinit",
+      "linkingText": [
+        "FetchEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fetcheventinit-request",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-fetcheventinit-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FetchEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fetcheventinit-clientid",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-fetcheventinit-clientid",
+      "linkingText": [
+        "clientId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FetchEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "fetchevent-potential-response",
+      "href": "https://www.w3.org/TR/service-workers-1/#fetchevent-potential-response",
+      "linkingText": [
+        "potential response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FetchEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fetchevent-wait-to-respond-flag",
+      "href": "https://www.w3.org/TR/service-workers-1/#fetchevent-wait-to-respond-flag",
+      "linkingText": [
+        "wait to respond flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FetchEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fetchevent-respond-with-entered-flag",
+      "href": "https://www.w3.org/TR/service-workers-1/#fetchevent-respond-with-entered-flag",
+      "linkingText": [
+        "respond-with entered flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FetchEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fetchevent-respond-with-error-flag",
+      "href": "https://www.w3.org/TR/service-workers-1/#fetchevent-respond-with-error-flag",
+      "linkingText": [
+        "respond-with error flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FetchEvent"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-fetchevent-request",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-fetchevent-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FetchEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fetchevent-clientid",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-fetchevent-clientid",
+      "linkingText": [
+        "clientId"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FetchEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-fetchevent-respondwith",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-fetchevent-respondwith",
+      "linkingText": [
+        "respondWith(r)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "FetchEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "extendablemessageevent",
+      "href": "https://www.w3.org/TR/service-workers-1/#extendablemessageevent",
+      "linkingText": [
+        "ExtendableMessageEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablemessageevent-extendablemessageevent",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendablemessageevent-extendablemessageevent",
+      "linkingText": [
+        "ExtendableMessageEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "ExtendableMessageEvent(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ExtendableMessageEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablemessageevent-constructor-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendablemessageevent-constructor-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ExtendableMessageEvent/constructor(type, eventInitDict)",
+        "ExtendableMessageEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablemessageevent-constructor-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendablemessageevent-constructor-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ExtendableMessageEvent/constructor(type, eventInitDict)",
+        "ExtendableMessageEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-extendablemessageeventinit",
+      "href": "https://www.w3.org/TR/service-workers-1/#dictdef-extendablemessageeventinit",
+      "linkingText": [
+        "ExtendableMessageEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablemessageeventinit-data",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendablemessageeventinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ExtendableMessageEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablemessageeventinit-origin",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendablemessageeventinit-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ExtendableMessageEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablemessageeventinit-lasteventid",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendablemessageeventinit-lasteventid",
+      "linkingText": [
+        "lastEventId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ExtendableMessageEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablemessageeventinit-source",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendablemessageeventinit-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ExtendableMessageEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablemessageeventinit-ports",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendablemessageeventinit-ports",
+      "linkingText": [
+        "ports"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ExtendableMessageEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablemessageevent-data",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendablemessageevent-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ExtendableMessageEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablemessageevent-origin",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendablemessageevent-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ExtendableMessageEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablemessageevent-lasteventid",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendablemessageevent-lasteventid",
+      "linkingText": [
+        "lastEventId"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ExtendableMessageEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablemessageevent-source",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendablemessageevent-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ExtendableMessageEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-extendablemessageevent-ports",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-extendablemessageevent-ports",
+      "linkingText": [
+        "ports"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ExtendableMessageEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "service-worker-global-scope-install-event",
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-global-scope-install-event",
+      "linkingText": [
+        "install"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "service-worker-global-scope-activate-event",
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-global-scope-activate-event",
+      "linkingText": [
+        "activate"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "service-worker-global-scope-fetch-event",
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-global-scope-fetch-event",
+      "linkingText": [
+        "fetch"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eventdef-serviceworkerglobalscope-message",
+      "href": "https://www.w3.org/TR/service-workers-1/#eventdef-serviceworkerglobalscope-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eventdef-serviceworkerglobalscope-messageerror",
+      "href": "https://www.w3.org/TR/service-workers-1/#eventdef-serviceworkerglobalscope-messageerror",
+      "linkingText": [
+        "messageerror"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-request-response-list",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-request-response-list",
+      "linkingText": [
+        "request response list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-relevant-request-response-list",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-relevant-request-response-list",
+      "linkingText": [
+        "relevant request response list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-name-to-cache-map",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-name-to-cache-map",
+      "linkingText": [
+        "name to cache map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-relevant-name-to-cache-map",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-relevant-name-to-cache-map",
+      "linkingText": [
+        "relevant name to cache map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "global-caches-attribute",
+      "href": "https://www.w3.org/TR/service-workers-1/#global-caches-attribute",
+      "linkingText": [
+        "caches"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cache",
+      "href": "https://www.w3.org/TR/service-workers-1/#cache",
+      "linkingText": [
+        "Cache"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-match-request-options-request",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-match-request-options-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Cache/match(request, options)",
+        "Cache/match(request)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-match-request-options-options",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-match-request-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Cache/match(request, options)",
+        "Cache/match(request)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-matchall-request-options-request",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-matchall-request-options-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Cache/matchAll(request, options)",
+        "Cache/matchAll(request)",
+        "Cache/matchAll()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-matchall-request-options-options",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-matchall-request-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Cache/matchAll(request, options)",
+        "Cache/matchAll(request)",
+        "Cache/matchAll()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-add-request-request",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-add-request-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Cache/add(request)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-addall-requests-requests",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-addall-requests-requests",
+      "linkingText": [
+        "requests"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Cache/addAll(requests)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-put-request-response-request",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-put-request-response-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Cache/put(request, response)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-put-request-response-response",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-put-request-response-response",
+      "linkingText": [
+        "response"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Cache/put(request, response)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-delete-request-options-request",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-delete-request-options-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Cache/delete(request, options)",
+        "Cache/delete(request)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-delete-request-options-options",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-delete-request-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Cache/delete(request, options)",
+        "Cache/delete(request)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-keys-request-options-request",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-keys-request-options-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Cache/keys(request, options)",
+        "Cache/keys(request)",
+        "Cache/keys()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-keys-request-options-options",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-keys-request-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Cache/keys(request, options)",
+        "Cache/keys(request)",
+        "Cache/keys()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-cachequeryoptions",
+      "href": "https://www.w3.org/TR/service-workers-1/#dictdef-cachequeryoptions",
+      "linkingText": [
+        "CacheQueryOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cachequeryoptions-ignoresearch",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cachequeryoptions-ignoresearch",
+      "linkingText": [
+        "ignoreSearch"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CacheQueryOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cachequeryoptions-ignoremethod",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cachequeryoptions-ignoremethod",
+      "linkingText": [
+        "ignoreMethod"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CacheQueryOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cachequeryoptions-ignorevary",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cachequeryoptions-ignorevary",
+      "linkingText": [
+        "ignoreVary"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CacheQueryOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-cache-batch-operation",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-cache-batch-operation",
+      "linkingText": [
+        "cache batch operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-cache-batch-operation-type",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-cache-batch-operation-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cache batch operation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-cache-batch-operation-request",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-cache-batch-operation-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cache batch operation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-cache-batch-operation-response",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-cache-batch-operation-response",
+      "linkingText": [
+        "response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cache batch operation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-cache-batch-operation-options",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-cache-batch-operation-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cache batch operation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-match",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-match",
+      "linkingText": [
+        "match(request, options)",
+        "match(request)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Cache"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-matchall",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-matchall",
+      "linkingText": [
+        "matchAll(request, options)",
+        "matchAll(request)",
+        "matchAll()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Cache"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-add",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-add",
+      "linkingText": [
+        "add(request)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Cache"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-addall",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-addall",
+      "linkingText": [
+        "addAll(requests)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Cache"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-put",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-put",
+      "linkingText": [
+        "put(request, response)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Cache"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-delete",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-delete",
+      "linkingText": [
+        "delete(request, options)",
+        "delete(request)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Cache"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cache-keys",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cache-keys",
+      "linkingText": [
+        "keys(request, options)",
+        "keys(request)",
+        "keys()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Cache"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cachestorage",
+      "href": "https://www.w3.org/TR/service-workers-1/#cachestorage",
+      "linkingText": [
+        "CacheStorage"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cachestorage-match-request-options-request",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cachestorage-match-request-options-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CacheStorage/match(request, options)",
+        "CacheStorage/match(request)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cachestorage-match-request-options-options",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cachestorage-match-request-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CacheStorage/match(request, options)",
+        "CacheStorage/match(request)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cachestorage-has-cachename-cachename",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cachestorage-has-cachename-cachename",
+      "linkingText": [
+        "cacheName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CacheStorage/has(cacheName)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cachestorage-open-cachename-cachename",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cachestorage-open-cachename-cachename",
+      "linkingText": [
+        "cacheName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CacheStorage/open(cacheName)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cachestorage-delete-cachename-cachename",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cachestorage-delete-cachename-cachename",
+      "linkingText": [
+        "cacheName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CacheStorage/delete(cacheName)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-multicachequeryoptions",
+      "href": "https://www.w3.org/TR/service-workers-1/#dictdef-multicachequeryoptions",
+      "linkingText": [
+        "MultiCacheQueryOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-multicachequeryoptions-cachename",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-multicachequeryoptions-cachename",
+      "linkingText": [
+        "cacheName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MultiCacheQueryOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "cachestorage-global-object",
+      "href": "https://www.w3.org/TR/service-workers-1/#cachestorage-global-object",
+      "linkingText": [
+        "global object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CacheStorage"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-cachestorage-match",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cachestorage-match",
+      "linkingText": [
+        "match(request, options)",
+        "match(request)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CacheStorage"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cachestorage-has",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cachestorage-has",
+      "linkingText": [
+        "has(cacheName)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CacheStorage"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cachestorage-open",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cachestorage-open",
+      "linkingText": [
+        "open(cacheName)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CacheStorage"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cachestorage-delete",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cachestorage-delete",
+      "linkingText": [
+        "delete(cacheName)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CacheStorage"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-cachestorage-keys",
+      "href": "https://www.w3.org/TR/service-workers-1/#dom-cachestorage-keys",
+      "linkingText": [
+        "keys()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CacheStorage"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "importscripts-method",
+      "href": "https://www.w3.org/TR/service-workers-1/#importscripts-method",
+      "linkingText": [
+        "importScripts(urls)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ServiceWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-scope-to-registration-map",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-scope-to-registration-map",
+      "linkingText": [
+        "scope to registration map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-job",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-job",
+      "linkingText": [
+        "job"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-job-type",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-job-type",
+      "linkingText": [
+        "job type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "job"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-job-scope-url",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-job-scope-url",
+      "linkingText": [
+        "scope url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "job"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-job-script-url",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-job-script-url",
+      "linkingText": [
+        "script url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "job"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-job-worker-type",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-job-worker-type",
+      "linkingText": [
+        "worker type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "job"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-job-update-via-cache-mode",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-job-update-via-cache-mode",
+      "linkingText": [
+        "update via cache mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "job"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-job-client",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-job-client",
+      "linkingText": [
+        "client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "job"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-job-promise",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-job-promise",
+      "linkingText": [
+        "job promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "job"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-containing-job-queue",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-containing-job-queue",
+      "linkingText": [
+        "containing job queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "job"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-job-list-of-equivalent-jobs",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-job-list-of-equivalent-jobs",
+      "linkingText": [
+        "list of equivalent jobs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "job"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-job-force-bypass-cache-flag",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-job-force-bypass-cache-flag",
+      "linkingText": [
+        "force bypass cache flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "job"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-job-equivalent",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-job-equivalent",
+      "linkingText": [
+        "equivalent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-job-queue",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-job-queue",
+      "linkingText": [
+        "job queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-scope-to-job-queue-map",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-scope-to-job-queue-map",
+      "linkingText": [
+        "scope to job queue map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-job",
+      "href": "https://www.w3.org/TR/service-workers-1/#create-job",
+      "linkingText": [
+        "Create Job"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "schedule-job",
+      "href": "https://www.w3.org/TR/service-workers-1/#schedule-job",
+      "linkingText": [
+        "Schedule Job"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "run-job",
+      "href": "https://www.w3.org/TR/service-workers-1/#run-job",
+      "linkingText": [
+        "Run Job"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "finish-job",
+      "href": "https://www.w3.org/TR/service-workers-1/#finish-job",
+      "linkingText": [
+        "Finish Job"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "resolve-job-promise",
+      "href": "https://www.w3.org/TR/service-workers-1/#resolve-job-promise",
+      "linkingText": [
+        "Resolve Job Promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reject-job-promise",
+      "href": "https://www.w3.org/TR/service-workers-1/#reject-job-promise",
+      "linkingText": [
+        "Reject Job Promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "register",
+      "href": "https://www.w3.org/TR/service-workers-1/#register",
+      "linkingText": [
+        "Register"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "update",
+      "href": "https://www.w3.org/TR/service-workers-1/#update",
+      "linkingText": [
+        "Update"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "soft-update",
+      "href": "https://www.w3.org/TR/service-workers-1/#soft-update",
+      "linkingText": [
+        "Soft Update"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "install",
+      "href": "https://www.w3.org/TR/service-workers-1/#install",
+      "linkingText": [
+        "Install"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "activate",
+      "href": "https://www.w3.org/TR/service-workers-1/#activate",
+      "linkingText": [
+        "Activate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "try-activate",
+      "href": "https://www.w3.org/TR/service-workers-1/#try-activate",
+      "linkingText": [
+        "Try Activate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "run-service-worker",
+      "href": "https://www.w3.org/TR/service-workers-1/#run-service-worker",
+      "linkingText": [
+        "Run Service Worker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "terminate-service-worker",
+      "href": "https://www.w3.org/TR/service-workers-1/#terminate-service-worker",
+      "linkingText": [
+        "Terminate Service Worker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "handle-fetch",
+      "href": "https://www.w3.org/TR/service-workers-1/#handle-fetch",
+      "linkingText": [
+        "Handle Fetch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "should-skip-event",
+      "href": "https://www.w3.org/TR/service-workers-1/#should-skip-event",
+      "linkingText": [
+        "Should Skip Event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "fire-functional-event",
+      "href": "https://www.w3.org/TR/service-workers-1/#fire-functional-event",
+      "linkingText": [
+        "Fire Functional Event",
+        "Fire a functional event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "handle-service-worker-client-unload",
+      "href": "https://www.w3.org/TR/service-workers-1/#handle-service-worker-client-unload",
+      "linkingText": [
+        "Handle Service Worker Client Unload"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "handle-user-agent-shutdown",
+      "href": "https://www.w3.org/TR/service-workers-1/#handle-user-agent-shutdown",
+      "linkingText": [
+        "Handle User Agent Shutdown"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "update-service-worker-extended-events-set",
+      "href": "https://www.w3.org/TR/service-workers-1/#update-service-worker-extended-events-set",
+      "linkingText": [
+        "Update Service Worker Extended Events Set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "unregister",
+      "href": "https://www.w3.org/TR/service-workers-1/#unregister",
+      "linkingText": [
+        "Unregister"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "set-registration",
+      "href": "https://www.w3.org/TR/service-workers-1/#set-registration",
+      "linkingText": [
+        "Set Registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "clear-registration",
+      "href": "https://www.w3.org/TR/service-workers-1/#clear-registration",
+      "linkingText": [
+        "Clear Registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "try-clear-registration",
+      "href": "https://www.w3.org/TR/service-workers-1/#try-clear-registration",
+      "linkingText": [
+        "Try Clear Registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "update-registration-state",
+      "href": "https://www.w3.org/TR/service-workers-1/#update-registration-state",
+      "linkingText": [
+        "Update Registration State"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "update-worker-state",
+      "href": "https://www.w3.org/TR/service-workers-1/#update-worker-state",
+      "linkingText": [
+        "Update Worker State"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "notify-controller-change",
+      "href": "https://www.w3.org/TR/service-workers-1/#notify-controller-change",
+      "linkingText": [
+        "Notify Controller Change"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "match-service-worker-registration",
+      "href": "https://www.w3.org/TR/service-workers-1/#match-service-worker-registration",
+      "linkingText": [
+        "Match Service Worker Registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "get-registration",
+      "href": "https://www.w3.org/TR/service-workers-1/#get-registration",
+      "linkingText": [
+        "Get Registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "get-newest-worker",
+      "href": "https://www.w3.org/TR/service-workers-1/#get-newest-worker",
+      "linkingText": [
+        "Get Newest Worker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "service-worker-has-no-pending-events",
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-has-no-pending-events",
+      "linkingText": [
+        "Service Worker Has No Pending Events"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-client",
+      "href": "https://www.w3.org/TR/service-workers-1/#create-client",
+      "linkingText": [
+        "Create Client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-window-client",
+      "href": "https://www.w3.org/TR/service-workers-1/#create-window-client",
+      "linkingText": [
+        "Create Window Client"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "get-frame-type",
+      "href": "https://www.w3.org/TR/service-workers-1/#get-frame-type",
+      "linkingText": [
+        "Get Frame Type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "resolve-get-client-promise",
+      "href": "https://www.w3.org/TR/service-workers-1/#resolve-get-client-promise",
+      "linkingText": [
+        "Resolve Get Client Promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "query-cache",
+      "href": "https://www.w3.org/TR/service-workers-1/#query-cache",
+      "linkingText": [
+        "Query Cache"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "request-matches-cached-item",
+      "href": "https://www.w3.org/TR/service-workers-1/#request-matches-cached-item",
+      "linkingText": [
+        "Request Matches Cached Item"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "batch-cache-operations",
+      "href": "https://www.w3.org/TR/service-workers-1/#batch-cache-operations",
+      "linkingText": [
+        "Batch Cache Operations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "service-worker",
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker",
+      "linkingText": [
+        "Service-Worker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "service-worker-allowed",
+      "href": "https://www.w3.org/TR/service-workers-1/#service-worker-allowed",
+      "linkingText": [
+        "Service-Worker-Allowed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dfn-processing-equivalence",
+      "href": "https://www.w3.org/TR/service-workers-1/#dfn-processing-equivalence",
+      "linkingText": [
+        "processing equivalence"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

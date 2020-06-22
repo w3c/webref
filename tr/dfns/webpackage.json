@@ -1,0 +1,892 @@
+{
+  "spec": {
+    "title": "Loading Signed Exchanges",
+    "url": "https://wicg.github.io/webpackage/loading.html"
+  },
+  "dfns": [
+    {
+      "id": "request-stashed-exchange",
+      "href": "https://wicg.github.io/webpackage/loading.html#request-stashed-exchange",
+      "linkingText": [
+        "stashed exchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "response-date",
+      "href": "https://wicg.github.io/webpackage/loading.html#response-date",
+      "linkingText": [
+        "date"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "response"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "exchange",
+      "href": "https://wicg.github.io/webpackage/loading.html#exchange",
+      "linkingText": [
+        "Exchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "exchange-request-url",
+      "href": "https://wicg.github.io/webpackage/loading.html#exchange-request-url",
+      "linkingText": [
+        "request URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exchange"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "exchange-response",
+      "href": "https://wicg.github.io/webpackage/loading.html#exchange-response",
+      "linkingText": [
+        "response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exchange"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "read-buffer",
+      "href": "https://wicg.github.io/webpackage/loading.html#read-buffer",
+      "linkingText": [
+        "Read buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "read-buffer-stream",
+      "href": "https://wicg.github.io/webpackage/loading.html#read-buffer-stream",
+      "linkingText": [
+        "stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "read buffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "read-buffer-reader",
+      "href": "https://wicg.github.io/webpackage/loading.html#read-buffer-reader",
+      "linkingText": [
+        "reader"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "read buffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "read-buffer-bytes",
+      "href": "https://wicg.github.io/webpackage/loading.html#read-buffer-bytes",
+      "linkingText": [
+        "bytes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "read buffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "augmented-certificate",
+      "href": "https://wicg.github.io/webpackage/loading.html#augmented-certificate",
+      "linkingText": [
+        "Augmented Certificate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "augmented-certificate-certificate",
+      "href": "https://wicg.github.io/webpackage/loading.html#augmented-certificate-certificate",
+      "linkingText": [
+        "certificate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "augmented certificate"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "augmented-certificate-ocsp-response",
+      "href": "https://wicg.github.io/webpackage/loading.html#augmented-certificate-ocsp-response",
+      "linkingText": [
+        "OCSP response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "augmented certificate"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "augmented-certificate-sct",
+      "href": "https://wicg.github.io/webpackage/loading.html#augmented-certificate-sct",
+      "linkingText": [
+        "SCT"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "augmented certificate"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "certificate-public-key",
+      "href": "https://wicg.github.io/webpackage/loading.html#certificate-public-key",
+      "linkingText": [
+        "public key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "certificate"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "public-key-algorithm",
+      "href": "https://wicg.github.io/webpackage/loading.html#public-key-algorithm",
+      "linkingText": [
+        "algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "public\nkey"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "certificate-extensions",
+      "href": "https://wicg.github.io/webpackage/loading.html#certificate-extensions",
+      "linkingText": [
+        "extensions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "certificate"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "certificate-chain",
+      "href": "https://wicg.github.io/webpackage/loading.html#certificate-chain",
+      "linkingText": [
+        "certificate chain"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "certificate-chain-leaf",
+      "href": "https://wicg.github.io/webpackage/loading.html#certificate-chain-leaf",
+      "linkingText": [
+        "leaf"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "certificate chain"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-report",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-report",
+      "linkingText": [
+        "Signed Exchange report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-report-result",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-report-result",
+      "linkingText": [
+        "result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signed exchange report"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-report-ok",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-report-ok",
+      "linkingText": [
+        "ok"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signed exchange report"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-report-mi_error",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-report-mi_error",
+      "linkingText": [
+        "mi_error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signed exchange report"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-report-non_secure_distributor",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-report-non_secure_distributor",
+      "linkingText": [
+        "non_secure_distributor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signed exchange report"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-report-parse_error",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-report-parse_error",
+      "linkingText": [
+        "parse_error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signed exchange report"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-report-invalid_integrity_header",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-report-invalid_integrity_header",
+      "linkingText": [
+        "invalid_integrity_header"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signed exchange report"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-report-signature_verification_error",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-report-signature_verification_error",
+      "linkingText": [
+        "signature_verification_error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signed exchange report"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-report-cert_verification_error",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-report-cert_verification_error",
+      "linkingText": [
+        "cert_verification_error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signed exchange report"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-report-cert_fetch_error",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-report-cert_fetch_error",
+      "linkingText": [
+        "cert_fetch_error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signed exchange report"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-report-cert_parse_error",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-report-cert_parse_error",
+      "linkingText": [
+        "cert_parse_error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signed exchange report"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-report-outer-request",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-report-outer-request",
+      "linkingText": [
+        "outer request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signed exchange report"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-report-outer-response",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-report-outer-response",
+      "linkingText": [
+        "outer response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signed exchange report"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-report-inner-url",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-report-inner-url",
+      "linkingText": [
+        "inner URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signed exchange report"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-report-cert-url-list",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-report-cert-url-list",
+      "linkingText": [
+        "cert URL list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signed exchange report"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-report-server-ip",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-report-server-ip",
+      "linkingText": [
+        "server IP"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signed exchange report"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-report-cert-server-ip-list",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-report-cert-server-ip-list",
+      "linkingText": [
+        "cert server IP list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "signed exchange report"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "exchange-signature",
+      "href": "https://wicg.github.io/webpackage/loading.html#exchange-signature",
+      "linkingText": [
+        "Exchange Signature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "exchange-signature-signature",
+      "href": "https://wicg.github.io/webpackage/loading.html#exchange-signature-signature",
+      "linkingText": [
+        "signature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exchange signature"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "exchange-signature-certificate-chain",
+      "href": "https://wicg.github.io/webpackage/loading.html#exchange-signature-certificate-chain",
+      "linkingText": [
+        "certificate chain"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exchange signature"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "exchange-signature-certsha256",
+      "href": "https://wicg.github.io/webpackage/loading.html#exchange-signature-certsha256",
+      "linkingText": [
+        "certSha256"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exchange signature"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "exchange-signature-integrity-header",
+      "href": "https://wicg.github.io/webpackage/loading.html#exchange-signature-integrity-header",
+      "linkingText": [
+        "integrity header"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exchange signature"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "exchange-signature-validityurl",
+      "href": "https://wicg.github.io/webpackage/loading.html#exchange-signature-validityurl",
+      "linkingText": [
+        "validityUrl"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exchange signature"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "exchange-signature-validityurlbytes",
+      "href": "https://wicg.github.io/webpackage/loading.html#exchange-signature-validityurlbytes",
+      "linkingText": [
+        "validityUrlBytes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exchange signature"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "exchange-signature-date",
+      "href": "https://wicg.github.io/webpackage/loading.html#exchange-signature-date",
+      "linkingText": [
+        "date"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exchange signature"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "exchange-signature-expiration-time",
+      "href": "https://wicg.github.io/webpackage/loading.html#exchange-signature-expiration-time",
+      "linkingText": [
+        "expiration time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exchange signature"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-exchange-version",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-exchange-version",
+      "linkingText": [
+        "signed exchange version"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "extracting-the-fallback-url",
+      "href": "https://wicg.github.io/webpackage/loading.html#extracting-the-fallback-url",
+      "linkingText": [
+        "Extracting the fallback URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parsing-a-signed-exchange",
+      "href": "https://wicg.github.io/webpackage/loading.html#parsing-a-signed-exchange",
+      "linkingText": [
+        "Parsing a signed exchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parsing-the-invariant-prefix",
+      "href": "https://wicg.github.io/webpackage/loading.html#parsing-the-invariant-prefix",
+      "linkingText": [
+        "Parsing the invariant prefix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parsing-the-signature-header-field",
+      "href": "https://wicg.github.io/webpackage/loading.html#parsing-the-signature-header-field",
+      "linkingText": [
+        "Parsing the Signature header field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "handling-the-certificate-reference",
+      "href": "https://wicg.github.io/webpackage/loading.html#handling-the-certificate-reference",
+      "linkingText": [
+        "Handling the certificate reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "signed-message",
+      "href": "https://wicg.github.io/webpackage/loading.html#signed-message",
+      "linkingText": [
+        "signed message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "exchange-signature-is-valid",
+      "href": "https://wicg.github.io/webpackage/loading.html#exchange-signature-is-valid",
+      "linkingText": [
+        "is\nvalid",
+        "is not valid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exchange signature"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "exchange-signature-establishes-cross-origin-trust",
+      "href": "https://wicg.github.io/webpackage/loading.html#exchange-signature-establishes-cross-origin-trust",
+      "linkingText": [
+        "establishes cross-origin trust",
+        "does not establish\ncross-origin trust"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "exchange signature"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "certificate-chain-has-a-trusted-leaf",
+      "href": "https://wicg.github.io/webpackage/loading.html#certificate-chain-has-a-trusted-leaf",
+      "linkingText": [
+        "has a trusted\nleaf",
+        "does not have a trusted leaf"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "certificate chain"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parsing-b2-cbor-headers",
+      "href": "https://wicg.github.io/webpackage/loading.html#parsing-b2-cbor-headers",
+      "linkingText": [
+        "Parsing b2 CBOR headers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parsing-b3-cbor-headers",
+      "href": "https://wicg.github.io/webpackage/loading.html#parsing-b3-cbor-headers",
+      "linkingText": [
+        "Parsing b3 CBOR headers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "creating-a-header-list-from-the-cbor-map",
+      "href": "https://wicg.github.io/webpackage/loading.html#creating-a-header-list-from-the-cbor-map",
+      "linkingText": [
+        "creating a header list from the CBOR map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reading-a-body",
+      "href": "https://wicg.github.io/webpackage/loading.html#reading-a-body",
+      "linkingText": [
+        "reading a body",
+        "read a body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "matches-the-stored-exchange",
+      "href": "https://wicg.github.io/webpackage/loading.html#matches-the-stored-exchange",
+      "linkingText": [
+        "matches the stored exchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-a-new-signed-exchange-report",
+      "href": "https://wicg.github.io/webpackage/loading.html#create-a-new-signed-exchange-report",
+      "linkingText": [
+        "create a new signed exchange report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "wait-and-queue-a-report-for",
+      "href": "https://wicg.github.io/webpackage/loading.html#wait-and-queue-a-report-for",
+      "linkingText": [
+        "wait and queue a report for"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "queue-a-signed-exchange-report",
+      "href": "https://wicg.github.io/webpackage/loading.html#queue-a-signed-exchange-report",
+      "linkingText": [
+        "queue a signed exchange report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "new-read-buffer",
+      "href": "https://wicg.github.io/webpackage/loading.html#new-read-buffer",
+      "linkingText": [
+        "new read buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "read-buffer-reading-up-to",
+      "href": "https://wicg.github.io/webpackage/loading.html#read-buffer-reading-up-to",
+      "linkingText": [
+        "reading up to"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "read buffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "read-buffer-read",
+      "href": "https://wicg.github.io/webpackage/loading.html#read-buffer-read",
+      "linkingText": [
+        "read"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "read buffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "read-buffer-dump",
+      "href": "https://wicg.github.io/webpackage/loading.html#read-buffer-dump",
+      "linkingText": [
+        "Dump"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "read buffer"
+      ],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}

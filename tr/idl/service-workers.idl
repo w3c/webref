@@ -1,14 +1,13 @@
 // GENERATED CONTENT - DO NOT EDIT
 // Content was automatically extracted by Reffy into reffy-reports
 // (https://github.com/tidoust/reffy-reports)
-// Source: Service Workers Nightly (https://w3c.github.io/ServiceWorker/)
+// Source: Service Workers 1 (https://www.w3.org/TR/service-workers-1/)
 
 [SecureContext, Exposed=(Window,Worker)]
 interface ServiceWorker : EventTarget {
   readonly attribute USVString scriptURL;
   readonly attribute ServiceWorkerState state;
-  void postMessage(any message, sequence<object> transfer);
-  void postMessage(any message, optional PostMessageOptions options = {});
+  void postMessage(any message, optional sequence<object> transfer = []);
 
   // event
   attribute EventHandler onstatechange;
@@ -16,7 +15,6 @@ interface ServiceWorker : EventTarget {
 ServiceWorker includes AbstractWorker;
 
 enum ServiceWorkerState {
-  "parsed",
   "installing",
   "installed",
   "activating",
@@ -29,7 +27,6 @@ interface ServiceWorkerRegistration : EventTarget {
   readonly attribute ServiceWorker? installing;
   readonly attribute ServiceWorker? waiting;
   readonly attribute ServiceWorker? active;
-  [SameObject] readonly attribute NavigationPreloadManager navigationPreload;
 
   readonly attribute USVString scope;
   readonly attribute ServiceWorkerUpdateViaCache updateViaCache;
@@ -79,24 +76,10 @@ dictionary RegistrationOptions {
   ServiceWorkerUpdateViaCache updateViaCache = "imports";
 };
 
-[SecureContext, Exposed=(Window,Worker)]
-interface NavigationPreloadManager {
-  Promise<void> enable();
-  Promise<void> disable();
-  Promise<void> setHeaderValue(ByteString value);
-  Promise<NavigationPreloadState> getState();
-};
-
-dictionary NavigationPreloadState {
-  boolean enabled = false;
-  ByteString headerValue;
-};
-
 [Global=(Worker,ServiceWorker), Exposed=ServiceWorker]
 interface ServiceWorkerGlobalScope : WorkerGlobalScope {
   [SameObject] readonly attribute Clients clients;
   [SameObject] readonly attribute ServiceWorkerRegistration registration;
-  [SameObject] readonly attribute ServiceWorker serviceWorker;
 
   [NewObject] Promise<void> skipWaiting();
 
@@ -114,8 +97,7 @@ interface Client {
   readonly attribute FrameType frameType;
   readonly attribute DOMString id;
   readonly attribute ClientType type;
-  void postMessage(any message, sequence<object> transfer);
-  void postMessage(any message, optional PostMessageOptions options = {});
+  void postMessage(any message, optional sequence<object> transfer = []);
 };
 
 [Exposed=ServiceWorker]
@@ -169,22 +151,14 @@ dictionary ExtendableEventInit : EventInit {
 interface FetchEvent : ExtendableEvent {
   constructor(DOMString type, FetchEventInit eventInitDict);
   [SameObject] readonly attribute Request request;
-  readonly attribute Promise<any> preloadResponse;
   readonly attribute DOMString clientId;
-  readonly attribute DOMString resultingClientId;
-  readonly attribute DOMString replacesClientId;
-  readonly attribute Promise<void> handled;
 
   void respondWith(Promise<Response> r);
 };
 
 dictionary FetchEventInit : ExtendableEventInit {
   required Request request;
-  Promise<any> preloadResponse;
   DOMString clientId = "";
-  DOMString resultingClientId = "";
-  DOMString replacesClientId = "";
-  Promise<void> handled;
 };
 
 [Exposed=ServiceWorker]
@@ -205,7 +179,7 @@ dictionary ExtendableMessageEventInit : ExtendableEventInit {
   sequence<MessagePort> ports = [];
 };
 
-partial interface mixin WindowOrWorkerGlobalScope {
+partial interface WindowOrWorkerGlobalScope {
   [SecureContext, SameObject] readonly attribute CacheStorage caches;
 };
 
