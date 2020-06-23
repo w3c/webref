@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-06-23T06:36:56.543Z",
+  "date": "2020-06-23T12:39:16.516Z",
   "stats": {
     "crawled": 329,
     "errors": 0,
@@ -575,14 +575,25 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Navigator",
+            "refs": [
+              {
+                "url": "https://html.spec.whatwg.org/multipage/",
+                "title": "HTML Standard",
+                "crawled": "https://html.spec.whatwg.org/multipage/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -5131,11 +5142,6 @@
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://drafts.csswg.org/web-animations-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -12161,11 +12167,6 @@
               "crawled": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
             },
             {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/"
-            },
-            {
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://w3c.github.io/webvtt/"
@@ -15560,11 +15561,6 @@
               "crawled": "https://wicg.github.io/background-fetch/"
             },
             {
-              "url": "https://w3c.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://w3c.github.io/badging/"
-            },
-            {
               "url": "https://www.w3.org/TR/battery-status/",
               "title": "Battery Status API",
               "crawled": "https://w3c.github.io/battery/"
@@ -15820,11 +15816,6 @@
               "crawled": "https://wicg.github.io/get-installed-related-apps/spec/"
             },
             {
-              "url": "https://www.w3.org/TR/hr-time-3/",
-              "title": "High Resolution Time",
-              "crawled": "https://w3c.github.io/hr-time/"
-            },
-            {
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
@@ -15833,11 +15824,6 @@
               "url": "https://wicg.github.io/video-rvfc/",
               "title": "HTMLVideoElement.requestVideoFrameCallback()",
               "crawled": "https://wicg.github.io/video-rvfc/"
-            },
-            {
-              "url": "https://www.w3.org/TR/image-resource/",
-              "title": "Image Resource",
-              "crawled": "https://w3c.github.io/image-resource/"
             },
             {
               "url": "https://wicg.github.io/import-maps/",
@@ -15920,29 +15906,9 @@
               "crawled": "https://wicg.github.io/page-lifecycle/"
             },
             {
-              "url": "https://www.w3.org/TR/page-visibility-2/",
-              "title": "Page Visibility Level 2",
-              "crawled": "https://w3c.github.io/page-visibility/"
-            },
-            {
               "url": "https://www.w3.org/TR/paint-timing/",
               "title": "Paint Timing 1",
               "crawled": "https://w3c.github.io/paint-timing/"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-handler/",
-              "title": "Payment Handler API",
-              "crawled": "https://w3c.github.io/payment-handler/"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-request/",
-              "title": "Payment Request API",
-              "crawled": "https://w3c.github.io/payment-request/"
-            },
-            {
-              "url": "https://www.w3.org/TR/performance-timeline-2/",
-              "title": "Performance Timeline Level 2",
-              "crawled": "https://w3c.github.io/performance-timeline/"
             },
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -15990,11 +15956,6 @@
               "crawled": "https://privacycg.github.io/private-click-measurement/"
             },
             {
-              "url": "https://www.w3.org/TR/push-api/",
-              "title": "Push API",
-              "crawled": "https://w3c.github.io/push-api/"
-            },
-            {
               "url": "https://quirks.spec.whatwg.org/",
               "title": "Quirks Mode Standard",
               "crawled": "https://quirks.spec.whatwg.org/"
@@ -16003,11 +15964,6 @@
               "url": "https://www.w3.org/TR/referrer-policy/",
               "title": "Referrer Policy",
               "crawled": "https://w3c.github.io/webappsec-referrer-policy/"
-            },
-            {
-              "url": "https://www.w3.org/TR/remote-playback/",
-              "title": "Remote Playback API",
-              "crawled": "https://w3c.github.io/remote-playback/"
             },
             {
               "url": "https://www.w3.org/TR/reporting-1/",
@@ -16035,11 +15991,6 @@
               "crawled": "https://svgwg.org/svg2-draft/"
             },
             {
-              "url": "https://www.w3.org/TR/wake-lock/",
-              "title": "Screen Wake Lock API",
-              "crawled": "https://w3c.github.io/screen-wake-lock/"
-            },
-            {
               "url": "https://drafts.csswg.org/scroll-animations-1/",
               "title": "Scroll-linked Animations",
               "crawled": "https://drafts.csswg.org/scroll-animations-1/"
@@ -16058,11 +16009,6 @@
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://drafts.csswg.org/selectors/"
-            },
-            {
-              "url": "https://wicg.github.io/serial/",
-              "title": "Serial API",
-              "crawled": "https://wicg.github.io/serial/"
             },
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
@@ -16088,11 +16034,6 @@
               "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
-            },
-            {
-              "url": "https://www.w3.org/TR/screen-orientation/",
-              "title": "The Screen Orientation API",
-              "crawled": "https://w3c.github.io/screen-orientation/"
             },
             {
               "url": "https://privacycg.github.io/storage-access/",
@@ -16168,11 +16109,6 @@
               "url": "https://wicg.github.io/web-locks/",
               "title": "Web Locks API",
               "crawled": "https://wicg.github.io/web-locks/"
-            },
-            {
-              "url": "https://www.w3.org/TR/webmidi/",
-              "title": "Web MIDI API",
-              "crawled": "https://webaudio.github.io/web-midi-api/"
             },
             {
               "url": "https://w3c.github.io/web-nfc/",
@@ -16525,11 +16461,6 @@
               "crawled": "https://w3c.github.io/payment-method-manifest/"
             },
             {
-              "url": "https://www.w3.org/TR/push-api/",
-              "title": "Push API",
-              "crawled": "https://w3c.github.io/push-api/"
-            },
-            {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
@@ -16538,11 +16469,6 @@
               "url": "https://url.spec.whatwg.org/",
               "title": "URL Standard",
               "crawled": "https://url.spec.whatwg.org/"
-            },
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/"
             },
             {
               "url": "https://www.w3.org/TR/webauthn-2/",
@@ -16558,11 +16484,6 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC",
               "crawled": "https://w3c.github.io/web-nfc/"
-            },
-            {
-              "url": "https://w3c.github.io/web-share-target/",
-              "title": "Web Share Target API",
-              "crawled": "https://w3c.github.io/web-share-target/"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -16916,11 +16837,6 @@
               "crawled": "https://w3c.github.io/webrtc-identity/identity.html"
             },
             {
-              "url": "https://www.w3.org/TR/image-resource/",
-              "title": "Image Resource",
-              "crawled": "https://w3c.github.io/image-resource/"
-            },
-            {
               "url": "https://wicg.github.io/import-maps/",
               "title": "Import Maps",
               "crawled": "https://wicg.github.io/import-maps/"
@@ -17024,11 +16940,6 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/"
-            },
-            {
-              "url": "https://www.w3.org/TR/server-timing/",
-              "title": "Server Timing",
-              "crawled": "https://w3c.github.io/server-timing/"
             },
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
@@ -17299,11 +17210,6 @@
               "crawled": "https://w3c.github.io/presentation-api/"
             },
             {
-              "url": "https://www.w3.org/TR/push-api/",
-              "title": "Push API",
-              "crawled": "https://w3c.github.io/push-api/"
-            },
-            {
               "url": "https://www.w3.org/TR/reporting-1/",
               "title": "Reporting API 1",
               "crawled": "https://w3c.github.io/reporting/"
@@ -17322,11 +17228,6 @@
               "url": "https://www.w3.org/TR/webauthn-2/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
               "crawled": "https://w3c.github.io/webauthn/"
-            },
-            {
-              "url": "https://www.w3.org/TR/web-share/",
-              "title": "Web Share API",
-              "crawled": "https://w3c.github.io/web-share/"
             },
             {
               "url": "https://www.w3.org/TR/webdriver2/",
@@ -17653,7 +17554,18 @@
             ]
           }
         ],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "DOMHighResTimeStamp",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/hr-time-3/",
+                "title": "High Resolution Time",
+                "crawled": "https://w3c.github.io/hr-time/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -17820,7 +17732,7 @@
       "crawled": "https://w3c.github.io/geolocation-api/",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
@@ -18172,7 +18084,18 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -18201,11 +18124,6 @@
               "url": "https://wicg.github.io/frame-timing/",
               "title": "Frame Timing",
               "crawled": "https://wicg.github.io/frame-timing/"
-            },
-            {
-              "url": "https://www.w3.org/TR/gamepad/",
-              "title": "Gamepad",
-              "crawled": "https://w3c.github.io/gamepad/"
             },
             {
               "url": "https://www.w3.org/TR/generic-sensor/",
@@ -18258,11 +18176,6 @@
               "crawled": "https://w3c.github.io/longtasks/"
             },
             {
-              "url": "https://w3c.github.io/media-playback-quality/",
-              "title": "Media Playback Quality",
-              "crawled": "https://w3c.github.io/media-playback-quality/"
-            },
-            {
               "url": "https://www.w3.org/TR/mediastream-recording/",
               "title": "MediaStream Recording",
               "crawled": "https://w3c.github.io/mediacapture-record/"
@@ -18286,11 +18199,6 @@
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
               "crawled": "https://w3c.github.io/resource-timing/"
-            },
-            {
-              "url": "https://www.w3.org/TR/server-timing/",
-              "title": "Server Timing",
-              "crawled": "https://w3c.github.io/server-timing/"
             },
             {
               "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
@@ -18318,11 +18226,6 @@
               "crawled": "https://webaudio.github.io/web-audio-api/"
             },
             {
-              "url": "https://www.w3.org/TR/webmidi/",
-              "title": "Web MIDI API",
-              "crawled": "https://webaudio.github.io/web-midi-api/"
-            },
-            {
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-time Communication Between Browsers",
               "crawled": "https://w3c.github.io/webrtc-pc/"
@@ -18340,7 +18243,7 @@
           ],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -18523,11 +18426,6 @@
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
-            },
-            {
-              "url": "https://w3c.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://w3c.github.io/badging/"
             },
             {
               "url": "https://www.w3.org/TR/battery-status/",
@@ -18980,11 +18878,6 @@
               "crawled": "https://w3c.github.io/webrtc-identity/identity.html"
             },
             {
-              "url": "https://www.w3.org/TR/image-resource/",
-              "title": "Image Resource",
-              "crawled": "https://w3c.github.io/image-resource/"
-            },
-            {
               "url": "https://wicg.github.io/import-maps/",
               "title": "Import Maps",
               "crawled": "https://wicg.github.io/import-maps/"
@@ -19208,11 +19101,6 @@
               "url": "https://www.w3.org/TR/pointerevents3/",
               "title": "Pointer Events",
               "crawled": "https://w3c.github.io/pointerevents/"
-            },
-            {
-              "url": "https://www.w3.org/TR/pointerlock-2/",
-              "title": "Pointer Lock 2.0",
-              "crawled": "https://w3c.github.io/pointerlock/"
             },
             {
               "url": "https://wicg.github.io/portals/",
@@ -19493,11 +19381,6 @@
               "url": "https://wicg.github.io/periodic-background-sync/",
               "title": "Web Periodic Background Synchronization",
               "crawled": "https://wicg.github.io/periodic-background-sync/"
-            },
-            {
-              "url": "https://www.w3.org/TR/web-share/",
-              "title": "Web Share API",
-              "crawled": "https://w3c.github.io/web-share/"
             },
             {
               "url": "https://w3c.github.io/web-share-target/",
@@ -19967,7 +19850,7 @@
       "crawled": "https://w3c.github.io/image-resource/",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
@@ -19982,16 +19865,11 @@
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
-            },
-            {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/"
             }
           ],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -20145,11 +20023,6 @@
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
-            },
-            {
-              "url": "https://w3c.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://w3c.github.io/badging/"
             },
             {
               "url": "https://www.w3.org/TR/clear-site-data/",
@@ -20392,19 +20265,9 @@
               "crawled": "https://html.spec.whatwg.org/multipage/"
             },
             {
-              "url": "https://www.w3.org/TR/webrtc-stats/",
-              "title": "Identifiers for WebRTC's Statistics API",
-              "crawled": "https://w3c.github.io/webrtc-stats/"
-            },
-            {
               "url": "https://www.w3.org/TR/webrtc-identity/",
               "title": "Identity for WebRTC 1.0",
               "crawled": "https://w3c.github.io/webrtc-identity/identity.html"
-            },
-            {
-              "url": "https://www.w3.org/TR/image-resource/",
-              "title": "Image Resource",
-              "crawled": "https://w3c.github.io/image-resource/"
             },
             {
               "url": "https://wicg.github.io/import-maps/",
@@ -20487,24 +20350,9 @@
               "crawled": "https://wicg.github.io/page-lifecycle/"
             },
             {
-              "url": "https://www.w3.org/TR/payment-handler/",
-              "title": "Payment Handler API",
-              "crawled": "https://w3c.github.io/payment-handler/"
-            },
-            {
               "url": "https://www.w3.org/TR/payment-method-manifest/",
               "title": "Payment Method Manifest",
               "crawled": "https://w3c.github.io/payment-method-manifest/"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-method-basic-card/",
-              "title": "Payment Method: Basic Card",
-              "crawled": "https://w3c.github.io/payment-method-basic-card/"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-request/",
-              "title": "Payment Request API",
-              "crawled": "https://w3c.github.io/payment-request/"
             },
             {
               "url": "https://www.w3.org/TR/performance-timeline-2/",
@@ -20552,11 +20400,6 @@
               "crawled": "https://w3c.github.io/mediacapture-screen-share/"
             },
             {
-              "url": "https://www.w3.org/TR/wake-lock/",
-              "title": "Screen Wake Lock API",
-              "crawled": "https://w3c.github.io/screen-wake-lock/"
-            },
-            {
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://drafts.csswg.org/selectors/"
@@ -20585,11 +20428,6 @@
               "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
-            },
-            {
-              "url": "https://www.w3.org/TR/screen-orientation/",
-              "title": "The Screen Orientation API",
-              "crawled": "https://w3c.github.io/screen-orientation/"
             },
             {
               "url": "https://privacycg.github.io/storage-access/",
@@ -20627,11 +20465,6 @@
               "crawled": "https://drafts.csswg.org/web-animations-1/"
             },
             {
-              "url": "https://www.w3.org/TR/appmanifest/",
-              "title": "Web App Manifest",
-              "crawled": "https://w3c.github.io/manifest/"
-            },
-            {
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/"
@@ -20655,11 +20488,6 @@
               "url": "https://wicg.github.io/web-locks/",
               "title": "Web Locks API",
               "crawled": "https://wicg.github.io/web-locks/"
-            },
-            {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC",
-              "crawled": "https://w3c.github.io/web-nfc/"
             },
             {
               "url": "https://wicg.github.io/periodic-background-sync/",
@@ -20745,7 +20573,7 @@
       "crawled": "https://wicg.github.io/input-device-capabilities/",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
@@ -20758,7 +20586,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -21414,7 +21242,7 @@
       "crawled": "https://mathml-refresh.github.io/mathml-core/",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
@@ -21433,7 +21261,7 @@
             }
           ]
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -21744,13 +21572,24 @@
       "crawled": "https://w3c.github.io/media-playback-quality/",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "DOMHighResTimeStamp",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/hr-time-3/",
+                "title": "High Resolution Time",
+                "crawled": "https://w3c.github.io/hr-time/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -21763,7 +21602,7 @@
             }
           ]
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -22337,7 +22176,7 @@
       "crawled": "https://w3c.github.io/mst-content-hint/",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
@@ -22350,7 +22189,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -22397,11 +22236,6 @@
               "crawled": "https://html.spec.whatwg.org/multipage/"
             },
             {
-              "url": "https://www.w3.org/TR/image-resource/",
-              "title": "Image Resource",
-              "crawled": "https://w3c.github.io/image-resource/"
-            },
-            {
               "url": "https://wicg.github.io/webpackage/loading.html",
               "title": "Loading Signed Exchanges",
               "crawled": "https://wicg.github.io/webpackage/loading.html"
@@ -22445,11 +22279,6 @@
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
               "crawled": "https://w3c.github.io/manifest/"
-            },
-            {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC",
-              "crawled": "https://w3c.github.io/web-nfc/"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -22841,7 +22670,7 @@
       "crawled": "https://wicg.github.io/netinfo/",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
@@ -23172,13 +23001,24 @@
       "crawled": "https://w3c.github.io/page-visibility/",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Document",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -23272,7 +23112,7 @@
             }
           ]
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -23404,19 +23244,9 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/payment-handler/",
-              "title": "Payment Handler API",
-              "crawled": "https://w3c.github.io/payment-handler/"
-            },
-            {
               "url": "https://www.w3.org/TR/payment-method-manifest/",
               "title": "Payment Method Manifest",
               "crawled": "https://w3c.github.io/payment-method-manifest/"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-request/",
-              "title": "Payment Request API",
-              "crawled": "https://w3c.github.io/payment-request/"
             }
           ],
           "informative": []
@@ -23505,11 +23335,6 @@
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-request/",
-              "title": "Payment Request API",
-              "crawled": "https://w3c.github.io/payment-request/"
             }
           ],
           "informative": [
@@ -23517,6 +23342,11 @@
               "url": "https://www.w3.org/TR/payment-method-id/",
               "title": "Payment Method Identifiers",
               "crawled": "https://w3c.github.io/payment-method-id/"
+            },
+            {
+              "url": "https://www.w3.org/TR/payment-request/",
+              "title": "Payment Request API",
+              "crawled": "https://w3c.github.io/payment-request/"
             }
           ]
         },
@@ -23544,7 +23374,38 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/"
+              }
+            ]
+          },
+          {
+            "name": "Event",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/"
+              }
+            ]
+          },
+          {
+            "name": "EventInit",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -23583,7 +23444,7 @@
             }
           ]
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -23949,19 +23810,9 @@
               "crawled": "https://w3c.github.io/sensors/"
             },
             {
-              "url": "https://www.w3.org/TR/geolocation-API/",
-              "title": "Geolocation API Specification",
-              "crawled": "https://w3c.github.io/geolocation-api/"
-            },
-            {
               "url": "https://wicg.github.io/js-self-profiling/",
               "title": "JS Self-Profiling API",
               "crawled": "https://wicg.github.io/js-self-profiling/"
-            },
-            {
-              "url": "https://www.w3.org/TR/mediacapture-streams/",
-              "title": "Media Capture and Streams",
-              "crawled": "https://w3c.github.io/mediacapture-main/"
             },
             {
               "url": "https://wicg.github.io/origin-policy/",
@@ -23974,11 +23825,6 @@
               "crawled": "https://wicg.github.io/page-lifecycle/"
             },
             {
-              "url": "https://www.w3.org/TR/payment-request/",
-              "title": "Payment Request API",
-              "crawled": "https://w3c.github.io/payment-request/"
-            },
-            {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/"
@@ -23987,11 +23833,6 @@
               "url": "https://www.w3.org/TR/picture-in-picture/",
               "title": "Picture-in-Picture",
               "crawled": "https://w3c.github.io/picture-in-picture/"
-            },
-            {
-              "url": "https://www.w3.org/TR/wake-lock/",
-              "title": "Screen Wake Lock API",
-              "crawled": "https://w3c.github.io/screen-wake-lock/"
             },
             {
               "url": "https://www.w3.org/TR/webauthn-2/",
@@ -24019,7 +23860,23 @@
               "crawled": "https://xhr.spec.whatwg.org/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/geolocation-API/",
+              "title": "Geolocation API Specification",
+              "crawled": "https://w3c.github.io/geolocation-api/"
+            },
+            {
+              "url": "https://www.w3.org/TR/payment-request/",
+              "title": "Payment Request API",
+              "crawled": "https://w3c.github.io/payment-request/"
+            },
+            {
+              "url": "https://www.w3.org/TR/wake-lock/",
+              "title": "Screen Wake Lock API",
+              "crawled": "https://w3c.github.io/screen-wake-lock/"
+            }
+          ]
         },
         "ok": false
       }
@@ -24154,13 +24011,24 @@
       "crawled": "https://w3c.github.io/pointerlock/",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventHandler",
+            "refs": [
+              {
+                "url": "https://html.spec.whatwg.org/multipage/",
+                "title": "HTML Standard",
+                "crawled": "https://html.spec.whatwg.org/multipage/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [
           {
@@ -24512,7 +24380,18 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Blob",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/FileAPI/",
+                "title": "File API",
+                "crawled": "https://w3c.github.io/FileAPI/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -24525,7 +24404,7 @@
             }
           ]
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -24714,7 +24593,18 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -24727,7 +24617,7 @@
           ],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -25078,7 +24968,7 @@
       "crawled": "https://wicg.github.io/savedata/",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
@@ -25739,14 +25629,25 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -25862,11 +25763,6 @@
               "crawled": "https://w3c.github.io/sensors/"
             },
             {
-              "url": "https://www.w3.org/TR/geolocation-API/",
-              "title": "Geolocation API Specification",
-              "crawled": "https://w3c.github.io/geolocation-api/"
-            },
-            {
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
@@ -25972,11 +25868,6 @@
               "crawled": "https://heycam.github.io/webidl/"
             },
             {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC",
-              "crawled": "https://w3c.github.io/web-nfc/"
-            },
-            {
               "url": "https://wicg.github.io/periodic-background-sync/",
               "title": "Web Periodic Background Synchronization",
               "crawled": "https://wicg.github.io/periodic-background-sync/"
@@ -26038,7 +25929,7 @@
       "crawled": "https://w3c.github.io/selection-api/",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
@@ -26458,14 +26349,45 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/"
+              }
+            ]
+          },
+          {
+            "name": "ReadableStream",
+            "refs": [
+              {
+                "url": "https://streams.spec.whatwg.org/",
+                "title": "Streams Standard",
+                "crawled": "https://streams.spec.whatwg.org/"
+              }
+            ]
+          },
+          {
+            "name": "WritableStream",
+            "refs": [
+              {
+                "url": "https://streams.spec.whatwg.org/",
+                "title": "Streams Standard",
+                "crawled": "https://streams.spec.whatwg.org/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -26489,14 +26411,25 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "DOMHighResTimeStamp",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/hr-time-3/",
+                "title": "High Resolution Time",
+                "crawled": "https://w3c.github.io/hr-time/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -26562,11 +26495,6 @@
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
-            },
-            {
-              "url": "https://w3c.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://w3c.github.io/badging/"
             },
             {
               "url": "https://www.w3.org/TR/clear-site-data/",
@@ -26827,11 +26755,6 @@
               "url": "https://wicg.github.io/native-file-system/",
               "title": "Native File System",
               "crawled": "https://wicg.github.io/native-file-system/"
-            },
-            {
-              "url": "https://wicg.github.io/serial/",
-              "title": "Serial API",
-              "crawled": "https://wicg.github.io/serial/"
             },
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
@@ -27328,7 +27251,18 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -27356,7 +27290,7 @@
           ],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -28021,11 +27955,6 @@
               "crawled": "https://w3c.github.io/FileAPI/"
             },
             {
-              "url": "https://www.w3.org/TR/geolocation-API/",
-              "title": "Geolocation API Specification",
-              "crawled": "https://w3c.github.io/geolocation-api/"
-            },
-            {
               "url": "https://wicg.github.io/get-installed-related-apps/spec/",
               "title": "Get Installed Related Apps API",
               "crawled": "https://wicg.github.io/get-installed-related-apps/spec/"
@@ -28034,11 +27963,6 @@
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
-            },
-            {
-              "url": "https://www.w3.org/TR/image-resource/",
-              "title": "Image Resource",
-              "crawled": "https://w3c.github.io/image-resource/"
             },
             {
               "url": "https://wicg.github.io/import-maps/",
@@ -28109,11 +28033,6 @@
               "url": "https://www.w3.org/TR/payment-method-manifest/",
               "title": "Payment Method Manifest",
               "crawled": "https://w3c.github.io/payment-method-manifest/"
-            },
-            {
-              "url": "https://www.w3.org/TR/payment-request/",
-              "title": "Payment Request API",
-              "crawled": "https://w3c.github.io/payment-request/"
             },
             {
               "url": "https://www.w3.org/TR/feature-policy-1/",
@@ -28201,11 +28120,6 @@
               "crawled": "https://w3c.github.io/web-nfc/"
             },
             {
-              "url": "https://www.w3.org/TR/web-share/",
-              "title": "Web Share API",
-              "crawled": "https://w3c.github.io/web-share/"
-            },
-            {
               "url": "https://w3c.github.io/web-share-target/",
               "title": "Web Share Target API",
               "crawled": "https://w3c.github.io/web-share-target/"
@@ -28231,11 +28145,6 @@
               "url": "https://www.w3.org/TR/encoding/",
               "title": "Encoding Standard",
               "crawled": "https://encoding.spec.whatwg.org/"
-            },
-            {
-              "url": "https://www.w3.org/TR/remote-playback/",
-              "title": "Remote Playback API",
-              "crawled": "https://w3c.github.io/remote-playback/"
             },
             {
               "url": "https://wicg.github.io/web-otp/",
@@ -28416,7 +28325,7 @@
       "crawled": "https://wicg.github.io/visual-viewport/",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
@@ -28435,7 +28344,7 @@
           ],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -28619,7 +28528,18 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "ImageResource",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/image-resource/",
+                "title": "Image Resource",
+                "crawled": "https://w3c.github.io/image-resource/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -28668,7 +28588,7 @@
             }
           ]
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -28709,11 +28629,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/mediacapture-streams/",
-              "title": "Media Capture and Streams",
-              "crawled": "https://w3c.github.io/mediacapture-main/"
-            },
-            {
               "url": "https://www.w3.org/TR/mediacapture-fromelement/",
               "title": "Media Capture from DOM Elements",
               "crawled": "https://w3c.github.io/mediacapture-fromelement/"
@@ -28730,6 +28645,11 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://w3c.github.io/mediacapture-main/"
+            },
             {
               "url": "https://www.w3.org/TR/worklets-1/",
               "title": "Worklets Level 1",
@@ -29330,11 +29250,6 @@
               "crawled": "https://w3c.github.io/sensors/"
             },
             {
-              "url": "https://www.w3.org/TR/geolocation-API/",
-              "title": "Geolocation API Specification",
-              "crawled": "https://w3c.github.io/geolocation-api/"
-            },
-            {
               "url": "https://www.w3.org/TR/geolocation-sensor/",
               "title": "Geolocation Sensor",
               "crawled": "https://w3c.github.io/geolocation-sensor/"
@@ -29390,11 +29305,6 @@
               "crawled": "https://w3c.github.io/webrtc-identity/identity.html"
             },
             {
-              "url": "https://www.w3.org/TR/image-resource/",
-              "title": "Image Resource",
-              "crawled": "https://w3c.github.io/image-resource/"
-            },
-            {
               "url": "https://wicg.github.io/import-maps/",
               "title": "Import Maps",
               "crawled": "https://wicg.github.io/import-maps/"
@@ -29408,11 +29318,6 @@
               "url": "https://infra.spec.whatwg.org/",
               "title": "Infra Standard",
               "crawled": "https://infra.spec.whatwg.org/"
-            },
-            {
-              "url": "https://wicg.github.io/input-device-capabilities/",
-              "title": "Input Device Capabilities",
-              "crawled": "https://wicg.github.io/input-device-capabilities/"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -29475,11 +29380,6 @@
               "crawled": "https://w3c.github.io/magnetometer/"
             },
             {
-              "url": "https://mathml-refresh.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://mathml-refresh.github.io/mathml-core/"
-            },
-            {
               "url": "https://www.w3.org/TR/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/"
@@ -29498,11 +29398,6 @@
               "url": "https://www.w3.org/TR/mediacapture-fromelement/",
               "title": "Media Capture from DOM Elements",
               "crawled": "https://w3c.github.io/mediacapture-fromelement/"
-            },
-            {
-              "url": "https://w3c.github.io/media-playback-quality/",
-              "title": "Media Playback Quality",
-              "crawled": "https://w3c.github.io/media-playback-quality/"
             },
             {
               "url": "https://www.w3.org/TR/mediasession/",
@@ -29525,11 +29420,6 @@
               "crawled": "https://w3c.github.io/mediacapture-record/"
             },
             {
-              "url": "https://www.w3.org/TR/mst-content-hint/",
-              "title": "MediaStreamTrack Content Hints",
-              "crawled": "https://w3c.github.io/mst-content-hint/"
-            },
-            {
               "url": "https://wicg.github.io/native-file-system/",
               "title": "Native File System",
               "crawled": "https://wicg.github.io/native-file-system/"
@@ -29538,11 +29428,6 @@
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
               "crawled": "https://w3c.github.io/navigation-timing/"
-            },
-            {
-              "url": "https://wicg.github.io/netinfo/",
-              "title": "Network Information API",
-              "crawled": "https://wicg.github.io/netinfo/"
             },
             {
               "url": "https://notifications.spec.whatwg.org/",
@@ -29563,11 +29448,6 @@
               "url": "https://wicg.github.io/page-lifecycle/",
               "title": "Page Lifecycle",
               "crawled": "https://wicg.github.io/page-lifecycle/"
-            },
-            {
-              "url": "https://www.w3.org/TR/page-visibility-2/",
-              "title": "Page Visibility Level 2",
-              "crawled": "https://w3c.github.io/page-visibility/"
             },
             {
               "url": "https://www.w3.org/TR/paint-timing/",
@@ -29618,11 +29498,6 @@
               "url": "https://www.w3.org/TR/pointerevents3/",
               "title": "Pointer Events",
               "crawled": "https://w3c.github.io/pointerevents/"
-            },
-            {
-              "url": "https://www.w3.org/TR/pointerlock-2/",
-              "title": "Pointer Lock 2.0",
-              "crawled": "https://w3c.github.io/pointerlock/"
             },
             {
               "url": "https://wicg.github.io/portals/",
@@ -29680,11 +29555,6 @@
               "crawled": "https://w3c.github.io/resource-timing/"
             },
             {
-              "url": "https://wicg.github.io/savedata/",
-              "title": "Save Data API",
-              "crawled": "https://wicg.github.io/savedata/"
-            },
-            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/"
@@ -29713,11 +29583,6 @@
               "url": "https://www.w3.org/TR/secure-contexts/",
               "title": "Secure Contexts",
               "crawled": "https://w3c.github.io/webappsec-secure-contexts/"
-            },
-            {
-              "url": "https://www.w3.org/TR/selection-api/",
-              "title": "Selection API",
-              "crawled": "https://w3c.github.io/selection-api/"
             },
             {
               "url": "https://wicg.github.io/serial/",
@@ -29805,11 +29670,6 @@
               "crawled": "https://w3c.github.io/vibration/"
             },
             {
-              "url": "https://wicg.github.io/visual-viewport/",
-              "title": "Visual Viewport API",
-              "crawled": "https://wicg.github.io/visual-viewport/"
-            },
-            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://drafts.csswg.org/web-animations-1/"
@@ -29873,11 +29733,6 @@
               "url": "https://www.w3.org/TR/web-share/",
               "title": "Web Share API",
               "crawled": "https://w3c.github.io/web-share/"
-            },
-            {
-              "url": "https://w3c.github.io/web-share-target/",
-              "title": "Web Share Target API",
-              "crawled": "https://w3c.github.io/web-share-target/"
             },
             {
               "url": "https://wicg.github.io/speech-api/",
@@ -29997,9 +29852,9 @@
               "crawled": "https://w3c.github.io/webrtc-identity/identity.html"
             },
             {
-              "url": "https://wicg.github.io/overscroll-scrollend-events/",
-              "title": "overscroll and scrollend events",
-              "crawled": "https://wicg.github.io/overscroll-scrollend-events/"
+              "url": "https://mathml-refresh.github.io/mathml-core/",
+              "title": "MathML Core",
+              "crawled": "https://mathml-refresh.github.io/mathml-core/"
             }
           ]
         },
@@ -30072,7 +29927,48 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/"
+              }
+            ]
+          },
+          {
+            "name": "DOMHighResTimeStamp",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/hr-time-3/",
+                "title": "High Resolution Time",
+                "crawled": "https://w3c.github.io/hr-time/"
+              }
+            ]
+          },
+          {
+            "name": "Event",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/"
+              }
+            ]
+          },
+          {
+            "name": "EventInit",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -30085,7 +29981,7 @@
             }
           ]
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -30229,7 +30125,28 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Navigator",
+            "refs": [
+              {
+                "url": "https://html.spec.whatwg.org/multipage/",
+                "title": "HTML Standard",
+                "crawled": "https://html.spec.whatwg.org/multipage/"
+              }
+            ]
+          },
+          {
+            "name": "File",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/FileAPI/",
+                "title": "File API",
+                "crawled": "https://w3c.github.io/FileAPI/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [
           "https://www.w3.org/TR/web-intents/"
         ],
@@ -30259,7 +30176,7 @@
       "crawled": "https://w3c.github.io/web-share-target/",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
@@ -30272,7 +30189,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {

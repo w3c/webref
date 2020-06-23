@@ -35,13 +35,26 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Frame Timing](https://wicg.github.io/frame-timing/)
+- [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
+- [Image Resource](https://w3c.github.io/image-resource/)
+- [Input Device Capabilities](https://wicg.github.io/input-device-capabilities/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
+- [Media Playback Quality](https://w3c.github.io/media-playback-quality/)
+- [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
+- [Network Information API](https://wicg.github.io/netinfo/)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Save Data API](https://wicg.github.io/savedata/)
+- [Selection API](https://w3c.github.io/selection-api/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
 - [SVG Markers](https://svgwg.org/specs/markers/)
 - [SVG Paths](https://svgwg.org/specs/paths/)
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
+- [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [WebRTC DSCP Control API](https://w3c.github.io/webrtc-priority/)
 
-=> 7 specifications found
+=> 20 specifications found
 
 
 
@@ -87,17 +100,45 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/) uses `Point2D` but does not reference [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html) uses `Point2D` but does not reference [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
+- [Badging API](https://w3c.github.io/badging/) uses `Navigator` but does not reference [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Content Index](https://wicg.github.io/content-index/spec/) uses `ImageResource` but does not reference [Image Resource](https://w3c.github.io/image-resource/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/) uses `Document` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://w3c.github.io/hr-time/)
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html) uses `Gamepad` but does not reference [Gamepad](https://w3c.github.io/gamepad/)
+- [High Resolution Time](https://w3c.github.io/hr-time/) uses `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/) uses `WebGL2RenderingContext` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://w3c.github.io/hr-time/)
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/) uses:
     * `MediaStream` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
     * `MediaStreamTrack` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Playback Quality](https://w3c.github.io/media-playback-quality/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://w3c.github.io/hr-time/)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/) uses `Document` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+- [Payment Request API](https://w3c.github.io/payment-request/) uses:
+    * `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+    * `Event` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+    * `EventInit` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/) uses `EventHandler` but does not reference [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Push API](https://w3c.github.io/push-api/) uses `Blob` but does not reference [File API](https://w3c.github.io/FileAPI/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/) uses `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+- [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/) uses `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+- [Serial API](https://wicg.github.io/serial/) uses:
+    * `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+    * `ReadableStream` but does not reference [Streams Standard](https://streams.spec.whatwg.org/)
+    * `WritableStream` but does not reference [Streams Standard](https://streams.spec.whatwg.org/)
+- [Server Timing](https://w3c.github.io/server-timing/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://w3c.github.io/hr-time/)
 - [SVG Markers](https://svgwg.org/specs/markers/) uses:
     * `DOMPoint` but does not reference [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
     * `DOMPointReadOnly` but does not reference [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/) uses `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+- [Web App Manifest](https://w3c.github.io/manifest/) uses `ImageResource` but does not reference [Image Resource](https://w3c.github.io/image-resource/)
+- [Web MIDI API](https://webaudio.github.io/web-midi-api/) uses:
+    * `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+    * `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://w3c.github.io/hr-time/)
+    * `Event` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+    * `EventInit` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+- [Web Share API](https://w3c.github.io/web-share/) uses:
+    * `Navigator` but does not reference [HTML Standard](https://html.spec.whatwg.org/multipage/)
+    * `File` but does not reference [File API](https://w3c.github.io/FileAPI/)
 - [WebXR Anchors Module](https://immersive-web.github.io/anchors/) uses `XRHitTestResult` but does not reference [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/) uses:
     * `WebGLRenderingContext` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -106,7 +147,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/) uses `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 17 missing references for IDL definitions found in 12 specifications
+=> 41 missing references for IDL definitions found in 28 specifications
 
 
 ## Missing references based on document links
