@@ -53,13 +53,13 @@ dictionary QuicTransportStats {
   unsigned long numReceivedDatagramsDropped;
 };
 
-dictionary QuicTransportConfiguration {
-  sequence<RTCDtlsFingerprint> server_certificate_fingerprints;
+dictionary QuicTransportOptions {
+  sequence<RTCDtlsFingerprint> serverCertificateFingerprints;
 };
 
 [Exposed=(Window,Worker)]
 interface QuicTransport {
-  constructor(USVString url, optional QuicTransportConfiguration config = {});
+  constructor(USVString url, optional QuicTransportOptions options = {});
   Promise<QuicTransportStats> getStats();
 };
 
