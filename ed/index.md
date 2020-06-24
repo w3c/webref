@@ -9429,7 +9429,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
 - Crawled URL: [https://w3c.github.io/pointerlock/](https://w3c.github.io/pointerlock/)
-- Crawled version: 23 January 2020
+- Crawled version: 24 June 2020
 - Editor's Draft: [https://w3c.github.io/pointerlock/](https://w3c.github.io/pointerlock/)
 - Latest published version: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
 - Shortname: pointerlock-2
