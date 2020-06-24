@@ -545,10 +545,10 @@
       "informative": false
     },
     {
-      "id": "dictdef-quictransportconfiguration",
-      "href": "https://wicg.github.io/web-transport/#dictdef-quictransportconfiguration",
+      "id": "dictdef-quictransportoptions",
+      "href": "https://wicg.github.io/web-transport/#dictdef-quictransportoptions",
       "linkingText": [
-        "QuicTransportConfiguration"
+        "QuicTransportOptions"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -557,15 +557,15 @@
       "informative": false
     },
     {
-      "id": "dom-quictransportconfiguration-server_certificate_fingerprints",
-      "href": "https://wicg.github.io/web-transport/#dom-quictransportconfiguration-server_certificate_fingerprints",
+      "id": "dom-quictransportoptions-servercertificatefingerprints",
+      "href": "https://wicg.github.io/web-transport/#dom-quictransportoptions-servercertificatefingerprints",
       "linkingText": [
-        "server_certificate_fingerprints"
+        "serverCertificateFingerprints"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "QuicTransportConfiguration"
+        "QuicTransportOptions"
       ],
       "access": "public",
       "informative": false
@@ -610,8 +610,8 @@
       "id": "dom-quictransport-quictransport",
       "href": "https://wicg.github.io/web-transport/#dom-quictransport-quictransport",
       "linkingText": [
-        "QuicTransport(url, config)",
-        "constructor(url, config)",
+        "QuicTransport(url, options)",
+        "constructor(url, options)",
         "QuicTransport(url)",
         "constructor(url)"
       ],
@@ -624,30 +624,34 @@
       "informative": false
     },
     {
-      "id": "dom-quictransport-constructor-url-config-url",
-      "href": "https://wicg.github.io/web-transport/#dom-quictransport-constructor-url-config-url",
+      "id": "dom-quictransport-quictransport-url-options-url",
+      "href": "https://wicg.github.io/web-transport/#dom-quictransport-quictransport-url-options-url",
       "linkingText": [
         "url"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "QuicTransport/constructor(url, config)",
+        "QuicTransport/QuicTransport(url, options)",
+        "QuicTransport/constructor(url, options)",
+        "QuicTransport/QuicTransport(url)",
         "QuicTransport/constructor(url)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-quictransport-constructor-url-config-config",
-      "href": "https://wicg.github.io/web-transport/#dom-quictransport-constructor-url-config-config",
+      "id": "dom-quictransport-quictransport-url-options-options",
+      "href": "https://wicg.github.io/web-transport/#dom-quictransport-quictransport-url-options-options",
       "linkingText": [
-        "config"
+        "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "QuicTransport/constructor(url, config)",
+        "QuicTransport/QuicTransport(url, options)",
+        "QuicTransport/constructor(url, options)",
+        "QuicTransport/QuicTransport(url)",
         "QuicTransport/constructor(url)"
       ],
       "access": "public",
@@ -1023,14 +1027,15 @@
       "informative": false
     },
     {
-      "id": "dom-http3transport-constructor-url-url",
-      "href": "https://wicg.github.io/web-transport/#dom-http3transport-constructor-url-url",
+      "id": "dom-http3transport-http3transport-url-url",
+      "href": "https://wicg.github.io/web-transport/#dom-http3transport-http3transport-url-url",
       "linkingText": [
         "url"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "Http3Transport/Http3Transport(url)",
         "Http3Transport/constructor(url)"
       ],
       "access": "public",
