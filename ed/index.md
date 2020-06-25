@@ -148,7 +148,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
-- Crawled version: 18 June 2020
+- Crawled version: 25 June 2020
 - Editor's Draft: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Shortname: wai-aria-1.2
@@ -6051,7 +6051,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
 - Crawled URL: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
-- Crawled version: 16 April 2020
+- Crawled version: 25 June 2020
 - Editor's Draft: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
 - Shortname: is-input-pending
 
@@ -8140,7 +8140,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Crawled URL: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
-- Crawled version: 14 May 2020
+- Crawled version: 25 June 2020
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Shortname: mediacapture-streams
@@ -9336,7 +9336,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/feature-policy-1/](https://www.w3.org/TR/feature-policy-1/)
 - Crawled URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
-- Crawled version: 22 June 2020
+- Crawled version: 25 June 2020
 - Editor's Draft: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
 - Latest published version: [https://www.w3.org/TR/feature-policy-1/](https://www.w3.org/TR/feature-policy-1/)
 - Shortname: feature-policy-1
@@ -9815,6 +9815,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Crash Reporting](https://wicg.github.io/crash-reporting/)
 - [Deprecation Reporting](https://wicg.github.io/deprecation-reporting/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Intervention Reporting](https://wicg.github.io/intervention-reporting/)
 - [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Permissions Policy](https://w3c.github.io/webappsec-feature-policy/)
@@ -10331,7 +10332,6 @@ Normative references to this spec from:
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [Fetch Metadata Request Headers](https://w3c.github.io/webappsec-fetch-metadata/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-- [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
@@ -10676,7 +10676,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 23 June 2020
+- Crawled version: 25 June 2020
 - Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Shortname: streams
 
@@ -12489,7 +12489,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 24 June 2020
+- Crawled version: 25 June 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -12533,7 +12533,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Crawled URL: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
-- Crawled version: 22 June 2020
+- Crawled version: 25 June 2020
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Shortname: webrtc
@@ -12633,7 +12633,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 24 June 2020
+- Crawled version: 25 June 2020
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
