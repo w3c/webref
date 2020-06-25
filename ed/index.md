@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% June 24, 2020
+% June 25, 2020
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
@@ -9464,7 +9464,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Crawled URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
-- Crawled version: 23 June 2020
+- Crawled version: 24 June 2020
 - Editor's Draft: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Shortname: portals
 
@@ -9475,8 +9475,8 @@ Informative references to this spec from:
     * `MessageEventSource` also defined in [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/), related reference "REFERRER-POLICY" uses URL [`https://www.w3.org/TR/referrer-policy/`](https://www.w3.org/TR/referrer-policy/)
-     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
      * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
 ### Known dependencies on this specification {.dependencies}
 

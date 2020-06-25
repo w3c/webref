@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% June 24, 2020
+% June 25, 2020
 
 329 specifications were crawled in this report.
 
@@ -2080,8 +2080,8 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/) links to [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "ui-events" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 - [Portals](https://wicg.github.io/portals/) links to:
     * [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/) but related reference "REFERRER-POLICY" uses URL [`https://www.w3.org/TR/referrer-policy/`](https://www.w3.org/TR/referrer-policy/)
-    * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+    * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/) links to [`https://www.w3.org/TR/cssom-1/`](https://www.w3.org/TR/cssom-1/) but related reference "CSSOM" uses URL [`https://drafts.csswg.org/cssom/`](https://drafts.csswg.org/cssom/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/) links to [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
 - [Relinquishing Permissions](https://wicg.github.io/permissions-revoke/) links to [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
