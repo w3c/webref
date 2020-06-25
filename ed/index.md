@@ -6683,7 +6683,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Crawled URL: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
-- Crawled version: 27 May 2020
+- Crawled version: 25 June 2020
 - Editor's Draft: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
 - Latest published version: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Shortname: geolocation-API
@@ -12246,7 +12246,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/speech-api/](https://wicg.github.io/speech-api/)
 - Crawled URL: [https://wicg.github.io/speech-api/](https://wicg.github.io/speech-api/)
-- Crawled version: 21 January 2020
+- Crawled version: 25 June 2020
 - Editor's Draft: [https://wicg.github.io/speech-api/](https://wicg.github.io/speech-api/)
 - Shortname: speech-api
 
