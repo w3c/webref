@@ -9217,7 +9217,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Crawled URL: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
-- Crawled version: 25 May 2020
+- Crawled version: 26 June 2020
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Shortname: payment-request
@@ -10239,7 +10239,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/screen-capture/](https://www.w3.org/TR/screen-capture/)
 - Crawled URL: [https://w3c.github.io/mediacapture-screen-share/](https://w3c.github.io/mediacapture-screen-share/)
-- Crawled version: 03 March 2020
+- Crawled version: 26 June 2020
 - Editor's Draft: [https://w3c.github.io/mediacapture-screen-share/](https://w3c.github.io/mediacapture-screen-share/)
 - Latest published version: [https://www.w3.org/TR/screen-capture/](https://www.w3.org/TR/screen-capture/)
 - Shortname: screen-capture
@@ -11704,7 +11704,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled URL: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
-- Crawled version: 24 June 2020
+- Crawled version: 26 June 2020
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Shortname: appmanifest
@@ -12489,7 +12489,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 25 June 2020
+- Crawled version: 26 June 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
