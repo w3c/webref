@@ -44132,10 +44132,70 @@
       "informative": false
     },
     {
-      "id": "concept-environment-script",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-script",
+      "id": "similar-origin-window-agent",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#similar-origin-window-agent",
       "linkingText": [
-        "Scripting is enabled"
+        "Similar-origin window agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dedicated-worker-agent",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#dedicated-worker-agent",
+      "linkingText": [
+        "Dedicated worker agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "shared-worker-agent",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#shared-worker-agent",
+      "linkingText": [
+        "Shared worker agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "service-worker-agent",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#service-worker-agent",
+      "linkingText": [
+        "Service worker agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "worklet-agent",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#worklet-agent",
+      "linkingText": [
+        "Worklet agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-an-agent",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#create-an-agent",
+      "linkingText": [
+        "create an agent"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -44144,10 +44204,22 @@
       "informative": false
     },
     {
-      "id": "concept-environment-noscript",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-noscript",
+      "id": "relevant-agent",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#relevant-agent",
       "linkingText": [
-        "Scripting is disabled"
+        "relevant agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "agent-cluster-key",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#agent-cluster-key",
+      "linkingText": [
+        "agent cluster key"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -44156,10 +44228,10 @@
       "informative": false
     },
     {
-      "id": "concept-n-script",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-n-script",
+      "id": "obtain-agent-cluster-key",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtain-agent-cluster-key",
       "linkingText": [
-        "Scripting is enabled"
+        "obtain an agent cluster key"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -44168,10 +44240,10 @@
       "informative": false
     },
     {
-      "id": "concept-n-noscript",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-n-noscript",
+      "id": "obtain-similar-origin-window-agent",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtain-similar-origin-window-agent",
       "linkingText": [
-        "Scripting is disabled"
+        "obtain a similar-origin window agent"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -44180,118 +44252,10 @@
       "informative": false
     },
     {
-      "id": "concept-script",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-script",
+      "id": "obtain-browsing-agent-cluster",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtain-browsing-agent-cluster",
       "linkingText": [
-        "script"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "settings-object",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#settings-object",
-      "linkingText": [
-        "settings object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "script"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "concept-script-record",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-script-record",
-      "linkingText": [
-        "record"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "script"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "concept-script-parse-error",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-script-parse-error",
-      "linkingText": [
-        "parse error"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "script"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "concept-script-error-to-rethrow",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-script-error-to-rethrow",
-      "linkingText": [
-        "error to rethrow"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "script"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "concept-script-script-fetch-options",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-script-script-fetch-options",
-      "linkingText": [
-        "Fetch options"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "script"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "concept-script-base-url",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-script-base-url",
-      "linkingText": [
-        "base URL"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "script"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "classic-script",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#classic-script",
-      "linkingText": [
-        "classic script"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "muted-errors",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#muted-errors",
-      "linkingText": [
-        "muted errors"
+        "obtain a browsing context agent cluster"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -44300,10 +44264,34 @@
       "informative": false
     },
     {
-      "id": "module-script",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#module-script",
+      "id": "obtaining-a-worker/worklet-agent",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtaining-a-worker/worklet-agent",
       "linkingText": [
-        "module script"
+        "obtain a worker/worklet agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "obtain-a-dedicated/shared-worker-agent",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtain-a-dedicated/shared-worker-agent",
+      "linkingText": [
+        "obtain a dedicated/shared worker agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "obtain-a-worklet-agent",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtain-a-worklet-agent",
+      "linkingText": [
+        "obtain a worklet agent"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -44312,15 +44300,15 @@
       "informative": false
     },
     {
-      "id": "active-script",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#active-script",
+      "id": "obtain-a-service-worker-agent",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtain-a-service-worker-agent",
       "linkingText": [
-        "active script"
+        "obtain a service worker agent"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -44438,31 +44426,6 @@
       "href": "https://html.spec.whatwg.org/multipage/webappapis.html#environment-discarding-steps",
       "linkingText": [
         "environment discarding steps"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "secure-context",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#secure-context",
-      "linkingText": [
-        "secure context",
-        "Is an environment settings object contextually secure?"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "non-secure-context",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#non-secure-context",
-      "linkingText": [
-        "non-secure context"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -44644,6 +44607,569 @@
         "environment settings object"
       ],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "global-object",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#global-object",
+      "linkingText": [
+        "global object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-realm-settings-object",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-settings-object",
+      "linkingText": [
+        "settings object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Realm"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-realm-global",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global",
+      "linkingText": [
+        "global object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Realm"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-global-object-realm",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm",
+      "linkingText": [
+        "Realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "global object"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "environment-settings-object's-realm",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object's-realm",
+      "linkingText": [
+        "Realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "environment settings object"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-settings-object-global",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global",
+      "linkingText": [
+        "global object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "environment settings object"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "creating-a-new-javascript-realm",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#creating-a-new-javascript-realm",
+      "linkingText": [
+        "create a new JavaScript realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-entry-everything",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-entry-everything",
+      "linkingText": [
+        "Entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-incumbent-everything",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-incumbent-everything",
+      "linkingText": [
+        "Incumbent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-current-everything",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-current-everything",
+      "linkingText": [
+        "Current"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-relevant-everything",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-everything",
+      "linkingText": [
+        "Relevant"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "entry-execution-context",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#entry-execution-context",
+      "linkingText": [
+        "entry execution context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-entry-realm",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-entry-realm",
+      "linkingText": [
+        "entry Realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "entry-settings-object",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#entry-settings-object",
+      "linkingText": [
+        "entry settings object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "entry-global-object",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#entry-global-object",
+      "linkingText": [
+        "entry global object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "skip-when-determining-incumbent-counter",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#skip-when-determining-incumbent-counter",
+      "linkingText": [
+        "skip-when-determining-incumbent counter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "backup-incumbent-settings-object-stack",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#backup-incumbent-settings-object-stack",
+      "linkingText": [
+        "backup incumbent settings object stack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "prepare-to-run-a-callback",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#prepare-to-run-a-callback",
+      "linkingText": [
+        "prepare to run a callback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "clean-up-after-running-a-callback",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#clean-up-after-running-a-callback",
+      "linkingText": [
+        "clean up after running a callback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "topmost-script-having-execution-context",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#topmost-script-having-execution-context",
+      "linkingText": [
+        "topmost script-having execution context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "incumbent-settings-object",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#incumbent-settings-object",
+      "linkingText": [
+        "incumbent settings object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-incumbent-realm",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-incumbent-realm",
+      "linkingText": [
+        "incumbent Realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-incumbent-global",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-incumbent-global",
+      "linkingText": [
+        "incumbent global object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "current-settings-object",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object",
+      "linkingText": [
+        "current settings object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "current-global-object",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object",
+      "linkingText": [
+        "current global object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-relevant-realm",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm",
+      "linkingText": [
+        "relevant Realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "relevant-settings-object",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object",
+      "linkingText": [
+        "relevant settings object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-relevant-global",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global",
+      "linkingText": [
+        "relevant global object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-environment-script",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-script",
+      "linkingText": [
+        "Scripting is enabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-environment-noscript",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-noscript",
+      "linkingText": [
+        "Scripting is disabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-n-script",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-n-script",
+      "linkingText": [
+        "Scripting is enabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-n-noscript",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-n-noscript",
+      "linkingText": [
+        "Scripting is disabled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "secure-context",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#secure-context",
+      "linkingText": [
+        "secure context",
+        "Is an environment settings object contextually secure?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "non-secure-context",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#non-secure-context",
+      "linkingText": [
+        "non-secure context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-script",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-script",
+      "linkingText": [
+        "script"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "settings-object",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#settings-object",
+      "linkingText": [
+        "settings object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-script-record",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-script-record",
+      "linkingText": [
+        "record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-script-parse-error",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-script-parse-error",
+      "linkingText": [
+        "parse error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-script-error-to-rethrow",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-script-error-to-rethrow",
+      "linkingText": [
+        "error to rethrow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-script-script-fetch-options",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-script-script-fetch-options",
+      "linkingText": [
+        "Fetch options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-script-base-url",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-script-base-url",
+      "linkingText": [
+        "base URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "script"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "classic-script",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#classic-script",
+      "linkingText": [
+        "classic script"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "muted-errors",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#muted-errors",
+      "linkingText": [
+        "muted errors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "module-script",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#module-script",
+      "linkingText": [
+        "module script"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "active-script",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#active-script",
+      "linkingText": [
+        "active script"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
@@ -45047,352 +45573,6 @@
       "informative": false
     },
     {
-      "id": "global-object",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#global-object",
-      "linkingText": [
-        "global object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "concept-realm-settings-object",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-settings-object",
-      "linkingText": [
-        "settings object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "Realm"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "concept-realm-global",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global",
-      "linkingText": [
-        "global object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "Realm"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "concept-global-object-realm",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm",
-      "linkingText": [
-        "Realm"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "global object"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "environment-settings-object's-realm",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object's-realm",
-      "linkingText": [
-        "Realm"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "environment settings object"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "concept-settings-object-global",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global",
-      "linkingText": [
-        "global object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "environment settings object"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "creating-a-new-javascript-realm",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#creating-a-new-javascript-realm",
-      "linkingText": [
-        "create a new JavaScript realm"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "concept-entry-everything",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-entry-everything",
-      "linkingText": [
-        "Entry"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "concept-incumbent-everything",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-incumbent-everything",
-      "linkingText": [
-        "Incumbent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "concept-current-everything",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-current-everything",
-      "linkingText": [
-        "Current"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "concept-relevant-everything",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-everything",
-      "linkingText": [
-        "Relevant"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "entry-execution-context",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#entry-execution-context",
-      "linkingText": [
-        "entry execution context"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "concept-entry-realm",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-entry-realm",
-      "linkingText": [
-        "entry Realm"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "entry-settings-object",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#entry-settings-object",
-      "linkingText": [
-        "entry settings object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "entry-global-object",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#entry-global-object",
-      "linkingText": [
-        "entry global object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "skip-when-determining-incumbent-counter",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#skip-when-determining-incumbent-counter",
-      "linkingText": [
-        "skip-when-determining-incumbent counter"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "backup-incumbent-settings-object-stack",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#backup-incumbent-settings-object-stack",
-      "linkingText": [
-        "backup incumbent settings object stack"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "prepare-to-run-a-callback",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#prepare-to-run-a-callback",
-      "linkingText": [
-        "prepare to run a callback"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "clean-up-after-running-a-callback",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#clean-up-after-running-a-callback",
-      "linkingText": [
-        "clean up after running a callback"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "topmost-script-having-execution-context",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#topmost-script-having-execution-context",
-      "linkingText": [
-        "topmost script-having execution context"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "incumbent-settings-object",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#incumbent-settings-object",
-      "linkingText": [
-        "incumbent settings object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "concept-incumbent-realm",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-incumbent-realm",
-      "linkingText": [
-        "incumbent Realm"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "concept-incumbent-global",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-incumbent-global",
-      "linkingText": [
-        "incumbent global object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "current-settings-object",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object",
-      "linkingText": [
-        "current settings object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "current-global-object",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object",
-      "linkingText": [
-        "current global object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "concept-relevant-realm",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm",
-      "linkingText": [
-        "relevant Realm"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "relevant-settings-object",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object",
-      "linkingText": [
-        "relevant settings object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "concept-relevant-global",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global",
-      "linkingText": [
-        "relevant global object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "abort-a-running-script",
       "href": "https://html.spec.whatwg.org/multipage/webappapis.html#abort-a-running-script",
       "linkingText": [
@@ -45402,210 +45582,6 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false
-    },
-    {
-      "id": "module-map",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#module-map",
-      "linkingText": [
-        "module map"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "resolve-a-module-specifier",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#resolve-a-module-specifier",
-      "linkingText": [
-        "resolve a module specifier"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "similar-origin-window-agent",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#similar-origin-window-agent",
-      "linkingText": [
-        "Similar-origin window agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dedicated-worker-agent",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#dedicated-worker-agent",
-      "linkingText": [
-        "Dedicated worker agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "shared-worker-agent",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#shared-worker-agent",
-      "linkingText": [
-        "Shared worker agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "service-worker-agent",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#service-worker-agent",
-      "linkingText": [
-        "Service worker agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "worklet-agent",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#worklet-agent",
-      "linkingText": [
-        "Worklet agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "create-an-agent",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#create-an-agent",
-      "linkingText": [
-        "create an agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "relevant-agent",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#relevant-agent",
-      "linkingText": [
-        "relevant agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "agent-cluster-key",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#agent-cluster-key",
-      "linkingText": [
-        "agent cluster key"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "obtain-agent-cluster-key",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtain-agent-cluster-key",
-      "linkingText": [
-        "obtain an agent cluster key"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "obtain-similar-origin-window-agent",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtain-similar-origin-window-agent",
-      "linkingText": [
-        "obtain a similar-origin window agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "obtain-browsing-agent-cluster",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtain-browsing-agent-cluster",
-      "linkingText": [
-        "obtain a browsing context agent cluster"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "obtaining-a-worker/worklet-agent",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtaining-a-worker/worklet-agent",
-      "linkingText": [
-        "obtain a worker/worklet agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "obtain-a-dedicated/shared-worker-agent",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtain-a-dedicated/shared-worker-agent",
-      "linkingText": [
-        "obtain a dedicated/shared worker agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "obtain-a-worklet-agent",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtain-a-worklet-agent",
-      "linkingText": [
-        "obtain a worklet agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "obtain-a-service-worker-agent",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#obtain-a-service-worker-agent",
-      "linkingText": [
-        "obtain a service worker agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
       "informative": false
     },
     {
@@ -45830,6 +45806,30 @@
       "href": "https://html.spec.whatwg.org/multipage/webappapis.html#dom-promiserejectionevent-reason",
       "linkingText": [
         "reason"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "module-map",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#module-map",
+      "linkingText": [
+        "module map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "resolve-a-module-specifier",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#resolve-a-module-specifier",
+      "linkingText": [
+        "resolve a module specifier"
       ],
       "localLinkingText": [],
       "type": "dfn",
