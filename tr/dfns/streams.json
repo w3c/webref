@@ -104,7 +104,7 @@
       "id": "branches-of-a-readable-stream-tee",
       "href": "https://streams.spec.whatwg.org/#branches-of-a-readable-stream-tee",
       "linkingText": [
-        "branches of a\nreadable stream tee"
+        "branches of a readable stream tee"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -436,7 +436,7 @@
       "linkingText": [
         "release a lock",
         "release a read lock",
-        "release a\nwrite lock"
+        "release a write lock"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1542,6 +1542,170 @@
       "informative": false
     },
     {
+      "id": "readable-byte-stream-queue-entry",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry",
+      "linkingText": [
+        "readable byte stream queue entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-queue-entry-buffer",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-buffer",
+      "linkingText": [
+        "buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "readable byte stream queue entry"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-queue-entry-byte-offset",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-byte-offset",
+      "linkingText": [
+        "byte offset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "readable byte stream queue entry"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "readable-byte-stream-queue-entry-byte-length",
+      "href": "https://streams.spec.whatwg.org/#readable-byte-stream-queue-entry-byte-length",
+      "linkingText": [
+        "byte length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "readable byte stream queue entry"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pull-into-descriptor",
+      "href": "https://streams.spec.whatwg.org/#pull-into-descriptor",
+      "linkingText": [
+        "pull-into descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pull-into-descriptor-buffer",
+      "href": "https://streams.spec.whatwg.org/#pull-into-descriptor-buffer",
+      "linkingText": [
+        "buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pull-into descriptor"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pull-into-descriptor-byte-offset",
+      "href": "https://streams.spec.whatwg.org/#pull-into-descriptor-byte-offset",
+      "linkingText": [
+        "byte offset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pull-into descriptor"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pull-into-descriptor-byte-length",
+      "href": "https://streams.spec.whatwg.org/#pull-into-descriptor-byte-length",
+      "linkingText": [
+        "byte length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pull-into descriptor"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pull-into-descriptor-bytes-filled",
+      "href": "https://streams.spec.whatwg.org/#pull-into-descriptor-bytes-filled",
+      "linkingText": [
+        "bytes filled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pull-into descriptor"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pull-into-descriptor-element-size",
+      "href": "https://streams.spec.whatwg.org/#pull-into-descriptor-element-size",
+      "linkingText": [
+        "element size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pull-into descriptor"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pull-into-descriptor-view-constructor",
+      "href": "https://streams.spec.whatwg.org/#pull-into-descriptor-view-constructor",
+      "linkingText": [
+        "view constructor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pull-into descriptor"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pull-into-descriptor-reader-type",
+      "href": "https://streams.spec.whatwg.org/#pull-into-descriptor-reader-type",
+      "linkingText": [
+        "reader type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pull-into descriptor"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "rbs-controller-byob-request",
       "href": "https://streams.spec.whatwg.org/#rbs-controller-byob-request",
       "linkingText": [
@@ -2620,6 +2784,60 @@
       "informative": false
     },
     {
+      "id": "pending-abort-request",
+      "href": "https://streams.spec.whatwg.org/#pending-abort-request",
+      "linkingText": [
+        "pending abort request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pending-abort-request-promise",
+      "href": "https://streams.spec.whatwg.org/#pending-abort-request-promise",
+      "linkingText": [
+        "promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pending abort request"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pending-abort-request-reason",
+      "href": "https://streams.spec.whatwg.org/#pending-abort-request-reason",
+      "linkingText": [
+        "reason"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pending abort request"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pending-abort-request-was-already-erroring",
+      "href": "https://streams.spec.whatwg.org/#pending-abort-request-was-already-erroring",
+      "linkingText": [
+        "was already erroring"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pending abort request"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "dictdef-underlyingsink",
       "href": "https://streams.spec.whatwg.org/#dictdef-underlyingsink",
       "linkingText": [
@@ -3078,6 +3296,18 @@
         "WritableStreamDefaultController/error()"
       ],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "close-sentinel",
+      "href": "https://streams.spec.whatwg.org/#close-sentinel",
+      "linkingText": [
+        "close sentinel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
@@ -4524,6 +4754,46 @@
       "type": "abstract-op",
       "for": [],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "value-with-size",
+      "href": "https://streams.spec.whatwg.org/#value-with-size",
+      "linkingText": [
+        "value-with-size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "value-with-size-value",
+      "href": "https://streams.spec.whatwg.org/#value-with-size-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "value-with-size"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "value-with-size-size",
+      "href": "https://streams.spec.whatwg.org/#value-with-size-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "value-with-size"
+      ],
+      "access": "private",
       "informative": false
     },
     {
