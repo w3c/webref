@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
+    "title": "CSS 2",
     "url": "https://drafts.csswg.org/css2/"
   },
   "properties": {
@@ -11,8 +11,10 @@
       "appliesTo": "all elements except elements with table display types other than table-caption, table and inline-table",
       "inherited": "no",
       "percentages": "refer to width of containing block",
-      "media": "visual",
-      "computed value": "the percentage as specified or the absolute length"
+      "computedValue": "the percentage as specified or the absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "margin-bottom": {
       "name": "margin-bottom",
@@ -21,8 +23,10 @@
       "appliesTo": "all elements except elements with table display types other than table-caption, table and inline-table",
       "inherited": "no",
       "percentages": "refer to width of containing block",
-      "media": "visual",
-      "computed value": "the percentage as specified or the absolute length"
+      "computedValue": "the percentage as specified or the absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "margin-right": {
       "name": "margin-right",
@@ -31,8 +35,10 @@
       "appliesTo": "all elements except elements with table display types other than table-caption, table and inline-table",
       "inherited": "no",
       "percentages": "refer to width of containing block",
-      "media": "visual",
-      "computed value": "the percentage as specified or the absolute length"
+      "computedValue": "the percentage as specified or the absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "margin-left": {
       "name": "margin-left",
@@ -41,8 +47,10 @@
       "appliesTo": "all elements except elements with table display types other than table-caption, table and inline-table",
       "inherited": "no",
       "percentages": "refer to width of containing block",
-      "media": "visual",
-      "computed value": "the percentage as specified or the absolute length"
+      "computedValue": "the percentage as specified or the absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "margin": {
       "name": "margin",
@@ -51,8 +59,10 @@
       "appliesTo": "all elements except elements with table display types other than table-caption, table and inline-table",
       "inherited": "no",
       "percentages": "refer to width of containing block",
-      "media": "visual",
-      "computed value": "see individual properties"
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "padding-top": {
       "name": "padding-top",
@@ -61,8 +71,10 @@
       "appliesTo": "all elements except table-row-group, table-header-group, table-footer-group, table-row, table-column-group and table-column",
       "inherited": "no",
       "percentages": "refer to width of containing block",
-      "media": "visual",
-      "computed value": "the percentage as specified or the absolute length"
+      "computedValue": "the percentage as specified or the absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "padding-right": {
       "name": "padding-right",
@@ -71,8 +83,10 @@
       "appliesTo": "all elements except table-row-group, table-header-group, table-footer-group, table-row, table-column-group and table-column",
       "inherited": "no",
       "percentages": "refer to width of containing block",
-      "media": "visual",
-      "computed value": "the percentage as specified or the absolute length"
+      "computedValue": "the percentage as specified or the absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "padding-bottom": {
       "name": "padding-bottom",
@@ -81,8 +95,10 @@
       "appliesTo": "all elements except table-row-group, table-header-group, table-footer-group, table-row, table-column-group and table-column",
       "inherited": "no",
       "percentages": "refer to width of containing block",
-      "media": "visual",
-      "computed value": "the percentage as specified or the absolute length"
+      "computedValue": "the percentage as specified or the absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "padding-left": {
       "name": "padding-left",
@@ -91,8 +107,10 @@
       "appliesTo": "all elements except table-row-group, table-header-group, table-footer-group, table-row, table-column-group and table-column",
       "inherited": "no",
       "percentages": "refer to width of containing block",
-      "media": "visual",
-      "computed value": "the percentage as specified or the absolute length"
+      "computedValue": "the percentage as specified or the absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "padding": {
       "name": "padding",
@@ -101,228 +119,274 @@
       "appliesTo": "all elements except table-row-group, table-header-group, table-footer-group, table-row, table-column-group and table-column",
       "inherited": "no",
       "percentages": "refer to width of containing block",
-      "media": "visual",
-      "computed value": "see individual properties"
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-top-width": {
       "name": "border-top-width",
       "value": "<border-width> | inherit",
       "initial": "medium",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "absolute length; '0' if the border style is 'none' or 'hidden'"
+      "computedValue": "absolute length; 0 if the border style is none or hidden",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-right-width": {
       "name": "border-right-width",
       "value": "<border-width> | inherit",
       "initial": "medium",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "absolute length; '0' if the border style is 'none' or 'hidden'"
+      "computedValue": "absolute length; 0 if the border style is none or hidden",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-bottom-width": {
       "name": "border-bottom-width",
       "value": "<border-width> | inherit",
       "initial": "medium",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "absolute length; '0' if the border style is 'none' or 'hidden'"
+      "computedValue": "absolute length; 0 if the border style is none or hidden",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-left-width": {
       "name": "border-left-width",
       "value": "<border-width> | inherit",
       "initial": "medium",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "absolute length; '0' if the border style is 'none' or 'hidden'"
+      "computedValue": "absolute length; 0 if the border style is none or hidden",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-width": {
       "name": "border-width",
       "value": "<border-width>{1,4} | inherit",
       "initial": "see individual properties",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "see individual properties"
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-top-color": {
       "name": "border-top-color",
       "value": "<color> | transparent | inherit",
-      "initial": "the value of the 'color' property",
-      "appliesTo": "all elements",
+      "initial": "the value of the color property",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "when taken from the 'color' property, the computed value of 'color'; otherwise, as specified"
+      "computedValue": "when taken from the color property, the computed value of color; otherwise, as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-right-color": {
       "name": "border-right-color",
       "value": "<color> | transparent | inherit",
-      "initial": "the value of the 'color' property",
-      "appliesTo": "all elements",
+      "initial": "the value of the color property",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "when taken from the 'color' property, the computed value of 'color'; otherwise, as specified"
+      "computedValue": "when taken from the color property, the computed value of color; otherwise, as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-bottom-color": {
       "name": "border-bottom-color",
       "value": "<color> | transparent | inherit",
-      "initial": "the value of the 'color' property",
-      "appliesTo": "all elements",
+      "initial": "the value of the color property",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "when taken from the 'color' property, the computed value of 'color'; otherwise, as specified"
+      "computedValue": "when taken from the color property, the computed value of color; otherwise, as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-left-color": {
       "name": "border-left-color",
       "value": "<color> | transparent | inherit",
-      "initial": "the value of the 'color' property",
-      "appliesTo": "all elements",
+      "initial": "the value of the color property",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "when taken from the 'color' property, the computed value of 'color'; otherwise, as specified"
+      "computedValue": "when taken from the color property, the computed value of color; otherwise, as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-color": {
       "name": "border-color",
       "value": "[ <color> | transparent ]{1,4} | inherit",
       "initial": "see individual properties",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "see individual properties"
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-top-style": {
       "name": "border-top-style",
       "value": "<border-style> | inherit",
       "initial": "none",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-right-style": {
       "name": "border-right-style",
       "value": "<border-style> | inherit",
       "initial": "none",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-bottom-style": {
       "name": "border-bottom-style",
       "value": "<border-style> | inherit",
       "initial": "none",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-left-style": {
       "name": "border-left-style",
       "value": "<border-style> | inherit",
       "initial": "none",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-style": {
       "name": "border-style",
       "value": "<border-style>{1,4} | inherit",
       "initial": "see individual properties",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "see individual properties"
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-top": {
       "name": "border-top",
       "value": "[ <border-width> || <border-style> || <'border-top-color'> ] | inherit",
       "initial": "see individual properties",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "see individual properties"
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-right": {
       "name": "border-right",
       "value": "[ <border-width> || <border-style> || <'border-top-color'> ] | inherit",
       "initial": "see individual properties",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "see individual properties"
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-bottom": {
       "name": "border-bottom",
       "value": "[ <border-width> || <border-style> || <'border-top-color'> ] | inherit",
       "initial": "see individual properties",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "see individual properties"
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-left": {
       "name": "border-left",
       "value": "[ <border-width> || <border-style> || <'border-top-color'> ] | inherit",
       "initial": "see individual properties",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "see individual properties"
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border": {
       "name": "border",
       "value": "[ <border-width> || <border-style> || <'border-top-color'> ] | inherit",
       "initial": "see individual properties",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "see individual properties"
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "display": {
       "name": "display",
       "value": "inline | block | list-item | inline-block | table | inline-table | table-row-group | table-header-group | table-footer-group | table-row | table-column-group | table-column | table-cell | table-caption | none | inherit",
       "initial": "inline",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "all",
-      "computed value": "see text"
+      "computedValue": "see text",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "all"
     },
     "position": {
       "name": "position",
       "value": "static | relative | absolute | fixed | inherit",
       "initial": "static",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "top": {
       "name": "top",
@@ -331,8 +395,10 @@
       "appliesTo": "positioned elements",
       "inherited": "no",
       "percentages": "refer to height of containing block",
-      "media": "visual",
-      "computed value": "if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, 'auto'."
+      "computedValue": "if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, auto.",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "right": {
       "name": "right",
@@ -341,8 +407,10 @@
       "appliesTo": "positioned elements",
       "inherited": "no",
       "percentages": "refer to width of containing block",
-      "media": "visual",
-      "computed value": "if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, 'auto'."
+      "computedValue": "if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, auto.",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "bottom": {
       "name": "bottom",
@@ -351,8 +419,10 @@
       "appliesTo": "positioned elements",
       "inherited": "no",
       "percentages": "refer to height of containing block",
-      "media": "visual",
-      "computed value": "if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, 'auto'."
+      "computedValue": "if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, auto.",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "left": {
       "name": "left",
@@ -361,18 +431,22 @@
       "appliesTo": "positioned elements",
       "inherited": "no",
       "percentages": "refer to width of containing block",
-      "media": "visual",
-      "computed value": "if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, 'auto'."
+      "computedValue": "if specified as a length, the corresponding absolute length; if specified as a percentage, the specified value; otherwise, auto.",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "float": {
       "name": "float",
       "value": "left | right | none | inherit",
       "initial": "none",
-      "appliesTo": "all, but see 9.7",
+      "appliesTo": "all, but see {visuren.html#dis-pos-flo}9.7{}",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "clear": {
       "name": "clear",
@@ -381,8 +455,10 @@
       "appliesTo": "block-level elements",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "z-index": {
       "name": "z-index",
@@ -391,8 +467,10 @@
       "appliesTo": "positioned elements",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "direction": {
       "name": "direction",
@@ -401,8 +479,10 @@
       "appliesTo": "all elements, but see prose",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "unicode-bidi": {
       "name": "unicode-bidi",
@@ -411,8 +491,10 @@
       "appliesTo": "all elements, but see prose",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "width": {
       "name": "width",
@@ -421,8 +503,10 @@
       "appliesTo": "all elements but non-replaced inline elements, table rows, and row groups",
       "inherited": "no",
       "percentages": "refer to width of containing block",
-      "media": "visual",
-      "computed value": "the percentage or 'auto' as specified or the absolute length"
+      "computedValue": "the percentage or auto as specified or the absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "min-width": {
       "name": "min-width",
@@ -431,8 +515,10 @@
       "appliesTo": "all elements but non-replaced inline elements, table rows, and row groups",
       "inherited": "no",
       "percentages": "refer to width of containing block",
-      "media": "visual",
-      "computed value": "the percentage as specified or the absolute length"
+      "computedValue": "the percentage as specified or the absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "max-width": {
       "name": "max-width",
@@ -441,8 +527,10 @@
       "appliesTo": "all elements but non-replaced inline elements, table rows, and row groups",
       "inherited": "no",
       "percentages": "refer to width of containing block",
-      "media": "visual",
-      "computed value": "the percentage as specified or the absolute length or 'none'"
+      "computedValue": "the percentage as specified or the absolute length or none",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "height": {
       "name": "height",
@@ -451,8 +539,10 @@
       "appliesTo": "all elements but non-replaced inline elements, table columns, and column groups",
       "inherited": "no",
       "percentages": "see prose",
-      "media": "visual",
-      "computed value": "the percentage or 'auto' (see prose under <percentage>) or the absolute length"
+      "computedValue": "the percentage or auto (see prose under ) or the absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "min-height": {
       "name": "min-height",
@@ -461,8 +551,10 @@
       "appliesTo": "all elements but non-replaced inline elements, table columns, and column groups",
       "inherited": "no",
       "percentages": "see prose",
-      "media": "visual",
-      "computed value": "the percentage as specified or the absolute length"
+      "computedValue": "the percentage as specified or the absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "max-height": {
       "name": "max-height",
@@ -471,28 +563,34 @@
       "appliesTo": "all elements but non-replaced inline elements, table columns, and column groups",
       "inherited": "no",
       "percentages": "see prose",
-      "media": "visual",
-      "computed value": "the percentage as specified or the absolute length or 'none'"
+      "computedValue": "the percentage as specified or the absolute length or none",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "line-height": {
       "name": "line-height",
       "value": "normal | <number> | <length> | <percentage> | inherit",
       "initial": "normal",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "refer to the font size of the element itself",
-      "media": "visual",
-      "computed value": "for <length> and <percentage> the absolute value; otherwise as specified"
+      "computedValue": "for and the absolute value; otherwise as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "vertical-align": {
       "name": "vertical-align",
       "value": "baseline | sub | super | top | text-top | middle | bottom | text-bottom | <percentage> | <length> | inherit",
       "initial": "baseline",
-      "appliesTo": "inline-level and 'table-cell' elements",
+      "appliesTo": "inline-level and table-cell elements",
       "inherited": "no",
-      "percentages": "refer to the 'line-height' of the element itself",
-      "media": "visual",
-      "computed value": "for <percentage> and <length> the absolute length, otherwise as specified"
+      "percentages": "refer to the line-height of the element itself",
+      "computedValue": "for and the absolute length, otherwise as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "overflow": {
       "name": "overflow",
@@ -501,8 +599,10 @@
       "appliesTo": "block containers",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "clip": {
       "name": "clip",
@@ -511,18 +611,22 @@
       "appliesTo": "absolutely positioned elements",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "'auto' if specified as 'auto', otherwise a rectangle with four values, each of which is 'auto' if specified as 'auto' and the computed length otherwise"
+      "computedValue": "auto if specified as auto, otherwise a rectangle with four values, each of which is auto if specified as auto and the computed length otherwise",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "visibility": {
       "name": "visibility",
       "value": "visible | hidden | collapse | inherit",
       "initial": "visible",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "content": {
       "name": "content",
@@ -531,38 +635,46 @@
       "appliesTo": ":before and :after pseudo-elements",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "all",
-      "computed value": "On elements, always computes to 'normal'. On :before and :after, if 'normal' is specified, computes to 'none'. Otherwise, for URI values, the absolute URI; for attr() values, the resulting string; for other keywords, as specified."
+      "computedValue": "On elements, always computes to normal. On :before and :after, if normal is specified, computes to none. Otherwise, for URI values, the absolute URI; for attr() values, the resulting string; for other keywords, as specified.",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "all"
     },
     "quotes": {
       "name": "quotes",
       "value": "[<string> <string>]+ | none | inherit",
       "initial": "depends on user agent",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "counter-reset": {
       "name": "counter-reset",
       "value": "[ <identifier> <integer>? ]+ | none | inherit",
       "initial": "none",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "all",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "all"
     },
     "counter-increment": {
       "name": "counter-increment",
       "value": "[ <identifier> <integer>? ]+ | none | inherit",
       "initial": "none",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "all",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "all"
     },
     "list-style-type": {
       "name": "list-style-type",
@@ -571,8 +683,10 @@
       "appliesTo": "elements with 'display: list-item'",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "list-style-image": {
       "name": "list-style-image",
@@ -581,8 +695,10 @@
       "appliesTo": "elements with 'display: list-item'",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "absolute URI or 'none'"
+      "computedValue": "absolute URI or none",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "list-style-position": {
       "name": "list-style-position",
@@ -591,8 +707,10 @@
       "appliesTo": "elements with 'display: list-item'",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "list-style": {
       "name": "list-style",
@@ -601,8 +719,10 @@
       "appliesTo": "elements with 'display: list-item'",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "see individual properties"
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "page-break-before": {
       "name": "page-break-before",
@@ -611,8 +731,10 @@
       "appliesTo": "block-level elements (but see text)",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual, paged",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual, paged"
     },
     "page-break-after": {
       "name": "page-break-after",
@@ -621,8 +743,10 @@
       "appliesTo": "block-level elements (but see text)",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual, paged",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual, paged"
     },
     "page-break-inside": {
       "name": "page-break-inside",
@@ -631,8 +755,10 @@
       "appliesTo": "block-level elements (but see text)",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual, paged",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual, paged"
     },
     "orphans": {
       "name": "orphans",
@@ -641,8 +767,10 @@
       "appliesTo": "block container elements",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual, paged",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual, paged"
     },
     "widows": {
       "name": "widows",
@@ -651,138 +779,166 @@
       "appliesTo": "block container elements",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual, paged",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual, paged"
     },
     "color": {
       "name": "color",
       "value": "<color> | inherit",
       "initial": "depends on user agent",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "background-color": {
       "name": "background-color",
       "value": "<color> | transparent | inherit",
       "initial": "transparent",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "background-image": {
       "name": "background-image",
       "value": "<uri> | none | inherit",
       "initial": "none",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "absolute URI or none"
+      "computedValue": "absolute URI or none",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "background-repeat": {
       "name": "background-repeat",
       "value": "repeat | repeat-x | repeat-y | no-repeat | inherit",
       "initial": "repeat",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "background-attachment": {
       "name": "background-attachment",
       "value": "scroll | fixed | inherit",
       "initial": "scroll",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "background-position": {
       "name": "background-position",
       "value": "[ [ <percentage> | <length> | left | center | right ] [ <percentage> | <length> | top | center | bottom ]? ] | [ [ left | center | right ] || [ top | center | bottom ] ] | inherit",
       "initial": "0% 0%",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "refer to the size of the box itself",
-      "media": "visual",
-      "computed value": "for <length> the absolute value, otherwise a percentage"
+      "computedValue": "for the absolute value, otherwise a percentage",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "background": {
       "name": "background",
       "value": "[<'background-color'> || <'background-image'> || <'background-repeat'> || <'background-attachment'> || <'background-position'>] | inherit",
       "initial": "see individual properties",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
-      "percentages": "allowed on 'background-position'",
-      "media": "visual",
-      "computed value": "see individual properties"
+      "percentages": "allowed on background-position",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "font-family": {
       "name": "font-family",
-      "value": "[[ <family-name> | <generic-family> ] [, <family-name>| <generic-family>]* ] | inherit",
+      "value": "[[ <family-name> | <generic-family> ] [, <family-name> | <generic-family>]* ] | inherit",
       "initial": "depends on user agent",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "font-style": {
       "name": "font-style",
       "value": "normal | italic | oblique | inherit",
       "initial": "normal",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "font-variant": {
       "name": "font-variant",
       "value": "normal | small-caps | inherit",
       "initial": "normal",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "font-weight": {
       "name": "font-weight",
       "value": "normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | inherit",
       "initial": "normal",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "see text"
+      "computedValue": "see text",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "font-size": {
       "name": "font-size",
       "value": "<absolute-size> | <relative-size> | <length> | <percentage> | inherit",
       "initial": "medium",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "refer to inherited font size",
-      "media": "visual",
-      "computed value": "absolute length"
+      "computedValue": "absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "font": {
       "name": "font",
       "value": "[ [ <'font-style'> || <'font-variant'> || <'font-weight'> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | caption | icon | menu | message-box | small-caption | status-bar | inherit",
       "initial": "see individual properties",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "see individual properties",
-      "media": "visual",
-      "computed value": "see individual properties"
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "text-indent": {
       "name": "text-indent",
@@ -791,358 +947,430 @@
       "appliesTo": "block containers",
       "inherited": "yes",
       "percentages": "refer to width of containing block",
-      "media": "visual",
-      "computed value": "the percentage as specified or the absolute length"
+      "computedValue": "the percentage as specified or the absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "text-align": {
       "name": "text-align",
       "value": "left | right | center | justify | inherit",
-      "initial": "a nameless value that acts as 'left' if 'direction' is 'ltr', 'right' if 'direction' is 'rtl'",
+      "initial": "a nameless value that acts as left if direction is ltr, right if direction is rtl",
       "appliesTo": "block containers",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "the initial value or as specified"
+      "computedValue": "the initial value or as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "text-decoration": {
       "name": "text-decoration",
       "value": "none | [ underline || overline || line-through || blink ] | inherit",
       "initial": "none",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no (see prose)",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "letter-spacing": {
       "name": "letter-spacing",
       "value": "normal | <length> | inherit",
       "initial": "normal",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "'normal' or absolute length"
+      "computedValue": "normal or absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "word-spacing": {
       "name": "word-spacing",
       "value": "normal | <length> | inherit",
       "initial": "normal",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "for 'normal' the value '0'; otherwise the absolute length"
+      "computedValue": "for normal the value 0; otherwise the absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "text-transform": {
       "name": "text-transform",
       "value": "capitalize | uppercase | lowercase | none | inherit",
       "initial": "none",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "white-space": {
       "name": "white-space",
       "value": "normal | pre | nowrap | pre-wrap | pre-line | inherit",
       "initial": "normal",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "caption-side": {
       "name": "caption-side",
       "value": "top | bottom | inherit",
       "initial": "top",
-      "appliesTo": "'table-caption' elements",
+      "appliesTo": "table-caption elements",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "table-layout": {
       "name": "table-layout",
       "value": "auto | fixed | inherit",
       "initial": "auto",
-      "appliesTo": "'table' and 'inline-table' elements",
+      "appliesTo": "table and inline-table elements",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-collapse": {
       "name": "border-collapse",
       "value": "collapse | separate | inherit",
       "initial": "separate",
-      "appliesTo": "'table' and 'inline-table' elements",
+      "appliesTo": "table and inline-table elements",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "border-spacing": {
       "name": "border-spacing",
       "value": "<length> <length>? | inherit",
       "initial": "0",
-      "appliesTo": "'table' and 'inline-table' elements*",
+      "appliesTo": "table and inline-table elements*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "two absolute lengths"
+      "computedValue": "two absolute lengths",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "empty-cells": {
       "name": "empty-cells",
       "value": "show | hide | inherit",
       "initial": "show",
-      "appliesTo": "'table-cell' elements",
+      "appliesTo": "table-cell elements",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual"
     },
     "cursor": {
       "name": "cursor",
       "value": "[ [<uri> ,]* [ auto | crosshair | default | pointer | move | e-resize | ne-resize | nw-resize | n-resize | se-resize | sw-resize | s-resize | w-resize | text | wait | help | progress ] ] | inherit",
       "initial": "auto",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "visual, interactive",
-      "computed value": "as specified, except with any relative URLs converted to absolute"
+      "computedValue": "as specified, except with any relative URLs converted to absolute",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual, interactive"
     },
     "outline": {
       "name": "outline",
       "value": "[ <'outline-color'> || <'outline-style'> || <'outline-width'> ] | inherit",
       "initial": "see individual properties",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual, interactive",
-      "computed value": "see individual properties"
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual, interactive"
     },
     "outline-width": {
       "name": "outline-width",
       "value": "<border-width> | inherit",
       "initial": "medium",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual, interactive",
-      "computed value": "absolute length; '0' if the outline style is 'none'"
+      "computedValue": "absolute length; 0 if the outline style is none",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual, interactive"
     },
     "outline-style": {
       "name": "outline-style",
       "value": "<border-style> | inherit",
       "initial": "none",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual, interactive",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual, interactive"
     },
     "outline-color": {
       "name": "outline-color",
       "value": "<color> | invert | inherit",
       "initial": "invert",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual, interactive",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual, interactive"
     },
     "volume": {
       "name": "volume",
       "value": "<number> | <percentage> | silent | x-soft | soft | medium | loud | x-loud | inherit",
       "initial": "medium",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "refer to inherited value",
-      "media": "aural",
-      "computed value": "number"
+      "computedValue": "number",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "speak": {
       "name": "speak",
       "value": "normal | none | spell-out | inherit",
       "initial": "normal",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "aural",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "pause-before": {
       "name": "pause-before",
       "value": "<time> | <percentage> | inherit",
       "initial": "0",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "see prose",
-      "media": "aural",
-      "computed value": "time"
+      "computedValue": "time",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "pause-after": {
       "name": "pause-after",
       "value": "<time> | <percentage> | inherit",
       "initial": "0",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "see prose",
-      "media": "aural",
-      "computed value": "time;;"
+      "computedValue": "time;;",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "pause": {
       "name": "pause",
       "value": "[ [<time> | <percentage>]{1,2} ] | inherit",
       "initial": "see individual properties",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
-      "percentages": "see descriptions of 'pause-before' and 'pause-after'",
-      "media": "aural",
-      "computed value": "see individual properties"
+      "percentages": "see descriptions of pause-before and pause-after",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "cue-before": {
       "name": "cue-before",
       "value": "<uri> | none | inherit",
       "initial": "none",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "aural",
-      "computed value": "absolute URI or 'none'"
+      "computedValue": "absolute URI or none",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "cue-after": {
       "name": "cue-after",
       "value": "<uri> | none | inherit",
       "initial": "none",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "aural",
-      "computed value": "absolute URI or 'none'"
+      "computedValue": "absolute URI or none",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "cue": {
       "name": "cue",
       "value": "[ <'cue-before'> || <'cue-after'> ] | inherit",
       "initial": "see individual properties",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "aural",
-      "computed value": "see individual properties"
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "play-during": {
       "name": "play-during",
       "value": "<uri> [ mix || repeat ]? | auto | none | inherit",
       "initial": "auto",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "aural",
-      "computed value": "absolute URI, rest as specified"
+      "computedValue": "absolute URI, rest as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "azimuth": {
       "name": "azimuth",
       "value": "<angle> | [[ left-side | far-left | left | center-left | center | center-right | right | far-right | right-side ] || behind ] | leftwards | rightwards | inherit",
       "initial": "center",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "aural",
-      "computed value": "normalized angle"
+      "computedValue": "normalized angle",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "elevation": {
       "name": "elevation",
       "value": "<angle> | below | level | above | higher | lower | inherit",
       "initial": "level",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "aural",
-      "computed value": "normalized angle"
+      "computedValue": "normalized angle",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "speech-rate": {
       "name": "speech-rate",
       "value": "<number> | x-slow | slow | medium | fast | x-fast | faster | slower | inherit",
       "initial": "medium",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "aural",
-      "computed value": "number"
+      "computedValue": "number",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "voice-family": {
       "name": "voice-family",
-      "value": "[[<specific-voice> | <generic-voice> ],]* [<specific-voice> | <generic-voice> ] | inherit",
+      "value": "[[ <specific-voice> | <generic-voice> ],]* [<specific-voice> | <generic-voice> ] | inherit",
       "initial": "depends on user agent",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "aural",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "pitch": {
       "name": "pitch",
       "value": "<frequency> | x-low | low | medium | high | x-high | inherit",
       "initial": "medium",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "aural",
-      "computed value": "frequency"
+      "computedValue": "frequency",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "pitch-range": {
       "name": "pitch-range",
       "value": "<number> | inherit",
       "initial": "50",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "aural",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "stress": {
       "name": "stress",
       "value": "<number> | inherit",
       "initial": "50",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "aural",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "richness": {
       "name": "richness",
       "value": "<number> | inherit",
       "initial": "50",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "aural",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "speak-punctuation": {
       "name": "speak-punctuation",
       "value": "code | none | inherit",
       "initial": "none",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "aural",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "speak-numeral": {
       "name": "speak-numeral",
       "value": "digits | continuous | inherit",
       "initial": "continuous",
-      "appliesTo": "all elements",
+      "appliesTo": "*",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "aural",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     },
     "speak-header": {
       "name": "speak-header",
@@ -1151,17 +1379,34 @@
       "appliesTo": "elements that have table header information",
       "inherited": "yes",
       "percentages": "N/A",
-      "media": "aural",
-      "computed value": "as specified"
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "aural"
     }
   },
   "descriptors": {},
   "valuespaces": {
+    "<attr()>": {
+      "value": "attr(X)"
+    },
+    "<shape>": {
+      "prose": "In CSS 2, the only valid <shape> value is: rect(<top>, <right>, <bottom>, <left>) where <top> and <bottom> specify offsets from the top border edge of the box, and <right>, and <left> specify offsets from the left border edge of the box. Authors should separate offset values with commas. User agents must support separation with commas, but may also support separation without commas (but not a combination), because a previous revision of this specification was ambiguous in this respect. <top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box). When coordinates are rounded to pixel coordinates, care should be taken that no pixels remain visible when <left> and <right> have the same value (or <top> and <bottom> have the same value), and conversely that no pixels within the element’s border box remain hidden when these values are auto."
+    },
     "<family-name>": {
       "prose": "The name of a font family of choice. In the last example, \"Gill\" and \"Helvetica\" are font families."
     },
     "<generic-family>": {
       "prose": "In the example above, the last value is a generic family name. The following generic families are defined: 'serif' (e.g., Times) 'sans-serif' (e.g., Helvetica) 'cursive' (e.g., Zapf-Chancery) 'fantasy' (e.g., Western) 'monospace' (e.g., Courier) Style sheet designers are encouraged to offer a generic font family as a last alternative. Generic font family names are keywords and must NOT be quoted."
+    },
+    "<generic-voice>": {
+      "prose": "Values are voice families. Possible values are male, female, and child."
+    },
+    "<specific-voice>": {
+      "prose": "Values are specific instances (e.g., comedian, trinoids, carlos, lani)."
+    },
+    "<frequency>": {
+      "prose": "Specifies the average pitch of the speaking voice in hertz (Hz)."
     }
   }
 }

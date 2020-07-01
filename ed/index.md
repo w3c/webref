@@ -490,167 +490,6 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 
 
-## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/CSS21/](https://www.w3.org/TR/CSS21/)
-- Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Crawled version: 03 May 2020
-- Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Latest published version: [https://www.w3.org/TR/CSS2/](https://www.w3.org/TR/CSS2/)
-- Shortname: CSS21
-
-### Potential issue(s) {.anomalies}
-
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/), related reference "CSS3COLOR" uses URL [`https://www.w3.org/TR/2010/PR-css3-color-20101028/`](https://www.w3.org/TR/2010/PR-css3-color-20101028/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Accessible Name and Description Computation 1.2](https://w3c.github.io/accname/)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
-- [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
-- [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
-- [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
-- [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
-- [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
-- [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
-- [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
-- [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
-- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
-- [CSS Color Module Level 3](https://drafts.csswg.org/css-color-3/)
-- [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
-- [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
-- [CSS Conditional Rules Module Level 4](https://drafts.csswg.org/css-conditional-4/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
-- [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
-- [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
-- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
-- [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
-- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
-- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
-- [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
-- [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
-- [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/)
-- [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
-- [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
-- [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
-- [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
-- [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
-- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
-- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
-- [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
-- [CSS Lists Module Level 3](https://drafts.csswg.org/css-lists-3/)
-- [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
-- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
-- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
-- [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
-- [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
-- [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
-- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
-- [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
-- [CSS Overscroll Behavior Module Level 1](https://drafts.csswg.org/css-overscroll-1/)
-- [CSS Page Floats](https://drafts.csswg.org/css-page-floats/)
-- [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
-- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
-- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
-- [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
-- [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
-- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
-- [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
-- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
-- [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
-- [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars/)
-- [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
-- [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
-- [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
-- [CSS Style Attributes](https://drafts.csswg.org/css-style-attr/)
-- [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
-- [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
-- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
-- [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
-- [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
-- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
-- [CSS Transitions](https://drafts.csswg.org/css-transitions/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
-- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
-- [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
-- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
-- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [Layout Instability API](https://wicg.github.io/layout-instability/)
-- [Media Queries Level 3](https://drafts.csswg.org/mediaqueries-3/)
-- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
-- [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
-- [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
-- [Pointer Events](https://w3c.github.io/pointerevents/)
-- [Proposals for the future of CSS Paged Media](https://drafts.csswg.org/css-page-4/)
-- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
-- [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
-- [Selectors Level 4](https://drafts.csswg.org/selectors/)
-- [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
-- [Web Animations](https://drafts.csswg.org/web-animations-1/)
-- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
-
-Informative references to this spec from:
-
-- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
-- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
-- [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
-- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
-- [UI Events](https://w3c.github.io/uievents/)
-
-
-## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification {data-spec=true data-anomaly=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
-- Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Crawled version: 03 May 2020
-- Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Latest published version: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
-- Shortname: CSS22
-
-### Potential issue(s) {.anomalies}
-
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/), related reference "CSS3COLOR" uses URL [`https://www.w3.org/TR/2010/PR-css3-color-20101028/`](https://www.w3.org/TR/2010/PR-css3-color-20101028/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
-
-No informative reference to this spec from other specs.
-
-
 ## Clear Site Data {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -1199,6 +1038,186 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
+## CSS 2 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
+- Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
+- Crawled version: 10 June 2020
+- Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
+- Latest published version: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
+- Shortname: CSS22
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
+     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
+     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/), related reference "CSS21" uses URL [`https://www.w3.org/TR/CSS2/`](https://www.w3.org/TR/CSS2/)
+     * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/), related reference "CSS21" uses URL [`https://www.w3.org/TR/CSS2/`](https://www.w3.org/TR/CSS2/)
+     * [`https://www.w3.org/TR/2003/REC-SVG11-20030114/`](https://www.w3.org/TR/2003/REC-SVG11-20030114/), related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+
+No informative reference to this spec from other specs.
+
+
+## CSS 2 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/CSS21/](https://www.w3.org/TR/CSS21/)
+- Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
+- Crawled version: 10 June 2020
+- Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
+- Latest published version: [https://www.w3.org/TR/CSS2/](https://www.w3.org/TR/CSS2/)
+- Shortname: CSS21
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
+     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
+     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/), related reference "CSS21" uses URL [`https://www.w3.org/TR/CSS2/`](https://www.w3.org/TR/CSS2/)
+     * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/), related reference "CSS21" uses URL [`https://www.w3.org/TR/CSS2/`](https://www.w3.org/TR/CSS2/)
+     * [`https://www.w3.org/TR/2003/REC-SVG11-20030114/`](https://www.w3.org/TR/2003/REC-SVG11-20030114/), related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Accessible Name and Description Computation 1.2](https://w3c.github.io/accname/)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
+- [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
+- [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
+- [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
+- [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
+- [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
+- [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
+- [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
+- [CSS Color Module Level 3](https://drafts.csswg.org/css-color-3/)
+- [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
+- [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
+- [CSS Conditional Rules Module Level 4](https://drafts.csswg.org/css-conditional-4/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
+- [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
+- [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
+- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
+- [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
+- [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
+- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
+- [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
+- [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
+- [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/)
+- [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
+- [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
+- [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
+- [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
+- [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
+- [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
+- [CSS Lists Module Level 3](https://drafts.csswg.org/css-lists-3/)
+- [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
+- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
+- [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
+- [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
+- [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
+- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
+- [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
+- [CSS Overscroll Behavior Module Level 1](https://drafts.csswg.org/css-overscroll-1/)
+- [CSS Page Floats](https://drafts.csswg.org/css-page-floats/)
+- [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
+- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
+- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
+- [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
+- [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
+- [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
+- [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
+- [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
+- [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars/)
+- [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
+- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
+- [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
+- [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
+- [CSS Style Attributes](https://drafts.csswg.org/css-style-attr/)
+- [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
+- [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
+- [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
+- [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
+- [CSS Transitions](https://drafts.csswg.org/css-transitions/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
+- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
+- [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
+- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
+- [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
+- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Media Queries Level 3](https://drafts.csswg.org/mediaqueries-3/)
+- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
+- [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
+- [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Proposals for the future of CSS Paged Media](https://drafts.csswg.org/css-page-4/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
+- [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
+- [Selectors Level 4](https://drafts.csswg.org/selectors/)
+- [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
+- [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+
+Informative references to this spec from:
+
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
+- [UI Events](https://w3c.github.io/uievents/)
+
+
 ## CSS Animation Worklet API {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
@@ -1342,20 +1361,20 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
@@ -1440,6 +1459,52 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
+- Initial URL: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
+- Crawled URL: [https://drafts.csswg.org/css-ui/](https://drafts.csswg.org/css-ui/)
+- Crawled version: 25 January 2020
+- Editor's Draft: [https://drafts.csswg.org/css-ui/](https://drafts.csswg.org/css-ui/)
+- Latest published version: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
+- Shortname: css-ui-3
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2000/WD-css3-userint-20000216`](https://www.w3.org/TR/2000/WD-css3-userint-20000216)
+     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
+     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/)
+     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
+     * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/)
+     * [`https://w3c.github.io/contentEditable/`](https://w3c.github.io/contentEditable/)
+     * [`https://www.w3.org/TR/2020/WD-css-ui-4-20200102/`](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
+     * [`https://www.w3.org/TR/2017/WD-css-ui-4-20171222/`](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
+     * [`https://www.w3.org/TR/2015/WD-css-ui-4-20150922/`](https://www.w3.org/TR/2015/WD-css-ui-4-20150922/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+
+Informative references to this spec from:
+
+- [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
+- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
+- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
+- [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
+- [Selectors Level 4](https://drafts.csswg.org/selectors/)
+
+
+## CSS Basic User Interface Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
 - Initial URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Crawled URL: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
 - Crawled version: 25 January 2020
@@ -1480,54 +1545,8 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
-
-
-## CSS Basic User Interface Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
-- Crawled URL: [https://drafts.csswg.org/css-ui/](https://drafts.csswg.org/css-ui/)
-- Crawled version: 25 January 2020
-- Editor's Draft: [https://drafts.csswg.org/css-ui/](https://drafts.csswg.org/css-ui/)
-- Latest published version: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
-- Shortname: css-ui-3
-
-### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/2000/WD-css3-userint-20000216`](https://www.w3.org/TR/2000/WD-css3-userint-20000216)
-     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
-     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/)
-     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-     * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/)
-     * [`https://w3c.github.io/contentEditable/`](https://w3c.github.io/contentEditable/)
-     * [`https://www.w3.org/TR/2020/WD-css-ui-4-20200102/`](https://www.w3.org/TR/2020/WD-css-ui-4-20200102/)
-     * [`https://www.w3.org/TR/2017/WD-css-ui-4-20171222/`](https://www.w3.org/TR/2017/WD-css-ui-4-20171222/)
-     * [`https://www.w3.org/TR/2015/WD-css-ui-4-20150922/`](https://www.w3.org/TR/2015/WD-css-ui-4-20150922/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
-- [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-
-Informative references to this spec from:
-
-- [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
-- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
-- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
-- [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
-- [Selectors Level 4](https://drafts.csswg.org/selectors/)
 
 
 ## CSS Box Alignment Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1663,8 +1682,8 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
@@ -1733,14 +1752,14 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
@@ -1795,8 +1814,8 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
 
 
@@ -1882,8 +1901,8 @@ Normative references to this spec from:
 - [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
@@ -1900,8 +1919,8 @@ Normative references to this spec from:
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
@@ -2019,13 +2038,13 @@ Normative references to this spec from:
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
 - [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
@@ -2048,6 +2067,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
@@ -2082,13 +2103,13 @@ Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
@@ -2190,8 +2211,8 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [Web IDL](https://heycam.github.io/webidl/)
@@ -2223,6 +2244,51 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
+- Initial URL: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
+- Crawled URL: [https://drafts.csswg.org/css-contain-2/](https://drafts.csswg.org/css-contain-2/)
+- Crawled version: 9 June 2020
+- Editor's Draft: [https://drafts.csswg.org/css-contain-2/](https://drafts.csswg.org/css-contain-2/)
+- Latest published version: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
+- Shortname: css-contain-2
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
+     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
+     * [`https://www.w3.org/TR/css-pseudo-4/`](https://www.w3.org/TR/css-pseudo-4/)
+     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+     * [`https://w3c.github.io/IntersectionObserver/`](https://w3c.github.io/IntersectionObserver/), related reference "INTERSECTION-OBSERVER" uses URL [`https://www.w3.org/TR/intersection-observer/`](https://www.w3.org/TR/intersection-observer/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
+- [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
+- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
+- [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
+- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
+- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
+- [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
+- [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
+
+Informative references to this spec from:
+
+- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
+
+
+## CSS Containment Module Level 2 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
 - Initial URL: [https://www.w3.org/TR/css-contain-1/](https://www.w3.org/TR/css-contain-1/)
 - Crawled URL: [https://drafts.csswg.org/css-contain/](https://drafts.csswg.org/css-contain/)
 - Crawled version: 9 June 2020
@@ -2247,59 +2313,14 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 
 Informative references to this spec from:
 
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
-
-
-## CSS Containment Module Level 2 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
-- Crawled URL: [https://drafts.csswg.org/css-contain-2/](https://drafts.csswg.org/css-contain-2/)
-- Crawled version: 9 June 2020
-- Editor's Draft: [https://drafts.csswg.org/css-contain-2/](https://drafts.csswg.org/css-contain-2/)
-- Latest published version: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
-- Shortname: css-contain-2
-
-### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
-     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-     * [`https://www.w3.org/TR/css-pseudo-4/`](https://www.w3.org/TR/css-pseudo-4/)
-     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-     * [`https://w3c.github.io/IntersectionObserver/`](https://w3c.github.io/IntersectionObserver/), related reference "INTERSECTION-OBSERVER" uses URL [`https://www.w3.org/TR/intersection-observer/`](https://www.w3.org/TR/intersection-observer/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
-- [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
-- [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
-- [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
-- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
-- [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
-- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
-- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
-- [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
-- [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
-
-Informative references to this spec from:
-
-- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 
 
 ## CSS Counter Styles Level 3 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -2462,17 +2483,19 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
@@ -2530,8 +2553,8 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 
 
 ## CSS Easing Functions Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -2766,78 +2789,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
-
-
-## CSS Fonts Module Level 4 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/css-fonts-3/](https://www.w3.org/TR/css-fonts-3/)
-- Crawled URL: [https://drafts.csswg.org/css-fonts/](https://drafts.csswg.org/css-fonts/)
-- Crawled version: 11 June 2020
-- Editor's Draft: [https://drafts.csswg.org/css-fonts/](https://drafts.csswg.org/css-fonts/)
-- Latest published version: [https://www.w3.org/TR/css-fonts-3/](https://www.w3.org/TR/css-fonts-3/)
-- Shortname: css-fonts-3
-
-### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `CSSOMString`
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
-     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/)
-     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-     * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/)
-     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
-     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-     * [`https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/`](https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/), related reference "CSS-FONTS-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
-     * [`https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/`](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/), related reference "CSS-FONTS-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
-     * [`https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/`](https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/), related reference "CSS-FONTS-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
-- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
-- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
-- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
-- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
-- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
-- [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
-- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
-- [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
-- [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
-- [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
-- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
-- [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
-- [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
-- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Web Animations](https://drafts.csswg.org/web-animations-1/)
-- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
-- [WOFF File Format 2.0](https://w3c.github.io/woff/woff2/)
-
-Informative references to this spec from:
-
-- [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
-- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
-- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
-- [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
-- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 
 
 ## CSS Fonts Module Level 4 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2876,8 +2829,8 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
@@ -2914,6 +2867,76 @@ Informative references to this spec from:
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 
 
+## CSS Fonts Module Level 4 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/css-fonts-3/](https://www.w3.org/TR/css-fonts-3/)
+- Crawled URL: [https://drafts.csswg.org/css-fonts/](https://drafts.csswg.org/css-fonts/)
+- Crawled version: 11 June 2020
+- Editor's Draft: [https://drafts.csswg.org/css-fonts/](https://drafts.csswg.org/css-fonts/)
+- Latest published version: [https://www.w3.org/TR/css-fonts-3/](https://www.w3.org/TR/css-fonts-3/)
+- Shortname: css-fonts-3
+
+### Potential issue(s) {.anomalies}
+
+- Unknown WebIDL names used: `CSSOMString`
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
+     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/)
+     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
+     * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/)
+     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+     * [`https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/`](https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/), related reference "CSS-FONTS-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
+     * [`https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/`](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/), related reference "CSS-FONTS-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
+     * [`https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/`](https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/), related reference "CSS-FONTS-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
+- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
+- [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
+- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
+- [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
+- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
+- [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
+- [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
+- [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
+- [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
+- [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
+- [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
+- [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+- [WOFF File Format 2.0](https://w3c.github.io/woff/woff2/)
+
+Informative references to this spec from:
+
+- [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
+- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
+- [CSS Writing Modes Level 3](https://drafts.csswg.org/css-writing-modes-3/)
+- [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
+
+
 ## CSS Fragmentation Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -2947,8 +2970,8 @@ Normative references to this spec from:
 
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
@@ -3192,8 +3215,8 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
@@ -3255,8 +3278,8 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
@@ -3324,8 +3347,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 
 
 ## CSS Inline Layout Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3462,10 +3485,12 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
@@ -3642,8 +3667,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
@@ -3761,8 +3786,8 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
@@ -3831,12 +3856,12 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
@@ -3875,8 +3900,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 
@@ -3907,15 +3932,15 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 
 Informative references to this spec from:
 
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 
 
@@ -4009,8 +4034,8 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
@@ -4030,8 +4055,8 @@ Informative references to this spec from:
 
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
@@ -4108,11 +4133,11 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
@@ -4195,8 +4220,8 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
@@ -4268,8 +4293,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 
 
@@ -4396,8 +4421,8 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
@@ -4660,6 +4685,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS 2](https://drafts.csswg.org/css2/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 
 
@@ -4682,6 +4709,8 @@ This specification looks good!
 
 Normative references to this spec from:
 
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -4715,6 +4744,8 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -4729,8 +4760,8 @@ Normative references to this spec from:
 - [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
 - [CSS Lists Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
@@ -4924,8 +4955,8 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
@@ -5029,8 +5060,8 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
@@ -5055,8 +5086,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
@@ -5257,8 +5288,8 @@ Normative references to this spec from:
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
@@ -5269,8 +5300,8 @@ Normative references to this spec from:
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
@@ -5281,8 +5312,8 @@ Normative references to this spec from:
 - [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
 - [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/)
@@ -5386,8 +5417,8 @@ Normative references to this spec from:
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
@@ -5400,8 +5431,8 @@ Normative references to this spec from:
 - [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Conditional Rules Module Level 4](https://drafts.csswg.org/css-conditional-4/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
@@ -5413,8 +5444,8 @@ Normative references to this spec from:
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
 - [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/)
@@ -5547,8 +5578,8 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -5613,8 +5644,8 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
@@ -5690,8 +5721,8 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
@@ -6037,8 +6068,8 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Accessible Name and Description Computation 1.2](https://w3c.github.io/accname/)
-- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
-- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
@@ -7072,22 +7103,22 @@ Normative references to this spec from:
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
@@ -7250,8 +7281,8 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [ContentEditable](https://w3c.github.io/contentEditable/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
@@ -7560,14 +7591,16 @@ Normative references to this spec from:
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Grid Layout Module Level 1](https://drafts.csswg.org/css-grid/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
@@ -7769,8 +7802,8 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
@@ -8353,10 +8386,7 @@ Informative references to this spec from:
 
 No normative reference to this spec from other specs.
 
-Informative references to this spec from:
-
-- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
-- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
+No informative reference to this spec from other specs.
 
 
 ## Media Queries Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -8384,6 +8414,8 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
@@ -8396,7 +8428,6 @@ Normative references to this spec from:
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 - [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
@@ -8412,6 +8443,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
@@ -9878,8 +9910,8 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 
 No informative reference to this spec from other specs.
 
@@ -10116,15 +10148,15 @@ Normative references to this spec from:
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Color Module Level 3](https://drafts.csswg.org/css-color-3/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
@@ -10160,9 +10192,9 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
-- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://drafts.csswg.org/css2/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
@@ -10434,8 +10466,10 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
@@ -10470,7 +10504,6 @@ Normative references to this spec from:
 
 - [CSS Conditional Rules Module Level 4](https://drafts.csswg.org/css-conditional-4/)
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
-- [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
@@ -10503,8 +10536,8 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
 
@@ -11706,7 +11739,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled URL: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
-- Crawled version: 30 June 2020
+- Crawled version: 01 July 2020
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Shortname: appmanifest
@@ -11925,8 +11958,8 @@ Normative references to this spec from:
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
@@ -12086,7 +12119,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
 - Crawled URL: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
-- Crawled version: 30 June 2020
+- Crawled version: 1 July 2020
 - Editor's Draft: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
 - Shortname: web-locks
 
@@ -12493,7 +12526,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 29 June 2020
+- Crawled version: 1 July 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -12637,7 +12670,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 30 June 2020
+- Crawled version: 1 July 2020
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
