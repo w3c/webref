@@ -12285,7 +12285,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/speech-api/](https://wicg.github.io/speech-api/)
 - Crawled URL: [https://wicg.github.io/speech-api/](https://wicg.github.io/speech-api/)
-- Crawled version: 30 June 2020
+- Crawled version: 2 July 2020
 - Editor's Draft: [https://wicg.github.io/speech-api/](https://wicg.github.io/speech-api/)
 - Shortname: speech-api
 
