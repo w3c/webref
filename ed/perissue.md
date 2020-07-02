@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% July 01, 2020
+% July 02, 2020
 
 329 specifications were crawled in this report.
 
@@ -2179,6 +2179,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/) links to:
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+    * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/) but related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
 - [Web Cryptography API](http://w3c.github.io/webcrypto/) links to [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 - [Web Locks API](https://wicg.github.io/web-locks/) links to:
     * [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/) but related reference "IndexedDB-2" uses URL [`https://www.w3.org/TR/IndexedDB-2/`](https://www.w3.org/TR/IndexedDB-2/)
@@ -2200,6 +2201,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/) links to [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 331 inconsistent references for links found in 172 specifications
+=> 332 inconsistent references for links found in 172 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
