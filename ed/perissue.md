@@ -983,9 +983,8 @@ Basically all specifications have normative dependencies on some other specifica
 
 - [SVG Paths](https://svgwg.org/specs/paths/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
-- [WebGPU](https://gpuweb.github.io/gpuweb/)
 
-=> 3 specifications found
+=> 2 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
