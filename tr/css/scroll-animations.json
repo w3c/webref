@@ -8,7 +8,7 @@
     "source": {
       "name": "source",
       "for": "@scroll-timeline",
-      "value": "selector(<id-selector>) | auto | none",
+      "value": "selector( <id-selector> ) | auto | none",
       "initial": "auto"
     },
     "orientation": {
@@ -20,13 +20,13 @@
     "start": {
       "name": "start",
       "for": "@scroll-timeline",
-      "value": "auto | <length-percentage>",
+      "value": "<scroll-timeline-offset>",
       "initial": "auto"
     },
     "end": {
       "name": "end",
       "for": "@scroll-timeline",
-      "value": "auto | <length-percentage>",
+      "value": "<scroll-timeline-offset>",
       "initial": "auto"
     },
     "time-range": {
@@ -36,5 +36,15 @@
       "initial": "auto"
     }
   },
-  "valuespaces": {}
+  "valuespaces": {
+    "<scroll-timeline-offset>": {
+      "value": "auto | <length-percentage> | <element-offset>"
+    },
+    "<element-offset>": {
+      "value": "selector( <id-selector> ) [<element-offset-edge> || <number>]?"
+    },
+    "<element-offset-edge>": {
+      "value": "start | end"
+    }
+  }
 }

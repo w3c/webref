@@ -75,7 +75,6 @@ interface GPUDevice : EventTarget {
     [SameObject] readonly attribute GPUQueue defaultQueue;
 
     GPUBuffer createBuffer(GPUBufferDescriptor descriptor);
-    GPUMappedBuffer createBufferMapped(GPUBufferDescriptor descriptor);
     GPUTexture createTexture(GPUTextureDescriptor descriptor);
     GPUSampler createSampler(optional GPUSamplerDescriptor descriptor = {});
 
@@ -244,7 +243,7 @@ enum GPUTextureFormat {
     "depth24plus-stencil8",
 
     // BC compressed formats usable if "texture-compression-bc" is both
-    // supported by the device/user agent and enabled in createDevice.
+    // supported by the device/user agent and enabled in requestDevice.
     "bc1-rgba-unorm",
     "bc1-rgba-unorm-srgb",
     "bc2-rgba-unorm",
@@ -401,7 +400,7 @@ interface GPUCompilationMessage {
 
 [Serializable]
 interface GPUCompilationInfo {
-    readonly attribute sequence<GPUCompilationMessage> messages;
+    readonly attribute FrozenArray<GPUCompilationMessage> messages;
 };
 
 [Serializable]
@@ -998,5 +997,3 @@ dictionary GPUExtent3DDict {
     required GPUIntegerCoordinate depth;
 };
 typedef (sequence<GPUIntegerCoordinate> or GPUExtent3DDict) GPUExtent3D;
-
-typedef sequence<(GPUBuffer or ArrayBuffer)> GPUMappedBuffer;
