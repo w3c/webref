@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-07-06T06:44:45.224Z",
+  "date": "2020-07-06T12:38:30.434Z",
   "stats": {
     "crawled": 329,
-    "errors": 29,
+    "errors": 1,
     "studied": 329
   },
   "results": [
@@ -366,6 +366,11 @@
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             }
           ],
           "informative": []
@@ -421,7 +426,7 @@
     {
       "title": "ARIA in HTML",
       "shortname": "html-aria",
-      "date": "",
+      "date": "20 May 2020",
       "url": "https://www.w3.org/TR/html-aria/",
       "release": {
         "url": "https://www.w3.org/TR/html-aria/",
@@ -434,10 +439,10 @@
       },
       "crawled": "https://w3c.github.io/html-aria/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -460,13 +465,13 @@
             }
           ]
         },
-        "ok": false
+        "ok": true
       }
     },
     {
       "title": "Audio Output Devices API",
       "shortname": "audio-output",
-      "date": "",
+      "date": "02 July 2020",
       "url": "https://www.w3.org/TR/audio-output/",
       "release": {
         "url": "https://www.w3.org/TR/audio-output/",
@@ -479,16 +484,24 @@
       },
       "crawled": "https://w3c.github.io/mediacapture-output/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://html.spec.whatwg.org/",
+            "ref": {
+              "name": "HTML5",
+              "url": "https://www.w3.org/TR/html5/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": [
@@ -600,7 +613,7 @@
     {
       "title": "Battery Status API",
       "shortname": "battery-status",
-      "date": "",
+      "date": "25 September 2019",
       "url": "https://www.w3.org/TR/battery-status/",
       "release": {
         "url": "https://www.w3.org/TR/battery-status/",
@@ -613,10 +626,10 @@
       },
       "crawled": "https://w3c.github.io/battery/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -638,13 +651,13 @@
             }
           ]
         },
-        "ok": false
+        "ok": true
       }
     },
     {
       "title": "Beacon",
       "shortname": "beacon",
-      "date": "",
+      "date": "30 January 2020",
       "url": "https://www.w3.org/TR/beacon/",
       "release": {
         "url": "https://www.w3.org/TR/beacon/",
@@ -657,10 +670,10 @@
       },
       "crawled": "https://w3c.github.io/beacon/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -668,7 +681,13 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 2",
+              "crawled": "https://w3c.github.io/resource-timing/"
+            }
+          ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/CSP3/",
@@ -677,7 +696,7 @@
             }
           ]
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -769,7 +788,13 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://wicg.github.io/netinfo/",
+              "title": "Network Information API",
+              "crawled": "https://wicg.github.io/netinfo/"
+            }
+          ],
           "informative": []
         },
         "ok": false
@@ -1395,6 +1420,11 @@
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
               "crawled": "https://w3c.github.io/manifest/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             }
           ],
           "informative": [
@@ -1628,6 +1658,11 @@
               "url": "https://www.w3.org/TR/wai-aria-1.2/",
               "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
               "crawled": "https://w3c.github.io/aria/"
+            },
+            {
+              "url": "https://www.w3.org/TR/html-aam-1.0/",
+              "title": "HTML Accessibility API Mappings 1.0",
+              "crawled": "https://w3c.github.io/html-aam/"
             },
             {
               "url": "https://w3c.github.io/mathml-aam/",
@@ -2562,6 +2597,11 @@
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
@@ -3751,6 +3791,11 @@
               "url": "https://www.w3.org/TR/cssom-view-1/",
               "title": "CSSOM View Module",
               "crawled": "https://drafts.csswg.org/cssom-view/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             }
           ],
           "informative": [
@@ -4820,6 +4865,11 @@
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -6110,6 +6160,11 @@
               "url": "https://www.w3.org/TR/cssom-view-1/",
               "title": "CSSOM View Module",
               "crawled": "https://drafts.csswg.org/cssom-view/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             }
           ],
           "informative": [
@@ -6117,6 +6172,11 @@
               "url": "https://www.w3.org/TR/mediaqueries-4/",
               "title": "Media Queries Level 4",
               "crawled": "https://drafts.csswg.org/mediaqueries-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/"
             }
           ]
         },
@@ -6493,9 +6553,19 @@
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
+              "url": "https://wicg.github.io/visual-viewport/",
+              "title": "Visual Viewport API",
+              "crawled": "https://wicg.github.io/visual-viewport/"
+            },
+            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -9926,6 +9996,11 @@
               "crawled": "https://drafts.csswg.org/web-animations-1/"
             },
             {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
+            },
+            {
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://w3c.github.io/webvtt/"
@@ -10309,6 +10384,11 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
+            },
+            {
+              "url": "https://wicg.github.io/visual-viewport/",
+              "title": "Visual Viewport API",
+              "crawled": "https://wicg.github.io/visual-viewport/"
             }
           ],
           "informative": [
@@ -12447,6 +12527,11 @@
               "crawled": "https://quirks.spec.whatwg.org/"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 2",
+              "crawled": "https://w3c.github.io/resource-timing/"
+            },
+            {
               "url": "https://drafts.csswg.org/scroll-animations-1/",
               "title": "Scroll-linked Animations",
               "crawled": "https://drafts.csswg.org/scroll-animations-1/"
@@ -12822,7 +12907,7 @@
     {
       "title": "CSS Text Module Level 3",
       "shortname": "css-text-3",
-      "date": "1 July 2020",
+      "date": "5 July 2020",
       "url": "https://www.w3.org/TR/css-text-3/",
       "release": {
         "url": "https://www.w3.org/TR/css-text-3/",
@@ -14244,9 +14329,19 @@
               "crawled": "https://w3c.github.io/touch-events/"
             },
             {
+              "url": "https://wicg.github.io/visual-viewport/",
+              "title": "Visual Viewport API",
+              "crawled": "https://wicg.github.io/visual-viewport/"
+            },
+            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             }
           ],
           "informative": [
@@ -15531,9 +15626,24 @@
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/"
+            },
+            {
+              "url": "https://wicg.github.io/visual-viewport/",
+              "title": "Visual Viewport API",
+              "crawled": "https://wicg.github.io/visual-viewport/"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
               "crawled": "https://w3c.github.io/manifest/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             }
           ],
           "informative": [
@@ -15752,7 +15862,7 @@
     {
       "title": "DOM Parsing and Serialization",
       "shortname": "DOM-Parsing",
-      "date": "",
+      "date": "20 April 2020",
       "url": "https://www.w3.org/TR/DOM-Parsing/",
       "release": {
         "url": "https://www.w3.org/TR/DOM-Parsing/",
@@ -15765,16 +15875,24 @@
       },
       "crawled": "https://w3c.github.io/DOM-Parsing/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/dom/",
+            "ref": {
+              "name": "DOM4",
+              "url": "https://dom.spec.whatwg.org/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -15786,6 +15904,11 @@
               "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
               "title": "Trusted Types",
               "crawled": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -15852,6 +15975,16 @@
               "url": "https://w3c.github.io/badging/",
               "title": "Badging API",
               "crawled": "https://w3c.github.io/badging/"
+            },
+            {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "https://w3c.github.io/battery/"
+            },
+            {
+              "url": "https://www.w3.org/TR/beacon/",
+              "title": "Beacon",
+              "crawled": "https://w3c.github.io/beacon/"
             },
             {
               "url": "https://www.w3.org/TR/clipboard-apis/",
@@ -16034,6 +16167,11 @@
               "crawled": "https://w3c.github.io/deviceorientation/"
             },
             {
+              "url": "https://www.w3.org/TR/DOM-Parsing/",
+              "title": "DOM Parsing and Serialization",
+              "crawled": "https://w3c.github.io/DOM-Parsing/"
+            },
+            {
               "url": "https://wicg.github.io/is-input-pending/",
               "title": "Early detection of input events",
               "crawled": "https://wicg.github.io/is-input-pending/"
@@ -16174,6 +16312,11 @@
               "crawled": "https://w3c.github.io/webappsec-mixed-content/"
             },
             {
+              "url": "https://wicg.github.io/netinfo/",
+              "title": "Network Information API",
+              "crawled": "https://wicg.github.io/netinfo/"
+            },
+            {
               "url": "https://notifications.spec.whatwg.org/",
               "title": "Notifications API Standard",
               "crawled": "https://notifications.spec.whatwg.org/"
@@ -16244,6 +16387,11 @@
               "crawled": "https://w3c.github.io/preload/"
             },
             {
+              "url": "https://www.w3.org/TR/presentation-api/",
+              "title": "Presentation API",
+              "crawled": "https://w3c.github.io/presentation-api/"
+            },
+            {
               "url": "https://privacycg.github.io/private-click-measurement/",
               "title": "Private Click Measurement",
               "crawled": "https://privacycg.github.io/private-click-measurement/"
@@ -16279,6 +16427,16 @@
               "crawled": "https://drafts.csswg.org/resize-observer/"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 2",
+              "crawled": "https://w3c.github.io/resource-timing/"
+            },
+            {
+              "url": "https://wicg.github.io/savedata/",
+              "title": "Save Data API",
+              "crawled": "https://wicg.github.io/savedata/"
+            },
+            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/"
@@ -16309,6 +16467,11 @@
               "crawled": "https://drafts.csswg.org/selectors/"
             },
             {
+              "url": "https://wicg.github.io/serial/",
+              "title": "Serial API",
+              "crawled": "https://wicg.github.io/serial/"
+            },
+            {
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
@@ -16332,6 +16495,11 @@
               "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/"
             },
             {
               "url": "https://privacycg.github.io/storage-access/",
@@ -16362,6 +16530,11 @@
               "url": "https://url.spec.whatwg.org/",
               "title": "URL Standard",
               "crawled": "https://url.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/visual-viewport/",
+              "title": "Visual Viewport API",
+              "crawled": "https://wicg.github.io/visual-viewport/"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -16427,6 +16600,11 @@
               "url": "https://wicg.github.io/speech-api/",
               "title": "Web Speech API",
               "crawled": "https://wicg.github.io/speech-api/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
@@ -16803,6 +16981,11 @@
               "crawled": "https://webassembly.github.io/spec/js-api/"
             },
             {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
+            },
+            {
               "url": "https://www.w3.org/TR/worklets-1/",
               "title": "Worklets Level 1",
               "crawled": "https://drafts.css-houdini.org/worklets/"
@@ -17055,6 +17238,11 @@
               "crawled": "https://wicg.github.io/background-fetch/"
             },
             {
+              "url": "https://www.w3.org/TR/beacon/",
+              "title": "Beacon",
+              "crawled": "https://w3c.github.io/beacon/"
+            },
+            {
               "url": "https://www.w3.org/TR/clear-site-data/",
               "title": "Clear Site Data",
               "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
@@ -17205,6 +17393,11 @@
               "crawled": "https://wicg.github.io/origin-policy/"
             },
             {
+              "url": "https://www.w3.org/TR/payment-method-id/",
+              "title": "Payment Method Identifiers",
+              "crawled": "https://w3c.github.io/payment-method-id/"
+            },
+            {
               "url": "https://www.w3.org/TR/payment-method-manifest/",
               "title": "Payment Method Manifest",
               "crawled": "https://w3c.github.io/payment-method-manifest/"
@@ -17240,6 +17433,11 @@
               "crawled": "https://w3c.github.io/reporting/"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 2",
+              "crawled": "https://w3c.github.io/resource-timing/"
+            },
+            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/"
@@ -17263,6 +17461,11 @@
               "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
+            },
+            {
+              "url": "https://www.w3.org/TR/trace-context-1/",
+              "title": "Trace Context Level 2",
+              "crawled": "https://w3c.github.io/trace-context/"
             },
             {
               "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
@@ -17303,6 +17506,11 @@
               "url": "https://www.w3.org/TR/wasm-web-api-1/",
               "title": "WebAssembly Web API",
               "crawled": "https://webassembly.github.io/spec/web-api/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             },
             {
               "url": "https://w3c.github.io/webdriver-bidi/",
@@ -17461,6 +17669,11 @@
               "crawled": "https://wicg.github.io/entries-api/"
             },
             {
+              "url": "https://www.w3.org/TR/html-media-capture/",
+              "title": "HTML Media Capture",
+              "crawled": "https://w3c.github.io/html-media-capture/"
+            },
+            {
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
@@ -17501,6 +17714,11 @@
               "crawled": "https://wicg.github.io/native-file-system/"
             },
             {
+              "url": "https://www.w3.org/TR/presentation-api/",
+              "title": "Presentation API",
+              "crawled": "https://w3c.github.io/presentation-api/"
+            },
+            {
               "url": "https://www.w3.org/TR/push-api/",
               "title": "Push API",
               "crawled": "https://w3c.github.io/push-api/"
@@ -17529,6 +17747,11 @@
               "url": "https://www.w3.org/TR/web-share/",
               "title": "Web Share API",
               "crawled": "https://w3c.github.io/web-share/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             },
             {
               "url": "https://www.w3.org/TR/webrtc/",
@@ -17710,7 +17933,7 @@
     {
       "title": "Frame Timing",
       "shortname": "frame-timing",
-      "date": "",
+      "date": "27 September 2019",
       "url": "https://wicg.github.io/frame-timing/",
       "nightly": {
         "url": "https://wicg.github.io/frame-timing/",
@@ -17719,10 +17942,10 @@
       },
       "crawled": "https://wicg.github.io/frame-timing/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -17786,6 +18009,16 @@
               "url": "https://www.w3.org/TR/pointerlock-2/",
               "title": "Pointer Lock 2.0",
               "crawled": "https://w3c.github.io/pointerlock/"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             },
             {
               "url": "https://immersive-web.github.io/dom-overlays/",
@@ -17867,7 +18100,7 @@
     {
       "title": "Gamepad Extensions",
       "shortname": "gamepad-extensions",
-      "date": "",
+      "date": "18 June 2020",
       "url": "https://w3c.github.io/gamepad/extensions.html",
       "nightly": {
         "url": "https://w3c.github.io/gamepad/extensions.html",
@@ -17876,15 +18109,28 @@
       },
       "crawled": "https://w3c.github.io/gamepad/extensions.html",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Gamepad",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/gamepad/",
+                "title": "Gamepad",
+                "crawled": "https://w3c.github.io/gamepad/"
+              }
+            ]
+          }
+        ],
+        "missingLinkRef": [
+          "https://w3c.github.io/gamepad/"
+        ],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
@@ -18189,6 +18435,11 @@
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
+            },
+            {
               "url": "https://www.w3.org/TR/webxr/",
               "title": "WebXR Device API",
               "crawled": "https://immersive-web.github.io/webxr/"
@@ -18391,6 +18642,11 @@
               "crawled": "https://wicg.github.io/event-timing/"
             },
             {
+              "url": "https://wicg.github.io/frame-timing/",
+              "title": "Frame Timing",
+              "crawled": "https://wicg.github.io/frame-timing/"
+            },
+            {
               "url": "https://www.w3.org/TR/gamepad/",
               "title": "Gamepad",
               "crawled": "https://w3c.github.io/gamepad/"
@@ -18414,6 +18670,11 @@
               "url": "https://wicg.github.io/video-rvfc/",
               "title": "HTMLVideoElement.requestVideoFrameCallback()",
               "crawled": "https://wicg.github.io/video-rvfc/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc-stats/",
+              "title": "Identifiers for WebRTC's Statistics API",
+              "crawled": "https://w3c.github.io/webrtc-stats/"
             },
             {
               "url": "https://www.w3.org/TR/webrtc-identity/",
@@ -18466,6 +18727,11 @@
               "crawled": "https://w3c.github.io/performance-timeline/"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 2",
+              "crawled": "https://w3c.github.io/resource-timing/"
+            },
+            {
               "url": "https://www.w3.org/TR/server-timing/",
               "title": "Server Timing",
               "crawled": "https://w3c.github.io/server-timing/"
@@ -18474,6 +18740,16 @@
               "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
               "title": "Timing Entry Names Registry",
               "crawled": "https://w3c.github.io/timing-entrytypes-registry/"
+            },
+            {
+              "url": "https://www.w3.org/TR/user-timing-2/",
+              "title": "User Timing Level 3",
+              "crawled": "https://w3c.github.io/user-timing/"
+            },
+            {
+              "url": "https://www.w3.org/TR/user-timing-3/",
+              "title": "User Timing Level 3",
+              "crawled": "https://w3c.github.io/user-timing/"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -18514,7 +18790,7 @@
     {
       "title": "HTML Accessibility API Mappings 1.0",
       "shortname": "html-aam-1.0",
-      "date": "",
+      "date": "29 June 2020",
       "url": "https://www.w3.org/TR/html-aam-1.0/",
       "release": {
         "url": "https://www.w3.org/TR/html-aam-1.0/",
@@ -18527,18 +18803,40 @@
       },
       "crawled": "https://w3c.github.io/html-aam/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/aria/",
+          "https://www.w3.org/TR/core-aam-1.1/",
+          "https://www.w3.org/TR/graphics-aam-1.0/",
+          "https://w3c.github.io/accname/",
+          "https://www.w3.org/TR/html4/present/",
+          "https://w3c.github.io/html/interactive-elements.html",
+          "https://dom.spec.whatwg.org/",
+          "https://w3c.github.io/aria/core-aam/core-aam.html"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/html/",
+            "ref": {
+              "name": "HTML",
+              "url": "https://html.spec.whatwg.org/multipage/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://www.w3.org/TR/html-aria/",
+              "title": "ARIA in HTML",
+              "crawled": "https://w3c.github.io/html-aria/"
+            },
             {
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
@@ -18558,7 +18856,7 @@
     {
       "title": "HTML Media Capture",
       "shortname": "html-media-capture",
-      "date": "",
+      "date": "01 February 2018",
       "url": "https://www.w3.org/TR/html-media-capture/",
       "release": {
         "url": "https://www.w3.org/TR/html-media-capture/",
@@ -18571,10 +18869,10 @@
       },
       "crawled": "https://w3c.github.io/html-media-capture/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -18585,7 +18883,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -18722,6 +19020,16 @@
               "crawled": "https://w3c.github.io/aria/"
             },
             {
+              "url": "https://www.w3.org/TR/html-aria/",
+              "title": "ARIA in HTML",
+              "crawled": "https://w3c.github.io/html-aria/"
+            },
+            {
+              "url": "https://www.w3.org/TR/audio-output/",
+              "title": "Audio Output Devices API",
+              "crawled": "https://w3c.github.io/mediacapture-output/"
+            },
+            {
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
@@ -18730,6 +19038,16 @@
               "url": "https://w3c.github.io/badging/",
               "title": "Badging API",
               "crawled": "https://w3c.github.io/badging/"
+            },
+            {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "https://w3c.github.io/battery/"
+            },
+            {
+              "url": "https://www.w3.org/TR/beacon/",
+              "title": "Beacon",
+              "crawled": "https://w3c.github.io/beacon/"
             },
             {
               "url": "https://www.w3.org/TR/clear-site-data/",
@@ -19042,6 +19360,11 @@
               "crawled": "https://w3c.github.io/deviceorientation/"
             },
             {
+              "url": "https://www.w3.org/TR/DOM-Parsing/",
+              "title": "DOM Parsing and Serialization",
+              "crawled": "https://w3c.github.io/DOM-Parsing/"
+            },
+            {
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/"
@@ -19092,6 +19415,11 @@
               "crawled": "https://drafts.fxtf.org/filter-effects-1/"
             },
             {
+              "url": "https://wicg.github.io/frame-timing/",
+              "title": "Frame Timing",
+              "crawled": "https://wicg.github.io/frame-timing/"
+            },
+            {
               "url": "https://fullscreen.spec.whatwg.org/",
               "title": "Fullscreen API Standard",
               "crawled": "https://fullscreen.spec.whatwg.org/"
@@ -19100,6 +19428,11 @@
               "url": "https://www.w3.org/TR/gamepad/",
               "title": "Gamepad",
               "crawled": "https://w3c.github.io/gamepad/"
+            },
+            {
+              "url": "https://w3c.github.io/gamepad/extensions.html",
+              "title": "Gamepad Extensions",
+              "crawled": "https://w3c.github.io/gamepad/extensions.html"
             },
             {
               "url": "https://www.w3.org/TR/generic-sensor/",
@@ -19132,9 +19465,24 @@
               "crawled": "https://w3c.github.io/hr-time/"
             },
             {
+              "url": "https://www.w3.org/TR/html-aam-1.0/",
+              "title": "HTML Accessibility API Mappings 1.0",
+              "crawled": "https://w3c.github.io/html-aam/"
+            },
+            {
+              "url": "https://www.w3.org/TR/html-media-capture/",
+              "title": "HTML Media Capture",
+              "crawled": "https://w3c.github.io/html-media-capture/"
+            },
+            {
               "url": "https://wicg.github.io/video-rvfc/",
               "title": "HTMLVideoElement.requestVideoFrameCallback()",
               "crawled": "https://wicg.github.io/video-rvfc/"
+            },
+            {
+              "url": "https://w3c.github.io/webrtc-ice/",
+              "title": "IceTransport Extensions for WebRTC",
+              "crawled": "https://w3c.github.io/webrtc-ice/"
             },
             {
               "url": "https://www.w3.org/TR/webrtc-identity/",
@@ -19155,6 +19503,11 @@
               "url": "https://www.w3.org/TR/IndexedDB-2/",
               "title": "Indexed Database API 3.0",
               "crawled": "https://w3c.github.io/IndexedDB/"
+            },
+            {
+              "url": "https://wicg.github.io/input-device-capabilities/",
+              "title": "Input Device Capabilities",
+              "crawled": "https://wicg.github.io/input-device-capabilities/"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -19217,6 +19570,16 @@
               "crawled": "https://w3c.github.io/mediacapture-main/"
             },
             {
+              "url": "https://www.w3.org/TR/mediacapture-depth/",
+              "title": "Media Capture Depth Stream Extensions",
+              "crawled": "https://w3c.github.io/mediacapture-depth/"
+            },
+            {
+              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
+              "title": "Media Capture from DOM Elements",
+              "crawled": "https://w3c.github.io/mediacapture-fromelement/"
+            },
+            {
               "url": "https://wicg.github.io/media-feeds/",
               "title": "Media Feeds",
               "crawled": "https://wicg.github.io/media-feeds/"
@@ -19267,6 +19630,11 @@
               "crawled": "https://w3c.github.io/network-error-logging/"
             },
             {
+              "url": "https://wicg.github.io/netinfo/",
+              "title": "Network Information API",
+              "crawled": "https://wicg.github.io/netinfo/"
+            },
+            {
               "url": "https://notifications.spec.whatwg.org/",
               "title": "Notifications API Standard",
               "crawled": "https://notifications.spec.whatwg.org/"
@@ -19305,6 +19673,11 @@
               "url": "https://www.w3.org/TR/payment-handler/",
               "title": "Payment Handler API",
               "crawled": "https://w3c.github.io/payment-handler/"
+            },
+            {
+              "url": "https://www.w3.org/TR/payment-method-id/",
+              "title": "Payment Method Identifiers",
+              "crawled": "https://w3c.github.io/payment-method-id/"
             },
             {
               "url": "https://www.w3.org/TR/payment-method-manifest/",
@@ -19355,6 +19728,11 @@
               "url": "https://www.w3.org/TR/preload/",
               "title": "Preload",
               "crawled": "https://w3c.github.io/preload/"
+            },
+            {
+              "url": "https://www.w3.org/TR/presentation-api/",
+              "title": "Presentation API",
+              "crawled": "https://w3c.github.io/presentation-api/"
             },
             {
               "url": "https://wicg.github.io/priority-hints/",
@@ -19412,6 +19790,16 @@
               "crawled": "https://w3c.github.io/resource-hints/"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 2",
+              "crawled": "https://w3c.github.io/resource-timing/"
+            },
+            {
+              "url": "https://wicg.github.io/savedata/",
+              "title": "Save Data API",
+              "crawled": "https://wicg.github.io/savedata/"
+            },
+            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/"
@@ -19445,6 +19833,11 @@
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://drafts.csswg.org/selectors/"
+            },
+            {
+              "url": "https://wicg.github.io/serial/",
+              "title": "Serial API",
+              "crawled": "https://wicg.github.io/serial/"
             },
             {
               "url": "https://www.w3.org/TR/server-timing/",
@@ -19482,6 +19875,11 @@
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/"
+            },
+            {
               "url": "https://privacycg.github.io/storage-access/",
               "title": "The Storage Access API",
               "crawled": "https://privacycg.github.io/storage-access/"
@@ -19512,9 +19910,29 @@
               "crawled": "https://url.spec.whatwg.org/"
             },
             {
+              "url": "https://www.w3.org/TR/user-timing-2/",
+              "title": "User Timing Level 3",
+              "crawled": "https://w3c.github.io/user-timing/"
+            },
+            {
+              "url": "https://www.w3.org/TR/user-timing-3/",
+              "title": "User Timing Level 3",
+              "crawled": "https://w3c.github.io/user-timing/"
+            },
+            {
               "url": "https://wicg.github.io/ua-client-hints/",
               "title": "User-Agent Client Hints",
               "crawled": "https://wicg.github.io/ua-client-hints/"
+            },
+            {
+              "url": "https://www.w3.org/TR/vibration/",
+              "title": "Vibration API (Second Edition)",
+              "crawled": "https://w3c.github.io/vibration/"
+            },
+            {
+              "url": "https://wicg.github.io/visual-viewport/",
+              "title": "Visual Viewport API",
+              "crawled": "https://wicg.github.io/visual-viewport/"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -19605,6 +20023,11 @@
               "url": "https://www.w3.org/TR/wasm-web-api-1/",
               "title": "WebAssembly Web API",
               "crawled": "https://webassembly.github.io/spec/web-api/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
@@ -19784,6 +20207,11 @@
               "crawled": "https://w3c.github.io/graphics-aam/"
             },
             {
+              "url": "https://www.w3.org/TR/html-aam-1.0/",
+              "title": "HTML Accessibility API Mappings 1.0",
+              "crawled": "https://w3c.github.io/html-aam/"
+            },
+            {
               "url": "https://www.w3.org/TR/IndexedDB-2/",
               "title": "Indexed Database API 3.0",
               "crawled": "https://w3c.github.io/IndexedDB/"
@@ -19893,7 +20321,7 @@
     {
       "title": "IceTransport Extensions for WebRTC",
       "shortname": "webrtc-ice",
-      "date": "",
+      "date": "30 January 2020",
       "url": "https://w3c.github.io/webrtc-ice/",
       "nightly": {
         "url": "https://w3c.github.io/webrtc-ice/",
@@ -19902,13 +20330,24 @@
       },
       "crawled": "https://w3c.github.io/webrtc-ice/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
-        "redefinedIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "RTCIceParameters",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/webrtc/",
+                "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+                "crawled": "https://w3c.github.io/webrtc-pc/"
+              }
+            ]
+          }
+        ],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -19922,7 +20361,7 @@
     {
       "title": "Identifiers for WebRTC's Statistics API",
       "shortname": "webrtc-stats",
-      "date": "",
+      "date": "03 June 2020",
       "url": "https://www.w3.org/TR/webrtc-stats/",
       "release": {
         "url": "https://www.w3.org/TR/webrtc-stats/",
@@ -19935,10 +20374,10 @@
       },
       "crawled": "https://w3c.github.io/webrtc-stats/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -19966,7 +20405,7 @@
             }
           ]
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -20006,7 +20445,13 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/webrtc-stats/",
+              "title": "Identifiers for WebRTC's Statistics API",
+              "crawled": "https://w3c.github.io/webrtc-stats/"
+            }
+          ],
           "informative": [
             {
               "url": "https://w3c.github.io/webrtc-insertable-streams/",
@@ -20136,6 +20581,11 @@
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
+            },
+            {
+              "url": "https://www.w3.org/TR/presentation-api/",
+              "title": "Presentation API",
+              "crawled": "https://w3c.github.io/presentation-api/"
             }
           ],
           "informative": [
@@ -20469,6 +20919,11 @@
               "crawled": "https://html.spec.whatwg.org/multipage/"
             },
             {
+              "url": "https://www.w3.org/TR/webrtc-stats/",
+              "title": "Identifiers for WebRTC's Statistics API",
+              "crawled": "https://w3c.github.io/webrtc-stats/"
+            },
+            {
               "url": "https://www.w3.org/TR/webrtc-identity/",
               "title": "Identity for WebRTC 1.0",
               "crawled": "https://w3c.github.io/webrtc-identity/identity.html"
@@ -20654,6 +21109,11 @@
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/"
+            },
+            {
               "url": "https://privacycg.github.io/storage-access/",
               "title": "The Storage Access API",
               "crawled": "https://privacycg.github.io/storage-access/"
@@ -20667,6 +21127,16 @@
               "url": "https://url.spec.whatwg.org/",
               "title": "URL Standard",
               "crawled": "https://url.spec.whatwg.org/"
+            },
+            {
+              "url": "https://www.w3.org/TR/user-timing-2/",
+              "title": "User Timing Level 3",
+              "crawled": "https://w3c.github.io/user-timing/"
+            },
+            {
+              "url": "https://www.w3.org/TR/user-timing-3/",
+              "title": "User Timing Level 3",
+              "crawled": "https://w3c.github.io/user-timing/"
             },
             {
               "url": "https://wicg.github.io/ua-client-hints/",
@@ -20729,6 +21199,11 @@
               "crawled": "https://webassembly.github.io/spec/js-api/"
             },
             {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
+            },
+            {
               "url": "https://w3c.github.io/webdriver-bidi/",
               "title": "WebDriver BiDi",
               "crawled": "https://w3c.github.io/webdriver-bidi/"
@@ -20783,7 +21258,7 @@
     {
       "title": "Input Device Capabilities",
       "shortname": "input-device-capabilities",
-      "date": "",
+      "date": "03 June 2020",
       "url": "https://wicg.github.io/input-device-capabilities/",
       "nightly": {
         "url": "https://wicg.github.io/input-device-capabilities/",
@@ -20792,10 +21267,10 @@
       },
       "crawled": "https://wicg.github.io/input-device-capabilities/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -20806,7 +21281,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -21477,9 +21952,13 @@
         "repository": "https://github.com/mathml-refresh/mathml-core",
         "filename": "index.html"
       },
-      "crawled": "https://mathml-refresh.github.io/mathml-core/",
+      "crawled": {
+        "url": "https://mathml-refresh.github.io/mathml-core/",
+        "repository": "https://github.com/mathml-refresh/mathml-core",
+        "filename": "index.html"
+      },
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at Promise.then (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/cjs/common/LifecycleWatcher.js:101:111)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/cjs/common/helper.js:109:19)\n    at Page.goto (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/cjs/common/Page.js:749:53)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/cjs/common/helper.js:110:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:220:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
         "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
@@ -21570,14 +22049,34 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/audio-output/",
+              "title": "Audio Output Devices API",
+              "crawled": "https://w3c.github.io/mediacapture-output/"
+            },
+            {
+              "url": "https://www.w3.org/TR/html-media-capture/",
+              "title": "HTML Media Capture",
+              "crawled": "https://w3c.github.io/html-media-capture/"
+            },
+            {
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
             },
             {
+              "url": "https://www.w3.org/TR/webrtc-stats/",
+              "title": "Identifiers for WebRTC's Statistics API",
+              "crawled": "https://w3c.github.io/webrtc-stats/"
+            },
+            {
               "url": "https://www.w3.org/TR/webrtc-identity/",
               "title": "Identity for WebRTC 1.0",
               "crawled": "https://w3c.github.io/webrtc-identity/identity.html"
+            },
+            {
+              "url": "https://www.w3.org/TR/mediacapture-depth/",
+              "title": "Media Capture Depth Stream Extensions",
+              "crawled": "https://w3c.github.io/mediacapture-depth/"
             },
             {
               "url": "https://www.w3.org/TR/image-capture/",
@@ -21612,6 +22111,11 @@
           ],
           "informative": [
             {
+              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
+              "title": "Media Capture from DOM Elements",
+              "crawled": "https://w3c.github.io/mediacapture-fromelement/"
+            },
+            {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/"
@@ -21634,7 +22138,7 @@
     {
       "title": "Media Capture Depth Stream Extensions",
       "shortname": "mediacapture-depth",
-      "date": "",
+      "date": "04 April 2019",
       "url": "https://www.w3.org/TR/mediacapture-depth/",
       "release": {
         "url": "https://www.w3.org/TR/mediacapture-depth/",
@@ -21647,16 +22151,24 @@
       },
       "crawled": "https://w3c.github.io/mediacapture-depth/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/mediacapture-main/",
+            "ref": {
+              "name": "GETUSERMEDIA",
+              "url": "https://www.w3.org/TR/mediacapture-streams/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": [
@@ -21673,7 +22185,7 @@
     {
       "title": "Media Capture from DOM Elements",
       "shortname": "mediacapture-fromelement",
-      "date": "",
+      "date": "16 July 2019",
       "url": "https://www.w3.org/TR/mediacapture-fromelement/",
       "release": {
         "url": "https://www.w3.org/TR/mediacapture-fromelement/",
@@ -21686,16 +22198,52 @@
       },
       "crawled": "https://w3c.github.io/mediacapture-fromelement/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "MediaStream",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/mediacapture-streams/",
+                "title": "Media Capture and Streams",
+                "crawled": "https://w3c.github.io/mediacapture-main/"
+              }
+            ]
+          },
+          {
+            "name": "MediaStreamTrack",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/mediacapture-streams/",
+                "title": "Media Capture and Streams",
+                "crawled": "https://w3c.github.io/mediacapture-main/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/mediacapture-main/",
+            "ref": {
+              "name": "GETUSERMEDIA",
+              "url": "https://www.w3.org/TR/mediacapture-streams/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2dcontext2/",
+            "ref": {
+              "name": "2DCONTEXT",
+              "url": "https://www.w3.org/TR/2dcontext/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": [
@@ -21992,6 +22540,11 @@
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
               "crawled": "https://w3c.github.io/manifest/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             }
           ],
           "informative": [
@@ -22582,6 +23135,11 @@
               "crawled": "https://html.spec.whatwg.org/multipage/"
             },
             {
+              "url": "https://www.w3.org/TR/presentation-api/",
+              "title": "Presentation API",
+              "crawled": "https://w3c.github.io/presentation-api/"
+            },
+            {
               "url": "https://www.w3.org/TR/resource-hints/",
               "title": "Resource Hints",
               "crawled": "https://w3c.github.io/resource-hints/"
@@ -22747,9 +23305,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "PerformanceResourceTiming"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -22767,6 +23323,11 @@
               "crawled": "https://w3c.github.io/navigation-timing/"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 2",
+              "crawled": "https://w3c.github.io/resource-timing/"
+            },
+            {
               "url": "https://www.w3.org/TR/server-timing/",
               "title": "Server Timing",
               "crawled": "https://w3c.github.io/server-timing/"
@@ -22775,6 +23336,16 @@
               "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
               "title": "Timing Entry Names Registry",
               "crawled": "https://w3c.github.io/timing-entrytypes-registry/"
+            },
+            {
+              "url": "https://www.w3.org/TR/user-timing-2/",
+              "title": "User Timing Level 3",
+              "crawled": "https://w3c.github.io/user-timing/"
+            },
+            {
+              "url": "https://www.w3.org/TR/user-timing-3/",
+              "title": "User Timing Level 3",
+              "crawled": "https://w3c.github.io/user-timing/"
             }
           ],
           "informative": [
@@ -22782,10 +23353,20 @@
               "url": "https://www.w3.org/TR/performance-timeline-2/",
               "title": "Performance Timeline Level 2",
               "crawled": "https://w3c.github.io/performance-timeline/"
+            },
+            {
+              "url": "https://www.w3.org/TR/user-timing-2/",
+              "title": "User Timing Level 3",
+              "crawled": "https://w3c.github.io/user-timing/"
+            },
+            {
+              "url": "https://www.w3.org/TR/user-timing-3/",
+              "title": "User Timing Level 3",
+              "crawled": "https://w3c.github.io/user-timing/"
             }
           ]
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -22836,7 +23417,7 @@
     {
       "title": "Network Information API",
       "shortname": "netinfo",
-      "date": "",
+      "date": "11 May 2020",
       "url": "https://wicg.github.io/netinfo/",
       "nightly": {
         "url": "https://wicg.github.io/netinfo/",
@@ -22845,18 +23426,27 @@
       },
       "crawled": "https://wicg.github.io/netinfo/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/ServiceWorker/v1/",
+          "https://www.w3.org/TR/netinfo/"
+        ],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://wicg.github.io/savedata/",
+              "title": "Save Data API",
+              "crawled": "https://wicg.github.io/savedata/"
+            }
+          ],
           "informative": []
         },
         "ok": false
@@ -22914,9 +23504,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "VibratePattern"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -22939,10 +23527,15 @@
               "url": "https://wicg.github.io/permissions-request/",
               "title": "Requesting Permissions",
               "crawled": "https://wicg.github.io/permissions-request/"
+            },
+            {
+              "url": "https://www.w3.org/TR/vibration/",
+              "title": "Vibration API (Second Edition)",
+              "crawled": "https://w3c.github.io/vibration/"
             }
           ]
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -23188,6 +23781,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/beacon/",
+              "title": "Beacon",
+              "crawled": "https://w3c.github.io/beacon/"
+            },
+            {
               "url": "https://wicg.github.io/content-index/spec/",
               "title": "Content Index",
               "crawled": "https://wicg.github.io/content-index/spec/"
@@ -23228,6 +23826,16 @@
               "crawled": "https://w3c.github.io/ServiceWorker/"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/"
+            },
+            {
+              "url": "https://www.w3.org/TR/vibration/",
+              "title": "Vibration API (Second Edition)",
+              "crawled": "https://w3c.github.io/vibration/"
+            },
+            {
               "url": "https://www.w3.org/TR/webauthn-2/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
               "crawled": "https://w3c.github.io/webauthn/"
@@ -23241,6 +23849,11 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC",
               "crawled": "https://w3c.github.io/web-nfc/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             }
           ],
           "informative": [
@@ -23373,7 +23986,7 @@
     {
       "title": "Payment Method Identifiers",
       "shortname": "payment-method-id",
-      "date": "",
+      "date": "03 September 2019",
       "url": "https://www.w3.org/TR/payment-method-id/",
       "release": {
         "url": "https://www.w3.org/TR/payment-method-id/",
@@ -23386,10 +23999,10 @@
       },
       "crawled": "https://w3c.github.io/payment-method-id/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -23416,7 +24029,7 @@
           ],
           "informative": []
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -23461,7 +24074,13 @@
               "crawled": "https://w3c.github.io/payment-handler/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/payment-method-id/",
+              "title": "Payment Method Identifiers",
+              "crawled": "https://w3c.github.io/payment-method-id/"
+            }
+          ]
         },
         "ok": false
       }
@@ -23505,7 +24124,13 @@
               "crawled": "https://w3c.github.io/payment-request/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/payment-method-id/",
+              "title": "Payment Method Identifiers",
+              "crawled": "https://w3c.github.io/payment-method-id/"
+            }
+          ]
         },
         "ok": true
       }
@@ -23564,7 +24189,13 @@
               "crawled": "https://w3c.github.io/webappsec-feature-policy/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/payment-method-id/",
+              "title": "Payment Method Identifiers",
+              "crawled": "https://w3c.github.io/payment-method-id/"
+            }
+          ]
         },
         "ok": true
       }
@@ -23610,6 +24241,11 @@
               "crawled": "https://wicg.github.io/event-timing/"
             },
             {
+              "url": "https://wicg.github.io/frame-timing/",
+              "title": "Frame Timing",
+              "crawled": "https://wicg.github.io/frame-timing/"
+            },
+            {
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/"
@@ -23635,9 +24271,24 @@
               "crawled": "https://w3c.github.io/paint-timing/"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 2",
+              "crawled": "https://w3c.github.io/resource-timing/"
+            },
+            {
               "url": "https://www.w3.org/TR/timing-entrytypes-registry/",
               "title": "Timing Entry Names Registry",
               "crawled": "https://w3c.github.io/timing-entrytypes-registry/"
+            },
+            {
+              "url": "https://www.w3.org/TR/user-timing-2/",
+              "title": "User Timing Level 3",
+              "crawled": "https://w3c.github.io/user-timing/"
+            },
+            {
+              "url": "https://www.w3.org/TR/user-timing-3/",
+              "title": "User Timing Level 3",
+              "crawled": "https://w3c.github.io/user-timing/"
             }
           ],
           "informative": [
@@ -23775,6 +24426,11 @@
               "url": "https://wicg.github.io/native-file-system/",
               "title": "Native File System",
               "crawled": "https://wicg.github.io/native-file-system/"
+            },
+            {
+              "url": "https://www.w3.org/TR/presentation-api/",
+              "title": "Presentation API",
+              "crawled": "https://w3c.github.io/presentation-api/"
             },
             {
               "url": "https://wicg.github.io/permissions-revoke/",
@@ -24289,7 +24945,7 @@
     {
       "title": "Presentation API",
       "shortname": "presentation-api",
-      "date": "",
+      "date": "30 September 2019",
       "url": "https://www.w3.org/TR/presentation-api/",
       "release": {
         "url": "https://www.w3.org/TR/presentation-api/",
@@ -24302,16 +24958,31 @@
       },
       "crawled": "https://w3c.github.io/presentation-api/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/permissions/",
+            "ref": {
+              "name": "PERMISSIONS",
+              "url": "https://www.w3.org/TR/permissions/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webappsec-mixed-content/",
+            "ref": {
+              "name": "MIXED-CONTENT",
+              "url": "https://www.w3.org/TR/mixed-content/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -24991,7 +25662,7 @@
     {
       "title": "Resource Timing Level 2",
       "shortname": "resource-timing-2",
-      "date": "",
+      "date": "18 February 2020",
       "url": "https://www.w3.org/TR/resource-timing-2/",
       "release": {
         "url": "https://www.w3.org/TR/resource-timing-2/",
@@ -25004,10 +25675,10 @@
       },
       "crawled": "https://w3c.github.io/resource-timing/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -25055,13 +25726,13 @@
             }
           ]
         },
-        "ok": false
+        "ok": true
       }
     },
     {
       "title": "Save Data API",
       "shortname": "savedata",
-      "date": "",
+      "date": "30 June 2020",
       "url": "https://wicg.github.io/savedata/",
       "nightly": {
         "url": "https://wicg.github.io/savedata/",
@@ -25070,15 +25741,17 @@
       },
       "crawled": "https://wicg.github.io/savedata/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/netinfo/"
+        ],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
@@ -25548,6 +26221,11 @@
               "crawled": "https://drafts.csswg.org/resize-observer/"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 2",
+              "crawled": "https://w3c.github.io/resource-timing/"
+            },
+            {
               "url": "https://www.w3.org/TR/svg-aam-1.0/",
               "title": "SVG Accessibility API Mappings",
               "crawled": "https://w3c.github.io/svg-aam/"
@@ -25692,7 +26370,7 @@
     {
       "title": "Scalable Video Coding (SVC) Extension for WebRTC",
       "shortname": "webrtc-svc",
-      "date": "",
+      "date": "30 June 2020",
       "url": "https://www.w3.org/TR/webrtc-svc/",
       "release": {
         "url": "https://www.w3.org/TR/webrtc-svc/",
@@ -25705,10 +26383,10 @@
       },
       "crawled": "https://w3c.github.io/webrtc-svc/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -25719,7 +26397,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -25870,6 +26548,11 @@
               "url": "https://wicg.github.io/change-password-url/",
               "title": "A Well-Known URL for Changing Passwords",
               "crawled": "https://wicg.github.io/change-password-url/"
+            },
+            {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "https://w3c.github.io/battery/"
             },
             {
               "url": "https://wicg.github.io/client-hints-infrastructure/",
@@ -26489,7 +27172,7 @@
     {
       "title": "Serial API",
       "shortname": "serial",
-      "date": "",
+      "date": "16 June 2020",
       "url": "https://wicg.github.io/serial/",
       "nightly": {
         "url": "https://wicg.github.io/serial/",
@@ -26498,10 +27181,10 @@
       },
       "crawled": "https://wicg.github.io/serial/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -26512,7 +27195,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -26536,9 +27219,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "PerformanceResourceTiming"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -26547,7 +27228,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -26687,9 +27368,19 @@
               "crawled": "https://wicg.github.io/portals/"
             },
             {
+              "url": "https://www.w3.org/TR/presentation-api/",
+              "title": "Presentation API",
+              "crawled": "https://w3c.github.io/presentation-api/"
+            },
+            {
               "url": "https://www.w3.org/TR/push-api/",
               "title": "Push API",
               "crawled": "https://w3c.github.io/push-api/"
+            },
+            {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 2",
+              "crawled": "https://w3c.github.io/resource-timing/"
             },
             {
               "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
@@ -26709,9 +27400,19 @@
           ],
           "informative": [
             {
+              "url": "https://www.w3.org/TR/beacon/",
+              "title": "Beacon",
+              "crawled": "https://w3c.github.io/beacon/"
+            },
+            {
               "url": "https://wicg.github.io/webpackage/loading.html",
               "title": "Loading Signed Exchanges",
               "crawled": "https://wicg.github.io/webpackage/loading.html"
+            },
+            {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 2",
+              "crawled": "https://w3c.github.io/resource-timing/"
             },
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
@@ -26862,6 +27563,11 @@
               "url": "https://wicg.github.io/native-file-system/",
               "title": "Native File System",
               "crawled": "https://wicg.github.io/native-file-system/"
+            },
+            {
+              "url": "https://wicg.github.io/serial/",
+              "title": "Serial API",
+              "crawled": "https://wicg.github.io/serial/"
             },
             {
               "url": "https://www.w3.org/TR/service-workers-1/",
@@ -27015,6 +27721,11 @@
               "url": "https://www.w3.org/TR/graphics-aam-1.0/",
               "title": "Graphics Accessibility API Mappings",
               "crawled": "https://w3c.github.io/graphics-aam/"
+            },
+            {
+              "url": "https://www.w3.org/TR/html-aam-1.0/",
+              "title": "HTML Accessibility API Mappings 1.0",
+              "crawled": "https://w3c.github.io/html-aam/"
             }
           ]
         },
@@ -27349,7 +28060,7 @@
     {
       "title": "The Screen Orientation API",
       "shortname": "screen-orientation",
-      "date": "",
+      "date": "17 April 2020",
       "url": "https://www.w3.org/TR/screen-orientation/",
       "release": {
         "url": "https://www.w3.org/TR/screen-orientation/",
@@ -27362,10 +28073,10 @@
       },
       "crawled": "https://w3c.github.io/screen-orientation/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -27397,7 +28108,7 @@
           ],
           "informative": []
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -27521,6 +28232,11 @@
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
+            },
+            {
+              "url": "https://wicg.github.io/input-device-capabilities/",
+              "title": "Input Device Capabilities",
+              "crawled": "https://wicg.github.io/input-device-capabilities/"
             }
           ],
           "informative": [
@@ -27535,9 +28251,9 @@
       }
     },
     {
-      "title": "Trace Context - Level 1",
+      "title": "Trace Context Level 2",
       "shortname": "trace-context-1",
-      "date": "",
+      "date": "30 June 2020",
       "url": "https://www.w3.org/TR/trace-context-1/",
       "release": {
         "url": "https://www.w3.org/TR/trace-context-1/",
@@ -27550,10 +28266,10 @@
       },
       "crawled": "https://w3c.github.io/trace-context/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -27564,7 +28280,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -27708,6 +28424,11 @@
               "crawled": "https://html.spec.whatwg.org/multipage/"
             },
             {
+              "url": "https://wicg.github.io/input-device-capabilities/",
+              "title": "Input Device Capabilities",
+              "crawled": "https://wicg.github.io/input-device-capabilities/"
+            },
+            {
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 2",
               "crawled": "https://w3c.github.io/input-events/"
@@ -27756,6 +28477,11 @@
               "url": "https://www.w3.org/TR/uievents-key/",
               "title": "UI Events KeyboardEvent key Values",
               "crawled": "https://w3c.github.io/uievents-key/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             },
             {
               "url": "https://immersive-web.github.io/dom-overlays/",
@@ -27821,6 +28547,11 @@
               "url": "https://www.w3.org/TR/uievents-key/",
               "title": "UI Events KeyboardEvent key Values",
               "crawled": "https://w3c.github.io/uievents-key/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             }
           ],
           "informative": []
@@ -27875,6 +28606,11 @@
               "url": "https://www.w3.org/TR/uievents-code/",
               "title": "UI Events KeyboardEvent code Values",
               "crawled": "https://w3c.github.io/uievents-code/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             }
           ],
           "informative": []
@@ -27977,6 +28713,11 @@
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
+            },
+            {
+              "url": "https://www.w3.org/TR/beacon/",
+              "title": "Beacon",
+              "crawled": "https://w3c.github.io/beacon/"
             },
             {
               "url": "https://www.w3.org/TR/clear-site-data/",
@@ -28129,6 +28870,11 @@
               "crawled": "https://w3c.github.io/payment-handler/"
             },
             {
+              "url": "https://www.w3.org/TR/payment-method-id/",
+              "title": "Payment Method Identifiers",
+              "crawled": "https://w3c.github.io/payment-method-id/"
+            },
+            {
               "url": "https://www.w3.org/TR/payment-method-manifest/",
               "title": "Payment Method Manifest",
               "crawled": "https://w3c.github.io/payment-method-manifest/"
@@ -28147,6 +28893,11 @@
               "url": "https://wicg.github.io/portals/",
               "title": "Portals",
               "crawled": "https://wicg.github.io/portals/"
+            },
+            {
+              "url": "https://www.w3.org/TR/presentation-api/",
+              "title": "Presentation API",
+              "crawled": "https://w3c.github.io/presentation-api/"
             },
             {
               "url": "https://privacycg.github.io/private-click-measurement/",
@@ -28229,6 +28980,11 @@
               "crawled": "https://w3c.github.io/web-share-target/"
             },
             {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
+            },
+            {
               "url": "https://wicg.github.io/web-transport/",
               "title": "WebTransport",
               "crawled": "https://wicg.github.io/web-transport/"
@@ -28261,9 +29017,9 @@
       }
     },
     {
-      "title": "User Timing Level 2",
+      "title": "User Timing Level 3",
       "shortname": "user-timing-2",
-      "date": "",
+      "date": "21 April 2020",
       "url": "https://www.w3.org/TR/user-timing-2/",
       "release": {
         "url": "https://www.w3.org/TR/user-timing-2/",
@@ -28276,10 +29032,10 @@
       },
       "crawled": "https://w3c.github.io/user-timing/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -28299,16 +29055,26 @@
               "url": "https://www.w3.org/TR/performance-timeline-2/",
               "title": "Performance Timeline Level 2",
               "crawled": "https://w3c.github.io/performance-timeline/"
+            },
+            {
+              "url": "https://www.w3.org/TR/user-timing-2/",
+              "title": "User Timing Level 3",
+              "crawled": "https://w3c.github.io/user-timing/"
+            },
+            {
+              "url": "https://www.w3.org/TR/user-timing-3/",
+              "title": "User Timing Level 3",
+              "crawled": "https://w3c.github.io/user-timing/"
             }
           ]
         },
-        "ok": false
+        "ok": true
       }
     },
     {
       "title": "User Timing Level 3",
       "shortname": "user-timing-3",
-      "date": "",
+      "date": "21 April 2020",
       "url": "https://www.w3.org/TR/user-timing-3/",
       "release": {
         "url": "https://www.w3.org/TR/user-timing-3/",
@@ -28321,10 +29087,10 @@
       },
       "crawled": "https://w3c.github.io/user-timing/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -28335,7 +29101,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -28370,7 +29136,7 @@
     {
       "title": "Vibration API (Second Edition)",
       "shortname": "vibration",
-      "date": "",
+      "date": "14 November 2019",
       "url": "https://www.w3.org/TR/vibration/",
       "release": {
         "url": "https://www.w3.org/TR/vibration/",
@@ -28383,16 +29149,24 @@
       },
       "crawled": "https://w3c.github.io/vibration/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/page-visibility/",
+            "ref": {
+              "name": "PAGE-VISIBILITY-2",
+              "url": "https://www.w3.org/TR/page-visibility-2/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -28409,7 +29183,7 @@
     {
       "title": "Visual Viewport API",
       "shortname": "visual-viewport",
-      "date": "",
+      "date": "24 February 2020",
       "url": "https://wicg.github.io/visual-viewport/",
       "nightly": {
         "url": "https://wicg.github.io/visual-viewport/",
@@ -28418,10 +29192,10 @@
       },
       "crawled": "https://wicg.github.io/visual-viewport/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -28438,7 +29212,7 @@
           ],
           "informative": []
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -28608,7 +29382,7 @@
     {
       "title": "Web App Manifest",
       "shortname": "appmanifest",
-      "date": "01 July 2020",
+      "date": "06 July 2020",
       "url": "https://www.w3.org/TR/appmanifest/",
       "release": {
         "url": "https://www.w3.org/TR/appmanifest/",
@@ -28626,9 +29400,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "OrientationLockType"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
@@ -28673,6 +29445,11 @@
               "url": "https://www.w3.org/TR/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://w3c.github.io/mediasession/"
+            },
+            {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/"
             }
           ]
         },
@@ -28722,6 +29499,11 @@
               "url": "https://www.w3.org/TR/mediacapture-streams/",
               "title": "Media Capture and Streams",
               "crawled": "https://w3c.github.io/mediacapture-main/"
+            },
+            {
+              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
+              "title": "Media Capture from DOM Elements",
+              "crawled": "https://w3c.github.io/mediacapture-fromelement/"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -29035,6 +29817,11 @@
               "crawled": "https://w3c.github.io/ambient-light/"
             },
             {
+              "url": "https://www.w3.org/TR/audio-output/",
+              "title": "Audio Output Devices API",
+              "crawled": "https://w3c.github.io/mediacapture-output/"
+            },
+            {
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
@@ -29043,6 +29830,16 @@
               "url": "https://w3c.github.io/badging/",
               "title": "Badging API",
               "crawled": "https://w3c.github.io/badging/"
+            },
+            {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "https://w3c.github.io/battery/"
+            },
+            {
+              "url": "https://www.w3.org/TR/beacon/",
+              "title": "Beacon",
+              "crawled": "https://w3c.github.io/beacon/"
             },
             {
               "url": "https://www.w3.org/TR/clipboard-apis/",
@@ -29255,6 +30052,11 @@
               "crawled": "https://w3c.github.io/deviceorientation/"
             },
             {
+              "url": "https://www.w3.org/TR/DOM-Parsing/",
+              "title": "DOM Parsing and Serialization",
+              "crawled": "https://w3c.github.io/DOM-Parsing/"
+            },
+            {
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/"
@@ -29320,6 +30122,11 @@
               "crawled": "https://w3c.github.io/gamepad/"
             },
             {
+              "url": "https://w3c.github.io/gamepad/extensions.html",
+              "title": "Gamepad Extensions",
+              "crawled": "https://w3c.github.io/gamepad/extensions.html"
+            },
+            {
               "url": "https://www.w3.org/TR/generic-sensor/",
               "title": "Generic Sensor API",
               "crawled": "https://w3c.github.io/sensors/"
@@ -29355,6 +30162,11 @@
               "crawled": "https://w3c.github.io/hr-time/"
             },
             {
+              "url": "https://www.w3.org/TR/html-media-capture/",
+              "title": "HTML Media Capture",
+              "crawled": "https://w3c.github.io/html-media-capture/"
+            },
+            {
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
@@ -29363,6 +30175,16 @@
               "url": "https://wicg.github.io/video-rvfc/",
               "title": "HTMLVideoElement.requestVideoFrameCallback()",
               "crawled": "https://wicg.github.io/video-rvfc/"
+            },
+            {
+              "url": "https://w3c.github.io/webrtc-ice/",
+              "title": "IceTransport Extensions for WebRTC",
+              "crawled": "https://w3c.github.io/webrtc-ice/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc-stats/",
+              "title": "Identifiers for WebRTC's Statistics API",
+              "crawled": "https://w3c.github.io/webrtc-stats/"
             },
             {
               "url": "https://www.w3.org/TR/webrtc-identity/",
@@ -29388,6 +30210,11 @@
               "url": "https://infra.spec.whatwg.org/",
               "title": "Infra Standard",
               "crawled": "https://infra.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/input-device-capabilities/",
+              "title": "Input Device Capabilities",
+              "crawled": "https://wicg.github.io/input-device-capabilities/"
             },
             {
               "url": "https://www.w3.org/TR/input-events-2/",
@@ -29460,6 +30287,16 @@
               "crawled": "https://w3c.github.io/mediacapture-main/"
             },
             {
+              "url": "https://www.w3.org/TR/mediacapture-depth/",
+              "title": "Media Capture Depth Stream Extensions",
+              "crawled": "https://w3c.github.io/mediacapture-depth/"
+            },
+            {
+              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
+              "title": "Media Capture from DOM Elements",
+              "crawled": "https://w3c.github.io/mediacapture-fromelement/"
+            },
+            {
               "url": "https://w3c.github.io/media-playback-quality/",
               "title": "Media Playback Quality",
               "crawled": "https://w3c.github.io/media-playback-quality/"
@@ -29498,6 +30335,11 @@
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
               "crawled": "https://w3c.github.io/navigation-timing/"
+            },
+            {
+              "url": "https://wicg.github.io/netinfo/",
+              "title": "Network Information API",
+              "crawled": "https://wicg.github.io/netinfo/"
             },
             {
               "url": "https://notifications.spec.whatwg.org/",
@@ -29585,6 +30427,11 @@
               "crawled": "https://wicg.github.io/portals/"
             },
             {
+              "url": "https://www.w3.org/TR/presentation-api/",
+              "title": "Presentation API",
+              "crawled": "https://w3c.github.io/presentation-api/"
+            },
+            {
               "url": "https://privacycg.github.io/private-click-measurement/",
               "title": "Private Click Measurement",
               "crawled": "https://privacycg.github.io/private-click-measurement/"
@@ -29625,9 +30472,24 @@
               "crawled": "https://drafts.csswg.org/resize-observer/"
             },
             {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 2",
+              "crawled": "https://w3c.github.io/resource-timing/"
+            },
+            {
+              "url": "https://wicg.github.io/savedata/",
+              "title": "Save Data API",
+              "crawled": "https://wicg.github.io/savedata/"
+            },
+            {
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc-svc/",
+              "title": "Scalable Video Coding (SVC) Extension for WebRTC",
+              "crawled": "https://w3c.github.io/webrtc-svc/"
             },
             {
               "url": "https://www.w3.org/TR/screen-capture/",
@@ -29653,6 +30515,11 @@
               "url": "https://www.w3.org/TR/selection-api/",
               "title": "Selection API",
               "crawled": "https://w3c.github.io/selection-api/"
+            },
+            {
+              "url": "https://wicg.github.io/serial/",
+              "title": "Serial API",
+              "crawled": "https://wicg.github.io/serial/"
             },
             {
               "url": "https://www.w3.org/TR/server-timing/",
@@ -29685,6 +30552,11 @@
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
+              "url": "https://www.w3.org/TR/screen-orientation/",
+              "title": "The Screen Orientation API",
+              "crawled": "https://w3c.github.io/screen-orientation/"
+            },
+            {
               "url": "https://privacycg.github.io/storage-access/",
               "title": "The Storage Access API",
               "crawled": "https://privacycg.github.io/storage-access/"
@@ -29710,9 +30582,29 @@
               "crawled": "https://url.spec.whatwg.org/"
             },
             {
+              "url": "https://www.w3.org/TR/user-timing-2/",
+              "title": "User Timing Level 3",
+              "crawled": "https://w3c.github.io/user-timing/"
+            },
+            {
+              "url": "https://www.w3.org/TR/user-timing-3/",
+              "title": "User Timing Level 3",
+              "crawled": "https://w3c.github.io/user-timing/"
+            },
+            {
               "url": "https://wicg.github.io/ua-client-hints/",
               "title": "User-Agent Client Hints",
               "crawled": "https://wicg.github.io/ua-client-hints/"
+            },
+            {
+              "url": "https://www.w3.org/TR/vibration/",
+              "title": "Vibration API (Second Edition)",
+              "crawled": "https://w3c.github.io/vibration/"
+            },
+            {
+              "url": "https://wicg.github.io/visual-viewport/",
+              "title": "Visual Viewport API",
+              "crawled": "https://wicg.github.io/visual-viewport/"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -29798,6 +30690,11 @@
               "url": "https://www.w3.org/TR/wasm-web-api-1/",
               "title": "WebAssembly Web API",
               "crawled": "https://webassembly.github.io/spec/web-api/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://w3c.github.io/webdriver/"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
@@ -30337,9 +31234,9 @@
       }
     },
     {
-      "title": "WebDriver - Level 2",
+      "title": "WebDriver",
       "shortname": "webdriver2",
-      "date": "",
+      "date": "10 June 2020",
       "url": "https://www.w3.org/TR/webdriver2/",
       "release": {
         "url": "https://www.w3.org/TR/webdriver2/",
@@ -30352,16 +31249,55 @@
       },
       "crawled": "https://w3c.github.io/webdriver/",
       "report": {
-        "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/ExecutionContext.js:102:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at ExecutionContext.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at DOMWorld.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/DOMWorld.js:108:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\n  -- ASYNC --\n    at Frame.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:116:19)\n    at Page.evaluate (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/Page.js:680:14)\n    at Page.<anonymous> (/home/runner/work/reffy-reports/reffy-reports/reffy/node_modules/puppeteer/lib/helper.js:117:27)\n    at processSpecification (/home/runner/work/reffy-reports/reffy-reports/reffy/src/lib/util.js:267:20)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/editing/contentEditable.html",
+          "https://w3c.github.io/editing/execCommand.html"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/uievents/",
+            "ref": {
+              "name": "UI-EVENTS",
+              "url": "https://www.w3.org/TR/uievents/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/aria/",
+            "ref": {
+              "name": "wai-aria-1.2",
+              "url": "https://www.w3.org/TR/wai-aria-1.2/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webappsec-csp/",
+            "ref": {
+              "name": "CSP3",
+              "url": "https://www.w3.org/TR/CSP3/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/DOM-Parsing/",
+            "ref": {
+              "name": "DOM-PARSING",
+              "url": "https://www.w3.org/TR/DOM-Parsing/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/FileAPI/",
+            "ref": {
+              "name": "FILEAPI",
+              "url": "https://www.w3.org/TR/FileAPI/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -30446,6 +31382,11 @@
           ],
           "informative": [
             {
+              "url": "https://www.w3.org/TR/mediacapture-depth/",
+              "title": "Media Capture Depth Stream Extensions",
+              "crawled": "https://w3c.github.io/mediacapture-depth/"
+            },
+            {
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/"
@@ -30501,6 +31442,11 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/mediacapture-depth/",
+              "title": "Media Capture Depth Stream Extensions",
+              "crawled": "https://w3c.github.io/mediacapture-depth/"
+            },
             {
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
@@ -30598,10 +31544,19 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "RTCStatsType"
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [
+          {
+            "name": "RTCIceParameters",
+            "refs": [
+              {
+                "url": "https://w3c.github.io/webrtc-ice/",
+                "title": "IceTransport Extensions for WebRTC",
+                "crawled": "https://w3c.github.io/webrtc-ice/"
+              }
+            ]
+          }
         ],
-        "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
         "inconsistentRef": [
@@ -30616,14 +31571,39 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://w3c.github.io/webrtc-ice/",
+              "title": "IceTransport Extensions for WebRTC",
+              "crawled": "https://w3c.github.io/webrtc-ice/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc-stats/",
+              "title": "Identifiers for WebRTC's Statistics API",
+              "crawled": "https://w3c.github.io/webrtc-stats/"
+            },
+            {
               "url": "https://www.w3.org/TR/webrtc-identity/",
               "title": "Identity for WebRTC 1.0",
               "crawled": "https://w3c.github.io/webrtc-identity/identity.html"
             },
             {
+              "url": "https://www.w3.org/TR/mediacapture-fromelement/",
+              "title": "Media Capture from DOM Elements",
+              "crawled": "https://w3c.github.io/mediacapture-fromelement/"
+            },
+            {
               "url": "https://www.w3.org/TR/mst-content-hint/",
               "title": "MediaStreamTrack Content Hints",
               "crawled": "https://w3c.github.io/mst-content-hint/"
+            },
+            {
+              "url": "https://www.w3.org/TR/presentation-api/",
+              "title": "Presentation API",
+              "crawled": "https://w3c.github.io/presentation-api/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webrtc-svc/",
+              "title": "Scalable Video Coding (SVC) Extension for WebRTC",
+              "crawled": "https://w3c.github.io/webrtc-svc/"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -30694,7 +31674,13 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/webrtc-stats/",
+              "title": "Identifiers for WebRTC's Statistics API",
+              "crawled": "https://w3c.github.io/webrtc-stats/"
+            }
+          ],
           "informative": []
         },
         "ok": false
@@ -31395,6 +32381,11 @@
               "url": "https://www.w3.org/TR/mixed-content/",
               "title": "Mixed Content",
               "crawled": "https://w3c.github.io/webappsec-mixed-content/"
+            },
+            {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 2",
+              "crawled": "https://w3c.github.io/resource-timing/"
             }
           ],
           "informative": [
