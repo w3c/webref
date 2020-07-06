@@ -553,21 +553,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpuadapter-requestdevice-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-requestdevice-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUAdapter/requestDevice(descriptor)",
-        "GPUAdapter/requestDevice()"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpuadapter-name",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-name",
       "linkingText": [
@@ -614,8 +599,7 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-requestdevice",
       "linkingText": [
         "requestDevice(descriptor)",
-        "requestDevice()",
-        "requestDevice(optionaldescriptor)"
+        "requestDevice()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -626,15 +610,15 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-gpuadapterrequestdevice-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpuadapterrequestdevice-valid-usage",
+      "id": "dom-gpuadapter-requestdevice-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-requestdevice-descriptor-descriptor",
       "linkingText": [
-        "Valid Usage"
+        "descriptor"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
+      "type": "argument",
       "for": [
-        "GPUAdapter.requestDevice"
+        "GPUAdapter/requestDevice(descriptor)"
       ],
       "access": "public",
       "informative": false
@@ -919,34 +903,6 @@
       "type": "argument",
       "for": [
         "GPUDevice/createBuffer(descriptor)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createbuffermapped",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbuffermapped",
-      "linkingText": [
-        "createBufferMapped(descriptor)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUDevice"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createbuffermapped-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbuffermapped-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUDevice/createBufferMapped(descriptor)"
       ],
       "access": "public",
       "informative": false
@@ -10393,142 +10349,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-buffer",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-buffer",
-      "linkingText": [
-        "buffer"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/writeBuffer(buffer, bufferOffset, data, dataOffset, size)",
-        "GPUQueue/writeBuffer(buffer, bufferOffset, data, dataOffset)",
-        "GPUQueue/writeBuffer(buffer, bufferOffset, data)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-bufferoffset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-bufferoffset",
-      "linkingText": [
-        "bufferOffset"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/writeBuffer(buffer, bufferOffset, data, dataOffset, size)",
-        "GPUQueue/writeBuffer(buffer, bufferOffset, data, dataOffset)",
-        "GPUQueue/writeBuffer(buffer, bufferOffset, data)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-data",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-data",
-      "linkingText": [
-        "data"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/writeBuffer(buffer, bufferOffset, data, dataOffset, size)",
-        "GPUQueue/writeBuffer(buffer, bufferOffset, data, dataOffset)",
-        "GPUQueue/writeBuffer(buffer, bufferOffset, data)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-dataoffset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-dataoffset",
-      "linkingText": [
-        "dataOffset"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/writeBuffer(buffer, bufferOffset, data, dataOffset, size)",
-        "GPUQueue/writeBuffer(buffer, bufferOffset, data, dataOffset)",
-        "GPUQueue/writeBuffer(buffer, bufferOffset, data)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-size",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-size",
-      "linkingText": [
-        "size"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/writeBuffer(buffer, bufferOffset, data, dataOffset, size)",
-        "GPUQueue/writeBuffer(buffer, bufferOffset, data, dataOffset)",
-        "GPUQueue/writeBuffer(buffer, bufferOffset, data)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuqueue-writetexture-destination-data-datalayout-size-destination",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writetexture-destination-data-datalayout-size-destination",
-      "linkingText": [
-        "destination"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/writeTexture(destination, data, dataLayout, size)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuqueue-writetexture-destination-data-datalayout-size-data",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writetexture-destination-data-datalayout-size-data",
-      "linkingText": [
-        "data"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/writeTexture(destination, data, dataLayout, size)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuqueue-writetexture-destination-data-datalayout-size-datalayout",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writetexture-destination-data-datalayout-size-datalayout",
-      "linkingText": [
-        "dataLayout"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/writeTexture(destination, data, dataLayout, size)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuqueue-writetexture-destination-data-datalayout-size-size",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writetexture-destination-data-datalayout-size-size",
-      "linkingText": [
-        "size"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/writeTexture(destination, data, dataLayout, size)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpuqueue-copyimagebitmaptotexture-source-destination-copysize-source",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-copyimagebitmaptotexture-source-destination-copysize-source",
       "linkingText": [
@@ -10587,6 +10407,76 @@
       "informative": false
     },
     {
+      "id": "dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-buffer",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-buffer",
+      "linkingText": [
+        "buffer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUQueue/writeBuffer(buffer, bufferOffset, data, dataOffset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-bufferoffset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-bufferoffset",
+      "linkingText": [
+        "bufferOffset"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUQueue/writeBuffer(buffer, bufferOffset, data, dataOffset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-data",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUQueue/writeBuffer(buffer, bufferOffset, data, dataOffset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-dataoffset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-dataoffset",
+      "linkingText": [
+        "dataOffset"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUQueue/writeBuffer(buffer, bufferOffset, data, dataOffset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-size",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writebuffer-buffer-bufferoffset-data-dataoffset-size-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUQueue/writeBuffer(buffer, bufferOffset, data, dataOffset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpuqueue-writetexture",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writetexture",
       "linkingText": [
@@ -10596,6 +10486,62 @@
       "type": "method",
       "for": [
         "GPUQueue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuqueue-writetexture-destination-data-datalayout-size-destination",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writetexture-destination-data-datalayout-size-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUQueue/writeTexture(destination, data, dataLayout, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuqueue-writetexture-destination-data-datalayout-size-data",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writetexture-destination-data-datalayout-size-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUQueue/writeTexture(destination, data, dataLayout, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuqueue-writetexture-destination-data-datalayout-size-datalayout",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writetexture-destination-data-datalayout-size-datalayout",
+      "linkingText": [
+        "dataLayout"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUQueue/writeTexture(destination, data, dataLayout, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuqueue-writetexture-destination-data-datalayout-size-size",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writetexture-destination-data-datalayout-size-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUQueue/writeTexture(destination, data, dataLayout, size)"
       ],
       "access": "public",
       "informative": false
@@ -11918,18 +11864,6 @@
         "Extent3D"
       ],
       "access": "private",
-      "informative": false
-    },
-    {
-      "id": "typedefdef-gpumappedbuffer",
-      "href": "https://gpuweb.github.io/gpuweb/#typedefdef-gpumappedbuffer",
-      "linkingText": [
-        "GPUMappedBuffer"
-      ],
-      "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
-      "access": "public",
       "informative": false
     }
   ]
