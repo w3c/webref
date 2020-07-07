@@ -184,7 +184,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
 - Crawled URL: [https://w3c.github.io/ambient-light/](https://w3c.github.io/ambient-light/)
-- Crawled version: 9 August 2019
+- Crawled version: 24 September 2019
 - Editor's Draft: [https://w3c.github.io/ambient-light/](https://w3c.github.io/ambient-light/)
 - Latest published version: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
 - Shortname: ambient-light
@@ -6154,7 +6154,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 3 July 2020
+- Crawled version: 7 July 2020
 - Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Shortname: fetch
 
@@ -6839,7 +6839,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 6 July 2020
+- Crawled version: 7 July 2020
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -9085,7 +9085,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Crawled URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
-- Crawled version: 26 June 2020
+- Crawled version: 7 July 2020
 - Editor's Draft: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Shortname: portals
 
@@ -9140,7 +9140,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
 - Crawled URL: [https://w3c.github.io/presentation-api/](https://w3c.github.io/presentation-api/)
-- Crawled version: 30 September 2019
+- Crawled version: 07 July 2020
 - Editor's Draft: [https://w3c.github.io/presentation-api/](https://w3c.github.io/presentation-api/)
 - Latest published version: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
 - Shortname: presentation-api
@@ -9844,7 +9844,6 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [Web IDL](https://heycam.github.io/webidl/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
@@ -11157,7 +11156,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Crawled URL: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
-- Crawled version: 18 June 2020
+- Crawled version: 7 July 2020
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Shortname: WebIDL-1
@@ -11432,7 +11431,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
 - Crawled URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
-- Crawled version: 01 July 2020
+- Crawled version: 07 July 2020
 - Editor's Draft: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
 - Shortname: web-nfc
 
@@ -11766,7 +11765,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 6 July 2020
+- Crawled version: 7 July 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -11917,7 +11916,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 6 July 2020
+- Crawled version: 7 July 2020
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
