@@ -1971,6 +1971,7 @@ typedef (DOMString or Function) TimerHandler;
 interface mixin WindowOrWorkerGlobalScope {
   [Replaceable] readonly attribute USVString origin;
   readonly attribute boolean isSecureContext;
+  readonly attribute boolean crossOriginIsolated;
 
   // base64 utility methods
   DOMString btoa(DOMString data);
