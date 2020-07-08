@@ -440,6 +440,7 @@ interface HTMLIFrameElement : HTMLElement {
   [CEReactions] attribute DOMString width;
   [CEReactions] attribute DOMString height;
   [CEReactions] attribute DOMString referrerPolicy;
+  [CEReactions] attribute DOMString loading;
   readonly attribute Document? contentDocument;
   readonly attribute WindowProxy? contentWindow;
   Document? getSVGDocument();
