@@ -6844,7 +6844,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 8 July 2020
+- Crawled version: 9 July 2020
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -8732,7 +8732,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Crawled URL: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
-- Crawled version: 27 April 2020
+- Crawled version: 09 July 2020
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Shortname: payment-handler
