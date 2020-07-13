@@ -207,6 +207,46 @@
       "informative": false
     },
     {
+      "id": "enumdef-filesystemhandlekind",
+      "href": "https://wicg.github.io/native-file-system/#enumdef-filesystemhandlekind",
+      "linkingText": [
+        "FileSystemHandleKind"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filesystemhandlekind-file",
+      "href": "https://wicg.github.io/native-file-system/#dom-filesystemhandlekind-file",
+      "linkingText": [
+        "\"file\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FileSystemHandleKind"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-filesystemhandlekind-directory",
+      "href": "https://wicg.github.io/native-file-system/#dom-filesystemhandlekind-directory",
+      "linkingText": [
+        "\"directory\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FileSystemHandleKind"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "filesystemhandle",
       "href": "https://wicg.github.io/native-file-system/#filesystemhandle",
       "linkingText": [
@@ -277,24 +317,10 @@
       "informative": false
     },
     {
-      "id": "dom-filesystemhandle-isfile",
-      "href": "https://wicg.github.io/native-file-system/#dom-filesystemhandle-isfile",
+      "id": "dom-filesystemhandle-kind",
+      "href": "https://wicg.github.io/native-file-system/#dom-filesystemhandle-kind",
       "linkingText": [
-        "isFile"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "FileSystemHandle"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-filesystemhandle-isdirectory",
-      "href": "https://wicg.github.io/native-file-system/#dom-filesystemhandle-isdirectory",
-      "linkingText": [
-        "isDirectory"
+        "kind"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -535,61 +561,61 @@
       "informative": false
     },
     {
-      "id": "dom-filesystemdirectoryhandle-getfile-name-options-name",
-      "href": "https://wicg.github.io/native-file-system/#dom-filesystemdirectoryhandle-getfile-name-options-name",
+      "id": "dom-filesystemdirectoryhandle-getfilehandle-name-options-name",
+      "href": "https://wicg.github.io/native-file-system/#dom-filesystemdirectoryhandle-getfilehandle-name-options-name",
       "linkingText": [
         "name"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "FileSystemDirectoryHandle/getFile(name, options)",
-        "FileSystemDirectoryHandle/getFile(name)"
+        "FileSystemDirectoryHandle/getFileHandle(name, options)",
+        "FileSystemDirectoryHandle/getFileHandle(name)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-filesystemdirectoryhandle-getfile-name-options-options",
-      "href": "https://wicg.github.io/native-file-system/#dom-filesystemdirectoryhandle-getfile-name-options-options",
+      "id": "dom-filesystemdirectoryhandle-getfilehandle-name-options-options",
+      "href": "https://wicg.github.io/native-file-system/#dom-filesystemdirectoryhandle-getfilehandle-name-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "FileSystemDirectoryHandle/getFile(name, options)",
-        "FileSystemDirectoryHandle/getFile(name)"
+        "FileSystemDirectoryHandle/getFileHandle(name, options)",
+        "FileSystemDirectoryHandle/getFileHandle(name)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-filesystemdirectoryhandle-getdirectory-name-options-name",
-      "href": "https://wicg.github.io/native-file-system/#dom-filesystemdirectoryhandle-getdirectory-name-options-name",
+      "id": "dom-filesystemdirectoryhandle-getdirectoryhandle-name-options-name",
+      "href": "https://wicg.github.io/native-file-system/#dom-filesystemdirectoryhandle-getdirectoryhandle-name-options-name",
       "linkingText": [
         "name"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "FileSystemDirectoryHandle/getDirectory(name, options)",
-        "FileSystemDirectoryHandle/getDirectory(name)"
+        "FileSystemDirectoryHandle/getDirectoryHandle(name, options)",
+        "FileSystemDirectoryHandle/getDirectoryHandle(name)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-filesystemdirectoryhandle-getdirectory-name-options-options",
-      "href": "https://wicg.github.io/native-file-system/#dom-filesystemdirectoryhandle-getdirectory-name-options-options",
+      "id": "dom-filesystemdirectoryhandle-getdirectoryhandle-name-options-options",
+      "href": "https://wicg.github.io/native-file-system/#dom-filesystemdirectoryhandle-getdirectoryhandle-name-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "FileSystemDirectoryHandle/getDirectory(name, options)",
-        "FileSystemDirectoryHandle/getDirectory(name)"
+        "FileSystemDirectoryHandle/getDirectoryHandle(name, options)",
+        "FileSystemDirectoryHandle/getDirectoryHandle(name)"
       ],
       "access": "public",
       "informative": false
@@ -653,11 +679,11 @@
       "informative": false
     },
     {
-      "id": "dom-filesystemdirectoryhandle-getfile",
-      "href": "https://wicg.github.io/native-file-system/#dom-filesystemdirectoryhandle-getfile",
+      "id": "dom-filesystemdirectoryhandle-getfilehandle",
+      "href": "https://wicg.github.io/native-file-system/#dom-filesystemdirectoryhandle-getfilehandle",
       "linkingText": [
-        "getFile(name, options)",
-        "getFile(name)"
+        "getFileHandle(name, options)",
+        "getFileHandle(name)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -668,11 +694,11 @@
       "informative": false
     },
     {
-      "id": "dom-filesystemdirectoryhandle-getdirectory",
-      "href": "https://wicg.github.io/native-file-system/#dom-filesystemdirectoryhandle-getdirectory",
+      "id": "dom-filesystemdirectoryhandle-getdirectoryhandle",
+      "href": "https://wicg.github.io/native-file-system/#dom-filesystemdirectoryhandle-getdirectoryhandle",
       "linkingText": [
-        "getDirectory(name, options)",
-        "getDirectory(name)"
+        "getDirectoryHandle(name, options)",
+        "getDirectoryHandle(name)"
       ],
       "localLinkingText": [],
       "type": "method",

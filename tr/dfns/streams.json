@@ -1173,6 +1173,100 @@
       "informative": false
     },
     {
+      "id": "dictdef-readablestreamdefaultreadresult",
+      "href": "https://streams.spec.whatwg.org/#dictdef-readablestreamdefaultreadresult",
+      "linkingText": [
+        "ReadableStreamDefaultReadResult"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-readablestreamdefaultreadresult-value",
+      "href": "https://streams.spec.whatwg.org/#dom-readablestreamdefaultreadresult-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReadableStreamDefaultReadResult"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-readablestreamdefaultreadresult-done",
+      "href": "https://streams.spec.whatwg.org/#dom-readablestreamdefaultreadresult-done",
+      "linkingText": [
+        "done"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReadableStreamDefaultReadResult"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "read-request",
+      "href": "https://streams.spec.whatwg.org/#read-request",
+      "linkingText": [
+        "read request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "read-request-chunk-steps",
+      "href": "https://streams.spec.whatwg.org/#read-request-chunk-steps",
+      "linkingText": [
+        "chunk steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "read request"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "read-request-close-steps",
+      "href": "https://streams.spec.whatwg.org/#read-request-close-steps",
+      "linkingText": [
+        "close steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "read request"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "read-request-error-steps",
+      "href": "https://streams.spec.whatwg.org/#read-request-error-steps",
+      "linkingText": [
+        "error steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "read request"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "default-reader-constructor",
       "href": "https://streams.spec.whatwg.org/#default-reader-constructor",
       "linkingText": [
@@ -1296,6 +1390,100 @@
       "type": "argument",
       "for": [
         "ReadableStreamBYOBReader/read(view)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-readablestreambyobreadresult",
+      "href": "https://streams.spec.whatwg.org/#dictdef-readablestreambyobreadresult",
+      "linkingText": [
+        "ReadableStreamBYOBReadResult"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-readablestreambyobreadresult-value",
+      "href": "https://streams.spec.whatwg.org/#dom-readablestreambyobreadresult-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReadableStreamBYOBReadResult"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-readablestreambyobreadresult-done",
+      "href": "https://streams.spec.whatwg.org/#dom-readablestreambyobreadresult-done",
+      "linkingText": [
+        "done"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ReadableStreamBYOBReadResult"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "read-into-request",
+      "href": "https://streams.spec.whatwg.org/#read-into-request",
+      "linkingText": [
+        "read-into request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "read-into-request-chunk-steps",
+      "href": "https://streams.spec.whatwg.org/#read-into-request-chunk-steps",
+      "linkingText": [
+        "chunk steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "read-into request"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "read-into-request-close-steps",
+      "href": "https://streams.spec.whatwg.org/#read-into-request-close-steps",
+      "linkingText": [
+        "close steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "read-into request"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "read-into-request-error-steps",
+      "href": "https://streams.spec.whatwg.org/#read-into-request-error-steps",
+      "linkingText": [
+        "error steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "read-into request"
       ],
       "access": "public",
       "informative": false
@@ -2099,18 +2287,6 @@
       "href": "https://streams.spec.whatwg.org/#readable-stream-close",
       "linkingText": [
         "ReadableStreamClose"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "readable-stream-create-read-result",
-      "href": "https://streams.spec.whatwg.org/#readable-stream-create-read-result",
-      "linkingText": [
-        "ReadableStreamCreateReadResult"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4381,8 +4557,8 @@
       "informative": false
     },
     {
-      "id": "set-up-transform-stream-default-controller-enqueue",
-      "href": "https://streams.spec.whatwg.org/#set-up-transform-stream-default-controller-enqueue",
+      "id": "transform-stream-default-controller-enqueue",
+      "href": "https://streams.spec.whatwg.org/#transform-stream-default-controller-enqueue",
       "linkingText": [
         "TransformStreamDefaultControllerEnqueue"
       ],
@@ -4393,8 +4569,8 @@
       "informative": false
     },
     {
-      "id": "set-up-transform-stream-default-controller-error",
-      "href": "https://streams.spec.whatwg.org/#set-up-transform-stream-default-controller-error",
+      "id": "transform-stream-default-controller-error",
+      "href": "https://streams.spec.whatwg.org/#transform-stream-default-controller-error",
       "linkingText": [
         "TransformStreamDefaultControllerError"
       ],
@@ -4405,8 +4581,8 @@
       "informative": false
     },
     {
-      "id": "set-up-transform-stream-default-controller-perform-transform",
-      "href": "https://streams.spec.whatwg.org/#set-up-transform-stream-default-controller-perform-transform",
+      "id": "transform-stream-default-controller-perform-transform",
+      "href": "https://streams.spec.whatwg.org/#transform-stream-default-controller-perform-transform",
       "linkingText": [
         "TransformStreamDefaultControllerPerformTransform"
       ],
@@ -4417,8 +4593,8 @@
       "informative": false
     },
     {
-      "id": "set-up-transform-stream-default-controller-terminate",
-      "href": "https://streams.spec.whatwg.org/#set-up-transform-stream-default-controller-terminate",
+      "id": "transform-stream-default-controller-terminate",
+      "href": "https://streams.spec.whatwg.org/#transform-stream-default-controller-terminate",
       "linkingText": [
         "TransformStreamDefaultControllerTerminate"
       ],

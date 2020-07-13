@@ -704,6 +704,20 @@
       "informative": false
     },
     {
+      "id": "dom-gpuextensionname-depth-clamping",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-depth-clamping",
+      "linkingText": [
+        "\"depth-clamping\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUExtensionName"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpuextensionname-texture-compression-bc",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-texture-compression-bc",
       "linkingText": [
@@ -1044,6 +1058,62 @@
       "type": "argument",
       "for": [
         "GPUDevice/createRenderPipeline(descriptor)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createreadycomputepipeline",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createreadycomputepipeline",
+      "linkingText": [
+        "createReadyComputePipeline(descriptor)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createreadycomputepipeline-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createreadycomputepipeline-descriptor-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUDevice/createReadyComputePipeline(descriptor)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createreadyrenderpipeline",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createreadyrenderpipeline",
+      "linkingText": [
+        "createReadyRenderPipeline(descriptor)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createreadyrenderpipeline-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createreadyrenderpipeline-descriptor-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUDevice/createReadyRenderPipeline(descriptor)"
       ],
       "access": "public",
       "informative": false
@@ -3655,6 +3725,20 @@
       "informative": false
     },
     {
+      "id": "dom-gpusamplerdescriptor-maxanisotropy",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpusamplerdescriptor-maxanisotropy",
+      "linkingText": [
+        "maxAnisotropy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUSamplerDescriptor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "enumdef-gpuaddressmode",
       "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpuaddressmode",
       "linkingText": [
@@ -5648,6 +5732,20 @@
       "informative": false
     },
     {
+      "id": "dom-gpurasterizationstatedescriptor-clampdepth",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurasterizationstatedescriptor-clampdepth",
+      "linkingText": [
+        "clampDepth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPURasterizationStateDescriptor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpurasterizationstatedescriptor-depthbias",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurasterizationstatedescriptor-depthbias",
       "linkingText": [
@@ -5686,6 +5784,18 @@
       "for": [
         "GPURasterizationStateDescriptor"
       ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-validating-gpurasterizationstatedescriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validating-gpurasterizationstatedescriptor",
+      "linkingText": [
+        "validating GPURasterizationStateDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
       "access": "public",
       "informative": false
     },
@@ -9357,20 +9467,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpurenderpassencoder-setviewport",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport",
-      "linkingText": [
-        "setViewport(x, y, width, height, minDepth, maxDepth)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPURenderPassEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-x",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-x",
       "linkingText": [
@@ -9455,20 +9551,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpurenderpassencoder-setscissorrect",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setscissorrect",
-      "linkingText": [
-        "setScissorRect(x, y, width, height)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPURenderPassEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpurenderpassencoder-setscissorrect-x-y-width-height-x",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setscissorrect-x-y-width-height-x",
       "linkingText": [
@@ -9525,20 +9607,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpurenderpassencoder-setblendcolor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setblendcolor",
-      "linkingText": [
-        "setBlendColor(color)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPURenderPassEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpurenderpassencoder-setblendcolor-color-color",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setblendcolor-color-color",
       "linkingText": [
@@ -9548,20 +9616,6 @@
       "type": "argument",
       "for": [
         "GPURenderPassEncoder/setBlendColor(color)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-setstencilreference",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setstencilreference",
-      "linkingText": [
-        "setStencilReference(reference)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPURenderPassEncoder"
       ],
       "access": "public",
       "informative": false
@@ -9744,6 +9798,20 @@
       "type": "argument",
       "for": [
         "GPURenderPassEncoder/executeBundles(bundles)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-attachment_size-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-attachment_size-slot",
+      "linkingText": [
+        "[[attachment_size]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderPassEncoder"
       ],
       "access": "public",
       "informative": false
@@ -10098,6 +10166,90 @@
       "type": "enum-value",
       "for": [
         "GPUStoreOp"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-setviewport",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport",
+      "linkingText": [
+        "setViewport(x, y, width, height, minDepth, maxDepth)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderPassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-gpurenderpassencodersetviewport-setviewport-valid-usage",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpurenderpassencodersetviewport-setviewport-valid-usage",
+      "linkingText": [
+        "setViewport Valid Usage"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "GPURenderPassEncoder.setViewport"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-setscissorrect",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setscissorrect",
+      "linkingText": [
+        "setScissorRect(x, y, width, height)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderPassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-gpurenderpassencodersetscissorrect-setscissorrect-valid-usage",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpurenderpassencodersetscissorrect-setscissorrect-valid-usage",
+      "linkingText": [
+        "setScissorRect Valid Usage"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "GPURenderPassEncoder.setScissorRect"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-setblendcolor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setblendcolor",
+      "linkingText": [
+        "setBlendColor(color)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderPassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-setstencilreference",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setstencilreference",
+      "linkingText": [
+        "setStencilReference(reference)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderPassEncoder"
       ],
       "access": "public",
       "informative": false
@@ -11081,20 +11233,6 @@
       "localLinkingText": [],
       "type": "enum",
       "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuerrorfilter-none",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuerrorfilter-none",
-      "linkingText": [
-        "\"none\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUErrorFilter"
-      ],
       "access": "public",
       "informative": false
     },
