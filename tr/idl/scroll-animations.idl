@@ -12,11 +12,14 @@ enum ScrollDirection {
 
 enum ScrollTimelineAutoKeyword { "auto" };
 
+typedef (CSSNumericValue or CSSKeywordish) ContainerBasedOffset;
+typedef (ContainerBasedOffset or ElementBasedOffset) ScrollTimelineOffset;
+
 dictionary ScrollTimelineOptions {
   Element? source = null;
   ScrollDirection orientation = "block";
-  (DOMString or ElementBasedOffset) start = "auto";
-  (DOMString or ElementBasedOffset) end = "auto";
+  ScrollTimelineOffset start = "auto";
+  ScrollTimelineOffset end = "auto";
   (double or ScrollTimelineAutoKeyword) timeRange = "auto";
 };
 
@@ -25,8 +28,8 @@ interface ScrollTimeline : AnimationTimeline {
   constructor(optional ScrollTimelineOptions options = {});
   readonly attribute Element? source;
   readonly attribute ScrollDirection orientation;
-  readonly attribute (DOMString or ElementBasedOffset) start;
-  readonly attribute (DOMString or ElementBasedOffset) end;
+  readonly attribute ScrollTimelineOffset start;
+  readonly attribute ScrollTimelineOffset end;
   readonly attribute (double or ScrollTimelineAutoKeyword) timeRange;
 };
 

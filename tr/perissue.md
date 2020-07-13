@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% July 06, 2020
+% July 13, 2020
 
 329 specifications were crawled in this report.
 
@@ -92,6 +92,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 
 - `AlgorithmIdentifier` used in [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
 - `CSS` used in [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/), [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/), [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4/), [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/), [CSS Parser API](https://wicg.github.io/css-parser-api/), [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/), [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
+- `CSSKeywordish` used in [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - `CSSOMString` used in [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/), [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/), [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/), [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/), [CSS Transitions](https://www.w3.org/TR/css-transitions-1/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - `CSSRule` used in [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/), [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1/), [CSS Fonts Module Level 3](https://www.w3.org/TR/css-fonts-3/), [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/), [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - `CSSRuleList` used in [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/)
@@ -112,7 +113,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/), [Touch Events](https://www.w3.org/TR/touch-events/)
 - `XRLayer` used in [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
-=> 21 WebIDL names found
+=> 22 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -499,11 +500,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/2011/REC-css3-color-20110607`](https://www.w3.org/TR/2011/REC-css3-color-20110607) but does not list it in its references
     * [`https://www.w3.org/TR/2002/WD-css3-linebox-20020515`](https://www.w3.org/TR/2002/WD-css3-linebox-20020515) but does not list it in its references
     * [`https://www.w3.org/TR/2012/NOTE-jlreq-20120403/`](https://www.w3.org/TR/2012/NOTE-jlreq-20120403/) but does not list it in its references
-- [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3/) links to:
-    * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/) but does not list it in its references
-    * [`https://www.w3.org/TR/css4-images/`](https://www.w3.org/TR/css4-images/) but does not list it in its references
-    * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/css-logical-1/) links to:
     * [`https://www.w3.org/TR/css-writing-modes/`](https://www.w3.org/TR/css-writing-modes/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
@@ -1063,7 +1059,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/webxr-gamepads-module-1/) links to [`https://www.w3.org/TR/webxr/`](https://www.w3.org/TR/webxr/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 748 missing references for links found in 180 specifications
+=> 744 missing references for links found in 179 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -1192,7 +1188,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -1488,6 +1483,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/) links to [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/webxr-gamepads-module-1/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 335 inconsistent references for links found in 172 specifications
+=> 334 inconsistent references for links found in 171 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.

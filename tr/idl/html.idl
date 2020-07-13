@@ -440,6 +440,7 @@ interface HTMLIFrameElement : HTMLElement {
   [CEReactions] attribute DOMString width;
   [CEReactions] attribute DOMString height;
   [CEReactions] attribute DOMString referrerPolicy;
+  [CEReactions] attribute DOMString loading;
   readonly attribute Document? contentDocument;
   readonly attribute WindowProxy? contentWindow;
   Document? getSVGDocument();
@@ -1971,6 +1972,7 @@ typedef (DOMString or Function) TimerHandler;
 interface mixin WindowOrWorkerGlobalScope {
   [Replaceable] readonly attribute USVString origin;
   readonly attribute boolean isSecureContext;
+  readonly attribute boolean crossOriginIsolated;
 
   // base64 utility methods
   DOMString btoa(DOMString data);

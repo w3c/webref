@@ -51,7 +51,8 @@ dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {
 enum GPUExtensionName {
     "texture-compression-bc",
     "pipeline-statistics-query",
-    "timestamp-query"
+    "timestamp-query",
+    "depth-clamping"
 };
 
 dictionary GPULimits {
@@ -85,6 +86,8 @@ interface GPUDevice : EventTarget {
     GPUShaderModule createShaderModule(GPUShaderModuleDescriptor descriptor);
     GPUComputePipeline createComputePipeline(GPUComputePipelineDescriptor descriptor);
     GPURenderPipeline createRenderPipeline(GPURenderPipelineDescriptor descriptor);
+    Promise<GPUComputePipeline> createReadyComputePipeline(GPUComputePipelineDescriptor descriptor);
+    Promise<GPURenderPipeline> createReadyRenderPipeline(GPURenderPipelineDescriptor descriptor);
 
     GPUCommandEncoder createCommandEncoder(optional GPUCommandEncoderDescriptor descriptor = {});
     GPURenderBundleEncoder createRenderBundleEncoder(GPURenderBundleEncoderDescriptor descriptor);
@@ -280,6 +283,7 @@ dictionary GPUSamplerDescriptor : GPUObjectDescriptorBase {
     float lodMinClamp = 0;
     float lodMaxClamp = 0xffffffff; // TODO: What should this be? Was Number.MAX_VALUE.
     GPUCompareFunction compare;
+    unsigned short maxAnisotropy = 1;
 };
 
 enum GPUAddressMode {
@@ -469,6 +473,8 @@ enum GPUPrimitiveTopology {
 dictionary GPURasterizationStateDescriptor {
     GPUFrontFace frontFace = "ccw";
     GPUCullMode cullMode = "none";
+    // Enable depth clamping (requires "depth-clamping" extension)
+    boolean clampDepth = false;
 
     GPUDepthBias depthBias = 0;
     float depthBiasSlopeScale = 0;
@@ -917,7 +923,6 @@ partial interface GPUDevice {
 };
 
 enum GPUErrorFilter {
-    "none",
     "out-of-memory",
     "validation"
 };
