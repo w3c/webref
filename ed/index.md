@@ -2036,7 +2036,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Crawled URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
-- Crawled version: 8 July 2020
+- Crawled version: 14 July 2020
 - Editor's Draft: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
 - Latest published version: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Shortname: css-color-5
@@ -6059,7 +6059,6 @@ Normative references to this spec from:
 - [Push API](https://w3c.github.io/push-api/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
@@ -7466,7 +7465,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/input-device-capabilities/](https://wicg.github.io/input-device-capabilities/)
 - Crawled URL: [https://wicg.github.io/input-device-capabilities/](https://wicg.github.io/input-device-capabilities/)
-- Crawled version: 03 June 2020
+- Crawled version: 15 July 2020
 - Editor's Draft: [https://wicg.github.io/input-device-capabilities/](https://wicg.github.io/input-device-capabilities/)
 - Shortname: input-device-capabilities
 
@@ -8303,7 +8302,6 @@ Normative references to this spec from:
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Preload](https://w3c.github.io/preload/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -8311,6 +8309,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 
@@ -11001,7 +11000,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled URL: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
-- Crawled version: 14 July 2020
+- Crawled version: 15 July 2020
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Shortname: appmanifest
