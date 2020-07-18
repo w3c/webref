@@ -1,4 +1,4 @@
-% Diff between report from "July 17, 2020" and reference report from "July 17, 2020"
+% Diff between report from "July 18, 2020" and reference report from "July 17, 2020"
 % Reffy
-% July 17, 2020
+% July 18, 2020
 
