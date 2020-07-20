@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Feature Policy",
+    "title": "Permissions Policy",
     "url": "https://www.w3.org/TR/feature-policy-1/"
   },
   "dfns": [
@@ -29,10 +29,10 @@
       "informative": false
     },
     {
-      "id": "feature-policy",
-      "href": "https://www.w3.org/TR/feature-policy-1/#feature-policy",
+      "id": "permissions-policy",
+      "href": "https://www.w3.org/TR/feature-policy-1/#permissions-policy",
       "linkingText": [
-        "feature policy"
+        "permissions policy"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -41,10 +41,10 @@
       "informative": false
     },
     {
-      "id": "empty-feature-policy",
-      "href": "https://www.w3.org/TR/feature-policy-1/#empty-feature-policy",
+      "id": "empty-permissions-policy",
+      "href": "https://www.w3.org/TR/feature-policy-1/#empty-permissions-policy",
       "linkingText": [
-        "empty feature policy"
+        "empty permissions policy"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -82,7 +82,7 @@
       "href": "https://www.w3.org/TR/feature-policy-1/#declared-policy",
       "linkingText": [
         "declared policy",
-        "declared feature policy"
+        "declared permissions policy"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -178,10 +178,10 @@
       "informative": false
     },
     {
-      "id": "serialized-feature-policy",
-      "href": "https://www.w3.org/TR/feature-policy-1/#serialized-feature-policy",
+      "id": "serialized-permissions-policy",
+      "href": "https://www.w3.org/TR/feature-policy-1/#serialized-permissions-policy",
       "linkingText": [
-        "serialized-feature-policy"
+        "serialized-permissions-policy"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -250,10 +250,10 @@
       "informative": false
     },
     {
-      "id": "feature-policy-header",
-      "href": "https://www.w3.org/TR/feature-policy-1/#feature-policy-header",
+      "id": "permissions-policy-header",
+      "href": "https://www.w3.org/TR/feature-policy-1/#permissions-policy-header",
       "linkingText": [
-        "Feature-Policy"
+        "Permissions-Policy"
       ],
       "localLinkingText": [],
       "type": "http-header",
@@ -262,10 +262,10 @@
       "informative": false
     },
     {
-      "id": "featurepolicy",
-      "href": "https://www.w3.org/TR/feature-policy-1/#featurepolicy",
+      "id": "permissionspolicy",
+      "href": "https://www.w3.org/TR/feature-policy-1/#permissionspolicy",
       "linkingText": [
-        "FeaturePolicy"
+        "PermissionsPolicy"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -274,8 +274,8 @@
       "informative": false
     },
     {
-      "id": "dom-featurepolicy-allowsfeature",
-      "href": "https://www.w3.org/TR/feature-policy-1/#dom-featurepolicy-allowsfeature",
+      "id": "dom-permissionspolicy-allowsfeature",
+      "href": "https://www.w3.org/TR/feature-policy-1/#dom-permissionspolicy-allowsfeature",
       "linkingText": [
         "allowsFeature(feature, origin)",
         "allowsFeature(feature)"
@@ -283,102 +283,102 @@
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "FeaturePolicy"
+        "PermissionsPolicy"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-featurepolicy-allowsfeature-feature-origin-feature",
-      "href": "https://www.w3.org/TR/feature-policy-1/#dom-featurepolicy-allowsfeature-feature-origin-feature",
+      "id": "dom-permissionspolicy-allowsfeature-feature-origin-feature",
+      "href": "https://www.w3.org/TR/feature-policy-1/#dom-permissionspolicy-allowsfeature-feature-origin-feature",
       "linkingText": [
         "feature"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "FeaturePolicy/allowsFeature(feature, origin)",
-        "FeaturePolicy/allowsFeature(feature)"
+        "PermissionsPolicy/allowsFeature(feature, origin)",
+        "PermissionsPolicy/allowsFeature(feature)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-featurepolicy-allowsfeature-feature-origin-origin",
-      "href": "https://www.w3.org/TR/feature-policy-1/#dom-featurepolicy-allowsfeature-feature-origin-origin",
+      "id": "dom-permissionspolicy-allowsfeature-feature-origin-origin",
+      "href": "https://www.w3.org/TR/feature-policy-1/#dom-permissionspolicy-allowsfeature-feature-origin-origin",
       "linkingText": [
         "origin"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "FeaturePolicy/allowsFeature(feature, origin)",
-        "FeaturePolicy/allowsFeature(feature)"
+        "PermissionsPolicy/allowsFeature(feature, origin)",
+        "PermissionsPolicy/allowsFeature(feature)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-featurepolicy-features",
-      "href": "https://www.w3.org/TR/feature-policy-1/#dom-featurepolicy-features",
+      "id": "dom-permissionspolicy-features",
+      "href": "https://www.w3.org/TR/feature-policy-1/#dom-permissionspolicy-features",
       "linkingText": [
         "features()"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "FeaturePolicy"
+        "PermissionsPolicy"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-featurepolicy-allowedfeatures",
-      "href": "https://www.w3.org/TR/feature-policy-1/#dom-featurepolicy-allowedfeatures",
+      "id": "dom-permissionspolicy-allowedfeatures",
+      "href": "https://www.w3.org/TR/feature-policy-1/#dom-permissionspolicy-allowedfeatures",
       "linkingText": [
         "allowedFeatures()"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "FeaturePolicy"
+        "PermissionsPolicy"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-featurepolicy-getallowlistforfeature",
-      "href": "https://www.w3.org/TR/feature-policy-1/#dom-featurepolicy-getallowlistforfeature",
+      "id": "dom-permissionspolicy-getallowlistforfeature",
+      "href": "https://www.w3.org/TR/feature-policy-1/#dom-permissionspolicy-getallowlistforfeature",
       "linkingText": [
         "getAllowlistForFeature(feature)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "FeaturePolicy"
+        "PermissionsPolicy"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-featurepolicy-getallowlistforfeature-feature-feature",
-      "href": "https://www.w3.org/TR/feature-policy-1/#dom-featurepolicy-getallowlistforfeature-feature-feature",
+      "id": "dom-permissionspolicy-getallowlistforfeature-feature-feature",
+      "href": "https://www.w3.org/TR/feature-policy-1/#dom-permissionspolicy-getallowlistforfeature-feature-feature",
       "linkingText": [
         "feature"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "FeaturePolicy/getAllowlistForFeature(feature)"
+        "PermissionsPolicy/getAllowlistForFeature(feature)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-document-featurepolicy",
-      "href": "https://www.w3.org/TR/feature-policy-1/#dom-document-featurepolicy",
+      "id": "dom-document-permissionspolicy",
+      "href": "https://www.w3.org/TR/feature-policy-1/#dom-document-permissionspolicy",
       "linkingText": [
-        "featurePolicy"
+        "permissionsPolicy"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -389,10 +389,10 @@
       "informative": false
     },
     {
-      "id": "dom-htmliframeelement-featurepolicy",
-      "href": "https://www.w3.org/TR/feature-policy-1/#dom-htmliframeelement-featurepolicy",
+      "id": "dom-htmliframeelement-permissionspolicy",
+      "href": "https://www.w3.org/TR/feature-policy-1/#dom-htmliframeelement-permissionspolicy",
       "linkingText": [
-        "featurePolicy"
+        "permissionsPolicy"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -479,10 +479,10 @@
       "informative": false
     },
     {
-      "id": "feature-policy-violation-reports",
-      "href": "https://www.w3.org/TR/feature-policy-1/#feature-policy-violation-reports",
+      "id": "permissions-policy-violation-reports",
+      "href": "https://www.w3.org/TR/feature-policy-1/#permissions-policy-violation-reports",
       "linkingText": [
-        "Feature policy violation reports"
+        "Permissions policy violation reports"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -505,10 +505,10 @@
       "informative": false
     },
     {
-      "id": "featurepolicyviolationreportbody",
-      "href": "https://www.w3.org/TR/feature-policy-1/#featurepolicyviolationreportbody",
+      "id": "permissionspolicyviolationreportbody",
+      "href": "https://www.w3.org/TR/feature-policy-1/#permissionspolicyviolationreportbody",
       "linkingText": [
-        "FeaturePolicyViolationReportBody"
+        "PermissionsPolicyViolationReportBody"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -517,143 +517,275 @@
       "informative": false
     },
     {
-      "id": "dom-featurepolicyviolationreportbody-featureid",
-      "href": "https://www.w3.org/TR/feature-policy-1/#dom-featurepolicyviolationreportbody-featureid",
+      "id": "dom-permissionspolicyviolationreportbody-featureid",
+      "href": "https://www.w3.org/TR/feature-policy-1/#dom-permissionspolicyviolationreportbody-featureid",
       "linkingText": [
         "featureId"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "FeaturePolicyViolationReportBody"
+        "PermissionsPolicyViolationReportBody"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-featurepolicyviolationreportbody-sourcefile",
-      "href": "https://www.w3.org/TR/feature-policy-1/#dom-featurepolicyviolationreportbody-sourcefile",
+      "id": "dom-permissionspolicyviolationreportbody-sourcefile",
+      "href": "https://www.w3.org/TR/feature-policy-1/#dom-permissionspolicyviolationreportbody-sourcefile",
       "linkingText": [
         "sourceFile"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "FeaturePolicyViolationReportBody"
+        "PermissionsPolicyViolationReportBody"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-featurepolicyviolationreportbody-linenumber",
-      "href": "https://www.w3.org/TR/feature-policy-1/#dom-featurepolicyviolationreportbody-linenumber",
+      "id": "dom-permissionspolicyviolationreportbody-linenumber",
+      "href": "https://www.w3.org/TR/feature-policy-1/#dom-permissionspolicyviolationreportbody-linenumber",
       "linkingText": [
         "lineNumber"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "FeaturePolicyViolationReportBody"
+        "PermissionsPolicyViolationReportBody"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-featurepolicyviolationreportbody-columnnumber",
-      "href": "https://www.w3.org/TR/feature-policy-1/#dom-featurepolicyviolationreportbody-columnnumber",
+      "id": "dom-permissionspolicyviolationreportbody-columnnumber",
+      "href": "https://www.w3.org/TR/feature-policy-1/#dom-permissionspolicyviolationreportbody-columnnumber",
       "linkingText": [
         "columnNumber"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "FeaturePolicyViolationReportBody"
+        "PermissionsPolicyViolationReportBody"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-featurepolicyviolationreportbody-disposition",
-      "href": "https://www.w3.org/TR/feature-policy-1/#dom-featurepolicyviolationreportbody-disposition",
+      "id": "dom-permissionspolicyviolationreportbody-disposition",
+      "href": "https://www.w3.org/TR/feature-policy-1/#dom-permissionspolicyviolationreportbody-disposition",
       "linkingText": [
         "disposition"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "FeaturePolicyViolationReportBody"
+        "PermissionsPolicyViolationReportBody"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "featurepolicyviolationreportbody-featureid",
-      "href": "https://www.w3.org/TR/feature-policy-1/#featurepolicyviolationreportbody-featureid",
+      "id": "permissionspolicyviolationreportbody-featureid",
+      "href": "https://www.w3.org/TR/feature-policy-1/#permissionspolicyviolationreportbody-featureid",
       "linkingText": [
         "featureId"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "FeaturePolicyViolationReportBody"
+        "PermissionsPolicyViolationReportBody"
       ],
       "access": "private",
       "informative": false
     },
     {
-      "id": "featurepolicyviolationreportbody-sourcefile",
-      "href": "https://www.w3.org/TR/feature-policy-1/#featurepolicyviolationreportbody-sourcefile",
+      "id": "permissionspolicyviolationreportbody-sourcefile",
+      "href": "https://www.w3.org/TR/feature-policy-1/#permissionspolicyviolationreportbody-sourcefile",
       "linkingText": [
         "sourceFile"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "FeaturePolicyViolationReportBody"
+        "PermissionsPolicyViolationReportBody"
       ],
       "access": "private",
       "informative": false
     },
     {
-      "id": "featurepolicyviolationreportbody-linenumber",
-      "href": "https://www.w3.org/TR/feature-policy-1/#featurepolicyviolationreportbody-linenumber",
+      "id": "permissionspolicyviolationreportbody-linenumber",
+      "href": "https://www.w3.org/TR/feature-policy-1/#permissionspolicyviolationreportbody-linenumber",
       "linkingText": [
         "lineNumber"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "FeaturePolicyViolationReportBody"
+        "PermissionsPolicyViolationReportBody"
       ],
       "access": "private",
       "informative": false
     },
     {
-      "id": "featurepolicyviolationreportbody-columnnumber",
-      "href": "https://www.w3.org/TR/feature-policy-1/#featurepolicyviolationreportbody-columnnumber",
+      "id": "permissionspolicyviolationreportbody-columnnumber",
+      "href": "https://www.w3.org/TR/feature-policy-1/#permissionspolicyviolationreportbody-columnnumber",
       "linkingText": [
         "columnNumber"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "FeaturePolicyViolationReportBody"
+        "PermissionsPolicyViolationReportBody"
       ],
       "access": "private",
       "informative": false
     },
     {
-      "id": "featurepolicyviolationreportbody-disposition",
-      "href": "https://www.w3.org/TR/feature-policy-1/#featurepolicyviolationreportbody-disposition",
+      "id": "permissionspolicyviolationreportbody-disposition",
+      "href": "https://www.w3.org/TR/feature-policy-1/#permissionspolicyviolationreportbody-disposition",
       "linkingText": [
         "disposition"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "FeaturePolicyViolationReportBody"
+        "PermissionsPolicyViolationReportBody"
       ],
       "access": "private",
+      "informative": false
+    },
+    {
+      "id": "process-response-policy",
+      "href": "https://www.w3.org/TR/feature-policy-1/#process-response-policy",
+      "linkingText": [
+        "Process response policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "construct-policy-from-dictionary-and-origin",
+      "href": "https://www.w3.org/TR/feature-policy-1/#construct-policy-from-dictionary-and-origin",
+      "linkingText": [
+        "Construct policy from dictionary and origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parse-policy-directive",
+      "href": "https://www.w3.org/TR/feature-policy-1/#parse-policy-directive",
+      "linkingText": [
+        "Parse policy directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "process-permissions-policy-attributes",
+      "href": "https://www.w3.org/TR/feature-policy-1/#process-permissions-policy-attributes",
+      "linkingText": [
+        "Process permissions policy attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "create-for-browsingcontext",
+      "href": "https://www.w3.org/TR/feature-policy-1/#create-for-browsingcontext",
+      "linkingText": [
+        "Create a Permissions Policy for a browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "create-from-response",
+      "href": "https://www.w3.org/TR/feature-policy-1/#create-from-response",
+      "linkingText": [
+        "Create a Permissions Policy for a browsing context from response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "define-inherited-policy",
+      "href": "https://www.w3.org/TR/feature-policy-1/#define-inherited-policy",
+      "linkingText": [
+        "Define an inherited policy for feature in browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "define-inherited-policy-in-container",
+      "href": "https://www.w3.org/TR/feature-policy-1/#define-inherited-policy-in-container",
+      "linkingText": [
+        "Define an inherited policy for feature in container at origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "is-feature-enabled",
+      "href": "https://www.w3.org/TR/feature-policy-1/#is-feature-enabled",
+      "linkingText": [
+        "Is feature enabled in document for origin?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "report-permissions-policy-violation",
+      "href": "https://www.w3.org/TR/feature-policy-1/#report-permissions-policy-violation",
+      "linkingText": [
+        "Generate report for violation of permissions policy on settings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "should-request-be-allowed-to-use-feature",
+      "href": "https://www.w3.org/TR/feature-policy-1/#should-request-be-allowed-to-use-feature",
+      "linkingText": [
+        "Should request be allowed to use feature?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
       "informative": false
     }
   ]
