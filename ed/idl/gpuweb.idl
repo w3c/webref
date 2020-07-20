@@ -539,17 +539,6 @@ enum GPUBlendOperation {
     "max"
 };
 
-enum GPUStencilOperation {
-    "keep",
-    "zero",
-    "replace",
-    "invert",
-    "increment-clamp",
-    "decrement-clamp",
-    "increment-wrap",
-    "decrement-wrap"
-};
-
 dictionary GPUDepthStencilStateDescriptor {
     required GPUTextureFormat format;
 
@@ -568,6 +557,17 @@ dictionary GPUStencilStateFaceDescriptor {
     GPUStencilOperation failOp = "keep";
     GPUStencilOperation depthFailOp = "keep";
     GPUStencilOperation passOp = "keep";
+};
+
+enum GPUStencilOperation {
+    "keep",
+    "zero",
+    "replace",
+    "invert",
+    "increment-clamp",
+    "decrement-clamp",
+    "increment-wrap",
+    "decrement-wrap"
 };
 
 enum GPUIndexFormat {
