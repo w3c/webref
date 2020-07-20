@@ -692,7 +692,7 @@ Normative references to this spec from:
 - [Mixed Content](https://w3c.github.io/webappsec-mixed-content/)
 - [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
-- [Permissions Policy](https://w3c.github.io/webappsec-feature-policy/)
+- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Portals](https://wicg.github.io/portals/)
 - [Resource Hints](https://w3c.github.io/resource-hints/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
@@ -5893,7 +5893,7 @@ Normative references to this spec from:
 - [Payment Request API](https://w3c.github.io/payment-request/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
-- [Permissions Policy](https://w3c.github.io/webappsec-feature-policy/)
+- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
@@ -6111,7 +6111,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
 - Crawled URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
-- Crawled version: 9 June 2020
+- Crawled version: 20 July 2020
 - Editor's Draft: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
 - Shortname: event-timing
 
@@ -6214,7 +6214,7 @@ Normative references to this spec from:
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Payment Method Identifiers](https://w3c.github.io/payment-method-id/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
-- [Permissions Policy](https://w3c.github.io/webappsec-feature-policy/)
+- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Portals](https://wicg.github.io/portals/)
 - [Preload](https://w3c.github.io/preload/)
 - [Priority Hints](https://wicg.github.io/priority-hints/)
@@ -6451,7 +6451,7 @@ Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
-- [Permissions Policy](https://w3c.github.io/webappsec-feature-policy/)
+- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
@@ -7017,7 +7017,7 @@ Normative references to this spec from:
 - [Payment Request API](https://w3c.github.io/payment-request/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
-- [Permissions Policy](https://w3c.github.io/webappsec-feature-policy/)
+- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
@@ -7128,7 +7128,7 @@ Informative references to this spec from:
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
-- [Permissions Policy](https://w3c.github.io/webappsec-feature-policy/)
+- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Selectors Level 3](https://drafts.csswg.org/selectors-3/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
@@ -7417,7 +7417,7 @@ Normative references to this spec from:
 - [Payment Request API](https://w3c.github.io/payment-request/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
-- [Permissions Policy](https://w3c.github.io/webappsec-feature-policy/)
+- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Portals](https://wicg.github.io/portals/)
 - [Private Click Measurement](https://privacycg.github.io/private-click-measurement/)
 - [Proximity Sensor](https://w3c.github.io/proximity/)
@@ -7825,7 +7825,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
 - Crawled URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
-- Crawled version: 06 July 2020
+- Crawled version: 20 July 2020
 - Editor's Draft: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
 - Shortname: mathml-core
 
@@ -8044,7 +8044,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/mediaqueries-4/](https://www.w3.org/TR/mediaqueries-4/)
 - Crawled URL: [https://drafts.csswg.org/mediaqueries-4/](https://drafts.csswg.org/mediaqueries-4/)
-- Crawled version: 15 July 2020
+- Crawled version: 20 July 2020
 - Editor's Draft: [https://drafts.csswg.org/mediaqueries-4/](https://drafts.csswg.org/mediaqueries-4/)
 - Latest published version: [https://www.w3.org/TR/mediaqueries-4/](https://www.w3.org/TR/mediaqueries-4/)
 - Shortname: mediaqueries-4
@@ -8397,7 +8397,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Crawled URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
-- Crawled version: 17 July 2020
+- Crawled version: 20 July 2020
 - Editor's Draft: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Shortname: native-file-system
 
@@ -8874,7 +8874,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
 - [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
-- [Permissions Policy](https://w3c.github.io/webappsec-feature-policy/)
+- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 
 Informative references to this spec from:
 
@@ -8982,7 +8982,7 @@ No informative reference to this spec from other specs.
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/feature-policy-1/](https://www.w3.org/TR/feature-policy-1/)
-- Crawled URL: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
+- Crawled URL: [https://w3c.github.io/webappsec-permissions-policy/](https://w3c.github.io/webappsec-permissions-policy/)
 - Crawled version: 17 July 2020
 - Editor's Draft: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
 - Latest published version: [https://www.w3.org/TR/feature-policy-1/](https://www.w3.org/TR/feature-policy-1/)
@@ -9436,7 +9436,7 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Intervention Reporting](https://wicg.github.io/intervention-reporting/)
 - [Network Error Logging](https://w3c.github.io/network-error-logging/)
-- [Permissions Policy](https://w3c.github.io/webappsec-feature-policy/)
+- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 
 No informative reference to this spec from other specs.
 
@@ -9461,6 +9461,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Native File System](https://wicg.github.io/native-file-system/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [WebUSB API](https://wicg.github.io/webusb/)
@@ -10785,7 +10786,7 @@ Normative references to this spec from:
 - [Payment Method Identifiers](https://w3c.github.io/payment-method-id/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
-- [Permissions Policy](https://w3c.github.io/webappsec-feature-policy/)
+- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Portals](https://wicg.github.io/portals/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Private Click Measurement](https://privacycg.github.io/private-click-measurement/)
@@ -11040,7 +11041,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Crawled URL: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
-- Crawled version: 15 July 2020
+- Crawled version: 20 July 2020
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Shortname: webaudio
@@ -11322,7 +11323,7 @@ Normative references to this spec from:
 - [Payment Request API](https://w3c.github.io/payment-request/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
-- [Permissions Policy](https://w3c.github.io/webappsec-feature-policy/)
+- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
@@ -11795,7 +11796,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 15 July 2020
+- Crawled version: 20 July 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -11946,7 +11947,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 19 July 2020
+- Crawled version: 20 July 2020
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
@@ -12220,7 +12221,7 @@ Normative references to this spec from:
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [Permissions Policy](https://w3c.github.io/webappsec-feature-policy/)
+- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 Informative references to this spec from:
