@@ -1,20 +1,37 @@
-% Diff between report from "July 13, 2020" and reference report from "July 06, 2020"
+% Diff between report from "July 20, 2020" and reference report from "July 13, 2020"
 % Reffy
-% July 13, 2020
+% July 20, 2020
 
-## CSS Lists Module Level 3
+## Fullscreen API Standard
 
-- Initial URL: [https://www.w3.org/TR/css-lists-3/](https://www.w3.org/TR/css-lists-3/)
+- Initial URL: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-lists-3/](https://drafts.csswg.org/css-lists-3/)
+- Editor's Draft: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
+- Inconsistent references for links: *INS* https://www.w3.org/TR/feature-policy-1/
+
+
+## HTML Standard
+
+- Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
+- Inconsistent references for links: *INS* https://w3c.github.io/manifest/
+
+
+## Permissions Policy
+
+- Initial URL: [https://www.w3.org/TR/feature-policy-1/](https://www.w3.org/TR/feature-policy-1/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
+- Spec title: *INS* Permissions Policy / *DEL* Feature Policy
+- Missing references for links: *INS* https://www.w3.org/TR/permissions-policy-1/
+
+
+## Web App Manifest
+
+- Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Spec is OK: *INS* true / *DEL* false
-
-
-## Scroll-linked Animations
-
-- Initial URL: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
-- Unknown WebIDL names used: *INS* CSSKeywordish
 
 
