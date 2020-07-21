@@ -417,7 +417,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/clipboard-apis/](https://www.w3.org/TR/clipboard-apis/)
 - Crawled URL: [https://w3c.github.io/clipboard-apis/](https://w3c.github.io/clipboard-apis/)
-- Crawled version: 18 June 2020
+- Crawled version: 21 July 2020
 - Editor's Draft: [https://w3c.github.io/clipboard-apis/](https://w3c.github.io/clipboard-apis/)
 - Latest published version: [https://www.w3.org/TR/clipboard-apis/](https://www.w3.org/TR/clipboard-apis/)
 - Shortname: clipboard-apis
@@ -4533,12 +4533,12 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
+     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/)
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
-     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/), related reference "FEATURE-POLICY" uses URL [`https://www.w3.org/TR/feature-policy-1/`](https://www.w3.org/TR/feature-policy-1/)
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -6428,7 +6428,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Fullscreen API Standard {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Fullscreen API Standard {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -6442,8 +6442,7 @@ No informative reference to this spec from other specs.
 
 - Missing references for links: 
      * [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/feature-policy-1/`](https://www.w3.org/TR/feature-policy-1/), related reference "FEATURE-POLICY-1" uses URL [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/)
+     * [`https://www.w3.org/TR/feature-policy-1/`](https://www.w3.org/TR/feature-policy-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8938,10 +8937,10 @@ Informative references to this spec from:
     * `PermissionState` also defined in [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - Missing references for links: 
      * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/)
+     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/)
      * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/)
      * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/)
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/), related reference "FEATURE-POLICY-1" uses URL [`https://www.w3.org/TR/feature-policy-1/`](https://www.w3.org/TR/feature-policy-1/)
      * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
 
@@ -8982,12 +8981,12 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Initial URL: [https://www.w3.org/TR/feature-policy-1/](https://www.w3.org/TR/feature-policy-1/)
+- Initial URL: [https://www.w3.org/TR/permissions-policy-1/](https://www.w3.org/TR/permissions-policy-1/)
 - Crawled URL: [https://w3c.github.io/webappsec-permissions-policy/](https://w3c.github.io/webappsec-permissions-policy/)
 - Crawled version: 17 July 2020
 - Editor's Draft: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
-- Latest published version: [https://www.w3.org/TR/feature-policy-1/](https://www.w3.org/TR/feature-policy-1/)
-- Shortname: feature-policy-1
+- Latest published version: [https://www.w3.org/TR/permissions-policy-1/](https://www.w3.org/TR/permissions-policy-1/)
+- Shortname: permissions-policy-1
 
 ### Potential issue(s) {.anomalies}
 
@@ -9000,31 +8999,17 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-- [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
-- [Permissions](https://w3c.github.io/permissions/)
-- [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
-- [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
-- [Web MIDI API](https://webaudio.github.io/web-midi-api/)
-- [Web Share API](https://w3c.github.io/web-share/)
-- [WebHID API](https://wicg.github.io/webhid/)
-- [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
 
-## Picture-in-Picture {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## Picture-in-Picture {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -9037,8 +9022,9 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Missing references for links: 
+     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/)
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/), related reference "FEATURE-POLICY-1" uses URL [`https://www.w3.org/TR/feature-policy-1/`](https://www.w3.org/TR/feature-policy-1/)
      * [`https://w3c.github.io/remote-playback/`](https://w3c.github.io/remote-playback/), related reference "Remote-Playback" uses URL [`https://www.w3.org/TR/remote-playback/`](https://www.w3.org/TR/remote-playback/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -12059,11 +12045,11 @@ Informative references to this spec from:
 - Missing references for links: 
      * [`https://w3c.github.io/orientation-sensor/`](https://w3c.github.io/orientation-sensor/)
      * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/)
+     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
      * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
      * [`https://w3c.github.io/requestidlecallback/`](https://w3c.github.io/requestidlecallback/), related reference "REQUESTIDLECALLBACK" uses URL [`https://www.w3.org/TR/requestidlecallback/`](https://www.w3.org/TR/requestidlecallback/)
-     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/), related reference "FEATURE-POLICY-1" uses URL [`https://www.w3.org/TR/feature-policy-1/`](https://www.w3.org/TR/feature-policy-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
