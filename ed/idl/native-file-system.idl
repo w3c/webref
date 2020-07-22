@@ -91,7 +91,7 @@ interface FileSystemWritableFileStream : WritableStream {
 
 dictionary FilePickerAcceptType {
     USVString description;
-    record<USVString, sequence<USVString>> accept;
+    record<USVString, (USVString or sequence<USVString>)> accept;
 };
 
 dictionary FilePickerOptions {
