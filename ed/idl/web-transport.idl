@@ -37,7 +37,7 @@ enum WebTransportState {
 };
 
 dictionary WebTransportCloseInfo {
-  unsigned short errorCode = 0;
+  unsigned long long errorCode = 0;
   DOMString reason = "";
 };
 
@@ -76,7 +76,7 @@ interface mixin OutgoingStream {
 };
 
 dictionary StreamAbortInfo {
-  unsigned short errorCode = 0;
+  unsigned long long errorCode = 0;
 };
 
 [ Exposed=(Window,Worker) ]
