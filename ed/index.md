@@ -8983,7 +8983,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/permissions-policy-1/](https://www.w3.org/TR/permissions-policy-1/)
 - Crawled URL: [https://w3c.github.io/webappsec-permissions-policy/](https://w3c.github.io/webappsec-permissions-policy/)
-- Crawled version: 17 July 2020
+- Crawled version: 22 July 2020
 - Editor's Draft: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
 - Latest published version: [https://www.w3.org/TR/permissions-policy-1/](https://www.w3.org/TR/permissions-policy-1/)
 - Shortname: permissions-policy-1
@@ -12151,7 +12151,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Crawled URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Crawled version: 9 July 2020
+- Crawled version: 22 July 2020
 - Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Shortname: layers
 
