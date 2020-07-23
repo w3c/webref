@@ -2,11 +2,11 @@
 % Reffy
 % July 23, 2020
 
-## Permissions
+## MediaStream Image Capture
 
-- Initial URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
+- Initial URL: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
-- Inconsistent references for links: *INS* https://w3c.github.io/webappsec-feature-policy/
+- Editor's Draft: [https://w3c.github.io/mediacapture-image/](https://w3c.github.io/mediacapture-image/)
+- Missing references for links: *INS* https://www.w3.org/TR/page-visibility/
 
 
