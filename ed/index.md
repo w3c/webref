@@ -8925,7 +8925,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Crawled URL: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
-- Crawled version: 20 July 2020
+- Crawled version: 22 July 2020
 - Editor's Draft: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
 - Latest published version: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Shortname: permissions
@@ -8937,10 +8937,10 @@ Informative references to this spec from:
     * `PermissionState` also defined in [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - Missing references for links: 
      * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/)
-     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/)
      * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/)
      * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/)
 - Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/), related reference "PERMISSIONS-POLICY-1" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
      * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
 
@@ -9009,6 +9009,7 @@ Normative references to this spec from:
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
+- [Permissions](https://w3c.github.io/permissions/)
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 - [Web Share API](https://w3c.github.io/web-share/)
@@ -9779,7 +9780,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
 - Crawled URL: [https://w3c.github.io/screen-wake-lock/](https://w3c.github.io/screen-wake-lock/)
-- Crawled version: 20 April 2020
+- Crawled version: 23 July 2020
 - Editor's Draft: [https://w3c.github.io/screen-wake-lock/](https://w3c.github.io/screen-wake-lock/)
 - Latest published version: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
 - Shortname: wake-lock
