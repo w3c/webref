@@ -2,11 +2,12 @@
 % Reffy
 % July 23, 2020
 
-## MediaStream Image Capture
+## Audio Output Devices API
 
-- Initial URL: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
+- Initial URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/mediacapture-image/](https://w3c.github.io/mediacapture-image/)
-- Missing references for links: *INS* https://www.w3.org/TR/page-visibility/
+- Editor's Draft: [https://w3c.github.io/mediacapture-output/](https://w3c.github.io/mediacapture-output/)
+- Missing references for links: *INS* https://www.w3.org/TR/feature-policy-1/
+- Inconsistent references for links: *DEL* https://html.spec.whatwg.org/
 
 
