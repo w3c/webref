@@ -6559,7 +6559,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Crawled URL: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
-- Crawled version: 25 June 2020
+- Crawled version: 24 July 2020
 - Editor's Draft: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
 - Latest published version: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Shortname: geolocation-API
@@ -8086,7 +8086,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mediaqueries-5/](https://www.w3.org/TR/mediaqueries-5/)
 - Crawled URL: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
-- Crawled version: 15 July 2020
+- Crawled version: 23 July 2020
 - Editor's Draft: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
 - Latest published version: [https://www.w3.org/TR/mediaqueries-5/](https://www.w3.org/TR/mediaqueries-5/)
 - Shortname: mediaqueries-5
@@ -8987,7 +8987,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/permissions-policy-1/](https://www.w3.org/TR/permissions-policy-1/)
 - Crawled URL: [https://w3c.github.io/webappsec-permissions-policy/](https://w3c.github.io/webappsec-permissions-policy/)
-- Crawled version: 22 July 2020
+- Crawled version: 24 July 2020
 - Editor's Draft: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
 - Latest published version: [https://www.w3.org/TR/permissions-policy-1/](https://www.w3.org/TR/permissions-policy-1/)
 - Shortname: permissions-policy-1
@@ -9007,6 +9007,7 @@ Normative references to this spec from:
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
@@ -9017,7 +9018,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 
@@ -11796,7 +11796,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 22 July 2020
+- Crawled version: 24 July 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
