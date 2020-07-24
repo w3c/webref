@@ -837,7 +837,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Device API](https://immersive-web.github.io/webxr/) links to:
     * [`https://w3c.github.io/orientation-sensor/`](https://w3c.github.io/orientation-sensor/) but does not list it in its references
     * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/) but does not list it in its references
-    * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/) but does not list it in its references
+    * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/) but does not list it in its references
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
