@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-07-27T12:37:34.493Z",
+  "date": "2020-07-27T18:38:36.386Z",
   "stats": {
     "crawled": 329,
     "errors": 0,
@@ -599,14 +599,25 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Navigator",
+            "refs": [
+              {
+                "url": "https://html.spec.whatwg.org/multipage/",
+                "title": "HTML Standard",
+                "crawled": "https://html.spec.whatwg.org/multipage/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -16052,11 +16063,6 @@
               "crawled": "https://wicg.github.io/background-fetch/"
             },
             {
-              "url": "https://w3c.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://w3c.github.io/badging/"
-            },
-            {
               "url": "https://www.w3.org/TR/battery-status/",
               "title": "Battery Status API",
               "crawled": "https://w3c.github.io/battery/"
@@ -17059,11 +17065,6 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC",
               "crawled": "https://w3c.github.io/web-nfc/"
-            },
-            {
-              "url": "https://w3c.github.io/web-share-target/",
-              "title": "Web Share Target API",
-              "crawled": "https://w3c.github.io/web-share-target/"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -18788,11 +18789,6 @@
               "crawled": "https://w3c.github.io/longtasks/"
             },
             {
-              "url": "https://w3c.github.io/media-playback-quality/",
-              "title": "Media Playback Quality",
-              "crawled": "https://w3c.github.io/media-playback-quality/"
-            },
-            {
               "url": "https://www.w3.org/TR/mediastream-recording/",
               "title": "MediaStream Recording",
               "crawled": "https://w3c.github.io/mediacapture-record/"
@@ -19127,11 +19123,6 @@
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
-            },
-            {
-              "url": "https://w3c.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://w3c.github.io/badging/"
             },
             {
               "url": "https://www.w3.org/TR/battery-status/",
@@ -20768,11 +20759,6 @@
               "crawled": "https://wicg.github.io/background-fetch/"
             },
             {
-              "url": "https://w3c.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://w3c.github.io/badging/"
-            },
-            {
               "url": "https://www.w3.org/TR/clear-site-data/",
               "title": "Clear Site Data",
               "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
@@ -21288,11 +21274,6 @@
               "crawled": "https://wicg.github.io/web-locks/"
             },
             {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC",
-              "crawled": "https://w3c.github.io/web-nfc/"
-            },
-            {
               "url": "https://wicg.github.io/periodic-background-sync/",
               "title": "Web Periodic Background Synchronization",
               "crawled": "https://wicg.github.io/periodic-background-sync/"
@@ -21382,7 +21363,7 @@
       "crawled": "https://wicg.github.io/input-device-capabilities/",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
@@ -21395,7 +21376,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -21800,7 +21781,7 @@
     {
       "title": "Loading Signed Exchanges",
       "shortname": "webpackage",
-      "date": "20 July 2020",
+      "date": "27 July 2020",
       "url": "https://wicg.github.io/webpackage/loading.html",
       "nightly": {
         "url": "https://wicg.github.io/webpackage/loading.html",
@@ -22069,7 +22050,7 @@
       "crawled": "https://mathml-refresh.github.io/mathml-core/",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
@@ -22088,7 +22069,7 @@
             }
           ]
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -22370,7 +22351,7 @@
     {
       "title": "Media Feeds",
       "shortname": "media-feeds",
-      "date": "21 July 2020",
+      "date": "27 July 2020",
       "url": "https://wicg.github.io/media-feeds/",
       "nightly": {
         "url": "https://wicg.github.io/media-feeds/",
@@ -22409,13 +22390,24 @@
       "crawled": "https://w3c.github.io/media-playback-quality/",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "DOMHighResTimeStamp",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/hr-time-3/",
+                "title": "High Resolution Time",
+                "crawled": "https://w3c.github.io/hr-time/"
+              }
+            ]
+          }
+        ],
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
@@ -22428,7 +22420,7 @@
             }
           ]
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -23168,11 +23160,6 @@
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
-            },
-            {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC",
-              "crawled": "https://w3c.github.io/web-nfc/"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -26839,11 +26826,6 @@
               "crawled": "https://webbluetoothcg.github.io/web-bluetooth/"
             },
             {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC",
-              "crawled": "https://w3c.github.io/web-nfc/"
-            },
-            {
               "url": "https://wicg.github.io/periodic-background-sync/",
               "title": "Web Periodic Background Synchronization",
               "crawled": "https://wicg.github.io/periodic-background-sync/"
@@ -27447,11 +27429,6 @@
               "crawled": "https://wicg.github.io/background-fetch/"
             },
             {
-              "url": "https://w3c.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://w3c.github.io/badging/"
-            },
-            {
               "url": "https://www.w3.org/TR/clear-site-data/",
               "title": "Clear Site Data",
               "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
@@ -27667,7 +27644,7 @@
     {
       "title": "Streams Standard",
       "shortname": "streams",
-      "date": "24 July 2020",
+      "date": "27 July 2020",
       "url": "https://streams.spec.whatwg.org/",
       "nightly": {
         "url": "https://streams.spec.whatwg.org/",
@@ -30364,11 +30341,6 @@
               "crawled": "https://infra.spec.whatwg.org/"
             },
             {
-              "url": "https://wicg.github.io/input-device-capabilities/",
-              "title": "Input Device Capabilities",
-              "crawled": "https://wicg.github.io/input-device-capabilities/"
-            },
-            {
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 2",
               "crawled": "https://w3c.github.io/input-events/"
@@ -30429,11 +30401,6 @@
               "crawled": "https://w3c.github.io/magnetometer/"
             },
             {
-              "url": "https://mathml-refresh.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://mathml-refresh.github.io/mathml-core/"
-            },
-            {
               "url": "https://www.w3.org/TR/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://w3c.github.io/media-capabilities/"
@@ -30452,11 +30419,6 @@
               "url": "https://www.w3.org/TR/mediacapture-fromelement/",
               "title": "Media Capture from DOM Elements",
               "crawled": "https://w3c.github.io/mediacapture-fromelement/"
-            },
-            {
-              "url": "https://w3c.github.io/media-playback-quality/",
-              "title": "Media Playback Quality",
-              "crawled": "https://w3c.github.io/media-playback-quality/"
             },
             {
               "url": "https://www.w3.org/TR/mediasession/",
@@ -30829,11 +30791,6 @@
               "crawled": "https://w3c.github.io/web-share/"
             },
             {
-              "url": "https://w3c.github.io/web-share-target/",
-              "title": "Web Share Target API",
-              "crawled": "https://w3c.github.io/web-share-target/"
-            },
-            {
               "url": "https://wicg.github.io/speech-api/",
               "title": "Web Speech API",
               "crawled": "https://wicg.github.io/speech-api/"
@@ -30949,6 +30906,11 @@
               "url": "https://www.w3.org/TR/webrtc-identity/",
               "title": "Identity for WebRTC 1.0",
               "crawled": "https://w3c.github.io/webrtc-identity/identity.html"
+            },
+            {
+              "url": "https://mathml-refresh.github.io/mathml-core/",
+              "title": "MathML Core",
+              "crawled": "https://mathml-refresh.github.io/mathml-core/"
             },
             {
               "url": "https://wicg.github.io/overscroll-scrollend-events/",
@@ -31222,7 +31184,7 @@
       "crawled": "https://w3c.github.io/web-share-target/",
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
@@ -31235,7 +31197,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -31270,7 +31232,7 @@
     {
       "title": "WebAssembly Core Specification",
       "shortname": "wasm-core-1",
-      "date": "23 July 2020",
+      "date": "27 July 2020",
       "url": "https://www.w3.org/TR/wasm-core-1/",
       "release": {
         "url": "https://www.w3.org/TR/wasm-core-1/",
@@ -31307,7 +31269,7 @@
     {
       "title": "WebAssembly JavaScript Interface",
       "shortname": "wasm-js-api-1",
-      "date": "23 July 2020",
+      "date": "27 July 2020",
       "url": "https://www.w3.org/TR/wasm-js-api-1/",
       "release": {
         "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -31356,7 +31318,7 @@
     {
       "title": "WebAssembly Web API",
       "shortname": "wasm-web-api-1",
-      "date": "23 July 2020",
+      "date": "27 July 2020",
       "url": "https://www.w3.org/TR/wasm-web-api-1/",
       "release": {
         "url": "https://www.w3.org/TR/wasm-web-api-1/",
@@ -31912,7 +31874,7 @@
     {
       "title": "WebUSB API",
       "shortname": "webusb",
-      "date": "26 July 2020",
+      "date": "27 July 2020",
       "url": "https://wicg.github.io/webusb/",
       "nightly": {
         "url": "https://wicg.github.io/webusb/",
