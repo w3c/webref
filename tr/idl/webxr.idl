@@ -4,10 +4,10 @@
 // Source: WebXR Device API (https://www.w3.org/TR/webxr/)
 
 partial interface Navigator {
-  [SecureContext, SameObject] readonly attribute XR xr;
+  [SecureContext, SameObject] readonly attribute XRSystem xr;
 };
 
-[SecureContext, Exposed=Window] interface XR : EventTarget {
+[SecureContext, Exposed=Window] interface XRSystem : EventTarget {
   // Methods
   Promise<boolean> isSessionSupported(XRSessionMode mode);
   [NewObject] Promise<XRSession> requestSession(XRSessionMode mode, optional XRSessionInit options = {});
@@ -18,7 +18,8 @@ partial interface Navigator {
 
 enum XRSessionMode {
   "inline",
-  "immersive-vr"
+  "immersive-vr",
+  "immersive-ar"
 };
 
 dictionary XRSessionInit {
@@ -42,17 +43,20 @@ enum XRVisibilityState {
   void updateRenderState(optional XRRenderStateInit state = {});
   [NewObject] Promise<XRReferenceSpace> requestReferenceSpace(XRReferenceSpaceType type);
 
-  long requestAnimationFrame(XRFrameRequestCallback callback);
-  void cancelAnimationFrame(long handle);
+  unsigned long requestAnimationFrame(XRFrameRequestCallback callback);
+  void cancelAnimationFrame(unsigned long handle);
 
   Promise<void> end();
 
   // Events
   attribute EventHandler onend;
-  attribute EventHandler onselect;
   attribute EventHandler oninputsourceschange;
+  attribute EventHandler onselect;
   attribute EventHandler onselectstart;
   attribute EventHandler onselectend;
+  attribute EventHandler onsqueeze;
+  attribute EventHandler onsqueezestart;
+  attribute EventHandler onsqueezeend;
   attribute EventHandler onvisibilitychange;
 };
 
@@ -61,6 +65,7 @@ dictionary XRRenderStateInit {
   double depthFar;
   double inlineVerticalFieldOfView;
   XRWebGLLayer? baseLayer;
+  sequence<XRLayer>? layers;
 };
 
 [SecureContext, Exposed=Window] interface XRRenderState {
@@ -168,6 +173,9 @@ interface XRInputSourceArray {
   getter XRInputSource(unsigned long index);
 };
 
+[SecureContext, Exposed=Window]
+interface XRLayer : EventTarget {};
+
 typedef (WebGLRenderingContext or
          WebGL2RenderingContext) XRWebGLRenderingContext;
 
@@ -181,7 +189,7 @@ dictionary XRWebGLLayerInit {
 };
 
 [SecureContext, Exposed=Window]
-interface XRWebGLLayer {
+interface XRWebGLLayer: XRLayer {
   constructor(XRSession session,
              XRWebGLRenderingContext context,
              optional XRWebGLLayerInit layerInit = {});
@@ -189,7 +197,7 @@ interface XRWebGLLayer {
   readonly attribute boolean antialias;
   readonly attribute boolean ignoreDepthValues;
 
-  [SameObject] readonly attribute WebGLFramebuffer framebuffer;
+  [SameObject] readonly attribute WebGLFramebuffer? framebuffer;
   readonly attribute unsigned long framebufferWidth;
   readonly attribute unsigned long framebufferHeight;
 
@@ -201,11 +209,11 @@ interface XRWebGLLayer {
 };
 
 partial dictionary WebGLContextAttributes {
-    boolean xrCompatible = null;
+    boolean xrCompatible = false;
 };
 
 partial interface mixin WebGLRenderingContextBase {
-    Promise<void> makeXRCompatible();
+    [NewObject] Promise<void> makeXRCompatible();
 };
 
 [SecureContext, Exposed=Window]
@@ -254,5 +262,16 @@ interface XRReferenceSpaceEvent : Event {
 
 dictionary XRReferenceSpaceEventInit : EventInit {
   required XRReferenceSpace referenceSpace;
-  XRRigidTransform transform;
+  XRRigidTransform? transform = null;
+};
+
+dictionary XRPermissionDescriptor: PermissionDescriptor {
+  XRSessionMode mode;
+  sequence<any> requiredFeatures;
+  sequence<any> optionalFeatures;
+};
+
+[Exposed=Window]
+interface XRPermissionStatus: PermissionStatus {
+  attribute FrozenArray<any> granted;
 };

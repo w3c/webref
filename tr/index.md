@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% July 20, 2020
+% July 27, 2020
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -316,7 +316,9 @@ Normative references to this spec from:
 
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Permissions](https://www.w3.org/TR/permissions/)
 
 
 ## Badging API {data-spec=true data-ok=true}
@@ -616,7 +618,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/clipboard-apis/](https://www.w3.org/TR/clipboard-apis/)
 - Crawled URL: [https://www.w3.org/TR/clipboard-apis/](https://www.w3.org/TR/clipboard-apis/)
-- Crawled version: 3 June 2020
+- Crawled version: 21 July 2020
 - Editor's Draft: [https://w3c.github.io/clipboard-apis/](https://w3c.github.io/clipboard-apis/)
 - Latest published version: [https://www.w3.org/TR/clipboard-apis/](https://www.w3.org/TR/clipboard-apis/)
 - Shortname: clipboard-apis
@@ -880,7 +882,7 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Mixed Content](https://www.w3.org/TR/mixed-content/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
-- [Permissions Policy](https://www.w3.org/TR/feature-policy-1/)
+- [Permissions Policy](https://www.w3.org/TR/permissions-policy-1/)
 - [Portals](https://wicg.github.io/portals/)
 - [Resource Hints](https://www.w3.org/TR/resource-hints/)
 - [Service Workers 1](https://www.w3.org/TR/service-workers-1/)
@@ -949,7 +951,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Crawled URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
-- Crawled version: 29 June 2020
+- Crawled version: 23 July 2020
 - Editor's Draft: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Shortname: cookie-store
 
@@ -985,6 +987,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [WebXR Device API](https://www.w3.org/TR/webxr/)
 
 No informative reference to this spec from other specs.
 
@@ -1177,7 +1180,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
 - Crawled URL: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
-- Crawled version: 3 June 2020
+- Crawled version: 16 July 2020
 - Editor's Draft: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
 - Shortname: css-animations-2
 
@@ -1625,7 +1628,6 @@ Normative references to this spec from:
 - [CSS Transitions](https://www.w3.org/TR/css-transitions-1/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
-- [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/)
 - [Web Animations](https://www.w3.org/TR/web-animations-1/)
 
 Informative references to this spec from:
@@ -1945,6 +1947,7 @@ Normative references to this spec from:
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/)
 - [CSS Round Display Level 1](https://www.w3.org/TR/css-round-display-1/)
+- [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/)
 - [Media Queries Level 5](https://www.w3.org/TR/mediaqueries-5/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
@@ -2179,7 +2182,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/)
 - [The Screen Orientation API](https://www.w3.org/TR/screen-orientation/)
 
 
@@ -2704,7 +2706,6 @@ Informative references to this spec from:
 - [CSS Positioned Layout Module Level 3](https://www.w3.org/TR/css-position-3/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
-- [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/)
 
 
 ## CSS Fragmentation Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -4397,10 +4398,10 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
+     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/)
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
-     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/), related reference "FEATURE-POLICY" uses URL [`https://www.w3.org/TR/feature-policy-1/`](https://www.w3.org/TR/feature-policy-1/)
      * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/), related reference "CSSOM-VIEW-1" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -5225,7 +5226,9 @@ Normative references to this spec from:
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4/)
 - [Web Animations](https://www.w3.org/TR/web-animations-1/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/)
 
 
 ## CSS Will Change Module Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -5311,7 +5314,6 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/)
-- [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4/)
@@ -5388,6 +5390,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/)
 - [Media Queries Level 5](https://www.w3.org/TR/mediaqueries-5/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
@@ -5554,6 +5557,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Generic Sensor API](https://www.w3.org/TR/generic-sensor/)
+- [WebXR Device API](https://www.w3.org/TR/webxr/)
 
 
 ## DOM Parsing and Serialization {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
@@ -5687,7 +5691,7 @@ Normative references to this spec from:
 - [Payment Request API](https://www.w3.org/TR/payment-request/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/)
 - [Permissions](https://www.w3.org/TR/permissions/)
-- [Permissions Policy](https://www.w3.org/TR/feature-policy-1/)
+- [Permissions Policy](https://www.w3.org/TR/permissions-policy-1/)
 - [Picture-in-Picture](https://www.w3.org/TR/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/pointerevents3/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/pointerlock-2/)
@@ -5905,7 +5909,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
 - Crawled URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
-- Crawled version: 9 June 2020
+- Crawled version: 20 July 2020
 - Editor's Draft: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
 - Shortname: event-timing
 
@@ -6008,7 +6012,7 @@ Normative references to this spec from:
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Payment Method Identifiers](https://www.w3.org/TR/payment-method-id/)
 - [Payment Method Manifest](https://www.w3.org/TR/payment-method-manifest/)
-- [Permissions Policy](https://www.w3.org/TR/feature-policy-1/)
+- [Permissions Policy](https://www.w3.org/TR/permissions-policy-1/)
 - [Portals](https://wicg.github.io/portals/)
 - [Preload](https://www.w3.org/TR/preload/)
 - [Priority Hints](https://wicg.github.io/priority-hints/)
@@ -6048,7 +6052,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
 - Crawled URL: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
-- Crawled version: 29 June 2020
+- Crawled version: 23 July 2020
 - Editor's Draft: [https://wicg.github.io/entries-api/](https://wicg.github.io/entries-api/)
 - Shortname: entries-api
 
@@ -6229,7 +6233,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Fullscreen API Standard {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Fullscreen API Standard {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -6243,8 +6247,7 @@ No informative reference to this spec from other specs.
 
 - Missing references for links: 
      * [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/feature-policy-1/`](https://www.w3.org/TR/feature-policy-1/), related reference "FEATURE-POLICY-1" uses URL [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/)
+     * [`https://www.w3.org/TR/feature-policy-1/`](https://www.w3.org/TR/feature-policy-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6252,7 +6255,7 @@ Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
-- [Permissions Policy](https://www.w3.org/TR/feature-policy-1/)
+- [Permissions Policy](https://www.w3.org/TR/permissions-policy-1/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/pointerlock-2/)
 - [The Screen Orientation API](https://www.w3.org/TR/screen-orientation/)
 - [WebDriver](https://www.w3.org/TR/webdriver2/)
@@ -6576,6 +6579,7 @@ Normative references to this spec from:
 - [Web Audio API](https://www.w3.org/TR/webaudio/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
 - [WebTransport](https://wicg.github.io/web-transport/)
+- [WebXR Device API](https://www.w3.org/TR/webxr/)
 
 Informative references to this spec from:
 
@@ -6646,7 +6650,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 20 July 2020
+- Crawled version: 24 July 2020
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -6794,7 +6798,7 @@ Normative references to this spec from:
 - [Payment Request API](https://www.w3.org/TR/payment-request/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/)
 - [Permissions](https://www.w3.org/TR/permissions/)
-- [Permissions Policy](https://www.w3.org/TR/feature-policy-1/)
+- [Permissions Policy](https://www.w3.org/TR/permissions-policy-1/)
 - [Picture-in-Picture](https://www.w3.org/TR/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/pointerevents3/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/pointerlock-2/)
@@ -6911,7 +6915,7 @@ Informative references to this spec from:
 - [Orientation Sensor](https://www.w3.org/TR/orientation-sensor/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/payment-method-basic-card/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/)
-- [Permissions Policy](https://www.w3.org/TR/feature-policy-1/)
+- [Permissions Policy](https://www.w3.org/TR/permissions-policy-1/)
 - [Selectors Level 3](https://www.w3.org/TR/selectors-3/)
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
@@ -7117,7 +7121,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://infra.spec.whatwg.org/](https://infra.spec.whatwg.org/)
 - Crawled URL: [https://infra.spec.whatwg.org/](https://infra.spec.whatwg.org/)
-- Crawled version: 29 June 2020
+- Crawled version: 21 July 2020
 - Editor's Draft: [https://infra.spec.whatwg.org/](https://infra.spec.whatwg.org/)
 - Shortname: infra
 
@@ -7193,7 +7197,8 @@ Normative references to this spec from:
 - [Payment Method: Basic Card](https://www.w3.org/TR/payment-method-basic-card/)
 - [Payment Request API](https://www.w3.org/TR/payment-request/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/)
-- [Permissions Policy](https://www.w3.org/TR/feature-policy-1/)
+- [Permissions](https://www.w3.org/TR/permissions/)
+- [Permissions Policy](https://www.w3.org/TR/permissions-policy-1/)
 - [Portals](https://wicg.github.io/portals/)
 - [Private Click Measurement](https://privacycg.github.io/private-click-measurement/)
 - [Proximity Sensor](https://www.w3.org/TR/proximity/)
@@ -7229,6 +7234,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Input Events Level 2](https://www.w3.org/TR/input-events-2/)
+- [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/)
 - [Media Queries Level 5](https://www.w3.org/TR/mediaqueries-5/)
 
 
@@ -7471,7 +7477,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Crawled URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
-- Crawled version: 8 July 2020
+- Crawled version: 20 July 2020
 - Editor's Draft: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Shortname: webpackage
 
@@ -7495,7 +7501,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/local-font-access/](https://wicg.github.io/local-font-access/)
 - Crawled URL: [https://wicg.github.io/local-font-access/](https://wicg.github.io/local-font-access/)
-- Crawled version: 29 June 2020
+- Crawled version: 23 July 2020
 - Editor's Draft: [https://wicg.github.io/local-font-access/](https://wicg.github.io/local-font-access/)
 - Shortname: local-font-access
 
@@ -7601,7 +7607,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
 - Crawled URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
-- Crawled version: 06 July 2020
+- Crawled version: 20 July 2020
 - Editor's Draft: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
 - Shortname: mathml-core
 
@@ -7743,7 +7749,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/media-feeds/](https://wicg.github.io/media-feeds/)
 - Crawled URL: [https://wicg.github.io/media-feeds/](https://wicg.github.io/media-feeds/)
-- Crawled version: 19 June 2020
+- Crawled version: 21 July 2020
 - Editor's Draft: [https://wicg.github.io/media-feeds/](https://wicg.github.io/media-feeds/)
 - Shortname: media-feeds
 
@@ -7822,7 +7828,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mediaqueries-4/](https://www.w3.org/TR/mediaqueries-4/)
 - Crawled URL: [https://www.w3.org/TR/mediaqueries-4/](https://www.w3.org/TR/mediaqueries-4/)
-- Crawled version: 5 September 2017
+- Crawled version: 21 July 2020
 - Editor's Draft: [https://drafts.csswg.org/mediaqueries-4/](https://drafts.csswg.org/mediaqueries-4/)
 - Latest published version: [https://www.w3.org/TR/mediaqueries-4/](https://www.w3.org/TR/mediaqueries-4/)
 - Shortname: mediaqueries-4
@@ -7830,11 +7836,8 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
-     * [`https://www.w3.org/TR/css-device-adapt/`](https://www.w3.org/TR/css-device-adapt/)
-     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/)
      * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
 - Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/), related reference "CSSOM-VIEW-1" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -8132,7 +8135,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Crawled URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
-- Crawled version: 17 July 2020
+- Crawled version: 25 July 2020
 - Editor's Draft: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Shortname: native-file-system
 
@@ -8610,7 +8613,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/payment-handler/)
 - [Payment Method Manifest](https://www.w3.org/TR/payment-method-manifest/)
 - [Payment Method: Basic Card](https://www.w3.org/TR/payment-method-basic-card/)
-- [Permissions Policy](https://www.w3.org/TR/feature-policy-1/)
+- [Permissions Policy](https://www.w3.org/TR/permissions-policy-1/)
 
 Informative references to this spec from:
 
@@ -8663,7 +8666,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Crawled URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
-- Crawled version: 25 September 2017
+- Crawled version: 20 July 2020
 - Editor's Draft: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
 - Latest published version: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Shortname: permissions
@@ -8675,11 +8678,12 @@ Informative references to this spec from:
     * `PermissionState` also defined in [DeviceOrientation Event Specification](https://www.w3.org/TR/orientation-event/)
 - Missing references for links: 
      * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/)
+     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/)
      * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/)
+     * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/)
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
      * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
-     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8697,7 +8701,6 @@ Normative references to this spec from:
 - [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/mediacapture-depth/)
 - [Native File System](https://wicg.github.io/native-file-system/)
-- [Permissions](https://www.w3.org/TR/permissions/)
 - [Presentation API](https://www.w3.org/TR/presentation-api/)
 - [Relinquishing Permissions](https://wicg.github.io/permissions-revoke/)
 - [Requesting Permissions](https://wicg.github.io/permissions-request/)
@@ -8709,25 +8712,24 @@ Normative references to this spec from:
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [WebUSB API](https://wicg.github.io/webusb/)
+- [WebXR Device API](https://www.w3.org/TR/webxr/)
 
 No informative reference to this spec from other specs.
 
 
-## Permissions Policy {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## Permissions Policy {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Initial URL: [https://www.w3.org/TR/feature-policy-1/](https://www.w3.org/TR/feature-policy-1/)
-- Crawled URL: [https://www.w3.org/TR/feature-policy-1/](https://www.w3.org/TR/feature-policy-1/)
+- Initial URL: [https://www.w3.org/TR/permissions-policy-1/](https://www.w3.org/TR/permissions-policy-1/)
+- Crawled URL: [https://www.w3.org/TR/permissions-policy-1/](https://www.w3.org/TR/permissions-policy-1/)
 - Crawled version: 16 July 2020
 - Editor's Draft: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
-- Latest published version: [https://www.w3.org/TR/feature-policy-1/](https://www.w3.org/TR/feature-policy-1/)
-- Shortname: feature-policy-1
+- Latest published version: [https://www.w3.org/TR/permissions-policy-1/](https://www.w3.org/TR/permissions-policy-1/)
+- Shortname: permissions-policy-1
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/payment-request/`](https://w3c.github.io/payment-request/), related reference "PAYMENT-REQUEST" uses URL [`https://www.w3.org/TR/payment-request/`](https://www.w3.org/TR/payment-request/)
      * [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/), related reference "REPORTING-1" uses URL [`https://www.w3.org/TR/reporting-1/`](https://www.w3.org/TR/reporting-1/)
@@ -8736,17 +8738,13 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Spatial Navigation Level 1](https://www.w3.org/TR/css-nav-1/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Generic Sensor API](https://www.w3.org/TR/generic-sensor/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
-- [Payment Request API](https://www.w3.org/TR/payment-request/)
-- [Picture-in-Picture](https://www.w3.org/TR/picture-in-picture/)
-- [Web Share API](https://www.w3.org/TR/web-share/)
-- [WebHID API](https://wicg.github.io/webhid/)
+- [WebXR Device API](https://www.w3.org/TR/webxr/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
@@ -8823,6 +8821,7 @@ Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Pointer Events](https://www.w3.org/TR/pointerevents3/)
+- [WebXR Device API](https://www.w3.org/TR/webxr/)
 
 Informative references to this spec from:
 
@@ -8835,7 +8834,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Crawled URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
-- Crawled version: 17 July 2020
+- Crawled version: 24 July 2020
 - Editor's Draft: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Shortname: portals
 
@@ -9167,7 +9166,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Intervention Reporting](https://wicg.github.io/intervention-reporting/)
-- [Permissions Policy](https://www.w3.org/TR/feature-policy-1/)
+- [Permissions Policy](https://www.w3.org/TR/permissions-policy-1/)
 
 No informative reference to this spec from other specs.
 
@@ -9192,8 +9191,11 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Generic Sensor API](https://www.w3.org/TR/generic-sensor/)
+- [Native File System](https://wicg.github.io/native-file-system/)
+- [Permissions](https://www.w3.org/TR/permissions/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [WebUSB API](https://wicg.github.io/webusb/)
+- [WebXR Device API](https://www.w3.org/TR/webxr/)
 
 Informative references to this spec from:
 
@@ -9506,7 +9508,9 @@ No informative reference to this spec from other specs.
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Permissions](https://www.w3.org/TR/permissions/)
 
 
 ## Scroll-linked Animations {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
@@ -9860,7 +9864,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 20 July 2020
+- Crawled version: 24 July 2020
 - Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Shortname: streams
 
@@ -10482,7 +10486,7 @@ Normative references to this spec from:
 - [Payment Method Identifiers](https://www.w3.org/TR/payment-method-id/)
 - [Payment Method Manifest](https://www.w3.org/TR/payment-method-manifest/)
 - [Payment Request API](https://www.w3.org/TR/payment-request/)
-- [Permissions Policy](https://www.w3.org/TR/feature-policy-1/)
+- [Permissions Policy](https://www.w3.org/TR/permissions-policy-1/)
 - [Portals](https://wicg.github.io/portals/)
 - [Presentation API](https://www.w3.org/TR/presentation-api/)
 - [Private Click Measurement](https://privacycg.github.io/private-click-measurement/)
@@ -10729,7 +10733,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Crawled version: 17 July 2020
+- Crawled version: 27 July 2020
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Shortname: appmanifest
@@ -10838,7 +10842,9 @@ No informative reference to this spec from other specs.
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Permissions](https://www.w3.org/TR/permissions/)
 
 
 ## Web Bluetooth {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -10862,7 +10868,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Permissions](https://www.w3.org/TR/permissions/)
 
 Informative references to this spec from:
 
@@ -10903,7 +10911,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
 - Crawled URL: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
-- Crawled version: 1 July 2020
+- Crawled version: 23 July 2020
 - Editor's Draft: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
 - Shortname: web-locks
 
@@ -10965,7 +10973,9 @@ This specification looks good!
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Permissions](https://www.w3.org/TR/permissions/)
 
 
 ## Web OTP API {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -11284,7 +11294,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 15 July 2020
+- Crawled version: 25 July 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -11456,7 +11466,7 @@ Normative references to this spec from:
 - [Payment Request API](https://www.w3.org/TR/payment-request/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/)
 - [Permissions](https://www.w3.org/TR/permissions/)
-- [Permissions Policy](https://www.w3.org/TR/feature-policy-1/)
+- [Permissions Policy](https://www.w3.org/TR/permissions-policy-1/)
 - [Picture-in-Picture](https://www.w3.org/TR/picture-in-picture/)
 - [Pointer Events](https://www.w3.org/TR/pointerevents3/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/pointerlock-2/)
@@ -11642,7 +11652,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/web-transport/](https://wicg.github.io/web-transport/)
 - Crawled URL: [https://wicg.github.io/web-transport/](https://wicg.github.io/web-transport/)
-- Crawled version: 18 June 2020
+- Crawled version: 21 July 2020
 - Editor's Draft: [https://wicg.github.io/web-transport/](https://wicg.github.io/web-transport/)
 - Shortname: web-transport
 
@@ -11663,7 +11673,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 19 July 2020
+- Crawled version: 26 July 2020
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
@@ -11764,16 +11774,18 @@ Normative references to this spec from:
 - [WebXR Anchors Module](https://immersive-web.github.io/anchors/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [WebXR Device API](https://www.w3.org/TR/webxr/)
 
 
-## WebXR Device API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
+## WebXR Device API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
-- Crawled version: 10 October 2019
+- Crawled version: 24 July 2020
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Shortname: webxr
@@ -11790,7 +11802,12 @@ No informative reference to this spec from other specs.
      * `WebGLRenderingContextBase` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - Missing references for links: 
      * [`https://w3c.github.io/orientation-sensor/`](https://w3c.github.io/orientation-sensor/)
-     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
+     * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/)
+     * [`https://www.w3.org/TR/permissions-policy/`](https://www.w3.org/TR/permissions-policy/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
+     * [`https://w3c.github.io/requestidlecallback/`](https://w3c.github.io/requestidlecallback/), related reference "REQUESTIDLECALLBACK" uses URL [`https://www.w3.org/TR/requestidlecallback/`](https://www.w3.org/TR/requestidlecallback/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -11885,19 +11902,18 @@ Although they do not, the following specs should also normatively reference this
 No informative reference to this spec from other specs.
 
 
-## WebXR Layers API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## WebXR Layers API Level 1 {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Crawled URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Crawled version: 9 July 2020
+- Crawled version: 22 July 2020
 - Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Shortname: layers
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `XRLayer`
 - Missing references for WebIDL names: 
      * `WebGLTexture` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
@@ -11956,7 +11972,7 @@ Normative references to this spec from:
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
 - [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [Permissions Policy](https://www.w3.org/TR/feature-policy-1/)
+- [Permissions Policy](https://www.w3.org/TR/permissions-policy-1/)
 - [Web Audio API](https://www.w3.org/TR/webaudio/)
 
 No informative reference to this spec from other specs.

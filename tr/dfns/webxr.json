@@ -53,10 +53,60 @@
       "informative": false
     },
     {
+      "id": "xr-device-list-of-enabled-features",
+      "href": "https://www.w3.org/TR/webxr/#xr-device-list-of-enabled-features",
+      "linkingText": [
+        "list of enabled features"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XR device"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "list-of-immersive-xr-devices",
+      "href": "https://www.w3.org/TR/webxr/#list-of-immersive-xr-devices",
+      "linkingText": [
+        "list of immersive XR devices"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "immersive-xr-device",
+      "href": "https://www.w3.org/TR/webxr/#immersive-xr-device",
+      "linkingText": [
+        "immersive XR device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "default-inline-xr-device",
+      "href": "https://www.w3.org/TR/webxr/#default-inline-xr-device",
+      "linkingText": [
+        "default inline XR device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "inline-xr-device",
       "href": "https://www.w3.org/TR/webxr/#inline-xr-device",
       "linkingText": [
-        "inline XR Device"
+        "inline XR device"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -79,10 +129,10 @@
       "informative": false
     },
     {
-      "id": "xr",
-      "href": "https://www.w3.org/TR/webxr/#xr",
+      "id": "xrsystem",
+      "href": "https://www.w3.org/TR/webxr/#xrsystem",
       "linkingText": [
-        "XR"
+        "XRSystem"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -91,73 +141,47 @@
       "informative": false
     },
     {
-      "id": "dom-xr-issessionsupported-mode-mode",
-      "href": "https://www.w3.org/TR/webxr/#dom-xr-issessionsupported-mode-mode",
+      "id": "dom-xrsystem-issessionsupported-mode-mode",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrsystem-issessionsupported-mode-mode",
       "linkingText": [
         "mode"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "XR/isSessionSupported(mode)"
+        "XRSystem/isSessionSupported(mode)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-xr-requestsession-mode-options-mode",
-      "href": "https://www.w3.org/TR/webxr/#dom-xr-requestsession-mode-options-mode",
+      "id": "dom-xrsystem-requestsession-mode-options-mode",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrsystem-requestsession-mode-options-mode",
       "linkingText": [
         "mode"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "XR/requestSession(mode, options)",
-        "XR/requestSession(mode)"
+        "XRSystem/requestSession(mode, options)",
+        "XRSystem/requestSession(mode)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-xr-requestsession-mode-options-options",
-      "href": "https://www.w3.org/TR/webxr/#dom-xr-requestsession-mode-options-options",
+      "id": "dom-xrsystem-requestsession-mode-options-options",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrsystem-requestsession-mode-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "XR/requestSession(mode, options)",
-        "XR/requestSession(mode)"
+        "XRSystem/requestSession(mode, options)",
+        "XRSystem/requestSession(mode)"
       ],
       "access": "public",
-      "informative": false
-    },
-    {
-      "id": "list-of-immersive-xr-devices",
-      "href": "https://www.w3.org/TR/webxr/#list-of-immersive-xr-devices",
-      "linkingText": [
-        "list of immersive XR devices"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "xr-immersive-xr-device",
-      "href": "https://www.w3.org/TR/webxr/#xr-immersive-xr-device",
-      "linkingText": [
-        "immersive XR device"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "XR"
-      ],
-      "access": "private",
       "informative": false
     },
     {
@@ -185,10 +209,10 @@
       "informative": false
     },
     {
-      "id": "ensures-an-immersive-xr-device-is-selected",
-      "href": "https://www.w3.org/TR/webxr/#ensures-an-immersive-xr-device-is-selected",
+      "id": "ensure-an-immersive-xr-device-is-selected",
+      "href": "https://www.w3.org/TR/webxr/#ensure-an-immersive-xr-device-is-selected",
       "linkingText": [
-        "ensures an immersive XR device is selected"
+        "ensure an immersive XR device is selected"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -197,29 +221,29 @@
       "informative": false
     },
     {
-      "id": "dom-xr-ondevicechange",
-      "href": "https://www.w3.org/TR/webxr/#dom-xr-ondevicechange",
+      "id": "dom-xrsystem-ondevicechange",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrsystem-ondevicechange",
       "linkingText": [
         "ondevicechange"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "XR"
+        "XRSystem"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-xr-issessionsupported",
-      "href": "https://www.w3.org/TR/webxr/#dom-xr-issessionsupported",
+      "id": "dom-xrsystem-issessionsupported",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrsystem-issessionsupported",
       "linkingText": [
         "isSessionSupported(mode)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "XR"
+        "XRSystem"
       ],
       "access": "public",
       "informative": false
@@ -261,8 +285,8 @@
       "informative": false
     },
     {
-      "id": "dom-xr-requestsession",
-      "href": "https://www.w3.org/TR/webxr/#dom-xr-requestsession",
+      "id": "dom-xrsystem-requestsession",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrsystem-requestsession",
       "linkingText": [
         "requestSession(mode, options)",
         "requestSession(mode)"
@@ -270,9 +294,21 @@
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "XR"
+        "XRSystem"
       ],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "obtain-the-current-device",
+      "href": "https://www.w3.org/TR/webxr/#obtain-the-current-device",
+      "linkingText": [
+        "obtain the current device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
@@ -308,6 +344,21 @@
       "linkingText": [
         "\"immersive-vr\"",
         "immersive-vr"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRSessionMode"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrsessionmode-immersive-ar",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrsessionmode-immersive-ar",
+      "linkingText": [
+        "\"immersive-ar\"",
+        "immersive-ar"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -478,18 +529,6 @@
       "informative": false
     },
     {
-      "id": "resolve-the-requested-features",
-      "href": "https://www.w3.org/TR/webxr/#resolve-the-requested-features",
-      "linkingText": [
-        "resolve the requested features"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "should-not-initialize-device-tracking",
       "href": "https://www.w3.org/TR/webxr/#should-not-initialize-device-tracking",
       "linkingText": [
@@ -597,6 +636,20 @@
       "informative": false
     },
     {
+      "id": "xrsession-animation-frame",
+      "href": "https://www.w3.org/TR/webxr/#xrsession-animation-frame",
+      "linkingText": [
+        "animation frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRSession"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "initialize-the-session",
       "href": "https://www.w3.org/TR/webxr/#initialize-the-session",
       "linkingText": [
@@ -644,20 +697,6 @@
         "XRSession"
       ],
       "access": "public",
-      "informative": false
-    },
-    {
-      "id": "xrsession-list-of-enabled-features",
-      "href": "https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features",
-      "linkingText": [
-        "list of enabled features"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "XRSession"
-      ],
-      "access": "private",
       "informative": false
     },
     {
@@ -739,6 +778,18 @@
       "href": "https://www.w3.org/TR/webxr/#maximum-far-clip-plane",
       "linkingText": [
         "maximum far clip plane"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "update-the-pending-layers-state",
+      "href": "https://www.w3.org/TR/webxr/#update-the-pending-layers-state",
+      "linkingText": [
+        "update the pending layers state"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -829,6 +880,20 @@
       "informative": false
     },
     {
+      "id": "xrsession-promise-resolved",
+      "href": "https://www.w3.org/TR/webxr/#xrsession-promise-resolved",
+      "linkingText": [
+        "promise resolved"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRSession"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "xrsession-add-input-source",
       "href": "https://www.w3.org/TR/webxr/#xrsession-add-input-source",
       "linkingText": [
@@ -854,6 +919,20 @@
         "XRSession"
       ],
       "access": "private",
+      "informative": false
+    },
+    {
+      "id": "xrsession-change-input-source",
+      "href": "https://www.w3.org/TR/webxr/#xrsession-change-input-source",
+      "linkingText": [
+        "change input source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -958,15 +1037,15 @@
       "informative": false
     },
     {
-      "id": "xrsession-viewer-reference-space-list-of-views",
-      "href": "https://www.w3.org/TR/webxr/#xrsession-viewer-reference-space-list-of-views",
+      "id": "xrsession-list-of-views",
+      "href": "https://www.w3.org/TR/webxr/#xrsession-list-of-views",
       "linkingText": [
         "list of views"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "XRSession/viewer reference space"
+        "XRSession"
       ],
       "access": "private",
       "informative": false
@@ -1042,6 +1121,48 @@
       "informative": false
     },
     {
+      "id": "dom-xrsession-onsqueezestart",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrsession-onsqueezestart",
+      "linkingText": [
+        "onsqueezestart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrsession-onsqueezeend",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrsession-onsqueezeend",
+      "linkingText": [
+        "onsqueezeend"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrsession-onsqueeze",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrsession-onsqueeze",
+      "linkingText": [
+        "onsqueeze"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dictdef-xrrenderstateinit",
       "href": "https://www.w3.org/TR/webxr/#dictdef-xrrenderstateinit",
       "linkingText": [
@@ -1100,6 +1221,20 @@
       "href": "https://www.w3.org/TR/webxr/#dom-xrrenderstateinit-baselayer",
       "linkingText": [
         "baseLayer"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRRenderStateInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrrenderstateinit-layers",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrrenderstateinit-layers",
+      "linkingText": [
+        "layers"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1284,6 +1419,18 @@
       "informative": false
     },
     {
+      "id": "list-of-currently-running-animation-frame-callbacks",
+      "href": "https://www.w3.org/TR/webxr/#list-of-currently-running-animation-frame-callbacks",
+      "linkingText": [
+        "list of currently running animation frame callbacks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "animation-frame-callback-identifier",
       "href": "https://www.w3.org/TR/webxr/#animation-frame-callback-identifier",
       "linkingText": [
@@ -1321,6 +1468,18 @@
         "XRSession"
       ],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "check-the-layers-state",
+      "href": "https://www.w3.org/TR/webxr/#check-the-layers-state",
+      "linkingText": [
+        "check the layers state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
@@ -1444,6 +1603,20 @@
       "informative": false
     },
     {
+      "id": "xrframe-time",
+      "href": "https://www.w3.org/TR/webxr/#xrframe-time",
+      "linkingText": [
+        "time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRFrame"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "dom-xrframe-getviewerpose",
       "href": "https://www.w3.org/TR/webxr/#dom-xrframe-getviewerpose",
       "linkingText": [
@@ -1469,6 +1642,46 @@
         "XRFrame"
       ],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "frame-update",
+      "href": "https://www.w3.org/TR/webxr/#frame-update",
+      "linkingText": [
+        "frame update"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "xrsession-list-of-frame-updates",
+      "href": "https://www.w3.org/TR/webxr/#xrsession-list-of-frame-updates",
+      "linkingText": [
+        "list of frame updates"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRSession"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "xrframe-apply-frame-updates",
+      "href": "https://www.w3.org/TR/webxr/#xrframe-apply-frame-updates",
+      "linkingText": [
+        "apply frame updates"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRFrame"
+      ],
+      "access": "private",
       "informative": false
     },
     {
@@ -1663,6 +1876,18 @@
       "informative": false
     },
     {
+      "id": "estimated-floor-level",
+      "href": "https://www.w3.org/TR/webxr/#estimated-floor-level",
+      "linkingText": [
+        "estimated floor level"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "dom-xrreferencespacetype-bounded-floor",
       "href": "https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-bounded-floor",
       "linkingText": [
@@ -1849,6 +2074,20 @@
       "informative": false
     },
     {
+      "id": "view-active",
+      "href": "https://www.w3.org/TR/webxr/#view-active",
+      "linkingText": [
+        "active"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "view"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "enumdef-xreye",
       "href": "https://www.w3.org/TR/webxr/#enumdef-xreye",
       "linkingText": [
@@ -1957,10 +2196,24 @@
       "informative": false
     },
     {
-      "id": "xrview-frame",
-      "href": "https://www.w3.org/TR/webxr/#xrview-frame",
+      "id": "xrview-session",
+      "href": "https://www.w3.org/TR/webxr/#xrview-session",
       "linkingText": [
-        "frame"
+        "session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRView"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "xrview-frame-time",
+      "href": "https://www.w3.org/TR/webxr/#xrview-frame-time",
+      "linkingText": [
+        "frame time"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2008,6 +2261,56 @@
       "type": "dfn",
       "for": [
         "XRView"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "update-the-viewports",
+      "href": "https://www.w3.org/TR/webxr/#update-the-viewports",
+      "linkingText": [
+        "update the viewports"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "primary-view",
+      "href": "https://www.w3.org/TR/webxr/#primary-view",
+      "linkingText": [
+        "primary view"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "secondary-view",
+      "href": "https://www.w3.org/TR/webxr/#secondary-view",
+      "linkingText": [
+        "secondary view"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "secondary-view-secondary-views",
+      "href": "https://www.w3.org/TR/webxr/#secondary-view-secondary-views",
+      "linkingText": [
+        "secondary-views"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "secondary view"
       ],
       "access": "private",
       "informative": false
@@ -2131,32 +2434,38 @@
       "informative": false
     },
     {
-      "id": "dom-xrrigidtransform-constructor-position-orientation-position",
-      "href": "https://www.w3.org/TR/webxr/#dom-xrrigidtransform-constructor-position-orientation-position",
+      "id": "dom-xrrigidtransform-xrrigidtransform-position-orientation-position",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrrigidtransform-xrrigidtransform-position-orientation-position",
       "linkingText": [
         "position"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "XRRigidTransform/XRRigidTransform(position, orientation)",
         "XRRigidTransform/constructor(position, orientation)",
+        "XRRigidTransform/XRRigidTransform(position)",
         "XRRigidTransform/constructor(position)",
+        "XRRigidTransform/XRRigidTransform()",
         "XRRigidTransform/constructor()"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-xrrigidtransform-constructor-position-orientation-orientation",
-      "href": "https://www.w3.org/TR/webxr/#dom-xrrigidtransform-constructor-position-orientation-orientation",
+      "id": "dom-xrrigidtransform-xrrigidtransform-position-orientation-orientation",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrrigidtransform-xrrigidtransform-position-orientation-orientation",
       "linkingText": [
         "orientation"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "XRRigidTransform/XRRigidTransform(position, orientation)",
         "XRRigidTransform/constructor(position, orientation)",
+        "XRRigidTransform/XRRigidTransform(position)",
         "XRRigidTransform/constructor(position)",
+        "XRRigidTransform/XRRigidTransform()",
         "XRRigidTransform/constructor()"
       ],
       "access": "public",
@@ -2313,6 +2622,20 @@
         "XRPose"
       ],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "xrpose-computed-offset",
+      "href": "https://www.w3.org/TR/webxr/#xrpose-computed-offset",
+      "linkingText": [
+        "computed offset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRPose"
+      ],
+      "access": "private",
       "informative": false
     },
     {
@@ -2573,6 +2896,18 @@
       "informative": false
     },
     {
+      "id": "primary-input-source",
+      "href": "https://www.w3.org/TR/webxr/#primary-input-source",
+      "linkingText": [
+        "primary input source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "primary-action",
       "href": "https://www.w3.org/TR/webxr/#primary-action",
       "linkingText": [
@@ -2585,10 +2920,58 @@
       "informative": false
     },
     {
+      "id": "auxiliary-input-source",
+      "href": "https://www.w3.org/TR/webxr/#auxiliary-input-source",
+      "linkingText": [
+        "auxiliary input source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "primary-squeeze-action",
+      "href": "https://www.w3.org/TR/webxr/#primary-squeeze-action",
+      "linkingText": [
+        "primary squeeze action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "transient-input-sources",
       "href": "https://www.w3.org/TR/webxr/#transient-input-sources",
       "linkingText": [
         "transient input sources"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "transient-action",
+      "href": "https://www.w3.org/TR/webxr/#transient-action",
+      "linkingText": [
+        "transient action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "auxiliary-action",
+      "href": "https://www.w3.org/TR/webxr/#auxiliary-action",
+      "linkingText": [
+        "auxiliary action"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2647,6 +3030,18 @@
       "for": [
         "XRInputSourceArray"
       ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "xrlayer",
+      "href": "https://www.w3.org/TR/webxr/#xrlayer",
+      "linkingText": [
+        "XRLayer"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
       "access": "public",
       "informative": false
     },
@@ -2771,45 +3166,51 @@
       "informative": false
     },
     {
-      "id": "dom-xrwebgllayer-constructor-session-context-layerinit-session",
-      "href": "https://www.w3.org/TR/webxr/#dom-xrwebgllayer-constructor-session-context-layerinit-session",
+      "id": "dom-xrwebgllayer-xrwebgllayer-session-context-layerinit-session",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrwebgllayer-xrwebgllayer-session-context-layerinit-session",
       "linkingText": [
         "session"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "XRWebGLLayer/XRWebGLLayer(session, context, layerInit)",
         "XRWebGLLayer/constructor(session, context, layerInit)",
+        "XRWebGLLayer/XRWebGLLayer(session, context)",
         "XRWebGLLayer/constructor(session, context)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-xrwebgllayer-constructor-session-context-layerinit-context",
-      "href": "https://www.w3.org/TR/webxr/#dom-xrwebgllayer-constructor-session-context-layerinit-context",
+      "id": "dom-xrwebgllayer-xrwebgllayer-session-context-layerinit-context",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrwebgllayer-xrwebgllayer-session-context-layerinit-context",
       "linkingText": [
         "context"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "XRWebGLLayer/XRWebGLLayer(session, context, layerInit)",
         "XRWebGLLayer/constructor(session, context, layerInit)",
+        "XRWebGLLayer/XRWebGLLayer(session, context)",
         "XRWebGLLayer/constructor(session, context)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-xrwebgllayer-constructor-session-context-layerinit-layerinit",
-      "href": "https://www.w3.org/TR/webxr/#dom-xrwebgllayer-constructor-session-context-layerinit-layerinit",
+      "id": "dom-xrwebgllayer-xrwebgllayer-session-context-layerinit-layerinit",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrwebgllayer-xrwebgllayer-session-context-layerinit-layerinit",
       "linkingText": [
         "layerInit"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "XRWebGLLayer/XRWebGLLayer(session, context, layerInit)",
         "XRWebGLLayer/constructor(session, context, layerInit)",
+        "XRWebGLLayer/XRWebGLLayer(session, context)",
         "XRWebGLLayer/constructor(session, context)"
       ],
       "access": "public",
@@ -2943,6 +3344,20 @@
       "informative": false
     },
     {
+      "id": "opaque-framebuffer-session",
+      "href": "https://www.w3.org/TR/webxr/#opaque-framebuffer-session",
+      "linkingText": [
+        "session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "opaque framebuffer"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "xrwebgllayer-target-framebuffer",
       "href": "https://www.w3.org/TR/webxr/#xrwebgllayer-target-framebuffer",
       "linkingText": [
@@ -3017,6 +3432,18 @@
       "href": "https://www.w3.org/TR/webxr/#list-of-viewports",
       "linkingText": [
         "list of viewports"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "list-of-viewport-objects",
+      "href": "https://www.w3.org/TR/webxr/#list-of-viewport-objects",
+      "linkingText": [
+        "list of viewport objects"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3129,6 +3556,18 @@
       "informative": false
     },
     {
+      "id": "xr-task-source",
+      "href": "https://www.w3.org/TR/webxr/#xr-task-source",
+      "linkingText": [
+        "XR task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "xrsessionevent",
       "href": "https://www.w3.org/TR/webxr/#xrsessionevent",
       "linkingText": [
@@ -3156,28 +3595,30 @@
       "informative": false
     },
     {
-      "id": "dom-xrsessionevent-constructor-type-eventinitdict-type",
-      "href": "https://www.w3.org/TR/webxr/#dom-xrsessionevent-constructor-type-eventinitdict-type",
+      "id": "dom-xrsessionevent-xrsessionevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrsessionevent-xrsessionevent-type-eventinitdict-type",
       "linkingText": [
         "type"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "XRSessionEvent/XRSessionEvent(type, eventInitDict)",
         "XRSessionEvent/constructor(type, eventInitDict)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-xrsessionevent-constructor-type-eventinitdict-eventinitdict",
-      "href": "https://www.w3.org/TR/webxr/#dom-xrsessionevent-constructor-type-eventinitdict-eventinitdict",
+      "id": "dom-xrsessionevent-xrsessionevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrsessionevent-xrsessionevent-type-eventinitdict-eventinitdict",
       "linkingText": [
         "eventInitDict"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "XRSessionEvent/XRSessionEvent(type, eventInitDict)",
         "XRSessionEvent/constructor(type, eventInitDict)"
       ],
       "access": "public",
@@ -3251,28 +3692,30 @@
       "informative": false
     },
     {
-      "id": "dom-xrinputsourceevent-constructor-type-eventinitdict-type",
-      "href": "https://www.w3.org/TR/webxr/#dom-xrinputsourceevent-constructor-type-eventinitdict-type",
+      "id": "dom-xrinputsourceevent-xrinputsourceevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrinputsourceevent-xrinputsourceevent-type-eventinitdict-type",
       "linkingText": [
         "type"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "XRInputSourceEvent/XRInputSourceEvent(type, eventInitDict)",
         "XRInputSourceEvent/constructor(type, eventInitDict)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-xrinputsourceevent-constructor-type-eventinitdict-eventinitdict",
-      "href": "https://www.w3.org/TR/webxr/#dom-xrinputsourceevent-constructor-type-eventinitdict-eventinitdict",
+      "id": "dom-xrinputsourceevent-xrinputsourceevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrinputsourceevent-xrinputsourceevent-type-eventinitdict-eventinitdict",
       "linkingText": [
         "eventInitDict"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "XRInputSourceEvent/XRInputSourceEvent(type, eventInitDict)",
         "XRInputSourceEvent/constructor(type, eventInitDict)"
       ],
       "access": "public",
@@ -3386,28 +3829,30 @@
       "informative": false
     },
     {
-      "id": "dom-xrinputsourceschangeevent-constructor-type-eventinitdict-type",
-      "href": "https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-constructor-type-eventinitdict-type",
+      "id": "dom-xrinputsourceschangeevent-xrinputsourceschangeevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-xrinputsourceschangeevent-type-eventinitdict-type",
       "linkingText": [
         "type"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "XRInputSourcesChangeEvent/XRInputSourcesChangeEvent(type, eventInitDict)",
         "XRInputSourcesChangeEvent/constructor(type, eventInitDict)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-xrinputsourceschangeevent-constructor-type-eventinitdict-eventinitdict",
-      "href": "https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-constructor-type-eventinitdict-eventinitdict",
+      "id": "dom-xrinputsourceschangeevent-xrinputsourceschangeevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-xrinputsourceschangeevent-type-eventinitdict-eventinitdict",
       "linkingText": [
         "eventInitDict"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "XRInputSourcesChangeEvent/XRInputSourcesChangeEvent(type, eventInitDict)",
         "XRInputSourcesChangeEvent/constructor(type, eventInitDict)"
       ],
       "access": "public",
@@ -3537,28 +3982,30 @@
       "informative": false
     },
     {
-      "id": "dom-xrreferencespaceevent-constructor-type-eventinitdict-type",
-      "href": "https://www.w3.org/TR/webxr/#dom-xrreferencespaceevent-constructor-type-eventinitdict-type",
+      "id": "dom-xrreferencespaceevent-xrreferencespaceevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrreferencespaceevent-xrreferencespaceevent-type-eventinitdict-type",
       "linkingText": [
         "type"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "XRReferenceSpaceEvent/XRReferenceSpaceEvent(type, eventInitDict)",
         "XRReferenceSpaceEvent/constructor(type, eventInitDict)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-xrreferencespaceevent-constructor-type-eventinitdict-eventinitdict",
-      "href": "https://www.w3.org/TR/webxr/#dom-xrreferencespaceevent-constructor-type-eventinitdict-eventinitdict",
+      "id": "dom-xrreferencespaceevent-xrreferencespaceevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrreferencespaceevent-xrreferencespaceevent-type-eventinitdict-eventinitdict",
       "linkingText": [
         "eventInitDict"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "XRReferenceSpaceEvent/XRReferenceSpaceEvent(type, eventInitDict)",
         "XRReferenceSpaceEvent/constructor(type, eventInitDict)"
       ],
       "access": "public",
@@ -3633,15 +4080,15 @@
       "informative": false
     },
     {
-      "id": "eventdef-xr-devicechange",
-      "href": "https://www.w3.org/TR/webxr/#eventdef-xr-devicechange",
+      "id": "eventdef-xrsystem-devicechange",
+      "href": "https://www.w3.org/TR/webxr/#eventdef-xrsystem-devicechange",
       "linkingText": [
         "devicechange"
       ],
       "localLinkingText": [],
       "type": "event",
       "for": [
-        "XR"
+        "XRSystem"
       ],
       "access": "public",
       "informative": false
@@ -3731,6 +4178,48 @@
       "informative": false
     },
     {
+      "id": "eventdef-xrsession-squeezestart",
+      "href": "https://www.w3.org/TR/webxr/#eventdef-xrsession-squeezestart",
+      "linkingText": [
+        "squeezestart"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eventdef-xrsession-squeezeend",
+      "href": "https://www.w3.org/TR/webxr/#eventdef-xrsession-squeezeend",
+      "linkingText": [
+        "squeezeend"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eventdef-xrsession-squeeze",
+      "href": "https://www.w3.org/TR/webxr/#eventdef-xrsession-squeeze",
+      "linkingText": [
+        "squeeze"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "eventdef-xrreferencespace-reset",
       "href": "https://www.w3.org/TR/webxr/#eventdef-xrreferencespace-reset",
       "linkingText": [
@@ -3749,30 +4238,6 @@
       "href": "https://www.w3.org/TR/webxr/#sensitive-information",
       "linkingText": [
         "sensitive information"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "active-and-focused",
-      "href": "https://www.w3.org/TR/webxr/#active-and-focused",
-      "linkingText": [
-        "active and focused"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "trustworthy",
-      "href": "https://www.w3.org/TR/webxr/#trustworthy",
-      "linkingText": [
-        "trustworthy"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3929,6 +4394,148 @@
       "href": "https://www.w3.org/TR/webxr/#poses-must-be-limited",
       "linkingText": [
         "poses must be limited"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "trusted-ui",
+      "href": "https://www.w3.org/TR/webxr/#trusted-ui",
+      "linkingText": [
+        "Trusted UI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "trusted-immersive-ui",
+      "href": "https://www.w3.org/TR/webxr/#trusted-immersive-ui",
+      "linkingText": [
+        "trusted immersive UI"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-permissionname-xr",
+      "href": "https://www.w3.org/TR/webxr/#dom-permissionname-xr",
+      "linkingText": [
+        "\"xr\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PermissionName"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-xrpermissiondescriptor",
+      "href": "https://www.w3.org/TR/webxr/#dictdef-xrpermissiondescriptor",
+      "linkingText": [
+        "XRPermissionDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrpermissiondescriptor-mode",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrpermissiondescriptor-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRPermissionDescriptor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrpermissiondescriptor-requiredfeatures",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrpermissiondescriptor-requiredfeatures",
+      "linkingText": [
+        "requiredFeatures"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRPermissionDescriptor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrpermissiondescriptor-optionalfeatures",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrpermissiondescriptor-optionalfeatures",
+      "linkingText": [
+        "optionalFeatures"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRPermissionDescriptor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "xrpermissionstatus",
+      "href": "https://www.w3.org/TR/webxr/#xrpermissionstatus",
+      "linkingText": [
+        "XRPermissionStatus"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrpermissionstatus-granted",
+      "href": "https://www.w3.org/TR/webxr/#dom-xrpermissionstatus-granted",
+      "linkingText": [
+        "granted"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRPermissionStatus"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "request-the-xr-permission",
+      "href": "https://www.w3.org/TR/webxr/#request-the-xr-permission",
+      "linkingText": [
+        "request the xr permission"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "resolve-the-requested-features",
+      "href": "https://www.w3.org/TR/webxr/#resolve-the-requested-features",
+      "linkingText": [
+        "resolve the requested features"
       ],
       "localLinkingText": [],
       "type": "dfn",

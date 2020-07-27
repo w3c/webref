@@ -99,7 +99,7 @@ GPUDevice includes GPUObjectBase;
 [Serializable]
 interface GPUBuffer {
     Promise<void> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size = 0);
-    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size = 0);
+    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);
     void unmap();
 
     void destroy();
@@ -326,7 +326,7 @@ dictionary GPUBindGroupLayoutEntry {
     boolean hasDynamicOffset = false;
 
     // Used for uniform buffer and storage buffer bindings.
-    GPUSize64 minBufferBindingSize = 0;
+    GPUSize64 minBufferBindingSize;
 
     // Used for sampled texture and storage texture bindings.
     GPUTextureViewDimension viewDimension;
@@ -539,17 +539,6 @@ enum GPUBlendOperation {
     "max"
 };
 
-enum GPUStencilOperation {
-    "keep",
-    "zero",
-    "replace",
-    "invert",
-    "increment-clamp",
-    "decrement-clamp",
-    "increment-wrap",
-    "decrement-wrap"
-};
-
 dictionary GPUDepthStencilStateDescriptor {
     required GPUTextureFormat format;
 
@@ -568,6 +557,17 @@ dictionary GPUStencilStateFaceDescriptor {
     GPUStencilOperation failOp = "keep";
     GPUStencilOperation depthFailOp = "keep";
     GPUStencilOperation passOp = "keep";
+};
+
+enum GPUStencilOperation {
+    "keep",
+    "zero",
+    "replace",
+    "invert",
+    "increment-clamp",
+    "decrement-clamp",
+    "increment-wrap",
+    "decrement-wrap"
 };
 
 enum GPUIndexFormat {
@@ -744,7 +744,7 @@ dictionary GPUComputePassDescriptor : GPUObjectDescriptorBase {
 interface mixin GPURenderEncoderBase {
     void setPipeline(GPURenderPipeline pipeline);
 
-    void setIndexBuffer(GPUBuffer buffer, optional GPUSize64 offset = 0, optional GPUSize64 size = 0);
+    void setIndexBuffer(GPUBuffer buffer, GPUIndexFormat indexFormat, optional GPUSize64 offset = 0, optional GPUSize64 size = 0);
     void setVertexBuffer(GPUIndex32 slot, GPUBuffer buffer, optional GPUSize64 offset = 0, optional GPUSize64 size = 0);
 
     void draw(GPUSize32 vertexCount, optional GPUSize32 instanceCount = 1,

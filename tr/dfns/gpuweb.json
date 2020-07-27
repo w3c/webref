@@ -4546,6 +4546,20 @@
       "informative": false
     },
     {
+      "id": "gpudevicecreatebindgrouplayout-storage-texture-format-validation",
+      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatebindgrouplayout-storage-texture-format-validation",
+      "linkingText": [
+        "storage texture format validation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "GPUDevice.createBindGroupLayout"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "gpudevicecreatebindgrouplayout-sampler-validation",
       "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatebindgrouplayout-sampler-validation",
       "linkingText": [
@@ -6400,130 +6414,6 @@
       "informative": false
     },
     {
-      "id": "enumdef-gpustenciloperation",
-      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpustenciloperation",
-      "linkingText": [
-        "GPUStencilOperation"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpustenciloperation-keep",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustenciloperation-keep",
-      "linkingText": [
-        "\"keep\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUStencilOperation"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpustenciloperation-zero",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustenciloperation-zero",
-      "linkingText": [
-        "\"zero\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUStencilOperation"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpustenciloperation-replace",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustenciloperation-replace",
-      "linkingText": [
-        "\"replace\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUStencilOperation"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpustenciloperation-invert",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustenciloperation-invert",
-      "linkingText": [
-        "\"invert\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUStencilOperation"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpustenciloperation-increment-clamp",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustenciloperation-increment-clamp",
-      "linkingText": [
-        "\"increment-clamp\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUStencilOperation"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpustenciloperation-decrement-clamp",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustenciloperation-decrement-clamp",
-      "linkingText": [
-        "\"decrement-clamp\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUStencilOperation"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpustenciloperation-increment-wrap",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustenciloperation-increment-wrap",
-      "linkingText": [
-        "\"increment-wrap\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUStencilOperation"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpustenciloperation-decrement-wrap",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustenciloperation-decrement-wrap",
-      "linkingText": [
-        "\"decrement-wrap\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUStencilOperation"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dictdef-gpudepthstencilstatedescriptor",
       "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpudepthstencilstatedescriptor",
       "linkingText": [
@@ -6697,6 +6587,130 @@
       "type": "dict-member",
       "for": [
         "GPUStencilStateFaceDescriptor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-gpustenciloperation",
+      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpustenciloperation",
+      "linkingText": [
+        "GPUStencilOperation"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpustenciloperation-keep",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustenciloperation-keep",
+      "linkingText": [
+        "\"keep\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUStencilOperation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpustenciloperation-zero",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustenciloperation-zero",
+      "linkingText": [
+        "\"zero\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUStencilOperation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpustenciloperation-replace",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustenciloperation-replace",
+      "linkingText": [
+        "\"replace\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUStencilOperation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpustenciloperation-invert",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustenciloperation-invert",
+      "linkingText": [
+        "\"invert\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUStencilOperation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpustenciloperation-increment-clamp",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustenciloperation-increment-clamp",
+      "linkingText": [
+        "\"increment-clamp\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUStencilOperation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpustenciloperation-decrement-clamp",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustenciloperation-decrement-clamp",
+      "linkingText": [
+        "\"decrement-clamp\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUStencilOperation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpustenciloperation-increment-wrap",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustenciloperation-increment-wrap",
+      "linkingText": [
+        "\"increment-wrap\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUStencilOperation"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpustenciloperation-decrement-wrap",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustenciloperation-decrement-wrap",
+      "linkingText": [
+        "\"decrement-wrap\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUStencilOperation"
       ],
       "access": "public",
       "informative": false
@@ -9079,9 +9093,9 @@
       "id": "dom-gpurenderencoderbase-setindexbuffer",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer",
       "linkingText": [
-        "setIndexBuffer(buffer, offset, size)",
-        "setIndexBuffer(buffer, offset)",
-        "setIndexBuffer(buffer)"
+        "setIndexBuffer(buffer, indexFormat, offset, size)",
+        "setIndexBuffer(buffer, indexFormat, offset)",
+        "setIndexBuffer(buffer, indexFormat)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -9092,49 +9106,65 @@
       "informative": false
     },
     {
-      "id": "dom-gpurenderencoderbase-setindexbuffer-buffer-offset-size-buffer",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer-buffer-offset-size-buffer",
+      "id": "dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-buffer",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-buffer",
       "linkingText": [
         "buffer"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPURenderEncoderBase/setIndexBuffer(buffer, offset, size)",
-        "GPURenderEncoderBase/setIndexBuffer(buffer, offset)",
-        "GPURenderEncoderBase/setIndexBuffer(buffer)"
+        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset, size)",
+        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset)",
+        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-gpurenderencoderbase-setindexbuffer-buffer-offset-size-offset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer-buffer-offset-size-offset",
+      "id": "dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-indexformat",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-indexformat",
+      "linkingText": [
+        "indexFormat"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset, size)",
+        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset)",
+        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-offset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-offset",
       "linkingText": [
         "offset"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPURenderEncoderBase/setIndexBuffer(buffer, offset, size)",
-        "GPURenderEncoderBase/setIndexBuffer(buffer, offset)",
-        "GPURenderEncoderBase/setIndexBuffer(buffer)"
+        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset, size)",
+        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset)",
+        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat)"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-gpurenderencoderbase-setindexbuffer-buffer-offset-size-size",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer-buffer-offset-size-size",
+      "id": "dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-size",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-size",
       "linkingText": [
         "size"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPURenderEncoderBase/setIndexBuffer(buffer, offset, size)",
-        "GPURenderEncoderBase/setIndexBuffer(buffer, offset)",
-        "GPURenderEncoderBase/setIndexBuffer(buffer)"
+        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset, size)",
+        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset)",
+        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat)"
       ],
       "access": "public",
       "informative": false

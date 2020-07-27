@@ -1,38 +1,73 @@
-% Diff between report from "July 20, 2020" and reference report from "July 13, 2020"
+% Diff between report from "July 27, 2020" and reference report from "July 20, 2020"
 % Reffy
-% July 20, 2020
+% July 27, 2020
+
+## CSS Spatial Navigation Level 1
+
+- Initial URL: [https://www.w3.org/TR/css-nav-1/](https://www.w3.org/TR/css-nav-1/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://drafts.csswg.org/css-nav-1/](https://drafts.csswg.org/css-nav-1/)
+- Missing references for links: *INS* https://w3c.github.io/webappsec-feature-policy/
+- Inconsistent references for links: *DEL* https://w3c.github.io/webappsec-feature-policy/
+
 
 ## Fullscreen API Standard
 
 - Initial URL: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
-- Inconsistent references for links: *INS* https://www.w3.org/TR/feature-policy-1/
+- Missing references for links: *INS* https://www.w3.org/TR/feature-policy-1/
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/feature-policy-1/
 
 
-## HTML Standard
+## Media Queries Level 4
 
-- Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
+- Initial URL: [https://www.w3.org/TR/mediaqueries-4/](https://www.w3.org/TR/mediaqueries-4/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Inconsistent references for links: *INS* https://w3c.github.io/manifest/
+- Editor's Draft: [https://drafts.csswg.org/mediaqueries-4/](https://drafts.csswg.org/mediaqueries-4/)
+- Missing references for links: *DEL* https://www.w3.org/TR/css-device-adapt/, https://www.w3.org/TR/css3-break/
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-values/
+
+
+## Permissions
+
+- Initial URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
+- Missing references for links: *INS* https://w3c.github.io/webappsec-feature-policy/, https://w3c.github.io/webdriver/
+- Inconsistent references for links: *DEL* https://w3c.github.io/permissions/
+
+
+## Permissions Policy
+
+- Initial URL: [https://www.w3.org/TR/permissions-policy-1/](https://www.w3.org/TR/permissions-policy-1/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
+- This specification was not in the reference crawl report.
 
 
 ## Permissions Policy
 
 - Initial URL: [https://www.w3.org/TR/feature-policy-1/](https://www.w3.org/TR/feature-policy-1/)
-- Crawled URL: [undefined](undefined)
+- Crawled URL: [https://www.w3.org/TR/feature-policy-1/](https://www.w3.org/TR/feature-policy-1/)
 - Editor's Draft: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
-- Spec title: *INS* Permissions Policy / *DEL* Feature Policy
-- Missing references for links: *INS* https://www.w3.org/TR/permissions-policy-1/
+- This specification is not in the new crawl report.
 
 
-## Web App Manifest
+## WebXR Device API
 
-- Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
+- Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
-- Spec is OK: *INS* true / *DEL* false
-- Missing references for links: *DEL* https://w3c.github.io/accname/
+- Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
+- Missing references for links: *INS* https://www.w3.org/TR/page-visibility-2/, https://www.w3.org/TR/permissions-policy/ / *DEL* https://www.w3.org/TR/hr-time/
+- Inconsistent references for links: *INS* https://w3c.github.io/permissions/, https://www.w3.org/TR/hr-time/, https://w3c.github.io/requestidlecallback/
+
+
+## WebXR Layers API Level 1
+
+- Initial URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
+- Unknown WebIDL names used: *DEL* XRLayer
 
 
