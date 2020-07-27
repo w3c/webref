@@ -34,13 +34,17 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Frame Timing](https://wicg.github.io/frame-timing/)
+- [Input Device Capabilities](https://wicg.github.io/input-device-capabilities/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
+- [Media Playback Quality](https://w3c.github.io/media-playback-quality/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
 - [SVG Markers](https://svgwg.org/specs/markers/)
 - [SVG Paths](https://svgwg.org/specs/paths/)
+- [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [WebRTC DSCP Control API](https://w3c.github.io/webrtc-priority/)
 
-=> 7 specifications found
+=> 11 specifications found
 
 
 
@@ -86,6 +90,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/) uses `Point2D` but does not reference [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html) uses `Point2D` but does not reference [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
+- [Badging API](https://w3c.github.io/badging/) uses `Navigator` but does not reference [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Content Index](https://wicg.github.io/content-index/spec/) uses `ImageResource` but does not reference [Image Resource](https://w3c.github.io/image-resource/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/) uses `Document` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html) uses `Gamepad` but does not reference [Gamepad](https://w3c.github.io/gamepad/)
@@ -94,6 +99,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/) uses:
     * `MediaStream` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
     * `MediaStreamTrack` but does not reference [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Playback Quality](https://w3c.github.io/media-playback-quality/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://w3c.github.io/hr-time/)
 - [SVG Markers](https://svgwg.org/specs/markers/) uses:
     * `DOMPoint` but does not reference [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
     * `DOMPointReadOnly` but does not reference [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
@@ -105,7 +111,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/) uses `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 17 missing references for IDL definitions found in 12 specifications
+=> 19 missing references for IDL definitions found in 14 specifications
 
 
 ## Missing references based on document links
