@@ -98,7 +98,7 @@ GPUDevice includes GPUObjectBase;
 
 [Serializable]
 interface GPUBuffer {
-    Promise<void> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size = 0);
+    Promise<void> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);
     ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);
     void unmap();
 
@@ -173,9 +173,9 @@ dictionary GPUTextureViewDescriptor : GPUObjectDescriptorBase {
     GPUTextureViewDimension dimension;
     GPUTextureAspect aspect = "all";
     GPUIntegerCoordinate baseMipLevel = 0;
-    GPUIntegerCoordinate mipLevelCount = 0;
+    GPUIntegerCoordinate mipLevelCount;
     GPUIntegerCoordinate baseArrayLayer = 0;
-    GPUIntegerCoordinate arrayLayerCount = 0;
+    GPUIntegerCoordinate arrayLayerCount;
 };
 
 enum GPUTextureViewDimension {
@@ -322,20 +322,20 @@ dictionary GPUBindGroupLayoutEntry {
     required GPUShaderStageFlags visibility;
     required GPUBindingType type;
 
-    // Used for uniform buffer and storage buffer bindings.
-    boolean hasDynamicOffset = false;
+    // Used for uniform buffer and storage buffer bindings. Must be undefined for other binding types.
+    boolean hasDynamicOffset;
 
-    // Used for uniform buffer and storage buffer bindings.
+    // Used for uniform buffer and storage buffer bindings. Must be undefined for other binding types.
     GPUSize64 minBufferBindingSize;
 
-    // Used for sampled texture and storage texture bindings.
+    // Used for sampled texture and storage texture bindings. Must be undefined for other binding types.
     GPUTextureViewDimension viewDimension;
 
-    // Used for sampled texture bindings.
+    // Used for sampled texture bindings. Must be undefined for other binding types.
     GPUTextureComponentType textureComponentType;
-    boolean multisampled = false;
+    boolean multisampled;
 
-    // Used for storage texture bindings.
+    // Used for storage texture bindings. Must be undefined for other binding types.
     GPUTextureFormat storageTextureFormat;
 };
 
