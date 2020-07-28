@@ -2266,7 +2266,6 @@
       "id": "dom-paymentresponse-complete",
       "href": "https://w3c.github.io/payment-request/#dom-paymentresponse-complete",
       "linkingText": [
-        "complete(result)",
         "complete()",
         "complete(, result)"
       ],
@@ -2335,10 +2334,10 @@
       "informative": false
     },
     {
-      "id": "dfn-payment-feature",
-      "href": "https://w3c.github.io/payment-request/#dfn-payment-feature",
+      "id": "dfn-payment-permission",
+      "href": "https://w3c.github.io/payment-request/#dfn-payment-permission",
       "linkingText": [
-        "payment-feature",
+        "payment-permission",
         "payment"
       ],
       "localLinkingText": [],
@@ -2504,15 +2503,17 @@
       "informative": false
     },
     {
-      "id": "dfn-mechvalidation-waitforupdate",
-      "href": "https://w3c.github.io/payment-request/#dfn-mechvalidation-waitforupdate",
+      "id": "dfn-waitforupdate",
+      "href": "https://w3c.github.io/payment-request/#dfn-waitforupdate",
       "linkingText": [
-        "mechvalidation.waitForUpdate"
+        "[[waitForUpdate]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "idl",
+      "for": [
+        "MerchantValidationEvent"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -2697,8 +2698,8 @@
       "id": "dom-paymentrequestupdateevent-updatewith",
       "href": "https://w3c.github.io/payment-request/#dom-paymentrequestupdateevent-updatewith",
       "linkingText": [
-        "updateWith(detailsPromise)",
-        "updateWith()"
+        "updateWith()",
+        "updateWith(detailsPromise)"
       ],
       "localLinkingText": [
         "PaymentRequestUpdateEvent.updateWith",
@@ -2713,14 +2714,16 @@
       "informative": false
     },
     {
-      "id": "dfn-waitforupdate",
-      "href": "https://w3c.github.io/payment-request/#dfn-waitforupdate",
+      "id": "dfn-waitforupdate-0",
+      "href": "https://w3c.github.io/payment-request/#dfn-waitforupdate-0",
       "linkingText": [
         "[[waitForUpdate]]"
       ],
       "localLinkingText": [],
       "type": "idl",
-      "for": [],
+      "for": [
+        "PaymentRequestUpdateEvent"
+      ],
       "access": "public",
       "informative": false
     },
