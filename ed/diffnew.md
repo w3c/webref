@@ -1,48 +1,12 @@
-% Diff between report from "July 28, 2020" and reference report from "July 27, 2020"
+% Diff between report from "July 28, 2020" and reference report from "July 28, 2020"
 % Reffy
 % July 28, 2020
 
-## Badging API
+## Geolocation API Specification
 
-- Initial URL: [https://w3c.github.io/badging/](https://w3c.github.io/badging/)
+- Initial URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/badging/](https://w3c.github.io/badging/)
+- Editor's Draft: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
 - Spec is OK: *INS* true / *DEL* false
-
-
-## Input Device Capabilities
-
-- Initial URL: [https://wicg.github.io/input-device-capabilities/](https://wicg.github.io/input-device-capabilities/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/input-device-capabilities/](https://wicg.github.io/input-device-capabilities/)
-- Spec is OK: *INS* true / *DEL* false
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
-
-
-## MathML Core
-
-- Initial URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
-- Spec is OK: *INS* true / *DEL* false
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
-
-
-## Media Playback Quality
-
-- Initial URL: [https://w3c.github.io/media-playback-quality/](https://w3c.github.io/media-playback-quality/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/media-playback-quality/](https://w3c.github.io/media-playback-quality/)
-- Spec is OK: *INS* true / *DEL* false
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
-
-
-## Web Share Target API
-
-- Initial URL: [https://w3c.github.io/web-share-target/](https://w3c.github.io/web-share-target/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/web-share-target/](https://w3c.github.io/web-share-target/)
-- Spec is OK: *INS* true / *DEL* false
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
 
 
