@@ -7462,35 +7462,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpucommandencoder-beginrenderpass-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-beginrenderpass-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/beginRenderPass(descriptor)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-begincomputepass-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-begincomputepass-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/beginComputePass(descriptor)",
-        "GPUCommandEncoder/beginComputePass()"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-source",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-source",
       "linkingText": [
@@ -7992,15 +7963,15 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-gpucommandencoderbeginrenderpass-beginrenderpass-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpucommandencoderbeginrenderpass-beginrenderpass-valid-usage",
+      "id": "dom-gpucommandencoder-beginrenderpass-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-beginrenderpass-descriptor-descriptor",
       "linkingText": [
-        "beginRenderPass Valid Usage"
+        "descriptor"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
+      "type": "argument",
       "for": [
-        "GPUCommandEncoder.beginRenderPass"
+        "GPUCommandEncoder/beginRenderPass(descriptor)"
       ],
       "access": "public",
       "informative": false
@@ -8021,15 +7992,15 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-gpucommandencoderbegincomputepass-begincomputepass-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpucommandencoderbegincomputepass-begincomputepass-valid-usage",
+      "id": "dom-gpucommandencoder-begincomputepass-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-begincomputepass-descriptor-descriptor",
       "linkingText": [
-        "beginComputePass Valid Usage"
+        "descriptor"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
+      "type": "argument",
       "for": [
-        "GPUCommandEncoder.beginComputePass"
+        "GPUCommandEncoder/beginComputePass(descriptor)"
       ],
       "access": "public",
       "informative": false
@@ -9036,20 +9007,6 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-gpucomputepassencoderendpass-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpucomputepassencoderendpass-valid-usage",
-      "linkingText": [
-        "Valid Usage"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [
-        "GPUComputePassEncoder.endPass"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "gpurenderencoderbase",
       "href": "https://gpuweb.github.io/gpuweb/#gpurenderencoderbase",
       "linkingText": [
@@ -9535,160 +9492,6 @@
       "localLinkingText": [],
       "type": "interface",
       "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-x",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-x",
-      "linkingText": [
-        "x"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/setViewport(x, y, width, height, minDepth, maxDepth)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-y",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-y",
-      "linkingText": [
-        "y"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/setViewport(x, y, width, height, minDepth, maxDepth)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-width",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-width",
-      "linkingText": [
-        "width"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/setViewport(x, y, width, height, minDepth, maxDepth)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-height",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-height",
-      "linkingText": [
-        "height"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/setViewport(x, y, width, height, minDepth, maxDepth)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-mindepth",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-mindepth",
-      "linkingText": [
-        "minDepth"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/setViewport(x, y, width, height, minDepth, maxDepth)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-maxdepth",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-maxdepth",
-      "linkingText": [
-        "maxDepth"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/setViewport(x, y, width, height, minDepth, maxDepth)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-setscissorrect-x-y-width-height-x",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setscissorrect-x-y-width-height-x",
-      "linkingText": [
-        "x"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/setScissorRect(x, y, width, height)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-setscissorrect-x-y-width-height-y",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setscissorrect-x-y-width-height-y",
-      "linkingText": [
-        "y"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/setScissorRect(x, y, width, height)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-setscissorrect-x-y-width-height-width",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setscissorrect-x-y-width-height-width",
-      "linkingText": [
-        "width"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/setScissorRect(x, y, width, height)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-setscissorrect-x-y-width-height-height",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setscissorrect-x-y-width-height-height",
-      "linkingText": [
-        "height"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/setScissorRect(x, y, width, height)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-setblendcolor-color-color",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setblendcolor-color-color",
-      "linkingText": [
-        "color"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/setBlendColor(color)"
-      ],
       "access": "public",
       "informative": false
     },
@@ -10257,15 +10060,85 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-gpurenderpassencodersetviewport-setviewport-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpurenderpassencodersetviewport-setviewport-valid-usage",
+      "id": "dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-x",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-x",
       "linkingText": [
-        "setViewport Valid Usage"
+        "x"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
+      "type": "argument",
       "for": [
-        "GPURenderPassEncoder.setViewport"
+        "GPURenderPassEncoder/setViewport(x, y, width, height, minDepth, maxDepth)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-y",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/setViewport(x, y, width, height, minDepth, maxDepth)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-width",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/setViewport(x, y, width, height, minDepth, maxDepth)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-height",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/setViewport(x, y, width, height, minDepth, maxDepth)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-mindepth",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-mindepth",
+      "linkingText": [
+        "minDepth"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/setViewport(x, y, width, height, minDepth, maxDepth)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-maxdepth",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport-x-y-width-height-mindepth-maxdepth-maxdepth",
+      "linkingText": [
+        "maxDepth"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/setViewport(x, y, width, height, minDepth, maxDepth)"
       ],
       "access": "public",
       "informative": false
@@ -10285,15 +10158,57 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-gpurenderpassencodersetscissorrect-setscissorrect-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpurenderpassencodersetscissorrect-setscissorrect-valid-usage",
+      "id": "dom-gpurenderpassencoder-setscissorrect-x-y-width-height-x",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setscissorrect-x-y-width-height-x",
       "linkingText": [
-        "setScissorRect Valid Usage"
+        "x"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
+      "type": "argument",
       "for": [
-        "GPURenderPassEncoder.setScissorRect"
+        "GPURenderPassEncoder/setScissorRect(x, y, width, height)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-setscissorrect-x-y-width-height-y",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setscissorrect-x-y-width-height-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/setScissorRect(x, y, width, height)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-setscissorrect-x-y-width-height-width",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setscissorrect-x-y-width-height-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/setScissorRect(x, y, width, height)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-setscissorrect-x-y-width-height-height",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setscissorrect-x-y-width-height-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/setScissorRect(x, y, width, height)"
       ],
       "access": "public",
       "informative": false
@@ -10313,6 +10228,20 @@
       "informative": false
     },
     {
+      "id": "dom-gpurenderpassencoder-setblendcolor-color-color",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setblendcolor-color-color",
+      "linkingText": [
+        "color"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/setBlendColor(color)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpurenderpassencoder-setstencilreference",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setstencilreference",
       "linkingText": [
@@ -10327,6 +10256,20 @@
       "informative": false
     },
     {
+      "id": "dom-gpurenderpassencoder-setblendcolor-color-reference",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setblendcolor-color-reference",
+      "linkingText": [
+        "reference"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/setBlendColor(color)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpurenderpassencoder-endpass",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-endpass",
       "linkingText": [
@@ -10336,20 +10279,6 @@
       "type": "method",
       "for": [
         "GPURenderPassEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "abstract-opdef-gpurenderpassencoderendpass-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpurenderpassencoderendpass-valid-usage",
-      "linkingText": [
-        "Valid Usage"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [
-        "GPURenderPassEncoder.endPass"
       ],
       "access": "public",
       "informative": false
