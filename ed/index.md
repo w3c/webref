@@ -2686,7 +2686,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Crawled URL: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
-- Crawled version: 21 July 2020
+- Crawled version: 31 July 2020
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Shortname: css-fonts-4
@@ -2763,7 +2763,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-fonts-3/](https://www.w3.org/TR/css-fonts-3/)
 - Crawled URL: [https://drafts.csswg.org/css-fonts/](https://drafts.csswg.org/css-fonts/)
-- Crawled version: 21 July 2020
+- Crawled version: 31 July 2020
 - Editor's Draft: [https://drafts.csswg.org/css-fonts/](https://drafts.csswg.org/css-fonts/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-3/](https://www.w3.org/TR/css-fonts-3/)
 - Shortname: css-fonts-3
@@ -8084,7 +8084,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mediaqueries-5/](https://www.w3.org/TR/mediaqueries-5/)
 - Crawled URL: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
-- Crawled version: 30 July 2020
+- Crawled version: 31 July 2020
 - Editor's Draft: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
 - Latest published version: [https://www.w3.org/TR/mediaqueries-5/](https://www.w3.org/TR/mediaqueries-5/)
 - Shortname: mediaqueries-5
@@ -11945,7 +11945,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 29 July 2020
+- Crawled version: 31 July 2020
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
