@@ -162,12 +162,12 @@ dictionary XRMediaLayerInit {
 interface XRMediaBinding {
   constructor(XRSession session);
 
-  XRQuadLayer createQuadVideoLayer(HTMLVideoElement video,
-                                   optional XRMediaLayerInit init = {});
-  XRCylinderLayer createCylinderVideoLayer(HTMLVideoElement video,
-                                           optional XRMediaLayerInit init = {});
-  XREquirectLayer createEquirectVideoLayer(HTMLVideoElement video,
-                                           optional XRMediaLayerInit init = {});
+  XRQuadLayer createQuadLayer(HTMLVideoElement video,
+                              optional XRMediaLayerInit init = {});
+  XRCylinderLayer createCylinderLayer(HTMLVideoElement video,
+                                      optional XRMediaLayerInit init = {});
+  XREquirectLayer createEquirectLayer(HTMLVideoElement video,
+                                      optional XRMediaLayerInit init = {});
 };
 
 [SecureContext, Exposed=Window]
