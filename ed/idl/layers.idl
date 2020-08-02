@@ -181,5 +181,5 @@ dictionary XRLayerEventInit : EventInit {
 };
 
 [SecureContext, Exposed=Window] partial interface XRRenderState {
-  [SameObject] readonly attribute FrozenArray<XRLayer> layers;
+  readonly attribute FrozenArray<XRLayer> layers;
 };
