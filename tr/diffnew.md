@@ -1,45 +1,12 @@
-% Diff between report from "July 27, 2020" and reference report from "July 20, 2020"
+% Diff between report from "August 03, 2020" and reference report from "July 27, 2020"
 % Reffy
-% July 27, 2020
+% August 03, 2020
 
-## CSS Spatial Navigation Level 1
+## Web Authentication: An API for accessing Public Key Credentials - Level 2
 
-- Initial URL: [https://www.w3.org/TR/css-nav-1/](https://www.w3.org/TR/css-nav-1/)
+- Initial URL: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-nav-1/](https://drafts.csswg.org/css-nav-1/)
-- Missing references for links: *INS* https://w3c.github.io/webappsec-feature-policy/
-
-
-## Fullscreen API Standard
-
-- Initial URL: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
-- Missing references for links: *INS* https://www.w3.org/TR/feature-policy-1/
-
-
-## Permissions
-
-- Initial URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
-- Missing references for links: *INS* https://w3c.github.io/webappsec-feature-policy/, https://w3c.github.io/webdriver/
-
-
-## Permissions Policy
-
-- Initial URL: [https://www.w3.org/TR/permissions-policy-1/](https://www.w3.org/TR/permissions-policy-1/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webappsec-feature-policy/](https://w3c.github.io/webappsec-feature-policy/)
-- This specification was not in the reference crawl report.
-
-
-## WebXR Device API
-
-- Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Missing references for links: *INS* https://www.w3.org/TR/page-visibility-2/, https://www.w3.org/TR/permissions-policy/ / *DEL* https://www.w3.org/TR/hr-time/
-- Inconsistent references for links: *INS* https://w3c.github.io/permissions/, https://www.w3.org/TR/hr-time/, https://w3c.github.io/requestidlecallback/
+- Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
+- Missing references for links: *INS* https://www.w3.org/TR/permissions-policy/, https://w3c.github.io/webdriver/ / *DEL* https://w3c.github.io/webdriver/webdriver-spec.html
 
 
