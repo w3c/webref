@@ -41,6 +41,18 @@
       "informative": false
     },
     {
+      "id": "cddl",
+      "href": "https://www.w3.org/TR/webauthn-2/#cddl",
+      "linkingText": [
+        "CDDL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "attestation",
       "href": "https://www.w3.org/TR/webauthn-2/#attestation",
       "linkingText": [
@@ -305,10 +317,34 @@
       "informative": false
     },
     {
-      "id": "client-side-resident-public-key-credential-source",
-      "href": "https://www.w3.org/TR/webauthn-2/#client-side-resident-public-key-credential-source",
+      "id": "client-side-discoverable-public-key-credential-source",
+      "href": "https://www.w3.org/TR/webauthn-2/#client-side-discoverable-public-key-credential-source",
       "linkingText": [
-        "Client-side-resident Public Key Credential Source"
+        "Client-side discoverable Public Key Credential Source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "client-side-discoverable-credential",
+      "href": "https://www.w3.org/TR/webauthn-2/#client-side-discoverable-credential",
+      "linkingText": [
+        "Client-side discoverable Credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "discoverable-credential",
+      "href": "https://www.w3.org/TR/webauthn-2/#discoverable-credential",
+      "linkingText": [
+        "Discoverable Credential"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -321,6 +357,18 @@
       "href": "https://www.w3.org/TR/webauthn-2/#resident-credential",
       "linkingText": [
         "Resident Credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "resident-key",
+      "href": "https://www.w3.org/TR/webauthn-2/#resident-key",
+      "linkingText": [
+        "Resident Key"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -417,6 +465,18 @@
       "href": "https://www.w3.org/TR/webauthn-2/#human-palatability",
       "linkingText": [
         "Human Palatability"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "non-discoverable-credential",
+      "href": "https://www.w3.org/TR/webauthn-2/#non-discoverable-credential",
+      "linkingText": [
+        "Non-Discoverable Credential"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -643,10 +703,22 @@
       "informative": true
     },
     {
-      "id": "server-side-resident-public-key-credential-source",
-      "href": "https://www.w3.org/TR/webauthn-2/#server-side-resident-public-key-credential-source",
+      "id": "server-side-public-key-credential-source",
+      "href": "https://www.w3.org/TR/webauthn-2/#server-side-public-key-credential-source",
       "linkingText": [
-        "Server-side-resident Public Key Credential Source"
+        "Server-side Public Key Credential Source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "server-side-credential",
+      "href": "https://www.w3.org/TR/webauthn-2/#server-side-credential",
+      "linkingText": [
+        "Server-side Credential"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1361,6 +1433,48 @@
       "informative": false
     },
     {
+      "id": "dom-authenticatorattestationresponse-getauthenticatordata",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticatorattestationresponse-getauthenticatordata",
+      "linkingText": [
+        "getAuthenticatorData()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AuthenticatorAttestationResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatorattestationresponse-getpublickey",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticatorattestationresponse-getpublickey",
+      "linkingText": [
+        "getPublicKey()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AuthenticatorAttestationResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticatorattestationresponse-getpublickeyalgorithm",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticatorattestationresponse-getpublickeyalgorithm",
+      "linkingText": [
+        "getPublicKeyAlgorithm()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AuthenticatorAttestationResponse"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-authenticatorattestationresponse-attestationobject",
       "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticatorattestationresponse-attestationobject",
       "linkingText": [
@@ -1949,6 +2063,21 @@
       "informative": false
     },
     {
+      "id": "dom-attestationconveyancepreference-enterprise",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-attestationconveyancepreference-enterprise",
+      "linkingText": [
+        "\"enterprise\"",
+        "enterprise"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AttestationConveyancePreference"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dictdef-publickeycredentialrequestoptions",
       "href": "https://www.w3.org/TR/webauthn-2/#dictdef-publickeycredentialrequestoptions",
       "linkingText": [
@@ -2064,18 +2193,6 @@
       ],
       "localLinkingText": [],
       "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "typedefdef-authenticationextensionsauthenticatorinputs",
-      "href": "https://www.w3.org/TR/webauthn-2/#typedefdef-authenticationextensionsauthenticatorinputs",
-      "linkingText": [
-        "AuthenticationExtensionsAuthenticatorInputs"
-      ],
-      "localLinkingText": [],
-      "type": "typedef",
       "for": [],
       "access": "public",
       "informative": false
@@ -2257,10 +2374,10 @@
       "informative": false
     },
     {
-      "id": "collectedclientdata-json-serialized-client-data",
-      "href": "https://www.w3.org/TR/webauthn-2/#collectedclientdata-json-serialized-client-data",
+      "id": "collectedclientdata-json-compatible-serialization-of-client-data",
+      "href": "https://www.w3.org/TR/webauthn-2/#collectedclientdata-json-compatible-serialization-of-client-data",
       "linkingText": [
-        "JSON-serialized client data"
+        "JSON-compatible serialization of client data"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2281,6 +2398,18 @@
       "for": [
         "CollectedClientData"
       ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ccdtostring",
+      "href": "https://www.w3.org/TR/webauthn-2/#ccdtostring",
+      "linkingText": [
+        "CCDToString"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
       "access": "private",
       "informative": false
     },
@@ -2383,21 +2512,6 @@
       "linkingText": [
         "\"usb\"",
         "usb"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "AuthenticatorTransport"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticatortransport-lightning",
-      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticatortransport-lightning",
-      "linkingText": [
-        "\"lightning\"",
-        "lightning"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -2522,10 +2636,10 @@
       "informative": false
     },
     {
-      "id": "publickey-credentials-feature",
-      "href": "https://www.w3.org/TR/webauthn-2/#publickey-credentials-feature",
+      "id": "publickey-credentials-get-feature",
+      "href": "https://www.w3.org/TR/webauthn-2/#publickey-credentials-get-feature",
       "linkingText": [
-        "publickey-credentials-feature"
+        "publickey-credentials-get-feature"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2862,10 +2976,10 @@
       "informative": false
     },
     {
-      "id": "resident-credential-capable",
-      "href": "https://www.w3.org/TR/webauthn-2/#resident-credential-capable",
+      "id": "discoverable-credential-capable",
+      "href": "https://www.w3.org/TR/webauthn-2/#discoverable-credential-capable",
       "linkingText": [
-        "resident credential capable"
+        "discoverable credential capable"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3260,30 +3374,6 @@
       "informative": false
     },
     {
-      "id": "elliptic-curve-based-direct-anonymous-attestation",
-      "href": "https://www.w3.org/TR/webauthn-2/#elliptic-curve-based-direct-anonymous-attestation",
-      "linkingText": [
-        "Elliptic Curve based Direct Anonymous Attestation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "ecdaa",
-      "href": "https://www.w3.org/TR/webauthn-2/#ecdaa",
-      "linkingText": [
-        "ECDAA"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "none",
       "href": "https://www.w3.org/TR/webauthn-2/#none",
       "linkingText": [
@@ -3300,30 +3390,6 @@
       "href": "https://www.w3.org/TR/webauthn-2/#attestation-statement-format-identifier",
       "linkingText": [
         "attestation statement format identifier"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "identifier-of-the-ecdaa-issuer-public-key",
-      "href": "https://www.w3.org/TR/webauthn-2/#identifier-of-the-ecdaa-issuer-public-key",
-      "linkingText": [
-        "identifier of the ECDAA-Issuer public key"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "ecdaa-issuer-public-key",
-      "href": "https://www.w3.org/TR/webauthn-2/#ecdaa-issuer-public-key",
-      "linkingText": [
-        "ECDAA-Issuer public key"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3542,240 +3608,10 @@
       "informative": false
     },
     {
-      "id": "dom-authenticationextensionsclientinputs-txauthsimple",
-      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsclientinputs-txauthsimple",
+      "id": "dom-authenticationextensionsclientoutputs-appidexclude",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsclientoutputs-appidexclude",
       "linkingText": [
-        "txAuthSimple"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsClientInputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsclientoutputs-txauthsimple",
-      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsclientoutputs-txauthsimple",
-      "linkingText": [
-        "txAuthSimple"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsClientOutputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dictdef-txauthgenericarg",
-      "href": "https://www.w3.org/TR/webauthn-2/#dictdef-txauthgenericarg",
-      "linkingText": [
-        "txAuthGenericArg"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-txauthgenericarg-contenttype",
-      "href": "https://www.w3.org/TR/webauthn-2/#dom-txauthgenericarg-contenttype",
-      "linkingText": [
-        "contentType"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "txAuthGenericArg"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-txauthgenericarg-content",
-      "href": "https://www.w3.org/TR/webauthn-2/#dom-txauthgenericarg-content",
-      "linkingText": [
-        "content"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "txAuthGenericArg"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsclientinputs-txauthgeneric",
-      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsclientinputs-txauthgeneric",
-      "linkingText": [
-        "txAuthGeneric"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsClientInputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsclientoutputs-txauthgeneric",
-      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsclientoutputs-txauthgeneric",
-      "linkingText": [
-        "txAuthGeneric"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsClientOutputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "typedefdef-authenticatorselectionlist",
-      "href": "https://www.w3.org/TR/webauthn-2/#typedefdef-authenticatorselectionlist",
-      "linkingText": [
-        "AuthenticatorSelectionList"
-      ],
-      "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsclientinputs-authnsel",
-      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsclientinputs-authnsel",
-      "linkingText": [
-        "authnSel"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsClientInputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "typedefdef-aaguid",
-      "href": "https://www.w3.org/TR/webauthn-2/#typedefdef-aaguid",
-      "linkingText": [
-        "AAGUID"
-      ],
-      "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsclientoutputs-authnsel",
-      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsclientoutputs-authnsel",
-      "linkingText": [
-        "authnSel"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsClientOutputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsclientinputs-exts",
-      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsclientinputs-exts",
-      "linkingText": [
-        "exts"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsClientInputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "typedefdef-authenticationextensionssupported",
-      "href": "https://www.w3.org/TR/webauthn-2/#typedefdef-authenticationextensionssupported",
-      "linkingText": [
-        "AuthenticationExtensionsSupported"
-      ],
-      "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsclientoutputs-exts",
-      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsclientoutputs-exts",
-      "linkingText": [
-        "exts"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsClientOutputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsclientinputs-uvi",
-      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsclientinputs-uvi",
-      "linkingText": [
-        "uvi"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsClientInputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsclientoutputs-uvi",
-      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsclientoutputs-uvi",
-      "linkingText": [
-        "uvi"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsClientOutputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsclientinputs-loc",
-      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsclientinputs-loc",
-      "linkingText": [
-        "loc"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsClientInputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsclientoutputs-loc",
-      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsclientoutputs-loc",
-      "linkingText": [
-        "loc"
+        "appidExclude"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -3833,46 +3669,6 @@
       "type": "dict-member",
       "for": [
         "AuthenticationExtensionsClientOutputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dictdef-authenticatorbiometricperfbounds",
-      "href": "https://www.w3.org/TR/webauthn-2/#dictdef-authenticatorbiometricperfbounds",
-      "linkingText": [
-        "authenticatorBiometricPerfBounds"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticatorbiometricperfbounds-far",
-      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticatorbiometricperfbounds-far",
-      "linkingText": [
-        "FAR"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "authenticatorBiometricPerfBounds"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticatorbiometricperfbounds-frr",
-      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticatorbiometricperfbounds-frr",
-      "linkingText": [
-        "FRR"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "authenticatorBiometricPerfBounds"
       ],
       "access": "public",
       "informative": false
@@ -3955,6 +3751,300 @@
         "CredentialPropertiesOutput"
       ],
       "access": "private",
+      "informative": false
+    },
+    {
+      "id": "credentialpropertiesoutput-client-side-discoverable-credential-property",
+      "href": "https://www.w3.org/TR/webauthn-2/#credentialpropertiesoutput-client-side-discoverable-credential-property",
+      "linkingText": [
+        "client-side discoverable credential property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CredentialPropertiesOutput"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "prf",
+      "href": "https://www.w3.org/TR/webauthn-2/#prf",
+      "linkingText": [
+        "prf"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-authenticationextensionsprfvalues",
+      "href": "https://www.w3.org/TR/webauthn-2/#dictdef-authenticationextensionsprfvalues",
+      "linkingText": [
+        "AuthenticationExtensionsPRFValues"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsprfvalues-first",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsprfvalues-first",
+      "linkingText": [
+        "first"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsPRFValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsprfvalues-second",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsprfvalues-second",
+      "linkingText": [
+        "second"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsPRFValues"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-authenticationextensionsprfinputs",
+      "href": "https://www.w3.org/TR/webauthn-2/#dictdef-authenticationextensionsprfinputs",
+      "linkingText": [
+        "AuthenticationExtensionsPRFInputs"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-prf",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsclientinputs-prf",
+      "linkingText": [
+        "prf"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsprfinputs-eval",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsprfinputs-eval",
+      "linkingText": [
+        "eval"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsPRFInputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsprfinputs-evalbycredential",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsprfinputs-evalbycredential",
+      "linkingText": [
+        "evalByCredential"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsPRFInputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-authenticationextensionsprfoutputs",
+      "href": "https://www.w3.org/TR/webauthn-2/#dictdef-authenticationextensionsprfoutputs",
+      "linkingText": [
+        "AuthenticationExtensionsPRFOutputs"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientoutputs-prf",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsclientoutputs-prf",
+      "linkingText": [
+        "prf"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientOutputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsprfoutputs-enabled",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsprfoutputs-enabled",
+      "linkingText": [
+        "enabled"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsPRFOutputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsprfoutputs-results",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsprfoutputs-results",
+      "linkingText": [
+        "results"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsPRFOutputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "largeblob",
+      "href": "https://www.w3.org/TR/webauthn-2/#largeblob",
+      "linkingText": [
+        "largeBlob"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientinputs-largeblob",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsclientinputs-largeblob",
+      "linkingText": [
+        "largeBlob"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientInputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-authenticationextensionslargeblobinputs",
+      "href": "https://www.w3.org/TR/webauthn-2/#dictdef-authenticationextensionslargeblobinputs",
+      "linkingText": [
+        "AuthenticationExtensionsLargeBlobInputs"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionslargeblobinputs-read",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionslargeblobinputs-read",
+      "linkingText": [
+        "read"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsLargeBlobInputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionslargeblobinputs-write",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionslargeblobinputs-write",
+      "linkingText": [
+        "write"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsLargeBlobInputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionsclientoutputs-largeblob",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionsclientoutputs-largeblob",
+      "linkingText": [
+        "largeBlob"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsClientOutputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-authenticationextensionslargebloboutputs",
+      "href": "https://www.w3.org/TR/webauthn-2/#dictdef-authenticationextensionslargebloboutputs",
+      "linkingText": [
+        "AuthenticationExtensionsLargeBlobOutputs"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionslargebloboutputs-blob",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionslargebloboutputs-blob",
+      "linkingText": [
+        "blob"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsLargeBlobOutputs"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-authenticationextensionslargebloboutputs-written",
+      "href": "https://www.w3.org/TR/webauthn-2/#dom-authenticationextensionslargebloboutputs-written",
+      "linkingText": [
+        "written"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AuthenticationExtensionsLargeBlobOutputs"
+      ],
+      "access": "public",
       "informative": false
     },
     {
