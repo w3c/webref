@@ -4,39 +4,6 @@
     "url": "https://drafts.csswg.org/css-overflow-3/"
   },
   "properties": {
-    "overflow-x": {
-      "name": "overflow-x",
-      "value": "visible | hidden | clip | scroll | auto",
-      "initial": "visible",
-      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "as specified, except with visible/clip computing to auto/hidden (respectively) if one of overflow-x or overflow-y is neither visible nor clip",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete"
-    },
-    "overflow-y": {
-      "name": "overflow-y",
-      "value": "visible | hidden | clip | scroll | auto",
-      "initial": "visible",
-      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "as specified, except with visible/clip computing to auto/hidden (respectively) if one of overflow-x or overflow-y is neither visible nor clip",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete"
-    },
-    "overflow": {
-      "name": "overflow",
-      "value": "[ visible | hidden | clip | scroll | auto ]{1,2}",
-      "initial": "visible",
-      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], and grid containers [CSS3-GRID-LAYOUT]",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "see individual properties",
-      "animationType": "discrete",
-      "canonicalOrder": "per grammar"
-    },
     "overflow-clip-margin": {
       "name": "overflow-clip-margin",
       "value": "<length [0,∞]>",
@@ -45,28 +12,6 @@
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "the computed <length>",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete"
-    },
-    "overflow-inline": {
-      "name": "overflow-inline",
-      "value": "<'overflow'>",
-      "initial": "visible",
-      "appliesTo": "Same as overflow-x and overflow-y",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "Same as overflow-x and overflow-y",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete"
-    },
-    "overflow-block": {
-      "name": "overflow-block",
-      "value": "<'overflow'>",
-      "initial": "visible",
-      "appliesTo": "Same as overflow-x and overflow-y",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "Same as overflow-x and overflow-y",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },

@@ -17,29 +17,11 @@
       "value": "<symbol> <symbol>?",
       "initial": "\"\\2D\" (\"-\" hyphen-minus)"
     },
-    "prefix": {
-      "name": "prefix",
-      "for": "@counter-style",
-      "value": "<symbol>",
-      "initial": "\"\" (the empty string)"
-    },
-    "suffix": {
-      "name": "suffix",
-      "for": "@counter-style",
-      "value": "<symbol>",
-      "initial": "\"\\2E\\20\" (\".\" full stop followed by a space)"
-    },
     "range": {
       "name": "range",
       "for": "@counter-style",
       "value": "[ [ <integer> | infinite ]{2} ]# | auto",
       "initial": "auto"
-    },
-    "pad": {
-      "name": "pad",
-      "for": "@counter-style",
-      "value": "<integer [0,∞]> && <symbol>",
-      "initial": "0 \"\""
     },
     "fallback": {
       "name": "fallback",
