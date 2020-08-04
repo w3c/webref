@@ -922,34 +922,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpudevice-createtexture",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createtexture",
-      "linkingText": [
-        "createTexture(descriptor)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUDevice"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createtexture-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createtexture-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUDevice/createTexture(descriptor)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpudevice-createsampler-descriptor-descriptor",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createsampler-descriptor-descriptor",
       "linkingText": [
@@ -1002,34 +974,6 @@
       "type": "argument",
       "for": [
         "GPUDevice/createBindGroup(descriptor)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createshadermodule",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createshadermodule",
-      "linkingText": [
-        "createShaderModule(descriptor)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUDevice"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createshadermodule-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createshadermodule-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUDevice/createShaderModule(descriptor)"
       ],
       "access": "public",
       "informative": false
@@ -1114,92 +1058,6 @@
       "type": "argument",
       "for": [
         "GPUDevice/createReadyRenderPipeline(descriptor)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createcommandencoder",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createcommandencoder",
-      "linkingText": [
-        "createCommandEncoder(descriptor)",
-        "createCommandEncoder()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUDevice"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createcommandencoder-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createcommandencoder-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUDevice/createCommandEncoder(descriptor)",
-        "GPUDevice/createCommandEncoder()"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createrenderbundleencoder",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createrenderbundleencoder",
-      "linkingText": [
-        "createRenderBundleEncoder(descriptor)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUDevice"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createrenderbundleencoder-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createrenderbundleencoder-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUDevice/createRenderBundleEncoder(descriptor)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createqueryset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createqueryset",
-      "linkingText": [
-        "createQuerySet(descriptor)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUDevice"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createqueryset-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createqueryset-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUDevice/createQuerySet(descriptor)"
       ],
       "access": "public",
       "informative": false
@@ -2048,20 +1906,6 @@
       "informative": false
     },
     {
-      "id": "dom-gputexture-destroy",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-destroy",
-      "linkingText": [
-        "destroy()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUTexture"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gputexture-texturesize-slot",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-texturesize-slot",
       "linkingText": [
@@ -2385,6 +2229,48 @@
       "type": "const",
       "for": [
         "GPUTextureUsage"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createtexture",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createtexture",
+      "linkingText": [
+        "createTexture(descriptor)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createtexture-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createtexture-descriptor-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUDevice/createTexture(descriptor)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gputexture-destroy",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-destroy",
+      "linkingText": [
+        "destroy()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUTexture"
       ],
       "access": "public",
       "informative": false
@@ -5138,20 +5024,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpushadermodule-compilationinfo",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpushadermodule-compilationinfo",
-      "linkingText": [
-        "compilationInfo()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUShaderModule"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dictdef-gpushadermoduledescriptor",
       "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpushadermoduledescriptor",
       "linkingText": [
@@ -5187,6 +5059,48 @@
       "type": "dict-member",
       "for": [
         "GPUShaderModuleDescriptor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createshadermodule",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createshadermodule",
+      "linkingText": [
+        "createShaderModule(descriptor)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createshadermodule-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createshadermodule-descriptor-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUDevice/createShaderModule(descriptor)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpushadermodule-compilationinfo",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpushadermodule-compilationinfo",
+      "linkingText": [
+        "compilationInfo()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUShaderModule"
       ],
       "access": "public",
       "informative": false
@@ -7686,132 +7600,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpucommandencoder-writetimestamp",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-writetimestamp",
-      "linkingText": [
-        "writeTimestamp(querySet, queryIndex)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUCommandEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-writetimestamp-queryset-queryindex-queryset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-writetimestamp-queryset-queryindex-queryset",
-      "linkingText": [
-        "querySet"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/writeTimestamp(querySet, queryIndex)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-writetimestamp-queryset-queryindex-queryindex",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-writetimestamp-queryset-queryindex-queryindex",
-      "linkingText": [
-        "queryIndex"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/writeTimestamp(querySet, queryIndex)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-resolvequeryset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-resolvequeryset",
-      "linkingText": [
-        "resolveQuerySet(querySet, firstQuery, queryCount, destination, destinationOffset)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUCommandEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-queryset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-queryset",
-      "linkingText": [
-        "querySet"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/resolveQuerySet(querySet, firstQuery, queryCount, destination, destinationOffset)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-firstquery",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-firstquery",
-      "linkingText": [
-        "firstQuery"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/resolveQuerySet(querySet, firstQuery, queryCount, destination, destinationOffset)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-querycount",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-querycount",
-      "linkingText": [
-        "queryCount"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/resolveQuerySet(querySet, firstQuery, queryCount, destination, destinationOffset)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-destination",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-destination",
-      "linkingText": [
-        "destination"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/resolveQuerySet(querySet, firstQuery, queryCount, destination, destinationOffset)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-destinationoffset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-destinationoffset",
-      "linkingText": [
-        "destinationOffset"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/resolveQuerySet(querySet, firstQuery, queryCount, destination, destinationOffset)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpucommandencoder-finish-descriptor-descriptor",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-finish-descriptor-descriptor",
       "linkingText": [
@@ -7944,6 +7732,35 @@
       "type": "dict-member",
       "for": [
         "GPUCommandEncoderDescriptor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createcommandencoder",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createcommandencoder",
+      "linkingText": [
+        "createCommandEncoder(descriptor)",
+        "createCommandEncoder()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createcommandencoder-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createcommandencoder-descriptor-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUDevice/createCommandEncoder(descriptor)"
       ],
       "access": "public",
       "informative": false
@@ -8454,6 +8271,132 @@
       "informative": false
     },
     {
+      "id": "dom-gpucommandencoder-writetimestamp",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-writetimestamp",
+      "linkingText": [
+        "writeTimestamp(querySet, queryIndex)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUCommandEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-writetimestamp-queryset-queryindex-queryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-writetimestamp-queryset-queryindex-queryset",
+      "linkingText": [
+        "querySet"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/writeTimestamp(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-writetimestamp-queryset-queryindex-queryindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-writetimestamp-queryset-queryindex-queryindex",
+      "linkingText": [
+        "queryIndex"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/writeTimestamp(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-resolvequeryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-resolvequeryset",
+      "linkingText": [
+        "resolveQuerySet(querySet, firstQuery, queryCount, destination, destinationOffset)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUCommandEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-queryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-queryset",
+      "linkingText": [
+        "querySet"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/resolveQuerySet(querySet, firstQuery, queryCount, destination, destinationOffset)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-firstquery",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-firstquery",
+      "linkingText": [
+        "firstQuery"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/resolveQuerySet(querySet, firstQuery, queryCount, destination, destinationOffset)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-querycount",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-querycount",
+      "linkingText": [
+        "queryCount"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/resolveQuerySet(querySet, firstQuery, queryCount, destination, destinationOffset)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-destination",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/resolveQuerySet(querySet, firstQuery, queryCount, destination, destinationOffset)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-destinationoffset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-resolvequeryset-queryset-firstquery-querycount-destination-destinationoffset-destinationoffset",
+      "linkingText": [
+        "destinationOffset"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/resolveQuerySet(querySet, firstQuery, queryCount, destination, destinationOffset)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpucommandencoder-finish",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-finish",
       "linkingText": [
@@ -8491,21 +8434,6 @@
       "localLinkingText": [],
       "type": "interface",
       "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuprogrammablepassencoder-setbindgroup",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup",
-      "linkingText": [
-        "setBindGroup(index, bindGroup, dynamicOffsets)",
-        "setBindGroup(index, bindGroup)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUProgrammablePassEncoder"
-      ],
       "access": "public",
       "informative": false
     },
@@ -8550,6 +8478,63 @@
       "for": [
         "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup, dynamicOffsets)",
         "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuprogrammablepassencoder-pushdebuggroup-grouplabel-grouplabel",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-pushdebuggroup-grouplabel-grouplabel",
+      "linkingText": [
+        "groupLabel"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUProgrammablePassEncoder/pushDebugGroup(groupLabel)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuprogrammablepassencoder-insertdebugmarker-markerlabel-markerlabel",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-insertdebugmarker-markerlabel-markerlabel",
+      "linkingText": [
+        "markerLabel"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUProgrammablePassEncoder/insertDebugMarker(markerLabel)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuprogrammablepassencoder-debug_group_stack-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-debug_group_stack-slot",
+      "linkingText": [
+        "[[debug_group_stack]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUProgrammablePassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuprogrammablepassencoder-setbindgroup",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup",
+      "linkingText": [
+        "setBindGroup(index, bindGroup, dynamicOffsets)",
+        "setBindGroup(index, bindGroup)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUProgrammablePassEncoder"
       ],
       "access": "public",
       "informative": false
@@ -8639,48 +8624,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpuprogrammablepassencoder-pushdebuggroup-grouplabel-grouplabel",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-pushdebuggroup-grouplabel-grouplabel",
-      "linkingText": [
-        "groupLabel"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUProgrammablePassEncoder/pushDebugGroup(groupLabel)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuprogrammablepassencoder-insertdebugmarker-markerlabel-markerlabel",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-insertdebugmarker-markerlabel-markerlabel",
-      "linkingText": [
-        "markerLabel"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUProgrammablePassEncoder/insertDebugMarker(markerLabel)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuprogrammablepassencoder-debug_group_stack-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-debug_group_stack-slot",
-      "linkingText": [
-        "[[debug_group_stack]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUProgrammablePassEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpuprogrammablepassencoder-pushdebuggroup",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-pushdebuggroup",
       "linkingText": [
@@ -8749,6 +8692,18 @@
       "informative": false
     },
     {
+      "id": "dictdef-gpucomputepassdescriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucomputepassdescriptor",
+      "linkingText": [
+        "GPUComputePassDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpucomputepassencoder-setpipeline",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-setpipeline",
       "linkingText": [
@@ -8801,9 +8756,7 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUComputePassEncoder/dispatch(x, y, z)",
-        "GPUComputePassEncoder/dispatch(x, y)",
-        "GPUComputePassEncoder/dispatch(x)"
+        "GPUComputePassEncoder/dispatch(x, y, z)"
       ],
       "access": "public",
       "informative": false
@@ -8817,9 +8770,7 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUComputePassEncoder/dispatch(x, y, z)",
-        "GPUComputePassEncoder/dispatch(x, y)",
-        "GPUComputePassEncoder/dispatch(x)"
+        "GPUComputePassEncoder/dispatch(x, y, z)"
       ],
       "access": "public",
       "informative": false
@@ -8833,9 +8784,7 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUComputePassEncoder/dispatch(x, y, z)",
-        "GPUComputePassEncoder/dispatch(x, y)",
-        "GPUComputePassEncoder/dispatch(x)"
+        "GPUComputePassEncoder/dispatch(x, y, z)"
       ],
       "access": "public",
       "informative": false
@@ -8981,18 +8930,6 @@
       "informative": false
     },
     {
-      "id": "dictdef-gpucomputepassdescriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucomputepassdescriptor",
-      "linkingText": [
-        "GPUComputePassDescriptor"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpucomputepassencoder-endpass",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-endpass",
       "linkingText": [
@@ -9019,471 +8956,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpurenderencoderbase-setpipeline",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setpipeline",
-      "linkingText": [
-        "setPipeline(pipeline)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPURenderEncoderBase"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-setpipeline-pipeline-pipeline",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setpipeline-pipeline-pipeline",
-      "linkingText": [
-        "pipeline"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/setPipeline(pipeline)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-setindexbuffer",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer",
-      "linkingText": [
-        "setIndexBuffer(buffer, indexFormat, offset, size)",
-        "setIndexBuffer(buffer, indexFormat, offset)",
-        "setIndexBuffer(buffer, indexFormat)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPURenderEncoderBase"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-buffer",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-buffer",
-      "linkingText": [
-        "buffer"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset, size)",
-        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset)",
-        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-indexformat",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-indexformat",
-      "linkingText": [
-        "indexFormat"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset, size)",
-        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset)",
-        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-offset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-offset",
-      "linkingText": [
-        "offset"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset, size)",
-        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset)",
-        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-size",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-size",
-      "linkingText": [
-        "size"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset, size)",
-        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset)",
-        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-setvertexbuffer",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setvertexbuffer",
-      "linkingText": [
-        "setVertexBuffer(slot, buffer, offset, size)",
-        "setVertexBuffer(slot, buffer, offset)",
-        "setVertexBuffer(slot, buffer)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPURenderEncoderBase"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-setvertexbuffer-slot-buffer-offset-size-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setvertexbuffer-slot-buffer-offset-size-slot",
-      "linkingText": [
-        "slot"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/setVertexBuffer(slot, buffer, offset, size)",
-        "GPURenderEncoderBase/setVertexBuffer(slot, buffer, offset)",
-        "GPURenderEncoderBase/setVertexBuffer(slot, buffer)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-setvertexbuffer-slot-buffer-offset-size-buffer",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setvertexbuffer-slot-buffer-offset-size-buffer",
-      "linkingText": [
-        "buffer"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/setVertexBuffer(slot, buffer, offset, size)",
-        "GPURenderEncoderBase/setVertexBuffer(slot, buffer, offset)",
-        "GPURenderEncoderBase/setVertexBuffer(slot, buffer)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-setvertexbuffer-slot-buffer-offset-size-offset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setvertexbuffer-slot-buffer-offset-size-offset",
-      "linkingText": [
-        "offset"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/setVertexBuffer(slot, buffer, offset, size)",
-        "GPURenderEncoderBase/setVertexBuffer(slot, buffer, offset)",
-        "GPURenderEncoderBase/setVertexBuffer(slot, buffer)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-setvertexbuffer-slot-buffer-offset-size-size",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setvertexbuffer-slot-buffer-offset-size-size",
-      "linkingText": [
-        "size"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/setVertexBuffer(slot, buffer, offset, size)",
-        "GPURenderEncoderBase/setVertexBuffer(slot, buffer, offset)",
-        "GPURenderEncoderBase/setVertexBuffer(slot, buffer)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-draw",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-draw",
-      "linkingText": [
-        "draw(vertexCount, instanceCount, firstVertex, firstInstance)",
-        "draw(vertexCount, instanceCount, firstVertex)",
-        "draw(vertexCount, instanceCount)",
-        "draw(vertexCount)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPURenderEncoderBase"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-draw-vertexcount-instancecount-firstvertex-firstinstance-vertexcount",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-draw-vertexcount-instancecount-firstvertex-firstinstance-vertexcount",
-      "linkingText": [
-        "vertexCount"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/draw(vertexCount, instanceCount, firstVertex, firstInstance)",
-        "GPURenderEncoderBase/draw(vertexCount, instanceCount, firstVertex)",
-        "GPURenderEncoderBase/draw(vertexCount, instanceCount)",
-        "GPURenderEncoderBase/draw(vertexCount)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-draw-vertexcount-instancecount-firstvertex-firstinstance-instancecount",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-draw-vertexcount-instancecount-firstvertex-firstinstance-instancecount",
-      "linkingText": [
-        "instanceCount"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/draw(vertexCount, instanceCount, firstVertex, firstInstance)",
-        "GPURenderEncoderBase/draw(vertexCount, instanceCount, firstVertex)",
-        "GPURenderEncoderBase/draw(vertexCount, instanceCount)",
-        "GPURenderEncoderBase/draw(vertexCount)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-draw-vertexcount-instancecount-firstvertex-firstinstance-firstvertex",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-draw-vertexcount-instancecount-firstvertex-firstinstance-firstvertex",
-      "linkingText": [
-        "firstVertex"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/draw(vertexCount, instanceCount, firstVertex, firstInstance)",
-        "GPURenderEncoderBase/draw(vertexCount, instanceCount, firstVertex)",
-        "GPURenderEncoderBase/draw(vertexCount, instanceCount)",
-        "GPURenderEncoderBase/draw(vertexCount)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-draw-vertexcount-instancecount-firstvertex-firstinstance-firstinstance",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-draw-vertexcount-instancecount-firstvertex-firstinstance-firstinstance",
-      "linkingText": [
-        "firstInstance"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/draw(vertexCount, instanceCount, firstVertex, firstInstance)",
-        "GPURenderEncoderBase/draw(vertexCount, instanceCount, firstVertex)",
-        "GPURenderEncoderBase/draw(vertexCount, instanceCount)",
-        "GPURenderEncoderBase/draw(vertexCount)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-drawindexed",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexed",
-      "linkingText": [
-        "drawIndexed(indexCount, instanceCount, firstIndex, baseVertex, firstInstance)",
-        "drawIndexed(indexCount, instanceCount, firstIndex, baseVertex)",
-        "drawIndexed(indexCount, instanceCount, firstIndex)",
-        "drawIndexed(indexCount, instanceCount)",
-        "drawIndexed(indexCount)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPURenderEncoderBase"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-indexcount",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-indexcount",
-      "linkingText": [
-        "indexCount"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex, baseVertex, firstInstance)",
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex, baseVertex)",
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex)",
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount)",
-        "GPURenderEncoderBase/drawIndexed(indexCount)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-instancecount",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-instancecount",
-      "linkingText": [
-        "instanceCount"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex, baseVertex, firstInstance)",
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex, baseVertex)",
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex)",
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount)",
-        "GPURenderEncoderBase/drawIndexed(indexCount)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-firstindex",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-firstindex",
-      "linkingText": [
-        "firstIndex"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex, baseVertex, firstInstance)",
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex, baseVertex)",
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex)",
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount)",
-        "GPURenderEncoderBase/drawIndexed(indexCount)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-basevertex",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-basevertex",
-      "linkingText": [
-        "baseVertex"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex, baseVertex, firstInstance)",
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex, baseVertex)",
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex)",
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount)",
-        "GPURenderEncoderBase/drawIndexed(indexCount)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-firstinstance",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-firstinstance",
-      "linkingText": [
-        "firstInstance"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex, baseVertex, firstInstance)",
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex, baseVertex)",
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex)",
-        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount)",
-        "GPURenderEncoderBase/drawIndexed(indexCount)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-drawindirect",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindirect",
-      "linkingText": [
-        "drawIndirect(indirectBuffer, indirectOffset)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPURenderEncoderBase"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-drawindirect-indirectbuffer-indirectoffset-indirectbuffer",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindirect-indirectbuffer-indirectoffset-indirectbuffer",
-      "linkingText": [
-        "indirectBuffer"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/drawIndirect(indirectBuffer, indirectOffset)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-drawindirect-indirectbuffer-indirectoffset-indirectoffset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindirect-indirectbuffer-indirectoffset-indirectoffset",
-      "linkingText": [
-        "indirectOffset"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/drawIndirect(indirectBuffer, indirectOffset)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-drawindexedindirect",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexedindirect",
-      "linkingText": [
-        "drawIndexedIndirect(indirectBuffer, indirectOffset)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPURenderEncoderBase"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-drawindexedindirect-indirectbuffer-indirectoffset-indirectbuffer",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexedindirect-indirectbuffer-indirectoffset-indirectbuffer",
-      "linkingText": [
-        "indirectBuffer"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/drawIndexedIndirect(indirectBuffer, indirectOffset)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-drawindexedindirect-indirectbuffer-indirectoffset-indirectoffset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexedindirect-indirectbuffer-indirectoffset-indirectoffset",
-      "linkingText": [
-        "indirectOffset"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderEncoderBase/drawIndexedIndirect(indirectBuffer, indirectOffset)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "gpurenderpassencoder",
       "href": "https://gpuweb.github.io/gpuweb/#gpurenderpassencoder",
       "linkingText": [
@@ -9492,174 +8964,6 @@
       "localLinkingText": [],
       "type": "interface",
       "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-beginocclusionquery",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-beginocclusionquery",
-      "linkingText": [
-        "beginOcclusionQuery(queryIndex)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPURenderPassEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-beginocclusionquery-queryindex-queryindex",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-beginocclusionquery-queryindex-queryindex",
-      "linkingText": [
-        "queryIndex"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/beginOcclusionQuery(queryIndex)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-endocclusionquery",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-endocclusionquery",
-      "linkingText": [
-        "endOcclusionQuery()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPURenderPassEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-beginpipelinestatisticsquery",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-beginpipelinestatisticsquery",
-      "linkingText": [
-        "beginPipelineStatisticsQuery(querySet, queryIndex)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPURenderPassEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryset",
-      "linkingText": [
-        "querySet"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/beginPipelineStatisticsQuery(querySet, queryIndex)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryindex",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryindex",
-      "linkingText": [
-        "queryIndex"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/beginPipelineStatisticsQuery(querySet, queryIndex)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-endpipelinestatisticsquery",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-endpipelinestatisticsquery",
-      "linkingText": [
-        "endPipelineStatisticsQuery()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPURenderPassEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-writetimestamp",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-writetimestamp",
-      "linkingText": [
-        "writeTimestamp(querySet, queryIndex)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPURenderPassEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-writetimestamp-queryset-queryindex-queryset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-writetimestamp-queryset-queryindex-queryset",
-      "linkingText": [
-        "querySet"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/writeTimestamp(querySet, queryIndex)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-writetimestamp-queryset-queryindex-queryindex",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-writetimestamp-queryset-queryindex-queryindex",
-      "linkingText": [
-        "queryIndex"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/writeTimestamp(querySet, queryIndex)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-executebundles",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-executebundles",
-      "linkingText": [
-        "executeBundles(bundles)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPURenderPassEncoder"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderpassencoder-executebundles-bundles-bundles",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-executebundles-bundles-bundles",
-      "linkingText": [
-        "bundles"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPURenderPassEncoder/executeBundles(bundles)"
-      ],
       "access": "public",
       "informative": false
     },
@@ -10032,6 +9336,423 @@
       "informative": false
     },
     {
+      "id": "dom-gpurenderencoderbase-setpipeline",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setpipeline",
+      "linkingText": [
+        "setPipeline(pipeline)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderEncoderBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-setpipeline-pipeline-pipeline",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setpipeline-pipeline-pipeline",
+      "linkingText": [
+        "pipeline"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/setPipeline(pipeline)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-setindexbuffer",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer",
+      "linkingText": [
+        "setIndexBuffer(buffer, indexFormat, offset, size)",
+        "setIndexBuffer(buffer, indexFormat, offset)",
+        "setIndexBuffer(buffer, indexFormat)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderEncoderBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-buffer",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-buffer",
+      "linkingText": [
+        "buffer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-indexformat",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-indexformat",
+      "linkingText": [
+        "indexFormat"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-offset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-offset",
+      "linkingText": [
+        "offset"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-size",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setindexbuffer-buffer-indexformat-offset-size-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/setIndexBuffer(buffer, indexFormat, offset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-setvertexbuffer",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setvertexbuffer",
+      "linkingText": [
+        "setVertexBuffer(slot, buffer, offset, size)",
+        "setVertexBuffer(slot, buffer, offset)",
+        "setVertexBuffer(slot, buffer)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderEncoderBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-setvertexbuffer-slot-buffer-offset-size-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setvertexbuffer-slot-buffer-offset-size-slot",
+      "linkingText": [
+        "slot"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/setVertexBuffer(slot, buffer, offset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-setvertexbuffer-slot-buffer-offset-size-buffer",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setvertexbuffer-slot-buffer-offset-size-buffer",
+      "linkingText": [
+        "buffer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/setVertexBuffer(slot, buffer, offset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-setvertexbuffer-slot-buffer-offset-size-offset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setvertexbuffer-slot-buffer-offset-size-offset",
+      "linkingText": [
+        "offset"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/setVertexBuffer(slot, buffer, offset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-setvertexbuffer-slot-buffer-offset-size-size",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-setvertexbuffer-slot-buffer-offset-size-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/setVertexBuffer(slot, buffer, offset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-draw",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-draw",
+      "linkingText": [
+        "draw(vertexCount, instanceCount, firstVertex, firstInstance)",
+        "draw(vertexCount, instanceCount, firstVertex)",
+        "draw(vertexCount, instanceCount)",
+        "draw(vertexCount)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderEncoderBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-draw-vertexcount-instancecount-firstvertex-firstinstance-vertexcount",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-draw-vertexcount-instancecount-firstvertex-firstinstance-vertexcount",
+      "linkingText": [
+        "vertexCount"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/draw(vertexCount, instanceCount, firstVertex, firstInstance)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-draw-vertexcount-instancecount-firstvertex-firstinstance-instancecount",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-draw-vertexcount-instancecount-firstvertex-firstinstance-instancecount",
+      "linkingText": [
+        "instanceCount"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/draw(vertexCount, instanceCount, firstVertex, firstInstance)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-draw-vertexcount-instancecount-firstvertex-firstinstance-firstvertex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-draw-vertexcount-instancecount-firstvertex-firstinstance-firstvertex",
+      "linkingText": [
+        "firstVertex"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/draw(vertexCount, instanceCount, firstVertex, firstInstance)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-draw-vertexcount-instancecount-firstvertex-firstinstance-firstinstance",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-draw-vertexcount-instancecount-firstvertex-firstinstance-firstinstance",
+      "linkingText": [
+        "firstInstance"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/draw(vertexCount, instanceCount, firstVertex, firstInstance)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-drawindexed",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexed",
+      "linkingText": [
+        "drawIndexed(indexCount, instanceCount, firstIndex, baseVertex, firstInstance)",
+        "drawIndexed(indexCount, instanceCount, firstIndex, baseVertex)",
+        "drawIndexed(indexCount, instanceCount, firstIndex)",
+        "drawIndexed(indexCount, instanceCount)",
+        "drawIndexed(indexCount)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderEncoderBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-indexcount",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-indexcount",
+      "linkingText": [
+        "indexCount"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex, baseVertex, firstInstance)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-instancecount",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-instancecount",
+      "linkingText": [
+        "instanceCount"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex, baseVertex, firstInstance)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-firstindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-firstindex",
+      "linkingText": [
+        "firstIndex"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex, baseVertex, firstInstance)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-basevertex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-basevertex",
+      "linkingText": [
+        "baseVertex"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex, baseVertex, firstInstance)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-firstinstance",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexed-indexcount-instancecount-firstindex-basevertex-firstinstance-firstinstance",
+      "linkingText": [
+        "firstInstance"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/drawIndexed(indexCount, instanceCount, firstIndex, baseVertex, firstInstance)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-drawindirect",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindirect",
+      "linkingText": [
+        "drawIndirect(indirectBuffer, indirectOffset)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderEncoderBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-drawindirect-indirectbuffer-indirectoffset-indirectbuffer",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindirect-indirectbuffer-indirectoffset-indirectbuffer",
+      "linkingText": [
+        "indirectBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/drawIndirect(indirectBuffer, indirectOffset)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-drawindirect-indirectbuffer-indirectoffset-indirectoffset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindirect-indirectbuffer-indirectoffset-indirectoffset",
+      "linkingText": [
+        "indirectOffset"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/drawIndirect(indirectBuffer, indirectOffset)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-drawindexedindirect",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexedindirect",
+      "linkingText": [
+        "drawIndexedIndirect(indirectBuffer, indirectOffset)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderEncoderBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-drawindexedindirect-indirectbuffer-indirectoffset-indirectbuffer",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexedindirect-indirectbuffer-indirectoffset-indirectbuffer",
+      "linkingText": [
+        "indirectBuffer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/drawIndexedIndirect(indirectBuffer, indirectOffset)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-drawindexedindirect-indirectbuffer-indirectoffset-indirectoffset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindexedindirect-indirectbuffer-indirectoffset-indirectoffset",
+      "linkingText": [
+        "indirectOffset"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderEncoderBase/drawIndexedIndirect(indirectBuffer, indirectOffset)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpurenderpassencoder-setviewport",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setviewport",
       "linkingText": [
@@ -10256,6 +9977,174 @@
       "informative": false
     },
     {
+      "id": "dom-gpurenderpassencoder-beginocclusionquery",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-beginocclusionquery",
+      "linkingText": [
+        "beginOcclusionQuery(queryIndex)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderPassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-beginocclusionquery-queryindex-queryindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-beginocclusionquery-queryindex-queryindex",
+      "linkingText": [
+        "queryIndex"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/beginOcclusionQuery(queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-endocclusionquery",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-endocclusionquery",
+      "linkingText": [
+        "endOcclusionQuery()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderPassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-beginpipelinestatisticsquery",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-beginpipelinestatisticsquery",
+      "linkingText": [
+        "beginPipelineStatisticsQuery(querySet, queryIndex)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderPassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryset",
+      "linkingText": [
+        "querySet"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/beginPipelineStatisticsQuery(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-beginpipelinestatisticsquery-queryset-queryindex-queryindex",
+      "linkingText": [
+        "queryIndex"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/beginPipelineStatisticsQuery(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-endpipelinestatisticsquery",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-endpipelinestatisticsquery",
+      "linkingText": [
+        "endPipelineStatisticsQuery()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderPassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-writetimestamp",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-writetimestamp",
+      "linkingText": [
+        "writeTimestamp(querySet, queryIndex)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderPassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-writetimestamp-queryset-queryindex-queryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-writetimestamp-queryset-queryindex-queryset",
+      "linkingText": [
+        "querySet"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/writeTimestamp(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-writetimestamp-queryset-queryindex-queryindex",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-writetimestamp-queryset-queryindex-queryindex",
+      "linkingText": [
+        "queryIndex"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/writeTimestamp(querySet, queryIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-executebundles",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-executebundles",
+      "linkingText": [
+        "executeBundles(bundles)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderPassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpassencoder-executebundles-bundles-bundles",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-executebundles-bundles-bundles",
+      "linkingText": [
+        "bundles"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderPassEncoder/executeBundles(bundles)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpurenderpassencoder-endpass",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-endpass",
       "linkingText": [
@@ -10306,31 +10195,29 @@
       "informative": false
     },
     {
-      "id": "dom-gpurenderbundleencoder-finish",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderbundleencoder-finish",
+      "id": "dom-gpudevice-createrenderbundleencoder",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createrenderbundleencoder",
       "linkingText": [
-        "finish(descriptor)",
-        "finish()"
+        "createRenderBundleEncoder(descriptor)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "GPURenderBundleEncoder"
+        "GPUDevice"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-gpurenderbundleencoder-finish-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderbundleencoder-finish-descriptor-descriptor",
+      "id": "dom-gpudevice-createrenderbundleencoder-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createrenderbundleencoder-descriptor-descriptor",
       "linkingText": [
         "descriptor"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPURenderBundleEncoder/finish(descriptor)",
-        "GPURenderBundleEncoder/finish()"
+        "GPUDevice/createRenderBundleEncoder(descriptor)"
       ],
       "access": "public",
       "informative": false
@@ -10390,6 +10277,35 @@
       "informative": false
     },
     {
+      "id": "dom-gpurenderbundleencoder-finish",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderbundleencoder-finish",
+      "linkingText": [
+        "finish(descriptor)",
+        "finish()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPURenderBundleEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderbundleencoder-finish-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderbundleencoder-finish-descriptor-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPURenderBundleEncoder/finish(descriptor)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "gpuqueue",
       "href": "https://gpuweb.github.io/gpuweb/#gpuqueue",
       "linkingText": [
@@ -10411,78 +10327,6 @@
       "type": "argument",
       "for": [
         "GPUQueue/submit(commandBuffers)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuqueue-createfence",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-createfence",
-      "linkingText": [
-        "createFence(descriptor)",
-        "createFence()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUQueue"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuqueue-createfence-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-createfence-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/createFence(descriptor)",
-        "GPUQueue/createFence()"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuqueue-signal",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-signal",
-      "linkingText": [
-        "signal(fence, signalValue)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUQueue"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuqueue-signal-fence-signalvalue-fence",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-signal-fence-signalvalue-fence",
-      "linkingText": [
-        "fence"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/signal(fence, signalValue)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuqueue-signal-fence-signalvalue-signalvalue",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-signal-fence-signalvalue-signalvalue",
-      "linkingText": [
-        "signalValue"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/signal(fence, signalValue)"
       ],
       "access": "public",
       "informative": false
@@ -10726,6 +10570,103 @@
       "informative": false
     },
     {
+      "id": "dictdef-gpufencedescriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpufencedescriptor",
+      "linkingText": [
+        "GPUFenceDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpufencedescriptor-initialvalue",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufencedescriptor-initialvalue",
+      "linkingText": [
+        "initialValue"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUFenceDescriptor"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuqueue-createfence",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-createfence",
+      "linkingText": [
+        "createFence(descriptor)",
+        "createFence()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUQueue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuqueue-createfence-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-createfence-descriptor-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUQueue/createFence(descriptor)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuqueue-signal",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-signal",
+      "linkingText": [
+        "signal(fence, signalValue)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUQueue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuqueue-signal-fence-signalvalue-fence",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-signal-fence-signalvalue-fence",
+      "linkingText": [
+        "fence"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUQueue/signal(fence, signalValue)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuqueue-signal-fence-signalvalue-signalvalue",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-signal-fence-signalvalue-signalvalue",
+      "linkingText": [
+        "signalValue"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUQueue/signal(fence, signalValue)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpufence-getcompletedvalue",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpufence-getcompletedvalue",
       "linkingText": [
@@ -10768,32 +10709,6 @@
       "informative": false
     },
     {
-      "id": "dictdef-gpufencedescriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpufencedescriptor",
-      "linkingText": [
-        "GPUFenceDescriptor"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpufencedescriptor-initialvalue",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufencedescriptor-initialvalue",
-      "linkingText": [
-        "initialValue"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPUFenceDescriptor"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "gpuqueryset",
       "href": "https://gpuweb.github.io/gpuweb/#gpuqueryset",
       "linkingText": [
@@ -10802,20 +10717,6 @@
       "localLinkingText": [],
       "type": "interface",
       "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuqueryset-destroy",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueryset-destroy",
-      "linkingText": [
-        "destroy()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUQuerySet"
-      ],
       "access": "public",
       "informative": false
     },
@@ -10883,6 +10784,48 @@
       "type": "abstract-op",
       "for": [
         "GPUQuerySetDescriptor.pipelineStatistics"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createqueryset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createqueryset",
+      "linkingText": [
+        "createQuerySet(descriptor)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createqueryset-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createqueryset-descriptor-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUDevice/createQuerySet(descriptor)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuqueryset-destroy",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueryset-destroy",
+      "linkingText": [
+        "destroy()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUQuerySet"
       ],
       "access": "public",
       "informative": false
