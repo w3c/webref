@@ -445,21 +445,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpu-requestadapter-options-options",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpu-requestadapter-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPU/requestAdapter(options)",
-        "GPU/requestAdapter()"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpu-requestadapter",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpu-requestadapter",
       "linkingText": [
@@ -470,6 +455,20 @@
       "type": "method",
       "for": [
         "GPU"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpu-requestadapter-options-options",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpu-requestadapter-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPU/requestAdapter(options)"
       ],
       "access": "public",
       "informative": false
@@ -908,20 +907,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpudevice-createbuffer-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbuffer-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUDevice/createBuffer(descriptor)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpudevice-createsampler-descriptor-descriptor",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createsampler-descriptor-descriptor",
       "linkingText": [
@@ -1165,86 +1150,6 @@
       "for": [],
       "access": "private",
       "informative": true
-    },
-    {
-      "id": "dom-gpubuffer-mapasync-mode-offset-size-mode",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-mode-offset-size-mode",
-      "linkingText": [
-        "mode"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUBuffer/mapAsync(mode, offset, size)",
-        "GPUBuffer/mapAsync(mode, offset)",
-        "GPUBuffer/mapAsync(mode)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpubuffer-mapasync-mode-offset-size-offset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-mode-offset-size-offset",
-      "linkingText": [
-        "offset"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUBuffer/mapAsync(mode, offset, size)",
-        "GPUBuffer/mapAsync(mode, offset)",
-        "GPUBuffer/mapAsync(mode)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpubuffer-mapasync-mode-offset-size-size",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-mode-offset-size-size",
-      "linkingText": [
-        "size"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUBuffer/mapAsync(mode, offset, size)",
-        "GPUBuffer/mapAsync(mode, offset)",
-        "GPUBuffer/mapAsync(mode)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpubuffer-getmappedrange-offset-size-offset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-getmappedrange-offset-size-offset",
-      "linkingText": [
-        "offset"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUBuffer/getMappedRange(offset, size)",
-        "GPUBuffer/getMappedRange(offset)",
-        "GPUBuffer/getMappedRange()"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpubuffer-getmappedrange-offset-size-size",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-getmappedrange-offset-size-size",
-      "linkingText": [
-        "size"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUBuffer/getMappedRange(offset, size)",
-        "GPUBuffer/getMappedRange(offset)",
-        "GPUBuffer/getMappedRange()"
-      ],
-      "access": "public",
-      "informative": false
     },
     {
       "id": "dom-gpubuffer-size-slot",
@@ -1671,14 +1576,16 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-createbuffer-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-createbuffer-valid-usage",
+      "id": "dom-gpudevice-createbuffer-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbuffer-descriptor-descriptor",
       "linkingText": [
-        "createBuffer Valid Usage"
+        "descriptor"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
+      "type": "argument",
+      "for": [
+        "GPUDevice/createBuffer(descriptor)"
+      ],
       "access": "public",
       "informative": false
     },
@@ -1687,22 +1594,6 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-destroy",
       "linkingText": [
         "destroy()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUBuffer"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpubuffer-mapasync",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync",
-      "linkingText": [
-        "mapAsync(mode, offset, size)",
-        "mapAsync(mode, offset)",
-        "mapAsync(mode)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -1765,14 +1656,60 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-mapasync-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-mapasync-valid-usage",
+      "id": "dom-gpubuffer-mapasync",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync",
       "linkingText": [
-        "mapAsync Valid Usage"
+        "mapAsync(mode, offset, size)",
+        "mapAsync(mode, offset)",
+        "mapAsync(mode)"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
+      "type": "method",
+      "for": [
+        "GPUBuffer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpubuffer-mapasync-mode-offset-size-mode",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-mode-offset-size-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUBuffer/mapAsync(mode, offset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpubuffer-mapasync-mode-offset-size-offset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-mode-offset-size-offset",
+      "linkingText": [
+        "offset"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUBuffer/mapAsync(mode, offset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpubuffer-mapasync-mode-offset-size-size",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-mapasync-mode-offset-size-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUBuffer/mapAsync(mode, offset, size)"
+      ],
       "access": "public",
       "informative": false
     },
@@ -1793,14 +1730,30 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-getmappedrange-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-getmappedrange-valid-usage",
+      "id": "dom-gpubuffer-getmappedrange-offset-size-offset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-getmappedrange-offset-size-offset",
       "linkingText": [
-        "getMappedRange Valid Usage"
+        "offset"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
+      "type": "argument",
+      "for": [
+        "GPUBuffer/getMappedRange(offset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpubuffer-getmappedrange-offset-size-size",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffer-getmappedrange-offset-size-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUBuffer/getMappedRange(offset, size)"
+      ],
       "access": "public",
       "informative": false
     },
@@ -1815,18 +1768,6 @@
       "for": [
         "GPUBuffer"
       ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "abstract-opdef-unmap-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-unmap-valid-usage",
-      "linkingText": [
-        "unmap Valid Usage"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
       "access": "public",
       "informative": false
     },
@@ -7572,49 +7513,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpucommandencoder-pushdebuggroup-grouplabel-grouplabel",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-pushdebuggroup-grouplabel-grouplabel",
-      "linkingText": [
-        "groupLabel"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/pushDebugGroup(groupLabel)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-insertdebugmarker-markerlabel-markerlabel",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-insertdebugmarker-markerlabel-markerlabel",
-      "linkingText": [
-        "markerLabel"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/insertDebugMarker(markerLabel)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-finish-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-finish-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/finish(descriptor)",
-        "GPUCommandEncoder/finish()"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpucommandencoder-state-slot",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-state-slot",
       "linkingText": [
@@ -8201,15 +8099,15 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-gpucommandencoderpushdebuggroup-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpucommandencoderpushdebuggroup-valid-usage",
+      "id": "dom-gpucommandencoder-pushdebuggroup-grouplabel-grouplabel",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-pushdebuggroup-grouplabel-grouplabel",
       "linkingText": [
-        "Valid Usage"
+        "groupLabel"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
+      "type": "argument",
       "for": [
-        "GPUCommandEncoder.pushDebugGroup"
+        "GPUCommandEncoder/pushDebugGroup(groupLabel)"
       ],
       "access": "public",
       "informative": false
@@ -8229,20 +8127,6 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-gpucommandencoderpopdebuggroup-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpucommandencoderpopdebuggroup-valid-usage",
-      "linkingText": [
-        "Valid Usage"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [
-        "GPUCommandEncoder.popDebugGroup"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpucommandencoder-insertdebugmarker",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-insertdebugmarker",
       "linkingText": [
@@ -8257,15 +8141,15 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-gpucommandencoderinsertdebugmarker-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpucommandencoderinsertdebugmarker-valid-usage",
+      "id": "dom-gpucommandencoder-insertdebugmarker-markerlabel-markerlabel",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-insertdebugmarker-markerlabel-markerlabel",
       "linkingText": [
-        "Valid Usage"
+        "markerLabel"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
+      "type": "argument",
       "for": [
-        "GPUCommandEncoder.insertDebugMarker"
+        "GPUCommandEncoder/insertDebugMarker(markerLabel)"
       ],
       "access": "public",
       "informative": false
@@ -8412,15 +8296,15 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-gpucommandencoderfinish-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpucommandencoderfinish-valid-usage",
+      "id": "dom-gpucommandencoder-finish-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-finish-descriptor-descriptor",
       "linkingText": [
-        "Valid Usage"
+        "descriptor"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
+      "type": "argument",
       "for": [
-        "GPUCommandEncoder.finish"
+        "GPUCommandEncoder/finish(descriptor)"
       ],
       "access": "public",
       "informative": false
@@ -8478,34 +8362,6 @@
       "for": [
         "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup, dynamicOffsets)",
         "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuprogrammablepassencoder-pushdebuggroup-grouplabel-grouplabel",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-pushdebuggroup-grouplabel-grouplabel",
-      "linkingText": [
-        "groupLabel"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUProgrammablePassEncoder/pushDebugGroup(groupLabel)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuprogrammablepassencoder-insertdebugmarker-markerlabel-markerlabel",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-insertdebugmarker-markerlabel-markerlabel",
-      "linkingText": [
-        "markerLabel"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUProgrammablePassEncoder/insertDebugMarker(markerLabel)"
       ],
       "access": "public",
       "informative": false
@@ -8638,6 +8494,20 @@
       "informative": false
     },
     {
+      "id": "dom-gpuprogrammablepassencoder-pushdebuggroup-grouplabel-grouplabel",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-pushdebuggroup-grouplabel-grouplabel",
+      "linkingText": [
+        "groupLabel"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUProgrammablePassEncoder/pushDebugGroup(groupLabel)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpuprogrammablepassencoder-popdebuggroup",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-popdebuggroup",
       "linkingText": [
@@ -8652,20 +8522,6 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-gpuprogrammablepassencoderpopdebuggroup-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpuprogrammablepassencoderpopdebuggroup-valid-usage",
-      "linkingText": [
-        "Valid Usage"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [
-        "GPUProgrammablePassEncoder.popDebugGroup"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpuprogrammablepassencoder-insertdebugmarker",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-insertdebugmarker",
       "linkingText": [
@@ -8675,6 +8531,20 @@
       "type": "method",
       "for": [
         "GPUProgrammablePassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuprogrammablepassencoder-insertdebugmarker-markerlabel-markerlabel",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-insertdebugmarker-markerlabel-markerlabel",
+      "linkingText": [
+        "markerLabel"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUProgrammablePassEncoder/insertDebugMarker(markerLabel)"
       ],
       "access": "public",
       "informative": false
