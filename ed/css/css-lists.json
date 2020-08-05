@@ -4,6 +4,28 @@
     "url": "https://drafts.csswg.org/css-lists-3/"
   },
   "properties": {
+    "✔MDN list-style-image In all current engines. Firefox1+Safari1+Chrome1+ Opera7+Edge79+ Edge (Legacy)12+IE4+ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile10.1+ list-style-image": {
+      "name": "✔MDN list-style-image In all current engines. Firefox1+Safari1+Chrome1+ Opera7+Edge79+ Edge (Legacy)12+IE4+ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile10.1+ list-style-image",
+      "value": "<image> | none",
+      "initial": "none",
+      "appliesTo": "list items",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "the keyword noneor the computed <image>",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "✔MDN list-style-type In all current engines. Firefox1+Safari1+Chrome1+ Opera3.5+Edge79+ Edge (Legacy)12+IE4+ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile10.1+ list-style-type": {
+      "name": "✔MDN list-style-type In all current engines. Firefox1+Safari1+Chrome1+ Opera3.5+Edge79+ Edge (Legacy)12+IE4+ Firefox for Android4+iOS Safari1+Chrome for Android18+Android WebView1+Samsung Internet1.0+Opera Mobile10.1+ list-style-type",
+      "value": "<counter-style> | <string> | none",
+      "initial": "disc",
+      "appliesTo": "list items",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
     "list-style-position": {
       "name": "list-style-position",
       "value": "inside | outside",
@@ -39,6 +61,28 @@
     },
     "counter-reset": {
       "name": "counter-reset",
+      "value": "[ <counter-name> <integer>? ]+ | none",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the keyword none or a list, each item an identifier paired with an integer",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type"
+    },
+    "✔MDN counter-increment In all current engines. Firefox1+Safari3+Chrome2+ Opera9.2+Edge79+ Edge (Legacy)12+IE8+ Firefox for Android25+iOS Safari1+Chrome for Android18+Android WebView37+Samsung Internet1.0+Opera Mobile10.1+ counter-increment": {
+      "name": "✔MDN counter-increment In all current engines. Firefox1+Safari3+Chrome2+ Opera9.2+Edge79+ Edge (Legacy)12+IE8+ Firefox for Android25+iOS Safari1+Chrome for Android18+Android WebView37+Samsung Internet1.0+Opera Mobile10.1+ counter-increment",
+      "value": "[ <counter-name> <integer>? ]+ | none",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the keyword none or a list, each item an identifier paired with an integer",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type"
+    },
+    "⚠MDN counter-set In only one current engine. Firefox68+SafariNoneChromeNone OperaNoneEdgeNone Edge (Legacy)NoneIENone Firefox for Android68+iOS SafariNoneChrome for AndroidNoneAndroid WebViewNoneSamsung InternetNoneOpera MobileNone counter-set": {
+      "name": "⚠MDN counter-set In only one current engine. Firefox68+SafariNoneChromeNone OperaNoneEdgeNone Edge (Legacy)NoneIENone Firefox for Android68+iOS SafariNoneChrome for AndroidNoneAndroid WebViewNoneSamsung InternetNoneOpera MobileNone counter-set",
       "value": "[ <counter-name> <integer>? ]+ | none",
       "initial": "none",
       "appliesTo": "all elements",
