@@ -922,34 +922,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpudevice-createbindgrouplayout-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbindgrouplayout-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUDevice/createBindGroupLayout(descriptor)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createpipelinelayout-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createpipelinelayout-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUDevice/createPipelineLayout(descriptor)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpudevice-createbindgroup-descriptor-descriptor",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbindgroup-descriptor-descriptor",
       "linkingText": [
@@ -959,34 +931,6 @@
       "type": "argument",
       "for": [
         "GPUDevice/createBindGroup(descriptor)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createcomputepipeline-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createcomputepipeline-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUDevice/createComputePipeline(descriptor)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createrenderpipeline-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createrenderpipeline-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUDevice/createRenderPipeline(descriptor)"
       ],
       "access": "public",
       "informative": false
@@ -4219,185 +4163,17 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-gpudevicecreatebindgrouplayout-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpudevicecreatebindgrouplayout-valid-usage",
+      "id": "dom-gpudevice-createbindgrouplayout-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbindgrouplayout-descriptor-descriptor",
       "linkingText": [
-        "Valid Usage"
+        "descriptor"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
+      "type": "argument",
       "for": [
-        "GPUDevice.createBindGroupLayout"
+        "GPUDevice/createBindGroupLayout(descriptor)"
       ],
       "access": "public",
-      "informative": false
-    },
-    {
-      "id": "gpudevicecreatebindgrouplayout-bind-group-layout-device-validation",
-      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatebindgrouplayout-bind-group-layout-device-validation",
-      "linkingText": [
-        "bind group layout device validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "GPUDevice.createBindGroupLayout"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "gpudevicecreatebindgrouplayout-binding-validation",
-      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatebindgrouplayout-binding-validation",
-      "linkingText": [
-        "binding validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "GPUDevice.createBindGroupLayout"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "gpudevicecreatebindgrouplayout-vertex-shader-binding-validation",
-      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatebindgrouplayout-vertex-shader-binding-validation",
-      "linkingText": [
-        "vertex shader binding validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "GPUDevice.createBindGroupLayout"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "gpudevicecreatebindgrouplayout-uniform-buffer-validation",
-      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatebindgrouplayout-uniform-buffer-validation",
-      "linkingText": [
-        "uniform buffer validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "GPUDevice.createBindGroupLayout"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "gpudevicecreatebindgrouplayout-dynamic-uniform-buffer-validation",
-      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatebindgrouplayout-dynamic-uniform-buffer-validation",
-      "linkingText": [
-        "dynamic uniform buffer validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "GPUDevice.createBindGroupLayout"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "gpudevicecreatebindgrouplayout-storage-buffer-validation",
-      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatebindgrouplayout-storage-buffer-validation",
-      "linkingText": [
-        "storage buffer validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "GPUDevice.createBindGroupLayout"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "gpudevicecreatebindgrouplayout-dynamic-storage-buffer-validation",
-      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatebindgrouplayout-dynamic-storage-buffer-validation",
-      "linkingText": [
-        "dynamic storage buffer validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "GPUDevice.createBindGroupLayout"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "gpudevicecreatebindgrouplayout-sampled-texture-validation",
-      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatebindgrouplayout-sampled-texture-validation",
-      "linkingText": [
-        "sampled texture validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "GPUDevice.createBindGroupLayout"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "gpudevicecreatebindgrouplayout-multisample-texture-view-dimension-validation",
-      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatebindgrouplayout-multisample-texture-view-dimension-validation",
-      "linkingText": [
-        "multisample texture view dimension validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "GPUDevice.createBindGroupLayout"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "gpudevicecreatebindgrouplayout-storage-texture-validation",
-      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatebindgrouplayout-storage-texture-validation",
-      "linkingText": [
-        "storage texture validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "GPUDevice.createBindGroupLayout"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "gpudevicecreatebindgrouplayout-storage-texture-format-validation",
-      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatebindgrouplayout-storage-texture-format-validation",
-      "linkingText": [
-        "storage texture format validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "GPUDevice.createBindGroupLayout"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "gpudevicecreatebindgrouplayout-sampler-validation",
-      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatebindgrouplayout-sampler-validation",
-      "linkingText": [
-        "sampler validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "GPUDevice.createBindGroupLayout"
-      ],
-      "access": "private",
       "informative": false
     },
     {
@@ -4763,45 +4539,17 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-gpudevicecreatepipelinelayout-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpudevicecreatepipelinelayout-valid-usage",
+      "id": "dom-gpudevice-createpipelinelayout-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createpipelinelayout-descriptor-descriptor",
       "linkingText": [
-        "Valid Usage"
+        "descriptor"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
+      "type": "argument",
       "for": [
-        "GPUDevice.createPipelineLayout"
+        "GPUDevice/createPipelineLayout(descriptor)"
       ],
       "access": "public",
-      "informative": false
-    },
-    {
-      "id": "gpudevicecreatepipelinelayout-pipeline-layout-device-validation",
-      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatepipelinelayout-pipeline-layout-device-validation",
-      "linkingText": [
-        "pipeline layout device validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "GPUDevice.createPipelineLayout"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "gpudevicecreatepipelinelayout-pipeline-layout-entries-validation",
-      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatepipelinelayout-pipeline-layout-entries-validation",
-      "linkingText": [
-        "pipeline layout entries validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "GPUDevice.createPipelineLayout"
-      ],
-      "access": "private",
       "informative": false
     },
     {
@@ -5097,20 +4845,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpupipelinebase-getbindgrouplayout-index-index",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupipelinebase-getbindgrouplayout-index-index",
-      "linkingText": [
-        "index"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUPipelineBase/getBindGroupLayout(index)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpupipelinebase-layout-slot",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpupipelinebase-layout-slot",
       "linkingText": [
@@ -5134,6 +4868,20 @@
       "type": "method",
       "for": [
         "GPUPipelineBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpupipelinebase-getbindgrouplayout-index-index",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupipelinebase-getbindgrouplayout-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUPipelineBase/getBindGroupLayout(index)"
       ],
       "access": "public",
       "informative": false
@@ -5262,6 +5010,20 @@
       "type": "method",
       "for": [
         "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createcomputepipeline-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createcomputepipeline-descriptor-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUDevice/createComputePipeline(descriptor)"
       ],
       "access": "public",
       "informative": false
@@ -5488,6 +5250,20 @@
       "type": "method",
       "for": [
         "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createrenderpipeline-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createrenderpipeline-descriptor-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUDevice/createRenderPipeline(descriptor)"
       ],
       "access": "public",
       "informative": false
@@ -7317,202 +7093,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-source",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-source",
-      "linkingText": [
-        "source"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/copyBufferToBuffer(source, sourceOffset, destination, destinationOffset, size)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-sourceoffset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-sourceoffset",
-      "linkingText": [
-        "sourceOffset"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/copyBufferToBuffer(source, sourceOffset, destination, destinationOffset, size)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-destination",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-destination",
-      "linkingText": [
-        "destination"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/copyBufferToBuffer(source, sourceOffset, destination, destinationOffset, size)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-destinationoffset",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-destinationoffset",
-      "linkingText": [
-        "destinationOffset"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/copyBufferToBuffer(source, sourceOffset, destination, destinationOffset, size)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-size",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-size",
-      "linkingText": [
-        "size"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/copyBufferToBuffer(source, sourceOffset, destination, destinationOffset, size)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-copybuffertotexture-source-destination-copysize-source",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertotexture-source-destination-copysize-source",
-      "linkingText": [
-        "source"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/copyBufferToTexture(source, destination, copySize)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-copybuffertotexture-source-destination-copysize-destination",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertotexture-source-destination-copysize-destination",
-      "linkingText": [
-        "destination"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/copyBufferToTexture(source, destination, copySize)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-copybuffertotexture-source-destination-copysize-copysize",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertotexture-source-destination-copysize-copysize",
-      "linkingText": [
-        "copySize"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/copyBufferToTexture(source, destination, copySize)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-copytexturetobuffer-source-destination-copysize-source",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copytexturetobuffer-source-destination-copysize-source",
-      "linkingText": [
-        "source"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/copyTextureToBuffer(source, destination, copySize)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-copytexturetobuffer-source-destination-copysize-destination",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copytexturetobuffer-source-destination-copysize-destination",
-      "linkingText": [
-        "destination"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/copyTextureToBuffer(source, destination, copySize)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-copytexturetobuffer-source-destination-copysize-copysize",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copytexturetobuffer-source-destination-copysize-copysize",
-      "linkingText": [
-        "copySize"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/copyTextureToBuffer(source, destination, copySize)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-copytexturetotexture-source-destination-copysize-source",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copytexturetotexture-source-destination-copysize-source",
-      "linkingText": [
-        "source"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/copyTextureToTexture(source, destination, copySize)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-copytexturetotexture-source-destination-copysize-destination",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copytexturetotexture-source-destination-copysize-destination",
-      "linkingText": [
-        "destination"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/copyTextureToTexture(source, destination, copySize)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpucommandencoder-copytexturetotexture-source-destination-copysize-copysize",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copytexturetotexture-source-destination-copysize-copysize",
-      "linkingText": [
-        "copySize"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/copyTextureToTexture(source, destination, copySize)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpucommandencoder-state-slot",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-state-slot",
       "linkingText": [
@@ -7945,15 +7525,71 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-gpucommandencodercopybuffertobuffer-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpucommandencodercopybuffertobuffer-valid-usage",
+      "id": "dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-source",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-source",
       "linkingText": [
-        "Valid Usage"
+        "source"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
+      "type": "argument",
       "for": [
-        "GPUCommandEncoder.copyBufferToBuffer"
+        "GPUCommandEncoder/copyBufferToBuffer(source, sourceOffset, destination, destinationOffset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-sourceoffset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-sourceoffset",
+      "linkingText": [
+        "sourceOffset"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/copyBufferToBuffer(source, sourceOffset, destination, destinationOffset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-destination",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/copyBufferToBuffer(source, sourceOffset, destination, destinationOffset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-destinationoffset",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-destinationoffset",
+      "linkingText": [
+        "destinationOffset"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/copyBufferToBuffer(source, sourceOffset, destination, destinationOffset, size)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-size",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertobuffer-source-sourceoffset-destination-destinationoffset-size-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/copyBufferToBuffer(source, sourceOffset, destination, destinationOffset, size)"
       ],
       "access": "public",
       "informative": false
@@ -8009,14 +7645,44 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-copybuffertotexture-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-copybuffertotexture-valid-usage",
+      "id": "dom-gpucommandencoder-copybuffertotexture-source-destination-copysize-source",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertotexture-source-destination-copysize-source",
       "linkingText": [
-        "copyBufferToTexture Valid Usage"
+        "source"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/copyBufferToTexture(source, destination, copySize)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-copybuffertotexture-source-destination-copysize-destination",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertotexture-source-destination-copysize-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/copyBufferToTexture(source, destination, copySize)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-copybuffertotexture-source-destination-copysize-copysize",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copybuffertotexture-source-destination-copysize-copysize",
+      "linkingText": [
+        "copySize"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/copyBufferToTexture(source, destination, copySize)"
+      ],
       "access": "public",
       "informative": false
     },
@@ -8035,14 +7701,44 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-copytexturetobuffer-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-copytexturetobuffer-valid-usage",
+      "id": "dom-gpucommandencoder-copytexturetobuffer-source-destination-copysize-source",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copytexturetobuffer-source-destination-copysize-source",
       "linkingText": [
-        "copyTextureToBuffer Valid Usage"
+        "source"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/copyTextureToBuffer(source, destination, copySize)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-copytexturetobuffer-source-destination-copysize-destination",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copytexturetobuffer-source-destination-copysize-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/copyTextureToBuffer(source, destination, copySize)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-copytexturetobuffer-source-destination-copysize-copysize",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copytexturetobuffer-source-destination-copysize-copysize",
+      "linkingText": [
+        "copySize"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/copyTextureToBuffer(source, destination, copySize)"
+      ],
       "access": "public",
       "informative": false
     },
@@ -8061,14 +7757,44 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-copytexturetotexture-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-copytexturetotexture-valid-usage",
+      "id": "dom-gpucommandencoder-copytexturetotexture-source-destination-copysize-source",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copytexturetotexture-source-destination-copysize-source",
       "linkingText": [
-        "copyTextureToTexture Valid Usage"
+        "source"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/copyTextureToTexture(source, destination, copySize)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-copytexturetotexture-source-destination-copysize-destination",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copytexturetotexture-source-destination-copysize-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/copyTextureToTexture(source, destination, copySize)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-copytexturetotexture-source-destination-copysize-copysize",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-copytexturetotexture-source-destination-copysize-copysize",
+      "linkingText": [
+        "copySize"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUCommandEncoder/copyTextureToTexture(source, destination, copySize)"
+      ],
       "access": "public",
       "informative": false
     },
@@ -10188,62 +9914,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpuqueue-submit-commandbuffers-commandbuffers",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-submit-commandbuffers-commandbuffers",
-      "linkingText": [
-        "commandBuffers"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/submit(commandBuffers)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuqueue-copyimagebitmaptotexture-source-destination-copysize-source",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-copyimagebitmaptotexture-source-destination-copysize-source",
-      "linkingText": [
-        "source"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/copyImageBitmapToTexture(source, destination, copySize)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuqueue-copyimagebitmaptotexture-source-destination-copysize-destination",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-copyimagebitmaptotexture-source-destination-copysize-destination",
-      "linkingText": [
-        "destination"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/copyImageBitmapToTexture(source, destination, copySize)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuqueue-copyimagebitmaptotexture-source-destination-copysize-copysize",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-copyimagebitmaptotexture-source-destination-copysize-copysize",
-      "linkingText": [
-        "copySize"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/copyImageBitmapToTexture(source, destination, copySize)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpuqueue-writebuffer",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-writebuffer",
       "linkingText": [
@@ -10414,6 +10084,48 @@
       "informative": false
     },
     {
+      "id": "dom-gpuqueue-copyimagebitmaptotexture-source-destination-copysize-source",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-copyimagebitmaptotexture-source-destination-copysize-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUQueue/copyImageBitmapToTexture(source, destination, copySize)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuqueue-copyimagebitmaptotexture-source-destination-copysize-destination",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-copyimagebitmaptotexture-source-destination-copysize-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUQueue/copyImageBitmapToTexture(source, destination, copySize)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuqueue-copyimagebitmaptotexture-source-destination-copysize-copysize",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-copyimagebitmaptotexture-source-destination-copysize-copysize",
+      "linkingText": [
+        "copySize"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUQueue/copyImageBitmapToTexture(source, destination, copySize)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpuqueue-submit",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-submit",
       "linkingText": [
@@ -10423,6 +10135,20 @@
       "type": "method",
       "for": [
         "GPUQueue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuqueue-submit-commandbuffers-commandbuffers",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-submit-commandbuffers-commandbuffers",
+      "linkingText": [
+        "commandBuffers"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUQueue/submit(commandBuffers)"
       ],
       "access": "public",
       "informative": false
