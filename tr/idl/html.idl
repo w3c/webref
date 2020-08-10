@@ -574,6 +574,7 @@ interface HTMLMediaElement : HTMLElement {
   readonly attribute boolean paused;
   attribute double defaultPlaybackRate;
   attribute double playbackRate;
+  attribute boolean preservesPitch;
   readonly attribute TimeRanges played;
   readonly attribute TimeRanges seekable;
   readonly attribute boolean ended;
