@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% August 10, 2020
+% August 11, 2020
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
@@ -1710,7 +1710,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-cascade-3/](https://www.w3.org/TR/css-cascade-3/)
 - Crawled URL: [https://drafts.csswg.org/css-cascade-3/](https://drafts.csswg.org/css-cascade-3/)
-- Crawled version: 7 August 2020
+- Crawled version: 10 August 2020
 - Editor's Draft: [https://drafts.csswg.org/css-cascade-3/](https://drafts.csswg.org/css-cascade-3/)
 - Latest published version: [https://www.w3.org/TR/css-cascade-3/](https://www.w3.org/TR/css-cascade-3/)
 - Shortname: css-cascade-3
@@ -1738,7 +1738,6 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
@@ -1756,7 +1755,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-cascade-4/](https://www.w3.org/TR/css-cascade-4/)
 - Crawled URL: [https://drafts.csswg.org/css-cascade/](https://drafts.csswg.org/css-cascade/)
-- Crawled version: 7 August 2020
+- Crawled version: 10 August 2020
 - Editor's Draft: [https://drafts.csswg.org/css-cascade/](https://drafts.csswg.org/css-cascade/)
 - Latest published version: [https://www.w3.org/TR/css-cascade-4/](https://www.w3.org/TR/css-cascade-4/)
 - Shortname: css-cascade-4
@@ -1768,8 +1767,8 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-conditional/`](https://www.w3.org/TR/css-conditional/)
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-     * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/)
      * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/)
+     * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/)
      * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/)
      * [`https://www.w3.org/TR/css-cascade-3/`](https://www.w3.org/TR/css-cascade-3/)
 - Inconsistent references for links: 
@@ -4329,7 +4328,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-scoping-1/](https://www.w3.org/TR/css-scoping-1/)
 - Crawled URL: [https://drafts.csswg.org/css-scoping/](https://drafts.csswg.org/css-scoping/)
-- Crawled version: 30 March 2020
+- Crawled version: 10 August 2020
 - Editor's Draft: [https://drafts.csswg.org/css-scoping/](https://drafts.csswg.org/css-scoping/)
 - Latest published version: [https://www.w3.org/TR/css-scoping-1/](https://www.w3.org/TR/css-scoping-1/)
 - Shortname: css-scoping-1
@@ -4343,6 +4342,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
@@ -4633,7 +4633,6 @@ Normative references to this spec from:
 
 - [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS 2](https://drafts.csswg.org/css2/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 
@@ -5860,6 +5859,7 @@ Normative references to this spec from:
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
@@ -7695,13 +7695,14 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
 - Crawled URL: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
-- Crawled version: 30 June 2020
+- Crawled version: 10 August 2020
 - Editor's Draft: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
 - Shortname: layout-instability
 
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
+     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/)
      * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
      * [`https://www.w3.org/TR/pointerevents/`](https://www.w3.org/TR/pointerevents/)
      * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/)
@@ -11829,7 +11830,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 6 August 2020
+- Crawled version: 10 August 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
