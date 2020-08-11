@@ -1755,7 +1755,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-cascade-4/](https://www.w3.org/TR/css-cascade-4/)
 - Crawled URL: [https://drafts.csswg.org/css-cascade/](https://drafts.csswg.org/css-cascade/)
-- Crawled version: 10 August 2020
+- Crawled version: 11 August 2020
 - Editor's Draft: [https://drafts.csswg.org/css-cascade/](https://drafts.csswg.org/css-cascade/)
 - Latest published version: [https://www.w3.org/TR/css-cascade-4/](https://www.w3.org/TR/css-cascade-4/)
 - Shortname: css-cascade-4
@@ -2596,7 +2596,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/)
 - Crawled URL: [https://drafts.csswg.org/css-flexbox-1/](https://drafts.csswg.org/css-flexbox-1/)
-- Crawled version: 4 August 2020
+- Crawled version: 10 August 2020
 - Editor's Draft: [https://drafts.csswg.org/css-flexbox-1/](https://drafts.csswg.org/css-flexbox-1/)
 - Latest published version: [https://www.w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/)
 - Shortname: css-flexbox-1
@@ -2964,7 +2964,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-gcpm-3/](https://www.w3.org/TR/css-gcpm-3/)
 - Crawled URL: [https://drafts.csswg.org/css-gcpm/](https://drafts.csswg.org/css-gcpm/)
-- Crawled version: 27 February 2020
+- Crawled version: 27 July 2020
 - Editor's Draft: [https://drafts.csswg.org/css-gcpm/](https://drafts.csswg.org/css-gcpm/)
 - Latest published version: [https://www.w3.org/TR/css-gcpm-3/](https://www.w3.org/TR/css-gcpm-3/)
 - Shortname: css-gcpm-3
@@ -3067,7 +3067,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-grid-1/](https://www.w3.org/TR/css-grid-1/)
 - Crawled URL: [https://drafts.csswg.org/css-grid/](https://drafts.csswg.org/css-grid/)
-- Crawled version: 6 August 2020
+- Crawled version: 10 August 2020
 - Editor's Draft: [https://drafts.csswg.org/css-grid/](https://drafts.csswg.org/css-grid/)
 - Latest published version: [https://www.w3.org/TR/css-grid-1/](https://www.w3.org/TR/css-grid-1/)
 - Shortname: css-grid-1
@@ -4328,7 +4328,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-scoping-1/](https://www.w3.org/TR/css-scoping-1/)
 - Crawled URL: [https://drafts.csswg.org/css-scoping/](https://drafts.csswg.org/css-scoping/)
-- Crawled version: 10 August 2020
+- Crawled version: 11 August 2020
 - Editor's Draft: [https://drafts.csswg.org/css-scoping/](https://drafts.csswg.org/css-scoping/)
 - Latest published version: [https://www.w3.org/TR/css-scoping-1/](https://www.w3.org/TR/css-scoping-1/)
 - Shortname: css-scoping-1
@@ -5320,7 +5320,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
 - Crawled URL: [https://drafts.csswg.org/css-values-4/](https://drafts.csswg.org/css-values-4/)
-- Crawled version: 24 July 2020
+- Crawled version: 28 July 2020
 - Editor's Draft: [https://drafts.csswg.org/css-values-4/](https://drafts.csswg.org/css-values-4/)
 - Latest published version: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
 - Shortname: css-values-4
@@ -6880,7 +6880,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 10 August 2020
+- Crawled version: 11 August 2020
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -11981,7 +11981,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 9 August 2020
+- Crawled version: 11 August 2020
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
@@ -12077,7 +12077,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled URL: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Crawled version: 7 August 2020
+- Crawled version: 11 August 2020
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Shortname: webxr
