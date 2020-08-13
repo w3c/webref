@@ -1433,7 +1433,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-align-3/](https://www.w3.org/TR/css-align-3/)
 - Crawled URL: [https://drafts.csswg.org/css-align/](https://drafts.csswg.org/css-align/)
-- Crawled version: 28 May 2020
+- Crawled version: 12 August 2020
 - Editor's Draft: [https://drafts.csswg.org/css-align/](https://drafts.csswg.org/css-align/)
 - Latest published version: [https://www.w3.org/TR/css-align-3/](https://www.w3.org/TR/css-align-3/)
 - Shortname: css-align-3
@@ -3282,6 +3282,7 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
      * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/ilreq/`](https://www.w3.org/TR/ilreq/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
@@ -4853,7 +4854,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Crawled URL: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
-- Crawled version: 13 July 2020
+- Crawled version: 12 August 2020
 - Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Shortname: css-text-3
@@ -11898,8 +11899,8 @@ Normative references to this spec from:
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Scalable Video Coding (SVC) Extension for WebRTC](https://w3c.github.io/webrtc-svc/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [WebRTC DSCP Control API](https://w3c.github.io/webrtc-priority/)
 - [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
+- [WebRTC Priority Control API](https://w3c.github.io/webrtc-priority/)
 - [WebTransport](https://wicg.github.io/web-transport/)
 
 Informative references to this spec from:
@@ -11907,30 +11908,6 @@ Informative references to this spec from:
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
-
-
-## WebRTC DSCP Control API {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/webrtc-priority/](https://www.w3.org/TR/webrtc-priority/)
-- Crawled URL: [https://w3c.github.io/webrtc-priority/](https://w3c.github.io/webrtc-priority/)
-- Crawled version: 12 February 2020
-- Editor's Draft: [https://w3c.github.io/webrtc-priority/](https://w3c.github.io/webrtc-priority/)
-- Latest published version: [https://www.w3.org/TR/webrtc-priority/](https://www.w3.org/TR/webrtc-priority/)
-- Shortname: webrtc-priority
-
-### Potential issue(s) {.anomalies}
-
-- Spec uses WebIDL but does not reference it normatively
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
-
-No informative reference to this spec from other specs.
 
 
 ## WebRTC Insertable Media using Streams {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -11951,6 +11928,30 @@ No informative reference to this spec from other specs.
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## WebRTC Priority Control API {data-spec=true data-anomaly=true data-noRefToWebIDL=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/webrtc-priority/](https://www.w3.org/TR/webrtc-priority/)
+- Crawled URL: [https://w3c.github.io/webrtc-priority/](https://w3c.github.io/webrtc-priority/)
+- Crawled version: 13 August 2020
+- Editor's Draft: [https://w3c.github.io/webrtc-priority/](https://w3c.github.io/webrtc-priority/)
+- Latest published version: [https://www.w3.org/TR/webrtc-priority/](https://www.w3.org/TR/webrtc-priority/)
+- Shortname: webrtc-priority
+
+### Potential issue(s) {.anomalies}
+
+- Spec uses WebIDL but does not reference it normatively
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 
 No informative reference to this spec from other specs.
 

@@ -17,7 +17,7 @@
     },
     "vertical-align": {
       "name": "vertical-align",
-      "value": "<'baseline-source'> || <'alignment-baseline'> || <'baseline-shift'>",
+      "value": "[ first | last] || <'alignment-baseline'> || <'baseline-shift'>",
       "initial": "baseline",
       "appliesTo": "see individual properties",
       "inherited": "no",
@@ -116,7 +116,7 @@
     },
     "initial-letter-align": {
       "name": "initial-letter-align",
-      "value": "[ border-box? [ alphabetic | ideographic | hanging ]? ]!",
+      "value": "[ border-box? [ alphabetic | ideographic | hanging | leading ]? ]!",
       "initial": "alphabetic",
       "appliesTo": "certain inline-level boxes and ::first-letter and inside ::marker boxes (see prose)",
       "inherited": "yes",
