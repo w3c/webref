@@ -250,63 +250,7 @@
       "id": "dom-serialoptions-buffersize",
       "href": "https://wicg.github.io/serial/#dom-serialoptions-buffersize",
       "linkingText": [
-        "buffersize"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "SerialOptions"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-serialoptions-rtscts",
-      "href": "https://wicg.github.io/serial/#dom-serialoptions-rtscts",
-      "linkingText": [
-        "rtscts"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "SerialOptions"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-serialoptions-xon",
-      "href": "https://wicg.github.io/serial/#dom-serialoptions-xon",
-      "linkingText": [
-        "xon"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "SerialOptions"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-serialoptions-xoff",
-      "href": "https://wicg.github.io/serial/#dom-serialoptions-xoff",
-      "linkingText": [
-        "xoff"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "SerialOptions"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-serialoptions-xany",
-      "href": "https://wicg.github.io/serial/#dom-serialoptions-xany",
-      "linkingText": [
-        "xany"
+        "bufferSize"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -320,7 +264,7 @@
       "id": "dom-serialoptions-baudrate",
       "href": "https://wicg.github.io/serial/#dom-serialoptions-baudrate",
       "linkingText": [
-        "baudrate"
+        "baudRate"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -334,7 +278,7 @@
       "id": "dom-serialoptions-databits",
       "href": "https://wicg.github.io/serial/#dom-serialoptions-databits",
       "linkingText": [
-        "databits"
+        "dataBits"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -348,7 +292,7 @@
       "id": "dom-serialoptions-stopbits",
       "href": "https://wicg.github.io/serial/#dom-serialoptions-stopbits",
       "linkingText": [
-        "stopbits"
+        "stopBits"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -363,6 +307,20 @@
       "href": "https://wicg.github.io/serial/#dom-serialoptions-parity",
       "linkingText": [
         "parity"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-serialoptions-flowcontrol",
+      "href": "https://wicg.github.io/serial/#dom-serialoptions-flowcontrol",
+      "linkingText": [
+        "flowControl"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -450,6 +408,46 @@
       "type": "enum-value",
       "for": [
         "ParityType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-flowcontroltype",
+      "href": "https://wicg.github.io/serial/#dom-flowcontroltype",
+      "linkingText": [
+        "FlowControlType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-flowcontroltype-none",
+      "href": "https://wicg.github.io/serial/#dom-flowcontroltype-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FlowControlType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-flowcontroltype-hardware",
+      "href": "https://wicg.github.io/serial/#dom-flowcontroltype-hardware",
+      "linkingText": [
+        "hardware"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FlowControlType"
       ],
       "access": "public",
       "informative": false
