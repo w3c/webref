@@ -3,7 +3,7 @@
 // (https://github.com/tidoust/reffy-reports)
 // Source: Streams Standard (https://streams.spec.whatwg.org/)
 
-[Exposed=(Window,Worker,Worklet)]
+[Exposed=(Window,Worker,Worklet), Transferable]
 interface ReadableStream {
   constructor(optional object underlyingSource, optional QueuingStrategy strategy = {});
 
@@ -119,7 +119,7 @@ interface ReadableStreamBYOBRequest {
   void respondWithNewView(ArrayBufferView view);
 };
 
-[Exposed=(Window,Worker,Worklet)]
+[Exposed=(Window,Worker,Worklet), Transferable]
 interface WritableStream {
   constructor(optional object underlyingSink, optional QueuingStrategy strategy = {});
 
@@ -162,7 +162,7 @@ interface WritableStreamDefaultController {
   void error(optional any e);
 };
 
-[Exposed=(Window,Worker,Worklet)]
+[Exposed=(Window,Worker,Worklet), Transferable]
 interface TransformStream {
   constructor(optional object transformer,
               optional QueuingStrategy writableStrategy = {},
