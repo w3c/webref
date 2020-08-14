@@ -211,7 +211,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Crawled URL: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
-- Crawled version: 13 August 2020
+- Crawled version: 14 August 2020
 - Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
 - Latest published version: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Shortname: html-aria
@@ -11914,7 +11914,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
 - Crawled URL: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
-- Crawled version: 27 May 2020
+- Crawled version: 11 June 2020
 - Editor's Draft: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
 - Shortname: webrtc-insertable-streams
 
