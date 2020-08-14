@@ -58,16 +58,20 @@ callback UnderlyingSourceCancelCallback = Promise<void> (optional any reason);
 
 enum ReadableStreamType { "bytes" };
 
+interface mixin ReadableStreamGenericReader {
+  readonly attribute Promise<void> closed;
+
+  Promise<void> cancel(optional any reason);
+};
+
 [Exposed=(Window,Worker,Worklet)]
 interface ReadableStreamDefaultReader {
   constructor(ReadableStream stream);
 
-  readonly attribute Promise<void> closed;
-
-  Promise<void> cancel(optional any reason);
   Promise<ReadableStreamDefaultReadResult> read();
   void releaseLock();
 };
+ReadableStreamDefaultReader includes ReadableStreamGenericReader;
 
 dictionary ReadableStreamDefaultReadResult {
  any value;
@@ -78,12 +82,10 @@ dictionary ReadableStreamDefaultReadResult {
 interface ReadableStreamBYOBReader {
   constructor(ReadableStream stream);
 
-  readonly attribute Promise<void> closed;
-
-  Promise<void> cancel(optional any reason);
   Promise<ReadableStreamBYOBReadResult> read(ArrayBufferView view);
   void releaseLock();
 };
+ReadableStreamBYOBReader includes ReadableStreamGenericReader;
 
 dictionary ReadableStreamBYOBReadResult {
  ArrayBufferView value;
