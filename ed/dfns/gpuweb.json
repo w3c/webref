@@ -167,6 +167,18 @@
       "informative": false
     },
     {
+      "id": "abstract-opdef-valid-to-use-with",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-valid-to-use-with",
+      "linkingText": [
+        "valid to use with"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "content-timeline",
       "href": "https://gpuweb.github.io/gpuweb/#content-timeline",
       "linkingText": [
@@ -4135,6 +4147,20 @@
       "informative": false
     },
     {
+      "id": "dom-gpubindgrouplayout-dynamicoffsetcount-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayout-dynamicoffsetcount-slot",
+      "linkingText": [
+        "[[dynamicOffsetCount]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUBindGroupLayout"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpudevice-createbindgrouplayout",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbindgrouplayout",
       "linkingText": [
@@ -7992,36 +8018,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-index",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-index",
-      "linkingText": [
-        "index"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup, dynamicOffsets)",
-        "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-bindgroup",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-bindgroup",
-      "linkingText": [
-        "bindGroup"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup, dynamicOffsets)",
-        "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-dynamicoffsets",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-dynamicoffsets",
       "linkingText": [
@@ -8051,6 +8047,20 @@
       "informative": false
     },
     {
+      "id": "dom-gpuprogrammablepassencoder-bind_groups-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-bind_groups-slot",
+      "linkingText": [
+        "[[bind_groups]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUProgrammablePassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpuprogrammablepassencoder-setbindgroup",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup",
       "linkingText": [
@@ -8061,6 +8071,34 @@
       "type": "method",
       "for": [
         "GPUProgrammablePassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-index",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup, dynamicOffsets)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-bindgroup",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-bindgroup",
+      "linkingText": [
+        "bindGroup"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup, dynamicOffsets)"
       ],
       "access": "public",
       "informative": false
@@ -8146,6 +8184,18 @@
       "for": [
         "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup, dynamicOffsetsData, dynamicOffsetsDataStart, dynamicOffsetsDataLength)"
       ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-iterate-over-each-dynamic-binding-offset",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-iterate-over-each-dynamic-binding-offset",
+      "linkingText": [
+        "Iterate over each dynamic binding offset"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
       "access": "public",
       "informative": false
     },
@@ -8554,20 +8604,6 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-vertex_buffers-slot",
       "linkingText": [
         "[[vertex_buffers]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPURenderEncoderBase"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpurenderencoderbase-bind_groups-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-bind_groups-slot",
-      "linkingText": [
-        "[[bind_groups]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
