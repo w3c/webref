@@ -116,6 +116,10 @@ partial interface Window {
     Promise<FileSystemDirectoryHandle> showDirectoryPicker(optional DirectoryPickerOptions options = {});
 };
 
+partial interface DataTransferItem {
+    Promise<FileSystemHandle?> getAsFileSystemHandle();
+};
+
 [SecureContext]
 partial interface mixin WindowOrWorkerGlobalScope {
   Promise<FileSystemDirectoryHandle> getOriginPrivateDirectory();

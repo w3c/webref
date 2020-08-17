@@ -35,15 +35,12 @@ interface SerialPortInfo {
 };
 
 dictionary SerialOptions {
-  long baudrate = 9600;
-  octet databits = 8;
-  octet stopbits = 1;
+  long baudRate = 9600;
+  octet dataBits = 8;
+  octet stopBits = 1;
   ParityType parity = "none";
-  long buffersize = 255;
-  boolean rtscts = false;
-  boolean xon = false;
-  boolean xoff = false;
-  boolean xany = false;
+  long bufferSize = 255;
+  FlowControlType flowControl = "none";
 };
 
 enum ParityType {
@@ -52,4 +49,9 @@ enum ParityType {
   "odd",
   "mark",
   "space"
+};
+
+enum FlowControlType {
+  "none",
+  "hardware"
 };
