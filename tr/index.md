@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% August 10, 2020
+% August 17, 2020
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -38,6 +38,27 @@ Although they do not, the following specs should also normatively reference this
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html)
+
+No informative reference to this spec from other specs.
+
+
+## [No title found for https://wicg.github.io/webusb/] {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
+- Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
+- Crawled version: 17 August 2020
+- Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
+- Shortname: webusb
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -246,7 +267,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Crawled URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
-- Crawled version: 06 August 2020
+- Crawled version: 14 August 2020
 - Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
 - Latest published version: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Shortname: html-aria
@@ -897,7 +918,6 @@ Informative references to this spec from:
 - [Preload](https://www.w3.org/TR/preload/)
 - [Reporting API](https://www.w3.org/TR/reporting-1/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [WebGPU](https://gpuweb.github.io/gpuweb/)
 
 
 ## Content Security Policy: Embedded Enforcement {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-inconsistentRef=true}
@@ -5744,7 +5764,6 @@ Normative references to this spec from:
 - [WebHID API](https://wicg.github.io/webhid/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
 - [WebTransport](https://wicg.github.io/web-transport/)
-- [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
@@ -6592,7 +6611,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Crawled URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
-- Crawled version: 18 July 2020
+- Crawled version: 11 August 2020
 - Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
 - Latest published version: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Shortname: html-aam-1.0
@@ -6649,7 +6668,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 7 August 2020
+- Crawled version: 17 August 2020
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -6868,7 +6887,6 @@ Normative references to this spec from:
 - [WebHID API](https://wicg.github.io/webhid/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
 - [WebTransport](https://wicg.github.io/web-transport/)
-- [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
@@ -7444,7 +7462,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
 - Crawled URL: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
-- Crawled version: 30 June 2020
+- Crawled version: 10 August 2020
 - Editor's Draft: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
 - Shortname: layout-instability
 
@@ -7452,6 +7470,7 @@ No informative reference to this spec from other specs.
 
 - Unknown WebIDL names used: `DOMHighResTimeStamp`
 - Missing references for links: 
+     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/)
      * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
      * [`https://www.w3.org/TR/pointerevents/`](https://www.w3.org/TR/pointerevents/)
      * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/)
@@ -7606,7 +7625,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
 - Crawled URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
-- Crawled version: 31 July 2020
+- Crawled version: 12 August 2020
 - Editor's Draft: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
 - Shortname: mathml-core
 
@@ -8134,7 +8153,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Crawled URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
-- Crawled version: 5 August 2020
+- Crawled version: 14 August 2020
 - Editor's Draft: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Shortname: native-file-system
 
@@ -8710,7 +8729,6 @@ Normative references to this spec from:
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
-- [WebUSB API](https://wicg.github.io/webusb/)
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
 
 No informative reference to this spec from other specs.
@@ -8836,7 +8854,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Crawled URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
-- Crawled version: 31 July 2020
+- Crawled version: 13 August 2020
 - Editor's Draft: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Shortname: portals
 
@@ -9196,7 +9214,6 @@ Normative references to this spec from:
 - [Native File System](https://wicg.github.io/native-file-system/)
 - [Permissions](https://www.w3.org/TR/permissions/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [WebUSB API](https://wicg.github.io/webusb/)
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
 
 Informative references to this spec from:
@@ -9596,7 +9613,6 @@ Informative references to this spec from:
 - [Encrypted Media Extensions](https://www.w3.org/TR/encrypted-media/)
 - [Origin-bound one-time codes delivered via SMS](https://wicg.github.io/sms-one-time-codes/)
 - [Payment Request API](https://www.w3.org/TR/payment-request/)
-- [WebUSB API](https://wicg.github.io/webusb/)
 
 
 ## Selection API {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -9734,7 +9750,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
 - Crawled URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
-- Crawled version: 01 August 2020
+- Crawled version: 13 August 2020
 - Editor's Draft: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
 - Shortname: serial
 
@@ -9837,7 +9853,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
 - Crawled URL: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
-- Crawled version: 10 July 2020
+- Crawled version: 16 August 2020
 - Editor's Draft: [https://storage.spec.whatwg.org/](https://storage.spec.whatwg.org/)
 - Shortname: storage
 
@@ -9866,7 +9882,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 5 August 2020
+- Crawled version: 13 August 2020
 - Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Shortname: streams
 
@@ -10126,7 +10142,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/scroll-to-text-fragment/](https://wicg.github.io/scroll-to-text-fragment/)
 - Crawled URL: [https://wicg.github.io/scroll-to-text-fragment/](https://wicg.github.io/scroll-to-text-fragment/)
-- Crawled version: 4 August 2020
+- Crawled version: 12 August 2020
 - Editor's Draft: [https://wicg.github.io/scroll-to-text-fragment/](https://wicg.github.io/scroll-to-text-fragment/)
 - Shortname: scroll-to-text-fragment
 
@@ -10577,7 +10593,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Crawled URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
-- Crawled version: 27 May 2020
+- Crawled version: 12 August 2020
 - Editor's Draft: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Shortname: ua-client-hints
 
@@ -11291,20 +11307,19 @@ Informative references to this spec from:
 - [Web Audio API](https://www.w3.org/TR/webaudio/)
 
 
-## WebGPU {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## WebGPU {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 6 August 2020
+- Crawled version: 15 August 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
 ### Potential issue(s) {.anomalies}
 
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -11531,7 +11546,6 @@ Normative references to this spec from:
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
 - [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 - [WebTransport](https://wicg.github.io/web-transport/)
-- [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
 - [WebXR Anchors Module](https://immersive-web.github.io/anchors/)
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
@@ -11603,7 +11617,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
 - Crawled URL: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
-- Crawled version: 27 May 2020
+- Crawled version: 11 June 2020
 - Editor's Draft: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
 - Shortname: webrtc-insertable-streams
 
@@ -11662,28 +11676,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `DOMHighResTimeStamp`
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## WebUSB API {data-spec=true data-anomaly=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 9 August 2020
-- Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Shortname: webusb
-
-### Potential issue(s) {.anomalies}
-
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
 
 ### Known dependencies on this specification {.dependencies}
 

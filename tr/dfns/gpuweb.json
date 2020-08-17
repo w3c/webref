@@ -167,6 +167,18 @@
       "informative": false
     },
     {
+      "id": "abstract-opdef-valid-to-use-with",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-valid-to-use-with",
+      "linkingText": [
+        "valid to use with"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "content-timeline",
       "href": "https://gpuweb.github.io/gpuweb/#content-timeline",
       "linkingText": [
@@ -917,20 +929,6 @@
       "for": [
         "GPUDevice/createSampler(descriptor)",
         "GPUDevice/createSampler()"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createbindgroup-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbindgroup-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUDevice/createBindGroup(descriptor)"
       ],
       "access": "public",
       "informative": false
@@ -3026,10 +3024,10 @@
       "informative": false
     },
     {
-      "id": "dom-gputextureformat-depth32float",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-depth32float",
+      "id": "dom-gputextureformat-stencil8",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-stencil8",
       "linkingText": [
-        "\"depth32float\""
+        "\"stencil8\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3058,6 +3056,20 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-depth24plus-stencil8",
       "linkingText": [
         "\"depth24plus-stencil8\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureFormat"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gputextureformat-depth32float",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-depth32float",
+      "linkingText": [
+        "\"depth32float\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -4149,6 +4161,20 @@
       "informative": false
     },
     {
+      "id": "dom-gpubindgrouplayout-dynamicoffsetcount-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayout-dynamicoffsetcount-slot",
+      "linkingText": [
+        "[[dynamicOffsetCount]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUBindGroupLayout"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpudevice-createbindgrouplayout",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbindgrouplayout",
       "linkingText": [
@@ -4417,59 +4443,17 @@
       "informative": false
     },
     {
-      "id": "abstract-opdef-gpudevicecreatebindgroup-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpudevicecreatebindgroup-valid-usage",
+      "id": "dom-gpudevice-createbindgroup-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createbindgroup-descriptor-descriptor",
       "linkingText": [
-        "Valid Usage"
+        "descriptor"
       ],
       "localLinkingText": [],
-      "type": "abstract-op",
+      "type": "argument",
       "for": [
-        "GPUDevice.createBindGroup"
+        "GPUDevice/createBindGroup(descriptor)"
       ],
       "access": "public",
-      "informative": false
-    },
-    {
-      "id": "gpudevicecreatebindgroup-bind-group-device-validation",
-      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatebindgroup-bind-group-device-validation",
-      "linkingText": [
-        "bind group device validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "GPUDevice.createBindGroup"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "gpudevicecreatebindgroup-texture-view-binding-validation",
-      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatebindgroup-texture-view-binding-validation",
-      "linkingText": [
-        "texture view binding validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "GPUDevice.createBindGroup"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "gpudevicecreatebindgroup-buffer-binding-validation",
-      "href": "https://gpuweb.github.io/gpuweb/#gpudevicecreatebindgroup-buffer-binding-validation",
-      "linkingText": [
-        "buffer binding validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "GPUDevice.createBindGroup"
-      ],
-      "access": "private",
       "informative": false
     },
     {
@@ -7339,6 +7323,18 @@
       "informative": false
     },
     {
+      "id": "block-row",
+      "href": "https://gpuweb.github.io/gpuweb/#block-row",
+      "linkingText": [
+        "block row"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "dom-gputexturedatalayout-bytesperrow",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedatalayout-bytesperrow",
       "linkingText": [
@@ -8048,36 +8044,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-index",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-index",
-      "linkingText": [
-        "index"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup, dynamicOffsets)",
-        "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-bindgroup",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-bindgroup",
-      "linkingText": [
-        "bindGroup"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup, dynamicOffsets)",
-        "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-dynamicoffsets",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-dynamicoffsets",
       "linkingText": [
@@ -8107,6 +8073,20 @@
       "informative": false
     },
     {
+      "id": "dom-gpuprogrammablepassencoder-bind_groups-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-bind_groups-slot",
+      "linkingText": [
+        "[[bind_groups]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUProgrammablePassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpuprogrammablepassencoder-setbindgroup",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup",
       "linkingText": [
@@ -8117,6 +8097,34 @@
       "type": "method",
       "for": [
         "GPUProgrammablePassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-index",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup, dynamicOffsets)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-bindgroup",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-setbindgroup-index-bindgroup-dynamicoffsets-bindgroup",
+      "linkingText": [
+        "bindGroup"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup, dynamicOffsets)"
       ],
       "access": "public",
       "informative": false
@@ -8202,6 +8210,18 @@
       "for": [
         "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup, dynamicOffsetsData, dynamicOffsetsDataStart, dynamicOffsetsDataLength)"
       ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-iterate-over-each-dynamic-binding-offset",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-iterate-over-each-dynamic-binding-offset",
+      "linkingText": [
+        "Iterate over each dynamic binding offset"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
       "access": "public",
       "informative": false
     },
@@ -8564,6 +8584,62 @@
       "informative": false
     },
     {
+      "id": "dom-gpurenderencoderbase-pipeline-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-pipeline-slot",
+      "linkingText": [
+        "[[pipeline]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderEncoderBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-index_buffer-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-index_buffer-slot",
+      "linkingText": [
+        "[[index_buffer]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderEncoderBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-index_format-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-index_format-slot",
+      "linkingText": [
+        "[[index_format]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderEncoderBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderencoderbase-vertex_buffers-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-vertex_buffers-slot",
+      "linkingText": [
+        "[[vertex_buffers]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderEncoderBase"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpurenderpassencoder-attachment_size-slot",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-attachment_size-slot",
       "linkingText": [
@@ -8646,16 +8722,14 @@
       "informative": false
     },
     {
-      "id": "gpurenderpassdescriptor-maximum-color-attachments",
-      "href": "https://gpuweb.github.io/gpuweb/#gpurenderpassdescriptor-maximum-color-attachments",
+      "id": "maximum-color-attachments",
+      "href": "https://gpuweb.github.io/gpuweb/#maximum-color-attachments",
       "linkingText": [
         "maximum color attachments"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "GPURenderPassDescriptor"
-      ],
+      "for": [],
       "access": "private",
       "informative": true
     },
@@ -9104,6 +9178,18 @@
       "informative": false
     },
     {
+      "id": "maximum-number-of-vertex-buffers",
+      "href": "https://gpuweb.github.io/gpuweb/#maximum-number-of-vertex-buffers",
+      "linkingText": [
+        "maximum number of vertex buffers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
       "id": "dom-gpurenderencoderbase-draw",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-draw",
       "linkingText": [
@@ -9279,6 +9365,18 @@
       "informative": false
     },
     {
+      "id": "indirect-draw-parameters",
+      "href": "https://gpuweb.github.io/gpuweb/#indirect-draw-parameters",
+      "linkingText": [
+        "indirect draw parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "dom-gpurenderencoderbase-drawindirect-indirectbuffer-indirectoffset-indirectbuffer",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-drawindirect-indirectbuffer-indirectoffset-indirectbuffer",
       "linkingText": [
@@ -9318,6 +9416,18 @@
         "GPURenderEncoderBase"
       ],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "indirect-drawindexed-parameters",
+      "href": "https://gpuweb.github.io/gpuweb/#indirect-drawindexed-parameters",
+      "linkingText": [
+        "indirect drawIndexed parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {

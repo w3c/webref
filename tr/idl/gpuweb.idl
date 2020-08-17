@@ -241,9 +241,10 @@ enum GPUTextureFormat {
     "rgba32float",
 
     // Depth and stencil formats
-    "depth32float",
+    "stencil8",
     "depth24plus",
     "depth24plus-stencil8",
+    "depth32float",
 
     // BC compressed formats usable if "texture-compression-bc" is both
     // supported by the device/user agent and enabled in requestDevice.
