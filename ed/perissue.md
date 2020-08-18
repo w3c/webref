@@ -394,6 +394,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-break/`](https://www.w3.org/TR/css-break/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/) links to:
+    * [`https://www.w3.org/TR/css-grid-1/`](https://www.w3.org/TR/css-grid-1/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
     * [`https://www.w3.org/TR/css-align/`](https://www.w3.org/TR/css-align/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-speech/`](https://www.w3.org/TR/css3-speech/) but does not list it in its references
@@ -854,7 +855,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/) but does not list it in its references
     * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 616 missing references for links found in 169 specifications
+=> 617 missing references for links found in 169 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
