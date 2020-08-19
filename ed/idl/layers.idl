@@ -11,7 +11,7 @@ enum XRLayerLayout {
   "stereo-top-bottom"
 };
 
-interface XRCompositionLayer : XRLayer {
+[Exposed=Window] interface XRCompositionLayer : XRLayer {
   readonly attribute XRLayerLayout layout;
 
   attribute boolean blendTextureSourceAlpha;
@@ -20,14 +20,14 @@ interface XRCompositionLayer : XRLayer {
 
   readonly attribute boolean needsRedraw;
 
-  void destroy();
+  undefined destroy();
 };
 
-interface XRProjectionLayer : XRCompositionLayer {
+[Exposed=Window] interface XRProjectionLayer : XRCompositionLayer {
   readonly attribute boolean ignoreDepthValues;
 };
 
-interface XRQuadLayer : XRCompositionLayer {
+[Exposed=Window] interface XRQuadLayer : XRCompositionLayer {
   attribute XRSpace space;
   attribute XRRigidTransform transform;
 
@@ -38,7 +38,7 @@ interface XRQuadLayer : XRCompositionLayer {
   attribute EventHandler onredraw;
 };
 
-interface XRCylinderLayer : XRCompositionLayer {
+[Exposed=Window] interface XRCylinderLayer : XRCompositionLayer {
   attribute XRSpace space;
   attribute XRRigidTransform transform;
 
@@ -50,7 +50,7 @@ interface XRCylinderLayer : XRCompositionLayer {
   attribute EventHandler onredraw;
 };
 
-interface XREquirectLayer : XRCompositionLayer {
+[Exposed=Window] interface XREquirectLayer : XRCompositionLayer {
   attribute XRSpace space;
   attribute XRRigidTransform transform;
 
@@ -63,7 +63,7 @@ interface XREquirectLayer : XRCompositionLayer {
   attribute EventHandler onredraw;
 };
 
-interface XRCubeLayer : XRCompositionLayer {
+[Exposed=Window] interface XRCubeLayer : XRCompositionLayer {
   attribute XRSpace space;
   attribute DOMPointReadOnly orientation;
 
@@ -71,11 +71,11 @@ interface XRCubeLayer : XRCompositionLayer {
   attribute EventHandler onredraw;
 };
 
-interface XRSubImage {
+[Exposed=Window] interface XRSubImage {
   [SameObject] readonly attribute XRViewport viewport;
 };
 
-interface XRWebGLSubImage : XRSubImage {
+[Exposed=Window] interface XRWebGLSubImage : XRSubImage {
   [SameObject] readonly attribute WebGLTexture colorTexture;
   [SameObject] readonly attribute WebGLTexture? depthStencilTexture;
   readonly attribute unsigned long? imageIndex;
@@ -134,7 +134,7 @@ dictionary XRCubeLayerInit : XRLayerInit {
   boolean isStatic = false;
 };
 
-interface XRWebGLBinding {
+[Exposed=Window] interface XRWebGLBinding {
   constructor(XRSession session, XRWebGLRenderingContext context);
 
   readonly attribute double nativeProjectionScaleFactor;
@@ -159,7 +159,7 @@ dictionary XRMediaLayerInit {
   boolean invertStereo = false;
 };
 
-interface XRMediaBinding {
+[Exposed=Window] interface XRMediaBinding {
   constructor(XRSession session);
 
   XRQuadLayer createQuadLayer(HTMLVideoElement video, XRMediaLayerInit init);
@@ -167,8 +167,7 @@ interface XRMediaBinding {
   XREquirectLayer createEquirectLayer(HTMLVideoElement video, XRMediaLayerInit init);
 };
 
-[SecureContext, Exposed=Window]
-interface XRLayerEvent : Event {
+[SecureContext, Exposed=Window] interface XRLayerEvent : Event {
   constructor(DOMString type, XRLayerEventInit eventInitDict);
   [SameObject] readonly attribute XRLayer layer;
 };

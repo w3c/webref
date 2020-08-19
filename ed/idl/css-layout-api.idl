@@ -9,7 +9,7 @@ partial namespace CSS {
 
 [Global=(Worklet,LayoutWorklet),Exposed=LayoutWorklet]
 interface LayoutWorkletGlobalScope : WorkletGlobalScope {
-    void registerLayout(DOMString name, VoidFunction layoutCtor);
+    undefined registerLayout(DOMString name, VoidFunction layoutCtor);
 };
 
 [Exposed=LayoutWorklet]
