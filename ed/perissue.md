@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% August 18, 2020
+% August 19, 2020
 
 330 specifications were crawled in this report.
 
@@ -46,10 +46,11 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 
 ## List of [Exposed] names not defined in the specifications crawled
 
+- `Document` used in [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
 - `RTCIdentityProviderGlobalScope` used in [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - `SecureContext` used in [Contact Picker API](https://wicg.github.io/contact-api/spec/)
 
-=> 2 [Exposed] names found
+=> 3 [Exposed] names found
 
 Please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
 
@@ -60,7 +61,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `Date` used in [Deprecation Reporting](https://wicg.github.io/deprecation-reporting/)
 - `PermissionName` used in [Permissions](https://w3c.github.io/permissions/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/)
-- `undefined` used in [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [DOM Standard](https://dom.spec.whatwg.org/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File API](https://w3c.github.io/FileAPI/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [HTML Standard](https://html.spec.whatwg.org/multipage/), [Native File System](https://wicg.github.io/native-file-system/), [Notifications API Standard](https://notifications.spec.whatwg.org/), [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/), [Pointer Events](https://w3c.github.io/pointerevents/), [Portals](https://wicg.github.io/portals/), [Resource Timing Level 2](https://w3c.github.io/resource-timing/), [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/), [Selection API](https://w3c.github.io/selection-api/), [Streams Standard](https://streams.spec.whatwg.org/), [URL Standard](https://url.spec.whatwg.org/), [User Timing Level 3](https://w3c.github.io/user-timing/), [User Timing Level 3](https://w3c.github.io/user-timing/), [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `undefined` used in [Clipboard API and events](https://w3c.github.io/clipboard-apis/), [Cookie Store API](https://wicg.github.io/cookie-store/), [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/), [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/), [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/), [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/), [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/), [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [DOM Standard](https://dom.spec.whatwg.org/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File and Directory Entries API](https://wicg.github.io/entries-api/), [File API](https://w3c.github.io/FileAPI/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [Generic Sensor API](https://w3c.github.io/sensors/), [Geolocation API Specification](https://w3c.github.io/geolocation-api/), [HTML Standard](https://html.spec.whatwg.org/multipage/), [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/), [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/), [Native File System](https://wicg.github.io/native-file-system/), [Notifications API Standard](https://notifications.spec.whatwg.org/), [Orientation Sensor](https://w3c.github.io/orientation-sensor/), [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/), [Pointer Events](https://w3c.github.io/pointerevents/), [Portals](https://wicg.github.io/portals/), [Resize Observer](https://drafts.csswg.org/resize-observer/), [Resource Timing Level 2](https://w3c.github.io/resource-timing/), [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/), [Selection API](https://w3c.github.io/selection-api/), [Streams Standard](https://streams.spec.whatwg.org/), [The Storage Access API](https://privacycg.github.io/storage-access/), [URL Standard](https://url.spec.whatwg.org/), [User Timing Level 3](https://w3c.github.io/user-timing/), [User Timing Level 3](https://w3c.github.io/user-timing/), [Web Animations](https://drafts.csswg.org/web-animations-1/), [Web Speech API](https://wicg.github.io/speech-api/), [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/), [WebGPU](https://gpuweb.github.io/gpuweb/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Device API](https://immersive-web.github.io/webxr/), [WebXR Layers API Level 1](https://immersive-web.github.io/layers/), [Worklets Level 1](https://drafts.css-houdini.org/worklets/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 => 5 WebIDL names found
 
@@ -643,6 +644,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/) but does not list it in its references
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/) links to [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/) but does not list it in its references
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but does not list it in its references
+- [Generic Sensor API](https://w3c.github.io/sensors/) links to [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/) but does not list it in its references
 - [Graphics Accessibility API Mappings](https://w3c.github.io/graphics-aam/) links to:
     * [`https://w3c.github.io/core-aam/`](https://w3c.github.io/core-aam/) but does not list it in its references
     * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/) but does not list it in its references
@@ -853,7 +855,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 615 missing references for links found in 169 specifications
+=> 616 missing references for links found in 170 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 

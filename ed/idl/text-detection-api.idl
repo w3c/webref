@@ -4,10 +4,10 @@
 // Source: Accelerated Text Detection in Images (https://wicg.github.io/shape-detection-api/text.html)
 
 [
-    Constructor,
     Exposed=(Window,Worker),
     SecureContext
 ] interface TextDetector {
+    constructor();
     Promise<sequence<DetectedText>> detect(ImageBitmapSource image);
 };
 
