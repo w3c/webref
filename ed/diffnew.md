@@ -2,11 +2,11 @@
 % Reffy
 % August 20, 2020
 
-## Fullscreen API Standard
+## Audio Output Devices API
 
-- Initial URL: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
+- Initial URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
-- Missing references for links: *INS* https://www.w3.org/TR/permissions-policy/
+- Editor's Draft: [https://w3c.github.io/mediacapture-output/](https://w3c.github.io/mediacapture-output/)
+- Unknown WebIDL names used: *INS* undefined
 
 
