@@ -1698,6 +1698,7 @@ interface Window : EventTarget {
   // the user agent
   readonly attribute Navigator navigator;
   [SecureContext] readonly attribute ApplicationCache applicationCache;
+  readonly attribute boolean originIsolated;
 
   // user prompts
   undefined alert();
