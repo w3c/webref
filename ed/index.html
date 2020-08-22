@@ -3145,7 +3145,7 @@
   </ul>
   </section>
   </section>
-  <section id="css-font-loading-module-level-3" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="css-font-loading-module-level-3" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
   <h2>CSS Font Loading Module Level 3</h2>
   <section id="spec-info-68" class="level3 info">
   <h3>Spec info</h3>
@@ -3162,9 +3162,13 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>CSSOMString</code>, <code>undefined</code></li>
-  <li>Inconsistent references for links:
+  <li>Missing references for WebIDL names:
   <ul>
-  <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a>, related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
+  <li><code>EventHandler</code> defined in <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
+  </ul></li>
+  <li>Missing references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -8139,7 +8143,6 @@
   <li><a href="https://drafts.csswg.org/css-counter-styles/">CSS Counter Styles Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-highlight-api-1/">CSS Custom Highlight API Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-display/">CSS Display Module Level 3</a></li>
-  <li><a href="https://drafts.csswg.org/css-font-loading/">CSS Font Loading Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-fonts/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-images-3/">CSS Images Module Level 3</a></li>
@@ -8163,7 +8166,6 @@
   <li><a href="https://drafts.csswg.org/css-transforms-2/">CSS Transforms Module Level 2</a></li>
   <li><a href="https://drafts.csswg.org/css-transitions/">CSS Transitions</a></li>
   <li><a href="https://drafts.csswg.org/css-transitions-2/">CSS Transitions Level 2</a></li>
-  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-3/">CSS Writing Modes Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-4/">CSS Writing Modes Level 4</a></li>
   <li><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></li>
@@ -8256,7 +8258,6 @@
   <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a></li>
   <li><a href="https://w3c.github.io/reporting/">Reporting API 1</a></li>
   <li><a href="https://wicg.github.io/permissions-request/">Requesting Permissions</a></li>
-  <li><a href="https://drafts.csswg.org/resize-observer/">Resize Observer</a></li>
   <li><a href="https://w3c.github.io/resource-hints/">Resource Hints</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 2</a></li>
   <li><a href="https://wicg.github.io/savedata/">Save Data API</a></li>
@@ -8322,6 +8323,10 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://drafts.csswg.org/css-font-loading/">CSS Font Loading Module Level 3</a></li>
+  </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
@@ -8341,6 +8346,7 @@
   <li><a href="https://drafts.csswg.org/css-text-decor-3/">CSS Text Decoration Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-text-3/">CSS Text Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-transforms/">CSS Transforms Module Level 1</a></li>
+  <li><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-values-3/">CSS Values and Units Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-values-4/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
@@ -11123,6 +11129,7 @@
   <ul>
   <li><a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a></li>
   <li><a href="https://www.w3.org/TR/css-display-3/"><code>https://www.w3.org/TR/css-display-3/</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a></li>
   <li><a href="https://www.w3.org/TR/intersection-observer/"><code>https://www.w3.org/TR/intersection-observer/</code></a></li>
   <li><a href="https://www.w3.org/TR/css3-multicol/"><code>https://www.w3.org/TR/css3-multicol/</code></a></li>
   </ul></li>
