@@ -43,18 +43,6 @@
       "informative": false
     },
     {
-      "id": "column-axis",
-      "href": "https://www.w3.org/TR/css-grid-1/#column-axis",
-      "linkingText": [
-        "column axis"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "grid-row",
       "href": "https://www.w3.org/TR/css-grid-1/#grid-row",
       "linkingText": [
@@ -63,18 +51,6 @@
       "localLinkingText": [
         "row"
       ],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "row-axis",
-      "href": "https://www.w3.org/TR/css-grid-1/#row-axis",
-      "linkingText": [
-        "row axis"
-      ],
-      "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "public",
@@ -219,6 +195,54 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "content-based-minimum-size",
+      "href": "https://www.w3.org/TR/css-grid-1/#content-based-minimum-size",
+      "linkingText": [
+        "content-based minimum size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "specified-size-suggestion",
+      "href": "https://www.w3.org/TR/css-grid-1/#specified-size-suggestion",
+      "linkingText": [
+        "specified size suggestion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "transferred-size-suggestion",
+      "href": "https://www.w3.org/TR/css-grid-1/#transferred-size-suggestion",
+      "linkingText": [
+        "transferred size suggestion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "content-size-suggestion",
+      "href": "https://www.w3.org/TR/css-grid-1/#content-size-suggestion",
+      "linkingText": [
+        "content size suggestion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
       "access": "private",
       "informative": false
     },
@@ -234,6 +258,20 @@
       "type": "dfn",
       "for": [],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "explicit-grid-track",
+      "href": "https://www.w3.org/TR/css-grid-1/#explicit-grid-track",
+      "linkingText": [
+        "explicit grid track",
+        "explicit grid row",
+        "explicit grid column"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
@@ -484,36 +522,6 @@
       "informative": false
     },
     {
-      "id": "valdef-grid-template-columns-max-content",
-      "href": "https://www.w3.org/TR/css-grid-1/#valdef-grid-template-columns-max-content",
-      "linkingText": [
-        "max-content"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "grid-template-columns",
-        "grid-template-rows"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-grid-template-columns-min-content",
-      "href": "https://www.w3.org/TR/css-grid-1/#valdef-grid-template-columns-min-content",
-      "linkingText": [
-        "min-content"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "grid-template-columns",
-        "grid-template-rows"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "valdef-grid-template-columns-minmax",
       "href": "https://www.w3.org/TR/css-grid-1/#valdef-grid-template-columns-minmax",
       "linkingText": [
@@ -544,6 +552,36 @@
       "informative": false
     },
     {
+      "id": "valdef-grid-template-columns-max-content",
+      "href": "https://www.w3.org/TR/css-grid-1/#valdef-grid-template-columns-max-content",
+      "linkingText": [
+        "max-content"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template-columns",
+        "grid-template-rows"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-grid-template-columns-min-content",
+      "href": "https://www.w3.org/TR/css-grid-1/#valdef-grid-template-columns-min-content",
+      "linkingText": [
+        "min-content"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template-columns",
+        "grid-template-rows"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "valdef-grid-template-columns-fit-content",
       "href": "https://www.w3.org/TR/css-grid-1/#valdef-grid-template-columns-fit-content",
       "linkingText": [
@@ -559,15 +597,27 @@
       "informative": false
     },
     {
-      "id": "named-line",
-      "href": "https://www.w3.org/TR/css-grid-1/#named-line",
+      "id": "line-name",
+      "href": "https://www.w3.org/TR/css-grid-1/#line-name",
       "linkingText": [
-        "named line"
+        "line name"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "explicitly-assigned-line-name",
+      "href": "https://www.w3.org/TR/css-grid-1/#explicitly-assigned-line-name",
+      "linkingText": [
+        "explicitly-assigned line name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
@@ -724,6 +774,42 @@
       "informative": false
     },
     {
+      "id": "computed-track-list",
+      "href": "https://www.w3.org/TR/css-grid-1/#computed-track-list",
+      "linkingText": [
+        "computed track list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "line-name-set",
+      "href": "https://www.w3.org/TR/css-grid-1/#line-name-set",
+      "linkingText": [
+        "line name set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "track-section",
+      "href": "https://www.w3.org/TR/css-grid-1/#track-section",
+      "linkingText": [
+        "track section"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "propdef-grid-template-areas",
       "href": "https://www.w3.org/TR/css-grid-1/#propdef-grid-template-areas",
       "linkingText": [
@@ -818,10 +904,10 @@
       "informative": false
     },
     {
-      "id": "implicit-named-line",
-      "href": "https://www.w3.org/TR/css-grid-1/#implicit-named-line",
+      "id": "implicitly-assigned-line-name",
+      "href": "https://www.w3.org/TR/css-grid-1/#implicitly-assigned-line-name",
       "linkingText": [
-        "implicit named line"
+        "implicitly-assigned line name"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -830,10 +916,10 @@
       "informative": false
     },
     {
-      "id": "implicit-named-area",
-      "href": "https://www.w3.org/TR/css-grid-1/#implicit-named-area",
+      "id": "implicitly-named-area",
+      "href": "https://www.w3.org/TR/css-grid-1/#implicitly-named-area",
       "linkingText": [
-        "implicit named area"
+        "implicitly-named area"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -871,7 +957,7 @@
       "id": "grid-template-rowcol",
       "href": "https://www.w3.org/TR/css-grid-1/#grid-template-rowcol",
       "linkingText": [
-        "<‘grid-template-rows’> / <‘grid-template-columns’>"
+        "<'grid-template-rows'> / <'grid-template-columns'>"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -1054,7 +1140,7 @@
       "id": "grid-s-auto-row",
       "href": "https://www.w3.org/TR/css-grid-1/#grid-s-auto-row",
       "linkingText": [
-        "<‘grid-template-rows’> / [ auto-flow && dense? ] <‘grid-auto-columns’>?"
+        "<'grid-template-rows'> / [ auto-flow && dense? ] <'grid-auto-columns'>?"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -1068,7 +1154,7 @@
       "id": "grid-s-auto-column",
       "href": "https://www.w3.org/TR/css-grid-1/#grid-s-auto-column",
       "linkingText": [
-        "[ auto-flow && dense? ] <‘grid-auto-rows’>? / <‘grid-template-columns’>"
+        "[ auto-flow && dense? ] <'grid-auto-rows'>? / <'grid-template-columns'>"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -1572,10 +1658,23 @@
       "informative": false
     },
     {
-      "id": "min-size-contribution",
-      "href": "https://www.w3.org/TR/css-grid-1/#min-size-contribution",
+      "id": "limited-contribution",
+      "href": "https://www.w3.org/TR/css-grid-1/#limited-contribution",
       "linkingText": [
-        "min-size contribution"
+        "limited min-content contribution",
+        "limited max-content contribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "minimum-contribution",
+      "href": "https://www.w3.org/TR/css-grid-1/#minimum-contribution",
+      "linkingText": [
+        "minimum contribution"
       ],
       "localLinkingText": [],
       "type": "dfn",

@@ -15,10 +15,9 @@
       "appliesTo": "grid containers",
       "inherited": "no",
       "percentages": "refer to corresponding dimension of the content area",
-      "media": "visual",
-      "computedValue": "As specified, with lengths made absolute",
+      "computedValue": "the keyword none or a computed track list",
       "canonicalOrder": "per grammar",
-      "animatable": "as a simple list of length, percentage, or calc, provided the only differences are the values of the length, percentage, or calc components in the list"
+      "animationType": "if the list lengths match, by computed value type per item in the computed track list (see § 7.2.5 Computed Value of a Track Listing and § 7.2.3.3 Interpolation/Combination of repeat()); discrete otherwise"
     },
     "grid-template-rows": {
       "name": "grid-template-rows",
@@ -27,10 +26,9 @@
       "appliesTo": "grid containers",
       "inherited": "no",
       "percentages": "refer to corresponding dimension of the content area",
-      "media": "visual",
-      "computedValue": "As specified, with lengths made absolute",
+      "computedValue": "the keyword none or a computed track list",
       "canonicalOrder": "per grammar",
-      "animatable": "as a simple list of length, percentage, or calc, provided the only differences are the values of the length, percentage, or calc components in the list"
+      "animationType": "if the list lengths match, by computed value type per item in the computed track list (see § 7.2.5 Computed Value of a Track Listing and § 7.2.3.3 Interpolation/Combination of repeat()); discrete otherwise"
     },
     "grid-template-areas": {
       "name": "grid-template-areas",
@@ -39,22 +37,20 @@
       "appliesTo": "grid containers",
       "inherited": "no",
       "percentages": "n/a",
-      "media": "visual",
-      "computedValue": "specified value",
+      "computedValue": "the keyword none or a list of string values",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
     "grid-template": {
       "name": "grid-template",
-      "value": "none | [ <‘grid-template-rows’> / <‘grid-template-columns’> ] | [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?",
-      "initial": "see individual properties",
+      "value": "none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?",
+      "initial": "none",
       "appliesTo": "grid containers",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
-      "media": "visual",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "animatable": "see individual properties"
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar"
     },
     "grid-auto-columns": {
       "name": "grid-auto-columns",
@@ -63,10 +59,9 @@
       "appliesTo": "grid containers",
       "inherited": "no",
       "percentages": "see Track Sizing",
-      "media": "visual",
       "computedValue": "see Track Sizing",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "by computed value type"
     },
     "grid-auto-rows": {
       "name": "grid-auto-rows",
@@ -75,10 +70,9 @@
       "appliesTo": "grid containers",
       "inherited": "no",
       "percentages": "see Track Sizing",
-      "media": "visual",
       "computedValue": "see Track Sizing",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "by computed value type"
     },
     "grid-auto-flow": {
       "name": "grid-auto-flow",
@@ -87,22 +81,20 @@
       "appliesTo": "grid containers",
       "inherited": "no",
       "percentages": "n/a",
-      "media": "visual",
-      "computedValue": "specified value",
+      "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
     "grid": {
       "name": "grid",
-      "value": "<‘grid-template’> | <‘grid-template-rows’> / [ auto-flow && dense? ] <‘grid-auto-columns’>? | [ auto-flow && dense? ] <‘grid-auto-rows’>? / <‘grid-template-columns’>",
-      "initial": "see individual properties",
+      "value": "<'grid-template'> | <'grid-template-rows'> / [ auto-flow && dense? ] <'grid-auto-columns'>? | [ auto-flow && dense? ] <'grid-auto-rows'>? / <'grid-template-columns'>",
+      "initial": "none",
       "appliesTo": "grid containers",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
-      "media": "visual",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "animatable": "see individual properties"
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar"
     },
     "grid-row-start": {
       "name": "grid-row-start",
@@ -111,8 +103,7 @@
       "appliesTo": "grid items and absolutely-positioned boxes whose containing block is a grid container",
       "inherited": "no",
       "percentages": "n/a",
-      "media": "visual",
-      "computedValue": "specified value",
+      "computedValue": "specified keyword, identifier, and/or integer",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -123,8 +114,7 @@
       "appliesTo": "grid items and absolutely-positioned boxes whose containing block is a grid container",
       "inherited": "no",
       "percentages": "n/a",
-      "media": "visual",
-      "computedValue": "specified value",
+      "computedValue": "specified keyword, identifier, and/or integer",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -135,8 +125,7 @@
       "appliesTo": "grid items and absolutely-positioned boxes whose containing block is a grid container",
       "inherited": "no",
       "percentages": "n/a",
-      "media": "visual",
-      "computedValue": "specified value",
+      "computedValue": "specified keyword, identifier, and/or integer",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
@@ -147,46 +136,42 @@
       "appliesTo": "grid items and absolutely-positioned boxes whose containing block is a grid container",
       "inherited": "no",
       "percentages": "n/a",
-      "media": "visual",
-      "computedValue": "specified value",
+      "computedValue": "specified keyword, identifier, and/or integer",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
     "grid-row": {
       "name": "grid-row",
       "value": "<grid-line> [ / <grid-line> ]?",
-      "initial": "see individual properties",
+      "initial": "auto",
       "appliesTo": "grid items and absolutely-positioned boxes whose containing block is a grid container",
-      "inherited": "see individual properties",
-      "percentages": "see individual properties",
-      "media": "visual",
+      "inherited": "no",
+      "percentages": "N/A",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "canonicalOrder": "per grammar"
     },
     "grid-column": {
       "name": "grid-column",
       "value": "<grid-line> [ / <grid-line> ]?",
-      "initial": "see individual properties",
+      "initial": "auto",
       "appliesTo": "grid items and absolutely-positioned boxes whose containing block is a grid container",
-      "inherited": "see individual properties",
-      "percentages": "see individual properties",
-      "media": "visual",
+      "inherited": "no",
+      "percentages": "N/A",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "canonicalOrder": "per grammar"
     },
     "grid-area": {
       "name": "grid-area",
       "value": "<grid-line> [ / <grid-line> ]{0,3}",
-      "initial": "see individual properties",
+      "initial": "auto",
       "appliesTo": "grid items and absolutely-positioned boxes whose containing block is a grid container",
-      "inherited": "see individual properties",
-      "percentages": "see individual properties",
-      "media": "visual",
+      "inherited": "no",
+      "percentages": "N/A",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "canonicalOrder": "per grammar"
     }
   },
   "descriptors": {},
@@ -219,13 +204,13 @@
       "value": "'[' <custom-ident>* ']'"
     },
     "<track-repeat>": {
-      "value": "repeat( [ <positive-integer> ] , [ <line-names>? <track-size> ]+ <line-names>? )"
+      "value": "repeat( [ <integer [1,∞]> ] , [ <line-names>? <track-size> ]+ <line-names>? )"
     },
     "<auto-repeat>": {
       "value": "repeat( [ auto-fill | auto-fit ] , [ <line-names>? <fixed-size> ]+ <line-names>? )"
     },
     "<fixed-repeat>": {
-      "value": "repeat( [ <positive-integer> ] , [ <line-names>? <fixed-size> ]+ <line-names>? )"
+      "value": "repeat( [ <integer [1,∞]> ] , [ <line-names>? <fixed-size> ]+ <line-names>? )"
     },
     "<grid-line>": {
       "value": "auto | <custom-ident> | [ <integer> && <custom-ident>? ] | [ span && [ <integer> || <custom-ident> ] ]"
