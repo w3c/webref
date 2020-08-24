@@ -227,10 +227,10 @@
       "informative": false
     },
     {
-      "id": "read-only-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#read-only-usage",
+      "id": "internal-usage",
+      "href": "https://gpuweb.github.io/gpuweb/#internal-usage",
       "linkingText": [
-        "Read-only usage"
+        "internal usage"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -239,10 +239,108 @@
       "informative": false
     },
     {
-      "id": "mutating-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#mutating-usage",
+      "id": "internal-usage-input",
+      "href": "https://gpuweb.github.io/gpuweb/#internal-usage-input",
       "linkingText": [
-        "Mutating usage"
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "internal usage"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "internal-usage-constant",
+      "href": "https://gpuweb.github.io/gpuweb/#internal-usage-constant",
+      "linkingText": [
+        "constant"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "internal usage"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "internal-usage-storage",
+      "href": "https://gpuweb.github.io/gpuweb/#internal-usage-storage",
+      "linkingText": [
+        "storage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "internal usage"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "internal-usage-storage-read",
+      "href": "https://gpuweb.github.io/gpuweb/#internal-usage-storage-read",
+      "linkingText": [
+        "storage-read"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "internal usage"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "internal-usage-storage-write",
+      "href": "https://gpuweb.github.io/gpuweb/#internal-usage-storage-write",
+      "linkingText": [
+        "storage-write"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "internal usage"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "internal-usage-attachment",
+      "href": "https://gpuweb.github.io/gpuweb/#internal-usage-attachment",
+      "linkingText": [
+        "attachment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "internal usage"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "internal-usage-attachment-read",
+      "href": "https://gpuweb.github.io/gpuweb/#internal-usage-attachment-read",
+      "linkingText": [
+        "attachment-read"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "internal usage"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "texture-subresource",
+      "href": "https://gpuweb.github.io/gpuweb/#texture-subresource",
+      "linkingText": [
+        "texture subresource"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -255,6 +353,18 @@
       "href": "https://gpuweb.github.io/gpuweb/#subresource",
       "linkingText": [
         "subresource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "compatible-usage-list",
+      "href": "https://gpuweb.github.io/gpuweb/#compatible-usage-list",
+      "linkingText": [
+        "compatible usage list"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -279,18 +389,6 @@
       "href": "https://gpuweb.github.io/gpuweb/#physical-size",
       "linkingText": [
         "physical size"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "usage-flags",
-      "href": "https://gpuweb.github.io/gpuweb/#usage-flags",
-      "linkingText": [
-        "Usage flags"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2870,6 +2968,20 @@
       "informative": false
     },
     {
+      "id": "dom-gputextureformat-rgb9e5ufloat",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgb9e5ufloat",
+      "linkingText": [
+        "\"rgb9e5ufloat\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureFormat"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gputextureformat-rgb10a2unorm",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rgb10a2unorm",
       "linkingText": [
@@ -2884,10 +2996,10 @@
       "informative": false
     },
     {
-      "id": "dom-gputextureformat-rg11b10float",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rg11b10float",
+      "id": "dom-gputextureformat-rg11b10ufloat",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-rg11b10ufloat",
       "linkingText": [
-        "\"rg11b10float\""
+        "\"rg11b10ufloat\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3234,10 +3346,10 @@
       "informative": false
     },
     {
-      "id": "dom-gputextureformat-bc6h-rgb-sfloat",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bc6h-rgb-sfloat",
+      "id": "dom-gputextureformat-bc6h-rgb-float",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-bc6h-rgb-float",
       "linkingText": [
-        "\"bc6h-rgb-sfloat\""
+        "\"bc6h-rgb-float\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -3320,6 +3432,20 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturecomponenttype-uint",
       "linkingText": [
         "\"uint\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureComponentType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gputexturecomponenttype-depth-comparison",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturecomponenttype-depth-comparison",
+      "linkingText": [
+        "\"depth-comparison\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -4401,24 +4527,10 @@
       "informative": false
     },
     {
-      "id": "dom-gpubindgroup-usedbuffers-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgroup-usedbuffers-slot",
+      "id": "dom-gpubindgroup-usedresources-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgroup-usedresources-slot",
       "linkingText": [
-        "[[usedBuffers]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUBindGroup"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpubindgroup-usedtextures-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgroup-usedtextures-slot",
-      "linkingText": [
-        "[[usedTextures]]"
+        "[[usedResources]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -4452,6 +4564,20 @@
       "type": "argument",
       "for": [
         "GPUDevice/createBindGroup(descriptor)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-gpudevice-derive-binding-usage",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpudevice-derive-binding-usage",
+      "linkingText": [
+        "derive binding usage"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "GPUDevice"
       ],
       "access": "public",
       "informative": false
@@ -5021,6 +5147,34 @@
       "localLinkingText": [],
       "type": "interface",
       "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpipeline-descriptor-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpipeline-descriptor-slot",
+      "linkingText": [
+        "[[descriptor]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderPipeline"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpurenderpipeline-strip_index_format-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpipeline-strip_index_format-slot",
+      "linkingText": [
+        "[[strip_index_format]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderPipeline"
+      ],
       "access": "public",
       "informative": false
     },
@@ -8226,6 +8380,18 @@
       "informative": false
     },
     {
+      "id": "abstract-opdef-validate-encoder-bind-groups",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validate-encoder-bind-groups",
+      "linkingText": [
+        "Validate encoder bind groups"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpuprogrammablepassencoder-pushdebuggroup",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-pushdebuggroup",
       "linkingText": [
@@ -8304,6 +8470,20 @@
       "localLinkingText": [],
       "type": "interface",
       "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucomputepassencoder-pipeline-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-pipeline-slot",
+      "linkingText": [
+        "[[pipeline]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUComputePassEncoder"
+      ],
       "access": "public",
       "informative": false
     },
@@ -8417,6 +8597,18 @@
         "GPUComputePassEncoder"
       ],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "indirect-dispatch-parameters",
+      "href": "https://gpuweb.github.io/gpuweb/#indirect-dispatch-parameters",
+      "linkingText": [
+        "indirect dispatch parameters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
@@ -9455,6 +9647,30 @@
       "for": [
         "GPURenderEncoderBase/drawIndexedIndirect(indirectBuffer, indirectOffset)"
       ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-valid-to-draw",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-valid-to-draw",
+      "linkingText": [
+        "valid to draw"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "abstract-opdef-valid-to-draw-indexed",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-valid-to-draw-indexed",
+      "linkingText": [
+        "valid to draw indexed"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
       "access": "public",
       "informative": false
     },
@@ -11261,6 +11477,18 @@
       "href": "https://gpuweb.github.io/gpuweb/#typedefdef-gpusignedoffset32",
       "linkingText": [
         "GPUSignedOffset32"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedefdef-gpuflagsconstant",
+      "href": "https://gpuweb.github.io/gpuweb/#typedefdef-gpuflagsconstant",
+      "linkingText": [
+        "GPUFlagsConstant"
       ],
       "localLinkingText": [],
       "type": "typedef",

@@ -9,20 +9,3 @@ MathMLElement includes GlobalEventHandlers;
 MathMLElement includes DocumentAndElementEventHandlers;
 MathMLElement includes HTMLOrForeignElement;
 MathMLElement includes ElementCSSInlineStyle;
-
-[Exposed=Window]
-interface MathMLLinkableElement : MathMLElement {
-  [CEReactions] attribute DOMString target;
-  [CEReactions] attribute DOMString download;
-  [CEReactions] attribute USVString ping;
-  [CEReactions] attribute DOMString rel;
-  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;
-  [CEReactions] attribute DOMString hreflang;
-  [CEReactions] attribute DOMString type;
-
-  [CEReactions] attribute DOMString text;
-
-  [CEReactions] attribute DOMString referrerPolicy;
- };
-
- MathMLElement includes HTMLHyperlinkElementUtils;
