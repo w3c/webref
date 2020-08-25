@@ -337,7 +337,6 @@ dictionary GPUBindGroupLayoutEntry {
 
     // Used for sampled texture bindings. Must be undefined for other binding types.
     GPUTextureComponentType textureComponentType;
-    boolean multisampled;
 
     // Used for storage texture bindings. Must be undefined for other binding types.
     GPUTextureFormat storageTextureFormat;
@@ -357,6 +356,7 @@ enum GPUBindingType {
     "sampler",
     "comparison-sampler",
     "sampled-texture",
+    "multisampled-texture",
     "readonly-storage-texture",
     "writeonly-storage-texture"
 };
@@ -694,8 +694,8 @@ dictionary GPUCommandEncoderDescriptor : GPUObjectDescriptorBase {
 
 dictionary GPUTextureDataLayout {
     GPUSize64 offset = 0;
-    required GPUSize32 bytesPerRow;
-    GPUSize32 rowsPerImage = 0;
+    GPUSize32 bytesPerRow;
+    GPUSize32 rowsPerImage;
 };
 
 dictionary GPUBufferCopyView : GPUTextureDataLayout {
