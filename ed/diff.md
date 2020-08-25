@@ -1,22 +1,13 @@
-% Diff between report from "August 24, 2020" and reference report from "August 24, 2020"
+% Diff between report from "August 25, 2020" and reference report from "August 24, 2020"
 % Reffy
-% August 24, 2020
+% August 25, 2020
 
-## CSS Font Loading Module Level 3
+## Console Standard
 
-- Initial URL: [https://www.w3.org/TR/css-font-loading-3/](https://www.w3.org/TR/css-font-loading-3/)
+- Initial URL: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-font-loading/](https://drafts.csswg.org/css-font-loading/)
-- Missing references for WebIDL names: *DEL* EventHandler
-- Missing references for links: *DEL* https://www.w3.org/TR/html5/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/html5/
-
-
-## Resize Observer
-
-- Initial URL: [https://www.w3.org/TR/resize-observer-1/](https://www.w3.org/TR/resize-observer-1/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/resize-observer/](https://drafts.csswg.org/resize-observer/)
-- Missing references for links: *DEL* https://html.spec.whatwg.org/
+- Editor's Draft: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
+- Spec is OK: *INS* false / *DEL* true
+- Unknown WebIDL names used: *INS* undefined
 
 
