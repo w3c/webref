@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% August 25, 2020
+% August 26, 2020
 
 331 specifications were crawled in this report.
 
@@ -46,11 +46,10 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 
 ## List of [Exposed] names not defined in the specifications crawled
 
-- `Document` used in [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
 - `RTCIdentityProviderGlobalScope` used in [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - `SecureContext` used in [Contact Picker API](https://wicg.github.io/contact-api/spec/)
 
-=> 3 [Exposed] names found
+=> 2 [Exposed] names found
 
 Please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
 
