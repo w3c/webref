@@ -619,7 +619,7 @@ enum GPUInputStepMode {
 };
 
 dictionary GPUVertexStateDescriptor {
-    GPUIndexFormat indexFormat = "uint32";
+    GPUIndexFormat indexFormat;
     sequence<GPUVertexBufferLayoutDescriptor?> vertexBuffers = [];
 };
 
