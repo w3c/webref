@@ -1,0 +1,303 @@
+{
+  "spec": {
+    "title": "Cookie Store API",
+    "url": "https://wicg.github.io/cookie-store/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Cookie Store API"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Draft Community Group Report, 26 August 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "intro-proposed-change",
+      "level": "3",
+      "title": "A Taste of the Proposed Change"
+    },
+    {
+      "id": "intro-summary",
+      "level": "3",
+      "title": "Summary"
+    },
+    {
+      "id": "script-visibility",
+      "level": "4",
+      "title": "Script visibility"
+    },
+    {
+      "id": "intro-motivation",
+      "level": "4",
+      "title": "Motivations"
+    },
+    {
+      "id": "intro-opinions",
+      "level": "4",
+      "title": "Opinions"
+    },
+    {
+      "id": "intro-compat",
+      "level": "4",
+      "title": "Compatiblity"
+    },
+    {
+      "id": "intro-query",
+      "level": "3",
+      "title": "Querying Cookies"
+    },
+    {
+      "id": "intro-modify",
+      "level": "3",
+      "title": "Modifying Cookies"
+    },
+    {
+      "id": "intro-monitor",
+      "level": "3",
+      "title": "Monitoring Cookies"
+    },
+    {
+      "id": "concepts",
+      "level": "2",
+      "title": "Concepts"
+    },
+    {
+      "id": "cookie-concept",
+      "level": "3",
+      "title": "Cookie"
+    },
+    {
+      "id": "cookie-store--concept",
+      "level": "3",
+      "title": "Cookie Store"
+    },
+    {
+      "id": "service-worker-extensions",
+      "level": "3",
+      "title": "Extensions to Service Worker"
+    },
+    {
+      "id": "CookieStore",
+      "level": "2",
+      "title": "The CookieStore Interface"
+    },
+    {
+      "id": "CookieStore-get",
+      "level": "3",
+      "title": "The get() method"
+    },
+    {
+      "id": "CookieStore-getAll",
+      "level": "3",
+      "title": "The getAll() method"
+    },
+    {
+      "id": "CookieStore-set",
+      "level": "3",
+      "title": "The set() method"
+    },
+    {
+      "id": "CookieStore-delete",
+      "level": "3",
+      "title": "The delete() method"
+    },
+    {
+      "id": "CookieStoreManager",
+      "level": "2",
+      "title": "The CookieStoreManager Interface"
+    },
+    {
+      "id": "CookieStoreManager-subscribe",
+      "level": "3",
+      "title": "The subscribe() method"
+    },
+    {
+      "id": "CookieStoreManager-getSubscriptions",
+      "level": "3",
+      "title": "The getSubscriptions() method"
+    },
+    {
+      "id": "CookieStoreManager-unsubscribe",
+      "level": "3",
+      "title": "The unsubscribe() method"
+    },
+    {
+      "id": "ServiceWorkerRegistration",
+      "level": "3",
+      "title": "The ServiceWorkerRegistration interface"
+    },
+    {
+      "id": "event-interfaces",
+      "level": "2",
+      "title": "Event Interfaces"
+    },
+    {
+      "id": "CookieChangeEvent",
+      "level": "3",
+      "title": "The CookieChangeEvent interface"
+    },
+    {
+      "id": "ExtendableCookieChangeEvent",
+      "level": "3",
+      "title": "The ExtendableCookieChangeEvent interface"
+    },
+    {
+      "id": "globals",
+      "level": "2",
+      "title": "Global Interfaces"
+    },
+    {
+      "id": "Window",
+      "level": "3",
+      "title": "The Window interface"
+    },
+    {
+      "id": "ServiceWorkerGlobalScope",
+      "level": "3",
+      "title": "The ServiceWorkerGlobalScope interface"
+    },
+    {
+      "id": "algorithms",
+      "level": "2",
+      "title": "Algorithms"
+    },
+    {
+      "id": "query-cookies-algorithm",
+      "level": "3",
+      "title": "Query Cookies"
+    },
+    {
+      "id": "set-cookie-algorithm",
+      "level": "3",
+      "title": "Set a Cookie"
+    },
+    {
+      "id": "delete-cookie-algorithm",
+      "level": "3",
+      "title": "Delete a Cookie"
+    },
+    {
+      "id": "process-changes",
+      "level": "3",
+      "title": "Process Changes"
+    },
+    {
+      "id": "security",
+      "level": "2",
+      "title": "Security Considerations"
+    },
+    {
+      "id": "gotcha",
+      "level": "3",
+      "title": "Gotcha!"
+    },
+    {
+      "id": "restrict",
+      "level": "3",
+      "title": "Restrict?"
+    },
+    {
+      "id": "surprises",
+      "level": "3",
+      "title": "Surprises"
+    },
+    {
+      "id": "prefixes",
+      "level": "3",
+      "title": "Prefixes"
+    },
+    {
+      "id": "url-scoping",
+      "level": "3",
+      "title": "URL scoping"
+    },
+    {
+      "id": "aversion",
+      "level": "3",
+      "title": "Cookie aversion"
+    },
+    {
+      "id": "privacy",
+      "level": "2",
+      "title": "Privacy Considerations"
+    },
+    {
+      "id": "clear-cookies",
+      "level": "3",
+      "title": "Clear cookies"
+    },
+    {
+      "id": "acknowledgements",
+      "level": "2",
+      "title": "Acknowledgements"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "level": "2",
+      "title": "Issues Index"
+    }
+  ]
+}

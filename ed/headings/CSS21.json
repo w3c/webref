@@ -1,0 +1,1498 @@
+{
+  "spec": {
+    "title": "CSS 2",
+    "url": "https://drafts.csswg.org/css2/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "CSS 2"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Editor’s Draft, 7 July 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "about",
+      "level": "2",
+      "title": "About the CSS 2.2 Specification"
+    },
+    {
+      "id": "css2.2-v-css2",
+      "level": "3",
+      "title": "CSS 2.2 vs CSS 2"
+    },
+    {
+      "id": "reading",
+      "level": "3",
+      "title": "Reading the specification"
+    },
+    {
+      "id": "organization",
+      "level": "3",
+      "title": "How the specification is organized"
+    },
+    {
+      "id": "conventions",
+      "level": "3",
+      "title": "Conventions"
+    },
+    {
+      "id": "doc-language",
+      "level": "4",
+      "title": "Document language elements\nand attributes"
+    },
+    {
+      "id": "property-defs",
+      "level": "4",
+      "title": "CSS property definitions"
+    },
+    {
+      "id": "value-defs",
+      "level": "5",
+      "title": "Value"
+    },
+    {
+      "id": "initial-value",
+      "level": "5",
+      "title": "Initial"
+    },
+    {
+      "id": "applies-to",
+      "level": "5",
+      "title": "Applies to"
+    },
+    {
+      "id": "inherited-prop",
+      "level": "5",
+      "title": "Inherited"
+    },
+    {
+      "id": "percentage-wrt",
+      "level": "5",
+      "title": "Percentage values"
+    },
+    {
+      "id": "media-applies",
+      "level": "5",
+      "title": "Media groups"
+    },
+    {
+      "id": "computed-defs",
+      "level": "5",
+      "title": "Computed value"
+    },
+    {
+      "id": "shorthand",
+      "level": "4",
+      "title": "Shorthand properties"
+    },
+    {
+      "id": "notes-and-examples",
+      "level": "4",
+      "title": "Notes and examples"
+    },
+    {
+      "id": "images-and-longdesc",
+      "level": "4",
+      "title": "Images and long descriptions"
+    },
+    {
+      "id": "acknowledgements",
+      "level": "3",
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction to CSS 2"
+    },
+    {
+      "id": "html-tutorial",
+      "level": "3",
+      "title": "A brief CSS 2 tutorial for HTML"
+    },
+    {
+      "id": "xml-tutorial",
+      "level": "3",
+      "title": "A brief CSS 2 tutorial for XML"
+    },
+    {
+      "id": "processing-model",
+      "level": "3",
+      "title": "The CSS 2 processing model"
+    },
+    {
+      "id": "the-canvas",
+      "level": "4",
+      "title": "The canvas"
+    },
+    {
+      "id": "addressing",
+      "level": "4",
+      "title": "CSS 2 addressing model"
+    },
+    {
+      "id": "design-principles",
+      "level": "3",
+      "title": "CSS design principles"
+    },
+    {
+      "id": "conform",
+      "level": "2",
+      "title": "Conformance: Requirements and Recommendations"
+    },
+    {
+      "id": "defs",
+      "level": "3",
+      "title": "Definitions"
+    },
+    {
+      "id": "conformance",
+      "level": "3",
+      "title": "UA Conformance"
+    },
+    {
+      "id": "errors",
+      "level": "3",
+      "title": "Error conditions"
+    },
+    {
+      "id": "text-css",
+      "level": "3",
+      "title": "The text/css content type"
+    },
+    {
+      "id": "syndata",
+      "level": "2",
+      "title": "Syntax and basic data types"
+    },
+    {
+      "id": "syntax",
+      "level": "3",
+      "title": "Syntax"
+    },
+    {
+      "id": "tokenization",
+      "level": "4",
+      "title": "Tokenization"
+    },
+    {
+      "id": "keywords",
+      "level": "4",
+      "title": "Keywords"
+    },
+    {
+      "id": "vendor-keywords",
+      "level": "5",
+      "title": "Vendor-specific extensions"
+    },
+    {
+      "id": "vendor-keyword-history",
+      "level": "5",
+      "title": "Informative Historical Notes"
+    },
+    {
+      "id": "characters",
+      "level": "4",
+      "title": "Characters and case"
+    },
+    {
+      "id": "statements",
+      "level": "4",
+      "title": "Statements"
+    },
+    {
+      "id": "at-rules",
+      "level": "4",
+      "title": "At-rules"
+    },
+    {
+      "id": "block",
+      "level": "4",
+      "title": "Blocks"
+    },
+    {
+      "id": "rule-sets",
+      "level": "4",
+      "title": "Rule sets, declaration blocks, and selectors"
+    },
+    {
+      "id": "declaration",
+      "level": "4",
+      "title": "Declarations and properties"
+    },
+    {
+      "id": "comments",
+      "level": "4",
+      "title": "Comments"
+    },
+    {
+      "id": "parsing-errors",
+      "level": "3",
+      "title": "Rules for handling parsing\nerrors"
+    },
+    {
+      "id": "values①",
+      "level": "3",
+      "title": "Values"
+    },
+    {
+      "id": "numbers",
+      "level": "4",
+      "title": "Integers and real numbers"
+    },
+    {
+      "id": "length-units",
+      "level": "4",
+      "title": "Lengths"
+    },
+    {
+      "id": "percentage-units",
+      "level": "4",
+      "title": "Percentages"
+    },
+    {
+      "id": "uri",
+      "level": "4",
+      "title": "URLs and URIs"
+    },
+    {
+      "id": "counter",
+      "level": "4",
+      "title": "Counters"
+    },
+    {
+      "id": "color-units",
+      "level": "4",
+      "title": "Colors"
+    },
+    {
+      "id": "strings",
+      "level": "4",
+      "title": "Strings"
+    },
+    {
+      "id": "unsupported-values",
+      "level": "4",
+      "title": "Unsupported Values"
+    },
+    {
+      "id": "charset",
+      "level": "3",
+      "title": "CSS style sheet representation"
+    },
+    {
+      "id": "escaping",
+      "level": "4",
+      "title": "Referring to characters not represented in a character encoding"
+    },
+    {
+      "id": "selector",
+      "level": "2",
+      "title": "Selectors"
+    },
+    {
+      "id": "pattern-matching",
+      "level": "3",
+      "title": "Pattern matching"
+    },
+    {
+      "id": "selector-syntax",
+      "level": "3",
+      "title": "Selector syntax"
+    },
+    {
+      "id": "grouping",
+      "level": "4",
+      "title": "Grouping"
+    },
+    {
+      "id": "universal-selector",
+      "level": "3",
+      "title": "Universal selector"
+    },
+    {
+      "id": "type-selectors",
+      "level": "3",
+      "title": "Type selectors"
+    },
+    {
+      "id": "descendant-selectors",
+      "level": "3",
+      "title": "Descendant selectors"
+    },
+    {
+      "id": "child-selectors",
+      "level": "3",
+      "title": "Child selectors"
+    },
+    {
+      "id": "adjacent-selectors",
+      "level": "3",
+      "title": "Adjacent sibling selectors"
+    },
+    {
+      "id": "attribute-selectors",
+      "level": "3",
+      "title": "Attribute selectors"
+    },
+    {
+      "id": "matching-attrs",
+      "level": "4",
+      "title": "Matching attributes and attribute values"
+    },
+    {
+      "id": "default-attrs",
+      "level": "4",
+      "title": "Default attribute values in DTDs"
+    },
+    {
+      "id": "class-html",
+      "level": "4",
+      "title": "Class selectors"
+    },
+    {
+      "id": "id-selectors",
+      "level": "3",
+      "title": "ID selectors"
+    },
+    {
+      "id": "pseudo-elements",
+      "level": "3",
+      "title": "Pseudo-elements and pseudo-classes"
+    },
+    {
+      "id": "pseudo-class-selectors",
+      "level": "3",
+      "title": "Pseudo-classes"
+    },
+    {
+      "id": "first-child",
+      "level": "4",
+      "title": ":first-child pseudo-class"
+    },
+    {
+      "id": "link-pseudo-classes",
+      "level": "4",
+      "title": "The link pseudo-classes: :link and :visited"
+    },
+    {
+      "id": "dynamic-pseudo-classes",
+      "level": "4",
+      "title": "The dynamic pseudo-classes: :hover, :active, and :focus"
+    },
+    {
+      "id": "lang",
+      "level": "4",
+      "title": "The language pseudo-class: :lang"
+    },
+    {
+      "id": "pseudo-element-selectors",
+      "level": "3",
+      "title": "Pseudo-elements"
+    },
+    {
+      "id": "first-line-pseudo",
+      "level": "4",
+      "title": "The :first-line pseudo-element"
+    },
+    {
+      "id": "first-letter",
+      "level": "4",
+      "title": "The :first-letter pseudo-element"
+    },
+    {
+      "id": "before-and-after",
+      "level": "4",
+      "title": "The :before and :after\npseudo-elements"
+    },
+    {
+      "id": "assigning",
+      "level": "2",
+      "title": "Assigning property values, Cascading, and Inheritance"
+    },
+    {
+      "id": "value-stages",
+      "level": "3",
+      "title": "Specified, computed, and actual values"
+    },
+    {
+      "id": "specified-values",
+      "level": "4",
+      "title": "Specified values"
+    },
+    {
+      "id": "computed-values",
+      "level": "4",
+      "title": "Computed values"
+    },
+    {
+      "id": "used-values",
+      "level": "4",
+      "title": "Used values"
+    },
+    {
+      "id": "actual-values",
+      "level": "4",
+      "title": "Actual values"
+    },
+    {
+      "id": "inheritance",
+      "level": "3",
+      "title": "Inheritance"
+    },
+    {
+      "id": "value-def-inherit",
+      "level": "4",
+      "title": "The inherit value"
+    },
+    {
+      "id": "at-import",
+      "level": "3",
+      "title": "The @import rule"
+    },
+    {
+      "id": "cascade",
+      "level": "3",
+      "title": "The cascade"
+    },
+    {
+      "id": "cascading-order",
+      "level": "4",
+      "title": "Cascading order"
+    },
+    {
+      "id": "important-rules",
+      "level": "4",
+      "title": "!important rules"
+    },
+    {
+      "id": "specificity",
+      "level": "4",
+      "title": "Calculating a selector’s specificity"
+    },
+    {
+      "id": "preshint",
+      "level": "4",
+      "title": "Precedence of non-CSS presentational hints"
+    },
+    {
+      "id": "media",
+      "level": "2",
+      "title": "Media types"
+    },
+    {
+      "id": "media-intro",
+      "level": "3",
+      "title": "Introduction to media types"
+    },
+    {
+      "id": "media-sheets",
+      "level": "3",
+      "title": "Specifying media-dependent style sheets"
+    },
+    {
+      "id": "at-media-rule",
+      "level": "4",
+      "title": "The @media rule"
+    },
+    {
+      "id": "media-types",
+      "level": "3",
+      "title": "Recognized media types"
+    },
+    {
+      "id": "media-groups",
+      "level": "4",
+      "title": "Media groups"
+    },
+    {
+      "id": "box-model",
+      "level": "2",
+      "title": "Box model"
+    },
+    {
+      "id": "box-dimensions",
+      "level": "3",
+      "title": "Box dimensions"
+    },
+    {
+      "id": "mpb-examples",
+      "level": "3",
+      "title": "Example of margins, padding, and borders"
+    },
+    {
+      "id": "margin-properties",
+      "level": "3",
+      "title": "Margin properties: margin-top, margin-right, margin-bottom, margin-left, and margin"
+    },
+    {
+      "id": "collapsing-margins",
+      "level": "4",
+      "title": "Collapsing margins"
+    },
+    {
+      "id": "padding-properties",
+      "level": "3",
+      "title": "Padding properties: padding-top, padding-right, padding-bottom, padding-left, and padding"
+    },
+    {
+      "id": "border-properties",
+      "level": "3",
+      "title": "Border properties"
+    },
+    {
+      "id": "border-width-properties",
+      "level": "4",
+      "title": "Border width: border-top-width, border-right-width, border-bottom-width, border-left-width, and border-width"
+    },
+    {
+      "id": "border-color-properties",
+      "level": "4",
+      "title": "Border color: border-top-color, border-right-color, border-bottom-color, border-left-color, and border-color"
+    },
+    {
+      "id": "border-style-properties",
+      "level": "4",
+      "title": "Border style: border-top-style, border-right-style, border-bottom-style, border-left-style, and border-style"
+    },
+    {
+      "id": "border-shorthand-properties",
+      "level": "4",
+      "title": "Border shorthand properties: border-top, border-right, border-bottom, border-left, and border"
+    },
+    {
+      "id": "bidi-box-model",
+      "level": "3",
+      "title": "The box model for inline elements in bidirectional context"
+    },
+    {
+      "id": "visuren",
+      "level": "2",
+      "title": "Visual formatting model"
+    },
+    {
+      "id": "visual-model-intro",
+      "level": "3",
+      "title": "Introduction to the visual formatting model"
+    },
+    {
+      "id": "viewport",
+      "level": "4",
+      "title": "The viewport"
+    },
+    {
+      "id": "containing-block",
+      "level": "4",
+      "title": "Containing blocks"
+    },
+    {
+      "id": "box-gen",
+      "level": "3",
+      "title": "Controlling box generation"
+    },
+    {
+      "id": "block-boxes",
+      "level": "4",
+      "title": "Block-level elements and block boxes"
+    },
+    {
+      "id": "anonymous-block-level",
+      "level": "5",
+      "title": "Anonymous block boxes"
+    },
+    {
+      "id": "inline-boxes",
+      "level": "4",
+      "title": "Inline-level elements and inline boxes"
+    },
+    {
+      "id": "anonymous①",
+      "level": "5",
+      "title": "Anonymous inline boxes"
+    },
+    {
+      "id": "run-in",
+      "level": "4",
+      "title": "Run-in boxes"
+    },
+    {
+      "id": "display-prop",
+      "level": "4",
+      "title": "The display property"
+    },
+    {
+      "id": "positioning-scheme",
+      "level": "3",
+      "title": "Positioning schemes"
+    },
+    {
+      "id": "choose-position",
+      "level": "4",
+      "title": "Choosing a positioning scheme: position property"
+    },
+    {
+      "id": "position-props",
+      "level": "4",
+      "title": "Box offsets: top, right, bottom, left"
+    },
+    {
+      "id": "normal-flow",
+      "level": "3",
+      "title": "Normal flow"
+    },
+    {
+      "id": "block-formatting",
+      "level": "4",
+      "title": "Block formatting contexts"
+    },
+    {
+      "id": "inline-formatting",
+      "level": "4",
+      "title": "Inline formatting contexts"
+    },
+    {
+      "id": "relative-positioning",
+      "level": "4",
+      "title": "Relative positioning"
+    },
+    {
+      "id": "floats",
+      "level": "3",
+      "title": "Floats"
+    },
+    {
+      "id": "float-position",
+      "level": "4",
+      "title": "Positioning the float: the float property"
+    },
+    {
+      "id": "flow-control",
+      "level": "4",
+      "title": "Controlling flow next to floats:\nthe clear property"
+    },
+    {
+      "id": "absolute-positioning",
+      "level": "3",
+      "title": "Absolute positioning"
+    },
+    {
+      "id": "fixed-positioning",
+      "level": "4",
+      "title": "Fixed positioning"
+    },
+    {
+      "id": "dis-pos-flo",
+      "level": "3",
+      "title": "Relationships between display, position,\nand float"
+    },
+    {
+      "id": "comparison",
+      "level": "3",
+      "title": "Comparison of normal flow, floats,  \nand absolute positioning"
+    },
+    {
+      "id": "comp-normal-flow",
+      "level": "4",
+      "title": "Normal flow"
+    },
+    {
+      "id": "comp-relpos",
+      "level": "4",
+      "title": "Relative positioning"
+    },
+    {
+      "id": "comp-float",
+      "level": "4",
+      "title": "Floating a box"
+    },
+    {
+      "id": "comp-abspos",
+      "level": "4",
+      "title": "Absolute positioning"
+    },
+    {
+      "id": "layers",
+      "level": "3",
+      "title": "Layered presentation"
+    },
+    {
+      "id": "z-index",
+      "level": "4",
+      "title": "Specifying the stack level: the z-index property"
+    },
+    {
+      "id": "direction",
+      "level": "3",
+      "title": "Text direction:\nthe direction and unicode-bidi properties"
+    },
+    {
+      "id": "visudet",
+      "level": "2",
+      "title": "Visual formatting model details"
+    },
+    {
+      "id": "containing-block-details",
+      "level": "3",
+      "title": "Definition of \"containing\nblock\""
+    },
+    {
+      "id": "the-width-property",
+      "level": "3",
+      "title": "Content width: the width property"
+    },
+    {
+      "id": "Computing_widths_and_margins",
+      "level": "3",
+      "title": "Calculating widths and\nmargins"
+    },
+    {
+      "id": "inline-width",
+      "level": "4",
+      "title": "Inline, non-replaced elements"
+    },
+    {
+      "id": "inline-replaced-width",
+      "level": "4",
+      "title": "Inline, replaced elements"
+    },
+    {
+      "id": "blockwidth",
+      "level": "4",
+      "title": "Block-level, non-replaced elements in normal\nflow"
+    },
+    {
+      "id": "block-replaced-width",
+      "level": "4",
+      "title": "Block-level, replaced elements in normal flow"
+    },
+    {
+      "id": "float-width",
+      "level": "4",
+      "title": "Floating, non-replaced elements"
+    },
+    {
+      "id": "float-replaced-width",
+      "level": "4",
+      "title": "Floating, replaced elements"
+    },
+    {
+      "id": "abs-non-replaced-width",
+      "level": "4",
+      "title": "Absolutely positioned, non-replaced elements"
+    },
+    {
+      "id": "abs-replaced-width",
+      "level": "4",
+      "title": "Absolutely positioned, replaced elements"
+    },
+    {
+      "id": "inlineblock-width",
+      "level": "4",
+      "title": "inline-block, non-replaced elements in normal flow"
+    },
+    {
+      "id": "inlineblock-replaced-width",
+      "level": "4",
+      "title": "inline-block, replaced elements in normal flow"
+    },
+    {
+      "id": "min-max-widths",
+      "level": "3",
+      "title": "Minimum and maximum widths: min-width and max-width"
+    },
+    {
+      "id": "the-height-property",
+      "level": "3",
+      "title": "Content height: the height property"
+    },
+    {
+      "id": "Computing_heights_and_margins",
+      "level": "3",
+      "title": "Calculating heights and\nmargins"
+    },
+    {
+      "id": "inline-non-replaced",
+      "level": "4",
+      "title": "Inline, non-replaced elements"
+    },
+    {
+      "id": "inline-replaced-height",
+      "level": "4",
+      "title": "Inline replaced elements,\nblock-level replaced elements in normal flow, inline-block replaced\nelements in normal flow and floating replaced elements"
+    },
+    {
+      "id": "normal-block",
+      "level": "4",
+      "title": "Block-level non-replaced elements in normal\nflow when overflow computes to visible"
+    },
+    {
+      "id": "abs-non-replaced-height",
+      "level": "4",
+      "title": "Absolutely positioned, non-replaced elements"
+    },
+    {
+      "id": "abs-replaced-height",
+      "level": "4",
+      "title": "Absolutely positioned, replaced elements"
+    },
+    {
+      "id": "block-root-margin",
+      "level": "4",
+      "title": "Complicated cases"
+    },
+    {
+      "id": "root-height",
+      "level": "4",
+      "title": "auto heights for block formatting context\nroots"
+    },
+    {
+      "id": "min-max-heights",
+      "level": "3",
+      "title": "Minimum and maximum heights: min-height and max-height"
+    },
+    {
+      "id": "line-height",
+      "level": "3",
+      "title": "Line height calculations: the line-height and vertical-align properties"
+    },
+    {
+      "id": "leading",
+      "level": "4",
+      "title": "Leading and half-leading"
+    },
+    {
+      "id": "visufx",
+      "level": "2",
+      "title": "Visual effects"
+    },
+    {
+      "id": "overflow-clipping",
+      "level": "3",
+      "title": "Overflow and clipping"
+    },
+    {
+      "id": "overflow①",
+      "level": "4",
+      "title": "Overflow: the overflow property"
+    },
+    {
+      "id": "clipping",
+      "level": "4",
+      "title": "Clipping: the clip property"
+    },
+    {
+      "id": "visibility",
+      "level": "3",
+      "title": "Visibility: the visibility property"
+    },
+    {
+      "id": "generated-text",
+      "level": "2",
+      "title": "Generated content, automatic numbering,\nand lists"
+    },
+    {
+      "id": "before-after-content",
+      "level": "3",
+      "title": "The :before and :after pseudo-elements"
+    },
+    {
+      "id": "content①",
+      "level": "3",
+      "title": "The content property"
+    },
+    {
+      "id": "quotes",
+      "level": "3",
+      "title": "Quotation marks"
+    },
+    {
+      "id": "quotes-specify",
+      "level": "4",
+      "title": "Specifying quotes with the quotes property"
+    },
+    {
+      "id": "quotes-insert",
+      "level": "4",
+      "title": "Inserting quotes with the content property"
+    },
+    {
+      "id": "counters",
+      "level": "3",
+      "title": "Automatic counters and numbering"
+    },
+    {
+      "id": "scope",
+      "level": "4",
+      "title": "Nested counters and scope"
+    },
+    {
+      "id": "counter-styles",
+      "level": "4",
+      "title": "Counter styles"
+    },
+    {
+      "id": "undisplayed-counters",
+      "level": "4",
+      "title": "Counters in elements with 'display: none'"
+    },
+    {
+      "id": "lists",
+      "level": "3",
+      "title": "Lists"
+    },
+    {
+      "id": "list-style",
+      "level": "4",
+      "title": "Lists: the list-style-type, list-style-image, list-style-position, and list-style properties"
+    },
+    {
+      "id": "the-page",
+      "level": "2",
+      "title": "Paged media"
+    },
+    {
+      "id": "page-intro",
+      "level": "3",
+      "title": "Introduction to paged media"
+    },
+    {
+      "id": "page-box",
+      "level": "3",
+      "title": "Page boxes: the @page rule"
+    },
+    {
+      "id": "page-margins",
+      "level": "4",
+      "title": "Page margins"
+    },
+    {
+      "id": "page-selectors",
+      "level": "4",
+      "title": "Page selectors: selecting left, right, and first pages"
+    },
+    {
+      "id": "outside-page-box",
+      "level": "4",
+      "title": "Content outside the page box"
+    },
+    {
+      "id": "page-breaks",
+      "level": "3",
+      "title": "Page breaks"
+    },
+    {
+      "id": "page-break-props",
+      "level": "4",
+      "title": "Page break properties: page-break-before, page-break-after, page-break-inside"
+    },
+    {
+      "id": "break-inside",
+      "level": "4",
+      "title": "Breaks inside elements: orphans, widows"
+    },
+    {
+      "id": "allowed-page-breaks",
+      "level": "4",
+      "title": "Allowed page breaks"
+    },
+    {
+      "id": "forced",
+      "level": "4",
+      "title": "Forced page breaks"
+    },
+    {
+      "id": "best-page-breaks",
+      "level": "4",
+      "title": "\"Best\" page breaks"
+    },
+    {
+      "id": "page-cascade",
+      "level": "3",
+      "title": "Cascading in the page context"
+    },
+    {
+      "id": "color-bg",
+      "level": "2",
+      "title": "Colors and Backgrounds"
+    },
+    {
+      "id": "colors",
+      "level": "3",
+      "title": "Foreground color: the color property"
+    },
+    {
+      "id": "background",
+      "level": "3",
+      "title": "The background"
+    },
+    {
+      "id": "background-properties",
+      "level": "4",
+      "title": "Background properties: background-color, background-image, background-repeat, background-attachment, background-position, and background"
+    },
+    {
+      "id": "fonts",
+      "level": "2",
+      "title": "Fonts"
+    },
+    {
+      "id": "fonts-intro",
+      "level": "3",
+      "title": "Introduction"
+    },
+    {
+      "id": "algorithm",
+      "level": "3",
+      "title": "Font matching algorithm"
+    },
+    {
+      "id": "font-family-prop",
+      "level": "3",
+      "title": "Font family: the font-family property"
+    },
+    {
+      "id": "generic-font-families",
+      "level": "4",
+      "title": "Generic font families"
+    },
+    {
+      "id": "serif",
+      "level": "5",
+      "title": "serif"
+    },
+    {
+      "id": "sans-serif",
+      "level": "5",
+      "title": "sans-serif"
+    },
+    {
+      "id": "cursive",
+      "level": "5",
+      "title": "cursive"
+    },
+    {
+      "id": "fantasy",
+      "level": "5",
+      "title": "fantasy"
+    },
+    {
+      "id": "monospace",
+      "level": "5",
+      "title": "monospace"
+    },
+    {
+      "id": "font-styling",
+      "level": "3",
+      "title": "Font styling: the font-style property"
+    },
+    {
+      "id": "small-caps",
+      "level": "3",
+      "title": "Small-caps: the font-variant property"
+    },
+    {
+      "id": "font-boldness",
+      "level": "3",
+      "title": "Font boldness: the font-weight property"
+    },
+    {
+      "id": "font-size-props",
+      "level": "3",
+      "title": "Font size: the font-size property"
+    },
+    {
+      "id": "font-shorthand",
+      "level": "3",
+      "title": "Shorthand font property: the font property"
+    },
+    {
+      "id": "text",
+      "level": "2",
+      "title": "Text"
+    },
+    {
+      "id": "indentation-prop",
+      "level": "3",
+      "title": "Indentation: the text-indent property"
+    },
+    {
+      "id": "alignment-prop",
+      "level": "3",
+      "title": "Alignment: the text-align property"
+    },
+    {
+      "id": "decoration",
+      "level": "3",
+      "title": "Decoration"
+    },
+    {
+      "id": "lining-striking-props",
+      "level": "4",
+      "title": "Underlining, overlining, striking, and\nblinking: the text-decoration property"
+    },
+    {
+      "id": "spacing-props",
+      "level": "3",
+      "title": "Letter and word spacing: the letter-spacing and word-spacing properties"
+    },
+    {
+      "id": "caps-prop",
+      "level": "3",
+      "title": "Capitalization: the text-transform property"
+    },
+    {
+      "id": "white-space-prop",
+      "level": "3",
+      "title": "White space: the white-space property"
+    },
+    {
+      "id": "white-space-model",
+      "level": "4",
+      "title": "The white-space processing model"
+    },
+    {
+      "id": "egbidiwscollapse",
+      "level": "4",
+      "title": "Example of bidirectionality with white space collapsing"
+    },
+    {
+      "id": "ctrlchars",
+      "level": "4",
+      "title": "Control and combining characters' details"
+    },
+    {
+      "id": "tables",
+      "level": "2",
+      "title": "Tables"
+    },
+    {
+      "id": "tables-intro",
+      "level": "3",
+      "title": "Introduction to tables"
+    },
+    {
+      "id": "table-display",
+      "level": "3",
+      "title": "The CSS table model"
+    },
+    {
+      "id": "anonymous-boxes",
+      "level": "4",
+      "title": "Anonymous table objects"
+    },
+    {
+      "id": "columns",
+      "level": "3",
+      "title": "Columns"
+    },
+    {
+      "id": "model",
+      "level": "3",
+      "title": "Tables in the visual formatting model"
+    },
+    {
+      "id": "caption-position",
+      "level": "4",
+      "title": "Caption position and alignment"
+    },
+    {
+      "id": "table-layout",
+      "level": "3",
+      "title": "Visual layout of table contents"
+    },
+    {
+      "id": "table-layers",
+      "level": "4",
+      "title": "Table layers and transparency"
+    },
+    {
+      "id": "width-layout",
+      "level": "4",
+      "title": "Table width algorithms:\nthe table-layout property"
+    },
+    {
+      "id": "fixed-table-layout",
+      "level": "5",
+      "title": "Fixed table layout"
+    },
+    {
+      "id": "auto-table-layout",
+      "level": "5",
+      "title": "Automatic table layout"
+    },
+    {
+      "id": "height-layout",
+      "level": "4",
+      "title": "Table height algorithms"
+    },
+    {
+      "id": "column-alignment",
+      "level": "4",
+      "title": "Horizontal alignment in a column"
+    },
+    {
+      "id": "dynamic-effects",
+      "level": "4",
+      "title": "Dynamic row and column effects"
+    },
+    {
+      "id": "borders",
+      "level": "3",
+      "title": "Borders"
+    },
+    {
+      "id": "separated-borders",
+      "level": "4",
+      "title": "The separated borders model"
+    },
+    {
+      "id": "empty-cells",
+      "level": "5",
+      "title": "Borders and Backgrounds around empty cells: the empty-cells property"
+    },
+    {
+      "id": "collapsing-borders",
+      "level": "4",
+      "title": "The collapsing border model"
+    },
+    {
+      "id": "border-conflict-resolution",
+      "level": "5",
+      "title": "Border conflict resolution"
+    },
+    {
+      "id": "table-border-styles",
+      "level": "4",
+      "title": "Border styles"
+    },
+    {
+      "id": "ui",
+      "level": "2",
+      "title": "User interface"
+    },
+    {
+      "id": "cursor-props",
+      "level": "3",
+      "title": "Cursors: the cursor property"
+    },
+    {
+      "id": "system-colors",
+      "level": "3",
+      "title": "System Colors"
+    },
+    {
+      "id": "system-fonts①",
+      "level": "3",
+      "title": "User preferences for fonts"
+    },
+    {
+      "id": "dynamic-outlines",
+      "level": "3",
+      "title": "Dynamic outlines: the outline property"
+    },
+    {
+      "id": "outline-focus",
+      "level": "4",
+      "title": "Outlines and the focus"
+    },
+    {
+      "id": "magnification",
+      "level": "3",
+      "title": "Magnification"
+    },
+    {
+      "id": "aural",
+      "level": "2",
+      "title": "Appendix A: Aural style sheets"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "Appendix B: Bibliography"
+    },
+    {
+      "id": "references①",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "app-changes",
+      "level": "2",
+      "title": "Appendix C: Changes"
+    },
+    {
+      "id": "new",
+      "level": "3",
+      "title": "Additional property values"
+    },
+    {
+      "id": "changes",
+      "level": "3",
+      "title": "Changes"
+    },
+    {
+      "id": "drop-aural",
+      "level": "4",
+      "title": "Appendix A: Aural style sheets"
+    },
+    {
+      "id": "known-errors",
+      "level": "3",
+      "title": "Errors"
+    },
+    {
+      "id": "clarifications",
+      "level": "3",
+      "title": "Clarifications"
+    },
+    {
+      "id": "html-stylesheet",
+      "level": "2",
+      "title": "Appendix D: Default style sheet for HTML 4"
+    },
+    {
+      "id": "elaborate-stacking-contexts",
+      "level": "2",
+      "title": "Appendix E: Elaborate description of Stacking Contexts"
+    },
+    {
+      "id": "stacking-defs",
+      "level": "3",
+      "title": "Definitions"
+    },
+    {
+      "id": "painting-order",
+      "level": "3",
+      "title": "Painting order"
+    },
+    {
+      "id": "stacking-notes",
+      "level": "3",
+      "title": "Notes"
+    },
+    {
+      "id": "property-index",
+      "level": "2",
+      "title": "Appendix F: Full property table"
+    },
+    {
+      "id": "property-index①",
+      "level": "2",
+      "title": "Property Index"
+    },
+    {
+      "id": "app-grammar",
+      "level": "2",
+      "title": "Appendix G: Grammar of CSS 2"
+    },
+    {
+      "id": "grammar",
+      "level": "3",
+      "title": "Grammar"
+    },
+    {
+      "id": "scanner",
+      "level": "3",
+      "title": "Lexical scanner"
+    },
+    {
+      "id": "tokenizer-diffs",
+      "level": "3",
+      "title": "Comparison of tokenization in CSS2 (1998) and\nCSS1"
+    },
+    {
+      "id": "implementation-note",
+      "level": "3",
+      "title": "Implementation note"
+    },
+    {
+      "id": "leftblank",
+      "level": "2",
+      "title": "Appendix H: Has been intentionally left blank"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Appendix I: Index"
+    },
+    {
+      "id": "index①",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "conformance①",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "document-conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conform-classes",
+      "level": "3",
+      "title": "Conformance classes"
+    },
+    {
+      "id": "conform-responsible",
+      "level": "3",
+      "title": "Requirements for Responsible Implementation of CSS"
+    },
+    {
+      "id": "conform-partial",
+      "level": "4",
+      "title": "Partial Implementations"
+    },
+    {
+      "id": "conform-future-proofing",
+      "level": "4",
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "conform-testing",
+      "level": "4",
+      "title": "Implementations of CR-level Features"
+    }
+  ]
+}

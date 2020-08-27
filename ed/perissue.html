@@ -100,11 +100,6 @@
   <li><a href="https://w3c.github.io/gamepad/extensions.html">Gamepad Extensions</a> uses <code>Gamepad</code> but does not reference <a href="https://w3c.github.io/gamepad/">Gamepad</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a> uses <code>WebGL2RenderingContext</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">WebGL 2.0 Specification</a></li>
   <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a> uses <code>DOMHighResTimeStamp</code> but does not reference <a href="https://w3c.github.io/hr-time/">High Resolution Time</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a> uses:
-  <ul>
-  <li><code>MediaStream</code> but does not reference <a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
-  <li><code>MediaStreamTrack</code> but does not reference <a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
-  </ul></li>
   <li><a href="https://svgwg.org/specs/markers/">SVG Markers</a> uses:
   <ul>
   <li><code>DOMPoint</code> but does not reference <a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
@@ -120,7 +115,7 @@
   </ul></li>
   <li><a href="https://immersive-web.github.io/layers/">WebXR Layers API Level 1</a> uses <code>WebGLTexture</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul>
-  <p>=&gt; 17 missing references for IDL definitions found in 12 specifications</p>
+  <p>=&gt; 15 missing references for IDL definitions found in 11 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -1494,11 +1489,7 @@
   <li><a href="https://w3c.github.io/accelerometer/"><code>https://w3c.github.io/accelerometer/</code></a> but related reference &quot;ACCELEROMETER&quot; uses URL <a href="https://www.w3.org/TR/accelerometer/"><code>https://www.w3.org/TR/accelerometer/</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a> links to <a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a> but related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
-  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a> links to:
-  <ul>
-  <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a> but related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
-  <li><a href="https://www.w3.org/TR/2dcontext2/"><code>https://www.w3.org/TR/2dcontext2/</code></a> but related reference &quot;2DCONTEXT&quot; uses URL <a href="https://www.w3.org/TR/2dcontext/"><code>https://www.w3.org/TR/2dcontext/</code></a></li>
-  </ul></li>
+  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a> links to <a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a> but related reference &quot;mediacapture-streams&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a> links to <a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a> links to:
   <ul>
@@ -1709,7 +1700,7 @@
   <li><a href="https://immersive-web.github.io/webxr-gamepads-module/">WebXR Gamepads Module - Level 1</a> links to <a href="https://w3c.github.io/gamepad/"><code>https://w3c.github.io/gamepad/</code></a> but related reference &quot;GAMEPAD&quot; uses URL <a href="https://www.w3.org/TR/gamepad/"><code>https://www.w3.org/TR/gamepad/</code></a></li>
   <li><a href="https://immersive-web.github.io/webxr-hand-input/">WebXR Hand Input Module - Level 1</a> links to <a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS-1&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   </ul>
-  <p>=&gt; 344 inconsistent references for links found in 179 specifications</p>
+  <p>=&gt; 343 inconsistent references for links found in 179 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   </body>

@@ -1,0 +1,1009 @@
+{
+  "spec": {
+    "title": "Media Capabilities",
+    "url": "https://w3c.github.io/media-capabilities/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "Navigator",
+          "MediaCapabilities"
+        ],
+        "Worker": [
+          "WorkerNavigator",
+          "MediaCapabilities"
+        ]
+      }
+    },
+    "idlNames": {
+      "MediaConfiguration": {
+        "type": "dictionary",
+        "name": "MediaConfiguration",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "video",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "VideoConfiguration"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "audio",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AudioConfiguration"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MediaDecodingConfiguration": {
+        "type": "dictionary",
+        "name": "MediaDecodingConfiguration",
+        "inheritance": "MediaConfiguration",
+        "members": [
+          {
+            "type": "field",
+            "name": "type",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MediaDecodingType"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "keySystemConfiguration",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MediaCapabilitiesKeySystemConfiguration"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MediaEncodingConfiguration": {
+        "type": "dictionary",
+        "name": "MediaEncodingConfiguration",
+        "inheritance": "MediaConfiguration",
+        "members": [
+          {
+            "type": "field",
+            "name": "type",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MediaEncodingType"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MediaDecodingType": {
+        "type": "enum",
+        "name": "MediaDecodingType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "file"
+          },
+          {
+            "type": "enum-value",
+            "value": "media-source"
+          }
+        ],
+        "extAttrs": []
+      },
+      "MediaEncodingType": {
+        "type": "enum",
+        "name": "MediaEncodingType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "record"
+          },
+          {
+            "type": "enum-value",
+            "value": "transmission"
+          }
+        ],
+        "extAttrs": []
+      },
+      "VideoConfiguration": {
+        "type": "dictionary",
+        "name": "VideoConfiguration",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "contentType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "width",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "height",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "bitrate",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "framerate",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "hasAlphaChannel",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "hdrMetadataType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HdrMetadataType"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "colorGamut",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ColorGamut"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "transferFunction",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "TransferFunction"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "HdrMetadataType": {
+        "type": "enum",
+        "name": "HdrMetadataType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "smpteSt2086"
+          },
+          {
+            "type": "enum-value",
+            "value": "smpteSt2094-10"
+          },
+          {
+            "type": "enum-value",
+            "value": "smpteSt2094-40"
+          }
+        ],
+        "extAttrs": []
+      },
+      "ColorGamut": {
+        "type": "enum",
+        "name": "ColorGamut",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "p3"
+          },
+          {
+            "type": "enum-value",
+            "value": "rec2020"
+          }
+        ],
+        "extAttrs": []
+      },
+      "TransferFunction": {
+        "type": "enum",
+        "name": "TransferFunction",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "pq"
+          },
+          {
+            "type": "enum-value",
+            "value": "hlg"
+          }
+        ],
+        "extAttrs": []
+      },
+      "AudioConfiguration": {
+        "type": "dictionary",
+        "name": "AudioConfiguration",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "contentType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "channels",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "bitrate",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "samplerate",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "spatialRendering",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MediaCapabilitiesKeySystemConfiguration": {
+        "type": "dictionary",
+        "name": "MediaCapabilitiesKeySystemConfiguration",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "keySystem",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "initDataType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "distinctiveIdentifier",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MediaKeysRequirement"
+            },
+            "default": {
+              "type": "string",
+              "value": "optional"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "persistentState",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MediaKeysRequirement"
+            },
+            "default": {
+              "type": "string",
+              "value": "optional"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "sessionTypes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "audio",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "KeySystemTrackConfiguration"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "video",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "KeySystemTrackConfiguration"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "KeySystemTrackConfiguration": {
+        "type": "dictionary",
+        "name": "KeySystemTrackConfiguration",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "robustness",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "encryptionScheme",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MediaCapabilitiesInfo": {
+        "type": "dictionary",
+        "name": "MediaCapabilitiesInfo",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "supported",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "smooth",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "powerEfficient",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MediaCapabilitiesDecodingInfo": {
+        "type": "dictionary",
+        "name": "MediaCapabilitiesDecodingInfo",
+        "inheritance": "MediaCapabilitiesInfo",
+        "members": [
+          {
+            "type": "field",
+            "name": "keySystemAccess",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MediaKeySystemAccess"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "configuration",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MediaDecodingConfiguration"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MediaCapabilitiesEncodingInfo": {
+        "type": "dictionary",
+        "name": "MediaCapabilitiesEncodingInfo",
+        "inheritance": "MediaCapabilitiesInfo",
+        "members": [
+          {
+            "type": "field",
+            "name": "configuration",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MediaEncodingConfiguration"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MediaCapabilities": {
+        "type": "interface",
+        "name": "MediaCapabilities",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "decodingInfo",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MediaCapabilitiesDecodingInfo"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "configuration",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MediaDecodingConfiguration"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "encodingInfo",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MediaCapabilitiesEncodingInfo"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "configuration",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MediaEncodingConfiguration"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Navigator": [
+        {
+          "type": "interface",
+          "name": "Navigator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "mediaCapabilities",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MediaCapabilities"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
+          "partial": true
+        }
+      ],
+      "WorkerNavigator": [
+        {
+          "type": "interface",
+          "name": "WorkerNavigator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "mediaCapabilities",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MediaCapabilities"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Worker"
+              },
+              "arguments": []
+            }
+          ],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "Navigator",
+        "MediaCapabilities"
+      ],
+      "Worker": [
+        "WorkerNavigator",
+        "MediaCapabilities"
+      ]
+    },
+    "dependencies": {
+      "MediaConfiguration": [
+        "VideoConfiguration",
+        "AudioConfiguration"
+      ],
+      "MediaDecodingConfiguration": [
+        "MediaConfiguration",
+        "MediaDecodingType",
+        "MediaCapabilitiesKeySystemConfiguration"
+      ],
+      "MediaEncodingConfiguration": [
+        "MediaConfiguration",
+        "MediaEncodingType"
+      ],
+      "VideoConfiguration": [
+        "HdrMetadataType",
+        "ColorGamut",
+        "TransferFunction"
+      ],
+      "AudioConfiguration": [],
+      "MediaCapabilitiesKeySystemConfiguration": [
+        "MediaKeysRequirement",
+        "KeySystemTrackConfiguration"
+      ],
+      "KeySystemTrackConfiguration": [],
+      "MediaCapabilitiesInfo": [],
+      "MediaCapabilitiesDecodingInfo": [
+        "MediaCapabilitiesInfo",
+        "MediaKeySystemAccess",
+        "MediaDecodingConfiguration"
+      ],
+      "MediaCapabilitiesEncodingInfo": [
+        "MediaCapabilitiesInfo",
+        "MediaEncodingConfiguration"
+      ],
+      "Navigator": [
+        "MediaCapabilities"
+      ],
+      "WorkerNavigator": [
+        "MediaCapabilities"
+      ],
+      "MediaCapabilities": [
+        "MediaCapabilitiesDecodingInfo",
+        "MediaDecodingConfiguration",
+        "MediaCapabilitiesEncodingInfo",
+        "MediaEncodingConfiguration"
+      ]
+    },
+    "externalDependencies": [
+      "MediaKeysRequirement",
+      "MediaKeySystemAccess",
+      "Navigator",
+      "WorkerNavigator"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "spec": {
+    "title": "Subresource Integrity",
+    "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {},
+    "idlExtendedNames": {
+      "HTMLLinkElement": [
+        {
+          "type": "interface",
+          "name": "HTMLLinkElement",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "integrity",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "HTMLScriptElement": [
+        {
+          "type": "interface",
+          "name": "HTMLScriptElement",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "integrity",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "HTMLLinkElement": [],
+      "HTMLScriptElement": []
+    },
+    "externalDependencies": [
+      "HTMLLinkElement",
+      "HTMLScriptElement"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

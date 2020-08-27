@@ -1,0 +1,268 @@
+{
+  "spec": {
+    "title": "CSS Layout API Level 1",
+    "url": "https://drafts.css-houdini.org/css-layout-api-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "CSS Layout API Level 1"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Editor’s Draft, 18 August 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "layout-api-containers",
+      "level": "2",
+      "title": "Layout API Containers"
+    },
+    {
+      "id": "painting",
+      "level": "3",
+      "title": "Layout API Container Painting"
+    },
+    {
+      "id": "layout-api-box-tree",
+      "level": "3",
+      "title": "Box Tree Transformations"
+    },
+    {
+      "id": "layout-worklet",
+      "level": "2",
+      "title": "Layout Worklet"
+    },
+    {
+      "id": "concepts",
+      "level": "3",
+      "title": "Concepts"
+    },
+    {
+      "id": "registering-layout",
+      "level": "3",
+      "title": "Registering A Layout"
+    },
+    {
+      "id": "terminology",
+      "level": "3",
+      "title": "Terminology"
+    },
+    {
+      "id": "layout-api",
+      "level": "2",
+      "title": "Layout API"
+    },
+    {
+      "id": "layout-children",
+      "level": "3",
+      "title": "Layout Children"
+    },
+    {
+      "id": "layout-child-box-tree",
+      "level": "4",
+      "title": "LayoutChildren and the Box Tree"
+    },
+    {
+      "id": "layout-fragments",
+      "level": "3",
+      "title": "Layout Fragments"
+    },
+    {
+      "id": "intrinsic-sizes",
+      "level": "3",
+      "title": "Intrinsic Sizes"
+    },
+    {
+      "id": "layout-constraints",
+      "level": "3",
+      "title": "Layout Constraints"
+    },
+    {
+      "id": "layout-constraints-children",
+      "level": "4",
+      "title": "Constraints for Layout Children"
+    },
+    {
+      "id": "breaking-and-fragmentation",
+      "level": "3",
+      "title": "Breaking and Fragmentation"
+    },
+    {
+      "id": "edges",
+      "level": "3",
+      "title": "Edges"
+    },
+    {
+      "id": "interactions-with-other-modules",
+      "level": "2",
+      "title": "Interactions with other Modules"
+    },
+    {
+      "id": "interaction-sizing",
+      "level": "3",
+      "title": "Sizing"
+    },
+    {
+      "id": "interaction-sizing-positiong-layout",
+      "level": "4",
+      "title": "Positioned layout sizing"
+    },
+    {
+      "id": "interaction-positioning",
+      "level": "3",
+      "title": "Positioning"
+    },
+    {
+      "id": "interaction-overflow",
+      "level": "3",
+      "title": "Overflow"
+    },
+    {
+      "id": "interaction-fragmentation",
+      "level": "3",
+      "title": "Fragmentation"
+    },
+    {
+      "id": "interaction-alignment",
+      "level": "3",
+      "title": "Alignment"
+    },
+    {
+      "id": "layout",
+      "level": "2",
+      "title": "Layout"
+    },
+    {
+      "id": "processing-model",
+      "level": "3",
+      "title": "Processing Model"
+    },
+    {
+      "id": "performing-layout",
+      "level": "3",
+      "title": "Performing Layout"
+    },
+    {
+      "id": "determining-intrinsic-sizes",
+      "level": "4",
+      "title": "Determining Intrinsic Sizes"
+    },
+    {
+      "id": "generating-fragments",
+      "level": "4",
+      "title": "Generating Fragments"
+    },
+    {
+      "id": "global-scope-selection",
+      "level": "4",
+      "title": "Global Scope Selection"
+    },
+    {
+      "id": "utility-algorithms",
+      "level": "4",
+      "title": "Utility Algorithms"
+    },
+    {
+      "id": "examples",
+      "level": "2",
+      "title": "Examples"
+    },
+    {
+      "id": "security-considerations",
+      "level": "2",
+      "title": "Security Considerations"
+    },
+    {
+      "id": "privacy-considerations",
+      "level": "2",
+      "title": "Privacy Considerations"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformance-classes",
+      "level": "3",
+      "title": "Conformance classes"
+    },
+    {
+      "id": "partial",
+      "level": "3",
+      "title": "Partial implementations"
+    },
+    {
+      "id": "conform-future-proofing",
+      "level": "4",
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "testing",
+      "level": "3",
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    }
+  ]
+}

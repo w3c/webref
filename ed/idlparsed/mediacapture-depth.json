@@ -1,0 +1,156 @@
+{
+  "spec": {
+    "title": "Media Capture Depth Stream Extensions",
+    "url": "https://w3c.github.io/mediacapture-depth/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "VideoKindEnum": {
+        "type": "enum",
+        "name": "VideoKindEnum",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "color"
+          },
+          {
+            "type": "enum-value",
+            "value": "depth"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "MediaTrackSupportedConstraints": [
+        {
+          "type": "dictionary",
+          "name": "MediaTrackSupportedConstraints",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "videoKind",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MediaTrackCapabilities": [
+        {
+          "type": "dictionary",
+          "name": "MediaTrackCapabilities",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "videoKind",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MediaTrackConstraintSet": [
+        {
+          "type": "dictionary",
+          "name": "MediaTrackConstraintSet",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "videoKind",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDOMString"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MediaTrackSettings": [
+        {
+          "type": "dictionary",
+          "name": "MediaTrackSettings",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "videoKind",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "MediaTrackSupportedConstraints": [],
+      "MediaTrackCapabilities": [],
+      "MediaTrackConstraintSet": [
+        "ConstrainDOMString"
+      ],
+      "MediaTrackSettings": []
+    },
+    "externalDependencies": [
+      "MediaTrackSupportedConstraints",
+      "MediaTrackCapabilities",
+      "MediaTrackConstraintSet",
+      "ConstrainDOMString",
+      "MediaTrackSettings"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

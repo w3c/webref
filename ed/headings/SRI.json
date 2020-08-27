@@ -1,0 +1,253 @@
+{
+  "spec": {
+    "title": "Subresource Integrity",
+    "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Subresource Integrity"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Editor’s Draft, 4 January 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "goals",
+      "level": "3",
+      "title": "Goals"
+    },
+    {
+      "id": "examples",
+      "level": "3",
+      "title": "Use Cases/Examples"
+    },
+    {
+      "id": "resource-integrity",
+      "level": "4",
+      "title": "Resource Integrity"
+    },
+    {
+      "id": "terms",
+      "level": "2",
+      "title": "Key Concepts and Terminology"
+    },
+    {
+      "id": "grammar-concepts",
+      "level": "3",
+      "title": "Grammatical Concepts"
+    },
+    {
+      "id": "framework",
+      "level": "2",
+      "title": "Framework"
+    },
+    {
+      "id": "integrity-metadata-description",
+      "level": "3",
+      "title": "Integrity metadata"
+    },
+    {
+      "id": "hash-functions",
+      "level": "3",
+      "title": "Cryptographic hash functions"
+    },
+    {
+      "id": "agility",
+      "level": "4",
+      "title": "Agility"
+    },
+    {
+      "id": "priority",
+      "level": "4",
+      "title": "Priority"
+    },
+    {
+      "id": "verification-algorithms",
+      "level": "3",
+      "title": "Response verification algorithms"
+    },
+    {
+      "id": "apply-algorithm-to-response",
+      "level": "4",
+      "title": "Apply algorithm to response"
+    },
+    {
+      "id": "is-response-eligible",
+      "level": "4",
+      "title": "Is response eligible for integrity validation?"
+    },
+    {
+      "id": "parse-metadata",
+      "level": "4",
+      "title": "Parse metadata"
+    },
+    {
+      "id": "get-the-strongest-metadata",
+      "level": "4",
+      "title": "Get the strongest metadata from set"
+    },
+    {
+      "id": "does-response-match-metadatalist",
+      "level": "4",
+      "title": "Does response match metadataList?"
+    },
+    {
+      "id": "verification-of-html-document-subresources",
+      "level": "3",
+      "title": "Verification of HTML document subresources"
+    },
+    {
+      "id": "the-integrity-attribute",
+      "level": "3",
+      "title": "The integrity attribute"
+    },
+    {
+      "id": "interface-extensions",
+      "level": "3",
+      "title": "Element interface extensions"
+    },
+    {
+      "id": "HTMLLinkElement",
+      "level": "4",
+      "title": "HTMLLinkElement"
+    },
+    {
+      "id": "HTMLLinkElement-Attributes",
+      "level": "5",
+      "title": "Attributes"
+    },
+    {
+      "id": "HTMLScriptElement",
+      "level": "4",
+      "title": "HTMLScriptElement"
+    },
+    {
+      "id": "HTMLScriptElement-Attributes",
+      "level": "5",
+      "title": "Attributes"
+    },
+    {
+      "id": "handling-integrity-violations",
+      "level": "3",
+      "title": "Handling integrity violations"
+    },
+    {
+      "id": "elements",
+      "level": "3",
+      "title": "Elements"
+    },
+    {
+      "id": "link-element-for-stylesheets",
+      "level": "4",
+      "title": "The link element for stylesheets"
+    },
+    {
+      "id": "script-element",
+      "level": "4",
+      "title": "The script element"
+    },
+    {
+      "id": "proxies",
+      "level": "2",
+      "title": "Proxies"
+    },
+    {
+      "id": "security-considerations",
+      "level": "2",
+      "title": "Security and Privacy Considerations"
+    },
+    {
+      "id": "non-secure-contexts",
+      "level": "3",
+      "title": "Non-secure contexts remain non-secure"
+    },
+    {
+      "id": "hash-collision-attacks",
+      "level": "3",
+      "title": "Hash collision attacks"
+    },
+    {
+      "id": "cross-origin-data-leakage",
+      "level": "3",
+      "title": "Cross-origin data leakage"
+    },
+    {
+      "id": "acknowledgements",
+      "level": "2",
+      "title": "Acknowledgements"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformant-algorithms",
+      "level": "3",
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    }
+  ]
+}

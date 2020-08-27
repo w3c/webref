@@ -1,0 +1,79 @@
+{
+  "spec": {
+    "title": "MathML Core",
+    "url": "https://mathml-refresh.github.io/mathml-core/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "MathMLElement"
+        ]
+      }
+    },
+    "idlNames": {
+      "MathMLElement": {
+        "type": "interface",
+        "name": "MathMLElement",
+        "inheritance": "Element",
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "MathMLElement": [
+        {
+          "name": "MathMLElement",
+          "type": "interface",
+          "includes": "GlobalEventHandlers"
+        },
+        {
+          "name": "MathMLElement",
+          "type": "interface",
+          "includes": "DocumentAndElementEventHandlers"
+        },
+        {
+          "name": "MathMLElement",
+          "type": "interface",
+          "includes": "HTMLOrForeignElement"
+        },
+        {
+          "name": "MathMLElement",
+          "type": "interface",
+          "includes": "ElementCSSInlineStyle"
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "MathMLElement"
+      ]
+    },
+    "dependencies": {
+      "MathMLElement": [
+        "Element",
+        "GlobalEventHandlers",
+        "DocumentAndElementEventHandlers",
+        "HTMLOrForeignElement",
+        "ElementCSSInlineStyle"
+      ]
+    },
+    "externalDependencies": [
+      "Element"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

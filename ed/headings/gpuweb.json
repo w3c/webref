@@ -1,0 +1,878 @@
+{
+  "spec": {
+    "title": "WebGPU",
+    "url": "https://gpuweb.github.io/gpuweb/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "WebGPU"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Editor’s Draft, 26 August 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "malicious-use",
+      "level": "2",
+      "title": "Malicious use considerations"
+    },
+    {
+      "id": "security",
+      "level": "3",
+      "title": "Security"
+    },
+    {
+      "id": "security-cpu-ub",
+      "level": "4",
+      "title": "CPU-based undefined behavior"
+    },
+    {
+      "id": "security-gpu-ub",
+      "level": "3",
+      "title": "GPU-based undefined behavior"
+    },
+    {
+      "id": "security-uninitialized",
+      "level": "3",
+      "title": "Uninitialized data"
+    },
+    {
+      "id": "security-shader",
+      "level": "3",
+      "title": "Out-of-bounds access in shaders"
+    },
+    {
+      "id": "security-invalid-data",
+      "level": "3",
+      "title": "Invalid data"
+    },
+    {
+      "id": "security-driver-bugs",
+      "level": "4",
+      "title": "Driver bugs"
+    },
+    {
+      "id": "security-timing",
+      "level": "4",
+      "title": "Timing attacks"
+    },
+    {
+      "id": "security-rowhammer",
+      "level": "4",
+      "title": "Row hammer attacks"
+    },
+    {
+      "id": "security-dos",
+      "level": "3",
+      "title": "Denial of service"
+    },
+    {
+      "id": "security-workload-identification",
+      "level": "3",
+      "title": "Workload identification"
+    },
+    {
+      "id": "security-memory-resources",
+      "level": "4",
+      "title": "Memory resources"
+    },
+    {
+      "id": "security-computation-resources",
+      "level": "4",
+      "title": "Computation resources"
+    },
+    {
+      "id": "security-privacy",
+      "level": "3",
+      "title": "Privacy"
+    },
+    {
+      "id": "security-machine-limits",
+      "level": "4",
+      "title": "Machine-specific limits"
+    },
+    {
+      "id": "security-machine-artifacts",
+      "level": "4",
+      "title": "Machine-specific artifacts"
+    },
+    {
+      "id": "security-machine-performance",
+      "level": "4",
+      "title": "Machine-specific performance"
+    },
+    {
+      "id": "fundamentals",
+      "level": "2",
+      "title": "Fundamentals"
+    },
+    {
+      "id": "conventions",
+      "level": "3",
+      "title": "Conventions"
+    },
+    {
+      "id": "dot-syntax",
+      "level": "4",
+      "title": "Dot Syntax"
+    },
+    {
+      "id": "webgpu-internal-objects",
+      "level": "4",
+      "title": "Internal Objects"
+    },
+    {
+      "id": "webgpu-interfaces",
+      "level": "4",
+      "title": "WebGPU Interfaces"
+    },
+    {
+      "id": "object-descriptors",
+      "level": "4",
+      "title": "Object Descriptors"
+    },
+    {
+      "id": "invalidity",
+      "level": "3",
+      "title": "Invalid Internal Objects & Contagious Invalidity"
+    },
+    {
+      "id": "coordinate-systems",
+      "level": "3",
+      "title": "Coordinate Systems"
+    },
+    {
+      "id": "programming-model",
+      "level": "3",
+      "title": "Programming Model"
+    },
+    {
+      "id": "programming-model-timelines",
+      "level": "4",
+      "title": "Timelines"
+    },
+    {
+      "id": "programming-model-memory",
+      "level": "4",
+      "title": "Memory Model"
+    },
+    {
+      "id": "programming-model-multi-threading",
+      "level": "4",
+      "title": "Multi-Threading"
+    },
+    {
+      "id": "programming-model-resource-usages",
+      "level": "4",
+      "title": "Resource Usages"
+    },
+    {
+      "id": "programming-model-synchronization",
+      "level": "4",
+      "title": "Synchronization"
+    },
+    {
+      "id": "core-internal-objects",
+      "level": "3",
+      "title": "Core Internal Objects"
+    },
+    {
+      "id": "adapters",
+      "level": "4",
+      "title": "Adapters"
+    },
+    {
+      "id": "devices",
+      "level": "4",
+      "title": "Devices"
+    },
+    {
+      "id": "optional-capabilities",
+      "level": "3",
+      "title": "Optional Capabilities"
+    },
+    {
+      "id": "limits",
+      "level": "4",
+      "title": "Limits"
+    },
+    {
+      "id": "extensions",
+      "level": "4",
+      "title": "Extensions"
+    },
+    {
+      "id": "initialization",
+      "level": "2",
+      "title": "Initialization"
+    },
+    {
+      "id": "initialization-examples",
+      "level": "3",
+      "title": "Examples"
+    },
+    {
+      "id": "navigator-gpu",
+      "level": "3",
+      "title": "navigator.gpu"
+    },
+    {
+      "id": "gpu-interface",
+      "level": "3",
+      "title": "GPU"
+    },
+    {
+      "id": "adapter-selection",
+      "level": "4",
+      "title": "Adapter Selection"
+    },
+    {
+      "id": "gpu-adapter",
+      "level": "3",
+      "title": "GPUAdapter"
+    },
+    {
+      "id": "gpudevicedescriptor",
+      "level": "4",
+      "title": "GPUDeviceDescriptor"
+    },
+    {
+      "id": "gpuextensionname",
+      "level": "5",
+      "title": "GPUExtensionName"
+    },
+    {
+      "id": "gpulimits",
+      "level": "5",
+      "title": "GPULimits"
+    },
+    {
+      "id": "gpu-device",
+      "level": "3",
+      "title": "GPUDevice"
+    },
+    {
+      "id": "buffers",
+      "level": "2",
+      "title": "Buffers"
+    },
+    {
+      "id": "buffer-interface",
+      "level": "3",
+      "title": "GPUBuffer"
+    },
+    {
+      "id": "buffer-creation",
+      "level": "3",
+      "title": "Buffer Creation"
+    },
+    {
+      "id": "GPUBufferDescriptor",
+      "level": "4",
+      "title": "GPUBufferDescriptor"
+    },
+    {
+      "id": "buffer-usage",
+      "level": "3",
+      "title": "Buffer Usage"
+    },
+    {
+      "id": "buffer-destruction",
+      "level": "3",
+      "title": "Buffer Destruction"
+    },
+    {
+      "id": "buffer-mapping",
+      "level": "3",
+      "title": "Buffer Mapping"
+    },
+    {
+      "id": "textures",
+      "level": "2",
+      "title": "Textures and Texture Views"
+    },
+    {
+      "id": "texture-interface",
+      "level": "3",
+      "title": "GPUTexture"
+    },
+    {
+      "id": "texture-creation",
+      "level": "4",
+      "title": "Texture Creation"
+    },
+    {
+      "id": "texture-destruction",
+      "level": "4",
+      "title": "Texture Destruction"
+    },
+    {
+      "id": "gpu-textureview",
+      "level": "3",
+      "title": "GPUTextureView"
+    },
+    {
+      "id": "texture-view-creation",
+      "level": "4",
+      "title": "Texture View Creation"
+    },
+    {
+      "id": "textureview-createview",
+      "level": "4",
+      "title": "GPUTexture.createView(descriptor)"
+    },
+    {
+      "id": "texture-formats",
+      "level": "3",
+      "title": "Texture Formats"
+    },
+    {
+      "id": "samplers",
+      "level": "2",
+      "title": "Samplers"
+    },
+    {
+      "id": "sampler-interface",
+      "level": "3",
+      "title": "GPUSampler"
+    },
+    {
+      "id": "sampler-creation",
+      "level": "3",
+      "title": "Sampler Creation"
+    },
+    {
+      "id": "GPUSamplerDescriptor",
+      "level": "4",
+      "title": "GPUSamplerDescriptor"
+    },
+    {
+      "id": "sampler-createsampler",
+      "level": "4",
+      "title": "GPUDevice.createSampler(descriptor)"
+    },
+    {
+      "id": "bindings",
+      "level": "2",
+      "title": "Resource Binding"
+    },
+    {
+      "id": "bind-group-layout",
+      "level": "3",
+      "title": "GPUBindGroupLayout"
+    },
+    {
+      "id": "bind-group-layout-creation",
+      "level": "4",
+      "title": "Creation"
+    },
+    {
+      "id": "bind-group-compatibility",
+      "level": "4",
+      "title": "Compatibility"
+    },
+    {
+      "id": "gpu-bind-group",
+      "level": "3",
+      "title": "GPUBindGroup"
+    },
+    {
+      "id": "bind-group-creation",
+      "level": "4",
+      "title": "Bind Group Creation"
+    },
+    {
+      "id": "pipeline-layout",
+      "level": "3",
+      "title": "GPUPipelineLayout"
+    },
+    {
+      "id": "pipeline-layout-creation",
+      "level": "4",
+      "title": "Creation"
+    },
+    {
+      "id": "shader-modules",
+      "level": "2",
+      "title": "Shader Modules"
+    },
+    {
+      "id": "shader-module",
+      "level": "3",
+      "title": "GPUShaderModule"
+    },
+    {
+      "id": "shader-module-creation",
+      "level": "4",
+      "title": "Shader Module Creation"
+    },
+    {
+      "id": "shader-module-compilation-information",
+      "level": "4",
+      "title": "Shader Module Compilation Information"
+    },
+    {
+      "id": "pipelines",
+      "level": "2",
+      "title": "Pipelines"
+    },
+    {
+      "id": "pipeline-base",
+      "level": "3",
+      "title": "Base pipelines"
+    },
+    {
+      "id": "default-pipeline-layout",
+      "level": "4",
+      "title": "Default pipeline layout"
+    },
+    {
+      "id": "GPUProgrammableStageDescriptor",
+      "level": "4",
+      "title": "GPUProgrammableStageDescriptor"
+    },
+    {
+      "id": "compute-pipeline",
+      "level": "3",
+      "title": "GPUComputePipeline"
+    },
+    {
+      "id": "compute-pipeline-creation",
+      "level": "4",
+      "title": "Creation"
+    },
+    {
+      "id": "device-createReadyComputePipeline",
+      "level": "4",
+      "title": "createReadyComputePipeline()"
+    },
+    {
+      "id": "render-pipeline",
+      "level": "3",
+      "title": "GPURenderPipeline"
+    },
+    {
+      "id": "render-pipeline-creation",
+      "level": "4",
+      "title": "Creation"
+    },
+    {
+      "id": "no-color-output",
+      "level": "4",
+      "title": "No Color Output"
+    },
+    {
+      "id": "alpha-to-coverage",
+      "level": "4",
+      "title": "Alpha to Coverage"
+    },
+    {
+      "id": "sample-masking",
+      "level": "4",
+      "title": "Sample Masking"
+    },
+    {
+      "id": "device-createReadyRenderPipeline",
+      "level": "4",
+      "title": "createReadyRenderPipeline()"
+    },
+    {
+      "id": "primitive-topology",
+      "level": "4",
+      "title": "Primitive Topology"
+    },
+    {
+      "id": "rasterization-state",
+      "level": "4",
+      "title": "Rasterization State"
+    },
+    {
+      "id": "color-state",
+      "level": "4",
+      "title": "Color State"
+    },
+    {
+      "id": "blend-state",
+      "level": "5",
+      "title": "Blend State"
+    },
+    {
+      "id": "depth-stencil-state",
+      "level": "4",
+      "title": "Depth/Stencil State"
+    },
+    {
+      "id": "vertex-state",
+      "level": "4",
+      "title": "Vertex State"
+    },
+    {
+      "id": "vertex-formats",
+      "level": "5",
+      "title": "Vertex Formats"
+    },
+    {
+      "id": "command-buffers",
+      "level": "2",
+      "title": "Command Buffers"
+    },
+    {
+      "id": "command-buffer",
+      "level": "3",
+      "title": "GPUCommandBuffer"
+    },
+    {
+      "id": "command-buffer-creation",
+      "level": "4",
+      "title": "Creation"
+    },
+    {
+      "id": "command-encoding",
+      "level": "2",
+      "title": "Command Encoding"
+    },
+    {
+      "id": "command-encoder",
+      "level": "3",
+      "title": "GPUCommandEncoder"
+    },
+    {
+      "id": "command-encoder-creation",
+      "level": "4",
+      "title": "Creation"
+    },
+    {
+      "id": "command-encoder-pass-encoding",
+      "level": "3",
+      "title": "Pass Encoding"
+    },
+    {
+      "id": "copy-commands",
+      "level": "3",
+      "title": "Copy Commands"
+    },
+    {
+      "id": "gpu-texture-data-layout",
+      "level": "4",
+      "title": "GPUTextureDataLayout"
+    },
+    {
+      "id": "gpu-buffer-copy-view",
+      "level": "4",
+      "title": "GPUBufferCopyView"
+    },
+    {
+      "id": "gpu-texture-copy-view",
+      "level": "4",
+      "title": "GPUTextureCopyView"
+    },
+    {
+      "id": "gpu-image-bitmap-copy-view",
+      "level": "4",
+      "title": "GPUImageBitmapCopyView"
+    },
+    {
+      "id": "copy-between-buffer-texture",
+      "level": "4",
+      "title": "Copy Between Buffer and Texture"
+    },
+    {
+      "id": "command-encoder-debug-markers",
+      "level": "3",
+      "title": "Debug Markers"
+    },
+    {
+      "id": "command-encoder-queries",
+      "level": "3",
+      "title": "Queries"
+    },
+    {
+      "id": "command-encoder-finalization",
+      "level": "3",
+      "title": "Finalization"
+    },
+    {
+      "id": "programmable-passes",
+      "level": "2",
+      "title": "Programmable Passes"
+    },
+    {
+      "id": "programmable-passes-bind-groups",
+      "level": "3",
+      "title": "Bind Groups"
+    },
+    {
+      "id": "programmable-passes-debug-markers",
+      "level": "3",
+      "title": "Debug Markers"
+    },
+    {
+      "id": "compute-passes",
+      "level": "2",
+      "title": "Compute Passes"
+    },
+    {
+      "id": "compute-pass-encoder",
+      "level": "3",
+      "title": "GPUComputePassEncoder"
+    },
+    {
+      "id": "compute-pass-encoder-creation",
+      "level": "4",
+      "title": "Creation"
+    },
+    {
+      "id": "compute-pass-encoder-dispatch",
+      "level": "4",
+      "title": "Dispatch"
+    },
+    {
+      "id": "compute-pass-encoder-queries",
+      "level": "4",
+      "title": "Queries"
+    },
+    {
+      "id": "compute-pass-encoder-finalization",
+      "level": "4",
+      "title": "Finalization"
+    },
+    {
+      "id": "render-passes",
+      "level": "2",
+      "title": "Render Passes"
+    },
+    {
+      "id": "render-pass-encoder",
+      "level": "3",
+      "title": "GPURenderPassEncoder"
+    },
+    {
+      "id": "render-pass-encoder-creation",
+      "level": "4",
+      "title": "Creation"
+    },
+    {
+      "id": "color-attachments",
+      "level": "5",
+      "title": "Color Attachments"
+    },
+    {
+      "id": "depth-stencil-attachments",
+      "level": "5",
+      "title": "Depth/Stencil Attachments"
+    },
+    {
+      "id": "load-and-store-ops",
+      "level": "5",
+      "title": "Load & Store Operations"
+    },
+    {
+      "id": "render-pass-encoder-drawing",
+      "level": "4",
+      "title": "Drawing"
+    },
+    {
+      "id": "render-pass-encoder-rasterization-state",
+      "level": "4",
+      "title": "Rasterization state"
+    },
+    {
+      "id": "render-pass-encoder-queries",
+      "level": "4",
+      "title": "Queries"
+    },
+    {
+      "id": "render-pass-encoder-bundles",
+      "level": "4",
+      "title": "Bundles"
+    },
+    {
+      "id": "render-pass-encoder-finalization",
+      "level": "4",
+      "title": "Finalization"
+    },
+    {
+      "id": "bundles",
+      "level": "2",
+      "title": "Bundles"
+    },
+    {
+      "id": "render-bundle",
+      "level": "3",
+      "title": "GPURenderBundle"
+    },
+    {
+      "id": "render-bundle-creation",
+      "level": "4",
+      "title": "Creation"
+    },
+    {
+      "id": "render-bundle-encoding",
+      "level": "4",
+      "title": "Encoding"
+    },
+    {
+      "id": "render-bundle-finalization",
+      "level": "4",
+      "title": "Finalization"
+    },
+    {
+      "id": "queues",
+      "level": "2",
+      "title": "Queues"
+    },
+    {
+      "id": "fence",
+      "level": "3",
+      "title": "GPUFence"
+    },
+    {
+      "id": "fence-creation",
+      "level": "4",
+      "title": "Creation"
+    },
+    {
+      "id": "fence-signaling",
+      "level": "4",
+      "title": "Completion"
+    },
+    {
+      "id": "queries",
+      "level": "2",
+      "title": "Queries"
+    },
+    {
+      "id": "queryset",
+      "level": "3",
+      "title": "QuerySet"
+    },
+    {
+      "id": "queryset-creation",
+      "level": "4",
+      "title": "Creation"
+    },
+    {
+      "id": "queryset-finalization",
+      "level": "4",
+      "title": "Finalization"
+    },
+    {
+      "id": "querytype",
+      "level": "3",
+      "title": "QueryType"
+    },
+    {
+      "id": "pipeline-statistics",
+      "level": "3",
+      "title": "Pipeline Statistics Query"
+    },
+    {
+      "id": "timestamp",
+      "level": "3",
+      "title": "Timestamp Query"
+    },
+    {
+      "id": "canvas-rendering",
+      "level": "2",
+      "title": "Canvas Rendering & Swap Chains"
+    },
+    {
+      "id": "errors-and-debugging",
+      "level": "2",
+      "title": "Errors & Debugging"
+    },
+    {
+      "id": "fatal-errors",
+      "level": "3",
+      "title": "Fatal Errors"
+    },
+    {
+      "id": "error-scopes",
+      "level": "3",
+      "title": "Error Scopes"
+    },
+    {
+      "id": "telemetry",
+      "level": "3",
+      "title": "Telemetry"
+    },
+    {
+      "id": "type-definitions",
+      "level": "2",
+      "title": "Type Definitions"
+    },
+    {
+      "id": "colors-and-vectors",
+      "level": "3",
+      "title": "Colors & Vectors"
+    },
+    {
+      "id": "temp-dfn-usages",
+      "level": "2",
+      "title": "Temporary usages of non-exported dfns"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "level": "2",
+      "title": "Issues Index"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "spec": {
+    "title": "Device Memory 1",
+    "url": "https://w3c.github.io/device-memory/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "NavigatorDeviceMemory": {
+        "type": "interface mixin",
+        "name": "NavigatorDeviceMemory",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "deviceMemory",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Navigator": [
+        {
+          "name": "Navigator",
+          "type": "interface",
+          "includes": "NavigatorDeviceMemory"
+        }
+      ],
+      "WorkerNavigator": [
+        {
+          "name": "WorkerNavigator",
+          "type": "interface",
+          "includes": "NavigatorDeviceMemory"
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "NavigatorDeviceMemory"
+      ],
+      "Worker": [
+        "NavigatorDeviceMemory"
+      ]
+    },
+    "dependencies": {
+      "NavigatorDeviceMemory": [],
+      "Navigator": [
+        "NavigatorDeviceMemory"
+      ],
+      "WorkerNavigator": [
+        "NavigatorDeviceMemory"
+      ]
+    },
+    "externalDependencies": [],
+    "hasObsoleteIdl": false
+  }
+}

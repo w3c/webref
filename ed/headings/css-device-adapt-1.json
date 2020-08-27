@@ -1,0 +1,338 @@
+{
+  "spec": {
+    "title": "CSS Device Adaptation Module Level 1",
+    "url": "https://drafts.csswg.org/css-device-adapt/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "CSS Device Adaptation Module Level 1"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Editor’s Draft, 3 June 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "scenarios",
+      "level": "2",
+      "title": "Motivating Scenarios"
+    },
+    {
+      "id": "values",
+      "level": "2",
+      "title": "Values"
+    },
+    {
+      "id": "the-viewport",
+      "level": "2",
+      "title": "The viewport"
+    },
+    {
+      "id": "atviewport-rule",
+      "level": "2",
+      "title": "The @viewport rule"
+    },
+    {
+      "id": "syntax",
+      "level": "3",
+      "title": "Syntax"
+    },
+    {
+      "id": "viewport-desc",
+      "level": "2",
+      "title": "Viewport descriptors"
+    },
+    {
+      "id": "min-max-width-desc",
+      "level": "3",
+      "title": "The min-width and max-width descriptors"
+    },
+    {
+      "id": "width-desc",
+      "level": "3",
+      "title": "The width shorthand descriptor"
+    },
+    {
+      "id": "min-max-height-desc",
+      "level": "3",
+      "title": "The min-height and max-height descriptors"
+    },
+    {
+      "id": "height-desc",
+      "level": "3",
+      "title": "The height shorthand descriptor"
+    },
+    {
+      "id": "zoom-desc",
+      "level": "3",
+      "title": "The zoom descriptor"
+    },
+    {
+      "id": "min-zoom-desc",
+      "level": "3",
+      "title": "The min-zoom descriptor"
+    },
+    {
+      "id": "max-zoom-desc",
+      "level": "3",
+      "title": "The max-zoom descriptor"
+    },
+    {
+      "id": "user-zoom-desc",
+      "level": "3",
+      "title": "The user-zoom descriptor"
+    },
+    {
+      "id": "orientation-desc",
+      "level": "3",
+      "title": "The orientation descriptor"
+    },
+    {
+      "id": "constraining",
+      "level": "2",
+      "title": "Constraining viewport descriptor values"
+    },
+    {
+      "id": "constraining-defs",
+      "level": "3",
+      "title": "Definitions"
+    },
+    {
+      "id": "constraining-procedure",
+      "level": "3",
+      "title": "The procedure"
+    },
+    {
+      "id": "constraining-min-max-zoom",
+      "level": "4",
+      "title": "Resolve min-zoom and max-zoom values"
+    },
+    {
+      "id": "constraining-zoom",
+      "level": "4",
+      "title": "Constrain zoom value to\nthe [min-zoom, max-zoom] range"
+    },
+    {
+      "id": "resolve-px",
+      "level": "4",
+      "title": "Resolve non-auto lengths to pixel lengths"
+    },
+    {
+      "id": "resolve-initial-width-height",
+      "level": "4",
+      "title": "Resolve initial width and height from min/max\ndescriptors"
+    },
+    {
+      "id": "resolve-width",
+      "level": "4",
+      "title": "Resolve width value"
+    },
+    {
+      "id": "resolve-height",
+      "level": "4",
+      "title": "Resolve height value"
+    },
+    {
+      "id": "media-queries",
+      "level": "2",
+      "title": "Media Queries"
+    },
+    {
+      "id": "cssom",
+      "level": "2",
+      "title": "CSSOM"
+    },
+    {
+      "id": "css-rule-interface",
+      "level": "3",
+      "title": "Interface CSSRule"
+    },
+    {
+      "id": "css-viewport-rule-interface",
+      "level": "3",
+      "title": "Interface CSSViewportRule"
+    },
+    {
+      "id": "viewport-meta",
+      "level": "2",
+      "title": "Viewport <META> element"
+    },
+    {
+      "id": "meta-properties",
+      "level": "3",
+      "title": "Properties"
+    },
+    {
+      "id": "parsing-algorithm",
+      "level": "3",
+      "title": "Parsing algorithm"
+    },
+    {
+      "id": "extend-to-zoom",
+      "level": "3",
+      "title": "extend-to-zoom"
+    },
+    {
+      "id": "resolve-extend-to-zoom",
+      "level": "4",
+      "title": "Resolving 'extend-to-zoom'"
+    },
+    {
+      "id": "translate-meta-to-at-viewport",
+      "level": "3",
+      "title": "Translation into @viewport descriptors"
+    },
+    {
+      "id": "unknown-properties",
+      "level": "4",
+      "title": "Unknown properties"
+    },
+    {
+      "id": "width-and-height-properties",
+      "level": "4",
+      "title": "The width and height properties"
+    },
+    {
+      "id": "min-scale-max-scale",
+      "level": "4",
+      "title": "The initial-scale, minimum-scale, and maximum-scale properties"
+    },
+    {
+      "id": "user-scalable",
+      "level": "4",
+      "title": "The user-scalable property"
+    },
+    {
+      "id": "handling-auto-zoom",
+      "level": "2",
+      "title": "Handling auto for zoom"
+    },
+    {
+      "id": "ua-stylesheet",
+      "level": "2",
+      "title": "UA stylesheets"
+    },
+    {
+      "id": "large-screen-ua",
+      "level": "3",
+      "title": "Large screen UA styles"
+    },
+    {
+      "id": "small-screen-ua",
+      "level": "3",
+      "title": "Small screen UA styles"
+    },
+    {
+      "id": "changes",
+      "level": "2",
+      "title": "Appendix A. Changes"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "document-conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conform-classes",
+      "level": "3",
+      "title": "Conformance classes"
+    },
+    {
+      "id": "conform-responsible",
+      "level": "3",
+      "title": "Requirements for Responsible Implementation of CSS"
+    },
+    {
+      "id": "conform-partial",
+      "level": "4",
+      "title": "Partial Implementations"
+    },
+    {
+      "id": "conform-future-proofing",
+      "level": "4",
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "conform-testing",
+      "level": "4",
+      "title": "Implementations of CR-level Features"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "level": "2",
+      "title": "Property Index"
+    },
+    {
+      "id": "viewport-descriptor-table",
+      "level": "3",
+      "title": "@viewport Descriptors"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "level": "2",
+      "title": "Issues Index"
+    }
+  ]
+}

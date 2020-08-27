@@ -1,0 +1,523 @@
+{
+  "spec": {
+    "title": "Generic Sensor API",
+    "url": "https://w3c.github.io/sensors/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Generic Sensor API"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Editor’s Draft, 18 August 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "scope",
+      "level": "2",
+      "title": "Scope"
+    },
+    {
+      "id": "feature-detection",
+      "level": "2",
+      "title": "A note on Feature Detection of Hardware Features"
+    },
+    {
+      "id": "security-and-privacy",
+      "level": "2",
+      "title": "Security and privacy considerations"
+    },
+    {
+      "id": "main-privacy-security-threats",
+      "level": "3",
+      "title": "Types of privacy and security threats"
+    },
+    {
+      "id": "location-tracking",
+      "level": "4",
+      "title": "Location Tracking"
+    },
+    {
+      "id": "eavesdropping",
+      "level": "4",
+      "title": "Eavesdropping"
+    },
+    {
+      "id": "keystroke-monitoring",
+      "level": "4",
+      "title": "Keystroke Monitoring"
+    },
+    {
+      "id": "device-fingerprinting",
+      "level": "4",
+      "title": "Device Fingerprinting"
+    },
+    {
+      "id": "user-identifying",
+      "level": "4",
+      "title": "User Identifying"
+    },
+    {
+      "id": "mitigation-strategies",
+      "level": "3",
+      "title": "Mitigation Strategies"
+    },
+    {
+      "id": "secure-context",
+      "level": "4",
+      "title": "Secure Context"
+    },
+    {
+      "id": "feature-policy",
+      "level": "4",
+      "title": "Feature Policy"
+    },
+    {
+      "id": "focused-area",
+      "level": "4",
+      "title": "Focused Area"
+    },
+    {
+      "id": "visibility-state",
+      "level": "4",
+      "title": "Visibility State"
+    },
+    {
+      "id": "permissions",
+      "level": "4",
+      "title": "Permissions API"
+    },
+    {
+      "id": "mitigation-strategies-case-by-case",
+      "level": "3",
+      "title": "Mitigation strategies applied on a case by case basis"
+    },
+    {
+      "id": "limit-max-frequency",
+      "level": "4",
+      "title": "Limit maximum sampling frequency"
+    },
+    {
+      "id": "stop-sensor",
+      "level": "4",
+      "title": "Stop the sensor altogether"
+    },
+    {
+      "id": "limit-number-of-delivered-readings",
+      "level": "4",
+      "title": "Limit number of delivered readings"
+    },
+    {
+      "id": "reduce-accuracy",
+      "level": "4",
+      "title": "Reduce accuracy"
+    },
+    {
+      "id": "inform-user",
+      "level": "4",
+      "title": "Keep the user informed about API use"
+    },
+    {
+      "id": "concepts",
+      "level": "2",
+      "title": "Concepts"
+    },
+    {
+      "id": "concepts-sensors",
+      "level": "3",
+      "title": "Sensors"
+    },
+    {
+      "id": "concepts-sensor-types",
+      "level": "3",
+      "title": "Sensor Types"
+    },
+    {
+      "id": "concepts-default-sensor",
+      "level": "3",
+      "title": "Default sensor"
+    },
+    {
+      "id": "concepts-reading-change-threshold",
+      "level": "3",
+      "title": "Reading change threshold"
+    },
+    {
+      "id": "concepts-sampling-and-reporting-frequencies",
+      "level": "3",
+      "title": "Sampling Frequency and Reporting Frequency"
+    },
+    {
+      "id": "concepts-can-expose-sensor-readings",
+      "level": "3",
+      "title": "Conditions to expose sensor readings"
+    },
+    {
+      "id": "model",
+      "level": "2",
+      "title": "Model"
+    },
+    {
+      "id": "model-sensor-type",
+      "level": "3",
+      "title": "Sensor Type"
+    },
+    {
+      "id": "model-sensor",
+      "level": "3",
+      "title": "Sensor"
+    },
+    {
+      "id": "api",
+      "level": "2",
+      "title": "API"
+    },
+    {
+      "id": "the-sensor-interface",
+      "level": "3",
+      "title": "The Sensor Interface"
+    },
+    {
+      "id": "sensor-lifecycle",
+      "level": "4",
+      "title": "Sensor lifecycle"
+    },
+    {
+      "id": "sensor-garbage-collection",
+      "level": "4",
+      "title": "Sensor garbage collection"
+    },
+    {
+      "id": "sensor-internal-slots",
+      "level": "4",
+      "title": "Sensor internal slots"
+    },
+    {
+      "id": "sensor-activated",
+      "level": "4",
+      "title": "Sensor.activated"
+    },
+    {
+      "id": "sensor-has-reading",
+      "level": "4",
+      "title": "Sensor.hasReading"
+    },
+    {
+      "id": "sensor-timestamp",
+      "level": "4",
+      "title": "Sensor.timestamp"
+    },
+    {
+      "id": "sensor-start",
+      "level": "4",
+      "title": "Sensor.start()"
+    },
+    {
+      "id": "sensor-stop",
+      "level": "4",
+      "title": "Sensor.stop()"
+    },
+    {
+      "id": "sensor-onreading",
+      "level": "4",
+      "title": "Sensor.onreading"
+    },
+    {
+      "id": "sensor-onactivate",
+      "level": "4",
+      "title": "Sensor.onactivate"
+    },
+    {
+      "id": "sensor-onerror",
+      "level": "4",
+      "title": "Sensor.onerror"
+    },
+    {
+      "id": "event-handlers",
+      "level": "4",
+      "title": "Event handlers"
+    },
+    {
+      "id": "the-sensor-error-event-interface",
+      "level": "3",
+      "title": "The SensorErrorEvent Interface"
+    },
+    {
+      "id": "sensor-error-event-error",
+      "level": "4",
+      "title": "SensorErrorEvent.error"
+    },
+    {
+      "id": "abstract-operations",
+      "level": "2",
+      "title": "Abstract Operations"
+    },
+    {
+      "id": "initialize-a-sensor-object",
+      "level": "3",
+      "title": "Initialize a sensor object"
+    },
+    {
+      "id": "check-sensor-policy-controlled-features",
+      "level": "3",
+      "title": "Check sensor policy-controlled features"
+    },
+    {
+      "id": "connect-to-sensor",
+      "level": "3",
+      "title": "Connect to sensor"
+    },
+    {
+      "id": "activate-a-sensor-object",
+      "level": "3",
+      "title": "Activate a sensor object"
+    },
+    {
+      "id": "deactivate-a-sensor-object",
+      "level": "3",
+      "title": "Deactivate a sensor object"
+    },
+    {
+      "id": "revoke-sensor-permission",
+      "level": "3",
+      "title": "Revoke sensor permission"
+    },
+    {
+      "id": "set-sensor-settings",
+      "level": "3",
+      "title": "Set sensor settings"
+    },
+    {
+      "id": "update-latest-reading",
+      "level": "3",
+      "title": "Update latest reading"
+    },
+    {
+      "id": "find-the-reporting-frequency-of-a-sensor-object",
+      "level": "3",
+      "title": "Find the reporting frequency of a sensor object"
+    },
+    {
+      "id": "report-latest-reading-updated",
+      "level": "3",
+      "title": "Report latest reading updated"
+    },
+    {
+      "id": "notify-new-reading",
+      "level": "3",
+      "title": "Notify new reading"
+    },
+    {
+      "id": "notify-activated-state",
+      "level": "3",
+      "title": "Notify activated state"
+    },
+    {
+      "id": "notify-error",
+      "level": "3",
+      "title": "Notify error"
+    },
+    {
+      "id": "get-value-from-latest-reading",
+      "level": "3",
+      "title": "Get value from latest reading"
+    },
+    {
+      "id": "request-sensor-access",
+      "level": "3",
+      "title": "Request sensor access"
+    },
+    {
+      "id": "automation",
+      "level": "2",
+      "title": "Automation"
+    },
+    {
+      "id": "mock-sensors",
+      "level": "3",
+      "title": "Mock Sensors"
+    },
+    {
+      "id": "dictionary-mocksensorconfiguration",
+      "level": "4",
+      "title": "MockSensorConfiguration dictionary"
+    },
+    {
+      "id": "dictionary-mocksensor",
+      "level": "4",
+      "title": "MockSensor dictionary"
+    },
+    {
+      "id": "section-mock-sensor-type",
+      "level": "4",
+      "title": "Mock sensor type"
+    },
+    {
+      "id": "section-extension-commands",
+      "level": "3",
+      "title": "Extension Commands"
+    },
+    {
+      "id": "create-mock-sensor-command",
+      "level": "4",
+      "title": "Create mock sensor"
+    },
+    {
+      "id": "get-mock-sensor-command",
+      "level": "4",
+      "title": "Get mock sensor"
+    },
+    {
+      "id": "update-mock-sensor-reading-command",
+      "level": "4",
+      "title": "Update mock sensor reading"
+    },
+    {
+      "id": "delete-mock-sensor-command",
+      "level": "4",
+      "title": "Delete mock sensor"
+    },
+    {
+      "id": "extension-handling-errors",
+      "level": "3",
+      "title": "Handling errors"
+    },
+    {
+      "id": "extensibility",
+      "level": "2",
+      "title": "Extensibility"
+    },
+    {
+      "id": "extension-security-and-privacy",
+      "level": "3",
+      "title": "Security and Privacy"
+    },
+    {
+      "id": "naming",
+      "level": "3",
+      "title": "Naming"
+    },
+    {
+      "id": "unit",
+      "level": "3",
+      "title": "Unit"
+    },
+    {
+      "id": "high-vs-low-level",
+      "level": "3",
+      "title": "Exposing High-Level vs. Low-Level Sensors"
+    },
+    {
+      "id": "multiple-sensors",
+      "level": "3",
+      "title": "When is Enabling Multiple Sensors of the Same Type Not the Right Choice?"
+    },
+    {
+      "id": "definition-reqs",
+      "level": "3",
+      "title": "Definition Requirements"
+    },
+    {
+      "id": "extend-automation",
+      "level": "3",
+      "title": "Automation"
+    },
+    {
+      "id": "permission-api",
+      "level": "3",
+      "title": "Extending the Permission API"
+    },
+    {
+      "id": "feature-policy-api",
+      "level": "3",
+      "title": "Extending the Feature Policy API"
+    },
+    {
+      "id": "example-webidl",
+      "level": "3",
+      "title": "Example WebIDL"
+    },
+    {
+      "id": "acknowledgements",
+      "level": "2",
+      "title": "Acknowledgements"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformant-algorithms",
+      "level": "3",
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "conformance-classes",
+      "level": "3",
+      "title": "Conformance Classes"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    }
+  ]
+}

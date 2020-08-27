@@ -1,0 +1,273 @@
+{
+  "spec": {
+    "title": "Reporting API 1",
+    "url": "https://w3c.github.io/reporting/"
+  },
+  "headings": [
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Editor’s Draft, 19 August 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "guarantees",
+      "level": "3",
+      "title": "Guarantees"
+    },
+    {
+      "id": "examples",
+      "level": "3",
+      "title": "Examples"
+    },
+    {
+      "id": "generic-reporting",
+      "level": "2",
+      "title": "Generic Reporting Framework"
+    },
+    {
+      "id": "concept",
+      "level": "3",
+      "title": "Concepts"
+    },
+    {
+      "id": "concept-endpoints",
+      "level": "4",
+      "title": "Endpoints"
+    },
+    {
+      "id": "concept-report-type",
+      "level": "4",
+      "title": "Report Type"
+    },
+    {
+      "id": "concept-reports",
+      "level": "4",
+      "title": "Reports"
+    },
+    {
+      "id": "media-type",
+      "level": "3",
+      "title": "Media Type"
+    },
+    {
+      "id": "queue-report",
+      "level": "3",
+      "title": "Queue data as type for destination"
+    },
+    {
+      "id": "serialize-reports",
+      "level": "3",
+      "title": "Serialize Reports"
+    },
+    {
+      "id": "document-reporting",
+      "level": "2",
+      "title": "Document Centered Reporting"
+    },
+    {
+      "id": "document-configuration",
+      "level": "3",
+      "title": "Document configuration"
+    },
+    {
+      "id": "header",
+      "level": "3",
+      "title": "The Reporting-Endpoints HTTP Response Header Field"
+    },
+    {
+      "id": "process-header",
+      "level": "3",
+      "title": "Process reporting endpoints for response"
+    },
+    {
+      "id": "report-generation",
+      "level": "3",
+      "title": "Report Generation"
+    },
+    {
+      "id": "generate-report",
+      "level": "4",
+      "title": "Generate report of type with data"
+    },
+    {
+      "id": "report-delivery",
+      "level": "3",
+      "title": "Report Delivery"
+    },
+    {
+      "id": "send-reports",
+      "level": "4",
+      "title": "Send reports"
+    },
+    {
+      "id": "try-delivery",
+      "level": "4",
+      "title": "Attempt to deliver reports to endpoint"
+    },
+    {
+      "id": "observers",
+      "level": "2",
+      "title": "Reporting Observers"
+    },
+    {
+      "id": "interface-reporting-observer",
+      "level": "3",
+      "title": "Interface ReportingObserver"
+    },
+    {
+      "id": "notify-observers",
+      "level": "3",
+      "title": "Notify reporting observers on environment with report"
+    },
+    {
+      "id": "add-report",
+      "level": "3",
+      "title": "Add report to observer"
+    },
+    {
+      "id": "invoke-observers",
+      "level": "3",
+      "title": "Invoke reporting observers with notify list"
+    },
+    {
+      "id": "implementation",
+      "level": "2",
+      "title": "Implementation Considerations"
+    },
+    {
+      "id": "delivery",
+      "level": "3",
+      "title": "Delivery"
+    },
+    {
+      "id": "gc",
+      "level": "3",
+      "title": "Garbage Collection"
+    },
+    {
+      "id": "sample-reports",
+      "level": "2",
+      "title": "Sample Reports"
+    },
+    {
+      "id": "automation",
+      "level": "2",
+      "title": "Automation"
+    },
+    {
+      "id": "generate-test-report-command",
+      "level": "3",
+      "title": "Generate Test Report"
+    },
+    {
+      "id": "security",
+      "level": "2",
+      "title": "Security Considerations"
+    },
+    {
+      "id": "capability-urls",
+      "level": "3",
+      "title": "Capability URLs"
+    },
+    {
+      "id": "privacy",
+      "level": "2",
+      "title": "Privacy Considerations"
+    },
+    {
+      "id": "network-leakage",
+      "level": "3",
+      "title": "Network Leakage"
+    },
+    {
+      "id": "fingerprinting-clock-skew",
+      "level": "3",
+      "title": "Clock Skew"
+    },
+    {
+      "id": "correlation",
+      "level": "3",
+      "title": "Cross-origin correlation"
+    },
+    {
+      "id": "disable",
+      "level": "3",
+      "title": "Disabling Reporting"
+    },
+    {
+      "id": "iana-considerations",
+      "level": "2",
+      "title": "IANA Considerations"
+    },
+    {
+      "id": "header-field-registration",
+      "level": "3",
+      "title": "The Reporting-Endpoints Header"
+    },
+    {
+      "id": "media-type-registration",
+      "level": "3",
+      "title": "The application/reports+json Media Type"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "level": "2",
+      "title": "Issues Index"
+    }
+  ]
+}

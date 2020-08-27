@@ -1,0 +1,648 @@
+{
+  "spec": {
+    "title": "Streams Standard",
+    "url": "https://streams.spec.whatwg.org/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Streams"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "model",
+      "level": "2",
+      "title": "Model"
+    },
+    {
+      "id": "rs-model",
+      "level": "3",
+      "title": "Readable streams"
+    },
+    {
+      "id": "ws-model",
+      "level": "3",
+      "title": "Writable streams"
+    },
+    {
+      "id": "ts-model",
+      "level": "3",
+      "title": "Transform streams"
+    },
+    {
+      "id": "pipe-chains",
+      "level": "3",
+      "title": "Pipe chains and backpressure"
+    },
+    {
+      "id": "queuing-strategies",
+      "level": "3",
+      "title": "Internal queues and queuing strategies"
+    },
+    {
+      "id": "locking",
+      "level": "3",
+      "title": "Locking"
+    },
+    {
+      "id": "conventions",
+      "level": "2",
+      "title": "Conventions"
+    },
+    {
+      "id": "rs",
+      "level": "2",
+      "title": "Readable streams"
+    },
+    {
+      "id": "rs-intro",
+      "level": "3",
+      "title": "Using readable streams"
+    },
+    {
+      "id": "rs-class",
+      "level": "3",
+      "title": "The ReadableStream class"
+    },
+    {
+      "id": "rs-class-definition",
+      "level": "4",
+      "title": "Interface definition"
+    },
+    {
+      "id": "rs-internal-slots",
+      "level": "4",
+      "title": "Internal slots"
+    },
+    {
+      "id": "underlying-source-api",
+      "level": "4",
+      "title": "The underlying source API"
+    },
+    {
+      "id": "rs-prototype",
+      "level": "4",
+      "title": "Constructor, methods, and properties"
+    },
+    {
+      "id": "rs-asynciterator",
+      "level": "4",
+      "title": "Asynchronous iteration"
+    },
+    {
+      "id": "rs-transfer",
+      "level": "4",
+      "title": "Transfer via postMessage()"
+    },
+    {
+      "id": "generic-reader-mixin",
+      "level": "3",
+      "title": "The ReadableStreamGenericReader mixin"
+    },
+    {
+      "id": "generic-reader-mixin-definition",
+      "level": "4",
+      "title": "Mixin definition"
+    },
+    {
+      "id": "generic-reader-internal-slots",
+      "level": "4",
+      "title": "Internal slots"
+    },
+    {
+      "id": "generic-reader-prototype",
+      "level": "4",
+      "title": "Methods and properties"
+    },
+    {
+      "id": "default-reader-class",
+      "level": "3",
+      "title": "The ReadableStreamDefaultReader class"
+    },
+    {
+      "id": "default-reader-class-definition",
+      "level": "4",
+      "title": "Interface definition"
+    },
+    {
+      "id": "default-reader-internal-slots",
+      "level": "4",
+      "title": "Internal slots"
+    },
+    {
+      "id": "default-reader-prototype",
+      "level": "4",
+      "title": "Constructor, methods, and properties"
+    },
+    {
+      "id": "byob-reader-class",
+      "level": "3",
+      "title": "The ReadableStreamBYOBReader class"
+    },
+    {
+      "id": "byob-reader-class-definition",
+      "level": "4",
+      "title": "Interface definition"
+    },
+    {
+      "id": "byob-reader-internal-slots",
+      "level": "4",
+      "title": "Internal slots"
+    },
+    {
+      "id": "byob-reader-prototype",
+      "level": "4",
+      "title": "Constructor, methods, and properties"
+    },
+    {
+      "id": "rs-default-controller-class",
+      "level": "3",
+      "title": "The ReadableStreamDefaultController class"
+    },
+    {
+      "id": "rs-default-controller-class-definition",
+      "level": "4",
+      "title": "Interface definition"
+    },
+    {
+      "id": "rs-default-controller-internal-slots",
+      "level": "4",
+      "title": "Internal slots"
+    },
+    {
+      "id": "rs-default-controller-prototype",
+      "level": "4",
+      "title": "Methods and properties"
+    },
+    {
+      "id": "rs-default-controller-internal-methods",
+      "level": "4",
+      "title": "Internal methods"
+    },
+    {
+      "id": "rbs-controller-class",
+      "level": "3",
+      "title": "The ReadableByteStreamController class"
+    },
+    {
+      "id": "rbs-controller-class-definition",
+      "level": "4",
+      "title": "Interface definition"
+    },
+    {
+      "id": "rbs-controller-internal-slots",
+      "level": "4",
+      "title": "Internal slots"
+    },
+    {
+      "id": "rbs-controller-prototype",
+      "level": "4",
+      "title": "Methods and properties"
+    },
+    {
+      "id": "rbs-controller-internal-methods",
+      "level": "4",
+      "title": "Internal methods"
+    },
+    {
+      "id": "rs-byob-request-class",
+      "level": "3",
+      "title": "The ReadableStreamBYOBRequest class"
+    },
+    {
+      "id": "rs-byob-request-class-definition",
+      "level": "4",
+      "title": "Interface definition"
+    },
+    {
+      "id": "rs-byob-request-internal-slots",
+      "level": "4",
+      "title": "Internal slots"
+    },
+    {
+      "id": "rs-byob-request-prototype",
+      "level": "4",
+      "title": "Methods and properties"
+    },
+    {
+      "id": "rs-all-abstract-ops",
+      "level": "3",
+      "title": "Abstract operations"
+    },
+    {
+      "id": "rs-abstract-ops",
+      "level": "4",
+      "title": "Working with readable streams"
+    },
+    {
+      "id": "rs-abstract-ops-used-by-controllers",
+      "level": "4",
+      "title": "Interfacing with controllers"
+    },
+    {
+      "id": "rs-reader-abstract-ops",
+      "level": "4",
+      "title": "Readers"
+    },
+    {
+      "id": "rs-default-controller-abstract-ops",
+      "level": "4",
+      "title": "Default controllers"
+    },
+    {
+      "id": "rbs-controller-abstract-ops",
+      "level": "4",
+      "title": "Byte stream controllers"
+    },
+    {
+      "id": "ws",
+      "level": "2",
+      "title": "Writable streams"
+    },
+    {
+      "id": "ws-intro",
+      "level": "3",
+      "title": "Using writable streams"
+    },
+    {
+      "id": "ws-class",
+      "level": "3",
+      "title": "The WritableStream class"
+    },
+    {
+      "id": "ws-class-definition",
+      "level": "4",
+      "title": "Interface definition"
+    },
+    {
+      "id": "ws-internal-slots",
+      "level": "4",
+      "title": "Internal slots"
+    },
+    {
+      "id": "underlying-sink-api",
+      "level": "4",
+      "title": "The underlying sink API"
+    },
+    {
+      "id": "ws-prototype",
+      "level": "4",
+      "title": "Constructor, methods, and properties"
+    },
+    {
+      "id": "ws-transfer",
+      "level": "4",
+      "title": "Transfer via postMessage()"
+    },
+    {
+      "id": "default-writer-class",
+      "level": "3",
+      "title": "The WritableStreamDefaultWriter class"
+    },
+    {
+      "id": "default-writer-class-definition",
+      "level": "4",
+      "title": "Interface definition"
+    },
+    {
+      "id": "default-writer-internal-slots",
+      "level": "4",
+      "title": "Internal slots"
+    },
+    {
+      "id": "default-writer-prototype",
+      "level": "4",
+      "title": "Constructor, methods, and properties"
+    },
+    {
+      "id": "ws-default-controller-class",
+      "level": "3",
+      "title": "The WritableStreamDefaultController class"
+    },
+    {
+      "id": "ws-default-controller-class-definition",
+      "level": "4",
+      "title": "Interface definition"
+    },
+    {
+      "id": "ws-default-controller-internal-slots",
+      "level": "4",
+      "title": "Internal slots"
+    },
+    {
+      "id": "ws-default-controller-prototype",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "ws-default-controller-internal-methods",
+      "level": "4",
+      "title": "Internal methods"
+    },
+    {
+      "id": "ws-all-abstract-ops",
+      "level": "3",
+      "title": "Abstract operations"
+    },
+    {
+      "id": "ws-abstract-ops",
+      "level": "4",
+      "title": "Working with writable streams"
+    },
+    {
+      "id": "ws-abstract-ops-used-by-controllers",
+      "level": "4",
+      "title": "Interfacing with controllers"
+    },
+    {
+      "id": "ws-writer-abstract-ops",
+      "level": "4",
+      "title": "Writers"
+    },
+    {
+      "id": "ws-default-controller-abstract-ops",
+      "level": "4",
+      "title": "Default controllers"
+    },
+    {
+      "id": "ts",
+      "level": "2",
+      "title": "Transform streams"
+    },
+    {
+      "id": "ts-intro",
+      "level": "3",
+      "title": "Using transform streams"
+    },
+    {
+      "id": "ts-class",
+      "level": "3",
+      "title": "The TransformStream class"
+    },
+    {
+      "id": "ts-class-definition",
+      "level": "4",
+      "title": "Interface definition"
+    },
+    {
+      "id": "ts-internal-slots",
+      "level": "4",
+      "title": "Internal slots"
+    },
+    {
+      "id": "transformer-api",
+      "level": "4",
+      "title": "The transformer API"
+    },
+    {
+      "id": "ts-prototype",
+      "level": "4",
+      "title": "Constructor and properties"
+    },
+    {
+      "id": "ts-transfer",
+      "level": "4",
+      "title": "Transfer via postMessage()"
+    },
+    {
+      "id": "ts-default-controller-class",
+      "level": "3",
+      "title": "The TransformStreamDefaultController class"
+    },
+    {
+      "id": "ts-default-controller-class-definition",
+      "level": "4",
+      "title": "Interface definition"
+    },
+    {
+      "id": "ts-default-controller-internal-slots",
+      "level": "4",
+      "title": "Internal slots"
+    },
+    {
+      "id": "ts-default-controller-prototype",
+      "level": "4",
+      "title": "Methods and properties"
+    },
+    {
+      "id": "ts-all-abstract-ops",
+      "level": "3",
+      "title": "Abstract operations"
+    },
+    {
+      "id": "ts-abstract-ops",
+      "level": "4",
+      "title": "Working with transform streams"
+    },
+    {
+      "id": "ts-default-controller-abstract-ops",
+      "level": "4",
+      "title": "Default controllers"
+    },
+    {
+      "id": "ts-default-sink-abstract-ops",
+      "level": "4",
+      "title": "Default sinks"
+    },
+    {
+      "id": "ts-default-source-abstract-ops",
+      "level": "4",
+      "title": "Default sources"
+    },
+    {
+      "id": "qs",
+      "level": "2",
+      "title": "Queuing strategies"
+    },
+    {
+      "id": "qs-api",
+      "level": "3",
+      "title": "The queuing strategy API"
+    },
+    {
+      "id": "blqs-class",
+      "level": "3",
+      "title": "The ByteLengthQueuingStrategy class"
+    },
+    {
+      "id": "blqs-class-definition",
+      "level": "4",
+      "title": "Interface definition"
+    },
+    {
+      "id": "blqs-internal-slots",
+      "level": "4",
+      "title": "Internal slots"
+    },
+    {
+      "id": "blqs-prototype",
+      "level": "4",
+      "title": "Constructor and properties"
+    },
+    {
+      "id": "cqs-class",
+      "level": "3",
+      "title": "The CountQueuingStrategy class"
+    },
+    {
+      "id": "cqs-class-definition",
+      "level": "4",
+      "title": "Interface definition"
+    },
+    {
+      "id": "cqs-internal-slots",
+      "level": "4",
+      "title": "Internal slots"
+    },
+    {
+      "id": "cqs-prototype",
+      "level": "4",
+      "title": "Constructor and properties"
+    },
+    {
+      "id": "qs-abstract-ops",
+      "level": "3",
+      "title": "Abstract operations"
+    },
+    {
+      "id": "other-stuff",
+      "level": "2",
+      "title": "Supporting abstract operations"
+    },
+    {
+      "id": "queue-with-sizes",
+      "level": "3",
+      "title": "Queue-with-sizes"
+    },
+    {
+      "id": "transferrable-streams",
+      "level": "3",
+      "title": "Transferable streams"
+    },
+    {
+      "id": "misc-abstract-ops",
+      "level": "3",
+      "title": "Miscellaneous"
+    },
+    {
+      "id": "creating-examples",
+      "level": "2",
+      "title": "Examples of creating streams"
+    },
+    {
+      "id": "example-rs-push-no-backpressure",
+      "level": "3",
+      "title": "A readable stream with an underlying push source (no\nbackpressure support)"
+    },
+    {
+      "id": "example-rs-push-backpressure",
+      "level": "3",
+      "title": "A readable stream with an underlying push source and\nbackpressure support"
+    },
+    {
+      "id": "example-rbs-push",
+      "level": "3",
+      "title": "A readable byte stream with an underlying push source (no backpressure\nsupport)"
+    },
+    {
+      "id": "example-rs-pull",
+      "level": "3",
+      "title": "A readable stream with an underlying pull source"
+    },
+    {
+      "id": "example-rbs-pull",
+      "level": "3",
+      "title": "A readable byte stream with an underlying pull source"
+    },
+    {
+      "id": "example-ws-no-backpressure",
+      "level": "3",
+      "title": "A writable stream with no backpressure or success signals"
+    },
+    {
+      "id": "example-ws-backpressure",
+      "level": "3",
+      "title": "A writable stream with backpressure and success signals"
+    },
+    {
+      "id": "example-both",
+      "level": "3",
+      "title": "A { readable, writable } stream pair wrapping the same underlying\nresource"
+    },
+    {
+      "id": "example-ts-lipfuzz",
+      "level": "3",
+      "title": "A transform stream that replaces template tags"
+    },
+    {
+      "id": "example-ts-sync-mapper",
+      "level": "3",
+      "title": "A transform stream created from a sync mapper function"
+    },
+    {
+      "id": "example-identity-transform-usages",
+      "level": "3",
+      "title": "Using an identity transform stream as a primitive to\ncreate new readable streams"
+    },
+    {
+      "id": "acks",
+      "level": "2",
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    }
+  ]
+}

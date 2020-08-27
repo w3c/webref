@@ -1,0 +1,353 @@
+{
+  "spec": {
+    "title": "File API",
+    "url": "https://w3c.github.io/FileAPI/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "File API"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Editor’s Draft, 18 August 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "terminology",
+      "level": "2",
+      "title": "Terminology and Algorithms"
+    },
+    {
+      "id": "blob-section",
+      "level": "2",
+      "title": "The Blob Interface and Binary Data"
+    },
+    {
+      "id": "constructorBlob",
+      "level": "3",
+      "title": "Constructors"
+    },
+    {
+      "id": "constructorParams",
+      "level": "4",
+      "title": "Constructor Parameters"
+    },
+    {
+      "id": "attributes-blob",
+      "level": "3",
+      "title": "Attributes"
+    },
+    {
+      "id": "methodsandparams-blob",
+      "level": "3",
+      "title": "Methods and Parameters"
+    },
+    {
+      "id": "slice-method-algo",
+      "level": "4",
+      "title": "The slice() method"
+    },
+    {
+      "id": "stream-method-algo",
+      "level": "4",
+      "title": "The stream() method"
+    },
+    {
+      "id": "text-method-algo",
+      "level": "4",
+      "title": "The text() method"
+    },
+    {
+      "id": "arraybuffer-method-algo",
+      "level": "4",
+      "title": "The arrayBuffer() method"
+    },
+    {
+      "id": "file-section",
+      "level": "2",
+      "title": "The File Interface"
+    },
+    {
+      "id": "file-constructor",
+      "level": "3",
+      "title": "Constructor"
+    },
+    {
+      "id": "file-constructor-params",
+      "level": "4",
+      "title": "Constructor Parameters"
+    },
+    {
+      "id": "file-attrs",
+      "level": "3",
+      "title": "Attributes"
+    },
+    {
+      "id": "filelist-section",
+      "level": "2",
+      "title": "The FileList Interface"
+    },
+    {
+      "id": "attributes-filelist",
+      "level": "3",
+      "title": "Attributes"
+    },
+    {
+      "id": "filelist-methods-params",
+      "level": "3",
+      "title": "Methods and Parameters"
+    },
+    {
+      "id": "reading-data-section",
+      "level": "2",
+      "title": "Reading Data"
+    },
+    {
+      "id": "blobreader-task-source",
+      "level": "3",
+      "title": "The File Reading Task Source"
+    },
+    {
+      "id": "APIASynch",
+      "level": "3",
+      "title": "The FileReader API"
+    },
+    {
+      "id": "event-handler-attributes-section",
+      "level": "4",
+      "title": "Event Handler Content Attributes"
+    },
+    {
+      "id": "blobreader-state",
+      "level": "4",
+      "title": "FileReader States"
+    },
+    {
+      "id": "reading-a-file",
+      "level": "4",
+      "title": "Reading a File or Blob"
+    },
+    {
+      "id": "readAsDataURL",
+      "level": "5",
+      "title": "The readAsDataURL() method"
+    },
+    {
+      "id": "readAsDataText",
+      "level": "5",
+      "title": "The readAsText() method"
+    },
+    {
+      "id": "readAsArrayBuffer",
+      "level": "5",
+      "title": "The readAsArrayBuffer()"
+    },
+    {
+      "id": "readAsBinaryString",
+      "level": "5",
+      "title": "The readAsBinaryString() method"
+    },
+    {
+      "id": "abort",
+      "level": "5",
+      "title": "The abort() method"
+    },
+    {
+      "id": "packaging-data",
+      "level": "3",
+      "title": "Packaging data"
+    },
+    {
+      "id": "events",
+      "level": "3",
+      "title": "Events"
+    },
+    {
+      "id": "event-summary",
+      "level": "4",
+      "title": "Event Summary"
+    },
+    {
+      "id": "eventInvariants",
+      "level": "4",
+      "title": "Summary of Event Invariants"
+    },
+    {
+      "id": "readingOnThreads",
+      "level": "3",
+      "title": "Reading on Threads"
+    },
+    {
+      "id": "FileReaderSync",
+      "level": "4",
+      "title": "The FileReaderSync API"
+    },
+    {
+      "id": "filereadersyncConstrctr",
+      "level": "5",
+      "title": "Constructors"
+    },
+    {
+      "id": "readAsTextSync",
+      "level": "5",
+      "title": "The readAsText()"
+    },
+    {
+      "id": "readAsDataURLSync-section",
+      "level": "5",
+      "title": "The readAsDataURL() method"
+    },
+    {
+      "id": "readAsArrayBufferSyncSection",
+      "level": "5",
+      "title": "The readAsArrayBuffer() method"
+    },
+    {
+      "id": "readAsBinaryStringSyncSection",
+      "level": "5",
+      "title": "The readAsBinaryString() method"
+    },
+    {
+      "id": "ErrorAndException",
+      "level": "2",
+      "title": "Errors and Exceptions"
+    },
+    {
+      "id": "dfn-error-codes",
+      "level": "3",
+      "title": "Throwing an Exception or Returning an Error"
+    },
+    {
+      "id": "url",
+      "level": "2",
+      "title": "A URL for Blob and MediaSource reference"
+    },
+    {
+      "id": "url-intro",
+      "level": "3",
+      "title": "Introduction"
+    },
+    {
+      "id": "url-model",
+      "level": "3",
+      "title": "Model"
+    },
+    {
+      "id": "requestResponseModel",
+      "level": "3",
+      "title": "Dereferencing Model for blob URLs"
+    },
+    {
+      "id": "originOfBlobURL",
+      "level": "4",
+      "title": "Origin of blob URLs"
+    },
+    {
+      "id": "lifeTime",
+      "level": "4",
+      "title": "Lifetime of blob URLs"
+    },
+    {
+      "id": "creating-revoking",
+      "level": "3",
+      "title": "Creating and Revoking a blob URL"
+    },
+    {
+      "id": "examplesOfCreationRevocation",
+      "level": "4",
+      "title": "Examples of blob URL Creation and Revocation"
+    },
+    {
+      "id": "security-discussion",
+      "level": "2",
+      "title": "Security and Privacy Considerations"
+    },
+    {
+      "id": "requirements",
+      "level": "2",
+      "title": "Requirements and Use Cases"
+    },
+    {
+      "id": "acknowledgements-section",
+      "level": "2",
+      "title": "Acknowledgements"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformant-algorithms",
+      "level": "3",
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "level": "2",
+      "title": "Issues Index"
+    }
+  ]
+}

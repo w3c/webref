@@ -1,0 +1,80 @@
+{
+  "spec": {
+    "title": "WebXR Gamepads Module - Level 1",
+    "url": "https://immersive-web.github.io/webxr-gamepads-module/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "GamepadMappingType": {
+        "type": "enum",
+        "name": "GamepadMappingType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": ""
+          },
+          {
+            "type": "enum-value",
+            "value": "standard"
+          },
+          {
+            "type": "enum-value",
+            "value": "xr-standard"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "XRInputSource": [
+        {
+          "type": "interface",
+          "name": "XRInputSource",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "gamepad",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "Gamepad"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "XRInputSource": [
+        "Gamepad"
+      ]
+    },
+    "externalDependencies": [
+      "XRInputSource",
+      "Gamepad"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

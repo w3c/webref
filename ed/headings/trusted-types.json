@@ -1,0 +1,398 @@
+{
+  "spec": {
+    "title": "Trusted Types",
+    "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Trusted Types"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Editor’s Draft, 17 August 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "goals",
+      "level": "3",
+      "title": "Goals"
+    },
+    {
+      "id": "non-goals",
+      "level": "3",
+      "title": "Non-goals"
+    },
+    {
+      "id": "use-cases",
+      "level": "3",
+      "title": "Use cases"
+    },
+    {
+      "id": "framework",
+      "level": "2",
+      "title": "Framework"
+    },
+    {
+      "id": "injection-sinks",
+      "level": "3",
+      "title": "Injection sinks"
+    },
+    {
+      "id": "html-injection-sinks",
+      "level": "4",
+      "title": "HTML injection sinks"
+    },
+    {
+      "id": "dom-xss-injection-sinks",
+      "level": "4",
+      "title": "DOM XSS injection sinks"
+    },
+    {
+      "id": "trusted-types",
+      "level": "3",
+      "title": "Trusted Types"
+    },
+    {
+      "id": "trusted-html",
+      "level": "4",
+      "title": "TrustedHTML"
+    },
+    {
+      "id": "trusted-script",
+      "level": "4",
+      "title": "TrustedScript"
+    },
+    {
+      "id": "trused-script-url",
+      "level": "4",
+      "title": "TrustedScriptURL"
+    },
+    {
+      "id": "policies-hdr",
+      "level": "3",
+      "title": "Policies"
+    },
+    {
+      "id": "trusted-type-policy-factory",
+      "level": "4",
+      "title": "TrustedTypePolicyFactory"
+    },
+    {
+      "id": "trusted-type-policy",
+      "level": "4",
+      "title": "TrustedTypePolicy"
+    },
+    {
+      "id": "trusted-type-policy-options",
+      "level": "4",
+      "title": "TrustedTypePolicyOptions"
+    },
+    {
+      "id": "default-policy-hdr",
+      "level": "4",
+      "title": "Default policy"
+    },
+    {
+      "id": "enforcement-hdr",
+      "level": "3",
+      "title": "Enforcement"
+    },
+    {
+      "id": "content-security-policy-hdr",
+      "level": "4",
+      "title": "Content Security Policy"
+    },
+    {
+      "id": "algorithms",
+      "level": "2",
+      "title": "Algorithms"
+    },
+    {
+      "id": "create-trusted-type-policy-algorithm",
+      "level": "3",
+      "title": "Create a Trusted Type Policy"
+    },
+    {
+      "id": "create-a-trusted-type-algorithm",
+      "level": "3",
+      "title": "Create a Trusted Type"
+    },
+    {
+      "id": "get-trusted-type-compliant-string-algorithm",
+      "level": "3",
+      "title": "Get Trusted Type compliant string"
+    },
+    {
+      "id": "process-value-with-a-default-policy-algorithm",
+      "level": "3",
+      "title": "Process value with a default policy"
+    },
+    {
+      "id": "prepare-script-url-and-text",
+      "level": "3",
+      "title": "Prepare the script URL and text"
+    },
+    {
+      "id": "integrations",
+      "level": "2",
+      "title": "Integrations"
+    },
+    {
+      "id": "webidl-integration",
+      "level": "3",
+      "title": "Integration with WebIDL"
+    },
+    {
+      "id": "webidl-string-context-xattr",
+      "level": "4",
+      "title": "[StringContext]"
+    },
+    {
+      "id": "webidl-applicable-to-types",
+      "level": "4",
+      "title": "Extended attributes applicable to types"
+    },
+    {
+      "id": "webidl-type-conversion",
+      "level": "4",
+      "title": "Type conversion"
+    },
+    {
+      "id": "webidl-validate-the-string-in-context",
+      "level": "4",
+      "title": "Validate the string in context"
+    },
+    {
+      "id": "integration-with-html",
+      "level": "3",
+      "title": "Integration with HTML"
+    },
+    {
+      "id": "extensions-to-the-window-interface",
+      "level": "4",
+      "title": "Extensions to the Window interface"
+    },
+    {
+      "id": "extensions-to-the-document-interface",
+      "level": "4",
+      "title": "Extensions to the Document interface"
+    },
+    {
+      "id": "enforcement-in-scripts",
+      "level": "4",
+      "title": "Enforcement for scripts"
+    },
+    {
+      "id": "slots-with-trusted-values",
+      "level": "5",
+      "title": "Slots with trusted values"
+    },
+    {
+      "id": "setting-slot-values",
+      "level": "5",
+      "title": "Setting slot values"
+    },
+    {
+      "id": "slot-value-verification",
+      "level": "5",
+      "title": "Slot value verification"
+    },
+    {
+      "id": "enforcement-in-sinks",
+      "level": "4",
+      "title": "Enforcement in element attributes"
+    },
+    {
+      "id": "enforcement-in-timer-functions",
+      "level": "4",
+      "title": "Enforcement in timer functions"
+    },
+    {
+      "id": "enforcement-in-event-handler-content-attributes",
+      "level": "4",
+      "title": "Enforcement in event handler content attributes"
+    },
+    {
+      "id": "html-validate-the-string-in-context",
+      "level": "4",
+      "title": "Validate the string in context"
+    },
+    {
+      "id": "html-workers",
+      "level": "4",
+      "title": "Web Workers"
+    },
+    {
+      "id": "sw-integration",
+      "level": "3",
+      "title": "Integration with Service Workers"
+    },
+    {
+      "id": "integration-with-svg",
+      "level": "3",
+      "title": "Integration with SVG"
+    },
+    {
+      "id": "integration-with-dom",
+      "level": "3",
+      "title": "Integration with DOM"
+    },
+    {
+      "id": "integration-with-dom-parsing",
+      "level": "3",
+      "title": "Integration with DOM Parsing"
+    },
+    {
+      "id": "integration-with-content-security-policy",
+      "level": "3",
+      "title": "Integration with Content Security Policy"
+    },
+    {
+      "id": "require-trusted-types-for-csp-directive",
+      "level": "4",
+      "title": "require-trusted-types-for directive"
+    },
+    {
+      "id": "require-trusted-types-for-pre-navigation-check",
+      "level": "5",
+      "title": "require-trusted-types-for Pre-Navigation check"
+    },
+    {
+      "id": "trusted-types-csp-directive",
+      "level": "4",
+      "title": "trusted-types directive"
+    },
+    {
+      "id": "should-block-sink-type-mismatch",
+      "level": "4",
+      "title": "Should sink type mismatch violation be blocked by Content Security Policy?"
+    },
+    {
+      "id": "should-block-create-policy",
+      "level": "4",
+      "title": "Should Trusted Type policy creation be blocked by Content Security Policy?"
+    },
+    {
+      "id": "csp-violation-object-hdr",
+      "level": "4",
+      "title": "Violation object changes"
+    },
+    {
+      "id": "csp-eval",
+      "level": "4",
+      "title": "Support for eval(TrustedScript)"
+    },
+    {
+      "id": "security-considerations",
+      "level": "2",
+      "title": "Security Considerations"
+    },
+    {
+      "id": "cross-document-vectors",
+      "level": "3",
+      "title": "Cross-document vectors"
+    },
+    {
+      "id": "deprecated-features",
+      "level": "3",
+      "title": "Deprecated features"
+    },
+    {
+      "id": "plugins",
+      "level": "3",
+      "title": "Plugin navigation"
+    },
+    {
+      "id": "best-practices-for-policy-design",
+      "level": "3",
+      "title": "Best practices for policy design"
+    },
+    {
+      "id": "implementation-considerations",
+      "level": "2",
+      "title": "Implementation Considerations"
+    },
+    {
+      "id": "vendor-specific-extensions-and-addons",
+      "level": "3",
+      "title": "Vendor-specific Extensions and Addons"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformant-algorithms",
+      "level": "3",
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "level": "2",
+      "title": "Issues Index"
+    }
+  ]
+}

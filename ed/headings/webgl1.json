@@ -1,0 +1,488 @@
+{
+  "spec": {
+    "title": "WebGL Specification",
+    "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+  },
+  "headings": [
+    {
+      "id": "1",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "1.1",
+      "level": "3",
+      "title": "Conventions"
+    },
+    {
+      "id": "2",
+      "level": "2",
+      "title": "Context Creation and Drawing Buffer Presentation"
+    },
+    {
+      "id": "2.1",
+      "level": "3",
+      "title": "Context Creation"
+    },
+    {
+      "id": "2.2",
+      "level": "3",
+      "title": "The Drawing Buffer"
+    },
+    {
+      "id": "2.3",
+      "level": "3",
+      "title": "The WebGL Viewport"
+    },
+    {
+      "id": "2.4",
+      "level": "3",
+      "title": "Premultiplied Alpha, Canvas APIs and texImage2D"
+    },
+    {
+      "id": "3",
+      "level": "2",
+      "title": "WebGL Resources"
+    },
+    {
+      "id": "4",
+      "level": "2",
+      "title": "Security"
+    },
+    {
+      "id": "4.1",
+      "level": "3",
+      "title": "Resource Restrictions"
+    },
+    {
+      "id": "4.2",
+      "level": "3",
+      "title": "Origin Restrictions"
+    },
+    {
+      "id": "4.3",
+      "level": "3",
+      "title": "Supported GLSL Constructs"
+    },
+    {
+      "id": "4.4",
+      "level": "3",
+      "title": "Defense Against Denial of Service"
+    },
+    {
+      "id": "4.5",
+      "level": "3",
+      "title": "Out-of-Range Array Accesses"
+    },
+    {
+      "id": "5",
+      "level": "2",
+      "title": "DOM Interfaces"
+    },
+    {
+      "id": "5.1",
+      "level": "3",
+      "title": "Types"
+    },
+    {
+      "id": "5.2",
+      "level": "3",
+      "title": "WebGLContextAttributes"
+    },
+    {
+      "id": "5.2.1",
+      "level": "4",
+      "title": "Context creation parameters"
+    },
+    {
+      "id": "5.3",
+      "level": "3",
+      "title": "WebGLObject"
+    },
+    {
+      "id": "5.4",
+      "level": "3",
+      "title": "WebGLBuffer"
+    },
+    {
+      "id": "5.5",
+      "level": "3",
+      "title": "WebGLFramebuffer"
+    },
+    {
+      "id": "5.6",
+      "level": "3",
+      "title": "WebGLProgram"
+    },
+    {
+      "id": "5.7",
+      "level": "3",
+      "title": "WebGLRenderbuffer"
+    },
+    {
+      "id": "5.8",
+      "level": "3",
+      "title": "WebGLShader"
+    },
+    {
+      "id": "5.9",
+      "level": "3",
+      "title": "WebGLTexture"
+    },
+    {
+      "id": "5.10",
+      "level": "3",
+      "title": "WebGLUniformLocation"
+    },
+    {
+      "id": "5.11",
+      "level": "3",
+      "title": "WebGLActiveInfo"
+    },
+    {
+      "id": "5.11.1",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "5.12",
+      "level": "3",
+      "title": "WebGLShaderPrecisionFormat"
+    },
+    {
+      "id": "5.12.1",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "5.13",
+      "level": "3",
+      "title": "ArrayBuffer and Typed Arrays"
+    },
+    {
+      "id": "5.14",
+      "level": "3",
+      "title": "The WebGL context"
+    },
+    {
+      "id": "5.14.1",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "5.14.2",
+      "level": "4",
+      "title": "Getting information about the context"
+    },
+    {
+      "id": "5.14.3",
+      "level": "4",
+      "title": "Setting and getting state"
+    },
+    {
+      "id": "5.14.4",
+      "level": "4",
+      "title": "Viewing and clipping"
+    },
+    {
+      "id": "5.14.5",
+      "level": "4",
+      "title": "Buffer objects"
+    },
+    {
+      "id": "5.14.6",
+      "level": "4",
+      "title": "Framebuffer objects"
+    },
+    {
+      "id": "5.14.7",
+      "level": "4",
+      "title": "Renderbuffer objects"
+    },
+    {
+      "id": "5.14.8",
+      "level": "4",
+      "title": "Texture objects"
+    },
+    {
+      "id": "5.14.9",
+      "level": "4",
+      "title": "Programs and Shaders"
+    },
+    {
+      "id": "5.14.10",
+      "level": "4",
+      "title": "Uniforms and attributes"
+    },
+    {
+      "id": "5.14.11",
+      "level": "4",
+      "title": "Writing to the drawing buffer"
+    },
+    {
+      "id": "5.14.12",
+      "level": "4",
+      "title": "Reading back pixels"
+    },
+    {
+      "id": "5.14.13",
+      "level": "4",
+      "title": "Detecting context lost events"
+    },
+    {
+      "id": "5.14.14",
+      "level": "4",
+      "title": "Detecting and enabling extensions"
+    },
+    {
+      "id": "5.15",
+      "level": "3",
+      "title": "WebGLContextEvent"
+    },
+    {
+      "id": "5.15.1",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "5.15.2",
+      "level": "4",
+      "title": "The Context Lost Event"
+    },
+    {
+      "id": "5.15.3",
+      "level": "4",
+      "title": "The Context Restored Event"
+    },
+    {
+      "id": "5.15.4",
+      "level": "4",
+      "title": "The Context Creation Error Event"
+    },
+    {
+      "id": "6",
+      "level": "2",
+      "title": "Differences Between WebGL and OpenGL ES 2.0"
+    },
+    {
+      "id": "6.1",
+      "level": "3",
+      "title": "Buffer Object Binding"
+    },
+    {
+      "id": "6.2",
+      "level": "3",
+      "title": "No Client Side Arrays"
+    },
+    {
+      "id": "6.3",
+      "level": "3",
+      "title": "No Default Textures"
+    },
+    {
+      "id": "6.4",
+      "level": "3",
+      "title": "No Shader Binaries"
+    },
+    {
+      "id": "6.5",
+      "level": "3",
+      "title": "Buffer Offset and Stride Requirements"
+    },
+    {
+      "id": "6.6",
+      "level": "3",
+      "title": "Enabled Vertex Attributes and Range Checking"
+    },
+    {
+      "id": "6.7",
+      "level": "3",
+      "title": "Out-of-bounds fetches from the index buffer"
+    },
+    {
+      "id": "6.8",
+      "level": "3",
+      "title": "Framebuffer Object Attachments"
+    },
+    {
+      "id": "6.9",
+      "level": "3",
+      "title": "Texture Upload Width and Height"
+    },
+    {
+      "id": "6.10",
+      "level": "3",
+      "title": "Pixel Storage Parameters"
+    },
+    {
+      "id": "6.11",
+      "level": "3",
+      "title": "Reading Pixels Outside the Framebuffer"
+    },
+    {
+      "id": "6.12",
+      "level": "3",
+      "title": "Stencil Separate Mask and Reference Value"
+    },
+    {
+      "id": "6.13",
+      "level": "3",
+      "title": "Vertex Attribute Data Stride"
+    },
+    {
+      "id": "6.14",
+      "level": "3",
+      "title": "Viewport Depth Range"
+    },
+    {
+      "id": "6.15",
+      "level": "3",
+      "title": "Blending With Constant Color"
+    },
+    {
+      "id": "6.16",
+      "level": "3",
+      "title": "Fixed point support"
+    },
+    {
+      "id": "6.17",
+      "level": "3",
+      "title": "GLSL Constructs"
+    },
+    {
+      "id": "6.18",
+      "level": "3",
+      "title": "Extension Queries"
+    },
+    {
+      "id": "6.19",
+      "level": "3",
+      "title": "Compressed Texture Support"
+    },
+    {
+      "id": "6.20",
+      "level": "3",
+      "title": "Maximum GLSL Token Size"
+    },
+    {
+      "id": "6.21",
+      "level": "3",
+      "title": "Characters Outside the GLSL Source Character Set"
+    },
+    {
+      "id": "6.22",
+      "level": "3",
+      "title": "Maximum Nesting of Structures in GLSL Shaders"
+    },
+    {
+      "id": "6.23",
+      "level": "3",
+      "title": "Maximum Uniform and Attribute Location Lengths"
+    },
+    {
+      "id": "6.24",
+      "level": "3",
+      "title": "String Length Queries"
+    },
+    {
+      "id": "6.25",
+      "level": "3",
+      "title": "Texture Type in TexSubImage2D Calls"
+    },
+    {
+      "id": "6.26",
+      "level": "3",
+      "title": "Packing Restrictions for Uniforms and Varyings"
+    },
+    {
+      "id": "6.27",
+      "level": "3",
+      "title": "Feedback Loops Between Textures and the Framebuffer"
+    },
+    {
+      "id": "6.28",
+      "level": "3",
+      "title": "Reading From a Missing Attachment"
+    },
+    {
+      "id": "6.29",
+      "level": "3",
+      "title": "Drawing To a Missing Attachment"
+    },
+    {
+      "id": "6.30",
+      "level": "3",
+      "title": "NaN Line Width"
+    },
+    {
+      "id": "6.31",
+      "level": "3",
+      "title": "Attribute Aliasing"
+    },
+    {
+      "id": "6.32",
+      "level": "3",
+      "title": "Initial value for gl_Position"
+    },
+    {
+      "id": "6.33",
+      "level": "3",
+      "title": "GLSL ES Global Variable Initialization"
+    },
+    {
+      "id": "6.34",
+      "level": "3",
+      "title": "GLSL ES Preprocessor \"defined\" Operator"
+    },
+    {
+      "id": "6.35",
+      "level": "3",
+      "title": "GLSL ES #extension directive location"
+    },
+    {
+      "id": "6.36",
+      "level": "3",
+      "title": "Completeness of Cube Map Framebuffer Attachments"
+    },
+    {
+      "id": "6.37",
+      "level": "3",
+      "title": "Transferring vertices when current program is null"
+    },
+    {
+      "id": "6.38",
+      "level": "3",
+      "title": "Fragment shader output"
+    },
+    {
+      "id": "6.39",
+      "level": "3",
+      "title": "Initial values for GLSL local and global variables"
+    },
+    {
+      "id": "6.40",
+      "level": "3",
+      "title": "Vertex attribute conversions from normalized signed integers to floating point"
+    },
+    {
+      "id": "6.41",
+      "level": "3",
+      "title": "Uniform and attribute name collisions"
+    },
+    {
+      "id": "6.42",
+      "level": "3",
+      "title": "Wide point primitive clipping"
+    },
+    {
+      "id": "7",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "8",
+      "level": "2",
+      "title": "Acknowledgments"
+    }
+  ]
+}
