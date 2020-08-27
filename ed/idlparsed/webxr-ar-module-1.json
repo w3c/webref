@@ -1,0 +1,140 @@
+{
+  "spec": {
+    "title": "WebXR Augmented Reality Module - Level 1",
+    "url": "https://immersive-web.github.io/webxr-ar-module/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "XREnvironmentBlendMode": {
+        "type": "enum",
+        "name": "XREnvironmentBlendMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "opaque"
+          },
+          {
+            "type": "enum-value",
+            "value": "alpha-blend"
+          },
+          {
+            "type": "enum-value",
+            "value": "additive"
+          }
+        ],
+        "extAttrs": []
+      },
+      "XRInteractionMode": {
+        "type": "enum",
+        "name": "XRInteractionMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "screen-space"
+          },
+          {
+            "type": "enum-value",
+            "value": "world-space"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "XRSession": [
+        {
+          "type": "interface",
+          "name": "XRSession",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "environmentBlendMode",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "XREnvironmentBlendMode"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "type": "interface",
+          "name": "XRSession",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "interactionMode",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "XRInteractionMode"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "XRView": [
+        {
+          "type": "interface",
+          "name": "XRView",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "isFirstPersonObserver",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "XRSession": [
+        "XREnvironmentBlendMode",
+        "XRInteractionMode"
+      ],
+      "XRView": []
+    },
+    "externalDependencies": [
+      "XRSession",
+      "XRView"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

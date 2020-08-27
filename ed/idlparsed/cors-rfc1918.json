@@ -1,0 +1,102 @@
+{
+  "spec": {
+    "title": "CORS and RFC1918",
+    "url": "https://wicg.github.io/cors-rfc1918/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "AddressSpace": {
+        "type": "enum",
+        "name": "AddressSpace",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "local"
+          },
+          {
+            "type": "enum-value",
+            "value": "private"
+          },
+          {
+            "type": "enum-value",
+            "value": "public"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "Document": [
+        {
+          "type": "interface",
+          "name": "Document",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "addressSpace",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AddressSpace"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "WorkerGlobalScope": [
+        {
+          "type": "interface",
+          "name": "WorkerGlobalScope",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "addressSpace",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AddressSpace"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "Document": [
+        "AddressSpace"
+      ],
+      "WorkerGlobalScope": [
+        "AddressSpace"
+      ]
+    },
+    "externalDependencies": [
+      "Document",
+      "WorkerGlobalScope"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

@@ -1,0 +1,2363 @@
+{
+  "spec": {
+    "title": "Scalable Vector Graphics (SVG) 2",
+    "url": "https://svgwg.org/svg2-draft/"
+  },
+  "headings": [
+    {
+      "id": "pagetitle",
+      "level": "1",
+      "title": "Scalable Vector Graphics (SVG) 2"
+    },
+    {
+      "id": "pagesubtitle",
+      "level": "2",
+      "title": "W3C Editor’s Draft 26 May 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of This Document"
+    },
+    {
+      "id": "fulltoc",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "Acknowledgments",
+      "level": "2",
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "AboutSVG",
+      "level": "2",
+      "title": "About SVG"
+    },
+    {
+      "id": "W3CCompatibility",
+      "level": "2",
+      "title": "Compatibility with other standards efforts"
+    },
+    {
+      "id": "RelationshipToPrevious",
+      "level": "2",
+      "title": "Relationship to previous versions of this standard"
+    },
+    {
+      "id": "ConformanceTerms",
+      "level": "2",
+      "title": "Normative Terminology"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "conformance-overview",
+      "level": "2",
+      "title": "Overview"
+    },
+    {
+      "id": "processing-modes",
+      "level": "2",
+      "title": "Processing modes"
+    },
+    {
+      "id": "features",
+      "level": "3",
+      "title": "Features"
+    },
+    {
+      "id": "dynamic-interactive-mode",
+      "level": "3",
+      "title": "Dynamic interactive mode"
+    },
+    {
+      "id": "animated-mode",
+      "level": "3",
+      "title": "Animated mode"
+    },
+    {
+      "id": "secure-animated-mode",
+      "level": "3",
+      "title": "Secure animated mode"
+    },
+    {
+      "id": "static-mode",
+      "level": "3",
+      "title": "Static mode"
+    },
+    {
+      "id": "secure-static-mode",
+      "level": "3",
+      "title": "Secure static mode"
+    },
+    {
+      "id": "referencing-modes",
+      "level": "2",
+      "title": "Processing modes for SVG sub-resource documents"
+    },
+    {
+      "id": "examples",
+      "level": "3",
+      "title": "Examples"
+    },
+    {
+      "id": "DocumentConformanceClasses",
+      "level": "2",
+      "title": "Document Conformance Classes"
+    },
+    {
+      "id": "ConformingSVGDOMSubtrees",
+      "level": "3",
+      "title": "Conforming SVG DOM Subtrees"
+    },
+    {
+      "id": "ConformingSVGFragments",
+      "level": "3",
+      "title": "Conforming SVG Markup Fragments"
+    },
+    {
+      "id": "ConformingSVGXMLFragments",
+      "level": "3",
+      "title": "Conforming XML-Compatible SVG Markup Fragments"
+    },
+    {
+      "id": "ConformingSVGXMLDOMSubtrees",
+      "level": "3",
+      "title": "Conforming XML-Compatible SVG DOM Subtrees"
+    },
+    {
+      "id": "ConformingSVGStandAloneFiles",
+      "level": "3",
+      "title": "Conforming SVG Stand-Alone Files"
+    },
+    {
+      "id": "ErrorProcessing",
+      "level": "3",
+      "title": "Error processing"
+    },
+    {
+      "id": "SoftwareConformanceClasses",
+      "level": "2",
+      "title": "Software Conformance Classes"
+    },
+    {
+      "id": "ConformingSVGGenerators",
+      "level": "3",
+      "title": "Conforming SVG Generators"
+    },
+    {
+      "id": "ConformingSVGAuthoringTools",
+      "level": "3",
+      "title": "Conforming SVG Authoring Tools"
+    },
+    {
+      "id": "ConformingSVGServers",
+      "level": "3",
+      "title": "Conforming SVG Servers"
+    },
+    {
+      "id": "ConformingSVGInterpreters",
+      "level": "3",
+      "title": "Conforming SVG Interpreters"
+    },
+    {
+      "id": "ConformingSVGViewers",
+      "level": "3",
+      "title": "Conforming SVG Viewers"
+    },
+    {
+      "id": "PrintingImplementationNotes",
+      "level": "4",
+      "title": "Printing implementation notes"
+    },
+    {
+      "id": "ConformingHighQualitySVGViewers",
+      "level": "3",
+      "title": "Conforming High-Quality SVG Viewer"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "Introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "RenderingTree",
+      "level": "2",
+      "title": "The rendering tree"
+    },
+    {
+      "id": "Definitions",
+      "level": "3",
+      "title": "Definitions"
+    },
+    {
+      "id": "Rendered-vs-NonRendered",
+      "level": "3",
+      "title": "Rendered versus non-rendered elements"
+    },
+    {
+      "id": "VisibilityControl",
+      "level": "3",
+      "title": "Controlling visibility: the effect of the ‘display’ and ‘visibility’\nproperties"
+    },
+    {
+      "id": "ReusedGraphics",
+      "level": "3",
+      "title": "Re-used graphics"
+    },
+    {
+      "id": "PaintersModel",
+      "level": "2",
+      "title": "The painters model"
+    },
+    {
+      "id": "RenderingOrder",
+      "level": "2",
+      "title": "Rendering order"
+    },
+    {
+      "id": "EstablishingStackingContex",
+      "level": "3",
+      "title": "Establishing a stacking context in SVG"
+    },
+    {
+      "id": "Elements",
+      "level": "2",
+      "title": "How elements are rendered"
+    },
+    {
+      "id": "Grouping",
+      "level": "2",
+      "title": "How groups are rendered"
+    },
+    {
+      "id": "ObjectAndGroupOpacityProperties",
+      "level": "3",
+      "title": "Object and group opacity: the\neffect of the ‘opacity’ property"
+    },
+    {
+      "id": "TypesOfGraphicsElements",
+      "level": "2",
+      "title": "Types of graphics elements"
+    },
+    {
+      "id": "PaintingShapesAndText",
+      "level": "3",
+      "title": "Painting shapes and text"
+    },
+    {
+      "id": "PaintingRasterImages",
+      "level": "3",
+      "title": "Painting raster images"
+    },
+    {
+      "id": "FilteringPaintRegions",
+      "level": "2",
+      "title": "Filtering painted regions"
+    },
+    {
+      "id": "ClippingAndMasking",
+      "level": "2",
+      "title": "Clipping and masking"
+    },
+    {
+      "id": "ParentCompositing",
+      "level": "2",
+      "title": "Parent compositing"
+    },
+    {
+      "id": "OverflowAndClipProperties",
+      "level": "2",
+      "title": "The effect of the ‘overflow’\nproperty"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "definitions",
+      "level": "2",
+      "title": "Definitions"
+    },
+    {
+      "id": "syntax",
+      "level": "2",
+      "title": "Attribute syntax"
+    },
+    {
+      "id": "Precision",
+      "level": "3",
+      "title": "Real number precision"
+    },
+    {
+      "id": "RangeClamping",
+      "level": "3",
+      "title": "Clamping values which are restricted to a particular range"
+    },
+    {
+      "id": "SVGDOMOverview",
+      "level": "2",
+      "title": "SVG DOM overview"
+    },
+    {
+      "id": "SVGDOMDependencies",
+      "level": "3",
+      "title": "Dependencies for SVG DOM support"
+    },
+    {
+      "id": "SVGDOMNamingConventions",
+      "level": "3",
+      "title": "Naming conventions"
+    },
+    {
+      "id": "ElementsInTheSVGDOM",
+      "level": "3",
+      "title": "Elements in the SVG DOM"
+    },
+    {
+      "id": "ReflectingAttributes",
+      "level": "3",
+      "title": "Reflecting content attributes in the DOM"
+    },
+    {
+      "id": "SynchronizingReflectedValues",
+      "level": "3",
+      "title": "Synchronizing reflected values"
+    },
+    {
+      "id": "SVGObjectInitialization",
+      "level": "3",
+      "title": "Reflecting an empty initial value"
+    },
+    {
+      "id": "InvalidValues",
+      "level": "3",
+      "title": "Invalid values"
+    },
+    {
+      "id": "DOMInterfacesForSVGElements",
+      "level": "2",
+      "title": "DOM interfaces for SVG elements"
+    },
+    {
+      "id": "InterfaceSVGElement",
+      "level": "3",
+      "title": "Interface SVGElement"
+    },
+    {
+      "id": "InterfaceSVGGraphicsElement",
+      "level": "3",
+      "title": "Interface SVGGraphicsElement"
+    },
+    {
+      "id": "InterfaceSVGGeometryElement",
+      "level": "3",
+      "title": "Interface SVGGeometryElement"
+    },
+    {
+      "id": "DOMInterfacesForBasicDataTypes",
+      "level": "2",
+      "title": "DOM interfaces for basic data types"
+    },
+    {
+      "id": "InterfaceSVGNumber",
+      "level": "3",
+      "title": "Interface SVGNumber"
+    },
+    {
+      "id": "InterfaceSVGLength",
+      "level": "3",
+      "title": "Interface SVGLength"
+    },
+    {
+      "id": "InterfaceSVGAngle",
+      "level": "3",
+      "title": "Interface SVGAngle"
+    },
+    {
+      "id": "ListInterfaces",
+      "level": "3",
+      "title": "List interfaces"
+    },
+    {
+      "id": "InterfaceSVGNumberList",
+      "level": "3",
+      "title": "Interface SVGNumberList"
+    },
+    {
+      "id": "InterfaceSVGLengthList",
+      "level": "3",
+      "title": "Interface SVGLengthList"
+    },
+    {
+      "id": "InterfaceSVGStringList",
+      "level": "3",
+      "title": "Interface SVGStringList"
+    },
+    {
+      "id": "DOMInterfacesForReflectingSVGAttributes",
+      "level": "2",
+      "title": "DOM interfaces for reflecting animatable SVG attributes"
+    },
+    {
+      "id": "InterfaceSVGAnimatedBoolean",
+      "level": "3",
+      "title": "Interface SVGAnimatedBoolean"
+    },
+    {
+      "id": "InterfaceSVGAnimatedEnumeration",
+      "level": "3",
+      "title": "Interface SVGAnimatedEnumeration"
+    },
+    {
+      "id": "InterfaceSVGAnimatedInteger",
+      "level": "3",
+      "title": "Interface SVGAnimatedInteger"
+    },
+    {
+      "id": "InterfaceSVGAnimatedNumber",
+      "level": "3",
+      "title": "Interface SVGAnimatedNumber"
+    },
+    {
+      "id": "InterfaceSVGAnimatedLength",
+      "level": "3",
+      "title": "Interface SVGAnimatedLength"
+    },
+    {
+      "id": "InterfaceSVGAnimatedAngle",
+      "level": "3",
+      "title": "Interface SVGAnimatedAngle"
+    },
+    {
+      "id": "InterfaceSVGAnimatedString",
+      "level": "3",
+      "title": "Interface SVGAnimatedString"
+    },
+    {
+      "id": "InterfaceSVGAnimatedRect",
+      "level": "3",
+      "title": "Interface SVGAnimatedRect"
+    },
+    {
+      "id": "InterfaceSVGAnimatedNumberList",
+      "level": "3",
+      "title": "Interface SVGAnimatedNumberList"
+    },
+    {
+      "id": "InterfaceSVGAnimatedLengthList",
+      "level": "3",
+      "title": "Interface SVGAnimatedLengthList"
+    },
+    {
+      "id": "OtherDOMInterfaces",
+      "level": "2",
+      "title": "Other DOM interfaces"
+    },
+    {
+      "id": "InterfaceSVGUnitTypes",
+      "level": "3",
+      "title": "Interface SVGUnitTypes"
+    },
+    {
+      "id": "InterfaceSVGTests",
+      "level": "3",
+      "title": "Mixin SVGTests"
+    },
+    {
+      "id": "InterfaceSVGFitToViewBox",
+      "level": "3",
+      "title": "Mixin SVGFitToViewBox"
+    },
+    {
+      "id": "InterfaceSVGURIReference",
+      "level": "3",
+      "title": "Mixin SVGURIReference"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "NewDocument",
+      "level": "2",
+      "title": "Defining an SVG document fragment: the ‘svg’ element"
+    },
+    {
+      "id": "NewDocumentOverview",
+      "level": "3",
+      "title": "Overview"
+    },
+    {
+      "id": "Namespace",
+      "level": "3",
+      "title": "Namespace"
+    },
+    {
+      "id": "Definitions",
+      "level": "3",
+      "title": "Definitions"
+    },
+    {
+      "id": "SVGElement",
+      "level": "3",
+      "title": "The ‘svg’ element"
+    },
+    {
+      "id": "Groups",
+      "level": "2",
+      "title": "Grouping: the ‘g’ element"
+    },
+    {
+      "id": "GroupsOverview",
+      "level": "3",
+      "title": "Overview"
+    },
+    {
+      "id": "GElement",
+      "level": "3",
+      "title": "The ‘g’ element"
+    },
+    {
+      "id": "Head",
+      "level": "2",
+      "title": "Defining content for reuse, and the ‘defs’ element"
+    },
+    {
+      "id": "Overview",
+      "level": "3",
+      "title": "Overview"
+    },
+    {
+      "id": "DefsElement",
+      "level": "3",
+      "title": "The ‘defs’ element"
+    },
+    {
+      "id": "SymbolElement",
+      "level": "2",
+      "title": "The ‘symbol’ element"
+    },
+    {
+      "id": "SymbolAttributes",
+      "level": "3",
+      "title": "Attributes"
+    },
+    {
+      "id": "SymbolNotes",
+      "level": "3",
+      "title": "Notes on symbols"
+    },
+    {
+      "id": "UseElement",
+      "level": "2",
+      "title": "The ‘use’ element"
+    },
+    {
+      "id": "UseShadowTree",
+      "level": "3",
+      "title": "The use-element shadow tree"
+    },
+    {
+      "id": "UseLayout",
+      "level": "3",
+      "title": "Layout of re-used graphics"
+    },
+    {
+      "id": "UseStyleInheritance",
+      "level": "3",
+      "title": "Style Scoping and Inheritance"
+    },
+    {
+      "id": "UseAnimations",
+      "level": "3",
+      "title": "Animations in use-element shadow trees"
+    },
+    {
+      "id": "UseEventHandling",
+      "level": "3",
+      "title": "Event handling in use-element shadow trees"
+    },
+    {
+      "id": "ConditionalProcessing",
+      "level": "2",
+      "title": "Conditional processing"
+    },
+    {
+      "id": "ConditionalProcessingOverview",
+      "level": "3",
+      "title": "Conditional processing overview"
+    },
+    {
+      "id": "ConditionalProcessingDefinitions",
+      "level": "3",
+      "title": "Definitions"
+    },
+    {
+      "id": "SwitchElement",
+      "level": "3",
+      "title": "The ‘switch’ element"
+    },
+    {
+      "id": "ConditionalProcessingRequiredExtensionsAttribute",
+      "level": "3",
+      "title": "The ‘requiredExtensions’ attribute"
+    },
+    {
+      "id": "ConditionalProcessingSystemLanguageAttribute",
+      "level": "3",
+      "title": "The ‘systemLanguage’ attribute"
+    },
+    {
+      "id": "DescriptionAndTitleElements",
+      "level": "2",
+      "title": "The ‘desc’\nand ‘title’ elements"
+    },
+    {
+      "id": "DescriptionDefinitions",
+      "level": "3",
+      "title": "Definition"
+    },
+    {
+      "id": "MetadataElement",
+      "level": "2",
+      "title": "The ‘metadata’ element"
+    },
+    {
+      "id": "HTMLMetadataElements",
+      "level": "2",
+      "title": "HTML metadata elements"
+    },
+    {
+      "id": "ForeignNamespaces",
+      "level": "2",
+      "title": "Foreign namespaces and private data"
+    },
+    {
+      "id": "CommonAttributes",
+      "level": "2",
+      "title": "Common attributes"
+    },
+    {
+      "id": "CommonAttributeDefinitions",
+      "level": "3",
+      "title": "Definitions"
+    },
+    {
+      "id": "Core.attrib",
+      "level": "3",
+      "title": "Attributes common to all elements: ‘id’"
+    },
+    {
+      "id": "LangSpaceAttrs",
+      "level": "3",
+      "title": "The ‘lang’ and ‘xml:lang’ attributes"
+    },
+    {
+      "id": "WhitespaceProcessingXMLSpaceAttribute",
+      "level": "3",
+      "title": "The ‘xml:space’ attribute"
+    },
+    {
+      "id": "tabindexattribute",
+      "level": "3",
+      "title": "The ‘tabindex’ attribute"
+    },
+    {
+      "id": "autofocusattribute",
+      "level": "3",
+      "title": "The ‘autofocus’ attribute"
+    },
+    {
+      "id": "DataAttributes",
+      "level": "3",
+      "title": "The ‘data-*’ attributes"
+    },
+    {
+      "id": "WAIARIAAttributes",
+      "level": "2",
+      "title": "WAI-ARIA attributes"
+    },
+    {
+      "id": "WAIARIA-definitions",
+      "level": "3",
+      "title": "Definitions"
+    },
+    {
+      "id": "roleattribute",
+      "level": "3",
+      "title": "Role attribute"
+    },
+    {
+      "id": "ARIAStateandPropertyAttributes",
+      "level": "3",
+      "title": "State and property attributes (all aria- attributes)"
+    },
+    {
+      "id": "implicit-aria-semantics",
+      "level": "3",
+      "title": "Implicit and Allowed ARIA Semantics"
+    },
+    {
+      "id": "DOMInterfaces",
+      "level": "2",
+      "title": "DOM interfaces"
+    },
+    {
+      "id": "InterfaceDocumentExtensions",
+      "level": "3",
+      "title": "Extensions to the Document interface"
+    },
+    {
+      "id": "InterfaceSVGSVGElement",
+      "level": "3",
+      "title": "Interface SVGSVGElement"
+    },
+    {
+      "id": "InterfaceSVGGElement",
+      "level": "3",
+      "title": "Interface SVGGElement"
+    },
+    {
+      "id": "InterfaceSVGDefsElement",
+      "level": "3",
+      "title": "Interface SVGDefsElement"
+    },
+    {
+      "id": "InterfaceSVGDescElement",
+      "level": "3",
+      "title": "Interface SVGDescElement"
+    },
+    {
+      "id": "InterfaceSVGMetadataElement",
+      "level": "3",
+      "title": "Interface SVGMetadataElement"
+    },
+    {
+      "id": "InterfaceSVGTitleElement",
+      "level": "3",
+      "title": "Interface SVGTitleElement"
+    },
+    {
+      "id": "InterfaceSVGSymbolElement",
+      "level": "3",
+      "title": "Interface SVGSymbolElement"
+    },
+    {
+      "id": "InterfaceSVGUseElement",
+      "level": "3",
+      "title": "Interface SVGUseElement"
+    },
+    {
+      "id": "InterfaceSVGUseElementShadowRoot",
+      "level": "3",
+      "title": "Interface SVGUseElementShadowRoot"
+    },
+    {
+      "id": "InterfaceSVGElementInstance",
+      "level": "3",
+      "title": "Mixin SVGElementInstance"
+    },
+    {
+      "id": "InterfaceShadowAnimation",
+      "level": "3",
+      "title": "Interface ShadowAnimation"
+    },
+    {
+      "id": "InterfaceSVGSwitchElement",
+      "level": "3",
+      "title": "Interface SVGSwitchElement"
+    },
+    {
+      "id": "InterfaceGetSVGDocument",
+      "level": "3",
+      "title": "Mixin GetSVGDocument"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "StylingUsingCSS",
+      "level": "2",
+      "title": "Styling SVG content using CSS"
+    },
+    {
+      "id": "StyleElement",
+      "level": "2",
+      "title": "Inline style sheets: the ‘style’ element"
+    },
+    {
+      "id": "LinkElement",
+      "level": "2",
+      "title": "External style sheets: the effect of the HTML ‘link’ element"
+    },
+    {
+      "id": "StyleSheetsInHTMLDocuments",
+      "level": "2",
+      "title": "Style sheets in HTML documents"
+    },
+    {
+      "id": "ElementSpecificStyling",
+      "level": "2",
+      "title": "Element-specific styling: the ‘class’ and ‘style’ attributes"
+    },
+    {
+      "id": "PresentationAttributes",
+      "level": "2",
+      "title": "Presentation attributes"
+    },
+    {
+      "id": "RequiredProperties",
+      "level": "2",
+      "title": "Required properties"
+    },
+    {
+      "id": "UAStyleSheet",
+      "level": "2",
+      "title": "User agent style sheet"
+    },
+    {
+      "id": "RequiredCSSFeatures",
+      "level": "2",
+      "title": "Required CSS features"
+    },
+    {
+      "id": "DOMInterfaces",
+      "level": "2",
+      "title": "DOM interfaces"
+    },
+    {
+      "id": "InterfaceSVGStyleElement",
+      "level": "3",
+      "title": "Interface SVGStyleElement"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "CX",
+      "level": "2",
+      "title": "Horizontal center coordinate: The\n‘cx’ property"
+    },
+    {
+      "id": "CY",
+      "level": "2",
+      "title": "Vertical center coordinate: The ‘cy’\nproperty"
+    },
+    {
+      "id": "R",
+      "level": "2",
+      "title": "Radius: The ‘r’ property"
+    },
+    {
+      "id": "RX",
+      "level": "2",
+      "title": "Horizontal radius: The ‘rx’\nproperty"
+    },
+    {
+      "id": "RY",
+      "level": "2",
+      "title": "Vertical radius: The ‘ry’\nproperty"
+    },
+    {
+      "id": "X",
+      "level": "2",
+      "title": "Horizontal coordinate: The ‘x’ property"
+    },
+    {
+      "id": "Y",
+      "level": "2",
+      "title": "Vertical coordinate: The ‘y’\nproperty"
+    },
+    {
+      "id": "Sizing",
+      "level": "2",
+      "title": "Sizing properties: the effect of the\n‘width’ and ‘height’\nproperties"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "Introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "ComputingAViewportsTransform",
+      "level": "2",
+      "title": "Computing the equivalent transform of an SVG viewport"
+    },
+    {
+      "id": "ViewportSpace",
+      "level": "2",
+      "title": "The initial viewport"
+    },
+    {
+      "id": "InitialCoordinateSystem",
+      "level": "2",
+      "title": "The initial coordinate system"
+    },
+    {
+      "id": "TransformProperty",
+      "level": "2",
+      "title": "The ‘transform’ property"
+    },
+    {
+      "id": "ViewBoxAttribute",
+      "level": "2",
+      "title": "The ‘viewBox’ attribute"
+    },
+    {
+      "id": "PreserveAspectRatioAttribute",
+      "level": "2",
+      "title": "The ‘preserveAspectRatio’\nattribute"
+    },
+    {
+      "id": "EstablishingANewSVGViewport",
+      "level": "2",
+      "title": "Establishing a new SVG viewport"
+    },
+    {
+      "id": "Units",
+      "level": "2",
+      "title": "Units"
+    },
+    {
+      "id": "BoundingBoxes",
+      "level": "2",
+      "title": "Bounding boxes"
+    },
+    {
+      "id": "ObjectBoundingBoxUnits",
+      "level": "2",
+      "title": "Object bounding box units"
+    },
+    {
+      "id": "SizingSVGInCSS",
+      "level": "2",
+      "title": "Intrinsic sizing properties of SVG content"
+    },
+    {
+      "id": "VectorEffects",
+      "level": "2",
+      "title": "Vector effects"
+    },
+    {
+      "id": "VectorEffectsCalculation",
+      "level": "3",
+      "title": "Computing the vector effects"
+    },
+    {
+      "id": "NestedVectorEffectsCalculation",
+      "level": "3",
+      "title": "Computing the vector effects for nested viewport coordinate systems"
+    },
+    {
+      "id": "VectorEffectsExamples",
+      "level": "3",
+      "title": "Examples of vector effects"
+    },
+    {
+      "id": "DOMInterfaces",
+      "level": "2",
+      "title": "DOM interfaces"
+    },
+    {
+      "id": "InterfaceSVGTransform",
+      "level": "3",
+      "title": "Interface SVGTransform"
+    },
+    {
+      "id": "InterfaceSVGTransformList",
+      "level": "3",
+      "title": "Interface SVGTransformList"
+    },
+    {
+      "id": "InterfaceSVGAnimatedTransformList",
+      "level": "3",
+      "title": "Interface SVGAnimatedTransformList"
+    },
+    {
+      "id": "InterfaceSVGPreserveAspectRatio",
+      "level": "3",
+      "title": "Interface SVGPreserveAspectRatio"
+    },
+    {
+      "id": "InterfaceSVGAnimatedPreserveAspectRatio",
+      "level": "3",
+      "title": "Interface SVGAnimatedPreserveAspectRatio"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "Introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "PathElement",
+      "level": "2",
+      "title": "The ‘path’ element"
+    },
+    {
+      "id": "PathData",
+      "level": "2",
+      "title": "Path data"
+    },
+    {
+      "id": "PathDataGeneralInformation",
+      "level": "3",
+      "title": "General information about path data"
+    },
+    {
+      "id": "TheDProperty",
+      "level": "3",
+      "title": "Specifying path data: the ‘d’ property"
+    },
+    {
+      "id": "PathDataMovetoCommands",
+      "level": "3",
+      "title": "The \"moveto\" commands"
+    },
+    {
+      "id": "PathDataClosePathCommand",
+      "level": "3",
+      "title": "The \"closepath\" command"
+    },
+    {
+      "id": "Segment-CompletingClosePath",
+      "level": "4",
+      "title": "Segment-completing close path operation"
+    },
+    {
+      "id": "PathDataLinetoCommands",
+      "level": "3",
+      "title": "The \"lineto\" commands"
+    },
+    {
+      "id": "PathDataCubicBezierCommands",
+      "level": "3",
+      "title": "The cubic Bézier curve commands"
+    },
+    {
+      "id": "PathDataQuadraticBezierCommands",
+      "level": "3",
+      "title": "The quadratic Bézier curve commands"
+    },
+    {
+      "id": "PathDataEllipticalArcCommands",
+      "level": "3",
+      "title": "The elliptical arc curve commands"
+    },
+    {
+      "id": "PathDataBNF",
+      "level": "3",
+      "title": "The grammar for path data"
+    },
+    {
+      "id": "PathDirectionality",
+      "level": "2",
+      "title": "Path directionality"
+    },
+    {
+      "id": "PathElementImplementationNotes",
+      "level": "2",
+      "title": "Implementation notes"
+    },
+    {
+      "id": "ArcOutOfRangeParameters",
+      "level": "3",
+      "title": "Out-of-range elliptical arc parameters"
+    },
+    {
+      "id": "ReflectedControlPoints",
+      "level": "3",
+      "title": "Reflected control points"
+    },
+    {
+      "id": "ZeroLengthSegments",
+      "level": "3",
+      "title": "Zero-length path segments"
+    },
+    {
+      "id": "PathDataErrorHandling",
+      "level": "3",
+      "title": "Error handling in path data"
+    },
+    {
+      "id": "DistanceAlongAPath",
+      "level": "2",
+      "title": "Distance along a path"
+    },
+    {
+      "id": "PathLengthAttribute",
+      "level": "3",
+      "title": "The ‘pathLength’ attribute"
+    },
+    {
+      "id": "DOMInterfaces",
+      "level": "2",
+      "title": "DOM interfaces"
+    },
+    {
+      "id": "InterfaceSVGPathElement",
+      "level": "3",
+      "title": "Interface SVGPathElement"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "Introduction",
+      "level": "2",
+      "title": "Introduction and definitions"
+    },
+    {
+      "id": "RectElement",
+      "level": "2",
+      "title": "The ‘rect’ element"
+    },
+    {
+      "id": "CircleElement",
+      "level": "2",
+      "title": "The ‘circle’ element"
+    },
+    {
+      "id": "EllipseElement",
+      "level": "2",
+      "title": "The ‘ellipse’ element"
+    },
+    {
+      "id": "LineElement",
+      "level": "2",
+      "title": "The ‘line’ element"
+    },
+    {
+      "id": "PolylineElement",
+      "level": "2",
+      "title": "The ‘polyline’ element"
+    },
+    {
+      "id": "PolygonElement",
+      "level": "2",
+      "title": "The ‘polygon’ element"
+    },
+    {
+      "id": "DOMInterfaces",
+      "level": "2",
+      "title": "DOM interfaces"
+    },
+    {
+      "id": "InterfaceSVGRectElement",
+      "level": "3",
+      "title": "Interface SVGRectElement"
+    },
+    {
+      "id": "InterfaceSVGCircleElement",
+      "level": "3",
+      "title": "Interface SVGCircleElement"
+    },
+    {
+      "id": "InterfaceSVGEllipseElement",
+      "level": "3",
+      "title": "Interface SVGEllipseElement"
+    },
+    {
+      "id": "InterfaceSVGLineElement",
+      "level": "3",
+      "title": "Interface SVGLineElement"
+    },
+    {
+      "id": "InterfaceSVGAnimatedPoints",
+      "level": "3",
+      "title": "Mixin SVGAnimatedPoints"
+    },
+    {
+      "id": "InterfaceSVGPointList",
+      "level": "3",
+      "title": "Interface SVGPointList"
+    },
+    {
+      "id": "InterfaceSVGPolylineElement",
+      "level": "3",
+      "title": "Interface SVGPolylineElement"
+    },
+    {
+      "id": "InterfaceSVGPolygonElement",
+      "level": "3",
+      "title": "Interface SVGPolygonElement"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "Introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "Definitions",
+      "level": "3",
+      "title": "Definitions"
+    },
+    {
+      "id": "FontsGlyphs",
+      "level": "3",
+      "title": "Fonts and glyphs"
+    },
+    {
+      "id": "GlyphsMetrics",
+      "level": "3",
+      "title": "Glyph metrics and layout"
+    },
+    {
+      "id": "TextElement",
+      "level": "2",
+      "title": "The ‘text’ and\n  ‘tspan’ elements"
+    },
+    {
+      "id": "TSpanAttributes",
+      "level": "3",
+      "title": "Attributes"
+    },
+    {
+      "id": "TSpanNotes",
+      "level": "3",
+      "title": "Notes on 'x', 'y', 'dx', 'dy' and 'rotate'"
+    },
+    {
+      "id": "TextLayout",
+      "level": "2",
+      "title": "Text layout – Introduction"
+    },
+    {
+      "id": "TextLayoutContentArea",
+      "level": "2",
+      "title": "Text layout – Content Area"
+    },
+    {
+      "id": "InlineSize",
+      "level": "3",
+      "title": "The ‘inline-size’ property"
+    },
+    {
+      "id": "TextShapeInside",
+      "level": "3",
+      "title": "The ‘shape-inside’ property"
+    },
+    {
+      "id": "TextShapeSubtract",
+      "level": "3",
+      "title": "The ‘shape-subtract’ property"
+    },
+    {
+      "id": "TextShapeImageThreshold",
+      "level": "3",
+      "title": "The ‘shape-image-threshold’ property"
+    },
+    {
+      "id": "TextShapeMargin",
+      "level": "3",
+      "title": "The ‘shape-margin’ property"
+    },
+    {
+      "id": "TextShapePadding",
+      "level": "3",
+      "title": "The ‘shape-padding’ property"
+    },
+    {
+      "id": "TextLayoutAlgorithm",
+      "level": "2",
+      "title": "Text layout – Algorithm"
+    },
+    {
+      "id": "TextLayoutPre",
+      "level": "2",
+      "title": "Pre-formatted text"
+    },
+    {
+      "id": "TextLayoutPreMultiline",
+      "level": "3",
+      "title": "Multi-line text via 'white-space'"
+    },
+    {
+      "id": "TextLayoutPreAdjustments",
+      "level": "3",
+      "title": "Repositioning Glyphs"
+    },
+    {
+      "id": "TextLayoutAuto",
+      "level": "2",
+      "title": "Auto-wrapped text"
+    },
+    {
+      "id": "TextLayoutAutoNotes",
+      "level": "3",
+      "title": "Notes on Text Wrapping"
+    },
+    {
+      "id": "TextLayoutAutoNotesStart",
+      "level": "4",
+      "title": "First Line Positioning"
+    },
+    {
+      "id": "TextLayoutAutoNotesBrokenLines",
+      "level": "4",
+      "title": "Broken Lines"
+    },
+    {
+      "id": "TextLayoutPath",
+      "level": "2",
+      "title": "Text on a path"
+    },
+    {
+      "id": "TextPathElement",
+      "level": "3",
+      "title": "The ‘textPath’ element"
+    },
+    {
+      "id": "TextPathAttributes",
+      "level": "3",
+      "title": "Attributes"
+    },
+    {
+      "id": "TextpathLayoutRules",
+      "level": "3",
+      "title": "Text on a path layout rules"
+    },
+    {
+      "id": "TextRenderingOrder",
+      "level": "2",
+      "title": "Text rendering order"
+    },
+    {
+      "id": "TextProperties",
+      "level": "2",
+      "title": "Properties and pseudo-elements"
+    },
+    {
+      "id": "TextPropertiesSVG",
+      "level": "3",
+      "title": "SVG properties"
+    },
+    {
+      "id": "TextAnchoringProperties",
+      "level": "4",
+      "title": "Text alignment, the ‘text-anchor’ property"
+    },
+    {
+      "id": "GlyphOrientationHorizontalProperty",
+      "level": "4",
+      "title": "The ‘glyph-orientation-horizontal’ property"
+    },
+    {
+      "id": "GlyphOrientationVerticalProperty",
+      "level": "4",
+      "title": "The ‘glyph-orientation-vertical’ property"
+    },
+    {
+      "id": "KerningProperty",
+      "level": "4",
+      "title": "The ‘kerning’ property"
+    },
+    {
+      "id": "TextPropertiesAdaptions",
+      "level": "3",
+      "title": "SVG adaptions"
+    },
+    {
+      "id": "FontVariantProperty",
+      "level": "4",
+      "title": "The ‘font-variant’ property"
+    },
+    {
+      "id": "LineHeightProperty",
+      "level": "4",
+      "title": "The ‘line-height’ property"
+    },
+    {
+      "id": "WritingModeProperty",
+      "level": "4",
+      "title": "The ‘writing-mode’ property"
+    },
+    {
+      "id": "DirectionProperty",
+      "level": "4",
+      "title": "The ‘direction’ property"
+    },
+    {
+      "id": "DominantBaselineProperty",
+      "level": "4",
+      "title": "The ‘dominant-baseline’ property"
+    },
+    {
+      "id": "AlignmentBaselineProperty",
+      "level": "4",
+      "title": "The ‘alignment-baseline’ property"
+    },
+    {
+      "id": "BaselineShiftProperty",
+      "level": "4",
+      "title": "The ‘baseline-shift’ property"
+    },
+    {
+      "id": "LetterSpacingProperty",
+      "level": "4",
+      "title": "The ‘letter-spacing’ property"
+    },
+    {
+      "id": "WordSpacingProperty",
+      "level": "4",
+      "title": "The ‘word-spacing’ property"
+    },
+    {
+      "id": "TextOverflowProperty",
+      "level": "4",
+      "title": "The ‘text-overflow’ property"
+    },
+    {
+      "id": "WhiteSpace",
+      "level": "3",
+      "title": "White space"
+    },
+    {
+      "id": "TextWhiteSpace",
+      "level": "4",
+      "title": "SVG 2 Preferred white space handling, the ‘white-space’ property"
+    },
+    {
+      "id": "LegacyXMLSpace",
+      "level": "4",
+      "title": "Legacy white-space handling, the ‘xml:space’ property"
+    },
+    {
+      "id": "DuplicateWhiteSpace",
+      "level": "4",
+      "title": "Duplicate white-space directives"
+    },
+    {
+      "id": "TextDecorationProperties",
+      "level": "2",
+      "title": "Text decoration"
+    },
+    {
+      "id": "TextSelection",
+      "level": "2",
+      "title": "Text selection and clipboard operations"
+    },
+    {
+      "id": "TextSelectionImplementationNotes",
+      "level": "3",
+      "title": "Text selection implementation notes"
+    },
+    {
+      "id": "DOMInterfaces",
+      "level": "2",
+      "title": "DOM interfaces"
+    },
+    {
+      "id": "InterfaceSVGTextContentElement",
+      "level": "3",
+      "title": "Interface SVGTextContentElement"
+    },
+    {
+      "id": "InterfaceSVGTextPositioningElement",
+      "level": "3",
+      "title": "Interface SVGTextPositioningElement"
+    },
+    {
+      "id": "InterfaceSVGTextElement",
+      "level": "3",
+      "title": "Interface SVGTextElement"
+    },
+    {
+      "id": "InterfaceSVGTSpanElement",
+      "level": "3",
+      "title": "Interface SVGTSpanElement"
+    },
+    {
+      "id": "InterfaceSVGTextPathElement",
+      "level": "3",
+      "title": "Interface SVGTextPathElement"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "Overview",
+      "level": "2",
+      "title": "Overview"
+    },
+    {
+      "id": "Placement",
+      "level": "2",
+      "title": "Placement of the embedded content"
+    },
+    {
+      "id": "ImageElement",
+      "level": "2",
+      "title": "The ‘image’ element"
+    },
+    {
+      "id": "ForeignObjectElement",
+      "level": "2",
+      "title": "The ‘foreignObject’ element"
+    },
+    {
+      "id": "DOMInterfaces",
+      "level": "2",
+      "title": "DOM interfaces"
+    },
+    {
+      "id": "InterfaceSVGImageElement",
+      "level": "3",
+      "title": "Interface SVGImageElement"
+    },
+    {
+      "id": "InterfaceSVGForeignObjectElement",
+      "level": "3",
+      "title": "Interface SVGForeignObjectElement"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "Introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "Definitions",
+      "level": "3",
+      "title": "Definitions"
+    },
+    {
+      "id": "SpecifyingPaint",
+      "level": "2",
+      "title": "Specifying paint"
+    },
+    {
+      "id": "ColorProperty",
+      "level": "2",
+      "title": "The effect of the ‘color’ property"
+    },
+    {
+      "id": "FillProperties",
+      "level": "2",
+      "title": "Fill properties"
+    },
+    {
+      "id": "SpecifyingFillPaint",
+      "level": "3",
+      "title": "Specifying fill paint: the ‘fill’ property"
+    },
+    {
+      "id": "WindingRule",
+      "level": "3",
+      "title": "Winding rule: the ‘fill-rule’\nproperty"
+    },
+    {
+      "id": "FillOpacity",
+      "level": "3",
+      "title": "Fill paint opacity: the ‘fill-opacity’\nproperty"
+    },
+    {
+      "id": "StrokeProperties",
+      "level": "2",
+      "title": "Stroke properties"
+    },
+    {
+      "id": "SpecifyingStrokePaint",
+      "level": "3",
+      "title": "Specifying stroke paint: the ‘stroke’\nproperty"
+    },
+    {
+      "id": "StrokeOpacity",
+      "level": "3",
+      "title": "Stroke paint opacity: the ‘stroke-opacity’\nproperty"
+    },
+    {
+      "id": "StrokeWidth",
+      "level": "3",
+      "title": "Stroke width: the ‘stroke-width’\nproperty"
+    },
+    {
+      "id": "LineCaps",
+      "level": "3",
+      "title": "Drawing caps at the ends of strokes: the ‘stroke-linecap’\nproperty"
+    },
+    {
+      "id": "LineJoin",
+      "level": "3",
+      "title": "Controlling line joins: the ‘stroke-linejoin’\nand ‘stroke-miterlimit’ properties"
+    },
+    {
+      "id": "StrokeDashing",
+      "level": "3",
+      "title": "Dashing strokes: the ‘stroke-dasharray’ and\n‘stroke-dashoffset’ properties"
+    },
+    {
+      "id": "StrokeShape",
+      "level": "3",
+      "title": "Computing the shape of the stroke"
+    },
+    {
+      "id": "CurvatureCalculation",
+      "level": "3",
+      "title": "Computing the circles for the arcs\n'stroke-linejoin'"
+    },
+    {
+      "id": "ArcsLinejoinFallback",
+      "level": "3",
+      "title": "Adjusting the circles for the arcs\n'stroke-linejoin' when the initial circles do not intersect"
+    },
+    {
+      "id": "PaintingVectorEffects",
+      "level": "2",
+      "title": "Vector effects"
+    },
+    {
+      "id": "Markers",
+      "level": "2",
+      "title": "Markers"
+    },
+    {
+      "id": "MarkerElement",
+      "level": "3",
+      "title": "The ‘marker’ element"
+    },
+    {
+      "id": "VertexMarkerProperties",
+      "level": "3",
+      "title": "Vertex markers: the ‘marker-start’,\n‘marker-mid’ and ‘marker-end’\nproperties"
+    },
+    {
+      "id": "MarkerShorthand",
+      "level": "3",
+      "title": "Marker shorthand: the ‘marker’\nproperty"
+    },
+    {
+      "id": "RenderingMarkers",
+      "level": "3",
+      "title": "Rendering markers"
+    },
+    {
+      "id": "PaintOrder",
+      "level": "2",
+      "title": "Controlling paint operation order: the\n‘paint-order’ property"
+    },
+    {
+      "id": "ColorInterpolation",
+      "level": "2",
+      "title": "Color space for interpolation: the\n‘color-interpolation’ property"
+    },
+    {
+      "id": "RenderingHints",
+      "level": "2",
+      "title": "Rendering hints"
+    },
+    {
+      "id": "ShapeRendering",
+      "level": "3",
+      "title": "The ‘shape-rendering’ property"
+    },
+    {
+      "id": "TextRendering",
+      "level": "3",
+      "title": "The ‘text-rendering’ property"
+    },
+    {
+      "id": "ImageRendering",
+      "level": "3",
+      "title": "The ‘image-rendering’ property"
+    },
+    {
+      "id": "WillChange",
+      "level": "2",
+      "title": "The effect of the\n‘will-change’ property"
+    },
+    {
+      "id": "DOMInterfaces",
+      "level": "2",
+      "title": "DOM interfaces"
+    },
+    {
+      "id": "InterfaceSVGMarkerElement",
+      "level": "3",
+      "title": "Interface SVGMarkerElement"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "Introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "PaintServerTemplates",
+      "level": "3",
+      "title": "Using paint servers as templates"
+    },
+    {
+      "id": "Gradients",
+      "level": "2",
+      "title": "Gradients"
+    },
+    {
+      "id": "Definitions",
+      "level": "3",
+      "title": "Definitions"
+    },
+    {
+      "id": "LinearGradients",
+      "level": "3",
+      "title": "Linear gradients"
+    },
+    {
+      "id": "LinearGradientAttributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "LinearGradientNotes",
+      "level": "4",
+      "title": "Notes on linear gradients"
+    },
+    {
+      "id": "RadialGradients",
+      "level": "3",
+      "title": "Radial gradients"
+    },
+    {
+      "id": "RadialGradientAttributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "RadialGradientNotes",
+      "level": "4",
+      "title": "Notes on radial gradients"
+    },
+    {
+      "id": "GradientStops",
+      "level": "3",
+      "title": "Gradient stops"
+    },
+    {
+      "id": "GradientStopAttributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "StopColorProperties",
+      "level": "4",
+      "title": "Properties"
+    },
+    {
+      "id": "StopNotes",
+      "level": "4",
+      "title": "Notes on gradient stops"
+    },
+    {
+      "id": "Patterns",
+      "level": "2",
+      "title": "Patterns"
+    },
+    {
+      "id": "PatternElementAttributes",
+      "level": "3",
+      "title": "Attributes"
+    },
+    {
+      "id": "PatternNotes",
+      "level": "3",
+      "title": "Notes on patterns"
+    },
+    {
+      "id": "DOMInterfaces",
+      "level": "2",
+      "title": "DOM interfaces"
+    },
+    {
+      "id": "InterfaceSVGGradientElement",
+      "level": "3",
+      "title": "Interface SVGGradientElement"
+    },
+    {
+      "id": "InterfaceSVGLinearGradientElement",
+      "level": "3",
+      "title": "Interface SVGLinearGradientElement"
+    },
+    {
+      "id": "InterfaceSVGRadialGradientElement",
+      "level": "3",
+      "title": "Interface SVGRadialGradientElement"
+    },
+    {
+      "id": "InterfaceSVGStopElement",
+      "level": "3",
+      "title": "Interface SVGStopElement"
+    },
+    {
+      "id": "InterfaceSVGPatternElement",
+      "level": "3",
+      "title": "Interface SVGPatternElement"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "Introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "SVGEvents",
+      "level": "2",
+      "title": "Supported events"
+    },
+    {
+      "id": "RelationshipWithUIEVENTS",
+      "level": "3",
+      "title": "Relationship with UI Events"
+    },
+    {
+      "id": "UIEvents",
+      "level": "2",
+      "title": "User interface events"
+    },
+    {
+      "id": "PointerEvents",
+      "level": "2",
+      "title": "Pointer events"
+    },
+    {
+      "id": "pointer-processing",
+      "level": "2",
+      "title": "Hit-testing and processing order for user interface events"
+    },
+    {
+      "id": "hit-testing",
+      "level": "3",
+      "title": "Hit-testing"
+    },
+    {
+      "id": "event-processing",
+      "level": "3",
+      "title": "Event processing"
+    },
+    {
+      "id": "PointerEventsProp",
+      "level": "2",
+      "title": "The ‘pointer-events’ property"
+    },
+    {
+      "id": "Focus",
+      "level": "2",
+      "title": "Focus"
+    },
+    {
+      "id": "EventAttributes",
+      "level": "2",
+      "title": "Event attributes"
+    },
+    {
+      "id": "AnimationEvents",
+      "level": "3",
+      "title": "Animation event attributes"
+    },
+    {
+      "id": "ScriptElement",
+      "level": "2",
+      "title": "The ‘script’ element"
+    },
+    {
+      "id": "DOMInterfaces",
+      "level": "2",
+      "title": "DOM interfaces"
+    },
+    {
+      "id": "InterfaceSVGScriptElement",
+      "level": "3",
+      "title": "Interface SVGScriptElement"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "URLReference",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "HeadOverview",
+      "level": "3",
+      "title": "Overview"
+    },
+    {
+      "id": "definitions",
+      "level": "3",
+      "title": "Definitions"
+    },
+    {
+      "id": "URLandURI",
+      "level": "3",
+      "title": "URLs and URIs"
+    },
+    {
+      "id": "URLforms",
+      "level": "3",
+      "title": "Syntactic forms: URL and <url>"
+    },
+    {
+      "id": "linkRefAttrs",
+      "level": "3",
+      "title": "URL reference attributes"
+    },
+    {
+      "id": "XLinkRefAttrs",
+      "level": "3",
+      "title": "Deprecated XLink URL reference attributes"
+    },
+    {
+      "id": "processingURL",
+      "level": "3",
+      "title": "Processing of URL references"
+    },
+    {
+      "id": "processingURL-absolute",
+      "level": "4",
+      "title": "Generating the absolute URL"
+    },
+    {
+      "id": "processingURL-fetch",
+      "level": "4",
+      "title": "Fetching the document"
+    },
+    {
+      "id": "processingURL-parsing",
+      "level": "4",
+      "title": "Processing the subresource document"
+    },
+    {
+      "id": "processingURL-target",
+      "level": "4",
+      "title": "Identifying the target element"
+    },
+    {
+      "id": "processingURL-validity",
+      "level": "4",
+      "title": "Valid URL targets"
+    },
+    {
+      "id": "Links",
+      "level": "2",
+      "title": "Links out of SVG content: the ‘a’ element"
+    },
+    {
+      "id": "LinksIntoSVG",
+      "level": "2",
+      "title": "Linking into SVG content: URL fragments and SVG views"
+    },
+    {
+      "id": "SVGFragmentIdentifiers",
+      "level": "3",
+      "title": "SVG fragment identifiers"
+    },
+    {
+      "id": "SVGFragmentIdentifiersDefinitions",
+      "level": "3",
+      "title": "SVG fragment identifiers definitions"
+    },
+    {
+      "id": "ViewElement",
+      "level": "3",
+      "title": "Predefined views: the ‘view’ element"
+    },
+    {
+      "id": "DOMInterfaces",
+      "level": "2",
+      "title": "DOM interfaces"
+    },
+    {
+      "id": "InterfaceSVGAElement",
+      "level": "3",
+      "title": "Interface SVGAElement"
+    },
+    {
+      "id": "InterfaceSVGViewElement",
+      "level": "3",
+      "title": "Interface SVGViewElement"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "Introduction",
+      "level": "2",
+      "title": "B.1. Introduction"
+    },
+    {
+      "id": "ArcImplementationNotes",
+      "level": "2",
+      "title": "B.2. Elliptical arc parameter conversion"
+    },
+    {
+      "id": "ArcSyntax",
+      "level": "3",
+      "title": "B.2.1. Elliptical arc endpoint syntax"
+    },
+    {
+      "id": "ArcParameterizationAlternatives",
+      "level": "3",
+      "title": "B.2.2. Parameterization alternatives"
+    },
+    {
+      "id": "ArcConversionCenterToEndpoint",
+      "level": "3",
+      "title": "B.2.3. Conversion from center to endpoint parameterization"
+    },
+    {
+      "id": "ArcConversionEndpointToCenter",
+      "level": "3",
+      "title": "B.2.4. Conversion from endpoint to center parameterization"
+    },
+    {
+      "id": "ArcCorrectionOutOfRangeRadii",
+      "level": "3",
+      "title": "B.2.5. Correction of out-of-range radii"
+    },
+    {
+      "id": "NumericPrecisionImplementationNotes",
+      "level": "2",
+      "title": "B.3. Notes on generating high-precision geometry"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "AccessibilityAndSVG",
+      "level": "2",
+      "title": "C.1. SVG Accessibility Features"
+    },
+    {
+      "id": "SVGRelatedAccessibilityDocuments",
+      "level": "2",
+      "title": "C.2. Supporting SVG Accessibility Specifications and Guidelines"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "NormativeReferences",
+      "level": "2",
+      "title": "E.1. Normative references"
+    },
+    {
+      "id": "InformativeReferences",
+      "level": "2",
+      "title": "E.2. Informative references"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "RegularAttributes",
+      "level": "2",
+      "title": "G.1. Regular attributes"
+    },
+    {
+      "id": "PresentationAttributes",
+      "level": "2",
+      "title": "G.2. Presentation attributes"
+    },
+    {
+      "id": "mimereg",
+      "level": "1",
+      "title": "Appendix J: Media Type Registration for image/svg+xml"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "mime-intro",
+      "level": "2",
+      "title": "J.1. \nIntroduction"
+    },
+    {
+      "id": "mime-registration",
+      "level": "2",
+      "title": "J.2. \nRegistration of media type image/svg+xml"
+    },
+    {
+      "id": "Contents",
+      "level": "2",
+      "title": "Contents"
+    },
+    {
+      "id": "editorial",
+      "level": "2",
+      "title": "K.1. Editorial changes"
+    },
+    {
+      "id": "substantial",
+      "level": "2",
+      "title": "K.2. Substantial changes"
+    },
+    {
+      "id": "whole",
+      "level": "3",
+      "title": "K.2.1. Across the whole document"
+    },
+    {
+      "id": "concepts",
+      "level": "3",
+      "title": "K.2.2. Concepts chapter (SVG 1.1 only)"
+    },
+    {
+      "id": "conform",
+      "level": "3",
+      "title": "K.2.3. Conformance Criteria chapter (Appendix in SVG 1.1)"
+    },
+    {
+      "id": "rendering",
+      "level": "3",
+      "title": "K.2.4. Rendering Model chapter"
+    },
+    {
+      "id": "types",
+      "level": "3",
+      "title": "K.2.5. Basic Data Types and Interfaces chapter"
+    },
+    {
+      "id": "structure",
+      "level": "3",
+      "title": "K.2.6. Document Structure chapter"
+    },
+    {
+      "id": "styling",
+      "level": "3",
+      "title": "K.2.7. Styling chapter"
+    },
+    {
+      "id": "geometry",
+      "level": "3",
+      "title": "K.2.8. Geometry Properties chapter (SVG 2 only)"
+    },
+    {
+      "id": "coords",
+      "level": "3",
+      "title": "K.2.9. Coordinate Systems, Transformations and Units chapter"
+    },
+    {
+      "id": "paths",
+      "level": "3",
+      "title": "K.2.10. Paths chapter"
+    },
+    {
+      "id": "shapes",
+      "level": "3",
+      "title": "K.2.11. Basic Shapes chapter"
+    },
+    {
+      "id": "text",
+      "level": "3",
+      "title": "K.2.12. Text chapter"
+    },
+    {
+      "id": "embedded",
+      "level": "3",
+      "title": "K.2.13. Embedded Content chapter (SVG 2 only)"
+    },
+    {
+      "id": "painting",
+      "level": "3",
+      "title": "K.2.14. Painting chapter"
+    },
+    {
+      "id": "color",
+      "level": "3",
+      "title": "K.2.15. Color chapter (SVG 1.1 only)"
+    },
+    {
+      "id": "pservers",
+      "level": "3",
+      "title": "K.2.16. Paint Servers chapter (called Gradients and Patterns in SVG 1.1)"
+    },
+    {
+      "id": "masking",
+      "level": "3",
+      "title": "K.2.17. Clipping, Masking and Compositing chapter (SVG 1.1 only)"
+    },
+    {
+      "id": "filters",
+      "level": "3",
+      "title": "K.2.18. Filter Effects chapter (SVG 1.1 only)"
+    },
+    {
+      "id": "interact",
+      "level": "3",
+      "title": "K.2.19. Scripting and Interactivity chapter (separate chapters in SVG 1.1)"
+    },
+    {
+      "id": "linking",
+      "level": "3",
+      "title": "K.2.20. Linking chapter"
+    },
+    {
+      "id": "script",
+      "level": "3",
+      "title": "K.2.21. Scripting chapter (in SVG 1.1)"
+    },
+    {
+      "id": "animate",
+      "level": "3",
+      "title": "K.2.22. Animation chapter (SVG 1.1 only)"
+    },
+    {
+      "id": "fonts",
+      "level": "3",
+      "title": "K.2.23. Fonts chapter (SVG 1.1 only)"
+    },
+    {
+      "id": "metadata",
+      "level": "3",
+      "title": "K.2.24. Metadata chapter (SVG 1.1 only)"
+    },
+    {
+      "id": "backward",
+      "level": "3",
+      "title": "K.2.25. Backwards Compatibility chapter (SVG 1.1 only)"
+    },
+    {
+      "id": "extend",
+      "level": "3",
+      "title": "K.2.26. Extensibility chapter (SVG 1.1 only)"
+    },
+    {
+      "id": "svgdtd",
+      "level": "3",
+      "title": "K.2.27. Document Type Definition appendix (SVG 1.1 only)"
+    },
+    {
+      "id": "svgdom",
+      "level": "3",
+      "title": "K.2.28. SVG Document Object Model (DOM)(SVG 1.1 Only)"
+    },
+    {
+      "id": "idl",
+      "level": "3",
+      "title": "K.2.29. IDL Definitions appendix"
+    },
+    {
+      "id": "java",
+      "level": "3",
+      "title": "K.2.30. Java Language Binding appendix (SVG 1.1 only)"
+    },
+    {
+      "id": "escript",
+      "level": "3",
+      "title": "K.2.31. ECMAScript Language Binding appendix (SVG 1.1 only)"
+    },
+    {
+      "id": "impreqs",
+      "level": "3",
+      "title": "K.2.32. Implementation Notes appendix (was Implementation Requirements in SVG 1.1)"
+    },
+    {
+      "id": "access",
+      "level": "3",
+      "title": "K.2.33. Accessibility Support appendix"
+    },
+    {
+      "id": "i18n",
+      "level": "3",
+      "title": "K.2.34. Internationalization Support appendix (SVG 1.1 only)"
+    },
+    {
+      "id": "minimize",
+      "level": "3",
+      "title": "K.2.35. Minimizing SVG File Sizes appendix (SVG 1.1 only)"
+    },
+    {
+      "id": "animate-appendix",
+      "level": "3",
+      "title": "K.2.36. Animating SVG Documents appendix (SVG 2 only)"
+    },
+    {
+      "id": "refs",
+      "level": "3",
+      "title": "K.2.37. References appendix"
+    },
+    {
+      "id": "other-appendix",
+      "level": "3",
+      "title": "K.2.38. Element, Attribute, and Property index appendices"
+    },
+    {
+      "id": "idlindex",
+      "level": "3",
+      "title": "K.2.39. IDL Index appendix (SVG 2 only)"
+    },
+    {
+      "id": "feature",
+      "level": "3",
+      "title": "K.2.40. Feature Strings (SVG 1.1 only)"
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "spec": {
+    "title": "Orientation Sensor",
+    "url": "https://w3c.github.io/orientation-sensor/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "AbsoluteOrientationSensor",
+          "RelativeOrientationSensor"
+        ]
+      },
+      "functions": {
+        "Window": [
+          "OrientationSensor"
+        ]
+      }
+    },
+    "idlNames": {
+      "RotationMatrixType": {
+        "type": "typedef",
+        "name": "RotationMatrixType",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Float32Array"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Float64Array"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMMatrix"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "OrientationSensor": {
+        "type": "interface",
+        "name": "OrientationSensor",
+        "inheritance": "Sensor",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "quaternion",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": true,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "populateMatrix",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "targetMatrix",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RotationMatrixType"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "OrientationSensorLocalCoordinateSystem": {
+        "type": "enum",
+        "name": "OrientationSensorLocalCoordinateSystem",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "device"
+          },
+          {
+            "type": "enum-value",
+            "value": "screen"
+          }
+        ],
+        "extAttrs": []
+      },
+      "OrientationSensorOptions": {
+        "type": "dictionary",
+        "name": "OrientationSensorOptions",
+        "inheritance": "SensorOptions",
+        "members": [
+          {
+            "type": "field",
+            "name": "referenceFrame",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "OrientationSensorLocalCoordinateSystem"
+            },
+            "default": {
+              "type": "string",
+              "value": "device"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AbsoluteOrientationSensor": {
+        "type": "interface",
+        "name": "AbsoluteOrientationSensor",
+        "inheritance": "OrientationSensor",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "sensorOptions",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "OrientationSensorOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "RelativeOrientationSensor": {
+        "type": "interface",
+        "name": "RelativeOrientationSensor",
+        "inheritance": "OrientationSensor",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "sensorOptions",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "OrientationSensorOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "AbsoluteOrientationReadingValues": {
+        "type": "dictionary",
+        "name": "AbsoluteOrientationReadingValues",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "quaternion",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": true,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                }
+              ]
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "RelativeOrientationReadingValues": {
+        "type": "dictionary",
+        "name": "RelativeOrientationReadingValues",
+        "inheritance": "AbsoluteOrientationReadingValues",
+        "members": [],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "OrientationSensor",
+        "AbsoluteOrientationSensor",
+        "RelativeOrientationSensor"
+      ]
+    },
+    "dependencies": {
+      "OrientationSensor": [
+        "Sensor",
+        "undefined",
+        "RotationMatrixType"
+      ],
+      "OrientationSensorOptions": [
+        "SensorOptions",
+        "OrientationSensorLocalCoordinateSystem"
+      ],
+      "AbsoluteOrientationSensor": [
+        "OrientationSensor",
+        "OrientationSensorOptions"
+      ],
+      "RelativeOrientationSensor": [
+        "OrientationSensor",
+        "OrientationSensorOptions"
+      ],
+      "AbsoluteOrientationReadingValues": [],
+      "RelativeOrientationReadingValues": [
+        "AbsoluteOrientationReadingValues"
+      ]
+    },
+    "externalDependencies": [
+      "DOMMatrix",
+      "Sensor",
+      "undefined",
+      "SensorOptions"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

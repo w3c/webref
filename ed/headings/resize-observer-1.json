@@ -1,0 +1,218 @@
+{
+  "spec": {
+    "title": "Resize Observer",
+    "url": "https://drafts.csswg.org/resize-observer/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Resize Observer"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Editor’s Draft, 18 August 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "api",
+      "level": "2",
+      "title": "Resize Observer API"
+    },
+    {
+      "id": "resize-observer-interface",
+      "level": "3",
+      "title": "ResizeObserver interface"
+    },
+    {
+      "id": "resize-observer-callback",
+      "level": "3",
+      "title": "ResizeObserverCallback"
+    },
+    {
+      "id": "resize-observer-entry-interface",
+      "level": "3",
+      "title": "ResizeObserverEntry"
+    },
+    {
+      "id": "processing-model",
+      "level": "2",
+      "title": "Processing Model"
+    },
+    {
+      "id": "resize-observation-interface",
+      "level": "3",
+      "title": "ResizeObservation example struct"
+    },
+    {
+      "id": "internal-slot-definitions",
+      "level": "3",
+      "title": "Internal Slot Definitions"
+    },
+    {
+      "id": "document-slots",
+      "level": "4",
+      "title": "Document"
+    },
+    {
+      "id": "resize-observer-slots",
+      "level": "4",
+      "title": "ResizeObserver"
+    },
+    {
+      "id": "css-definitions",
+      "level": "3",
+      "title": "CSS Definitions"
+    },
+    {
+      "id": "content-rect-h",
+      "level": "4",
+      "title": "content rect"
+    },
+    {
+      "id": "algorithms",
+      "level": "3",
+      "title": "Algorithms"
+    },
+    {
+      "id": "gather-active-observations-h",
+      "level": "4",
+      "title": "Gather active observations at depth"
+    },
+    {
+      "id": "has-active-observations-h",
+      "level": "4",
+      "title": "Has active observations"
+    },
+    {
+      "id": "has-skipped-observations-h",
+      "level": "4",
+      "title": "Has skipped observations"
+    },
+    {
+      "id": "create-and-populate-resizeobserverentry-h",
+      "level": "4",
+      "title": "Create and populate a ResizeObserverEntry"
+    },
+    {
+      "id": "broadcast-resize-notifications-h",
+      "level": "4",
+      "title": "Broadcast active observations"
+    },
+    {
+      "id": "deliver-resize-error",
+      "level": "4",
+      "title": "Deliver Resize Loop Error"
+    },
+    {
+      "id": "calculate-depth-for-node-h",
+      "level": "4",
+      "title": "Calculate depth for node"
+    },
+    {
+      "id": "calculate-box-size-h",
+      "level": "4",
+      "title": "Calculate box size, given target and observed box"
+    },
+    {
+      "id": "lifetime",
+      "level": "3",
+      "title": "ResizeObserver Lifetime"
+    },
+    {
+      "id": "integrations",
+      "level": "3",
+      "title": "External Spec Integrations"
+    },
+    {
+      "id": "html-event-loop",
+      "level": "4",
+      "title": "HTML Processing Model: Event Loop"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "document-conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conform-classes",
+      "level": "3",
+      "title": "Conformance classes"
+    },
+    {
+      "id": "conform-responsible",
+      "level": "3",
+      "title": "Requirements for Responsible Implementation of CSS"
+    },
+    {
+      "id": "conform-partial",
+      "level": "4",
+      "title": "Partial Implementations"
+    },
+    {
+      "id": "conform-future-proofing",
+      "level": "4",
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "conform-testing",
+      "level": "4",
+      "title": "Implementations of CR-level Features"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    }
+  ]
+}

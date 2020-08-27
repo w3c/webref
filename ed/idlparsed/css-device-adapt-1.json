@@ -1,0 +1,100 @@
+{
+  "spec": {
+    "title": "CSS Device Adaptation Module Level 1",
+    "url": "https://drafts.csswg.org/css-device-adapt/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "CSSViewportRule"
+        ]
+      }
+    },
+    "idlNames": {
+      "CSSViewportRule": {
+        "type": "interface",
+        "name": "CSSViewportRule",
+        "inheritance": "CSSRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "style",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSStyleDeclaration"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "CSSRule": [
+        {
+          "type": "interface",
+          "name": "CSSRule",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "const",
+              "name": "VIEWPORT_RULE",
+              "idlType": {
+                "type": "const-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "unsigned short"
+              },
+              "extAttrs": [],
+              "value": {
+                "type": "number",
+                "value": "15"
+              }
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "CSSViewportRule"
+      ]
+    },
+    "dependencies": {
+      "CSSRule": [],
+      "CSSViewportRule": [
+        "CSSRule",
+        "CSSStyleDeclaration"
+      ]
+    },
+    "externalDependencies": [
+      "CSSRule",
+      "CSSStyleDeclaration"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

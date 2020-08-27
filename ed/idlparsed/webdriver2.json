@@ -1,0 +1,57 @@
+{
+  "spec": {
+    "title": "WebDriver",
+    "url": "https://w3c.github.io/webdriver/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "NavigatorAutomationInformation": {
+        "type": "interface mixin",
+        "name": "NavigatorAutomationInformation",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "webdriver",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Navigator": [
+        {
+          "name": "Navigator",
+          "type": "interface",
+          "includes": "NavigatorAutomationInformation"
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "NavigatorAutomationInformation": [],
+      "Navigator": [
+        "NavigatorAutomationInformation"
+      ]
+    },
+    "externalDependencies": [],
+    "hasObsoleteIdl": false
+  }
+}

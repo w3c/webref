@@ -1,0 +1,87 @@
+{
+  "spec": {
+    "title": "Text Fragments",
+    "url": "https://wicg.github.io/scroll-to-text-fragment/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "FragmentDirective"
+        ]
+      }
+    },
+    "idlNames": {
+      "FragmentDirective": {
+        "type": "interface",
+        "name": "FragmentDirective",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Document": [
+        {
+          "type": "interface",
+          "name": "Document",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "fragmentDirective",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "FragmentDirective"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "FragmentDirective"
+      ]
+    },
+    "dependencies": {
+      "FragmentDirective": [],
+      "Document": [
+        "FragmentDirective"
+      ]
+    },
+    "externalDependencies": [
+      "Document"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

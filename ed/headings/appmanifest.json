@@ -1,0 +1,458 @@
+{
+  "spec": {
+    "title": "Web App Manifest",
+    "url": "https://w3c.github.io/manifest/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Web App Manifest"
+    },
+    {
+      "id": "table-of-contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "x1-usage-examples",
+      "level": "2",
+      "title": "Usage Examples"
+    },
+    {
+      "id": "x1-1-example-manifests",
+      "level": "3",
+      "title": "Example manifests"
+    },
+    {
+      "id": "x1-2-using-a-link-element-to-link-to-a-manifest",
+      "level": "3",
+      "title": "Using a link element to link to a manifest"
+    },
+    {
+      "id": "x2-installable-web-applications",
+      "level": "2",
+      "title": "Installable web applications"
+    },
+    {
+      "id": "x2-1-authority-of-the-manifest-s-metadata",
+      "level": "3",
+      "title": "Authority of the manifest's metadata"
+    },
+    {
+      "id": "x2-2-application-s-name",
+      "level": "3",
+      "title": "Application's name"
+    },
+    {
+      "id": "installation-sec",
+      "level": "3",
+      "title": "Privacy and security considerations"
+    },
+    {
+      "id": "installability-signals",
+      "level": "3",
+      "title": "Installability signals"
+    },
+    {
+      "id": "x2-5-uninstallation",
+      "level": "3",
+      "title": "Uninstallation"
+    },
+    {
+      "id": "x3-navigation-scope",
+      "level": "2",
+      "title": "Navigation scope"
+    },
+    {
+      "id": "navigation-scope-security-considerations",
+      "level": "3",
+      "title": "Security considerations"
+    },
+    {
+      "id": "x3-2-deep-links",
+      "level": "3",
+      "title": "Deep links"
+    },
+    {
+      "id": "x4-display-modes",
+      "level": "2",
+      "title": "Display modes"
+    },
+    {
+      "id": "x4-1-privacy-and-security-considerations",
+      "level": "3",
+      "title": "Privacy and security considerations"
+    },
+    {
+      "id": "x4-2-the-display-mode-media-feature",
+      "level": "3",
+      "title": "The 'display-mode' media feature"
+    },
+    {
+      "id": "x4-2-1-examples",
+      "level": "4",
+      "title": "Examples"
+    },
+    {
+      "id": "x4-2-2-security-and-privacy-considerations",
+      "level": "4",
+      "title": "Security and privacy considerations"
+    },
+    {
+      "id": "x5-manifest-life-cycle",
+      "level": "2",
+      "title": "Manifest life-cycle"
+    },
+    {
+      "id": "x5-1-processing-the-manifest",
+      "level": "3",
+      "title": "Processing the manifest"
+    },
+    {
+      "id": "applying",
+      "level": "3",
+      "title": "Applying the manifest"
+    },
+    {
+      "id": "x5-3-updating-the-manifest",
+      "level": "3",
+      "title": "Updating the manifest"
+    },
+    {
+      "id": "x6-color-parsing",
+      "level": "2",
+      "title": "Color parsing"
+    },
+    {
+      "id": "x7-webappmanifest-dictionary",
+      "level": "2",
+      "title": "WebAppManifest dictionary"
+    },
+    {
+      "id": "x7-1-dir-member",
+      "level": "3",
+      "title": "dir member"
+    },
+    {
+      "id": "x7-2-lang-member",
+      "level": "3",
+      "title": "lang member"
+    },
+    {
+      "id": "x7-3-name-member",
+      "level": "3",
+      "title": "name member"
+    },
+    {
+      "id": "x7-4-short_name-member",
+      "level": "3",
+      "title": "short_name member"
+    },
+    {
+      "id": "x7-5-description-member",
+      "level": "3",
+      "title": "description member"
+    },
+    {
+      "id": "x7-6-scope-member",
+      "level": "3",
+      "title": "scope member"
+    },
+    {
+      "id": "x7-7-icons-member",
+      "level": "3",
+      "title": "icons member"
+    },
+    {
+      "id": "x7-8-display-member",
+      "level": "3",
+      "title": "display member"
+    },
+    {
+      "id": "x7-9-orientation-member",
+      "level": "3",
+      "title": "orientation member"
+    },
+    {
+      "id": "x7-10-start_url-member",
+      "level": "3",
+      "title": "start_url member"
+    },
+    {
+      "id": "x7-10-1-privacy-consideration-start_url-tracking",
+      "level": "4",
+      "title": "Privacy consideration: start_url tracking"
+    },
+    {
+      "id": "x7-11-theme_color-member",
+      "level": "3",
+      "title": "theme_color member"
+    },
+    {
+      "id": "x7-12-related_applications-member",
+      "level": "3",
+      "title": "related_applications member"
+    },
+    {
+      "id": "x7-13-prefer_related_applications-member",
+      "level": "3",
+      "title": "prefer_related_applications member"
+    },
+    {
+      "id": "x7-14-background_color-member",
+      "level": "3",
+      "title": "background_color member"
+    },
+    {
+      "id": "x7-15-categories-member",
+      "level": "3",
+      "title": "categories member"
+    },
+    {
+      "id": "x7-16-screenshots-member",
+      "level": "3",
+      "title": "screenshots member"
+    },
+    {
+      "id": "x7-17-iarc_rating_id-member",
+      "level": "3",
+      "title": "iarc_rating_id member"
+    },
+    {
+      "id": "x7-18-shortcuts-member",
+      "level": "3",
+      "title": "shortcuts member"
+    },
+    {
+      "id": "x8-manifestimageresource-and-its-members",
+      "level": "2",
+      "title": "ManifestImageResource and its members"
+    },
+    {
+      "id": "x8-1-content-security-policy-of-image-resources",
+      "level": "3",
+      "title": "Content security policy of image resources"
+    },
+    {
+      "id": "x8-2-purpose-member",
+      "level": "3",
+      "title": "purpose member"
+    },
+    {
+      "id": "x8-3-icon-masks-and-safe-zone",
+      "level": "3",
+      "title": "Icon masks and safe zone"
+    },
+    {
+      "id": "x8-3-1-examples-of-masks",
+      "level": "4",
+      "title": "Examples of masks"
+    },
+    {
+      "id": "icons-with-maskable-purpose",
+      "level": "2",
+      "title": "Icons with \"maskable\" purpose"
+    },
+    {
+      "id": "mask-examples",
+      "level": "2",
+      "title": "Mask examples"
+    },
+    {
+      "id": "x8-4-monochrome-icons-and-solid-fills",
+      "level": "3",
+      "title": "Monochrome icons and solid fills"
+    },
+    {
+      "id": "x8-4-1-example-usage-of-monochrome-icons",
+      "level": "4",
+      "title": "Example usage of monochrome icons"
+    },
+    {
+      "id": "usage-examples-0",
+      "level": "2",
+      "title": "Usage examples"
+    },
+    {
+      "id": "x8-5-processing-image-resources",
+      "level": "3",
+      "title": "processing image resources"
+    },
+    {
+      "id": "x9-shortcutitem-and-its-members",
+      "level": "2",
+      "title": "ShortcutItem and its members"
+    },
+    {
+      "id": "x9-1-name-member",
+      "level": "3",
+      "title": "name member"
+    },
+    {
+      "id": "x9-2-short_name-member",
+      "level": "3",
+      "title": "short_name member"
+    },
+    {
+      "id": "x9-3-description-member",
+      "level": "3",
+      "title": "description member"
+    },
+    {
+      "id": "x9-4-url-member",
+      "level": "3",
+      "title": "url member"
+    },
+    {
+      "id": "x9-4-1-privacy-and-security-considerations",
+      "level": "4",
+      "title": "Privacy and security considerations"
+    },
+    {
+      "id": "x9-5-icons-member",
+      "level": "3",
+      "title": "icons member"
+    },
+    {
+      "id": "x9-6-launching-a-shortcut",
+      "level": "3",
+      "title": "Launching a shortcut"
+    },
+    {
+      "id": "x10-externalapplicationresource-and-its-members",
+      "level": "2",
+      "title": "ExternalApplicationResource and its members"
+    },
+    {
+      "id": "x10-1-platform-member",
+      "level": "3",
+      "title": "platform member"
+    },
+    {
+      "id": "x10-2-url-member",
+      "level": "3",
+      "title": "url member"
+    },
+    {
+      "id": "x10-3-id-member",
+      "level": "3",
+      "title": "id member"
+    },
+    {
+      "id": "x10-4-min_version-member",
+      "level": "3",
+      "title": "min_version member"
+    },
+    {
+      "id": "x10-5-fingerprints-member",
+      "level": "3",
+      "title": "fingerprints member"
+    },
+    {
+      "id": "x11-iana-considerations",
+      "level": "2",
+      "title": "IANA considerations"
+    },
+    {
+      "id": "x11-1-media-type-registration",
+      "level": "3",
+      "title": "Media type registration"
+    },
+    {
+      "id": "x11-2-link-relation-type-registration",
+      "level": "3",
+      "title": "Link relation type registration"
+    },
+    {
+      "id": "a-acknowledgements",
+      "level": "2",
+      "title": "A. \n        Acknowledgements"
+    },
+    {
+      "id": "b-conformance",
+      "level": "2",
+      "title": "B. Conformance"
+    },
+    {
+      "id": "b-1-extensibility",
+      "level": "3",
+      "title": "B.1 \n          Extensibility"
+    },
+    {
+      "id": "b-1-1-proprietary-manifest-members",
+      "level": "4",
+      "title": "B.1.1 \n            Proprietary manifest members"
+    },
+    {
+      "id": "c-incubations",
+      "level": "2",
+      "title": "C. \n        Incubations"
+    },
+    {
+      "id": "d-relationship-to-html-s-link-and-meta-elements",
+      "level": "2",
+      "title": "D. \n        Relationship to HTML's link and meta elements"
+    },
+    {
+      "id": "e-json-schema",
+      "level": "2",
+      "title": "E. \n        JSON Schema"
+    },
+    {
+      "id": "f-internationalization",
+      "level": "2",
+      "title": "F. \n        Internationalization"
+    },
+    {
+      "id": "g-use-cases-and-requirements",
+      "level": "2",
+      "title": "G. \n        Use Cases and Requirements"
+    },
+    {
+      "id": "h-issue-summary",
+      "level": "2",
+      "title": "H. Issue Summary"
+    },
+    {
+      "id": "i-idl-index",
+      "level": "2",
+      "title": "I. IDL Index"
+    },
+    {
+      "id": "j-dependencies",
+      "level": "2",
+      "title": "J. \n        Dependencies"
+    },
+    {
+      "id": "k-index",
+      "level": "2",
+      "title": "K. Index"
+    },
+    {
+      "id": "k-1-terms-defined-by-this-specification",
+      "level": "3",
+      "title": "K.1 Terms defined by this specification"
+    },
+    {
+      "id": "k-2-terms-defined-by-reference",
+      "level": "3",
+      "title": "K.2 Terms defined by reference"
+    },
+    {
+      "id": "l-references",
+      "level": "2",
+      "title": "L. References"
+    },
+    {
+      "id": "l-1-normative-references",
+      "level": "3",
+      "title": "L.1 Normative references"
+    },
+    {
+      "id": "l-2-informative-references",
+      "level": "3",
+      "title": "L.2 Informative references"
+    }
+  ]
+}

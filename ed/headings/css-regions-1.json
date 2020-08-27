@@ -1,0 +1,368 @@
+{
+  "spec": {
+    "title": "CSS Regions Module Level 1",
+    "url": "https://drafts.csswg.org/css-regions/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "CSS Regions Module Level 1"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Editor’s Draft, 3 June 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "values",
+      "level": "3",
+      "title": "Value Definitions"
+    },
+    {
+      "id": "css-regions-concepts",
+      "level": "2",
+      "title": "CSS Regions concepts"
+    },
+    {
+      "id": "regions",
+      "level": "3",
+      "title": "Regions"
+    },
+    {
+      "id": "region-chain-section",
+      "level": "3",
+      "title": "Region chain"
+    },
+    {
+      "id": "last-region",
+      "level": "3",
+      "title": "Last region"
+    },
+    {
+      "id": "named-flow-section",
+      "level": "3",
+      "title": "Named flows"
+    },
+    {
+      "id": "regions-flow-breaking-rules",
+      "level": "3",
+      "title": "Regions flow breaking rules"
+    },
+    {
+      "id": "properties",
+      "level": "2",
+      "title": "Properties"
+    },
+    {
+      "id": "the-flow-into-property",
+      "level": "3",
+      "title": "The flow-into property"
+    },
+    {
+      "id": "flow-from",
+      "level": "3",
+      "title": "The flow-from property"
+    },
+    {
+      "id": "circular-dependencies",
+      "level": "4",
+      "title": "Cycle Detection"
+    },
+    {
+      "id": "fragmenting-regions",
+      "level": "4",
+      "title": "Nested fragmentation contexts"
+    },
+    {
+      "id": "region-flow-break",
+      "level": "3",
+      "title": "Controlling Region Flow Breaks"
+    },
+    {
+      "id": "the-region-fragment-property",
+      "level": "3",
+      "title": "The region-fragment property"
+    },
+    {
+      "id": "cssom_view_and_css_regions",
+      "level": "2",
+      "title": "CSSOM"
+    },
+    {
+      "id": "the-namedflow-interface",
+      "level": "3",
+      "title": "The NamedFlow interface"
+    },
+    {
+      "id": "the-region-interface",
+      "level": "3",
+      "title": "The Region mixin"
+    },
+    {
+      "id": "named-flow-events",
+      "level": "3",
+      "title": "Named flow events"
+    },
+    {
+      "id": "cssomview-and-regions",
+      "level": "3",
+      "title": "Clarifications on pre-existing APIs"
+    },
+    {
+      "id": "cssomview-getclientrects-and-getboundingclientrect",
+      "level": "4",
+      "title": "getClientRects() and getBoundingClientRect()"
+    },
+    {
+      "id": "cssomview-offset-attributes",
+      "level": "4",
+      "title": "offsetTop, offsetLeft, offsetWidth, offsetHeight and offsetParent"
+    },
+    {
+      "id": "multi-column-regions",
+      "level": "2",
+      "title": "Multi-column regions"
+    },
+    {
+      "id": "pseudo_elements",
+      "level": "2",
+      "title": "Pseudo-elements"
+    },
+    {
+      "id": "regions-visual-formatting-details",
+      "level": "2",
+      "title": "Regions visual formatting details"
+    },
+    {
+      "id": "processing-model",
+      "level": "3",
+      "title": "Processing model"
+    },
+    {
+      "id": "regions-flow-content-box",
+      "level": "3",
+      "title": "The Region Flow Content Box (RFCB)"
+    },
+    {
+      "id": "rfcb-width-resolution",
+      "level": "4",
+      "title": "RFCB width resolution"
+    },
+    {
+      "id": "regions-visual-formatting-steps",
+      "level": "3",
+      "title": "Regions visual formatting steps"
+    },
+    {
+      "id": "rfcb-flow-fragment-height-resolution",
+      "level": "4",
+      "title": "Step 1: RFCB flow fragment height resolution"
+    },
+    {
+      "id": "rfcb-flow-fragment-height-resolution-phase-1",
+      "level": "5",
+      "title": "RFCB flow fragment height resolution, Phase 1"
+    },
+    {
+      "id": "rfcb-flow-fragment-height-resolution-phase-2",
+      "level": "5",
+      "title": "RFCB flow fragment height resolution, Phase 2"
+    },
+    {
+      "id": "regions-boxes-layout",
+      "level": "4",
+      "title": "Step 2: region boxes layout"
+    },
+    {
+      "id": "named-flows-layout",
+      "level": "4",
+      "title": "Step 3: named flows layout"
+    },
+    {
+      "id": "regions-visual-formatting-implementation-note",
+      "level": "3",
+      "title": "Regions visual formatting: implementation note"
+    },
+    {
+      "id": "regions-visual-formatting-examples",
+      "level": "3",
+      "title": "Regions visual formatting example"
+    },
+    {
+      "id": "step1-phase1-example",
+      "level": "4",
+      "title": "Step 1 - Phase 1: Laying out RFCBs with used height of zero"
+    },
+    {
+      "id": "step1-phase2-example",
+      "level": "4",
+      "title": "Step 1 - Phase 2: Layout flow to compute the RFCBs' flow fragments heights"
+    },
+    {
+      "id": "step2-example",
+      "level": "4",
+      "title": "Step 2: Layout document and regions without named flows"
+    },
+    {
+      "id": "step3-example",
+      "level": "4",
+      "title": "Step 3: named flows layout"
+    },
+    {
+      "id": "relation-to-document-events",
+      "level": "2",
+      "title": "Relation to document events"
+    },
+    {
+      "id": "relation-to-other-specifications",
+      "level": "2",
+      "title": "Relation to other specifications"
+    },
+    {
+      "id": "usecases",
+      "level": "2",
+      "title": "Use Cases"
+    },
+    {
+      "id": "changes",
+      "level": "2",
+      "title": "Changes"
+    },
+    {
+      "id": "changes_from_Oct_9_2014",
+      "level": "3",
+      "title": "Changes from October 9th 2014 version"
+    },
+    {
+      "id": "changes_from_Feb_18_2014",
+      "level": "3",
+      "title": "Changes from February 18th 2014 version"
+    },
+    {
+      "id": "changes_from_May_28_2013",
+      "level": "3",
+      "title": "Changes from May 28th 2013 version"
+    },
+    {
+      "id": "changes_from_Aug_28_2012",
+      "level": "3",
+      "title": "Changes from August 28th 2012 version"
+    },
+    {
+      "id": "changes_from_May_03_2012",
+      "level": "3",
+      "title": "Changes from May 3rd 2012 version"
+    },
+    {
+      "id": "older_changes",
+      "level": "3",
+      "title": "Older Changes"
+    },
+    {
+      "id": "acknowledgments",
+      "level": "2",
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "document-conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conform-classes",
+      "level": "3",
+      "title": "Conformance classes"
+    },
+    {
+      "id": "conform-responsible",
+      "level": "3",
+      "title": "Requirements for Responsible Implementation of CSS"
+    },
+    {
+      "id": "conform-partial",
+      "level": "4",
+      "title": "Partial Implementations"
+    },
+    {
+      "id": "conform-future-proofing",
+      "level": "4",
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "conform-testing",
+      "level": "4",
+      "title": "Implementations of CR-level Features"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "level": "2",
+      "title": "Property Index"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "level": "2",
+      "title": "Issues Index"
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "spec": {
+    "title": "XMLHttpRequest Standard",
+    "url": "https://xhr.spec.whatwg.org/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "XMLHttpRequest"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Living Standard — Last Updated 18 August 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "specification-history",
+      "level": "3",
+      "title": "Specification history"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "extensibility",
+      "level": "3",
+      "title": "Extensibility"
+    },
+    {
+      "id": "terminology",
+      "level": "2",
+      "title": "Terminology"
+    },
+    {
+      "id": "interface-xmlhttprequest",
+      "level": "2",
+      "title": "Interface XMLHttpRequest"
+    },
+    {
+      "id": "constructors",
+      "level": "3",
+      "title": "Constructors"
+    },
+    {
+      "id": "garbage-collection",
+      "level": "3",
+      "title": "Garbage collection"
+    },
+    {
+      "id": "event-handlers",
+      "level": "3",
+      "title": "Event handlers"
+    },
+    {
+      "id": "states",
+      "level": "3",
+      "title": "States"
+    },
+    {
+      "id": "request",
+      "level": "3",
+      "title": "Request"
+    },
+    {
+      "id": "the-open()-method",
+      "level": "4",
+      "title": "The open() method"
+    },
+    {
+      "id": "the-setrequestheader()-method",
+      "level": "4",
+      "title": "The setRequestHeader() method"
+    },
+    {
+      "id": "the-timeout-attribute",
+      "level": "4",
+      "title": "The timeout attribute"
+    },
+    {
+      "id": "the-withcredentials-attribute",
+      "level": "4",
+      "title": "The withCredentials attribute"
+    },
+    {
+      "id": "the-upload-attribute",
+      "level": "4",
+      "title": "The upload attribute"
+    },
+    {
+      "id": "the-send()-method",
+      "level": "4",
+      "title": "The send() method"
+    },
+    {
+      "id": "the-abort()-method",
+      "level": "4",
+      "title": "The abort() method"
+    },
+    {
+      "id": "xmlhttprequest-response",
+      "level": "3",
+      "title": "Response"
+    },
+    {
+      "id": "the-responseurl-attribute",
+      "level": "4",
+      "title": "The responseURL attribute"
+    },
+    {
+      "id": "the-status-attribute",
+      "level": "4",
+      "title": "The status attribute"
+    },
+    {
+      "id": "the-statustext-attribute",
+      "level": "4",
+      "title": "The statusText attribute"
+    },
+    {
+      "id": "the-getresponseheader()-method",
+      "level": "4",
+      "title": "The getResponseHeader() method"
+    },
+    {
+      "id": "the-getallresponseheaders()-method",
+      "level": "4",
+      "title": "The getAllResponseHeaders() method"
+    },
+    {
+      "id": "response-body",
+      "level": "4",
+      "title": "Response body"
+    },
+    {
+      "id": "the-overridemimetype()-method",
+      "level": "4",
+      "title": "The overrideMimeType() method"
+    },
+    {
+      "id": "the-responsetype-attribute",
+      "level": "4",
+      "title": "The responseType attribute"
+    },
+    {
+      "id": "the-response-attribute",
+      "level": "4",
+      "title": "The response attribute"
+    },
+    {
+      "id": "the-responsetext-attribute",
+      "level": "4",
+      "title": "The responseText attribute"
+    },
+    {
+      "id": "the-responsexml-attribute",
+      "level": "4",
+      "title": "The responseXML attribute"
+    },
+    {
+      "id": "events",
+      "level": "3",
+      "title": "Events summary"
+    },
+    {
+      "id": "feature-policy-integration",
+      "level": "3",
+      "title": "Feature Policy integration"
+    },
+    {
+      "id": "interface-formdata",
+      "level": "2",
+      "title": "Interface FormData"
+    },
+    {
+      "id": "interface-progressevent",
+      "level": "2",
+      "title": "Interface ProgressEvent"
+    },
+    {
+      "id": "firing-events-using-the-progressevent-interface",
+      "level": "3",
+      "title": "Firing events using the ProgressEvent interface"
+    },
+    {
+      "id": "suggested-names-for-events-using-the-progressevent-interface",
+      "level": "3",
+      "title": "Suggested names for events using the ProgressEvent interface"
+    },
+    {
+      "id": "security-considerations",
+      "level": "3",
+      "title": "Security considerations"
+    },
+    {
+      "id": "example",
+      "level": "3",
+      "title": "Example"
+    },
+    {
+      "id": "acknowledgments",
+      "level": "2",
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    }
+  ]
+}

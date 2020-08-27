@@ -1,0 +1,518 @@
+{
+  "spec": {
+    "title": "CSS Values and Units Module Level 4",
+    "url": "https://drafts.csswg.org/css-values-4/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "CSS Values and Units Module Level 4"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Editor’s Draft, 26 August 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "placement",
+      "level": "3",
+      "title": "Module Interactions"
+    },
+    {
+      "id": "value-defs",
+      "level": "2",
+      "title": "Value Definition Syntax"
+    },
+    {
+      "id": "component-types",
+      "level": "3",
+      "title": "Component Value Types"
+    },
+    {
+      "id": "component-combinators",
+      "level": "3",
+      "title": "Component Value Combinators"
+    },
+    {
+      "id": "component-multipliers",
+      "level": "3",
+      "title": "Component Value Multipliers"
+    },
+    {
+      "id": "combinator-multiplier-patterns",
+      "level": "3",
+      "title": "Combinator and Multiplier Patterns"
+    },
+    {
+      "id": "component-whitespace",
+      "level": "3",
+      "title": "Component Values and White Space"
+    },
+    {
+      "id": "value-examples",
+      "level": "3",
+      "title": "Property Value Examples"
+    },
+    {
+      "id": "combining-values",
+      "level": "2",
+      "title": "Combining Values: Interpolation, Addition, and Accumulation"
+    },
+    {
+      "id": "textual-values",
+      "level": "2",
+      "title": "Textual Data Types"
+    },
+    {
+      "id": "keywords",
+      "level": "3",
+      "title": "Pre-defined Keywords"
+    },
+    {
+      "id": "common-keywords",
+      "level": "4",
+      "title": "CSS-wide keywords: initial, inherit and unset"
+    },
+    {
+      "id": "custom-idents",
+      "level": "3",
+      "title": "Author-defined Identifiers: the <custom-ident> type"
+    },
+    {
+      "id": "dashed-idents",
+      "level": "3",
+      "title": "Explicitly Author-defined Identifiers: the <dashed-ident> type"
+    },
+    {
+      "id": "strings",
+      "level": "3",
+      "title": "Quoted Strings: the <string> type"
+    },
+    {
+      "id": "urls",
+      "level": "3",
+      "title": "Resource Locators: the <url> type"
+    },
+    {
+      "id": "relative-urls",
+      "level": "4",
+      "title": "Relative URLs"
+    },
+    {
+      "id": "local-urls",
+      "level": "5",
+      "title": "Fragment URLs"
+    },
+    {
+      "id": "url-empty",
+      "level": "4",
+      "title": "Empty URLs"
+    },
+    {
+      "id": "url-modifiers",
+      "level": "4",
+      "title": "URL Modifiers"
+    },
+    {
+      "id": "numeric-types",
+      "level": "2",
+      "title": "Numeric Data Types"
+    },
+    {
+      "id": "numeric-ranges",
+      "level": "3",
+      "title": "Range Restrictions and Range Definition Notation"
+    },
+    {
+      "id": "integers",
+      "level": "3",
+      "title": "Integers: the <integer> type"
+    },
+    {
+      "id": "combine-integers",
+      "level": "4",
+      "title": "Combination of <integer>"
+    },
+    {
+      "id": "numbers",
+      "level": "3",
+      "title": "Real Numbers: the <number> type"
+    },
+    {
+      "id": "combine-numbers",
+      "level": "4",
+      "title": "Combination of <number>"
+    },
+    {
+      "id": "dimensions",
+      "level": "3",
+      "title": "Numbers with Units: dimension values"
+    },
+    {
+      "id": "compat",
+      "level": "4",
+      "title": "Compatible Units"
+    },
+    {
+      "id": "combine-dimensions",
+      "level": "4",
+      "title": "Combination of Dimensions"
+    },
+    {
+      "id": "percentages",
+      "level": "3",
+      "title": "Percentages: the <percentage> type"
+    },
+    {
+      "id": "combine-percentages",
+      "level": "4",
+      "title": "Combination of <percentage>"
+    },
+    {
+      "id": "mixed-percentages",
+      "level": "3",
+      "title": "Mixing Percentages and Dimensions"
+    },
+    {
+      "id": "combine-mixed",
+      "level": "4",
+      "title": "Combination of Percentage and Dimension Mixes"
+    },
+    {
+      "id": "ratios",
+      "level": "3",
+      "title": "Ratios: the <ratio> type"
+    },
+    {
+      "id": "combine-ratio",
+      "level": "4",
+      "title": "Combination of <ratio>"
+    },
+    {
+      "id": "lengths",
+      "level": "2",
+      "title": "Distance Units: the <length> type"
+    },
+    {
+      "id": "relative-lengths",
+      "level": "3",
+      "title": "Relative Lengths"
+    },
+    {
+      "id": "font-relative-lengths",
+      "level": "4",
+      "title": "Font-relative Lengths: the em, ex, cap, ch, ic, rem, lh, rlh units"
+    },
+    {
+      "id": "viewport-relative-lengths",
+      "level": "4",
+      "title": "Viewport-percentage Lengths: the vw, vh, vi, vb, vmin, vmax units"
+    },
+    {
+      "id": "absolute-lengths",
+      "level": "3",
+      "title": "Absolute Lengths: the cm, mm, Q, in, pt, pc, px units"
+    },
+    {
+      "id": "other-units",
+      "level": "2",
+      "title": "Other Quantities"
+    },
+    {
+      "id": "angles",
+      "level": "3",
+      "title": "Angle Units: the <angle> type and deg, grad, rad, turn units"
+    },
+    {
+      "id": "time",
+      "level": "3",
+      "title": "Duration Units: the <time> type and s, ms units"
+    },
+    {
+      "id": "frequency",
+      "level": "3",
+      "title": "Frequency Units: the <frequency> type and Hz, kHz units"
+    },
+    {
+      "id": "resolution",
+      "level": "3",
+      "title": "Resolution Units: the <resolution> type and dpi, dpcm, dppx units"
+    },
+    {
+      "id": "defined-elsewhere",
+      "level": "2",
+      "title": "Data Types Defined Elsewhere"
+    },
+    {
+      "id": "colors",
+      "level": "3",
+      "title": "Colors: the <color> type"
+    },
+    {
+      "id": "combine-colors",
+      "level": "4",
+      "title": "Combination of <color>"
+    },
+    {
+      "id": "images",
+      "level": "3",
+      "title": "Images: the <image> type"
+    },
+    {
+      "id": "combine-images",
+      "level": "4",
+      "title": "Combination of <image>"
+    },
+    {
+      "id": "position",
+      "level": "3",
+      "title": "2D Positioning: the <position> type"
+    },
+    {
+      "id": "combine-positions",
+      "level": "4",
+      "title": "Combination of <position>"
+    },
+    {
+      "id": "functional-notations",
+      "level": "2",
+      "title": "Functional Notations"
+    },
+    {
+      "id": "toggle-notation",
+      "level": "3",
+      "title": "Toggling Between Values: toggle()"
+    },
+    {
+      "id": "attr-notation",
+      "level": "2",
+      "title": "Attribute References: the attr() function"
+    },
+    {
+      "id": "attr-types",
+      "level": "3",
+      "title": "attr() Types"
+    },
+    {
+      "id": "attr-substitution",
+      "level": "3",
+      "title": "attr() Substitution"
+    },
+    {
+      "id": "math",
+      "level": "2",
+      "title": "Mathematical Expressions"
+    },
+    {
+      "id": "calc-func",
+      "level": "3",
+      "title": "Basic Arithmetic: calc()"
+    },
+    {
+      "id": "comp-func",
+      "level": "3",
+      "title": "Comparison Functions: min(), max(), and clamp()"
+    },
+    {
+      "id": "round-func",
+      "level": "3",
+      "title": "Stepped Value Functions: round(), mod(), and rem()"
+    },
+    {
+      "id": "round-infinities",
+      "level": "4",
+      "title": "Argument Ranges"
+    },
+    {
+      "id": "trig-funcs",
+      "level": "3",
+      "title": "Trigonometric Functions: sin(), cos(), tan(), asin(), acos(), atan(), and atan2()"
+    },
+    {
+      "id": "trig-infinities",
+      "level": "4",
+      "title": "Argument Ranges"
+    },
+    {
+      "id": "exponent-funcs",
+      "level": "3",
+      "title": "Exponential  Functions: pow(), sqrt(), hypot(), log(), exp()"
+    },
+    {
+      "id": "exponent-infinities",
+      "level": "4",
+      "title": "Argument Ranges"
+    },
+    {
+      "id": "sign-funcs",
+      "level": "3",
+      "title": "Sign-Related Functions: abs(), sign()"
+    },
+    {
+      "id": "calc-constants",
+      "level": "3",
+      "title": "Numeric Constants: e, pi"
+    },
+    {
+      "id": "calc-error-constants",
+      "level": "4",
+      "title": "Degenerate Numeric Constants: infinity, -infinity, NaN"
+    },
+    {
+      "id": "calc-syntax",
+      "level": "3",
+      "title": "Syntax"
+    },
+    {
+      "id": "calc-type-checking",
+      "level": "3",
+      "title": "Type Checking"
+    },
+    {
+      "id": "calc-internal",
+      "level": "3",
+      "title": "Internal Representation"
+    },
+    {
+      "id": "calc-simplification",
+      "level": "4",
+      "title": "Simplification"
+    },
+    {
+      "id": "calc-computed-value",
+      "level": "3",
+      "title": "Computed Value"
+    },
+    {
+      "id": "calc-range",
+      "level": "3",
+      "title": "Range Checking"
+    },
+    {
+      "id": "calc-serialize",
+      "level": "3",
+      "title": "Serialization"
+    },
+    {
+      "id": "combine-math",
+      "level": "3",
+      "title": "Combination of Math Functions"
+    },
+    {
+      "id": "iana",
+      "level": "2",
+      "title": "Appendix A: IANA Considerations"
+    },
+    {
+      "id": "about-invalid",
+      "level": "3",
+      "title": "Registration for the about:invalid URL scheme"
+    },
+    {
+      "id": "acknowledgments",
+      "level": "2",
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "changes",
+      "level": "2",
+      "title": "Changes"
+    },
+    {
+      "id": "sec-pri",
+      "level": "2",
+      "title": "Security and Privacy Considerations"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "document-conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conform-classes",
+      "level": "3",
+      "title": "Conformance classes"
+    },
+    {
+      "id": "conform-responsible",
+      "level": "3",
+      "title": "Requirements for Responsible Implementation of CSS"
+    },
+    {
+      "id": "conform-partial",
+      "level": "4",
+      "title": "Partial Implementations"
+    },
+    {
+      "id": "conform-future-proofing",
+      "level": "4",
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "conform-testing",
+      "level": "4",
+      "title": "Implementations of CR-level Features"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "issues-index",
+      "level": "2",
+      "title": "Issues Index"
+    }
+  ]
+}

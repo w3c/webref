@@ -1,0 +1,256 @@
+{
+  "spec": {
+    "title": "WebRTC 1.0: Real-time Communication Between Browsers",
+    "url": "https://w3c.github.io/webrtc-pc/"
+  },
+  "refs": {
+    "normative": [
+      {
+        "name": "BUNDLE",
+        "url": "https://tools.ietf.org/html/draft-ietf-mmusic-sdp-bundle-negotiation"
+      },
+      {
+        "name": "DOM",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      {
+        "name": "ECMASCRIPT-6.0",
+        "url": "http://www.ecma-international.org/ecma-262/6.0/index.html"
+      },
+      {
+        "name": "Fetch",
+        "url": "https://fetch.spec.whatwg.org/"
+      },
+      {
+        "name": "FILEAPI",
+        "url": "https://www.w3.org/TR/FileAPI/"
+      },
+      {
+        "name": "FIPS-180-4",
+        "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf"
+      },
+      {
+        "name": "GETUSERMEDIA",
+        "url": "https://www.w3.org/TR/mediacapture-streams/"
+      },
+      {
+        "name": "hr-time",
+        "url": "https://www.w3.org/TR/hr-time-2/"
+      },
+      {
+        "name": "HTML",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      {
+        "name": "IANA-HASH-FUNCTION",
+        "url": "https://www.iana.org/assignments/hash-function-text-names/hash-function-text-names.xml"
+      },
+      {
+        "name": "IANA-RTP-2",
+        "url": "https://www.iana.org/assignments/rtp-parameters/rtp-parameters.xhtml#rtp-parameters-2"
+      },
+      {
+        "name": "ICE",
+        "url": "https://tools.ietf.org/html/rfc5245"
+      },
+      {
+        "name": "INFRA",
+        "url": "https://infra.spec.whatwg.org/"
+      },
+      {
+        "name": "JSEP",
+        "url": "https://tools.ietf.org/html/draft-ietf-rtcweb-jsep/"
+      },
+      {
+        "name": "MMUSIC-RID",
+        "url": "https://tools.ietf.org/html/draft-ietf-mmusic-rid/"
+      },
+      {
+        "name": "MMUSIC-SIMULCAST",
+        "url": "https://tools.ietf.org/html/draft-ietf-mmusic-sdp-simulcast/"
+      },
+      {
+        "name": "RFC2119",
+        "url": "https://tools.ietf.org/html/rfc2119"
+      },
+      {
+        "name": "RFC3550",
+        "url": "https://tools.ietf.org/html/rfc3550"
+      },
+      {
+        "name": "RFC3890",
+        "url": "https://tools.ietf.org/html/rfc3890"
+      },
+      {
+        "name": "RFC3986",
+        "url": "https://tools.ietf.org/html/rfc3986"
+      },
+      {
+        "name": "RFC4566",
+        "url": "https://tools.ietf.org/html/rfc4566"
+      },
+      {
+        "name": "RFC4572",
+        "url": "https://tools.ietf.org/html/rfc4572"
+      },
+      {
+        "name": "RFC5246",
+        "url": "https://tools.ietf.org/html/rfc5246"
+      },
+      {
+        "name": "RFC5285",
+        "url": "https://tools.ietf.org/html/rfc5285"
+      },
+      {
+        "name": "RFC5389",
+        "url": "https://tools.ietf.org/html/rfc5389"
+      },
+      {
+        "name": "RFC5506",
+        "url": "https://tools.ietf.org/html/rfc5506"
+      },
+      {
+        "name": "RFC5888",
+        "url": "https://tools.ietf.org/html/rfc5888"
+      },
+      {
+        "name": "RFC6464",
+        "url": "https://tools.ietf.org/html/rfc6464"
+      },
+      {
+        "name": "RFC6465",
+        "url": "https://tools.ietf.org/html/rfc6465"
+      },
+      {
+        "name": "RFC6544",
+        "url": "https://tools.ietf.org/html/rfc6544"
+      },
+      {
+        "name": "RFC7064",
+        "url": "https://tools.ietf.org/html/rfc7064"
+      },
+      {
+        "name": "RFC7065",
+        "url": "https://tools.ietf.org/html/rfc7065"
+      },
+      {
+        "name": "RFC7656",
+        "url": "https://tools.ietf.org/html/rfc7656"
+      },
+      {
+        "name": "RFC7675",
+        "url": "https://tools.ietf.org/html/rfc7675"
+      },
+      {
+        "name": "RFC8174",
+        "url": "https://tools.ietf.org/html/rfc8174"
+      },
+      {
+        "name": "RFC8261",
+        "url": "https://tools.ietf.org/html/rfc8261"
+      },
+      {
+        "name": "RFC8445",
+        "url": "https://tools.ietf.org/html/rfc8445"
+      },
+      {
+        "name": "RTCWEB-AUDIO",
+        "url": "https://tools.ietf.org/html/rfc7874"
+      },
+      {
+        "name": "RTCWEB-DATA",
+        "url": "https://tools.ietf.org/html/draft-ietf-rtcweb-data-channel"
+      },
+      {
+        "name": "RTCWEB-DATA-PROTOCOL",
+        "url": "https://tools.ietf.org/html/draft-ietf-rtcweb-data-protocol"
+      },
+      {
+        "name": "RTCWEB-RTP",
+        "url": "https://tools.ietf.org/html/draft-ietf-rtcweb-rtp-usage"
+      },
+      {
+        "name": "RTCWEB-SECURITY",
+        "url": "https://tools.ietf.org/html/draft-ietf-rtcweb-security"
+      },
+      {
+        "name": "RTCWEB-TRANSPORT",
+        "url": "https://tools.ietf.org/html/draft-ietf-rtcweb-transports"
+      },
+      {
+        "name": "SCTP-SDP",
+        "url": "https://tools.ietf.org/html/draft-ietf-mmusic-sctp-sdp"
+      },
+      {
+        "name": "SDP",
+        "url": "https://tools.ietf.org/html/rfc3264"
+      },
+      {
+        "name": "STUN-PARAMETERS",
+        "url": "https://www.iana.org/assignments/stun-parameters/stun-parameters.xhtml#stun-parameters-6"
+      },
+      {
+        "name": "TRICKLE-ICE",
+        "url": "http://datatracker.ietf.org/doc/draft-ietf-mmusic-trickle-ice"
+      },
+      {
+        "name": "WebCryptoAPI",
+        "url": "https://www.w3.org/TR/WebCryptoAPI/"
+      },
+      {
+        "name": "WEBIDL",
+        "url": "https://heycam.github.io/webidl/"
+      },
+      {
+        "name": "WEBRTC-STATS",
+        "url": "https://www.w3.org/TR/webrtc-stats/"
+      },
+      {
+        "name": "X509V3",
+        "url": ""
+      },
+      {
+        "name": "X690",
+        "url": "https://www.itu.int/ITU-T/studygroups/com17/languages/X.690-0207.pdf"
+      }
+    ],
+    "informative": [
+      {
+        "name": "API-DESIGN-PRINCIPLES",
+        "url": "https://w3ctag.github.io/design-principles/"
+      },
+      {
+        "name": "INDEXEDDB",
+        "url": "https://www.w3.org/TR/IndexedDB/"
+      },
+      {
+        "name": "RFC4103",
+        "url": "https://tools.ietf.org/html/rfc4103"
+      },
+      {
+        "name": "RFC6236",
+        "url": "https://tools.ietf.org/html/rfc6236"
+      },
+      {
+        "name": "RTCWEB-IP-HANDLING",
+        "url": "https://tools.ietf.org/html/draft-ietf-rtcweb-ip-handling"
+      },
+      {
+        "name": "RTCWEB-OVERVIEW",
+        "url": "https://tools.ietf.org/html/draft-ietf-rtcweb-overview"
+      },
+      {
+        "name": "RTCWEB-SECURITY-ARCH",
+        "url": "https://tools.ietf.org/html/draft-ietf-rtcweb-security-arch"
+      },
+      {
+        "name": "SDP-SIMULCAST",
+        "url": "https://tools.ietf.org/html/draft-ietf-mmusic-sdp-simulcast"
+      },
+      {
+        "name": "xhr",
+        "url": "https://xhr.spec.whatwg.org/"
+      }
+    ]
+  }
+}

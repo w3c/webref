@@ -1,0 +1,208 @@
+{
+  "spec": {
+    "title": "SVG Accessibility API Mappings",
+    "url": "https://w3c.github.io/svg-aam/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "SVG Accessibility API Mappings"
+    },
+    {
+      "id": "table-of-contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "x1-introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "x1-1-history-and-purpose",
+      "level": "3",
+      "title": "History and Purpose"
+    },
+    {
+      "id": "x1-2-relationship-to-other-specifications",
+      "level": "3",
+      "title": "Relationship to Other Specifications"
+    },
+    {
+      "id": "x1-3-accessibility-apis",
+      "level": "3",
+      "title": "Accessibility APIs"
+    },
+    {
+      "id": "x1-4-the-accessibility-tree-and-the-dom-tree",
+      "level": "3",
+      "title": "The Accessibility Tree and the DOM Tree"
+    },
+    {
+      "id": "x2-normative-user-agent-implementation-requirements-for-svg",
+      "level": "2",
+      "title": "Normative User Agent Implementation Requirements for SVG"
+    },
+    {
+      "id": "x3-important-terms",
+      "level": "2",
+      "title": "Important Terms"
+    },
+    {
+      "id": "x4-supporting-keyboard-navigation",
+      "level": "2",
+      "title": "Supporting Keyboard Navigation"
+    },
+    {
+      "id": "x5-mapping-wai-aria-to-accessibility-apis",
+      "level": "2",
+      "title": "Mapping WAI-ARIA to Accessibility APIs"
+    },
+    {
+      "id": "x5-1-general-rules-for-exposing-wai-aria-semantics",
+      "level": "3",
+      "title": "General rules for exposing WAI-ARIA semantics"
+    },
+    {
+      "id": "x5-1-1-excluding-elements-from-the-accessibility-tree",
+      "level": "4",
+      "title": "Excluding Elements from the Accessibility Tree"
+    },
+    {
+      "id": "x5-1-2-including-elements-in-the-accessibility-tree",
+      "level": "4",
+      "title": "Including Elements in the Accessibility Tree"
+    },
+    {
+      "id": "x5-2-conflicts-between-native-markup-semantics-and-wai-aria",
+      "level": "3",
+      "title": "Conflicts between native markup semantics and WAI-ARIA"
+    },
+    {
+      "id": "x5-3-exposing-attributes-that-do-not-directly-map-to-accessibility-api-properties",
+      "level": "3",
+      "title": "Exposing attributes that do not directly map to accessibility API properties"
+    },
+    {
+      "id": "x6-role-mapping",
+      "level": "2",
+      "title": "Role mapping"
+    },
+    {
+      "id": "x6-1-general-rules",
+      "level": "3",
+      "title": "General Rules"
+    },
+    {
+      "id": "x6-2-svg-element-mapping-table",
+      "level": "3",
+      "title": "SVG Element Mapping Table"
+    },
+    {
+      "id": "x7-state-and-property-mapping",
+      "level": "2",
+      "title": "State and Property Mapping"
+    },
+    {
+      "id": "x8-special-processing-requiring-additional-computation",
+      "level": "2",
+      "title": "Special Processing Requiring Additional Computation"
+    },
+    {
+      "id": "x8-1-name-and-description",
+      "level": "3",
+      "title": "Name and Description"
+    },
+    {
+      "id": "x8-2-widget-values",
+      "level": "3",
+      "title": "Widget Values"
+    },
+    {
+      "id": "x8-3-relations",
+      "level": "3",
+      "title": "Relations"
+    },
+    {
+      "id": "x8-4-group-position",
+      "level": "3",
+      "title": "Group Position"
+    },
+    {
+      "id": "x8-5-use-element-shadow-trees",
+      "level": "3",
+      "title": "Use-Element Shadow Trees"
+    },
+    {
+      "id": "x8-6-svg-views",
+      "level": "3",
+      "title": "SVG Views"
+    },
+    {
+      "id": "x8-7-declarative-animation",
+      "level": "3",
+      "title": "Declarative Animation"
+    },
+    {
+      "id": "x9-actions",
+      "level": "2",
+      "title": "Actions"
+    },
+    {
+      "id": "x10-events",
+      "level": "2",
+      "title": "Events"
+    },
+    {
+      "id": "x11-special-document-handling-procedures",
+      "level": "2",
+      "title": "Special Document Handling Procedures"
+    },
+    {
+      "id": "x12-security-and-privacy-considerations",
+      "level": "2",
+      "title": "Security and Privacy Considerations"
+    },
+    {
+      "id": "a-appendices",
+      "level": "2",
+      "title": "A. Appendices"
+    },
+    {
+      "id": "a-1-acknowledgments",
+      "level": "3",
+      "title": "A.1 Acknowledgments"
+    },
+    {
+      "id": "a-1-1-past-participants-in-the-svg-accessibility-task-force",
+      "level": "4",
+      "title": "A.1.1 Past participants in the SVG Accessibility Task Force"
+    },
+    {
+      "id": "a-1-2-enabling-funders",
+      "level": "4",
+      "title": "A.1.2 Enabling funders"
+    },
+    {
+      "id": "a-2-issue-summary",
+      "level": "3",
+      "title": "A.2 Issue Summary"
+    },
+    {
+      "id": "b-references",
+      "level": "2",
+      "title": "B. References"
+    },
+    {
+      "id": "b-1-normative-references",
+      "level": "3",
+      "title": "B.1 \n        Normative references"
+    },
+    {
+      "id": "b-2-informative-references",
+      "level": "3",
+      "title": "B.2 \n        Informative references"
+    }
+  ]
+}

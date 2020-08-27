@@ -1,0 +1,263 @@
+{
+  "spec": {
+    "title": "Scalable Video Coding (SVC) Extension for WebRTC",
+    "url": "https://w3c.github.io/webrtc-svc/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Scalable Video Coding (SVC) Extension for WebRTC"
+    },
+    {
+      "id": "table-of-contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "x1-introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "x2-conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "x3-terminology",
+      "level": "2",
+      "title": "Terminology"
+    },
+    {
+      "id": "x4-operational-model",
+      "level": "2",
+      "title": "Operational model"
+    },
+    {
+      "id": "x4-1-error-handling",
+      "level": "3",
+      "title": "Error handling"
+    },
+    {
+      "id": "x4-2-negotiation",
+      "level": "3",
+      "title": "Negotiation"
+    },
+    {
+      "id": "x5-dictionary-extensions",
+      "level": "2",
+      "title": "Dictionary extensions"
+    },
+    {
+      "id": "x5-1-rtcrtpencodingparameters-dictionary-extensions",
+      "level": "3",
+      "title": "RTCRtpEncodingParameters Dictionary Extensions"
+    },
+    {
+      "id": "dictionary-rtcrtpencodingparameters-members",
+      "level": "4",
+      "title": "Dictionary RTCRtpEncodingParameters Members"
+    },
+    {
+      "id": "x5-2-rtcrtpcodeccapability-dictionary-extensions",
+      "level": "3",
+      "title": "RTCRtpCodecCapability Dictionary Extensions"
+    },
+    {
+      "id": "dictionary-rtcrtpcodeccapability-members",
+      "level": "4",
+      "title": "Dictionary RTCRtpCodecCapability Members"
+    },
+    {
+      "id": "x6-scalability-modes",
+      "level": "2",
+      "title": "Scalability modes"
+    },
+    {
+      "id": "x6-1-guidelines-for-addition-of-scalabilitymode-values",
+      "level": "3",
+      "title": "Guidelines for addition of scalabilityMode values"
+    },
+    {
+      "id": "x7-examples",
+      "level": "2",
+      "title": "Examples"
+    },
+    {
+      "id": "x7-1-spatial-simulcast-and-temporal-scalability",
+      "level": "3",
+      "title": "Spatial Simulcast and Temporal Scalability"
+    },
+    {
+      "id": "x7-2-spatial-and-temporal-scalability",
+      "level": "3",
+      "title": "Spatial and Temporal Scalability"
+    },
+    {
+      "id": "x7-3-svc-encoder-capabilities",
+      "level": "3",
+      "title": "SVC Encoder Capabilities"
+    },
+    {
+      "id": "x7-4-sfu-capabilities",
+      "level": "3",
+      "title": "SFU Capabilities"
+    },
+    {
+      "id": "x7-5-svc-decoder-capabilities",
+      "level": "3",
+      "title": "SVC Decoder Capabilities"
+    },
+    {
+      "id": "x8-privacy-and-security-considerations",
+      "level": "2",
+      "title": "Privacy and Security Considerations"
+    },
+    {
+      "id": "x8-1-persistent-information",
+      "level": "3",
+      "title": "Persistent information"
+    },
+    {
+      "id": "x9-scalability-mode-dependency-diagrams",
+      "level": "2",
+      "title": "Scalability Mode Dependency Diagrams"
+    },
+    {
+      "id": "x9-1-l1t2",
+      "level": "3",
+      "title": "L1T2"
+    },
+    {
+      "id": "x9-2-l1t3",
+      "level": "3",
+      "title": "L1T3"
+    },
+    {
+      "id": "x9-3-l2t1",
+      "level": "3",
+      "title": "L2T1"
+    },
+    {
+      "id": "x9-4-l2t1_key",
+      "level": "3",
+      "title": "L2T1_KEY"
+    },
+    {
+      "id": "x9-5-l2t2",
+      "level": "3",
+      "title": "L2T2"
+    },
+    {
+      "id": "x9-6-l2t2_key",
+      "level": "3",
+      "title": "L2T2_KEY"
+    },
+    {
+      "id": "x9-7-l2t2_key_shift",
+      "level": "3",
+      "title": "L2T2_KEY_SHIFT"
+    },
+    {
+      "id": "x9-8-l2t3",
+      "level": "3",
+      "title": "L2T3"
+    },
+    {
+      "id": "x9-9-l2t3_key",
+      "level": "3",
+      "title": "L2T3_KEY"
+    },
+    {
+      "id": "x9-10-l2t3_key_shift",
+      "level": "3",
+      "title": "L2T3_KEY_SHIFT"
+    },
+    {
+      "id": "x9-11-l3t1",
+      "level": "3",
+      "title": "L3T1"
+    },
+    {
+      "id": "x9-12-l3t1_key",
+      "level": "3",
+      "title": "L3T1_KEY"
+    },
+    {
+      "id": "x9-13-l3t2",
+      "level": "3",
+      "title": "L3T2"
+    },
+    {
+      "id": "x9-14-l3t2_key",
+      "level": "3",
+      "title": "L3T2_KEY"
+    },
+    {
+      "id": "x9-15-l3t2_key_shift",
+      "level": "3",
+      "title": "L3T2_KEY_SHIFT"
+    },
+    {
+      "id": "x9-16-l3t3",
+      "level": "3",
+      "title": "L3T3"
+    },
+    {
+      "id": "x9-17-l3t3_key",
+      "level": "3",
+      "title": "L3T3_KEY"
+    },
+    {
+      "id": "x9-18-l3t3_key_shift",
+      "level": "3",
+      "title": "L3T3_KEY_SHIFT"
+    },
+    {
+      "id": "x9-19-s2t1",
+      "level": "3",
+      "title": "S2T1"
+    },
+    {
+      "id": "x9-20-s2t2",
+      "level": "3",
+      "title": "S2T2"
+    },
+    {
+      "id": "x9-21-s2t3",
+      "level": "3",
+      "title": "S2T3"
+    },
+    {
+      "id": "x9-22-s3t1",
+      "level": "3",
+      "title": "S3T1"
+    },
+    {
+      "id": "x9-23-s3t2",
+      "level": "3",
+      "title": "S3T2"
+    },
+    {
+      "id": "x9-24-s3t3",
+      "level": "3",
+      "title": "S3T3"
+    },
+    {
+      "id": "a-references",
+      "level": "2",
+      "title": "A. References"
+    },
+    {
+      "id": "a-1-normative-references",
+      "level": "3",
+      "title": "A.1 Normative references"
+    },
+    {
+      "id": "a-2-informative-references",
+      "level": "3",
+      "title": "A.2 Informative references"
+    }
+  ]
+}

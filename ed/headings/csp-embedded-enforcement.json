@@ -1,0 +1,258 @@
+{
+  "spec": {
+    "title": "Content Security Policy: Embedded Enforcement",
+    "url": "https://w3c.github.io/webappsec-cspee/"
+  },
+  "headings": [
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Editor’s Draft, 15 October 2018"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "examples",
+      "level": "3",
+      "title": "Examples"
+    },
+    {
+      "id": "framework",
+      "level": "2",
+      "title": "Framework"
+    },
+    {
+      "id": "csp-attribute",
+      "level": "3",
+      "title": "<iframe>'s csp attribute"
+    },
+    {
+      "id": "required-csp-header",
+      "level": "3",
+      "title": "The Sec-Required-CSP HTTP Request Header"
+    },
+    {
+      "id": "allow-csp-from-header",
+      "level": "3",
+      "title": "The Allow-CSP-From HTTP Response Header"
+    },
+    {
+      "id": "html-integration",
+      "level": "3",
+      "title": "Integration with HTML"
+    },
+    {
+      "id": "required-csp",
+      "level": "4",
+      "title": "Browsing Context’s Required CSP"
+    },
+    {
+      "id": "implicit-opt-in",
+      "level": "2",
+      "title": "Implicit Policy Acceptance"
+    },
+    {
+      "id": "intersection",
+      "level": "3",
+      "title": "Intersection"
+    },
+    {
+      "id": "intersection-policy-list",
+      "level": "4",
+      "title": "CSP List intersection"
+    },
+    {
+      "id": "intersection-policy",
+      "level": "4",
+      "title": "Policy Intersection"
+    },
+    {
+      "id": "intersection-source-list",
+      "level": "4",
+      "title": "Source List Intersection"
+    },
+    {
+      "id": "intersection-helpers",
+      "level": "4",
+      "title": "Intersection Helpers"
+    },
+    {
+      "id": "effective-directive",
+      "level": "5",
+      "title": "Effective Directive Value"
+    },
+    {
+      "id": "the-effective-source-list",
+      "level": "5",
+      "title": "Effective Source List"
+    },
+    {
+      "id": "similarity-source-expressions",
+      "level": "5",
+      "title": "Source Expression Similarity"
+    },
+    {
+      "id": "subsumption",
+      "level": "3",
+      "title": "Subsumption"
+    },
+    {
+      "id": "algorithms",
+      "level": "2",
+      "title": "Algorithms"
+    },
+    {
+      "id": "process-response",
+      "level": "3",
+      "title": "Is response to request blocked by context’s required CSP?"
+    },
+    {
+      "id": "origin-allowed",
+      "level": "3",
+      "title": "Does response allow blanket enforcment of policy from request?"
+    },
+    {
+      "id": "intersection-source-expressions",
+      "level": "4",
+      "title": "What is an intersection of two expressions matching scheme-source or host-source grammar A and B?"
+    },
+    {
+      "id": "rewrite-self",
+      "level": "4",
+      "title": "Rewrite 'self' into a host-source expression for origin."
+    },
+    {
+      "id": "subsume-source-expressions",
+      "level": "4",
+      "title": "Does source expression A subsume source expression B?"
+    },
+    {
+      "id": "subsume-source-list",
+      "level": "4",
+      "title": "Does source list A subsume source listB given their\n    respective origins and directive names?"
+    },
+    {
+      "id": "subsume-policy",
+      "level": "4",
+      "title": "Does policy A subsume policy B given their respective origins?"
+    },
+    {
+      "id": "subsume-policy-list",
+      "level": "3",
+      "title": "Does subsuming policy subsume policy list given their respective origins?"
+    },
+    {
+      "id": "security-and-privacy-considerations",
+      "level": "2",
+      "title": "Security and Privacy Considerations"
+    },
+    {
+      "id": "policy-enforcement",
+      "level": "3",
+      "title": "Policy Enforcement"
+    },
+    {
+      "id": "policy-leakage",
+      "level": "3",
+      "title": "Policy Leakage"
+    },
+    {
+      "id": "exfiltration",
+      "level": "3",
+      "title": "Data Exfiltration"
+    },
+    {
+      "id": "header-injection",
+      "level": "3",
+      "title": "Header Injection"
+    },
+    {
+      "id": "header-reflection",
+      "level": "3",
+      "title": "Header Reflection"
+    },
+    {
+      "id": "authoring-considerations",
+      "level": "2",
+      "title": "Authoring Considerations"
+    },
+    {
+      "id": "effect-self",
+      "level": "3",
+      "title": "Requiring 'self'"
+    },
+    {
+      "id": "iana",
+      "level": "2",
+      "title": "IANA Considerations"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformant-algorithms",
+      "level": "3",
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "level": "2",
+      "title": "Issues Index"
+    }
+  ]
+}

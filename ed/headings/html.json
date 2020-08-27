@@ -1,0 +1,5773 @@
+{
+  "spec": {
+    "title": "HTML Standard",
+    "url": "https://html.spec.whatwg.org/multipage/"
+  },
+  "headings": [
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "table-of-contents",
+      "level": "2",
+      "title": "Table of contents"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Full table of contents"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "abstract",
+      "level": "3",
+      "title": "Where does this specification fit?"
+    },
+    {
+      "id": "is-this-html5?",
+      "level": "3",
+      "title": "Is this HTML5?"
+    },
+    {
+      "id": "background",
+      "level": "3",
+      "title": "Background"
+    },
+    {
+      "id": "audience",
+      "level": "3",
+      "title": "Audience"
+    },
+    {
+      "id": "scope",
+      "level": "3",
+      "title": "Scope"
+    },
+    {
+      "id": "history-2",
+      "level": "3",
+      "title": "History"
+    },
+    {
+      "id": "design-notes",
+      "level": "3",
+      "title": "Design notes"
+    },
+    {
+      "id": "serialisability-of-script-execution",
+      "level": "4",
+      "title": "Serializability of script execution"
+    },
+    {
+      "id": "compliance-with-other-specifications",
+      "level": "4",
+      "title": "Compliance with other specifications"
+    },
+    {
+      "id": "extensibility",
+      "level": "4",
+      "title": "Extensibility"
+    },
+    {
+      "id": "html-vs-xhtml",
+      "level": "3",
+      "title": "HTML vs XML syntax"
+    },
+    {
+      "id": "structure-of-this-specification",
+      "level": "3",
+      "title": "Structure of this specification"
+    },
+    {
+      "id": "how-to-read-this-specification",
+      "level": "4",
+      "title": "How to read this specification"
+    },
+    {
+      "id": "typographic-conventions",
+      "level": "4",
+      "title": "Typographic conventions"
+    },
+    {
+      "id": "a-quick-introduction-to-html",
+      "level": "3",
+      "title": "A quick introduction to HTML"
+    },
+    {
+      "id": "writing-secure-applications-with-html",
+      "level": "4",
+      "title": "Writing secure applications with HTML"
+    },
+    {
+      "id": "common-pitfalls-to-avoid-when-using-the-scripting-apis",
+      "level": "4",
+      "title": "Common pitfalls to avoid when using the scripting APIs"
+    },
+    {
+      "id": "how-to-catch-mistakes-when-writing-html:-validators-and-conformance-checkers",
+      "level": "4",
+      "title": "How to catch mistakes when writing HTML: validators and conformance checkers"
+    },
+    {
+      "id": "conformance-requirements-for-authors",
+      "level": "3",
+      "title": "Conformance requirements for authors"
+    },
+    {
+      "id": "presentational-markup",
+      "level": "4",
+      "title": "Presentational markup"
+    },
+    {
+      "id": "syntax-errors",
+      "level": "4",
+      "title": "Syntax errors"
+    },
+    {
+      "id": "restrictions-on-content-models-and-on-attribute-values",
+      "level": "4",
+      "title": "Restrictions on content models and on attribute values"
+    },
+    {
+      "id": "suggested-reading",
+      "level": "3",
+      "title": "Suggested reading"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "infrastructure",
+      "level": "2",
+      "title": "Common infrastructure"
+    },
+    {
+      "id": "terminology",
+      "level": "3",
+      "title": "Terminology"
+    },
+    {
+      "id": "parallelism",
+      "level": "4",
+      "title": "Parallelism"
+    },
+    {
+      "id": "resources",
+      "level": "4",
+      "title": "Resources"
+    },
+    {
+      "id": "xml",
+      "level": "4",
+      "title": "XML compatibility"
+    },
+    {
+      "id": "dom-trees",
+      "level": "4",
+      "title": "DOM trees"
+    },
+    {
+      "id": "scripting-2",
+      "level": "4",
+      "title": "Scripting"
+    },
+    {
+      "id": "plugins",
+      "level": "4",
+      "title": "Plugins"
+    },
+    {
+      "id": "encoding-terminology",
+      "level": "4",
+      "title": "Character encodings"
+    },
+    {
+      "id": "conformance-classes",
+      "level": "4",
+      "title": "Conformance classes"
+    },
+    {
+      "id": "dependencies",
+      "level": "4",
+      "title": "Dependencies"
+    },
+    {
+      "id": "extensibility-2",
+      "level": "4",
+      "title": "Extensibility"
+    },
+    {
+      "id": "interactions-with-xpath-and-xslt",
+      "level": "4",
+      "title": "Interactions with XPath and XSLT"
+    },
+    {
+      "id": "case-sensitivity-and-string-comparison",
+      "level": "3",
+      "title": "String comparison"
+    },
+    {
+      "id": "policy-controlled-features",
+      "level": "3",
+      "title": "Policy-controlled features"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "common-microsyntaxes",
+      "level": "3",
+      "title": "Common microsyntaxes"
+    },
+    {
+      "id": "common-parser-idioms",
+      "level": "4",
+      "title": "Common parser idioms"
+    },
+    {
+      "id": "boolean-attributes",
+      "level": "4",
+      "title": "Boolean attributes"
+    },
+    {
+      "id": "keywords-and-enumerated-attributes",
+      "level": "4",
+      "title": "Keywords and enumerated attributes"
+    },
+    {
+      "id": "numbers",
+      "level": "4",
+      "title": "Numbers"
+    },
+    {
+      "id": "signed-integers",
+      "level": "5",
+      "title": "Signed integers"
+    },
+    {
+      "id": "non-negative-integers",
+      "level": "5",
+      "title": "Non-negative integers"
+    },
+    {
+      "id": "floating-point-numbers",
+      "level": "5",
+      "title": "Floating-point numbers"
+    },
+    {
+      "id": "percentages-and-dimensions",
+      "level": "5",
+      "title": "Percentages and lengths"
+    },
+    {
+      "id": "non-zero-percentages-and-lengths",
+      "level": "5",
+      "title": "Non-zero percentages and lengths"
+    },
+    {
+      "id": "lists-of-floating-point-numbers",
+      "level": "5",
+      "title": "Lists of floating-point numbers"
+    },
+    {
+      "id": "lists-of-dimensions",
+      "level": "5",
+      "title": "Lists of dimensions"
+    },
+    {
+      "id": "dates-and-times",
+      "level": "4",
+      "title": "Dates and times"
+    },
+    {
+      "id": "months",
+      "level": "5",
+      "title": "Months"
+    },
+    {
+      "id": "dates",
+      "level": "5",
+      "title": "Dates"
+    },
+    {
+      "id": "yearless-dates",
+      "level": "5",
+      "title": "Yearless dates"
+    },
+    {
+      "id": "times",
+      "level": "5",
+      "title": "Times"
+    },
+    {
+      "id": "local-dates-and-times",
+      "level": "5",
+      "title": "Local dates and times"
+    },
+    {
+      "id": "time-zones",
+      "level": "5",
+      "title": "Time zones"
+    },
+    {
+      "id": "global-dates-and-times",
+      "level": "5",
+      "title": "Global dates and times"
+    },
+    {
+      "id": "weeks",
+      "level": "5",
+      "title": "Weeks"
+    },
+    {
+      "id": "durations",
+      "level": "5",
+      "title": "Durations"
+    },
+    {
+      "id": "vaguer-moments-in-time",
+      "level": "5",
+      "title": "Vaguer moments in time"
+    },
+    {
+      "id": "colours",
+      "level": "4",
+      "title": "Colors"
+    },
+    {
+      "id": "space-separated-tokens",
+      "level": "4",
+      "title": "Space-separated tokens"
+    },
+    {
+      "id": "comma-separated-tokens",
+      "level": "4",
+      "title": "Comma-separated tokens"
+    },
+    {
+      "id": "syntax-references",
+      "level": "4",
+      "title": "References"
+    },
+    {
+      "id": "mq",
+      "level": "4",
+      "title": "Media queries"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "urls",
+      "level": "3",
+      "title": "URLs"
+    },
+    {
+      "id": "terminology-2",
+      "level": "4",
+      "title": "Terminology"
+    },
+    {
+      "id": "resolving-urls",
+      "level": "4",
+      "title": "Parsing URLs"
+    },
+    {
+      "id": "dynamic-changes-to-base-urls",
+      "level": "4",
+      "title": "Dynamic changes to base URLs"
+    },
+    {
+      "id": "fetching-resources",
+      "level": "3",
+      "title": "Fetching resources"
+    },
+    {
+      "id": "terminology-3",
+      "level": "4",
+      "title": "Terminology"
+    },
+    {
+      "id": "content-type-sniffing",
+      "level": "4",
+      "title": "Determining the type of a resource"
+    },
+    {
+      "id": "extracting-character-encodings-from-meta-elements",
+      "level": "4",
+      "title": "Extracting character encodings from meta elements"
+    },
+    {
+      "id": "cors-settings-attributes",
+      "level": "4",
+      "title": "CORS settings attributes"
+    },
+    {
+      "id": "referrer-policy-attributes",
+      "level": "4",
+      "title": "Referrer policy attributes"
+    },
+    {
+      "id": "nonce-attributes",
+      "level": "4",
+      "title": "Nonce attributes"
+    },
+    {
+      "id": "lazy-loading-attributes",
+      "level": "4",
+      "title": "Lazy loading attributes"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "common-dom-interfaces",
+      "level": "3",
+      "title": "Common DOM interfaces"
+    },
+    {
+      "id": "reflecting-content-attributes-in-idl-attributes",
+      "level": "4",
+      "title": "Reflecting content attributes in IDL attributes"
+    },
+    {
+      "id": "collections",
+      "level": "4",
+      "title": "Collections"
+    },
+    {
+      "id": "the-htmlallcollection-interface",
+      "level": "5",
+      "title": "The HTMLAllCollection interface"
+    },
+    {
+      "id": "HTMLAllCollection-call",
+      "level": "6",
+      "title": "[[Call]] ( thisArgument,  argumentsList )"
+    },
+    {
+      "id": "the-htmlformcontrolscollection-interface",
+      "level": "5",
+      "title": "The HTMLFormControlsCollection interface"
+    },
+    {
+      "id": "the-htmloptionscollection-interface",
+      "level": "5",
+      "title": "The HTMLOptionsCollection interface"
+    },
+    {
+      "id": "the-domstringlist-interface",
+      "level": "4",
+      "title": "The DOMStringList interface"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "safe-passing-of-structured-data",
+      "level": "3",
+      "title": "Safe passing of structured data"
+    },
+    {
+      "id": "serializable-objects",
+      "level": "4",
+      "title": "Serializable objects"
+    },
+    {
+      "id": "transferable-objects",
+      "level": "4",
+      "title": "Transferable objects"
+    },
+    {
+      "id": "structuredserializeinternal",
+      "level": "4",
+      "title": "StructuredSerializeInternal ( value,\n  forStorage [ , memory ] )"
+    },
+    {
+      "id": "structuredserialize",
+      "level": "4",
+      "title": "StructuredSerialize ( value )"
+    },
+    {
+      "id": "structuredserializeforstorage",
+      "level": "4",
+      "title": "StructuredSerializeForStorage ( value )"
+    },
+    {
+      "id": "structureddeserialize",
+      "level": "4",
+      "title": "StructuredDeserialize ( serialized,\n  targetRealm [ , memory ] )"
+    },
+    {
+      "id": "structuredserializewithtransfer",
+      "level": "4",
+      "title": "StructuredSerializeWithTransfer ( value,\n  transferList )"
+    },
+    {
+      "id": "structureddeserializewithtransfer",
+      "level": "4",
+      "title": "StructuredDeserializeWithTransfer (\n  serializeWithTransferResult, targetRealm )"
+    },
+    {
+      "id": "performing-structured-clones-from-other-specifications",
+      "level": "4",
+      "title": "Performing serialization and\n  transferring from other specifications"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "dom",
+      "level": "2",
+      "title": "Semantics, structure, and APIs of HTML documents"
+    },
+    {
+      "id": "documents",
+      "level": "3",
+      "title": "Documents"
+    },
+    {
+      "id": "the-document-object",
+      "level": "4",
+      "title": "The Document object"
+    },
+    {
+      "id": "the-documentorshadowroot-interface",
+      "level": "4",
+      "title": "The DocumentOrShadowRoot interface"
+    },
+    {
+      "id": "resource-metadata-management",
+      "level": "4",
+      "title": "Resource metadata management"
+    },
+    {
+      "id": "dom-tree-accessors",
+      "level": "4",
+      "title": "DOM tree accessors"
+    },
+    {
+      "id": "elements",
+      "level": "3",
+      "title": "Elements"
+    },
+    {
+      "id": "semantics-2",
+      "level": "4",
+      "title": "Semantics"
+    },
+    {
+      "id": "elements-in-the-dom",
+      "level": "4",
+      "title": "Elements in the DOM"
+    },
+    {
+      "id": "html-element-constructors",
+      "level": "4",
+      "title": "HTML element constructors"
+    },
+    {
+      "id": "element-definitions",
+      "level": "4",
+      "title": "Element definitions"
+    },
+    {
+      "id": "attributes",
+      "level": "5",
+      "title": "Attributes"
+    },
+    {
+      "id": "content-models",
+      "level": "4",
+      "title": "Content models"
+    },
+    {
+      "id": "the-nothing-content-model",
+      "level": "5",
+      "title": "The \"nothing\" content model"
+    },
+    {
+      "id": "kinds-of-content",
+      "level": "5",
+      "title": "Kinds of content"
+    },
+    {
+      "id": "metadata-content",
+      "level": "6",
+      "title": "Metadata content"
+    },
+    {
+      "id": "flow-content",
+      "level": "6",
+      "title": "Flow content"
+    },
+    {
+      "id": "sectioning-content",
+      "level": "6",
+      "title": "Sectioning content"
+    },
+    {
+      "id": "heading-content",
+      "level": "6",
+      "title": "Heading content"
+    },
+    {
+      "id": "phrasing-content",
+      "level": "6",
+      "title": "Phrasing content"
+    },
+    {
+      "id": "embedded-content-2",
+      "level": "6",
+      "title": "Embedded content"
+    },
+    {
+      "id": "interactive-content",
+      "level": "6",
+      "title": "Interactive content"
+    },
+    {
+      "id": "palpable-content",
+      "level": "6",
+      "title": "Palpable content"
+    },
+    {
+      "id": "script-supporting-elements",
+      "level": "6",
+      "title": "Script-supporting elements"
+    },
+    {
+      "id": "transparent-content-models",
+      "level": "5",
+      "title": "Transparent content models"
+    },
+    {
+      "id": "paragraphs",
+      "level": "5",
+      "title": "Paragraphs"
+    },
+    {
+      "id": "global-attributes",
+      "level": "4",
+      "title": "Global attributes"
+    },
+    {
+      "id": "the-title-attribute",
+      "level": "5",
+      "title": "The title attribute"
+    },
+    {
+      "id": "the-lang-and-xml:lang-attributes",
+      "level": "5",
+      "title": "The lang and xml:lang attributes"
+    },
+    {
+      "id": "the-translate-attribute",
+      "level": "5",
+      "title": "The translate attribute"
+    },
+    {
+      "id": "the-dir-attribute",
+      "level": "5",
+      "title": "The dir attribute"
+    },
+    {
+      "id": "the-style-attribute",
+      "level": "5",
+      "title": "The style attribute"
+    },
+    {
+      "id": "embedding-custom-non-visible-data-with-the-data-*-attributes",
+      "level": "5",
+      "title": "Embedding custom non-visible data with the data-* attributes"
+    },
+    {
+      "id": "the-innertext-idl-attribute",
+      "level": "4",
+      "title": "The innerText getter and\n  setter"
+    },
+    {
+      "id": "requirements-relating-to-the-bidirectional-algorithm",
+      "level": "4",
+      "title": "Requirements relating to the bidirectional algorithm"
+    },
+    {
+      "id": "authoring-conformance-criteria-for-bidirectional-algorithm-formatting-characters",
+      "level": "5",
+      "title": "Authoring conformance criteria for bidirectional-algorithm formatting characters"
+    },
+    {
+      "id": "user-agent-conformance-criteria",
+      "level": "5",
+      "title": "User agent conformance criteria"
+    },
+    {
+      "id": "wai-aria",
+      "level": "4",
+      "title": "Requirements related to ARIA and to platform accessibility APIs"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "semantics",
+      "level": "2",
+      "title": "The elements of HTML"
+    },
+    {
+      "id": "the-root-element",
+      "level": "3",
+      "title": "The document element"
+    },
+    {
+      "id": "the-html-element",
+      "level": "4",
+      "title": "The html element"
+    },
+    {
+      "id": "document-metadata",
+      "level": "3",
+      "title": "Document metadata"
+    },
+    {
+      "id": "the-head-element",
+      "level": "4",
+      "title": "The head element"
+    },
+    {
+      "id": "the-title-element",
+      "level": "4",
+      "title": "The title element"
+    },
+    {
+      "id": "the-base-element",
+      "level": "4",
+      "title": "The base element"
+    },
+    {
+      "id": "the-link-element",
+      "level": "4",
+      "title": "The link element"
+    },
+    {
+      "id": "processing-the-media-attribute",
+      "level": "5",
+      "title": "Processing the media attribute"
+    },
+    {
+      "id": "processing-the-type-attribute",
+      "level": "5",
+      "title": "Processing the type attribute"
+    },
+    {
+      "id": "fetching-and-processing-a-resource-from-a-link-element",
+      "level": "5",
+      "title": "Fetching and processing a resource\n  from a link element"
+    },
+    {
+      "id": "processing-link-headers",
+      "level": "5",
+      "title": "Processing `Link` headers"
+    },
+    {
+      "id": "providing-users-with-a-means-to-follow-hyperlinks-created-using-the-link-element",
+      "level": "5",
+      "title": "Providing users with a means to follow hyperlinks created using the link\n  element"
+    },
+    {
+      "id": "the-meta-element",
+      "level": "4",
+      "title": "The meta element"
+    },
+    {
+      "id": "standard-metadata-names",
+      "level": "5",
+      "title": "Standard metadata names"
+    },
+    {
+      "id": "other-metadata-names",
+      "level": "5",
+      "title": "Other metadata names"
+    },
+    {
+      "id": "pragma-directives",
+      "level": "5",
+      "title": "Pragma directives"
+    },
+    {
+      "id": "charset",
+      "level": "5",
+      "title": "Specifying the document's character encoding"
+    },
+    {
+      "id": "the-style-element",
+      "level": "4",
+      "title": "The style element"
+    },
+    {
+      "id": "interactions-of-styling-and-scripting",
+      "level": "4",
+      "title": "Interactions of styling and scripting"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "sections",
+      "level": "3",
+      "title": "Sections"
+    },
+    {
+      "id": "the-body-element",
+      "level": "4",
+      "title": "The body element"
+    },
+    {
+      "id": "the-article-element",
+      "level": "4",
+      "title": "The article element"
+    },
+    {
+      "id": "the-section-element",
+      "level": "4",
+      "title": "The section element"
+    },
+    {
+      "id": "the-nav-element",
+      "level": "4",
+      "title": "The nav element"
+    },
+    {
+      "id": "the-aside-element",
+      "level": "4",
+      "title": "The aside element"
+    },
+    {
+      "id": "the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+      "level": "4",
+      "title": "The h1, h2, h3, h4, h5, and\n  h6 elements"
+    },
+    {
+      "id": "the-hgroup-element",
+      "level": "4",
+      "title": "The hgroup element"
+    },
+    {
+      "id": "the-header-element",
+      "level": "4",
+      "title": "The header element"
+    },
+    {
+      "id": "the-footer-element",
+      "level": "4",
+      "title": "The footer element"
+    },
+    {
+      "id": "the-address-element",
+      "level": "4",
+      "title": "The address element"
+    },
+    {
+      "id": "headings-and-sections",
+      "level": "4",
+      "title": "Headings and sections"
+    },
+    {
+      "id": "outlines",
+      "level": "5",
+      "title": "Creating an outline"
+    },
+    {
+      "id": "sample-outlines",
+      "level": "5",
+      "title": "Sample outlines"
+    },
+    {
+      "id": "exposing-outlines-to-users",
+      "level": "5",
+      "title": "Exposing outlines to users"
+    },
+    {
+      "id": "usage-summary-2",
+      "level": "4",
+      "title": "Usage summary"
+    },
+    {
+      "id": "article-or-section",
+      "level": "5",
+      "title": "Article or section?"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "grouping-content",
+      "level": "3",
+      "title": "Grouping content"
+    },
+    {
+      "id": "the-p-element",
+      "level": "4",
+      "title": "The p element"
+    },
+    {
+      "id": "the-hr-element",
+      "level": "4",
+      "title": "The hr element"
+    },
+    {
+      "id": "the-pre-element",
+      "level": "4",
+      "title": "The pre element"
+    },
+    {
+      "id": "the-blockquote-element",
+      "level": "4",
+      "title": "The blockquote element"
+    },
+    {
+      "id": "the-ol-element",
+      "level": "4",
+      "title": "The ol element"
+    },
+    {
+      "id": "the-ul-element",
+      "level": "4",
+      "title": "The ul element"
+    },
+    {
+      "id": "the-menu-element",
+      "level": "4",
+      "title": "The menu element"
+    },
+    {
+      "id": "the-li-element",
+      "level": "4",
+      "title": "The li element"
+    },
+    {
+      "id": "the-dl-element",
+      "level": "4",
+      "title": "The dl element"
+    },
+    {
+      "id": "the-dt-element",
+      "level": "4",
+      "title": "The dt element"
+    },
+    {
+      "id": "the-dd-element",
+      "level": "4",
+      "title": "The dd element"
+    },
+    {
+      "id": "the-figure-element",
+      "level": "4",
+      "title": "The figure element"
+    },
+    {
+      "id": "the-figcaption-element",
+      "level": "4",
+      "title": "The figcaption element"
+    },
+    {
+      "id": "the-main-element",
+      "level": "4",
+      "title": "The main element"
+    },
+    {
+      "id": "the-div-element",
+      "level": "4",
+      "title": "The div element"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "text-level-semantics",
+      "level": "3",
+      "title": "Text-level semantics"
+    },
+    {
+      "id": "the-a-element",
+      "level": "4",
+      "title": "The a element"
+    },
+    {
+      "id": "the-em-element",
+      "level": "4",
+      "title": "The em element"
+    },
+    {
+      "id": "the-strong-element",
+      "level": "4",
+      "title": "The strong element"
+    },
+    {
+      "id": "the-small-element",
+      "level": "4",
+      "title": "The small element"
+    },
+    {
+      "id": "the-s-element",
+      "level": "4",
+      "title": "The s element"
+    },
+    {
+      "id": "the-cite-element",
+      "level": "4",
+      "title": "The cite element"
+    },
+    {
+      "id": "the-q-element",
+      "level": "4",
+      "title": "The q element"
+    },
+    {
+      "id": "the-dfn-element",
+      "level": "4",
+      "title": "The dfn element"
+    },
+    {
+      "id": "the-abbr-element",
+      "level": "4",
+      "title": "The abbr element"
+    },
+    {
+      "id": "the-ruby-element",
+      "level": "4",
+      "title": "The ruby element"
+    },
+    {
+      "id": "the-rt-element",
+      "level": "4",
+      "title": "The rt element"
+    },
+    {
+      "id": "the-rp-element",
+      "level": "4",
+      "title": "The rp element"
+    },
+    {
+      "id": "the-data-element",
+      "level": "4",
+      "title": "The data element"
+    },
+    {
+      "id": "the-time-element",
+      "level": "4",
+      "title": "The time element"
+    },
+    {
+      "id": "the-code-element",
+      "level": "4",
+      "title": "The code element"
+    },
+    {
+      "id": "the-var-element",
+      "level": "4",
+      "title": "The var element"
+    },
+    {
+      "id": "the-samp-element",
+      "level": "4",
+      "title": "The samp element"
+    },
+    {
+      "id": "the-kbd-element",
+      "level": "4",
+      "title": "The kbd element"
+    },
+    {
+      "id": "the-sub-and-sup-elements",
+      "level": "4",
+      "title": "The sub and\n  sup elements"
+    },
+    {
+      "id": "the-i-element",
+      "level": "4",
+      "title": "The i element"
+    },
+    {
+      "id": "the-b-element",
+      "level": "4",
+      "title": "The b element"
+    },
+    {
+      "id": "the-u-element",
+      "level": "4",
+      "title": "The u element"
+    },
+    {
+      "id": "the-mark-element",
+      "level": "4",
+      "title": "The mark element"
+    },
+    {
+      "id": "the-bdi-element",
+      "level": "4",
+      "title": "The bdi element"
+    },
+    {
+      "id": "the-bdo-element",
+      "level": "4",
+      "title": "The bdo element"
+    },
+    {
+      "id": "the-span-element",
+      "level": "4",
+      "title": "The span element"
+    },
+    {
+      "id": "the-br-element",
+      "level": "4",
+      "title": "The br element"
+    },
+    {
+      "id": "the-wbr-element",
+      "level": "4",
+      "title": "The wbr element"
+    },
+    {
+      "id": "usage-summary",
+      "level": "4",
+      "title": "Usage summary"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "links",
+      "level": "3",
+      "title": "Links"
+    },
+    {
+      "id": "introduction-2",
+      "level": "4",
+      "title": "Introduction"
+    },
+    {
+      "id": "links-created-by-a-and-area-elements",
+      "level": "4",
+      "title": "Links created by a and area elements"
+    },
+    {
+      "id": "api-for-a-and-area-elements",
+      "level": "4",
+      "title": "API for a and area elements"
+    },
+    {
+      "id": "following-hyperlinks",
+      "level": "4",
+      "title": "Following hyperlinks"
+    },
+    {
+      "id": "downloading-resources",
+      "level": "4",
+      "title": "Downloading resources"
+    },
+    {
+      "id": "hyperlink-auditing",
+      "level": "5",
+      "title": "Hyperlink auditing"
+    },
+    {
+      "id": "linkTypes",
+      "level": "4",
+      "title": "Link types"
+    },
+    {
+      "id": "rel-alternate",
+      "level": "5",
+      "title": "Link type \"alternate\""
+    },
+    {
+      "id": "link-type-author",
+      "level": "5",
+      "title": "Link type \"author\""
+    },
+    {
+      "id": "link-type-bookmark",
+      "level": "5",
+      "title": "Link type \"bookmark\""
+    },
+    {
+      "id": "link-type-canonical",
+      "level": "5",
+      "title": "Link type \"canonical\""
+    },
+    {
+      "id": "link-type-dns-prefetch",
+      "level": "5",
+      "title": "Link type \"dns-prefetch\""
+    },
+    {
+      "id": "link-type-external",
+      "level": "5",
+      "title": "Link type \"external\""
+    },
+    {
+      "id": "link-type-help",
+      "level": "5",
+      "title": "Link type \"help\""
+    },
+    {
+      "id": "rel-icon",
+      "level": "5",
+      "title": "Link type \"icon\""
+    },
+    {
+      "id": "link-type-license",
+      "level": "5",
+      "title": "Link type \"license\""
+    },
+    {
+      "id": "link-type-manifest",
+      "level": "5",
+      "title": "Link type \"manifest\""
+    },
+    {
+      "id": "link-type-modulepreload",
+      "level": "5",
+      "title": "Link type \"modulepreload\""
+    },
+    {
+      "id": "link-type-nofollow",
+      "level": "5",
+      "title": "Link type \"nofollow\""
+    },
+    {
+      "id": "link-type-noopener",
+      "level": "5",
+      "title": "Link type \"noopener\""
+    },
+    {
+      "id": "link-type-noreferrer",
+      "level": "5",
+      "title": "Link type \"noreferrer\""
+    },
+    {
+      "id": "link-type-opener",
+      "level": "5",
+      "title": "Link type \"opener\""
+    },
+    {
+      "id": "link-type-pingback",
+      "level": "5",
+      "title": "Link type \"pingback\""
+    },
+    {
+      "id": "link-type-preconnect",
+      "level": "5",
+      "title": "Link type \"preconnect\""
+    },
+    {
+      "id": "link-type-prefetch",
+      "level": "5",
+      "title": "Link type \"prefetch\""
+    },
+    {
+      "id": "link-type-preload",
+      "level": "5",
+      "title": "Link type \"preload\""
+    },
+    {
+      "id": "link-type-prerender",
+      "level": "5",
+      "title": "Link type \"prerender\""
+    },
+    {
+      "id": "link-type-search",
+      "level": "5",
+      "title": "Link type \"search\""
+    },
+    {
+      "id": "link-type-stylesheet",
+      "level": "5",
+      "title": "Link type \"stylesheet\""
+    },
+    {
+      "id": "link-type-tag",
+      "level": "5",
+      "title": "Link type \"tag\""
+    },
+    {
+      "id": "sequential-link-types",
+      "level": "5",
+      "title": "Sequential link types"
+    },
+    {
+      "id": "link-type-next",
+      "level": "6",
+      "title": "Link type \"next\""
+    },
+    {
+      "id": "link-type-prev",
+      "level": "6",
+      "title": "Link type \"prev\""
+    },
+    {
+      "id": "other-link-types",
+      "level": "5",
+      "title": "Other link types"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "edits",
+      "level": "3",
+      "title": "Edits"
+    },
+    {
+      "id": "the-ins-element",
+      "level": "4",
+      "title": "The ins element"
+    },
+    {
+      "id": "the-del-element",
+      "level": "4",
+      "title": "The del element"
+    },
+    {
+      "id": "attributes-common-to-ins-and-del-elements",
+      "level": "4",
+      "title": "Attributes common to ins and del elements"
+    },
+    {
+      "id": "edits-and-paragraphs",
+      "level": "4",
+      "title": "Edits and paragraphs"
+    },
+    {
+      "id": "edits-and-lists",
+      "level": "4",
+      "title": "Edits and lists"
+    },
+    {
+      "id": "edits-and-tables",
+      "level": "4",
+      "title": "Edits and tables"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "embedded-content",
+      "level": "3",
+      "title": "Embedded content"
+    },
+    {
+      "id": "the-picture-element",
+      "level": "4",
+      "title": "The picture element"
+    },
+    {
+      "id": "the-source-element",
+      "level": "4",
+      "title": "The source element"
+    },
+    {
+      "id": "the-img-element",
+      "level": "4",
+      "title": "The img element"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "images",
+      "level": "4",
+      "title": "Images"
+    },
+    {
+      "id": "introduction-3",
+      "level": "5",
+      "title": "Introduction"
+    },
+    {
+      "id": "adaptive-images",
+      "level": "6",
+      "title": "Adaptive images"
+    },
+    {
+      "id": "attributes-common-to-source-and-img-elements",
+      "level": "5",
+      "title": "Attributes common to source,\n  img, and link elements"
+    },
+    {
+      "id": "srcset-attributes",
+      "level": "6",
+      "title": "Srcset attributes"
+    },
+    {
+      "id": "sizes-attributes",
+      "level": "6",
+      "title": "Sizes attributes"
+    },
+    {
+      "id": "images-processing-model",
+      "level": "5",
+      "title": "Processing model"
+    },
+    {
+      "id": "when-to-obtain-images",
+      "level": "6",
+      "title": "When to obtain images"
+    },
+    {
+      "id": "reacting-to-dom-mutations",
+      "level": "6",
+      "title": "Reacting to DOM mutations"
+    },
+    {
+      "id": "the-list-of-available-images",
+      "level": "6",
+      "title": "The list of available images"
+    },
+    {
+      "id": "decoding-images",
+      "level": "6",
+      "title": "Decoding images"
+    },
+    {
+      "id": "updating-the-image-data",
+      "level": "6",
+      "title": "Updating the image data"
+    },
+    {
+      "id": "selecting-an-image-source",
+      "level": "6",
+      "title": "Selecting an image source"
+    },
+    {
+      "id": "updating-the-source-set",
+      "level": "6",
+      "title": "Updating the source set"
+    },
+    {
+      "id": "parsing-a-srcset-attribute",
+      "level": "6",
+      "title": "Parsing a srcset attribute"
+    },
+    {
+      "id": "parsing-a-sizes-attribute",
+      "level": "6",
+      "title": "Parsing a sizes attribute"
+    },
+    {
+      "id": "normalizing-the-source-densities",
+      "level": "6",
+      "title": "Normalizing the source densities"
+    },
+    {
+      "id": "reacting-to-environment-changes",
+      "level": "6",
+      "title": "Reacting to environment changes"
+    },
+    {
+      "id": "alt",
+      "level": "5",
+      "title": "Requirements for providing text to act as an alternative for images"
+    },
+    {
+      "id": "general-guidelines",
+      "level": "6",
+      "title": "General guidelines"
+    },
+    {
+      "id": "a-link-or-button-containing-nothing-but-the-image",
+      "level": "6",
+      "title": "A link or button containing nothing but the image"
+    },
+    {
+      "id": "a-phrase-or-paragraph-with-an-alternative-graphical-representation:-charts,-diagrams,-graphs,-maps,-illustrations",
+      "level": "6",
+      "title": "A phrase or paragraph with an alternative graphical representation: charts, diagrams, graphs, maps, illustrations"
+    },
+    {
+      "id": "a-short-phrase-or-label-with-an-alternative-graphical-representation:-icons,-logos",
+      "level": "6",
+      "title": "A short phrase or label with an alternative graphical representation: icons, logos"
+    },
+    {
+      "id": "text-that-has-been-rendered-to-a-graphic-for-typographical-effect",
+      "level": "6",
+      "title": "Text that has been rendered to a graphic for typographical effect"
+    },
+    {
+      "id": "a-graphical-representation-of-some-of-the-surrounding-text",
+      "level": "6",
+      "title": "A graphical representation of some of the surrounding text"
+    },
+    {
+      "id": "ancillary-images",
+      "level": "6",
+      "title": "Ancillary images"
+    },
+    {
+      "id": "a-purely-decorative-image-that-doesn't-add-any-information",
+      "level": "6",
+      "title": "A purely decorative image that doesn't add any information"
+    },
+    {
+      "id": "a-group-of-images-that-form-a-single-larger-picture-with-no-links",
+      "level": "6",
+      "title": "A group of images that form a single larger picture with no links"
+    },
+    {
+      "id": "a-group-of-images-that-form-a-single-larger-picture-with-links",
+      "level": "6",
+      "title": "A group of images that form a single larger picture with links"
+    },
+    {
+      "id": "a-key-part-of-the-content",
+      "level": "6",
+      "title": "A key part of the content"
+    },
+    {
+      "id": "an-image-not-intended-for-the-user",
+      "level": "6",
+      "title": "An image not intended for the user"
+    },
+    {
+      "id": "an-image-in-an-e-mail-or-private-document-intended-for-a-specific-person-who-is-known-to-be-able-to-view-images",
+      "level": "6",
+      "title": "An image in an e-mail or private document intended for a specific person who is known to be able to view images"
+    },
+    {
+      "id": "guidance-for-markup-generators",
+      "level": "6",
+      "title": "Guidance for markup generators"
+    },
+    {
+      "id": "guidance-for-conformance-checkers",
+      "level": "6",
+      "title": "Guidance for conformance checkers"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "the-iframe-element",
+      "level": "4",
+      "title": "The\n  iframe element"
+    },
+    {
+      "id": "the-embed-element",
+      "level": "4",
+      "title": "The embed element"
+    },
+    {
+      "id": "the-object-element",
+      "level": "4",
+      "title": "The object element"
+    },
+    {
+      "id": "the-param-element",
+      "level": "4",
+      "title": "The param element"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "the-video-element",
+      "level": "4",
+      "title": "The video element"
+    },
+    {
+      "id": "the-audio-element",
+      "level": "4",
+      "title": "The audio element"
+    },
+    {
+      "id": "the-track-element",
+      "level": "4",
+      "title": "The track element"
+    },
+    {
+      "id": "media-elements",
+      "level": "4",
+      "title": "Media elements"
+    },
+    {
+      "id": "error-codes",
+      "level": "5",
+      "title": "Error codes"
+    },
+    {
+      "id": "location-of-the-media-resource",
+      "level": "5",
+      "title": "Location of the media resource"
+    },
+    {
+      "id": "mime-types",
+      "level": "5",
+      "title": "MIME types"
+    },
+    {
+      "id": "network-states",
+      "level": "5",
+      "title": "Network states"
+    },
+    {
+      "id": "loading-the-media-resource",
+      "level": "5",
+      "title": "Loading the media resource"
+    },
+    {
+      "id": "offsets-into-the-media-resource",
+      "level": "5",
+      "title": "Offsets into the media resource"
+    },
+    {
+      "id": "ready-states",
+      "level": "5",
+      "title": "Ready states"
+    },
+    {
+      "id": "playing-the-media-resource",
+      "level": "5",
+      "title": "Playing the media resource"
+    },
+    {
+      "id": "seeking",
+      "level": "5",
+      "title": "Seeking"
+    },
+    {
+      "id": "media-resources-with-multiple-media-tracks",
+      "level": "5",
+      "title": "Media resources with multiple media tracks"
+    },
+    {
+      "id": "audiotracklist-and-videotracklist-objects",
+      "level": "6",
+      "title": "AudioTrackList and VideoTrackList objects"
+    },
+    {
+      "id": "selecting-specific-audio-and-video-tracks-declaratively",
+      "level": "6",
+      "title": "Selecting specific audio and video tracks declaratively"
+    },
+    {
+      "id": "timed-text-tracks",
+      "level": "5",
+      "title": "Timed text tracks"
+    },
+    {
+      "id": "text-track-model",
+      "level": "6",
+      "title": "Text track model"
+    },
+    {
+      "id": "sourcing-in-band-text-tracks",
+      "level": "6",
+      "title": "Sourcing in-band text tracks"
+    },
+    {
+      "id": "sourcing-out-of-band-text-tracks",
+      "level": "6",
+      "title": "Sourcing out-of-band text tracks"
+    },
+    {
+      "id": "guidelines-for-exposing-cues-in-various-formats-as-text-track-cues",
+      "level": "6",
+      "title": "Guidelines for exposing cues in various formats as text track cues"
+    },
+    {
+      "id": "text-track-api",
+      "level": "6",
+      "title": "Text track API"
+    },
+    {
+      "id": "cue-events",
+      "level": "6",
+      "title": "Event handlers for objects of the text track APIs"
+    },
+    {
+      "id": "best-practices-for-metadata-text-tracks",
+      "level": "6",
+      "title": "Best practices for metadata text tracks"
+    },
+    {
+      "id": "identifying-a-track-kind-through-a-url",
+      "level": "5",
+      "title": "Identifying a track kind through a URL"
+    },
+    {
+      "id": "user-interface",
+      "level": "5",
+      "title": "User interface"
+    },
+    {
+      "id": "time-ranges",
+      "level": "5",
+      "title": "Time ranges"
+    },
+    {
+      "id": "the-trackevent-interface",
+      "level": "5",
+      "title": "The TrackEvent interface"
+    },
+    {
+      "id": "mediaevents",
+      "level": "5",
+      "title": "Events summary"
+    },
+    {
+      "id": "security-and-privacy-considerations",
+      "level": "5",
+      "title": "Security and privacy considerations"
+    },
+    {
+      "id": "best-practices-for-authors-using-media-elements",
+      "level": "5",
+      "title": "Best practices for authors using media elements"
+    },
+    {
+      "id": "best-practices-for-implementers-of-media-elements",
+      "level": "5",
+      "title": "Best practices for implementers of media elements"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "the-map-element",
+      "level": "4",
+      "title": "The map element"
+    },
+    {
+      "id": "the-area-element",
+      "level": "4",
+      "title": "The area element"
+    },
+    {
+      "id": "image-maps",
+      "level": "4",
+      "title": "Image maps"
+    },
+    {
+      "id": "authoring",
+      "level": "5",
+      "title": "Authoring"
+    },
+    {
+      "id": "image-map-processing-model",
+      "level": "5",
+      "title": "Processing model"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "mathml",
+      "level": "4",
+      "title": "MathML"
+    },
+    {
+      "id": "svg-0",
+      "level": "4",
+      "title": "SVG"
+    },
+    {
+      "id": "dimension-attributes",
+      "level": "4",
+      "title": "Dimension attributes"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "tables",
+      "level": "3",
+      "title": "Tabular data"
+    },
+    {
+      "id": "the-table-element",
+      "level": "4",
+      "title": "The table element"
+    },
+    {
+      "id": "table-descriptions-techniques",
+      "level": "5",
+      "title": "Techniques for describing tables"
+    },
+    {
+      "id": "table-layout-techniques",
+      "level": "5",
+      "title": "Techniques for table design"
+    },
+    {
+      "id": "the-caption-element",
+      "level": "4",
+      "title": "The caption element"
+    },
+    {
+      "id": "the-colgroup-element",
+      "level": "4",
+      "title": "The colgroup element"
+    },
+    {
+      "id": "the-col-element",
+      "level": "4",
+      "title": "The col element"
+    },
+    {
+      "id": "the-tbody-element",
+      "level": "4",
+      "title": "The tbody element"
+    },
+    {
+      "id": "the-thead-element",
+      "level": "4",
+      "title": "The thead element"
+    },
+    {
+      "id": "the-tfoot-element",
+      "level": "4",
+      "title": "The tfoot element"
+    },
+    {
+      "id": "the-tr-element",
+      "level": "4",
+      "title": "The tr element"
+    },
+    {
+      "id": "the-td-element",
+      "level": "4",
+      "title": "The td element"
+    },
+    {
+      "id": "the-th-element",
+      "level": "4",
+      "title": "The th element"
+    },
+    {
+      "id": "attributes-common-to-td-and-th-elements",
+      "level": "4",
+      "title": "Attributes common to td and th elements"
+    },
+    {
+      "id": "table-processing-model",
+      "level": "4",
+      "title": "Processing model"
+    },
+    {
+      "id": "forming-a-table",
+      "level": "5",
+      "title": "Forming a table"
+    },
+    {
+      "id": "header-and-data-cell-semantics",
+      "level": "5",
+      "title": "Forming relationships between data cells and header cells"
+    },
+    {
+      "id": "table-examples",
+      "level": "4",
+      "title": "Examples"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "forms",
+      "level": "3",
+      "title": "Forms"
+    },
+    {
+      "id": "introduction-4",
+      "level": "4",
+      "title": "Introduction"
+    },
+    {
+      "id": "writing-a-form's-user-interface",
+      "level": "5",
+      "title": "Writing a form's user interface"
+    },
+    {
+      "id": "implementing-the-server-side-processing-for-a-form",
+      "level": "5",
+      "title": "Implementing the server-side processing for a form"
+    },
+    {
+      "id": "configuring-a-form-to-communicate-with-a-server",
+      "level": "5",
+      "title": "Configuring a form to communicate with a server"
+    },
+    {
+      "id": "client-side-form-validation",
+      "level": "5",
+      "title": "Client-side form validation"
+    },
+    {
+      "id": "enabling-client-side-automatic-filling-of-form-controls",
+      "level": "5",
+      "title": "Enabling client-side automatic filling of form controls"
+    },
+    {
+      "id": "improving-the-user-experience-on-mobile-devices",
+      "level": "5",
+      "title": "Improving the user experience on mobile devices"
+    },
+    {
+      "id": "the-difference-between-the-field-type,-the-autofill-field-name,-and-the-input-modality",
+      "level": "5",
+      "title": "The difference between the field type, the autofill field name, and the input modality"
+    },
+    {
+      "id": "input-author-notes",
+      "level": "5",
+      "title": "Date, time, and number formats"
+    },
+    {
+      "id": "categories",
+      "level": "4",
+      "title": "Categories"
+    },
+    {
+      "id": "the-form-element",
+      "level": "4",
+      "title": "The form element"
+    },
+    {
+      "id": "the-label-element",
+      "level": "4",
+      "title": "The label element"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "the-input-element",
+      "level": "4",
+      "title": "The\n  input element"
+    },
+    {
+      "id": "states-of-the-type-attribute",
+      "level": "5",
+      "title": "States of the type attribute"
+    },
+    {
+      "id": "hidden-state-(type=hidden)",
+      "level": "6",
+      "title": "Hidden state (type=hidden)"
+    },
+    {
+      "id": "text-(type=text)-state-and-search-state-(type=search)",
+      "level": "6",
+      "title": "Text (type=text) state and Search state (type=search)"
+    },
+    {
+      "id": "telephone-state-(type=tel)",
+      "level": "6",
+      "title": "Telephone state (type=tel)"
+    },
+    {
+      "id": "url-state-(type=url)",
+      "level": "6",
+      "title": "URL state (type=url)"
+    },
+    {
+      "id": "e-mail-state-(type=email)",
+      "level": "6",
+      "title": "E-mail state (type=email)"
+    },
+    {
+      "id": "password-state-(type=password)",
+      "level": "6",
+      "title": "Password state (type=password)"
+    },
+    {
+      "id": "date-state-(type=date)",
+      "level": "6",
+      "title": "Date state (type=date)"
+    },
+    {
+      "id": "month-state-(type=month)",
+      "level": "6",
+      "title": "Month state (type=month)"
+    },
+    {
+      "id": "week-state-(type=week)",
+      "level": "6",
+      "title": "Week state (type=week)"
+    },
+    {
+      "id": "time-state-(type=time)",
+      "level": "6",
+      "title": "Time state (type=time)"
+    },
+    {
+      "id": "local-date-and-time-state-(type=datetime-local)",
+      "level": "6",
+      "title": "Local Date and Time state (type=datetime-local)"
+    },
+    {
+      "id": "number-state-(type=number)",
+      "level": "6",
+      "title": "Number state (type=number)"
+    },
+    {
+      "id": "range-state-(type=range)",
+      "level": "6",
+      "title": "Range state (type=range)"
+    },
+    {
+      "id": "color-state-(type=color)",
+      "level": "6",
+      "title": "Color state (type=color)"
+    },
+    {
+      "id": "checkbox-state-(type=checkbox)",
+      "level": "6",
+      "title": "Checkbox state (type=checkbox)"
+    },
+    {
+      "id": "radio-button-state-(type=radio)",
+      "level": "6",
+      "title": "Radio Button state (type=radio)"
+    },
+    {
+      "id": "file-upload-state-(type=file)",
+      "level": "6",
+      "title": "File Upload state (type=file)"
+    },
+    {
+      "id": "submit-button-state-(type=submit)",
+      "level": "6",
+      "title": "Submit Button state (type=submit)"
+    },
+    {
+      "id": "image-button-state-(type=image)",
+      "level": "6",
+      "title": "Image Button state (type=image)"
+    },
+    {
+      "id": "reset-button-state-(type=reset)",
+      "level": "6",
+      "title": "Reset Button state (type=reset)"
+    },
+    {
+      "id": "button-state-(type=button)",
+      "level": "6",
+      "title": "Button state (type=button)"
+    },
+    {
+      "id": "input-impl-notes",
+      "level": "5",
+      "title": "Implementation notes regarding localization of form controls"
+    },
+    {
+      "id": "common-input-element-attributes",
+      "level": "5",
+      "title": "Common input element attributes"
+    },
+    {
+      "id": "the-maxlength-and-minlength-attributes",
+      "level": "6",
+      "title": "The maxlength and minlength attributes"
+    },
+    {
+      "id": "the-size-attribute",
+      "level": "6",
+      "title": "The size attribute"
+    },
+    {
+      "id": "the-readonly-attribute",
+      "level": "6",
+      "title": "The readonly attribute"
+    },
+    {
+      "id": "the-required-attribute",
+      "level": "6",
+      "title": "The required attribute"
+    },
+    {
+      "id": "the-multiple-attribute",
+      "level": "6",
+      "title": "The multiple attribute"
+    },
+    {
+      "id": "the-pattern-attribute",
+      "level": "6",
+      "title": "The pattern attribute"
+    },
+    {
+      "id": "the-min-and-max-attributes",
+      "level": "6",
+      "title": "The min and max attributes"
+    },
+    {
+      "id": "the-step-attribute",
+      "level": "6",
+      "title": "The step attribute"
+    },
+    {
+      "id": "the-list-attribute",
+      "level": "6",
+      "title": "The list attribute"
+    },
+    {
+      "id": "the-placeholder-attribute",
+      "level": "6",
+      "title": "The placeholder attribute"
+    },
+    {
+      "id": "common-input-element-apis",
+      "level": "5",
+      "title": "Common input element APIs"
+    },
+    {
+      "id": "common-input-element-events",
+      "level": "5",
+      "title": "Common event behaviors"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "the-button-element",
+      "level": "4",
+      "title": "The button element"
+    },
+    {
+      "id": "the-select-element",
+      "level": "4",
+      "title": "The select element"
+    },
+    {
+      "id": "the-datalist-element",
+      "level": "4",
+      "title": "The datalist element"
+    },
+    {
+      "id": "the-optgroup-element",
+      "level": "4",
+      "title": "The optgroup element"
+    },
+    {
+      "id": "the-option-element",
+      "level": "4",
+      "title": "The option element"
+    },
+    {
+      "id": "the-textarea-element",
+      "level": "4",
+      "title": "The textarea element"
+    },
+    {
+      "id": "the-output-element",
+      "level": "4",
+      "title": "The output element"
+    },
+    {
+      "id": "the-progress-element",
+      "level": "4",
+      "title": "The progress element"
+    },
+    {
+      "id": "the-meter-element",
+      "level": "4",
+      "title": "The meter element"
+    },
+    {
+      "id": "the-fieldset-element",
+      "level": "4",
+      "title": "The fieldset element"
+    },
+    {
+      "id": "the-legend-element",
+      "level": "4",
+      "title": "The legend element"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "form-control-infrastructure",
+      "level": "4",
+      "title": "Form control infrastructure"
+    },
+    {
+      "id": "a-form-control's-value",
+      "level": "5",
+      "title": "A form control's value"
+    },
+    {
+      "id": "mutability",
+      "level": "5",
+      "title": "Mutability"
+    },
+    {
+      "id": "association-of-controls-and-forms",
+      "level": "5",
+      "title": "Association of controls and forms"
+    },
+    {
+      "id": "attributes-common-to-form-controls",
+      "level": "4",
+      "title": "Attributes common to form controls"
+    },
+    {
+      "id": "naming-form-controls:-the-name-attribute",
+      "level": "5",
+      "title": "Naming form controls: the name attribute"
+    },
+    {
+      "id": "submitting-element-directionality:-the-dirname-attribute",
+      "level": "5",
+      "title": "Submitting element directionality: the dirname attribute"
+    },
+    {
+      "id": "limiting-user-input-length:-the-maxlength-attribute",
+      "level": "5",
+      "title": "Limiting user input length: the maxlength attribute"
+    },
+    {
+      "id": "setting-minimum-input-length-requirements:-the-minlength-attribute",
+      "level": "5",
+      "title": "Setting minimum input length requirements: the minlength attribute"
+    },
+    {
+      "id": "enabling-and-disabling-form-controls:-the-disabled-attribute",
+      "level": "5",
+      "title": "Enabling and disabling form controls: the disabled attribute"
+    },
+    {
+      "id": "form-submission-attributes",
+      "level": "5",
+      "title": "Form submission attributes"
+    },
+    {
+      "id": "autofill",
+      "level": "5",
+      "title": "Autofill"
+    },
+    {
+      "id": "autofilling-form-controls:-the-autocomplete-attribute",
+      "level": "6",
+      "title": "Autofilling form controls: the autocomplete attribute"
+    },
+    {
+      "id": "autofill-processing-model",
+      "level": "6",
+      "title": "Processing model"
+    },
+    {
+      "id": "textFieldSelection",
+      "level": "4",
+      "title": "APIs for the text control selections"
+    },
+    {
+      "id": "constraints",
+      "level": "4",
+      "title": "Constraints"
+    },
+    {
+      "id": "definitions",
+      "level": "5",
+      "title": "Definitions"
+    },
+    {
+      "id": "constraint-validation",
+      "level": "5",
+      "title": "Constraint validation"
+    },
+    {
+      "id": "the-constraint-validation-api",
+      "level": "5",
+      "title": "The constraint validation API"
+    },
+    {
+      "id": "security-forms",
+      "level": "5",
+      "title": "Security"
+    },
+    {
+      "id": "form-submission-2",
+      "level": "4",
+      "title": "Form submission"
+    },
+    {
+      "id": "introduction-5",
+      "level": "5",
+      "title": "Introduction"
+    },
+    {
+      "id": "implicit-submission",
+      "level": "5",
+      "title": "Implicit submission"
+    },
+    {
+      "id": "form-submission-algorithm",
+      "level": "5",
+      "title": "Form submission algorithm"
+    },
+    {
+      "id": "constructing-form-data-set",
+      "level": "5",
+      "title": "Constructing the entry list"
+    },
+    {
+      "id": "selecting-a-form-submission-encoding",
+      "level": "5",
+      "title": "Selecting a form submission encoding"
+    },
+    {
+      "id": "url-encoded-form-data",
+      "level": "5",
+      "title": "URL-encoded form data"
+    },
+    {
+      "id": "multipart-form-data",
+      "level": "5",
+      "title": "Multipart form data"
+    },
+    {
+      "id": "plain-text-form-data",
+      "level": "5",
+      "title": "Plain text form data"
+    },
+    {
+      "id": "the-submitevent-interface",
+      "level": "5",
+      "title": "The SubmitEvent interface"
+    },
+    {
+      "id": "the-formdataevent-interface",
+      "level": "5",
+      "title": "The FormDataEvent interface"
+    },
+    {
+      "id": "resetting-a-form",
+      "level": "4",
+      "title": "Resetting a form"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "interactive-elements",
+      "level": "3",
+      "title": "Interactive elements"
+    },
+    {
+      "id": "the-details-element",
+      "level": "4",
+      "title": "The details element"
+    },
+    {
+      "id": "the-summary-element",
+      "level": "4",
+      "title": "The summary element"
+    },
+    {
+      "id": "commands",
+      "level": "4",
+      "title": "Commands"
+    },
+    {
+      "id": "facets-2",
+      "level": "5",
+      "title": "Facets"
+    },
+    {
+      "id": "using-the-a-element-to-define-a-command",
+      "level": "5",
+      "title": "Using the a element to define a command"
+    },
+    {
+      "id": "using-the-button-element-to-define-a-command",
+      "level": "5",
+      "title": "Using the button element to define a command"
+    },
+    {
+      "id": "using-the-input-element-to-define-a-command",
+      "level": "5",
+      "title": "Using the input element to define a command"
+    },
+    {
+      "id": "using-the-option-element-to-define-a-command",
+      "level": "5",
+      "title": "Using the option element to define a command"
+    },
+    {
+      "id": "using-the-accesskey-attribute-on-a-legend-element-to-define-a-command",
+      "level": "5",
+      "title": "Using the accesskey attribute\n  on a legend element to define a command"
+    },
+    {
+      "id": "using-the-accesskey-attribute-to-define-a-command-on-other-elements",
+      "level": "5",
+      "title": "Using the accesskey\n  attribute to define a command on other elements"
+    },
+    {
+      "id": "the-dialog-element",
+      "level": "4",
+      "title": "The dialog element"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "scripting-3",
+      "level": "3",
+      "title": "Scripting"
+    },
+    {
+      "id": "the-script-element",
+      "level": "4",
+      "title": "The script element"
+    },
+    {
+      "id": "script-processing-model",
+      "level": "5",
+      "title": "Processing model"
+    },
+    {
+      "id": "scriptingLanguages",
+      "level": "5",
+      "title": "Scripting languages"
+    },
+    {
+      "id": "restrictions-for-contents-of-script-elements",
+      "level": "5",
+      "title": "Restrictions for contents of script elements"
+    },
+    {
+      "id": "inline-documentation-for-external-scripts",
+      "level": "5",
+      "title": "Inline documentation for external scripts"
+    },
+    {
+      "id": "scriptTagXSLT",
+      "level": "5",
+      "title": "Interaction of script elements and XSLT"
+    },
+    {
+      "id": "the-noscript-element",
+      "level": "4",
+      "title": "The noscript element"
+    },
+    {
+      "id": "the-template-element",
+      "level": "4",
+      "title": "The template element"
+    },
+    {
+      "id": "template-XSLT-XPath",
+      "level": "5",
+      "title": "Interaction of template elements with XSLT and XPath"
+    },
+    {
+      "id": "the-slot-element",
+      "level": "4",
+      "title": "The slot element"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "the-canvas-element",
+      "level": "4",
+      "title": "The canvas element"
+    },
+    {
+      "id": "2dcontext",
+      "level": "5",
+      "title": "The 2D rendering context"
+    },
+    {
+      "id": "implementation-notes",
+      "level": "6",
+      "title": "Implementation notes"
+    },
+    {
+      "id": "the-canvas-state",
+      "level": "6",
+      "title": "The canvas state"
+    },
+    {
+      "id": "line-styles",
+      "level": "6",
+      "title": "Line styles"
+    },
+    {
+      "id": "text-styles",
+      "level": "6",
+      "title": "Text styles"
+    },
+    {
+      "id": "building-paths",
+      "level": "6",
+      "title": "Building paths"
+    },
+    {
+      "id": "path2d-objects",
+      "level": "6",
+      "title": "Path2D objects"
+    },
+    {
+      "id": "transformations",
+      "level": "6",
+      "title": "Transformations"
+    },
+    {
+      "id": "image-sources-for-2d-rendering-contexts",
+      "level": "6",
+      "title": "Image sources for 2D rendering contexts"
+    },
+    {
+      "id": "fill-and-stroke-styles",
+      "level": "6",
+      "title": "Fill and stroke styles"
+    },
+    {
+      "id": "drawing-rectangles-to-the-bitmap",
+      "level": "6",
+      "title": "Drawing rectangles to the bitmap"
+    },
+    {
+      "id": "drawing-text-to-the-bitmap",
+      "level": "6",
+      "title": "Drawing text to the bitmap"
+    },
+    {
+      "id": "drawing-paths-to-the-canvas",
+      "level": "6",
+      "title": "Drawing paths to the canvas"
+    },
+    {
+      "id": "drawing-focus-rings-and-scrolling-paths-into-view",
+      "level": "6",
+      "title": "Drawing focus rings and scrolling paths into view"
+    },
+    {
+      "id": "drawing-images",
+      "level": "6",
+      "title": "Drawing images"
+    },
+    {
+      "id": "pixel-manipulation",
+      "level": "6",
+      "title": "Pixel manipulation"
+    },
+    {
+      "id": "compositing",
+      "level": "6",
+      "title": "Compositing"
+    },
+    {
+      "id": "image-smoothing",
+      "level": "6",
+      "title": "Image smoothing"
+    },
+    {
+      "id": "shadows",
+      "level": "6",
+      "title": "Shadows"
+    },
+    {
+      "id": "filters",
+      "level": "6",
+      "title": "Filters"
+    },
+    {
+      "id": "working-with-externally-defined-svg-filters",
+      "level": "6",
+      "title": "Working with externally-defined SVG filters"
+    },
+    {
+      "id": "drawing-model",
+      "level": "6",
+      "title": "Drawing model"
+    },
+    {
+      "id": "best-practices",
+      "level": "6",
+      "title": "Best practices"
+    },
+    {
+      "id": "examples",
+      "level": "6",
+      "title": "Examples"
+    },
+    {
+      "id": "the-imagebitmap-rendering-context",
+      "level": "5",
+      "title": "The ImageBitmap rendering context"
+    },
+    {
+      "id": "introduction-6",
+      "level": "6",
+      "title": "Introduction"
+    },
+    {
+      "id": "the-imagebitmaprenderingcontext-interface",
+      "level": "6",
+      "title": "The ImageBitmapRenderingContext interface"
+    },
+    {
+      "id": "the-offscreencanvas-interface",
+      "level": "5",
+      "title": "The OffscreenCanvas interface"
+    },
+    {
+      "id": "the-offscreen-2d-rendering-context",
+      "level": "6",
+      "title": "The offscreen 2D rendering context"
+    },
+    {
+      "id": "colour-spaces-and-colour-correction",
+      "level": "5",
+      "title": "Color spaces and color correction"
+    },
+    {
+      "id": "serialising-bitmaps-to-a-file",
+      "level": "5",
+      "title": "Serializing bitmaps to a file"
+    },
+    {
+      "id": "security-with-canvas-elements",
+      "level": "5",
+      "title": "Security with canvas elements"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "custom-elements",
+      "level": "3",
+      "title": "Custom elements"
+    },
+    {
+      "id": "custom-elements-intro",
+      "level": "4",
+      "title": "Introduction"
+    },
+    {
+      "id": "custom-elements-autonomous-example",
+      "level": "5",
+      "title": "Creating an autonomous custom element"
+    },
+    {
+      "id": "custom-elements-face-example",
+      "level": "5",
+      "title": "Creating a form-associated custom element"
+    },
+    {
+      "id": "custom-elements-customized-builtin-example",
+      "level": "5",
+      "title": "Creating a customized built-in element"
+    },
+    {
+      "id": "custom-elements-autonomous-drawbacks",
+      "level": "5",
+      "title": "Drawbacks of autonomous custom elements"
+    },
+    {
+      "id": "custom-elements-upgrades-examples",
+      "level": "5",
+      "title": "Upgrading elements after their creation"
+    },
+    {
+      "id": "custom-element-conformance",
+      "level": "4",
+      "title": "Requirements for custom element constructors and\n  reactions"
+    },
+    {
+      "id": "custom-elements-core-concepts",
+      "level": "4",
+      "title": "Core concepts"
+    },
+    {
+      "id": "custom-elements-api",
+      "level": "4",
+      "title": "The CustomElementRegistry interface"
+    },
+    {
+      "id": "upgrades",
+      "level": "4",
+      "title": "Upgrades"
+    },
+    {
+      "id": "custom-element-reactions",
+      "level": "4",
+      "title": "Custom element reactions"
+    },
+    {
+      "id": "the-elementinternals-interface",
+      "level": "4",
+      "title": "The ElementInternals interface"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "common-idioms",
+      "level": "3",
+      "title": "Common idioms without dedicated elements"
+    },
+    {
+      "id": "rel-up",
+      "level": "4",
+      "title": "Bread crumb navigation"
+    },
+    {
+      "id": "tag-clouds",
+      "level": "4",
+      "title": "Tag clouds"
+    },
+    {
+      "id": "conversations",
+      "level": "4",
+      "title": "Conversations"
+    },
+    {
+      "id": "footnotes",
+      "level": "4",
+      "title": "Footnotes"
+    },
+    {
+      "id": "disabled-elements",
+      "level": "3",
+      "title": "Disabled elements"
+    },
+    {
+      "id": "selectors",
+      "level": "3",
+      "title": "Matching HTML elements using selectors and CSS"
+    },
+    {
+      "id": "case-sensitivity-of-the-css-'attr()'-function",
+      "level": "4",
+      "title": "Case-sensitivity of the CSS 'attr()' function"
+    },
+    {
+      "id": "case-sensitivity-of-selectors",
+      "level": "4",
+      "title": "Case-sensitivity of selectors"
+    },
+    {
+      "id": "pseudo-classes",
+      "level": "4",
+      "title": "Pseudo-classes"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "microdata",
+      "level": "2",
+      "title": "Microdata"
+    },
+    {
+      "id": "introduction-7",
+      "level": "3",
+      "title": "Introduction"
+    },
+    {
+      "id": "overview",
+      "level": "4",
+      "title": "Overview"
+    },
+    {
+      "id": "the-basic-syntax",
+      "level": "4",
+      "title": "The basic syntax"
+    },
+    {
+      "id": "typed-items",
+      "level": "4",
+      "title": "Typed items"
+    },
+    {
+      "id": "global-identifiers-for-items",
+      "level": "4",
+      "title": "Global identifiers for items"
+    },
+    {
+      "id": "selecting-names-when-defining-vocabularies",
+      "level": "4",
+      "title": "Selecting names when defining vocabularies"
+    },
+    {
+      "id": "encoding-microdata",
+      "level": "3",
+      "title": "Encoding microdata"
+    },
+    {
+      "id": "the-microdata-model",
+      "level": "4",
+      "title": "The microdata model"
+    },
+    {
+      "id": "items",
+      "level": "4",
+      "title": "Items"
+    },
+    {
+      "id": "names:-the-itemprop-attribute",
+      "level": "4",
+      "title": "Names: the itemprop attribute"
+    },
+    {
+      "id": "values",
+      "level": "4",
+      "title": "Values"
+    },
+    {
+      "id": "associating-names-with-items",
+      "level": "4",
+      "title": "Associating names with items"
+    },
+    {
+      "id": "microdata-and-other-namespaces",
+      "level": "4",
+      "title": "Microdata and other namespaces"
+    },
+    {
+      "id": "mdvocabs",
+      "level": "3",
+      "title": "Sample microdata vocabularies"
+    },
+    {
+      "id": "vcard",
+      "level": "4",
+      "title": "vCard"
+    },
+    {
+      "id": "conversion-to-vcard",
+      "level": "5",
+      "title": "Conversion to vCard"
+    },
+    {
+      "id": "examples-2",
+      "level": "5",
+      "title": "Examples"
+    },
+    {
+      "id": "vevent",
+      "level": "4",
+      "title": "vEvent"
+    },
+    {
+      "id": "conversion-to-icalendar",
+      "level": "5",
+      "title": "Conversion to iCalendar"
+    },
+    {
+      "id": "examples-3",
+      "level": "5",
+      "title": "Examples"
+    },
+    {
+      "id": "licensing-works",
+      "level": "4",
+      "title": "Licensing works"
+    },
+    {
+      "id": "examples-4",
+      "level": "5",
+      "title": "Examples"
+    },
+    {
+      "id": "converting-html-to-other-formats",
+      "level": "3",
+      "title": "Converting HTML to other formats"
+    },
+    {
+      "id": "json",
+      "level": "4",
+      "title": "JSON"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "editing",
+      "level": "2",
+      "title": "User interaction"
+    },
+    {
+      "id": "the-hidden-attribute",
+      "level": "3",
+      "title": "The hidden attribute"
+    },
+    {
+      "id": "inert-subtrees",
+      "level": "3",
+      "title": "Inert subtrees"
+    },
+    {
+      "id": "tracking-user-activation",
+      "level": "3",
+      "title": "Tracking user activation"
+    },
+    {
+      "id": "user-activation-data-model",
+      "level": "4",
+      "title": "Data model"
+    },
+    {
+      "id": "user-activation-processing-model",
+      "level": "4",
+      "title": "Processing model"
+    },
+    {
+      "id": "user-activation-gated-apis",
+      "level": "4",
+      "title": "APIs gated by user activation"
+    },
+    {
+      "id": "activation",
+      "level": "3",
+      "title": "Activation behavior of elements"
+    },
+    {
+      "id": "focus",
+      "level": "3",
+      "title": "Focus"
+    },
+    {
+      "id": "introduction-8",
+      "level": "4",
+      "title": "Introduction"
+    },
+    {
+      "id": "data-model",
+      "level": "4",
+      "title": "Data model"
+    },
+    {
+      "id": "the-tabindex-attribute",
+      "level": "4",
+      "title": "The tabindex attribute"
+    },
+    {
+      "id": "focus-processing-model",
+      "level": "4",
+      "title": "Processing model"
+    },
+    {
+      "id": "sequential-focus-navigation",
+      "level": "4",
+      "title": "Sequential focus navigation"
+    },
+    {
+      "id": "focus-management-apis",
+      "level": "4",
+      "title": "Focus management APIs"
+    },
+    {
+      "id": "the-autofocus-attribute",
+      "level": "4",
+      "title": "The autofocus attribute"
+    },
+    {
+      "id": "assigning-keyboard-shortcuts",
+      "level": "3",
+      "title": "Assigning keyboard shortcuts"
+    },
+    {
+      "id": "introduction-9",
+      "level": "4",
+      "title": "Introduction"
+    },
+    {
+      "id": "the-accesskey-attribute",
+      "level": "4",
+      "title": "The accesskey attribute"
+    },
+    {
+      "id": "keyboard-shortcuts-processing-model",
+      "level": "4",
+      "title": "Processing\n  model"
+    },
+    {
+      "id": "editing-2",
+      "level": "3",
+      "title": "Editing"
+    },
+    {
+      "id": "contenteditable",
+      "level": "4",
+      "title": "Making document regions editable: The contenteditable content attribute"
+    },
+    {
+      "id": "making-entire-documents-editable:-the-designmode-idl-attribute",
+      "level": "4",
+      "title": "Making entire documents\n  editable: the designMode getter and setter"
+    },
+    {
+      "id": "best-practices-for-in-page-editors",
+      "level": "4",
+      "title": "Best practices for in-page editors"
+    },
+    {
+      "id": "editing-apis",
+      "level": "4",
+      "title": "Editing APIs"
+    },
+    {
+      "id": "spelling-and-grammar-checking",
+      "level": "4",
+      "title": "Spelling and grammar checking"
+    },
+    {
+      "id": "autocapitalization",
+      "level": "4",
+      "title": "Autocapitalization"
+    },
+    {
+      "id": "input-modalities:-the-inputmode-attribute",
+      "level": "4",
+      "title": "Input modalities: the inputmode attribute"
+    },
+    {
+      "id": "input-modalities:-the-enterkeyhint-attribute",
+      "level": "4",
+      "title": "Input modalities: the enterkeyhint\n  attribute"
+    },
+    {
+      "id": "find-in-page",
+      "level": "3",
+      "title": "Find-in-page"
+    },
+    {
+      "id": "introduction-10",
+      "level": "4",
+      "title": "Introduction"
+    },
+    {
+      "id": "interaction-with-selection",
+      "level": "4",
+      "title": "Interaction with selection"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "dnd",
+      "level": "3",
+      "title": "Drag and drop"
+    },
+    {
+      "id": "event-drag",
+      "level": "4",
+      "title": "Introduction"
+    },
+    {
+      "id": "the-drag-data-store",
+      "level": "4",
+      "title": "The drag data store"
+    },
+    {
+      "id": "the-datatransfer-interface",
+      "level": "4",
+      "title": "The DataTransfer interface"
+    },
+    {
+      "id": "the-datatransferitemlist-interface",
+      "level": "5",
+      "title": "The DataTransferItemList interface"
+    },
+    {
+      "id": "the-datatransferitem-interface",
+      "level": "5",
+      "title": "The DataTransferItem interface"
+    },
+    {
+      "id": "the-dragevent-interface",
+      "level": "4",
+      "title": "The DragEvent interface"
+    },
+    {
+      "id": "drag-and-drop-processing-model",
+      "level": "4",
+      "title": "Processing model"
+    },
+    {
+      "id": "dndevents",
+      "level": "4",
+      "title": "Events summary"
+    },
+    {
+      "id": "the-draggable-attribute",
+      "level": "4",
+      "title": "The draggable attribute"
+    },
+    {
+      "id": "security-risks-in-the-drag-and-drop-model",
+      "level": "4",
+      "title": "Security risks in the drag-and-drop model"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "browsers",
+      "level": "2",
+      "title": "Loading web pages"
+    },
+    {
+      "id": "windows",
+      "level": "3",
+      "title": "Browsing contexts"
+    },
+    {
+      "id": "creating-browsing-contexts",
+      "level": "4",
+      "title": "Creating browsing contexts"
+    },
+    {
+      "id": "nested-browsing-contexts",
+      "level": "4",
+      "title": "Related browsing contexts"
+    },
+    {
+      "id": "navigating-nested-browsing-contexts-in-the-dom",
+      "level": "5",
+      "title": "Navigating related browsing contexts in\n  the DOM"
+    },
+    {
+      "id": "security-nav",
+      "level": "4",
+      "title": "Security"
+    },
+    {
+      "id": "groupings-of-browsing-contexts",
+      "level": "4",
+      "title": "Groupings of browsing contexts"
+    },
+    {
+      "id": "browsing-context-names",
+      "level": "4",
+      "title": "Browsing context names"
+    },
+    {
+      "id": "cross-origin-objects",
+      "level": "3",
+      "title": "Security infrastructure for Window,\n  WindowProxy, and Location objects"
+    },
+    {
+      "id": "integration-with-idl",
+      "level": "4",
+      "title": "Integration with IDL"
+    },
+    {
+      "id": "shared-internal-slot:-crossoriginpropertydescriptormap",
+      "level": "4",
+      "title": "Shared internal slot: [[CrossOriginPropertyDescriptorMap]]"
+    },
+    {
+      "id": "shared-abstract-operations",
+      "level": "4",
+      "title": "Shared abstract operations"
+    },
+    {
+      "id": "crossoriginproperties-(-o-)",
+      "level": "5",
+      "title": "CrossOriginProperties ( O )"
+    },
+    {
+      "id": "crossoriginpropertyfallback-(-p-)",
+      "level": "5",
+      "title": "CrossOriginPropertyFallback ( P )"
+    },
+    {
+      "id": "isplatformobjectsameorigin-(-o-)",
+      "level": "5",
+      "title": "IsPlatformObjectSameOrigin ( O )"
+    },
+    {
+      "id": "crossorigingetownpropertyhelper-(-o,-p-)",
+      "level": "5",
+      "title": "CrossOriginGetOwnPropertyHelper ( O, P )"
+    },
+    {
+      "id": "crossoriginget-(-o,-p,-receiver-)",
+      "level": "5",
+      "title": "CrossOriginGet ( O, P, Receiver )"
+    },
+    {
+      "id": "crossoriginset-(-o,-p,-v,-receiver-)",
+      "level": "5",
+      "title": "CrossOriginSet ( O, P, V,\n  Receiver )"
+    },
+    {
+      "id": "crossoriginownpropertykeys-(-o-)",
+      "level": "5",
+      "title": "CrossOriginOwnPropertyKeys ( O )"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "the-window-object",
+      "level": "3",
+      "title": "The Window object"
+    },
+    {
+      "id": "apis-for-creating-and-navigating-browsing-contexts-by-name",
+      "level": "4",
+      "title": "APIs for creating and navigating browsing contexts by name"
+    },
+    {
+      "id": "accessing-other-browsing-contexts",
+      "level": "4",
+      "title": "Accessing other browsing contexts"
+    },
+    {
+      "id": "named-access-on-the-window-object",
+      "level": "4",
+      "title": "Named access on the Window object"
+    },
+    {
+      "id": "garbage-collection-and-browsing-contexts",
+      "level": "4",
+      "title": "Discarding browsing contexts"
+    },
+    {
+      "id": "closing-browsing-contexts",
+      "level": "4",
+      "title": "Closing browsing contexts"
+    },
+    {
+      "id": "browser-interface-elements",
+      "level": "4",
+      "title": "Browser interface elements"
+    },
+    {
+      "id": "script-settings-for-window-objects",
+      "level": "4",
+      "title": "Script settings for Window objects"
+    },
+    {
+      "id": "the-windowproxy-exotic-object",
+      "level": "3",
+      "title": "The WindowProxy exotic object"
+    },
+    {
+      "id": "windowproxy-getprototypeof",
+      "level": "4",
+      "title": "[[GetPrototypeOf]] ( )"
+    },
+    {
+      "id": "windowproxy-setprototypeof",
+      "level": "4",
+      "title": "[[SetPrototypeOf]] ( V )"
+    },
+    {
+      "id": "windowproxy-isextensible",
+      "level": "4",
+      "title": "[[IsExtensible]] ( )"
+    },
+    {
+      "id": "windowproxy-preventextensions",
+      "level": "4",
+      "title": "[[PreventExtensions]] ( )"
+    },
+    {
+      "id": "windowproxy-getownproperty",
+      "level": "4",
+      "title": "[[GetOwnProperty]] ( P )"
+    },
+    {
+      "id": "windowproxy-defineownproperty",
+      "level": "4",
+      "title": "[[DefineOwnProperty]] ( P, Desc\n  )"
+    },
+    {
+      "id": "windowproxy-get",
+      "level": "4",
+      "title": "[[Get]] ( P, Receiver )"
+    },
+    {
+      "id": "windowproxy-set",
+      "level": "4",
+      "title": "[[Set]] ( P, V, Receiver )"
+    },
+    {
+      "id": "windowproxy-delete",
+      "level": "4",
+      "title": "[[Delete]] ( P )"
+    },
+    {
+      "id": "windowproxy-ownpropertykeys",
+      "level": "4",
+      "title": "[[OwnPropertyKeys]] ( )"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "origin",
+      "level": "3",
+      "title": "Origin"
+    },
+    {
+      "id": "sites",
+      "level": "4",
+      "title": "Sites"
+    },
+    {
+      "id": "relaxing-the-same-origin-restriction",
+      "level": "4",
+      "title": "Relaxing the same-origin restriction"
+    },
+    {
+      "id": "origin-isolation",
+      "level": "4",
+      "title": "Origin isolation"
+    },
+    {
+      "id": "sandboxing",
+      "level": "3",
+      "title": "Sandboxing"
+    },
+    {
+      "id": "cross-origin-opener-policies",
+      "level": "3",
+      "title": "Cross-origin opener policies"
+    },
+    {
+      "id": "the-cross-origin-opener-policy-header",
+      "level": "4",
+      "title": "The `Cross-Origin-Opener-Policy`\n  header"
+    },
+    {
+      "id": "browsing-context-group-switches-due-to-cross-origin-opener-policy",
+      "level": "4",
+      "title": "Browsing context group switches due to cross-origin opener policy"
+    },
+    {
+      "id": "coep",
+      "level": "3",
+      "title": "Cross-origin embedder policies"
+    },
+    {
+      "id": "the-headers",
+      "level": "4",
+      "title": "The headers"
+    },
+    {
+      "id": "embedder-policy-checks",
+      "level": "4",
+      "title": "Embedder policy checks"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "history",
+      "level": "3",
+      "title": "Session history and navigation"
+    },
+    {
+      "id": "browsing-sessions",
+      "level": "4",
+      "title": "Browsing sessions"
+    },
+    {
+      "id": "the-session-history-of-browsing-contexts",
+      "level": "4",
+      "title": "The session history of browsing contexts"
+    },
+    {
+      "id": "the-history-interface",
+      "level": "4",
+      "title": "The History interface"
+    },
+    {
+      "id": "history-notes",
+      "level": "4",
+      "title": "Implementation notes for session history"
+    },
+    {
+      "id": "the-location-interface",
+      "level": "4",
+      "title": "The Location interface"
+    },
+    {
+      "id": "location-getprototypeof",
+      "level": "5",
+      "title": "[[GetPrototypeOf]] ( )"
+    },
+    {
+      "id": "location-setprototypeof",
+      "level": "5",
+      "title": "[[SetPrototypeOf]] ( V )"
+    },
+    {
+      "id": "location-isextensible",
+      "level": "5",
+      "title": "[[IsExtensible]] ( )"
+    },
+    {
+      "id": "location-preventextensions",
+      "level": "5",
+      "title": "[[PreventExtensions]] ( )"
+    },
+    {
+      "id": "location-getownproperty",
+      "level": "5",
+      "title": "[[GetOwnProperty]] ( P )"
+    },
+    {
+      "id": "location-defineownproperty",
+      "level": "5",
+      "title": "[[DefineOwnProperty]] ( P, Desc )"
+    },
+    {
+      "id": "location-get",
+      "level": "5",
+      "title": "[[Get]] ( P, Receiver )"
+    },
+    {
+      "id": "location-set",
+      "level": "5",
+      "title": "[[Set]] ( P, V, Receiver )"
+    },
+    {
+      "id": "location-delete",
+      "level": "5",
+      "title": "[[Delete]] ( P )"
+    },
+    {
+      "id": "location-ownpropertykeys",
+      "level": "5",
+      "title": "[[OwnPropertyKeys]] ( )"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "browsing-the-web",
+      "level": "3",
+      "title": "Browsing the web"
+    },
+    {
+      "id": "navigating-across-documents",
+      "level": "4",
+      "title": "Navigating across documents"
+    },
+    {
+      "id": "read-html",
+      "level": "4",
+      "title": "Page load processing model for HTML files"
+    },
+    {
+      "id": "read-xml",
+      "level": "4",
+      "title": "Page load processing model for XML files"
+    },
+    {
+      "id": "read-text",
+      "level": "4",
+      "title": "Page load processing model for text files"
+    },
+    {
+      "id": "read-multipart-x-mixed-replace",
+      "level": "4",
+      "title": "Page load processing model for multipart/x-mixed-replace resources"
+    },
+    {
+      "id": "read-media",
+      "level": "4",
+      "title": "Page load processing model for media"
+    },
+    {
+      "id": "read-plugin",
+      "level": "4",
+      "title": "Page load processing model for content that uses plugins"
+    },
+    {
+      "id": "read-ua-inline",
+      "level": "4",
+      "title": "Page load processing model for inline\n  content that doesn't have a DOM"
+    },
+    {
+      "id": "scroll-to-fragid",
+      "level": "4",
+      "title": "Navigating to a fragment"
+    },
+    {
+      "id": "history-traversal",
+      "level": "4",
+      "title": "History traversal"
+    },
+    {
+      "id": "persisted-user-state-restoration",
+      "level": "5",
+      "title": "Persisted user state restoration"
+    },
+    {
+      "id": "the-popstateevent-interface",
+      "level": "5",
+      "title": "The PopStateEvent interface"
+    },
+    {
+      "id": "the-hashchangeevent-interface",
+      "level": "5",
+      "title": "The HashChangeEvent interface"
+    },
+    {
+      "id": "the-pagetransitionevent-interface",
+      "level": "5",
+      "title": "The PageTransitionEvent interface"
+    },
+    {
+      "id": "loading-documents",
+      "level": "4",
+      "title": "Loading documents"
+    },
+    {
+      "id": "unloading-documents",
+      "level": "4",
+      "title": "Unloading documents"
+    },
+    {
+      "id": "the-beforeunloadevent-interface",
+      "level": "5",
+      "title": "The BeforeUnloadEvent interface"
+    },
+    {
+      "id": "aborting-a-document-load",
+      "level": "4",
+      "title": "Aborting a document load"
+    },
+    {
+      "id": "the-x-frame-options-header",
+      "level": "4",
+      "title": "The `X-Frame-Options` header"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "offline",
+      "level": "3",
+      "title": "Offline web applications"
+    },
+    {
+      "id": "introduction-11",
+      "level": "4",
+      "title": "Introduction"
+    },
+    {
+      "id": "supporting-offline-caching-for-legacy-applications",
+      "level": "5",
+      "title": "Supporting offline caching for legacy applications"
+    },
+    {
+      "id": "appcacheevents",
+      "level": "5",
+      "title": "Events summary"
+    },
+    {
+      "id": "appcache",
+      "level": "4",
+      "title": "Application caches"
+    },
+    {
+      "id": "manifests",
+      "level": "4",
+      "title": "The cache manifest syntax"
+    },
+    {
+      "id": "some-sample-manifests",
+      "level": "5",
+      "title": "Some sample manifests"
+    },
+    {
+      "id": "writing-cache-manifests",
+      "level": "5",
+      "title": "Writing cache manifests"
+    },
+    {
+      "id": "parsing-cache-manifests",
+      "level": "5",
+      "title": "Parsing cache manifests"
+    },
+    {
+      "id": "downloading-or-updating-an-application-cache",
+      "level": "4",
+      "title": "Downloading or updating an application cache"
+    },
+    {
+      "id": "the-application-cache-selection-algorithm",
+      "level": "4",
+      "title": "The application cache selection algorithm"
+    },
+    {
+      "id": "changesToNetworkingModel",
+      "level": "4",
+      "title": "Changes to the networking model"
+    },
+    {
+      "id": "expiring-application-caches",
+      "level": "4",
+      "title": "Expiring application caches"
+    },
+    {
+      "id": "disk-space",
+      "level": "4",
+      "title": "Disk space"
+    },
+    {
+      "id": "security-concerns-with-offline-applications-caches",
+      "level": "4",
+      "title": "Security concerns with offline applications caches"
+    },
+    {
+      "id": "application-cache-api",
+      "level": "4",
+      "title": "Application cache API"
+    },
+    {
+      "id": "navigator.online",
+      "level": "4",
+      "title": "Browser state"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "webappapis",
+      "level": "2",
+      "title": "Web application APIs"
+    },
+    {
+      "id": "scripting",
+      "level": "3",
+      "title": "Scripting"
+    },
+    {
+      "id": "introduction-12",
+      "level": "4",
+      "title": "Introduction"
+    },
+    {
+      "id": "agents-and-agent-clusters",
+      "level": "4",
+      "title": "Agents and agent clusters"
+    },
+    {
+      "id": "integration-with-the-javascript-agent-formalism",
+      "level": "5",
+      "title": "Integration with the JavaScript agent formalism"
+    },
+    {
+      "id": "integration-with-the-javascript-agent-cluster-formalism",
+      "level": "5",
+      "title": "Integration with the JavaScript agent cluster formalism"
+    },
+    {
+      "id": "realms-and-their-counterparts",
+      "level": "4",
+      "title": "Realms and their counterparts"
+    },
+    {
+      "id": "environments",
+      "level": "5",
+      "title": "Environments"
+    },
+    {
+      "id": "environment-settings-objects",
+      "level": "5",
+      "title": "Environment settings objects"
+    },
+    {
+      "id": "realms-settings-objects-global-objects",
+      "level": "5",
+      "title": "Realms, settings objects, and global objects"
+    },
+    {
+      "id": "entry",
+      "level": "6",
+      "title": "Entry"
+    },
+    {
+      "id": "incumbent",
+      "level": "6",
+      "title": "Incumbent"
+    },
+    {
+      "id": "current",
+      "level": "6",
+      "title": "Current"
+    },
+    {
+      "id": "relevant",
+      "level": "6",
+      "title": "Relevant"
+    },
+    {
+      "id": "enabling-and-disabling-scripting",
+      "level": "5",
+      "title": "Enabling and disabling scripting"
+    },
+    {
+      "id": "secure-contexts",
+      "level": "5",
+      "title": "Secure contexts"
+    },
+    {
+      "id": "scripting-processing-model",
+      "level": "4",
+      "title": "Script processing\n  model"
+    },
+    {
+      "id": "script-structs",
+      "level": "5",
+      "title": "Scripts"
+    },
+    {
+      "id": "fetching-scripts",
+      "level": "5",
+      "title": "Fetching scripts"
+    },
+    {
+      "id": "creating-scripts",
+      "level": "5",
+      "title": "Creating scripts"
+    },
+    {
+      "id": "calling-scripts",
+      "level": "5",
+      "title": "Calling scripts"
+    },
+    {
+      "id": "killing-scripts",
+      "level": "5",
+      "title": "Killing scripts"
+    },
+    {
+      "id": "runtime-script-errors",
+      "level": "5",
+      "title": "Runtime script errors"
+    },
+    {
+      "id": "unhandled-promise-rejections",
+      "level": "5",
+      "title": "Unhandled promise rejections"
+    },
+    {
+      "id": "javascript-specification-host-hooks",
+      "level": "4",
+      "title": "JavaScript specification host hooks"
+    },
+    {
+      "id": "hostenqueuepromisejob",
+      "level": "5",
+      "title": "HostEnqueuePromiseJob(job,\n  realm)"
+    },
+    {
+      "id": "hostensurecancompilestrings(callerrealm,-calleerealm)",
+      "level": "5",
+      "title": "HostEnsureCanCompileStrings(callerRealm, calleeRealm)"
+    },
+    {
+      "id": "the-hostpromiserejectiontracker-implementation",
+      "level": "5",
+      "title": "HostPromiseRejectionTracker(promise, operation)"
+    },
+    {
+      "id": "integration-with-the-javascript-module-system",
+      "level": "5",
+      "title": "Module-related host hooks"
+    },
+    {
+      "id": "hostgetimportmetaproperties",
+      "level": "6",
+      "title": "HostGetImportMetaProperties(moduleRecord)"
+    },
+    {
+      "id": "hostimportmoduledynamically(referencingscriptormodule,-specifier,-promisecapability)",
+      "level": "6",
+      "title": "HostImportModuleDynamically(referencingScriptOrModule,\n  specifier, promiseCapability)"
+    },
+    {
+      "id": "hostresolveimportedmodule(referencingscriptormodule,-specifier)",
+      "level": "6",
+      "title": "HostResolveImportedModule(referencingScriptOrModule,\n  specifier)"
+    },
+    {
+      "id": "event-loops",
+      "level": "4",
+      "title": "Event loops"
+    },
+    {
+      "id": "definitions-3",
+      "level": "5",
+      "title": "Definitions"
+    },
+    {
+      "id": "queuing-tasks",
+      "level": "5",
+      "title": "Queuing tasks"
+    },
+    {
+      "id": "event-loop-processing-model",
+      "level": "5",
+      "title": "Processing model"
+    },
+    {
+      "id": "generic-task-sources",
+      "level": "5",
+      "title": "Generic task sources"
+    },
+    {
+      "id": "event-loop-for-spec-authors",
+      "level": "5",
+      "title": "Dealing with the event loop from other specifications"
+    },
+    {
+      "id": "events",
+      "level": "4",
+      "title": "Events"
+    },
+    {
+      "id": "event-handler-attributes",
+      "level": "5",
+      "title": "Event handlers"
+    },
+    {
+      "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+      "level": "5",
+      "title": "Event handlers on elements, Document objects, and Window objects"
+    },
+    {
+      "id": "idl-definitions",
+      "level": "6",
+      "title": "IDL definitions"
+    },
+    {
+      "id": "event-firing",
+      "level": "5",
+      "title": "Event firing"
+    },
+    {
+      "id": "windoworworkerglobalscope-mixin",
+      "level": "3",
+      "title": "The WindowOrWorkerGlobalScope mixin"
+    },
+    {
+      "id": "atob",
+      "level": "3",
+      "title": "Base64 utility methods"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "dynamic-markup-insertion",
+      "level": "3",
+      "title": "Dynamic markup insertion"
+    },
+    {
+      "id": "opening-the-input-stream",
+      "level": "4",
+      "title": "Opening the input stream"
+    },
+    {
+      "id": "closing-the-input-stream",
+      "level": "4",
+      "title": "Closing the input stream"
+    },
+    {
+      "id": "document.write()",
+      "level": "4",
+      "title": "document.write()"
+    },
+    {
+      "id": "document.writeln()",
+      "level": "4",
+      "title": "document.writeln()"
+    },
+    {
+      "id": "dom-parsing-and-serialization",
+      "level": "3",
+      "title": "DOM parsing"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "timers",
+      "level": "3",
+      "title": "Timers"
+    },
+    {
+      "id": "microtask-queuing",
+      "level": "3",
+      "title": "Microtask queuing"
+    },
+    {
+      "id": "user-prompts",
+      "level": "3",
+      "title": "User prompts"
+    },
+    {
+      "id": "simple-dialogs",
+      "level": "4",
+      "title": "Simple dialogs"
+    },
+    {
+      "id": "printing",
+      "level": "4",
+      "title": "Printing"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "system-state-and-capabilities",
+      "level": "3",
+      "title": "System state and capabilities"
+    },
+    {
+      "id": "the-navigator-object",
+      "level": "4",
+      "title": "The Navigator object"
+    },
+    {
+      "id": "client-identification",
+      "level": "5",
+      "title": "Client identification"
+    },
+    {
+      "id": "language-preferences",
+      "level": "5",
+      "title": "Language preferences"
+    },
+    {
+      "id": "custom-handlers",
+      "level": "5",
+      "title": "Custom scheme handlers: the registerProtocolHandler() method"
+    },
+    {
+      "id": "security-and-privacy",
+      "level": "6",
+      "title": "Security and privacy"
+    },
+    {
+      "id": "cookies",
+      "level": "5",
+      "title": "Cookies"
+    },
+    {
+      "id": "plugins-2",
+      "level": "5",
+      "title": "Plugins"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "images-2",
+      "level": "3",
+      "title": "Images"
+    },
+    {
+      "id": "animation-frames",
+      "level": "3",
+      "title": "Animation frames"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "comms",
+      "level": "2",
+      "title": "Communication"
+    },
+    {
+      "id": "the-messageevent-interface",
+      "level": "3",
+      "title": "The MessageEvent interface"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "server-sent-events",
+      "level": "3",
+      "title": "Server-sent events"
+    },
+    {
+      "id": "server-sent-events-intro",
+      "level": "4",
+      "title": "Introduction"
+    },
+    {
+      "id": "the-eventsource-interface",
+      "level": "4",
+      "title": "The EventSource interface"
+    },
+    {
+      "id": "sse-processing-model",
+      "level": "4",
+      "title": "Processing model"
+    },
+    {
+      "id": "parsing-an-event-stream",
+      "level": "4",
+      "title": "Parsing an event stream"
+    },
+    {
+      "id": "event-stream-interpretation",
+      "level": "4",
+      "title": "Interpreting an event stream"
+    },
+    {
+      "id": "authoring-notes",
+      "level": "4",
+      "title": "Authoring notes"
+    },
+    {
+      "id": "eventsource-push",
+      "level": "4",
+      "title": "Connectionless push and other features"
+    },
+    {
+      "id": "garbage-collection",
+      "level": "4",
+      "title": "Garbage collection"
+    },
+    {
+      "id": "implementation-advice",
+      "level": "4",
+      "title": "Implementation advice"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "network",
+      "level": "3",
+      "title": "Web sockets"
+    },
+    {
+      "id": "network-intro",
+      "level": "4",
+      "title": "Introduction"
+    },
+    {
+      "id": "the-websocket-interface",
+      "level": "4",
+      "title": "The WebSocket interface"
+    },
+    {
+      "id": "feedback-from-the-protocol",
+      "level": "4",
+      "title": "Feedback from the protocol"
+    },
+    {
+      "id": "ping-and-pong-frames",
+      "level": "4",
+      "title": "Ping and Pong frames"
+    },
+    {
+      "id": "the-closeevent-interface",
+      "level": "4",
+      "title": "The CloseEvent interface"
+    },
+    {
+      "id": "garbage-collection-2",
+      "level": "4",
+      "title": "Garbage collection"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "web-messaging",
+      "level": "3",
+      "title": "Cross-document messaging"
+    },
+    {
+      "id": "introduction-13",
+      "level": "4",
+      "title": "Introduction"
+    },
+    {
+      "id": "security-postmsg",
+      "level": "4",
+      "title": "Security"
+    },
+    {
+      "id": "authors",
+      "level": "5",
+      "title": "Authors"
+    },
+    {
+      "id": "user-agents",
+      "level": "5",
+      "title": "User agents"
+    },
+    {
+      "id": "posting-messages",
+      "level": "4",
+      "title": "Posting messages"
+    },
+    {
+      "id": "channel-messaging",
+      "level": "3",
+      "title": "Channel messaging"
+    },
+    {
+      "id": "introduction-14",
+      "level": "4",
+      "title": "Introduction"
+    },
+    {
+      "id": "examples-5",
+      "level": "5",
+      "title": "Examples"
+    },
+    {
+      "id": "ports-as-the-basis-of-an-object-capability-model-on-the-web",
+      "level": "5",
+      "title": "Ports as the basis of an object-capability model on the web"
+    },
+    {
+      "id": "ports-as-the-basis-of-abstracting-out-service-implementations",
+      "level": "5",
+      "title": "Ports as the basis of abstracting out service implementations"
+    },
+    {
+      "id": "message-channels",
+      "level": "4",
+      "title": "Message channels"
+    },
+    {
+      "id": "message-ports",
+      "level": "4",
+      "title": "Message ports"
+    },
+    {
+      "id": "broadcasting-to-many-ports",
+      "level": "4",
+      "title": "Broadcasting to many ports"
+    },
+    {
+      "id": "ports-and-garbage-collection",
+      "level": "4",
+      "title": "Ports and garbage collection"
+    },
+    {
+      "id": "broadcasting-to-other-browsing-contexts",
+      "level": "3",
+      "title": "Broadcasting to other browsing contexts"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "workers",
+      "level": "2",
+      "title": "Web workers"
+    },
+    {
+      "id": "introduction-15",
+      "level": "3",
+      "title": "Introduction"
+    },
+    {
+      "id": "scope-2",
+      "level": "4",
+      "title": "Scope"
+    },
+    {
+      "id": "examples-6",
+      "level": "4",
+      "title": "Examples"
+    },
+    {
+      "id": "a-background-number-crunching-worker",
+      "level": "5",
+      "title": "A background number-crunching worker"
+    },
+    {
+      "id": "module-worker-example",
+      "level": "5",
+      "title": "Using a JavaScript module as a worker"
+    },
+    {
+      "id": "shared-workers-introduction",
+      "level": "5",
+      "title": "Shared workers introduction"
+    },
+    {
+      "id": "shared-state-using-a-shared-worker",
+      "level": "5",
+      "title": "Shared state using a shared worker"
+    },
+    {
+      "id": "delegation",
+      "level": "5",
+      "title": "Delegation"
+    },
+    {
+      "id": "providing-libraries",
+      "level": "5",
+      "title": "Providing libraries"
+    },
+    {
+      "id": "tutorials",
+      "level": "4",
+      "title": "Tutorials"
+    },
+    {
+      "id": "creating-a-dedicated-worker",
+      "level": "5",
+      "title": "Creating a dedicated worker"
+    },
+    {
+      "id": "communicating-with-a-dedicated-worker",
+      "level": "5",
+      "title": "Communicating with a dedicated worker"
+    },
+    {
+      "id": "shared-workers",
+      "level": "5",
+      "title": "Shared workers"
+    },
+    {
+      "id": "infrastructure-2",
+      "level": "3",
+      "title": "Infrastructure"
+    },
+    {
+      "id": "the-global-scope",
+      "level": "4",
+      "title": "The global scope"
+    },
+    {
+      "id": "the-workerglobalscope-common-interface",
+      "level": "5",
+      "title": "The WorkerGlobalScope common interface"
+    },
+    {
+      "id": "dedicated-workers-and-the-dedicatedworkerglobalscope-interface",
+      "level": "5",
+      "title": "Dedicated workers and the DedicatedWorkerGlobalScope interface"
+    },
+    {
+      "id": "shared-workers-and-the-sharedworkerglobalscope-interface",
+      "level": "5",
+      "title": "Shared workers and the SharedWorkerGlobalScope interface"
+    },
+    {
+      "id": "worker-event-loop",
+      "level": "4",
+      "title": "The event loop"
+    },
+    {
+      "id": "the-worker's-lifetime",
+      "level": "4",
+      "title": "The worker's lifetime"
+    },
+    {
+      "id": "worker-processing-model",
+      "level": "4",
+      "title": "Processing model"
+    },
+    {
+      "id": "runtime-script-errors-2",
+      "level": "4",
+      "title": "Runtime script errors"
+    },
+    {
+      "id": "creating-workers",
+      "level": "4",
+      "title": "Creating workers"
+    },
+    {
+      "id": "the-abstractworker-mixin",
+      "level": "5",
+      "title": "The\n  AbstractWorker mixin"
+    },
+    {
+      "id": "script-settings-for-workers",
+      "level": "5",
+      "title": "Script settings for workers"
+    },
+    {
+      "id": "dedicated-workers-and-the-worker-interface",
+      "level": "5",
+      "title": "Dedicated workers and the Worker interface"
+    },
+    {
+      "id": "shared-workers-and-the-sharedworker-interface",
+      "level": "5",
+      "title": "Shared workers and the SharedWorker interface"
+    },
+    {
+      "id": "navigator.hardwareconcurrency",
+      "level": "4",
+      "title": "Concurrent hardware capabilities"
+    },
+    {
+      "id": "apis-available-to-workers",
+      "level": "3",
+      "title": "APIs available to workers"
+    },
+    {
+      "id": "importing-scripts-and-libraries",
+      "level": "4",
+      "title": "Importing scripts and libraries"
+    },
+    {
+      "id": "the-workernavigator-object",
+      "level": "4",
+      "title": "The WorkerNavigator interface"
+    },
+    {
+      "id": "worker-locations",
+      "level": "4",
+      "title": "The WorkerLocation interface"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "webstorage",
+      "level": "2",
+      "title": "Web storage"
+    },
+    {
+      "id": "introduction-16",
+      "level": "3",
+      "title": "Introduction"
+    },
+    {
+      "id": "storage",
+      "level": "3",
+      "title": "The API"
+    },
+    {
+      "id": "the-storage-interface",
+      "level": "4",
+      "title": "The Storage interface"
+    },
+    {
+      "id": "the-sessionstorage-attribute",
+      "level": "4",
+      "title": "The sessionStorage getter"
+    },
+    {
+      "id": "the-localstorage-attribute",
+      "level": "4",
+      "title": "The localStorage getter"
+    },
+    {
+      "id": "the-storageevent-interface",
+      "level": "4",
+      "title": "The StorageEvent interface"
+    },
+    {
+      "id": "privacy",
+      "level": "3",
+      "title": "Privacy"
+    },
+    {
+      "id": "user-tracking",
+      "level": "4",
+      "title": "User tracking"
+    },
+    {
+      "id": "sensitivity-of-data",
+      "level": "4",
+      "title": "Sensitivity of data"
+    },
+    {
+      "id": "security-storage",
+      "level": "3",
+      "title": "Security"
+    },
+    {
+      "id": "dns-spoofing-attacks",
+      "level": "4",
+      "title": "DNS spoofing attacks"
+    },
+    {
+      "id": "cross-directory-attacks",
+      "level": "4",
+      "title": "Cross-directory attacks"
+    },
+    {
+      "id": "implementation-risks",
+      "level": "4",
+      "title": "Implementation risks"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "syntax",
+      "level": "2",
+      "title": "The HTML syntax"
+    },
+    {
+      "id": "writing",
+      "level": "3",
+      "title": "Writing HTML documents"
+    },
+    {
+      "id": "the-doctype",
+      "level": "4",
+      "title": "The DOCTYPE"
+    },
+    {
+      "id": "elements-2",
+      "level": "4",
+      "title": "Elements"
+    },
+    {
+      "id": "start-tags",
+      "level": "5",
+      "title": "Start tags"
+    },
+    {
+      "id": "end-tags",
+      "level": "5",
+      "title": "End tags"
+    },
+    {
+      "id": "attributes-2",
+      "level": "5",
+      "title": "Attributes"
+    },
+    {
+      "id": "optional-tags",
+      "level": "5",
+      "title": "Optional tags"
+    },
+    {
+      "id": "element-restrictions",
+      "level": "5",
+      "title": "Restrictions on content models"
+    },
+    {
+      "id": "cdata-rcdata-restrictions",
+      "level": "5",
+      "title": "Restrictions on the contents of raw text and escapable raw text elements"
+    },
+    {
+      "id": "text-2",
+      "level": "4",
+      "title": "Text"
+    },
+    {
+      "id": "newlines",
+      "level": "5",
+      "title": "Newlines"
+    },
+    {
+      "id": "character-references",
+      "level": "4",
+      "title": "Character references"
+    },
+    {
+      "id": "cdata-sections",
+      "level": "4",
+      "title": "CDATA sections"
+    },
+    {
+      "id": "comments",
+      "level": "4",
+      "title": "Comments"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "parsing",
+      "level": "3",
+      "title": "Parsing HTML documents"
+    },
+    {
+      "id": "overview-of-the-parsing-model",
+      "level": "4",
+      "title": "Overview of the parsing model"
+    },
+    {
+      "id": "parse-errors",
+      "level": "4",
+      "title": "Parse errors"
+    },
+    {
+      "id": "the-input-byte-stream",
+      "level": "4",
+      "title": "The input byte stream"
+    },
+    {
+      "id": "parsing-with-a-known-character-encoding",
+      "level": "5",
+      "title": "Parsing with a known character encoding"
+    },
+    {
+      "id": "determining-the-character-encoding",
+      "level": "5",
+      "title": "Determining the character encoding"
+    },
+    {
+      "id": "character-encodings",
+      "level": "5",
+      "title": "Character encodings"
+    },
+    {
+      "id": "changing-the-encoding-while-parsing",
+      "level": "5",
+      "title": "Changing the encoding while parsing"
+    },
+    {
+      "id": "preprocessing-the-input-stream",
+      "level": "5",
+      "title": "Preprocessing the input stream"
+    },
+    {
+      "id": "parse-state",
+      "level": "4",
+      "title": "Parse state"
+    },
+    {
+      "id": "the-insertion-mode",
+      "level": "5",
+      "title": "The insertion mode"
+    },
+    {
+      "id": "the-stack-of-open-elements",
+      "level": "5",
+      "title": "The stack of open elements"
+    },
+    {
+      "id": "the-list-of-active-formatting-elements",
+      "level": "5",
+      "title": "The list of active formatting elements"
+    },
+    {
+      "id": "the-element-pointers",
+      "level": "5",
+      "title": "The element pointers"
+    },
+    {
+      "id": "other-parsing-state-flags",
+      "level": "5",
+      "title": "Other parsing state flags"
+    },
+    {
+      "id": "tokenization",
+      "level": "4",
+      "title": "Tokenization"
+    },
+    {
+      "id": "data-state",
+      "level": "5",
+      "title": "Data state"
+    },
+    {
+      "id": "rcdata-state",
+      "level": "5",
+      "title": "RCDATA state"
+    },
+    {
+      "id": "rawtext-state",
+      "level": "5",
+      "title": "RAWTEXT state"
+    },
+    {
+      "id": "script-data-state",
+      "level": "5",
+      "title": "Script data state"
+    },
+    {
+      "id": "plaintext-state",
+      "level": "5",
+      "title": "PLAINTEXT state"
+    },
+    {
+      "id": "tag-open-state",
+      "level": "5",
+      "title": "Tag open state"
+    },
+    {
+      "id": "end-tag-open-state",
+      "level": "5",
+      "title": "End tag open state"
+    },
+    {
+      "id": "tag-name-state",
+      "level": "5",
+      "title": "Tag name state"
+    },
+    {
+      "id": "rcdata-less-than-sign-state",
+      "level": "5",
+      "title": "RCDATA less-than sign state"
+    },
+    {
+      "id": "rcdata-end-tag-open-state",
+      "level": "5",
+      "title": "RCDATA end tag open state"
+    },
+    {
+      "id": "rcdata-end-tag-name-state",
+      "level": "5",
+      "title": "RCDATA end tag name state"
+    },
+    {
+      "id": "rawtext-less-than-sign-state",
+      "level": "5",
+      "title": "RAWTEXT less-than sign state"
+    },
+    {
+      "id": "rawtext-end-tag-open-state",
+      "level": "5",
+      "title": "RAWTEXT end tag open state"
+    },
+    {
+      "id": "rawtext-end-tag-name-state",
+      "level": "5",
+      "title": "RAWTEXT end tag name state"
+    },
+    {
+      "id": "script-data-less-than-sign-state",
+      "level": "5",
+      "title": "Script data less-than sign state"
+    },
+    {
+      "id": "script-data-end-tag-open-state",
+      "level": "5",
+      "title": "Script data end tag open state"
+    },
+    {
+      "id": "script-data-end-tag-name-state",
+      "level": "5",
+      "title": "Script data end tag name state"
+    },
+    {
+      "id": "script-data-escape-start-state",
+      "level": "5",
+      "title": "Script data escape start state"
+    },
+    {
+      "id": "script-data-escape-start-dash-state",
+      "level": "5",
+      "title": "Script data escape start dash state"
+    },
+    {
+      "id": "script-data-escaped-state",
+      "level": "5",
+      "title": "Script data escaped state"
+    },
+    {
+      "id": "script-data-escaped-dash-state",
+      "level": "5",
+      "title": "Script data escaped dash state"
+    },
+    {
+      "id": "script-data-escaped-dash-dash-state",
+      "level": "5",
+      "title": "Script data escaped dash dash state"
+    },
+    {
+      "id": "script-data-escaped-less-than-sign-state",
+      "level": "5",
+      "title": "Script data escaped less-than sign state"
+    },
+    {
+      "id": "script-data-escaped-end-tag-open-state",
+      "level": "5",
+      "title": "Script data escaped end tag open state"
+    },
+    {
+      "id": "script-data-escaped-end-tag-name-state",
+      "level": "5",
+      "title": "Script data escaped end tag name state"
+    },
+    {
+      "id": "script-data-double-escape-start-state",
+      "level": "5",
+      "title": "Script data double escape start state"
+    },
+    {
+      "id": "script-data-double-escaped-state",
+      "level": "5",
+      "title": "Script data double escaped state"
+    },
+    {
+      "id": "script-data-double-escaped-dash-state",
+      "level": "5",
+      "title": "Script data double escaped dash state"
+    },
+    {
+      "id": "script-data-double-escaped-dash-dash-state",
+      "level": "5",
+      "title": "Script data double escaped dash dash state"
+    },
+    {
+      "id": "script-data-double-escaped-less-than-sign-state",
+      "level": "5",
+      "title": "Script data double escaped less-than sign state"
+    },
+    {
+      "id": "script-data-double-escape-end-state",
+      "level": "5",
+      "title": "Script data double escape end state"
+    },
+    {
+      "id": "before-attribute-name-state",
+      "level": "5",
+      "title": "Before attribute name state"
+    },
+    {
+      "id": "attribute-name-state",
+      "level": "5",
+      "title": "Attribute name state"
+    },
+    {
+      "id": "after-attribute-name-state",
+      "level": "5",
+      "title": "After attribute name state"
+    },
+    {
+      "id": "before-attribute-value-state",
+      "level": "5",
+      "title": "Before attribute value state"
+    },
+    {
+      "id": "attribute-value-(double-quoted)-state",
+      "level": "5",
+      "title": "Attribute value (double-quoted) state"
+    },
+    {
+      "id": "attribute-value-(single-quoted)-state",
+      "level": "5",
+      "title": "Attribute value (single-quoted) state"
+    },
+    {
+      "id": "attribute-value-(unquoted)-state",
+      "level": "5",
+      "title": "Attribute value (unquoted) state"
+    },
+    {
+      "id": "after-attribute-value-(quoted)-state",
+      "level": "5",
+      "title": "After attribute value (quoted) state"
+    },
+    {
+      "id": "self-closing-start-tag-state",
+      "level": "5",
+      "title": "Self-closing start tag state"
+    },
+    {
+      "id": "bogus-comment-state",
+      "level": "5",
+      "title": "Bogus comment state"
+    },
+    {
+      "id": "markup-declaration-open-state",
+      "level": "5",
+      "title": "Markup declaration open state"
+    },
+    {
+      "id": "comment-start-state",
+      "level": "5",
+      "title": "Comment start state"
+    },
+    {
+      "id": "comment-start-dash-state",
+      "level": "5",
+      "title": "Comment start dash state"
+    },
+    {
+      "id": "comment-state",
+      "level": "5",
+      "title": "Comment state"
+    },
+    {
+      "id": "comment-less-than-sign-state",
+      "level": "5",
+      "title": "Comment less-than sign state"
+    },
+    {
+      "id": "comment-less-than-sign-bang-state",
+      "level": "5",
+      "title": "Comment less-than sign bang state"
+    },
+    {
+      "id": "comment-less-than-sign-bang-dash-state",
+      "level": "5",
+      "title": "Comment less-than sign bang dash state"
+    },
+    {
+      "id": "comment-less-than-sign-bang-dash-dash-state",
+      "level": "5",
+      "title": "Comment less-than sign bang dash dash state"
+    },
+    {
+      "id": "comment-end-dash-state",
+      "level": "5",
+      "title": "Comment end dash state"
+    },
+    {
+      "id": "comment-end-state",
+      "level": "5",
+      "title": "Comment end state"
+    },
+    {
+      "id": "comment-end-bang-state",
+      "level": "5",
+      "title": "Comment end bang state"
+    },
+    {
+      "id": "doctype-state",
+      "level": "5",
+      "title": "DOCTYPE state"
+    },
+    {
+      "id": "before-doctype-name-state",
+      "level": "5",
+      "title": "Before DOCTYPE name state"
+    },
+    {
+      "id": "doctype-name-state",
+      "level": "5",
+      "title": "DOCTYPE name state"
+    },
+    {
+      "id": "after-doctype-name-state",
+      "level": "5",
+      "title": "After DOCTYPE name state"
+    },
+    {
+      "id": "after-doctype-public-keyword-state",
+      "level": "5",
+      "title": "After DOCTYPE public keyword state"
+    },
+    {
+      "id": "before-doctype-public-identifier-state",
+      "level": "5",
+      "title": "Before DOCTYPE public identifier state"
+    },
+    {
+      "id": "doctype-public-identifier-(double-quoted)-state",
+      "level": "5",
+      "title": "DOCTYPE public identifier (double-quoted) state"
+    },
+    {
+      "id": "doctype-public-identifier-(single-quoted)-state",
+      "level": "5",
+      "title": "DOCTYPE public identifier (single-quoted) state"
+    },
+    {
+      "id": "after-doctype-public-identifier-state",
+      "level": "5",
+      "title": "After DOCTYPE public identifier state"
+    },
+    {
+      "id": "between-doctype-public-and-system-identifiers-state",
+      "level": "5",
+      "title": "Between DOCTYPE public and system identifiers state"
+    },
+    {
+      "id": "after-doctype-system-keyword-state",
+      "level": "5",
+      "title": "After DOCTYPE system keyword state"
+    },
+    {
+      "id": "before-doctype-system-identifier-state",
+      "level": "5",
+      "title": "Before DOCTYPE system identifier state"
+    },
+    {
+      "id": "doctype-system-identifier-(double-quoted)-state",
+      "level": "5",
+      "title": "DOCTYPE system identifier (double-quoted) state"
+    },
+    {
+      "id": "doctype-system-identifier-(single-quoted)-state",
+      "level": "5",
+      "title": "DOCTYPE system identifier (single-quoted) state"
+    },
+    {
+      "id": "after-doctype-system-identifier-state",
+      "level": "5",
+      "title": "After DOCTYPE system identifier state"
+    },
+    {
+      "id": "bogus-doctype-state",
+      "level": "5",
+      "title": "Bogus DOCTYPE state"
+    },
+    {
+      "id": "cdata-section-state",
+      "level": "5",
+      "title": "CDATA section state"
+    },
+    {
+      "id": "cdata-section-bracket-state",
+      "level": "5",
+      "title": "CDATA section bracket state"
+    },
+    {
+      "id": "cdata-section-end-state",
+      "level": "5",
+      "title": "CDATA section end state"
+    },
+    {
+      "id": "character-reference-state",
+      "level": "5",
+      "title": "Character reference state"
+    },
+    {
+      "id": "named-character-reference-state",
+      "level": "5",
+      "title": "Named character reference state"
+    },
+    {
+      "id": "ambiguous-ampersand-state",
+      "level": "5",
+      "title": "Ambiguous ampersand state"
+    },
+    {
+      "id": "numeric-character-reference-state",
+      "level": "5",
+      "title": "Numeric character reference state"
+    },
+    {
+      "id": "hexadecimal-character-reference-start-state",
+      "level": "5",
+      "title": "Hexadecimal character reference start state"
+    },
+    {
+      "id": "decimal-character-reference-start-state",
+      "level": "5",
+      "title": "Decimal character reference start state"
+    },
+    {
+      "id": "hexadecimal-character-reference-state",
+      "level": "5",
+      "title": "Hexadecimal character reference state"
+    },
+    {
+      "id": "decimal-character-reference-state",
+      "level": "5",
+      "title": "Decimal character reference state"
+    },
+    {
+      "id": "numeric-character-reference-end-state",
+      "level": "5",
+      "title": "Numeric character reference end state"
+    },
+    {
+      "id": "tree-construction",
+      "level": "4",
+      "title": "Tree construction"
+    },
+    {
+      "id": "creating-and-inserting-nodes",
+      "level": "5",
+      "title": "Creating and inserting nodes"
+    },
+    {
+      "id": "parsing-elements-that-contain-only-text",
+      "level": "5",
+      "title": "Parsing elements that contain only text"
+    },
+    {
+      "id": "closing-elements-that-have-implied-end-tags",
+      "level": "5",
+      "title": "Closing elements that have implied end tags"
+    },
+    {
+      "id": "parsing-main-inhtml",
+      "level": "5",
+      "title": "The rules for parsing tokens in HTML content"
+    },
+    {
+      "id": "the-initial-insertion-mode",
+      "level": "6",
+      "title": "The \"initial\" insertion mode"
+    },
+    {
+      "id": "the-before-html-insertion-mode",
+      "level": "6",
+      "title": "The \"before html\" insertion mode"
+    },
+    {
+      "id": "the-before-head-insertion-mode",
+      "level": "6",
+      "title": "The \"before head\" insertion mode"
+    },
+    {
+      "id": "parsing-main-inhead",
+      "level": "6",
+      "title": "The \"in head\" insertion mode"
+    },
+    {
+      "id": "parsing-main-inheadnoscript",
+      "level": "6",
+      "title": "The \"in head noscript\" insertion mode"
+    },
+    {
+      "id": "the-after-head-insertion-mode",
+      "level": "6",
+      "title": "The \"after head\" insertion mode"
+    },
+    {
+      "id": "parsing-main-inbody",
+      "level": "6",
+      "title": "The \"in body\" insertion mode"
+    },
+    {
+      "id": "parsing-main-incdata",
+      "level": "6",
+      "title": "The \"text\" insertion mode"
+    },
+    {
+      "id": "parsing-main-intable",
+      "level": "6",
+      "title": "The \"in table\" insertion mode"
+    },
+    {
+      "id": "parsing-main-intabletext",
+      "level": "6",
+      "title": "The \"in table text\" insertion mode"
+    },
+    {
+      "id": "parsing-main-incaption",
+      "level": "6",
+      "title": "The \"in caption\" insertion mode"
+    },
+    {
+      "id": "parsing-main-incolgroup",
+      "level": "6",
+      "title": "The \"in column group\" insertion mode"
+    },
+    {
+      "id": "parsing-main-intbody",
+      "level": "6",
+      "title": "The \"in table body\" insertion mode"
+    },
+    {
+      "id": "parsing-main-intr",
+      "level": "6",
+      "title": "The \"in row\" insertion mode"
+    },
+    {
+      "id": "parsing-main-intd",
+      "level": "6",
+      "title": "The \"in cell\" insertion mode"
+    },
+    {
+      "id": "parsing-main-inselect",
+      "level": "6",
+      "title": "The \"in select\" insertion mode"
+    },
+    {
+      "id": "parsing-main-inselectintable",
+      "level": "6",
+      "title": "The \"in select in table\" insertion mode"
+    },
+    {
+      "id": "parsing-main-intemplate",
+      "level": "6",
+      "title": "The \"in template\" insertion mode"
+    },
+    {
+      "id": "parsing-main-afterbody",
+      "level": "6",
+      "title": "The \"after body\" insertion mode"
+    },
+    {
+      "id": "parsing-main-inframeset",
+      "level": "6",
+      "title": "The \"in frameset\" insertion mode"
+    },
+    {
+      "id": "parsing-main-afterframeset",
+      "level": "6",
+      "title": "The \"after frameset\" insertion mode"
+    },
+    {
+      "id": "the-after-after-body-insertion-mode",
+      "level": "6",
+      "title": "The \"after after body\" insertion mode"
+    },
+    {
+      "id": "the-after-after-frameset-insertion-mode",
+      "level": "6",
+      "title": "The \"after after frameset\" insertion mode"
+    },
+    {
+      "id": "parsing-main-inforeign",
+      "level": "5",
+      "title": "The rules for parsing tokens in foreign content"
+    },
+    {
+      "id": "the-end",
+      "level": "4",
+      "title": "The end"
+    },
+    {
+      "id": "coercing-an-html-dom-into-an-infoset",
+      "level": "4",
+      "title": "Coercing an HTML DOM into an infoset"
+    },
+    {
+      "id": "an-introduction-to-error-handling-and-strange-cases-in-the-parser",
+      "level": "4",
+      "title": "An introduction to error handling and strange cases in the parser"
+    },
+    {
+      "id": "misnested-tags:-b-i-/b-/i",
+      "level": "5",
+      "title": "Misnested tags: <b><i></b></i>"
+    },
+    {
+      "id": "misnested-tags:-b-p-/b-/p",
+      "level": "5",
+      "title": "Misnested tags: <b><p></b></p>"
+    },
+    {
+      "id": "unexpected-markup-in-tables",
+      "level": "5",
+      "title": "Unexpected markup in tables"
+    },
+    {
+      "id": "scripts-that-modify-the-page-as-it-is-being-parsed",
+      "level": "5",
+      "title": "Scripts that modify the page as it is being parsed"
+    },
+    {
+      "id": "the-execution-of-scripts-that-are-moving-across-multiple-documents",
+      "level": "5",
+      "title": "The execution of scripts that are moving across multiple documents"
+    },
+    {
+      "id": "unclosed-formatting-elements",
+      "level": "5",
+      "title": "Unclosed formatting elements"
+    },
+    {
+      "id": "serialising-html-fragments",
+      "level": "3",
+      "title": "Serializing HTML fragments"
+    },
+    {
+      "id": "parsing-html-fragments",
+      "level": "3",
+      "title": "Parsing HTML fragments"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "named-character-references",
+      "level": "3",
+      "title": "Named character references"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "the-xhtml-syntax",
+      "level": "2",
+      "title": "The XML syntax"
+    },
+    {
+      "id": "writing-xhtml-documents",
+      "level": "3",
+      "title": "Writing documents in the XML syntax"
+    },
+    {
+      "id": "parsing-xhtml-documents",
+      "level": "3",
+      "title": "Parsing XML documents"
+    },
+    {
+      "id": "serialising-xhtml-fragments",
+      "level": "3",
+      "title": "Serializing XML fragments"
+    },
+    {
+      "id": "parsing-xhtml-fragments",
+      "level": "3",
+      "title": "Parsing XML fragments"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "rendering",
+      "level": "2",
+      "title": "Rendering"
+    },
+    {
+      "id": "introduction-17",
+      "level": "3",
+      "title": "Introduction"
+    },
+    {
+      "id": "the-css-user-agent-style-sheet-and-presentational-hints",
+      "level": "3",
+      "title": "The CSS user agent style sheet and presentational hints"
+    },
+    {
+      "id": "non-replaced-elements",
+      "level": "3",
+      "title": "Non-replaced elements"
+    },
+    {
+      "id": "hidden-elements",
+      "level": "4",
+      "title": "Hidden elements"
+    },
+    {
+      "id": "the-page",
+      "level": "4",
+      "title": "The page"
+    },
+    {
+      "id": "flow-content-3",
+      "level": "4",
+      "title": "Flow content"
+    },
+    {
+      "id": "phrasing-content-3",
+      "level": "4",
+      "title": "Phrasing content"
+    },
+    {
+      "id": "bidi-rendering",
+      "level": "4",
+      "title": "Bidirectional text"
+    },
+    {
+      "id": "quotes",
+      "level": "4",
+      "title": "Quotes"
+    },
+    {
+      "id": "sections-and-headings",
+      "level": "4",
+      "title": "Sections and headings"
+    },
+    {
+      "id": "lists",
+      "level": "4",
+      "title": "Lists"
+    },
+    {
+      "id": "tables-2",
+      "level": "4",
+      "title": "Tables"
+    },
+    {
+      "id": "margin-collapsing-quirks",
+      "level": "4",
+      "title": "Margin collapsing quirks"
+    },
+    {
+      "id": "form-controls",
+      "level": "4",
+      "title": "Form controls"
+    },
+    {
+      "id": "the-hr-element-2",
+      "level": "4",
+      "title": "The hr element"
+    },
+    {
+      "id": "the-fieldset-and-legend-elements",
+      "level": "4",
+      "title": "The fieldset and legend elements"
+    },
+    {
+      "id": "replaced-elements",
+      "level": "3",
+      "title": "Replaced elements"
+    },
+    {
+      "id": "embedded-content-rendering-rules",
+      "level": "4",
+      "title": "Embedded content"
+    },
+    {
+      "id": "images-3",
+      "level": "4",
+      "title": "Images"
+    },
+    {
+      "id": "attributes-for-embedded-content-and-images",
+      "level": "4",
+      "title": "Attributes for embedded content and images"
+    },
+    {
+      "id": "image-maps-2",
+      "level": "4",
+      "title": "Image maps"
+    },
+    {
+      "id": "widgets",
+      "level": "3",
+      "title": "Widgets"
+    },
+    {
+      "id": "introduction-18",
+      "level": "4",
+      "title": "Introduction"
+    },
+    {
+      "id": "button-layout",
+      "level": "4",
+      "title": "Button layout"
+    },
+    {
+      "id": "the-button-element-2",
+      "level": "4",
+      "title": "The button element"
+    },
+    {
+      "id": "the-details-and-summary-elements",
+      "level": "4",
+      "title": "The details and summary elements"
+    },
+    {
+      "id": "the-input-element-as-a-text-entry-widget",
+      "level": "4",
+      "title": "The input element as a text entry widget"
+    },
+    {
+      "id": "the-input-element-as-domain-specific-widgets",
+      "level": "4",
+      "title": "The input element as domain-specific widgets"
+    },
+    {
+      "id": "the-input-element-as-a-range-control",
+      "level": "4",
+      "title": "The input element as a range control"
+    },
+    {
+      "id": "the-input-element-as-a-colour-well",
+      "level": "4",
+      "title": "The input element as a color\n  well"
+    },
+    {
+      "id": "the-input-element-as-a-checkbox-and-radio-button-widgets",
+      "level": "4",
+      "title": "The input element as a checkbox and radio button widgets"
+    },
+    {
+      "id": "the-input-element-as-a-file-upload-control",
+      "level": "4",
+      "title": "The input element as a file upload control"
+    },
+    {
+      "id": "the-input-element-as-a-button",
+      "level": "4",
+      "title": "The input element as a button"
+    },
+    {
+      "id": "the-marquee-element-2",
+      "level": "4",
+      "title": "The marquee element"
+    },
+    {
+      "id": "the-meter-element-2",
+      "level": "4",
+      "title": "The meter element"
+    },
+    {
+      "id": "the-progress-element-2",
+      "level": "4",
+      "title": "The progress element"
+    },
+    {
+      "id": "the-select-element-2",
+      "level": "4",
+      "title": "The select element"
+    },
+    {
+      "id": "the-textarea-element-2",
+      "level": "4",
+      "title": "The textarea element"
+    },
+    {
+      "id": "frames-and-framesets",
+      "level": "3",
+      "title": "Frames and framesets"
+    },
+    {
+      "id": "interactive-media",
+      "level": "3",
+      "title": "Interactive media"
+    },
+    {
+      "id": "links,-forms,-and-navigation",
+      "level": "4",
+      "title": "Links, forms, and navigation"
+    },
+    {
+      "id": "the-title-attribute-2",
+      "level": "4",
+      "title": "The title attribute"
+    },
+    {
+      "id": "editing-hosts",
+      "level": "4",
+      "title": "Editing hosts"
+    },
+    {
+      "id": "text-rendered-in-native-user-interfaces",
+      "level": "4",
+      "title": "Text rendered in native user interfaces"
+    },
+    {
+      "id": "print-media",
+      "level": "3",
+      "title": "Print media"
+    },
+    {
+      "id": "unstyled-xml-documents",
+      "level": "3",
+      "title": "Unstyled XML documents"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "obsolete",
+      "level": "2",
+      "title": "Obsolete features"
+    },
+    {
+      "id": "obsolete-but-conforming-features",
+      "level": "3",
+      "title": "Obsolete but conforming features"
+    },
+    {
+      "id": "warnings-for-obsolete-but-conforming-features",
+      "level": "4",
+      "title": "Warnings for obsolete but conforming features"
+    },
+    {
+      "id": "non-conforming-features",
+      "level": "3",
+      "title": "Non-conforming features"
+    },
+    {
+      "id": "requirements-for-implementations",
+      "level": "3",
+      "title": "Requirements for implementations"
+    },
+    {
+      "id": "the-marquee-element",
+      "level": "4",
+      "title": "The marquee element"
+    },
+    {
+      "id": "frames",
+      "level": "4",
+      "title": "Frames"
+    },
+    {
+      "id": "other-elements,-attributes-and-apis",
+      "level": "4",
+      "title": "Other elements, attributes and APIs"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "iana",
+      "level": "2",
+      "title": "IANA considerations"
+    },
+    {
+      "id": "text/html",
+      "level": "3",
+      "title": "text/html"
+    },
+    {
+      "id": "multipart/x-mixed-replace",
+      "level": "3",
+      "title": "multipart/x-mixed-replace"
+    },
+    {
+      "id": "application/xhtml+xml",
+      "level": "3",
+      "title": "application/xhtml+xml"
+    },
+    {
+      "id": "text/cache-manifest",
+      "level": "3",
+      "title": "text/cache-manifest"
+    },
+    {
+      "id": "text/ping",
+      "level": "3",
+      "title": "text/ping"
+    },
+    {
+      "id": "application/microdata+json",
+      "level": "3",
+      "title": "application/microdata+json"
+    },
+    {
+      "id": "text/event-stream",
+      "level": "3",
+      "title": "text/event-stream"
+    },
+    {
+      "id": "cross-origin-embedder-policy",
+      "level": "3",
+      "title": "`Cross-Origin-Embedder-Policy`"
+    },
+    {
+      "id": "cross-origin-embedder-policy-report-only",
+      "level": "3",
+      "title": "`Cross-Origin-Embedder-Policy-Report-Only`"
+    },
+    {
+      "id": "cross-origin-opener-policy-2",
+      "level": "3",
+      "title": "`Cross-Origin-Opener-Policy`"
+    },
+    {
+      "id": "origin-isolation-2",
+      "level": "3",
+      "title": "`Origin-Isolation`"
+    },
+    {
+      "id": "ping-from",
+      "level": "3",
+      "title": "`Ping-From`"
+    },
+    {
+      "id": "ping-to",
+      "level": "3",
+      "title": "`Ping-To`"
+    },
+    {
+      "id": "refresh",
+      "level": "3",
+      "title": "`Refresh`"
+    },
+    {
+      "id": "last-event-id",
+      "level": "3",
+      "title": "`Last-Event-ID`"
+    },
+    {
+      "id": "x-frame-options",
+      "level": "3",
+      "title": "`X-Frame-Options`"
+    },
+    {
+      "id": "web+-scheme-prefix",
+      "level": "3",
+      "title": "web+ scheme prefix"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "elements-3",
+      "level": "3",
+      "title": "Elements"
+    },
+    {
+      "id": "element-content-categories",
+      "level": "3",
+      "title": "Element content categories"
+    },
+    {
+      "id": "attributes-3",
+      "level": "3",
+      "title": "Attributes"
+    },
+    {
+      "id": "element-interfaces",
+      "level": "3",
+      "title": "Element Interfaces"
+    },
+    {
+      "id": "all-interfaces",
+      "level": "3",
+      "title": "All Interfaces"
+    },
+    {
+      "id": "events-2",
+      "level": "3",
+      "title": "Events"
+    },
+    {
+      "id": "mime-types-2",
+      "level": "3",
+      "title": "MIME Types"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "living-standard",
+      "level": "2",
+      "title": "Living Standard — Last Updated 26 August 2020"
+    },
+    {
+      "id": "acknowledgments",
+      "level": "2",
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "ipr",
+      "level": "2",
+      "title": "Intellectual property rights"
+    }
+  ]
+}
