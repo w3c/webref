@@ -3272,7 +3272,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
 - Crawled URL: [https://drafts.csswg.org/css-inline-3/](https://drafts.csswg.org/css-inline-3/)
-- Crawled version: 27 August 2020
+- Crawled version: 28 August 2020
 - Editor's Draft: [https://drafts.csswg.org/css-inline-3/](https://drafts.csswg.org/css-inline-3/)
 - Latest published version: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
 - Shortname: css-inline-3
